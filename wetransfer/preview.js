@@ -772,7 +772,7 @@
         18467: (e, a, t) => {
             "use strict";
             t.r(a), t.d(a, {
-                default: () => tr
+                default: () => t_
             });
             var l = t(23798),
                 i = t(21462),
@@ -780,10 +780,10 @@
                 n = t(53526),
                 o = t.n(n),
                 r = t(75546),
-                _ = t(42755),
-                s = t(26978),
-                m = t(58915),
-                w = t(72683),
+                _ = t(50496),
+                s = t(85633),
+                m = t(97116),
+                w = t(81436),
                 g = t(33665);
             let b = "wt_preview_onboarding_completed",
                 u = [{
@@ -882,8 +882,8 @@
                     })
                 };
             var f = t(46817),
-                M = t.n(f);
-            let S = e => {
+                S = t.n(f);
+            let M = e => {
                 var a;
                 let {
                     children: t,
@@ -902,18 +902,18 @@
                     return e
                 })(), {
                     isPreviewPagePaywall: v
-                } = (0, g.rz)(), I = d === p && !v, P = d === h, f = u[d], S = (null == f ? void 0 : f.titleKey) ? b(f.titleKey) : "", F = (null == f ? void 0 : f.descriptionKey) ? b(f.descriptionKey) : "", N = null != (a = null != n ? n : null == f ? void 0 : f.position) ? a : "bottom";
+                } = (0, g.rz)(), I = d === p && !v, P = d === h, f = u[d], M = (null == f ? void 0 : f.titleKey) ? b(f.titleKey) : "", F = (null == f ? void 0 : f.descriptionKey) ? b(f.descriptionKey) : "", N = null != (a = null != n ? n : null == f ? void 0 : f.position) ? a : "bottom";
                 if (!I) return (0, l.jsx)(l.Fragment, {
                     children: t
                 });
                 let j = (0, l.jsxs)("div", {
-                    className: M().tooltipContent,
+                    className: S().tooltipContent,
                     children: [(0, l.jsxs)("div", {
                         children: [(0, l.jsxs)("div", {
-                            className: M().header,
+                            className: S().header,
                             children: [(0, l.jsx)("div", {
-                                className: M().title,
-                                children: S
+                                className: S().title,
+                                children: M
                             }), (0, l.jsx)(_.K, {
                                 icon: s.$Td,
                                 size: "x-small",
@@ -923,11 +923,11 @@
                                 onClick: y
                             })]
                         }), (0, l.jsx)("div", {
-                            className: M().description,
+                            className: S().description,
                             children: F
                         })]
                     }), (0, l.jsxs)("div", {
-                        className: M().navigation,
+                        className: S().navigation,
                         children: [1 !== d && (0, l.jsx)(_.K, {
                             icon: s.pkz,
                             size: "x-small",
@@ -936,7 +936,7 @@
                             mode: "dark",
                             onClick: c
                         }), (0, l.jsx)("div", {
-                            className: M().spacer
+                            className: S().spacer
                         }), (0, l.jsxs)(m.$, {
                             appearance: P ? "secondary" : "tertiary",
                             variation: "neutral",
@@ -954,7 +954,7 @@
                     position: N,
                     align: "start",
                     mode: "dark",
-                    containerClassName: M().popoverContainer,
+                    containerClassName: S().popoverContainer,
                     isCondensed: !0,
                     children: t
                 })
@@ -962,7 +962,7 @@
             var F = t(46001),
                 N = t.n(F),
                 j = t(98565),
-                T = t(23095),
+                T = t(76616),
                 E = t(28393),
                 L = t(97749),
                 O = t.n(L);
@@ -1044,7 +1044,7 @@
             }
             var D = t(96365),
                 k = t.n(D),
-                A = t(15298),
+                A = t(74941),
                 G = t(23891),
                 H = t(41475),
                 V = t(97064),
@@ -1133,12 +1133,12 @@
                         settings: {
                             show_icons_only_on_hover_preview: C
                         }
-                    } = (0, W.k)(), I = (0, G.mf)(m), P = (0, i.useMemo)(() => !(0, G.mf)(m) && m.favoriteCount > 0, [m]), f = (0, i.useMemo)(() => !!C && !I && x && m.commentCount > 0, [C, I, x, m]), M = (0, i.useMemo)(() => !!C && !I && P, [C, I, P]), S = (0, i.useMemo)(() => u(m.id) || P && !b(m.id), [u, P, b, m.id]);
+                    } = (0, W.k)(), I = (0, G.mf)(m), P = (0, i.useMemo)(() => !(0, G.mf)(m) && m.favoriteCount > 0, [m]), f = (0, i.useMemo)(() => !!C && !I && x && m.commentCount > 0, [C, I, x, m]), S = (0, i.useMemo)(() => !!C && !I && P, [C, I, P]), M = (0, i.useMemo)(() => u(m.id) || P && !b(m.id), [u, P, b, m.id]);
                     return (0, l.jsxs)("div", {
                         className: N()(q().imageWrapper, {
                             [q().hoverMode]: C && !I,
                             [q().hasComments]: f,
-                            [q().isFavorited]: M
+                            [q().isFavorited]: S
                         }),
                         children: [I ? (0, l.jsx)(Q, {
                             folder: m
@@ -1240,7 +1240,7 @@
                                     onClick: e => {
                                         e.stopPropagation(), g(m.id, P, "grid")
                                     },
-                                    disabled: S,
+                                    disabled: M,
                                     children: P ? (0, l.jsx)(s.k8v, {}) : (0, l.jsx)(s.LC, {})
                                 })
                             })]
@@ -1382,9 +1382,9 @@
                                 showFavorites: w
                             }, e.id);
                             return 0 === a ? (0, l.jsx)("div", {
-                                children: (0, l.jsx)(S, {
+                                children: (0, l.jsx)(M, {
                                     forStep: 2,
-                                    children: (0, l.jsx)(S, {
+                                    children: (0, l.jsx)(M, {
                                         forStep: 3,
                                         children: i
                                     })
@@ -1488,9 +1488,9 @@
                     t: f
                 } = (0, r.Bd)(), {
                     settings: {
-                        is_branded_previews_enabled: M
+                        is_branded_previews_enabled: S
                     }
-                } = (0, W.k)(), F = M && (u.length > 0 || !!h), [N, j] = (0, i.useState)(0);
+                } = (0, W.k)(), F = S && (u.length > 0 || !!h), [N, j] = (0, i.useState)(0);
                 (0, i.useEffect)(() => {
                     j(0)
                 }, [u]), (0, i.useEffect)(() => {
@@ -1575,7 +1575,7 @@
                         className: eu().headerContent,
                         children: [(0, l.jsxs)("div", {
                             className: eu().leftContent,
-                            children: [(0, l.jsx)(S, {
+                            children: [(0, l.jsx)(M, {
                                 forStep: 1,
                                 children: (0, l.jsx)("div", {
                                     className: eu().titleContainer,
@@ -1633,8 +1633,8 @@
                     })]
                 })
             };
-            var ep = t(27333),
-                ex = t(34113),
+            var ep = t(96622),
+                ex = t(37796),
                 ec = t(87875),
                 ey = t.n(ec);
 
@@ -1752,7 +1752,7 @@
             };
             var eP = t(79016),
                 ef = t.n(eP);
-            let eM = e => {
+            let eS = e => {
                 let {
                     zoomLevel: a,
                     onZoomChange: t
@@ -1785,7 +1785,7 @@
                     })]
                 })
             };
-            var eS = t(44059),
+            var eM = t(44059),
                 eF = t(46440),
                 eN = t(84645),
                 ej = t(64033),
@@ -1804,7 +1804,7 @@
             };
             var eL = t(3766),
                 eO = t.n(eL);
-            eS.EA.workerSrc = "//cdnjs.cloudflare.com/ajax/libs/pdf.js/".concat(eS.rE, "/pdf.worker.min.mjs");
+            eM.EA.workerSrc = "//cdnjs.cloudflare.com/ajax/libs/pdf.js/".concat(eM.rE, "/pdf.worker.min.mjs");
             let eR = c.Ay.isMobile ? 40 : 100;
 
             function eB(e) {
@@ -2072,10 +2072,10 @@
                         e.setSelectionRange(a, a)
                     }
                 }, [n]);
-                let M = (0, i.useCallback)(e => {
+                let S = (0, i.useCallback)(e => {
                         b(e.target.value), f()
                     }, [b, f]),
-                    S = (0, i.useCallback)(e => {
+                    M = (0, i.useCallback)(e => {
                         if ("Escape" === e.key) {
                             e.preventDefault(), m();
                             return
@@ -2154,8 +2154,8 @@
                         ref: C,
                         className: eK().commentEditTextarea,
                         value: o,
-                        onChange: M,
-                        onKeyDown: S,
+                        onChange: S,
+                        onKeyDown: M,
                         maxLength: eV.TO,
                         autoFocus: !0
                     }) : (0, l.jsxs)("div", {
@@ -2171,7 +2171,7 @@
             }
             var eY = t(7048),
                 eX = t.n(eY),
-                e$ = t(44938),
+                e$ = t(30403),
                 e0 = t(59289),
                 e1 = t(28513),
                 e4 = t(21848),
@@ -2179,9 +2179,9 @@
                 e8 = t(86781),
                 e6 = t(29788),
                 e7 = t.n(e6),
-                e5 = t(11096);
+                e3 = t(11096);
 
-            function e3(e) {
+            function e5(e) {
                 let {
                     fileId: a,
                     transferId: t,
@@ -2195,7 +2195,7 @@
                     isSelectingForReport: b = !1,
                     onCancelReportSelection: u,
                     onReportComment: h
-                } = e, [c, y] = (0, i.useState)(null), [v, C] = (0, i.useState)(""), [I, P] = (0, i.useState)(""), [f, M] = (0, i.useState)(!1), [S, F] = (0, i.useState)(null), [j, E] = (0, i.useState)(!1), [L, O] = (0, i.useState)(""), [R, B] = (0, i.useState)(""), D = (0, i.useRef)(!1), k = (0, i.useRef)(!1), A = (0, i.useRef)(null), G = (0, p.wA)(), H = (0, p.d4)(e8.JV), {
+                } = e, [c, y] = (0, i.useState)(null), [v, C] = (0, i.useState)(""), [I, P] = (0, i.useState)(""), [f, S] = (0, i.useState)(!1), [M, F] = (0, i.useState)(null), [j, E] = (0, i.useState)(!1), [L, O] = (0, i.useState)(""), [R, B] = (0, i.useState)(""), D = (0, i.useRef)(!1), k = (0, i.useRef)(!1), A = (0, i.useRef)(null), G = (0, p.wA)(), H = (0, p.d4)(e8.JV), {
                     t: V
                 } = (0, r.Bd)(), {
                     addToast: U
@@ -2241,9 +2241,9 @@
                     y(null), C(""), E(!1), O(""), B(""), ei()
                 }, [ei]);
                 (0, i.useEffect)(() => {
-                    ec(), D.current = !1, k.current = !1, M(!1), F(null)
+                    ec(), D.current = !1, k.current = !1, S(!1), F(null)
                 }, [a, ec]), (0, i.useEffect)(() => {
-                    D.current || !($.length >= 0) || er || (D.current = !0, (0, x.Od)().trackUserAction(e5.e.commentsSectionViewed({
+                    D.current || !($.length >= 0) || er || (D.current = !0, (0, x.Od)().trackUserAction(e3.e.commentsSectionViewed({
                         transferId: t,
                         fileId: a,
                         commentCount: $.length
@@ -2261,8 +2261,8 @@
                             d = l.top + l.height / 2,
                             n = i.top + i.height / 2 - d,
                             o = Math.max(-(a.scrollHeight - a.clientHeight), Math.min(0, a.scrollTop + n));
-                        Math.abs(n) > 1 && (a.scrollTop = o), k.current = !0, F(String(_)), M(!0), null == w || w(), e = window.setTimeout(() => {
-                            M(!1), F(null)
+                        Math.abs(n) > 1 && (a.scrollTop = o), k.current = !0, F(String(_)), S(!0), null == w || w(), e = window.setTimeout(() => {
+                            S(!1), F(null)
                         }, 3e3)
                     }), () => {
                         null !== e && window.clearTimeout(e), window.cancelAnimationFrame(a)
@@ -2315,13 +2315,13 @@
                                     recipientId: n,
                                     guestSecret: r
                                 })) {
-                                es(c, l, s), U(V("preview.comments.error.update_failed")), (0, x.Od)().trackUserAction(e5.e.commentUpdateFailed({
+                                es(c, l, s), U(V("preview.comments.error.update_failed")), (0, x.Od)().trackUserAction(e3.e.commentUpdateFailed({
                                     transferId: t,
                                     fileId: a,
                                     commentId: c
                                 })), eC();
                                 return
-                            }(0, x.Od)().trackUserAction(e5.e.commentUpdated({
+                            }(0, x.Od)().trackUserAction(e3.e.commentUpdated({
                                 transferId: t,
                                 fileId: a,
                                 commentId: c,
@@ -2342,13 +2342,13 @@
                                 recipientId: n,
                                 guestSecret: l
                             })) {
-                            i && e_(i), U(V("preview.comments.error.delete_failed")), (0, x.Od)().trackUserAction(e5.e.commentDeleteFailed({
+                            i && e_(i), U(V("preview.comments.error.delete_failed")), (0, x.Od)().trackUserAction(e3.e.commentDeleteFailed({
                                 transferId: t,
                                 fileId: a,
                                 commentId: e
                             }));
                             return
-                        }(0, x.Od)().trackUserAction(e5.e.commentDeleted({
+                        }(0, x.Od)().trackUserAction(e3.e.commentDeleted({
                             transferId: t,
                             fileId: a,
                             commentId: e,
@@ -2356,7 +2356,7 @@
                             wasGuestComment: !!l
                         })), l && K(a, e), en(!0)
                     }, [e_, U, $, q, a, J, H, o, n, K, em, d, en, V, t]),
-                    eM = (0, i.useCallback)(async (e, l, i) => {
+                    eS = (0, i.useCallback)(async (e, l, i) => {
                         var r;
                         let _ = e.trim(),
                             s = {
@@ -2384,30 +2384,30 @@
                             guestEmail: l,
                             guestName: i
                         });
-                        return "error" in m ? (em(s.id), U(V("preview.comments.error.create_failed")), (0, x.Od)().trackUserAction(e5.e.commentCreateFailed({
+                        return "error" in m ? (em(s.id), U(V("preview.comments.error.create_failed")), (0, x.Od)().trackUserAction(e3.e.commentCreateFailed({
                             transferId: t,
                             fileId: a
-                        })), !1) : ((null == (r = m.data) ? void 0 : r.guestSecret) && Z(a, m.data.id, m.data.guestSecret), (0, x.Od)().trackUserAction(e5.e.commentCreated({
+                        })), !1) : ((null == (r = m.data) ? void 0 : r.guestSecret) && Z(a, m.data.id, m.data.guestSecret), (0, x.Od)().trackUserAction(e3.e.commentCreated({
                             transferId: t,
                             fileId: a,
                             isLoggedIn: H,
                             commentLength: _.length
                         })), en(!0), !0)
                     }, [e_, U, W, a, H, o, n, em, Z, d, en, V, t]),
-                    eS = (0, i.useCallback)(async e => {
-                        if (H) return void await eM(e);
+                    eM = (0, i.useCallback)(async e => {
+                        if (H) return void await eS(e);
                         if (X()) {
                             let a = Q();
-                            await eM(e, null == a ? void 0 : a.email, null == a ? void 0 : a.name);
+                            await eS(e, null == a ? void 0 : a.email, null == a ? void 0 : a.name);
                             return
                         }
-                        O(e), E(!0), (0, x.Od)().trackUserAction(e5.e.guestModalShown({
+                        O(e), E(!0), (0, x.Od)().trackUserAction(e3.e.guestModalShown({
                             transferId: t,
                             fileId: a
                         }))
-                    }, [a, Q, X, H, eM, t]),
+                    }, [a, Q, X, H, eS, t]),
                     eF = (0, i.useCallback)(() => {
-                        E(!1), B(L), O(""), (0, x.Od)().trackUserAction(e5.e.guestModalDismissed({
+                        E(!1), B(L), O(""), (0, x.Od)().trackUserAction(e3.e.guestModalDismissed({
                             transferId: t,
                             fileId: a
                         }))
@@ -2416,14 +2416,14 @@
                         B("")
                     }, []),
                     ej = (0, i.useCallback)(async (e, l) => {
-                        Y(e, l), E(!1), (0, x.Od)().trackUserAction(e5.e.guestModalSubmitted({
+                        Y(e, l), E(!1), (0, x.Od)().trackUserAction(e3.e.guestModalSubmitted({
                             transferId: t,
                             fileId: a,
                             hasName: !!l.trim()
-                        })), await eM(L, e, l) || B(L), O("")
-                    }, [a, L, Y, eM, t]),
+                        })), await eS(L, e, l) || B(L), O("")
+                    }, [a, L, Y, eS, t]),
                     eT = (0, i.useCallback)(() => {
-                        E(!1), (0, x.Od)().trackUserAction(e5.e.guestModalSignupClicked({
+                        E(!1), (0, x.Od)().trackUserAction(e3.e.guestModalSignupClicked({
                             transferId: t,
                             fileId: a
                         })), G((0, e4.Hh)({
@@ -2482,7 +2482,7 @@
                                     onSaveEdit: eP,
                                     onDelete: ef,
                                     onEditingTextChange: C,
-                                    isHighlighted: f && S === e.id,
+                                    isHighlighted: f && M === e.id,
                                     isSelectingForReport: b,
                                     onReportClick: eI
                                 }, e.id)
@@ -2492,7 +2492,7 @@
                         fileId: a,
                         hasComments: $.length > 0,
                         isDisabled: null !== c,
-                        onSendComment: eS,
+                        onSendComment: eM,
                         commentsSectionRef: eg,
                         isAtCommentsBottom: eh,
                         findCenterAnchor: ex,
@@ -2568,7 +2568,7 @@
                             })]
                         }), (0, l.jsx)("div", {
                             className: eX().content,
-                            children: (0, l.jsx)(e3, {
+                            children: (0, l.jsx)(e5, {
                                 fileId: d,
                                 transferId: n,
                                 securityHash: o,
@@ -2663,8 +2663,8 @@
             function an(e) {
                 var a, t, n, o, _, w, g, b, u, h, p, y, v, C, I, P, f;
                 let {
-                    item: M,
-                    transferId: S,
+                    item: S,
+                    transferId: M,
                     securityHash: F,
                     recipientId: j,
                     password: E,
@@ -2684,8 +2684,8 @@
                 } = e, [$, ee] = (0, i.useState)(!1), [ea, et] = (0, i.useState)(!1), [el, ei] = (0, i.useState)(!1), {
                     reportComment: ed
                 } = (0, eG.B)({
-                    transferId: S,
-                    fileId: M.id,
+                    transferId: M,
+                    fileId: S.id,
                     securityHash: F,
                     password: E,
                     recipientId: j
@@ -2696,10 +2696,10 @@
                         enable_full_quality_previews: es,
                         better_pdf_visualization: em
                     }
-                } = (0, W.k)(), [ew, eg] = (0, i.useState)(!0), [eb, eu] = (0, i.useState)(!1), [eh, ep] = (0, i.useState)(1), [ex, ec] = (0, i.useState)(!1), ey = (0, i.useRef)(!1), ev = (0, i.useMemo)(() => K || Q, [K, Q]), eC = (0, i.useMemo)(() => M.favoriteCount > 0, [M.favoriteCount]), eI = (0, i.useMemo)(() => Z(M.id) || eC && !q(M.id), [Z, eC, q, M.id]), {
+                } = (0, W.k)(), [ew, eg] = (0, i.useState)(!0), [eb, eu] = (0, i.useState)(!1), [eh, ep] = (0, i.useState)(1), [ex, ec] = (0, i.useState)(!1), ey = (0, i.useRef)(!1), ev = (0, i.useMemo)(() => K || Q, [K, Q]), eC = (0, i.useMemo)(() => S.favoriteCount > 0, [S.favoriteCount]), eI = (0, i.useMemo)(() => Z(S.id) || eC && !q(S.id), [Z, eC, q, S.id]), {
                     fullQualityUrl: eP,
                     status: ef,
-                    loadedFileId: eS,
+                    loadedFileId: eM,
                     setStatus: eF
                 } = (e => {
                     let {
@@ -2764,46 +2764,46 @@
                         setStatus: x
                     }
                 })({
-                    transferId: S,
+                    transferId: M,
                     securityHash: F,
                     recipientId: j,
                     password: E,
-                    fileId: M.id,
-                    fileSize: M.size,
-                    preview: M.preview || void 0,
+                    fileId: S.id,
+                    fileSize: S.size,
+                    preview: S.preview || void 0,
                     enabled: es
-                }), [eN, ej] = (0, i.useState)(null), eT = (0, i.useRef)(null), eE = (0, i.useRef)(null), eL = eN === M.id;
+                }), [eN, ej] = (0, i.useState)(null), eT = (0, i.useRef)(null), eE = (0, i.useRef)(null), eL = eN === S.id;
                 (0, i.useEffect)(() => {
                     var e;
                     let a = eT.current,
                         t = null != (e = null == a ? void 0 : a.muted) && e;
-                    if (eL && eS === M.id && a && eE.current) {
+                    if (eL && eM === S.id && a && eE.current) {
                         let e = eE.current;
                         a.muted = !0, e.currentTime = a.currentTime, e.volume = a.volume, e.muted = t, a.paused ? e.pause() : e.play().catch(() => {})
                     }
                     return () => {
                         a && (a.muted = t)
                     }
-                }, [eL, eS, M.id]), (0, i.useEffect)(() => {
+                }, [eL, eM, S.id]), (0, i.useEffect)(() => {
                     let e;
                     return ey.current = !1, eg(!0), ee(!1), et(!1), ei(!1), e_(null), ej(null), ep(1), ec(!1), eb && (ec(!0), eu(!1), e = setTimeout(() => {
                         ec(!1)
                     }, 50)), () => {
                         e && clearTimeout(e)
                     }
-                }, [M.id]);
+                }, [S.id]);
                 let eO = (0, i.useCallback)(() => {
                     (0, x.Od)().trackUserAction(eo.fh.expandViewToggled({
-                        transferId: S,
-                        fileId: M.id,
+                        transferId: M,
+                        fileId: S.id,
                         isExpanded: !eb
                     })), eu(e => !e)
-                }, [S, M.id, eb]);
+                }, [M, S.id, eb]);
                 (0, i.useEffect)(() => {
                     if (er) return;
                     let e = new URLSearchParams(window.location.search).get("commentToHighlight");
                     e && e_(e)
-                }, [er, M.id]);
+                }, [er, S.id]);
                 let eR = (0, i.useCallback)(() => {
                         {
                             let e = new URL(window.location.href);
@@ -2853,8 +2853,8 @@
                         ee(!1), R()
                     }, [R]),
                     eQ = (0, i.useCallback)(() => {
-                        ee(!0), k(M.id)
-                    }, [k, M.id]),
+                        ee(!0), k(S.id)
+                    }, [k, S.id]),
                     eY = (0, i.useCallback)(() => {
                         eZ()
                     }, [eZ]),
@@ -2870,25 +2870,25 @@
                     }),
                     e1 = (0, i.useCallback)(() => {
                         ey.current || ((0, x.Od)().trackUserAction(eo.fh.previewPdfFileLoaded({
-                            transferId: S,
-                            fileId: M.id,
+                            transferId: M,
+                            fileId: S.id,
                             shouldUseCustomPdfPreview: !0,
                             hasError: !0
                         })), ey.current = !0), eg(!1)
-                    }, [M.id, S]),
+                    }, [S.id, M]),
                     e4 = (0, i.useCallback)(() => {
                         ey.current || ((0, x.Od)().trackUserAction(eo.fh.previewPdfFileLoaded({
-                            transferId: S,
-                            fileId: M.id,
+                            transferId: M,
+                            fileId: S.id,
                             shouldUseCustomPdfPreview: !0,
                             hasError: !1
                         })), ey.current = !0)
-                    }, [M.id, S]),
+                    }, [S.id, M]),
                     e2 = (0, i.useMemo)(() => {
                         var e;
-                        return (0, G.OV)((null == (e = M.preview) ? void 0 : e.originalFileMetadata) || {}, M.name, M.size, en)
-                    }, [null == (a = M.preview) ? void 0 : a.originalFileMetadata, M.name, M.size, en]),
-                    e8 = em && (null == (t = M.preview) ? void 0 : t.fileType) === V.t.PDF && c.Ay.isMobile;
+                        return (0, G.OV)((null == (e = S.preview) ? void 0 : e.originalFileMetadata) || {}, S.name, S.size, en)
+                    }, [null == (a = S.preview) ? void 0 : a.originalFileMetadata, S.name, S.size, en]),
+                    e8 = em && (null == (t = S.preview) ? void 0 : t.fileType) === V.t.PDF && c.Ay.isMobile;
                 return (0, l.jsxs)(l.Fragment, {
                     children: [(0, l.jsxs)("div", {
                         className: N()(aa().container, {
@@ -2904,12 +2904,12 @@
                                 children: [(0, l.jsx)(U.Ay, {
                                     type: "ArrowLeft"
                                 }), (0, l.jsx)("span", {
-                                    children: (0, H.r)(M.name)
+                                    children: (0, H.r)(S.name)
                                 })]
                             }), (0, l.jsxs)("div", {
                                 className: aa().headerRight,
                                 children: [(0, l.jsx)(ad, {
-                                    transferId: S,
+                                    transferId: M,
                                     showComments: K,
                                     onReportComment: eV
                                 }), (0, l.jsx)("button", {
@@ -2971,7 +2971,7 @@
                                                 [aa().sidebarCollapsedFavoriteButtonSelected]: eC
                                             }),
                                             onClick: e => {
-                                                e.stopPropagation(), z(M.id, eC, "item_detail")
+                                                e.stopPropagation(), z(S.id, eC, "item_detail")
                                             },
                                             disabled: eI,
                                             "aria-label": en("preview.favorites.tooltip_text"),
@@ -2982,7 +2982,7 @@
                                         onClick: eO,
                                         "aria-label": en("preview.comments.title"),
                                         children: [(0, l.jsx)(s.qks, {}), (0, l.jsx)("span", {
-                                            children: M.commentCount
+                                            children: S.commentCount
                                         })]
                                     })]
                                 }), (0, l.jsxs)("div", {
@@ -3033,14 +3033,14 @@
                                                         [aa().favoriteButtonSelected]: eC
                                                     }),
                                                     onClick: e => {
-                                                        e.stopPropagation(), z(M.id, eC, "item_detail")
+                                                        e.stopPropagation(), z(S.id, eC, "item_detail")
                                                     },
                                                     disabled: eI,
                                                     children: eC ? (0, l.jsx)(s.k8v, {}) : (0, l.jsx)(s.LC, {})
                                                 })
                                             })]
                                         }), (0, l.jsxs)("a", {
-                                            href: X.A.getSafetyUrl(S, "transfer"),
+                                            href: X.A.getSafetyUrl(M, "transfer"),
                                             className: aa().reportLinkMobile,
                                             "aria-label": en("preview.report_transfer"),
                                             children: [(0, l.jsx)(s.DFU, {
@@ -3049,9 +3049,9 @@
                                         })]
                                     }), K && !ex && (0, l.jsx)("div", {
                                         className: aa().commentsSectionDesktop,
-                                        children: (0, l.jsx)(e3, {
-                                            fileId: M.id,
-                                            transferId: S,
+                                        children: (0, l.jsx)(e5, {
+                                            fileId: S.id,
+                                            transferId: M,
                                             securityHash: F,
                                             recipientId: j,
                                             password: E,
@@ -3067,16 +3067,16 @@
                                 })]
                             }), (0, l.jsxs)("div", {
                                 className: N()(aa().previewArea, {
-                                    [aa().previewAreaLight]: M.isUnavailable || (null == (n = M.preview) ? void 0 : n.fileType) === V.t.AUDIO,
+                                    [aa().previewAreaLight]: S.isUnavailable || (null == (n = S.preview) ? void 0 : n.fileType) === V.t.AUDIO,
                                     [aa().previewAreaOnLeft]: ev,
                                     [aa().previewAreaExpanded]: eb,
                                     [aa().previewAreaPdfScrollable]: e8
                                 }),
-                                children: [!M.isUnavailable && (null == (o = M.preview) ? void 0 : o.status) !== "processing" && ((null == (_ = M.preview) ? void 0 : _.fileType) === V.t.IMAGE || (null == (w = M.preview) ? void 0 : w.fileType) === V.t.PDF) && (0, l.jsxs)("div", {
+                                children: [!S.isUnavailable && (null == (o = S.preview) ? void 0 : o.status) !== "processing" && ((null == (_ = S.preview) ? void 0 : _.fileType) === V.t.IMAGE || (null == (w = S.preview) ? void 0 : w.fileType) === V.t.PDF) && (0, l.jsxs)("div", {
                                     className: N()(aa().expandButtonWrapper, {
                                         [aa().actionsToolbar]: em
                                     }),
-                                    children: [em && (null == (g = M.preview) ? void 0 : g.fileType) === V.t.PDF && (0, l.jsx)(eM, {
+                                    children: [em && (null == (g = S.preview) ? void 0 : g.fileType) === V.t.PDF && (0, l.jsx)(eS, {
                                         zoomLevel: eh,
                                         onZoomChange: ep
                                     }), (0, l.jsx)(A.m, {
@@ -3102,7 +3102,7 @@
                                             })
                                         })
                                     })]
-                                }), M.isUnavailable ? (0, l.jsxs)("div", {
+                                }), S.isUnavailable ? (0, l.jsxs)("div", {
                                     className: aa().unavailableContainer,
                                     children: [(0, l.jsx)("div", {
                                         className: aa().unavailableIcon,
@@ -3120,13 +3120,13 @@
                                         }), en($ ? "preview.downloading" : "preview.download")]
                                     }), (0, l.jsx)("span", {
                                         className: aa().unavailableFileName,
-                                        children: (0, H.r)(M.name)
+                                        children: (0, H.r)(S.name)
                                     })]
-                                }) : (null == (b = M.preview) ? void 0 : b.status) === "processing" ? (0, l.jsx)(T.y, {
+                                }) : (null == (b = S.preview) ? void 0 : b.status) === "processing" ? (0, l.jsx)(T.y, {
                                     appearance: "neutral",
                                     size: "large",
                                     mode: "dark"
-                                }) : (null == (u = M.preview) ? void 0 : u.fileType) === V.t.IMAGE ? (0, l.jsx)("div", {
+                                }) : (null == (u = S.preview) ? void 0 : u.fileType) === V.t.IMAGE ? (0, l.jsx)("div", {
                                     className: N()(aa().imageContainer, {
                                         [aa().imageContainerExpanded]: eb
                                     }),
@@ -3135,8 +3135,8 @@
                                             [aa().previewMediaWrapperExpanded]: eb
                                         }),
                                         children: [(0, l.jsx)("img", {
-                                            src: null == (h = M.preview) ? void 0 : h.url,
-                                            alt: M.name,
+                                            src: null == (h = S.preview) ? void 0 : h.url,
+                                            alt: S.name,
                                             className: N()(aa().previewImage, {
                                                 [aa().previewImageExpanded]: eb
                                             }),
@@ -3144,10 +3144,10 @@
                                                 J && e.preventDefault()
                                             },
                                             draggable: !J && !eb
-                                        }), eP && ef === eA.LOADED && eS === M.id && (0, l.jsx)("img", {
+                                        }), eP && ef === eA.LOADED && eM === S.id && (0, l.jsx)("img", {
                                             src: eP,
                                             alt: "",
-                                            "data-file-id": M.id,
+                                            "data-file-id": S.id,
                                             className: N()({
                                                 [aa().previewImageFullQualityLoaded]: eL,
                                                 [aa().previewImageFullQualityLoading]: !eL,
@@ -3155,7 +3155,7 @@
                                             }),
                                             onLoad: e => {
                                                 let a = e.target.dataset.fileId;
-                                                a === M.id && ej(a)
+                                                a === S.id && ej(a)
                                             },
                                             onError: () => {
                                                 eF(eA.ERROR)
@@ -3168,11 +3168,11 @@
                                             errorMessage: en("preview.full_quality.error")
                                         })]
                                     })
-                                }) : (null == (p = M.preview) ? void 0 : p.fileType) === V.t.VIDEO ? (0, l.jsxs)("div", {
+                                }) : (null == (p = S.preview) ? void 0 : p.fileType) === V.t.VIDEO ? (0, l.jsxs)("div", {
                                     className: aa().previewMediaWrapper,
                                     children: [(0, l.jsx)("video", {
                                         ref: eT,
-                                        src: null == (y = M.preview) ? void 0 : y.url,
+                                        src: null == (y = S.preview) ? void 0 : y.url,
                                         className: N()(aa().previewVideo, {
                                             [aa().previewVideoFadingOut]: eL
                                         }),
@@ -3183,10 +3183,10 @@
                                             J && e.preventDefault()
                                         },
                                         controlsList: J ? "nodownload" : void 0
-                                    }), eP && ef === eA.LOADED && eS === M.id && (0, l.jsx)("video", {
+                                    }), eP && ef === eA.LOADED && eM === S.id && (0, l.jsx)("video", {
                                         ref: eE,
                                         src: eP,
-                                        "data-file-id": M.id,
+                                        "data-file-id": S.id,
                                         className: N()(aa().previewVideo, {
                                             [aa().previewVideoFullQualityLoaded]: eL,
                                             [aa().previewVideoFullQualityLoading]: !eL
@@ -3197,7 +3197,7 @@
                                         onCanPlayThrough: e => {
                                             let a = e.target,
                                                 t = a.dataset.fileId;
-                                            t === M.id && a.videoWidth > 0 && a.videoHeight > 0 ? ej(t) : t === M.id && eF(eA.ERROR)
+                                            t === S.id && a.videoWidth > 0 && a.videoHeight > 0 ? ej(t) : t === S.id && eF(eA.ERROR)
                                         },
                                         onError: () => {
                                             eF(eA.ERROR)
@@ -3209,13 +3209,13 @@
                                     }), ef === eA.ERROR && (0, l.jsx)(at, {
                                         errorMessage: en("preview.full_quality.error")
                                     })]
-                                }) : (null == (v = M.preview) ? void 0 : v.fileType) === V.t.AUDIO ? (0, l.jsxs)("div", {
+                                }) : (null == (v = S.preview) ? void 0 : v.fileType) === V.t.AUDIO ? (0, l.jsxs)("div", {
                                     className: aa().audioContainer,
                                     children: [(0, l.jsx)("span", {
                                         className: aa().audioFileName,
-                                        children: (0, H.r)(M.name)
+                                        children: (0, H.r)(S.name)
                                     }), (0, l.jsx)("audio", {
-                                        src: null == (C = M.preview) ? void 0 : C.url,
+                                        src: null == (C = S.preview) ? void 0 : C.url,
                                         className: aa().previewAudio,
                                         preload: "metadata",
                                         controls: !0,
@@ -3225,9 +3225,9 @@
                                         },
                                         controlsList: J ? "nodownload" : void 0
                                     })]
-                                }) : (null == (I = M.preview) ? void 0 : I.fileType) === V.t.PDF && ew ? (0, l.jsx)(eB, {
-                                    fileUrl: (null == (P = M.preview) ? void 0 : P.url) || "",
-                                    itemId: M.id,
+                                }) : (null == (I = S.preview) ? void 0 : I.fileType) === V.t.PDF && ew ? (0, l.jsx)(eB, {
+                                    fileUrl: (null == (P = S.preview) ? void 0 : P.url) || "",
+                                    itemId: S.id,
                                     onLoadSuccess: e4,
                                     onLoadError: e1,
                                     isPreviewOnly: J,
@@ -3235,14 +3235,14 @@
                                     zoomLevel: eh,
                                     enablePageScroll: e8,
                                     onZoomChange: ep
-                                }) : (null == (f = M.preview) ? void 0 : f.fileType) !== V.t.PDF || ew ? (0, l.jsx)(U.Ay, {
+                                }) : (null == (f = S.preview) ? void 0 : f.fileType) !== V.t.PDF || ew ? (0, l.jsx)(U.Ay, {
                                     type: "DocumentFilled",
                                     color: "white"
                                 }) : (0, l.jsxs)("div", {
                                     className: aa().pdfContainer,
                                     onClick: () => {
                                         var e;
-                                        return window.open(null == (e = M.preview) ? void 0 : e.url, "_blank")
+                                        return window.open(null == (e = S.preview) ? void 0 : e.url, "_blank")
                                     },
                                     style: {
                                         cursor: "pointer"
@@ -3263,7 +3263,7 @@
                                     }),
                                     onClick: ez,
                                     children: [(0, l.jsx)(s.qks, {}), (0, l.jsxs)("span", {
-                                        children: [en("preview.comments.title"), " (", M.commentCount, ")"]
+                                        children: [en("preview.comments.title"), " (", S.commentCount, ")"]
                                     })]
                                 }), Q && (0, l.jsx)("button", {
                                     className: N()(aa().mobileFavoriteButton, {
@@ -3271,7 +3271,7 @@
                                         [aa().mobileFavoriteButtonWithoutComments]: !K
                                     }),
                                     onClick: e => {
-                                        e.stopPropagation(), z(M.id, eC, "item_detail")
+                                        e.stopPropagation(), z(S.id, eC, "item_detail")
                                     },
                                     disabled: eI,
                                     children: eC ? (0, l.jsx)(s.k8v, {}) : (0, l.jsx)(s.LC, {})
@@ -3281,12 +3281,12 @@
                     }), K && (0, l.jsx)(e9, {
                         isOpen: ea,
                         onClose: eq,
-                        fileId: M.id,
-                        transferId: S,
+                        fileId: S.id,
+                        transferId: M,
                         securityHash: F,
                         recipientId: j,
                         password: E,
-                        commentsCount: M.commentCount,
+                        commentsCount: S.commentCount,
                         commentToHighlight: er,
                         isHighlightEnabled: ea,
                         onHighlightHandled: eR,
@@ -3500,10 +3500,10 @@
                                     showFavorites: g
                                 }, e.id);
                                 return 0 === a ? (0, l.jsx)("div", {
-                                    children: (0, l.jsx)(S, {
+                                    children: (0, l.jsx)(M, {
                                         forStep: 2,
                                         positionOverride: "bottom",
-                                        children: (0, l.jsx)(S, {
+                                        children: (0, l.jsx)(M, {
                                             forStep: 3,
                                             children: i
                                         })
@@ -3632,8 +3632,8 @@
             var aI = t(13955),
                 aP = t(51580),
                 af = t(49089),
-                aM = t(4471),
-                aS = t(81529);
+                aS = t(4471),
+                aM = t(81529);
             let aF = "preview_visited_";
             var aN = t(89395),
                 aj = t(31838),
@@ -3737,32 +3737,33 @@
             };
             var aW = t(6037),
                 az = t(14781),
-                aq = t(28338),
-                aZ = t(50820),
-                aJ = t(56682),
-                aK = t(91025),
-                aQ = t(2269),
-                aY = t(51153),
-                aX = t(87379),
-                a$ = t(77612),
-                a0 = t(45612),
-                a1 = t(8997),
-                a4 = t(91192),
-                a2 = t(45401),
-                a8 = t(23376),
-                a6 = t(39623),
-                a7 = t(63306),
+                aq = t(71303),
+                aZ = t(28338),
+                aJ = t(50820),
+                aK = t(56682),
+                aQ = t(91025),
+                aY = t(2269),
+                aX = t(51153),
+                a$ = t(87379),
+                a0 = t(77612),
+                a1 = t(45612),
+                a4 = t(8997),
+                a2 = t(91192),
+                a8 = t(45401),
+                a6 = t(23376),
+                a7 = t(39623),
+                a3 = t(63306),
                 a5 = t(26137),
-                a3 = t(12637),
-                a9 = t(45477),
-                te = t(26573),
-                ta = t(72546),
-                tt = t(10694),
-                tl = t(70316),
-                ti = t(67745),
-                td = t.n(ti);
-            let tn = "wt_preview_notifications",
-                to = () => {
+                a9 = t(12637),
+                te = t(45477),
+                ta = t(26573),
+                tt = t(72546),
+                tl = t(10694),
+                ti = t(70316),
+                td = t(67745),
+                tn = t.n(td);
+            let to = "wt_preview_notifications",
+                tr = () => {
                     var e;
                     let a = (0, p.wA)(),
                         {
@@ -3770,23 +3771,23 @@
                         } = (0, r.Bd)(),
                         {
                             isLoading: d
-                        } = (0, a1.h)(),
-                        n = (0, p.d4)(ta.Kj),
-                        o = (0, p.d4)(te.vC),
-                        m = (0, a8.VI)(),
-                        w = !!(0, a4.c)(n),
+                        } = (0, a4.h)(),
+                        n = (0, p.d4)(tt.Kj),
+                        o = (0, p.d4)(ta.vC),
+                        m = (0, a6.VI)(),
+                        w = !!(0, a2.c)(n),
                         b = (0, p.d4)(aA.oR),
-                        u = (0, p.d4)(a9.jk),
-                        h = (0, p.d4)(a9.M0),
-                        y = (0, p.d4)(a3.yD),
-                        v = (0, p.d4)(aQ.LJ),
+                        u = (0, p.d4)(te.jk),
+                        h = (0, p.d4)(te.M0),
+                        y = (0, p.d4)(a9.yD),
+                        v = (0, p.d4)(aY.LJ),
                         [C, I] = (0, i.useState)(0),
                         P = (0, i.useRef)(!1),
                         {
                             settings: {
                                 enable_comments_in_previews: f,
-                                enable_favorites_in_previews: M,
-                                is_wetransfer_sign_enabled: S,
+                                enable_favorites_in_previews: S,
+                                is_wetransfer_sign_enabled: M,
                                 is_branded_previews_enabled: F,
                                 open_preview_automatically_enabled: L,
                                 preview_resolution_segment: O
@@ -3810,7 +3811,7 @@
                                     return
                             }
                         }, [O]),
-                        D = (0, aZ.IX)(n.viewOption),
+                        D = (0, aJ.IX)(n.viewOption),
                         {
                             transferId: k,
                             items: A,
@@ -3824,12 +3825,12 @@
                             isUsingPreviewV2: K,
                             transferPassword: Q,
                             hasPreviewItems: Y
-                        } = (0, aM.J)({
+                        } = (0, aS.J)({
                             shouldFetchAllPreviews: !0,
                             ...B
                         });
                     (0, i.useEffect)(() => {
-                        F && u && !P.current && (!h || 0 === h.length) && (P.current = !0, a((0, a6.V0)({
+                        F && u && !P.current && (!h || 0 === h.length) && (P.current = !0, a((0, a7.V0)({
                             name: "string" == typeof u ? u : ""
                         })))
                     }, [a, F, u, h]);
@@ -3905,10 +3906,10 @@
                         previewsWallpapers: (0, i.useMemo)(() => h && h.length > 0 ? h.filter(e => e.src).map(e => ({
                             url: e.src,
                             type: e.wallpaperType || e_.B.IMAGE
-                        })) : y && y.length > 0 ? y.filter(e => e.asset_url).map(e => ({
+                        })) : w && y && y.length > 0 ? y.filter(e => e.asset_url).map(e => ({
                             url: e.asset_url,
                             type: e.wallpaper_type || e_.B.IMAGE
-                        })) : [], [h, y]),
+                        })) : [], [h, y, w]),
                         transferMessage: U,
                         isBrandedPreviewsEnabled: F,
                         refreshKey: C
@@ -3916,21 +3917,21 @@
                         state: ei
                     } = (0, p.d4)(a5._), {
                         canScanForMalware: ed
-                    } = (0, a0.F)();
+                    } = (0, a1.F)();
                     (0, i.useEffect)(() => {
                         let e = !!(ee.length > 0 || ea);
                         return F && e ? document.body.setAttribute("is-branded-preview", "true") : document.body.removeAttribute("is-branded-preview"), () => {
                             document.body.removeAttribute("is-branded-preview")
                         }
                     }, [F, ee, ea]);
-                    let [es, em] = (0, i.useState)(!1), [ew, eg] = (0, i.useState)(!1), [eb, eu] = (0, i.useState)(!1), [ep, ex] = (0, i.useState)(!1), [ec, ey] = (0, i.useState)(!1), [eC, eI] = (0, i.useState)(!1), [eP, ef] = (0, i.useState)([]), [eM, eS] = (0, i.useState)(er._6.NAME), [eF, eN] = (0, i.useState)(er.qi.GRID), [ej, eT] = (0, i.useState)(!1), [eE, eL] = (0, i.useState)(V), {
+                    let [es, em] = (0, i.useState)(!1), [ew, eg] = (0, i.useState)(!1), [eb, eu] = (0, i.useState)(!1), [ep, ex] = (0, i.useState)(!1), [ec, ey] = (0, i.useState)(!1), [eC, eI] = (0, i.useState)(!1), [eP, ef] = (0, i.useState)([]), [eS, eM] = (0, i.useState)(er._6.NAME), [eF, eN] = (0, i.useState)(er.qi.GRID), [ej, eT] = (0, i.useState)(!1), [eE, eL] = (0, i.useState)(V), {
                         updateDisplayName: eO
                     } = (0, aW.$S)();
                     (0, i.useEffect)(() => {
                         eL(V)
                     }, [V]);
                     let [eR, eB] = (0, i.useState)(50), eD = (0, i.useCallback)(e => {
-                        eB(50), eS(e)
+                        eB(50), eM(e)
                     }, []), ek = (0, i.useRef)(v);
                     (0, i.useEffect)(() => {
                         ek.current && !v && I(e => e + 1), ek.current = v
@@ -3938,13 +3939,13 @@
                     let [eA, eG] = (0, i.useState)(!1), eH = (0, i.useRef)(null), eV = (0, i.useRef)(null), eU = (0, i.useRef)({
                         top: 0,
                         element: "page"
-                    }), eW = (0, i.useRef)(null), ez = (0, i.useRef)(!1), eq = (0, i.useRef)(Date.now()), eZ = (0, i.useMemo)(() => A.some(e => e.commentCount > 0), [A]), eJ = (0, i.useMemo)(() => !!w || (n.workspaceId ? (0, a$.g)() === n.workspaceId : !!el && (0, a$.g)() === el), [w, n.workspaceId, el]);
-                    (0, aK.I)(F && w ? k : void 0), (0, aK.I)(F && eJ ? k : void 0);
+                    }), eW = (0, i.useRef)(null), ez = (0, i.useRef)(!1), eq = (0, i.useRef)(Date.now()), eZ = (0, i.useMemo)(() => A.some(e => e.commentCount > 0), [A]), eJ = (0, i.useMemo)(() => !!w || (n.workspaceId ? (0, a0.g)() === n.workspaceId : !!el && (0, a0.g)() === el), [w, n.workspaceId, el]);
+                    (0, aQ.I)(F && w ? k : void 0), (0, aQ.I)(F && eJ ? k : void 0);
                     let eK = (f || w && eZ) && n.allowComments,
                         eQ = (0, i.useMemo)(() => {
                             let e = [er._6.NAME, er._6.TYPE, er._6.SIZE];
-                            return M && e.push(er._6.FAVORITE), e
-                        }, [M]),
+                            return S && e.push(er._6.FAVORITE), e
+                        }, [S]),
                         {
                             isPreviewPagePaywall: eY,
                             isDownloadPagePaywall: eX
@@ -3953,8 +3954,8 @@
                         e0 = (0, i.useCallback)(() => {
                             eY && a((0, aA.UK)(aA.pU.PREVIEWS_HARD_MONETIZATION_PREVIEW_PAGE))
                         }, [a, eY]),
-                        e1 = (0, i.useMemo)(() => Y && n.viewOption !== aZ._9.DOWNLOAD_ONLY, [Y, n.viewOption]),
-                        e4 = (0, i.useMemo)(() => n.state === tt.r.PASSWORD_PROTECTED && !Q, [n.state, Q]),
+                        e1 = (0, i.useMemo)(() => Y && n.viewOption !== aJ._9.DOWNLOAD_ONLY, [Y, n.viewOption]),
+                        e4 = (0, i.useMemo)(() => n.state === tl.r.PASSWORD_PROTECTED && !Q, [n.state, Q]),
                         e2 = (0, i.useMemo)(() => d || H, [d, H]),
                         {
                             selectedItem: e8,
@@ -3977,7 +3978,7 @@
                             e.removeEventListener("scroll", a)
                         }
                     }, [e8, e2, ew]);
-                    let e5 = (0, i.useCallback)(() => {
+                    let e3 = (0, i.useCallback)(() => {
                             var e;
                             null == (e = eH.current) || e.scrollTo({
                                 top: 0,
@@ -3985,7 +3986,7 @@
                             })
                         }, []),
                         {
-                            notifySender: e3
+                            notifySender: e5
                         } = (0, af.N)({
                             transferId: k || ""
                         }),
@@ -4008,7 +4009,7 @@
                         let {
                             transferId: a,
                             enabled: t
-                        } = e, [l] = (0, aS.DE)(), d = (0, i.useRef)(null), n = (0, i.useCallback)(async () => {
+                        } = e, [l] = (0, aM.DE)(), d = (0, i.useRef)(null), n = (0, i.useCallback)(async () => {
                             if (a && d.current !== a) {
                                 if (!(e => {
                                         try {
@@ -4055,7 +4056,7 @@
                     (0, i.useEffect)(() => {
                         e0()
                     }, [e0]), (0, i.useEffect)(() => {
-                        eX && (0, a2.m)(k || "", q || "", z, "")
+                        eX && (0, a8.m)(k || "", q || "", z, "")
                     }, [eX, k, q, z]), (0, i.useEffect)(() => {
                         if (e2 || 0 === A.length || ez.current) return;
                         let e = (0, G.q_)(A);
@@ -4070,8 +4071,8 @@
                     }, [e8, eP, e2]);
                     let as = (0, i.useMemo)(() => {
                             let e = (0, G.Xl)(a_, eP);
-                            return (0, G.Ls)(e, eM)
-                        }, [a_, eP, eM]),
+                            return (0, G.Ls)(e, eS)
+                        }, [a_, eP, eS]),
                         am = (0, i.useCallback)(e => {
                             eV.current && eV.current.scrollHeight > eV.current.clientHeight ? eU.current = {
                                 top: eV.current.scrollTop,
@@ -4119,25 +4120,25 @@
                             previewableFileCount: a
                         })), eI(!0)
                     }, [e2, eC, ew, J, A, k, O]), (0, i.useEffect)(() => {
-                        !k || e2 || !ew || !e1 || n.downloaderEmailVerification !== aq.B.TRACKING && n.downloaderEmailVerification !== aq.B.RESTRICTED && (e => {
+                        !k || e2 || !ew || !e1 || n.downloaderEmailVerification !== aZ.B.TRACKING && n.downloaderEmailVerification !== aZ.B.RESTRICTED && (e => {
                             try {
-                                let a = sessionStorage.getItem(tn);
+                                let a = sessionStorage.getItem(to);
                                 if (!a) return !1;
                                 return JSON.parse(a).includes(e)
                             } catch (e) {
                                 return !1
                             }
                         })(k) || (async () => {
-                            await e3(), (e => {
+                            await e5(), (e => {
                                 try {
-                                    let a = sessionStorage.getItem(tn),
+                                    let a = sessionStorage.getItem(to),
                                         t = a ? JSON.parse(a) : [];
-                                    t.includes(e) || (t.push(e), sessionStorage.setItem(tn, JSON.stringify(t)))
+                                    t.includes(e) || (t.push(e), sessionStorage.setItem(to, JSON.stringify(t)))
                                 } catch (e) {}
                             })(k)
                         })()
-                    }, [k, e2, ew, e3, e1, n.downloaderEmailVerification]), (0, i.useEffect)(() => {
-                        d || eb || ew || k && q && (eu(!0), a((0, tl.A4)({
+                    }, [k, e2, ew, e5, e1, n.downloaderEmailVerification]), (0, i.useEffect)(() => {
+                        d || eb || ew || k && q && (eu(!0), a((0, ti.A4)({
                             id: k,
                             secret: q,
                             recipientId: z,
@@ -4146,26 +4147,26 @@
                         })), eu(!1), eg(!0))
                     }, [d, ed, a, ew, eb, z, q, k, Q]), (0, i.useEffect)(() => {
                         if (!ew) return;
-                        n.state === tt.r.EXPIRED && (0, a2.m)(k || "", q || "", z);
-                        let e = (0, tl.d5)(k);
-                        if (n.state === tt.r.RECOVERING)
+                        n.state === tl.r.EXPIRED && (0, a8.m)(k || "", q || "", z);
+                        let e = (0, ti.d5)(k);
+                        if (n.state === tl.r.RECOVERING)
                             if (e) {
-                                let e = n.password_protected && !n.password ? tt.r.PASSWORD_PROTECTED : tt.r.DOWNLOADABLE;
+                                let e = n.password_protected && !n.password ? tl.r.PASSWORD_PROTECTED : tl.r.DOWNLOADABLE;
                                 a({
-                                    type: a7.o1.TRANSFER_SET_STATE,
+                                    type: a3.o1.TRANSFER_SET_STATE,
                                     state: e
                                 })
-                            } else(0, a2.m)(k || "", q || "", z)
+                            } else(0, a8.m)(k || "", q || "", z)
                     }, [a, ew, z, q, n.password, n.password_protected, n.state, k, n]), (0, i.useEffect)(() => {
-                        ew && (n.state !== tt.r.PASSWORD_PROTECTED || e4 || (0, a2.m)(k || "", q || "", z))
+                        ew && (n.state !== tl.r.PASSWORD_PROTECTED || e4 || (0, a8.m)(k || "", q || "", z))
                     }, [e4, ew, z, q, n.state, k]), (0, i.useEffect)(() => {
                         if (!ew || !k) return;
-                        let e = !!(0, aX.TS)(k);
-                        n.paid && !e && (0, a2.m)(k, null != q ? q : "", z)
+                        let e = !!(0, a$.TS)(k);
+                        n.paid && !e && (0, a8.m)(k, null != q ? q : "", z)
                     }, [ew, q, n.paid, k, z]), (0, i.useEffect)(() => {
-                        ew && k && q && !H && (e1 || (0, a2.m)(k || "", q || "", z))
+                        ew && k && q && !H && (e1 || (0, a8.m)(k || "", q || "", z))
                     }, [ew, H, e1, z, q, k]);
-                    let ag = S && !c.Ay.isMobile && !localStorage.getItem(E.V),
+                    let ag = M && !c.Ay.isMobile && !localStorage.getItem(E.V),
                         ab = (0, i.useCallback)(() => {
                             eT(!0)
                         }, []),
@@ -4188,18 +4189,21 @@
                             }
                         }, [eO, k]),
                         ap = (0, i.useCallback)(() => {
-                            k && a((0, aQ.VK)(aY.$.previews, k))
+                            k && a((0, aY.VK)(aX.$.previews, k))
                         }, [a, k]),
                         ax = (0, i.useCallback)(() => {
                             em(!0), a({
-                                type: a7.o1.TRANSFER_STATE_DOWNLOAD_STARTING
-                            }), ag && !b && a((0, aA.UK)(aA.pU.WE_TRANSFER_SIGN)), a((0, tl.F4)({
+                                type: a3.o1.TRANSFER_STATE_DOWNLOAD_STARTING
+                            }), (0, x.Od)().trackUserAction(aq.Sf.downloadRequested({
+                                location: aq.Cx.PREVIEW_PAGE,
+                                downloadType: aq.zh.ALL_FILES
+                            })), ag && !b && a((0, aA.UK)(aA.pU.WE_TRANSFER_SIGN)), a((0, ti.F4)({
                                 transfer: n,
                                 secret: q,
                                 recipientId: null != z && z,
                                 domainUserId: o.domainUserId,
                                 uploadInProgress: !1,
-                                transferGroup: aJ.a.RECEIVED,
+                                transferGroup: aK.a.RECEIVED,
                                 orionClient: m,
                                 isFromQRCode: !1,
                                 fromPreviewPage: !0
@@ -4209,10 +4213,13 @@
                             (0, x.Od)().trackUserAction(eo.fh.backToTransferClicked({
                                 transferId: k || "",
                                 isPreviewMonetized: eY
-                            })), L || D ? (0, a2.m)(k || "", q || "", z) : window.history.back()
+                            })), L || D ? (0, a8.m)(k || "", q || "", z) : window.history.back()
                         }, [k, eY, L, D, q, z]),
                         av = (0, i.useCallback)(e => {
-                            ag && !b && a((0, aA.UK)(aA.pU.WE_TRANSFER_SIGN)), a((0, tl.Vv)({
+                            (0, x.Od)().trackUserAction(aq.Sf.downloadRequested({
+                                location: aq.Cx.PREVIEW_PAGE,
+                                downloadType: aq.zh.SINGLE_FILE
+                            })), ag && !b && a((0, aA.UK)(aA.pU.WE_TRANSFER_SIGN)), a((0, ti.Vv)({
                                 transfer: n,
                                 secret: q,
                                 recipientId: null != z && z,
@@ -4220,7 +4227,7 @@
                                 fileId: e,
                                 domainUserId: o.domainUserId,
                                 uploadInProgress: !1,
-                                transferGroup: aJ.a.RECEIVED,
+                                transferGroup: aK.a.RECEIVED,
                                 orionClient: m,
                                 malwareProtectionStatus: ei,
                                 isFromQRCode: !1,
@@ -4259,7 +4266,7 @@
                             })), eB(50), eN(e))
                         }, [k, eF]);
                     return e2 || !ew ? (0, l.jsx)("div", {
-                        className: td().loadingContainer,
+                        className: tn().loadingContainer,
                         children: (0, l.jsx)(T.y, {
                             size: "large",
                             appearance: "neutral",
@@ -4304,12 +4311,12 @@
                                 },
                                 isPreviewOnly: D,
                                 showComments: eK,
-                                showFavorites: M,
+                                showFavorites: S,
                                 onToggleFavorite: ae,
                                 canRemoveFavorite: ai,
                                 isFavoriteLoading: ad,
                                 isTransferOwner: eJ
-                            }), M && (0, l.jsx)(ev, {
+                            }), S && (0, l.jsx)(ev, {
                                 isOpen: e9,
                                 onClose: aa,
                                 onConfirm: at,
@@ -4318,7 +4325,7 @@
                             })]
                         }) : (0, l.jsxs)("div", {
                             ref: eH,
-                            className: td().page,
+                            className: tn().page,
                             children: [(0, l.jsxs)(l.Fragment, {
                                 children: [(0, l.jsx)(eh, {
                                     transferId: n.id || "",
@@ -4340,28 +4347,28 @@
                                     onEditImageStart: ap
                                 }), !e2 && ew && (0, l.jsxs)(l.Fragment, {
                                     children: [(0, l.jsxs)("div", {
-                                        className: N()(td().toolbar, {
-                                            [td().toolbarWithBreadcrumbs]: eP.length > 0
+                                        className: N()(tn().toolbar, {
+                                            [tn().toolbarWithBreadcrumbs]: eP.length > 0
                                         }),
                                         children: [(0, l.jsx)(R, {
                                             currentPath: eP,
                                             onNavigate: ar
                                         }), (0, l.jsxs)("div", {
-                                            className: td().toolbarControls,
+                                            className: tn().toolbarControls,
                                             children: [(0, l.jsx)(aC, {
-                                                value: eM,
+                                                value: eS,
                                                 onChange: eD,
                                                 availableOptions: eQ
                                             }), (0, l.jsx)("button", {
-                                                className: N()(td().iconButton, {
-                                                    [td().iconButtonActive]: eF === er.qi.GRID
+                                                className: N()(tn().iconButton, {
+                                                    [tn().iconButtonActive]: eF === er.qi.GRID
                                                 }),
                                                 onClick: () => aH(er.qi.GRID),
                                                 "aria-label": "Grid view",
                                                 children: (0, l.jsx)(s.WhD, {})
                                             }), (0, l.jsx)("button", {
-                                                className: N()(td().iconButton, {
-                                                    [td().iconButtonActive]: eF === er.qi.LIST
+                                                className: N()(tn().iconButton, {
+                                                    [tn().iconButtonActive]: eF === er.qi.LIST
                                                 }),
                                                 onClick: () => aH(er.qi.LIST),
                                                 "aria-label": "List view",
@@ -4369,8 +4376,8 @@
                                             })]
                                         })]
                                     }), (0, l.jsx)("div", {
-                                        className: N()(td().gridContainer, {
-                                            [td().gridContainerWithProcessing]: J > 0
+                                        className: N()(tn().gridContainer, {
+                                            [tn().gridContainerWithProcessing]: J > 0
                                         }),
                                         ref: eV,
                                         children: eF === er.qi.GRID ? (0, l.jsx)(en, {
@@ -4383,7 +4390,7 @@
                                             isPreviewOnly: D,
                                             showComments: eK,
                                             shouldBlurThumbnails: eY,
-                                            showFavorites: M,
+                                            showFavorites: S,
                                             visibleCount: eR,
                                             onVisibleCountChange: eB
                                         }) : (0, l.jsx)(aw, {
@@ -4396,12 +4403,12 @@
                                             isPreviewOnly: D,
                                             showComments: eK,
                                             shouldBlurThumbnails: eY,
-                                            showFavorites: M,
+                                            showFavorites: S,
                                             visibleCount: eR,
                                             onVisibleCountChange: eB
                                         })
                                     }), eR >= as.length && (0, l.jsx)("div", {
-                                        className: td().reportTransferContainer,
+                                        className: tn().reportTransferContainer,
                                         children: (0, l.jsx)(az.A, {
                                             customClassName: "report__transfer--preview",
                                             publicId: k || void 0
@@ -4412,23 +4419,23 @@
                                     in: J > 0,
                                     timeout: 300,
                                     classNames: {
-                                        enter: td().processingEnter,
-                                        enterActive: td().processingEnterActive,
-                                        enterDone: td().processingEnterDone,
-                                        exit: td().processingExit,
-                                        exitActive: td().processingExitActive,
-                                        exitDone: td().processingExitDone
+                                        enter: tn().processingEnter,
+                                        enterActive: tn().processingEnterActive,
+                                        enterDone: tn().processingEnterDone,
+                                        exit: tn().processingExit,
+                                        exitActive: tn().processingExitActive,
+                                        exitDone: tn().processingExitDone
                                     },
                                     unmountOnExit: !0,
                                     children: (0, l.jsxs)("div", {
                                         ref: aO,
-                                        className: td().processingCount,
+                                        className: tn().processingCount,
                                         children: [(0, l.jsx)(T.y, {
                                             size: "large",
                                             appearance: "neutral"
                                         }), Z, "/", A.length, " —", " ", t("preview.processing")]
                                     })
-                                }), M && (0, l.jsx)(ev, {
+                                }), S && (0, l.jsx)(ev, {
                                     isOpen: e9,
                                     onClose: aa,
                                     onConfirm: at,
@@ -4437,8 +4444,8 @@
                                 })]
                             }), eA && (0, l.jsx)(_.K, {
                                 ref: eW,
-                                className: td().scrollToTopButton,
-                                onClick: e5,
+                                className: tn().scrollToTopButton,
+                                onClick: e3,
                                 variation: "neutral",
                                 "aria-label": "Scroll to top",
                                 icon: s.Pq0
@@ -4447,7 +4454,7 @@
                     }) : null
                 };
 
-            function tr() {
+            function t_() {
                 return (0, i.useEffect)(() => {
                     let e = document.body.style.backgroundColor,
                         a = document.body.style.overflow;
@@ -4455,7 +4462,7 @@
                         document.body.style.backgroundColor = e, document.body.style.overflow = a
                     }
                 }, []), (0, l.jsx)(P, {
-                    children: (0, l.jsx)(to, {})
+                    children: (0, l.jsx)(tr, {})
                 })
             }
         },
@@ -5908,4 +5915,4 @@
         }
     }
 ]);
-//# sourceMappingURL=preview.4e02abee51a22439.js.map
+//# sourceMappingURL=preview.43349c13f0a83425.js.map

@@ -859,6 +859,6229 @@
                 contentButtons: "SeatsLimitReachedWarningModal_contentButtons__4byxx"
             }
         },
+        21315: (e, a, t) => {
+            "use strict";
+            t.r(a), t.d(a, {
+                Account: () => dA,
+                default: () => dj
+            });
+            var l = t(23798),
+                i = t(21462),
+                d = t(75546),
+                n = t(38169),
+                o = t(30403),
+                s = t(76616),
+                _ = t(46001),
+                r = t.n(_),
+                m = t(13897),
+                w = t(71623);
+            (0, t(85752).$)(".styles_module_wtToggleSwitch__615c9e13{-webkit-appearance:none;-moz-appearance:none;appearance:none;background-color:#fff;border-radius:9999px;box-shadow:inset -1rem 0 0 2.5px #353535,inset 0 0 0 2.5px #353535,0 0 0 0;cursor:pointer;height:1.5rem;transition-duration:.1s;transition-property:color,background-color,border-color,text-decoration-color,fill,stroke,opacity,box-shadow,transform,filter,-webkit-backdrop-filter;transition-property:color,background-color,border-color,text-decoration-color,fill,stroke,opacity,box-shadow,transform,filter,backdrop-filter;transition-property:color,background-color,border-color,text-decoration-color,fill,stroke,opacity,box-shadow,transform,filter,backdrop-filter,-webkit-backdrop-filter;transition-timing-function:cubic-bezier(0,0,.2,1);width:2.5rem}.styles_module_wtToggleSwitch__615c9e13:hover{box-shadow:inset -1rem 0 0 2.5px #464646,inset 0 0 0 2.5px #464646,0 0 0 0}.styles_module_wtToggleSwitch__615c9e13:active{box-shadow:inset -1rem 0 0 2.5px #161616,inset 0 0 0 2.5px #161616,0 0 0 0}.styles_module_wtToggleSwitch__615c9e13:focus-visible{box-shadow:inset -1rem 0 0 2.5px #353535,inset 0 0 0 2.5px #353535,0 0 0 4px #464646;outline:none}.styles_module_wtToggleSwitch__615c9e13:focus-visible:hover{box-shadow:inset -1rem 0 0 2.5px #464646,inset 0 0 0 2.5px #464646,0 0 0 4px #464646}.styles_module_wtToggleSwitch__615c9e13:focus-visible:active{box-shadow:inset -1rem 0 0 2.5px #161616,inset 0 0 0 2.5px #161616,0 0 0 4px #464646}.styles_module_wtToggleSwitch__615c9e13:checked{box-shadow:calc(1rem - .5px) 0 0 2.5px #3767ea inset,-.5px 0 0 2.5px #3767ea inset,0 0 0 0}.styles_module_wtToggleSwitch__615c9e13:checked:hover{box-shadow:inset 1rem 0 0 2.5px #4e7df7,inset 0 0 0 2.5px #4e7df7,0 0 0 0}.styles_module_wtToggleSwitch__615c9e13:checked:active{box-shadow:inset 1rem 0 0 2.5px #1842ce,inset 0 0 0 2.5px #1842ce,0 0 0 0}.styles_module_wtToggleSwitch__615c9e13:checked:focus-visible{box-shadow:calc(1rem - .5px) 0 0 2.5px #3767ea inset,-.5px 0 0 2.5px #3767ea inset,0 0 0 4px #4e7df7;outline:none}.styles_module_wtToggleSwitch__615c9e13:checked:focus-visible:hover{box-shadow:inset 1rem 0 0 2.5px #4e7df7,inset 0 0 0 2.5px #4e7df7,0 0 0 4px #4e7df7}.styles_module_wtToggleSwitch__615c9e13:checked:focus-visible:active{box-shadow:inset 1rem 0 0 2.5px #1842ce,inset 0 0 0 2.5px #1842ce,0 0 0 4px #4e7df7}.styles_module_wtToggleSwitch__615c9e13:disabled{opacity:50%;pointer-events:none}");
+            var g = {
+                "wt-toggle-switch": "styles_module_wtToggleSwitch__615c9e13"
+            };
+            let b = (0, i.forwardRef)((e, a) => {
+                var {
+                    className: t
+                } = e, i = (0, m.Tt)(e, ["className"]);
+                return (0, l.jsx)("input", Object.assign({}, i, {
+                    type: "checkbox",
+                    role: "switch",
+                    className: (0, w.A)(g["wt-toggle-switch"], t),
+                    ref: a
+                }))
+            });
+            b.displayName = "ToggleSwitch";
+            let c = {
+                notificationSettingsSaved: e => ({
+                    kind: "notification_settings_saved",
+                    info: {
+                        settings: e
+                    }
+                }),
+                notificationSettingsUpdated: e => ({
+                    kind: "notification_settings_updated",
+                    info: {
+                        setting: e
+                    }
+                })
+            };
+            var h = t(65509),
+                p = t(87963),
+                u = t(86781),
+                x = t(43032),
+                y = t.n(x);
+            let f = e => {
+                let {
+                    data: a,
+                    initialSettings: t = []
+                } = e, {
+                    t: o
+                } = (0, d.Bd)(), s = (0, n.d4)(u.mB), [_, m] = (0, i.useState)(!1), w = (0, i.useMemo)(() => _, [_]), g = (0, i.useCallback)(e => t.find(a => a.key === e), [t]), [x, f] = (0, i.useState)(() => {
+                    let e = {};
+                    return a.forEach(a => {
+                        let t = g(a.key);
+                        if (t) e[a.key] = t.enabled;
+                        else {
+                            var l;
+                            let t = null == (l = s.preferences) ? void 0 : l[a.key];
+                            e[a.key] = null != t ? t : a.enabled
+                        }
+                    }), e
+                });
+                (0, i.useEffect)(() => {
+                    if (t.length > 0) {
+                        let e = {};
+                        a.forEach(a => {
+                            let t = g(a.key);
+                            if (t) e[a.key] = t.enabled;
+                            else {
+                                var l;
+                                let t = null == (l = s.preferences) ? void 0 : l[a.key];
+                                e[a.key] = null != t ? t : a.enabled
+                            }
+                        }), f(e)
+                    }
+                }, [t, a, s.preferences, g, s]);
+                let M = (0, i.useCallback)(async (e, a) => {
+                        m(!0);
+                        try {
+                            await h.A.User.updateNotificationSettings({
+                                enabled: a
+                            }, {
+                                pathExtValues: {
+                                    key: e
+                                }
+                            }), (0, p.Od)().trackUserAction(c.notificationSettingsUpdated({
+                                key: e,
+                                enabled: a
+                            }))
+                        } catch (t) {
+                            f(t => ({
+                                ...t,
+                                [e]: !a
+                            }))
+                        }
+                        m(!1)
+                    }, []),
+                    k = (0, i.useCallback)(e => () => {
+                        if (w) return;
+                        let a = !x[e];
+                        f(t => ({
+                            ...t,
+                            [e]: a
+                        })), M(e, a)
+                    }, [w, x, M]);
+                return (0, l.jsx)("div", {
+                    className: r()(y().notificationSetting, {
+                        [y().disabled]: w
+                    }),
+                    children: a.map(e => (0, l.jsxs)("div", {
+                        className: y().settingRow,
+                        children: [(0, l.jsxs)("div", {
+                            className: y().settingTextContainer,
+                            children: [(0, l.jsx)("span", {
+                                className: y().settingLabel,
+                                children: o(e.label)
+                            }), (0, l.jsx)("span", {
+                                className: y().settingDescription,
+                                children: o(e.description)
+                            })]
+                        }), (0, l.jsx)(b, {
+                            onChange: k(e.key),
+                            checked: x[e.key],
+                            disabled: w
+                        })]
+                    }, e.key))
+                })
+            };
+            var M = t(64674),
+                k = t(5712),
+                v = t(30631),
+                C = t(62760),
+                S = t(38790),
+                A = t.n(S);
+            let I = [{
+                    key: "notify_sender_of_expiry",
+                    label: "notification_settings.expiry.notify_sender_of_expiry_label",
+                    description: "notification_settings.expiry.notify_sender_of_expiry_description",
+                    enabled: !0
+                }],
+                j = [{
+                    key: "notify_sender_on_upload_success",
+                    label: "notification_settings.upload.transfer_notify_sender_on_upload_success_label",
+                    description: "notification_settings.upload.transfer_notify_sender_on_upload_success_description",
+                    enabled: !0
+                }],
+                D = [{
+                    key: "notify_sender_on_download",
+                    label: "notification_settings.download.transfer_notify_sender_on_download_label",
+                    description: "notification_settings.download.transfer_notify_sender_on_download_description",
+                    enabled: !0
+                }],
+                N = [{
+                    key: "notify_sender_on_preview",
+                    label: "notification_settings.preview.transfer_notify_sender_on_preview_label",
+                    description: "notification_settings.preview.transfer_notify_sender_on_preview_description",
+                    enabled: !0
+                }, {
+                    key: "notify_on_preview_comment",
+                    label: "notification_settings.preview.notify_on_preview_comment_label",
+                    description: "notification_settings.preview.notify_on_preview_comment_description",
+                    enabled: !0
+                }],
+                P = [{
+                    key: "notify_sender_of_updates",
+                    label: "notification_settings.updates.notify_on_updates_label",
+                    description: "notification_settings.updates.notify_on_updates_description",
+                    enabled: !0
+                }];
+
+            function B() {
+                let {
+                    t: e
+                } = (0, d.Bd)(), {
+                    addToast: a
+                } = (0, o.d)(), t = (0, n.d4)(u.mB), {
+                    settings: {
+                        enable_comments_in_previews: _
+                    }
+                } = (0, C.k)(), [r, m] = (0, i.useState)([]), [w, g] = (0, i.useState)(!0), b = (0, i.useMemo)(() => N.filter(e => "notify_on_preview_comment" !== e.key || _), [_]);
+                return (0, i.useEffect)(() => {
+                    document.title = "".concat(e("notification_settings.page_name"), " - WeTransfer")
+                }, [e]), (0, k.S)(() => {
+                    (async () => {
+                        try {
+                            var t;
+                            g(!0);
+                            let e = await h.A.User.getNotificationSettings();
+                            if (e && "body" in e && (null == (t = e.body) ? void 0 : t.notification_settings)) {
+                                m(e.body.notification_settings);
+                                let a = e.body.notification_settings.map(e => ({
+                                    key: e.key,
+                                    enabled: e.enabled
+                                }));
+                                (0, p.Od)().trackUserAction(c.notificationSettingsSaved(a))
+                            }
+                        } catch (t) {
+                            a(e("notification_settings.error.failed_to_fetch"), {
+                                mode: "dark",
+                                autoHideDuration: 4e3
+                            })
+                        } finally {
+                            g(!1)
+                        }
+                    })()
+                }), (0, l.jsxs)("div", {
+                    className: A().notificationSettings,
+                    children: [!v.Ay.isMobile && (0, l.jsx)(M.a, {
+                        setWorkspaceName: t.given_name.trim() + " " + t.family_name,
+                        showWorkspaceName: !0,
+                        panelName: e("notification_settings.panel_name"),
+                        panelDescription: e("notification_settings.panel_description")
+                    }), (0, l.jsx)("div", {
+                        className: A().PanelContent,
+                        children: w ? (0, l.jsx)("div", {
+                            className: A().loadingContainer,
+                            children: (0, l.jsx)(s.y, {
+                                appearance: "neutral",
+                                size: "large"
+                            })
+                        }) : (0, l.jsxs)(l.Fragment, {
+                            children: [(0, l.jsxs)("div", {
+                                className: A().section,
+                                children: [(0, l.jsx)("p", {
+                                    className: A().sectionHeading,
+                                    children: e("notification_settings.about_your_transfers_heading")
+                                }), (0, l.jsxs)("div", {
+                                    className: A().notificationSettingsContainer,
+                                    children: [(0, l.jsx)(f, {
+                                        data: j,
+                                        initialSettings: r
+                                    }), (0, l.jsx)(f, {
+                                        data: I,
+                                        initialSettings: r
+                                    })]
+                                })]
+                            }), (0, l.jsxs)("div", {
+                                className: A().section,
+                                children: [(0, l.jsx)("p", {
+                                    className: A().sectionHeading,
+                                    children: e("notification_settings.download_notifications_heading")
+                                }), (0, l.jsxs)("div", {
+                                    className: A().sectionDisclaimer,
+                                    children: [(0, l.jsx)("span", {
+                                        className: A().sectionDisclaimerTitle,
+                                        children: e("notification_settings.tracked_disclaimer_title")
+                                    }), (0, l.jsx)("span", {
+                                        className: A().sectionDisclaimerDescription,
+                                        children: e("notification_settings.tracked_disclaimer_description")
+                                    })]
+                                }), (0, l.jsx)(f, {
+                                    data: D,
+                                    initialSettings: r
+                                })]
+                            }), (0, l.jsxs)("div", {
+                                className: A().section,
+                                children: [(0, l.jsx)("p", {
+                                    className: A().sectionHeading,
+                                    children: e("notification_settings.preview.preview_notifications_heading")
+                                }), (0, l.jsx)(f, {
+                                    data: b,
+                                    initialSettings: r
+                                })]
+                            }), (0, l.jsxs)("div", {
+                                className: A().section,
+                                children: [(0, l.jsx)("p", {
+                                    className: A().sectionHeading,
+                                    children: e("notification_settings.updates_notifications_heading")
+                                }), (0, l.jsx)(f, {
+                                    data: P,
+                                    initialSettings: r
+                                })]
+                            })]
+                        })
+                    })]
+                })
+            }
+            var T = t(97116),
+                E = t(31051),
+                L = t(87843),
+                W = t(96622),
+                R = t(61360),
+                U = t(77085),
+                O = t.n(U);
+            let F = e => {
+                let {
+                    isOpen: a,
+                    onClose: t
+                } = e, {
+                    t: i
+                } = (0, d.Bd)();
+                return (0, l.jsx)(W.a, {
+                    isOpen: a,
+                    onClose: t,
+                    showCloseButton: !0,
+                    size: "medium",
+                    appElement: (0, R.Y)(),
+                    children: (0, l.jsxs)("div", {
+                        className: O().container,
+                        children: [(0, l.jsxs)("div", {
+                            className: O().content,
+                            children: [(0, l.jsx)("div", {
+                                className: O().title,
+                                children: i("page.data_processing.settings.medical_consent.modal.title")
+                            }), (0, l.jsxs)("div", {
+                                className: O().text,
+                                children: [i("page.data_processing.settings.medical_consent.modal.paragraph_1"), (0, l.jsx)("p", {
+                                    children: (0, l.jsx)(d.x6, {
+                                        i18nKey: "page.data_processing.settings.medical_consent.modal.paragraph_2",
+                                        components: {
+                                            strong: (0, l.jsx)("strong", {})
+                                        }
+                                    })
+                                }), (0, l.jsx)("p", {
+                                    children: (0, l.jsx)(d.x6, {
+                                        i18nKey: "page.data_processing.settings.medical_consent.modal.paragraph_3",
+                                        components: {
+                                            strong: (0, l.jsx)("strong", {})
+                                        }
+                                    })
+                                }), i("page.data_processing.settings.medical_consent.modal.paragraph_4")]
+                            })]
+                        }), (0, l.jsx)(T.$, {
+                            fullwidth: !0,
+                            appearance: "secondary",
+                            onClick: t,
+                            children: i("page.data_processing.settings.medical_consent.modal.dismiss_button")
+                        })]
+                    })
+                })
+            };
+            var G = t(64867),
+                K = t.n(G);
+            let H = () => {
+                var e;
+                let {
+                    t: a
+                } = (0, d.Bd)(), t = (0, n.d4)(u.JV), [o, s] = (0, i.useState)(!1), {
+                    data: _,
+                    isFetching: r
+                } = (0, L.QG)(void 0, {
+                    skip: !t
+                }), [m, {
+                    isLoading: w
+                }] = (0, L.ED)(), g = !t || r || w, b = (0, i.useCallback)(async e => {
+                    g || await m({
+                        value: e.target.checked
+                    })
+                }, [g, m]), c = (0, i.useCallback)(() => {
+                    s(!0)
+                }, []), h = (0, i.useCallback)(() => {
+                    s(!1)
+                }, []);
+                return (0, l.jsxs)("div", {
+                    className: K().container,
+                    children: [(0, l.jsxs)("div", {
+                        className: K().header,
+                        children: [(0, l.jsx)("div", {
+                            className: K().title,
+                            children: a("page.data_processing.settings.medical_consent.title")
+                        }), (0, l.jsx)(T.$, {
+                            appearance: "tertiary",
+                            size: "x-small",
+                            onClick: c,
+                            children: a("page.data_processing.settings.medical_consent.read_more")
+                        })]
+                    }), (0, l.jsx)(E._, {
+                        name: "medical-consent",
+                        wrapperClassName: K().checkbox,
+                        label: a("page.data_processing.settings.medical_consent.text"),
+                        onChange: b,
+                        checked: null != (e = null == _ ? void 0 : _.value) && e,
+                        labelSize: "large",
+                        disabled: g
+                    }), (0, l.jsx)(F, {
+                        isOpen: o,
+                        onClose: h
+                    })]
+                })
+            };
+            var z = t(78313),
+                Y = t.n(z);
+            let V = () => {
+                    let {
+                        t: e
+                    } = (0, d.Bd)(), a = (0, n.d4)(u.JV), {
+                        data: t,
+                        isFetching: o
+                    } = (0, L.sg)(void 0, {
+                        skip: !a
+                    }), [s, {
+                        isLoading: _
+                    }] = (0, L.YF)(), r = o || _, m = (0, i.useCallback)(async e => {
+                        r || await s({
+                            value: e.target.checked
+                        })
+                    }, [r, s]);
+                    return (0, l.jsxs)("div", {
+                        className: Y().container,
+                        children: [(0, l.jsx)("div", {
+                            className: Y().title,
+                            children: e("page.data_processing.settings.research_purpose.title")
+                        }), (0, l.jsx)(E._, {
+                            name: "research-purpose",
+                            wrapperClassName: Y().checkbox,
+                            label: e("page.data_processing.settings.research_purpose.text"),
+                            onChange: m,
+                            checked: (null == t ? void 0 : t.value) === !0,
+                            labelSize: "large",
+                            disabled: r
+                        })]
+                    })
+                },
+                X = e => {
+                    let {
+                        isEnterprise: a
+                    } = e;
+                    return (0, l.jsxs)(l.Fragment, {
+                        children: [!a && (0, l.jsx)(V, {}), (0, l.jsx)(H, {})]
+                    })
+                };
+            var Q = t(25402),
+                q = t(18648),
+                Z = t.n(q);
+
+            function J(e) {
+                let {
+                    isOpen: a,
+                    onClose: t
+                } = e, {
+                    t: i
+                } = (0, d.Bd)(), o = (0, Q.A)(), s = (0, n.d4)(u.mB), _ = new URL("https://".concat(o.NEXT_PUBLIC_DOMAIN, "/log-in"));
+                return (null == s ? void 0 : s.email) && _.searchParams.set("loginHint", s.email), (0, l.jsxs)(W.a, {
+                    isOpen: a,
+                    onClose: t,
+                    showCloseButton: !0,
+                    "aria-labelledby": "delete-account-mfa-modal-heading",
+                    appElement: (0, R.Y)(),
+                    children: [(0, l.jsx)("h2", {
+                        id: "delete-account-mfa-modal-heading",
+                        className: Z().heading,
+                        children: i("page.delete_account.mfa_embedded_modal.heading")
+                    }), (0, l.jsx)("p", {
+                        className: Z().body,
+                        children: (0, l.jsx)(d.x6, {
+                            i18nKey: "page.delete_account.mfa_embedded_modal.body",
+                            components: [(0, l.jsx)("br", {}, 0)]
+                        })
+                    }), (0, l.jsxs)("div", {
+                        className: Z().actions,
+                        children: [(0, l.jsx)(T.$, {
+                            fullwidth: !0,
+                            as: "a",
+                            type: "button",
+                            href: _.toString(),
+                            children: i("page.delete_account.mfa_embedded_modal.login_button")
+                        }), (0, l.jsx)(T.$, {
+                            fullwidth: !0,
+                            appearance: "secondary",
+                            onClick: t,
+                            type: "button",
+                            children: i("page.delete_account.mfa_embedded_modal.cancel_button")
+                        })]
+                    })]
+                })
+            }
+            var $ = t(11076),
+                ee = t(78598),
+                ea = t(5209),
+                et = t.n(ea);
+
+            function el(e) {
+                let {
+                    isOpen: a,
+                    onClose: t
+                } = e, {
+                    t: n
+                } = (0, d.Bd)(), [o, {
+                    isLoading: s,
+                    reset: _
+                }] = (0, $.gB)(), r = (0, Q.A)(), m = (0, i.useCallback)(() => {
+                    _(), null == t || t()
+                }, [t, _]), w = (0, i.useCallback)(async () => {
+                    try {
+                        await o({
+                            context: "delete-account"
+                        }), window.location.href = "https://".concat(r.NEXT_PUBLIC_AUTH_DOMAIN, "/mfa-check?callback=https://").concat(r.NEXT_PUBLIC_AUTH_DOMAIN, "/api/v1/callback/delete-account")
+                    } catch (e) {
+                        ee.A.track(e)
+                    }
+                }, [r.NEXT_PUBLIC_AUTH_DOMAIN, o]);
+                return (0, l.jsxs)(W.a, {
+                    isOpen: a,
+                    shouldCloseOnEsc: !s,
+                    onClose: m,
+                    showCloseButton: !0,
+                    "aria-labelledby": "delete-account-mfa-modal-heading",
+                    appElement: (0, R.Y)(),
+                    children: [(0, l.jsx)("h2", {
+                        id: "delete-account-mfa-modal-heading",
+                        className: et().heading,
+                        children: n("page.delete_account.mfa_modal.heading")
+                    }), (0, l.jsx)("p", {
+                        className: et().body,
+                        children: n("page.delete_account.mfa_modal.body")
+                    }), (0, l.jsxs)("div", {
+                        className: et().actions,
+                        children: [(0, l.jsx)(T.$, {
+                            fullwidth: !0,
+                            variation: "destructive",
+                            onClick: w,
+                            disabled: s,
+                            children: n("page.delete_account.mfa_modal.delete_button")
+                        }), (0, l.jsx)(T.$, {
+                            fullwidth: !0,
+                            appearance: "secondary",
+                            onClick: m,
+                            disabled: s,
+                            type: "button",
+                            children: n("page.delete_account.mfa_modal.cancel_button")
+                        })]
+                    })]
+                })
+            }
+            var ei = t(55450),
+                ed = t(66774),
+                en = t.n(ed);
+
+            function eo(e) {
+                let {
+                    isOpen: a,
+                    onClose: t,
+                    onSubmit: o
+                } = e, {
+                    t: _
+                } = (0, d.Bd)(), r = (0, n.d4)(u.mB), [m, {
+                    isLoading: w,
+                    reset: g
+                }] = (0, ei.JD)(), b = (0, i.useMemo)(() => ({
+                    "delete-account-checkbox-1": !1,
+                    "delete-account-checkbox-2": !1,
+                    "delete-account-checkbox-3": !1,
+                    "delete-account-checkbox-4": !1,
+                    "delete-account-checkbox-5": !1
+                }), []), [c, h] = (0, i.useState)(b), p = (0, i.useCallback)(e => {
+                    let {
+                        name: a,
+                        checked: t
+                    } = e.target;
+                    h(e => ({
+                        ...e,
+                        [a]: t
+                    }))
+                }, []), x = 0 === Object.keys(c).length || Object.values(c).some(e => !e), y = (0, i.useCallback)(() => {
+                    h(b), g(), null == t || t()
+                }, [b, t, g]), f = (0, i.useCallback)(() => {
+                    if (r.otpEnabled && null !== r.otpEnabledAt) {
+                        h(b), null == o || o();
+                        return
+                    }(async () => {
+                        try {
+                            await m().unwrap(), h(b), null == o || o()
+                        } catch (e) {
+                            ee.A.track(e)
+                        }
+                    })()
+                }, [b, o, m, r.otpEnabled, r.otpEnabledAt]);
+                return (0, l.jsxs)(W.a, {
+                    isOpen: a,
+                    shouldCloseOnEsc: !w,
+                    onClose: y,
+                    showCloseButton: !0,
+                    "aria-labelledby": "delete-account-modal-heading",
+                    appElement: (0, R.Y)(),
+                    children: [(0, l.jsx)("h2", {
+                        id: "delete-account-modal-heading",
+                        className: en().heading,
+                        children: _("page.delete_account.modal.heading")
+                    }), (0, l.jsx)("p", {
+                        className: en().body,
+                        children: _("page.delete_account.modal.body")
+                    }), (0, l.jsxs)("div", {
+                        className: en().checkboxes,
+                        children: [(0, l.jsx)(E._, {
+                            name: "delete-account-checkbox-1",
+                            wrapperClassName: en().checkboxWrapper,
+                            label: (0, l.jsx)(d.x6, {
+                                i18nKey: "page.delete_account.modal.checkbox_label_1"
+                            }),
+                            onChange: p,
+                            checked: c["delete-account-checkbox-1"]
+                        }), (0, l.jsx)(E._, {
+                            name: "delete-account-checkbox-2",
+                            wrapperClassName: en().checkboxWrapper,
+                            label: (0, l.jsx)(d.x6, {
+                                i18nKey: "page.delete_account.modal.checkbox_label_2"
+                            }),
+                            onChange: p,
+                            checked: c["delete-account-checkbox-2"]
+                        }), (0, l.jsx)(E._, {
+                            name: "delete-account-checkbox-3",
+                            wrapperClassName: en().checkboxWrapper,
+                            label: (0, l.jsx)(d.x6, {
+                                i18nKey: "page.delete_account.modal.checkbox_label_3",
+                                components: [(0, l.jsx)("a", {
+                                    className: en().link,
+                                    href: "https://help.wetransfer.com",
+                                    target: "_blank",
+                                    rel: "noreferrer"
+                                }, 0)]
+                            }),
+                            onChange: p,
+                            checked: c["delete-account-checkbox-3"]
+                        }), (0, l.jsx)(E._, {
+                            name: "delete-account-checkbox-4",
+                            wrapperClassName: en().checkboxWrapper,
+                            label: (0, l.jsx)(d.x6, {
+                                i18nKey: "page.delete_account.modal.checkbox_label_4"
+                            }),
+                            onChange: p,
+                            checked: c["delete-account-checkbox-4"]
+                        }), (0, l.jsx)(E._, {
+                            name: "delete-account-checkbox-5",
+                            wrapperClassName: en().checkboxWrapper,
+                            label: (0, l.jsx)(d.x6, {
+                                i18nKey: "page.delete_account.modal.checkbox_label_5"
+                            }),
+                            onChange: p,
+                            checked: c["delete-account-checkbox-5"]
+                        })]
+                    }), (0, l.jsxs)("div", {
+                        className: en().actions,
+                        children: [(0, l.jsx)(T.$, {
+                            fullwidth: !0,
+                            disabled: x || w,
+                            onClick: f,
+                            children: w ? (0, l.jsx)(s.y, {
+                                mode: "dark"
+                            }) : _("page.delete_account.modal.delete_button")
+                        }), (0, l.jsx)(T.$, {
+                            onClick: y,
+                            fullwidth: !0,
+                            appearance: "secondary",
+                            disabled: w,
+                            type: "button",
+                            children: _("page.delete_account.modal.cancel_button")
+                        })]
+                    })]
+                })
+            }
+            var es = t(37796),
+                e_ = t(30149),
+                er = t(57455),
+                em = t(82710),
+                ew = t(21848),
+                eg = t(4905),
+                eb = t(40334),
+                ec = t(78080),
+                eh = t(17047),
+                ep = t.n(eh);
+
+            function eu(e) {
+                let a, {
+                        isOpen: t,
+                        onClose: o
+                    } = e,
+                    {
+                        t: _
+                    } = (0, d.Bd)(),
+                    [r, m] = (0, i.useState)(""),
+                    w = (0, n.d4)(u.mB),
+                    g = (0, i.useRef)(null),
+                    [b, {
+                        reset: c
+                    }] = (0, ei.JD)(),
+                    {
+                        countDownTimer: h,
+                        startCountDownTimer: p
+                    } = (0, ec.g)(),
+                    x = (0, n.wA)(),
+                    [y, {
+                        isLoading: f,
+                        error: M
+                    }] = (0, ei.UT)();
+                (0, i.useEffect)(() => {
+                    t && setTimeout(() => {
+                        var e;
+                        null == (e = g.current) || e.focus()
+                    }, 500)
+                }, [t]);
+                let k = (0, i.useCallback)(() => {
+                        m(""), c(), null == o || o()
+                    }, [o, c]),
+                    v = (0, i.useCallback)(async e => {
+                        e.preventDefault();
+                        try {
+                            await y({
+                                otp: r
+                            }).unwrap();
+                            try {
+                                (0, er.h2)(w.email)
+                            } catch (e) {}
+                            await x((0, ew.ri)())
+                        } catch (e) {
+                            ee.A.track(e)
+                        }
+                    }, [y, x, w.email, r]),
+                    C = (0, i.useCallback)(async () => {
+                        try {
+                            await b().unwrap(), p(eg.X)
+                        } catch (e) {}
+                    }, [b, p]),
+                    S = r.length !== eb.o.transfer.verificationCodeLength || f;
+                if ((0, em.E)(M)) {
+                    var A;
+                    a = _((null == (A = M.data) ? void 0 : A.error) === "invalid_otp" ? "page.delete_account.otp_modal.errors.invalid_otp" : "page.delete_account.otp_modal.errors.generic")
+                }
+                return (0, l.jsxs)(W.a, {
+                    isOpen: t,
+                    shouldCloseOnEsc: !f,
+                    onClose: k,
+                    showCloseButton: !0,
+                    "aria-labelledby": "delete-account-otp-modal-heading",
+                    appElement: (0, R.Y)(),
+                    children: [(0, l.jsx)("h2", {
+                        id: "delete-account-otp-modal-heading",
+                        className: ep().heading,
+                        children: _("page.delete_account.otp_modal.heading")
+                    }), (0, l.jsx)("p", {
+                        className: ep().body,
+                        children: (0, l.jsx)(d.x6, {
+                            i18nKey: "page.delete_account.otp_modal.body",
+                            values: {
+                                email: w.email
+                            },
+                            components: [(0, l.jsx)("span", {
+                                className: ep().email,
+                                title: w.email
+                            }, 0)]
+                        })
+                    }), (0, l.jsxs)("form", {
+                        onSubmit: v,
+                        children: [(0, l.jsx)("div", {
+                            className: ep().inputField,
+                            children: (0, l.jsx)(es.A, {
+                                name: "verification-code",
+                                label: _("page.delete_account.otp_modal.placeholder"),
+                                labelType: "hidden",
+                                placeholder: _("page.delete_account.otp_modal.placeholder"),
+                                onChange: e => m(e.target.value),
+                                value: r,
+                                maxLength: eb.o.transfer.verificationCodeLength,
+                                inputClassName: ep().input,
+                                ref: g,
+                                caption: a,
+                                state: M ? "invalid" : "default"
+                            })
+                        }), (0, l.jsx)("div", {
+                            className: ep().resendContainer,
+                            children: (0, l.jsx)(e_.N, {
+                                as: "button",
+                                className: ep().resendLink,
+                                type: "button",
+                                onClick: C,
+                                disabled: null !== h,
+                                children: null !== h ? _("page.delete_account.otp_modal.resend_button_timer", {
+                                    timer: h
+                                }) : _("page.delete_account.otp_modal.resend_button")
+                            })
+                        }), (0, l.jsxs)("div", {
+                            className: ep().actions,
+                            children: [(0, l.jsx)(T.$, {
+                                fullwidth: !0,
+                                variation: "destructive",
+                                disabled: S,
+                                type: "submit",
+                                children: f ? (0, l.jsx)(s.y, {}) : _("page.delete_account.otp_modal.delete_button")
+                            }), (0, l.jsx)(T.$, {
+                                fullwidth: !0,
+                                appearance: "secondary",
+                                onClick: k,
+                                disabled: f,
+                                type: "button",
+                                children: _("page.delete_account.otp_modal.cancel_button")
+                            })]
+                        })]
+                    })]
+                })
+            }
+            var ex = t(98654),
+                ey = t(89187),
+                ef = t(7012),
+                eM = t(15913),
+                ek = t(31543),
+                ev = t(98172),
+                eC = t(36139),
+                eS = t.n(eC);
+
+            function eA() {
+                let {
+                    t: e
+                } = (0, d.Bd)(), [a, t] = (0, i.useState)(!1), [o, s] = (0, i.useState)(!1), [_, r] = (0, i.useState)(!1), [m, w] = (0, i.useState)(!1), g = (0, n.d4)(e => e.auth.isLoading), b = (0, n.d4)(u.mB), c = (0, n.d4)(u.Qj), h = (0, ef.WU)(b), {
+                    getUserByAuth0Id: p,
+                    ownTeam: x,
+                    currentTeam: y
+                } = (0, eM.o)(), f = (0, n.d4)(ev.Lm), M = "true" === (0, ex.qg)(ex.m1.embeddedMobile), k = (0, i.useMemo)(() => {
+                    var e;
+                    let a = b.planTier === ey.js.ENTERPRISE_CUSTOM_CONTRACT,
+                        t = (null == y ? void 0 : y.id) === (null == x ? void 0 : x.id) || f && (null == (e = p(f)) ? void 0 : e.role) === "admin";
+                    return !a && t && h
+                }, [null == y ? void 0 : y.id, p, h, null == x ? void 0 : x.id, b.planTier, f]), v = (0, i.useCallback)(() => {
+                    if (t(!1), c) return void r(!0);
+                    s(!0)
+                }, [c]), C = (0, i.useCallback)(() => {
+                    if (c && M) return void w(!0);
+                    t(!0)
+                }, [M, c]);
+                return (0, l.jsxs)("div", {
+                    className: eS().deleteAccount,
+                    children: [(0, l.jsx)("p", {
+                        className: eS().text,
+                        dangerouslySetInnerHTML: {
+                            __html: e("page.delete_account.text")
+                        }
+                    }), k && (0, l.jsx)("p", {
+                        className: eS().text,
+                        dangerouslySetInnerHTML: {
+                            __html: e("page.delete_account.text_manage_subscription", {
+                                href: "/workspace/payment/manage-plan"
+                            })
+                        }
+                    }), (0, l.jsx)(T.$, {
+                        fullwidth: ek.A.isMobile,
+                        onClick: C,
+                        disabled: g,
+                        variation: "destructive",
+                        size: "large",
+                        children: e("page.delete_account.button.text")
+                    }), (0, l.jsx)(eo, {
+                        isOpen: a,
+                        onClose: () => t(!1),
+                        onSubmit: v
+                    }), (0, l.jsx)(eu, {
+                        isOpen: o,
+                        onClose: () => s(!1)
+                    }), (0, l.jsx)(el, {
+                        isOpen: _,
+                        onClose: () => r(!1)
+                    }), (0, l.jsx)(J, {
+                        isOpen: m,
+                        onClose: () => w(!1)
+                    })]
+                })
+            }
+            var eI = t(43699),
+                ej = t(91295),
+                eD = t(12390),
+                eN = t(56220),
+                eP = t.n(eN);
+
+            function eB(e) {
+                let {
+                    email: a,
+                    otp: t,
+                    onOtpChange: o,
+                    submitText: s,
+                    isSubmitActive: _,
+                    onSubmit: r,
+                    onCancel: m
+                } = e, {
+                    t: w
+                } = (0, d.Bd)(), {
+                    countDownTimer: g,
+                    startCountDownTimer: b
+                } = (0, ec.g)(), c = (0, n.d4)(u.ox), h = (0, i.useCallback)(async () => {
+                    await (0, ej.b)({
+                        email: a,
+                        language: c
+                    }), b(eg.X)
+                }, [a, b, c]), p = !_ || t.length !== eD.L;
+                return (0, l.jsx)("div", {
+                    className: eP().bannerContainer,
+                    children: (0, l.jsxs)(eI.l, {
+                        variation: "upsell",
+                        children: [(0, l.jsx)(eI.l.Content, {
+                            children: (0, l.jsxs)("div", {
+                                className: eP().bannerContent,
+                                children: [(0, l.jsx)("p", {
+                                    className: eP().bannerText,
+                                    children: (0, l.jsx)(d.x6, {
+                                        i18nKey: "form.fill_in_verification_code",
+                                        values: {
+                                            email: a
+                                        },
+                                        components: [(0, l.jsx)("strong", {}, 0)]
+                                    })
+                                }), (0, l.jsxs)("div", {
+                                    className: eP().contentActions,
+                                    children: [(0, l.jsx)("div", {
+                                        className: eP().textFieldContainer,
+                                        children: (0, l.jsx)(es.A, {
+                                            labelType: "hidden",
+                                            size: "small",
+                                            placeholder: w("form.account.label.verification_code"),
+                                            label: w("form.account.label.verification_code"),
+                                            inputClassName: eP().input,
+                                            maxLength: eD.L,
+                                            onChange: o,
+                                            value: t,
+                                            autoFocus: !0
+                                        })
+                                    }), (0, l.jsx)(T.$, {
+                                        size: "x-small",
+                                        variation: "neutral",
+                                        appearance: "tertiary",
+                                        onClick: h,
+                                        type: "button",
+                                        disabled: null !== g,
+                                        children: w(g ? "form.account.resend_code_timer" : "form.account.resend_code", {
+                                            countDownTimer: g
+                                        })
+                                    })]
+                                })]
+                            })
+                        }), (0, l.jsxs)(eI.l.Actions, {
+                            children: [(0, l.jsx)(T.$, {
+                                size: "small",
+                                onClick: r,
+                                disabled: p,
+                                fullwidth: ek.A.isMobile,
+                                children: s
+                            }), (0, l.jsx)(T.$, {
+                                size: "small",
+                                appearance: "secondary",
+                                onClick: m,
+                                fullwidth: ek.A.isMobile,
+                                children: w("form.cancel")
+                            })]
+                        })]
+                    })
+                })
+            }
+            var eT = t(14388),
+                eE = t(94990),
+                eL = t(94670),
+                eW = t(27979),
+                eR = t(42789),
+                eU = t(84530),
+                eO = t(10995);
+
+            function eF(e) {
+                let {
+                    accountEmail: a,
+                    showEmailVerificationMessages: t
+                } = e, d = (0, n.wA)(), [o, s] = (0, i.useState)(!1), [_, r] = (0, i.useState)(null);
+                async function m(e) {
+                    if ("BUTTON" === e.target.tagName) try {
+                        r(!1), await d(eO.A.User.resendVerifyAccountEmail({
+                            email: a,
+                            showTransferNotification: !1
+                        })), s(!0)
+                    } catch (e) {
+                        e.status === eR.iu.TOO_MANY_REQUESTS ? r("form.account.email-verification-resend.throttle-error") : r("form.account.email-verification-resend.error"), s(!1)
+                    }
+                }
+                return t ? _ ? (0, l.jsx)(eW.Ay, {
+                    message: eU.A.t(_, {
+                        throttle_time: eU.A.t("datetime.distance_in_words.x_minutes", {
+                            count: 60
+                        })
+                    }),
+                    type: eW.YT
+                }) : o ? (0, l.jsx)(eW.Ay, {
+                    message: eU.A.t("form.account.email-verification-resend.info_link"),
+                    type: eW.Y5
+                }) : (0, l.jsx)(eW.Ay, {
+                    message: (0, l.jsx)("div", {
+                        onClick: m,
+                        dangerouslySetInnerHTML: {
+                            __html: eU.A.t("form.account.email-verification-not-verified-link")
+                        }
+                    }),
+                    type: eW.iN
+                }) : null
+            }
+            var eG = t(25134),
+                eK = t(93246),
+                eH = t.n(eK);
+
+            function ez(e) {
+                let {
+                    imageUrl: a,
+                    pending: t = !1,
+                    onChange: i,
+                    onRemove: d,
+                    defaultThumb: n
+                } = e, o = (0, l.jsx)(T.$, {
+                    appearance: "secondary",
+                    disabled: t,
+                    className: r()(eH().button, eH().uploadButton),
+                    ...ek.A.isMobile ? {
+                        size: "small",
+                        fullwidth: !0
+                    } : {},
+                    children: eU.A.t("form.profile.upload_avatar")
+                }), s = (0, l.jsx)(T.$, {
+                    appearance: "secondary",
+                    disabled: a === n || t || !a,
+                    className: eH().button,
+                    ...ek.A.isMobile ? {
+                        size: "small",
+                        fullwidth: !0
+                    } : {},
+                    children: eU.A.t("form.profile.delete_avatar")
+                });
+                return (0, l.jsx)(eG.A, {
+                    name: "profile_picture",
+                    className: "profile__asset-upload",
+                    addElement: o,
+                    removeElement: s,
+                    onChange: function(e) {
+                        i(e, "profile_picture")
+                    },
+                    removePreview: function() {
+                        d("profile_picture")
+                    },
+                    value: a,
+                    pending: t,
+                    hideWhilePending: !1,
+                    avatarUpload: !0
+                })
+            }
+            var eY = t(29069),
+                eV = t(66052);
+
+            function eX(e) {
+                let {
+                    cancelUpload: a,
+                    continueUpload: t
+                } = e;
+                return (0, l.jsxs)(eV.A, {
+                    text: eU.A.t("notification.refresh_transfer_upload_lost"),
+                    children: [(0, l.jsx)(eY.A, {
+                        type: "actionbar-action",
+                        text: eU.A.t("alert.confirm_refresh_transfer_upload_lost"),
+                        onClick: a
+                    }), (0, l.jsx)(eY.A, {
+                        type: "actionbar-cancel",
+                        text: eU.A.t("alert.cancel_refresh_transfer_upload_lost"),
+                        onClick: t
+                    })]
+                })
+            }
+            var eQ = t(27498),
+                eq = t(96644),
+                eZ = t(68018),
+                eJ = t(29966);
+            let e$ = "uploadAsset_profile_picture";
+            var e0 = t(53123),
+                e1 = t(53521),
+                e2 = t(12637),
+                e4 = t(72546),
+                e6 = t(88797),
+                e3 = t(19146),
+                e5 = t.n(e3);
+            let e7 = e6.YK;
+
+            function e8() {
+                var e, a, t, o, s, _;
+                let {
+                    t: r
+                } = (0, d.Bd)(), m = (0, n.d4)(u.mB), w = (0, n.d4)(ev.e2), g = (0, n.d4)(e => e.pending), b = (0, n.wA)(), c = (0, i.useRef)(null), h = (0, n.d4)(e4.Kj), p = (0, n.d4)(e => e.upload), x = (0, n.d4)(e => e.errors), y = (() => {
+                    let [e] = (0, ei.H7)(), a = (0, n.wA)();
+                    return (0, i.useCallback)(async function() {
+                        let t = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : {},
+                            l = "account";
+                        a((0, eZ.m$)(l));
+                        try {
+                            let {
+                                avatar: i,
+                                given_name: d,
+                                family_name: n,
+                                email: o,
+                                otp: s,
+                                language: _,
+                                marketing_consent: r
+                            } = t, m = {
+                                ...void 0 !== d && {
+                                    first_name: d
+                                },
+                                ...void 0 !== n && {
+                                    last_name: n
+                                },
+                                ...void 0 !== o && {
+                                    email: o
+                                },
+                                ...void 0 !== _ && {
+                                    language: _
+                                },
+                                ...void 0 !== r && {
+                                    marketing_consent: r
+                                },
+                                ...s && {
+                                    otp: s
+                                },
+                                ...void 0 !== i && {
+                                    avatar: i
+                                }
+                            };
+                            Object.keys(m).length > 0 && await e(m).unwrap(), await a(eO.A.User.getUser()), a(eq.P9.setPanelNotification({
+                                category: eq.aF.Notification,
+                                details: "update_user"
+                            })), a((0, eZ.lX)(l))
+                        } catch (e) {
+                            if (e.status === eR.iu.BAD_REQUEST) {
+                                var i;
+                                a(eQ.A.setError("account", null == (i = e.body) ? void 0 : i.fields)), a(eq.P9.setPanelNotification({
+                                    category: eq.aF.Error,
+                                    details: "something_went_wrong"
+                                }))
+                            } else a(eq.P9.setPanelNotification({
+                                category: eq.aF.Error,
+                                details: "update_user_error"
+                            }));
+                            throw a((0, eZ.lX)(l)), e
+                        }
+                    }, [a, e])
+                })(), {
+                    uploadAvatar: f
+                } = (() => {
+                    let [e] = (0, ei.sz)(), a = (0, n.wA)();
+                    return {
+                        uploadAvatar: (0, i.useCallback)(async t => {
+                            a((0, eZ.m$)(e$));
+                            try {
+                                let l = await e({
+                                        filename: t.name
+                                    }).unwrap(),
+                                    i = new FormData;
+                                if (Object.entries(l.fields).forEach(e => {
+                                        let [a, t] = e;
+                                        i.append(a, t)
+                                    }), i.append("file", t), !(await fetch(l.url, {
+                                        method: "POST",
+                                        body: i
+                                    })).ok) throw Error("Failed to upload avatar to S3");
+                                return a((0, eZ.lX)(e$)), l.publicUrl
+                            } catch (i) {
+                                let e = null == i ? void 0 : i.status,
+                                    l = (0, eJ.rC)(e, "profile_picture", t.type);
+                                throw a(eq.P9.setPanelNotification({
+                                    category: eq.aF.Error,
+                                    details: l
+                                })), a((0, eZ.lX)(e$)), i
+                            }
+                        }, [e, a])
+                    }
+                })(), M = (0, n.d4)(e2.hh), [k, v] = (0, i.useState)(""), [C, S] = (0, i.useState)(!1), [A, I] = (0, i.useState)(m.hasProfilePicture ? m.profile_picture.image_url : void 0), [j, D] = (0, i.useState)(!1), N = function() {
+                    let e = (0, n.d4)(u.mB),
+                        {
+                            t: a
+                        } = (0, d.Bd)();
+                    return (0, eL.s)({
+                        defaultValues: {
+                            givenName: e.given_name || "",
+                            familyName: e.family_name || "",
+                            email: e.email || ""
+                        },
+                        schema: (0, eT.Ik)({
+                            givenName: (0, eT.Yj)().required(a("account.personal_details.given_name_required")),
+                            familyName: (0, eT.Yj)(),
+                            email: (0, eE.m)({
+                                requiredMessage: a("account.personal_details.email_required"),
+                                invalidMessage: a("account.personal_details.email_invalid")
+                            })
+                        }),
+                        reValidateMode: "onBlur"
+                    })
+                }(), {
+                    errors: P,
+                    isDirty: B
+                } = N.formState, {
+                    ref: E,
+                    ...L
+                } = N.register("givenName");
+                (0, i.useImperativeHandle)(E, () => c.current);
+                let W = (0, i.useCallback)(async e => {
+                        var a;
+                        let t = null == (a = e.target.files) ? void 0 : a[0];
+                        t && I(await f(t))
+                    }, [f]),
+                    R = (0, i.useCallback)(() => {
+                        I(void 0)
+                    }, []),
+                    U = (0, i.useCallback)(() => {
+                        b(e7.pauseUpload()), b(e7.cancelUpload(h, !0)), b(e7.resetTransfer()), D(!1)
+                    }, [b, h]),
+                    O = (0, i.useCallback)(() => {
+                        D(!1)
+                    }, []),
+                    F = (0, i.useCallback)(async () => {
+                        let e = N.getValues();
+                        return await b(eO.A.Errors.validateForm({
+                            given_name: e.givenName,
+                            family_name: e.familyName,
+                            email: e.email,
+                            otp: k,
+                            ...A && {
+                                profile_picture: A
+                            }
+                        }, "user"))
+                    }, [b, N, k, A]),
+                    G = (0, i.useCallback)(async e => {
+                        let a;
+                        p.isPending && D(!0);
+                        let t = await F();
+                        if ((!x.user || !(Object.keys(x.user).length > 0)) && (void 0 === t || !(Object.keys(t).length > 0))) {
+                            if (e.email && e.email !== m.email && !k) {
+                                await (0, ej.b)({
+                                    email: e.email,
+                                    language: m.language
+                                }), S(!0);
+                                return
+                            }
+                            if (m.hasProfilePicture) {
+                                var l;
+                                A !== (null == (l = m.profile_picture) ? void 0 : l.image_url) && (a = null != A ? A : null)
+                            } else A && (a = A);
+                            b(e1.r.setFormState(!1)), S(!1);
+                            try {
+                                await y({
+                                    given_name: e.givenName,
+                                    family_name: e.familyName,
+                                    email: e.email,
+                                    ...k && {
+                                        otp: k
+                                    },
+                                    ...void 0 !== a && {
+                                        avatar: {
+                                            url: a
+                                        }
+                                    }
+                                }), N.reset(e)
+                            } catch (e) {
+                                N.reset(), S(!1), D(!1)
+                            }
+                        }
+                    }, [b, N, k, A, y, p.isPending, m.email, m.language, m.hasProfilePicture, null == (e = m.profile_picture) ? void 0 : e.image_url, F, x.user]),
+                    K = (0, i.useCallback)(() => {
+                        S(!1), v("")
+                    }, []);
+                (0, i.useEffect)(() => {
+                    let e = setTimeout(() => {
+                        var e;
+                        null == (e = c.current) || e.focus()
+                    }, 500);
+                    return () => {
+                        clearTimeout(e)
+                    }
+                }, []), (0, i.useEffect)(() => {
+                    var e;
+                    let a = {
+                        blank: r("account.personal_details.email_required"),
+                        invalid: r("account.personal_details.email_invalid"),
+                        taken: r("account.personal_details.email_taken")
+                    };
+                    Array.isArray(null == (e = x.user) ? void 0 : e.email) ? x.user.email.forEach(e => {
+                        N.setError("email", {
+                            type: "custom",
+                            message: a[e]
+                        })
+                    }) : N.clearErrors("email")
+                }, [N, r, null == (a = x.user) ? void 0 : a.email]), (0, i.useEffect)(() => {
+                    I(m.hasProfilePicture ? m.profile_picture.image_url : void 0)
+                }, [null == (t = m.profile_picture) ? void 0 : t.image_url, m.hasProfilePicture]);
+                let H = m.hasProfilePicture || A ? A : "",
+                    z = B || m.hasProfilePicture && A !== (null == (o = m.profile_picture) ? void 0 : o.image_url) || !m.hasProfilePicture && A,
+                    Y = z && !C && !j && !g.account,
+                    V = g.account ? r("account.personal_details.submitting") : r("account.personal_details.save_changes"),
+                    X = !m.isVerified && M;
+                return (0, l.jsxs)("form", {
+                    onSubmit: N.handleSubmit(G),
+                    onBlur: F,
+                    children: [(0, l.jsx)(ez, {
+                        imageUrl: null != H ? H : "",
+                        defaultThumb: e0.A.getAvatar(m.id),
+                        pending: !!g.uploadAsset_profile_picture,
+                        onChange: W,
+                        onRemove: R
+                    }), (0, l.jsxs)("div", {
+                        className: e5().fields,
+                        children: [(0, l.jsx)("div", {
+                            children: (0, l.jsx)(es.A, {
+                                ...L,
+                                defaultValue: N.watch("givenName") || "",
+                                ref: c,
+                                label: r("account.personal_details.given_name"),
+                                labelType: "inside",
+                                caption: null == (s = P.givenName) ? void 0 : s.message,
+                                state: P.givenName ? "invalid" : "default",
+                                maxLength: 16
+                            })
+                        }), (0, l.jsx)("div", {
+                            children: (0, l.jsx)(es.A, {
+                                ...N.register("familyName"),
+                                defaultValue: N.watch("familyName") || "",
+                                label: r("account.personal_details.family_name"),
+                                labelType: "inside",
+                                maxLength: 16
+                            })
+                        }), (0, l.jsxs)("div", {
+                            children: [(0, l.jsx)(es.A, {
+                                ...N.register("email"),
+                                defaultValue: N.watch("email") || "",
+                                label: r("account.personal_details.email"),
+                                labelType: "inside",
+                                disabled: w.emailIsLocked || X,
+                                caption: null == (_ = P.email) ? void 0 : _.message,
+                                state: P.email ? "invalid" : "default"
+                            }), z ? null : (0, l.jsx)(eF, {
+                                accountEmail: N.watch("email"),
+                                showEmailVerificationMessages: X
+                            })]
+                        })]
+                    }), (0, l.jsx)("div", {
+                        className: e5().actions,
+                        children: (0, l.jsx)(T.$, {
+                            type: "submit",
+                            disabled: !Y,
+                            children: V
+                        })
+                    }), C ? (0, l.jsx)(eB, {
+                        email: N.watch("email"),
+                        otp: k,
+                        onOtpChange: e => v(e.target.value),
+                        submitText: V,
+                        isSubmitActive: !!k && !P.email,
+                        onSubmit: N.handleSubmit(G),
+                        onCancel: K
+                    }) : null, j ? (0, l.jsx)(eX, {
+                        cancelUpload: U,
+                        continueUpload: O
+                    }) : null]
+                })
+            }
+            var e9 = t(90139),
+                ae = t.n(e9),
+                aa = t(19653),
+                at = t(56915),
+                al = t(26573),
+                ai = t(70917),
+                ad = t.n(ai);
+            let an = () => {
+                let e = (0, n.wA)(),
+                    a = (0, n.d4)(u.mB),
+                    t = (0, n.d4)(al.vC),
+                    [o, s] = (0, i.useState)(!1),
+                    {
+                        t: _
+                    } = (0, d.Bd)(),
+                    r = async () => {
+                        try {
+                            await (0, aa.H8)(t.domain)
+                        } catch (a) {
+                            e(at.P.setPanelNotification({
+                                category: eq.aF.Error,
+                                details: "something_went_wrong"
+                            })), s(!1)
+                        }
+                    }, m = () => {
+                        s(!1)
+                    };
+                return (0, l.jsxs)(l.Fragment, {
+                    children: [(0, l.jsxs)("div", {
+                        className: ad().logoutAll,
+                        children: [(0, l.jsx)("h2", {
+                            className: ae().sectionHeading,
+                            children: _("page.password_and_security.logout_all.title")
+                        }), (0, l.jsx)("p", {
+                            className: ad().description,
+                            children: _("page.password_and_security.logout_all.description")
+                        }), (0, l.jsx)(T.$, {
+                            size: "large",
+                            onClick: () => {
+                                s(!0)
+                            },
+                            children: _("page.password_and_security.logout_all.button")
+                        })]
+                    }), o && (0, l.jsx)(W.a, {
+                        isOpen: !0,
+                        onClose: m,
+                        showCloseButton: !0,
+                        appElement: (0, R.Y)(),
+                        children: (0, l.jsxs)("div", {
+                            className: ad().modalContent,
+                            children: [(0, l.jsx)("h2", {
+                                className: ad().modalTitle,
+                                children: _("page.password_and_security.logout_all.modal.title")
+                            }), (0, l.jsx)("p", {
+                                className: ad().modalMessage,
+                                children: _("page.password_and_security.logout_all.modal.message", {
+                                    email: a.email
+                                })
+                            }), (0, l.jsxs)("div", {
+                                className: ad().actions,
+                                children: [(0, l.jsx)(T.$, {
+                                    onClick: r,
+                                    fullwidth: !0,
+                                    children: _("page.password_and_security.logout_all.modal.confirm")
+                                }), (0, l.jsx)(T.$, {
+                                    onClick: m,
+                                    fullwidth: !0,
+                                    appearance: "secondary",
+                                    children: _("page.password_and_security.logout_all.modal.cancel")
+                                })]
+                            })]
+                        })
+                    })]
+                })
+            };
+            var ao = t(37515),
+                as = t.n(ao);
+            let a_ = {
+                    resetPassword: ew.xw
+                },
+                ar = (0, n.Ng)(e => {
+                    let {
+                        auth: a
+                    } = e;
+                    return {
+                        isLoading: a.isLoading,
+                        email: a.email
+                    }
+                }, a_)(e => {
+                    let {
+                        isLoading: a,
+                        email: t,
+                        resetPassword: d
+                    } = e, [n, o] = (0, i.useState)(!1), [s, _] = (0, i.useState)(!1), r = {
+                        __html: n ? eU.A.t("form.account.sso.password_reset.success", {
+                            email: t
+                        }) : eU.A.t("form.account.sso.password_reset.instructions", {
+                            email: t
+                        })
+                    }, m = {
+                        __html: eU.A.t("exception.something_went_wrong")
+                    };
+                    return (0, l.jsxs)("div", {
+                        children: [(0, l.jsx)("h3", {
+                            className: as().title,
+                            children: eU.A.t("form.account.sso.password_reset.title")
+                        }), (0, l.jsxs)("div", {
+                            className: as().text,
+                            children: [(0, l.jsx)("p", {
+                                className: as().description,
+                                dangerouslySetInnerHTML: r
+                            }), s && (0, l.jsx)("p", {
+                                className: as().error,
+                                dangerouslySetInnerHTML: m
+                            })]
+                        }), !n && (0, l.jsx)(T.$, {
+                            onClick: function() {
+                                _(!1), d().then(() => {
+                                    o(!0)
+                                }).catch(() => {
+                                    _(!0)
+                                })
+                            },
+                            disabled: a,
+                            "data-testid": "password-reset-button",
+                            size: "large",
+                            children: eU.A.t("form.account.sso.password_reset.button")
+                        })]
+                    })
+                });
+            var am = t(13722),
+                aw = t(44259),
+                ag = t(95467);
+
+            function ab() {
+                let e = (0, n.wA)(),
+                    a = (0, n.d4)(u.mB),
+                    t = (0, Q.A)(),
+                    [d] = (0, $.gB)(),
+                    [o, s] = (0, i.useState)(!1),
+                    [_, r] = (0, i.useState)(!1),
+                    [m, w] = (0, i.useState)(""),
+                    g = o ? eU.A.t("form.submitting") : eU.A.t("form.submit.two-factor-authentication"),
+                    b = async () => {
+                        try {
+                            s(!0), await e(ag.default.disableTwoFactorAuthentication({
+                                otp: m,
+                                type: "sso"
+                            }))
+                        } finally {
+                            s(!1), r(!1), w("")
+                        }
+                    }, c = async () => {
+                        e(at.P.clearPanelNotification());
+                        try {
+                            s(!0), await d({
+                                context: "disable-mfa"
+                            }), window.location.href = "https://".concat(t.NEXT_PUBLIC_AUTH_DOMAIN, "/mfa-check?callback=https://").concat(t.NEXT_PUBLIC_AUTH_DOMAIN, "/api/v1/callback/disable-mfa")
+                        } catch (a) {
+                            e(at.P.setPanelNotification({
+                                category: eq.aF.Error,
+                                details: "something_went_wrong"
+                            }))
+                        } finally {
+                            s(!1)
+                        }
+                    };
+                return (0, l.jsxs)("div", {
+                    className: "security",
+                    children: [(0, l.jsxs)("div", {
+                        className: "security__two-factor",
+                        children: [(0, l.jsx)("div", {
+                            className: "two-factor__icon",
+                            children: (0, l.jsx)(aw.Ay, {
+                                type: a.otpEnabled ? "Locked" : "Unlock"
+                            })
+                        }), (0, l.jsxs)("div", {
+                            className: "two-factor__content",
+                            children: [(0, l.jsx)("div", {
+                                className: "two-factor__title",
+                                children: eU.A.t("page.password_and_security.two-factor-authentication.title")
+                            }), (0, l.jsx)("div", {
+                                className: "two-factor__detail",
+                                children: a.otpEnabled && null !== a.otpEnabledAt ? eU.A.t("page.password_and_security.two-factor-authentication.description.enabled", {
+                                    date: eU.A.date(new Date(a.otpEnabledAt), "long")
+                                }) : eU.A.t("page.password_and_security.two-factor-authentication.text.protect_account")
+                            })]
+                        }), a.otpEnabled ? (0, l.jsx)("button", {
+                            className: "two-factor__action two-factor__action--disable",
+                            onClick: c,
+                            children: o ? (0, l.jsx)(am.y, {
+                                appearance: "neutral",
+                                mode: "light",
+                                size: "small"
+                            }) : eU.A.t("page.password_and_security.two-factor-authentication.disable")
+                        }) : (0, l.jsx)("a", {
+                            className: "two-factor__action two-factor__action--enable",
+                            href: "/account/two-factor-authentication/enable",
+                            children: eU.A.t("page.password_and_security.two-factor-authentication.enable")
+                        })]
+                    }), (0, l.jsx)(ar, {}), (0, l.jsx)(an, {}), _ && (0, l.jsx)(eB, {
+                        email: a.email,
+                        otp: m,
+                        onOtpChange: e => w(e.target.value),
+                        isSubmitActive: !!m && !o,
+                        submitText: g,
+                        onSubmit: b,
+                        onCancel: () => r(!1)
+                    })]
+                })
+            }
+
+            function ac() {
+                let e = (0, i.useRef)(null);
+                (0, i.useEffect)(() => {
+                    document.title = "".concat(eU.A.t("navigation.user.items.account"), " - WeTransfer")
+                });
+                let {
+                    user: a
+                } = (0, n.d4)(e => ({
+                    user: e.user
+                })), {
+                    currentTeam: t
+                } = (0, eM.o)(), d = (0, n.d4)(ev.Lm), o = (0, ef.Z_)(a), s = (null == t ? void 0 : t.creatorId) === d, _ = a.planTier !== ey.js.ENTERPRISE_CUSTOM_CONTRACT || !s, r = "true" === (0, ex.qg)(ex.m1.embeddedMobile);
+                return (0, i.useEffect)(() => {
+                    let a = new URL(location.href);
+                    r && "#delete-account-title" === a.hash && setTimeout(() => {
+                        var a;
+                        null == (a = e.current) || a.scrollIntoView()
+                    }, 500)
+                }, [r]), (0, l.jsxs)("div", {
+                    className: ae().profileAndSecurity,
+                    children: [!v.Ay.isMobile && (0, l.jsx)(M.a, {
+                        setWorkspaceName: a.given_name.trim() + " " + a.family_name,
+                        showWorkspaceName: !0,
+                        panelName: eU.A.t("profile_and_security.page_name")
+                    }), (0, l.jsxs)("div", {
+                        className: ae().PanelContent,
+                        children: [(0, l.jsx)("p", {
+                            className: ae().sectionHeading,
+                            children: eU.A.t("profile_and_security.profile_title")
+                        }), (0, l.jsx)(e8, {}), (0, l.jsx)("div", {
+                            className: ae().separator
+                        }), (0, l.jsx)("p", {
+                            className: ae().sectionHeading,
+                            "data-testid": "password-and-security-title",
+                            children: eU.A.t("page.password_and_security.title")
+                        }), (0, l.jsx)(ab, {}), (0, l.jsx)("div", {
+                            className: ae().separator
+                        }), (0, l.jsxs)(l.Fragment, {
+                            children: [(0, l.jsx)("p", {
+                                className: ae().sectionHeading,
+                                children: eU.A.t("page.data_processing.settings.title")
+                            }), (0, l.jsx)(X, {
+                                isEnterprise: o
+                            })]
+                        }), _ && (0, l.jsxs)(l.Fragment, {
+                            children: [(0, l.jsx)("p", {
+                                className: ae().sectionHeading,
+                                id: "delete-account-title",
+                                ref: e,
+                                children: eU.A.t("page.delete_account.title")
+                            }), (0, l.jsx)(eA, {})]
+                        })]
+                    })]
+                })
+            }
+            var ah = t(87412),
+                ap = t(18241),
+                au = t(81851),
+                ax = t.n(au),
+                ay = t(16273),
+                af = t.n(ay);
+
+            function aM(e) {
+                let {
+                    label: a,
+                    value: t,
+                    children: i,
+                    valueClassName: d
+                } = e;
+                return (0, l.jsxs)("div", {
+                    className: af().infoField,
+                    children: [(0, l.jsxs)("div", {
+                        className: af().infoFieldContent,
+                        children: [(0, l.jsx)("div", {
+                            className: af().infoFieldLabel,
+                            children: a
+                        }), (0, l.jsx)("div", {
+                            className: r()(af().infoFieldValue, d),
+                            title: "string" == typeof t ? t : void 0,
+                            children: t
+                        })]
+                    }), i]
+                })
+            }
+            var ak = t(70523),
+                av = t(91248),
+                aC = t.n(av);
+
+            function aS(e) {
+                let {
+                    label: a,
+                    value: t
+                } = e, {
+                    t: i
+                } = (0, d.Bd)();
+                return (0, l.jsx)(aM, {
+                    label: a,
+                    value: t,
+                    children: (0, l.jsx)(T.$, {
+                        appearance: "tertiary",
+                        onClick: () => (0, ak.l)(t),
+                        className: aC().button,
+                        children: i("saml_sso.copy")
+                    })
+                })
+            }
+            var aA = t(91512),
+                aI = t.n(aA);
+
+            function aj(e) {
+                let {
+                    token: a,
+                    isDeletingToken: t,
+                    onDelete: i,
+                    onCancel: n,
+                    ...o
+                } = e, {
+                    t: s
+                } = (0, d.Bd)();
+                return (0, l.jsx)(W.a, {
+                    appElement: (0, R.Y)(),
+                    ...o,
+                    children: (0, l.jsxs)("div", {
+                        className: aI().content,
+                        children: [(0, l.jsx)("h1", {
+                            className: aI().heading,
+                            children: s("saml_sso.scim.delete_token_modal.title")
+                        }), (0, l.jsxs)("div", {
+                            children: [(0, l.jsx)("p", {
+                                className: aI().description,
+                                children: s("saml_sso.scim.delete_token_modal.description")
+                            }), (0, l.jsx)("p", {
+                                className: aI().token,
+                                children: (0, l.jsx)(d.x6, {
+                                    i18nKey: "saml_sso.scim.delete_token_modal.token",
+                                    values: {
+                                        token: a
+                                    },
+                                    components: [(0, l.jsx)("strong", {
+                                        className: aI().strong
+                                    }, 0)]
+                                })
+                            })]
+                        }), (0, l.jsxs)("div", {
+                            className: aI().actions,
+                            children: [(0, l.jsx)(T.$, {
+                                type: "button",
+                                fullwidth: !0,
+                                variation: "destructive",
+                                onClick: i,
+                                disabled: t,
+                                children: t ? (0, l.jsx)(am.y, {
+                                    appearance: "neutral",
+                                    mode: "dark"
+                                }) : s("saml_sso.scim.delete_token_modal.delete")
+                            }), (0, l.jsx)(T.$, {
+                                type: "button",
+                                fullwidth: !0,
+                                appearance: "secondary",
+                                onClick: n,
+                                disabled: t,
+                                children: s("saml_sso.scim.delete_token_modal.cancel")
+                            })]
+                        })]
+                    })
+                })
+            }
+            var aD = t(98463),
+                aN = t(23901);
+            let {
+                useGetSamlScimTokensQuery: aP,
+                useGenerateSamlScimTokenMutation: aB,
+                useDeleteSamlScimTokenMutation: aT
+            } = aD.K.injectEndpoints({
+                endpoints: e => ({
+                    getSamlScimTokens: e.query({
+                        query: e => {
+                            let {
+                                teamId: a
+                            } = e;
+                            return {
+                                url: "scim/token",
+                                method: "GET",
+                                requiresAuth: !0,
+                                params: {
+                                    team_id: a
+                                }
+                            }
+                        },
+                        providesTags: e => e ? [{
+                            type: "SamlScimTokens",
+                            id: "LIST"
+                        }] : [],
+                        transformResponse: e => (0, aN.x)(e)
+                    }),
+                    generateSamlScimToken: e.mutation({
+                        query: e => {
+                            let {
+                                expirationInSeconds: a,
+                                teamId: t
+                            } = e;
+                            return {
+                                url: "scim/token",
+                                method: "POST",
+                                requiresAuth: !0,
+                                data: {
+                                    expirationInSeconds: a,
+                                    team_id: t
+                                }
+                            }
+                        },
+                        invalidatesTags: e => e ? [{
+                            type: "SamlScimTokens",
+                            id: "LIST"
+                        }] : [],
+                        transformResponse: e => (0, aN.x)(e)
+                    }),
+                    deleteSamlScimToken: e.mutation({
+                        query: e => {
+                            let {
+                                token: a,
+                                teamId: t
+                            } = e;
+                            return {
+                                url: "scim/token",
+                                method: "DELETE",
+                                requiresAuth: !0,
+                                data: {
+                                    token: a,
+                                    team_id: t
+                                }
+                            }
+                        },
+                        invalidatesTags: [{
+                            type: "SamlScimTokens",
+                            id: "LIST"
+                        }]
+                    })
+                })
+            });
+            var aE = t(88376),
+                aL = t.n(aE);
+
+            function aW(e) {
+                let {
+                    onCancel: a,
+                    ...t
+                } = e, {
+                    t: n
+                } = (0, d.Bd)(), [o, _] = (0, i.useState)(!1), [r, m] = (0, i.useState)(300), {
+                    currentTeam: w
+                } = (0, eM.o)(), [g, {
+                    isLoading: b
+                }] = aB(), c = null == w ? void 0 : w.id, h = (0, i.useCallback)(() => {
+                    m(300), _(!1), a()
+                }, [a]), p = (0, i.useCallback)(async e => {
+                    e.preventDefault(), await g({
+                        expirationInSeconds: o ? void 0 : r,
+                        teamId: c
+                    }), h()
+                }, [h, r, g, o, c]);
+                return (0, l.jsx)(W.a, {
+                    appElement: (0, R.Y)(),
+                    ...t,
+                    children: (0, l.jsxs)("form", {
+                        className: aL().form,
+                        onSubmit: p,
+                        children: [(0, l.jsx)("h1", {
+                            className: aL().heading,
+                            children: n("saml_sso.scim.generate_token_modal.title")
+                        }), (0, l.jsxs)("div", {
+                            className: aL().inputs,
+                            children: [(0, l.jsx)(E._, {
+                                label: n("saml_sso.scim.generate_token_modal.checkbox_label"),
+                                onChange: () => _(e => !e)
+                            }), (0, l.jsx)(es.A, {
+                                label: n("saml_sso.scim.generate_token_modal.text_field_label"),
+                                disabled: o || b,
+                                value: r,
+                                onChange: e => m(Number(e.target.value)),
+                                labelClassName: aL().label,
+                                type: "number",
+                                min: 300,
+                                max: 31536e3,
+                                caption: n("saml_sso.scim.generate_token_modal.text_field_caption", {
+                                    seconds: 300
+                                })
+                            })]
+                        }), (0, l.jsxs)("div", {
+                            className: aL().actions,
+                            children: [(0, l.jsx)(T.$, {
+                                type: "submit",
+                                fullwidth: !0,
+                                disabled: b,
+                                children: b ? (0, l.jsx)(s.y, {
+                                    appearance: "neutral",
+                                    mode: "dark"
+                                }) : n("saml_sso.scim.generate_token_modal.generate")
+                            }), (0, l.jsx)(T.$, {
+                                type: "button",
+                                fullwidth: !0,
+                                appearance: "secondary",
+                                disabled: b,
+                                onClick: h,
+                                children: n("saml_sso.scim.generate_token_modal.cancel")
+                            })]
+                        })]
+                    })
+                })
+            }
+            var aR = t(85633),
+                aU = t(50496),
+                aO = t(86e3),
+                aF = t.n(aO);
+
+            function aG(e) {
+                let {
+                    token: a,
+                    expiresAt: t,
+                    expired: i,
+                    onDeleteClick: n
+                } = e, {
+                    t: o
+                } = (0, d.Bd)(), s = new Date(null != t ? t : "").toLocaleString(eU.A.locale), _ = null !== t ? o(i ? "saml_sso.scim.expired_date" : "saml_sso.scim.expires_date", {
+                    date: s
+                }) : o("saml_sso.scim.no_expiration_date");
+                return (0, l.jsx)(aM, {
+                    label: a,
+                    value: _,
+                    valueClassName: aF().value,
+                    children: (0, l.jsxs)("div", {
+                        className: aF().actions,
+                        children: [(0, l.jsxs)("div", {
+                            className: r()(aF().state, {
+                                [aF().active]: !i,
+                                [aF().expired]: i
+                            }),
+                            children: [i ? (0, l.jsx)(aR.$Td, {}) : (0, l.jsx)(aR.bT1, {}), o(i ? "saml_sso.scim.expired" : "saml_sso.scim.active")]
+                        }), (0, l.jsx)(aU.K, {
+                            icon: aR.rkR,
+                            appearance: "tertiary",
+                            variation: "destructive",
+                            onClick: n,
+                            className: aF().deleteButton,
+                            "aria-label": o("saml_sso.scim.delete_token")
+                        })]
+                    })
+                })
+            }
+            var aK = t(22352),
+                aH = t(34464),
+                az = t.n(aH);
+
+            function aY() {
+                var e;
+                let {
+                    t: a
+                } = (0, d.Bd)(), t = (0, Q.A)(), [n, o] = (0, i.useState)(!1), [_, m] = (0, i.useState)(!1), [w, g] = (0, i.useState)(null), [b, c] = (0, i.useState)(!1), {
+                    currentTeam: h
+                } = (0, eM.o)(), [p, {
+                    data: u
+                }] = (0, aK.l_)(), x = null == h ? void 0 : h.id, {
+                    data: y
+                } = (0, aK.Vl)({
+                    teamId: x
+                }, {
+                    skip: !x
+                }), f = (null == u ? void 0 : u.scimEnabled) !== void 0 ? u.scimEnabled : !!(null == y ? void 0 : y.scimEnabled), {
+                    data: M
+                } = aP({
+                    teamId: x
+                }, {
+                    skip: !x,
+                    refetchOnMountOrArgChange: !0
+                }), [k, {
+                    isLoading: v
+                }] = aT(), C = "https://".concat(location.host).concat(t.NEXT_PUBLIC_ADROIT_API_BASE, "/api/v1/scim"), S = "".concat(C, "/ServiceProviderConfig"), A = "".concat(C, "/ResourceTypes"), I = "".concat(C, "/Schemas"), j = null != (e = null == M ? void 0 : M.tokens) ? e : [], D = (0, i.useCallback)(async () => {
+                    null !== w && (await k({
+                        token: w,
+                        teamId: x
+                    }), m(!1))
+                }, [k, x, w]), N = (0, i.useCallback)(async e => {
+                    if (!x) return;
+                    let a = e.currentTarget.checked;
+                    try {
+                        c(!0), await p({
+                            teamId: x,
+                            scimEnabled: a
+                        })
+                    } finally {
+                        c(!1)
+                    }
+                }, [x, p]);
+                return (0, l.jsxs)("div", {
+                    className: az().scim,
+                    children: [(0, l.jsx)("form", {
+                        children: (0, l.jsxs)("div", {
+                            className: az().row,
+                            children: [(0, l.jsxs)("div", {
+                                className: az().rowLeft,
+                                children: [(0, l.jsx)("h2", {
+                                    children: a("saml_sso.scim.title")
+                                }), (0, l.jsx)("p", {
+                                    children: a("saml_sso.scim.description")
+                                })]
+                            }), (0, l.jsxs)("div", {
+                                className: r()(az().rowRight, az().fields),
+                                children: [(0, l.jsxs)("div", {
+                                    className: az().checkbox,
+                                    children: [(0, l.jsx)(E._, {
+                                        wrapperClassName: az().checkboxWrapper,
+                                        label: a("saml_sso.scim.enable"),
+                                        checked: f,
+                                        onChange: N,
+                                        disabled: b
+                                    }), b ? (0, l.jsx)(s.y, {
+                                        size: "small"
+                                    }) : null]
+                                }), (0, l.jsxs)("div", {
+                                    className: az().fields,
+                                    children: [(0, l.jsx)(aS, {
+                                        label: a("saml_sso.scim.endpoint_url"),
+                                        value: C
+                                    }), (0, l.jsx)(aM, {
+                                        label: a("saml_sso.scim.configuration_endpoints"),
+                                        value: (0, l.jsxs)("ul", {
+                                            className: az().configurationEndpoints,
+                                            children: [(0, l.jsx)("li", {
+                                                children: S
+                                            }), (0, l.jsx)("li", {
+                                                children: A
+                                            }), (0, l.jsx)("li", {
+                                                children: I
+                                            })]
+                                        })
+                                    }), (0, l.jsx)(aM, {
+                                        label: a("saml_sso.scim.bearer_token"),
+                                        value: a("saml_sso.scim.bearer_token_description"),
+                                        children: (0, l.jsx)(T.$, {
+                                            appearance: "secondary",
+                                            className: az().generateTokenButton,
+                                            onClick: () => o(!0),
+                                            children: a("saml_sso.scim.generate_new_token")
+                                        })
+                                    })]
+                                }), j.length > 0 ? (0, l.jsxs)(l.Fragment, {
+                                    children: [(0, l.jsx)("hr", {
+                                        className: az().divider
+                                    }), (0, l.jsx)("div", {
+                                        className: az().tokens,
+                                        children: j.map(e => {
+                                            let {
+                                                value: a,
+                                                expired: t,
+                                                expiresAt: i
+                                            } = e;
+                                            return (0, l.jsx)(aG, {
+                                                token: a,
+                                                expiresAt: i,
+                                                expired: t,
+                                                onDeleteClick: () => {
+                                                    g(a), m(!0)
+                                                }
+                                            }, a)
+                                        })
+                                    })]
+                                }) : null]
+                            })]
+                        })
+                    }), (0, l.jsx)(aW, {
+                        isOpen: n,
+                        onCancel: () => o(!1),
+                        onClose: () => o(!1)
+                    }), (0, l.jsx)(aj, {
+                        token: w,
+                        isOpen: _,
+                        isDeletingToken: v,
+                        onDelete: D,
+                        onCancel: () => m(!1),
+                        onClose: () => m(!1)
+                    })]
+                })
+            }
+            var aV = t(22929),
+                aX = t(14603);
+            let aQ = (0, i.forwardRef)((e, a) => {
+                var {
+                    labelType: t = "default"
+                } = e, i = (0, m.Tt)(e, ["labelType"]);
+                return (0, l.jsx)(aV.F, Object.assign({}, i, {
+                    labelType: t,
+                    ref: a,
+                    children: (0, l.jsx)("inside" === t ? aX.X : aX.T, {})
+                }))
+            });
+            aQ.displayName = "TextareaField";
+            var aq = t(35506),
+                aZ = t.n(aq);
+
+            function aJ() {
+                var e, a;
+                let {
+                    t
+                } = (0, d.Bd)(), {
+                    currentTeam: n
+                } = (0, eM.o)(), o = (0, Q.A)(), _ = null == n ? void 0 : n.id, m = null != (a = o.NEXT_PUBLIC_SAML_ENTITY_ID) ? a : "", w = "https://".concat(o.NEXT_PUBLIC_AUTH_DOMAIN, "/api/v1/callback/saml"), [g, {
+                    isLoading: b,
+                    error: c
+                }] = (0, aK.cu)(), {
+                    data: h,
+                    isLoading: p
+                } = (0, aK.Me)({
+                    teamId: _
+                }, {
+                    skip: !_
+                }), [u, x] = (0, i.useState)(""), [y, f] = (0, i.useState)("");
+                (0, i.useEffect)(() => {
+                    var e, a;
+                    x(null != (e = null == h ? void 0 : h.ssoUrl) ? e : ""), f(null != (a = null == h ? void 0 : h.certificate) ? a : "")
+                }, [h]);
+                let M = (0, i.useCallback)(async e => {
+                        e.preventDefault(), _ && await g({
+                            ssoUrl: u,
+                            certificate: y,
+                            enabled: !0,
+                            teamId: _
+                        })
+                    }, [y, u, _, g]),
+                    k = (0, i.useCallback)(async () => {
+                        _ && await g({
+                            ssoUrl: u,
+                            certificate: y,
+                            enabled: !1,
+                            teamId: _
+                        })
+                    }, [y, u, _, g]),
+                    v = (0, em.E)(c) ? null == (e = c.data) ? void 0 : e.message : void 0,
+                    C = Array.isArray(v) && v.some(e => e.includes("sso_url")),
+                    S = Array.isArray(v) && v.some(e => e.includes("certificate")),
+                    A = !u || !y || p || b || !_,
+                    I = p || b || !_,
+                    j = p || b;
+                return (0, l.jsx)("div", {
+                    className: aZ().sso,
+                    children: (0, l.jsx)("form", {
+                        onSubmit: M,
+                        children: (0, l.jsxs)("div", {
+                            className: aZ().row,
+                            children: [(0, l.jsxs)("div", {
+                                className: aZ().rowLeft,
+                                children: [(0, l.jsx)("h2", {
+                                    children: t("saml_sso.sso.title")
+                                }), (0, l.jsx)("p", {
+                                    children: t("saml_sso.sso.description1")
+                                }), (0, l.jsx)("p", {
+                                    children: t("saml_sso.sso.description2")
+                                }), (0, l.jsx)("p", {
+                                    children: t("saml_sso.sso.description3")
+                                })]
+                            }), (0, l.jsxs)("div", {
+                                className: r()(aZ().rowRight, aZ().fields),
+                                children: [(0, l.jsx)("div", {
+                                    children: (0, l.jsx)(es.A, {
+                                        id: "ssoUrl",
+                                        label: t("saml_sso.sso.sso_url"),
+                                        value: u,
+                                        onChange: e => x(e.target.value),
+                                        disabled: j,
+                                        state: C ? "invalid" : "default",
+                                        caption: C ? t("saml_sso.sso.sso_url_invalid") : void 0,
+                                        labelClassName: aZ().label
+                                    })
+                                }), (0, l.jsxs)("div", {
+                                    className: aZ().copyInfoFields,
+                                    children: [(0, l.jsx)(aS, {
+                                        label: t("saml_sso.sso.entity_id"),
+                                        value: m
+                                    }), (0, l.jsx)(aS, {
+                                        label: t("saml_sso.sso.acs_url"),
+                                        value: w
+                                    }), (0, l.jsx)(aS, {
+                                        label: t("saml_sso.sso.name_id"),
+                                        value: "EMAIL"
+                                    })]
+                                }), (0, l.jsx)("div", {
+                                    className: aZ().textAreaOutsideLabel,
+                                    children: (0, l.jsx)(aQ, {
+                                        id: "certificate",
+                                        label: t("saml_sso.sso.certificate"),
+                                        placeholder: "-----BEGIN CERTIFICATE-----\n...\n-----END CERTIFICATE-----",
+                                        className: aZ().textArea,
+                                        inputClassName: aZ().textAreaInput,
+                                        value: y,
+                                        onChange: e => f(e.target.value),
+                                        disabled: j,
+                                        state: S ? "invalid" : "default",
+                                        caption: S ? t("saml_sso.sso.certificate_invalid") : void 0,
+                                        labelClassName: aZ().label
+                                    })
+                                }), (0, l.jsxs)("div", {
+                                    className: aZ().buttonsContainer,
+                                    children: [b ? (0, l.jsx)(s.y, {}) : null, (0, l.jsxs)("div", {
+                                        className: aZ().buttons,
+                                        children: [(0, l.jsx)(T.$, {
+                                            type: "submit",
+                                            disabled: A,
+                                            children: t((null == h ? void 0 : h.enabled) ? "saml_sso.sso.update" : "saml_sso.sso.save_enable")
+                                        }), (null == h ? void 0 : h.enabled) ? (0, l.jsx)(T.$, {
+                                            appearance: "secondary",
+                                            variation: "destructive",
+                                            onClick: k,
+                                            disabled: I,
+                                            children: t("saml_sso.sso.disable")
+                                        }) : null]
+                                    })]
+                                })]
+                            })]
+                        })
+                    })
+                })
+            }
+            var a$ = function(e) {
+                    return e.TRANSFER_FORCE_PASSWORD = "transfer_force_password", e.TRANSFER_BLOCK_LINK = "transfer_block_link", e
+                }({}),
+                a0 = t(76849),
+                a1 = t(4088),
+                a2 = t.n(a1);
+
+            function a4() {
+                let {
+                    t: e
+                } = (0, d.Bd)(), {
+                    isTeamPoliciesEnabled: a,
+                    setPolicySetting: t,
+                    enabledPolicies: o
+                } = function() {
+                    let {
+                        settings: {
+                            team_policies_enabled: e
+                        }
+                    } = (0, C.k)(), {
+                        currentTeam: a
+                    } = (0, eM.o)(), t = (0, ef.ch)((0, n.d4)(u.mB)), l = !(null == a ? void 0 : a.id) || !e || !t, {
+                        data: i
+                    } = (0, a0.DX)({
+                        teamId: (null == a ? void 0 : a.id) || ""
+                    }, {
+                        skip: l
+                    }), [d] = (0, a0.hm)();
+                    return l ? {
+                        isTeamPoliciesEnabled: !1,
+                        enabledPolicies: [],
+                        setPolicySetting: async () => {}
+                    } : {
+                        isTeamPoliciesEnabled: e,
+                        enabledPolicies: i || [],
+                        setPolicySetting: async (e, t) => {
+                            (null == a ? void 0 : a.id) && await d({
+                                teamId: a.id,
+                                policy: e,
+                                enabled: t
+                            })
+                        }
+                    }
+                }(), [_, m] = (0, i.useState)([]), w = (0, i.useCallback)(async (e, a) => {
+                    if (!_.includes(a)) {
+                        m(e => [...e, a]);
+                        try {
+                            await t(a, e.currentTarget.checked)
+                        } finally {
+                            m(e => e.filter(e => e !== a))
+                        }
+                    }
+                }, [_, t]);
+                return a ? (0, l.jsxs)("div", {
+                    className: a2().container,
+                    children: [(0, l.jsxs)("div", {
+                        className: a2().row,
+                        children: [(0, l.jsxs)("div", {
+                            className: a2().rowLeft,
+                            children: [(0, l.jsx)("h2", {
+                                children: e("team_policies_settings.title")
+                            }), (0, l.jsx)("p", {
+                                children: e("team_policies_settings.description")
+                            })]
+                        }), (0, l.jsxs)("div", {
+                            className: r()(a2().rowRight, a2().settings),
+                            children: [(0, l.jsxs)("div", {
+                                className: a2().policy,
+                                children: [(0, l.jsxs)("div", {
+                                    className: a2().checkbox,
+                                    children: [(0, l.jsx)(E._, {
+                                        label: e("team_policies_settings.settings.enforce_password.title"),
+                                        checked: o.includes(a$.TRANSFER_FORCE_PASSWORD),
+                                        onChange: e => w(e, a$.TRANSFER_FORCE_PASSWORD),
+                                        disabled: _.includes(a$.TRANSFER_FORCE_PASSWORD)
+                                    }), _.includes(a$.TRANSFER_FORCE_PASSWORD) && (0, l.jsx)(s.y, {
+                                        size: "small"
+                                    })]
+                                }), (0, l.jsx)("span", {
+                                    className: a2().policyDescription,
+                                    children: e("team_policies_settings.settings.enforce_password.description")
+                                })]
+                            }), (0, l.jsxs)("div", {
+                                className: a2().policy,
+                                children: [(0, l.jsxs)("div", {
+                                    className: a2().checkbox,
+                                    children: [(0, l.jsx)(E._, {
+                                        label: e("team_policies_settings.settings.email_transfer_only.title"),
+                                        checked: o.includes(a$.TRANSFER_BLOCK_LINK),
+                                        onChange: e => w(e, a$.TRANSFER_BLOCK_LINK),
+                                        disabled: _.includes(a$.TRANSFER_BLOCK_LINK)
+                                    }), _.includes(a$.TRANSFER_BLOCK_LINK) && (0, l.jsx)(s.y, {
+                                        size: "small"
+                                    })]
+                                }), (0, l.jsx)("span", {
+                                    className: a2().policyDescription,
+                                    children: e("team_policies_settings.settings.email_transfer_only.description")
+                                })]
+                            })]
+                        })]
+                    }), (0, l.jsx)("div", {
+                        className: a2().separator
+                    })]
+                }) : null
+            }
+            var a6 = t(31427),
+                a3 = t.n(a6);
+
+            function a5() {
+                let {
+                    t: e
+                } = (0, d.Bd)();
+                return (0, l.jsxs)("div", {
+                    children: [(0, l.jsx)(ax(), {
+                        children: (0, l.jsx)("title", {
+                            children: e("saml_sso.head_title_scim")
+                        })
+                    }), (0, l.jsx)(M.a, {
+                        showWorkspaceName: !0,
+                        panelName: e("saml_sso.title_scim")
+                    }), (0, l.jsx)(a4, {}), (0, l.jsx)(aJ, {}), (0, l.jsx)("div", {
+                        className: a3().separator
+                    }), (0, l.jsx)(aY, {})]
+                })
+            }
+            var a7 = t(28330),
+                a8 = t(37828),
+                a9 = t(84840),
+                te = t(49302),
+                ta = t(51686),
+                tt = t(33571),
+                tl = t.n(tt);
+
+            function ti() {
+                let {
+                    t: e
+                } = (0, d.Bd)();
+                return (0, l.jsxs)("div", {
+                    className: tl().brandingDisabled,
+                    children: [(0, l.jsx)("span", {
+                        className: tl().brandingDisabledTitle,
+                        children: e("brand.members_callout.title")
+                    }), (0, l.jsx)("span", {
+                        className: tl().brandingDisabledMessage,
+                        children: e("brand.members_callout.message")
+                    })]
+                })
+            }
+            var td = t(95779),
+                tn = t(9879),
+                to = t.n(tn);
+            let ts = ["image/bmp", "image/gif", "image/jpg", "image/jpeg", "image/png", "image/tif", "image/tiff", "image/webp"];
+
+            function t_(e) {
+                var a;
+                let {
+                    forwardedRef: t,
+                    onLoadingChanged: o,
+                    onIsSaveDisabledChanged: s
+                } = e, {
+                    t: _
+                } = (0, d.Bd)(), r = (0, n.wA)(), {
+                    currentTeam: m
+                } = (0, eM.o)(), w = null == m ? void 0 : m.id, [g] = (0, aK.l_)(), b = function() {
+                    let e = (0, Q.A)(),
+                        [a] = (0, aK.l_)(),
+                        [t] = (0, aK.YP)();
+                    return (0, i.useCallback)(async l => {
+                        let {
+                            teamId: i,
+                            file: d
+                        } = l, n = await t({
+                            contentType: d.type
+                        });
+                        if ("data" in n) {
+                            let t = "".concat(e.NEXT_PUBLIC_HELIOS_MEDIA_BASE, "/").concat(n.data.fileName);
+                            await (0, td.A)({
+                                method: "PUT",
+                                path: n.data.url,
+                                params: d,
+                                headers: {
+                                    "Content-Type": d.type
+                                }
+                            }), await a({
+                                teamId: i,
+                                logo: t
+                            })
+                        }
+                    }, [t, e.NEXT_PUBLIC_HELIOS_MEDIA_BASE, a])
+                }(), {
+                    data: c
+                } = (0, aK.Vl)({
+                    teamId: w
+                }, {
+                    skip: !w
+                }), h = null == c ? void 0 : c.name, [p, u] = (0, i.useState)(void 0), [x, y] = (0, i.useState)(!1), [f, M] = (0, i.useState)(!1), k = (0, i.useRef)(null);
+                (0, i.useImperativeHandle)(t, () => ({
+                    saveWorkspaceName: async () => {
+                        w && p && (await g({
+                            teamId: w,
+                            name: p,
+                            defaultName: !1
+                        }), window.location.reload())
+                    }
+                })), (0, i.useEffect)(() => null == o ? void 0 : o(!h), [h, o]);
+                let v = !p || p === h;
+                (0, i.useEffect)(() => null == s ? void 0 : s(v), [v, s]);
+                let C = (0, i.useCallback)(async e => {
+                        if (!w) return;
+                        let a = e.target.files;
+                        if (null == a ? void 0 : a.length) try {
+                            y(!0), await b({
+                                teamId: w,
+                                file: a[0]
+                            }), window.location.reload()
+                        } catch (e) {
+                            y(!1)
+                        }
+                    }, [w, b]),
+                    S = (0, i.useCallback)(async () => {
+                        if (w) try {
+                            M(!0), await g({
+                                teamId: w,
+                                logo: null
+                            }).unwrap(), window.location.reload()
+                        } catch (e) {
+                            r(eq.P9.setPanelNotification({
+                                category: eq.aF.Error,
+                                details: "something_went_wrong"
+                            }))
+                        } finally {
+                            M(!1)
+                        }
+                    }, [w, g, r]);
+                return (0, l.jsxs)("div", {
+                    className: to().workspace,
+                    children: [(0, l.jsxs)("form", {
+                        children: [(0, l.jsxs)("div", {
+                            className: to().workspaceHeader,
+                            children: [(0, l.jsx)("h2", {
+                                children: _("brand.workspace.title")
+                            }), (0, l.jsx)("p", {
+                                children: _("brand.workspace.description")
+                            })]
+                        }), (0, l.jsxs)("div", {
+                            className: to().workspaceContent,
+                            children: [(0, l.jsxs)("div", {
+                                className: to().workspaceIconRow,
+                                children: [(0, l.jsx)("input", {
+                                    style: {
+                                        visibility: "collapse",
+                                        display: "contents"
+                                    },
+                                    ref: k,
+                                    type: "file",
+                                    accept: ts.join(","),
+                                    onChange: C
+                                }), (0, l.jsx)("img", {
+                                    alt: "workspace-icon",
+                                    className: to().workspaceIcon,
+                                    src: null != (a = null == m ? void 0 : m.logoUrl) ? a : void 0
+                                }), (0, l.jsx)(T.$, {
+                                    appearance: "secondary",
+                                    onClick: () => {
+                                        var e;
+                                        return null == (e = k.current) ? void 0 : e.click()
+                                    },
+                                    disabled: x || f,
+                                    children: _("brand.workspace.upload_icon_cta")
+                                }), (0, l.jsx)(T.$, {
+                                    appearance: "tertiary",
+                                    onClick: S,
+                                    disabled: x || f || (null == c ? void 0 : c.isDefaultLogo),
+                                    children: _("brand.workspace.remove_icon_cta")
+                                })]
+                            }), (0, l.jsx)(es.A, {
+                                label: _("brand.workspace.input_label"),
+                                labelType: "inside",
+                                value: null != p ? p : h,
+                                onChange: e => u(e.target.value),
+                                maxLength: 32
+                            })]
+                        })]
+                    }), (0, l.jsx)("div", {
+                        className: to().divider
+                    })]
+                })
+            }
+            var tr = t(49944),
+                tm = t(25330),
+                tw = t(78694),
+                tg = t(57130);
+            let tb = "email_background",
+                tc = (0, n.Ng)(e => ({
+                    maxEmailBackgroundSize: (0, al.ex)(e),
+                    uploadAssetEmailBackground: (0, tg.CU)(e)
+                }), {})(e => {
+                    let {
+                        emailBackground: a,
+                        updateValue: t,
+                        uploadImage: n,
+                        uploadAssetEmailBackground: o,
+                        user: s,
+                        maxEmailBackgroundSize: _
+                    } = e, {
+                        t: m
+                    } = (0, d.Bd)(), [w, g] = (0, i.useState)(!1), b = (0, i.useRef)(), c = a ? a.image_url : "", h = (0, i.useCallback)(() => {
+                        var e;
+                        t(tb, null), null == b || null == (e = b.current) || e.removePreview()
+                    }, [t]), p = (0, i.useCallback)(e => {
+                        var a;
+                        null == b || null == (a = b.current) || a.delegateFileClick(e)
+                    }, []), u = (0, i.useCallback)(() => {
+                        g(!0)
+                    }, []), x = (0, i.useCallback)(() => {
+                        g(!1)
+                    }, []), y = (0, i.useCallback)(async e => {
+                        let a = await n(e, tb);
+                        a && t(tb, a), g(!1)
+                    }, [n, t]), f = r()("emailBackground__mail-image", {
+                        "emailBackground__mail-image--adding": w
+                    });
+                    return (0, l.jsxs)("div", {
+                        className: "row row--no-margin",
+                        children: [(0, l.jsxs)("div", {
+                            className: "col emailBackground__instruction",
+                            children: [(0, l.jsx)("h2", {
+                                children: m("account.workspace.branded_page.email_backgrounds.title")
+                            }), (0, l.jsx)("p", {
+                                children: (0, l.jsx)(d.x6, {
+                                    i18nKey: "account.workspace.branded_page.email_backgrounds.description",
+                                    values: {
+                                        size: eU.A.size(_),
+                                        resolution: eb.o.assetUpload.emailBackgroundResolution
+                                    }
+                                })
+                            }), (0, l.jsxs)("div", {
+                                className: "emailBackground__action-buttons",
+                                children: [(0, l.jsx)(T.$, {
+                                    size: "small",
+                                    onClick: p,
+                                    disabled: o,
+                                    fullwidth: !0,
+                                    children: m("account.workspace.branded_page.email_backgrounds.upload_cta")
+                                }), (0, l.jsx)(T.$, {
+                                    appearance: "secondary",
+                                    size: "small",
+                                    variation: "destructive",
+                                    fullwidth: !0,
+                                    onClick: h,
+                                    disabled: o || !c,
+                                    children: m("account.workspace.branded_page.email_backgrounds.delete_cta")
+                                })]
+                            })]
+                        }, "email_background"), (0, l.jsxs)("div", {
+                            className: "emailBackground__form col",
+                            children: [(0, l.jsx)(aw.Ay, {
+                                type: "MailClient",
+                                className: "emailBackground__mailclient"
+                            }), (0, l.jsx)(eG.A, {
+                                ref: e => b.current = e,
+                                onChange: y,
+                                onMouseOver: u,
+                                onMouseLeave: x,
+                                name: "email_background",
+                                className: f,
+                                value: c,
+                                fullClick: !0,
+                                hideWhilePending: !1,
+                                pending: o
+                            }), (0, l.jsx)(aw.Ay, {
+                                type: "Logo",
+                                className: "emailBackground__mailoverlay-logo",
+                                width: 28
+                            }), function() {
+                                var e, a, t;
+                                let i = r()("emailBackground__mailoverlay", {
+                                        "emailBackground__mailoverlay--nopicture": !(null == s || null == (e = s.profile_picture) ? void 0 : e.image_url)
+                                    }),
+                                    d = (null == s || null == (a = s.profile_picture) ? void 0 : a.image_url) && (0, l.jsx)("div", {
+                                        className: "emailBackground__mail-profile-image",
+                                        style: {
+                                            backgroundImage: "url(".concat(null == s || null == (t = s.profile_picture) ? void 0 : t.image_url, ")")
+                                        }
+                                    });
+                                return (0, l.jsxs)("div", {
+                                    className: i,
+                                    children: [d, (0, l.jsx)("span", {
+                                        children: null == s ? void 0 : s.email
+                                    }), (0, l.jsx)("br", {}), m("account.workspace.branded_page.email_backgrounds.sent_you_files"), (0, l.jsx)("div", {
+                                        className: "emailBackground__mailoverlay-button"
+                                    }), (0, l.jsx)(aw.Ay, {
+                                        type: "Lines",
+                                        className: "emailBackground__mailoverlay-lines"
+                                    }), !(null == s ? void 0 : s.profile_picture) && (0, l.jsx)(aw.Ay, {
+                                        type: "Lines",
+                                        className: "emailBackground__mailoverlay-lines"
+                                    })]
+                                })
+                            }()]
+                        }, "mail_client")]
+                    })
+                });
+            var th = t(39377),
+                tp = t(55293),
+                tu = t(51853),
+                tx = t(88848),
+                ty = t(1172),
+                tf = t(396);
+            let tM = (0, n.Ng)(e => ({
+                uploadAssetEmailBackground: (0, tg.CU)(e)
+            }), {
+                editAccount: eO.A.Account.editAccount,
+                uploadAsset: eO.A.UI.uploadAsset
+            })(e => {
+                (0, i.useImperativeHandle)(e.forwardedRef, () => ({
+                    saveChangedEmailBackground: u
+                }));
+                let a = function() {
+                        var e, a, t;
+                        let {
+                            entitlements: l
+                        } = (0, tr.o)({
+                            ignoreChannel: !0
+                        }), i = l[tw.Z.EMAIL_BRANDING];
+                        (0, tm.A)(i, l, tw.Z.EMAIL_BRANDING);
+                        let d = null != (t = null == i || null == (a = i.rule) || null == (e = a.boolean) ? void 0 : e.value) && t,
+                            n = (0, tm.G)();
+                        return d && n
+                    }(),
+                    t = (0, tf.m)("branded-emails"),
+                    {
+                        account: d,
+                        pending: o,
+                        user: s
+                    } = (0, n.d4)(e => e),
+                    [_, m] = (0, i.useState)(!1),
+                    w = t.getDataForm(),
+                    g = (0, n.wA)();
+                (0, i.useEffect)(() => {
+                    let e = (0, ty.t)(s);
+                    _ || o.getAccount || !e.id || (g(eO.A.Account.getAccount(e.id)), m(!0))
+                }, [_, s, o.getAccount, g]);
+                let b = !!o.getAccount;
+                (0, i.useEffect)(() => {
+                    var a;
+                    null == (a = e.onLoadingChanged) || a.call(e, b)
+                }, [b]);
+                let c = !t.isFormDirty;
+                (0, i.useEffect)(() => {
+                    var a;
+                    null == (a = e.onIsSaveDisabledChanged) || a.call(e, c)
+                }, [c]);
+                let h = async (a, t) => {
+                    let l = a.target.files[0];
+                    return e.uploadAsset(l, t)
+                }, p = (0, i.useMemo)(() => void 0 !== w.email_background || null === w.email_background ? w.email_background : d.email_background, [w.email_background, d.email_background]), u = async a => {
+                    if (a.preventDefault(), !t.isFormDirty) return;
+                    let l = {
+                        ...w
+                    };
+                    for (let e in w) void 0 === l[e] && (l[e] = "");
+                    g(e1.r.setFormState(!1)), d.id && await e.editAccount(d.id, w, {
+                        notification: !1
+                    }), t.resetForm()
+                };
+                return o.getAccount ? (0, l.jsx)(th.A, {}) : (0, l.jsxs)("div", {
+                    "data-testid": "brandedEmails",
+                    children: [!v.Ay.isMobile && (0, ef.yw)(s) && (0, l.jsx)("div", {
+                        className: "brandedEmails__workspaceUpgradeBanner",
+                        children: (0, l.jsx)(tp.A, {
+                            headingText: eU.A.t("upgrade_workspace.title"),
+                            buttonHref: tu.bP.route,
+                            buttonLabel: eU.A.t("upgrade_workspace.cta"),
+                            bodyText: eU.A.t("upgrade_workspace.general_information"),
+                            buttonOnClick: () => {
+                                g((0, tx.jt)(tx.vW.SETTINGS_BRANDED_EMAILS_UPGRADE))
+                            }
+                        })
+                    }), (0, l.jsx)("form", {
+                        method: "post",
+                        onSubmit: u,
+                        className: r()("brandedEmailsForm", {
+                            "brandedEmailsForm--disabled": !a
+                        }),
+                        "data-testid": "branded-emails-form",
+                        children: (0, l.jsx)("div", {
+                            className: "brandedEmails",
+                            children: (0, l.jsx)(tc, {
+                                emailBackground: p,
+                                user: s,
+                                pending: e.pending,
+                                updateValue: t.updateValue,
+                                uploadImage: h
+                            })
+                        })
+                    })]
+                })
+            });
+            var tk = t(31784),
+                tv = t(4399),
+                tC = t(87769),
+                tS = t.n(tC);
+            let tA = (0, i.forwardRef)((e, a) => (0, l.jsx)(tM, {
+                    forwardedRef: a,
+                    ...e
+                })),
+                tI = (0, i.forwardRef)((e, a) => (0, l.jsx)(t_, {
+                    forwardedRef: a,
+                    ...e
+                }));
+
+            function tj() {
+                let {
+                    t: e
+                } = (0, d.Bd)(), {
+                    addToast: a
+                } = (0, o.d)(), t = (0, n.d4)(ev.Lm), {
+                    getUserByAuth0Id: s,
+                    fetching: _
+                } = (0, eM.o)(), r = (0, i.useMemo)(() => {
+                    var e;
+                    return t && (null == (e = s(t)) ? void 0 : e.role) === "admin"
+                }, [t, s]), [m, w] = (0, i.useState)(!0), [g, b] = (0, i.useState)(!0), c = (0, i.useRef)(null), [h, p] = (0, i.useState)(!0), [u, x] = (0, i.useState)(!0), y = (0, i.useRef)(null), [f, k] = (0, i.useState)(!0), [v, C] = (0, i.useState)(!0), S = (0, ta._)(), A = (0, l.jsx)(tA, {
+                    ref: c,
+                    pending: "",
+                    onIsSaveDisabledChanged: x,
+                    onLoadingChanged: p
+                }), I = (0, l.jsx)(tI, {
+                    ref: y,
+                    onIsSaveDisabledChanged: C,
+                    onLoadingChanged: k
+                }), j = g && u && v, D = _ || !t || r && (m || h || f && S), N = (0, i.useCallback)(async t => {
+                    if (!g || !u || !v) try {
+                        var l, i, d;
+                        g || null == (l = document.getElementById(tv.yP)) || l.dispatchEvent(new Event("submit", {
+                            cancelable: !0,
+                            bubbles: !0
+                        })), u || await (null == (i = c.current) ? void 0 : i.saveChangedEmailBackground(t)), v || await (null == (d = y.current) ? void 0 : d.saveWorkspaceName()), a(e("brand.save_success"), {
+                            autoHideDuration: 3e3
+                        })
+                    } catch (t) {
+                        a(e("brand.save_error"), {
+                            autoHideDuration: 3e3
+                        })
+                    }
+                }, [a, u, g, v, e]);
+                return (0, l.jsxs)(l.Fragment, {
+                    children: [D && (0, l.jsx)(th.r, {}), (0, l.jsxs)("div", {
+                        className: D ? tS().hidden : "",
+                        children: [(0, l.jsx)(ax(), {
+                            children: (0, l.jsxs)("title", {
+                                children: [e("brand.title"), " - WeTransfer"]
+                            })
+                        }), (0, l.jsx)("div", {
+                            className: tS().panelHeader,
+                            children: (0, l.jsx)(M.a, {
+                                showWorkspaceName: !0,
+                                panelName: e("brand.title"),
+                                buttonLabel: e("brand.save"),
+                                isDisabled: !r || j,
+                                onClick: N
+                            })
+                        }), r ? (0, l.jsxs)(l.Fragment, {
+                            children: [S && I, (0, l.jsx)(tk.default, {
+                                onIsSaveDisabledChanged: b,
+                                onLoadingChanged: w
+                            }), (0, l.jsx)("div", {
+                                className: tS().divider
+                            }), A]
+                        }) : (0, l.jsx)(ti, {})]
+                    })]
+                })
+            }
+            var tD = t(87379),
+                tN = t(30394),
+                tP = t(55258),
+                tB = function(e) {
+                    return e.STRIPE = "Stripe", e
+                }({}),
+                tT = t(70644),
+                tE = t.n(tT),
+                tL = t(7805),
+                tW = t(30899),
+                tR = t(43745),
+                tU = t.n(tR);
+            let tO = {
+                    [tB.STRIPE]: "stripe-logo.png"
+                },
+                tF = e => {
+                    let {
+                        type: a
+                    } = e, t = tW.A.lookup(tO[a]);
+                    return (0, l.jsx)("img", {
+                        alt: "".concat(a, " logo"),
+                        className: tU().logo,
+                        src: t
+                    })
+                };
+            var tG = t(17399),
+                tK = t.n(tG);
+
+            function tH(e) {
+                let {
+                    children: a,
+                    description: t,
+                    type: i
+                } = e;
+                return (0, l.jsxs)("div", {
+                    className: tK().card,
+                    "data-testid": "".concat(i.toLowerCase().replace(" ", "-"), "-status-card"),
+                    children: [(0, l.jsx)(tF, {
+                        type: i
+                    }), t && (0, l.jsx)("p", {
+                        className: tK().description,
+                        "data-testid": "description",
+                        children: t
+                    }), a]
+                })
+            }
+            var tz = t(5553),
+                tY = t.n(tz);
+
+            function tV(e) {
+                let {
+                    className: a,
+                    ...t
+                } = e;
+                return (0, l.jsx)("button", {
+                    className: r()(tY().button, a),
+                    ...t
+                })
+            }
+            var tX = t(67199),
+                tQ = t(73340),
+                tq = t(83153),
+                tZ = t(10148),
+                tJ = t(63645);
+            let t$ = e => {
+                    var a;
+                    let {
+                        status: t,
+                        type: o = tB.STRIPE
+                    } = e, s = (0, n.d4)(u.B$), _ = null != (a = (0, n.d4)(tZ.nT)) ? a : "", r = (0, n.wA)(), m = (0, n.d4)(tZ.MC), w = (0, n.d4)(tZ._8), [g, b] = (0, i.useState)(!1), [c, h] = (0, i.useState)(!1), p = (0, i.useCallback)(async () => {
+                        b(!0);
+                        try {
+                            (0, tQ.Hp)("Integrations Page", "Stripe", s), await r((0, tN.UF)())
+                        } catch (e) {
+                            h(!0), b(!1)
+                        }
+                    }, [r, s]), [x, y] = (0, i.useState)(!1), [f, M] = (0, i.useState)(!1), [k, v] = (0, i.useState)(!1), C = (0, i.useCallback)(async () => {
+                        y(!0);
+                        try {
+                            await r((0, tN.lZ)()), M(!0)
+                        } catch (e) {
+                            v(!0)
+                        }
+                        y(!1)
+                    }, [r]), S = (0, l.jsxs)(l.Fragment, {
+                        children: [eU.A.t("integrations.status.connected.text.Stripe", {
+                            sellerEmail: _
+                        }), " ", (0, l.jsx)("a", {
+                            href: tJ.SX,
+                            target: "_blank",
+                            rel: "noopener noreferrer",
+                            children: eU.A.t("integrations.status.connected.supporting_text.link_text", {
+                                integration: o
+                            })
+                        }), " ", eU.A.t("integrations.status.connected.supporting_text.stripe"), " ", (0, l.jsx)(tV, {
+                            "data-testid": "disconnect-button",
+                            onClick: C,
+                            children: eU.A.t("integrations.status.connected.disconnect", {
+                                integration: o
+                            })
+                        })]
+                    }), A = (0, l.jsxs)(l.Fragment, {
+                        children: [eU.A.t("integrations.account_details", {
+                            sellerEmail: _ ? "".concat(_, ".") : ""
+                        }) + " ", (0, l.jsx)(tV, {
+                            onClick: C,
+                            children: eU.A.t(tJ.GS, {
+                                integration: tB.STRIPE
+                            })
+                        })]
+                    });
+                    if (g || t === tP.DG.PENDING_VERIFICATION) return (0, l.jsx)(tH, {
+                        description: eU.A.t("integrations.status.not_connected.text.stripe"),
+                        type: o,
+                        children: (0, l.jsx)(tL.A, {
+                            type: tL.l.Pending,
+                            message: eU.A.t(tJ.GO)
+                        })
+                    });
+                    if (c) return (0, l.jsx)(tH, {
+                        description: eU.A.t(tJ.iP),
+                        type: o,
+                        children: (0, l.jsx)(tL.A, {
+                            type: tL.l.Error,
+                            message: eU.A.t("integrations.status.error")
+                        })
+                    });
+                    if (x) return (0, l.jsx)(tH, {
+                        description: S,
+                        type: o,
+                        children: (0, l.jsx)(tL.A, {
+                            type: tL.l.Pending,
+                            message: eU.A.t(tJ.Ik)
+                        })
+                    });
+                    if (k) return (0, l.jsx)(tH, {
+                        description: S,
+                        type: o,
+                        children: (0, l.jsx)(tL.A, {
+                            type: tL.l.Error,
+                            message: eU.A.t(tJ.rx)
+                        })
+                    });
+                    if (f) return (0, l.jsx)(tH, {
+                        description: eU.A.t(tJ.iP),
+                        type: o,
+                        children: (0, l.jsx)(tL.A, {
+                            type: tL.l.Success,
+                            message: eU.A.t(tJ.EU)
+                        })
+                    });
+                    if (!m) {
+                        let e = (0, l.jsx)("a", {
+                            href: tJ.SX,
+                            target: "_blank",
+                            rel: "noopener noreferrer"
+                        });
+                        return (0, l.jsx)(tH, {
+                            description: S,
+                            type: o,
+                            children: (0, l.jsx)(tL.A, {
+                                type: tL.l.Error,
+                                message: (0, l.jsx)(d.x6, {
+                                    i18nKey: "paid_transfers.currency_not_supported",
+                                    components: {
+                                        stripeLink: e
+                                    },
+                                    values: {
+                                        currency_symbol: (0, tq.Q)(w)
+                                    }
+                                })
+                            })
+                        })
+                    }
+                    if (t === tP.DG.FETCHING) return null;
+                    switch (t) {
+                        case tP.DG.ACTIVE:
+                            return (0, l.jsx)(tH, {
+                                description: S,
+                                type: o
+                            });
+                        case tP.DG.NOT_CONNECTED:
+                            return (0, l.jsx)(tH, {
+                                description: eU.A.t(tJ.iP),
+                                type: o,
+                                children: (0, l.jsx)(eY.A, {
+                                    className: tE().connectButton,
+                                    type: "primary",
+                                    text: eU.A.t(tJ.uV, {
+                                        integration: tB.STRIPE
+                                    }),
+                                    onClick: p
+                                })
+                            });
+                        case tP.DG.PENDING:
+                        case tP.DG.INACTIVE:
+                        case tP.DG.DUE:
+                            return (0, l.jsx)(tH, {
+                                description: A,
+                                type: o,
+                                children: (0, l.jsx)(tX.A, {
+                                    status: t,
+                                    ctaHref: tJ.SX
+                                })
+                            });
+                        default:
+                            return null
+                    }
+                },
+                t0 = e => {
+                    let {
+                        integration: a
+                    } = e;
+                    return a.type === tB.STRIPE ? (0, l.jsx)(t$, {
+                        status: a.status
+                    }) : null
+                };
+            var t1 = t(27062),
+                t2 = t.n(t1);
+            let t4 = e => {
+                    let {
+                        list: a
+                    } = e;
+                    return (0, l.jsxs)("div", {
+                        className: t2().Integrations,
+                        "data-testid": "integrations",
+                        children: [!v.Ay.isMobile && (0, l.jsx)(M.a, {
+                            showWorkspaceName: !0,
+                            panelName: eU.A.t("integrations.title")
+                        }), (0, l.jsx)("div", {
+                            className: t2().list,
+                            children: a.map(e => (0, l.jsx)(t0, {
+                                integration: e
+                            }, "integration-status-".concat(e.type)))
+                        })]
+                    })
+                },
+                t6 = () => {
+                    let e = (0, n.wA)(),
+                        {
+                            currentTeam: a
+                        } = (0, eM.o)(),
+                        t = (0, n.d4)(tP.cC),
+                        d = (0, n.d4)(u.mB);
+                    (0, i.useEffect)(() => {
+                        document.title = "".concat(eU.A.t("integrations.title"), " - WeTransfer")
+                    }), (0, i.useEffect)(() => {
+                        (async () => {
+                            (null == a ? void 0 : a.id) && (await e((0, tN.Bf)(!0)), e((0, tN.YT)(!0)))
+                        })()
+                    }, [null == a ? void 0 : a.id, e]);
+                    let o = (0, i.useMemo)(() => {
+                        let e = [];
+                        return (0, tD.hb)(d) && !v.Ay.isMobile && e.unshift({
+                            type: tB.STRIPE,
+                            status: t
+                        }), e
+                    }, [t, d]);
+                    return (0, l.jsx)(t4, {
+                        list: o
+                    })
+                };
+            var t3 = t(72255),
+                t5 = t(51145),
+                t7 = t.n(t5);
+
+            function t8() {
+                let {
+                    t: e
+                } = (0, d.Bd)(), a = (0, n.wA)(), t = (0, n.d4)(u.R2) || ey.js.FREE, o = (0, n.d4)(u.Me), {
+                    planName: s
+                } = (0, ef.ns)(t, o, {}) || {}, {
+                    settings: {
+                        members_page_upsell_help_link: _
+                    }
+                } = (0, C.k)(), r = (0, i.useCallback)(() => {
+                    a((0, tx.jt)(tx.vW.WORKSPACE_MEMBERS_CREATE_TEAM)), t3.A.navigateTo(tu.bP.route)
+                }, [a]);
+                return (0, l.jsxs)(l.Fragment, {
+                    children: [(0, l.jsx)("span", {
+                        className: t7().header,
+                        children: (0, l.jsx)(d.x6, {
+                            i18nKey: "members.workspace_upsell.header",
+                            components: {
+                                plan: (0, l.jsx)("span", {
+                                    className: t7().headerPlan,
+                                    children: s
+                                })
+                            }
+                        })
+                    }), (0, l.jsxs)("div", {
+                        className: t7().callout,
+                        children: [(0, l.jsx)("span", {
+                            className: t7().calloutTitle,
+                            children: e("members.workspace_upsell.callout.title")
+                        }), (0, l.jsxs)("div", {
+                            className: t7().calloutPerks,
+                            children: [(0, l.jsxs)("div", {
+                                className: t7().calloutPerkContainer,
+                                children: [(0, l.jsx)(aR.bT1, {
+                                    size: "medium"
+                                }), (0, l.jsx)("span", {
+                                    className: t7().calloutPerk,
+                                    children: (0, l.jsx)(d.x6, {
+                                        i18nKey: "members.workspace_upsell.callout.perk_manage",
+                                        components: {
+                                            strong: (0, l.jsx)("span", {
+                                                className: t7().calloutPerkStrong
+                                            })
+                                        }
+                                    })
+                                })]
+                            }), (0, l.jsxs)("div", {
+                                className: t7().calloutPerkContainer,
+                                children: [(0, l.jsx)(aR.bT1, {
+                                    size: "medium"
+                                }), (0, l.jsx)("span", {
+                                    className: t7().calloutPerk,
+                                    children: (0, l.jsx)(d.x6, {
+                                        i18nKey: "members.workspace_upsell.callout.perk_unlimited",
+                                        components: {
+                                            strong: (0, l.jsx)("span", {
+                                                className: t7().calloutPerkStrong
+                                            })
+                                        }
+                                    })
+                                })]
+                            }), (0, l.jsxs)("div", {
+                                className: t7().calloutPerkContainer,
+                                children: [(0, l.jsx)(aR.bT1, {
+                                    size: "medium"
+                                }), (0, l.jsx)("span", {
+                                    className: t7().calloutPerk,
+                                    children: (0, l.jsx)(d.x6, {
+                                        i18nKey: "members.workspace_upsell.callout.perk_branding",
+                                        components: {
+                                            strong: (0, l.jsx)("span", {
+                                                className: t7().calloutPerkStrong
+                                            })
+                                        }
+                                    })
+                                })]
+                            })]
+                        }), (0, l.jsx)("span", {
+                            className: t7().calloutPerk,
+                            children: (0, l.jsx)(d.x6, {
+                                i18nKey: "members.workspace_upsell.callout.learn_more",
+                                components: {
+                                    learnMore: (0, l.jsx)("a", {
+                                        href: _,
+                                        target: "_blank",
+                                        rel: "noopener noreferrer"
+                                    })
+                                }
+                            })
+                        }), (0, l.jsx)(T.$, {
+                            appearance: "primary",
+                            variation: "upsell",
+                            size: "medium",
+                            onClick: r,
+                            children: e("members.workspace_upsell.callout.cta")
+                        })]
+                    })]
+                })
+            }
+            var t9 = t(5619),
+                le = t(74067),
+                la = t(41821),
+                lt = t(74744),
+                ll = t(14974),
+                li = t(26232);
+            let ld = e => {
+                let {
+                    teamId: a,
+                    isModalOpen: t,
+                    seats: l
+                } = e, [d, n] = (0, i.useState)(!0), [o, s] = (0, i.useState)(!1), [_, r] = (0, i.useState)(), [m] = (0, aK.zl)(), [w] = (0, li.Zj)(), g = (0, i.useCallback)(async () => {
+                    try {
+                        let {
+                            data: e
+                        } = await m({
+                            teamId: a
+                        }, !0);
+                        if (!e) return void s(!0);
+                        let {
+                            data: t
+                        } = await w({
+                            teamId: a,
+                            quantity: l
+                        });
+                        t ? r({
+                            ...t,
+                            upfrontTotalCents: t.upfrontTotalCents
+                        }) : s(!0)
+                    } catch (e) {
+                        s(!0)
+                    } finally {
+                        n(!1)
+                    }
+                }, [m, a, w, l]);
+                return (0, i.useEffect)(() => {
+                    t && (n(!0), s(!1), r(void 0), g())
+                }, [g, t, n, s, r]), {
+                    isLoading: d,
+                    hasFailed: o,
+                    billingPreview: _
+                }
+            };
+            var ln = t(16061),
+                lo = t.n(ln);
+
+            function ls(e) {
+                let {
+                    isOpen: a,
+                    header: t,
+                    body: d,
+                    footer: n,
+                    confirmText: o,
+                    isDestructive: s,
+                    isDisabled: _,
+                    isButtonFullWidth: r,
+                    onClose: m,
+                    onConfirm: w
+                } = e, [g, b] = (0, i.useState)(!1), c = (0, i.useCallback)(async () => {
+                    b(!0), await (null == w ? void 0 : w()), b(!1)
+                }, [b, w]);
+                return (0, l.jsx)(W.a, {
+                    classes: {
+                        containerClass: lo().modal
+                    },
+                    onClose: m,
+                    isOpen: a,
+                    showCloseButton: !0,
+                    appElement: (0, R.Y)(),
+                    children: (0, l.jsxs)("div", {
+                        className: lo().container,
+                        children: [(0, l.jsx)("span", {
+                            className: lo().header,
+                            children: t
+                        }), (0, l.jsx)("p", {
+                            className: lo().body,
+                            children: d
+                        }), (0, l.jsx)("div", {
+                            className: lo().spacer
+                        }), (0, l.jsx)(T.$, {
+                            onClick: c,
+                            className: lo().button,
+                            disabled: g || _,
+                            variation: s ? "destructive" : "default",
+                            fullwidth: r,
+                            children: o
+                        }), n && (0, l.jsx)("span", {
+                            className: lo().footer,
+                            children: n
+                        })]
+                    })
+                })
+            }
+            var l_ = t(23751),
+                lr = t.n(l_),
+                lm = t(19892),
+                lw = t.n(lm);
+
+            function lg(e) {
+                let {
+                    isOpen: a,
+                    onClose: t,
+                    onConfirm: n,
+                    maxSeatsCount: o
+                } = e, {
+                    t: s
+                } = (0, d.Bd)(), _ = (0, i.useCallback)(() => {
+                    null == n || n()
+                }, [n]);
+                return (0, l.jsx)(W.a, {
+                    classes: {
+                        containerClass: lw().modal
+                    },
+                    onClose: t,
+                    isOpen: a,
+                    appElement: (0, R.Y)(),
+                    children: (0, l.jsxs)("div", {
+                        className: lw().content,
+                        children: [(0, l.jsx)(aw.Ay, {
+                            type: "AlertFull",
+                            className: lw().contentIcon
+                        }), (0, l.jsx)("span", {
+                            className: lw().contentHeader,
+                            children: s("members.subscription_upgrade_modal.header")
+                        }), (0, l.jsx)("p", {
+                            className: lw().contentBody,
+                            children: s("members.subscription_upgrade_modal.body", {
+                                seatsLimit: o
+                            })
+                        }), (0, l.jsxs)("div", {
+                            className: lw().contentButtons,
+                            children: [(0, l.jsx)(T.$, {
+                                onClick: _,
+                                className: lw().contentButton,
+                                fullwidth: !0,
+                                children: eU.A.t("members.subscription_upgrade_modal.cta")
+                            }), (0, l.jsx)(T.$, {
+                                onClick: t,
+                                appearance: "secondary",
+                                className: lw().contentButton,
+                                fullwidth: !0,
+                                children: eU.A.t("members.subscription_upgrade_modal.close")
+                            })]
+                        })]
+                    })
+                })
+            }
+            var lb = t(81436),
+                lc = t(58061),
+                lh = t(3882),
+                lp = t.n(lh);
+
+            function lu(e) {
+                let {
+                    isLoading: a,
+                    hasFailed: t,
+                    billingPreview: i,
+                    additionalSeatsCount: n
+                } = e, {
+                    t: o
+                } = (0, d.Bd)(), _ = i && "".concat((0, lc.F)({
+                    currency: i.currency,
+                    amount: i.recurringTotalCents / 100,
+                    locale: eU.A.locale
+                }), "/").concat(o("members.add_members.invite_members_modal.body.interval_".concat(i.interval))), r = i && new Date(i.recurringAt).toLocaleDateString();
+                return t ? (0, l.jsx)("p", {
+                    className: lp().errorText,
+                    children: o("members.add_members.invite_members_modal.error_message")
+                }) : a ? (0, l.jsx)("div", {
+                    className: lp().spinnerContainer,
+                    children: (0, l.jsx)(s.y, {
+                        size: "large"
+                    })
+                }) : (0, l.jsx)("div", {
+                    className: lp().confirmationModalContents,
+                    children: (0, l.jsxs)("div", {
+                        className: lp().confirmationModalBody,
+                        children: [(0, l.jsxs)("div", {
+                            className: lp().chargeInfo,
+                            children: [(0, l.jsxs)("div", {
+                                className: lp().chargeInfoRow,
+                                children: [(0, l.jsx)("span", {
+                                    children: o("members.add_members.invite_members_modal.body.will_be_charged")
+                                }), (0, l.jsxs)("div", {
+                                    className: lp().chargeInfoAmount,
+                                    children: [(0, l.jsx)(lb.A, {
+                                        containerClassName: lp().chargeInfoPopover,
+                                        positions: ["bottom"],
+                                        content: (0, l.jsx)("span", {
+                                            children: o("members.add_members.invite_members_modal.body.popover_text")
+                                        }),
+                                        eventTrigger: "hover",
+                                        isCondensed: !0,
+                                        mode: "dark",
+                                        children: (0, l.jsx)(aR.rHs, {
+                                            size: "small"
+                                        })
+                                    }), i && (0, l.jsx)("span", {
+                                        "data-testid": "invoice-additional-amount",
+                                        children: (0, lc.F)({
+                                            currency: i.currency,
+                                            amount: n <= 0 ? 0 : i.upfrontTotalCents / 100,
+                                            locale: eU.A.locale
+                                        })
+                                    })]
+                                })]
+                            }), (0, l.jsx)("div", {
+                                className: lp().chargeInfoRow,
+                                children: n <= 0 ? (0, l.jsx)("p", {
+                                    className: lp().chargeInfoLabel,
+                                    children: o("members.add_members.invite_members_modal.body.seat_management_minimum_commitment")
+                                }) : (0, l.jsx)("p", {
+                                    className: lp().chargeInfoLabel,
+                                    children: (0, l.jsx)(d.x6, {
+                                        i18nKey: "members.add_members.invite_members_modal.body.seat_management_increase",
+                                        values: {
+                                            additionalSeatsCount: n
+                                        },
+                                        components: [(0, l.jsx)("b", {}, 0), (0, l.jsx)("a", {
+                                            href: "/workspace/payment",
+                                            target: "_self"
+                                        }, 1)]
+                                    })
+                                })
+                            })]
+                        }), (0, l.jsx)("div", {
+                            className: lp().separator
+                        }), (0, l.jsx)("div", {
+                            className: lp().confirmationSubscriptionInfo,
+                            children: (0, l.jsx)(d.x6, {
+                                i18nKey: n <= 0 ? "members.add_members.invite_members_modal.body.subscription_continue" : "members.add_members.invite_members_modal.body.subscription_info",
+                                components: {
+                                    1: (0, l.jsx)("span", {
+                                        className: lp().confirmationSubscriptionInfoBold
+                                    })
+                                },
+                                values: {
+                                    subscriptionInfo: _,
+                                    subscriptionDate: r
+                                }
+                            })
+                        })]
+                    })
+                })
+            }
+
+            function lx(e) {
+                let {
+                    isAlreadyInWorkspace: a,
+                    setIsProcessingInviteRequest: t
+                } = e, {
+                    t: s
+                } = (0, d.Bd)(), {
+                    addToast: _
+                } = (0, o.d)(), [r] = (0, aK.j2)(), m = (0, ll.l)(), [w, g] = (0, i.useState)(!1), [b, c] = (0, i.useState)(!1), [h, p] = (0, i.useState)([""]), [x, y] = (0, i.useState)(!1), f = (0, n.wA)(), {
+                    settings: {
+                        repackaging_enterprise_cta_url: M
+                    }
+                } = (0, C.k)(), {
+                    maximumSeats: k,
+                    currentSeats: v,
+                    additionalSeatsNeededForInvites: S
+                } = (0, lt.K)(), A = (0, n.d4)(u.eB), I = (0, n.d4)(u.R2), j = S(h.filter(Boolean).length), {
+                    isLoading: D,
+                    hasFailed: N,
+                    billingPreview: P
+                } = ld({
+                    seats: v + j,
+                    teamId: A || "",
+                    isModalOpen: w
+                }), B = I !== ey.js.ENTERPRISE_CUSTOM_CONTRACT, E = (0, i.useCallback)(() => p(e => ["", ...e]), []), L = (0, i.useCallback)(e => p(a => a.filter((a, t) => t !== e)), []), W = (0, i.useCallback)((e, a) => p(t => t.map((t, l) => l === e ? a : t)), []), R = (() => {
+                    let {
+                        addToast: e
+                    } = (0, o.d)(), a = (0, n.d4)(ev.Lm), {
+                        fetching: t,
+                        getUserByAuth0Id: l,
+                        currentTeam: s
+                    } = (0, eM.o)(), {
+                        t: _
+                    } = (0, d.Bd)(), [r] = (0, li.Zj)(), {
+                        currentSeats: m,
+                        additionalSeatsNeededForInvites: w
+                    } = (0, lt.K)(), {
+                        data: g
+                    } = (0, aK.Vl)({
+                        teamId: null == s ? void 0 : s.id
+                    }, {
+                        skip: !(null == s ? void 0 : s.id)
+                    }), [b, c] = (0, i.useState)(void 0), [h, p] = (0, i.useState)(void 0), [u, x] = (0, i.useState)(!1), y = (0, i.useMemo)(() => {
+                        var e;
+                        return a && (null == (e = l(a)) ? void 0 : e.role) === "admin"
+                    }, [l, a]), f = (0, i.useCallback)(() => {
+                        window.history.pushState({}, document.title, window.location.pathname)
+                    }, []), M = (0, i.useCallback)(async e => void 0 === e || !!g && !t && !!s && !!w(1) && (await r({
+                        teamId: s.id,
+                        quantity: m + 1
+                    }).unwrap()).upfrontTotalCents / 100 !== e, [s, t, r, g, m, w]), k = (0, i.useCallback)(async (e, a) => {
+                        c({
+                            email: e,
+                            shouldShowPreviewModal: await M(a)
+                        }), f()
+                    }, [f, M]), {
+                        isAcceptRequest: v,
+                        email: C,
+                        teamId: S,
+                        seatCost: A
+                    } = (0, i.useMemo)(() => {
+                        let e = new URLSearchParams(window.location.search),
+                            a = e.get("email"),
+                            t = e.get("team-id"),
+                            l = e.get("seat-cost");
+                        return {
+                            isAcceptRequest: !!e.get("accept-request"),
+                            email: a,
+                            teamId: t,
+                            seatCost: l
+                        }
+                    }, []);
+                    return (0, i.useEffect)(() => {
+                        if (v && g && !t && !u && !b && !h)
+                            if (C && S) {
+                                var e, a;
+                                if (!y) return void p("NO_PERMISSIONS");
+                                if (g.id !== S) return void p("WRONG_WORKSPACE");
+                                if (null == (e = g.invites) ? void 0 : e.some(e => e.email === C)) return void p("ALREADY_INVITED");
+                                if (null == (a = g.members) ? void 0 : a.some(e => e.user.email === C)) return void p("ALREADY_MEMBER");
+                                x(!0), k(C, null === A ? void 0 : Number(A))
+                            } else p("INVALID")
+                    }, [t, g, y, e, _, k, u, b, h, C, S, A, v]), (0, i.useEffect)(() => {
+                        if (h) {
+                            switch (h) {
+                                case "ALREADY_MEMBER":
+                                    e(_("request_workspace_invitation.toasts.error_already_member", {
+                                        email: C
+                                    }));
+                                    break;
+                                case "ALREADY_INVITED":
+                                    e(_("request_workspace_invitation.toasts.error_already_invited", {
+                                        email: C
+                                    }));
+                                    break;
+                                case "WRONG_WORKSPACE":
+                                    e(_("request_workspace_invitation.toasts.error_wrong_workspace"));
+                                    break;
+                                case "NO_PERMISSIONS":
+                                    e(_("request_workspace_invitation.toasts.error_permissions"));
+                                    break;
+                                case "INVALID":
+                                    e(_("request_workspace_invitation.toasts.error_invalid"))
+                            }
+                            f()
+                        }
+                    }, [h]), b
+                })(), U = (0, i.useCallback)(async e => {
+                    if (!A) return;
+                    let a = S(e.length);
+                    try {
+                        if (a && !await m({
+                                newQuantity: v + a
+                            })) throw Error("Failed to upgrade subscription");
+                        await r({
+                            teamId: A,
+                            invites: e
+                        }).unwrap(), _(s("members.add_members.confirmed_payment_message"), R ? {
+                            isDismissible: !0,
+                            persist: !0
+                        } : void 0), p([""])
+                    } catch (e) {
+                        _(s("members.add_members.error_payment_message"), {
+                            mode: "dark",
+                            autoHideDuration: 3e3,
+                            actions: () => (0, l.jsx)("a", {
+                                className: lr().paymentErrorLink,
+                                href: "/workspace/payment",
+                                children: s("members.add_members.error_payment_link")
+                            })
+                        })
+                    } finally {
+                        g(!1), y(!1), null == t || t(!1), f(eO.A.User.getUser())
+                    }
+                }, [A, S, r, _, s, R, m, v, t, f]), O = (0, i.useCallback)(() => {
+                    let e = [...new Set(h.filter(Boolean))],
+                        a = S(e.length) + v;
+                    if (k && a > k) return void c(!0);
+                    p(e), B ? g(!0) : U(e)
+                }, [h, S, v, k, B, U]);
+                (0, i.useEffect)(() => {
+                    R && (p([R.email]), R.shouldShowPreviewModal ? g(!0) : (null == t || t(!0), U([R.email])))
+                }, [R]);
+                let F = (0, i.useMemo)(() => h.filter(e => e0.A.validateEmail(e) && !a(e)).length > 0, [h, a]);
+                return (0, l.jsxs)(l.Fragment, {
+                    children: [(0, l.jsxs)("div", {
+                        className: lr().container,
+                        children: [(0, l.jsx)("span", {
+                            className: lr().title,
+                            children: s("members.add_members.title")
+                        }), (0, l.jsx)("span", {
+                            className: lr().description,
+                            children: s("members.add_members.description")
+                        }), (0, l.jsx)("div", {
+                            className: lr().membersToAddList,
+                            children: h.map((e, t) => (0, l.jsxs)("div", {
+                                className: lr().memberToAdd,
+                                children: [(0, l.jsx)("div", {
+                                    className: lr().emailInput,
+                                    children: (0, l.jsx)(es.A, {
+                                        size: "medium",
+                                        label: "email-".concat(t),
+                                        labelType: "hidden",
+                                        type: "email",
+                                        placeholder: s("members.add_members.input_placeholder"),
+                                        value: e,
+                                        onChange: e => W(t, e.target.value),
+                                        state: a(e) ? "invalid" : "default",
+                                        caption: a(e) ? s("members.add_members.input_message_already_in_workspace") : void 0
+                                    })
+                                }), (0, l.jsx)(aU.K, {
+                                    icon: 0 === t ? aR.U6k : aR.rkR,
+                                    size: "small",
+                                    appearance: "tertiary",
+                                    variation: 0 === t ? "neutral" : "destructive",
+                                    onClick: 0 === t ? E : () => L(t)
+                                })]
+                            }, t))
+                        }), (0, l.jsx)(T.$, {
+                            onClick: O,
+                            disabled: !F || x,
+                            children: s("members.add_members.cta")
+                        })]
+                    }), A && (0, l.jsx)(ls, {
+                        header: s(h.length > 1 ? "members.add_members.invite_members_modal.header.invite_multiple" : "members.add_members.invite_members_modal.header.invite_single", {
+                            invitationsAmount: h.length
+                        }),
+                        body: (0, l.jsx)(lu, {
+                            invitationsAmount: h.length,
+                            isLoading: D,
+                            hasFailed: N,
+                            billingPreview: P,
+                            additionalSeatsCount: j
+                        }),
+                        footer: D || N ? void 0 : (0, l.jsx)("div", {
+                            className: lr().footerContainer,
+                            children: (0, l.jsx)("div", {
+                                className: lr().footerInner,
+                                children: (0, l.jsx)("span", {
+                                    className: lr().termsFooter,
+                                    children: (0, l.jsx)(d.x6, {
+                                        i18nKey: "members.add_members.invite_members_modal.footer.agreement_text",
+                                        components: {
+                                            1: (0, l.jsx)("a", {
+                                                href: "/legal/terms",
+                                                target: "blank"
+                                            }),
+                                            4: (0, l.jsx)("a", {
+                                                href: "/legal/manage-cookies",
+                                                target: "blank"
+                                            })
+                                        }
+                                    })
+                                })
+                            })
+                        }),
+                        isOpen: w,
+                        confirmText: s("members.add_members.invite_members_modal.body.btn_confirm"),
+                        onClose: () => g(!1),
+                        isDisabled: D || N || x,
+                        isButtonFullWidth: !0,
+                        onConfirm: () => U(h)
+                    }), b && k && (0, l.jsx)(lg, {
+                        isOpen: b,
+                        onClose: () => c(!1),
+                        onConfirm: () => {
+                            window.open(M, "_blank", "noopener, noreferrer")
+                        },
+                        maxSeatsCount: k
+                    })]
+                })
+            }
+            var ly = t(86775),
+                lf = t(24834),
+                lM = t(27469),
+                lk = t(83552),
+                lv = t(55407),
+                lC = t.n(lv);
+            let lS = {
+                inviteMembersTriggered(e) {
+                    let {
+                        isFullFlow: a
+                    } = e;
+                    return {
+                        kind: "members_page_invite_members_triggered",
+                        info: {
+                            isFullFlow: a
+                        }
+                    }
+                },
+                unlinkDomainTriggered(e) {
+                    let {
+                        domain: a
+                    } = e;
+                    return {
+                        kind: "members_page_unlink_domain_triggered",
+                        info: {
+                            domain: a
+                        }
+                    }
+                },
+                unlinkDomainConfirmed(e) {
+                    let {
+                        domain: a
+                    } = e;
+                    return {
+                        kind: "members_page_unlink_domain_confirmed",
+                        info: {
+                            domain: a
+                        }
+                    }
+                }
+            };
+            var lA = t(83282),
+                lI = t.n(lA);
+
+            function lj(e) {
+                let {
+                    teamId: a,
+                    onDismiss: t,
+                    onDomainUnlinked: n
+                } = e, {
+                    t: s
+                } = (0, d.Bd)(), {
+                    addToast: _
+                } = (0, o.d)(), [r] = (0, aK.SC)(), [m, w] = (0, i.useState)(!1), g = (0, i.useCallback)(async () => {
+                    try {
+                        w(!0), await r({
+                            teamId: a
+                        }).unwrap(), _(s("members.domain.unlink.success")), n()
+                    } catch (e) {
+                        _(s("members.domain.unlink.error"))
+                    } finally {
+                        w(!1)
+                    }
+                }, [r, a, _, s, n]);
+                return (0, l.jsxs)("div", {
+                    className: lI().container,
+                    children: [(0, l.jsx)("span", {
+                        className: lI().title,
+                        children: s("members.domain.unlink.title")
+                    }), (0, l.jsx)("span", {
+                        className: lI().description,
+                        children: s("members.domain.unlink.description")
+                    }), (0, l.jsx)(T.$, {
+                        appearance: "secondary",
+                        variation: "destructive",
+                        onClick: g,
+                        fullwidth: !0,
+                        disabled: m,
+                        children: s("members.domain.unlink.cta_confirm")
+                    }), (0, l.jsx)(T.$, {
+                        appearance: "primary",
+                        onClick: t,
+                        fullwidth: !0,
+                        disabled: m,
+                        children: s("members.domain.unlink.cta_cancel")
+                    })]
+                })
+            }
+
+            function lD(e) {
+                var a;
+                let {
+                    teamId: t,
+                    claimedDomains: s
+                } = e, {
+                    t: _
+                } = (0, d.Bd)(), {
+                    addToast: r
+                } = (0, o.d)(), {
+                    isEnabled: m
+                } = (0, lM.S)(), {
+                    data: w
+                } = (0, aK.E4)(void 0, {
+                    skip: !m
+                }), [g, b] = (0, i.useState)(!1), [c, h] = (0, i.useState)(!1), [x, y] = (0, i.useState)(!1), f = null == (a = (0, n.d4)(u.mB).email) ? void 0 : a.split("@")[1], M = null == s ? void 0 : s[0], k = !!M, v = !!w && !w.claimedBy, C = m && (k || v), S = (0, i.useCallback)(() => {
+                    let e = !k && v;
+                    (0, p.Od)().trackUserAction(lS.inviteMembersTriggered({
+                        isFullFlow: e
+                    })), y(e), b(!0)
+                }, [k, v]), A = (0, i.useCallback)(() => {
+                    (0, p.Od)().trackUserAction(lS.unlinkDomainTriggered({
+                        domain: M || ""
+                    })), h(!0)
+                }, [M]), I = (0, i.useCallback)(() => {
+                    (0, p.Od)().trackUserAction(lS.unlinkDomainConfirmed({
+                        domain: M || ""
+                    })), h(!1)
+                }, [M]);
+                return k || C ? (0, l.jsxs)(l.Fragment, {
+                    children: [(0, l.jsxs)("div", {
+                        className: lC().container,
+                        children: [(0, l.jsx)("span", {
+                            className: lC().title,
+                            children: _("members.domain.title")
+                        }), (0, l.jsx)("span", {
+                            className: lC().description,
+                            children: _(k ? "members.domain.claimed.description" : "members.domain.unclaimed.description", {
+                                domain: null != M ? M : f
+                            })
+                        }), (0, l.jsxs)("div", {
+                            className: lC().buttonContainer,
+                            children: [C && (0, l.jsx)(T.$, {
+                                className: lC().button,
+                                appearance: "primary",
+                                size: "medium",
+                                onClick: S,
+                                children: _(M ? "members.domain.claimed.cta_invite" : "members.domain.unclaimed.cta", {
+                                    domain: null != M ? M : f
+                                })
+                            }), k && (0, l.jsx)(T.$, {
+                                className: lC().button,
+                                appearance: "secondary",
+                                size: "medium",
+                                variation: "destructive",
+                                onClick: A,
+                                children: _("members.domain.claimed.cta_unlink", {
+                                    domain: null != M ? M : f
+                                })
+                            })]
+                        })]
+                    }), (0, l.jsx)(W.a, {
+                        isOpen: g,
+                        showCloseButton: !1,
+                        classes: {
+                            containerClass: lC().inviteDomainMembersModal
+                        },
+                        appElement: (0, R.Y)(),
+                        children: M && !x ? (0, l.jsx)("div", {
+                            className: lC().inviteStepContainer,
+                            children: (0, l.jsx)(ly.o, {
+                                origin: lf.nh.MEMBERS_PAGE,
+                                onProceed: () => b(!1),
+                                onError: () => r(_("invite_domain_members.thank_you_step.error_message_no_invite"))
+                            })
+                        }) : (0, l.jsx)(lk.o, {
+                            onDismiss: () => b(!1),
+                            origin: lf.nh.MEMBERS_PAGE
+                        })
+                    }), (0, l.jsx)(W.a, {
+                        isOpen: c,
+                        showCloseButton: !1,
+                        classes: {
+                            containerClass: lC().unlinkModal
+                        },
+                        appElement: (0, R.Y)(),
+                        children: (0, l.jsx)(lj, {
+                            teamId: t,
+                            onDismiss: () => h(!1),
+                            onDomainUnlinked: I
+                        })
+                    })]
+                }) : null
+            }
+            var lN = t(86261),
+                lP = t.n(lN),
+                lB = t(37509),
+                lT = t.n(lB),
+                lE = t(93953),
+                lL = t.n(lE);
+
+            function lW(e) {
+                let {
+                    invite: {
+                        id: a,
+                        email: t,
+                        updatedAt: s
+                    },
+                    onRevokeInvite: _
+                } = e, r = new Date(s).toLocaleDateString(eU.A.locale, {
+                    dateStyle: "long"
+                }), {
+                    t: m
+                } = (0, d.Bd)(), {
+                    addToast: w
+                } = (0, o.d)(), g = (0, n.d4)(u.eB), [b, c] = (0, i.useState)(!1), [h] = (0, aK.j2)(), [p, x] = (0, i.useState)(!1), y = (0, i.useCallback)(async () => {
+                    if (c(!1), g) try {
+                        await h({
+                            teamId: g,
+                            invites: [t]
+                        }), w(m("members.invites.resend_success"))
+                    } catch (e) {
+                        w(m("members.invites.resend_error"))
+                    }
+                }, [w, t, h, m, g]), f = (0, i.useCallback)(async () => {
+                    c(!1), x(!0)
+                }, []), M = (0, i.useCallback)(async () => {
+                    await _(a), x(!1)
+                }, [a, _]), k = (0, i.useMemo)(() => (0, l.jsxs)(l.Fragment, {
+                    children: [(0, l.jsx)(T.$, {
+                        size: "small",
+                        variation: "neutral",
+                        appearance: "tertiary",
+                        onClick: y,
+                        children: m("members.invites.resend")
+                    }), (0, l.jsx)(T.$, {
+                        size: "small",
+                        variation: "destructive",
+                        appearance: "tertiary",
+                        onClick: f,
+                        children: m("members.invites.revoke")
+                    })]
+                }), [m, y, f]);
+                return (0, l.jsxs)(l.Fragment, {
+                    children: [(0, l.jsxs)("div", {
+                        className: lL().container,
+                        children: [(0, l.jsxs)("div", {
+                            className: lL().emailContainer,
+                            children: [(0, l.jsx)("span", {
+                                className: lL().email,
+                                children: t
+                            }), (0, l.jsx)("span", {
+                                className: lL().date,
+                                children: (0, l.jsx)(d.x6, {
+                                    i18nKey: "members.invites.invited_on",
+                                    values: {
+                                        date: r
+                                    }
+                                })
+                            })]
+                        }), (0, l.jsx)(lb.A, {
+                            content: k,
+                            position: ek.A.isMobile ? "left" : "right",
+                            className: lL().optionsPopover,
+                            isCondensed: !0,
+                            hideArrow: !0,
+                            boundaryInset: 20,
+                            isOpen: b,
+                            callback: c,
+                            children: (0, l.jsx)(aU.K, {
+                                icon: aR.QEg,
+                                appearance: "tertiary",
+                                size: "medium",
+                                variation: "neutral"
+                            })
+                        })]
+                    }), (0, l.jsx)("div", {
+                        className: lL().divider
+                    }), (0, l.jsx)(ls, {
+                        isOpen: p,
+                        header: m("members.invites.revoke_confirmation.header"),
+                        body: (0, l.jsx)(d.x6, {
+                            i18nKey: "members.invites.revoke_confirmation.body",
+                            components: {
+                                email: (0, l.jsx)("span", {
+                                    className: lL().confirmationModalEmail,
+                                    children: t
+                                })
+                            }
+                        }),
+                        confirmText: m("members.invites.revoke_confirmation.confirm"),
+                        isDestructive: !0,
+                        onConfirm: M,
+                        onClose: () => x(!1)
+                    })]
+                })
+            }
+            var lR = t(11417),
+                lU = t(28233),
+                lO = t(40921),
+                lF = t.n(lO);
+
+            function lG(e) {
+                let {
+                    member: {
+                        userId: a,
+                        user: {
+                            givenName: t,
+                            familyName: o,
+                            email: s
+                        },
+                        role: _
+                    },
+                    isOwner: r,
+                    isAdmin: m,
+                    onRoleChange: w,
+                    onRemoveMember: g
+                } = e, {
+                    t: b
+                } = (0, d.Bd)(), c = (0, n.d4)(ev.Lm), [h, p] = (0, i.useState)(!1), [u, x] = (0, i.useState)(!1), y = (0, i.useCallback)(async () => {
+                    p(!1), x(!0)
+                }, []), f = (0, i.useCallback)(async () => {
+                    await g(a), x(!1)
+                }, [a, g]), M = c === a, k = (0, i.useMemo)(() => (0, l.jsx)(T.$, {
+                    size: "small",
+                    variation: "destructive",
+                    appearance: "tertiary",
+                    onClick: y,
+                    disabled: r || M || !m,
+                    children: b("members.list.remove")
+                }), [y, r, M, m, b]);
+                return (0, l.jsxs)(l.Fragment, {
+                    children: [(0, l.jsxs)("div", {
+                        className: lF().container,
+                        children: [(0, l.jsxs)("div", {
+                            className: lF().nameContainer,
+                            children: [(0, l.jsxs)("div", {
+                                className: lF().nameRow,
+                                children: [(0, l.jsx)("span", {
+                                    className: lF().name,
+                                    children: "".concat(t).concat(o ? " ".concat(o) : "")
+                                }), r && (0, l.jsx)(lR.E, {
+                                    appearance: "darken",
+                                    children: b("members.list.owner")
+                                }), !r && M && (0, l.jsx)(lR.E, {
+                                    appearance: "blue-subtle",
+                                    children: b("members.list.you")
+                                })]
+                            }), (0, l.jsx)("span", {
+                                className: lF().email,
+                                children: s
+                            })]
+                        }), (0, l.jsxs)("div", {
+                            className: lF().actionsContainer,
+                            children: [(0, l.jsxs)(lU.z, {
+                                className: lF().permissionLevel,
+                                label: b("members.list.permission_level"),
+                                labelType: "inside",
+                                value: _,
+                                onChange: e => w(e, a),
+                                disabled: !m || M,
+                                children: [(0, l.jsx)(lU.z.Option, {
+                                    value: te.gG.Admin,
+                                    children: b("members.list.role_admin")
+                                }), (0, l.jsx)(lU.z.Option, {
+                                    value: te.gG.Member,
+                                    children: b("members.list.role_member")
+                                })]
+                            }), (0, l.jsx)(lb.A, {
+                                content: k,
+                                position: ek.A.isMobile ? "left" : "right",
+                                className: lF().optionsPopover,
+                                isCondensed: !0,
+                                hideArrow: !0,
+                                boundaryInset: 20,
+                                isOpen: h,
+                                callback: p,
+                                children: (0, l.jsx)(aU.K, {
+                                    icon: aR.QEg,
+                                    appearance: "tertiary",
+                                    size: "medium",
+                                    variation: "neutral"
+                                })
+                            })]
+                        })]
+                    }), (0, l.jsx)("div", {
+                        className: lF().divider
+                    }), (0, l.jsx)(ls, {
+                        isOpen: u,
+                        header: b("members.list.remove_confirmation.header"),
+                        body: (0, l.jsx)(d.x6, {
+                            i18nKey: "members.list.remove_confirmation.body",
+                            components: {
+                                email: (0, l.jsx)("span", {
+                                    className: lF().confirmationModalEmail,
+                                    children: s
+                                })
+                            }
+                        }),
+                        confirmText: b("members.list.remove_confirmation.confirm"),
+                        isDestructive: !0,
+                        onConfirm: f,
+                        onClose: () => x(!1)
+                    })]
+                })
+            }
+
+            function lK(e) {
+                let {
+                    membersState: [a, t],
+                    invitesState: [s, _],
+                    workspaceCreatorId: r,
+                    isAdmin: m,
+                    isEnterpriseCustomContract: w
+                } = e, {
+                    t: g
+                } = (0, d.Bd)(), {
+                    addToast: b
+                } = (0, o.d)(), c = (0, n.d4)(u.eB), [h] = (0, aK.D_)(), [p] = (0, aK.oF)(), [x] = (0, aK.I7)(), {
+                    currentSeats: y,
+                    seatsInUse: f
+                } = (0, lt.K)(), M = (0, n.wA)(), k = (0, i.useCallback)(async (e, a) => {
+                    if (!c) return;
+                    let l = await h({
+                        teamId: c,
+                        userId: a,
+                        role: e
+                    }).unwrap();
+                    l && t(e => e.map(e => e.userId === l.userId ? l : e))
+                }, [c, h, t]), v = (0, i.useCallback)(async e => {
+                    if (c) try {
+                        let a = await p({
+                            teamId: c,
+                            inviteId: e
+                        });
+                        "error" in a ? b(g("members.invites.revoke_error")) : (b(g("members.invites.revoke_success")), _(a => a.filter(a => a.id !== e)), M(eO.A.User.getUser()))
+                    } catch (e) {
+                        b(g("members.invites.revoke_error"))
+                    }
+                }, [b, M, p, _, g, c]), C = (0, i.useCallback)(async e => {
+                    if (c) try {
+                        let a = await x({
+                            teamId: c,
+                            userId: e
+                        });
+                        if ("error" in a) return void b(g("members.list.free_seat_error"));
+                        M(eO.A.User.getUser()), b(g("members.list.remove_success"))
+                    } catch (e) {
+                        b(g("members.list.remove_unexpected_error"))
+                    }
+                }, [c, x, b, g, M]), S = (0, i.useMemo)(() => Math.max(y - f, 0), [y, f]), A = (0, i.useMemo)(() => y === f ? (0, l.jsx)("span", {
+                    className: lT().heading,
+                    children: (0, l.jsx)(d.x6, {
+                        i18nKey: "members.list.seats_management_description.no_seats_available",
+                        values: {
+                            memberQuantity: f,
+                            seatsQuantity: y
+                        },
+                        components: {
+                            strong: (0, l.jsx)("strong", {}),
+                            paymentLink: (0, l.jsx)("a", {
+                                href: "/workspace/payment"
+                            })
+                        }
+                    })
+                }) : (0, l.jsx)("span", {
+                    className: lT().heading,
+                    children: (0, l.jsx)(d.x6, {
+                        i18nKey: "members.list.seats_management_description.available_seats",
+                        values: {
+                            memberQuantity: f,
+                            seatsQuantity: y,
+                            seatsLeft: S
+                        },
+                        components: {
+                            strong: (0, l.jsx)("strong", {})
+                        }
+                    })
+                }), [y, f, S]);
+                return (0, l.jsxs)("div", {
+                    className: lT().container,
+                    children: [m && !w ? A : (0, l.jsx)("span", {
+                        className: lT().heading,
+                        children: (0, l.jsx)(d.x6, {
+                            i18nKey: "members.list.heading",
+                            components: {
+                                count: (0, l.jsx)("span", {
+                                    className: lT().memberCount,
+                                    children: a.length
+                                })
+                            }
+                        })
+                    }), a.map(e => (0, l.jsx)(lG, {
+                        member: e,
+                        isOwner: e.userId === r,
+                        isAdmin: m,
+                        onRoleChange: k,
+                        onRemoveMember: C
+                    }, e.userId)), s.map(e => (0, l.jsx)(lW, {
+                        invite: e,
+                        onRevokeInvite: v
+                    }, e.id))]
+                })
+            }
+
+            function lH() {
+                let {
+                    t: e
+                } = (0, d.Bd)(), {
+                    addToast: a
+                } = (0, o.d)(), {
+                    currentTeam: t
+                } = (0, eM.o)(), s = null == t ? void 0 : t.id, _ = (0, n.d4)(ev.Lm), {
+                    data: r
+                } = (0, aK.Vl)({
+                    teamId: s
+                }, {
+                    skip: !s
+                }), [m, w] = (0, i.useState)([]), [g, b] = (0, i.useState)([]), [c, h] = (0, i.useState)(!1), p = (0, ap.z)();
+                (0, i.useEffect)(() => {
+                    w((null == r ? void 0 : r.members) || []), b((null == r ? void 0 : r.invites) || [])
+                }, [r]);
+                let x = (0, i.useMemo)(() => m.find(e => e.userId === _), [m, _]),
+                    y = (null == x ? void 0 : x.role) === te.gG.Admin,
+                    f = (0, n.d4)(u.mB),
+                    k = (0, ef.ch)(f),
+                    v = !s || !x || c,
+                    C = (0, le.LT)().get(la.INVITE_ACCEPTED);
+                (0, i.useEffect)(() => {
+                    r && C && (r.id === C ? (a(e("join_workspace.invite_accepted", {
+                        workspaceName: r.name
+                    })), window.history.replaceState({}, document.title, tu.kH.route)) : (0, t9.aC)(C))
+                }, [C, a, e, t, r]);
+                let S = (0, i.useCallback)(e => m.some(a => {
+                    var t;
+                    return (null == (t = a.user.email) ? void 0 : t.toLowerCase()) === e.toLowerCase()
+                }) || g.some(a => {
+                    var t;
+                    return (null == (t = a.email) ? void 0 : t.toLowerCase()) === e.toLowerCase()
+                }), [m, g]);
+                return v ? (0, l.jsx)(th.r, {}) : (0, l.jsxs)("div", {
+                    children: [(0, l.jsx)(ax(), {
+                        children: (0, l.jsx)("title", {
+                            children: e("members.title")
+                        })
+                    }), (0, l.jsx)(M.a, {
+                        showWorkspaceName: !0,
+                        panelName: e("members.title")
+                    }), p ? (0, l.jsxs)(l.Fragment, {
+                        children: [y ? (0, l.jsx)(lx, {
+                            isAlreadyInWorkspace: S,
+                            setIsProcessingInviteRequest: h
+                        }) : (0, l.jsxs)("div", {
+                            className: lP().addMembersCallout,
+                            children: [(0, l.jsx)("span", {
+                                className: lP().addMembersCalloutTitle,
+                                children: e("members.add_members_callout.title")
+                            }), (0, l.jsx)("span", {
+                                className: lP().addMembersCalloutMessage,
+                                children: e("members.add_members_callout.message")
+                            })]
+                        }), y && !k && (0, l.jsx)(lD, {
+                            teamId: s,
+                            claimedDomains: null == r ? void 0 : r.emailDomains
+                        }), (0, l.jsx)(lK, {
+                            membersState: [m, w],
+                            invitesState: [g, b],
+                            workspaceCreatorId: null == r ? void 0 : r.creatorId,
+                            isAdmin: y,
+                            isEnterpriseCustomContract: k
+                        })]
+                    }) : (0, l.jsx)(t8, {})]
+                })
+            }
+            var lz = t(98062),
+                lY = t(74941),
+                lV = t(52505),
+                lX = t(61149),
+                lQ = t(93367),
+                lq = t(68926),
+                lZ = t.n(lq),
+                lJ = t(52387);
+            let l$ = () => {
+                var e, a, t, o, s, _, m, w, g, b, c, h, p, u;
+                let {
+                    t: x
+                } = (0, d.Bd)(), y = (0, n.wA)(), {
+                    currentTeam: f
+                } = (0, eM.o)(), [M, k] = (0, i.useState)(void 0), v = (0, i.useMemo)(() => (0, lQ.CN)(M), [M]), C = (0, i.useMemo)(() => (0, lQ.mB)(M), [M]), S = (0, i.useMemo)(() => M && lX.g7.has(M), [M]), {
+                    data: A
+                } = (0, aK.rz)({
+                    teamId: null == f ? void 0 : f.id
+                }, {
+                    skip: !(null == f ? void 0 : f.id)
+                }), {
+                    form: I,
+                    isLoading: j
+                } = (e => {
+                    var a, t, l, i, n, o, s;
+                    let {
+                        selectedCountryCode: _
+                    } = e, {
+                        t: r
+                    } = (0, d.Bd)(), {
+                        currentTeam: m
+                    } = (0, eM.o)(), {
+                        data: w
+                    } = (0, aK.rz)({
+                        teamId: null == m ? void 0 : m.id
+                    }, {
+                        skip: !(null == m ? void 0 : m.id)
+                    });
+                    return {
+                        form: (0, eL.s)({
+                            defaultValues: {
+                                address: null != (a = null == w ? void 0 : w.address) ? a : "",
+                                businessName: null != (t = null == w ? void 0 : w.businessName) ? t : "",
+                                city: null != (l = null == w ? void 0 : w.city) ? l : "",
+                                countryCode: null != (i = null == w ? void 0 : w.countryCode) ? i : "",
+                                postalCode: null != (n = null == w ? void 0 : w.postalCode) ? n : "",
+                                stateCode: null != (o = null == w ? void 0 : w.stateCode) ? o : "",
+                                taxNumber: null != (s = null == w ? void 0 : w.taxNumber) ? s : ""
+                            },
+                            schema: (0, eT.Ik)({
+                                businessName: (0, eT.Yj)().max(50).required(r("checkout.payment.form.business-name-input.required")),
+                                address: (0, eT.Yj)().max(100).required(r("checkout.payment.form.street-and-number-input.required")),
+                                city: (0, eT.Yj)().max(100).required(r("checkout.payment.form.city-input.required")),
+                                countryCode: (0, eT.Yj)().required(r("checkout.payment.form.country-select.required")),
+                                postalCode: (0, eT.Yj)().max(10).when("countryCode", {
+                                    is: e => (0, lJ.n)(e),
+                                    then: e => e.required(r("checkout.payment.form.zip-code-input.required")).test("zip code", e => (0, lJ.b)(e, _, r("checkout.payment.form.zip-code-input.invalid"), "postalCode"))
+                                }),
+                                stateCode: (0, eT.Yj)().when("countryCode", {
+                                    is: e => lX.g7.has(e),
+                                    then: e => e.required(r("checkout.payment.form.state-select.required"))
+                                }),
+                                taxNumber: (0, eT.Yj)().optional().when("countryCode", {
+                                    is: e => (0, lQ.CN)(e),
+                                    then: e => e.transform(e => (0, lQ.XA)(e)).test("vat prefix", e => _ ? !e || (0, lQ.AY)(e, _, r("checkout.payment.form.error.missing-vat-prefix", {
+                                        prefix: lX.fP[_]
+                                    })) : new eT.yI(r("checkout.payment.form.error.unknown"), e, "root"))
+                                })
+                            }),
+                            reValidateMode: "onBlur"
+                        }),
+                        isLoading: !(null == m ? void 0 : m.id)
+                    }
+                })({
+                    selectedCountryCode: M
+                });
+                (0, i.useEffect)(() => {
+                    M !== I.getValues("countryCode") && k(I.getValues("countryCode"))
+                }, [I, I.formState, M]);
+                let [D] = (0, aK.Dn)(), N = I.handleSubmit(async e => {
+                    try {
+                        var a;
+                        await D({
+                            teamId: null == f ? void 0 : f.id,
+                            payload: {
+                                address: e.address,
+                                businessName: e.businessName,
+                                city: e.city,
+                                countryCode: e.countryCode,
+                                postalCode: (null == (a = e.postalCode) ? void 0 : a.trim()) || void 0,
+                                stateCode: S ? e.stateCode : void 0,
+                                taxNumber: v ? e.taxNumber : void 0
+                            }
+                        }).unwrap(), y(eq.P9.setPanelNotification({
+                            category: eq.aF.Notification,
+                            details: "update_account"
+                        }))
+                    } catch (e) {
+                        y(eq.P9.setPanelNotification({
+                            category: eq.aF.Error,
+                            details: x("account.billing-details.error")
+                        }))
+                    }
+                });
+                return j ? (0, l.jsx)(th.r, {}) : (0, l.jsxs)("form", {
+                    onSubmit: N,
+                    children: [(0, l.jsxs)("div", {
+                        className: r()(lZ().metaInputs),
+                        children: [(0, l.jsxs)("div", {
+                            className: r()(lZ().row),
+                            children: [(0, l.jsx)("div", {
+                                children: (0, l.jsx)(es.A, {
+                                    ...I.register("postalCode"),
+                                    value: null != (w = I.watch("postalCode")) ? w : "",
+                                    type: "text",
+                                    labelType: "inside",
+                                    label: x("checkout.payment.form.zip-code-input.placeholder"),
+                                    maxLength: 20,
+                                    id: "postalCode",
+                                    state: I.formState.errors.postalCode ? "invalid" : void 0,
+                                    caption: null == (e = I.formState.errors.postalCode) ? void 0 : e.message
+                                })
+                            }), S && (0, l.jsx)("div", {
+                                children: (0, l.jsx)(lU.z, {
+                                    ...I.register("stateCode"),
+                                    value: null != (g = I.watch("stateCode")) ? g : "",
+                                    labelType: "inside",
+                                    label: x("checkout.payment.form.state-select.placeholder"),
+                                    onChange: e => {
+                                        I.setValue("stateCode", e)
+                                    },
+                                    state: I.formState.errors.stateCode ? "invalid" : void 0,
+                                    caption: null == (a = I.formState.errors.stateCode) ? void 0 : a.message,
+                                    children: (0, lV.Kn)(M, !0)
+                                })
+                            }), (0, l.jsx)("div", {
+                                children: (0, l.jsx)(lU.z, {
+                                    ...I.register("countryCode"),
+                                    value: null != (b = I.watch("countryCode")) ? b : "",
+                                    labelType: "inside",
+                                    label: x("checkout.payment.form.country-select.placeholder"),
+                                    onChange: e => {
+                                        k(e), I.setValue("stateCode", void 0), I.setValue("countryCode", e)
+                                    },
+                                    disabled: !(null == A ? void 0 : A.canChangeCountryAndCurrency),
+                                    state: I.formState.errors.countryCode ? "invalid" : void 0,
+                                    caption: null == (t = I.formState.errors.countryCode) ? void 0 : t.message,
+                                    children: (0, lV.b8)(!0)
+                                })
+                            })]
+                        }), (0, l.jsxs)("div", {
+                            role: "group",
+                            "aria-label": x("checkout.payment.form.business-group.aria-label"),
+                            className: r()(lZ().metaInputs),
+                            children: [(0, l.jsx)("div", {
+                                children: (0, l.jsx)(es.A, {
+                                    ...I.register("address"),
+                                    value: null != (c = I.watch("address")) ? c : "",
+                                    type: "text",
+                                    labelType: "inside",
+                                    label: x("checkout.payment.form.street-and-number-input.placeholder"),
+                                    maxLength: 50,
+                                    id: "address",
+                                    state: I.formState.errors.address ? "invalid" : void 0,
+                                    caption: null == (o = I.formState.errors.address) ? void 0 : o.message
+                                })
+                            }), (0, l.jsx)("div", {
+                                children: (0, l.jsx)(es.A, {
+                                    ...I.register("city"),
+                                    value: null != (h = I.watch("city")) ? h : "",
+                                    type: "text",
+                                    labelType: "inside",
+                                    label: x("checkout.payment.form.city-input.placeholder"),
+                                    maxLength: 50,
+                                    id: "city",
+                                    state: I.formState.errors.city ? "invalid" : void 0,
+                                    caption: null == (s = I.formState.errors.city) ? void 0 : s.message
+                                })
+                            }), (0, l.jsx)("div", {
+                                children: (0, l.jsx)(es.A, {
+                                    ...I.register("businessName"),
+                                    value: null != (p = I.watch("businessName")) ? p : "",
+                                    type: "text",
+                                    labelType: "inside",
+                                    label: x("checkout.payment.form.company-name-input.placeholder"),
+                                    maxLength: 50,
+                                    id: "companyName",
+                                    state: I.formState.errors.businessName ? "invalid" : void 0,
+                                    caption: null == (_ = I.formState.errors.businessName) ? void 0 : _.message
+                                })
+                            }), v && (0, l.jsx)("div", {
+                                children: (0, l.jsx)(es.A, {
+                                    ...I.register("taxNumber"),
+                                    value: null != (u = I.watch("taxNumber")) ? u : "",
+                                    type: "text",
+                                    caption: C && !I.formState.errors.taxNumber ? x("checkout.payment.form.vat-number-input.help", {
+                                        prefix: C
+                                    }) : I.formState.errors.taxNumber ? I.formState.errors.taxNumber.message : void 0,
+                                    labelType: "inside",
+                                    label: x("checkout.payment.form.vat-number-input.placeholder"),
+                                    maxLength: 20,
+                                    trailingElement: (0, l.jsx)(lY.m, {
+                                        position: "right",
+                                        mode: "dark",
+                                        className: lZ().tooltip,
+                                        getBoundaryElement: () => document.body,
+                                        content: x("checkout.payment.form.vat-input.tooltip"),
+                                        children: (0, l.jsx)(aR.cFx, {
+                                            tabIndex: 0,
+                                            "aria-label": x("checkout.payment.form.vat-input.tooltip-toggle"),
+                                            className: lZ().tooltipToggle,
+                                            "data-text": x("checkout.payment.form.vat-input.tooltip")
+                                        })
+                                    }),
+                                    id: "taxNumber",
+                                    state: (null == (m = I.formState.errors.taxNumber) ? void 0 : m.message) ? "invalid" : void 0
+                                })
+                            })]
+                        })]
+                    }), (0, l.jsx)("div", {
+                        className: lZ().submitButtonContainer,
+                        children: (0, l.jsx)(T.$, {
+                            type: "submit",
+                            className: lZ().submitButton,
+                            onClick: N,
+                            children: x("account.billing-details.save")
+                        })
+                    })]
+                })
+            };
+            var l0 = t(3807),
+                l1 = t.n(l0);
+
+            function l2(e) {
+                let {
+                    invoice: a
+                } = e, {
+                    currentTeam: t
+                } = (0, eM.o)(), [i] = (0, aK.g6)(), d = eU.A.t("number.currency." + a.currency.toUpperCase()), n = eU.A.number(a.total, {
+                    precision: 2
+                }), o = eU.A.date(new Date(a.created), "without_day"), s = new Date(a.startedAt), _ = new Date(a.endedAt), r = s.getFullYear(), m = _.getFullYear(), w = async () => {
+                    if ("stripe" === a.externalProvider) window.open(a.hostedInvoiceUrl, "_blank");
+                    else try {
+                        let e = await i({
+                                teamId: t.id,
+                                invoiceId: a.id
+                            }).unwrap(),
+                            l = new Blob([e], {
+                                type: "application/pdf"
+                            }),
+                            d = window.URL.createObjectURL(l),
+                            n = document.createElement("a");
+                        n.href = d, n.download = "invoice-".concat(a.id, ".pdf"), document.body.appendChild(n), n.click(), document.body.removeChild(n), window.URL.revokeObjectURL(d)
+                    } catch (e) {}
+                }, g = "".concat(eU.A.t("page.accountinfo.paid_on"), " ").concat(o, "・").concat(d).concat(n), b = "".concat(eU.A.t("date.month_names." + (s.getMonth() + 1)), " ").concat(r), c = "".concat(eU.A.t("date.month_names." + (_.getMonth() + 1)), " ").concat(m);
+                return (0, l.jsxs)("li", {
+                    className: l1().invoiceItem,
+                    children: [(0, l.jsxs)("div", {
+                        children: [(0, l.jsx)("div", {
+                            className: l1().title,
+                            children: "".concat(c, " - ").concat(b)
+                        }), (0, l.jsx)("div", {
+                            className: l1().details,
+                            children: g
+                        })]
+                    }), (0, l.jsx)(aU.K, {
+                        icon: aR.cIW,
+                        size: "x-small",
+                        appearance: "secondary",
+                        className: l1().downloadButton,
+                        onClick: w,
+                        children: eU.A.t("page.payment.download_invoice")
+                    })]
+                })
+            }
+            let l4 = () => {
+                let {
+                    currentTeam: e
+                } = (0, eM.o)(), a = null == e ? void 0 : e.id, {
+                    data: t,
+                    isLoading: i
+                } = (0, aK.Oo)({
+                    teamId: a
+                }, {
+                    skip: !a
+                });
+                return i ? (0, l.jsx)(th.A, {}) : t && 0 !== t.length ? (0, l.jsx)("ul", {
+                    className: "invoice",
+                    children: t.map(e => (0, l.jsx)(l2, {
+                        invoice: e
+                    }, e.id))
+                }) : (0, l.jsx)("div", {
+                    className: "invoice__no-receipts",
+                    children: (0, l.jsx)("p", {
+                        children: eU.A.t("page.accountinfo.no_invoices")
+                    })
+                })
+            };
+            var l6 = t(95345),
+                l3 = t.n(l6);
+            let l5 = e => {
+                let {
+                    invoices: a,
+                    isLoading: t
+                } = e, {
+                    t: i
+                } = (0, d.Bd)();
+                return t ? (0, l.jsx)(th.r, {}) : a.length < 1 ? null : (0, l.jsxs)("div", {
+                    className: l3().container,
+                    children: [(0, l.jsxs)("div", {
+                        className: l3().header,
+                        children: [(0, l.jsx)("h5", {
+                            children: i("page.account_payment.unpaid_invoices.heading")
+                        }), (0, l.jsx)("p", {
+                            children: i("page.account_payment.unpaid_invoices.subheading")
+                        })]
+                    }), (0, l.jsx)("div", {
+                        className: l3().invoices,
+                        children: a.map(e => {
+                            let {
+                                id: a,
+                                created: t,
+                                currency: d,
+                                amountDue: n
+                            } = e, o = new Date(t), s = eU.A.t("date.month_names." + (o.getMonth() + 1)) + " " + o.getFullYear(), _ = i("page.account_payment.unpaid_invoices.item.issued_on"), r = eU.A.date(new Date(t), "without_day"), m = eU.A.t("number.currency." + d.toUpperCase()), w = eU.A.number(n, {
+                                precision: 2
+                            }), g = "".concat(_, " ").concat(r, "・").concat(m, " ").concat(w);
+                            return (0, l.jsxs)("div", {
+                                className: l3().invoiceItem,
+                                children: [(0, l.jsxs)("div", {
+                                    className: l3().invoiceItemRow,
+                                    children: [(0, l.jsx)("span", {
+                                        className: l3().invoiceItemHeader,
+                                        children: s
+                                    }), (0, l.jsx)("a", {
+                                        className: l3().invoiceItemLink,
+                                        href: tu.l9.route,
+                                        children: i("page.account_payment.unpaid_invoices.item.pay_invoice")
+                                    })]
+                                }), (0, l.jsx)("span", {
+                                    className: l3().invoiceItemInfo,
+                                    children: g
+                                })]
+                            }, a)
+                        })
+                    })]
+                })
+            };
+            var l7 = t(39602),
+                l8 = t.n(l7),
+                l9 = t(91384),
+                ie = t(91053),
+                ia = t(91632),
+                it = t(57222),
+                il = t(58524),
+                ii = t(97875),
+                id = t(98851),
+                io = t(69361),
+                is = t(5852),
+                i_ = t(33615),
+                ir = t(99823);
+            let im = {
+                src: "/_next/static/media/visual.75b19c03.png",
+                height: 2192,
+                width: 1520,
+                blurDataURL: "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAYAAAAICAMAAADtGH4KAAAALVBMVEXi7P/d5vrf6f61wNDX4PKnssPZ5PjH1vtVa5lic3ahuu2Jo/C90N6Mpe+NpNG5J773AAAACXBIWXMAACxLAAAsSwGlPZapAAAAMElEQVR4nBXKSRIAIAgEsWYAd/3/cy1yDgIkrGUC7nOehq0xXqB+dwciPWqZSZWRPhWxALl91kpRAAAAAElFTkSuQmCC",
+                blurWidth: 6,
+                blurHeight: 8
+            };
+            var iw = t(33890),
+                ig = t.n(iw);
+
+            function ib(e) {
+                var a, t;
+                let {
+                    isVisible: o,
+                    onDismiss: s
+                } = e, {
+                    t: _
+                } = (0, d.Bd)("translation", {
+                    keyPrefix: "page.manage_plan.cancel.compliance.offer"
+                }), m = (0, n.wA)(), w = (0, n.d4)(u.mB), g = (0, ii.G)(), {
+                    currentTeam: b
+                } = (0, eM.o)(), {
+                    subscription: c
+                } = (0, a8.f)(), h = (0, l9.d)(), x = (0, ah.l)(), y = _((null == c ? void 0 : c.interval) === a7.YF.month ? "billing.monthly" : (null == c ? void 0 : c.interval) === a7.YF.week ? "billing.weekly" : "billing.yearly"), f = is.Q.discount, M = (null == c ? void 0 : c.endsAt) ? eU.A.date(new Date(null == c ? void 0 : c.endsAt), "without_day") : "", k = (0, ey.Is)(w.planTier), v = e => {
+                    var a;
+                    return (0, id.W)({
+                        amount: e,
+                        currency: null != (a = null == c ? void 0 : c.currency) ? a : lX.Sj.EUR,
+                        locale: g
+                    })
+                }, C = (null != (a = null == c ? void 0 : c.totalCents) ? a : 0) / 100, S = (null != (t = null == c ? void 0 : c.totalCentsBeforeTaxesAndDiscounts) ? t : 0) / 100 * (1 - f / 100), A = v(C), I = v(C - S), j = v(S);
+                (0, i.useEffect)(() => {
+                    o && ((0, p.Od)().trackUserAction(ia.$.goodbyeOfferModalDisplayed()), m(eO.A.Account.setCanSeeGoodbyeOffer(!1)))
+                }, [o]);
+                let D = (0, i.useCallback)(() => {
+                        (0, p.Od)().trackUserAction(ia.$.goodbyeOfferModalDismissed()), s()
+                    }, [s]),
+                    N = (0, i.useCallback)(async () => {
+                        (0, p.Od)().trackUserAction(ir.f.getDiscountButtonClicked()), (null == b ? void 0 : b.id) && (m((0, eZ.m$)("getCouponData")), await x(), await h(is.Q.code), (0, p.Od)().trackUserAction(it.C.subscriptionReactivated({
+                            tier: w.planTier,
+                            trigger: il.P.GOODBYE_OFFER_MODAL
+                        })), (0, p.Od)().trackUserAction(ie.X.userConverted({
+                            subscriptionTier: w.planTier,
+                            billingPeriod: (0, ey.m4)(null == c ? void 0 : c.interval),
+                            paywallType: io.pU.CTA,
+                            paywallTrigger: io.vW.MANAGE_PLAN_CANCELLATION_DISCOUNT
+                        })), (0, i_.Ho)(), s())
+                    }, [null == b ? void 0 : b.id, m, x, h, w.planTier, null == c ? void 0 : c.interval, s]);
+                return (0, l.jsx)(W.a, {
+                    isOpen: o,
+                    onClose: D,
+                    classes: {
+                        containerClass: ig().modal
+                    },
+                    appElement: (0, R.Y)(),
+                    children: (0, l.jsxs)("div", {
+                        className: ig().modalContent,
+                        children: [(0, l.jsx)("div", {
+                            className: ig().imageContainer,
+                            children: (0, l.jsx)(l8(), {
+                                src: im,
+                                alt: "",
+                                fill: !0,
+                                sizes: "50vw",
+                                style: {
+                                    objectFit: "cover"
+                                }
+                            })
+                        }), (0, l.jsxs)("div", {
+                            className: ig().content,
+                            children: [(0, l.jsx)(aR.$Td, {
+                                "aria-hidden": !0,
+                                className: ig().closeButton,
+                                onClick: D
+                            }), (0, l.jsx)("div", {
+                                className: ig().title,
+                                children: _("title")
+                            }), (0, l.jsxs)("div", {
+                                className: ig().details,
+                                children: [(0, l.jsx)("div", {
+                                    className: ig().description,
+                                    children: _("description", {
+                                        discount: f
+                                    })
+                                }), (0, l.jsxs)("div", {
+                                    className: ig().pricing,
+                                    children: [(0, l.jsxs)("div", {
+                                        className: ig().pricingItem,
+                                        children: [(0, l.jsx)("div", {
+                                            className: ig().pricingItemLabel,
+                                            children: _("pricing.monthly", {
+                                                billing_period: y,
+                                                plan_tier: k
+                                            })
+                                        }), (0, l.jsx)("div", {
+                                            className: ig().pricingItemValue,
+                                            children: A
+                                        })]
+                                    }), (0, l.jsxs)("div", {
+                                        className: r()(ig().pricingItem, ig().discount),
+                                        children: [(0, l.jsx)("div", {
+                                            className: ig().pricingItemLabel,
+                                            children: _("pricing.discount", {
+                                                discount: is.Q.discount
+                                            })
+                                        }), (0, l.jsx)("div", {
+                                            className: ig().pricingItemValue,
+                                            children: "- ".concat(I)
+                                        })]
+                                    }), (0, l.jsx)("div", {
+                                        className: ig().divider
+                                    }), (0, l.jsxs)("div", {
+                                        className: ig().pricingItem,
+                                        children: [(0, l.jsx)("div", {
+                                            className: ig().pricingItemLabel,
+                                            children: _("pricing.new_price", {
+                                                date: M
+                                            })
+                                        }), (0, l.jsx)("div", {
+                                            className: ig().pricingItemValue,
+                                            children: j
+                                        })]
+                                    })]
+                                }), (0, l.jsx)("div", {
+                                    className: ig().savingsBanner,
+                                    children: _("savings", {
+                                        amount: I,
+                                        plan_tier: k
+                                    })
+                                })]
+                            }), (0, l.jsxs)("div", {
+                                className: ig().footer,
+                                children: [(0, l.jsx)(T.$, {
+                                    fullwidth: !0,
+                                    size: "medium",
+                                    appearance: "primary",
+                                    onClick: N,
+                                    children: _("footer.button")
+                                }), (0, l.jsx)("div", {
+                                    className: ig().renewalDate,
+                                    children: _("footer.renewal_date", {
+                                        date: M
+                                    })
+                                })]
+                            })]
+                        })]
+                    })
+                })
+            }
+            var ic = t(55699),
+                ih = t.n(ic),
+                ip = t(30550),
+                iu = t(90998),
+                ix = t(52698),
+                iy = t.n(ix);
+            let iM = e => {
+                    let {
+                        isDefault: a,
+                        handleDelete: t,
+                        handleMakeDefault: i,
+                        isExpired: n
+                    } = e, {
+                        t: o
+                    } = (0, d.Bd)();
+                    return a ? (0, l.jsx)("div", {
+                        className: iy().badgeWrapper,
+                        children: (0, l.jsx)(lR.E, {
+                            appearance: "blue-subtle",
+                            className: iy().defaultBadge,
+                            children: o("page.payment.manage.actions.default")
+                        })
+                    }) : (0, l.jsxs)("div", {
+                        className: iy().actions,
+                        children: [(0, l.jsx)(T.$, {
+                            type: "button",
+                            disabled: n,
+                            appearance: "tertiary",
+                            size: "small",
+                            onClick: i,
+                            className: iy().actionButton,
+                            children: o("page.payment.manage.actions.make_default")
+                        }), (0, l.jsx)(T.$, {
+                            type: "button",
+                            appearance: "tertiary",
+                            variation: "destructive",
+                            size: "small",
+                            onClick: t,
+                            className: iy().actionButton,
+                            children: o("page.payment.manage.actions.delete")
+                        })]
+                    })
+                },
+                ik = e => {
+                    let {
+                        expiryMonth: a,
+                        expiryYear: t,
+                        isExpired: i
+                    } = e, {
+                        t: n
+                    } = (0, d.Bd)();
+                    return i ? (0, l.jsx)(lR.E, {
+                        appearance: "red",
+                        size: "small",
+                        children: n("page.payment.manage.actions.expired")
+                    }) : (0, l.jsx)("span", {
+                        children: n("page.payment.manage.card.expiration", {
+                            month: a,
+                            year: t
+                        })
+                    })
+                },
+                iv = e => {
+                    let {
+                        paymentMethod: a,
+                        handleDelete: t,
+                        handleMakeDefault: i
+                    } = e, d = !!a.cardExpiryMonth && !!a.cardExpiryYear && (0, iu.ov)(a.cardExpiryMonth, a.cardExpiryYear);
+                    return (0, l.jsxs)("li", {
+                        className: iy().wrapper,
+                        children: [(0, l.jsxs)("div", {
+                            className: iy().header,
+                            children: [(0, l.jsx)(ip.$, {
+                                className: iy().icon,
+                                type: a.type,
+                                brand: a.cardBrand
+                            }), (0, l.jsxs)("div", {
+                                className: iy().paymentMethodInfo,
+                                children: [(0, l.jsxs)("div", {
+                                    className: iy().paymentMethodType,
+                                    children: [(0, l.jsx)("span", {
+                                        children: a.cardBrand
+                                    }), a.cardExpiryMonth && a.cardExpiryYear && (0, l.jsx)("div", {
+                                        children: (0, l.jsx)(ik, {
+                                            isExpired: d,
+                                            expiryMonth: a.cardExpiryMonth,
+                                            expiryYear: a.cardExpiryYear
+                                        })
+                                    })]
+                                }), (0, l.jsxs)("span", {
+                                    className: iy().paymentMethodNumber,
+                                    children: ["•••• •••• •••• ", a.last4]
+                                })]
+                            })]
+                        }), (0, l.jsx)(iM, {
+                            isDefault: a.isDefault,
+                            isExpired: d,
+                            handleDelete: t,
+                            handleMakeDefault: i
+                        })]
+                    })
+                },
+                iC = e => {
+                    let {
+                        paymentMethod: a,
+                        handleDelete: t,
+                        handleMakeDefault: i
+                    } = e, {
+                        t: n
+                    } = (0, d.Bd)();
+                    return (0, l.jsxs)("li", {
+                        className: iy().wrapper,
+                        children: [(0, l.jsxs)("div", {
+                            className: iy().header,
+                            children: [(0, l.jsx)(ip.$, {
+                                className: iy().icon,
+                                type: a.type
+                            }), (0, l.jsxs)("div", {
+                                className: iy().paymentMethodInfo,
+                                children: [(0, l.jsx)("span", {
+                                    className: iy().paymentMethodType,
+                                    children: n("page.payment.manage.ideal.type")
+                                }), (0, l.jsxs)("span", {
+                                    className: iy().paymentMethodNumber,
+                                    children: ["•••• ", a.last4]
+                                })]
+                            })]
+                        }), (0, l.jsx)(iM, {
+                            isDefault: a.isDefault,
+                            handleDelete: t,
+                            handleMakeDefault: i
+                        })]
+                    })
+                },
+                iS = e => {
+                    let {
+                        paymentMethod: a,
+                        handleDelete: t,
+                        handleMakeDefault: i
+                    } = e, {
+                        t: n
+                    } = (0, d.Bd)();
+                    return (0, l.jsxs)("li", {
+                        className: iy().wrapper,
+                        children: [(0, l.jsxs)("div", {
+                            className: iy().header,
+                            children: [(0, l.jsx)(ip.$, {
+                                className: iy().icon,
+                                type: a.type
+                            }), (0, l.jsx)("div", {
+                                className: iy().paymentMethodInfo,
+                                children: (0, l.jsx)("span", {
+                                    className: iy().paymentMethodType,
+                                    children: n("page.payment.manage.paypal.type")
+                                })
+                            })]
+                        }), (0, l.jsx)(iM, {
+                            isDefault: a.isDefault,
+                            handleDelete: t,
+                            handleMakeDefault: i
+                        })]
+                    })
+                },
+                iA = e => {
+                    let {
+                        paymentMethod: a,
+                        handleDelete: t,
+                        handleMakeDefault: i
+                    } = e;
+                    return (0, l.jsxs)("li", {
+                        className: iy().wrapper,
+                        children: [(0, l.jsxs)("div", {
+                            className: iy().header,
+                            children: [(0, l.jsx)(ip.$, {
+                                className: iy().icon,
+                                type: a.type
+                            }), (0, l.jsxs)("div", {
+                                className: iy().paymentMethodInfo,
+                                children: [(0, l.jsx)("span", {
+                                    className: iy().paymentMethodType,
+                                    children: a.type
+                                }), a.last4 && (0, l.jsxs)("span", {
+                                    className: iy().paymentMethodNumber,
+                                    children: ["•••• ", a.last4]
+                                })]
+                            })]
+                        }), (0, l.jsx)(iM, {
+                            isDefault: a.isDefault,
+                            handleDelete: t,
+                            handleMakeDefault: i
+                        })]
+                    })
+                },
+                iI = e => {
+                    let {
+                        teamId: a,
+                        paymentMethod: t
+                    } = e, [d] = (0, aK.FQ)(), [n] = (0, aK.vO)(), o = (0, i.useCallback)(async () => {
+                        a && await d({
+                            teamId: a,
+                            paymentMethodId: t.id
+                        })
+                    }, [t.id, a, d]), s = (0, i.useCallback)(async () => {
+                        a && await n({
+                            teamId: a,
+                            paymentMethodId: t.id
+                        })
+                    }, [t.id, a, n]);
+                    switch (t.type.toLowerCase()) {
+                        case "card":
+                            return (0, l.jsx)(iv, {
+                                paymentMethod: t,
+                                handleDelete: o,
+                                handleMakeDefault: s
+                            });
+                        case "sepa_debit":
+                            return (0, l.jsx)(iC, {
+                                paymentMethod: t,
+                                handleDelete: o,
+                                handleMakeDefault: s
+                            });
+                        case "paypal":
+                            return (0, l.jsx)(iS, {
+                                paymentMethod: t,
+                                handleDelete: o,
+                                handleMakeDefault: s
+                            });
+                        default:
+                            return (0, l.jsx)(iA, {
+                                paymentMethod: t,
+                                handleDelete: o,
+                                handleMakeDefault: s
+                            })
+                    }
+                },
+                ij = () => {
+                    let {
+                        t: e
+                    } = (0, d.Bd)(), {
+                        currentTeam: a
+                    } = (0, eM.o)(), {
+                        data: t
+                    } = (0, aK.oZ)({
+                        teamId: null == a ? void 0 : a.id
+                    }, {
+                        skip: !(null == a ? void 0 : a.id)
+                    }), i = [...t || []].sort((e, a) => e.isDefault && !a.isDefault ? -1 : !e.isDefault && a.isDefault ? 1 : e.createdAt.localeCompare(a.createdAt));
+                    return (0, l.jsxs)("div", {
+                        className: ih().updatePaymentDetails,
+                        children: [(0, l.jsx)("h5", {
+                            className: ih().updatePaymentDetailsHeading,
+                            children: e("page.payment.manage.title")
+                        }), (0, l.jsx)("ul", {
+                            className: ih().paymentMethodList,
+                            children: i.map(e => (0, l.jsx)(iI, {
+                                teamId: null == a ? void 0 : a.id,
+                                paymentMethod: e
+                            }, e.id))
+                        }), (0, l.jsx)(T.$, {
+                            appearance: "secondary",
+                            size: "small",
+                            as: "a",
+                            href: tu.l9.route,
+                            className: ih().updatePaymentButton,
+                            variation: "neutral",
+                            children: e("page.payment.manage.add_payment_method")
+                        })]
+                    })
+                },
+                iD = "winback_campaign",
+                iN = () => {
+                    sessionStorage.removeItem(iD)
+                },
+                iP = () => sessionStorage.getItem(iD);
+            var iB = t(75600),
+                iT = t(83906),
+                iE = t(87983),
+                iL = t(20409);
+            let iW = {
+                    src: "/_next/static/media/EmailWinbackModalHQ.9c765678.png",
+                    height: 2376,
+                    width: 1212,
+                    blurDataURL: "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAICAMAAADp7a43AAAAJ1BMVEXlyf/pzf/lyP7Mu/7fwvLlze20nsfq1f749v3iprXcvOzGw/u9kabn/bnhAAAACXBIWXMAACxLAAAsSwGlPZapAAAAKElEQVR4nAXBiQEAIAgDsWsBwWf/eU0AgfOY2i/pmSZuJRFrIUmA/QELAgCBzEN3BQAAAABJRU5ErkJggg==",
+                    blurWidth: 4,
+                    blurHeight: 8
+                },
+                iR = (e, a) => ({
+                    kind: e,
+                    info: {
+                        winback_type: a.winbackType,
+                        winback_offer: a.winbackOffer,
+                        winback_source: a.winbackSource
+                    }
+                }),
+                iU = {
+                    winbackEmailModalDisplayed: e => iR("winback_nudge_TW_displayed", e),
+                    winbackEmailModalButtonClicked: e => iR("winback_nudge_TW_clicked", e),
+                    winbackEmailModalDismissed: e => iR("winback_nudge_TW_dismissed", e),
+                    winbackEmailModalEditPaymentClicked: e => iR("winback_nudge_TW_edit_payment_clicked", e)
+                };
+            var iO = t(75142),
+                iF = t.n(iO);
+            let iG = e => {
+                let {
+                    isOpen: a,
+                    onClose: t
+                } = e, {
+                    t: o
+                } = (0, d.Bd)(), s = (0, n.wA)(), {
+                    currentTeam: _
+                } = (0, eM.o)(), {
+                    subscription: r
+                } = (0, a8.f)(), {
+                    getPlanByTierAndInterval: m
+                } = (0, iE.d)(), w = (() => {
+                    let e = iP();
+                    if (e || (e = new URLSearchParams(window.location.search).get("trk")), "WBK_ARO_50DC" === e) return "WINBACK-EMAIL-50"
+                })();
+                (0, i.useEffect)(() => {
+                    w && s(iB.jf.actions.setCoupon({
+                        code: w,
+                        method: lX.tx.Automatic
+                    }))
+                }, [w, s]);
+                let {
+                    data: g
+                } = (0, aK.oZ)({
+                    teamId: null == _ ? void 0 : _.id
+                }, {
+                    skip: !(null == _ ? void 0 : _.id)
+                }), b = null == g ? void 0 : g.find(e => e.isDefault), c = (0, ah.l)(), h = (0, l9.d)(), u = w ? "discount" : "none", x = "ar_off", y = "email";
+                (0, i.useEffect)(() => {
+                    a && (0, p.Od)().trackUserAction(iU.winbackEmailModalDisplayed({
+                        winbackType: x,
+                        winbackOffer: u,
+                        winbackSource: y
+                    }))
+                }, [a, u]);
+                let f = (0, i.useMemo)(() => {
+                        var e;
+                        if (!r || !r.endsAt) return {};
+                        let a = new Date(r.endsAt),
+                            t = eU.A.date(a, "without_day"),
+                            l = r.totalCentsPerSeat;
+                        if (w) {
+                            let e = m(r.tier, r.interval);
+                            e && !e.price.discountErrorCode && (l = e.price.totalAmountPerSeatInCents)
+                        }
+                        let i = (0, lc.F)({
+                                amount: l / 100,
+                                currency: null != (e = r.currency) ? e : lX.Sj.EUR,
+                                locale: eU.A.locale
+                            }),
+                            d = (0, ey.m4)(r.interval);
+                        return {
+                            startDate: t,
+                            price: i,
+                            billingPeriod: o("checkout.billing.".concat(d.toLowerCase())),
+                            planName: (0, ey.Is)(r.tier)
+                        }
+                    }, [r, w, m, o]),
+                    M = (0, i.useCallback)(() => {
+                        (0, p.Od)().trackUserAction(iU.winbackEmailModalDismissed({
+                            winbackType: x,
+                            winbackOffer: u,
+                            winbackSource: y
+                        })), iN(), t()
+                    }, [t, u]),
+                    k = (0, i.useCallback)(() => {
+                        (0, p.Od)().trackUserAction(iU.winbackEmailModalDismissed({
+                            winbackType: x,
+                            winbackOffer: u,
+                            winbackSource: y
+                        })), iN(), t()
+                    }, [t, u]),
+                    v = (0, i.useCallback)(() => {
+                        (0, p.Od)().trackUserAction(iU.winbackEmailModalEditPaymentClicked({
+                            winbackType: x,
+                            winbackOffer: u,
+                            winbackSource: y
+                        })), t3.A.navigateTo(tu.l9.route), t()
+                    }, [t, u]),
+                    C = (0, i.useCallback)(async () => {
+                        (0, p.Od)().trackUserAction(iU.winbackEmailModalButtonClicked({
+                            winbackType: x,
+                            winbackOffer: u,
+                            winbackSource: y
+                        })), await c(), w && await h(w), iN(), t()
+                    }, [c, h, w, t, u]);
+                return (0, l.jsx)(W.a, {
+                    isOpen: a,
+                    size: "large",
+                    classes: {
+                        containerClass: iF().modal
+                    },
+                    onClose: M,
+                    showCloseButton: !0,
+                    appElement: (0, R.Y)(),
+                    children: (0, l.jsxs)("div", {
+                        className: iF().modalContainer,
+                        children: [(0, l.jsx)("div", {
+                            className: iF().leftPanel,
+                            children: (0, l.jsx)("div", {
+                                className: iF().imageContainer,
+                                children: (0, l.jsx)(l8(), {
+                                    src: iW,
+                                    alt: "",
+                                    fill: !0,
+                                    sizes: "50vw",
+                                    objectFit: "cover"
+                                })
+                            })
+                        }), (0, l.jsx)("div", {
+                            className: iF().rightPanel,
+                            children: (0, l.jsxs)("div", {
+                                className: iF().content,
+                                children: [(0, l.jsx)("h2", {
+                                    className: iF().title,
+                                    children: o(w ? "paywalls.winback_offer_modal.title_discount" : "paywalls.winback_offer_modal.title", {
+                                        planName: f.planName
+                                    })
+                                }), w ? (0, l.jsx)("p", {
+                                    className: iF().bodyText,
+                                    children: (0, l.jsx)(d.x6, {
+                                        i18nKey: "paywalls.winback_offer_modal.body_discount",
+                                        values: {
+                                            planName: f.planName
+                                        },
+                                        components: {
+                                            b: (0, l.jsx)("b", {})
+                                        }
+                                    })
+                                }) : (0, l.jsxs)("div", {
+                                    className: iF().benefits,
+                                    children: [(0, l.jsx)(iL.T, {
+                                        description: o("paywalls.winback_offer_modal.features.unlimited_file_size"),
+                                        icon: "check"
+                                    }), (0, l.jsx)(iL.T, {
+                                        description: o("paywalls.winback_offer_modal.features.unlimited_transfers"),
+                                        icon: "check"
+                                    }), (0, l.jsx)(iL.T, {
+                                        description: o("paywalls.winback_offer_modal.features.uninterrupted_workflow"),
+                                        icon: "check"
+                                    })]
+                                }), (0, l.jsxs)("div", {
+                                    className: iF().paymentMethodContainer,
+                                    children: [(0, l.jsx)("p", {
+                                        className: iF().paymentMethodLabel,
+                                        children: o("paywalls.winback_offer_modal.payment_method_label")
+                                    }), b && (0, l.jsx)(iT.W, {
+                                        type: b.type,
+                                        cardBrand: b.cardBrand,
+                                        last4: b.last4,
+                                        onEdit: v,
+                                        className: iF().paymentMethod
+                                    })]
+                                }), (0, l.jsx)("div", {
+                                    className: iF().disclaimerContainer,
+                                    children: (0, l.jsx)("p", {
+                                        className: iF().disclaimer,
+                                        children: (0, l.jsx)(d.x6, {
+                                            i18nKey: "paywalls.winback_offer_modal.disclaimer",
+                                            values: f,
+                                            components: {
+                                                b: (0, l.jsx)("b", {})
+                                            }
+                                        })
+                                    })
+                                }), (0, l.jsxs)("div", {
+                                    className: iF().ctaContainer,
+                                    children: [(0, l.jsx)(T.$, {
+                                        appearance: "primary",
+                                        variation: "upsell",
+                                        mode: "light",
+                                        size: "medium",
+                                        fullwidth: !0,
+                                        onClick: C,
+                                        className: iF().ctaButton,
+                                        children: o("paywalls.winback_offer_modal.cta")
+                                    }), (0, l.jsx)(T.$, {
+                                        appearance: "secondary",
+                                        mode: "light",
+                                        size: "medium",
+                                        fullwidth: !0,
+                                        onClick: k,
+                                        className: iF().noThanksButton,
+                                        children: o("paywalls.winback_offer_modal.no_thanks")
+                                    })]
+                                })]
+                            })
+                        })]
+                    })
+                })
+            };
+            var iK = t(65075),
+                iH = t.n(iK);
+
+            function iz() {
+                let {
+                    t: e
+                } = (0, d.Bd)(), a = (0, i.useCallback)(() => window.open("mailto:".concat("enterprise.support@wetransfer.com")), []);
+                return (0, l.jsxs)("div", {
+                    className: iH().container,
+                    children: [(0, l.jsx)("div", {
+                        className: iH().header,
+                        children: (0, l.jsx)("span", {
+                            className: iH().header__title,
+                            children: e("enterprise_banners.custom_contract.account_manager.title")
+                        })
+                    }), (0, l.jsxs)("div", {
+                        className: iH().body,
+                        children: [(0, l.jsx)("span", {
+                            className: iH().body__message,
+                            children: e("enterprise_banners.custom_contract.account_manager.message")
+                        }), (0, l.jsx)(T.$, {
+                            onClick: a,
+                            size: "large",
+                            className: iH().body__button,
+                            children: e("enterprise_banners.custom_contract.account_manager.cta")
+                        })]
+                    })]
+                })
+            }
+            var iY = t(76337),
+                iV = t.n(iY);
+
+            function iX() {
+                let {
+                    t: e
+                } = (0, d.Bd)(), a = (0, n.wA)(), {
+                    settings: {
+                        repackaging_enterprise_cta_url: t
+                    }
+                } = (0, C.k)(), o = (0, i.useCallback)(() => window.open(t, "_blank", "noopener, noreferrer"), [t]);
+                return (0, l.jsxs)("div", {
+                    className: iV().container,
+                    children: [(0, l.jsxs)("div", {
+                        className: iV().text,
+                        children: [(0, l.jsx)("span", {
+                            className: iV().text__message,
+                            children: e("enterprise_banners.self_service.message")
+                        }), (0, l.jsx)(e_.N, {
+                            className: iV().text__link,
+                            href: tu.bP.route,
+                            typography: "wt-body-medium",
+                            onClick: () => a((0, tx.jt)(tx.vW.ENTERPRISE_BANNER)),
+                            children: e("enterprise_banners.self_service.link")
+                        })]
+                    }), (0, l.jsx)(T.$, {
+                        onClick: o,
+                        size: "large",
+                        children: e("enterprise_banners.self_service.cta")
+                    })]
+                })
+            }
+            var iQ = t(29336),
+                iq = t(32976),
+                iZ = t(24717),
+                iJ = t(83489),
+                i$ = t(69769),
+                i0 = t(75876),
+                i1 = t(73278),
+                i2 = t(44765),
+                i4 = t(55851),
+                i6 = t(59457),
+                i3 = t(15989),
+                i5 = function(e) {
+                    return e.MANAGE_PLAN_CLICKED = "subscription_card_manage_plan_button_clicked", e
+                }(i5 || {});
+            let i7 = {
+                managePlanClicked: () => ({
+                    kind: "subscription_card_manage_plan_button_clicked"
+                })
+            };
+            var i8 = t(54341),
+                i9 = t.n(i8);
+            let de = () => {
+                var e, a, t, o, _, r;
+                let {
+                    t: m
+                } = (0, d.Bd)(), w = (0, n.wA)(), {
+                    currentTeam: g
+                } = (0, eM.o)(), b = (0, le.LT)(), [c, h] = (0, i.useState)(0), [x, y] = (0, i.useState)(!1), {
+                    subscription: f,
+                    isLoading: M,
+                    refetch: k
+                } = (0, a8.f)(), {
+                    user: v
+                } = (0, n.d4)(e => ({
+                    user: e.user
+                })), {
+                    showUpgradeSubscriptionModal: C,
+                    confirmPlanSwitchOrReactivate: S,
+                    closeUpgradeSubscriptionModal: A,
+                    isModalVisible: I,
+                    isSwitchInProgress: j,
+                    isPendingDowngrade: D,
+                    selectedTier: N,
+                    selectedBillingInterval: P
+                } = (0, i2.W)(), B = (0, n.d4)(u.Me), {
+                    pendingPriceChangeMigration: E
+                } = (() => {
+                    let e = (0, n.d4)(u.JV),
+                        {
+                            subscription: a,
+                            isLoading: t
+                        } = (0, a8.f)();
+                    return e ? {
+                        isLoading: t,
+                        pendingPriceChangeMigration: !!(null == a ? void 0 : a.pendingPriceChangeMigration)
+                    } : {
+                        isLoading: !1,
+                        pendingPriceChangeMigration: !1
+                    }
+                })(), L = (0, iZ.N)(), W = (0, i0.J)(), {
+                    quota: R
+                } = (0, i$.H)(!0), U = (null != (a = null == g || null == (e = g.members) ? void 0 : e.length) ? a : 0) <= 1 || !g, O = (0, ii.G)(), F = (0, id.W)({
+                    amount: (null != (t = null == f ? void 0 : f.totalCents) ? t : 0) / 100,
+                    currency: null != (o = null == f ? void 0 : f.currency) ? o : lX.Sj.EUR,
+                    locale: O
+                }), G = (0, id.W)({
+                    amount: (null != (_ = null == f ? void 0 : f.totalCentsPerSeat) ? _ : 0) / 100,
+                    currency: null != (r = null == f ? void 0 : f.currency) ? r : lX.Sj.EUR,
+                    locale: O
+                }), K = (null == f ? void 0 : f.endsAt) ? eU.A.date(new Date(null == f ? void 0 : f.endsAt), "without_day") : "", H = (0, i.useCallback)(async () => {
+                    (null == f ? void 0 : f.interval) && C(v.planTier, null == f ? void 0 : f.interval)
+                }, [C, v.planTier, null == f ? void 0 : f.interval]), z = e => {
+                    w((0, tx.jt)(e))
+                }, Y = (0, l.jsxs)("div", {
+                    className: i9().downgradeText,
+                    children: [(0, l.jsx)("div", {
+                        children: (0, l.jsx)(d.x6, {
+                            className: i9().planInfo,
+                            i18nKey: "subscription_card.pending_cancellation",
+                            components: [(0, l.jsx)("strong", {}, 0)],
+                            values: {
+                                cancellationDate: K
+                            }
+                        })
+                    }), (0, l.jsxs)("div", {
+                        className: i9().buttonContainer,
+                        children: [(0, l.jsx)(T.$, {
+                            className: i9().reactivateButton,
+                            onClick: H,
+                            children: m("subscription_card.reactivate_cta")
+                        }), (0, l.jsx)(T.$, {
+                            as: "a",
+                            href: tu.bP.route,
+                            appearance: "secondary",
+                            className: i9().compareButton,
+                            onClick: () => z(tx.vW.DOWNGRADE_REACTIVATE),
+                            children: m("subscription_card.compare_plans")
+                        })]
+                    })]
+                }), V = v.planTier === ey.js.PREMIUM_2022 || v.planTier === ey.js.DISTRIBUTE || v.planTier === ey.js.ULTIMATE || v.planTier === ey.js.ENTERPRISE || v.planTier === ey.js.ENTERPRISE_CUSTOM_CONTRACT, X = eU.A.size(R, {
+                    allowNull: !0
+                }), {
+                    quota: Q
+                } = (0, iq.i)(!0), {
+                    quota: q
+                } = (0, iJ.J)(!0), Z = null != Q ? eU.A.size(Q) : "", J = L / i4.i.ONE_DAY_IN_SECONDS, {
+                    planName: $,
+                    planFeatures: ee = []
+                } = (0, ef.ns)(v.planTier, B, {
+                    transferLimit: X,
+                    accountStorage: Z,
+                    transferExpiryCount: J,
+                    transferNumberLimit: q
+                }) || {}, ea = W || (0, ef.yw)(v), et = v.planTier === ey.js.ENTERPRISE_CUSTOM_CONTRACT, el = (0, i.useCallback)(() => {
+                    (0, p.Od)().trackUserAction(i7.managePlanClicked())
+                }, []), ei = (0, i.useCallback)(() => {
+                    y(!0), h(e => e + 1), setTimeout(() => {
+                        k(), y(!1)
+                    }, 1e3)
+                }, [h, k, y]);
+                return (0, i.useEffect)(() => {
+                    ("true" !== b.get(iQ.T) || M || x || (null == f ? void 0 : f.isPaused) || !(c < 5)) && ("true" !== b.get(l9.V) || M || x || (null == f ? void 0 : f.discountPercent) || !(c < 5)) || ei()
+                }, [M, ei, x, c, null == f ? void 0 : f.discountPercent, null == f ? void 0 : f.isPaused, b]), (0, l.jsxs)("div", {
+                    className: i9().SubscriptionCard,
+                    "data-testid": "SubscriptionCard",
+                    children: [(M || x) && (0, l.jsxs)("div", {
+                        className: i9().loadingDimmer,
+                        children: [(0, l.jsx)(s.y, {
+                            size: "large"
+                        }), (0, l.jsx)("p", {
+                            className: i9().loadingDimmerText,
+                            children: m("page.account_payment.spinner_text")
+                        })]
+                    }), (0, l.jsxs)("div", {
+                        className: i9().currentPlan,
+                        children: [(0, l.jsx)("div", {
+                            className: i9().planHeader,
+                            children: (0, l.jsxs)("div", {
+                                className: i9().planTitle,
+                                children: [(0, l.jsx)("h2", {
+                                    children: $
+                                }), (0, l.jsx)(lR.E, {
+                                    appearance: (null == f ? void 0 : f.isPaused) ? "blue" : D ? "red" : "green",
+                                    children: m((null == f ? void 0 : f.isPaused) ? "page.account_payment.paused_badge_text" : D ? "page.account_payment.cancel_badge_text" : "page.account_payment.badge_text")
+                                })]
+                            })
+                        }), D && Y, !D && (0, ef.yw)(v) && B === ey.zX && (0, l.jsx)("p", {
+                            className: i9().planInfoFree,
+                            children: m("page.account_payment.free")
+                        }), !D && !(0, ef.yw)(v) && E && (0, l.jsx)("p", {
+                            className: i9().planInfo,
+                            children: (0, l.jsx)(d.x6, {
+                                i18nKey: "subscription_card.pending_price_change",
+                                components: [(0, l.jsx)("a", {
+                                    href: i6.to,
+                                    target: "blank"
+                                }, 0)],
+                                values: {
+                                    plan: $,
+                                    renewal_date: K,
+                                    support_url: i6.to
+                                }
+                            })
+                        }), !D && !(0, ef.yw)(v) && !E && !et && (0, l.jsxs)(l.Fragment, {
+                            children: [(0, l.jsx)("p", {
+                                className: i9().planInfo,
+                                children: (null == f ? void 0 : f.isPaused) ? (0, l.jsx)(d.x6, {
+                                    i18nKey: "subscription_card.paused_subscription_text",
+                                    components: {
+                                        br: (0, l.jsx)("br", {}),
+                                        b: (0, l.jsx)("b", {})
+                                    },
+                                    values: {
+                                        date: K
+                                    }
+                                }) : U ? (null == f ? void 0 : f.isPaidDowngrade) ? (0, l.jsx)(d.x6, {
+                                    i18nKey: "subscription_card.downgrade.current_solo_workspace_information",
+                                    components: {
+                                        b: (0, l.jsx)("b", {})
+                                    },
+                                    values: {
+                                        autorenewalattempt: K
+                                    }
+                                }) : (0, l.jsx)(d.x6, {
+                                    i18nKey: "subscription_card.solo_workspace",
+                                    components: {
+                                        b: (0, l.jsx)("b", {})
+                                    },
+                                    values: {
+                                        formattedintervaltotal: F,
+                                        subscriptioninterval: null == f ? void 0 : f.interval,
+                                        autorenewalattempt: K
+                                    }
+                                }) : (null == f ? void 0 : f.isPaidDowngrade) ? (0, l.jsx)(d.x6, {
+                                    i18nKey: "subscription_card.downgrade.current_team_workspace_information",
+                                    components: {
+                                        b: (0, l.jsx)("b", {})
+                                    },
+                                    values: {
+                                        autorenewalattempt: K
+                                    }
+                                }) : (0, l.jsx)(d.x6, {
+                                    i18nKey: "subscription_card.team_workspace",
+                                    components: {
+                                        b: (0, l.jsx)("b", {})
+                                    },
+                                    values: {
+                                        formattedTeamWorkspaceCost: F,
+                                        subscriptioninterval: null == f ? void 0 : f.interval,
+                                        membercount: (null == f ? void 0 : f.quantity) + " seats",
+                                        tieramount: G,
+                                        autorenewalattempt: K
+                                    }
+                                })
+                            }), (null == f ? void 0 : f.discountPercent) && (0, l.jsxs)("div", {
+                                className: i9().discountContainer,
+                                children: [(0, l.jsxs)("div", {
+                                    className: i9().discountTitleContainer,
+                                    children: [(0, l.jsx)(aR.kR8, {}), (0, l.jsx)("span", {
+                                        className: i9().discountTitle,
+                                        children: m("subscription_card.discount_title", {
+                                            discount: Number(f.discountPercent).toFixed(0)
+                                        })
+                                    })]
+                                }), (0, l.jsx)("span", {
+                                    className: i9().discountSubtitle,
+                                    children: m("subscription_card.discount_subtitle")
+                                })]
+                            })]
+                        }), !D && (0, l.jsx)("ul", {
+                            className: i9().ListItems,
+                            children: ee.map((e, a) => (0, l.jsxs)("li", {
+                                className: i9().Item,
+                                children: [(0, l.jsx)(i3.In, {
+                                    name: "checkmark-simple--blue",
+                                    size: 18
+                                }), e]
+                            }, a))
+                        }), !D && !V && ea && (0, l.jsxs)(l.Fragment, {
+                            children: [(0, l.jsx)("div", {
+                                className: i9().seperator
+                            }), (0, l.jsxs)("div", {
+                                className: i9().cardFooter,
+                                children: [(0, l.jsxs)("div", {
+                                    className: i9().cardFooterInfo,
+                                    children: [(0, l.jsx)("span", {
+                                        className: i9().cardFooterTitle,
+                                        children: m("page.account_payment.upsell_title")
+                                    }), (0, l.jsx)("span", {
+                                        className: i9().cardFooterText,
+                                        children: m("page.account_payment.switch_text")
+                                    })]
+                                }), (0, l.jsx)(T.$, {
+                                    as: "a",
+                                    href: tu.bP.route,
+                                    className: i9().compareButton,
+                                    onClick: () => z(tx.vW.SETTINGS_PLAN_AND_PAYMENT_COMPARE_ALL_PLANS),
+                                    children: m("subscription_card.compare_plans")
+                                })]
+                            })]
+                        }), !D && !W && (0, ef.WU)(v) && !et && (0, l.jsxs)("div", {
+                            className: i9().managePlanContainer,
+                            children: [(0, l.jsx)(T.$, {
+                                as: "a",
+                                href: "/workspace/payment/manage-plan",
+                                size: "small",
+                                onClick: el,
+                                children: m("page.account_payment.manage_plan_button")
+                            }), (0, l.jsx)(T.$, {
+                                as: "a",
+                                href: tu.bP.route,
+                                appearance: "secondary",
+                                variation: "neutral",
+                                size: "small",
+                                onClick: () => z(tx.vW.PLAN_DETAILS_BUTTON),
+                                children: m("page.account_payment.plan_details_button")
+                            })]
+                        }), I && (0, l.jsx)(i1.r, {
+                            switchPlansOrReactivate: S,
+                            planName: v.planTier,
+                            isLoading: j,
+                            closeModal: A,
+                            planTier: N,
+                            selectedBillingInterval: P,
+                            isReactivatingPlan: !0
+                        })]
+                    })]
+                })
+            };
+            var da = t(76247),
+                dt = t(11428),
+                dl = t(62373),
+                di = t(24750),
+                dd = t(43657),
+                dn = t(67501),
+                ds = t.n(dn),
+                d_ = t(89664),
+                dr = t.n(d_);
+
+            function dm(e) {
+                let {
+                    quantity: a,
+                    isLoading: t,
+                    hasFailed: i,
+                    billingPreview: n
+                } = e, {
+                    t: o
+                } = (0, d.Bd)(), _ = n && "".concat((0, lc.F)({
+                    currency: n.currency,
+                    amount: n.recurringTotalCents / 100,
+                    locale: eU.A.locale
+                }), "/").concat(o("members.add_members.invite_members_modal.body.interval_".concat(n.interval))), r = n && new Date(n.recurringAt).toLocaleDateString();
+                return i ? (0, l.jsx)("p", {
+                    className: dr().errorText,
+                    children: o("members.add_members.invite_members_modal.error_message")
+                }) : t ? (0, l.jsx)("div", {
+                    className: dr().spinnerContainer,
+                    children: (0, l.jsx)(s.y, {
+                        size: "large"
+                    })
+                }) : (0, l.jsx)("div", {
+                    className: dr().confirmationModalContents,
+                    children: (0, l.jsxs)("div", {
+                        className: dr().confirmationModalBody,
+                        children: [(0, l.jsxs)("div", {
+                            className: dr().chargeInfo,
+                            children: [(0, l.jsxs)("div", {
+                                className: dr().chargeInfoRow,
+                                children: [(0, l.jsx)("span", {
+                                    children: o("page.account_payment.seats_management.update_seats_modal.new_total")
+                                }), (0, l.jsx)("span", {
+                                    children: a
+                                })]
+                            }), (0, l.jsxs)("div", {
+                                className: dr().chargeInfoRow,
+                                children: [(0, l.jsx)("span", {
+                                    children: o("members.add_members.invite_members_modal.body.will_be_charged")
+                                }), (0, l.jsxs)("div", {
+                                    className: dr().chargeInfoAmount,
+                                    children: [(0, l.jsx)(lb.A, {
+                                        containerClassName: dr().chargeInfoPopover,
+                                        positions: ["bottom"],
+                                        content: (0, l.jsx)("span", {
+                                            children: o("members.add_members.invite_members_modal.body.popover_text")
+                                        }),
+                                        eventTrigger: "hover",
+                                        isCondensed: !0,
+                                        mode: "dark",
+                                        children: (0, l.jsx)(aR.rHs, {
+                                            size: "small"
+                                        })
+                                    }), n && (0, l.jsx)("span", {
+                                        "data-testid": "invoice-additional-amount",
+                                        children: (0, lc.F)({
+                                            currency: n.currency,
+                                            amount: n.upfrontTotalCents / 100,
+                                            locale: eU.A.locale
+                                        })
+                                    })]
+                                })]
+                            })]
+                        }), (0, l.jsx)("div", {
+                            className: dr().separator
+                        }), (0, l.jsx)("div", {
+                            className: dr().confirmationSubscriptionInfo,
+                            children: (0, l.jsx)(d.x6, {
+                                i18nKey: "members.add_members.invite_members_modal.body.subscription_info",
+                                components: {
+                                    1: (0, l.jsx)("span", {
+                                        className: dr().confirmationSubscriptionInfoBold
+                                    })
+                                },
+                                values: {
+                                    subscriptionInfo: _,
+                                    subscriptionDate: r
+                                }
+                            })
+                        })]
+                    })
+                })
+            }
+            let dw = e => {
+                let {
+                    actionType: a
+                } = e, t = (0, i.useRef)(null), {
+                    subscription: s
+                } = (0, a8.f)(), {
+                    canExplicitlyManageSeats: _,
+                    minimumCommitmentSeats: r,
+                    minimumSeats: m,
+                    maximumSeats: w,
+                    currentSeats: g,
+                    seatsInUse: b
+                } = (0, lt.K)(), c = (0, n.d4)(e => e.pending), h = (0, n.d4)(e => e.account), u = (0, n.d4)(e => e.user), x = (0, n.d4)(e => e.route), {
+                    t: y
+                } = (0, d.Bd)(), {
+                    currentTeam: f
+                } = (0, eM.o)(), C = null == f ? void 0 : f.id, S = (0, ll.l)(), {
+                    data: A,
+                    isLoading: I
+                } = (0, aK.rk)({
+                    teamId: C
+                }, {
+                    skip: !C
+                }), j = (0, i0.J)(), D = da.az.includes(null == s ? void 0 : s.status), {
+                    addToast: N
+                } = (0, o.d)(), P = (null == s ? void 0 : s.endsAt) ? eU.A.date(new Date(s.endsAt), "without_day") : "", B = "marketing" === x.query.from, [E, L] = (0, i.useState)(g), [W, R] = (0, i.useState)(!1), [U, O] = (0, i.useState)(!1), [F, G] = (0, i.useState)(!1), K = (0, is.r)(), H = (0, n.d4)(e2.oz), z = (() => {
+                    let e = (() => {
+                            let e = new URLSearchParams(window.location.search);
+                            return {
+                                trk: e.get("trk"),
+                                email: (() => {
+                                    let a = e.get("email");
+                                    return a ? decodeURIComponent(a) : null
+                                })(),
+                                subscriptionTierName: e.get("subscriptionTierName")
+                            }
+                        })(),
+                        a = (0, n.d4)(ev.JQ),
+                        t = (0, n.d4)(ev.EA),
+                        l = (0, a9.d)(),
+                        {
+                            subscription: d
+                        } = (0, a8.f)(),
+                        o = (0, i.useMemo)(() => {
+                            var t;
+                            let l = null == (t = e.trk) ? void 0 : t.startsWith("WBK_ARO"),
+                                i = e.email && a && e.email.toLowerCase() === a.toLowerCase();
+                            return l && i
+                        }, [e.trk, e.email, a]);
+                    (0, i.useEffect)(() => {
+                        var a;
+                        o && e.trk && (a = e.trk, sessionStorage.setItem(iD, a))
+                    }, [o, e.trk]);
+                    let s = (0, i.useMemo)(() => !!iP(), []);
+                    return t && l && (null == d ? void 0 : d.endsAt) && (o || s)
+                })(), {
+                    isLoading: Y,
+                    hasFailed: V,
+                    billingPreview: X
+                } = ld({
+                    seats: E,
+                    teamId: C || "",
+                    isModalOpen: W
+                });
+                (0, k.S)(() => {
+                    document.title = "".concat(y("page.payment.pagename"), " - WeTransfer")
+                }), (0, i.useEffect)(() => {
+                    K && H && setTimeout(() => {
+                        O(!0)
+                    }, 1500)
+                }, [K, H]), (0, i.useEffect)(() => {
+                    z && G(!0)
+                }, [z]), (0, i.useEffect)(() => {
+                    var e;
+                    null == t || null == (e = t.current) || e.focus()
+                }, [t, c]);
+                let Q = (0, i.useCallback)(() => {
+                        dl.A.trackSnowplowEvent({
+                            category: "pro",
+                            action: "click_cancel_pro"
+                        }), (0, p.Od)().trackUserAction(di.X.cancelButtonClicked({}))
+                    }, []),
+                    q = (0, i.useCallback)(async e => {
+                        if (C)
+                            if (e >= m) {
+                                let a = await S({
+                                    newQuantity: e
+                                });
+                                R(!1), a ? (0, p.Od)().trackUserAction(di.X.seatsUpdateConfirmed({
+                                    quantity: e
+                                })) : (N(y("members.update_members_error"), {
+                                    autoHideDuration: 3e3
+                                }), L(g))
+                            } else N(y("members.members_below_minimum_commitment"), {
+                                autoHideDuration: 3e3
+                            }), (0, p.Od)().trackUserAction(di.X.seatsUpdateBelowMinimumCommitmentError({
+                                quantity: e
+                            }))
+                    }, [C, m, S, N, y, g]),
+                    Z = !h.active_subscription;
+                return (0, l.jsxs)("div", {
+                    className: "payment",
+                    children: [!v.Ay.isMobile && (0, l.jsx)(M.a, {
+                        showWorkspaceName: !0,
+                        panelName: y("page.payment.pagename")
+                    }), D && (0, l.jsx)(l5, {
+                        isLoading: I,
+                        invoices: A || []
+                    }), (0, l.jsxs)("div", {
+                        className: ds().subscriptionCardContainer,
+                        children: [(0, l.jsx)("h5", {
+                            className: ds().subscriptionCardHeader,
+                            children: eU.A.t("page.account_payment.title")
+                        }), (0, l.jsx)(de, {}), u.planTier === ey.js.ENTERPRISE && (0, l.jsx)(iX, {}), u.planTier === ey.js.ENTERPRISE_CUSTOM_CONTRACT && (0, l.jsx)(iz, {})]
+                    }), _ && (0, l.jsxs)("div", {
+                        className: ds().seatsSelectorSection,
+                        children: [(0, l.jsx)("h4", {
+                            className: ds().seatsSelectorHeader,
+                            children: y("page.account_payment.seats_management.header")
+                        }), (0, l.jsx)("p", {
+                            children: (0, l.jsx)(d.x6, {
+                                i18nKey: "page.account_payment.seats_management.description",
+                                values: {
+                                    minCommitmentSeats: r,
+                                    maxCommitmentSeats: w
+                                },
+                                components: {
+                                    strong: (0, l.jsx)("strong", {}),
+                                    salesLink: (0, l.jsx)("a", {
+                                        href: "https://wetransfer.com/enterprise",
+                                        target: "_blank",
+                                        rel: "noreferrer"
+                                    })
+                                }
+                            })
+                        }), (0, l.jsxs)("div", {
+                            className: ds().seatsSelectorContainer,
+                            children: [(0, l.jsxs)("div", {
+                                className: ds().seatsSelectorContent,
+                                children: [(0, l.jsx)("p", {
+                                    children: y("page.account_payment.seats_management.header")
+                                }), (0, l.jsx)(dt.A, {
+                                    seats: E,
+                                    setSeats: L,
+                                    disableMinSeats: E === m,
+                                    minSeatsDisabledReason: E <= r ? "minimum_commitment" : "members",
+                                    disableMaxSeats: E === w,
+                                    totalMemberCount: b,
+                                    isInputDisabled: !0
+                                })]
+                            }), (0, l.jsx)(T.$, {
+                                onClick: () => R(!0),
+                                disabled: E === g,
+                                children: y("page.account_payment.seats_management.cta")
+                            })]
+                        })]
+                    }), C && W && (0, l.jsx)(ls, {
+                        header: y("page.account_payment.seats_management.update_seats_modal.header"),
+                        body: (0, l.jsx)(dm, {
+                            quantity: E,
+                            isLoading: Y,
+                            hasFailed: V,
+                            billingPreview: X
+                        }),
+                        footer: Y || V ? void 0 : (0, l.jsx)("div", {
+                            className: ds().footerContainer,
+                            children: (0, l.jsx)("div", {
+                                className: ds().footerInner,
+                                children: (0, l.jsx)("span", {
+                                    className: ds().termsFooter,
+                                    children: (0, l.jsx)(d.x6, {
+                                        i18nKey: "members.add_members.invite_members_modal.footer.agreement_text",
+                                        components: {
+                                            1: (0, l.jsx)("a", {
+                                                href: "/legal/terms",
+                                                target: "blank"
+                                            }),
+                                            4: (0, l.jsx)("a", {
+                                                href: "/legal/manage-cookies",
+                                                target: "blank"
+                                            })
+                                        }
+                                    })
+                                })
+                            })
+                        }),
+                        isOpen: W,
+                        confirmText: y("members.add_members.invite_members_modal.body.btn_confirm"),
+                        onClose: () => R(!1),
+                        isDisabled: Y || V,
+                        isButtonFullWidth: !0,
+                        onConfirm: () => q(E)
+                    }), u.planTier !== ey.js.ENTERPRISE_CUSTOM_CONTRACT && (0, l.jsxs)(l.Fragment, {
+                        children: [!(0, ef.yw)(u) && !Z && (0, l.jsx)(ij, {}), (0, ef.WU)(u) && "cancel" === a && !B && j ? (0, l.jsx)(dd.f, {
+                            user: u,
+                            expiryDate: P,
+                            pendingCancellation: c.cancelSubscription,
+                            trackClick: Q
+                        }) : null, (0, ef.WU)(u) && (0, l.jsxs)("div", {
+                            className: ds().BillingSection,
+                            children: [(0, l.jsx)("h5", {
+                                className: ds().BillingHeader,
+                                children: eU.A.t("page.billinginfo.pagename")
+                            }), (0, l.jsx)(l$, {})]
+                        }), (0, l.jsxs)("div", {
+                            className: ds().ReceiptSection,
+                            children: [(0, l.jsx)("h5", {
+                                className: ds().ReceiptsHeader,
+                                children: eU.A.t("page.invoices.pagename")
+                            }), (0, l.jsx)(l4, {})]
+                        })]
+                    }), (0, l.jsx)(ib, {
+                        isVisible: U,
+                        onDismiss: () => O(!1)
+                    }), (0, l.jsx)(iG, {
+                        isOpen: F,
+                        onClose: () => G(!1)
+                    })]
+                })
+            };
+            var dg = t(61605),
+                db = t.n(dg);
+            let dc = () => {
+                let {
+                    t: e
+                } = (0, d.Bd)(), {
+                    subscription: a
+                } = (0, a8.f)(), [t, n] = (0, i.useState)({
+                    appName: "",
+                    linkText: "",
+                    linkHref: ""
+                }), {
+                    appName: o,
+                    linkText: s,
+                    linkHref: _
+                } = t, r = (0, i.useCallback)(() => {
+                    let e;
+                    return "App Store" === o ? e = "click_go_to_app_store" : "Google Play" === o && (e = "click_go_to_play_store"), e && dl.A.trackSnowplowEvent({
+                        category: "pro",
+                        action: e
+                    }), !0
+                }, [o]), m = (0, i.useCallback)(() => (dl.A.trackSnowplowEvent({
+                    category: "pro",
+                    action: "click_learn_more_app_subscription"
+                }), !0), []);
+                return ((0, i.useEffect)(() => {
+                    if ((null == a ? void 0 : a.externalProvider) === te.hL.APPLE) return void n({
+                        appName: "App Store",
+                        linkText: "".concat(e("page.payment.mobile_subscription.go_to"), " App Store"),
+                        linkHref: "https://apps.apple.com/account/subscriptions"
+                    });
+                    (null == a ? void 0 : a.externalProvider) === te.hL.GOOGLE && n({
+                        appName: "Google Play",
+                        linkText: "".concat(e("page.payment.mobile_subscription.go_to"), " Google Play"),
+                        linkHref: "https://play.google.com/store/account/subscriptions"
+                    })
+                }, [null == a ? void 0 : a.externalProvider, e]), null == a ? void 0 : a.externalProvider) ? (0, l.jsxs)("div", {
+                    className: db().appSubscriptionBanner,
+                    children: [(0, l.jsx)("div", {
+                        className: db().appSubscriptionBanner__title,
+                        children: e("page.payment.mobile_subscription.title", {
+                            app_name: o
+                        })
+                    }), (0, l.jsx)("div", {
+                        className: db().appSubscriptionBanner__content,
+                        children: e("page.payment.mobile_subscription.content", {
+                            app_name: o
+                        })
+                    }), (0, l.jsxs)("div", {
+                        className: db().appSubscriptionBanner__footer,
+                        children: [(0, l.jsx)("a", {
+                            className: db().appSubscriptionBanner__appStoreLink,
+                            href: _,
+                            target: "_blank",
+                            rel: "noreferrer",
+                            onClick: r,
+                            children: s
+                        }), (0, l.jsx)("a", {
+                            className: db().appSubscriptionBanner__learnMoreLink,
+                            href: "https://wetransfer.zendesk.com/hc/en-us/articles/4563370515988",
+                            onClick: m,
+                            children: e("page.payment.mobile_subscription.learn_more")
+                        })]
+                    })]
+                }) : null
+            };
+            var dh = t(31274),
+                dp = t(3862),
+                du = t(10224);
+            let dx = e => {
+                let {
+                    storageKey: a
+                } = e, {
+                    t
+                } = (0, d.Bd)(), {
+                    isPageViewed: i
+                } = (0, du.x)(a);
+                return i ? null : (0, l.jsx)(lR.E, {
+                    size: "small",
+                    children: t("badge.new")
+                })
+            };
+            var dy = t(8934),
+                df = t(69048),
+                dM = t(7686),
+                dk = t(18237),
+                dv = t(90512),
+                dC = t(13672),
+                dS = t(15539);
+            let dA = e => {
+                    let {
+                        t: a
+                    } = (0, d.Bd)(), t = (0, dk.M)(), o = (0, n.d4)(u.mB), s = (0, ef.yw)(o), _ = (0, ef.Z_)(o), {
+                        getUserByAuth0Id: r
+                    } = (0, eM.o)(), m = (0, n.d4)(ev.Lm), w = (0, n.wA)(), g = (0, ap.z)(), b = (0, a9.d)(), c = (() => {
+                        let {
+                            subscription: e
+                        } = (0, a8.f)();
+                        return e && !a7.BD.includes(null == e ? void 0 : e.status) && !(null == e ? void 0 : e.cancelAtPeriodEnd)
+                    })(), {
+                        subscription: h
+                    } = (0, a8.f)(), p = (0, ah.l)(), x = (0, n.d4)(u.eB), y = (0, i.useMemo)(() => {
+                        var e;
+                        return !!m && (null == (e = r(m)) ? void 0 : e.role) === "admin"
+                    }, [m, r]), f = (0, ef.Z_)(o), M = (0, ef.ch)(o), {
+                        showUpgradeSubscriptionModal: k,
+                        confirmPlanSwitchOrReactivate: C,
+                        closeUpgradeSubscriptionModal: S,
+                        selectedTierName: A,
+                        isModalVisible: I,
+                        isSwitchInProgress: j,
+                        selectedTier: D,
+                        selectedBillingInterval: N
+                    } = (0, i2.W)(), P = (0, i.useCallback)(() => {
+                        S(), g && t3.A.navigateTo(tu.kH.route)
+                    }, [g, S]), [T, E] = (0, i.useState)(!1), L = (0, i.useCallback)(a => {
+                        let {
+                            signout: t,
+                            isForwardedTransfer: l = !1,
+                            uploadInProgress: i
+                        } = e;
+                        a.preventDefault(), i && E(!0), t({
+                            isForwardedTransfer: l
+                        })
+                    }, [e]), {
+                        resetNotification: W
+                    } = e, R = (0, i.useCallback)(e => {
+                        W(), t3.A.navigateTo(e)
+                    }, [W]), U = (0, i.useCallback)(() => {
+                        let a = e.routeQueryDuration,
+                            t = e.routeQueryRenewal;
+                        if (!/year|month/.test(a)) return;
+                        let i = "page.accountinfo.payment_success.".concat(a, "ly");
+                        return "1" === t && (i += "_renewal"), (0, l.jsx)(dh.A, {
+                            showClose: !0,
+                            children: (0, l.jsx)("p", {
+                                dangerouslySetInnerHTML: {
+                                    __html: eU.A.t(i)
+                                }
+                            })
+                        })
+                    }, [e.routeQueryDuration, e.routeQueryRenewal]), O = (0, i.useCallback)(() => te.Il.includes(null == h ? void 0 : h.externalProvider) ? {
+                        component: dc
+                    } : c ? {
+                        component: dw,
+                        options: {
+                            actionType: "cancel"
+                        }
+                    } : b ? {
+                        component: function(e, a, t) {
+                            let d = arguments.length > 3 && void 0 !== arguments[3] ? arguments[3] : {};
+                            class n extends i.Component {
+                                async onConfirm() {
+                                    a || (await t(), this.hideConfirmation())
+                                }
+                                showConfirmation() {
+                                    this.setState({
+                                        showConfirmation: !0
+                                    })
+                                }
+                                hideConfirmation() {
+                                    this.actionbarNode && this.actionbarNode.hide(() => {
+                                        this.setState({
+                                            showConfirmation: !1
+                                        })
+                                    })
+                                }
+                                makeConfirmation() {
+                                    if (this.state.showConfirmation) return (0, l.jsxs)(eV.A, {
+                                        ref: e => this.actionbarNode = e,
+                                        text: eU.A.t(d.message),
+                                        children: [(0, l.jsx)(eY.A, {
+                                            type: "actionbar-action",
+                                            text: a ? eU.A.t(d.confirmingMessage) : eU.A.t(d.confirmButton),
+                                            onClick: this.onConfirm
+                                        }), (0, l.jsx)(eY.A, {
+                                            type: "actionbar-cancel",
+                                            text: eU.A.t("form.cancel"),
+                                            onClick: this.hideConfirmation
+                                        })]
+                                    })
+                                }
+                                render() {
+                                    return (0, l.jsxs)(i.Fragment, {
+                                        children: [(0, l.jsx)(e, {
+                                            showConfirmation: this.showConfirmation,
+                                            confirming: this.state.showConfirmation,
+                                            ...this.props
+                                        }), this.makeConfirmation()]
+                                    })
+                                }
+                                constructor(e) {
+                                    super(e), this.showConfirmation = this.showConfirmation.bind(this), this.hideConfirmation = this.hideConfirmation.bind(this), this.makeConfirmation = this.makeConfirmation.bind(this), this.onConfirm = this.onConfirm.bind(this), this.state = {
+                                        showConfirmation: !1
+                                    }
+                                }
+                            }
+                            return n
+                        }(dw, !1, async () => {
+                            x && await p()
+                        }, {
+                            message: "page.payment.reactivate.confirm_reactivate_subscription",
+                            confirmButton: "page.payment.reactivate.yes_disable",
+                            confirmingMessage: "page.payment.reactivate.updating"
+                        }),
+                        options: {
+                            actionType: "reactivate"
+                        }
+                    } : {
+                        component: dw
+                    }, [c, b, p, null == h ? void 0 : h.externalProvider, x]), F = (0, i.useMemo)(() => {
+                        let e = {
+                            href: tu.kH.route,
+                            label: "members.title",
+                            component: lH,
+                            key: "members"
+                        };
+                        return _ || !t ? e : s ? {
+                            ...e,
+                            onClick: () => t3.A.navigateTo((0, dM.Mg)())
+                        } : {
+                            ...e,
+                            onClick: () => {
+                                k(ey.js.ENTERPRISE, null == h ? void 0 : h.interval)
+                            }
+                        }
+                    }, [null == h ? void 0 : h.interval, t, _, s, k]), G = (0, i.useCallback)(() => {
+                        let {
+                            user: t
+                        } = e;
+                        return (0, l.jsxs)("div", {
+                            className: "account__navigation-buttons",
+                            children: [(0, ef.yw)(t) && (0, l.jsx)("a", {
+                                className: "button button--enabled account__navigation-button",
+                                href: tu.bP.route,
+                                onClick: () => w((0, tx.jt)(tx.vW.ACCOUNT_SETTINGS_UPGRADE_BELOW_DELETION)),
+                                children: a("page.payment.upgrade_cta")
+                            }), (0, l.jsx)(eY.A, {
+                                className: "account__navigation-button",
+                                active: !e.pendingSignout,
+                                type: "secondary",
+                                onClick: a => {
+                                    e.uploadInProgress && E(!0), L(a)
+                                },
+                                text: eU.A.t("navigation.logout")
+                            })]
+                        })
+                    }, [w, L, e, a]), K = (0, i.useMemo)(() => ({
+                        profileAndSecurity: {
+                            href: "/account",
+                            label: "profile_and_security.page_name",
+                            component: ac,
+                            key: "profile_and_security"
+                        },
+                        notificationSettings: {
+                            href: tu.U_.route,
+                            label: "notification_settings.page_name",
+                            component: B,
+                            key: "notification_settings"
+                        },
+                        payment: {
+                            href: "/workspace/payment",
+                            label: "page.payment.pagename",
+                            key: "payment",
+                            hidden: !y,
+                            ...O()
+                        },
+                        brand: {
+                            href: tu.$X.route,
+                            label: "brand.title",
+                            component: tj,
+                            key: "brand"
+                        },
+                        manageTeam: F,
+                        integrations: {
+                            href: tu.a0.route,
+                            label: "page.integrations.title",
+                            component: t6,
+                            key: "integrations",
+                            hidden: !y || v.Ay.isMobile || M
+                        },
+                        subscriberBenefits: {
+                            href: "/workspace/subscriber-benefits",
+                            label: "page.subscriber_benefits.pagename",
+                            component: lz.default,
+                            key: "subscriber_benefits",
+                            hidden: (0, ef.yw)(e.user) || (null == h ? void 0 : h.interval) === a7.YF.month || !y || f,
+                            icon: (0, l.jsx)(dx, {
+                                storageKey: dp._.SUBSCRIBER_BENEFITS_PAGE
+                            })
+                        },
+                        samlSso: {
+                            href: tu.YB.route,
+                            label: "saml_sso.title_scim",
+                            component: a5,
+                            key: "saml_sso",
+                            hidden: !y || !M
+                        },
+                        accountNavigationButtons: {
+                            href: tu.bP.route,
+                            label: "",
+                            component: G,
+                            key: "account_navigation_buttons",
+                            hidden: !v.Ay.isMobile
+                        }
+                    }), [G, y, f, M, O, F, null == h ? void 0 : h.interval, e.user]), H = (0, i.useMemo)(() => [K.brand, K.integrations, K.subscriberBenefits, K.payment, K.manageTeam, K.samlSso].filter(e => !e.hidden), [K.brand, K.manageTeam, K.integrations, K.subscriberBenefits, K.payment, K.samlSso]), z = (0, i.useMemo)(() => [K.profileAndSecurity, K.notificationSettings, K.accountNavigationButtons].filter(e => !e.hidden), [K.accountNavigationButtons, K.notificationSettings, K.profileAndSecurity]), Y = (null == z ? void 0 : z.find(a => a.href === e.routePath)) || H.find(a => a.href === e.routePath), V = (0, i.useMemo)(() => {
+                        if (v.Ay.isMobile) switch (e.routePath) {
+                            case tu.$X.route:
+                                return H;
+                            case tu.u4.route:
+                            case tu.U_.route:
+                                return z
+                        }
+                        return Y ? [Y] : []
+                    }, [Y, e.routePath, H, z]), X = null, Q = !1;
+                    !v.Ay.isMobile && Y ? Y.hidden || (X = (0, l.jsxs)("div", {
+                        className: "account__menu",
+                        children: [(0, l.jsxs)(l.Fragment, {
+                            children: [(0, l.jsx)("h3", {
+                                className: "nav-title",
+                                children: eU.A.t("navigation.user.items.account")
+                            }), (0, l.jsx)(dy.A, {
+                                items: z,
+                                activeItem: e.routePath,
+                                onClick: R
+                            }), (0, l.jsx)("h3", {
+                                className: "nav-title",
+                                children: eU.A.t("page.workspace_bar.workspace")
+                            }), (0, l.jsx)(dy.A, {
+                                items: H,
+                                activeItem: e.routePath,
+                                onClick: R
+                            })]
+                        }), I && (0, l.jsx)(i1.r, {
+                            switchPlansOrReactivate: C,
+                            planName: A,
+                            isLoading: j,
+                            closeModal: P,
+                            planTier: D,
+                            selectedBillingInterval: N
+                        })]
+                    })) : Q = !0;
+                    let q = (0, i.useMemo)(() => {
+                            let a = [];
+                            return V.forEach((t, d) => {
+                                let n = t.component;
+                                a.push((0, i.createElement)(n, {
+                                    ...t.options,
+                                    navigate: R,
+                                    setReturnPath: e.setReturnPath,
+                                    key: "".concat(t.key, "_component")
+                                })), Q && V.length > 1 && d !== V.length - 1 && a.push((0, l.jsx)("hr", {}, "".concat(t.key, "_hr")))
+                            }), a
+                        }, [V, R, e.setReturnPath, Q]),
+                        {
+                            tip: Z
+                        } = e,
+                        J = e.routePath !== tu.u4.route;
+                    return (0, l.jsxs)(l.Fragment, {
+                        children: [J && (0, l.jsx)("div", {
+                            className: "workspace_bar__container",
+                            children: (0, l.jsx)(df.A, {})
+                        }), (0, l.jsxs)("div", {
+                            className: "account",
+                            children: [(0, l.jsx)("div", {
+                                className: "account__content",
+                                children: q
+                            }), U() || Z, X, T && (0, l.jsx)(eX, {
+                                cancelUpload: L,
+                                continueUpload: () => {
+                                    E(!1)
+                                }
+                            })]
+                        })]
+                    })
+                },
+                dI = {
+                    signout: eO.A.User.signout.bind(eO.A.User),
+                    resetNotification: at.P.clearPanelNotification
+                },
+                dj = (0, n.Ng)(e => ({
+                    routePath: (0, dv.pe)(e),
+                    freeRoute: (0, dv.Mp)(e),
+                    routeQueryDuration: (0, dv.O$)(e),
+                    routeQueryRenewal: (0, dv.eV)(e),
+                    user: (0, u.mB)(e),
+                    pendingSignout: (0, tg.bQ)(e),
+                    uploadInProgress: (0, dC.cN)(e),
+                    isForwardedTransfer: (0, dS.Y2)(e)
+                }), dI)(dA)
+        },
         23751: e => {
             e.exports = {
                 "wt-display-heading-x-small-bold": "AddMembers_wt-display-heading-x-small-bold__7hXW9",
@@ -970,6 +7193,58 @@
             e.exports = {
                 list: "Integrations_list__mm9Lf"
             }
+        },
+        28233: (e, a, t) => {
+            "use strict";
+            t.d(a, {
+                z: () => m
+            });
+            var l = t(13897),
+                i = t(23798),
+                d = t(71623),
+                n = t(21462),
+                o = t(22929),
+                s = t(67584);
+            (0, t(85752).$)(".styles_module_selectInsideLabel__de7c2301{padding-right:0}.styles_module_selectInsideButton__de7c2301{margin-bottom:0;margin-top:-1rem;padding-bottom:0;padding-top:1rem}.styles_module_selectInsideOptions__de7c2301{left:calc(-1rem - 2px);top:calc(100% + 16px);width:calc(100% + 1rem + 4px)}");
+            var _ = {
+                "select-inside-label": "styles_module_selectInsideLabel__de7c2301",
+                "select-inside-button": "styles_module_selectInsideButton__de7c2301",
+                "select-inside-options": "styles_module_selectInsideOptions__de7c2301"
+            };
+            let r = (0, n.forwardRef)((e, a) => {
+                var {
+                    children: t,
+                    className: r,
+                    inputClassName: m,
+                    labelType: w = "default",
+                    trailingElement: g
+                } = e, b = (0, l.Tt)(e, ["children", "className", "inputClassName", "labelType", "trailingElement"]);
+                let c = (0, n.useMemo)(() => "inside" === w, [w]);
+                return (0, i.jsx)(o.F, Object.assign({}, b, {
+                    labelAs: c ? "span" : "label",
+                    labelType: w,
+                    ref: a,
+                    shouldAlwaysFocus: c,
+                    className: (0, d.A)({
+                        [_["select-inside-label"]]: c
+                    }, r),
+                    inputClassName: (0, d.A)({
+                        [_["select-inside-button"]]: c
+                    }, m),
+                    children: c ? (0, i.jsx)(s.r, {
+                        optionsClassName: _["select-inside-options"],
+                        trailingElement: g,
+                        children: t
+                    }) : (0, i.jsx)(s.l, {
+                        trailingElement: g,
+                        children: t
+                    })
+                }))
+            });
+            r.displayName = "SelectField";
+            let m = Object.assign(r, {
+                Option: s.l.Option
+            })
         },
         31427: e => {
             e.exports = {
@@ -3602,58 +9877,6 @@
                 uploadButton: "UploadProfilePictureForm_uploadButton__AFmqQ"
             }
         },
-        93330: (e, a, t) => {
-            "use strict";
-            t.d(a, {
-                z: () => m
-            });
-            var l = t(13897),
-                i = t(23798),
-                d = t(71623),
-                n = t(21462),
-                o = t(17586),
-                s = t(88975);
-            (0, t(51925).$)(".styles_module_selectInsideLabel__de7c2301{padding-right:0}.styles_module_selectInsideButton__de7c2301{margin-bottom:0;margin-top:-1rem;padding-bottom:0;padding-top:1rem}.styles_module_selectInsideOptions__de7c2301{left:calc(-1rem - 2px);top:calc(100% + 16px);width:calc(100% + 1rem + 4px)}");
-            var _ = {
-                "select-inside-label": "styles_module_selectInsideLabel__de7c2301",
-                "select-inside-button": "styles_module_selectInsideButton__de7c2301",
-                "select-inside-options": "styles_module_selectInsideOptions__de7c2301"
-            };
-            let r = (0, n.forwardRef)((e, a) => {
-                var {
-                    children: t,
-                    className: r,
-                    inputClassName: m,
-                    labelType: w = "default",
-                    trailingElement: g
-                } = e, b = (0, l.Tt)(e, ["children", "className", "inputClassName", "labelType", "trailingElement"]);
-                let c = (0, n.useMemo)(() => "inside" === w, [w]);
-                return (0, i.jsx)(o.F, Object.assign({}, b, {
-                    labelAs: c ? "span" : "label",
-                    labelType: w,
-                    ref: a,
-                    shouldAlwaysFocus: c,
-                    className: (0, d.A)({
-                        [_["select-inside-label"]]: c
-                    }, r),
-                    inputClassName: (0, d.A)({
-                        [_["select-inside-button"]]: c
-                    }, m),
-                    children: c ? (0, i.jsx)(s.r, {
-                        optionsClassName: _["select-inside-options"],
-                        trailingElement: g,
-                        children: t
-                    }) : (0, i.jsx)(s.l, {
-                        trailingElement: g,
-                        children: t
-                    })
-                }))
-            });
-            r.displayName = "SelectField";
-            let m = Object.assign(r, {
-                Option: s.l.Option
-            })
-        },
         93953: e => {
             e.exports = {
                 "wt-display-heading-x-small-bold": "MembersListInvite_wt-display-heading-x-small-bold__mVg2u",
@@ -3745,6209 +9968,7 @@
                 invoiceItemInfo: "UnpaidInvoices_invoiceItemInfo__FdCuH",
                 invoiceItemPending: "UnpaidInvoices_invoiceItemPending__7qg6l"
             }
-        },
-        99492: (e, a, t) => {
-            "use strict";
-            t.r(a), t.d(a, {
-                Account: () => dA,
-                default: () => dj
-            });
-            var l = t(23798),
-                i = t(21462),
-                d = t(75546),
-                n = t(38169),
-                o = t(44938),
-                s = t(23095),
-                _ = t(46001),
-                r = t.n(_),
-                m = t(13897),
-                w = t(71623);
-            (0, t(51925).$)(".styles_module_wtToggleSwitch__615c9e13{-webkit-appearance:none;-moz-appearance:none;appearance:none;background-color:#fff;border-radius:9999px;box-shadow:inset -1rem 0 0 2.5px #353535,inset 0 0 0 2.5px #353535,0 0 0 0;cursor:pointer;height:1.5rem;transition-duration:.1s;transition-property:color,background-color,border-color,text-decoration-color,fill,stroke,opacity,box-shadow,transform,filter,-webkit-backdrop-filter;transition-property:color,background-color,border-color,text-decoration-color,fill,stroke,opacity,box-shadow,transform,filter,backdrop-filter;transition-property:color,background-color,border-color,text-decoration-color,fill,stroke,opacity,box-shadow,transform,filter,backdrop-filter,-webkit-backdrop-filter;transition-timing-function:cubic-bezier(0,0,.2,1);width:2.5rem}.styles_module_wtToggleSwitch__615c9e13:hover{box-shadow:inset -1rem 0 0 2.5px #464646,inset 0 0 0 2.5px #464646,0 0 0 0}.styles_module_wtToggleSwitch__615c9e13:active{box-shadow:inset -1rem 0 0 2.5px #161616,inset 0 0 0 2.5px #161616,0 0 0 0}.styles_module_wtToggleSwitch__615c9e13:focus-visible{box-shadow:inset -1rem 0 0 2.5px #353535,inset 0 0 0 2.5px #353535,0 0 0 4px #464646;outline:none}.styles_module_wtToggleSwitch__615c9e13:focus-visible:hover{box-shadow:inset -1rem 0 0 2.5px #464646,inset 0 0 0 2.5px #464646,0 0 0 4px #464646}.styles_module_wtToggleSwitch__615c9e13:focus-visible:active{box-shadow:inset -1rem 0 0 2.5px #161616,inset 0 0 0 2.5px #161616,0 0 0 4px #464646}.styles_module_wtToggleSwitch__615c9e13:checked{box-shadow:calc(1rem - .5px) 0 0 2.5px #3767ea inset,-.5px 0 0 2.5px #3767ea inset,0 0 0 0}.styles_module_wtToggleSwitch__615c9e13:checked:hover{box-shadow:inset 1rem 0 0 2.5px #4e7df7,inset 0 0 0 2.5px #4e7df7,0 0 0 0}.styles_module_wtToggleSwitch__615c9e13:checked:active{box-shadow:inset 1rem 0 0 2.5px #1842ce,inset 0 0 0 2.5px #1842ce,0 0 0 0}.styles_module_wtToggleSwitch__615c9e13:checked:focus-visible{box-shadow:calc(1rem - .5px) 0 0 2.5px #3767ea inset,-.5px 0 0 2.5px #3767ea inset,0 0 0 4px #4e7df7;outline:none}.styles_module_wtToggleSwitch__615c9e13:checked:focus-visible:hover{box-shadow:inset 1rem 0 0 2.5px #4e7df7,inset 0 0 0 2.5px #4e7df7,0 0 0 4px #4e7df7}.styles_module_wtToggleSwitch__615c9e13:checked:focus-visible:active{box-shadow:inset 1rem 0 0 2.5px #1842ce,inset 0 0 0 2.5px #1842ce,0 0 0 4px #4e7df7}.styles_module_wtToggleSwitch__615c9e13:disabled{opacity:50%;pointer-events:none}");
-            var g = {
-                "wt-toggle-switch": "styles_module_wtToggleSwitch__615c9e13"
-            };
-            let b = (0, i.forwardRef)((e, a) => {
-                var {
-                    className: t
-                } = e, i = (0, m.Tt)(e, ["className"]);
-                return (0, l.jsx)("input", Object.assign({}, i, {
-                    type: "checkbox",
-                    role: "switch",
-                    className: (0, w.A)(g["wt-toggle-switch"], t),
-                    ref: a
-                }))
-            });
-            b.displayName = "ToggleSwitch";
-            let c = {
-                notificationSettingsSaved: e => ({
-                    kind: "notification_settings_saved",
-                    info: {
-                        settings: e
-                    }
-                }),
-                notificationSettingsUpdated: e => ({
-                    kind: "notification_settings_updated",
-                    info: {
-                        setting: e
-                    }
-                })
-            };
-            var h = t(65509),
-                u = t(87963),
-                p = t(86781),
-                x = t(43032),
-                y = t.n(x);
-            let f = e => {
-                let {
-                    data: a,
-                    initialSettings: t = []
-                } = e, {
-                    t: o
-                } = (0, d.Bd)(), s = (0, n.d4)(p.mB), [_, m] = (0, i.useState)(!1), w = (0, i.useMemo)(() => _, [_]), g = (0, i.useCallback)(e => t.find(a => a.key === e), [t]), [x, f] = (0, i.useState)(() => {
-                    let e = {};
-                    return a.forEach(a => {
-                        let t = g(a.key);
-                        if (t) e[a.key] = t.enabled;
-                        else {
-                            var l;
-                            let t = null == (l = s.preferences) ? void 0 : l[a.key];
-                            e[a.key] = null != t ? t : a.enabled
-                        }
-                    }), e
-                });
-                (0, i.useEffect)(() => {
-                    if (t.length > 0) {
-                        let e = {};
-                        a.forEach(a => {
-                            let t = g(a.key);
-                            if (t) e[a.key] = t.enabled;
-                            else {
-                                var l;
-                                let t = null == (l = s.preferences) ? void 0 : l[a.key];
-                                e[a.key] = null != t ? t : a.enabled
-                            }
-                        }), f(e)
-                    }
-                }, [t, a, s.preferences, g, s]);
-                let M = (0, i.useCallback)(async (e, a) => {
-                        m(!0);
-                        try {
-                            await h.A.User.updateNotificationSettings({
-                                enabled: a
-                            }, {
-                                pathExtValues: {
-                                    key: e
-                                }
-                            }), (0, u.Od)().trackUserAction(c.notificationSettingsUpdated({
-                                key: e,
-                                enabled: a
-                            }))
-                        } catch (t) {
-                            f(t => ({
-                                ...t,
-                                [e]: !a
-                            }))
-                        }
-                        m(!1)
-                    }, []),
-                    k = (0, i.useCallback)(e => () => {
-                        if (w) return;
-                        let a = !x[e];
-                        f(t => ({
-                            ...t,
-                            [e]: a
-                        })), M(e, a)
-                    }, [w, x, M]);
-                return (0, l.jsx)("div", {
-                    className: r()(y().notificationSetting, {
-                        [y().disabled]: w
-                    }),
-                    children: a.map(e => (0, l.jsxs)("div", {
-                        className: y().settingRow,
-                        children: [(0, l.jsxs)("div", {
-                            className: y().settingTextContainer,
-                            children: [(0, l.jsx)("span", {
-                                className: y().settingLabel,
-                                children: o(e.label)
-                            }), (0, l.jsx)("span", {
-                                className: y().settingDescription,
-                                children: o(e.description)
-                            })]
-                        }), (0, l.jsx)(b, {
-                            onChange: k(e.key),
-                            checked: x[e.key],
-                            disabled: w
-                        })]
-                    }, e.key))
-                })
-            };
-            var M = t(64674),
-                k = t(5712),
-                v = t(30631),
-                C = t(62760),
-                S = t(38790),
-                A = t.n(S);
-            let I = [{
-                    key: "notify_sender_of_expiry",
-                    label: "notification_settings.expiry.notify_sender_of_expiry_label",
-                    description: "notification_settings.expiry.notify_sender_of_expiry_description",
-                    enabled: !0
-                }],
-                j = [{
-                    key: "notify_sender_on_upload_success",
-                    label: "notification_settings.upload.transfer_notify_sender_on_upload_success_label",
-                    description: "notification_settings.upload.transfer_notify_sender_on_upload_success_description",
-                    enabled: !0
-                }],
-                D = [{
-                    key: "notify_sender_on_download",
-                    label: "notification_settings.download.transfer_notify_sender_on_download_label",
-                    description: "notification_settings.download.transfer_notify_sender_on_download_description",
-                    enabled: !0
-                }],
-                N = [{
-                    key: "notify_sender_on_preview",
-                    label: "notification_settings.preview.transfer_notify_sender_on_preview_label",
-                    description: "notification_settings.preview.transfer_notify_sender_on_preview_description",
-                    enabled: !0
-                }, {
-                    key: "notify_on_preview_comment",
-                    label: "notification_settings.preview.notify_on_preview_comment_label",
-                    description: "notification_settings.preview.notify_on_preview_comment_description",
-                    enabled: !0
-                }],
-                P = [{
-                    key: "notify_sender_of_updates",
-                    label: "notification_settings.updates.notify_on_updates_label",
-                    description: "notification_settings.updates.notify_on_updates_description",
-                    enabled: !0
-                }];
-
-            function B() {
-                let {
-                    t: e
-                } = (0, d.Bd)(), {
-                    addToast: a
-                } = (0, o.d)(), t = (0, n.d4)(p.mB), {
-                    settings: {
-                        enable_comments_in_previews: _
-                    }
-                } = (0, C.k)(), [r, m] = (0, i.useState)([]), [w, g] = (0, i.useState)(!0), b = (0, i.useMemo)(() => N.filter(e => "notify_on_preview_comment" !== e.key || _), [_]);
-                return (0, i.useEffect)(() => {
-                    document.title = "".concat(e("notification_settings.page_name"), " - WeTransfer")
-                }, [e]), (0, k.S)(() => {
-                    (async () => {
-                        try {
-                            var t;
-                            g(!0);
-                            let e = await h.A.User.getNotificationSettings();
-                            if (e && "body" in e && (null == (t = e.body) ? void 0 : t.notification_settings)) {
-                                m(e.body.notification_settings);
-                                let a = e.body.notification_settings.map(e => ({
-                                    key: e.key,
-                                    enabled: e.enabled
-                                }));
-                                (0, u.Od)().trackUserAction(c.notificationSettingsSaved(a))
-                            }
-                        } catch (t) {
-                            a(e("notification_settings.error.failed_to_fetch"), {
-                                mode: "dark",
-                                autoHideDuration: 4e3
-                            })
-                        } finally {
-                            g(!1)
-                        }
-                    })()
-                }), (0, l.jsxs)("div", {
-                    className: A().notificationSettings,
-                    children: [!v.Ay.isMobile && (0, l.jsx)(M.a, {
-                        setWorkspaceName: t.given_name.trim() + " " + t.family_name,
-                        showWorkspaceName: !0,
-                        panelName: e("notification_settings.panel_name"),
-                        panelDescription: e("notification_settings.panel_description")
-                    }), (0, l.jsx)("div", {
-                        className: A().PanelContent,
-                        children: w ? (0, l.jsx)("div", {
-                            className: A().loadingContainer,
-                            children: (0, l.jsx)(s.y, {
-                                appearance: "neutral",
-                                size: "large"
-                            })
-                        }) : (0, l.jsxs)(l.Fragment, {
-                            children: [(0, l.jsxs)("div", {
-                                className: A().section,
-                                children: [(0, l.jsx)("p", {
-                                    className: A().sectionHeading,
-                                    children: e("notification_settings.about_your_transfers_heading")
-                                }), (0, l.jsxs)("div", {
-                                    className: A().notificationSettingsContainer,
-                                    children: [(0, l.jsx)(f, {
-                                        data: j,
-                                        initialSettings: r
-                                    }), (0, l.jsx)(f, {
-                                        data: I,
-                                        initialSettings: r
-                                    })]
-                                })]
-                            }), (0, l.jsxs)("div", {
-                                className: A().section,
-                                children: [(0, l.jsx)("p", {
-                                    className: A().sectionHeading,
-                                    children: e("notification_settings.download_notifications_heading")
-                                }), (0, l.jsxs)("div", {
-                                    className: A().sectionDisclaimer,
-                                    children: [(0, l.jsx)("span", {
-                                        className: A().sectionDisclaimerTitle,
-                                        children: e("notification_settings.tracked_disclaimer_title")
-                                    }), (0, l.jsx)("span", {
-                                        className: A().sectionDisclaimerDescription,
-                                        children: e("notification_settings.tracked_disclaimer_description")
-                                    })]
-                                }), (0, l.jsx)(f, {
-                                    data: D,
-                                    initialSettings: r
-                                })]
-                            }), (0, l.jsxs)("div", {
-                                className: A().section,
-                                children: [(0, l.jsx)("p", {
-                                    className: A().sectionHeading,
-                                    children: e("notification_settings.preview.preview_notifications_heading")
-                                }), (0, l.jsx)(f, {
-                                    data: b,
-                                    initialSettings: r
-                                })]
-                            }), (0, l.jsxs)("div", {
-                                className: A().section,
-                                children: [(0, l.jsx)("p", {
-                                    className: A().sectionHeading,
-                                    children: e("notification_settings.updates_notifications_heading")
-                                }), (0, l.jsx)(f, {
-                                    data: P,
-                                    initialSettings: r
-                                })]
-                            })]
-                        })
-                    })]
-                })
-            }
-            var T = t(58915),
-                E = t(31051),
-                L = t(87843),
-                W = t(27333),
-                R = t(61360),
-                U = t(77085),
-                O = t.n(U);
-            let F = e => {
-                let {
-                    isOpen: a,
-                    onClose: t
-                } = e, {
-                    t: i
-                } = (0, d.Bd)();
-                return (0, l.jsx)(W.a, {
-                    isOpen: a,
-                    onClose: t,
-                    showCloseButton: !0,
-                    size: "medium",
-                    appElement: (0, R.Y)(),
-                    children: (0, l.jsxs)("div", {
-                        className: O().container,
-                        children: [(0, l.jsxs)("div", {
-                            className: O().content,
-                            children: [(0, l.jsx)("div", {
-                                className: O().title,
-                                children: i("page.data_processing.settings.medical_consent.modal.title")
-                            }), (0, l.jsxs)("div", {
-                                className: O().text,
-                                children: [i("page.data_processing.settings.medical_consent.modal.paragraph_1"), (0, l.jsx)("p", {
-                                    children: (0, l.jsx)(d.x6, {
-                                        i18nKey: "page.data_processing.settings.medical_consent.modal.paragraph_2",
-                                        components: {
-                                            strong: (0, l.jsx)("strong", {})
-                                        }
-                                    })
-                                }), (0, l.jsx)("p", {
-                                    children: (0, l.jsx)(d.x6, {
-                                        i18nKey: "page.data_processing.settings.medical_consent.modal.paragraph_3",
-                                        components: {
-                                            strong: (0, l.jsx)("strong", {})
-                                        }
-                                    })
-                                }), i("page.data_processing.settings.medical_consent.modal.paragraph_4")]
-                            })]
-                        }), (0, l.jsx)(T.$, {
-                            fullwidth: !0,
-                            appearance: "secondary",
-                            onClick: t,
-                            children: i("page.data_processing.settings.medical_consent.modal.dismiss_button")
-                        })]
-                    })
-                })
-            };
-            var G = t(64867),
-                H = t.n(G);
-            let K = () => {
-                var e;
-                let {
-                    t: a
-                } = (0, d.Bd)(), t = (0, n.d4)(p.JV), [o, s] = (0, i.useState)(!1), {
-                    data: _,
-                    isFetching: r
-                } = (0, L.QG)(void 0, {
-                    skip: !t
-                }), [m, {
-                    isLoading: w
-                }] = (0, L.ED)(), g = !t || r || w, b = (0, i.useCallback)(async e => {
-                    g || await m({
-                        value: e.target.checked
-                    })
-                }, [g, m]), c = (0, i.useCallback)(() => {
-                    s(!0)
-                }, []), h = (0, i.useCallback)(() => {
-                    s(!1)
-                }, []);
-                return (0, l.jsxs)("div", {
-                    className: H().container,
-                    children: [(0, l.jsxs)("div", {
-                        className: H().header,
-                        children: [(0, l.jsx)("div", {
-                            className: H().title,
-                            children: a("page.data_processing.settings.medical_consent.title")
-                        }), (0, l.jsx)(T.$, {
-                            appearance: "tertiary",
-                            size: "x-small",
-                            onClick: c,
-                            children: a("page.data_processing.settings.medical_consent.read_more")
-                        })]
-                    }), (0, l.jsx)(E._, {
-                        name: "medical-consent",
-                        wrapperClassName: H().checkbox,
-                        label: a("page.data_processing.settings.medical_consent.text"),
-                        onChange: b,
-                        checked: null != (e = null == _ ? void 0 : _.value) && e,
-                        labelSize: "large",
-                        disabled: g
-                    }), (0, l.jsx)(F, {
-                        isOpen: o,
-                        onClose: h
-                    })]
-                })
-            };
-            var z = t(78313),
-                Y = t.n(z);
-            let V = () => {
-                    let {
-                        t: e
-                    } = (0, d.Bd)(), a = (0, n.d4)(p.JV), {
-                        data: t,
-                        isFetching: o
-                    } = (0, L.sg)(void 0, {
-                        skip: !a
-                    }), [s, {
-                        isLoading: _
-                    }] = (0, L.YF)(), r = o || _, m = (0, i.useCallback)(async e => {
-                        r || await s({
-                            value: e.target.checked
-                        })
-                    }, [r, s]);
-                    return (0, l.jsxs)("div", {
-                        className: Y().container,
-                        children: [(0, l.jsx)("div", {
-                            className: Y().title,
-                            children: e("page.data_processing.settings.research_purpose.title")
-                        }), (0, l.jsx)(E._, {
-                            name: "research-purpose",
-                            wrapperClassName: Y().checkbox,
-                            label: e("page.data_processing.settings.research_purpose.text"),
-                            onChange: m,
-                            checked: (null == t ? void 0 : t.value) === !0,
-                            labelSize: "large",
-                            disabled: r
-                        })]
-                    })
-                },
-                X = e => {
-                    let {
-                        isEnterprise: a
-                    } = e;
-                    return (0, l.jsxs)(l.Fragment, {
-                        children: [!a && (0, l.jsx)(V, {}), (0, l.jsx)(K, {})]
-                    })
-                };
-            var Q = t(25402),
-                q = t(18648),
-                Z = t.n(q);
-
-            function J(e) {
-                let {
-                    isOpen: a,
-                    onClose: t
-                } = e, {
-                    t: i
-                } = (0, d.Bd)(), o = (0, Q.A)(), s = (0, n.d4)(p.mB), _ = new URL("https://".concat(o.NEXT_PUBLIC_DOMAIN, "/log-in"));
-                return (null == s ? void 0 : s.email) && _.searchParams.set("loginHint", s.email), (0, l.jsxs)(W.a, {
-                    isOpen: a,
-                    onClose: t,
-                    showCloseButton: !0,
-                    "aria-labelledby": "delete-account-mfa-modal-heading",
-                    appElement: (0, R.Y)(),
-                    children: [(0, l.jsx)("h2", {
-                        id: "delete-account-mfa-modal-heading",
-                        className: Z().heading,
-                        children: i("page.delete_account.mfa_embedded_modal.heading")
-                    }), (0, l.jsx)("p", {
-                        className: Z().body,
-                        children: (0, l.jsx)(d.x6, {
-                            i18nKey: "page.delete_account.mfa_embedded_modal.body",
-                            components: [(0, l.jsx)("br", {}, 0)]
-                        })
-                    }), (0, l.jsxs)("div", {
-                        className: Z().actions,
-                        children: [(0, l.jsx)(T.$, {
-                            fullwidth: !0,
-                            as: "a",
-                            type: "button",
-                            href: _.toString(),
-                            children: i("page.delete_account.mfa_embedded_modal.login_button")
-                        }), (0, l.jsx)(T.$, {
-                            fullwidth: !0,
-                            appearance: "secondary",
-                            onClick: t,
-                            type: "button",
-                            children: i("page.delete_account.mfa_embedded_modal.cancel_button")
-                        })]
-                    })]
-                })
-            }
-            var $ = t(11076),
-                ee = t(78598),
-                ea = t(5209),
-                et = t.n(ea);
-
-            function el(e) {
-                let {
-                    isOpen: a,
-                    onClose: t
-                } = e, {
-                    t: n
-                } = (0, d.Bd)(), [o, {
-                    isLoading: s,
-                    reset: _
-                }] = (0, $.gB)(), r = (0, Q.A)(), m = (0, i.useCallback)(() => {
-                    _(), null == t || t()
-                }, [t, _]), w = (0, i.useCallback)(async () => {
-                    try {
-                        await o({
-                            context: "delete-account"
-                        }), window.location.href = "https://".concat(r.NEXT_PUBLIC_AUTH_DOMAIN, "/mfa-check?callback=https://").concat(r.NEXT_PUBLIC_AUTH_DOMAIN, "/api/v1/callback/delete-account")
-                    } catch (e) {
-                        ee.A.track(e)
-                    }
-                }, [r.NEXT_PUBLIC_AUTH_DOMAIN, o]);
-                return (0, l.jsxs)(W.a, {
-                    isOpen: a,
-                    shouldCloseOnEsc: !s,
-                    onClose: m,
-                    showCloseButton: !0,
-                    "aria-labelledby": "delete-account-mfa-modal-heading",
-                    appElement: (0, R.Y)(),
-                    children: [(0, l.jsx)("h2", {
-                        id: "delete-account-mfa-modal-heading",
-                        className: et().heading,
-                        children: n("page.delete_account.mfa_modal.heading")
-                    }), (0, l.jsx)("p", {
-                        className: et().body,
-                        children: n("page.delete_account.mfa_modal.body")
-                    }), (0, l.jsxs)("div", {
-                        className: et().actions,
-                        children: [(0, l.jsx)(T.$, {
-                            fullwidth: !0,
-                            variation: "destructive",
-                            onClick: w,
-                            disabled: s,
-                            children: n("page.delete_account.mfa_modal.delete_button")
-                        }), (0, l.jsx)(T.$, {
-                            fullwidth: !0,
-                            appearance: "secondary",
-                            onClick: m,
-                            disabled: s,
-                            type: "button",
-                            children: n("page.delete_account.mfa_modal.cancel_button")
-                        })]
-                    })]
-                })
-            }
-            var ei = t(55450),
-                ed = t(66774),
-                en = t.n(ed);
-
-            function eo(e) {
-                let {
-                    isOpen: a,
-                    onClose: t,
-                    onSubmit: o
-                } = e, {
-                    t: _
-                } = (0, d.Bd)(), r = (0, n.d4)(p.mB), [m, {
-                    isLoading: w,
-                    reset: g
-                }] = (0, ei.JD)(), b = (0, i.useMemo)(() => ({
-                    "delete-account-checkbox-1": !1,
-                    "delete-account-checkbox-2": !1,
-                    "delete-account-checkbox-3": !1,
-                    "delete-account-checkbox-4": !1,
-                    "delete-account-checkbox-5": !1
-                }), []), [c, h] = (0, i.useState)(b), u = (0, i.useCallback)(e => {
-                    let {
-                        name: a,
-                        checked: t
-                    } = e.target;
-                    h(e => ({
-                        ...e,
-                        [a]: t
-                    }))
-                }, []), x = 0 === Object.keys(c).length || Object.values(c).some(e => !e), y = (0, i.useCallback)(() => {
-                    h(b), g(), null == t || t()
-                }, [b, t, g]), f = (0, i.useCallback)(() => {
-                    if (r.otpEnabled && null !== r.otpEnabledAt) {
-                        h(b), null == o || o();
-                        return
-                    }(async () => {
-                        try {
-                            await m().unwrap(), h(b), null == o || o()
-                        } catch (e) {
-                            ee.A.track(e)
-                        }
-                    })()
-                }, [b, o, m, r.otpEnabled, r.otpEnabledAt]);
-                return (0, l.jsxs)(W.a, {
-                    isOpen: a,
-                    shouldCloseOnEsc: !w,
-                    onClose: y,
-                    showCloseButton: !0,
-                    "aria-labelledby": "delete-account-modal-heading",
-                    appElement: (0, R.Y)(),
-                    children: [(0, l.jsx)("h2", {
-                        id: "delete-account-modal-heading",
-                        className: en().heading,
-                        children: _("page.delete_account.modal.heading")
-                    }), (0, l.jsx)("p", {
-                        className: en().body,
-                        children: _("page.delete_account.modal.body")
-                    }), (0, l.jsxs)("div", {
-                        className: en().checkboxes,
-                        children: [(0, l.jsx)(E._, {
-                            name: "delete-account-checkbox-1",
-                            wrapperClassName: en().checkboxWrapper,
-                            label: (0, l.jsx)(d.x6, {
-                                i18nKey: "page.delete_account.modal.checkbox_label_1"
-                            }),
-                            onChange: u,
-                            checked: c["delete-account-checkbox-1"]
-                        }), (0, l.jsx)(E._, {
-                            name: "delete-account-checkbox-2",
-                            wrapperClassName: en().checkboxWrapper,
-                            label: (0, l.jsx)(d.x6, {
-                                i18nKey: "page.delete_account.modal.checkbox_label_2"
-                            }),
-                            onChange: u,
-                            checked: c["delete-account-checkbox-2"]
-                        }), (0, l.jsx)(E._, {
-                            name: "delete-account-checkbox-3",
-                            wrapperClassName: en().checkboxWrapper,
-                            label: (0, l.jsx)(d.x6, {
-                                i18nKey: "page.delete_account.modal.checkbox_label_3",
-                                components: [(0, l.jsx)("a", {
-                                    className: en().link,
-                                    href: "https://help.wetransfer.com",
-                                    target: "_blank",
-                                    rel: "noreferrer"
-                                }, 0)]
-                            }),
-                            onChange: u,
-                            checked: c["delete-account-checkbox-3"]
-                        }), (0, l.jsx)(E._, {
-                            name: "delete-account-checkbox-4",
-                            wrapperClassName: en().checkboxWrapper,
-                            label: (0, l.jsx)(d.x6, {
-                                i18nKey: "page.delete_account.modal.checkbox_label_4"
-                            }),
-                            onChange: u,
-                            checked: c["delete-account-checkbox-4"]
-                        }), (0, l.jsx)(E._, {
-                            name: "delete-account-checkbox-5",
-                            wrapperClassName: en().checkboxWrapper,
-                            label: (0, l.jsx)(d.x6, {
-                                i18nKey: "page.delete_account.modal.checkbox_label_5"
-                            }),
-                            onChange: u,
-                            checked: c["delete-account-checkbox-5"]
-                        })]
-                    }), (0, l.jsxs)("div", {
-                        className: en().actions,
-                        children: [(0, l.jsx)(T.$, {
-                            fullwidth: !0,
-                            disabled: x || w,
-                            onClick: f,
-                            children: w ? (0, l.jsx)(s.y, {
-                                mode: "dark"
-                            }) : _("page.delete_account.modal.delete_button")
-                        }), (0, l.jsx)(T.$, {
-                            onClick: y,
-                            fullwidth: !0,
-                            appearance: "secondary",
-                            disabled: w,
-                            type: "button",
-                            children: _("page.delete_account.modal.cancel_button")
-                        })]
-                    })]
-                })
-            }
-            var es = t(34113),
-                e_ = t(79206),
-                er = t(57455),
-                em = t(82710),
-                ew = t(21848),
-                eg = t(4905),
-                eb = t(40334),
-                ec = t(78080),
-                eh = t(17047),
-                eu = t.n(eh);
-
-            function ep(e) {
-                let a, {
-                        isOpen: t,
-                        onClose: o
-                    } = e,
-                    {
-                        t: _
-                    } = (0, d.Bd)(),
-                    [r, m] = (0, i.useState)(""),
-                    w = (0, n.d4)(p.mB),
-                    g = (0, i.useRef)(null),
-                    [b, {
-                        reset: c
-                    }] = (0, ei.JD)(),
-                    {
-                        countDownTimer: h,
-                        startCountDownTimer: u
-                    } = (0, ec.g)(),
-                    x = (0, n.wA)(),
-                    [y, {
-                        isLoading: f,
-                        error: M
-                    }] = (0, ei.UT)();
-                (0, i.useEffect)(() => {
-                    t && setTimeout(() => {
-                        var e;
-                        null == (e = g.current) || e.focus()
-                    }, 500)
-                }, [t]);
-                let k = (0, i.useCallback)(() => {
-                        m(""), c(), null == o || o()
-                    }, [o, c]),
-                    v = (0, i.useCallback)(async e => {
-                        e.preventDefault();
-                        try {
-                            await y({
-                                otp: r
-                            }).unwrap();
-                            try {
-                                (0, er.h2)(w.email)
-                            } catch (e) {}
-                            await x((0, ew.ri)())
-                        } catch (e) {
-                            ee.A.track(e)
-                        }
-                    }, [y, x, w.email, r]),
-                    C = (0, i.useCallback)(async () => {
-                        try {
-                            await b().unwrap(), u(eg.X)
-                        } catch (e) {}
-                    }, [b, u]),
-                    S = r.length !== eb.o.transfer.verificationCodeLength || f;
-                if ((0, em.E)(M)) {
-                    var A;
-                    a = _((null == (A = M.data) ? void 0 : A.error) === "invalid_otp" ? "page.delete_account.otp_modal.errors.invalid_otp" : "page.delete_account.otp_modal.errors.generic")
-                }
-                return (0, l.jsxs)(W.a, {
-                    isOpen: t,
-                    shouldCloseOnEsc: !f,
-                    onClose: k,
-                    showCloseButton: !0,
-                    "aria-labelledby": "delete-account-otp-modal-heading",
-                    appElement: (0, R.Y)(),
-                    children: [(0, l.jsx)("h2", {
-                        id: "delete-account-otp-modal-heading",
-                        className: eu().heading,
-                        children: _("page.delete_account.otp_modal.heading")
-                    }), (0, l.jsx)("p", {
-                        className: eu().body,
-                        children: (0, l.jsx)(d.x6, {
-                            i18nKey: "page.delete_account.otp_modal.body",
-                            values: {
-                                email: w.email
-                            },
-                            components: [(0, l.jsx)("span", {
-                                className: eu().email,
-                                title: w.email
-                            }, 0)]
-                        })
-                    }), (0, l.jsxs)("form", {
-                        onSubmit: v,
-                        children: [(0, l.jsx)("div", {
-                            className: eu().inputField,
-                            children: (0, l.jsx)(es.A, {
-                                name: "verification-code",
-                                label: _("page.delete_account.otp_modal.placeholder"),
-                                labelType: "hidden",
-                                placeholder: _("page.delete_account.otp_modal.placeholder"),
-                                onChange: e => m(e.target.value),
-                                value: r,
-                                maxLength: eb.o.transfer.verificationCodeLength,
-                                inputClassName: eu().input,
-                                ref: g,
-                                caption: a,
-                                state: M ? "invalid" : "default"
-                            })
-                        }), (0, l.jsx)("div", {
-                            className: eu().resendContainer,
-                            children: (0, l.jsx)(e_.N, {
-                                as: "button",
-                                className: eu().resendLink,
-                                type: "button",
-                                onClick: C,
-                                disabled: null !== h,
-                                children: null !== h ? _("page.delete_account.otp_modal.resend_button_timer", {
-                                    timer: h
-                                }) : _("page.delete_account.otp_modal.resend_button")
-                            })
-                        }), (0, l.jsxs)("div", {
-                            className: eu().actions,
-                            children: [(0, l.jsx)(T.$, {
-                                fullwidth: !0,
-                                variation: "destructive",
-                                disabled: S,
-                                type: "submit",
-                                children: f ? (0, l.jsx)(s.y, {}) : _("page.delete_account.otp_modal.delete_button")
-                            }), (0, l.jsx)(T.$, {
-                                fullwidth: !0,
-                                appearance: "secondary",
-                                onClick: k,
-                                disabled: f,
-                                type: "button",
-                                children: _("page.delete_account.otp_modal.cancel_button")
-                            })]
-                        })]
-                    })]
-                })
-            }
-            var ex = t(98654),
-                ey = t(89187),
-                ef = t(7012),
-                eM = t(15913),
-                ek = t(31543),
-                ev = t(98172),
-                eC = t(36139),
-                eS = t.n(eC);
-
-            function eA() {
-                let {
-                    t: e
-                } = (0, d.Bd)(), [a, t] = (0, i.useState)(!1), [o, s] = (0, i.useState)(!1), [_, r] = (0, i.useState)(!1), [m, w] = (0, i.useState)(!1), g = (0, n.d4)(e => e.auth.isLoading), b = (0, n.d4)(p.mB), c = (0, n.d4)(p.Qj), h = (0, ef.WU)(b), {
-                    getUserByAuth0Id: u,
-                    ownTeam: x,
-                    currentTeam: y
-                } = (0, eM.o)(), f = (0, n.d4)(ev.Lm), M = "true" === (0, ex.qg)(ex.m1.embeddedMobile), k = (0, i.useMemo)(() => {
-                    var e;
-                    let a = b.planTier === ey.js.ENTERPRISE_CUSTOM_CONTRACT,
-                        t = (null == y ? void 0 : y.id) === (null == x ? void 0 : x.id) || f && (null == (e = u(f)) ? void 0 : e.role) === "admin";
-                    return !a && t && h
-                }, [null == y ? void 0 : y.id, u, h, null == x ? void 0 : x.id, b.planTier, f]), v = (0, i.useCallback)(() => {
-                    if (t(!1), c) return void r(!0);
-                    s(!0)
-                }, [c]), C = (0, i.useCallback)(() => {
-                    if (c && M) return void w(!0);
-                    t(!0)
-                }, [M, c]);
-                return (0, l.jsxs)("div", {
-                    className: eS().deleteAccount,
-                    children: [(0, l.jsx)("p", {
-                        className: eS().text,
-                        dangerouslySetInnerHTML: {
-                            __html: e("page.delete_account.text")
-                        }
-                    }), k && (0, l.jsx)("p", {
-                        className: eS().text,
-                        dangerouslySetInnerHTML: {
-                            __html: e("page.delete_account.text_manage_subscription", {
-                                href: "/workspace/payment/manage-plan"
-                            })
-                        }
-                    }), (0, l.jsx)(T.$, {
-                        fullwidth: ek.A.isMobile,
-                        onClick: C,
-                        disabled: g,
-                        variation: "destructive",
-                        size: "large",
-                        children: e("page.delete_account.button.text")
-                    }), (0, l.jsx)(eo, {
-                        isOpen: a,
-                        onClose: () => t(!1),
-                        onSubmit: v
-                    }), (0, l.jsx)(ep, {
-                        isOpen: o,
-                        onClose: () => s(!1)
-                    }), (0, l.jsx)(el, {
-                        isOpen: _,
-                        onClose: () => r(!1)
-                    }), (0, l.jsx)(J, {
-                        isOpen: m,
-                        onClose: () => w(!1)
-                    })]
-                })
-            }
-            var eI = t(788),
-                ej = t(91295),
-                eD = t(12390),
-                eN = t(56220),
-                eP = t.n(eN);
-
-            function eB(e) {
-                let {
-                    email: a,
-                    otp: t,
-                    onOtpChange: o,
-                    submitText: s,
-                    isSubmitActive: _,
-                    onSubmit: r,
-                    onCancel: m
-                } = e, {
-                    t: w
-                } = (0, d.Bd)(), {
-                    countDownTimer: g,
-                    startCountDownTimer: b
-                } = (0, ec.g)(), c = (0, n.d4)(p.ox), h = (0, i.useCallback)(async () => {
-                    await (0, ej.b)({
-                        email: a,
-                        language: c
-                    }), b(eg.X)
-                }, [a, b, c]), u = !_ || t.length !== eD.L;
-                return (0, l.jsx)("div", {
-                    className: eP().bannerContainer,
-                    children: (0, l.jsxs)(eI.l, {
-                        variation: "upsell",
-                        children: [(0, l.jsx)(eI.l.Content, {
-                            children: (0, l.jsxs)("div", {
-                                className: eP().bannerContent,
-                                children: [(0, l.jsx)("p", {
-                                    className: eP().bannerText,
-                                    children: (0, l.jsx)(d.x6, {
-                                        i18nKey: "form.fill_in_verification_code",
-                                        values: {
-                                            email: a
-                                        },
-                                        components: [(0, l.jsx)("strong", {}, 0)]
-                                    })
-                                }), (0, l.jsxs)("div", {
-                                    className: eP().contentActions,
-                                    children: [(0, l.jsx)("div", {
-                                        className: eP().textFieldContainer,
-                                        children: (0, l.jsx)(es.A, {
-                                            labelType: "hidden",
-                                            size: "small",
-                                            placeholder: w("form.account.label.verification_code"),
-                                            label: w("form.account.label.verification_code"),
-                                            inputClassName: eP().input,
-                                            maxLength: eD.L,
-                                            onChange: o,
-                                            value: t,
-                                            autoFocus: !0
-                                        })
-                                    }), (0, l.jsx)(T.$, {
-                                        size: "x-small",
-                                        variation: "neutral",
-                                        appearance: "tertiary",
-                                        onClick: h,
-                                        type: "button",
-                                        disabled: null !== g,
-                                        children: w(g ? "form.account.resend_code_timer" : "form.account.resend_code", {
-                                            countDownTimer: g
-                                        })
-                                    })]
-                                })]
-                            })
-                        }), (0, l.jsxs)(eI.l.Actions, {
-                            children: [(0, l.jsx)(T.$, {
-                                size: "small",
-                                onClick: r,
-                                disabled: u,
-                                fullwidth: ek.A.isMobile,
-                                children: s
-                            }), (0, l.jsx)(T.$, {
-                                size: "small",
-                                appearance: "secondary",
-                                onClick: m,
-                                fullwidth: ek.A.isMobile,
-                                children: w("form.cancel")
-                            })]
-                        })]
-                    })
-                })
-            }
-            var eT = t(14388),
-                eE = t(94990),
-                eL = t(94670),
-                eW = t(27979),
-                eR = t(42789),
-                eU = t(84530),
-                eO = t(10995);
-
-            function eF(e) {
-                let {
-                    accountEmail: a,
-                    showEmailVerificationMessages: t
-                } = e, d = (0, n.wA)(), [o, s] = (0, i.useState)(!1), [_, r] = (0, i.useState)(null);
-                async function m(e) {
-                    if ("BUTTON" === e.target.tagName) try {
-                        r(!1), await d(eO.A.User.resendVerifyAccountEmail({
-                            email: a,
-                            showTransferNotification: !1
-                        })), s(!0)
-                    } catch (e) {
-                        e.status === eR.iu.TOO_MANY_REQUESTS ? r("form.account.email-verification-resend.throttle-error") : r("form.account.email-verification-resend.error"), s(!1)
-                    }
-                }
-                return t ? _ ? (0, l.jsx)(eW.Ay, {
-                    message: eU.A.t(_, {
-                        throttle_time: eU.A.t("datetime.distance_in_words.x_minutes", {
-                            count: 60
-                        })
-                    }),
-                    type: eW.YT
-                }) : o ? (0, l.jsx)(eW.Ay, {
-                    message: eU.A.t("form.account.email-verification-resend.info_link"),
-                    type: eW.Y5
-                }) : (0, l.jsx)(eW.Ay, {
-                    message: (0, l.jsx)("div", {
-                        onClick: m,
-                        dangerouslySetInnerHTML: {
-                            __html: eU.A.t("form.account.email-verification-not-verified-link")
-                        }
-                    }),
-                    type: eW.iN
-                }) : null
-            }
-            var eG = t(25134),
-                eH = t(93246),
-                eK = t.n(eH);
-
-            function ez(e) {
-                let {
-                    imageUrl: a,
-                    pending: t = !1,
-                    onChange: i,
-                    onRemove: d,
-                    defaultThumb: n
-                } = e, o = (0, l.jsx)(T.$, {
-                    appearance: "secondary",
-                    disabled: t,
-                    className: r()(eK().button, eK().uploadButton),
-                    ...ek.A.isMobile ? {
-                        size: "small",
-                        fullwidth: !0
-                    } : {},
-                    children: eU.A.t("form.profile.upload_avatar")
-                }), s = (0, l.jsx)(T.$, {
-                    appearance: "secondary",
-                    disabled: a === n || t || !a,
-                    className: eK().button,
-                    ...ek.A.isMobile ? {
-                        size: "small",
-                        fullwidth: !0
-                    } : {},
-                    children: eU.A.t("form.profile.delete_avatar")
-                });
-                return (0, l.jsx)(eG.A, {
-                    name: "profile_picture",
-                    className: "profile__asset-upload",
-                    addElement: o,
-                    removeElement: s,
-                    onChange: function(e) {
-                        i(e, "profile_picture")
-                    },
-                    removePreview: function() {
-                        d("profile_picture")
-                    },
-                    value: a,
-                    pending: t,
-                    hideWhilePending: !1,
-                    avatarUpload: !0
-                })
-            }
-            var eY = t(29069),
-                eV = t(66052);
-
-            function eX(e) {
-                let {
-                    cancelUpload: a,
-                    continueUpload: t
-                } = e;
-                return (0, l.jsxs)(eV.A, {
-                    text: eU.A.t("notification.refresh_transfer_upload_lost"),
-                    children: [(0, l.jsx)(eY.A, {
-                        type: "actionbar-action",
-                        text: eU.A.t("alert.confirm_refresh_transfer_upload_lost"),
-                        onClick: a
-                    }), (0, l.jsx)(eY.A, {
-                        type: "actionbar-cancel",
-                        text: eU.A.t("alert.cancel_refresh_transfer_upload_lost"),
-                        onClick: t
-                    })]
-                })
-            }
-            var eQ = t(27498),
-                eq = t(96644),
-                eZ = t(68018),
-                eJ = t(29966);
-            let e$ = "uploadAsset_profile_picture";
-            var e0 = t(53123),
-                e1 = t(53521),
-                e2 = t(12637),
-                e4 = t(72546),
-                e3 = t(88797),
-                e6 = t(19146),
-                e5 = t.n(e6);
-            let e7 = e3.YK;
-
-            function e8() {
-                var e, a, t, o, s, _;
-                let {
-                    t: r
-                } = (0, d.Bd)(), m = (0, n.d4)(p.mB), w = (0, n.d4)(ev.e2), g = (0, n.d4)(e => e.pending), b = (0, n.wA)(), c = (0, i.useRef)(null), h = (0, n.d4)(e4.Kj), u = (0, n.d4)(e => e.upload), x = (0, n.d4)(e => e.errors), y = (() => {
-                    let [e] = (0, ei.H7)(), a = (0, n.wA)();
-                    return (0, i.useCallback)(async function() {
-                        let t = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : {},
-                            l = "account";
-                        a((0, eZ.m$)(l));
-                        try {
-                            let {
-                                avatar: i,
-                                given_name: d,
-                                family_name: n,
-                                email: o,
-                                otp: s,
-                                language: _,
-                                marketing_consent: r
-                            } = t, m = {
-                                ...void 0 !== d && {
-                                    first_name: d
-                                },
-                                ...void 0 !== n && {
-                                    last_name: n
-                                },
-                                ...void 0 !== o && {
-                                    email: o
-                                },
-                                ...void 0 !== _ && {
-                                    language: _
-                                },
-                                ...void 0 !== r && {
-                                    marketing_consent: r
-                                },
-                                ...s && {
-                                    otp: s
-                                },
-                                ...void 0 !== i && {
-                                    avatar: i
-                                }
-                            };
-                            Object.keys(m).length > 0 && await e(m).unwrap(), await a(eO.A.User.getUser()), a(eq.P9.setPanelNotification({
-                                category: eq.aF.Notification,
-                                details: "update_user"
-                            })), a((0, eZ.lX)(l))
-                        } catch (e) {
-                            if (e.status === eR.iu.BAD_REQUEST) {
-                                var i;
-                                a(eQ.A.setError("account", null == (i = e.body) ? void 0 : i.fields)), a(eq.P9.setPanelNotification({
-                                    category: eq.aF.Error,
-                                    details: "something_went_wrong"
-                                }))
-                            } else a(eq.P9.setPanelNotification({
-                                category: eq.aF.Error,
-                                details: "update_user_error"
-                            }));
-                            throw a((0, eZ.lX)(l)), e
-                        }
-                    }, [a, e])
-                })(), {
-                    uploadAvatar: f
-                } = (() => {
-                    let [e] = (0, ei.sz)(), a = (0, n.wA)();
-                    return {
-                        uploadAvatar: (0, i.useCallback)(async t => {
-                            a((0, eZ.m$)(e$));
-                            try {
-                                let l = await e({
-                                        filename: t.name
-                                    }).unwrap(),
-                                    i = new FormData;
-                                if (Object.entries(l.fields).forEach(e => {
-                                        let [a, t] = e;
-                                        i.append(a, t)
-                                    }), i.append("file", t), !(await fetch(l.url, {
-                                        method: "POST",
-                                        body: i
-                                    })).ok) throw Error("Failed to upload avatar to S3");
-                                return a((0, eZ.lX)(e$)), l.publicUrl
-                            } catch (i) {
-                                let e = null == i ? void 0 : i.status,
-                                    l = (0, eJ.rC)(e, "profile_picture", t.type);
-                                throw a(eq.P9.setPanelNotification({
-                                    category: eq.aF.Error,
-                                    details: l
-                                })), a((0, eZ.lX)(e$)), i
-                            }
-                        }, [e, a])
-                    }
-                })(), M = (0, n.d4)(e2.hh), [k, v] = (0, i.useState)(""), [C, S] = (0, i.useState)(!1), [A, I] = (0, i.useState)(m.hasProfilePicture ? m.profile_picture.image_url : void 0), [j, D] = (0, i.useState)(!1), N = function() {
-                    let e = (0, n.d4)(p.mB),
-                        {
-                            t: a
-                        } = (0, d.Bd)();
-                    return (0, eL.s)({
-                        defaultValues: {
-                            givenName: e.given_name || "",
-                            familyName: e.family_name || "",
-                            email: e.email || ""
-                        },
-                        schema: (0, eT.Ik)({
-                            givenName: (0, eT.Yj)().required(a("account.personal_details.given_name_required")),
-                            familyName: (0, eT.Yj)(),
-                            email: (0, eE.m)({
-                                requiredMessage: a("account.personal_details.email_required"),
-                                invalidMessage: a("account.personal_details.email_invalid")
-                            })
-                        }),
-                        reValidateMode: "onBlur"
-                    })
-                }(), {
-                    errors: P,
-                    isDirty: B
-                } = N.formState, {
-                    ref: E,
-                    ...L
-                } = N.register("givenName");
-                (0, i.useImperativeHandle)(E, () => c.current);
-                let W = (0, i.useCallback)(async e => {
-                        var a;
-                        let t = null == (a = e.target.files) ? void 0 : a[0];
-                        t && I(await f(t))
-                    }, [f]),
-                    R = (0, i.useCallback)(() => {
-                        I(void 0)
-                    }, []),
-                    U = (0, i.useCallback)(() => {
-                        b(e7.pauseUpload()), b(e7.cancelUpload(h, !0)), b(e7.resetTransfer()), D(!1)
-                    }, [b, h]),
-                    O = (0, i.useCallback)(() => {
-                        D(!1)
-                    }, []),
-                    F = (0, i.useCallback)(async () => {
-                        let e = N.getValues();
-                        return await b(eO.A.Errors.validateForm({
-                            given_name: e.givenName,
-                            family_name: e.familyName,
-                            email: e.email,
-                            otp: k,
-                            ...A && {
-                                profile_picture: A
-                            }
-                        }, "user"))
-                    }, [b, N, k, A]),
-                    G = (0, i.useCallback)(async e => {
-                        let a;
-                        u.isPending && D(!0);
-                        let t = await F();
-                        if ((!x.user || !(Object.keys(x.user).length > 0)) && (void 0 === t || !(Object.keys(t).length > 0))) {
-                            if (e.email && e.email !== m.email && !k) {
-                                await (0, ej.b)({
-                                    email: e.email,
-                                    language: m.language
-                                }), S(!0);
-                                return
-                            }
-                            if (m.hasProfilePicture) {
-                                var l;
-                                A !== (null == (l = m.profile_picture) ? void 0 : l.image_url) && (a = null != A ? A : null)
-                            } else A && (a = A);
-                            b(e1.r.setFormState(!1)), S(!1);
-                            try {
-                                await y({
-                                    given_name: e.givenName,
-                                    family_name: e.familyName,
-                                    email: e.email,
-                                    ...k && {
-                                        otp: k
-                                    },
-                                    ...void 0 !== a && {
-                                        avatar: {
-                                            url: a
-                                        }
-                                    }
-                                }), N.reset(e)
-                            } catch (e) {
-                                N.reset(), S(!1), D(!1)
-                            }
-                        }
-                    }, [b, N, k, A, y, u.isPending, m.email, m.language, m.hasProfilePicture, null == (e = m.profile_picture) ? void 0 : e.image_url, F, x.user]),
-                    H = (0, i.useCallback)(() => {
-                        S(!1), v("")
-                    }, []);
-                (0, i.useEffect)(() => {
-                    let e = setTimeout(() => {
-                        var e;
-                        null == (e = c.current) || e.focus()
-                    }, 500);
-                    return () => {
-                        clearTimeout(e)
-                    }
-                }, []), (0, i.useEffect)(() => {
-                    var e;
-                    let a = {
-                        blank: r("account.personal_details.email_required"),
-                        invalid: r("account.personal_details.email_invalid"),
-                        taken: r("account.personal_details.email_taken")
-                    };
-                    Array.isArray(null == (e = x.user) ? void 0 : e.email) ? x.user.email.forEach(e => {
-                        N.setError("email", {
-                            type: "custom",
-                            message: a[e]
-                        })
-                    }) : N.clearErrors("email")
-                }, [N, r, null == (a = x.user) ? void 0 : a.email]), (0, i.useEffect)(() => {
-                    I(m.hasProfilePicture ? m.profile_picture.image_url : void 0)
-                }, [null == (t = m.profile_picture) ? void 0 : t.image_url, m.hasProfilePicture]);
-                let K = m.hasProfilePicture || A ? A : "",
-                    z = B || m.hasProfilePicture && A !== (null == (o = m.profile_picture) ? void 0 : o.image_url) || !m.hasProfilePicture && A,
-                    Y = z && !C && !j && !g.account,
-                    V = g.account ? r("account.personal_details.submitting") : r("account.personal_details.save_changes"),
-                    X = !m.isVerified && M;
-                return (0, l.jsxs)("form", {
-                    onSubmit: N.handleSubmit(G),
-                    onBlur: F,
-                    children: [(0, l.jsx)(ez, {
-                        imageUrl: null != K ? K : "",
-                        defaultThumb: e0.A.getAvatar(m.id),
-                        pending: !!g.uploadAsset_profile_picture,
-                        onChange: W,
-                        onRemove: R
-                    }), (0, l.jsxs)("div", {
-                        className: e5().fields,
-                        children: [(0, l.jsx)("div", {
-                            children: (0, l.jsx)(es.A, {
-                                ...L,
-                                defaultValue: N.watch("givenName") || "",
-                                ref: c,
-                                label: r("account.personal_details.given_name"),
-                                labelType: "inside",
-                                caption: null == (s = P.givenName) ? void 0 : s.message,
-                                state: P.givenName ? "invalid" : "default",
-                                maxLength: 16
-                            })
-                        }), (0, l.jsx)("div", {
-                            children: (0, l.jsx)(es.A, {
-                                ...N.register("familyName"),
-                                defaultValue: N.watch("familyName") || "",
-                                label: r("account.personal_details.family_name"),
-                                labelType: "inside",
-                                maxLength: 16
-                            })
-                        }), (0, l.jsxs)("div", {
-                            children: [(0, l.jsx)(es.A, {
-                                ...N.register("email"),
-                                defaultValue: N.watch("email") || "",
-                                label: r("account.personal_details.email"),
-                                labelType: "inside",
-                                disabled: w.emailIsLocked || X,
-                                caption: null == (_ = P.email) ? void 0 : _.message,
-                                state: P.email ? "invalid" : "default"
-                            }), z ? null : (0, l.jsx)(eF, {
-                                accountEmail: N.watch("email"),
-                                showEmailVerificationMessages: X
-                            })]
-                        })]
-                    }), (0, l.jsx)("div", {
-                        className: e5().actions,
-                        children: (0, l.jsx)(T.$, {
-                            type: "submit",
-                            disabled: !Y,
-                            children: V
-                        })
-                    }), C ? (0, l.jsx)(eB, {
-                        email: N.watch("email"),
-                        otp: k,
-                        onOtpChange: e => v(e.target.value),
-                        submitText: V,
-                        isSubmitActive: !!k && !P.email,
-                        onSubmit: N.handleSubmit(G),
-                        onCancel: H
-                    }) : null, j ? (0, l.jsx)(eX, {
-                        cancelUpload: U,
-                        continueUpload: O
-                    }) : null]
-                })
-            }
-            var e9 = t(90139),
-                ae = t.n(e9),
-                aa = t(19653),
-                at = t(56915),
-                al = t(26573),
-                ai = t(70917),
-                ad = t.n(ai);
-            let an = () => {
-                let e = (0, n.wA)(),
-                    a = (0, n.d4)(p.mB),
-                    t = (0, n.d4)(al.vC),
-                    [o, s] = (0, i.useState)(!1),
-                    {
-                        t: _
-                    } = (0, d.Bd)(),
-                    r = async () => {
-                        try {
-                            await (0, aa.H8)(t.domain)
-                        } catch (a) {
-                            e(at.P.setPanelNotification({
-                                category: eq.aF.Error,
-                                details: "something_went_wrong"
-                            })), s(!1)
-                        }
-                    }, m = () => {
-                        s(!1)
-                    };
-                return (0, l.jsxs)(l.Fragment, {
-                    children: [(0, l.jsxs)("div", {
-                        className: ad().logoutAll,
-                        children: [(0, l.jsx)("h2", {
-                            className: ae().sectionHeading,
-                            children: _("page.password_and_security.logout_all.title")
-                        }), (0, l.jsx)("p", {
-                            className: ad().description,
-                            children: _("page.password_and_security.logout_all.description")
-                        }), (0, l.jsx)(T.$, {
-                            size: "large",
-                            onClick: () => {
-                                s(!0)
-                            },
-                            children: _("page.password_and_security.logout_all.button")
-                        })]
-                    }), o && (0, l.jsx)(W.a, {
-                        isOpen: !0,
-                        onClose: m,
-                        showCloseButton: !0,
-                        appElement: (0, R.Y)(),
-                        children: (0, l.jsxs)("div", {
-                            className: ad().modalContent,
-                            children: [(0, l.jsx)("h2", {
-                                className: ad().modalTitle,
-                                children: _("page.password_and_security.logout_all.modal.title")
-                            }), (0, l.jsx)("p", {
-                                className: ad().modalMessage,
-                                children: _("page.password_and_security.logout_all.modal.message", {
-                                    email: a.email
-                                })
-                            }), (0, l.jsxs)("div", {
-                                className: ad().actions,
-                                children: [(0, l.jsx)(T.$, {
-                                    onClick: r,
-                                    fullwidth: !0,
-                                    children: _("page.password_and_security.logout_all.modal.confirm")
-                                }), (0, l.jsx)(T.$, {
-                                    onClick: m,
-                                    fullwidth: !0,
-                                    appearance: "secondary",
-                                    children: _("page.password_and_security.logout_all.modal.cancel")
-                                })]
-                            })]
-                        })
-                    })]
-                })
-            };
-            var ao = t(37515),
-                as = t.n(ao);
-            let a_ = {
-                    resetPassword: ew.xw
-                },
-                ar = (0, n.Ng)(e => {
-                    let {
-                        auth: a
-                    } = e;
-                    return {
-                        isLoading: a.isLoading,
-                        email: a.email
-                    }
-                }, a_)(e => {
-                    let {
-                        isLoading: a,
-                        email: t,
-                        resetPassword: d
-                    } = e, [n, o] = (0, i.useState)(!1), [s, _] = (0, i.useState)(!1), r = {
-                        __html: n ? eU.A.t("form.account.sso.password_reset.success", {
-                            email: t
-                        }) : eU.A.t("form.account.sso.password_reset.instructions", {
-                            email: t
-                        })
-                    }, m = {
-                        __html: eU.A.t("exception.something_went_wrong")
-                    };
-                    return (0, l.jsxs)("div", {
-                        children: [(0, l.jsx)("h3", {
-                            className: as().title,
-                            children: eU.A.t("form.account.sso.password_reset.title")
-                        }), (0, l.jsxs)("div", {
-                            className: as().text,
-                            children: [(0, l.jsx)("p", {
-                                className: as().description,
-                                dangerouslySetInnerHTML: r
-                            }), s && (0, l.jsx)("p", {
-                                className: as().error,
-                                dangerouslySetInnerHTML: m
-                            })]
-                        }), !n && (0, l.jsx)(T.$, {
-                            onClick: function() {
-                                _(!1), d().then(() => {
-                                    o(!0)
-                                }).catch(() => {
-                                    _(!0)
-                                })
-                            },
-                            disabled: a,
-                            "data-testid": "password-reset-button",
-                            size: "large",
-                            children: eU.A.t("form.account.sso.password_reset.button")
-                        })]
-                    })
-                });
-            var am = t(13722),
-                aw = t(44259),
-                ag = t(95467);
-
-            function ab() {
-                let e = (0, n.wA)(),
-                    a = (0, n.d4)(p.mB),
-                    t = (0, Q.A)(),
-                    [d] = (0, $.gB)(),
-                    [o, s] = (0, i.useState)(!1),
-                    [_, r] = (0, i.useState)(!1),
-                    [m, w] = (0, i.useState)(""),
-                    g = o ? eU.A.t("form.submitting") : eU.A.t("form.submit.two-factor-authentication"),
-                    b = async () => {
-                        try {
-                            s(!0), await e(ag.default.disableTwoFactorAuthentication({
-                                otp: m,
-                                type: "sso"
-                            }))
-                        } finally {
-                            s(!1), r(!1), w("")
-                        }
-                    }, c = async () => {
-                        e(at.P.clearPanelNotification());
-                        try {
-                            s(!0), await d({
-                                context: "disable-mfa"
-                            }), window.location.href = "https://".concat(t.NEXT_PUBLIC_AUTH_DOMAIN, "/mfa-check?callback=https://").concat(t.NEXT_PUBLIC_AUTH_DOMAIN, "/api/v1/callback/disable-mfa")
-                        } catch (a) {
-                            e(at.P.setPanelNotification({
-                                category: eq.aF.Error,
-                                details: "something_went_wrong"
-                            }))
-                        } finally {
-                            s(!1)
-                        }
-                    };
-                return (0, l.jsxs)("div", {
-                    className: "security",
-                    children: [(0, l.jsxs)("div", {
-                        className: "security__two-factor",
-                        children: [(0, l.jsx)("div", {
-                            className: "two-factor__icon",
-                            children: (0, l.jsx)(aw.Ay, {
-                                type: a.otpEnabled ? "Locked" : "Unlock"
-                            })
-                        }), (0, l.jsxs)("div", {
-                            className: "two-factor__content",
-                            children: [(0, l.jsx)("div", {
-                                className: "two-factor__title",
-                                children: eU.A.t("page.password_and_security.two-factor-authentication.title")
-                            }), (0, l.jsx)("div", {
-                                className: "two-factor__detail",
-                                children: a.otpEnabled && null !== a.otpEnabledAt ? eU.A.t("page.password_and_security.two-factor-authentication.description.enabled", {
-                                    date: eU.A.date(new Date(a.otpEnabledAt), "long")
-                                }) : eU.A.t("page.password_and_security.two-factor-authentication.text.protect_account")
-                            })]
-                        }), a.otpEnabled ? (0, l.jsx)("button", {
-                            className: "two-factor__action two-factor__action--disable",
-                            onClick: c,
-                            children: o ? (0, l.jsx)(am.y, {
-                                appearance: "neutral",
-                                mode: "light",
-                                size: "small"
-                            }) : eU.A.t("page.password_and_security.two-factor-authentication.disable")
-                        }) : (0, l.jsx)("a", {
-                            className: "two-factor__action two-factor__action--enable",
-                            href: "/account/two-factor-authentication/enable",
-                            children: eU.A.t("page.password_and_security.two-factor-authentication.enable")
-                        })]
-                    }), (0, l.jsx)(ar, {}), (0, l.jsx)(an, {}), _ && (0, l.jsx)(eB, {
-                        email: a.email,
-                        otp: m,
-                        onOtpChange: e => w(e.target.value),
-                        isSubmitActive: !!m && !o,
-                        submitText: g,
-                        onSubmit: b,
-                        onCancel: () => r(!1)
-                    })]
-                })
-            }
-
-            function ac() {
-                let e = (0, i.useRef)(null);
-                (0, i.useEffect)(() => {
-                    document.title = "".concat(eU.A.t("navigation.user.items.account"), " - WeTransfer")
-                });
-                let {
-                    user: a
-                } = (0, n.d4)(e => ({
-                    user: e.user
-                })), {
-                    currentTeam: t
-                } = (0, eM.o)(), d = (0, n.d4)(ev.Lm), o = (0, ef.Z_)(a), s = (null == t ? void 0 : t.creatorId) === d, _ = a.planTier !== ey.js.ENTERPRISE_CUSTOM_CONTRACT || !s, r = "true" === (0, ex.qg)(ex.m1.embeddedMobile);
-                return (0, i.useEffect)(() => {
-                    let a = new URL(location.href);
-                    r && "#delete-account-title" === a.hash && setTimeout(() => {
-                        var a;
-                        null == (a = e.current) || a.scrollIntoView()
-                    }, 500)
-                }, [r]), (0, l.jsxs)("div", {
-                    className: ae().profileAndSecurity,
-                    children: [!v.Ay.isMobile && (0, l.jsx)(M.a, {
-                        setWorkspaceName: a.given_name.trim() + " " + a.family_name,
-                        showWorkspaceName: !0,
-                        panelName: eU.A.t("profile_and_security.page_name")
-                    }), (0, l.jsxs)("div", {
-                        className: ae().PanelContent,
-                        children: [(0, l.jsx)("p", {
-                            className: ae().sectionHeading,
-                            children: eU.A.t("profile_and_security.profile_title")
-                        }), (0, l.jsx)(e8, {}), (0, l.jsx)("div", {
-                            className: ae().separator
-                        }), (0, l.jsx)("p", {
-                            className: ae().sectionHeading,
-                            "data-testid": "password-and-security-title",
-                            children: eU.A.t("page.password_and_security.title")
-                        }), (0, l.jsx)(ab, {}), (0, l.jsx)("div", {
-                            className: ae().separator
-                        }), (0, l.jsxs)(l.Fragment, {
-                            children: [(0, l.jsx)("p", {
-                                className: ae().sectionHeading,
-                                children: eU.A.t("page.data_processing.settings.title")
-                            }), (0, l.jsx)(X, {
-                                isEnterprise: o
-                            })]
-                        }), _ && (0, l.jsxs)(l.Fragment, {
-                            children: [(0, l.jsx)("p", {
-                                className: ae().sectionHeading,
-                                id: "delete-account-title",
-                                ref: e,
-                                children: eU.A.t("page.delete_account.title")
-                            }), (0, l.jsx)(eA, {})]
-                        })]
-                    })]
-                })
-            }
-            var ah = t(87412),
-                au = t(18241),
-                ap = t(81851),
-                ax = t.n(ap),
-                ay = t(16273),
-                af = t.n(ay);
-
-            function aM(e) {
-                let {
-                    label: a,
-                    value: t,
-                    children: i,
-                    valueClassName: d
-                } = e;
-                return (0, l.jsxs)("div", {
-                    className: af().infoField,
-                    children: [(0, l.jsxs)("div", {
-                        className: af().infoFieldContent,
-                        children: [(0, l.jsx)("div", {
-                            className: af().infoFieldLabel,
-                            children: a
-                        }), (0, l.jsx)("div", {
-                            className: r()(af().infoFieldValue, d),
-                            title: "string" == typeof t ? t : void 0,
-                            children: t
-                        })]
-                    }), i]
-                })
-            }
-            var ak = t(70523),
-                av = t(91248),
-                aC = t.n(av);
-
-            function aS(e) {
-                let {
-                    label: a,
-                    value: t
-                } = e, {
-                    t: i
-                } = (0, d.Bd)();
-                return (0, l.jsx)(aM, {
-                    label: a,
-                    value: t,
-                    children: (0, l.jsx)(T.$, {
-                        appearance: "tertiary",
-                        onClick: () => (0, ak.l)(t),
-                        className: aC().button,
-                        children: i("saml_sso.copy")
-                    })
-                })
-            }
-            var aA = t(91512),
-                aI = t.n(aA);
-
-            function aj(e) {
-                let {
-                    token: a,
-                    isDeletingToken: t,
-                    onDelete: i,
-                    onCancel: n,
-                    ...o
-                } = e, {
-                    t: s
-                } = (0, d.Bd)();
-                return (0, l.jsx)(W.a, {
-                    appElement: (0, R.Y)(),
-                    ...o,
-                    children: (0, l.jsxs)("div", {
-                        className: aI().content,
-                        children: [(0, l.jsx)("h1", {
-                            className: aI().heading,
-                            children: s("saml_sso.scim.delete_token_modal.title")
-                        }), (0, l.jsxs)("div", {
-                            children: [(0, l.jsx)("p", {
-                                className: aI().description,
-                                children: s("saml_sso.scim.delete_token_modal.description")
-                            }), (0, l.jsx)("p", {
-                                className: aI().token,
-                                children: (0, l.jsx)(d.x6, {
-                                    i18nKey: "saml_sso.scim.delete_token_modal.token",
-                                    values: {
-                                        token: a
-                                    },
-                                    components: [(0, l.jsx)("strong", {
-                                        className: aI().strong
-                                    }, 0)]
-                                })
-                            })]
-                        }), (0, l.jsxs)("div", {
-                            className: aI().actions,
-                            children: [(0, l.jsx)(T.$, {
-                                type: "button",
-                                fullwidth: !0,
-                                variation: "destructive",
-                                onClick: i,
-                                disabled: t,
-                                children: t ? (0, l.jsx)(am.y, {
-                                    appearance: "neutral",
-                                    mode: "dark"
-                                }) : s("saml_sso.scim.delete_token_modal.delete")
-                            }), (0, l.jsx)(T.$, {
-                                type: "button",
-                                fullwidth: !0,
-                                appearance: "secondary",
-                                onClick: n,
-                                disabled: t,
-                                children: s("saml_sso.scim.delete_token_modal.cancel")
-                            })]
-                        })]
-                    })
-                })
-            }
-            var aD = t(98463),
-                aN = t(23901);
-            let {
-                useGetSamlScimTokensQuery: aP,
-                useGenerateSamlScimTokenMutation: aB,
-                useDeleteSamlScimTokenMutation: aT
-            } = aD.K.injectEndpoints({
-                endpoints: e => ({
-                    getSamlScimTokens: e.query({
-                        query: e => {
-                            let {
-                                teamId: a
-                            } = e;
-                            return {
-                                url: "scim/token",
-                                method: "GET",
-                                requiresAuth: !0,
-                                params: {
-                                    team_id: a
-                                }
-                            }
-                        },
-                        providesTags: e => e ? [{
-                            type: "SamlScimTokens",
-                            id: "LIST"
-                        }] : [],
-                        transformResponse: e => (0, aN.x)(e)
-                    }),
-                    generateSamlScimToken: e.mutation({
-                        query: e => {
-                            let {
-                                expirationInSeconds: a,
-                                teamId: t
-                            } = e;
-                            return {
-                                url: "scim/token",
-                                method: "POST",
-                                requiresAuth: !0,
-                                data: {
-                                    expirationInSeconds: a,
-                                    team_id: t
-                                }
-                            }
-                        },
-                        invalidatesTags: e => e ? [{
-                            type: "SamlScimTokens",
-                            id: "LIST"
-                        }] : [],
-                        transformResponse: e => (0, aN.x)(e)
-                    }),
-                    deleteSamlScimToken: e.mutation({
-                        query: e => {
-                            let {
-                                token: a,
-                                teamId: t
-                            } = e;
-                            return {
-                                url: "scim/token",
-                                method: "DELETE",
-                                requiresAuth: !0,
-                                data: {
-                                    token: a,
-                                    team_id: t
-                                }
-                            }
-                        },
-                        invalidatesTags: [{
-                            type: "SamlScimTokens",
-                            id: "LIST"
-                        }]
-                    })
-                })
-            });
-            var aE = t(88376),
-                aL = t.n(aE);
-
-            function aW(e) {
-                let {
-                    onCancel: a,
-                    ...t
-                } = e, {
-                    t: n
-                } = (0, d.Bd)(), [o, _] = (0, i.useState)(!1), [r, m] = (0, i.useState)(300), {
-                    currentTeam: w
-                } = (0, eM.o)(), [g, {
-                    isLoading: b
-                }] = aB(), c = null == w ? void 0 : w.id, h = (0, i.useCallback)(() => {
-                    m(300), _(!1), a()
-                }, [a]), u = (0, i.useCallback)(async e => {
-                    e.preventDefault(), await g({
-                        expirationInSeconds: o ? void 0 : r,
-                        teamId: c
-                    }), h()
-                }, [h, r, g, o, c]);
-                return (0, l.jsx)(W.a, {
-                    appElement: (0, R.Y)(),
-                    ...t,
-                    children: (0, l.jsxs)("form", {
-                        className: aL().form,
-                        onSubmit: u,
-                        children: [(0, l.jsx)("h1", {
-                            className: aL().heading,
-                            children: n("saml_sso.scim.generate_token_modal.title")
-                        }), (0, l.jsxs)("div", {
-                            className: aL().inputs,
-                            children: [(0, l.jsx)(E._, {
-                                label: n("saml_sso.scim.generate_token_modal.checkbox_label"),
-                                onChange: () => _(e => !e)
-                            }), (0, l.jsx)(es.A, {
-                                label: n("saml_sso.scim.generate_token_modal.text_field_label"),
-                                disabled: o || b,
-                                value: r,
-                                onChange: e => m(Number(e.target.value)),
-                                labelClassName: aL().label,
-                                type: "number",
-                                min: 300,
-                                max: 31536e3,
-                                caption: n("saml_sso.scim.generate_token_modal.text_field_caption", {
-                                    seconds: 300
-                                })
-                            })]
-                        }), (0, l.jsxs)("div", {
-                            className: aL().actions,
-                            children: [(0, l.jsx)(T.$, {
-                                type: "submit",
-                                fullwidth: !0,
-                                disabled: b,
-                                children: b ? (0, l.jsx)(s.y, {
-                                    appearance: "neutral",
-                                    mode: "dark"
-                                }) : n("saml_sso.scim.generate_token_modal.generate")
-                            }), (0, l.jsx)(T.$, {
-                                type: "button",
-                                fullwidth: !0,
-                                appearance: "secondary",
-                                disabled: b,
-                                onClick: h,
-                                children: n("saml_sso.scim.generate_token_modal.cancel")
-                            })]
-                        })]
-                    })
-                })
-            }
-            var aR = t(26978),
-                aU = t(42755),
-                aO = t(86e3),
-                aF = t.n(aO);
-
-            function aG(e) {
-                let {
-                    token: a,
-                    expiresAt: t,
-                    expired: i,
-                    onDeleteClick: n
-                } = e, {
-                    t: o
-                } = (0, d.Bd)(), s = new Date(null != t ? t : "").toLocaleString(eU.A.locale), _ = null !== t ? o(i ? "saml_sso.scim.expired_date" : "saml_sso.scim.expires_date", {
-                    date: s
-                }) : o("saml_sso.scim.no_expiration_date");
-                return (0, l.jsx)(aM, {
-                    label: a,
-                    value: _,
-                    valueClassName: aF().value,
-                    children: (0, l.jsxs)("div", {
-                        className: aF().actions,
-                        children: [(0, l.jsxs)("div", {
-                            className: r()(aF().state, {
-                                [aF().active]: !i,
-                                [aF().expired]: i
-                            }),
-                            children: [i ? (0, l.jsx)(aR.$Td, {}) : (0, l.jsx)(aR.bT1, {}), o(i ? "saml_sso.scim.expired" : "saml_sso.scim.active")]
-                        }), (0, l.jsx)(aU.K, {
-                            icon: aR.rkR,
-                            appearance: "tertiary",
-                            variation: "destructive",
-                            onClick: n,
-                            className: aF().deleteButton,
-                            "aria-label": o("saml_sso.scim.delete_token")
-                        })]
-                    })
-                })
-            }
-            var aH = t(22352),
-                aK = t(34464),
-                az = t.n(aK);
-
-            function aY() {
-                var e;
-                let {
-                    t: a
-                } = (0, d.Bd)(), t = (0, Q.A)(), [n, o] = (0, i.useState)(!1), [_, m] = (0, i.useState)(!1), [w, g] = (0, i.useState)(null), [b, c] = (0, i.useState)(!1), {
-                    currentTeam: h
-                } = (0, eM.o)(), [u, {
-                    data: p
-                }] = (0, aH.l_)(), x = null == h ? void 0 : h.id, {
-                    data: y
-                } = (0, aH.Vl)({
-                    teamId: x
-                }, {
-                    skip: !x
-                }), f = (null == p ? void 0 : p.scimEnabled) !== void 0 ? p.scimEnabled : !!(null == y ? void 0 : y.scimEnabled), {
-                    data: M
-                } = aP({
-                    teamId: x
-                }, {
-                    skip: !x,
-                    refetchOnMountOrArgChange: !0
-                }), [k, {
-                    isLoading: v
-                }] = aT(), C = "https://".concat(location.host).concat(t.NEXT_PUBLIC_ADROIT_API_BASE, "/api/v1/scim"), S = "".concat(C, "/ServiceProviderConfig"), A = "".concat(C, "/ResourceTypes"), I = "".concat(C, "/Schemas"), j = null != (e = null == M ? void 0 : M.tokens) ? e : [], D = (0, i.useCallback)(async () => {
-                    null !== w && (await k({
-                        token: w,
-                        teamId: x
-                    }), m(!1))
-                }, [k, x, w]), N = (0, i.useCallback)(async e => {
-                    if (!x) return;
-                    let a = e.currentTarget.checked;
-                    try {
-                        c(!0), await u({
-                            teamId: x,
-                            scimEnabled: a
-                        })
-                    } finally {
-                        c(!1)
-                    }
-                }, [x, u]);
-                return (0, l.jsxs)("div", {
-                    className: az().scim,
-                    children: [(0, l.jsx)("form", {
-                        children: (0, l.jsxs)("div", {
-                            className: az().row,
-                            children: [(0, l.jsxs)("div", {
-                                className: az().rowLeft,
-                                children: [(0, l.jsx)("h2", {
-                                    children: a("saml_sso.scim.title")
-                                }), (0, l.jsx)("p", {
-                                    children: a("saml_sso.scim.description")
-                                })]
-                            }), (0, l.jsxs)("div", {
-                                className: r()(az().rowRight, az().fields),
-                                children: [(0, l.jsxs)("div", {
-                                    className: az().checkbox,
-                                    children: [(0, l.jsx)(E._, {
-                                        wrapperClassName: az().checkboxWrapper,
-                                        label: a("saml_sso.scim.enable"),
-                                        checked: f,
-                                        onChange: N,
-                                        disabled: b
-                                    }), b ? (0, l.jsx)(s.y, {
-                                        size: "small"
-                                    }) : null]
-                                }), (0, l.jsxs)("div", {
-                                    className: az().fields,
-                                    children: [(0, l.jsx)(aS, {
-                                        label: a("saml_sso.scim.endpoint_url"),
-                                        value: C
-                                    }), (0, l.jsx)(aM, {
-                                        label: a("saml_sso.scim.configuration_endpoints"),
-                                        value: (0, l.jsxs)("ul", {
-                                            className: az().configurationEndpoints,
-                                            children: [(0, l.jsx)("li", {
-                                                children: S
-                                            }), (0, l.jsx)("li", {
-                                                children: A
-                                            }), (0, l.jsx)("li", {
-                                                children: I
-                                            })]
-                                        })
-                                    }), (0, l.jsx)(aM, {
-                                        label: a("saml_sso.scim.bearer_token"),
-                                        value: a("saml_sso.scim.bearer_token_description"),
-                                        children: (0, l.jsx)(T.$, {
-                                            appearance: "secondary",
-                                            className: az().generateTokenButton,
-                                            onClick: () => o(!0),
-                                            children: a("saml_sso.scim.generate_new_token")
-                                        })
-                                    })]
-                                }), j.length > 0 ? (0, l.jsxs)(l.Fragment, {
-                                    children: [(0, l.jsx)("hr", {
-                                        className: az().divider
-                                    }), (0, l.jsx)("div", {
-                                        className: az().tokens,
-                                        children: j.map(e => {
-                                            let {
-                                                value: a,
-                                                expired: t,
-                                                expiresAt: i
-                                            } = e;
-                                            return (0, l.jsx)(aG, {
-                                                token: a,
-                                                expiresAt: i,
-                                                expired: t,
-                                                onDeleteClick: () => {
-                                                    g(a), m(!0)
-                                                }
-                                            }, a)
-                                        })
-                                    })]
-                                }) : null]
-                            })]
-                        })
-                    }), (0, l.jsx)(aW, {
-                        isOpen: n,
-                        onCancel: () => o(!1),
-                        onClose: () => o(!1)
-                    }), (0, l.jsx)(aj, {
-                        token: w,
-                        isOpen: _,
-                        isDeletingToken: v,
-                        onDelete: D,
-                        onCancel: () => m(!1),
-                        onClose: () => m(!1)
-                    })]
-                })
-            }
-            var aV = t(17586),
-                aX = t(50832);
-            let aQ = (0, i.forwardRef)((e, a) => {
-                var {
-                    labelType: t = "default"
-                } = e, i = (0, m.Tt)(e, ["labelType"]);
-                return (0, l.jsx)(aV.F, Object.assign({}, i, {
-                    labelType: t,
-                    ref: a,
-                    children: (0, l.jsx)("inside" === t ? aX.X : aX.T, {})
-                }))
-            });
-            aQ.displayName = "TextareaField";
-            var aq = t(35506),
-                aZ = t.n(aq);
-
-            function aJ() {
-                var e, a;
-                let {
-                    t
-                } = (0, d.Bd)(), {
-                    currentTeam: n
-                } = (0, eM.o)(), o = (0, Q.A)(), _ = null == n ? void 0 : n.id, m = null != (a = o.NEXT_PUBLIC_SAML_ENTITY_ID) ? a : "", w = "https://".concat(o.NEXT_PUBLIC_AUTH_DOMAIN, "/api/v1/callback/saml"), [g, {
-                    isLoading: b,
-                    error: c
-                }] = (0, aH.cu)(), {
-                    data: h,
-                    isLoading: u
-                } = (0, aH.Me)({
-                    teamId: _
-                }, {
-                    skip: !_
-                }), [p, x] = (0, i.useState)(""), [y, f] = (0, i.useState)("");
-                (0, i.useEffect)(() => {
-                    var e, a;
-                    x(null != (e = null == h ? void 0 : h.ssoUrl) ? e : ""), f(null != (a = null == h ? void 0 : h.certificate) ? a : "")
-                }, [h]);
-                let M = (0, i.useCallback)(async e => {
-                        e.preventDefault(), _ && await g({
-                            ssoUrl: p,
-                            certificate: y,
-                            enabled: !0,
-                            teamId: _
-                        })
-                    }, [y, p, _, g]),
-                    k = (0, i.useCallback)(async () => {
-                        _ && await g({
-                            ssoUrl: p,
-                            certificate: y,
-                            enabled: !1,
-                            teamId: _
-                        })
-                    }, [y, p, _, g]),
-                    v = (0, em.E)(c) ? null == (e = c.data) ? void 0 : e.message : void 0,
-                    C = Array.isArray(v) && v.some(e => e.includes("sso_url")),
-                    S = Array.isArray(v) && v.some(e => e.includes("certificate")),
-                    A = !p || !y || u || b || !_,
-                    I = u || b || !_,
-                    j = u || b;
-                return (0, l.jsx)("div", {
-                    className: aZ().sso,
-                    children: (0, l.jsx)("form", {
-                        onSubmit: M,
-                        children: (0, l.jsxs)("div", {
-                            className: aZ().row,
-                            children: [(0, l.jsxs)("div", {
-                                className: aZ().rowLeft,
-                                children: [(0, l.jsx)("h2", {
-                                    children: t("saml_sso.sso.title")
-                                }), (0, l.jsx)("p", {
-                                    children: t("saml_sso.sso.description1")
-                                }), (0, l.jsx)("p", {
-                                    children: t("saml_sso.sso.description2")
-                                }), (0, l.jsx)("p", {
-                                    children: t("saml_sso.sso.description3")
-                                })]
-                            }), (0, l.jsxs)("div", {
-                                className: r()(aZ().rowRight, aZ().fields),
-                                children: [(0, l.jsx)("div", {
-                                    children: (0, l.jsx)(es.A, {
-                                        id: "ssoUrl",
-                                        label: t("saml_sso.sso.sso_url"),
-                                        value: p,
-                                        onChange: e => x(e.target.value),
-                                        disabled: j,
-                                        state: C ? "invalid" : "default",
-                                        caption: C ? t("saml_sso.sso.sso_url_invalid") : void 0,
-                                        labelClassName: aZ().label
-                                    })
-                                }), (0, l.jsxs)("div", {
-                                    className: aZ().copyInfoFields,
-                                    children: [(0, l.jsx)(aS, {
-                                        label: t("saml_sso.sso.entity_id"),
-                                        value: m
-                                    }), (0, l.jsx)(aS, {
-                                        label: t("saml_sso.sso.acs_url"),
-                                        value: w
-                                    }), (0, l.jsx)(aS, {
-                                        label: t("saml_sso.sso.name_id"),
-                                        value: "EMAIL"
-                                    })]
-                                }), (0, l.jsx)("div", {
-                                    className: aZ().textAreaOutsideLabel,
-                                    children: (0, l.jsx)(aQ, {
-                                        id: "certificate",
-                                        label: t("saml_sso.sso.certificate"),
-                                        placeholder: "-----BEGIN CERTIFICATE-----\n...\n-----END CERTIFICATE-----",
-                                        className: aZ().textArea,
-                                        inputClassName: aZ().textAreaInput,
-                                        value: y,
-                                        onChange: e => f(e.target.value),
-                                        disabled: j,
-                                        state: S ? "invalid" : "default",
-                                        caption: S ? t("saml_sso.sso.certificate_invalid") : void 0,
-                                        labelClassName: aZ().label
-                                    })
-                                }), (0, l.jsxs)("div", {
-                                    className: aZ().buttonsContainer,
-                                    children: [b ? (0, l.jsx)(s.y, {}) : null, (0, l.jsxs)("div", {
-                                        className: aZ().buttons,
-                                        children: [(0, l.jsx)(T.$, {
-                                            type: "submit",
-                                            disabled: A,
-                                            children: t((null == h ? void 0 : h.enabled) ? "saml_sso.sso.update" : "saml_sso.sso.save_enable")
-                                        }), (null == h ? void 0 : h.enabled) ? (0, l.jsx)(T.$, {
-                                            appearance: "secondary",
-                                            variation: "destructive",
-                                            onClick: k,
-                                            disabled: I,
-                                            children: t("saml_sso.sso.disable")
-                                        }) : null]
-                                    })]
-                                })]
-                            })]
-                        })
-                    })
-                })
-            }
-            var a$ = function(e) {
-                    return e.TRANSFER_FORCE_PASSWORD = "transfer_force_password", e.TRANSFER_BLOCK_LINK = "transfer_block_link", e
-                }({}),
-                a0 = t(76849),
-                a1 = t(4088),
-                a2 = t.n(a1);
-
-            function a4() {
-                let {
-                    t: e
-                } = (0, d.Bd)(), {
-                    isTeamPoliciesEnabled: a,
-                    setPolicySetting: t,
-                    enabledPolicies: o
-                } = function() {
-                    let {
-                        settings: {
-                            team_policies_enabled: e
-                        }
-                    } = (0, C.k)(), {
-                        currentTeam: a
-                    } = (0, eM.o)(), t = (0, ef.ch)((0, n.d4)(p.mB)), l = !(null == a ? void 0 : a.id) || !e || !t, {
-                        data: i
-                    } = (0, a0.DX)({
-                        teamId: (null == a ? void 0 : a.id) || ""
-                    }, {
-                        skip: l
-                    }), [d] = (0, a0.hm)();
-                    return l ? {
-                        isTeamPoliciesEnabled: !1,
-                        enabledPolicies: [],
-                        setPolicySetting: async () => {}
-                    } : {
-                        isTeamPoliciesEnabled: e,
-                        enabledPolicies: i || [],
-                        setPolicySetting: async (e, t) => {
-                            (null == a ? void 0 : a.id) && await d({
-                                teamId: a.id,
-                                policy: e,
-                                enabled: t
-                            })
-                        }
-                    }
-                }(), [_, m] = (0, i.useState)([]), w = (0, i.useCallback)(async (e, a) => {
-                    if (!_.includes(a)) {
-                        m(e => [...e, a]);
-                        try {
-                            await t(a, e.currentTarget.checked)
-                        } finally {
-                            m(e => e.filter(e => e !== a))
-                        }
-                    }
-                }, [_, t]);
-                return a ? (0, l.jsxs)("div", {
-                    className: a2().container,
-                    children: [(0, l.jsxs)("div", {
-                        className: a2().row,
-                        children: [(0, l.jsxs)("div", {
-                            className: a2().rowLeft,
-                            children: [(0, l.jsx)("h2", {
-                                children: e("team_policies_settings.title")
-                            }), (0, l.jsx)("p", {
-                                children: e("team_policies_settings.description")
-                            })]
-                        }), (0, l.jsxs)("div", {
-                            className: r()(a2().rowRight, a2().settings),
-                            children: [(0, l.jsxs)("div", {
-                                className: a2().policy,
-                                children: [(0, l.jsxs)("div", {
-                                    className: a2().checkbox,
-                                    children: [(0, l.jsx)(E._, {
-                                        label: e("team_policies_settings.settings.enforce_password.title"),
-                                        checked: o.includes(a$.TRANSFER_FORCE_PASSWORD),
-                                        onChange: e => w(e, a$.TRANSFER_FORCE_PASSWORD),
-                                        disabled: _.includes(a$.TRANSFER_FORCE_PASSWORD)
-                                    }), _.includes(a$.TRANSFER_FORCE_PASSWORD) && (0, l.jsx)(s.y, {
-                                        size: "small"
-                                    })]
-                                }), (0, l.jsx)("span", {
-                                    className: a2().policyDescription,
-                                    children: e("team_policies_settings.settings.enforce_password.description")
-                                })]
-                            }), (0, l.jsxs)("div", {
-                                className: a2().policy,
-                                children: [(0, l.jsxs)("div", {
-                                    className: a2().checkbox,
-                                    children: [(0, l.jsx)(E._, {
-                                        label: e("team_policies_settings.settings.email_transfer_only.title"),
-                                        checked: o.includes(a$.TRANSFER_BLOCK_LINK),
-                                        onChange: e => w(e, a$.TRANSFER_BLOCK_LINK),
-                                        disabled: _.includes(a$.TRANSFER_BLOCK_LINK)
-                                    }), _.includes(a$.TRANSFER_BLOCK_LINK) && (0, l.jsx)(s.y, {
-                                        size: "small"
-                                    })]
-                                }), (0, l.jsx)("span", {
-                                    className: a2().policyDescription,
-                                    children: e("team_policies_settings.settings.email_transfer_only.description")
-                                })]
-                            })]
-                        })]
-                    }), (0, l.jsx)("div", {
-                        className: a2().separator
-                    })]
-                }) : null
-            }
-            var a3 = t(31427),
-                a6 = t.n(a3);
-
-            function a5() {
-                let {
-                    t: e
-                } = (0, d.Bd)();
-                return (0, l.jsxs)("div", {
-                    children: [(0, l.jsx)(ax(), {
-                        children: (0, l.jsx)("title", {
-                            children: e("saml_sso.head_title_scim")
-                        })
-                    }), (0, l.jsx)(M.a, {
-                        showWorkspaceName: !0,
-                        panelName: e("saml_sso.title_scim")
-                    }), (0, l.jsx)(a4, {}), (0, l.jsx)(aJ, {}), (0, l.jsx)("div", {
-                        className: a6().separator
-                    }), (0, l.jsx)(aY, {})]
-                })
-            }
-            var a7 = t(28330),
-                a8 = t(37828),
-                a9 = t(84840),
-                te = t(49302),
-                ta = t(51686),
-                tt = t(33571),
-                tl = t.n(tt);
-
-            function ti() {
-                let {
-                    t: e
-                } = (0, d.Bd)();
-                return (0, l.jsxs)("div", {
-                    className: tl().brandingDisabled,
-                    children: [(0, l.jsx)("span", {
-                        className: tl().brandingDisabledTitle,
-                        children: e("brand.members_callout.title")
-                    }), (0, l.jsx)("span", {
-                        className: tl().brandingDisabledMessage,
-                        children: e("brand.members_callout.message")
-                    })]
-                })
-            }
-            var td = t(95779),
-                tn = t(9879),
-                to = t.n(tn);
-            let ts = ["image/bmp", "image/gif", "image/jpg", "image/jpeg", "image/png", "image/tif", "image/tiff", "image/webp"];
-
-            function t_(e) {
-                var a;
-                let {
-                    forwardedRef: t,
-                    onLoadingChanged: o,
-                    onIsSaveDisabledChanged: s
-                } = e, {
-                    t: _
-                } = (0, d.Bd)(), r = (0, n.wA)(), {
-                    currentTeam: m
-                } = (0, eM.o)(), w = null == m ? void 0 : m.id, [g] = (0, aH.l_)(), b = function() {
-                    let e = (0, Q.A)(),
-                        [a] = (0, aH.l_)(),
-                        [t] = (0, aH.YP)();
-                    return (0, i.useCallback)(async l => {
-                        let {
-                            teamId: i,
-                            file: d
-                        } = l, n = await t({
-                            contentType: d.type
-                        });
-                        if ("data" in n) {
-                            let t = "".concat(e.NEXT_PUBLIC_HELIOS_MEDIA_BASE, "/").concat(n.data.fileName);
-                            await (0, td.A)({
-                                method: "PUT",
-                                path: n.data.url,
-                                params: d,
-                                headers: {
-                                    "Content-Type": d.type
-                                }
-                            }), await a({
-                                teamId: i,
-                                logo: t
-                            })
-                        }
-                    }, [t, e.NEXT_PUBLIC_HELIOS_MEDIA_BASE, a])
-                }(), {
-                    data: c
-                } = (0, aH.Vl)({
-                    teamId: w
-                }, {
-                    skip: !w
-                }), h = null == c ? void 0 : c.name, [u, p] = (0, i.useState)(void 0), [x, y] = (0, i.useState)(!1), [f, M] = (0, i.useState)(!1), k = (0, i.useRef)(null);
-                (0, i.useImperativeHandle)(t, () => ({
-                    saveWorkspaceName: async () => {
-                        w && u && (await g({
-                            teamId: w,
-                            name: u,
-                            defaultName: !1
-                        }), window.location.reload())
-                    }
-                })), (0, i.useEffect)(() => null == o ? void 0 : o(!h), [h, o]);
-                let v = !u || u === h;
-                (0, i.useEffect)(() => null == s ? void 0 : s(v), [v, s]);
-                let C = (0, i.useCallback)(async e => {
-                        if (!w) return;
-                        let a = e.target.files;
-                        if (null == a ? void 0 : a.length) try {
-                            y(!0), await b({
-                                teamId: w,
-                                file: a[0]
-                            }), window.location.reload()
-                        } catch (e) {
-                            y(!1)
-                        }
-                    }, [w, b]),
-                    S = (0, i.useCallback)(async () => {
-                        if (w) try {
-                            M(!0), await g({
-                                teamId: w,
-                                logo: null
-                            }).unwrap(), window.location.reload()
-                        } catch (e) {
-                            r(eq.P9.setPanelNotification({
-                                category: eq.aF.Error,
-                                details: "something_went_wrong"
-                            }))
-                        } finally {
-                            M(!1)
-                        }
-                    }, [w, g, r]);
-                return (0, l.jsxs)("div", {
-                    className: to().workspace,
-                    children: [(0, l.jsxs)("form", {
-                        children: [(0, l.jsxs)("div", {
-                            className: to().workspaceHeader,
-                            children: [(0, l.jsx)("h2", {
-                                children: _("brand.workspace.title")
-                            }), (0, l.jsx)("p", {
-                                children: _("brand.workspace.description")
-                            })]
-                        }), (0, l.jsxs)("div", {
-                            className: to().workspaceContent,
-                            children: [(0, l.jsxs)("div", {
-                                className: to().workspaceIconRow,
-                                children: [(0, l.jsx)("input", {
-                                    style: {
-                                        visibility: "collapse",
-                                        display: "contents"
-                                    },
-                                    ref: k,
-                                    type: "file",
-                                    accept: ts.join(","),
-                                    onChange: C
-                                }), (0, l.jsx)("img", {
-                                    alt: "workspace-icon",
-                                    className: to().workspaceIcon,
-                                    src: null != (a = null == m ? void 0 : m.logoUrl) ? a : void 0
-                                }), (0, l.jsx)(T.$, {
-                                    appearance: "secondary",
-                                    onClick: () => {
-                                        var e;
-                                        return null == (e = k.current) ? void 0 : e.click()
-                                    },
-                                    disabled: x || f,
-                                    children: _("brand.workspace.upload_icon_cta")
-                                }), (0, l.jsx)(T.$, {
-                                    appearance: "tertiary",
-                                    onClick: S,
-                                    disabled: x || f || (null == c ? void 0 : c.isDefaultLogo),
-                                    children: _("brand.workspace.remove_icon_cta")
-                                })]
-                            }), (0, l.jsx)(es.A, {
-                                label: _("brand.workspace.input_label"),
-                                labelType: "inside",
-                                value: null != u ? u : h,
-                                onChange: e => p(e.target.value),
-                                maxLength: 32
-                            })]
-                        })]
-                    }), (0, l.jsx)("div", {
-                        className: to().divider
-                    })]
-                })
-            }
-            var tr = t(49944),
-                tm = t(25330),
-                tw = t(78694),
-                tg = t(57130);
-            let tb = "email_background",
-                tc = (0, n.Ng)(e => ({
-                    maxEmailBackgroundSize: (0, al.ex)(e),
-                    uploadAssetEmailBackground: (0, tg.CU)(e)
-                }), {})(e => {
-                    let {
-                        emailBackground: a,
-                        updateValue: t,
-                        uploadImage: n,
-                        uploadAssetEmailBackground: o,
-                        user: s,
-                        maxEmailBackgroundSize: _
-                    } = e, {
-                        t: m
-                    } = (0, d.Bd)(), [w, g] = (0, i.useState)(!1), b = (0, i.useRef)(), c = a ? a.image_url : "", h = (0, i.useCallback)(() => {
-                        var e;
-                        t(tb, null), null == b || null == (e = b.current) || e.removePreview()
-                    }, [t]), u = (0, i.useCallback)(e => {
-                        var a;
-                        null == b || null == (a = b.current) || a.delegateFileClick(e)
-                    }, []), p = (0, i.useCallback)(() => {
-                        g(!0)
-                    }, []), x = (0, i.useCallback)(() => {
-                        g(!1)
-                    }, []), y = (0, i.useCallback)(async e => {
-                        let a = await n(e, tb);
-                        a && t(tb, a), g(!1)
-                    }, [n, t]), f = r()("emailBackground__mail-image", {
-                        "emailBackground__mail-image--adding": w
-                    });
-                    return (0, l.jsxs)("div", {
-                        className: "row row--no-margin",
-                        children: [(0, l.jsxs)("div", {
-                            className: "col emailBackground__instruction",
-                            children: [(0, l.jsx)("h2", {
-                                children: m("account.workspace.branded_page.email_backgrounds.title")
-                            }), (0, l.jsx)("p", {
-                                children: (0, l.jsx)(d.x6, {
-                                    i18nKey: "account.workspace.branded_page.email_backgrounds.description",
-                                    values: {
-                                        size: eU.A.size(_),
-                                        resolution: eb.o.assetUpload.emailBackgroundResolution
-                                    }
-                                })
-                            }), (0, l.jsxs)("div", {
-                                className: "emailBackground__action-buttons",
-                                children: [(0, l.jsx)(T.$, {
-                                    size: "small",
-                                    onClick: u,
-                                    disabled: o,
-                                    fullwidth: !0,
-                                    children: m("account.workspace.branded_page.email_backgrounds.upload_cta")
-                                }), (0, l.jsx)(T.$, {
-                                    appearance: "secondary",
-                                    size: "small",
-                                    variation: "destructive",
-                                    fullwidth: !0,
-                                    onClick: h,
-                                    disabled: o || !c,
-                                    children: m("account.workspace.branded_page.email_backgrounds.delete_cta")
-                                })]
-                            })]
-                        }, "email_background"), (0, l.jsxs)("div", {
-                            className: "emailBackground__form col",
-                            children: [(0, l.jsx)(aw.Ay, {
-                                type: "MailClient",
-                                className: "emailBackground__mailclient"
-                            }), (0, l.jsx)(eG.A, {
-                                ref: e => b.current = e,
-                                onChange: y,
-                                onMouseOver: p,
-                                onMouseLeave: x,
-                                name: "email_background",
-                                className: f,
-                                value: c,
-                                fullClick: !0,
-                                hideWhilePending: !1,
-                                pending: o
-                            }), (0, l.jsx)(aw.Ay, {
-                                type: "Logo",
-                                className: "emailBackground__mailoverlay-logo",
-                                width: 28
-                            }), function() {
-                                var e, a, t;
-                                let i = r()("emailBackground__mailoverlay", {
-                                        "emailBackground__mailoverlay--nopicture": !(null == s || null == (e = s.profile_picture) ? void 0 : e.image_url)
-                                    }),
-                                    d = (null == s || null == (a = s.profile_picture) ? void 0 : a.image_url) && (0, l.jsx)("div", {
-                                        className: "emailBackground__mail-profile-image",
-                                        style: {
-                                            backgroundImage: "url(".concat(null == s || null == (t = s.profile_picture) ? void 0 : t.image_url, ")")
-                                        }
-                                    });
-                                return (0, l.jsxs)("div", {
-                                    className: i,
-                                    children: [d, (0, l.jsx)("span", {
-                                        children: null == s ? void 0 : s.email
-                                    }), (0, l.jsx)("br", {}), m("account.workspace.branded_page.email_backgrounds.sent_you_files"), (0, l.jsx)("div", {
-                                        className: "emailBackground__mailoverlay-button"
-                                    }), (0, l.jsx)(aw.Ay, {
-                                        type: "Lines",
-                                        className: "emailBackground__mailoverlay-lines"
-                                    }), !(null == s ? void 0 : s.profile_picture) && (0, l.jsx)(aw.Ay, {
-                                        type: "Lines",
-                                        className: "emailBackground__mailoverlay-lines"
-                                    })]
-                                })
-                            }()]
-                        }, "mail_client")]
-                    })
-                });
-            var th = t(39377),
-                tu = t(55293),
-                tp = t(51853),
-                tx = t(88848),
-                ty = t(1172),
-                tf = t(396);
-            let tM = (0, n.Ng)(e => ({
-                uploadAssetEmailBackground: (0, tg.CU)(e)
-            }), {
-                editAccount: eO.A.Account.editAccount,
-                uploadAsset: eO.A.UI.uploadAsset
-            })(e => {
-                (0, i.useImperativeHandle)(e.forwardedRef, () => ({
-                    saveChangedEmailBackground: p
-                }));
-                let a = function() {
-                        var e, a, t;
-                        let {
-                            entitlements: l
-                        } = (0, tr.o)({
-                            ignoreChannel: !0
-                        }), i = l[tw.Z.EMAIL_BRANDING];
-                        (0, tm.A)(i, l, tw.Z.EMAIL_BRANDING);
-                        let d = null != (t = null == i || null == (a = i.rule) || null == (e = a.boolean) ? void 0 : e.value) && t,
-                            n = (0, tm.G)();
-                        return d && n
-                    }(),
-                    t = (0, tf.m)("branded-emails"),
-                    {
-                        account: d,
-                        pending: o,
-                        user: s
-                    } = (0, n.d4)(e => e),
-                    [_, m] = (0, i.useState)(!1),
-                    w = t.getDataForm(),
-                    g = (0, n.wA)();
-                (0, i.useEffect)(() => {
-                    let e = (0, ty.t)(s);
-                    _ || o.getAccount || !e.id || (g(eO.A.Account.getAccount(e.id)), m(!0))
-                }, [_, s, o.getAccount, g]);
-                let b = !!o.getAccount;
-                (0, i.useEffect)(() => {
-                    var a;
-                    null == (a = e.onLoadingChanged) || a.call(e, b)
-                }, [b]);
-                let c = !t.isFormDirty;
-                (0, i.useEffect)(() => {
-                    var a;
-                    null == (a = e.onIsSaveDisabledChanged) || a.call(e, c)
-                }, [c]);
-                let h = async (a, t) => {
-                    let l = a.target.files[0];
-                    return e.uploadAsset(l, t)
-                }, u = (0, i.useMemo)(() => void 0 !== w.email_background || null === w.email_background ? w.email_background : d.email_background, [w.email_background, d.email_background]), p = async a => {
-                    if (a.preventDefault(), !t.isFormDirty) return;
-                    let l = {
-                        ...w
-                    };
-                    for (let e in w) void 0 === l[e] && (l[e] = "");
-                    g(e1.r.setFormState(!1)), d.id && await e.editAccount(d.id, w, {
-                        notification: !1
-                    }), t.resetForm()
-                };
-                return o.getAccount ? (0, l.jsx)(th.A, {}) : (0, l.jsxs)("div", {
-                    "data-testid": "brandedEmails",
-                    children: [!v.Ay.isMobile && (0, ef.yw)(s) && (0, l.jsx)("div", {
-                        className: "brandedEmails__workspaceUpgradeBanner",
-                        children: (0, l.jsx)(tu.A, {
-                            headingText: eU.A.t("upgrade_workspace.title"),
-                            buttonHref: tp.bP.route,
-                            buttonLabel: eU.A.t("upgrade_workspace.cta"),
-                            bodyText: eU.A.t("upgrade_workspace.general_information"),
-                            buttonOnClick: () => {
-                                g((0, tx.jt)(tx.vW.SETTINGS_BRANDED_EMAILS_UPGRADE))
-                            }
-                        })
-                    }), (0, l.jsx)("form", {
-                        method: "post",
-                        onSubmit: p,
-                        className: r()("brandedEmailsForm", {
-                            "brandedEmailsForm--disabled": !a
-                        }),
-                        "data-testid": "branded-emails-form",
-                        children: (0, l.jsx)("div", {
-                            className: "brandedEmails",
-                            children: (0, l.jsx)(tc, {
-                                emailBackground: u,
-                                user: s,
-                                pending: e.pending,
-                                updateValue: t.updateValue,
-                                uploadImage: h
-                            })
-                        })
-                    })]
-                })
-            });
-            var tk = t(31784),
-                tv = t(4399),
-                tC = t(87769),
-                tS = t.n(tC);
-            let tA = (0, i.forwardRef)((e, a) => (0, l.jsx)(tM, {
-                    forwardedRef: a,
-                    ...e
-                })),
-                tI = (0, i.forwardRef)((e, a) => (0, l.jsx)(t_, {
-                    forwardedRef: a,
-                    ...e
-                }));
-
-            function tj() {
-                let {
-                    t: e
-                } = (0, d.Bd)(), {
-                    addToast: a
-                } = (0, o.d)(), t = (0, n.d4)(ev.Lm), {
-                    getUserByAuth0Id: s,
-                    fetching: _
-                } = (0, eM.o)(), r = (0, i.useMemo)(() => {
-                    var e;
-                    return t && (null == (e = s(t)) ? void 0 : e.role) === "admin"
-                }, [t, s]), [m, w] = (0, i.useState)(!0), [g, b] = (0, i.useState)(!0), c = (0, i.useRef)(null), [h, u] = (0, i.useState)(!0), [p, x] = (0, i.useState)(!0), y = (0, i.useRef)(null), [f, k] = (0, i.useState)(!0), [v, C] = (0, i.useState)(!0), S = (0, ta._)(), A = (0, l.jsx)(tA, {
-                    ref: c,
-                    pending: "",
-                    onIsSaveDisabledChanged: x,
-                    onLoadingChanged: u
-                }), I = (0, l.jsx)(tI, {
-                    ref: y,
-                    onIsSaveDisabledChanged: C,
-                    onLoadingChanged: k
-                }), j = g && p && v, D = _ || !t || r && (m || h || f && S), N = (0, i.useCallback)(async t => {
-                    if (!g || !p || !v) try {
-                        var l, i, d;
-                        g || null == (l = document.getElementById(tv.yP)) || l.dispatchEvent(new Event("submit", {
-                            cancelable: !0,
-                            bubbles: !0
-                        })), p || await (null == (i = c.current) ? void 0 : i.saveChangedEmailBackground(t)), v || await (null == (d = y.current) ? void 0 : d.saveWorkspaceName()), a(e("brand.save_success"), {
-                            autoHideDuration: 3e3
-                        })
-                    } catch (t) {
-                        a(e("brand.save_error"), {
-                            autoHideDuration: 3e3
-                        })
-                    }
-                }, [a, p, g, v, e]);
-                return (0, l.jsxs)(l.Fragment, {
-                    children: [D && (0, l.jsx)(th.r, {}), (0, l.jsxs)("div", {
-                        className: D ? tS().hidden : "",
-                        children: [(0, l.jsx)(ax(), {
-                            children: (0, l.jsxs)("title", {
-                                children: [e("brand.title"), " - WeTransfer"]
-                            })
-                        }), (0, l.jsx)("div", {
-                            className: tS().panelHeader,
-                            children: (0, l.jsx)(M.a, {
-                                showWorkspaceName: !0,
-                                panelName: e("brand.title"),
-                                buttonLabel: e("brand.save"),
-                                isDisabled: !r || j,
-                                onClick: N
-                            })
-                        }), r ? (0, l.jsxs)(l.Fragment, {
-                            children: [S && I, (0, l.jsx)(tk.default, {
-                                onIsSaveDisabledChanged: b,
-                                onLoadingChanged: w
-                            }), (0, l.jsx)("div", {
-                                className: tS().divider
-                            }), A]
-                        }) : (0, l.jsx)(ti, {})]
-                    })]
-                })
-            }
-            var tD = t(87379),
-                tN = t(30394),
-                tP = t(55258),
-                tB = function(e) {
-                    return e.STRIPE = "Stripe", e
-                }({}),
-                tT = t(70644),
-                tE = t.n(tT),
-                tL = t(7805),
-                tW = t(30899),
-                tR = t(43745),
-                tU = t.n(tR);
-            let tO = {
-                    [tB.STRIPE]: "stripe-logo.png"
-                },
-                tF = e => {
-                    let {
-                        type: a
-                    } = e, t = tW.A.lookup(tO[a]);
-                    return (0, l.jsx)("img", {
-                        alt: "".concat(a, " logo"),
-                        className: tU().logo,
-                        src: t
-                    })
-                };
-            var tG = t(17399),
-                tH = t.n(tG);
-
-            function tK(e) {
-                let {
-                    children: a,
-                    description: t,
-                    type: i
-                } = e;
-                return (0, l.jsxs)("div", {
-                    className: tH().card,
-                    "data-testid": "".concat(i.toLowerCase().replace(" ", "-"), "-status-card"),
-                    children: [(0, l.jsx)(tF, {
-                        type: i
-                    }), t && (0, l.jsx)("p", {
-                        className: tH().description,
-                        "data-testid": "description",
-                        children: t
-                    }), a]
-                })
-            }
-            var tz = t(5553),
-                tY = t.n(tz);
-
-            function tV(e) {
-                let {
-                    className: a,
-                    ...t
-                } = e;
-                return (0, l.jsx)("button", {
-                    className: r()(tY().button, a),
-                    ...t
-                })
-            }
-            var tX = t(67199),
-                tQ = t(73340),
-                tq = t(83153),
-                tZ = t(10148),
-                tJ = t(63645);
-            let t$ = e => {
-                    var a;
-                    let {
-                        status: t,
-                        type: o = tB.STRIPE
-                    } = e, s = (0, n.d4)(p.B$), _ = null != (a = (0, n.d4)(tZ.nT)) ? a : "", r = (0, n.wA)(), m = (0, n.d4)(tZ.MC), w = (0, n.d4)(tZ._8), [g, b] = (0, i.useState)(!1), [c, h] = (0, i.useState)(!1), u = (0, i.useCallback)(async () => {
-                        b(!0);
-                        try {
-                            (0, tQ.Hp)("Integrations Page", "Stripe", s), await r((0, tN.UF)())
-                        } catch (e) {
-                            h(!0), b(!1)
-                        }
-                    }, [r, s]), [x, y] = (0, i.useState)(!1), [f, M] = (0, i.useState)(!1), [k, v] = (0, i.useState)(!1), C = (0, i.useCallback)(async () => {
-                        y(!0);
-                        try {
-                            await r((0, tN.lZ)()), M(!0)
-                        } catch (e) {
-                            v(!0)
-                        }
-                        y(!1)
-                    }, [r]), S = (0, l.jsxs)(l.Fragment, {
-                        children: [eU.A.t("integrations.status.connected.text.Stripe", {
-                            sellerEmail: _
-                        }), " ", (0, l.jsx)("a", {
-                            href: tJ.SX,
-                            target: "_blank",
-                            rel: "noopener noreferrer",
-                            children: eU.A.t("integrations.status.connected.supporting_text.link_text", {
-                                integration: o
-                            })
-                        }), " ", eU.A.t("integrations.status.connected.supporting_text.stripe"), " ", (0, l.jsx)(tV, {
-                            "data-testid": "disconnect-button",
-                            onClick: C,
-                            children: eU.A.t("integrations.status.connected.disconnect", {
-                                integration: o
-                            })
-                        })]
-                    }), A = (0, l.jsxs)(l.Fragment, {
-                        children: [eU.A.t("integrations.account_details", {
-                            sellerEmail: _ ? "".concat(_, ".") : ""
-                        }) + " ", (0, l.jsx)(tV, {
-                            onClick: C,
-                            children: eU.A.t(tJ.GS, {
-                                integration: tB.STRIPE
-                            })
-                        })]
-                    });
-                    if (g || t === tP.DG.PENDING_VERIFICATION) return (0, l.jsx)(tK, {
-                        description: eU.A.t("integrations.status.not_connected.text.stripe"),
-                        type: o,
-                        children: (0, l.jsx)(tL.A, {
-                            type: tL.l.Pending,
-                            message: eU.A.t(tJ.GO)
-                        })
-                    });
-                    if (c) return (0, l.jsx)(tK, {
-                        description: eU.A.t(tJ.iP),
-                        type: o,
-                        children: (0, l.jsx)(tL.A, {
-                            type: tL.l.Error,
-                            message: eU.A.t("integrations.status.error")
-                        })
-                    });
-                    if (x) return (0, l.jsx)(tK, {
-                        description: S,
-                        type: o,
-                        children: (0, l.jsx)(tL.A, {
-                            type: tL.l.Pending,
-                            message: eU.A.t(tJ.Ik)
-                        })
-                    });
-                    if (k) return (0, l.jsx)(tK, {
-                        description: S,
-                        type: o,
-                        children: (0, l.jsx)(tL.A, {
-                            type: tL.l.Error,
-                            message: eU.A.t(tJ.rx)
-                        })
-                    });
-                    if (f) return (0, l.jsx)(tK, {
-                        description: eU.A.t(tJ.iP),
-                        type: o,
-                        children: (0, l.jsx)(tL.A, {
-                            type: tL.l.Success,
-                            message: eU.A.t(tJ.EU)
-                        })
-                    });
-                    if (!m) {
-                        let e = (0, l.jsx)("a", {
-                            href: tJ.SX,
-                            target: "_blank",
-                            rel: "noopener noreferrer"
-                        });
-                        return (0, l.jsx)(tK, {
-                            description: S,
-                            type: o,
-                            children: (0, l.jsx)(tL.A, {
-                                type: tL.l.Error,
-                                message: (0, l.jsx)(d.x6, {
-                                    i18nKey: "paid_transfers.currency_not_supported",
-                                    components: {
-                                        stripeLink: e
-                                    },
-                                    values: {
-                                        currency_symbol: (0, tq.Q)(w)
-                                    }
-                                })
-                            })
-                        })
-                    }
-                    if (t === tP.DG.FETCHING) return null;
-                    switch (t) {
-                        case tP.DG.ACTIVE:
-                            return (0, l.jsx)(tK, {
-                                description: S,
-                                type: o
-                            });
-                        case tP.DG.NOT_CONNECTED:
-                            return (0, l.jsx)(tK, {
-                                description: eU.A.t(tJ.iP),
-                                type: o,
-                                children: (0, l.jsx)(eY.A, {
-                                    className: tE().connectButton,
-                                    type: "primary",
-                                    text: eU.A.t(tJ.uV, {
-                                        integration: tB.STRIPE
-                                    }),
-                                    onClick: u
-                                })
-                            });
-                        case tP.DG.PENDING:
-                        case tP.DG.INACTIVE:
-                        case tP.DG.DUE:
-                            return (0, l.jsx)(tK, {
-                                description: A,
-                                type: o,
-                                children: (0, l.jsx)(tX.A, {
-                                    status: t,
-                                    ctaHref: tJ.SX
-                                })
-                            });
-                        default:
-                            return null
-                    }
-                },
-                t0 = e => {
-                    let {
-                        integration: a
-                    } = e;
-                    return a.type === tB.STRIPE ? (0, l.jsx)(t$, {
-                        status: a.status
-                    }) : null
-                };
-            var t1 = t(27062),
-                t2 = t.n(t1);
-            let t4 = e => {
-                    let {
-                        list: a
-                    } = e;
-                    return (0, l.jsxs)("div", {
-                        className: t2().Integrations,
-                        "data-testid": "integrations",
-                        children: [!v.Ay.isMobile && (0, l.jsx)(M.a, {
-                            showWorkspaceName: !0,
-                            panelName: eU.A.t("integrations.title")
-                        }), (0, l.jsx)("div", {
-                            className: t2().list,
-                            children: a.map(e => (0, l.jsx)(t0, {
-                                integration: e
-                            }, "integration-status-".concat(e.type)))
-                        })]
-                    })
-                },
-                t3 = () => {
-                    let e = (0, n.wA)(),
-                        {
-                            currentTeam: a
-                        } = (0, eM.o)(),
-                        t = (0, n.d4)(tP.cC),
-                        d = (0, n.d4)(p.mB);
-                    (0, i.useEffect)(() => {
-                        document.title = "".concat(eU.A.t("integrations.title"), " - WeTransfer")
-                    }), (0, i.useEffect)(() => {
-                        (async () => {
-                            (null == a ? void 0 : a.id) && (await e((0, tN.Bf)(!0)), e((0, tN.YT)(!0)))
-                        })()
-                    }, [null == a ? void 0 : a.id, e]);
-                    let o = (0, i.useMemo)(() => {
-                        let e = [];
-                        return (0, tD.hb)(d) && !v.Ay.isMobile && e.unshift({
-                            type: tB.STRIPE,
-                            status: t
-                        }), e
-                    }, [t, d]);
-                    return (0, l.jsx)(t4, {
-                        list: o
-                    })
-                };
-            var t6 = t(72255),
-                t5 = t(51145),
-                t7 = t.n(t5);
-
-            function t8() {
-                let {
-                    t: e
-                } = (0, d.Bd)(), a = (0, n.wA)(), t = (0, n.d4)(p.R2) || ey.js.FREE, o = (0, n.d4)(p.Me), {
-                    planName: s
-                } = (0, ef.ns)(t, o, {}) || {}, {
-                    settings: {
-                        members_page_upsell_help_link: _
-                    }
-                } = (0, C.k)(), r = (0, i.useCallback)(() => {
-                    a((0, tx.jt)(tx.vW.WORKSPACE_MEMBERS_CREATE_TEAM)), t6.A.navigateTo(tp.bP.route)
-                }, [a]);
-                return (0, l.jsxs)(l.Fragment, {
-                    children: [(0, l.jsx)("span", {
-                        className: t7().header,
-                        children: (0, l.jsx)(d.x6, {
-                            i18nKey: "members.workspace_upsell.header",
-                            components: {
-                                plan: (0, l.jsx)("span", {
-                                    className: t7().headerPlan,
-                                    children: s
-                                })
-                            }
-                        })
-                    }), (0, l.jsxs)("div", {
-                        className: t7().callout,
-                        children: [(0, l.jsx)("span", {
-                            className: t7().calloutTitle,
-                            children: e("members.workspace_upsell.callout.title")
-                        }), (0, l.jsxs)("div", {
-                            className: t7().calloutPerks,
-                            children: [(0, l.jsxs)("div", {
-                                className: t7().calloutPerkContainer,
-                                children: [(0, l.jsx)(aR.bT1, {
-                                    size: "medium"
-                                }), (0, l.jsx)("span", {
-                                    className: t7().calloutPerk,
-                                    children: (0, l.jsx)(d.x6, {
-                                        i18nKey: "members.workspace_upsell.callout.perk_manage",
-                                        components: {
-                                            strong: (0, l.jsx)("span", {
-                                                className: t7().calloutPerkStrong
-                                            })
-                                        }
-                                    })
-                                })]
-                            }), (0, l.jsxs)("div", {
-                                className: t7().calloutPerkContainer,
-                                children: [(0, l.jsx)(aR.bT1, {
-                                    size: "medium"
-                                }), (0, l.jsx)("span", {
-                                    className: t7().calloutPerk,
-                                    children: (0, l.jsx)(d.x6, {
-                                        i18nKey: "members.workspace_upsell.callout.perk_unlimited",
-                                        components: {
-                                            strong: (0, l.jsx)("span", {
-                                                className: t7().calloutPerkStrong
-                                            })
-                                        }
-                                    })
-                                })]
-                            }), (0, l.jsxs)("div", {
-                                className: t7().calloutPerkContainer,
-                                children: [(0, l.jsx)(aR.bT1, {
-                                    size: "medium"
-                                }), (0, l.jsx)("span", {
-                                    className: t7().calloutPerk,
-                                    children: (0, l.jsx)(d.x6, {
-                                        i18nKey: "members.workspace_upsell.callout.perk_branding",
-                                        components: {
-                                            strong: (0, l.jsx)("span", {
-                                                className: t7().calloutPerkStrong
-                                            })
-                                        }
-                                    })
-                                })]
-                            })]
-                        }), (0, l.jsx)("span", {
-                            className: t7().calloutPerk,
-                            children: (0, l.jsx)(d.x6, {
-                                i18nKey: "members.workspace_upsell.callout.learn_more",
-                                components: {
-                                    learnMore: (0, l.jsx)("a", {
-                                        href: _,
-                                        target: "_blank",
-                                        rel: "noopener noreferrer"
-                                    })
-                                }
-                            })
-                        }), (0, l.jsx)(T.$, {
-                            appearance: "primary",
-                            variation: "upsell",
-                            size: "medium",
-                            onClick: r,
-                            children: e("members.workspace_upsell.callout.cta")
-                        })]
-                    })]
-                })
-            }
-            var t9 = t(5619),
-                le = t(74067),
-                la = t(41821),
-                lt = t(74744),
-                ll = t(14974),
-                li = t(26232);
-            let ld = e => {
-                let {
-                    teamId: a,
-                    isModalOpen: t,
-                    seats: l
-                } = e, [d, n] = (0, i.useState)(!0), [o, s] = (0, i.useState)(!1), [_, r] = (0, i.useState)(), [m] = (0, aH.zl)(), [w] = (0, li.Zj)(), g = (0, i.useCallback)(async () => {
-                    try {
-                        let {
-                            data: e
-                        } = await m({
-                            teamId: a
-                        }, !0);
-                        if (!e) return void s(!0);
-                        let {
-                            data: t
-                        } = await w({
-                            teamId: a,
-                            quantity: l
-                        });
-                        t ? r({
-                            ...t,
-                            upfrontTotalCents: t.upfrontTotalCents
-                        }) : s(!0)
-                    } catch (e) {
-                        s(!0)
-                    } finally {
-                        n(!1)
-                    }
-                }, [m, a, w, l]);
-                return (0, i.useEffect)(() => {
-                    t && (n(!0), s(!1), r(void 0), g())
-                }, [g, t, n, s, r]), {
-                    isLoading: d,
-                    hasFailed: o,
-                    billingPreview: _
-                }
-            };
-            var ln = t(16061),
-                lo = t.n(ln);
-
-            function ls(e) {
-                let {
-                    isOpen: a,
-                    header: t,
-                    body: d,
-                    footer: n,
-                    confirmText: o,
-                    isDestructive: s,
-                    isDisabled: _,
-                    isButtonFullWidth: r,
-                    onClose: m,
-                    onConfirm: w
-                } = e, [g, b] = (0, i.useState)(!1), c = (0, i.useCallback)(async () => {
-                    b(!0), await (null == w ? void 0 : w()), b(!1)
-                }, [b, w]);
-                return (0, l.jsx)(W.a, {
-                    classes: {
-                        containerClass: lo().modal
-                    },
-                    onClose: m,
-                    isOpen: a,
-                    showCloseButton: !0,
-                    appElement: (0, R.Y)(),
-                    children: (0, l.jsxs)("div", {
-                        className: lo().container,
-                        children: [(0, l.jsx)("span", {
-                            className: lo().header,
-                            children: t
-                        }), (0, l.jsx)("p", {
-                            className: lo().body,
-                            children: d
-                        }), (0, l.jsx)("div", {
-                            className: lo().spacer
-                        }), (0, l.jsx)(T.$, {
-                            onClick: c,
-                            className: lo().button,
-                            disabled: g || _,
-                            variation: s ? "destructive" : "default",
-                            fullwidth: r,
-                            children: o
-                        }), n && (0, l.jsx)("span", {
-                            className: lo().footer,
-                            children: n
-                        })]
-                    })
-                })
-            }
-            var l_ = t(23751),
-                lr = t.n(l_),
-                lm = t(19892),
-                lw = t.n(lm);
-
-            function lg(e) {
-                let {
-                    isOpen: a,
-                    onClose: t,
-                    onConfirm: n,
-                    maxSeatsCount: o
-                } = e, {
-                    t: s
-                } = (0, d.Bd)(), _ = (0, i.useCallback)(() => {
-                    null == n || n()
-                }, [n]);
-                return (0, l.jsx)(W.a, {
-                    classes: {
-                        containerClass: lw().modal
-                    },
-                    onClose: t,
-                    isOpen: a,
-                    appElement: (0, R.Y)(),
-                    children: (0, l.jsxs)("div", {
-                        className: lw().content,
-                        children: [(0, l.jsx)(aw.Ay, {
-                            type: "AlertFull",
-                            className: lw().contentIcon
-                        }), (0, l.jsx)("span", {
-                            className: lw().contentHeader,
-                            children: s("members.subscription_upgrade_modal.header")
-                        }), (0, l.jsx)("p", {
-                            className: lw().contentBody,
-                            children: s("members.subscription_upgrade_modal.body", {
-                                seatsLimit: o
-                            })
-                        }), (0, l.jsxs)("div", {
-                            className: lw().contentButtons,
-                            children: [(0, l.jsx)(T.$, {
-                                onClick: _,
-                                className: lw().contentButton,
-                                fullwidth: !0,
-                                children: eU.A.t("members.subscription_upgrade_modal.cta")
-                            }), (0, l.jsx)(T.$, {
-                                onClick: t,
-                                appearance: "secondary",
-                                className: lw().contentButton,
-                                fullwidth: !0,
-                                children: eU.A.t("members.subscription_upgrade_modal.close")
-                            })]
-                        })]
-                    })
-                })
-            }
-            var lb = t(72683),
-                lc = t(58061),
-                lh = t(3882),
-                lu = t.n(lh);
-
-            function lp(e) {
-                let {
-                    isLoading: a,
-                    hasFailed: t,
-                    billingPreview: i,
-                    additionalSeatsCount: n
-                } = e, {
-                    t: o
-                } = (0, d.Bd)(), _ = i && "".concat((0, lc.F)({
-                    currency: i.currency,
-                    amount: i.recurringTotalCents / 100,
-                    locale: eU.A.locale
-                }), "/").concat(o("members.add_members.invite_members_modal.body.interval_".concat(i.interval))), r = i && new Date(i.recurringAt).toLocaleDateString();
-                return t ? (0, l.jsx)("p", {
-                    className: lu().errorText,
-                    children: o("members.add_members.invite_members_modal.error_message")
-                }) : a ? (0, l.jsx)("div", {
-                    className: lu().spinnerContainer,
-                    children: (0, l.jsx)(s.y, {
-                        size: "large"
-                    })
-                }) : (0, l.jsx)("div", {
-                    className: lu().confirmationModalContents,
-                    children: (0, l.jsxs)("div", {
-                        className: lu().confirmationModalBody,
-                        children: [(0, l.jsxs)("div", {
-                            className: lu().chargeInfo,
-                            children: [(0, l.jsxs)("div", {
-                                className: lu().chargeInfoRow,
-                                children: [(0, l.jsx)("span", {
-                                    children: o("members.add_members.invite_members_modal.body.will_be_charged")
-                                }), (0, l.jsxs)("div", {
-                                    className: lu().chargeInfoAmount,
-                                    children: [(0, l.jsx)(lb.A, {
-                                        containerClassName: lu().chargeInfoPopover,
-                                        positions: ["bottom"],
-                                        content: (0, l.jsx)("span", {
-                                            children: o("members.add_members.invite_members_modal.body.popover_text")
-                                        }),
-                                        eventTrigger: "hover",
-                                        isCondensed: !0,
-                                        mode: "dark",
-                                        children: (0, l.jsx)(aR.rHs, {
-                                            size: "small"
-                                        })
-                                    }), i && (0, l.jsx)("span", {
-                                        "data-testid": "invoice-additional-amount",
-                                        children: (0, lc.F)({
-                                            currency: i.currency,
-                                            amount: n <= 0 ? 0 : i.upfrontTotalCents / 100,
-                                            locale: eU.A.locale
-                                        })
-                                    })]
-                                })]
-                            }), (0, l.jsx)("div", {
-                                className: lu().chargeInfoRow,
-                                children: n <= 0 ? (0, l.jsx)("p", {
-                                    className: lu().chargeInfoLabel,
-                                    dangerouslySetInnerHTML: {
-                                        __html: o("members.add_members.invite_members_modal.body.seat_management_minimum_commitment")
-                                    }
-                                }) : (0, l.jsx)("p", {
-                                    className: lu().chargeInfoLabel,
-                                    dangerouslySetInnerHTML: {
-                                        __html: o("members.add_members.invite_members_modal.body.seat_management_increase", {
-                                            additionalSeatsCount: n
-                                        })
-                                    }
-                                })
-                            })]
-                        }), (0, l.jsx)("div", {
-                            className: lu().separator
-                        }), (0, l.jsx)("div", {
-                            className: lu().confirmationSubscriptionInfo,
-                            children: (0, l.jsx)(d.x6, {
-                                i18nKey: n <= 0 ? "members.add_members.invite_members_modal.body.subscription_continue" : "members.add_members.invite_members_modal.body.subscription_info",
-                                components: {
-                                    1: (0, l.jsx)("span", {
-                                        className: lu().confirmationSubscriptionInfoBold
-                                    })
-                                },
-                                values: {
-                                    subscriptionInfo: _,
-                                    subscriptionDate: r
-                                }
-                            })
-                        })]
-                    })
-                })
-            }
-
-            function lx(e) {
-                let {
-                    isAlreadyInWorkspace: a,
-                    setIsProcessingInviteRequest: t
-                } = e, {
-                    t: s
-                } = (0, d.Bd)(), {
-                    addToast: _
-                } = (0, o.d)(), [r] = (0, aH.j2)(), m = (0, ll.l)(), [w, g] = (0, i.useState)(!1), [b, c] = (0, i.useState)(!1), [h, u] = (0, i.useState)([""]), [x, y] = (0, i.useState)(!1), f = (0, n.wA)(), {
-                    settings: {
-                        repackaging_enterprise_cta_url: M
-                    }
-                } = (0, C.k)(), {
-                    maximumSeats: k,
-                    currentSeats: v,
-                    additionalSeatsNeededForInvites: S
-                } = (0, lt.K)(), A = (0, n.d4)(p.eB), I = (0, n.d4)(p.R2), j = S(h.filter(Boolean).length), {
-                    isLoading: D,
-                    hasFailed: N,
-                    billingPreview: P
-                } = ld({
-                    seats: v + j,
-                    teamId: A || "",
-                    isModalOpen: w
-                }), B = I !== ey.js.ENTERPRISE_CUSTOM_CONTRACT, E = (0, i.useCallback)(() => u(e => ["", ...e]), []), L = (0, i.useCallback)(e => u(a => a.filter((a, t) => t !== e)), []), W = (0, i.useCallback)((e, a) => u(t => t.map((t, l) => l === e ? a : t)), []), R = (() => {
-                    let {
-                        addToast: e
-                    } = (0, o.d)(), a = (0, n.d4)(ev.Lm), {
-                        fetching: t,
-                        getUserByAuth0Id: l,
-                        currentTeam: s
-                    } = (0, eM.o)(), {
-                        t: _
-                    } = (0, d.Bd)(), [r] = (0, li.Zj)(), {
-                        currentSeats: m,
-                        additionalSeatsNeededForInvites: w
-                    } = (0, lt.K)(), {
-                        data: g
-                    } = (0, aH.Vl)({
-                        teamId: null == s ? void 0 : s.id
-                    }, {
-                        skip: !(null == s ? void 0 : s.id)
-                    }), [b, c] = (0, i.useState)(void 0), [h, u] = (0, i.useState)(void 0), [p, x] = (0, i.useState)(!1), y = (0, i.useMemo)(() => {
-                        var e;
-                        return a && (null == (e = l(a)) ? void 0 : e.role) === "admin"
-                    }, [l, a]), f = (0, i.useCallback)(() => {
-                        window.history.pushState({}, document.title, window.location.pathname)
-                    }, []), M = (0, i.useCallback)(async e => void 0 === e || !!g && !t && !!s && !!w(1) && (await r({
-                        teamId: s.id,
-                        quantity: m + 1
-                    }).unwrap()).upfrontTotalCents / 100 !== e, [s, t, r, g, m, w]), k = (0, i.useCallback)(async (e, a) => {
-                        c({
-                            email: e,
-                            shouldShowPreviewModal: await M(a)
-                        }), f()
-                    }, [f, M]), {
-                        isAcceptRequest: v,
-                        email: C,
-                        teamId: S,
-                        seatCost: A
-                    } = (0, i.useMemo)(() => {
-                        let e = new URLSearchParams(window.location.search),
-                            a = e.get("email"),
-                            t = e.get("team-id"),
-                            l = e.get("seat-cost");
-                        return {
-                            isAcceptRequest: !!e.get("accept-request"),
-                            email: a,
-                            teamId: t,
-                            seatCost: l
-                        }
-                    }, []);
-                    return (0, i.useEffect)(() => {
-                        if (v && g && !t && !p && !b && !h)
-                            if (C && S) {
-                                var e, a;
-                                if (!y) return void u("NO_PERMISSIONS");
-                                if (g.id !== S) return void u("WRONG_WORKSPACE");
-                                if (null == (e = g.invites) ? void 0 : e.some(e => e.email === C)) return void u("ALREADY_INVITED");
-                                if (null == (a = g.members) ? void 0 : a.some(e => e.user.email === C)) return void u("ALREADY_MEMBER");
-                                x(!0), k(C, null === A ? void 0 : Number(A))
-                            } else u("INVALID")
-                    }, [t, g, y, e, _, k, p, b, h, C, S, A, v]), (0, i.useEffect)(() => {
-                        if (h) {
-                            switch (h) {
-                                case "ALREADY_MEMBER":
-                                    e(_("request_workspace_invitation.toasts.error_already_member", {
-                                        email: C
-                                    }));
-                                    break;
-                                case "ALREADY_INVITED":
-                                    e(_("request_workspace_invitation.toasts.error_already_invited", {
-                                        email: C
-                                    }));
-                                    break;
-                                case "WRONG_WORKSPACE":
-                                    e(_("request_workspace_invitation.toasts.error_wrong_workspace"));
-                                    break;
-                                case "NO_PERMISSIONS":
-                                    e(_("request_workspace_invitation.toasts.error_permissions"));
-                                    break;
-                                case "INVALID":
-                                    e(_("request_workspace_invitation.toasts.error_invalid"))
-                            }
-                            f()
-                        }
-                    }, [h]), b
-                })(), U = (0, i.useCallback)(async e => {
-                    if (!A) return;
-                    let a = S(e.length);
-                    try {
-                        if (a && !await m({
-                                newQuantity: v + a
-                            })) throw Error("Failed to upgrade subscription");
-                        await r({
-                            teamId: A,
-                            invites: e
-                        }).unwrap(), _(s("members.add_members.confirmed_payment_message"), R ? {
-                            isDismissible: !0,
-                            persist: !0
-                        } : void 0), u([""])
-                    } catch (e) {
-                        _(s("members.add_members.error_payment_message"), {
-                            mode: "dark",
-                            autoHideDuration: 3e3,
-                            actions: () => (0, l.jsx)("a", {
-                                className: lr().paymentErrorLink,
-                                href: "/workspace/payment",
-                                children: s("members.add_members.error_payment_link")
-                            })
-                        })
-                    } finally {
-                        g(!1), y(!1), null == t || t(!1), f(eO.A.User.getUser())
-                    }
-                }, [A, S, r, _, s, R, m, v, t, f]), O = (0, i.useCallback)(() => {
-                    let e = [...new Set(h.filter(Boolean))],
-                        a = S(e.length) + v;
-                    if (k && a > k) return void c(!0);
-                    u(e), B ? g(!0) : U(e)
-                }, [h, S, v, k, B, U]);
-                (0, i.useEffect)(() => {
-                    R && (u([R.email]), R.shouldShowPreviewModal ? g(!0) : (null == t || t(!0), U([R.email])))
-                }, [R]);
-                let F = (0, i.useMemo)(() => h.filter(e => e0.A.validateEmail(e) && !a(e)).length > 0, [h, a]);
-                return (0, l.jsxs)(l.Fragment, {
-                    children: [(0, l.jsxs)("div", {
-                        className: lr().container,
-                        children: [(0, l.jsx)("span", {
-                            className: lr().title,
-                            children: s("members.add_members.title")
-                        }), (0, l.jsx)("span", {
-                            className: lr().description,
-                            children: s("members.add_members.description")
-                        }), (0, l.jsx)("div", {
-                            className: lr().membersToAddList,
-                            children: h.map((e, t) => (0, l.jsxs)("div", {
-                                className: lr().memberToAdd,
-                                children: [(0, l.jsx)("div", {
-                                    className: lr().emailInput,
-                                    children: (0, l.jsx)(es.A, {
-                                        size: "medium",
-                                        label: "email-".concat(t),
-                                        labelType: "hidden",
-                                        type: "email",
-                                        placeholder: s("members.add_members.input_placeholder"),
-                                        value: e,
-                                        onChange: e => W(t, e.target.value),
-                                        state: a(e) ? "invalid" : "default",
-                                        caption: a(e) ? s("members.add_members.input_message_already_in_workspace") : void 0
-                                    })
-                                }), (0, l.jsx)(aU.K, {
-                                    icon: 0 === t ? aR.U6k : aR.rkR,
-                                    size: "small",
-                                    appearance: "tertiary",
-                                    variation: 0 === t ? "neutral" : "destructive",
-                                    onClick: 0 === t ? E : () => L(t)
-                                })]
-                            }, t))
-                        }), (0, l.jsx)(T.$, {
-                            onClick: O,
-                            disabled: !F || x,
-                            children: s("members.add_members.cta")
-                        })]
-                    }), A && (0, l.jsx)(ls, {
-                        header: s(h.length > 1 ? "members.add_members.invite_members_modal.header.invite_multiple" : "members.add_members.invite_members_modal.header.invite_single", {
-                            invitationsAmount: h.length
-                        }),
-                        body: (0, l.jsx)(lp, {
-                            invitationsAmount: h.length,
-                            isLoading: D,
-                            hasFailed: N,
-                            billingPreview: P,
-                            additionalSeatsCount: j
-                        }),
-                        footer: D || N ? void 0 : (0, l.jsx)("div", {
-                            className: lr().footerContainer,
-                            children: (0, l.jsx)("div", {
-                                className: lr().footerInner,
-                                children: (0, l.jsx)("span", {
-                                    className: lr().termsFooter,
-                                    children: (0, l.jsx)(d.x6, {
-                                        i18nKey: "members.add_members.invite_members_modal.footer.agreement_text",
-                                        components: {
-                                            1: (0, l.jsx)("a", {
-                                                href: "/legal/terms",
-                                                target: "blank"
-                                            }),
-                                            4: (0, l.jsx)("a", {
-                                                href: "/legal/manage-cookies",
-                                                target: "blank"
-                                            })
-                                        }
-                                    })
-                                })
-                            })
-                        }),
-                        isOpen: w,
-                        confirmText: s("members.add_members.invite_members_modal.body.btn_confirm"),
-                        onClose: () => g(!1),
-                        isDisabled: D || N || x,
-                        isButtonFullWidth: !0,
-                        onConfirm: () => U(h)
-                    }), b && k && (0, l.jsx)(lg, {
-                        isOpen: b,
-                        onClose: () => c(!1),
-                        onConfirm: () => {
-                            window.open(M, "_blank", "noopener, noreferrer")
-                        },
-                        maxSeatsCount: k
-                    })]
-                })
-            }
-            var ly = t(86775),
-                lf = t(24834),
-                lM = t(27469),
-                lk = t(83552),
-                lv = t(55407),
-                lC = t.n(lv);
-            let lS = {
-                inviteMembersTriggered(e) {
-                    let {
-                        isFullFlow: a
-                    } = e;
-                    return {
-                        kind: "members_page_invite_members_triggered",
-                        info: {
-                            isFullFlow: a
-                        }
-                    }
-                },
-                unlinkDomainTriggered(e) {
-                    let {
-                        domain: a
-                    } = e;
-                    return {
-                        kind: "members_page_unlink_domain_triggered",
-                        info: {
-                            domain: a
-                        }
-                    }
-                },
-                unlinkDomainConfirmed(e) {
-                    let {
-                        domain: a
-                    } = e;
-                    return {
-                        kind: "members_page_unlink_domain_confirmed",
-                        info: {
-                            domain: a
-                        }
-                    }
-                }
-            };
-            var lA = t(83282),
-                lI = t.n(lA);
-
-            function lj(e) {
-                let {
-                    teamId: a,
-                    onDismiss: t,
-                    onDomainUnlinked: n
-                } = e, {
-                    t: s
-                } = (0, d.Bd)(), {
-                    addToast: _
-                } = (0, o.d)(), [r] = (0, aH.SC)(), [m, w] = (0, i.useState)(!1), g = (0, i.useCallback)(async () => {
-                    try {
-                        w(!0), await r({
-                            teamId: a
-                        }).unwrap(), _(s("members.domain.unlink.success")), n()
-                    } catch (e) {
-                        _(s("members.domain.unlink.error"))
-                    } finally {
-                        w(!1)
-                    }
-                }, [r, a, _, s, n]);
-                return (0, l.jsxs)("div", {
-                    className: lI().container,
-                    children: [(0, l.jsx)("span", {
-                        className: lI().title,
-                        children: s("members.domain.unlink.title")
-                    }), (0, l.jsx)("span", {
-                        className: lI().description,
-                        children: s("members.domain.unlink.description")
-                    }), (0, l.jsx)(T.$, {
-                        appearance: "secondary",
-                        variation: "destructive",
-                        onClick: g,
-                        fullwidth: !0,
-                        disabled: m,
-                        children: s("members.domain.unlink.cta_confirm")
-                    }), (0, l.jsx)(T.$, {
-                        appearance: "primary",
-                        onClick: t,
-                        fullwidth: !0,
-                        disabled: m,
-                        children: s("members.domain.unlink.cta_cancel")
-                    })]
-                })
-            }
-
-            function lD(e) {
-                var a;
-                let {
-                    teamId: t,
-                    claimedDomains: s
-                } = e, {
-                    t: _
-                } = (0, d.Bd)(), {
-                    addToast: r
-                } = (0, o.d)(), {
-                    isEnabled: m
-                } = (0, lM.S)(), {
-                    data: w
-                } = (0, aH.E4)(void 0, {
-                    skip: !m
-                }), [g, b] = (0, i.useState)(!1), [c, h] = (0, i.useState)(!1), [x, y] = (0, i.useState)(!1), f = null == (a = (0, n.d4)(p.mB).email) ? void 0 : a.split("@")[1], M = null == s ? void 0 : s[0], k = !!M, v = !!w && !w.claimedBy, C = m && (k || v), S = (0, i.useCallback)(() => {
-                    let e = !k && v;
-                    (0, u.Od)().trackUserAction(lS.inviteMembersTriggered({
-                        isFullFlow: e
-                    })), y(e), b(!0)
-                }, [k, v]), A = (0, i.useCallback)(() => {
-                    (0, u.Od)().trackUserAction(lS.unlinkDomainTriggered({
-                        domain: M || ""
-                    })), h(!0)
-                }, [M]), I = (0, i.useCallback)(() => {
-                    (0, u.Od)().trackUserAction(lS.unlinkDomainConfirmed({
-                        domain: M || ""
-                    })), h(!1)
-                }, [M]);
-                return k || C ? (0, l.jsxs)(l.Fragment, {
-                    children: [(0, l.jsxs)("div", {
-                        className: lC().container,
-                        children: [(0, l.jsx)("span", {
-                            className: lC().title,
-                            children: _("members.domain.title")
-                        }), (0, l.jsx)("span", {
-                            className: lC().description,
-                            children: _(k ? "members.domain.claimed.description" : "members.domain.unclaimed.description", {
-                                domain: null != M ? M : f
-                            })
-                        }), (0, l.jsxs)("div", {
-                            className: lC().buttonContainer,
-                            children: [C && (0, l.jsx)(T.$, {
-                                className: lC().button,
-                                appearance: "primary",
-                                size: "medium",
-                                onClick: S,
-                                children: _(M ? "members.domain.claimed.cta_invite" : "members.domain.unclaimed.cta", {
-                                    domain: null != M ? M : f
-                                })
-                            }), k && (0, l.jsx)(T.$, {
-                                className: lC().button,
-                                appearance: "secondary",
-                                size: "medium",
-                                variation: "destructive",
-                                onClick: A,
-                                children: _("members.domain.claimed.cta_unlink", {
-                                    domain: null != M ? M : f
-                                })
-                            })]
-                        })]
-                    }), (0, l.jsx)(W.a, {
-                        isOpen: g,
-                        showCloseButton: !1,
-                        classes: {
-                            containerClass: lC().inviteDomainMembersModal
-                        },
-                        appElement: (0, R.Y)(),
-                        children: M && !x ? (0, l.jsx)("div", {
-                            className: lC().inviteStepContainer,
-                            children: (0, l.jsx)(ly.o, {
-                                origin: lf.nh.MEMBERS_PAGE,
-                                onProceed: () => b(!1),
-                                onError: () => r(_("invite_domain_members.thank_you_step.error_message_no_invite"))
-                            })
-                        }) : (0, l.jsx)(lk.o, {
-                            onDismiss: () => b(!1),
-                            origin: lf.nh.MEMBERS_PAGE
-                        })
-                    }), (0, l.jsx)(W.a, {
-                        isOpen: c,
-                        showCloseButton: !1,
-                        classes: {
-                            containerClass: lC().unlinkModal
-                        },
-                        appElement: (0, R.Y)(),
-                        children: (0, l.jsx)(lj, {
-                            teamId: t,
-                            onDismiss: () => h(!1),
-                            onDomainUnlinked: I
-                        })
-                    })]
-                }) : null
-            }
-            var lN = t(86261),
-                lP = t.n(lN),
-                lB = t(37509),
-                lT = t.n(lB),
-                lE = t(93953),
-                lL = t.n(lE);
-
-            function lW(e) {
-                let {
-                    invite: {
-                        id: a,
-                        email: t,
-                        updatedAt: s
-                    },
-                    onRevokeInvite: _
-                } = e, r = new Date(s).toLocaleDateString(eU.A.locale, {
-                    dateStyle: "long"
-                }), {
-                    t: m
-                } = (0, d.Bd)(), {
-                    addToast: w
-                } = (0, o.d)(), g = (0, n.d4)(p.eB), [b, c] = (0, i.useState)(!1), [h] = (0, aH.j2)(), [u, x] = (0, i.useState)(!1), y = (0, i.useCallback)(async () => {
-                    if (c(!1), g) try {
-                        await h({
-                            teamId: g,
-                            invites: [t]
-                        }), w(m("members.invites.resend_success"))
-                    } catch (e) {
-                        w(m("members.invites.resend_error"))
-                    }
-                }, [w, t, h, m, g]), f = (0, i.useCallback)(async () => {
-                    c(!1), x(!0)
-                }, []), M = (0, i.useCallback)(async () => {
-                    await _(a), x(!1)
-                }, [a, _]), k = (0, i.useMemo)(() => (0, l.jsxs)(l.Fragment, {
-                    children: [(0, l.jsx)(T.$, {
-                        size: "small",
-                        variation: "neutral",
-                        appearance: "tertiary",
-                        onClick: y,
-                        children: m("members.invites.resend")
-                    }), (0, l.jsx)(T.$, {
-                        size: "small",
-                        variation: "destructive",
-                        appearance: "tertiary",
-                        onClick: f,
-                        children: m("members.invites.revoke")
-                    })]
-                }), [m, y, f]);
-                return (0, l.jsxs)(l.Fragment, {
-                    children: [(0, l.jsxs)("div", {
-                        className: lL().container,
-                        children: [(0, l.jsxs)("div", {
-                            className: lL().emailContainer,
-                            children: [(0, l.jsx)("span", {
-                                className: lL().email,
-                                children: t
-                            }), (0, l.jsx)("span", {
-                                className: lL().date,
-                                children: (0, l.jsx)(d.x6, {
-                                    i18nKey: "members.invites.invited_on",
-                                    values: {
-                                        date: r
-                                    }
-                                })
-                            })]
-                        }), (0, l.jsx)(lb.A, {
-                            content: k,
-                            position: ek.A.isMobile ? "left" : "right",
-                            className: lL().optionsPopover,
-                            isCondensed: !0,
-                            hideArrow: !0,
-                            boundaryInset: 20,
-                            isOpen: b,
-                            callback: c,
-                            children: (0, l.jsx)(aU.K, {
-                                icon: aR.QEg,
-                                appearance: "tertiary",
-                                size: "medium",
-                                variation: "neutral"
-                            })
-                        })]
-                    }), (0, l.jsx)("div", {
-                        className: lL().divider
-                    }), (0, l.jsx)(ls, {
-                        isOpen: u,
-                        header: m("members.invites.revoke_confirmation.header"),
-                        body: (0, l.jsx)(d.x6, {
-                            i18nKey: "members.invites.revoke_confirmation.body",
-                            components: {
-                                email: (0, l.jsx)("span", {
-                                    className: lL().confirmationModalEmail,
-                                    children: t
-                                })
-                            }
-                        }),
-                        confirmText: m("members.invites.revoke_confirmation.confirm"),
-                        isDestructive: !0,
-                        onConfirm: M,
-                        onClose: () => x(!1)
-                    })]
-                })
-            }
-            var lR = t(41982),
-                lU = t(93330),
-                lO = t(40921),
-                lF = t.n(lO);
-
-            function lG(e) {
-                let {
-                    member: {
-                        userId: a,
-                        user: {
-                            givenName: t,
-                            familyName: o,
-                            email: s
-                        },
-                        role: _
-                    },
-                    isOwner: r,
-                    isAdmin: m,
-                    onRoleChange: w,
-                    onRemoveMember: g
-                } = e, {
-                    t: b
-                } = (0, d.Bd)(), c = (0, n.d4)(ev.Lm), [h, u] = (0, i.useState)(!1), [p, x] = (0, i.useState)(!1), y = (0, i.useCallback)(async () => {
-                    u(!1), x(!0)
-                }, []), f = (0, i.useCallback)(async () => {
-                    await g(a), x(!1)
-                }, [a, g]), M = c === a, k = (0, i.useMemo)(() => (0, l.jsx)(T.$, {
-                    size: "small",
-                    variation: "destructive",
-                    appearance: "tertiary",
-                    onClick: y,
-                    disabled: r || M || !m,
-                    children: b("members.list.remove")
-                }), [y, r, M, m, b]);
-                return (0, l.jsxs)(l.Fragment, {
-                    children: [(0, l.jsxs)("div", {
-                        className: lF().container,
-                        children: [(0, l.jsxs)("div", {
-                            className: lF().nameContainer,
-                            children: [(0, l.jsxs)("div", {
-                                className: lF().nameRow,
-                                children: [(0, l.jsx)("span", {
-                                    className: lF().name,
-                                    children: "".concat(t).concat(o ? " ".concat(o) : "")
-                                }), r && (0, l.jsx)(lR.E, {
-                                    appearance: "darken",
-                                    children: b("members.list.owner")
-                                }), !r && M && (0, l.jsx)(lR.E, {
-                                    appearance: "blue-subtle",
-                                    children: b("members.list.you")
-                                })]
-                            }), (0, l.jsx)("span", {
-                                className: lF().email,
-                                children: s
-                            })]
-                        }), (0, l.jsxs)("div", {
-                            className: lF().actionsContainer,
-                            children: [(0, l.jsxs)(lU.z, {
-                                className: lF().permissionLevel,
-                                label: b("members.list.permission_level"),
-                                labelType: "inside",
-                                value: _,
-                                onChange: e => w(e, a),
-                                disabled: !m || M,
-                                children: [(0, l.jsx)(lU.z.Option, {
-                                    value: te.gG.Admin,
-                                    children: b("members.list.role_admin")
-                                }), (0, l.jsx)(lU.z.Option, {
-                                    value: te.gG.Member,
-                                    children: b("members.list.role_member")
-                                })]
-                            }), (0, l.jsx)(lb.A, {
-                                content: k,
-                                position: ek.A.isMobile ? "left" : "right",
-                                className: lF().optionsPopover,
-                                isCondensed: !0,
-                                hideArrow: !0,
-                                boundaryInset: 20,
-                                isOpen: h,
-                                callback: u,
-                                children: (0, l.jsx)(aU.K, {
-                                    icon: aR.QEg,
-                                    appearance: "tertiary",
-                                    size: "medium",
-                                    variation: "neutral"
-                                })
-                            })]
-                        })]
-                    }), (0, l.jsx)("div", {
-                        className: lF().divider
-                    }), (0, l.jsx)(ls, {
-                        isOpen: p,
-                        header: b("members.list.remove_confirmation.header"),
-                        body: (0, l.jsx)(d.x6, {
-                            i18nKey: "members.list.remove_confirmation.body",
-                            components: {
-                                email: (0, l.jsx)("span", {
-                                    className: lF().confirmationModalEmail,
-                                    children: s
-                                })
-                            }
-                        }),
-                        confirmText: b("members.list.remove_confirmation.confirm"),
-                        isDestructive: !0,
-                        onConfirm: f,
-                        onClose: () => x(!1)
-                    })]
-                })
-            }
-
-            function lH(e) {
-                let {
-                    membersState: [a, t],
-                    invitesState: [s, _],
-                    workspaceCreatorId: r,
-                    isAdmin: m,
-                    isEnterpriseCustomContract: w
-                } = e, {
-                    t: g
-                } = (0, d.Bd)(), {
-                    addToast: b
-                } = (0, o.d)(), c = (0, n.d4)(p.eB), [h] = (0, aH.D_)(), [u] = (0, aH.oF)(), [x] = (0, aH.I7)(), {
-                    currentSeats: y,
-                    seatsInUse: f
-                } = (0, lt.K)(), M = (0, n.wA)(), k = (0, i.useCallback)(async (e, a) => {
-                    if (!c) return;
-                    let l = await h({
-                        teamId: c,
-                        userId: a,
-                        role: e
-                    }).unwrap();
-                    l && t(e => e.map(e => e.userId === l.userId ? l : e))
-                }, [c, h, t]), v = (0, i.useCallback)(async e => {
-                    if (c) try {
-                        let a = await u({
-                            teamId: c,
-                            inviteId: e
-                        });
-                        "error" in a ? b(g("members.invites.revoke_error")) : (b(g("members.invites.revoke_success")), _(a => a.filter(a => a.id !== e)), M(eO.A.User.getUser()))
-                    } catch (e) {
-                        b(g("members.invites.revoke_error"))
-                    }
-                }, [b, M, u, _, g, c]), C = (0, i.useCallback)(async e => {
-                    if (c) try {
-                        let a = await x({
-                            teamId: c,
-                            userId: e
-                        });
-                        if ("error" in a) return void b(g("members.list.free_seat_error"));
-                        M(eO.A.User.getUser()), b(g("members.list.remove_success"))
-                    } catch (e) {
-                        b(g("members.list.remove_unexpected_error"))
-                    }
-                }, [c, x, b, g, M]), S = (0, i.useMemo)(() => Math.max(y - f, 0), [y, f]), A = (0, i.useMemo)(() => y === f ? (0, l.jsx)("span", {
-                    className: lT().heading,
-                    dangerouslySetInnerHTML: {
-                        __html: g("members.list.seats_management_description.no_seats_available", {
-                            memberQuantity: f,
-                            seatsQuantity: y,
-                            href: "/workspace/payment"
-                        })
-                    }
-                }) : (0, l.jsx)("span", {
-                    className: lT().heading,
-                    dangerouslySetInnerHTML: {
-                        __html: g("members.list.seats_management_description.available_seats", {
-                            memberQuantity: f,
-                            seatsQuantity: y,
-                            seatsLeft: S
-                        })
-                    }
-                }), [y, f, S, g]);
-                return (0, l.jsxs)("div", {
-                    className: lT().container,
-                    children: [m && !w ? A : (0, l.jsx)("span", {
-                        className: lT().heading,
-                        children: (0, l.jsx)(d.x6, {
-                            i18nKey: "members.list.heading",
-                            components: {
-                                count: (0, l.jsx)("span", {
-                                    className: lT().memberCount,
-                                    children: a.length
-                                })
-                            }
-                        })
-                    }), a.map(e => (0, l.jsx)(lG, {
-                        member: e,
-                        isOwner: e.userId === r,
-                        isAdmin: m,
-                        onRoleChange: k,
-                        onRemoveMember: C
-                    }, e.userId)), s.map(e => (0, l.jsx)(lW, {
-                        invite: e,
-                        onRevokeInvite: v
-                    }, e.id))]
-                })
-            }
-
-            function lK() {
-                let {
-                    t: e
-                } = (0, d.Bd)(), {
-                    addToast: a
-                } = (0, o.d)(), {
-                    currentTeam: t
-                } = (0, eM.o)(), s = null == t ? void 0 : t.id, _ = (0, n.d4)(ev.Lm), {
-                    data: r
-                } = (0, aH.Vl)({
-                    teamId: s
-                }, {
-                    skip: !s
-                }), [m, w] = (0, i.useState)([]), [g, b] = (0, i.useState)([]), [c, h] = (0, i.useState)(!1), u = (0, au.z)();
-                (0, i.useEffect)(() => {
-                    w((null == r ? void 0 : r.members) || []), b((null == r ? void 0 : r.invites) || [])
-                }, [r]);
-                let x = (0, i.useMemo)(() => m.find(e => e.userId === _), [m, _]),
-                    y = (null == x ? void 0 : x.role) === te.gG.Admin,
-                    f = (0, n.d4)(p.mB),
-                    k = (0, ef.ch)(f),
-                    v = !s || !x || c,
-                    C = (0, le.LT)().get(la.INVITE_ACCEPTED);
-                (0, i.useEffect)(() => {
-                    r && C && (r.id === C ? (a(e("join_workspace.invite_accepted", {
-                        workspaceName: r.name
-                    })), window.history.replaceState({}, document.title, tp.kH.route)) : (0, t9.aC)(C))
-                }, [C, a, e, t, r]);
-                let S = (0, i.useCallback)(e => m.some(a => {
-                    var t;
-                    return (null == (t = a.user.email) ? void 0 : t.toLowerCase()) === e.toLowerCase()
-                }) || g.some(a => {
-                    var t;
-                    return (null == (t = a.email) ? void 0 : t.toLowerCase()) === e.toLowerCase()
-                }), [m, g]);
-                return v ? (0, l.jsx)(th.r, {}) : (0, l.jsxs)("div", {
-                    children: [(0, l.jsx)(ax(), {
-                        children: (0, l.jsx)("title", {
-                            children: e("members.title")
-                        })
-                    }), (0, l.jsx)(M.a, {
-                        showWorkspaceName: !0,
-                        panelName: e("members.title")
-                    }), u ? (0, l.jsxs)(l.Fragment, {
-                        children: [y ? (0, l.jsx)(lx, {
-                            isAlreadyInWorkspace: S,
-                            setIsProcessingInviteRequest: h
-                        }) : (0, l.jsxs)("div", {
-                            className: lP().addMembersCallout,
-                            children: [(0, l.jsx)("span", {
-                                className: lP().addMembersCalloutTitle,
-                                children: e("members.add_members_callout.title")
-                            }), (0, l.jsx)("span", {
-                                className: lP().addMembersCalloutMessage,
-                                children: e("members.add_members_callout.message")
-                            })]
-                        }), y && !k && (0, l.jsx)(lD, {
-                            teamId: s,
-                            claimedDomains: null == r ? void 0 : r.emailDomains
-                        }), (0, l.jsx)(lH, {
-                            membersState: [m, w],
-                            invitesState: [g, b],
-                            workspaceCreatorId: null == r ? void 0 : r.creatorId,
-                            isAdmin: y,
-                            isEnterpriseCustomContract: k
-                        })]
-                    }) : (0, l.jsx)(t8, {})]
-                })
-            }
-            var lz = t(98062),
-                lY = t(15298),
-                lV = t(52505),
-                lX = t(61149),
-                lQ = t(93367),
-                lq = t(68926),
-                lZ = t.n(lq),
-                lJ = t(52387);
-            let l$ = () => {
-                var e, a, t, o, s, _, m, w, g, b, c, h, u, p;
-                let {
-                    t: x
-                } = (0, d.Bd)(), y = (0, n.wA)(), {
-                    currentTeam: f
-                } = (0, eM.o)(), [M, k] = (0, i.useState)(void 0), v = (0, i.useMemo)(() => (0, lQ.CN)(M), [M]), C = (0, i.useMemo)(() => (0, lQ.mB)(M), [M]), S = (0, i.useMemo)(() => M && lX.g7.has(M), [M]), {
-                    data: A
-                } = (0, aH.rz)({
-                    teamId: null == f ? void 0 : f.id
-                }, {
-                    skip: !(null == f ? void 0 : f.id)
-                }), {
-                    form: I,
-                    isLoading: j
-                } = (e => {
-                    var a, t, l, i, n, o, s;
-                    let {
-                        selectedCountryCode: _
-                    } = e, {
-                        t: r
-                    } = (0, d.Bd)(), {
-                        currentTeam: m
-                    } = (0, eM.o)(), {
-                        data: w
-                    } = (0, aH.rz)({
-                        teamId: null == m ? void 0 : m.id
-                    }, {
-                        skip: !(null == m ? void 0 : m.id)
-                    });
-                    return {
-                        form: (0, eL.s)({
-                            defaultValues: {
-                                address: null != (a = null == w ? void 0 : w.address) ? a : "",
-                                businessName: null != (t = null == w ? void 0 : w.businessName) ? t : "",
-                                city: null != (l = null == w ? void 0 : w.city) ? l : "",
-                                countryCode: null != (i = null == w ? void 0 : w.countryCode) ? i : "",
-                                postalCode: null != (n = null == w ? void 0 : w.postalCode) ? n : "",
-                                stateCode: null != (o = null == w ? void 0 : w.stateCode) ? o : "",
-                                taxNumber: null != (s = null == w ? void 0 : w.taxNumber) ? s : ""
-                            },
-                            schema: (0, eT.Ik)({
-                                businessName: (0, eT.Yj)().max(50).required(r("checkout.payment.form.business-name-input.required")),
-                                address: (0, eT.Yj)().max(100).required(r("checkout.payment.form.street-and-number-input.required")),
-                                city: (0, eT.Yj)().max(100).required(r("checkout.payment.form.city-input.required")),
-                                countryCode: (0, eT.Yj)().required(r("checkout.payment.form.country-select.required")),
-                                postalCode: (0, eT.Yj)().max(10).when("countryCode", {
-                                    is: e => (0, lJ.n)(e),
-                                    then: e => e.required(r("checkout.payment.form.zip-code-input.required")).test("zip code", e => (0, lJ.b)(e, _, r("checkout.payment.form.zip-code-input.invalid"), "postalCode"))
-                                }),
-                                stateCode: (0, eT.Yj)().when("countryCode", {
-                                    is: e => lX.g7.has(e),
-                                    then: e => e.required(r("checkout.payment.form.state-select.required"))
-                                }),
-                                taxNumber: (0, eT.Yj)().optional().when("countryCode", {
-                                    is: e => (0, lQ.CN)(e),
-                                    then: e => e.transform(e => (0, lQ.XA)(e)).test("vat prefix", e => _ ? !e || (0, lQ.AY)(e, _, r("checkout.payment.form.error.missing-vat-prefix", {
-                                        prefix: lX.fP[_]
-                                    })) : new eT.yI(r("checkout.payment.form.error.unknown"), e, "root"))
-                                })
-                            }),
-                            reValidateMode: "onBlur"
-                        }),
-                        isLoading: !(null == m ? void 0 : m.id)
-                    }
-                })({
-                    selectedCountryCode: M
-                });
-                (0, i.useEffect)(() => {
-                    M !== I.getValues("countryCode") && k(I.getValues("countryCode"))
-                }, [I, I.formState, M]);
-                let [D] = (0, aH.Dn)(), N = I.handleSubmit(async e => {
-                    try {
-                        var a;
-                        await D({
-                            teamId: null == f ? void 0 : f.id,
-                            payload: {
-                                address: e.address,
-                                businessName: e.businessName,
-                                city: e.city,
-                                countryCode: e.countryCode,
-                                postalCode: (null == (a = e.postalCode) ? void 0 : a.trim()) || void 0,
-                                stateCode: S ? e.stateCode : void 0,
-                                taxNumber: v ? e.taxNumber : void 0
-                            }
-                        }).unwrap(), y(eq.P9.setPanelNotification({
-                            category: eq.aF.Notification,
-                            details: "update_account"
-                        }))
-                    } catch (e) {
-                        y(eq.P9.setPanelNotification({
-                            category: eq.aF.Error,
-                            details: x("account.billing-details.error")
-                        }))
-                    }
-                });
-                return j ? (0, l.jsx)(th.r, {}) : (0, l.jsxs)("form", {
-                    onSubmit: N,
-                    children: [(0, l.jsxs)("div", {
-                        className: r()(lZ().metaInputs),
-                        children: [(0, l.jsxs)("div", {
-                            className: r()(lZ().row),
-                            children: [(0, l.jsx)("div", {
-                                children: (0, l.jsx)(es.A, {
-                                    ...I.register("postalCode"),
-                                    value: null != (w = I.watch("postalCode")) ? w : "",
-                                    type: "text",
-                                    labelType: "inside",
-                                    label: x("checkout.payment.form.zip-code-input.placeholder"),
-                                    maxLength: 20,
-                                    id: "postalCode",
-                                    state: I.formState.errors.postalCode ? "invalid" : void 0,
-                                    caption: null == (e = I.formState.errors.postalCode) ? void 0 : e.message
-                                })
-                            }), S && (0, l.jsx)("div", {
-                                children: (0, l.jsx)(lU.z, {
-                                    ...I.register("stateCode"),
-                                    value: null != (g = I.watch("stateCode")) ? g : "",
-                                    labelType: "inside",
-                                    label: x("checkout.payment.form.state-select.placeholder"),
-                                    onChange: e => {
-                                        I.setValue("stateCode", e)
-                                    },
-                                    state: I.formState.errors.stateCode ? "invalid" : void 0,
-                                    caption: null == (a = I.formState.errors.stateCode) ? void 0 : a.message,
-                                    children: (0, lV.Kn)(M, !0)
-                                })
-                            }), (0, l.jsx)("div", {
-                                children: (0, l.jsx)(lU.z, {
-                                    ...I.register("countryCode"),
-                                    value: null != (b = I.watch("countryCode")) ? b : "",
-                                    labelType: "inside",
-                                    label: x("checkout.payment.form.country-select.placeholder"),
-                                    onChange: e => {
-                                        k(e), I.setValue("stateCode", void 0), I.setValue("countryCode", e)
-                                    },
-                                    disabled: !(null == A ? void 0 : A.canChangeCountryAndCurrency),
-                                    state: I.formState.errors.countryCode ? "invalid" : void 0,
-                                    caption: null == (t = I.formState.errors.countryCode) ? void 0 : t.message,
-                                    children: (0, lV.b8)(!0)
-                                })
-                            })]
-                        }), (0, l.jsxs)("div", {
-                            role: "group",
-                            "aria-label": x("checkout.payment.form.business-group.aria-label"),
-                            className: r()(lZ().metaInputs),
-                            children: [(0, l.jsx)("div", {
-                                children: (0, l.jsx)(es.A, {
-                                    ...I.register("address"),
-                                    value: null != (c = I.watch("address")) ? c : "",
-                                    type: "text",
-                                    labelType: "inside",
-                                    label: x("checkout.payment.form.street-and-number-input.placeholder"),
-                                    maxLength: 50,
-                                    id: "address",
-                                    state: I.formState.errors.address ? "invalid" : void 0,
-                                    caption: null == (o = I.formState.errors.address) ? void 0 : o.message
-                                })
-                            }), (0, l.jsx)("div", {
-                                children: (0, l.jsx)(es.A, {
-                                    ...I.register("city"),
-                                    value: null != (h = I.watch("city")) ? h : "",
-                                    type: "text",
-                                    labelType: "inside",
-                                    label: x("checkout.payment.form.city-input.placeholder"),
-                                    maxLength: 50,
-                                    id: "city",
-                                    state: I.formState.errors.city ? "invalid" : void 0,
-                                    caption: null == (s = I.formState.errors.city) ? void 0 : s.message
-                                })
-                            }), (0, l.jsx)("div", {
-                                children: (0, l.jsx)(es.A, {
-                                    ...I.register("businessName"),
-                                    value: null != (u = I.watch("businessName")) ? u : "",
-                                    type: "text",
-                                    labelType: "inside",
-                                    label: x("checkout.payment.form.company-name-input.placeholder"),
-                                    maxLength: 50,
-                                    id: "companyName",
-                                    state: I.formState.errors.businessName ? "invalid" : void 0,
-                                    caption: null == (_ = I.formState.errors.businessName) ? void 0 : _.message
-                                })
-                            }), v && (0, l.jsx)("div", {
-                                children: (0, l.jsx)(es.A, {
-                                    ...I.register("taxNumber"),
-                                    value: null != (p = I.watch("taxNumber")) ? p : "",
-                                    type: "text",
-                                    caption: C && !I.formState.errors.taxNumber ? x("checkout.payment.form.vat-number-input.help", {
-                                        prefix: C
-                                    }) : I.formState.errors.taxNumber ? I.formState.errors.taxNumber.message : void 0,
-                                    labelType: "inside",
-                                    label: x("checkout.payment.form.vat-number-input.placeholder"),
-                                    maxLength: 20,
-                                    trailingElement: (0, l.jsx)(lY.m, {
-                                        position: "right",
-                                        mode: "dark",
-                                        className: lZ().tooltip,
-                                        getBoundaryElement: () => document.body,
-                                        content: x("checkout.payment.form.vat-input.tooltip"),
-                                        children: (0, l.jsx)(aR.cFx, {
-                                            tabIndex: 0,
-                                            "aria-label": x("checkout.payment.form.vat-input.tooltip-toggle"),
-                                            className: lZ().tooltipToggle,
-                                            "data-text": x("checkout.payment.form.vat-input.tooltip")
-                                        })
-                                    }),
-                                    id: "taxNumber",
-                                    state: (null == (m = I.formState.errors.taxNumber) ? void 0 : m.message) ? "invalid" : void 0
-                                })
-                            })]
-                        })]
-                    }), (0, l.jsx)("div", {
-                        className: lZ().submitButtonContainer,
-                        children: (0, l.jsx)(T.$, {
-                            type: "submit",
-                            className: lZ().submitButton,
-                            onClick: N,
-                            children: x("account.billing-details.save")
-                        })
-                    })]
-                })
-            };
-            var l0 = t(3807),
-                l1 = t.n(l0);
-
-            function l2(e) {
-                let {
-                    invoice: a
-                } = e, {
-                    currentTeam: t
-                } = (0, eM.o)(), [i] = (0, aH.g6)(), d = eU.A.t("number.currency." + a.currency.toUpperCase()), n = eU.A.number(a.total, {
-                    precision: 2
-                }), o = eU.A.date(new Date(a.created), "without_day"), s = new Date(a.startedAt), _ = new Date(a.endedAt), r = s.getFullYear(), m = _.getFullYear(), w = async () => {
-                    if ("stripe" === a.externalProvider) window.open(a.hostedInvoiceUrl, "_blank");
-                    else try {
-                        let e = await i({
-                                teamId: t.id,
-                                invoiceId: a.id
-                            }).unwrap(),
-                            l = new Blob([e], {
-                                type: "application/pdf"
-                            }),
-                            d = window.URL.createObjectURL(l),
-                            n = document.createElement("a");
-                        n.href = d, n.download = "invoice-".concat(a.id, ".pdf"), document.body.appendChild(n), n.click(), document.body.removeChild(n), window.URL.revokeObjectURL(d)
-                    } catch (e) {}
-                }, g = "".concat(eU.A.t("page.accountinfo.paid_on"), " ").concat(o, "・").concat(d).concat(n), b = "".concat(eU.A.t("date.month_names." + (s.getMonth() + 1)), " ").concat(r), c = "".concat(eU.A.t("date.month_names." + (_.getMonth() + 1)), " ").concat(m);
-                return (0, l.jsxs)("li", {
-                    className: l1().invoiceItem,
-                    children: [(0, l.jsxs)("div", {
-                        children: [(0, l.jsx)("div", {
-                            className: l1().title,
-                            children: "".concat(c, " - ").concat(b)
-                        }), (0, l.jsx)("div", {
-                            className: l1().details,
-                            children: g
-                        })]
-                    }), (0, l.jsx)(aU.K, {
-                        icon: aR.cIW,
-                        size: "x-small",
-                        appearance: "secondary",
-                        className: l1().downloadButton,
-                        onClick: w,
-                        children: eU.A.t("page.payment.download_invoice")
-                    })]
-                })
-            }
-            let l4 = () => {
-                let {
-                    currentTeam: e
-                } = (0, eM.o)(), a = null == e ? void 0 : e.id, {
-                    data: t,
-                    isLoading: i
-                } = (0, aH.Oo)({
-                    teamId: a
-                }, {
-                    skip: !a
-                });
-                return i ? (0, l.jsx)(th.A, {}) : t && 0 !== t.length ? (0, l.jsx)("ul", {
-                    className: "invoice",
-                    children: t.map(e => (0, l.jsx)(l2, {
-                        invoice: e
-                    }, e.id))
-                }) : (0, l.jsx)("div", {
-                    className: "invoice__no-receipts",
-                    children: (0, l.jsx)("p", {
-                        children: eU.A.t("page.accountinfo.no_invoices")
-                    })
-                })
-            };
-            var l3 = t(95345),
-                l6 = t.n(l3);
-            let l5 = e => {
-                let {
-                    invoices: a,
-                    isLoading: t
-                } = e, {
-                    t: i
-                } = (0, d.Bd)();
-                return t ? (0, l.jsx)(th.r, {}) : a.length < 1 ? null : (0, l.jsxs)("div", {
-                    className: l6().container,
-                    children: [(0, l.jsxs)("div", {
-                        className: l6().header,
-                        children: [(0, l.jsx)("h5", {
-                            children: i("page.account_payment.unpaid_invoices.heading")
-                        }), (0, l.jsx)("p", {
-                            children: i("page.account_payment.unpaid_invoices.subheading")
-                        })]
-                    }), (0, l.jsx)("div", {
-                        className: l6().invoices,
-                        children: a.map(e => {
-                            let {
-                                id: a,
-                                created: t,
-                                currency: d,
-                                amountDue: n
-                            } = e, o = new Date(t), s = eU.A.t("date.month_names." + (o.getMonth() + 1)) + " " + o.getFullYear(), _ = i("page.account_payment.unpaid_invoices.item.issued_on"), r = eU.A.date(new Date(t), "without_day"), m = eU.A.t("number.currency." + d.toUpperCase()), w = eU.A.number(n, {
-                                precision: 2
-                            }), g = "".concat(_, " ").concat(r, "・").concat(m, " ").concat(w);
-                            return (0, l.jsxs)("div", {
-                                className: l6().invoiceItem,
-                                children: [(0, l.jsxs)("div", {
-                                    className: l6().invoiceItemRow,
-                                    children: [(0, l.jsx)("span", {
-                                        className: l6().invoiceItemHeader,
-                                        children: s
-                                    }), (0, l.jsx)("a", {
-                                        className: l6().invoiceItemLink,
-                                        href: tp.l9.route,
-                                        children: i("page.account_payment.unpaid_invoices.item.pay_invoice")
-                                    })]
-                                }), (0, l.jsx)("span", {
-                                    className: l6().invoiceItemInfo,
-                                    children: g
-                                })]
-                            }, a)
-                        })
-                    })]
-                })
-            };
-            var l7 = t(39602),
-                l8 = t.n(l7),
-                l9 = t(91384),
-                ie = t(91053),
-                ia = t(91632),
-                it = t(57222),
-                il = t(58524),
-                ii = t(97875),
-                id = t(98851),
-                io = t(69361),
-                is = t(5852),
-                i_ = t(33615),
-                ir = t(99823);
-            let im = {
-                src: "/_next/static/media/visual.75b19c03.png",
-                height: 2192,
-                width: 1520,
-                blurDataURL: "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAYAAAAICAMAAADtGH4KAAAALVBMVEXi7P/d5vrf6f61wNDX4PKnssPZ5PjH1vtVa5lic3ahuu2Jo/C90N6Mpe+NpNG5J773AAAACXBIWXMAACxLAAAsSwGlPZapAAAAMElEQVR4nBXKSRIAIAgEsWYAd/3/cy1yDgIkrGUC7nOehq0xXqB+dwciPWqZSZWRPhWxALl91kpRAAAAAElFTkSuQmCC",
-                blurWidth: 6,
-                blurHeight: 8
-            };
-            var iw = t(33890),
-                ig = t.n(iw);
-
-            function ib(e) {
-                var a, t;
-                let {
-                    isVisible: o,
-                    onDismiss: s
-                } = e, {
-                    t: _
-                } = (0, d.Bd)("translation", {
-                    keyPrefix: "page.manage_plan.cancel.compliance.offer"
-                }), m = (0, n.wA)(), w = (0, n.d4)(p.mB), g = (0, ii.G)(), {
-                    currentTeam: b
-                } = (0, eM.o)(), {
-                    subscription: c
-                } = (0, a8.f)(), h = (0, l9.d)(), x = (0, ah.l)(), y = _((null == c ? void 0 : c.interval) === a7.YF.month ? "billing.monthly" : (null == c ? void 0 : c.interval) === a7.YF.week ? "billing.weekly" : "billing.yearly"), f = is.Q.discount, M = (null == c ? void 0 : c.endsAt) ? eU.A.date(new Date(null == c ? void 0 : c.endsAt), "without_day") : "", k = (0, ey.Is)(w.planTier), v = e => {
-                    var a;
-                    return (0, id.W)({
-                        amount: e,
-                        currency: null != (a = null == c ? void 0 : c.currency) ? a : lX.Sj.EUR,
-                        locale: g
-                    })
-                }, C = (null != (a = null == c ? void 0 : c.totalCents) ? a : 0) / 100, S = (null != (t = null == c ? void 0 : c.totalCentsBeforeTaxesAndDiscounts) ? t : 0) / 100 * (1 - f / 100), A = v(C), I = v(C - S), j = v(S);
-                (0, i.useEffect)(() => {
-                    o && ((0, u.Od)().trackUserAction(ia.$.goodbyeOfferModalDisplayed()), m(eO.A.Account.setCanSeeGoodbyeOffer(!1)))
-                }, [o]);
-                let D = (0, i.useCallback)(() => {
-                        (0, u.Od)().trackUserAction(ia.$.goodbyeOfferModalDismissed()), s()
-                    }, [s]),
-                    N = (0, i.useCallback)(async () => {
-                        (0, u.Od)().trackUserAction(ir.f.getDiscountButtonClicked()), (null == b ? void 0 : b.id) && (m((0, eZ.m$)("getCouponData")), await x(), await h(is.Q.code), (0, u.Od)().trackUserAction(it.C.subscriptionReactivated({
-                            tier: w.planTier,
-                            trigger: il.P.GOODBYE_OFFER_MODAL
-                        })), (0, u.Od)().trackUserAction(ie.X.userConverted({
-                            subscriptionTier: w.planTier,
-                            billingPeriod: (0, ey.m4)(null == c ? void 0 : c.interval),
-                            paywallType: io.pU.CTA,
-                            paywallTrigger: io.vW.MANAGE_PLAN_CANCELLATION_DISCOUNT
-                        })), (0, i_.Ho)(), s())
-                    }, [null == b ? void 0 : b.id, m, x, h, w.planTier, null == c ? void 0 : c.interval, s]);
-                return (0, l.jsx)(W.a, {
-                    isOpen: o,
-                    onClose: D,
-                    classes: {
-                        containerClass: ig().modal
-                    },
-                    appElement: (0, R.Y)(),
-                    children: (0, l.jsxs)("div", {
-                        className: ig().modalContent,
-                        children: [(0, l.jsx)("div", {
-                            className: ig().imageContainer,
-                            children: (0, l.jsx)(l8(), {
-                                src: im,
-                                alt: "",
-                                fill: !0,
-                                sizes: "50vw",
-                                style: {
-                                    objectFit: "cover"
-                                }
-                            })
-                        }), (0, l.jsxs)("div", {
-                            className: ig().content,
-                            children: [(0, l.jsx)(aR.$Td, {
-                                "aria-hidden": !0,
-                                className: ig().closeButton,
-                                onClick: D
-                            }), (0, l.jsx)("div", {
-                                className: ig().title,
-                                children: _("title")
-                            }), (0, l.jsxs)("div", {
-                                className: ig().details,
-                                children: [(0, l.jsx)("div", {
-                                    className: ig().description,
-                                    children: _("description", {
-                                        discount: f
-                                    })
-                                }), (0, l.jsxs)("div", {
-                                    className: ig().pricing,
-                                    children: [(0, l.jsxs)("div", {
-                                        className: ig().pricingItem,
-                                        children: [(0, l.jsx)("div", {
-                                            className: ig().pricingItemLabel,
-                                            children: _("pricing.monthly", {
-                                                billing_period: y,
-                                                plan_tier: k
-                                            })
-                                        }), (0, l.jsx)("div", {
-                                            className: ig().pricingItemValue,
-                                            children: A
-                                        })]
-                                    }), (0, l.jsxs)("div", {
-                                        className: r()(ig().pricingItem, ig().discount),
-                                        children: [(0, l.jsx)("div", {
-                                            className: ig().pricingItemLabel,
-                                            children: _("pricing.discount", {
-                                                discount: is.Q.discount
-                                            })
-                                        }), (0, l.jsx)("div", {
-                                            className: ig().pricingItemValue,
-                                            children: "- ".concat(I)
-                                        })]
-                                    }), (0, l.jsx)("div", {
-                                        className: ig().divider
-                                    }), (0, l.jsxs)("div", {
-                                        className: ig().pricingItem,
-                                        children: [(0, l.jsx)("div", {
-                                            className: ig().pricingItemLabel,
-                                            children: _("pricing.new_price", {
-                                                date: M
-                                            })
-                                        }), (0, l.jsx)("div", {
-                                            className: ig().pricingItemValue,
-                                            children: j
-                                        })]
-                                    })]
-                                }), (0, l.jsx)("div", {
-                                    className: ig().savingsBanner,
-                                    children: _("savings", {
-                                        amount: I,
-                                        plan_tier: k
-                                    })
-                                })]
-                            }), (0, l.jsxs)("div", {
-                                className: ig().footer,
-                                children: [(0, l.jsx)(T.$, {
-                                    fullwidth: !0,
-                                    size: "medium",
-                                    appearance: "primary",
-                                    onClick: N,
-                                    children: _("footer.button")
-                                }), (0, l.jsx)("div", {
-                                    className: ig().renewalDate,
-                                    children: _("footer.renewal_date", {
-                                        date: M
-                                    })
-                                })]
-                            })]
-                        })]
-                    })
-                })
-            }
-            var ic = t(55699),
-                ih = t.n(ic),
-                iu = t(30550),
-                ip = t(90998),
-                ix = t(52698),
-                iy = t.n(ix);
-            let iM = e => {
-                    let {
-                        isDefault: a,
-                        handleDelete: t,
-                        handleMakeDefault: i,
-                        isExpired: n
-                    } = e, {
-                        t: o
-                    } = (0, d.Bd)();
-                    return a ? (0, l.jsx)("div", {
-                        className: iy().badgeWrapper,
-                        children: (0, l.jsx)(lR.E, {
-                            appearance: "blue-subtle",
-                            className: iy().defaultBadge,
-                            children: o("page.payment.manage.actions.default")
-                        })
-                    }) : (0, l.jsxs)("div", {
-                        className: iy().actions,
-                        children: [(0, l.jsx)(T.$, {
-                            type: "button",
-                            disabled: n,
-                            appearance: "tertiary",
-                            size: "small",
-                            onClick: i,
-                            className: iy().actionButton,
-                            children: o("page.payment.manage.actions.make_default")
-                        }), (0, l.jsx)(T.$, {
-                            type: "button",
-                            appearance: "tertiary",
-                            variation: "destructive",
-                            size: "small",
-                            onClick: t,
-                            className: iy().actionButton,
-                            children: o("page.payment.manage.actions.delete")
-                        })]
-                    })
-                },
-                ik = e => {
-                    let {
-                        expiryMonth: a,
-                        expiryYear: t,
-                        isExpired: i
-                    } = e, {
-                        t: n
-                    } = (0, d.Bd)();
-                    return i ? (0, l.jsx)(lR.E, {
-                        appearance: "red",
-                        size: "small",
-                        children: n("page.payment.manage.actions.expired")
-                    }) : (0, l.jsx)("span", {
-                        children: n("page.payment.manage.card.expiration", {
-                            month: a,
-                            year: t
-                        })
-                    })
-                },
-                iv = e => {
-                    let {
-                        paymentMethod: a,
-                        handleDelete: t,
-                        handleMakeDefault: i
-                    } = e, d = !!a.cardExpiryMonth && !!a.cardExpiryYear && (0, ip.ov)(a.cardExpiryMonth, a.cardExpiryYear);
-                    return (0, l.jsxs)("li", {
-                        className: iy().wrapper,
-                        children: [(0, l.jsxs)("div", {
-                            className: iy().header,
-                            children: [(0, l.jsx)(iu.$, {
-                                className: iy().icon,
-                                type: a.type,
-                                brand: a.cardBrand
-                            }), (0, l.jsxs)("div", {
-                                className: iy().paymentMethodInfo,
-                                children: [(0, l.jsxs)("div", {
-                                    className: iy().paymentMethodType,
-                                    children: [(0, l.jsx)("span", {
-                                        children: a.cardBrand
-                                    }), a.cardExpiryMonth && a.cardExpiryYear && (0, l.jsx)("div", {
-                                        children: (0, l.jsx)(ik, {
-                                            isExpired: d,
-                                            expiryMonth: a.cardExpiryMonth,
-                                            expiryYear: a.cardExpiryYear
-                                        })
-                                    })]
-                                }), (0, l.jsxs)("span", {
-                                    className: iy().paymentMethodNumber,
-                                    children: ["•••• •••• •••• ", a.last4]
-                                })]
-                            })]
-                        }), (0, l.jsx)(iM, {
-                            isDefault: a.isDefault,
-                            isExpired: d,
-                            handleDelete: t,
-                            handleMakeDefault: i
-                        })]
-                    })
-                },
-                iC = e => {
-                    let {
-                        paymentMethod: a,
-                        handleDelete: t,
-                        handleMakeDefault: i
-                    } = e, {
-                        t: n
-                    } = (0, d.Bd)();
-                    return (0, l.jsxs)("li", {
-                        className: iy().wrapper,
-                        children: [(0, l.jsxs)("div", {
-                            className: iy().header,
-                            children: [(0, l.jsx)(iu.$, {
-                                className: iy().icon,
-                                type: a.type
-                            }), (0, l.jsxs)("div", {
-                                className: iy().paymentMethodInfo,
-                                children: [(0, l.jsx)("span", {
-                                    className: iy().paymentMethodType,
-                                    children: n("page.payment.manage.ideal.type")
-                                }), (0, l.jsxs)("span", {
-                                    className: iy().paymentMethodNumber,
-                                    children: ["•••• ", a.last4]
-                                })]
-                            })]
-                        }), (0, l.jsx)(iM, {
-                            isDefault: a.isDefault,
-                            handleDelete: t,
-                            handleMakeDefault: i
-                        })]
-                    })
-                },
-                iS = e => {
-                    let {
-                        paymentMethod: a,
-                        handleDelete: t,
-                        handleMakeDefault: i
-                    } = e, {
-                        t: n
-                    } = (0, d.Bd)();
-                    return (0, l.jsxs)("li", {
-                        className: iy().wrapper,
-                        children: [(0, l.jsxs)("div", {
-                            className: iy().header,
-                            children: [(0, l.jsx)(iu.$, {
-                                className: iy().icon,
-                                type: a.type
-                            }), (0, l.jsx)("div", {
-                                className: iy().paymentMethodInfo,
-                                children: (0, l.jsx)("span", {
-                                    className: iy().paymentMethodType,
-                                    children: n("page.payment.manage.paypal.type")
-                                })
-                            })]
-                        }), (0, l.jsx)(iM, {
-                            isDefault: a.isDefault,
-                            handleDelete: t,
-                            handleMakeDefault: i
-                        })]
-                    })
-                },
-                iA = e => {
-                    let {
-                        paymentMethod: a,
-                        handleDelete: t,
-                        handleMakeDefault: i
-                    } = e;
-                    return (0, l.jsxs)("li", {
-                        className: iy().wrapper,
-                        children: [(0, l.jsxs)("div", {
-                            className: iy().header,
-                            children: [(0, l.jsx)(iu.$, {
-                                className: iy().icon,
-                                type: a.type
-                            }), (0, l.jsxs)("div", {
-                                className: iy().paymentMethodInfo,
-                                children: [(0, l.jsx)("span", {
-                                    className: iy().paymentMethodType,
-                                    children: a.type
-                                }), a.last4 && (0, l.jsxs)("span", {
-                                    className: iy().paymentMethodNumber,
-                                    children: ["•••• ", a.last4]
-                                })]
-                            })]
-                        }), (0, l.jsx)(iM, {
-                            isDefault: a.isDefault,
-                            handleDelete: t,
-                            handleMakeDefault: i
-                        })]
-                    })
-                },
-                iI = e => {
-                    let {
-                        teamId: a,
-                        paymentMethod: t
-                    } = e, [d] = (0, aH.FQ)(), [n] = (0, aH.vO)(), o = (0, i.useCallback)(async () => {
-                        a && await d({
-                            teamId: a,
-                            paymentMethodId: t.id
-                        })
-                    }, [t.id, a, d]), s = (0, i.useCallback)(async () => {
-                        a && await n({
-                            teamId: a,
-                            paymentMethodId: t.id
-                        })
-                    }, [t.id, a, n]);
-                    switch (t.type.toLowerCase()) {
-                        case "card":
-                            return (0, l.jsx)(iv, {
-                                paymentMethod: t,
-                                handleDelete: o,
-                                handleMakeDefault: s
-                            });
-                        case "sepa_debit":
-                            return (0, l.jsx)(iC, {
-                                paymentMethod: t,
-                                handleDelete: o,
-                                handleMakeDefault: s
-                            });
-                        case "paypal":
-                            return (0, l.jsx)(iS, {
-                                paymentMethod: t,
-                                handleDelete: o,
-                                handleMakeDefault: s
-                            });
-                        default:
-                            return (0, l.jsx)(iA, {
-                                paymentMethod: t,
-                                handleDelete: o,
-                                handleMakeDefault: s
-                            })
-                    }
-                },
-                ij = () => {
-                    let {
-                        t: e
-                    } = (0, d.Bd)(), {
-                        currentTeam: a
-                    } = (0, eM.o)(), {
-                        data: t
-                    } = (0, aH.oZ)({
-                        teamId: null == a ? void 0 : a.id
-                    }, {
-                        skip: !(null == a ? void 0 : a.id)
-                    }), i = [...t || []].sort((e, a) => e.isDefault && !a.isDefault ? -1 : !e.isDefault && a.isDefault ? 1 : e.createdAt.localeCompare(a.createdAt));
-                    return (0, l.jsxs)("div", {
-                        className: ih().updatePaymentDetails,
-                        children: [(0, l.jsx)("h5", {
-                            className: ih().updatePaymentDetailsHeading,
-                            children: e("page.payment.manage.title")
-                        }), (0, l.jsx)("ul", {
-                            className: ih().paymentMethodList,
-                            children: i.map(e => (0, l.jsx)(iI, {
-                                teamId: null == a ? void 0 : a.id,
-                                paymentMethod: e
-                            }, e.id))
-                        }), (0, l.jsx)(T.$, {
-                            appearance: "secondary",
-                            size: "small",
-                            as: "a",
-                            href: tp.l9.route,
-                            className: ih().updatePaymentButton,
-                            variation: "neutral",
-                            children: e("page.payment.manage.add_payment_method")
-                        })]
-                    })
-                },
-                iD = "winback_campaign",
-                iN = () => {
-                    sessionStorage.removeItem(iD)
-                },
-                iP = () => sessionStorage.getItem(iD);
-            var iB = t(75600),
-                iT = t(83906),
-                iE = t(87983),
-                iL = t(20409);
-            let iW = {
-                    src: "/_next/static/media/EmailWinbackModalHQ.9c765678.png",
-                    height: 2376,
-                    width: 1212,
-                    blurDataURL: "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAICAMAAADp7a43AAAAJ1BMVEXlyf/pzf/lyP7Mu/7fwvLlze20nsfq1f749v3iprXcvOzGw/u9kabn/bnhAAAACXBIWXMAACxLAAAsSwGlPZapAAAAKElEQVR4nAXBiQEAIAgDsWsBwWf/eU0AgfOY2i/pmSZuJRFrIUmA/QELAgCBzEN3BQAAAABJRU5ErkJggg==",
-                    blurWidth: 4,
-                    blurHeight: 8
-                },
-                iR = (e, a) => ({
-                    kind: e,
-                    info: {
-                        winback_type: a.winbackType,
-                        winback_offer: a.winbackOffer,
-                        winback_source: a.winbackSource
-                    }
-                }),
-                iU = {
-                    winbackEmailModalDisplayed: e => iR("winback_nudge_TW_displayed", e),
-                    winbackEmailModalButtonClicked: e => iR("winback_nudge_TW_clicked", e),
-                    winbackEmailModalDismissed: e => iR("winback_nudge_TW_dismissed", e),
-                    winbackEmailModalEditPaymentClicked: e => iR("winback_nudge_TW_edit_payment_clicked", e)
-                };
-            var iO = t(75142),
-                iF = t.n(iO);
-            let iG = e => {
-                let {
-                    isOpen: a,
-                    onClose: t
-                } = e, {
-                    t: o
-                } = (0, d.Bd)(), s = (0, n.wA)(), {
-                    currentTeam: _
-                } = (0, eM.o)(), {
-                    subscription: r
-                } = (0, a8.f)(), {
-                    getPlanByTierAndInterval: m
-                } = (0, iE.d)(), w = (() => {
-                    let e = iP();
-                    if (e || (e = new URLSearchParams(window.location.search).get("trk")), "WBK_ARO_50DC" === e) return "WINBACK-EMAIL-50"
-                })();
-                (0, i.useEffect)(() => {
-                    w && s(iB.jf.actions.setCoupon({
-                        code: w,
-                        method: lX.tx.Automatic
-                    }))
-                }, [w, s]);
-                let {
-                    data: g
-                } = (0, aH.oZ)({
-                    teamId: null == _ ? void 0 : _.id
-                }, {
-                    skip: !(null == _ ? void 0 : _.id)
-                }), b = null == g ? void 0 : g.find(e => e.isDefault), c = (0, ah.l)(), h = (0, l9.d)(), p = w ? "discount" : "none", x = "ar_off", y = "email";
-                (0, i.useEffect)(() => {
-                    a && (0, u.Od)().trackUserAction(iU.winbackEmailModalDisplayed({
-                        winbackType: x,
-                        winbackOffer: p,
-                        winbackSource: y
-                    }))
-                }, [a, p]);
-                let f = (0, i.useMemo)(() => {
-                        var e;
-                        if (!r || !r.endsAt) return {};
-                        let a = new Date(r.endsAt),
-                            t = eU.A.date(a, "without_day"),
-                            l = r.totalCentsPerSeat;
-                        if (w) {
-                            let e = m(r.tier, r.interval);
-                            e && !e.price.discountErrorCode && (l = e.price.totalAmountPerSeatInCents)
-                        }
-                        let i = (0, lc.F)({
-                                amount: l / 100,
-                                currency: null != (e = r.currency) ? e : lX.Sj.EUR,
-                                locale: eU.A.locale
-                            }),
-                            d = (0, ey.m4)(r.interval);
-                        return {
-                            startDate: t,
-                            price: i,
-                            billingPeriod: o("checkout.billing.".concat(d.toLowerCase())),
-                            planName: (0, ey.Is)(r.tier)
-                        }
-                    }, [r, w, m, o]),
-                    M = (0, i.useCallback)(() => {
-                        (0, u.Od)().trackUserAction(iU.winbackEmailModalDismissed({
-                            winbackType: x,
-                            winbackOffer: p,
-                            winbackSource: y
-                        })), iN(), t()
-                    }, [t, p]),
-                    k = (0, i.useCallback)(() => {
-                        (0, u.Od)().trackUserAction(iU.winbackEmailModalDismissed({
-                            winbackType: x,
-                            winbackOffer: p,
-                            winbackSource: y
-                        })), iN(), t()
-                    }, [t, p]),
-                    v = (0, i.useCallback)(() => {
-                        (0, u.Od)().trackUserAction(iU.winbackEmailModalEditPaymentClicked({
-                            winbackType: x,
-                            winbackOffer: p,
-                            winbackSource: y
-                        })), t6.A.navigateTo(tp.l9.route), t()
-                    }, [t, p]),
-                    C = (0, i.useCallback)(async () => {
-                        (0, u.Od)().trackUserAction(iU.winbackEmailModalButtonClicked({
-                            winbackType: x,
-                            winbackOffer: p,
-                            winbackSource: y
-                        })), await c(), w && await h(w), iN(), t()
-                    }, [c, h, w, t, p]);
-                return (0, l.jsx)(W.a, {
-                    isOpen: a,
-                    size: "large",
-                    classes: {
-                        containerClass: iF().modal
-                    },
-                    onClose: M,
-                    showCloseButton: !0,
-                    appElement: (0, R.Y)(),
-                    children: (0, l.jsxs)("div", {
-                        className: iF().modalContainer,
-                        children: [(0, l.jsx)("div", {
-                            className: iF().leftPanel,
-                            children: (0, l.jsx)("div", {
-                                className: iF().imageContainer,
-                                children: (0, l.jsx)(l8(), {
-                                    src: iW,
-                                    alt: "",
-                                    fill: !0,
-                                    sizes: "50vw",
-                                    objectFit: "cover"
-                                })
-                            })
-                        }), (0, l.jsx)("div", {
-                            className: iF().rightPanel,
-                            children: (0, l.jsxs)("div", {
-                                className: iF().content,
-                                children: [(0, l.jsx)("h2", {
-                                    className: iF().title,
-                                    children: o(w ? "paywalls.winback_offer_modal.title_discount" : "paywalls.winback_offer_modal.title", {
-                                        planName: f.planName
-                                    })
-                                }), w ? (0, l.jsx)("p", {
-                                    className: iF().bodyText,
-                                    children: (0, l.jsx)(d.x6, {
-                                        i18nKey: "paywalls.winback_offer_modal.body_discount",
-                                        values: {
-                                            planName: f.planName
-                                        },
-                                        components: {
-                                            b: (0, l.jsx)("b", {})
-                                        }
-                                    })
-                                }) : (0, l.jsxs)("div", {
-                                    className: iF().benefits,
-                                    children: [(0, l.jsx)(iL.T, {
-                                        description: o("paywalls.winback_offer_modal.features.unlimited_file_size"),
-                                        icon: "check"
-                                    }), (0, l.jsx)(iL.T, {
-                                        description: o("paywalls.winback_offer_modal.features.unlimited_transfers"),
-                                        icon: "check"
-                                    }), (0, l.jsx)(iL.T, {
-                                        description: o("paywalls.winback_offer_modal.features.uninterrupted_workflow"),
-                                        icon: "check"
-                                    })]
-                                }), (0, l.jsxs)("div", {
-                                    className: iF().paymentMethodContainer,
-                                    children: [(0, l.jsx)("p", {
-                                        className: iF().paymentMethodLabel,
-                                        children: o("paywalls.winback_offer_modal.payment_method_label")
-                                    }), b && (0, l.jsx)(iT.W, {
-                                        type: b.type,
-                                        cardBrand: b.cardBrand,
-                                        last4: b.last4,
-                                        onEdit: v,
-                                        className: iF().paymentMethod
-                                    })]
-                                }), (0, l.jsx)("div", {
-                                    className: iF().disclaimerContainer,
-                                    children: (0, l.jsx)("p", {
-                                        className: iF().disclaimer,
-                                        children: (0, l.jsx)(d.x6, {
-                                            i18nKey: "paywalls.winback_offer_modal.disclaimer",
-                                            values: f,
-                                            components: {
-                                                b: (0, l.jsx)("b", {})
-                                            }
-                                        })
-                                    })
-                                }), (0, l.jsxs)("div", {
-                                    className: iF().ctaContainer,
-                                    children: [(0, l.jsx)(T.$, {
-                                        appearance: "primary",
-                                        variation: "upsell",
-                                        mode: "light",
-                                        size: "medium",
-                                        fullwidth: !0,
-                                        onClick: C,
-                                        className: iF().ctaButton,
-                                        children: o("paywalls.winback_offer_modal.cta")
-                                    }), (0, l.jsx)(T.$, {
-                                        appearance: "secondary",
-                                        mode: "light",
-                                        size: "medium",
-                                        fullwidth: !0,
-                                        onClick: k,
-                                        className: iF().noThanksButton,
-                                        children: o("paywalls.winback_offer_modal.no_thanks")
-                                    })]
-                                })]
-                            })
-                        })]
-                    })
-                })
-            };
-            var iH = t(65075),
-                iK = t.n(iH);
-
-            function iz() {
-                let {
-                    t: e
-                } = (0, d.Bd)(), a = (0, i.useCallback)(() => window.open("mailto:".concat("enterprise.support@wetransfer.com")), []);
-                return (0, l.jsxs)("div", {
-                    className: iK().container,
-                    children: [(0, l.jsx)("div", {
-                        className: iK().header,
-                        children: (0, l.jsx)("span", {
-                            className: iK().header__title,
-                            children: e("enterprise_banners.custom_contract.account_manager.title")
-                        })
-                    }), (0, l.jsxs)("div", {
-                        className: iK().body,
-                        children: [(0, l.jsx)("span", {
-                            className: iK().body__message,
-                            children: e("enterprise_banners.custom_contract.account_manager.message")
-                        }), (0, l.jsx)(T.$, {
-                            onClick: a,
-                            size: "large",
-                            className: iK().body__button,
-                            children: e("enterprise_banners.custom_contract.account_manager.cta")
-                        })]
-                    })]
-                })
-            }
-            var iY = t(76337),
-                iV = t.n(iY);
-
-            function iX() {
-                let {
-                    t: e
-                } = (0, d.Bd)(), a = (0, n.wA)(), {
-                    settings: {
-                        repackaging_enterprise_cta_url: t
-                    }
-                } = (0, C.k)(), o = (0, i.useCallback)(() => window.open(t, "_blank", "noopener, noreferrer"), [t]);
-                return (0, l.jsxs)("div", {
-                    className: iV().container,
-                    children: [(0, l.jsxs)("div", {
-                        className: iV().text,
-                        children: [(0, l.jsx)("span", {
-                            className: iV().text__message,
-                            children: e("enterprise_banners.self_service.message")
-                        }), (0, l.jsx)(e_.N, {
-                            className: iV().text__link,
-                            href: tp.bP.route,
-                            typography: "wt-body-medium",
-                            onClick: () => a((0, tx.jt)(tx.vW.ENTERPRISE_BANNER)),
-                            children: e("enterprise_banners.self_service.link")
-                        })]
-                    }), (0, l.jsx)(T.$, {
-                        onClick: o,
-                        size: "large",
-                        children: e("enterprise_banners.self_service.cta")
-                    })]
-                })
-            }
-            var iQ = t(29336),
-                iq = t(32976),
-                iZ = t(24717),
-                iJ = t(83489),
-                i$ = t(69769),
-                i0 = t(75876),
-                i1 = t(73278),
-                i2 = t(44765),
-                i4 = t(55851),
-                i3 = t(59457),
-                i6 = t(15989),
-                i5 = function(e) {
-                    return e.MANAGE_PLAN_CLICKED = "subscription_card_manage_plan_button_clicked", e
-                }(i5 || {});
-            let i7 = {
-                managePlanClicked: () => ({
-                    kind: "subscription_card_manage_plan_button_clicked"
-                })
-            };
-            var i8 = t(54341),
-                i9 = t.n(i8);
-            let de = () => {
-                var e, a, t, o, _, r;
-                let {
-                    t: m
-                } = (0, d.Bd)(), w = (0, n.wA)(), {
-                    currentTeam: g
-                } = (0, eM.o)(), b = (0, le.LT)(), [c, h] = (0, i.useState)(0), [x, y] = (0, i.useState)(!1), {
-                    subscription: f,
-                    isLoading: M,
-                    refetch: k
-                } = (0, a8.f)(), {
-                    user: v
-                } = (0, n.d4)(e => ({
-                    user: e.user
-                })), {
-                    showUpgradeSubscriptionModal: C,
-                    confirmPlanSwitchOrReactivate: S,
-                    closeUpgradeSubscriptionModal: A,
-                    isModalVisible: I,
-                    isSwitchInProgress: j,
-                    isPendingDowngrade: D,
-                    selectedTier: N,
-                    selectedBillingInterval: P
-                } = (0, i2.W)(), B = (0, n.d4)(p.Me), {
-                    pendingPriceChangeMigration: E
-                } = (() => {
-                    let e = (0, n.d4)(p.JV),
-                        {
-                            subscription: a,
-                            isLoading: t
-                        } = (0, a8.f)();
-                    return e ? {
-                        isLoading: t,
-                        pendingPriceChangeMigration: !!(null == a ? void 0 : a.pendingPriceChangeMigration)
-                    } : {
-                        isLoading: !1,
-                        pendingPriceChangeMigration: !1
-                    }
-                })(), L = (0, iZ.N)(), W = (0, i0.J)(), {
-                    quota: R
-                } = (0, i$.H)(!0), U = (null != (a = null == g || null == (e = g.members) ? void 0 : e.length) ? a : 0) <= 1 || !g, O = (0, ii.G)(), F = (0, id.W)({
-                    amount: (null != (t = null == f ? void 0 : f.totalCents) ? t : 0) / 100,
-                    currency: null != (o = null == f ? void 0 : f.currency) ? o : lX.Sj.EUR,
-                    locale: O
-                }), G = (0, id.W)({
-                    amount: (null != (_ = null == f ? void 0 : f.totalCentsPerSeat) ? _ : 0) / 100,
-                    currency: null != (r = null == f ? void 0 : f.currency) ? r : lX.Sj.EUR,
-                    locale: O
-                }), H = (null == f ? void 0 : f.endsAt) ? eU.A.date(new Date(null == f ? void 0 : f.endsAt), "without_day") : "", K = (0, i.useCallback)(async () => {
-                    (null == f ? void 0 : f.interval) && C(v.planTier, null == f ? void 0 : f.interval)
-                }, [C, v.planTier, null == f ? void 0 : f.interval]), z = e => {
-                    w((0, tx.jt)(e))
-                }, Y = (0, l.jsxs)("div", {
-                    className: i9().downgradeText,
-                    children: [(0, l.jsx)("div", {
-                        children: (0, l.jsx)(d.x6, {
-                            className: i9().planInfo,
-                            i18nKey: "subscription_card.pending_cancellation",
-                            components: [(0, l.jsx)("strong", {}, 0)],
-                            values: {
-                                cancellationDate: H
-                            }
-                        })
-                    }), (0, l.jsxs)("div", {
-                        className: i9().buttonContainer,
-                        children: [(0, l.jsx)(T.$, {
-                            className: i9().reactivateButton,
-                            onClick: K,
-                            children: m("subscription_card.reactivate_cta")
-                        }), (0, l.jsx)(T.$, {
-                            as: "a",
-                            href: tp.bP.route,
-                            appearance: "secondary",
-                            className: i9().compareButton,
-                            onClick: () => z(tx.vW.DOWNGRADE_REACTIVATE),
-                            children: m("subscription_card.compare_plans")
-                        })]
-                    })]
-                }), V = v.planTier === ey.js.PREMIUM_2022 || v.planTier === ey.js.DISTRIBUTE || v.planTier === ey.js.ULTIMATE || v.planTier === ey.js.ENTERPRISE || v.planTier === ey.js.ENTERPRISE_CUSTOM_CONTRACT, X = eU.A.size(R, {
-                    allowNull: !0
-                }), {
-                    quota: Q
-                } = (0, iq.i)(!0), {
-                    quota: q
-                } = (0, iJ.J)(!0), Z = null != Q ? eU.A.size(Q) : "", J = L / i4.i.ONE_DAY_IN_SECONDS, {
-                    planName: $,
-                    planFeatures: ee = []
-                } = (0, ef.ns)(v.planTier, B, {
-                    transferLimit: X,
-                    accountStorage: Z,
-                    transferExpiryCount: J,
-                    transferNumberLimit: q
-                }) || {}, ea = W || (0, ef.yw)(v), et = v.planTier === ey.js.ENTERPRISE_CUSTOM_CONTRACT, el = (0, i.useCallback)(() => {
-                    (0, u.Od)().trackUserAction(i7.managePlanClicked())
-                }, []), ei = (0, i.useCallback)(() => {
-                    y(!0), h(e => e + 1), setTimeout(() => {
-                        k(), y(!1)
-                    }, 1e3)
-                }, [h, k, y]);
-                return (0, i.useEffect)(() => {
-                    ("true" !== b.get(iQ.T) || M || x || (null == f ? void 0 : f.isPaused) || !(c < 5)) && ("true" !== b.get(l9.V) || M || x || (null == f ? void 0 : f.discountPercent) || !(c < 5)) || ei()
-                }, [M, ei, x, c, null == f ? void 0 : f.discountPercent, null == f ? void 0 : f.isPaused, b]), (0, l.jsxs)("div", {
-                    className: i9().SubscriptionCard,
-                    "data-testid": "SubscriptionCard",
-                    children: [(M || x) && (0, l.jsxs)("div", {
-                        className: i9().loadingDimmer,
-                        children: [(0, l.jsx)(s.y, {
-                            size: "large"
-                        }), (0, l.jsx)("p", {
-                            className: i9().loadingDimmerText,
-                            children: m("page.account_payment.spinner_text")
-                        })]
-                    }), (0, l.jsxs)("div", {
-                        className: i9().currentPlan,
-                        children: [(0, l.jsx)("div", {
-                            className: i9().planHeader,
-                            children: (0, l.jsxs)("div", {
-                                className: i9().planTitle,
-                                children: [(0, l.jsx)("h2", {
-                                    children: $
-                                }), (0, l.jsx)(lR.E, {
-                                    appearance: (null == f ? void 0 : f.isPaused) ? "blue" : D ? "red" : "green",
-                                    children: m((null == f ? void 0 : f.isPaused) ? "page.account_payment.paused_badge_text" : D ? "page.account_payment.cancel_badge_text" : "page.account_payment.badge_text")
-                                })]
-                            })
-                        }), D && Y, !D && (0, ef.yw)(v) && B === ey.zX && (0, l.jsx)("p", {
-                            className: i9().planInfoFree,
-                            children: m("page.account_payment.free")
-                        }), !D && !(0, ef.yw)(v) && E && (0, l.jsx)("p", {
-                            className: i9().planInfo,
-                            children: (0, l.jsx)(d.x6, {
-                                i18nKey: "subscription_card.pending_price_change",
-                                components: [(0, l.jsx)("a", {
-                                    href: i3.to,
-                                    target: "blank"
-                                }, 0)],
-                                values: {
-                                    plan: $,
-                                    renewal_date: H,
-                                    support_url: i3.to
-                                }
-                            })
-                        }), !D && !(0, ef.yw)(v) && !E && !et && (0, l.jsxs)(l.Fragment, {
-                            children: [(0, l.jsx)("p", {
-                                className: i9().planInfo,
-                                children: (null == f ? void 0 : f.isPaused) ? (0, l.jsx)(d.x6, {
-                                    i18nKey: "subscription_card.paused_subscription_text",
-                                    components: {
-                                        br: (0, l.jsx)("br", {}),
-                                        b: (0, l.jsx)("b", {})
-                                    },
-                                    values: {
-                                        date: H
-                                    }
-                                }) : U ? (null == f ? void 0 : f.isPaidDowngrade) ? (0, l.jsx)(d.x6, {
-                                    i18nKey: "subscription_card.downgrade.current_solo_workspace_information",
-                                    components: {
-                                        b: (0, l.jsx)("b", {})
-                                    },
-                                    values: {
-                                        autorenewalattempt: H
-                                    }
-                                }) : (0, l.jsx)(d.x6, {
-                                    i18nKey: "subscription_card.solo_workspace",
-                                    components: {
-                                        b: (0, l.jsx)("b", {})
-                                    },
-                                    values: {
-                                        formattedintervaltotal: F,
-                                        subscriptioninterval: null == f ? void 0 : f.interval,
-                                        autorenewalattempt: H
-                                    }
-                                }) : (null == f ? void 0 : f.isPaidDowngrade) ? (0, l.jsx)(d.x6, {
-                                    i18nKey: "subscription_card.downgrade.current_team_workspace_information",
-                                    components: {
-                                        b: (0, l.jsx)("b", {})
-                                    },
-                                    values: {
-                                        autorenewalattempt: H
-                                    }
-                                }) : (0, l.jsx)(d.x6, {
-                                    i18nKey: "subscription_card.team_workspace",
-                                    components: {
-                                        b: (0, l.jsx)("b", {})
-                                    },
-                                    values: {
-                                        formattedTeamWorkspaceCost: F,
-                                        subscriptioninterval: null == f ? void 0 : f.interval,
-                                        membercount: (null == f ? void 0 : f.quantity) + " seats",
-                                        tieramount: G,
-                                        autorenewalattempt: H
-                                    }
-                                })
-                            }), (null == f ? void 0 : f.discountPercent) && (0, l.jsxs)("div", {
-                                className: i9().discountContainer,
-                                children: [(0, l.jsxs)("div", {
-                                    className: i9().discountTitleContainer,
-                                    children: [(0, l.jsx)(aR.kR8, {}), (0, l.jsx)("span", {
-                                        className: i9().discountTitle,
-                                        children: m("subscription_card.discount_title", {
-                                            discount: Number(f.discountPercent).toFixed(0)
-                                        })
-                                    })]
-                                }), (0, l.jsx)("span", {
-                                    className: i9().discountSubtitle,
-                                    children: m("subscription_card.discount_subtitle")
-                                })]
-                            })]
-                        }), !D && (0, l.jsx)("ul", {
-                            className: i9().ListItems,
-                            children: ee.map((e, a) => (0, l.jsxs)("li", {
-                                className: i9().Item,
-                                children: [(0, l.jsx)(i6.In, {
-                                    name: "checkmark-simple--blue",
-                                    size: 18
-                                }), e]
-                            }, a))
-                        }), !D && !V && ea && (0, l.jsxs)(l.Fragment, {
-                            children: [(0, l.jsx)("div", {
-                                className: i9().seperator
-                            }), (0, l.jsxs)("div", {
-                                className: i9().cardFooter,
-                                children: [(0, l.jsxs)("div", {
-                                    className: i9().cardFooterInfo,
-                                    children: [(0, l.jsx)("span", {
-                                        className: i9().cardFooterTitle,
-                                        children: m("page.account_payment.upsell_title")
-                                    }), (0, l.jsx)("span", {
-                                        className: i9().cardFooterText,
-                                        children: m("page.account_payment.switch_text")
-                                    })]
-                                }), (0, l.jsx)(T.$, {
-                                    as: "a",
-                                    href: tp.bP.route,
-                                    className: i9().compareButton,
-                                    onClick: () => z(tx.vW.SETTINGS_PLAN_AND_PAYMENT_COMPARE_ALL_PLANS),
-                                    children: m("subscription_card.compare_plans")
-                                })]
-                            })]
-                        }), !D && !W && (0, ef.WU)(v) && !et && (0, l.jsxs)("div", {
-                            className: i9().managePlanContainer,
-                            children: [(0, l.jsx)(T.$, {
-                                as: "a",
-                                href: "/workspace/payment/manage-plan",
-                                size: "small",
-                                onClick: el,
-                                children: m("page.account_payment.manage_plan_button")
-                            }), (0, l.jsx)(T.$, {
-                                as: "a",
-                                href: tp.bP.route,
-                                appearance: "secondary",
-                                variation: "neutral",
-                                size: "small",
-                                onClick: () => z(tx.vW.PLAN_DETAILS_BUTTON),
-                                children: m("page.account_payment.plan_details_button")
-                            })]
-                        }), I && (0, l.jsx)(i1.r, {
-                            switchPlansOrReactivate: S,
-                            planName: v.planTier,
-                            isLoading: j,
-                            closeModal: A,
-                            planTier: N,
-                            selectedBillingInterval: P,
-                            isReactivatingPlan: !0
-                        })]
-                    })]
-                })
-            };
-            var da = t(76247),
-                dt = t(11428),
-                dl = t(62373),
-                di = t(24750),
-                dd = t(43657),
-                dn = t(67501),
-                ds = t.n(dn),
-                d_ = t(89664),
-                dr = t.n(d_);
-
-            function dm(e) {
-                let {
-                    quantity: a,
-                    isLoading: t,
-                    hasFailed: i,
-                    billingPreview: n
-                } = e, {
-                    t: o
-                } = (0, d.Bd)(), _ = n && "".concat((0, lc.F)({
-                    currency: n.currency,
-                    amount: n.recurringTotalCents / 100,
-                    locale: eU.A.locale
-                }), "/").concat(o("members.add_members.invite_members_modal.body.interval_".concat(n.interval))), r = n && new Date(n.recurringAt).toLocaleDateString();
-                return i ? (0, l.jsx)("p", {
-                    className: dr().errorText,
-                    children: o("members.add_members.invite_members_modal.error_message")
-                }) : t ? (0, l.jsx)("div", {
-                    className: dr().spinnerContainer,
-                    children: (0, l.jsx)(s.y, {
-                        size: "large"
-                    })
-                }) : (0, l.jsx)("div", {
-                    className: dr().confirmationModalContents,
-                    children: (0, l.jsxs)("div", {
-                        className: dr().confirmationModalBody,
-                        children: [(0, l.jsxs)("div", {
-                            className: dr().chargeInfo,
-                            children: [(0, l.jsxs)("div", {
-                                className: dr().chargeInfoRow,
-                                children: [(0, l.jsx)("span", {
-                                    children: o("page.account_payment.seats_management.update_seats_modal.new_total")
-                                }), (0, l.jsx)("span", {
-                                    children: a
-                                })]
-                            }), (0, l.jsxs)("div", {
-                                className: dr().chargeInfoRow,
-                                children: [(0, l.jsx)("span", {
-                                    children: o("members.add_members.invite_members_modal.body.will_be_charged")
-                                }), (0, l.jsxs)("div", {
-                                    className: dr().chargeInfoAmount,
-                                    children: [(0, l.jsx)(lb.A, {
-                                        containerClassName: dr().chargeInfoPopover,
-                                        positions: ["bottom"],
-                                        content: (0, l.jsx)("span", {
-                                            children: o("members.add_members.invite_members_modal.body.popover_text")
-                                        }),
-                                        eventTrigger: "hover",
-                                        isCondensed: !0,
-                                        mode: "dark",
-                                        children: (0, l.jsx)(aR.rHs, {
-                                            size: "small"
-                                        })
-                                    }), n && (0, l.jsx)("span", {
-                                        "data-testid": "invoice-additional-amount",
-                                        children: (0, lc.F)({
-                                            currency: n.currency,
-                                            amount: n.upfrontTotalCents / 100,
-                                            locale: eU.A.locale
-                                        })
-                                    })]
-                                })]
-                            })]
-                        }), (0, l.jsx)("div", {
-                            className: dr().separator
-                        }), (0, l.jsx)("div", {
-                            className: dr().confirmationSubscriptionInfo,
-                            children: (0, l.jsx)(d.x6, {
-                                i18nKey: "members.add_members.invite_members_modal.body.subscription_info",
-                                components: {
-                                    1: (0, l.jsx)("span", {
-                                        className: dr().confirmationSubscriptionInfoBold
-                                    })
-                                },
-                                values: {
-                                    subscriptionInfo: _,
-                                    subscriptionDate: r
-                                }
-                            })
-                        })]
-                    })
-                })
-            }
-            let dw = e => {
-                let {
-                    actionType: a
-                } = e, t = (0, i.useRef)(null), {
-                    subscription: s
-                } = (0, a8.f)(), {
-                    canExplicitlyManageSeats: _,
-                    minimumCommitmentSeats: r,
-                    minimumSeats: m,
-                    maximumSeats: w,
-                    currentSeats: g,
-                    seatsInUse: b
-                } = (0, lt.K)(), c = (0, n.d4)(e => e.pending), h = (0, n.d4)(e => e.account), p = (0, n.d4)(e => e.user), x = (0, n.d4)(e => e.route), {
-                    t: y
-                } = (0, d.Bd)(), {
-                    currentTeam: f
-                } = (0, eM.o)(), C = null == f ? void 0 : f.id, S = (0, ll.l)(), {
-                    data: A,
-                    isLoading: I
-                } = (0, aH.rk)({
-                    teamId: C
-                }, {
-                    skip: !C
-                }), j = (0, i0.J)(), D = da.az.includes(null == s ? void 0 : s.status), {
-                    addToast: N
-                } = (0, o.d)(), P = (null == s ? void 0 : s.endsAt) ? eU.A.date(new Date(s.endsAt), "without_day") : "", B = "marketing" === x.query.from, [E, L] = (0, i.useState)(g), [W, R] = (0, i.useState)(!1), [U, O] = (0, i.useState)(!1), [F, G] = (0, i.useState)(!1), H = (0, is.r)(), K = (0, n.d4)(e2.oz), z = (() => {
-                    let e = (() => {
-                            let e = new URLSearchParams(window.location.search);
-                            return {
-                                trk: e.get("trk"),
-                                email: (() => {
-                                    let a = e.get("email");
-                                    return a ? decodeURIComponent(a) : null
-                                })(),
-                                subscriptionTierName: e.get("subscriptionTierName")
-                            }
-                        })(),
-                        a = (0, n.d4)(ev.JQ),
-                        t = (0, n.d4)(ev.EA),
-                        l = (0, a9.d)(),
-                        {
-                            subscription: d
-                        } = (0, a8.f)(),
-                        o = (0, i.useMemo)(() => {
-                            var t;
-                            let l = null == (t = e.trk) ? void 0 : t.startsWith("WBK_ARO"),
-                                i = e.email && a && e.email.toLowerCase() === a.toLowerCase();
-                            return l && i
-                        }, [e.trk, e.email, a]);
-                    (0, i.useEffect)(() => {
-                        var a;
-                        o && e.trk && (a = e.trk, sessionStorage.setItem(iD, a))
-                    }, [o, e.trk]);
-                    let s = (0, i.useMemo)(() => !!iP(), []);
-                    return t && l && (null == d ? void 0 : d.endsAt) && (o || s)
-                })(), {
-                    isLoading: Y,
-                    hasFailed: V,
-                    billingPreview: X
-                } = ld({
-                    seats: E,
-                    teamId: C || "",
-                    isModalOpen: W
-                });
-                (0, k.S)(() => {
-                    document.title = "".concat(y("page.payment.pagename"), " - WeTransfer")
-                }), (0, i.useEffect)(() => {
-                    H && K && setTimeout(() => {
-                        O(!0)
-                    }, 1500)
-                }, [H, K]), (0, i.useEffect)(() => {
-                    z && G(!0)
-                }, [z]), (0, i.useEffect)(() => {
-                    var e;
-                    null == t || null == (e = t.current) || e.focus()
-                }, [t, c]);
-                let Q = (0, i.useCallback)(() => {
-                        dl.A.trackSnowplowEvent({
-                            category: "pro",
-                            action: "click_cancel_pro"
-                        }), (0, u.Od)().trackUserAction(di.X.cancelButtonClicked({}))
-                    }, []),
-                    q = (0, i.useCallback)(async e => {
-                        if (C)
-                            if (e >= m) {
-                                let a = await S({
-                                    newQuantity: e
-                                });
-                                R(!1), a ? (0, u.Od)().trackUserAction(di.X.seatsUpdateConfirmed({
-                                    quantity: e
-                                })) : (N(y("members.update_members_error"), {
-                                    autoHideDuration: 3e3
-                                }), L(g))
-                            } else N(y("members.members_below_minimum_commitment"), {
-                                autoHideDuration: 3e3
-                            }), (0, u.Od)().trackUserAction(di.X.seatsUpdateBelowMinimumCommitmentError({
-                                quantity: e
-                            }))
-                    }, [C, m, S, N, y, g]),
-                    Z = !h.active_subscription;
-                return (0, l.jsxs)("div", {
-                    className: "payment",
-                    children: [!v.Ay.isMobile && (0, l.jsx)(M.a, {
-                        showWorkspaceName: !0,
-                        panelName: y("page.payment.pagename")
-                    }), D && (0, l.jsx)(l5, {
-                        isLoading: I,
-                        invoices: A || []
-                    }), (0, l.jsxs)("div", {
-                        className: ds().subscriptionCardContainer,
-                        children: [(0, l.jsx)("h5", {
-                            className: ds().subscriptionCardHeader,
-                            children: eU.A.t("page.account_payment.title")
-                        }), (0, l.jsx)(de, {}), p.planTier === ey.js.ENTERPRISE && (0, l.jsx)(iX, {}), p.planTier === ey.js.ENTERPRISE_CUSTOM_CONTRACT && (0, l.jsx)(iz, {})]
-                    }), _ && (0, l.jsxs)("div", {
-                        className: ds().seatsSelectorSection,
-                        children: [(0, l.jsx)("h4", {
-                            className: ds().seatsSelectorHeader,
-                            children: y("page.account_payment.seats_management.header")
-                        }), (0, l.jsx)("p", {
-                            dangerouslySetInnerHTML: {
-                                __html: y("page.account_payment.seats_management.description", {
-                                    minCommitmentSeats: r,
-                                    maxCommitmentSeats: w,
-                                    href: "https://wetransfer.com/enterprise"
-                                })
-                            }
-                        }), (0, l.jsxs)("div", {
-                            className: ds().seatsSelectorContainer,
-                            children: [(0, l.jsxs)("div", {
-                                className: ds().seatsSelectorContent,
-                                children: [(0, l.jsx)("p", {
-                                    children: y("page.account_payment.seats_management.header")
-                                }), (0, l.jsx)(dt.A, {
-                                    seats: E,
-                                    setSeats: L,
-                                    disableMinSeats: E === m,
-                                    minSeatsDisabledReason: E <= r ? "minimum_commitment" : "members",
-                                    disableMaxSeats: E === w,
-                                    totalMemberCount: b,
-                                    isInputDisabled: !0
-                                })]
-                            }), (0, l.jsx)(T.$, {
-                                onClick: () => R(!0),
-                                disabled: E === g,
-                                children: y("page.account_payment.seats_management.cta")
-                            })]
-                        })]
-                    }), C && W && (0, l.jsx)(ls, {
-                        header: y("page.account_payment.seats_management.update_seats_modal.header"),
-                        body: (0, l.jsx)(dm, {
-                            quantity: E,
-                            isLoading: Y,
-                            hasFailed: V,
-                            billingPreview: X
-                        }),
-                        footer: Y || V ? void 0 : (0, l.jsx)("div", {
-                            className: ds().footerContainer,
-                            children: (0, l.jsx)("div", {
-                                className: ds().footerInner,
-                                children: (0, l.jsx)("span", {
-                                    className: ds().termsFooter,
-                                    children: (0, l.jsx)(d.x6, {
-                                        i18nKey: "members.add_members.invite_members_modal.footer.agreement_text",
-                                        components: {
-                                            1: (0, l.jsx)("a", {
-                                                href: "/legal/terms",
-                                                target: "blank"
-                                            }),
-                                            4: (0, l.jsx)("a", {
-                                                href: "/legal/manage-cookies",
-                                                target: "blank"
-                                            })
-                                        }
-                                    })
-                                })
-                            })
-                        }),
-                        isOpen: W,
-                        confirmText: y("members.add_members.invite_members_modal.body.btn_confirm"),
-                        onClose: () => R(!1),
-                        isDisabled: Y || V,
-                        isButtonFullWidth: !0,
-                        onConfirm: () => q(E)
-                    }), p.planTier !== ey.js.ENTERPRISE_CUSTOM_CONTRACT && (0, l.jsxs)(l.Fragment, {
-                        children: [!(0, ef.yw)(p) && !Z && (0, l.jsx)(ij, {}), (0, ef.WU)(p) && "cancel" === a && !B && j ? (0, l.jsx)(dd.f, {
-                            user: p,
-                            expiryDate: P,
-                            pendingCancellation: c.cancelSubscription,
-                            trackClick: Q
-                        }) : null, (0, ef.WU)(p) && (0, l.jsxs)("div", {
-                            className: ds().BillingSection,
-                            children: [(0, l.jsx)("h5", {
-                                className: ds().BillingHeader,
-                                children: eU.A.t("page.billinginfo.pagename")
-                            }), (0, l.jsx)(l$, {})]
-                        }), (0, l.jsxs)("div", {
-                            className: ds().ReceiptSection,
-                            children: [(0, l.jsx)("h5", {
-                                className: ds().ReceiptsHeader,
-                                children: eU.A.t("page.invoices.pagename")
-                            }), (0, l.jsx)(l4, {})]
-                        })]
-                    }), (0, l.jsx)(ib, {
-                        isVisible: U,
-                        onDismiss: () => O(!1)
-                    }), (0, l.jsx)(iG, {
-                        isOpen: F,
-                        onClose: () => G(!1)
-                    })]
-                })
-            };
-            var dg = t(61605),
-                db = t.n(dg);
-            let dc = () => {
-                let {
-                    t: e
-                } = (0, d.Bd)(), {
-                    subscription: a
-                } = (0, a8.f)(), [t, n] = (0, i.useState)({
-                    appName: "",
-                    linkText: "",
-                    linkHref: ""
-                }), {
-                    appName: o,
-                    linkText: s,
-                    linkHref: _
-                } = t, r = (0, i.useCallback)(() => {
-                    let e;
-                    return "App Store" === o ? e = "click_go_to_app_store" : "Google Play" === o && (e = "click_go_to_play_store"), e && dl.A.trackSnowplowEvent({
-                        category: "pro",
-                        action: e
-                    }), !0
-                }, [o]), m = (0, i.useCallback)(() => (dl.A.trackSnowplowEvent({
-                    category: "pro",
-                    action: "click_learn_more_app_subscription"
-                }), !0), []);
-                return ((0, i.useEffect)(() => {
-                    if ((null == a ? void 0 : a.externalProvider) === te.hL.APPLE) return void n({
-                        appName: "App Store",
-                        linkText: "".concat(e("page.payment.mobile_subscription.go_to"), " App Store"),
-                        linkHref: "https://apps.apple.com/account/subscriptions"
-                    });
-                    (null == a ? void 0 : a.externalProvider) === te.hL.GOOGLE && n({
-                        appName: "Google Play",
-                        linkText: "".concat(e("page.payment.mobile_subscription.go_to"), " Google Play"),
-                        linkHref: "https://play.google.com/store/account/subscriptions"
-                    })
-                }, [null == a ? void 0 : a.externalProvider, e]), null == a ? void 0 : a.externalProvider) ? (0, l.jsxs)("div", {
-                    className: db().appSubscriptionBanner,
-                    children: [(0, l.jsx)("div", {
-                        className: db().appSubscriptionBanner__title,
-                        children: e("page.payment.mobile_subscription.title", {
-                            app_name: o
-                        })
-                    }), (0, l.jsx)("div", {
-                        className: db().appSubscriptionBanner__content,
-                        children: e("page.payment.mobile_subscription.content", {
-                            app_name: o
-                        })
-                    }), (0, l.jsxs)("div", {
-                        className: db().appSubscriptionBanner__footer,
-                        children: [(0, l.jsx)("a", {
-                            className: db().appSubscriptionBanner__appStoreLink,
-                            href: _,
-                            target: "_blank",
-                            rel: "noreferrer",
-                            onClick: r,
-                            children: s
-                        }), (0, l.jsx)("a", {
-                            className: db().appSubscriptionBanner__learnMoreLink,
-                            href: "https://wetransfer.zendesk.com/hc/en-us/articles/4563370515988",
-                            onClick: m,
-                            children: e("page.payment.mobile_subscription.learn_more")
-                        })]
-                    })]
-                }) : null
-            };
-            var dh = t(31274),
-                du = t(3862),
-                dp = t(10224);
-            let dx = e => {
-                let {
-                    storageKey: a
-                } = e, {
-                    t
-                } = (0, d.Bd)(), {
-                    isPageViewed: i
-                } = (0, dp.x)(a);
-                return i ? null : (0, l.jsx)(lR.E, {
-                    size: "small",
-                    children: t("badge.new")
-                })
-            };
-            var dy = t(8934),
-                df = t(69048),
-                dM = t(7686),
-                dk = t(18237),
-                dv = t(90512),
-                dC = t(13672),
-                dS = t(15539);
-            let dA = e => {
-                    let {
-                        t: a
-                    } = (0, d.Bd)(), t = (0, dk.M)(), o = (0, n.d4)(p.mB), s = (0, ef.yw)(o), _ = (0, ef.Z_)(o), {
-                        getUserByAuth0Id: r
-                    } = (0, eM.o)(), m = (0, n.d4)(ev.Lm), w = (0, n.wA)(), g = (0, au.z)(), b = (0, a9.d)(), c = (() => {
-                        let {
-                            subscription: e
-                        } = (0, a8.f)();
-                        return e && !a7.BD.includes(null == e ? void 0 : e.status) && !(null == e ? void 0 : e.cancelAtPeriodEnd)
-                    })(), {
-                        subscription: h
-                    } = (0, a8.f)(), u = (0, ah.l)(), x = (0, n.d4)(p.eB), y = (0, i.useMemo)(() => {
-                        var e;
-                        return !!m && (null == (e = r(m)) ? void 0 : e.role) === "admin"
-                    }, [m, r]), f = (0, ef.Z_)(o), M = (0, ef.ch)(o), {
-                        showUpgradeSubscriptionModal: k,
-                        confirmPlanSwitchOrReactivate: C,
-                        closeUpgradeSubscriptionModal: S,
-                        selectedTierName: A,
-                        isModalVisible: I,
-                        isSwitchInProgress: j,
-                        selectedTier: D,
-                        selectedBillingInterval: N
-                    } = (0, i2.W)(), P = (0, i.useCallback)(() => {
-                        S(), g && t6.A.navigateTo(tp.kH.route)
-                    }, [g, S]), [T, E] = (0, i.useState)(!1), L = (0, i.useCallback)(a => {
-                        let {
-                            signout: t,
-                            isForwardedTransfer: l = !1,
-                            uploadInProgress: i
-                        } = e;
-                        a.preventDefault(), i && E(!0), t({
-                            isForwardedTransfer: l
-                        })
-                    }, [e]), {
-                        resetNotification: W
-                    } = e, R = (0, i.useCallback)(e => {
-                        W(), t6.A.navigateTo(e)
-                    }, [W]), U = (0, i.useCallback)(() => {
-                        let a = e.routeQueryDuration,
-                            t = e.routeQueryRenewal;
-                        if (!/year|month/.test(a)) return;
-                        let i = "page.accountinfo.payment_success.".concat(a, "ly");
-                        return "1" === t && (i += "_renewal"), (0, l.jsx)(dh.A, {
-                            showClose: !0,
-                            children: (0, l.jsx)("p", {
-                                dangerouslySetInnerHTML: {
-                                    __html: eU.A.t(i)
-                                }
-                            })
-                        })
-                    }, [e.routeQueryDuration, e.routeQueryRenewal]), O = (0, i.useCallback)(() => te.Il.includes(null == h ? void 0 : h.externalProvider) ? {
-                        component: dc
-                    } : c ? {
-                        component: dw,
-                        options: {
-                            actionType: "cancel"
-                        }
-                    } : b ? {
-                        component: function(e, a, t) {
-                            let d = arguments.length > 3 && void 0 !== arguments[3] ? arguments[3] : {};
-                            class n extends i.Component {
-                                async onConfirm() {
-                                    a || (await t(), this.hideConfirmation())
-                                }
-                                showConfirmation() {
-                                    this.setState({
-                                        showConfirmation: !0
-                                    })
-                                }
-                                hideConfirmation() {
-                                    this.actionbarNode && this.actionbarNode.hide(() => {
-                                        this.setState({
-                                            showConfirmation: !1
-                                        })
-                                    })
-                                }
-                                makeConfirmation() {
-                                    if (this.state.showConfirmation) return (0, l.jsxs)(eV.A, {
-                                        ref: e => this.actionbarNode = e,
-                                        text: eU.A.t(d.message),
-                                        children: [(0, l.jsx)(eY.A, {
-                                            type: "actionbar-action",
-                                            text: a ? eU.A.t(d.confirmingMessage) : eU.A.t(d.confirmButton),
-                                            onClick: this.onConfirm
-                                        }), (0, l.jsx)(eY.A, {
-                                            type: "actionbar-cancel",
-                                            text: eU.A.t("form.cancel"),
-                                            onClick: this.hideConfirmation
-                                        })]
-                                    })
-                                }
-                                render() {
-                                    return (0, l.jsxs)(i.Fragment, {
-                                        children: [(0, l.jsx)(e, {
-                                            showConfirmation: this.showConfirmation,
-                                            confirming: this.state.showConfirmation,
-                                            ...this.props
-                                        }), this.makeConfirmation()]
-                                    })
-                                }
-                                constructor(e) {
-                                    super(e), this.showConfirmation = this.showConfirmation.bind(this), this.hideConfirmation = this.hideConfirmation.bind(this), this.makeConfirmation = this.makeConfirmation.bind(this), this.onConfirm = this.onConfirm.bind(this), this.state = {
-                                        showConfirmation: !1
-                                    }
-                                }
-                            }
-                            return n
-                        }(dw, !1, async () => {
-                            x && await u()
-                        }, {
-                            message: "page.payment.reactivate.confirm_reactivate_subscription",
-                            confirmButton: "page.payment.reactivate.yes_disable",
-                            confirmingMessage: "page.payment.reactivate.updating"
-                        }),
-                        options: {
-                            actionType: "reactivate"
-                        }
-                    } : {
-                        component: dw
-                    }, [c, b, u, null == h ? void 0 : h.externalProvider, x]), F = (0, i.useMemo)(() => {
-                        let e = {
-                            href: tp.kH.route,
-                            label: "members.title",
-                            component: lK,
-                            key: "members"
-                        };
-                        return _ || !t ? e : s ? {
-                            ...e,
-                            onClick: () => t6.A.navigateTo((0, dM.Mg)())
-                        } : {
-                            ...e,
-                            onClick: () => {
-                                k(ey.js.ENTERPRISE, null == h ? void 0 : h.interval)
-                            }
-                        }
-                    }, [null == h ? void 0 : h.interval, t, _, s, k]), G = (0, i.useCallback)(() => {
-                        let {
-                            user: t
-                        } = e;
-                        return (0, l.jsxs)("div", {
-                            className: "account__navigation-buttons",
-                            children: [(0, ef.yw)(t) && (0, l.jsx)("a", {
-                                className: "button button--enabled account__navigation-button",
-                                href: tp.bP.route,
-                                onClick: () => w((0, tx.jt)(tx.vW.ACCOUNT_SETTINGS_UPGRADE_BELOW_DELETION)),
-                                children: a("page.payment.upgrade_cta")
-                            }), (0, l.jsx)(eY.A, {
-                                className: "account__navigation-button",
-                                active: !e.pendingSignout,
-                                type: "secondary",
-                                onClick: a => {
-                                    e.uploadInProgress && E(!0), L(a)
-                                },
-                                text: eU.A.t("navigation.logout")
-                            })]
-                        })
-                    }, [w, L, e, a]), H = (0, i.useMemo)(() => ({
-                        profileAndSecurity: {
-                            href: "/account",
-                            label: "profile_and_security.page_name",
-                            component: ac,
-                            key: "profile_and_security"
-                        },
-                        notificationSettings: {
-                            href: tp.U_.route,
-                            label: "notification_settings.page_name",
-                            component: B,
-                            key: "notification_settings"
-                        },
-                        payment: {
-                            href: "/workspace/payment",
-                            label: "page.payment.pagename",
-                            key: "payment",
-                            hidden: !y,
-                            ...O()
-                        },
-                        brand: {
-                            href: tp.$X.route,
-                            label: "brand.title",
-                            component: tj,
-                            key: "brand"
-                        },
-                        manageTeam: F,
-                        integrations: {
-                            href: tp.a0.route,
-                            label: "page.integrations.title",
-                            component: t3,
-                            key: "integrations",
-                            hidden: !y || v.Ay.isMobile || M
-                        },
-                        subscriberBenefits: {
-                            href: "/workspace/subscriber-benefits",
-                            label: "page.subscriber_benefits.pagename",
-                            component: lz.default,
-                            key: "subscriber_benefits",
-                            hidden: (0, ef.yw)(e.user) || (null == h ? void 0 : h.interval) === a7.YF.month || !y || f,
-                            icon: (0, l.jsx)(dx, {
-                                storageKey: du._.SUBSCRIBER_BENEFITS_PAGE
-                            })
-                        },
-                        samlSso: {
-                            href: tp.YB.route,
-                            label: "saml_sso.title_scim",
-                            component: a5,
-                            key: "saml_sso",
-                            hidden: !y || !M
-                        },
-                        accountNavigationButtons: {
-                            href: tp.bP.route,
-                            label: "",
-                            component: G,
-                            key: "account_navigation_buttons",
-                            hidden: !v.Ay.isMobile
-                        }
-                    }), [G, y, f, M, O, F, null == h ? void 0 : h.interval, e.user]), K = (0, i.useMemo)(() => [H.brand, H.integrations, H.subscriberBenefits, H.payment, H.manageTeam, H.samlSso].filter(e => !e.hidden), [H.brand, H.manageTeam, H.integrations, H.subscriberBenefits, H.payment, H.samlSso]), z = (0, i.useMemo)(() => [H.profileAndSecurity, H.notificationSettings, H.accountNavigationButtons].filter(e => !e.hidden), [H.accountNavigationButtons, H.notificationSettings, H.profileAndSecurity]), Y = (null == z ? void 0 : z.find(a => a.href === e.routePath)) || K.find(a => a.href === e.routePath), V = (0, i.useMemo)(() => {
-                        if (v.Ay.isMobile) switch (e.routePath) {
-                            case tp.$X.route:
-                                return K;
-                            case tp.u4.route:
-                            case tp.U_.route:
-                                return z
-                        }
-                        return Y ? [Y] : []
-                    }, [Y, e.routePath, K, z]), X = null, Q = !1;
-                    !v.Ay.isMobile && Y ? Y.hidden || (X = (0, l.jsxs)("div", {
-                        className: "account__menu",
-                        children: [(0, l.jsxs)(l.Fragment, {
-                            children: [(0, l.jsx)("h3", {
-                                className: "nav-title",
-                                children: eU.A.t("navigation.user.items.account")
-                            }), (0, l.jsx)(dy.A, {
-                                items: z,
-                                activeItem: e.routePath,
-                                onClick: R
-                            }), (0, l.jsx)("h3", {
-                                className: "nav-title",
-                                children: eU.A.t("page.workspace_bar.workspace")
-                            }), (0, l.jsx)(dy.A, {
-                                items: K,
-                                activeItem: e.routePath,
-                                onClick: R
-                            })]
-                        }), I && (0, l.jsx)(i1.r, {
-                            switchPlansOrReactivate: C,
-                            planName: A,
-                            isLoading: j,
-                            closeModal: P,
-                            planTier: D,
-                            selectedBillingInterval: N
-                        })]
-                    })) : Q = !0;
-                    let q = (0, i.useMemo)(() => {
-                            let a = [];
-                            return V.forEach((t, d) => {
-                                let n = t.component;
-                                a.push((0, i.createElement)(n, {
-                                    ...t.options,
-                                    navigate: R,
-                                    setReturnPath: e.setReturnPath,
-                                    key: "".concat(t.key, "_component")
-                                })), Q && V.length > 1 && d !== V.length - 1 && a.push((0, l.jsx)("hr", {}, "".concat(t.key, "_hr")))
-                            }), a
-                        }, [V, R, e.setReturnPath, Q]),
-                        {
-                            tip: Z
-                        } = e,
-                        J = e.routePath !== tp.u4.route;
-                    return (0, l.jsxs)(l.Fragment, {
-                        children: [J && (0, l.jsx)("div", {
-                            className: "workspace_bar__container",
-                            children: (0, l.jsx)(df.A, {})
-                        }), (0, l.jsxs)("div", {
-                            className: "account",
-                            children: [(0, l.jsx)("div", {
-                                className: "account__content",
-                                children: q
-                            }), U() || Z, X, T && (0, l.jsx)(eX, {
-                                cancelUpload: L,
-                                continueUpload: () => {
-                                    E(!1)
-                                }
-                            })]
-                        })]
-                    })
-                },
-                dI = {
-                    signout: eO.A.User.signout.bind(eO.A.User),
-                    resetNotification: at.P.clearPanelNotification
-                },
-                dj = (0, n.Ng)(e => ({
-                    routePath: (0, dv.pe)(e),
-                    freeRoute: (0, dv.Mp)(e),
-                    routeQueryDuration: (0, dv.O$)(e),
-                    routeQueryRenewal: (0, dv.eV)(e),
-                    user: (0, p.mB)(e),
-                    pendingSignout: (0, tg.bQ)(e),
-                    uploadInProgress: (0, dC.cN)(e),
-                    isForwardedTransfer: (0, dS.Y2)(e)
-                }), dI)(dA)
         }
     }
 ]);
-//# sourceMappingURL=account.23bf12d5e914a82b.js.map
+//# sourceMappingURL=account.2f815ba54211b696.js.map

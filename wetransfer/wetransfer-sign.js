@@ -1846,9 +1846,9 @@
                     if (!e) throw Error("useSigningFlowContext must be used within SigningFlowProvider");
                     return e
                 };
-            var e3 = t(44938),
-                e2 = t(26978),
-                e5 = t(58915),
+            var e3 = t(30403),
+                e2 = t(85633),
+                e5 = t(97116),
                 e6 = t(93337),
                 e8 = t.n(e6);
             let e7 = e => {
@@ -2313,7 +2313,7 @@
                     })]
                 })
             };
-            var ac = t(27333),
+            var ac = t(96622),
                 aD = t(58712);
             let aj = function(e, a, t) {
                     let i = arguments.length > 3 && void 0 !== arguments[3] ? arguments[3] : 2;
@@ -2850,8 +2850,8 @@
                 })
             });
             aQ.displayName = "TypedSignatureCanvas";
-            var aU = t(72683),
-                aY = t(23095),
+            var aU = t(81436),
+                aY = t(76616),
                 aF = t(71322),
                 aP = t(26298),
                 aR = t.n(aP);
@@ -3472,7 +3472,7 @@
                 })
             });
             aq.displayName = "SignatureCanvas";
-            var a$ = t(34113),
+            var a$ = t(37796),
                 a0 = t(60261),
                 a1 = t.n(a0);
             let a4 = e => {
@@ -4468,8 +4468,8 @@
                     })
                 })
             };
-            var tm = t(93330),
-                tN = t(788);
+            var tm = t(28233),
+                tN = t(43699);
             let tc = (e, a) => {
                     let t = String(e.getDate()).padStart(2, "0"),
                         i = String(e.getMonth() + 1).padStart(2, "0"),
@@ -4930,7 +4930,7 @@
                     })
                 })
             };
-            var tU = t(79206),
+            var tU = t(30149),
                 tY = t(44259),
                 tF = t(18005),
                 tP = t(59457),
@@ -4999,7 +4999,7 @@
                     })]
                 })
             };
-            var tH = t(36117),
+            var tH = t(11222),
                 tG = t(20124),
                 tZ = t(89187),
                 tJ = t(51853),
@@ -6003,7 +6003,7 @@
                     }), (0, i.jsx)(iU, {})]
                 })
             };
-            var iR = t(50832),
+            var iR = t(14603),
                 iB = t(23433),
                 iV = t(52878),
                 iW = t.n(iV);
@@ -6308,7 +6308,7 @@
                     })]
                 })
             };
-            var i6 = t(15298),
+            var i6 = t(74941),
                 i8 = t(15321),
                 i7 = t(36239),
                 i9 = t.n(i7);
@@ -13075,4 +13075,4 @@
         }
     }
 ]);
-//# sourceMappingURL=wetransfer-sign.94e1d888ec1ee2ca.js.map
+//# sourceMappingURL=wetransfer-sign.a452934fbdbfc589.js.map

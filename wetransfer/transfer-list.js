@@ -405,8 +405,8 @@
                 s = a(21462),
                 d = a(75546),
                 n = a(38169),
-                o = a(15298),
-                _ = a(26978),
+                o = a(74941),
+                _ = a(85633),
                 m = a(32976),
                 w = a(65509);
             let {
@@ -617,9 +617,9 @@
                     children: C.A.t("page.transfers.search_results.retry")
                 })]
             });
-            var q = a(27333),
-                D = a(34113),
-                z = a(58915),
+            var q = a(96622),
+                D = a(37796),
+                z = a(97116),
                 O = a(61360),
                 P = a(99405),
                 V = a.n(P);
@@ -840,7 +840,7 @@
                         })
                     }) : null
                 };
-            var J = a(72683),
+            var J = a(81436),
                 Y = a(6324),
                 K = a.n(Y);
             let $ = e => {
@@ -1010,7 +1010,7 @@
                         })]
                     })
                 };
-            var ea = a(41982),
+            var ea = a(11417),
                 el = a(81507),
                 er = a(37254),
                 ei = a(25418),
@@ -1855,11 +1855,11 @@
             var e3 = function(e) {
                     return e.Date = "DATE", e.Expiration = "EXPIRATION", e.Sender = "SENDER", e.Size = "SIZE", e
                 }({}),
-                e9 = function(e) {
+                e4 = function(e) {
                     return e.Date = "DATE", e.Expiration = "EXPIRATION", e.Size = "SIZE", e.Title = "TITLE", e
                 }({}),
-                e4 = a(41732),
-                e6 = a.n(e4);
+                e9 = a(41732),
+                e6 = a.n(e9);
             let e7 = {
                     DATE: "date",
                     SIZE: "size",
@@ -1873,7 +1873,7 @@
                     } = e, {
                         transferGroup: a,
                         sortBy: r
-                    } = j(), d = (0, s.useMemo)(() => "sent" === a ? [e9.Date, e9.Size, e9.Title, e9.Expiration] : [e3.Date, e3.Size, e3.Sender, e3.Expiration], [a]), n = e7[r], o = (0, s.useRef)(null), _ = (0, s.useRef)(null), m = (0, s.useCallback)(e => {
+                    } = j(), d = (0, s.useMemo)(() => "sent" === a ? [e4.Date, e4.Size, e4.Title, e4.Expiration] : [e3.Date, e3.Size, e3.Sender, e3.Expiration], [a]), n = e7[r], o = (0, s.useRef)(null), _ = (0, s.useRef)(null), m = (0, s.useCallback)(e => {
                         t(e), _.current && _.current.focus()
                     }, [t]), w = (0, s.useMemo)(() => (0, l.jsx)("div", {
                         className: "menu",
@@ -2831,7 +2831,7 @@
                     children: eR.A.getWorkspaceName(a, t)
                 })
             };
-            var tP = a(79206),
+            var tP = a(30149),
                 tV = a(49320),
                 tH = a(69769),
                 tU = a(69938),
@@ -3028,7 +3028,7 @@
             };
             var t5 = a(113),
                 t3 = a.n(t5);
-            let t9 = () => {
+            let t4 = () => {
                 var e, t, a;
                 let r = (0, n.d4)(f.mB),
                     i = (0, n.wA)(),
@@ -3107,7 +3107,7 @@
                     })]
                 })
             };
-            var t4 = a(80714),
+            var t9 = a(80714),
                 t6 = a(16182),
                 t7 = a.n(t6),
                 ae = a(89395),
@@ -3119,8 +3119,8 @@
                 as = a(5712),
                 ad = a(62760),
                 an = a(38679),
-                ao = a(788),
-                a_ = a(25100),
+                ao = a(43699),
+                a_ = a(84607),
                 am = a(83489),
                 aw = a(12924),
                 ag = a(58253),
@@ -3303,7 +3303,7 @@
                         return !(0, tR.Z_)(t) && e.transfer_folders
                     })(), [ee, ea] = (0, s.useState)(null), [el, er] = (0, s.useState)(!1), [ei, es] = (0, s.useState)(!1), [ed, en] = (0, s.useState)(null), [eo, e_] = (0, s.useState)(null), em = (0, s.useMemo)(() => (0, an.s)(E, 300), [E]), ew = (0, n.d4)(f.mB), eg = (0, n.d4)(f.R2), eu = (0, n.d4)(x.bF), eh = (0, n.d4)(af.n9), {
                         batchDeleteTransferCustomizations: ec
-                    } = (0, t4.H)(), {
+                    } = (0, t9.H)(), {
                         updateDisplayName: eb
                     } = (0, y.$S)(), ep = (0, ac.P)(), ex = (0, ac.L)(), {
                         data: ef = []
@@ -3450,8 +3450,8 @@
                             return $ && r === eF.a.SENT && (e.folder_id = null === ee ? "null" : ee), e
                         }, [r, C, S, o, _, $, ee]),
                         {
-                            data: e9,
-                            loading: e4,
+                            data: e4,
+                            loading: e9,
                             error: e6
                         } = function() {
                             let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : {
@@ -3849,7 +3849,7 @@
                         className: "transfer-list-loader",
                         children: (0, l.jsx)(F.A, {})
                     });
-                    else if ("requested" === r) tM = (0, l.jsx)(t9, {});
+                    else if ("requested" === r) tM = (0, l.jsx)(t4, {});
                     else if (e8.length) {
                         let e = $ && r === eF.a.SENT && null === ee && ef.length > 0;
                         tM = (0, l.jsx)("div", {
@@ -3901,12 +3901,12 @@
                         }, !1)
                     }, [tk]);
                     (0, s.useEffect)(() => {
-                        e4 ? eA(!0) : e9 ? eV === e9.currentPage ? eA(!1) : (ej({
-                            transfers: e9.transfers,
-                            total_number_of_transfers: e9.totalCount,
-                            page_number: e9.currentPage
+                        e9 ? eA(!0) : e4 ? eV === e4.currentPage ? eA(!1) : (ej({
+                            transfers: e4.transfers,
+                            total_number_of_transfers: e4.totalCount,
+                            page_number: e4.currentPage
                         }), eA(!1), eq(null), eU(0)) : e6 && (eq(e6), eA(!1), eU(0), eP.A.track(e6))
-                    }, [e9, e4, e6, eV, S]), (0, s.useEffect)(() => {
+                    }, [e4, e9, e6, eV, S]), (0, s.useEffect)(() => {
                         if (I && e8.some(e => e.id === I)) {
                             let e = e8.filter(e => e.id !== I);
                             ej(t => t ? {
@@ -4730,4 +4730,4 @@
         }
     }
 ]);
-//# sourceMappingURL=transfer-list.ac699e39ce29fc42.js.map
+//# sourceMappingURL=transfer-list.c1a10f9a480d4060.js.map

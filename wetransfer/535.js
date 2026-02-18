@@ -2031,8 +2031,8 @@
                 m = l(97197),
                 M = l(5452),
                 c = l.n(M),
-                N = l(15298),
-                y = l(26978),
+                N = l(74941),
+                y = l(85633),
                 x = l(54850),
                 u = l.n(x);
             let b = e => {
@@ -2063,10 +2063,10 @@
                     })]
                 })
             };
-            var D = l(58915),
-                T = l(27333),
-                h = l(34113),
-                j = l(42755),
+            var D = l(97116),
+                T = l(96622),
+                h = l(37796),
+                j = l(50496),
                 z = l(61360),
                 p = l(87963),
                 A = l(53123),
@@ -2100,8 +2100,8 @@
             var S = l(6080),
                 C = l(53155),
                 B = l(56915),
-                f = l(48585);
-            let E = e => {
+                E = l(48585);
+            let f = e => {
                 let {
                     isOpen: a,
                     onClose: l,
@@ -2125,12 +2125,12 @@
                                     transferId: i,
                                     allowlist: d
                                 }).unwrap(), await a(C.Ay.getTransfer(i)), a(B.P.setPanelNotification({
-                                    category: f.a.Notification,
+                                    category: E.a.Notification,
                                     details: "allowlist_updated"
                                 }))
                             } catch (e) {
                                 throw a(B.P.setPanelNotification({
-                                    category: f.a.Error,
+                                    category: E.a.Error,
                                     details: "something_went_wrong"
                                 })), Error("UpdateTransferAllowlistFailed")
                             } finally {
@@ -2147,7 +2147,7 @@
                     k = (0, i.useCallback)(e => {
                         M(e.target.value), N(null)
                     }, []),
-                    E = (0, i.useCallback)(() => {
+                    f = (0, i.useCallback)(() => {
                         let e = m.trim().toLowerCase();
                         if (e) {
                             if (!A.A.validateEmail(e)) return void N(r("transfer.upload.email_verification.restricted.invalid_email"));
@@ -2160,8 +2160,8 @@
                         u(a => a.filter(a => a !== e))
                     }, []),
                     Q = (0, i.useCallback)(e => {
-                        "Enter" === e.key && (e.preventDefault(), E())
-                    }, [E]),
+                        "Enter" === e.key && (e.preventDefault(), f())
+                    }, [f]),
                     v = (0, i.useCallback)(async () => {
                         try {
                             await _({
@@ -2211,7 +2211,7 @@
                             }), (0, t.jsx)(D.$, {
                                 appearance: "primary",
                                 className: O().addButton,
-                                onClick: E,
+                                onClick: f,
                                 size: "small",
                                 children: r("page.transfer.detail.allowlist.modal.add_button")
                             })]
@@ -2353,7 +2353,7 @@
                                 count: h.length - 3
                             })
                         })]
-                    }), (0, t.jsx)(E, {
+                    }), (0, t.jsx)(f, {
                         isOpen: M,
                         onClose: () => c(!1),
                         listItems: l,
@@ -2608,7 +2608,7 @@
                     })
                 };
             var et = l(71322),
-                ei = l(788),
+                ei = l(43699),
                 ed = l(89187),
                 en = l(88848),
                 es = l(7686),
@@ -2839,15 +2839,15 @@
             });
             eC.displayName = "CollapsibleSummary";
             var eB = l(88280),
-                ef = l(87379),
-                eE = l(62760),
+                eE = l(87379),
+                ef = l(62760),
                 eU = function(e) {
                     return e.VIEW_OPTION = "view-option", e.ALLOW_COMMENTS_OPTION = "allow-comments-option", e.PASSWORD_OPTION = "password-option", e.PRICE_OPTION = "price-option", e
                 }({}),
                 eQ = l(58736),
                 ev = l.n(eQ),
-                eY = l(28083),
-                eP = l(23095),
+                eY = l(90396),
+                eP = l(76616),
                 eR = l(73888),
                 eV = l(6037),
                 eF = l(3551),
@@ -2923,7 +2923,7 @@
                         })
                     })
                 };
-            var eJ = l(43855),
+            var eJ = l(58236),
                 eH = l(29279),
                 eX = l(66052),
                 eq = l(1535),
@@ -3110,7 +3110,7 @@
                     isDisabled: _ = !1
                 } = e, {
                     t: g
-                } = (0, w.Bd)(), m = (0, d.wA)(), M = (0, d.d4)(e2.Lv), [c, N] = (0, i.useState)(!1), [x, u] = (0, i.useState)(!1), [b, T] = (0, i.useState)(String((0, ef.Rt)(parseFloat(a || ""))));
+                } = (0, w.Bd)(), m = (0, d.wA)(), M = (0, d.d4)(e2.Lv), [c, N] = (0, i.useState)(!1), [x, u] = (0, i.useState)(!1), [b, T] = (0, i.useState)(String((0, eE.Rt)(parseFloat(a || ""))));
                 (0, i.useEffect)(() => {
                     m((0, aa.YT)(!0))
                 }, [m]);
@@ -3118,7 +3118,7 @@
                     j = (0, i.useCallback)(() => {
                         if (!b || 0 >= parseFloat(b)) return;
                         (1 === b.split(".").length || parseFloat(b) > 1) && T(e => e.replace(/^0+/, ""));
-                        let e = (0, ef.SE)(parseFloat(b));
+                        let e = (0, eE.SE)(parseFloat(b));
                         return e > 0 && e < M ? void m(eu.P9.setPanelNotification({
                             category: eu.aF.Error,
                             details: "price_too_low",
@@ -3170,7 +3170,7 @@
                                     appearance: "secondary",
                                     size: "small",
                                     onClick: () => {
-                                        N(!1), u(!1), null == n || n(), T(String((0, ef.Rt)(parseFloat(a || ""))))
+                                        N(!1), u(!1), null == n || n(), T(String((0, eE.Rt)(parseFloat(a || ""))))
                                     },
                                     disabled: s,
                                     children: g("form.cancel")
@@ -3187,7 +3187,7 @@
                             }), (0, t.jsx)("div", {
                                 className: at().statusText,
                                 "data-testid": "setPaidTransfer.statusText",
-                                children: o ? (0, ef.oQ)((0, ef.SE)(Number(b)), o) : ""
+                                children: o ? (0, eE.oQ)((0, eE.SE)(Number(b)), o) : ""
                             }), s ? (0, t.jsx)(eP.y, {
                                 size: "small",
                                 className: at().spinner
@@ -3298,7 +3298,7 @@
                         settings: {
                             enable_watermark_option: s
                         }
-                    } = (0, eE.k)(), r = (0, i.useMemo)(() => s || a.viewOption === ar._9.PREVIEW_ONLY_WITH_WATERMARK ? eB._ : eB._.filter(e => e.enumValue !== ar._9.PREVIEW_ONLY_WITH_WATERMARK), [s, a.viewOption]), {
+                    } = (0, ef.k)(), r = (0, i.useMemo)(() => s || a.viewOption === ar._9.PREVIEW_ONLY_WITH_WATERMARK ? eB._ : eB._.filter(e => e.enumValue !== ar._9.PREVIEW_ONLY_WITH_WATERMARK), [s, a.viewOption]), {
                         updateViewOption: o,
                         isLoading: _
                     } = (0, eV.Kt)(), [g, m] = (0, i.useState)(a.viewOption);
@@ -3377,7 +3377,7 @@
                         t: r
                     } = (0, w.Bd)(), {
                         settings: o
-                    } = (0, eE.k)(), _ = (0, d.d4)(I.mB), g = m.R0[a.transfer_type], [M, c] = (0, i.useState)(null), N = (0, ez.wE)(a), x = (0, i.useCallback)((e, a) => {
+                    } = (0, ef.k)(), _ = (0, d.d4)(I.mB), g = m.R0[a.transfer_type], [M, c] = (0, i.useState)(null), N = (0, ez.wE)(a), x = (0, i.useCallback)((e, a) => {
                         n || c(a ? e : null)
                     }, [n, c]), u = (0, i.useMemo)(() => {
                         if (M === eU.VIEW_OPTION) return r("transfer.upload.view_options.label");
@@ -3406,7 +3406,7 @@
                             transfer: a
                         }),
                         icon: (0, t.jsx)(y.I7u, {})
-                    })), (0, ef.M6)(g, _) && h.push({
+                    })), (0, eE.M6)(g, _) && h.push({
                         id: eU.PRICE_OPTION,
                         title: D,
                         content: (0, t.jsx)(as, {
@@ -3503,10 +3503,7 @@
                     if (M && (M["downloading_".concat(n.id)] || M["downloading_".concat(n.id, "_").concat(e)])) return !1;
                     (0, p.Od)().trackUserAction(ay.Sf.downloadRequested({
                         location: s === ex.a.SENT ? ay.Cx.SENT_TRANSFER_DETAILS_PAGE : ay.Cx.RECEIVED_TRANSFER_DETAILS_PAGE,
-                        snowplowCategory: "transfer_action",
-                        snowplowAction: "transfer_downloaded",
-                        snowplowLabel: "".concat(s, "_transfer_details_page"),
-                        snowplowProperty: "single_file_download"
+                        downloadType: ay.zh.SINGLE_FILE
                     })), await m((0, aj.Vv)({
                         transfer: n,
                         secret: r,
@@ -3588,8 +3585,8 @@
             };
             var aC = l(45401),
                 aB = l(15802),
-                af = l.n(aB);
-            let aE = e => {
+                aE = l.n(aB);
+            let af = e => {
                 let {
                     transfer: a,
                     transferGroup: l,
@@ -3598,7 +3595,8 @@
                     t: o
                 } = (0, w.Bd)(), _ = r && r["downloading_" + a.id], g = (0, ab.VI)(), m = (0, ez.wE)(a), M = async () => {
                     _ || ((0, p.Od)().trackUserAction(ay.Sf.downloadRequested({
-                        location: l === ex.a.SENT ? ay.Cx.SENT_TRANSFER_DETAILS_PAGE : ay.Cx.RECEIVED_TRANSFER_DETAILS_PAGE
+                        location: l === ex.a.SENT ? ay.Cx.SENT_TRANSFER_DETAILS_PAGE : ay.Cx.RECEIVED_TRANSFER_DETAILS_PAGE,
+                        downloadType: ay.zh.ALL_FILES
                     })), await n((0, aj.F4)({
                         transfer: a,
                         secret: l === ex.a.RECEIVED ? a.recipients[0].security_hash : a.security_hash,
@@ -3619,7 +3617,7 @@
                     (0, aC.AO)(a.id || "", e || "", t || "")
                 };
                 return a ? X.Ay.isMobile ? (0, t.jsxs)("div", {
-                    className: af().optionsMobile,
+                    className: aE().optionsMobile,
                     children: [!(l === ex.a.RECEIVED && (0, ar.IX)(a.viewOption)) && (0, t.jsx)(D.$, {
                         type: "button",
                         appearance: "secondary",
@@ -3636,41 +3634,41 @@
                         children: o("page.transfers.preview")
                     })]
                 }) : (0, t.jsxs)("div", {
-                    className: af().optionsContainer,
+                    className: aE().optionsContainer,
                     children: [(0, t.jsx)("div", {
-                        className: af().childrenContent,
+                        className: aE().childrenContent,
                         children: i
                     }), (0, t.jsx)("div", {
-                        className: af().options,
+                        className: aE().options,
                         children: _ ? (0, t.jsx)("div", {
-                            className: af().option,
+                            className: aE().option,
                             children: (0, t.jsx)(eP.y, {
                                 size: "large",
-                                className: af().spinner
+                                className: aE().spinner
                             })
                         }) : (0, t.jsxs)(t.Fragment, {
                             children: [!(l === ex.a.RECEIVED && (0, ar.IX)(a.viewOption)) && (0, t.jsxs)("button", {
-                                className: ej()(af().option, {
-                                    [af().optionDisabled]: !au.A.isDownloadingAllowed(a)
+                                className: ej()(aE().option, {
+                                    [aE().optionDisabled]: !au.A.isDownloadingAllowed(a)
                                 }),
                                 onClick: M,
                                 disabled: !au.A.isDownloadingAllowed(a),
                                 children: [(0, t.jsx)(y.tdb, {
                                     size: "medium"
                                 }), (0, t.jsx)("div", {
-                                    className: af().optionText,
+                                    className: aE().optionText,
                                     children: o("page.transfers.download")
                                 })]
                             }), a.viewOption !== ar._9.DOWNLOAD_ONLY && !m && (0, t.jsxs)("button", {
-                                className: ej()(af().option, {
-                                    [af().optionDisabled]: !au.A.isPreviewingAllowed(a)
+                                className: ej()(aE().option, {
+                                    [aE().optionDisabled]: !au.A.isPreviewingAllowed(a)
                                 }),
                                 onClick: c,
                                 disabled: !au.A.isPreviewingAllowed(a),
                                 children: [(0, t.jsx)(y.Pb0, {
                                     size: "medium"
                                 }), (0, t.jsx)("div", {
-                                    className: af().optionText,
+                                    className: aE().optionText,
                                     children: o("page.transfers.preview")
                                 })]
                             })]
@@ -3943,8 +3941,8 @@
                     })]
                 }) : null
             };
-            var la = l(72683),
-                ll = l(41982),
+            var la = l(81436),
+                ll = l(11417),
                 lt = l(24717),
                 li = l(37254),
                 ld = l(25418),
@@ -3971,10 +3969,10 @@
                     t: c
                 } = (0, w.Bd)(), x = (0, d.d4)(I.mB), u = (0, d.d4)(ah.AP), {
                     settings: b
-                } = (0, eE.k)(), T = (0, d.d4)(l_.Kj), [h, j] = (0, i.useState)(!1), [z, A] = (0, i.useState)(!1), k = (0, d.d4)(I.JV), O = (0, d.wA)(), {
+                } = (0, ef.k)(), T = (0, d.d4)(l_.Kj), [h, j] = (0, i.useState)(!1), [z, A] = (0, i.useState)(!1), k = (0, d.d4)(I.JV), O = (0, d.wA)(), {
                     updateExpiry: L,
                     isLoading: S
-                } = (0, eV.RY)(), C = (0, lr.yZ)(x, u, b.is_7_days_expiration_supported_for_anonymous_users_enabled, b.is_7_days_expiration_supported_for_free_users_enabled), B = (0, ls.c)(), f = (0, i.useMemo)(() => B.map(ed.Is).join(" ".concat(c("transfer.recover.recovering.plans_conjunction"), " ")), [B, c]), E = (0, lt.N)(), U = 0 === E, Q = E === 1 / 0, v = (0, i.useMemo)(() => M ? Math.min(E === 1 / 0 ? lo.i.DAYS_60_IN_SECONDS : E, lo.i.DAYS_60_IN_SECONDS) : Q || C ? E : lo.i.DAYS_3_IN_SECONDS, [C, E, Q, M]), P = (0, i.useMemo)(() => new Date(null === n ? T.uploadStartedAt ? new Date(T.uploadStartedAt).toISOString() : new Date().toISOString() : n), [T.uploadStartedAt, n]), R = (0, i.useMemo)(() => {
+                } = (0, eV.RY)(), C = (0, lr.yZ)(x, u, b.is_7_days_expiration_supported_for_anonymous_users_enabled, b.is_7_days_expiration_supported_for_free_users_enabled), B = (0, ls.c)(), E = (0, i.useMemo)(() => B.map(ed.Is).join(" ".concat(c("transfer.recover.recovering.plans_conjunction"), " ")), [B, c]), f = (0, lt.N)(), U = 0 === f, Q = f === 1 / 0, v = (0, i.useMemo)(() => M ? Math.min(f === 1 / 0 ? lo.i.DAYS_60_IN_SECONDS : f, lo.i.DAYS_60_IN_SECONDS) : Q || C ? f : lo.i.DAYS_3_IN_SECONDS, [C, f, Q, M]), P = (0, i.useMemo)(() => new Date(null === n ? T.uploadStartedAt ? new Date(T.uploadStartedAt).toISOString() : new Date().toISOString() : n), [T.uploadStartedAt, n]), R = (0, i.useMemo)(() => {
                     let e = new Date;
                     return !Q || M ? {
                         startDateRange: e.toDateString(),
@@ -4100,7 +4098,7 @@
                         children: q ? (0, t.jsx)(N.m, {
                             className: lg().tooltip,
                             content: c("transfer_list.transfer_recoverable_tooltip", {
-                                plan: f
+                                plan: E
                             }),
                             position: X.Ay.isMobile ? "bottom" : "right",
                             mode: "dark",
@@ -4197,7 +4195,7 @@
                     quota: N
                 } = (0, lb.H)(!0), x = (0, d.d4)((0, a5.fj)(a.id || "")), u = !!x, {
                     deleteTransferCustomization: b
-                } = (0, a4.H)(), [T, h] = (0, i.useState)(!1), [z, A] = (0, i.useState)(!1), [k, O] = (0, i.useState)(a.display_name || ""), [L, S] = (0, i.useState)(!1), [B, f] = (0, i.useState)(!1), [E, U] = (0, i.useState)(!1), [Q, v] = (0, i.useState)(!1), Y = a.display_name || r("page.transfers.default_title"), P = c(), R = (l === ex.a.SENT || l === ex.a.RECEIVED && a.requested) && g && !n, V = (0, i.useCallback)(() => {
+                } = (0, a4.H)(), [T, h] = (0, i.useState)(!1), [z, A] = (0, i.useState)(!1), [k, O] = (0, i.useState)(a.display_name || ""), [L, S] = (0, i.useState)(!1), [B, E] = (0, i.useState)(!1), [f, U] = (0, i.useState)(!1), [Q, v] = (0, i.useState)(!1), Y = a.display_name || r("page.transfers.default_title"), P = c(), R = (l === ex.a.SENT || l === ex.a.RECEIVED && a.requested) && g && !n, V = (0, i.useCallback)(() => {
                     A(!0), h(!1)
                 }, []), F = (0, i.useCallback)(() => {
                     A(!1), O(a.display_name)
@@ -4249,14 +4247,14 @@
                         onClick: () => {
                             h(!1), (0, p.Od)().trackUserAction(eR.M.forwardRequested({
                                 transferId: a.id || ""
-                            })), au.A.canForwardWithoutConfirmation() ? J() : (U(!0), f(!1))
+                            })), au.A.canForwardWithoutConfirmation() ? J() : (U(!0), E(!1))
                         },
                         disabled: X,
                         children: r("page.transfers.forward")
                     }), (0, t.jsx)("button", {
                         className: lz().menuItem,
                         onClick: () => {
-                            h(!1), f(!0), U(!1)
+                            h(!1), E(!0), U(!1)
                         },
                         disabled: !au.A.isDeletionAllowed(a, _),
                         children: (0, t.jsx)("div", {
@@ -4334,13 +4332,13 @@
                                     }), (0, t.jsx)(D.$, {
                                         type: "button",
                                         appearance: "secondary",
-                                        onClick: () => f(!1),
+                                        onClick: () => E(!1),
                                         className: lz().cancelButton,
                                         children: r("form.cancel")
                                     })]
                                 })
                             }) : null,
-                            a = E ? (0, t.jsx)(eX.A, {
+                            a = f ? (0, t.jsx)(eX.A, {
                                 text: r("page.transfers.confirm_forward"),
                                 children: (0, t.jsxs)("div", {
                                     className: lz().buttonsContainer,
@@ -4462,8 +4460,8 @@
                         })
                     })
                 };
-            var lf = l(39377);
-            let lE = ["US", "CA", "GB", "UK", "AU", "NZ", "FR", "DE", "JP"];
+            var lE = l(39377);
+            let lf = ["US", "CA", "GB", "UK", "AU", "NZ", "FR", "DE", "JP"];
             var lU = l(31705),
                 lQ = l(7012),
                 lv = l(12130);
@@ -4472,7 +4470,7 @@
             function lP(e) {
                 let {
                     children: a
-                } = e, [l, n] = (0, i.useState)(null), s = (0, lv.R6)(), r = (0, lU.jy)(), o = (0, d.d4)(I.mB), _ = (0, lQ.WU)(o) || 1 === A.A.getWTPlus(), w = (0, d.d4)(ah.AP), g = lE.includes(w), m = (0, i.useMemo)(() => r && !_ && g, [r, _, g]);
+                } = e, [l, n] = (0, i.useState)(null), s = (0, lv.R6)(), r = (0, lU.jy)(), o = (0, d.d4)(I.mB), _ = (0, lQ.WU)(o) || 1 === A.A.getWTPlus(), w = (0, d.d4)(ah.AP), g = lf.includes(w), m = (0, i.useMemo)(() => r && !_ && g, [r, _, g]);
                 return (0, i.useEffect)(() => ((async () => {
                     await new Promise(e => {
                         if (window.Rokt || !m) e();
@@ -4661,7 +4659,7 @@
                             settings: {
                                 rokt_placement_type: n
                             }
-                        } = (0, eE.k)(), s = (0, d.d4)(ah.AP), r = "holdout" == n && "US" !== s ? "ht_ww" : n;
+                        } = (0, ef.k)(), s = (0, d.d4)(ah.AP), r = "holdout" == n && "US" !== s ? "ht_ww" : n;
                         return (0, i.useMemo)(() => ({
                             email: null == t ? void 0 : t.email,
                             firstname: null == t ? void 0 : t.given_name,
@@ -4675,7 +4673,7 @@
                     }({
                         layoutTypeOverride: l,
                         forceSuppressPlacements: s
-                    }), g = (0, i.useContext)(lY), m = (0, lU.jy)(), M = (0, d.d4)(I.mB), c = (0, lQ.WU)(M) || 1 === A.A.getWTPlus(), N = (0, d.d4)(ah.AP), y = lE.includes(N), x = (0, i.useMemo)(() => m && !c && y, [m, c, y]), u = (0, d.d4)(lG.j), b = (0, i.useRef)(t), D = (0, lX.g)(), T = (0, i.useRef)(D);
+                    }), g = (0, i.useContext)(lY), m = (0, lU.jy)(), M = (0, d.d4)(I.mB), c = (0, lQ.WU)(M) || 1 === A.A.getWTPlus(), N = (0, d.d4)(ah.AP), y = lf.includes(N), x = (0, i.useMemo)(() => m && !c && y, [m, c, y]), u = (0, d.d4)(lG.j), b = (0, i.useRef)(t), D = (0, lX.g)(), T = (0, i.useRef)(D);
                     (0, i.useEffect)(() => {
                         T.current = D
                     }, [D, T]), (0, i.useEffect)(() => {
@@ -4835,24 +4833,24 @@
                 let {
                     settings: {
                         is_wetransfer_sign_enabled: B,
-                        show_collections_banner: f
+                        show_collections_banner: E
                     }
-                } = (0, eE.k)();
+                } = (0, ef.k)();
                 (0, i.useEffect)(() => () => {
                     u(l9.A.resetError("transfer"))
                 }, [u]);
                 let {
-                    getUserByAuth0Id: E,
+                    getUserByAuth0Id: f,
                     getUserByEmail: U,
                     isCurrentTeamOfMany: Q
                 } = (0, l3.o)();
                 (0, i.useEffect)(() => () => {
                     u(C.Ay.resetTransfer())
                 }, [u]);
-                let v = E((null == c || null == (w = c.creator) ? void 0 : w.auth0UserId) || ""),
+                let v = f((null == c || null == (w = c.creator) ? void 0 : w.auth0UserId) || ""),
                     Y = U(h && (null == c || null == (g = c.recipients[0]) ? void 0 : g.email) || "");
                 (0, l5.Q1)(N), (0, i.useEffect)(() => {
-                    (0, ef.hb)(T) && u((0, aa.nd)())
+                    (0, eE.hb)(T) && u((0, aa.nd)())
                 }, [u, T]), (0, i.useEffect)(() => {
                     y || u((0, l0.f2)("hidden"))
                 }, [u, y]);
@@ -4868,7 +4866,7 @@
                         }
                     }),
                     V = (0, i.useMemo)(() => R.reduce((e, a) => e + (a.commentCount || 0), 0) > 0, [R]);
-                if (!c) return (0, t.jsx)(lf.A, {});
+                if (!c) return (0, t.jsx)(lE.A, {});
                 let F = (null == c ? void 0 : c.state) === l8.r.EXPIRED,
                     Z = (0, t.jsx)(lm, {
                         transferId: c.id,
@@ -4966,7 +4964,7 @@
                             transfer: c,
                             transferGroup: N,
                             transferShortUrl: p
-                        }) : (0, t.jsx)(aE, {
+                        }) : (0, t.jsx)(af, {
                             transfer: c,
                             transferGroup: N,
                             children: (0, t.jsx)(eT, {
@@ -4984,9 +4982,9 @@
                         reason: O,
                         data: L,
                         onDismiss: S
-                    }), B && !X.Ay.isMobile && (0, t.jsx)(lB, {}), A && (0, t.jsx)(eg, {}), f && b && y && N === ex.a.SENT && (0, t.jsx)(el, {}), X.Ay.isMobile ? (0, t.jsxs)("div", {
+                    }), B && !X.Ay.isMobile && (0, t.jsx)(lB, {}), A && (0, t.jsx)(eg, {}), E && b && y && N === ex.a.SENT && (0, t.jsx)(el, {}), X.Ay.isMobile ? (0, t.jsxs)("div", {
                         className: te().contentMobile,
-                        children: [N === ex.a.SENT ? eo : e_, (0, t.jsx)(aE, {
+                        children: [N === ex.a.SENT ? eo : e_, (0, t.jsx)(af, {
                             transfer: c,
                             transferGroup: N
                         })]
@@ -5600,4 +5598,4 @@
         }
     }
 ]);
-//# sourceMappingURL=8883.67e5221eb56a830d.js.map
+//# sourceMappingURL=8883.29fb34fb69ea6358.js.map

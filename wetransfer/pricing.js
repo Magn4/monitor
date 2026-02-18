@@ -376,7 +376,7 @@
                 P = t(86781),
                 A = t(26573),
                 f = t(84530),
-                E = t(15298);
+                E = t(74941);
             let j = {
                     collect: (0, i.jsx)(y.mN, {
                         "aria-hidden": !0
@@ -699,7 +699,7 @@
                     webpage: null != (a = (0, _.jw)(er.default.getState())) ? a : "other"
                 }))
             };
-            var es = t(58915);
+            var es = t(97116);
             let e_ = (e, a) => {
                     let t = {
                             ...e
@@ -1231,8 +1231,8 @@
                 eU = t(27934),
                 eN = t(39602),
                 ev = t.n(eN),
-                eP = t(27333),
-                eA = t(26978),
+                eP = t(96622),
+                eA = t(85633),
                 ef = t(21655);
             let eE = {
                 src: "/_next/static/media/visual.db36a777.png",
@@ -1370,8 +1370,8 @@
             }
             var eY = t(53526),
                 eO = t.n(eY),
-                eq = t(41982),
-                eB = t(72683),
+                eq = t(11417),
+                eB = t(81436),
                 eK = t(82007),
                 eD = t.n(eK);
 
@@ -1642,15 +1642,15 @@
                     })]
                 })
             };
-            var e$ = t(42755),
+            var e$ = t(50496),
                 e0 = t(2749),
                 e1 = t(52016),
                 e4 = t(24761),
                 e2 = t(86248),
                 e7 = t(16078),
-                e8 = t(87676),
-                e3 = t(87966),
-                e6 = t.n(e3);
+                e6 = t(87676),
+                e8 = t(87966),
+                e3 = t.n(e8);
             let e5 = () => {};
 
             function e9(e) {
@@ -1667,7 +1667,7 @@
                         settings: e
                     } = (0, N.k)(), {
                         hasRedeemedFreeTrial: a
-                    } = (0, e8.J)(), t = (0, l.d4)(P.mB);
+                    } = (0, e6.J)(), t = (0, l.d4)(P.mB);
                     return {
                         shouldShow: (0, g.useMemo)(() => {
                             let i = (0, el.to)(t);
@@ -1758,9 +1758,9 @@
                         })
                     }, [s]),
                     x = (0, i.jsxs)("div", {
-                        className: e6().popoverContent,
+                        className: e3().popoverContent,
                         children: [(0, i.jsx)(e$.K, {
-                            className: e6().closeButton,
+                            className: e3().closeButton,
                             shape: "rounded",
                             variation: "neutral",
                             appearance: "tertiary",
@@ -1771,16 +1771,16 @@
                                 size: "small"
                             })
                         }), (0, i.jsxs)("div", {
-                            className: e6().textContainer,
+                            className: e3().textContainer,
                             children: [(0, i.jsx)(eq.E, {
                                 appearance: "upsell",
                                 size: "small",
                                 children: r("paywalls.ultimate_yearly_ft_popover.badge")
                             }), (0, i.jsx)("div", {
-                                className: e6().titleText,
+                                className: e3().titleText,
                                 children: r("paywalls.ultimate_yearly_ft_popover.title")
                             }), (0, i.jsx)("div", {
-                                className: e6().contentText,
+                                className: e3().contentText,
                                 children: (0, i.jsx)(m.x6, {
                                     i18nKey: "paywalls.ultimate_yearly_ft_popover.description",
                                     components: [(0, i.jsx)("strong", {}, 0)]
@@ -1792,7 +1792,7 @@
                             variation: "upsell",
                             onClick: y,
                             fullwidth: !0,
-                            className: e6().ctaButton,
+                            className: e3().ctaButton,
                             children: r("paywalls.ultimate_yearly_ft_popover.cta")
                         })]
                     });
@@ -1805,7 +1805,7 @@
                         callback: e5,
                         position: "right",
                         align: "end",
-                        containerClassName: e6().wrapper,
+                        containerClassName: e3().wrapper,
                         parentElement: null != (a = u.current) ? a : void 0,
                         children: t
                     })
@@ -2802,4 +2802,4 @@
         }
     }
 ]);
-//# sourceMappingURL=pricing.c0c2c69e815bf2d8.js.map
+//# sourceMappingURL=pricing.05d1c7938a319aba.js.map

@@ -496,7 +496,7 @@
                 Jg: () => l,
                 M3: () => N,
                 MY: () => c,
-                PF: () => w,
+                PF: () => y,
                 WU: () => g,
                 YB: () => O,
                 Z_: () => f,
@@ -509,7 +509,7 @@
                 pq: () => E,
                 sf: () => m,
                 to: () => I,
-                w3: () => y,
+                w3: () => w,
                 wx: () => S,
                 yw: () => R
             });
@@ -585,11 +585,11 @@
                 return t === n.js.TRANSFER || t === n.js.DISTRIBUTE || t === n.js.COLLABORATE
             }
 
-            function w(e) {
+            function y(e) {
                 return !!e && e.loggedIn && R(e)
             }
 
-            function y(e) {
+            function w(e) {
                 let t = !1,
                     r = d(e);
                 return t = r === n.js.PREMIUM_2022 || r === n.js.ULTIMATE, !!e && e.loggedIn && t
@@ -1614,7 +1614,7 @@
                 D4: () => j,
                 Di: () => b,
                 HD: () => T,
-                HM: () => w,
+                HM: () => y,
                 K0: () => f,
                 Ks: () => v,
                 LJ: () => _,
@@ -1640,7 +1640,7 @@
                 m$: () => J,
                 mA: () => Y,
                 pS: () => O,
-                r7: () => y,
+                r7: () => w,
                 u0: () => Q,
                 wv: () => R,
                 yi: () => I,
@@ -1697,13 +1697,13 @@
                 h = (0, i.Mz)(f, g, (e, t) => {
                     if (e) return S(e, t)
                 }),
-                w = (0, i.Mz)(c, e => e.coverLayouts),
-                y = (0, i.Mz)(w, (e, t) => t, (e, t) => e[t]),
-                I = (0, i.Mz)(y, g, (e, t) => {
+                y = (0, i.Mz)(c, e => e.coverLayouts),
+                w = (0, i.Mz)(y, (e, t) => t, (e, t) => e[t]),
+                I = (0, i.Mz)(w, g, (e, t) => {
                     if (e) return S(e, t)
                 }),
                 v = e => t => I(t, e),
-                N = e => t => y(t, e),
+                N = e => t => w(t, e),
                 O = (0, i.Mz)(c, e => e.backgroundType),
                 P = (0, i.Mz)(c, e => e.assets),
                 L = (0, i.Mz)(c, e => e.selectedBackgroundAssets),
@@ -1740,7 +1740,7 @@
                         layout: T
                     } = (0, l.Hh)(r, t), m = e => JSON.parse(JSON.stringify(e));
                     if (a) {
-                        let e = y(i, a);
+                        let e = w(i, a);
                         return !n()(m(null != e ? e : s.dL), m(T))
                     }
                     return d ? !n()(m(d), m(T)) : !n()(m(s.dL), m(T))
@@ -2323,7 +2323,7 @@
                 BD: () => k,
                 Hh: () => D,
                 QF: () => L,
-                e4: () => w,
+                e4: () => y,
                 iD: () => C,
                 ri: () => U,
                 xw: () => b,
@@ -2349,11 +2349,11 @@
                 g = r(57912),
                 R = r(95467);
             let h = null;
-            var w = function(e) {
+            var y = function(e) {
                 return e.UPDATE_STATUS = "AUTH_UPDATE_STATUS", e.UPDATE_APP_STATE = "AUTH_UPDATE_APP_STATE", e.UPDATE_SYNC = "AUTH_UPDATE_SYNC", e.LOADING = "AUTH_LOADING", e
             }({});
 
-            function y(e) {
+            function w(e) {
                 return !0 !== e.isLoggedIn ? {
                     type: "AUTH_UPDATE_STATUS",
                     isLoggedIn: !1,
@@ -2380,7 +2380,7 @@
                 }
             }
             let N = async (e, t) => {
-                "login_required" === e.error ? ((0, A.Aq)(), await t(y({}))) : "user_unknown" === e.error ? a.L.addAction(u.QD) : ["LoginRequiredError"].includes(e.name) || (m.A.error(e), T.A.track(e))
+                "login_required" === e.error ? ((0, A.Aq)(), await t(w({}))) : "user_unknown" === e.error ? a.L.addAction(u.QD) : ["LoginRequiredError"].includes(e.name) || (m.A.error(e), T.A.track(e))
             };
 
             function O(e) {
@@ -2395,7 +2395,7 @@
                             handleError: e => N(e, r)
                         }),
                         s = null == t || null == (a = t.sub) ? void 0 : a.startsWith("email|");
-                    return await r(y({
+                    return await r(w({
                         isLoggedIn: !0,
                         givenName: null == t ? void 0 : t.given_name,
                         familyName: null != (i = null == t ? void 0 : t.family_name) ? i : "",
@@ -2539,7 +2539,7 @@
             function U() {
                 return async (e, t) => {
                     var r;
-                    await e(v(!0)), (0, i.YA)(), await e(y({}));
+                    await e(v(!0)), (0, i.YA)(), await e(w({}));
                     let n = null == (r = t().session) ? void 0 : r.domain,
                         o = (0, p.R)();
                     await l.ri(n), R.default.unsetWTPlusCookie({
@@ -3632,7 +3632,7 @@
                     }, r.onsuccess = () => e(r.result), r.onerror = () => t(r.error)
                 })
             }
-            async function w() {
+            async function y() {
                 let e = null;
                 try {
                     return e = await h(), await new Promise((t, r) => {
@@ -3653,8 +3653,8 @@
                                 g = Number.isFinite(S) ? Math.max(0, Math.floor(S)) : 0,
                                 R = r[s],
                                 h = R ? new Date(R) : new Date,
-                                w = r[u],
-                                y = r[p] || [],
+                                y = r[u],
+                                w = r[p] || [],
                                 I = r[_] || 0,
                                 v = r[E] || !1;
                             t({
@@ -3664,9 +3664,9 @@
                                 resumeToken: n,
                                 totalSize: m,
                                 filesCount: g,
-                                trackingId: w,
+                                trackingId: y,
                                 userId: I,
-                                filesResumeInfo: y,
+                                filesResumeInfo: w,
                                 canUseUploadCdn: v
                             })
                         }).catch(r)
@@ -3677,7 +3677,7 @@
                     e && e.close()
                 }
             }
-            async function y(e) {
+            async function w(e) {
                 let t = null;
                 try {
                     t = await h(), await new Promise((r, a) => {
@@ -3693,7 +3693,7 @@
             }
             async function I() {
                 var e, t, r, a, n, i, o, s, l;
-                let d = await w();
+                let d = await y();
                 return {
                     id: null != (e = null == d ? void 0 : d.transferId) ? e : "",
                     percentage: null != (t = null == d ? void 0 : d.percentage) ? t : 0,
@@ -3708,7 +3708,7 @@
                 }
             }
             async function v() {
-                await y({
+                await w({
                     transferId: "",
                     percentage: 0,
                     createdAt: new Date,
@@ -3723,7 +3723,7 @@
             async function N(e, t) {
                 var r;
                 let a = Math.max(0, Math.min(100, Math.floor(Number.isFinite(t) ? t : 0)));
-                if (T[e] === a || (S(e), (null != (r = await w()) ? r : {
+                if (T[e] === a || (S(e), (null != (r = await y()) ? r : {
                         transferId: "",
                         percentage: 0,
                         createdAt: new Date,
@@ -3747,7 +3747,7 @@
                 }
             }
             async function O(e, t) {
-                await y({
+                await w({
                     transferId: e.transferId,
                     percentage: 0,
                     createdAt: new Date,
@@ -4151,7 +4151,7 @@
                 WI: () => R,
                 LG: () => q,
                 BW: () => h,
-                l1: () => y,
+                l1: () => w,
                 VK: () => ei,
                 Vx: () => I,
                 VM: () => v,
@@ -4215,8 +4215,8 @@
                 clearHoveredBlock: g,
                 clearSelectedBlock: R,
                 clearStagedCoverLayout: h,
-                clearUploadedBackgroundAssets: w,
-                closeShowcaseModal: y,
+                clearUploadedBackgroundAssets: y,
+                closeShowcaseModal: w,
                 removeAsset: I,
                 removeCoverLayoutByTransferId: v,
                 setAsset: N,
@@ -6484,8 +6484,8 @@
         63306: (e, t, r) => {
             r.d(t, {
                 o1: () => R,
-                Ay: () => y,
-                IF: () => w,
+                Ay: () => w,
+                IF: () => y,
                 W2: () => h
             });
             var a = r(32770),
@@ -6519,7 +6519,7 @@
                     }) ? "plus" : (0, _.PF)(t) ? "freeAccount" : "free"
                 };
 
-            function w(e, t, r, a) {
+            function y(e, t, r, a) {
                 if (-1 === ["LimitReached", "UserBlocked", "TransferFailed", "UnavailableParent", "TransferCanceled", "HumanVerificationRequired"].indexOf(a)) {
                     if ("TransferTooBig" === a) {
                         let e = 1 === t.recipients.length && t.recipients[0] === r.defaultRecipient;
@@ -6530,7 +6530,7 @@
                     }))
                 }
             }
-            let y = E.A.generate({
+            let w = E.A.generate({
                 changeType: [R.TRANSFER_CHANGE_TYPE, "transferType"],
                 changeFeature: [R.TRANSFER_CHANGE_FEATURE, "feature"],
                 changeExpiry: [R.TRANSFER_CHANGE_EXPIRY, "period"],
@@ -6616,23 +6616,23 @@
                             transfer: f,
                             route: A,
                             session: T
-                        } = r(), m = u.A.getLastUsedSender(), w = function(e, t, r) {
+                        } = r(), m = u.A.getLastUsedSender(), y = function(e, t, r) {
                             let a = r.name || "",
                                 n = r.defaultRecipient || !1,
                                 i = t.subdomain_name || "";
                             return (!!e.loggedIn && a !== i && !!n || !e.loggedIn && !!n) && n
-                        }(n, E, _), y = p.A.get(c.o.cookies.transferType.name);
-                        y === l.T && (y = g.aG.LINK), "3" === y && (y = g.aG.EMAIL), "2" === y && (y = g.aG.EMAIL), y === l.v && (y = g.aG.EMAIL), !y && e.link_transfers_default && (y = g.aG.LINK), (0, i.O)() && (y = g.aG.LINK), u.A.isDefaultRecipientInUploadLocked({
+                        }(n, E, _), w = p.A.get(c.o.cookies.transferType.name);
+                        w === l.T && (w = g.aG.LINK), "3" === w && (w = g.aG.EMAIL), "2" === w && (w = g.aG.EMAIL), w === l.v && (w = g.aG.EMAIL), !w && e.link_transfers_default && (w = g.aG.LINK), (0, i.O)() && (w = g.aG.LINK), u.A.isDefaultRecipientInUploadLocked({
                             channelDefaultRecipient: _.defaultRecipient,
                             userLoggedIn: n.loggedIn,
                             channelName: _.name,
                             accountSubDomainName: E.subdomain_name
-                        }) && (y = g.aG.EMAIL);
+                        }) && (w = g.aG.EMAIL);
                         let I = _ && _.name && _.name !== E.subdomain_name,
                             v = n.hasSkippedVerification && "/account-verification" === A.path && !!A.query.sig,
                             N = n.loggedIn && (!n.isVerified || v),
                             O = (0, s.hO)(e, n, T.region.country, I),
-                            P = (0, s.g3)(n, I, y === g.aG.LINK),
+                            P = (0, s.g3)(n, I, w === g.aG.LINK),
                             L = "boolean" != typeof e.transfer_recovery_enabled_by_default || e.transfer_recovery_enabled_by_default;
                         t({
                             type: R.TRANSFER_INIT,
@@ -6641,14 +6641,14 @@
                                 channel: _,
                                 transferFromState: f
                             }),
-                            transferType: y === g.aG.LINK ? g.aG.LINK : g.aG.EMAIL,
+                            transferType: w === g.aG.LINK ? g.aG.LINK : g.aG.EMAIL,
                             accountId: E.id,
                             channelName: _.name,
                             expiry: O,
                             isRecoverable: L,
                             defaultProExpiry: d.i.DAYS_30_IN_SECONDS,
                             defaultFreeExpiry: d.i.DAYS_7_IN_SECONDS,
-                            recipients: w ? [w] : [],
+                            recipients: y ? [y] : [],
                             sender: m,
                             state: N ? S.r.VERIFY_ACCOUNT : null,
                             downloaderEmailVerification: P,
@@ -7108,8 +7108,8 @@
                         }
                     }
                 };
-            var w = r(95467);
-            let y = {
+            var y = r(95467);
+            let w = {
                     user: e => {
                         let {
                             id: t,
@@ -7134,8 +7134,8 @@
                             created_at: g,
                             is_business_user: R,
                             default_downloader_email_verification_transfers: h,
-                            marketing_consent: w,
-                            marketing_consent_updated_at: y
+                            marketing_consent: y,
+                            marketing_consent_updated_at: w
                         } = e, I = {
                             id: t,
                             given_name: a || r || "",
@@ -7165,8 +7165,8 @@
                             hasSeenMarketingOptIn: null !== S,
                             created_at: g,
                             isBusinessUser: R,
-                            hasMarketingConsent: w,
-                            marketingConsentUpdatedAt: y,
+                            hasMarketingConsent: y,
+                            marketingConsentUpdatedAt: w,
                             profile_picture: e.profile_picture || null
                         };
                         return e.memberships && e.memberships[0] && (I.memberships = e.memberships, I.storageFull = !!e.memberships[0].storage_full), I
@@ -7180,10 +7180,10 @@
                     }
                 },
                 I = () => e => t => {
-                    if (t.type === w.actions.GET_USER) {
+                    if (t.type === y.actions.GET_USER) {
                         let {
                             memberships: e
-                        } = y.user(t.details);
+                        } = w.user(t.details);
                         (null == e ? void 0 : e[0]) && (0, T.Od)().trackUserAction(h.sessionDataMembershipReceived({
                             membership: null == e ? void 0 : e[0]
                         }))
@@ -7315,8 +7315,8 @@
                 isPending: !1
             };
             var eh = r(27498),
-                ew = r(53155);
-            let ey = {
+                ey = r(53155);
+            let ew = {
                 isLoaded: !1,
                 list: []
             };
@@ -7351,7 +7351,7 @@
                         } = t;
                     switch (r) {
                         case eT.o.ACCOUNT_UPDATE_SUCCESS: {
-                            let r = y.account(t.details);
+                            let r = w.account(t.details);
                             return {
                                 ...e,
                                 defaultRecipient: r.default_recipient_email
@@ -7711,7 +7711,7 @@
                             return {
                                 ...r, state: ed.r.EXPIRED
                             };
-                        case w.actions.GET_USER:
+                        case y.actions.GET_USER:
                             if (r.state === ed.r.INIT && (null == a || null == (t = a.details) ? void 0 : t.is_verified) === !1) return {
                                 ...r,
                                 state: ed.r.VERIFY_ACCOUNT
@@ -7841,21 +7841,21 @@
                     return r
                 },
                 transfers: function() {
-                    let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : ey,
+                    let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : ew,
                         t = arguments.length > 1 ? arguments[1] : void 0,
                         {
                             type: r
                         } = t;
                     switch (r) {
-                        case ew.o1.TRANSFERS_SUCCESS:
+                        case ey.o1.TRANSFERS_SUCCESS:
                             return {
                                 ...e, list: t.list.map(eu.J), isLoaded: !0
                             };
-                        case ew.o1.GET_TRANSFER_SUCCESS:
+                        case ey.o1.GET_TRANSFER_SUCCESS:
                             return {
                                 ...e, transfer: (0, eu.J)(t.transfer)
                             };
-                        case ew.o1.DOWNLOAD_TRANSFER_SUCCESS:
+                        case ey.o1.DOWNLOAD_TRANSFER_SUCCESS:
                             if (!e.transfer) break;
                             return {
                                 ...e, transfer: {
@@ -7863,11 +7863,11 @@
                                     number_of_downloads: e.transfer.number_of_downloads + 1
                                 }
                             };
-                        case ew.o1.TRANSFERS_RESET_TRANSFER:
+                        case ey.o1.TRANSFERS_RESET_TRANSFER:
                             return {
                                 ...e, transfer: null
                             };
-                        case ew.o1.TRANSFERS_RESET_LIST_LOADED:
+                        case ey.o1.TRANSFERS_RESET_LIST_LOADED:
                             return {
                                 ...e, isLoaded: !1
                             }
@@ -7936,7 +7936,7 @@
                             type: r
                         } = t;
                     switch (r) {
-                        case w.actions.GET_USER: {
+                        case y.actions.GET_USER: {
                             let {
                                 id: r = !1,
                                 rules: a = e.rules || null,
@@ -7958,7 +7958,7 @@
                                 hasProfilePicture: S,
                                 hasMarketingConsent: g,
                                 marketingConsentUpdatedAt: R
-                            } = y.user(t.details);
+                            } = w.user(t.details);
                             return {
                                 ...e,
                                 created_at: n,
@@ -7984,27 +7984,27 @@
                                 marketingConsentUpdatedAt: R
                             }
                         }
-                        case w.actions.CHANGE_USER_LANGUAGE:
+                        case y.actions.CHANGE_USER_LANGUAGE:
                             return {
                                 ...e, language: t.language
                             };
-                        case w.actions.REQUEST_PASSWORD_RESET_SUCCESS:
+                        case y.actions.REQUEST_PASSWORD_RESET_SUCCESS:
                             return {
                                 ...e
                             };
-                        case w.actions.CHANGE_USER_IS_VERIFIED:
+                        case y.actions.CHANGE_USER_IS_VERIFIED:
                             return {
                                 ...e, isVerified: t.isVerified
                             };
-                        case w.actions.CHANGE_HAS_SKIPPED_VERIFICATION:
+                        case y.actions.CHANGE_HAS_SKIPPED_VERIFICATION:
                             return {
                                 ...e, hasSkippedVerification: t.hasSkippedVerification
                             };
-                        case w.actions.UPDATE_USER_EMAIL:
+                        case y.actions.UPDATE_USER_EMAIL:
                             return {
                                 ...e, email: t.email
                             };
-                        case w.actions.DISABLE_OTP:
+                        case y.actions.DISABLE_OTP:
                             return {
                                 ...e, otpEnabled: !1, otpEnabledAt: null
                             }
@@ -8029,7 +8029,7 @@
                         case eT.o.GET_ACCOUNT:
                         case eT.o.ACCOUNT_UPDATE_SUCCESS:
                             return {
-                                ...e, ...y.account(t.details)
+                                ...e, ...w.account(t.details)
                             };
                         case eT.o.GET_LAST_ORDER:
                             return {
@@ -8052,7 +8052,7 @@
                             };
                         case eT.o.CREATE_SUBDOMAIN:
                             return {
-                                ...e, ...y.account(t.account)
+                                ...e, ...w.account(t.account)
                             };
                         case eT.o.PAYMENT_ERROR:
                             return {
@@ -8245,7 +8245,7 @@
                         isBusinessUser: S,
                         hasMarketingConsent: g,
                         marketingConsentUpdatedAt: R
-                    } = y.user(e.user),
+                    } = w.user(e.user),
                     h = eC.A.getAvatar(t);
                 return {
                     id: t,
@@ -8558,8 +8558,8 @@
                 g = r(53155),
                 R = r(33061),
                 h = r(38838),
-                w = r(96644),
-                y = r(68018),
+                y = r(96644),
+                w = r(68018),
                 I = r(85218),
                 v = r(34463),
                 N = r(10694),
@@ -8584,42 +8584,42 @@
                     secret: r,
                     domainUserId: a,
                     intent: n,
-                    fileIds: i,
-                    recipientId: o,
-                    downloaderEmail: s,
-                    setMimeTypeExplicit: l,
-                    onError: d,
-                    onSuccess: c
-                } = e, u = t.id ? t.id : "", _ = (0, b.A)(), p = {
-                    apiBase: String(_.NEXT_PUBLIC_API_URL + "/api/v4"),
-                    ddProxyBase: _.NEXT_PUBLIC_LOCAL_BARTENDER_PROXY_API_URL + "/api",
-                    transferId: u,
+                    fileIds: o,
+                    recipientId: l,
+                    downloaderEmail: d,
+                    setMimeTypeExplicit: c,
+                    onError: u,
+                    onSuccess: _
+                } = e, p = t.id ? t.id : "", E = (0, b.A)(), A = {
+                    apiBase: String(E.NEXT_PUBLIC_API_URL + "/api/v4"),
+                    ddProxyBase: E.NEXT_PUBLIC_LOCAL_BARTENDER_PROXY_API_URL + "/api",
+                    transferId: p,
                     secret: r,
                     intent: n
                 };
-                a && (p.domainUserId = a), l && (p.setMimeTypeExplicit = "true"), s && (p.downloaderEmail = s), i && (p.fileIds = i.join(",")), o && (p.recipientId = o), t.password && (p.password = t.password);
-                let E = (0, f.TS)(u);
-                if (E && (p.orderAccessToken = E), await (0, U.wR)()) {
+                a && (A.domainUserId = a), c && (A.setMimeTypeExplicit = "true"), d && (A.downloaderEmail = d), o && (A.fileIds = o.join(",")), l && (A.recipientId = l), t.password && (A.password = t.password);
+                let T = (0, f.TS)(p);
+                if (T && (A.orderAccessToken = T), await (0, U.wR)()) {
                     let e = await (0, U.iD)();
-                    e && (p.accessToken = e)
+                    e && (A.accessToken = e)
                 }
-                let A = (0, k.I)();
-                A && (p.localStorageId = A);
-                let T = (0, F.Sy)();
-                T && (p.currentTeamId = T);
-                let m = setInterval(async () => {
+                let m = (0, k.I)();
+                m && (A.localStorageId = m);
+                let S = (0, F.Sy)();
+                S && (A.currentTeamId = S);
+                let g = setInterval(async () => {
                         try {
                             let e = await navigator.serviceWorker.getRegistration();
                             e && e.active && e.active.postMessage("ping")
                         } catch (e) {}
                     }, 5e3),
-                    S = e => {
+                    R = e => {
                         let {
                             type: t,
                             error: r,
                             transferId: a
                         } = e.data;
-                        (!a || a === u) && (t === M.DOWNLOAD_ERROR || t === M.DOWNLOAD_FINISHED || t === M.DOWNLOAD_CANCELLED) && (clearInterval(m), navigator.serviceWorker.removeEventListener("message", S), t === M.DOWNLOAD_ERROR && r && d && d(function(e) {
+                        (!a || a === p) && (t === M.DOWNLOAD_ERROR || t === M.DOWNLOAD_FINISHED || t === M.DOWNLOAD_CANCELLED) && (clearInterval(g), navigator.serviceWorker.removeEventListener("message", R), t === M.DOWNLOAD_ERROR && r && u && u(function(e) {
                             let t = e.toLowerCase();
                             return t.includes("zscaler") || t.includes("internet_security") || t.includes("firewall") || t.includes("status_403_internet_security_by_zscaler") ? {
                                 errorType: "FIREWALL_BLOCKED"
@@ -8648,19 +8648,22 @@
                             } : {
                                 errorType: "DOWNLOAD_UNKNOWN_ERROR"
                             }
-                        }(r).errorType), t === M.DOWNLOAD_FINISHED && c && c())
+                        }(r).errorType), t === M.DOWNLOAD_FINISHED ? _ && _() : (0, i.Od)().trackUserAction(s.Sf.downloadFailed({
+                            transferId: p,
+                            errorType: t
+                        })))
                     };
-                navigator.serviceWorker.addEventListener("message", S);
-                let g = function(e) {
+                navigator.serviceWorker.addEventListener("message", R);
+                let h = function(e) {
                         try {
                             let t = JSON.stringify(e);
                             return btoa(t)
                         } catch (e) {
                             throw Error("Failed to encode parameters: ".concat(e.message))
                         }
-                    }(p),
-                    R = "/download/local-bartender?id=".concat(encodeURIComponent(g));
-                return location.assign(R)
+                    }(A),
+                    y = "/download/local-bartender?id=".concat(encodeURIComponent(h));
+                return location.assign(y)
             }
 
             function B(e) {
@@ -8690,7 +8693,7 @@
             }
 
             function V(e) {
-                return !!(e.extendedExpiryInSeconds && e.expiryInSeconds === e.extendedExpiryInSeconds)
+                return G(e.id) || !!(e.extendedExpiryInSeconds && e.expiryInSeconds === e.extendedExpiryInSeconds)
             }
             async function H(e, t) {
                 let r = !1,
@@ -8748,7 +8751,7 @@
                     fromPreviewPage: _ = !1
                 } = e, p = t.id, E = "downloading_".concat(p);
                 return async (e, T) => {
-                    e((0, y.m$)(E));
+                    e((0, w.m$)(E));
                     try {
                         var R, h;
                         B({
@@ -8795,7 +8798,6 @@
                                         files: E,
                                         priceCurrency: null == (r = t.price) ? void 0 : r.currency,
                                         brandingType: m,
-                                        snowplowEventName: "download_event",
                                         recovered: V(t),
                                         downloaderEmailVerificationSelected: t.downloaderEmailVerification,
                                         isFromQRCode: c,
@@ -8839,7 +8841,6 @@
                             files: E,
                             priceCurrency: null == (h = t.price) ? void 0 : h.currency,
                             brandingType: m,
-                            snowplowEventName: "download_event",
                             recovered: V(t),
                             downloaderEmailVerificationSelected: t.downloaderEmailVerification,
                             isFromQRCode: c,
@@ -8850,12 +8851,12 @@
                     } catch (t) {
                         e(m.A.setError("transfer", {
                             downloadFailed: !0
-                        })), e(w.P9.setPanelNotification({
-                            category: w.aF.Notification,
+                        })), e(y.P9.setPanelNotification({
+                            category: y.aF.Notification,
                             details: "something_went_wrong"
                         }))
                     }
-                    e((0, y.lX)(E))
+                    e((0, w.lX)(E))
                 }
             }
 
@@ -8875,7 +8876,7 @@
                     fromPreviewPage: T = !1
                 } = e, R = t.id, h = "downloading_".concat(R, "_").concat(o);
                 return async (e, O) => {
-                    e((0, y.m$)(h));
+                    e((0, w.m$)(h));
                     try {
                         var P, L;
                         B({
@@ -8885,7 +8886,7 @@
                         });
                         let m = t.items.find(e => e.id === o),
                             h = (0, I.m)(O()),
-                            w = [{
+                            y = [{
                                 id: m.id,
                                 extension: m.file.type,
                                 size: m.size
@@ -8919,10 +8920,9 @@
                                         location: T ? s.Cx.PREVIEW_PAGE : c === u.a.SENT ? s.Cx.SENT_TRANSFER_DETAILS_PAGE : s.Cx.RECEIVED_TRANSFER_DETAILS_PAGE,
                                         transferType: t.recipients.length > 0 ? "EMAIL" : "LINK",
                                         downloadType: s.zh.SINGLE_FILE,
-                                        files: w,
+                                        files: y,
                                         priceCurrency: null == (e = t.price) ? void 0 : e.currency,
                                         brandingType: h,
-                                        snowplowEventName: "download_event",
                                         recovered: V(t),
                                         downloaderEmailVerificationSelected: t.downloaderEmailVerification,
                                         malwareProtectionStatus: p,
@@ -8952,7 +8952,7 @@
                             download_type: s.zh.SINGLE_FILE,
                             number_files: 1,
                             files_total_size: m.size,
-                            files: w,
+                            files: y,
                             branding_type: h,
                             price_amount: (0, f.V6)(t),
                             price_currency: null == (P = t.price) ? void 0 : P.currency,
@@ -8967,10 +8967,9 @@
                             location: T ? s.Cx.PREVIEW_PAGE : c === u.a.SENT ? s.Cx.SENT_TRANSFER_DETAILS_PAGE : s.Cx.RECEIVED_TRANSFER_DETAILS_PAGE,
                             transferType: t.recipients.length > 0 ? "EMAIL" : "LINK",
                             downloadType: s.zh.SINGLE_FILE,
-                            files: w,
+                            files: y,
                             priceCurrency: null == (L = t.price) ? void 0 : L.currency,
                             brandingType: h,
-                            snowplowEventName: "download_event",
                             recovered: V(t),
                             downloaderEmailVerificationSelected: t.downloaderEmailVerification,
                             malwareProtectionStatus: p,
@@ -8982,12 +8981,12 @@
                     } catch (t) {
                         e(m.A.setError("transfer", {
                             downloadFailed: !0
-                        })), e(w.P9.setPanelNotification({
-                            category: w.aF.Notification,
+                        })), e(y.P9.setPanelNotification({
+                            category: y.aF.Notification,
                             details: "something_went_wrong"
                         }))
                     }
-                    e((0, y.lX)(h))
+                    e((0, w.lX)(h))
                 }
             }
 
@@ -9053,7 +9052,6 @@
                                         files: g,
                                         priceCurrency: null == (r = t.price) ? void 0 : r.currency,
                                         brandingType: E,
-                                        snowplowEventName: "download_event",
                                         recovered: V(t),
                                         downloaderEmailVerificationSelected: t.downloaderEmailVerification,
                                         malwareProtectionStatus: u,
@@ -9099,7 +9097,6 @@
                             files: g,
                             priceCurrency: null == (m = t.price) ? void 0 : m.currency,
                             brandingType: E,
-                            snowplowEventName: "download_event",
                             recovered: V(t),
                             downloaderEmailVerificationSelected: t.downloaderEmailVerification,
                             malwareProtectionStatus: u,
@@ -9110,7 +9107,7 @@
                             transferId: t.id
                         })
                     } catch (t) {
-                        return e(w.P9.setTransferNotification({
+                        return e(y.P9.setTransferNotification({
                             text: t.message
                         })), t.message === E.A.TOO_MANY_REQUESTS ? e({
                             type: S.o1.TRANSFER_STATE_DOWNLOADABLE
@@ -9196,7 +9193,6 @@
                                         files: h,
                                         priceCurrency: null == (e = t.price) ? void 0 : e.currency,
                                         brandingType: E,
-                                        snowplowEventName: "download_event",
                                         recovered: V(t),
                                         downloaderEmailVerificationSelected: t.downloaderEmailVerification,
                                         malwareProtectionStatus: u,
@@ -9215,9 +9211,9 @@
                             domainUserId: l,
                             intent: C.KC
                         });
-                        let w = Z(t, "downloadFile", g);
+                        let y = Z(t, "downloadFile", g);
                         J({
-                            transferAnalyticsData: w
+                            transferAnalyticsData: y
                         }), A.A.trackUnstructSnowplowEvent("iglu:com.wetransfer/download_event/jsonschema/3-0-0", {
                             transfer_id: t.id,
                             transfer_type: t.type.toUpperCase(),
@@ -9243,7 +9239,6 @@
                             files: h,
                             priceCurrency: null == (m = t.price) ? void 0 : m.currency,
                             brandingType: E,
-                            snowplowEventName: "download_event",
                             recovered: V(t),
                             downloaderEmailVerificationSelected: t.downloaderEmailVerification,
                             malwareProtectionStatus: u,
@@ -9254,7 +9249,7 @@
                             file_id: n
                         })
                     } catch (t) {
-                        return e(w.P9.setTransferNotification({
+                        return e(y.P9.setTransferNotification({
                             text: t
                         })), t.message === E.A.TOO_MANY_REQUESTS ? (e({
                             type: S.o1.TRANSFER_STATE_FINISHED_FILE,
@@ -9441,7 +9436,7 @@
             }
 
             function ea(e) {
-                return e.itemsTree ? e.itemsTree.items.filter(e => e.uiType === v.a.file).length : 0
+                return e.items ? e.items.filter(e => e.uiType === v.a.file).length : 0
             }
 
             function en(e) {
@@ -9541,12 +9536,11 @@
                         files: u,
                         priceCurrency: _,
                         brandingType: p,
-                        snowplowEventName: E,
-                        recovered: f,
-                        downloaderEmailVerificationSelected: A,
-                        malwareProtectionStatus: T,
-                        isFromQRCode: m,
-                        viewOption: S
+                        recovered: E,
+                        downloaderEmailVerificationSelected: f,
+                        malwareProtectionStatus: A,
+                        isFromQRCode: T,
+                        viewOption: m
                     } = e;
                     return {
                         kind: "download_started",
@@ -9564,18 +9558,17 @@
                             files: JSON.stringify(u),
                             priceCurrency: _,
                             brandingType: p,
-                            snowplowEventName: E,
-                            recovered: f,
+                            recovered: E,
+                            ...f && {
+                                downloaderEmailVerificationSelected: f
+                            },
                             ...A && {
-                                downloaderEmailVerificationSelected: A
+                                malwareProtectionStatus: A
                             },
                             ...T && {
-                                malwareProtectionStatus: T
+                                isFromQRCode: T
                             },
-                            ...m && {
-                                isFromQRCode: m
-                            },
-                            viewOption: S
+                            viewOption: m
                         }
                     }
                 },
@@ -9594,13 +9587,12 @@
                         files: u,
                         priceCurrency: _,
                         brandingType: p,
-                        snowplowEventName: E,
-                        recovered: f,
-                        downloaderEmailVerificationSelected: A,
-                        malwareProtectionStatus: T,
-                        isFromQRCode: m,
-                        downloadDurationMs: S,
-                        viewOption: g
+                        recovered: E,
+                        downloaderEmailVerificationSelected: f,
+                        malwareProtectionStatus: A,
+                        isFromQRCode: T,
+                        downloadDurationMs: m,
+                        viewOption: S
                     } = e;
                     return {
                         kind: "download_completed",
@@ -9618,55 +9610,55 @@
                             files: JSON.stringify(u),
                             priceCurrency: _,
                             brandingType: p,
-                            snowplowEventName: E,
-                            recovered: f,
+                            recovered: E,
+                            ...f && {
+                                downloaderEmailVerificationSelected: f
+                            },
                             ...A && {
-                                downloaderEmailVerificationSelected: A
+                                malwareProtectionStatus: A
                             },
                             ...T && {
-                                malwareProtectionStatus: T
+                                isFromQRCode: T
                             },
                             ...m && {
-                                isFromQRCode: m
+                                downloadDurationMs: m
                             },
-                            ...S && {
-                                downloadDurationMs: S
-                            },
-                            viewOption: g
+                            viewOption: S
+                        }
+                    }
+                },
+                downloadFailed(e) {
+                    let {
+                        transferId: t,
+                        errorType: r
+                    } = e;
+                    return {
+                        kind: "download_failed",
+                        info: {
+                            transferId: t,
+                            ...r && {
+                                errorType: r
+                            }
                         }
                     }
                 },
                 downloadRequested(e) {
                     let {
                         location: t,
-                        snowplowCategory: r,
-                        snowplowAction: a,
-                        snowplowLabel: n,
-                        snowplowProperty: i,
-                        malwareProtectionStatus: o,
-                        isAppRedirectEnabled: s
+                        downloadType: r,
+                        malwareProtectionStatus: a,
+                        isAppRedirectEnabled: n
                     } = e;
                     return {
                         kind: "download_requested",
                         info: {
                             location: t,
-                            ...r && {
-                                snowplowCategory: r
-                            },
+                            downloadType: r,
                             ...a && {
-                                snowplowAction: a
+                                malwareProtectionStatus: a
                             },
-                            ...n && {
-                                snowplowLabel: n
-                            },
-                            ...i && {
-                                snowplowProperty: i
-                            },
-                            ...o && {
-                                malwareProtectionStatus: o
-                            },
-                            ...void 0 !== s && {
-                                isAppRedirectEnabled: s
+                            ...void 0 !== n && {
+                                isAppRedirectEnabled: n
                             }
                         }
                     }
@@ -9732,6 +9724,17 @@
                             filePublicId: r,
                             isPreviewMonetized: a,
                             isAppRedirectEnabled: n
+                        }
+                    }
+                },
+                shareButtonTapped(e) {
+                    let {
+                        transferId: t
+                    } = e;
+                    return {
+                        kind: "share_button_tapped",
+                        info: {
+                            transferId: t
                         }
                     }
                 }
@@ -10915,8 +10918,8 @@
                 WR: () => I,
                 IP: () => R,
                 Cs: () => h,
-                Hu: () => w,
-                Ob: () => y
+                Hu: () => y,
+                Ob: () => w
             });
             var a = r(32770),
                 n = r.n(a),
@@ -11034,7 +11037,7 @@
                     throw new o.A(s.A.INVALID_TRANSFER)
                 }
             }
-            async function w(e) {
+            async function y(e) {
                 let {
                     transferId: t,
                     secret: r,
@@ -11076,7 +11079,7 @@
                     throw new o.A(s.A.INVALID_TRANSFER)
                 }
             }
-            async function y(e) {
+            async function w(e) {
                 try {
                     return (await i.A.Transfers.scanForMalware(null, {
                         pathExtValues: {
@@ -11348,7 +11351,7 @@
                         }
                     }
                 },
-                scanTransferMalware: y,
+                scanTransferMalware: w,
                 checkRecipientEmail: I
             }
         },
@@ -11689,9 +11692,9 @@
                 bO: () => v,
                 Od: () => O,
                 y9: () => P,
-                YO: () => y,
+                YO: () => w,
                 ax: () => h,
-                Tk: () => w,
+                Tk: () => y,
                 oi: () => L
             });
             var o = r(72590),
@@ -11725,11 +11728,11 @@
                 R = e
             }
 
-            function w(e) {
+            function y(e) {
                 n = e
             }
 
-            function y(e) {
+            function w(e) {
                 i = e
             }
 
@@ -11934,8 +11937,8 @@
                 g = r(24932),
                 R = r(28338),
                 h = r(50820),
-                w = r(25402),
-                y = r(50467),
+                y = r(25402),
+                w = r(50467),
                 I = r(55851),
                 v = r(55256),
                 N = r(35120),
@@ -12116,8 +12119,7 @@
                         expiry: s,
                         hasPassword: l,
                         transferFilesInfo: d,
-                        isReview: c,
-                        downloaderEmailVerificationSelected: u
+                        downloaderEmailVerificationSelected: c
                     } = e;
                     return {
                         transfer_id: r.id,
@@ -12141,9 +12143,8 @@
                         has_password: l,
                         transfer_files_info: d,
                         passwordless_login_auth_email: r.sender || r.from || "",
-                        upload_is_review: c,
-                        ...u && {
-                            downloader_email_verification_selected: u
+                        ...c && {
+                            downloader_email_verification_selected: c
                         }
                     }
                 },
@@ -12191,9 +12192,8 @@
                             expiry: i,
                             hasPassword: o,
                             transferFilesInfo: s,
-                            isReview: l = !1,
-                            downloaderEmailVerificationSelected: d,
-                            trackingId: c
+                            downloaderEmailVerificationSelected: l,
+                            trackingId: d
                         } = e;
                         return {
                             kind: "transfer_email_upload_started",
@@ -12206,11 +12206,10 @@
                                     expiry: i,
                                     hasPassword: o,
                                     transferFilesInfo: s,
-                                    isReview: l,
-                                    downloaderEmailVerificationSelected: d
+                                    downloaderEmailVerificationSelected: l
                                 }),
-                                ...c && {
-                                    trackingId: c
+                                ...d && {
+                                    trackingId: d
                                 }
                             }
                         }
@@ -12224,9 +12223,8 @@
                             expiry: i,
                             hasPassword: o,
                             transferFilesInfo: s,
-                            isReview: l = !1,
-                            downloaderEmailVerificationSelected: d,
-                            trackingId: c
+                            downloaderEmailVerificationSelected: l,
+                            trackingId: d
                         } = e;
                         return {
                             kind: "transfer_link_upload_started",
@@ -12239,11 +12237,10 @@
                                     expiry: i,
                                     hasPassword: o,
                                     transferFilesInfo: s,
-                                    isReview: l,
-                                    downloaderEmailVerificationSelected: d
+                                    downloaderEmailVerificationSelected: l
                                 }),
-                                ...c && {
-                                    trackingId: c
+                                ...d && {
+                                    trackingId: d
                                 }
                             }
                         }
@@ -12259,9 +12256,8 @@
                             isRecoverable: s,
                             hasPassword: l,
                             transferFilesInfo: d,
-                            isReview: c = !1,
-                            downloaderEmailVerificationSelected: u,
-                            trackingId: _
+                            downloaderEmailVerificationSelected: c,
+                            trackingId: u
                         } = e;
                         return {
                             kind: "transfer_email_upload_completed",
@@ -12275,12 +12271,11 @@
                                     expiry: o,
                                     hasPassword: l,
                                     transferFilesInfo: d,
-                                    isReview: c,
-                                    downloaderEmailVerificationSelected: u
+                                    downloaderEmailVerificationSelected: c
                                 }),
                                 isRecoverable: s,
-                                ..._ && {
-                                    trackingId: _
+                                ...u && {
+                                    trackingId: u
                                 }
                             }
                         }
@@ -12296,9 +12291,8 @@
                             isRecoverable: s,
                             hasPassword: l,
                             transferFilesInfo: d,
-                            isReview: c = !1,
-                            downloaderEmailVerificationSelected: u,
-                            trackingId: _
+                            downloaderEmailVerificationSelected: c,
+                            trackingId: u
                         } = e;
                         return {
                             kind: "transfer_link_upload_completed",
@@ -12312,12 +12306,11 @@
                                     expiry: o,
                                     hasPassword: l,
                                     transferFilesInfo: d,
-                                    isReview: c,
-                                    downloaderEmailVerificationSelected: u
+                                    downloaderEmailVerificationSelected: c
                                 }),
                                 isRecoverable: s,
-                                ..._ && {
-                                    trackingId: _
+                                ...u && {
+                                    trackingId: u
                                 }
                             }
                         }
@@ -12343,8 +12336,7 @@
                                     displayName: n,
                                     expiry: i,
                                     hasPassword: o,
-                                    transferFilesInfo: s,
-                                    isReview: !1
+                                    transferFilesInfo: s
                                 }),
                                 requestId: l
                             }
@@ -12373,8 +12365,7 @@
                                     displayName: i,
                                     expiry: o,
                                     hasPassword: s,
-                                    transferFilesInfo: l,
-                                    isReview: !1
+                                    transferFilesInfo: l
                                 }),
                                 requestId: d
                             }
@@ -12467,7 +12458,7 @@
                     abortUploadOnRefresh: function(e) {
                         return async () => {
                             e.id && (e.state === X.r.STARTED || e.state === X.r.PAUSED) && await Promise.all([ep.QQ.exitTransfer(e.id), (0, e_.T)({
-                                name: y.PL,
+                                name: w.PL,
                                 type: "action",
                                 tags: {
                                     stage: el.Ay.currentUploadStats.stage,
@@ -12565,7 +12556,7 @@
                                     type: V.o1.UPLOAD_NEED_VERIFICATION
                                 })), "email_verification_required" !== i.message || E || e({
                                     type: V.o1.UPLOAD_NEED_VERIFICATION
-                                }), o.L.addAction(y.E5, {
+                                }), o.L.addAction(w.E5, {
                                     files: t.files.length,
                                     storm: !0,
                                     transfer_id: t.id,
@@ -12648,8 +12639,8 @@
                                         short_description_debug: a.shortDescription
                                     }), (0, $.O)(a), new U.A(k.A.TRANSFER_FAILED)
                                 }
-                                l && await (ey ? Promise.resolve() : new Promise((e, t) => {
-                                    ew = {
+                                l && await (ew ? Promise.resolve() : new Promise((e, t) => {
+                                    ey = {
                                         resolve: e,
                                         reject: t
                                     }
@@ -12759,7 +12750,7 @@
                             e((0, D.UX)());
                             let R = (0, K.uX)(_()),
                                 h = t.itemsTree.items.filter(e => "directory" === e.uiType),
-                                w = {
+                                y = {
                                     transfer: t,
                                     numberOfFolders: h.length,
                                     brandingType: m,
@@ -12775,8 +12766,8 @@
                                     trackingId: R
                                 },
                                 I = (null == t ? void 0 : t.type) === J.aG.EMAIL || (null == t ? void 0 : t.transfer_type) === J.N3.EMAIL;
-                            (0, S.Od)().trackUserAction(t.requestId ? eT.requestUploadStarted(w) : I ? eT.emailUploadStarted(w) : eT.linkUploadStarted(w)), await (0, e_.T)({
-                                name: y.eg,
+                            (0, S.Od)().trackUserAction(t.requestId ? eT.requestUploadStarted(y) : I ? eT.emailUploadStarted(y) : eT.linkUploadStarted(y)), await (0, e_.T)({
+                                name: w.eg,
                                 type: "action",
                                 tags: {
                                     transfer_size: eo(t.size),
@@ -12810,7 +12801,7 @@
                                     resumeInputs: s
                                 }));
                                 if ((0, O.e)(), C.A.incrementWTSent(), p.success = !0, p.cancelled = !1, p.duration = z.stop("transfer.upload"), await (0, e_.T)({
-                                        name: y.PL,
+                                        name: w.PL,
                                         type: "view",
                                         time: p.duration,
                                         tags: {
@@ -12887,19 +12878,19 @@
                         }
                     }
                 }),
-                ew = null,
-                ey = !1;
+                ey = null,
+                ew = !1;
 
             function eI() {
-                ew && (ew.resolve(), ew = null)
+                ey && (ey.resolve(), ey = null)
             }
 
             function ev() {
-                ew && (ew.reject(Error(eS)), ew = null), ey = !1
+                ey && (ey.reject(Error(eS)), ey = null), ew = !1
             }
 
             function eN(e) {
-                ey = e
+                ew = e
             }
 
             function eO(e, t, r, a) {
@@ -12979,7 +12970,7 @@
                 return async a => {
                     var n;
                     if (await (0, e_.T)({
-                            name: y.PL,
+                            name: w.PL,
                             type: "view",
                             time: Math.ceil(performance.now() - e.monotonicStartTime),
                             tags: {
@@ -13030,7 +13021,7 @@
                     forcePreviewAndDownloadViewOption: S = !1
                 } = e;
                 return async (e, g) => {
-                    var R, w, y, I, v, O;
+                    var R, y, w, I, v, O;
                     if (null == (R = g().transfer) ? void 0 : R.resumeUploadInProgress) return;
                     T || e({
                         type: V.o1.UPLOAD_PENDING
@@ -13047,7 +13038,7 @@
                         type: V.o1.TRANSFER_SET_CHANNEL,
                         channel: r.subdomain_name
                     });
-                    let C = N.R.includes(null != (O = null == (y = g().adWallpaper) || null == (w = y.adResponse) ? void 0 : w.campaignId) ? O : 0),
+                    let C = N.R.includes(null != (O = null == (w = g().adWallpaper) || null == (y = w.adResponse) ? void 0 : y.campaignId) ? O : 0),
                         U = !!(null == (v = g().unlockOneDayExpiryTransfer) || null == (I = v.transferSizeLimitPaywall) ? void 0 : I.transferUnlocked),
                         b = (null == E ? void 0 : E.anonymous_login_step_enabled) || !1,
                         F = (null == E ? void 0 : E.passwordless_anticipated_upload_enabled) || b;
@@ -13443,7 +13434,7 @@
                                         })(e.items.length),
                                         storm_client_version: eW()
                                     }
-                                }), "ERROR" === t.type || "true" === (0, w.A)().NEXT_PUBLIC_STORM_CLIENT_DEBUG_MODE_ENABLED) {
+                                }), "ERROR" === t.type || "true" === (0, y.A)().NEXT_PUBLIC_STORM_CLIENT_DEBUG_MODE_ENABLED) {
                                 var r;
                                 let a = "ERROR" === t.type ? "error" : "log";
                                 i.yf.logger[a]("".concat("ERROR" === t.type ? "[ERROR] " : "").concat(t.message), {
@@ -14061,8 +14052,8 @@
                 g = r(72255),
                 R = r(57912),
                 h = r(27498),
-                w = r(63306),
-                y = r(96644),
+                y = r(63306),
+                w = r(96644),
                 I = r(68018),
                 v = r(68081),
                 N = r(10694);
@@ -14145,14 +14136,14 @@
                         return async r => {
                             r((0, I.m$)(t));
                             try {
-                                e && r(w.Ay.create()), P.pushSignoutAnalytics();
+                                e && r(y.Ay.create()), P.pushSignoutAnalytics();
                                 let a = new Date(Date.now() + 18e5);
                                 T.A.set(u.o.cookies.signout.name, 1, {
                                     expires: a
                                 }), P.delayedResetPending(r, t), await r((0, d.ri)())
                             } catch (e) {
-                                r(y.P9.setPanelNotification({
-                                    category: y.aF.Error,
+                                r(w.P9.setPanelNotification({
+                                    category: w.aF.Error,
                                     details: "signout_exception"
                                 })), r((0, I.lX)(t))
                             }
@@ -14210,8 +14201,8 @@
                                     path: "/"
                                 }), t((0, v.xC)(h.language))), t((0, I.lX)(e)), h
                             } catch (r) {
-                                t(y.P9.setPanelNotification({
-                                    category: y.aF.Error,
+                                t(w.P9.setPanelNotification({
+                                    category: w.aF.Error,
                                     details: "retrieve_user_exception"
                                 })), t((0, I.lX)(e))
                             }
@@ -14223,13 +14214,13 @@
                         return async r => {
                             r((0, I.m$)(t));
                             try {
-                                await o.A.User.updatePassword(e), r(y.P9.setPanelNotification({
-                                    category: y.aF.Notification,
+                                await o.A.User.updatePassword(e), r(w.P9.setPanelNotification({
+                                    category: w.aF.Notification,
                                     details: "update_password"
                                 }))
                             } catch (e) {
-                                r(e.status === m.iu.BAD_REQUEST ? h.A.setError("password", e.body.fields) : y.P9.setPanelNotification({
-                                    category: y.aF.Error,
+                                r(e.status === m.iu.BAD_REQUEST ? h.A.setError("password", e.body.fields) : w.P9.setPanelNotification({
+                                    category: w.aF.Error,
                                     details: "update_password_exception"
                                 }))
                             }
@@ -14249,11 +14240,11 @@
                                     details: t.body
                                 })
                             } catch (e) {
-                                e.status === m.iu.NOT_FOUND ? (r(h.A.setError("requestPasswordReset", e.body.message)), r(y.P9.setPanelNotification({
-                                    category: y.aF.Error,
+                                e.status === m.iu.NOT_FOUND ? (r(h.A.setError("requestPasswordReset", e.body.message)), r(w.P9.setPanelNotification({
+                                    category: w.aF.Error,
                                     details: "request_password_reset_no_user"
-                                }))) : (r(h.A.setError("requestPasswordReset", "request_password_reset_exception")), r(y.P9.setPanelNotification({
-                                    category: y.aF.Error,
+                                }))) : (r(h.A.setError("requestPasswordReset", "request_password_reset_exception")), r(w.P9.setPanelNotification({
+                                    category: w.aF.Error,
                                     details: "request_password_reset_exception"
                                 })))
                             }
@@ -14268,14 +14259,14 @@
                             try {
                                 await o.A.User.resetPassword(e), g.A.navigateTo("/log-in")
                             } catch (e) {
-                                e.status === m.iu.BAD_REQUEST ? r(e.body.fields && e.body.fields.reset_password_token ? y.P9.setPanelNotification({
-                                    category: y.aF.Error,
+                                e.status === m.iu.BAD_REQUEST ? r(e.body.fields && e.body.fields.reset_password_token ? w.P9.setPanelNotification({
+                                    category: w.aF.Error,
                                     details: "reset_password_token_invalid"
-                                }) : y.P9.setPanelNotification({
-                                    category: y.aF.Error,
+                                }) : w.P9.setPanelNotification({
+                                    category: w.aF.Error,
                                     details: "reset_password_error"
-                                })) : (r(h.A.setError("password", "reset_password_exception")), r(y.P9.setPanelNotification({
-                                    category: y.aF.Error,
+                                })) : (r(h.A.setError("password", "reset_password_exception")), r(w.P9.setPanelNotification({
+                                    category: w.aF.Error,
                                     details: "reset_password_exception"
                                 }))), r((0, I.lX)(t))
                             }
@@ -14317,7 +14308,7 @@
                                 await o.A.User.verifyAccountEmail({
                                     verification_code: t,
                                     verification_signature: r
-                                }), e(w.Ay.setState(N.r.VERIFY_ACCOUNT_SUCCESS)), e({
+                                }), e(y.Ay.setState(N.r.VERIFY_ACCOUNT_SUCCESS)), e({
                                     type: O.CHANGE_USER_IS_VERIFIED,
                                     isVerified: !0
                                 }), e({
@@ -14325,7 +14316,7 @@
                                     hasSkippedVerification: !1
                                 })
                             } catch (t) {
-                                throw t.status === m.iu.TOO_MANY_REQUESTS && e(y.P9.setTransferNotification({
+                                throw t.status === m.iu.TOO_MANY_REQUESTS && e(w.P9.setTransferNotification({
                                     text: "AccountEmailVerificationLinkResendThrottleError"
                                 })), t
                             }
@@ -14360,14 +14351,14 @@
                                 } = a();
                                 "/account-verification" === n.path && n.query.sig && g.A.navigateTo("/", !1, !1, {
                                     query: {}
-                                }), e(P.updateUserEmail(t)), e(R.A.updateAccountMembershipUserEmail(t)), e(w.Ay.setState(N.r.VERIFY_ACCOUNT))
+                                }), e(P.updateUserEmail(t)), e(R.A.updateAccountMembershipUserEmail(t)), e(y.Ay.setState(N.r.VERIFY_ACCOUNT))
                             } catch (t) {
-                                if (t.status === m.iu.TOO_MANY_REQUESTS) throw r && e(y.P9.setTransferNotification({
+                                if (t.status === m.iu.TOO_MANY_REQUESTS) throw r && e(w.P9.setTransferNotification({
                                     text: "AccountEmailVerificationLinkResendThrottleError"
                                 })), t;
-                                throw e(n()(t, "body.fields.email", []).includes("taken") ? y.P9.setTransferNotification({
+                                throw e(n()(t, "body.fields.email", []).includes("taken") ? w.P9.setTransferNotification({
                                     text: "AccountEmailVerificationResendEmailExistsError"
-                                }) : y.P9.setTransferNotification({
+                                }) : w.P9.setTransferNotification({
                                     text: "AccountEmailVerificationResendError"
                                 })), t
                             }
@@ -14382,16 +14373,16 @@
                             } = await o.A.User.retrieveEnableTwoFactorRedirectUrl();
                             location.assign(e)
                         } catch (t) {
-                            throw t.status === m.iu.TOO_MANY_REQUESTS ? e(y.P9.setPanelNotification({
-                                category: y.aF.Error,
+                            throw t.status === m.iu.TOO_MANY_REQUESTS ? e(w.P9.setPanelNotification({
+                                category: w.aF.Error,
                                 details: "update_information_throttle",
                                 params: {
                                     throttle_time: f.A.t("datetime.distance_in_words.x_minutes", {
                                         count: 10
                                     })
                                 }
-                            })) : y.P9.setPanelNotification({
-                                category: y.aF.Error,
+                            })) : w.P9.setPanelNotification({
+                                category: w.aF.Error,
                                 details: "something_went_wrong"
                             }), t
                         }
@@ -14413,8 +14404,8 @@
                                     }
                                 }), e(P.disableOtp())
                             } catch (t) {
-                                if (t.status === m.iu.TOO_MANY_REQUESTS) return e(y.P9.setPanelNotification({
-                                    category: y.aF.Error,
+                                if (t.status === m.iu.TOO_MANY_REQUESTS) return e(w.P9.setPanelNotification({
+                                    category: w.aF.Error,
                                     details: "update_information_throttle",
                                     params: {
                                         throttle_time: f.A.t("datetime.distance_in_words.x_minutes", {
@@ -14422,12 +14413,12 @@
                                         })
                                     }
                                 }));
-                                if ("invalid_password" === n()(t, "body.error")) return e(y.P9.setPanelNotification({
-                                    category: y.aF.Error,
+                                if ("invalid_password" === n()(t, "body.error")) return e(w.P9.setPanelNotification({
+                                    category: w.aF.Error,
                                     details: "invalid_password"
                                 }));
-                                e(y.P9.setPanelNotification({
-                                    category: y.aF.Error,
+                                e(w.P9.setPanelNotification({
+                                    category: w.aF.Error,
                                     details: "something_went_wrong"
                                 }))
                             }
@@ -14452,11 +14443,11 @@
                                     email_type: n
                                 })
                             } catch (t) {
-                                throw e(t.status === m.iu.FORBIDDEN ? y.P9.setPanelNotification({
-                                    category: y.aF.Error,
+                                throw e(t.status === m.iu.FORBIDDEN ? w.P9.setPanelNotification({
+                                    category: w.aF.Error,
                                     details: "unsubscribe_expiration_invalid_signature"
-                                }) : y.P9.setPanelNotification({
-                                    category: y.aF.Error,
+                                }) : w.P9.setPanelNotification({
+                                    category: w.aF.Error,
                                     details: "unsubscribe_expiration_exception"
                                 })), t
                             }
@@ -14717,7 +14708,7 @@
                 Tn: () => S,
                 Tt: () => R,
                 UK: () => _,
-                ZL: () => w,
+                ZL: () => y,
                 jI: () => g,
                 jt: () => u,
                 u: () => m,
@@ -14745,15 +14736,15 @@
                 medicalConsentConfirmed: g,
                 clearMedicalConsentStartTrigger: R,
                 clearSkipMedicalConsentCheck: h
-            } = r(26106).E.actions, w = function() {
+            } = r(26106).E.actions, y = function() {
                 let e = arguments.length > 0 && void 0 !== arguments[0] && arguments[0];
                 return (t, r) => {
                     let a = () => {
-                        (0, o.Jz)(r()) === s.r.PAYWALL ? t(y(e)) : setTimeout(a, 100)
+                        (0, o.Jz)(r()) === s.r.PAYWALL ? t(w(e)) : setTimeout(a, 100)
                     };
                     a()
                 }
-            }, y = function() {
+            }, w = function() {
                 let e = arguments.length > 0 && void 0 !== arguments[0] && arguments[0];
                 return (t, r) => {
                     let s = r(),
@@ -14905,8 +14896,8 @@
                 o = r(23798),
                 s = r(75586),
                 l = r.n(s),
-                d = r(23095);
-            let c = l()(() => Promise.all([r.e(6028), r.e(4932), r.e(2206), r.e(646), r.e(8135), r.e(4416), r.e(9143), r.e(125), r.e(2760), r.e(365), r.e(5481), r.e(8225)]).then(r.bind(r, 98225)).then(e => {
+                d = r(76616);
+            let c = l()(() => Promise.all([r.e(6028), r.e(4932), r.e(2206), r.e(646), r.e(8135), r.e(5831), r.e(2962), r.e(7273), r.e(2760), r.e(365), r.e(5481), r.e(8225)]).then(r.bind(r, 98225)).then(e => {
                     let {
                         CoverEditor: t
                     } = e;
@@ -14917,7 +14908,7 @@
                     },
                     loading: () => (0, o.jsx)(d.y, {})
                 }),
-                u = l()(() => Promise.all([r.e(646), r.e(7865), r.e(509), r.e(1502)]).then(r.bind(r, 71502)).then(e => {
+                u = l()(() => Promise.all([r.e(646), r.e(7865), r.e(6105), r.e(1502)]).then(r.bind(r, 71502)).then(e => {
                     let {
                         SplashPage: t
                     } = e;
@@ -14928,7 +14919,7 @@
                     },
                     loading: () => (0, o.jsx)(d.y, {})
                 }),
-                _ = l()(() => Promise.all([r.e(6028), r.e(4932), r.e(2206), r.e(646), r.e(4416), r.e(2760), r.e(365), r.e(5481), r.e(6192)]).then(r.bind(r, 16192)).then(e => {
+                _ = l()(() => Promise.all([r.e(6028), r.e(4932), r.e(2206), r.e(646), r.e(5831), r.e(2760), r.e(365), r.e(5481), r.e(6192)]).then(r.bind(r, 16192)).then(e => {
                     let {
                         ApplyChangesPage: t
                     } = e;
@@ -14959,4 +14950,4 @@
         }
     }
 ]);
-//# sourceMappingURL=7963.4b662582bf3868eb.js.map
+//# sourceMappingURL=7963.0c5512ee52d86b45.js.map

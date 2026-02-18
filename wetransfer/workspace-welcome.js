@@ -374,7 +374,7 @@
                 s = l(38169),
                 r = l(45781),
                 d = l(75546),
-                o = l(58915),
+                o = l(97116),
                 n = l(87963),
                 c = l(1427),
                 _ = l(24834),
@@ -452,4 +452,4 @@
         }
     }
 ]);
-//# sourceMappingURL=workspace-welcome.838b60070ba88964.js.map
+//# sourceMappingURL=workspace-welcome.f8d870beaa37bd13.js.map

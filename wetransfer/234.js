@@ -252,6 +252,7 @@
                     should_show_payment_alert: !1,
                     enable_watermark_option: !1,
                     show_icons_only_on_hover_preview: !1,
+                    recovery_reminder_variant: "none",
                     better_pdf_visualization: !1,
                     preview_resolution_segment: "default"
                 }
@@ -576,4 +577,4 @@
         }
     }
 ]);
-//# sourceMappingURL=2760.4f11db7f094b0856.js.map
+//# sourceMappingURL=2760.f120efea588de95b.js.map
