@@ -1906,16 +1906,19 @@
 
             function u(e, t) {
                 let r = _(e.transfer.recipients);
-                return e.type === d.OJ.EDITOR && (e.status === d.IL.PENDING || e.status === d.IL.PARTIAL) && r.length > 0 && r.includes(t)
+                return e.type === d.OJ.EDITOR && (e.status === d.IL.PENDING || e.status === d.IL.PARTIAL) && r.length > 0 && r.includes(t.toLowerCase())
             }
 
             function _(e) {
-                return e.map(e => e.email).filter(Boolean)
+                return e.map(e => {
+                    var t;
+                    return null == (t = e.email) ? void 0 : t.toLowerCase()
+                }).filter(e => !!e)
             }
 
             function p(e, t) {
                 let r = _(e);
-                return r && 0 !== r.length ? 1 === r.length && t === r[0] ? "You" : 1 === r.length ? r[0] : "".concat(r[0], " [+").concat(r.length - 1, "]") : "-"
+                return r && 0 !== r.length ? 1 === r.length && t.toLowerCase() === r[0] ? "You" : 1 === r.length ? r[0] : "".concat(r[0], " [+").concat(r.length - 1, "]") : "-"
             }
 
             function E(e) {
@@ -14950,4 +14953,4 @@
         }
     }
 ]);
-//# sourceMappingURL=7963.0c5512ee52d86b45.js.map
+//# sourceMappingURL=7963.b3495e0e52aa6952.js.map

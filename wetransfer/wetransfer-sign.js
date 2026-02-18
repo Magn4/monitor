@@ -234,7 +234,7 @@
         7024: (e, a, t) => {
             "use strict";
             t.r(a), t.d(a, {
-                default: () => lL
+                default: () => lk
             });
             var i = t(23798),
                 l = t(87605),
@@ -6004,7 +6004,7 @@
                 })
             };
             var iR = t(14603),
-                iB = t(23433),
+                iB = t(49352),
                 iV = t(52878),
                 iW = t.n(iV);
             let iH = e => {
@@ -6379,13 +6379,52 @@
                     currentPage: o,
                     pageSize: g,
                     onPageChange: M,
-                    onCopy: y,
-                    isLoading: _ = !1
+                    onCopy: _,
+                    onDelete: u,
+                    isLoading: w = !1
                 } = e, {
-                    t: u
-                } = (0, Y.Bd)(), w = (0, d.d4)(J.mB), [x] = (0, r.aI)(), [m] = (0, r.H5)(), N = (0, n.useCallback)(async e => {
+                    t: x
+                } = (0, Y.Bd)(), m = (0, d.d4)(J.mB), [N] = (0, r.aI)(), [c] = (0, r.H5)(), {
+                    addToast: D,
+                    dismissToast: j
+                } = (0, e3.d)(), I = (0, n.useRef)(null), T = (0, n.useCallback)(e => {
+                    I.current && (j(I.current), I.current = null);
+                    let a = D(x("wetransfer_sign.documents_table.actions.delete_prompt", {
+                        title: (0, r.TN)(e)
+                    }), {
+                        actions: a => (0, i.jsxs)(i.Fragment, {
+                            children: [(0, i.jsx)(e5.$, {
+                                appearance: "primary",
+                                onClick: () => {
+                                    (0, R.Od)().trackUserAction(y.xG.documentDeleted()), u(e), j(a), I.current = null
+                                },
+                                variation: "neutral",
+                                mode: "dark",
+                                children: x("wetransfer_sign.documents_table.actions.delete_confirm")
+                            }), (0, i.jsx)(e5.$, {
+                                appearance: "secondary",
+                                onClick: () => {
+                                    j(a), I.current = null
+                                },
+                                variation: "neutral",
+                                mode: "dark",
+                                children: x("wetransfer_sign.documents_table.actions.delete_cancel")
+                            })]
+                        }),
+                        persist: !0,
+                        onClose: () => {
+                            I.current = null
+                        }
+                    });
+                    I.current = a
+                }, [D, j, u, x]), h = (0, n.useCallback)(e => {
+                    var a;
+                    let t = (null == (a = e.transfer.recipients) ? void 0 : a.map(e => e.email).filter(Boolean)) || [],
+                        i = new Set(l.filter(a => a.editorTransferId === e.transfer.id && a.status === r.IL.SIGNED).map(e => e.transfer.from).filter(Boolean));
+                    return t.filter(e => !i.has(e))
+                }, [l]), b = (0, n.useCallback)(async e => {
                     try {
-                        let a = await x({
+                        let a = await N({
                             transferId: e
                         }).unwrap();
                         a.url ? window.open(a.url, "_blank") : W.A.track("[weSign] Final PDF URL missing in API response", {
@@ -6403,14 +6442,14 @@
                             error: e
                         })
                     }
-                }, [x]), c = (0, n.useCallback)(async e => {
+                }, [N]), z = (0, n.useCallback)(async e => {
                     try {
                         let a = e.transfer.id;
                         if (e.signatureMode === r.Qo.BULK_SEND) {
                             let t = l.filter(a => a.editorTransferId === e.transfer.id);
                             t.length > 0 && (a = t.sort((e, a) => new Date(a.updatedAt).getTime() - new Date(e.updatedAt).getTime())[0].transfer.id)
                         }
-                        let t = await m({
+                        let t = await c({
                             transferId: a
                         }).unwrap();
                         t.url ? window.open(t.url, "_blank") : W.A.track("[weSign] Certificate URL missing in API response", {
@@ -6430,15 +6469,18 @@
                             signatureMode: e.signatureMode
                         })
                     }
-                }, [m, l]), D = (0, n.useCallback)(e => l.some(a => a.editorTransferId === e.transfer.id && a.transfer.from === w.email && a.status === r.IL.SIGNED), [l, w.email]);
+                }, [c, l]), A = (0, n.useCallback)(e => l.some(a => {
+                    var t, i;
+                    return a.editorTransferId === e.transfer.id && (null == (t = a.transfer.from) ? void 0 : t.toLowerCase()) === (null == (i = m.email) ? void 0 : i.toLowerCase()) && a.status === r.IL.SIGNED
+                }), [l, m.email]);
                 return 0 === a.length ? (0, i.jsxs)("div", {
                     className: ll().emptyState,
-                    children: [_ ? (0, i.jsx)(aY.y, {
+                    children: [w ? (0, i.jsx)(aY.y, {
                         size: "large"
                     }) : (0, i.jsx)(e2.a1W, {}), (0, i.jsx)("p", {
-                        children: u("wetransfer_sign.documents_table.empty_state")
+                        children: x("wetransfer_sign.documents_table.empty_state")
                     }), (0, i.jsx)("p", {
-                        children: u("wetransfer_sign.documents_table.empty_state_description")
+                        children: x("wetransfer_sign.documents_table.empty_state_description")
                     })]
                 }) : (0, i.jsxs)("div", {
                     className: ll().container,
@@ -6452,60 +6494,71 @@
                             children: [(0, i.jsx)("div", {
                                 className: ll().headerCell,
                                 role: "columnheader",
-                                children: u("wetransfer_sign.documents_table.headers.title")
+                                children: x("wetransfer_sign.documents_table.headers.title")
                             }), (0, i.jsx)("div", {
                                 className: ll().headerCell,
                                 role: "columnheader",
-                                children: u("wetransfer_sign.documents_table.headers.status")
+                                children: x("wetransfer_sign.documents_table.headers.status")
                             }), (0, i.jsx)("div", {
                                 className: ll().headerCell,
                                 role: "columnheader",
-                                children: u("wetransfer_sign.documents_table.headers.updated_on")
+                                children: x("wetransfer_sign.documents_table.headers.updated_on")
                             }), (0, i.jsx)("div", {
                                 className: ll().headerCell,
                                 role: "columnheader",
-                                children: u("wetransfer_sign.documents_table.headers.signers")
+                                children: x("wetransfer_sign.documents_table.headers.signers")
                             }), (0, i.jsx)("div", {
                                 className: ll().headerCell,
                                 role: "columnheader",
-                                children: u("wetransfer_sign.documents_table.headers.sender")
+                                children: x("wetransfer_sign.documents_table.headers.sender")
                             }), (0, i.jsx)("div", {
                                 className: ai()(ll().headerCell, ll().actionsHeader),
                                 role: "columnheader"
                             })]
                         }), a.map(e => {
-                            var a;
-                            let n = (0, r.O0)(e, w.email),
-                                d = ((e, a) => {
+                            var a, n, d, s, o, g;
+                            let M = (0, r.O0)(e, m.email),
+                                u = ((e, a) => {
                                     let {
                                         status: t
                                     } = e;
                                     switch (t) {
                                         case r.IL.COMPLETED:
                                             return {
-                                                label: u("wetransfer_sign.documents_table.status.completed"), className: ll().statusCompleted
+                                                label: x("wetransfer_sign.documents_table.status.completed"), className: ll().statusCompleted
                                             };
                                         case r.IL.PENDING:
                                         case r.IL.PARTIAL:
-                                            if (a && !D(e)) return {
-                                                label: u("wetransfer_sign.documents_table.status.action_required"),
+                                            if (a && !A(e)) return {
+                                                label: x("wetransfer_sign.documents_table.status.action_required"),
                                                 className: ll().statusActionRequired
                                             };
                                             return {
-                                                label: u("wetransfer_sign.documents_table.status.waiting"), className: ll().statusWaiting
+                                                label: x("wetransfer_sign.documents_table.status.waiting"), className: ll().statusWaiting
                                             };
                                         default:
                                             return {
                                                 label: t, className: ll().statusWaiting
                                             }
                                     }
-                                })(e, n),
-                                s = e.transfer.from === w.email,
-                                o = e.status === r.IL.PENDING || e.status === r.IL.PARTIAL,
-                                g = t.get(e.transfer.id),
-                                M = g && g.transfer.from === w.email,
-                                _ = s && e.type === r.OJ.EDITOR && !tX.Ay.isMobile && !M,
-                                x = g || e;
+                                })(e, M),
+                                w = (null == (a = e.transfer.from) ? void 0 : a.toLowerCase()) === (null == (n = m.email) ? void 0 : n.toLowerCase()),
+                                N = e.status === r.IL.PENDING || e.status === r.IL.PARTIAL,
+                                c = t.get(e.transfer.id),
+                                D = c && (null == (d = c.transfer.from) ? void 0 : d.toLowerCase()) === (null == (s = m.email) ? void 0 : s.toLowerCase()),
+                                j = w && e.type === r.OJ.EDITOR && !tX.Ay.isMobile && !D,
+                                I = w && e.type === r.OJ.EDITOR,
+                                S = c || e,
+                                E = N ? h(e) : [],
+                                p = (0, i.jsxs)("div", {
+                                    className: ll().statusBadge,
+                                    children: [(0, i.jsx)("span", {
+                                        className: "".concat(ll().statusIndicator, " ").concat(u.className)
+                                    }), (0, i.jsx)("span", {
+                                        className: ll().statusLabel,
+                                        children: u.label
+                                    })]
+                                });
                             return (0, i.jsxs)("div", {
                                 className: ll().row,
                                 role: "row",
@@ -6513,33 +6566,38 @@
                                     className: ll().cell,
                                     role: "cell",
                                     children: (0, i.jsx)(i6.m, {
-                                        content: (0, r.TN)(x),
+                                        content: (0, r.TN)(S),
                                         mode: "dark",
                                         position: "top",
                                         className: ll().tooltipText,
                                         children: (0, i.jsx)("div", {
                                             className: ll().titleCell,
-                                            children: (0, r.TN)(x)
+                                            children: (0, r.TN)(S)
                                         })
                                     })
                                 }), (0, i.jsx)("div", {
                                     className: ll().cell,
                                     role: "cell",
-                                    children: (0, i.jsxs)("div", {
-                                        className: ll().statusBadge,
-                                        children: [(0, i.jsx)("span", {
-                                            className: "".concat(ll().statusIndicator, " ").concat(d.className)
-                                        }), (0, i.jsx)("span", {
-                                            className: ll().statusLabel,
-                                            children: d.label
-                                        })]
-                                    })
+                                    children: E.length > 0 ? (0, i.jsx)(i6.m, {
+                                        content: (0, i.jsxs)("div", {
+                                            className: ll().signersTooltip,
+                                            children: [(0, i.jsx)("strong", {
+                                                children: x("wetransfer_sign.documents_table.status.waiting_for")
+                                            }), E.map(e => (0, i.jsx)("div", {
+                                                children: e
+                                            }, e))]
+                                        }),
+                                        mode: "dark",
+                                        position: "top",
+                                        className: ll().tooltipText,
+                                        children: p
+                                    }) : p
                                 }), (0, i.jsxs)("div", {
                                     className: ll().cell,
                                     role: "cell",
                                     children: [(0, i.jsxs)("span", {
                                         className: ll().cellLabel,
-                                        children: [u("wetransfer_sign.documents_table.headers.updated_on"), ":"]
+                                        children: [x("wetransfer_sign.documents_table.headers.updated_on"), ":"]
                                     }), (0, i.jsx)("span", {
                                         className: ll().dateText,
                                         children: new Date(e.updatedAt).toLocaleDateString("en-US", {
@@ -6553,11 +6611,11 @@
                                     role: "cell",
                                     children: [(0, i.jsxs)("span", {
                                         className: ll().cellLabel,
-                                        children: [u("wetransfer_sign.documents_table.headers.signers"), ":"]
+                                        children: [x("wetransfer_sign.documents_table.headers.signers"), ":"]
                                     }), (0, i.jsx)(i6.m, {
                                         content: (0, i.jsx)("div", {
                                             className: ll().signersTooltip,
-                                            children: null == (a = e.transfer.recipients) ? void 0 : a.map(e => e.email).filter(Boolean).map((e, a) => (0, i.jsx)("div", {
+                                            children: null == (o = e.transfer.recipients) ? void 0 : o.map(e => e.email).filter(Boolean).map((e, a) => (0, i.jsx)("div", {
                                                 children: e
                                             }, a))
                                         }),
@@ -6566,7 +6624,7 @@
                                         className: ll().tooltipText,
                                         children: (0, i.jsx)("span", {
                                             className: ll().recipientText,
-                                            children: (0, r.hS)(e.transfer.recipients || [], w.email)
+                                            children: (0, r.hS)(e.transfer.recipients || [], m.email)
                                         })
                                     })]
                                 }), (0, i.jsxs)("div", {
@@ -6574,78 +6632,75 @@
                                     role: "cell",
                                     children: [(0, i.jsxs)("span", {
                                         className: ll().cellLabel,
-                                        children: [u("wetransfer_sign.documents_table.headers.sender"), ":"]
+                                        children: [x("wetransfer_sign.documents_table.headers.sender"), ":"]
                                     }), (0, i.jsx)("span", {
                                         className: ll().senderText,
-                                        children: e.transfer.from ? e.transfer.from === w.email ? u("wetransfer_sign.documents_table.you") : e.transfer.from : "-"
+                                        children: e.transfer.from ? e.transfer.from.toLowerCase() === (null == (g = m.email) ? void 0 : g.toLowerCase()) ? x("wetransfer_sign.documents_table.you") : e.transfer.from : "-"
                                     })]
                                 }), (0, i.jsx)("div", {
                                     className: ai()(ll().cell, ll().actionsCell, {
-                                        [ll().cellActionRequired]: n
+                                        [ll().cellActionRequired]: M
                                     }),
                                     role: "cell",
                                     children: (0, i.jsx)("div", {
                                         className: ll().actionsWrapper,
-                                        children: n && !D(e) ? (0, i.jsx)(e5.$, {
+                                        children: M && !A(e) ? (0, i.jsx)(e5.$, {
                                             size: "small",
-                                            onClick: () => (e => {
-                                                let a = e.transfer,
-                                                    t = l.filter(a => a.editorTransferId === e.transfer.id && a.transfer.from === w.email),
-                                                    i = t.length > 0 ? t[0] : null,
-                                                    n = e.transfer.id,
-                                                    d = e.transfer.security_hash,
-                                                    s = a.recipient_id || null;
-                                                if (!n || !d) return void W.A.track("[weSign] Missing transferId or securityHash", {
-                                                    label: "wetransfer-sign",
-                                                    method: "handleReview",
-                                                    hasTransferId: !!n,
-                                                    hasSecurityHash: !!d
-                                                });
-                                                if (i && "recipient_id" in i.transfer) {
-                                                    let e = i.transfer.recipient_id;
-                                                    if (e) {
-                                                        let a = "".concat(window.location.origin, "/sign?transferId=").concat(n, "&secret=").concat(d, "&recipientId=").concat(e);
-                                                        window.location.href = a;
+                                            onClick: () => {
+                                                (0, R.Od)().trackUserAction(y.xG.documentReviewed()), (e => {
+                                                    let a = e.transfer,
+                                                        t = l.filter(a => {
+                                                            var t, i;
+                                                            return a.editorTransferId === e.transfer.id && (null == (t = a.transfer.from) ? void 0 : t.toLowerCase()) === (null == (i = m.email) ? void 0 : i.toLowerCase())
+                                                        }),
+                                                        i = t.length > 0 ? t[0] : null,
+                                                        n = e.transfer.id,
+                                                        d = e.transfer.security_hash,
+                                                        s = a.recipient_id || null;
+                                                    if (!n || !d) return W.A.track("[weSign] Missing transferId or securityHash", {
+                                                        label: "wetransfer-sign",
+                                                        method: "handleReview",
+                                                        hasTransferId: !!n,
+                                                        hasSecurityHash: !!d
+                                                    });
+                                                    if (i && "recipient_id" in i.transfer) {
+                                                        let e = i.transfer.recipient_id;
+                                                        if (e) {
+                                                            let a = "".concat(window.location.origin, "/sign?transferId=").concat(n, "&secret=").concat(d, "&recipientId=").concat(e);
+                                                            window.location.href = a;
+                                                            return
+                                                        }
+                                                    }
+                                                    if (s) {
+                                                        let e = "".concat(window.location.origin, "/sign?transferId=").concat(n, "&secret=").concat(d, "&recipientId=").concat(s);
+                                                        window.location.href = e;
                                                         return
                                                     }
-                                                }
-                                                if (s) {
-                                                    let e = "".concat(window.location.origin, "/sign?transferId=").concat(n, "&secret=").concat(d, "&recipientId=").concat(s);
-                                                    window.location.href = e;
-                                                    return
-                                                }
-                                                let r = "".concat(window.location.origin, "/sign?transferId=").concat(n, "&secret=").concat(d);
-                                                window.location.href = r
-                                            })(e),
-                                            children: u("wetransfer_sign.documents_table.actions.review")
+                                                    let r = "".concat(window.location.origin, "/sign?transferId=").concat(n, "&secret=").concat(d);
+                                                    window.location.href = r
+                                                })(e)
+                                            },
+                                            children: x("wetransfer_sign.documents_table.actions.review")
                                         }) : (0, i.jsxs)(i.Fragment, {
-                                            children: [_ && (0, i.jsx)(i6.m, {
-                                                content: u("wetransfer_sign.documents_table.actions.copy"),
+                                            children: [!tX.Ay.isMobile && (0, i.jsx)(i6.m, {
+                                                content: x(j ? "wetransfer_sign.documents_table.actions.copy" : "wetransfer_sign.documents_table.actions.editor_only"),
                                                 mode: "dark",
                                                 position: "top",
                                                 className: ll().tooltipText,
                                                 containerClassName: ll().tooltipContainer,
                                                 children: (0, i.jsx)(e2.Ct, {
-                                                    className: ll().iconButton,
+                                                    className: ai()(ll().iconButton, {
+                                                        [ll().iconDisabled]: !j
+                                                    }),
                                                     size: "small",
-                                                    onClick: () => y(e)
+                                                    onClick: () => {
+                                                        j && ((0, R.Od)().trackUserAction(y.xG.documentCopied()), _(e))
+                                                    }
                                                 })
                                             }), (() => {
                                                 var a;
                                                 let t = e.type === r.OJ.EDITOR && e.totalRecipients > 1 && (null == (a = e.finalSignedTransfer) ? void 0 : a.isReady) || e.type === r.OJ.SIGNER && e.totalRecipients > 1 && e.status === r.IL.COMPLETED,
-                                                    l = o ? u("wetransfer_sign.documents_table.actions.waiting_for_others") : t ? u("wetransfer_sign.documents_table.actions.download") : u("wetransfer_sign.documents_table.actions.preview"),
-                                                    n = t ? () => N(e.transfer.id) : () => (e => {
-                                                        let a = e.transfer,
-                                                            t = a.id,
-                                                            i = a.security_hash;
-                                                        if (!t || !i) {
-                                                            a.shortened_url && window.open(a.shortened_url, "_blank");
-                                                            return
-                                                        }
-                                                        let l = "recipient_id" in a ? a.recipient_id : null,
-                                                            n = l ? "".concat(window.location.origin, "/previews/").concat(t, "/").concat(l, "/").concat(i) : "".concat(window.location.origin, "/previews/").concat(t, "/").concat(i);
-                                                        window.open(n, "_blank")
-                                                    })(x);
+                                                    l = N ? x("wetransfer_sign.documents_table.actions.waiting_for_others") : t ? x("wetransfer_sign.documents_table.actions.download") : x("wetransfer_sign.documents_table.actions.preview");
                                                 return (0, i.jsx)(i6.m, {
                                                     content: l,
                                                     mode: "dark",
@@ -6654,22 +6709,54 @@
                                                     containerClassName: ll().tooltipContainer,
                                                     children: (0, i.jsx)(e2.I7u, {
                                                         className: ai()(ll().iconButton, {
-                                                            [ll().iconDisabled]: o
+                                                            [ll().iconDisabled]: N
                                                         }),
                                                         size: "small",
-                                                        onClick: n
+                                                        onClick: () => {
+                                                            N || ((0, R.Od)().trackUserAction(y.xG.documentOpened(t ? "download" : "preview")), t ? b(e.transfer.id) : (e => {
+                                                                let a = e.transfer,
+                                                                    t = a.id,
+                                                                    i = a.security_hash;
+                                                                if (!t || !i) {
+                                                                    a.shortened_url && window.open(a.shortened_url, "_blank");
+                                                                    return
+                                                                }
+                                                                let l = "recipient_id" in a ? a.recipient_id : null,
+                                                                    n = l ? "".concat(window.location.origin, "/previews/").concat(t, "/").concat(l, "/").concat(i) : "".concat(window.location.origin, "/previews/").concat(t, "/").concat(i);
+                                                                window.open(n, "_blank")
+                                                            })(S))
+                                                        }
                                                     })
                                                 })
-                                            })(), e.status === r.IL.COMPLETED && (0, i.jsx)(i6.m, {
-                                                content: u("wetransfer_sign.documents_table.actions.download_certificate"),
+                                            })(), (0, i.jsx)(i6.m, {
+                                                content: x("wetransfer_sign.documents_table.actions.download_certificate"),
                                                 mode: "dark",
                                                 position: "top",
                                                 className: ll().tooltipText,
                                                 containerClassName: ll().tooltipContainer,
                                                 children: (0, i.jsx)(e2.mcv, {
-                                                    className: ll().iconButton,
+                                                    className: ai()(ll().iconButton, {
+                                                        [ll().iconDisabled]: e.status !== r.IL.COMPLETED
+                                                    }),
                                                     size: "small",
-                                                    onClick: () => c(e)
+                                                    onClick: () => {
+                                                        e.status === r.IL.COMPLETED && ((0, R.Od)().trackUserAction(y.xG.certificateDownloaded()), z(e))
+                                                    }
+                                                })
+                                            }), (0, i.jsx)(i6.m, {
+                                                content: x(I ? "wetransfer_sign.documents_table.actions.delete" : "wetransfer_sign.documents_table.actions.editor_only"),
+                                                mode: "dark",
+                                                position: "top",
+                                                className: ll().tooltipText,
+                                                containerClassName: ll().tooltipContainer,
+                                                children: (0, i.jsx)(e2.rkR, {
+                                                    className: ai()(ll().iconButton, {
+                                                        [ll().iconDisabled]: !I
+                                                    }),
+                                                    size: "small",
+                                                    onClick: () => {
+                                                        I && T(e)
+                                                    }
                                                 })
                                             })]
                                         })
@@ -6681,7 +6768,7 @@
                         className: ll().paginationWrapper,
                         children: [(0, i.jsx)("p", {
                             className: ll().paginationLabel,
-                            children: u("wetransfer_sign.documents_table.pagination.showing_results", {
+                            children: x("wetransfer_sign.documents_table.pagination.showing_results", {
                                 pageTotal: a.length,
                                 totalCount: s
                             })
@@ -6694,41 +6781,44 @@
                     })]
                 })
             };
-            var ld = t(44942),
-                ls = t.n(ld);
-            let lr = e => {
-                var a, t, l;
+            var ld = t(65509),
+                ls = t(44942),
+                lr = t.n(ls);
+            let lo = e => {
+                var a, t;
                 let {
-                    onFileSelect: s,
-                    isDragOver: o = !1,
-                    onDragOver: g,
-                    onDragLeave: M,
-                    onDrop: y,
-                    description: _,
-                    acceptedFileTypes: u = ".pdf,application/pdf"
+                    onFileSelect: l,
+                    isDragOver: s = !1,
+                    onDragOver: o,
+                    onDragLeave: g,
+                    onDrop: M,
+                    description: y,
+                    acceptedFileTypes: _ = ".pdf,application/pdf"
                 } = e, {
-                    t: w,
-                    i18n: x
-                } = (0, Y.Bd)(), m = (0, n.useRef)(null), N = (0, d.d4)(J.JV), [c, D] = (0, n.useState)(1), [j, I] = (0, n.useState)(!1), [T, h] = (0, n.useState)(!1), b = (0, n.useRef)(null), [z, A] = (0, n.useState)(aH.aR.ALL);
+                    t: u,
+                    i18n: w
+                } = (0, Y.Bd)(), {
+                    addToast: x
+                } = (0, e3.d)(), m = (0, n.useRef)(null), N = (0, d.d4)(J.JV), c = (0, d.d4)(Z.n9), [D, j] = (0, n.useState)(1), [I, T] = (0, n.useState)(!1), [h, b] = (0, n.useState)(new Set), [z, A] = (0, n.useState)(!1), S = (0, n.useRef)(null), [E, p] = (0, n.useState)(aH.aR.ALL);
                 (0, n.useEffect)(() => {
                     let e = t9.Ay.areAccepted(),
                         a = t7.areAccepted();
-                    h(e && a)
+                    A(e && a)
                 }, []), (0, iN.S)(() => {
                     if (new URLSearchParams(window.location.search).has("sample_document")) {
-                        p(x.language || "en");
+                        k(w.language || "en");
                         let e = new URL(window.location.href);
                         e.searchParams.delete("sample_document"), window.history.replaceState({}, "", e.toString())
                     }
                 });
-                let S = e => {
-                        s(e)
+                let O = e => {
+                        l(e)
                     },
-                    E = () => {
+                    L = () => {
                         let e = document.getElementById("uploader-file-input");
                         null == e || e.click()
                     },
-                    p = async e => {
+                    k = async e => {
                         try {
                             let a = e.toLowerCase();
                             a = ({
@@ -6747,13 +6837,14 @@
                                 }),
                                 d = t9.Ay.areAccepted(),
                                 s = t7.areAccepted();
-                            d && s ? S(n) : (b.current = n, I(!0))
+                            d && s ? O(n) : (S.current = n, T(!0))
                         } catch (e) {}
                     }, {
-                        data: O,
-                        loading: L
+                        data: C,
+                        loading: f,
+                        refetch: v
                     } = (0, r.Lr)({
-                        page: c,
+                        page: D,
                         limit: 10,
                         type: aH.OJ.EDITOR,
                         ...(e => {
@@ -6774,98 +6865,142 @@
                                 default:
                                     return {}
                             }
-                        })(z)
-                    }), k = (0, n.useMemo)(() => (0, r.Jv)((null == O ? void 0 : O.relatedSignerTransfers) || []), [null == O ? void 0 : O.relatedSignerTransfers]), C = (0, n.useMemo)(() => {
-                        var e, a, t;
-                        let i = null == O ? void 0 : O.statistics;
-                        return (null != (e = null == i ? void 0 : i.waitingForOthers) ? e : 0) === 0 && (null != (a = null == i ? void 0 : i.actionRequired) ? a : 0) === 0 && (null != (t = null == i ? void 0 : i.completed) ? t : 0) === 0
-                    }, [null == O ? void 0 : O.statistics]), f = (0, n.useCallback)(e => {
-                        A(e), D(1)
-                    }, []);
+                        })(E)
+                    });
                 (0, n.useEffect)(() => {
+                    var e;
+                    if (0 === h.size) return;
+                    let a = new Set((null != (e = null == C ? void 0 : C.signatureTransfers) ? e : []).map(e => e.transfer.id)),
+                        t = [...h].filter(e => !a.has(e));
+                    t.length > 0 && b(e => {
+                        let a = new Set(e);
+                        return t.forEach(e => a.delete(e)), a
+                    })
+                }, [null == C ? void 0 : C.signatureTransfers, h]);
+                let Q = (0, n.useMemo)(() => {
+                        var e;
+                        let a = null != (e = null == C ? void 0 : C.signatureTransfers) ? e : [];
+                        return 0 === h.size ? a : a.filter(e => !h.has(e.transfer.id))
+                    }, [null == C ? void 0 : C.signatureTransfers, h]),
+                    U = (0, n.useMemo)(() => (0, r.Jv)((null == C ? void 0 : C.relatedSignerTransfers) || []), [null == C ? void 0 : C.relatedSignerTransfers]),
+                    F = (0, n.useMemo)(() => {
+                        var e, a, t;
+                        let i = null == C ? void 0 : C.statistics;
+                        return (null != (e = null == i ? void 0 : i.waitingForOthers) ? e : 0) === 0 && (null != (a = null == i ? void 0 : i.actionRequired) ? a : 0) === 0 && (null != (t = null == i ? void 0 : i.completed) ? t : 0) === 0
+                    }, [null == C ? void 0 : C.statistics]),
+                    P = (0, n.useCallback)(e => {
+                        p(e), j(1)
+                    }, []),
+                    R = (0, n.useCallback)(async e => {
+                        if (e.type !== aH.OJ.EDITOR) return;
+                        let a = e.transfer.id;
+                        if (a) try {
+                            await ld.A.Transfers.deleteMultipleTransfers({
+                                transfer_ids: [a],
+                                account_id: c
+                            }), b(e => new Set(e).add(a)), x(u("wetransfer_sign.documents_table.actions.delete_success"), {
+                                mode: "dark",
+                                autoHideDuration: 4e3
+                            }), setTimeout(() => v(), 2e3)
+                        } catch (e) {
+                            W.A.track("[weSign] Failed to delete document", {
+                                label: "wetransfer-sign",
+                                method: "handleDeleteDocument",
+                                transferId: a,
+                                error: e instanceof Error ? e.message : "Unknown error"
+                            }), x(u("wetransfer_sign.documents_table.actions.delete_error"), {
+                                mode: "dark",
+                                autoHideDuration: 4e3
+                            })
+                        }
+                    }, [c, x, u, v]);
+                (0, n.useEffect)(() => {
+                    var e;
+                    !f && D > 1 && (null == C ? void 0 : C.signatureTransfers.length) === 0 && (null != (e = null == C ? void 0 : C.totalCount) ? e : 0) > 0 && j(e => e - 1)
+                }, [f, D, null == C ? void 0 : C.signatureTransfers.length, null == C ? void 0 : C.totalCount]), (0, n.useEffect)(() => {
                     if (m.current && "function" == typeof m.current.getDuration && "function" == typeof m.current.goToAndPlay) {
                         let e = Math.floor(m.current.getDuration(!0) / 2);
                         m.current.goToAndPlay(e, !0)
                     }
                 }, []);
-                let v = (0, n.useMemo)(() => {
+                let B = (0, n.useMemo)(() => {
                     var e, a, t;
-                    return L && !O ? (0, i.jsx)("div", {
-                        className: ls().headerLoading,
+                    return f && !C ? (0, i.jsx)("div", {
+                        className: lr().headerLoading,
                         children: (0, i.jsx)(aY.y, {
                             size: "large"
                         })
-                    }) : C ? (0, i.jsx)(i5, {}) : (0, i.jsx)(lS, {
-                        waitingForOthers: null != (e = null == O ? void 0 : O.statistics.waitingForOthers) ? e : 0,
-                        actionRequired: null != (a = null == O ? void 0 : O.statistics.actionRequired) ? a : 0,
-                        completed: null != (t = null == O ? void 0 : O.statistics.completed) ? t : 0,
-                        onFilterChange: f,
-                        isLoading: L
+                    }) : F ? (0, i.jsx)(i5, {}) : (0, i.jsx)(lE, {
+                        waitingForOthers: null != (e = null == C ? void 0 : C.statistics.waitingForOthers) ? e : 0,
+                        actionRequired: null != (a = null == C ? void 0 : C.statistics.actionRequired) ? a : 0,
+                        completed: null != (t = null == C ? void 0 : C.statistics.completed) ? t : 0,
+                        onFilterChange: P,
+                        isLoading: f
                     })
-                }, [C, O, f, L]);
+                }, [F, C, P, f]);
                 return (0, i.jsxs)(i.Fragment, {
                     children: [(0, i.jsxs)("div", {
-                        className: ai()(ls().container, {
-                            [ls().containerLoggedIn]: N
+                        className: ai()(lr().container, {
+                            [lr().containerLoggedIn]: N
                         }),
-                        children: [N ? v : (0, i.jsxs)("div", {
-                            className: ls().header,
+                        children: [N ? B : (0, i.jsxs)("div", {
+                            className: lr().header,
                             children: [(0, i.jsx)(is(), {
                                 animationData: iZ,
                                 loop: !0,
                                 autoplay: !0,
-                                className: ls().floatingLottieLeft
+                                className: lr().floatingLottieLeft
                             }), (0, i.jsx)("h1", {
-                                className: ls().title,
-                                children: w("wetransfer_sign.uploader.title")
+                                className: lr().title,
+                                children: u("wetransfer_sign.uploader.title")
                             }), (0, i.jsx)(is(), {
                                 lottieRef: m,
                                 animationData: iG,
                                 loop: !0,
                                 autoplay: !0,
-                                className: ls().floatingLottieRight
+                                className: lr().floatingLottieRight
                             }), (0, i.jsx)("p", {
-                                className: ls().subtitle,
-                                children: w("wetransfer_sign.uploader.subtitle")
+                                className: lr().subtitle,
+                                children: u("wetransfer_sign.uploader.subtitle")
                             })]
                         }), N && !tX.Ay.isMobile && (0, i.jsx)("div", {
-                            className: ls().section,
+                            className: lr().section,
                             children: (0, i.jsx)("p", {
-                                className: ls().sectionTitle,
-                                children: w("wetransfer_sign.dashboard.get_started")
+                                className: lr().sectionTitle,
+                                children: u("wetransfer_sign.dashboard.get_started")
                             })
                         }), (0, i.jsx)("div", {
-                            className: ls().uploadArea,
+                            className: lr().uploadArea,
                             children: tX.Ay.isMobile ? (0, i.jsx)("div", {
-                                className: ai()(ls().dropZone, ls().disabled, {
-                                    [ls().loggedIn]: N
+                                className: ai()(lr().dropZone, lr().disabled, {
+                                    [lr().loggedIn]: N
                                 }),
                                 children: (0, i.jsx)("p", {
-                                    className: ls().mobileInfoText,
-                                    children: w("wetransfer_sign.uploader.mobile_info")
+                                    className: lr().mobileInfoText,
+                                    children: u("wetransfer_sign.uploader.mobile_info")
                                 })
                             }) : (0, i.jsx)("div", {
-                                className: ai()(ls().dropZone, {
-                                    [ls().dragOver]: o,
-                                    [ls().loggedIn]: N,
-                                    [ls().termsAgreement]: j
+                                className: ai()(lr().dropZone, {
+                                    [lr().dragOver]: s,
+                                    [lr().loggedIn]: N,
+                                    [lr().termsAgreement]: I
                                 }),
-                                onDragOver: g,
-                                onDragLeave: M,
+                                onDragOver: o,
+                                onDragLeave: g,
                                 onDrop: e => {
                                     var a, t;
                                     let i = null == (t = e.dataTransfer) || null == (a = t.files) ? void 0 : a[0];
-                                    i && (T ? null == y || y(e) : (b.current = i, I(!0)))
+                                    i && (z ? null == M || M(e) : (S.current = i, T(!0)))
                                 },
-                                onClick: E,
-                                children: j ? (0, i.jsxs)("div", {
-                                    className: ls().termsContent,
+                                onClick: L,
+                                children: I ? (0, i.jsxs)("div", {
+                                    className: lr().termsContent,
                                     onClick: e => e.stopPropagation(),
                                     children: [(0, i.jsx)("h2", {
-                                        className: ls().termsTitle,
-                                        children: w("wetransfer_sign.uploader.terms_agreement_title")
+                                        className: lr().termsTitle,
+                                        children: u("wetransfer_sign.uploader.terms_agreement_title")
                                     }), (0, i.jsx)("p", {
-                                        className: ls().termsText,
+                                        className: lr().termsText,
                                         children: (0, i.jsx)(Y.x6, {
                                             i18nKey: "wetransfer_sign.uploader.terms_agreement",
                                             components: {
@@ -6895,94 +7030,94 @@
                                         appearance: "primary",
                                         size: "medium",
                                         onClick: () => {
-                                            t9.Ay.accept(), t7.accept(), h(!0), I(!1), b.current ? (S(b.current), b.current = null) : E()
+                                            t9.Ay.accept(), t7.accept(), A(!0), T(!1), S.current ? (O(S.current), S.current = null) : L()
                                         },
-                                        children: w("wetransfer_sign.consent.agree_button")
+                                        children: u("wetransfer_sign.consent.agree_button")
                                     })]
                                 }) : (0, i.jsxs)(i.Fragment, {
                                     children: [(0, i.jsxs)("div", {
-                                        className: ls().uploadContent,
+                                        className: lr().uploadContent,
                                         children: [(0, i.jsxs)("div", {
-                                            className: ls().uploadText,
+                                            className: lr().uploadText,
                                             children: [(0, i.jsx)(e2.ac, {
-                                                className: ls().uploadIcon,
+                                                className: lr().uploadIcon,
                                                 size: "medium"
-                                            }), _ || w("wetransfer_sign.uploader.drop_documents")]
+                                            }), y || u("wetransfer_sign.uploader.drop_documents")]
                                         }), (0, i.jsx)(e5.$, {
                                             appearance: "primary",
                                             size: "medium",
-                                            children: w("wetransfer_sign.uploader.upload_button")
+                                            children: u("wetransfer_sign.uploader.upload_button")
                                         })]
                                     }), (0, i.jsx)("p", {
-                                        className: ls().additionalInfo,
-                                        children: w("wetransfer_sign.uploader.additional_info")
+                                        className: lr().additionalInfo,
+                                        children: u("wetransfer_sign.uploader.additional_info")
                                     }), (0, i.jsx)(tQ, {
-                                        onLoadSampleDocument: p
+                                        onLoadSampleDocument: k
                                     })]
                                 })
                             })
                         }), (0, i.jsx)("input", {
                             id: "uploader-file-input",
                             type: "file",
-                            accept: u,
+                            accept: _,
                             onChange: e => {
                                 var a;
                                 let t = null == (a = e.target.files) ? void 0 : a[0];
-                                t && (T ? S(t) : (b.current = t, I(!0)))
+                                t && (z ? O(t) : (S.current = t, T(!0)))
                             },
-                            className: ls().hiddenInput
+                            className: lr().hiddenInput
                         })]
                     }), N && (0, i.jsxs)(i.Fragment, {
                         children: [(0, i.jsxs)("div", {
-                            className: ai()(ls().section, ls().documentsSection),
+                            className: ai()(lr().section, lr().documentsSection),
                             children: [(0, i.jsx)("p", {
-                                className: ls().sectionTitle,
-                                children: w("wetransfer_sign.dashboard.documents")
+                                className: lr().sectionTitle,
+                                children: u("wetransfer_sign.dashboard.documents")
                             }), (0, i.jsxs)("div", {
-                                className: ls().filters,
+                                className: lr().filters,
                                 children: [(0, i.jsx)("span", {
-                                    className: ai()(ls().filter, {
-                                        [ls().filterActive]: z === aH.aR.ALL
+                                    className: ai()(lr().filter, {
+                                        [lr().filterActive]: E === aH.aR.ALL
                                     }),
-                                    onClick: () => f(aH.aR.ALL),
-                                    children: w("wetransfer_sign.dashboard.filters.all")
+                                    onClick: () => P(aH.aR.ALL),
+                                    children: u("wetransfer_sign.dashboard.filters.all")
                                 }), (0, i.jsx)("span", {
-                                    className: ls().filterSeparator,
+                                    className: lr().filterSeparator,
                                     children: "\xb7"
                                 }), (0, i.jsx)("span", {
-                                    className: ai()(ls().filter, {
-                                        [ls().filterActive]: z === aH.aR.WAITING
+                                    className: ai()(lr().filter, {
+                                        [lr().filterActive]: E === aH.aR.WAITING
                                     }),
-                                    onClick: () => f(aH.aR.WAITING),
-                                    children: w("wetransfer_sign.documents_table.status.waiting")
+                                    onClick: () => P(aH.aR.WAITING),
+                                    children: u("wetransfer_sign.documents_table.status.waiting")
                                 }), (0, i.jsx)("span", {
-                                    className: ls().filterSeparator,
+                                    className: lr().filterSeparator,
                                     children: "\xb7"
                                 }), (0, i.jsx)("span", {
-                                    className: ai()(ls().filter, {
-                                        [ls().filterActive]: z === aH.aR.ACTION_REQUIRED
+                                    className: ai()(lr().filter, {
+                                        [lr().filterActive]: E === aH.aR.ACTION_REQUIRED
                                     }),
-                                    onClick: () => f(aH.aR.ACTION_REQUIRED),
-                                    children: w("wetransfer_sign.documents_table.status.action_required")
+                                    onClick: () => P(aH.aR.ACTION_REQUIRED),
+                                    children: u("wetransfer_sign.documents_table.status.action_required")
                                 }), (0, i.jsx)("span", {
-                                    className: ls().filterSeparator,
+                                    className: lr().filterSeparator,
                                     children: "\xb7"
                                 }), (0, i.jsx)("span", {
-                                    className: ai()(ls().filter, {
-                                        [ls().filterActive]: z === aH.aR.COMPLETED
+                                    className: ai()(lr().filter, {
+                                        [lr().filterActive]: E === aH.aR.COMPLETED
                                     }),
-                                    onClick: () => f(aH.aR.COMPLETED),
-                                    children: w("wetransfer_sign.documents_table.status.completed")
+                                    onClick: () => P(aH.aR.COMPLETED),
+                                    children: u("wetransfer_sign.documents_table.status.completed")
                                 })]
                             })]
                         }), (0, i.jsx)(ln, {
-                            documents: null != (a = null == O ? void 0 : O.signatureTransfers) ? a : [],
-                            signersByEditorId: k,
-                            allSignerTransfers: null != (t = null == O ? void 0 : O.relatedSignerTransfers) ? t : [],
-                            totalCount: null != (l = null == O ? void 0 : O.totalCount) ? l : 0,
-                            currentPage: c,
+                            documents: Q,
+                            signersByEditorId: U,
+                            allSignerTransfers: null != (a = null == C ? void 0 : C.relatedSignerTransfers) ? a : [],
+                            totalCount: (null != (t = null == C ? void 0 : C.totalCount) ? t : 0) - h.size,
+                            currentPage: D,
                             pageSize: 10,
-                            onPageChange: D,
+                            onPageChange: j,
                             onCopy: e => {
                                 if (e.type !== aH.OJ.EDITOR) return;
                                 let a = e.transfer.id,
@@ -6991,14 +7126,15 @@
                                 let i = new URL(window.location.href);
                                 i.searchParams.set("copyFrom", a), i.searchParams.set("secret", t), window.location.href = i.toString()
                             },
-                            isLoading: L
-                        }), C && (0, i.jsx)(iq, {})]
+                            onDelete: R,
+                            isLoading: f
+                        }), F && (0, i.jsx)(iq, {})]
                     }), !N && (0, i.jsx)(iU, {})]
                 })
             };
-            var lo = t(93080),
-                lg = t.n(lo);
-            let lM = e => {
+            var lg = t(93080),
+                lM = t.n(lg);
+            let ly = e => {
                     let {
                         isOpen: a,
                         onClose: t,
@@ -7054,35 +7190,35 @@
                         size: "medium",
                         children: (0, i.jsxs)("form", {
                             onSubmit: j,
-                            className: lg().content,
+                            className: lM().content,
                             children: [(0, i.jsx)("div", {
-                                className: lg().headerContainer,
+                                className: lM().headerContainer,
                                 children: (0, i.jsx)("div", {
-                                    className: lg().header,
+                                    className: lM().header,
                                     children: (0, i.jsx)("h2", {
-                                        className: lg().modalTitle,
+                                        className: lM().modalTitle,
                                         children: g(o ? "wetransfer_sign.date_edit.title" : "wetransfer_sign.date_edit.title_viewer")
                                     })
                                 })
                             }), !o && (0, i.jsx)("div", {
-                                className: lg().infoBox,
+                                className: lM().infoBox,
                                 children: (0, i.jsx)("p", {
-                                    className: lg().infoText,
+                                    className: lM().infoText,
                                     children: g("wetransfer_sign.date_edit.viewer_explanation", {
                                         dateFormat: M === A.EU ? "DD/MM/YYYY" : "MM/DD/YYYY"
                                     })
                                 })
                             }), (0, i.jsxs)("div", {
-                                className: lg().body,
+                                className: lM().body,
                                 children: [o && (0, i.jsx)("div", {
-                                    className: lg().formatSection,
+                                    className: lM().formatSection,
                                     children: (0, i.jsxs)(tm.z, {
                                         id: "date-format",
                                         value: M,
                                         onChange: m,
-                                        className: lg().formatSelect,
+                                        className: lM().formatSelect,
                                         label: g("wetransfer_sign.date_config.format_label"),
-                                        labelClassName: lg().formatLabel,
+                                        labelClassName: lM().formatLabel,
                                         children: [(0, i.jsx)(tm.z.Option, {
                                             value: A.EU,
                                             children: g("wetransfer_sign.date_config.format_eu")
@@ -7092,36 +7228,36 @@
                                         })]
                                     })
                                 }), r && (0, i.jsx)("div", {
-                                    className: lg().calendarContainer,
+                                    className: lM().calendarContainer,
                                     children: (0, i.jsx)(tj.A, {
-                                        customClassName: lg().calendar,
+                                        customClassName: lM().calendar,
                                         date: w,
                                         onSelect: N,
                                         allowCurrentDay: !0
                                     })
                                 }), o && !r && (0, i.jsx)(tN.l, {
-                                    className: lg().infoBanner,
+                                    className: lM().infoBanner,
                                     children: (0, i.jsx)(tN.l.Content, {
                                         children: (0, i.jsx)("p", {
-                                            className: lg().infoText,
+                                            className: lM().infoText,
                                             children: g("wetransfer_sign.date_config.autofill_explanation")
                                         })
                                     })
                                 })]
                             }), (0, i.jsxs)("div", {
-                                className: lg().footer,
+                                className: lM().footer,
                                 children: [(0, i.jsx)(e5.$, {
                                     onClick: D,
                                     appearance: "secondary",
                                     variation: "neutral",
                                     size: "medium",
-                                    className: lg().cancelButton,
+                                    className: lM().cancelButton,
                                     children: g("wetransfer_sign.date_edit.cancel")
                                 }), (0, i.jsx)(e5.$, {
                                     type: "submit",
                                     appearance: "primary",
                                     size: "medium",
-                                    className: lg().saveButton,
+                                    className: lM().saveButton,
                                     disabled: r && !_,
                                     children: g("wetransfer_sign.date_config.confirm")
                                 })]
@@ -7129,7 +7265,7 @@
                         })
                     })
                 },
-                ly = e => {
+                l_ = e => {
                     let {
                         isSignaturePopupOpen: a,
                         signatureMode: t,
@@ -7203,7 +7339,7 @@
                             initialMode: (null == S ? void 0 : S.signingMode) === o.SIGNERS ? o.SIGNERS : o.MYSELF,
                             initialDateFormat: null == S ? void 0 : S.dateFormat,
                             isEditMode: !!S && (null == S ? void 0 : S.signingMode) === o.SIGNERS
-                        }), (0, i.jsx)(lM, {
+                        }), (0, i.jsx)(ly, {
                             isOpen: E,
                             onClose: p,
                             onSave: O,
@@ -7214,11 +7350,11 @@
                         })]
                     })
                 };
-            var l_ = t(84645),
-                lu = t(46440),
-                lw = t(67822),
-                lx = t.n(lw);
-            let lm = e => {
+            var lu = t(84645),
+                lw = t(46440),
+                lx = t(67822),
+                lm = t.n(lx);
+            let lN = e => {
                 let {
                     placement: a,
                     isActive: t,
@@ -7249,13 +7385,13 @@
                 return (0, i.jsx)(i.Fragment, {
                     children: (0, i.jsxs)("div", {
                         "data-placement-id": a.id,
-                        className: ai()(lx().dateOverlay, {
-                            [lx().activeDate]: t && c,
-                            [lx().someoneElseDate]: u === o.SIGNERS && c,
-                            [lx().viewerClickableDate]: h,
-                            [lx().viewerMyselfDate]: b,
-                            [lx().readOnlyDate]: D && !T && !b,
-                            [lx().filledDate]: !!_
+                        className: ai()(lm().dateOverlay, {
+                            [lm().activeDate]: t && c,
+                            [lm().someoneElseDate]: u === o.SIGNERS && c,
+                            [lm().viewerClickableDate]: h,
+                            [lm().viewerMyselfDate]: b,
+                            [lm().readOnlyDate]: D && !T && !b,
+                            [lm().filledDate]: !!_
                         }),
                         style: {
                             left: "".concat(a.screenX, "px"),
@@ -7277,15 +7413,15 @@
                             return _ ? e = _ : z && D ? a = N("wetransfer_sign.date_overlay.assigned_to_other", {
                                 signerName: A
                             }) : D && u === o.SIGNERS ? a = N("wetransfer_sign.date_overlay.click_to_add_date") : c && !_ && (a = N("wetransfer_sign.date_overlay.date")), (0, i.jsxs)("div", {
-                                className: lx().dateContent,
+                                className: lm().dateContent,
                                 onMouseDown: p,
                                 onDragStart: e => e.preventDefault(),
                                 children: [(h && !_ || c && !_) && (0, i.jsx)(e2.X21, {
                                     size: "small",
-                                    className: lx().calendarIcon
+                                    className: lm().calendarIcon
                                 }), (0, i.jsx)("span", {
-                                    className: ai()(lx().dateText, {
-                                        [lx().placeholder]: !_ && (h || c)
+                                    className: ai()(lm().dateText, {
+                                        [lm().placeholder]: !_ && (h || c)
                                     }),
                                     children: e || a
                                 })]
@@ -7311,9 +7447,9 @@
                     }, a.id)
                 })
             };
-            var lN = t(93918),
-                lc = t.n(lN);
-            let lD = e => {
+            var lc = t(93918),
+                lD = t.n(lc);
+            let lj = e => {
                 let {
                     pdfFile: a,
                     pdfWidth: t,
@@ -7362,12 +7498,12 @@
                     }
                 }, [s, f]);
                 return (0, i.jsx)("div", {
-                    className: lc().pdfPreviewContainer,
+                    className: lD().pdfPreviewContainer,
                     children: (0, i.jsxs)("div", {
                         ref: d,
-                        className: ai()(lc().pdfContainer, {
-                            [lc().defaultCursor]: x === g.VIEWER,
-                            [lc().resizingCursor]: !!M.isResizing
+                        className: ai()(lD().pdfContainer, {
+                            [lD().defaultCursor]: x === g.VIEWER,
+                            [lD().resizingCursor]: !!M.isResizing
                         }),
                         onClick: c,
                         onMouseMove: e => {
@@ -7383,7 +7519,7 @@
                             tooltipText: P,
                             hideOverlay: x === g.EDITOR && r.length > 0,
                             hideTooltip: M.isDragging || !!M.isResizing
-                        }), (0, i.jsx)(l_.A, {
+                        }), (0, i.jsx)(lu.A, {
                             file: a,
                             onLoadSuccess: m,
                             onLoadError: e => {
@@ -7399,7 +7535,7 @@
                             },
                             options: v,
                             loading: (0, i.jsx)("div", {
-                                className: lc().loadingContainer,
+                                className: lD().loadingContainer,
                                 children: (0, i.jsx)(is(), {
                                     animationData: iM,
                                     style: {
@@ -7413,8 +7549,8 @@
                             children: l && Array.from(Array(l), (e, a) => {
                                 let l = a + 1;
                                 return (0, i.jsxs)("div", {
-                                    className: lc().pageContainer,
-                                    children: [(0, i.jsx)(lu.A, {
+                                    className: lD().pageContainer,
+                                    children: [(0, i.jsx)(lw.A, {
                                         scale: 1,
                                         pageNumber: l,
                                         onLoadSuccess: 1 === l ? N : void 0,
@@ -7437,7 +7573,7 @@
                                         allSigners: Q,
                                         currentUserEmail: C,
                                         onTextChange: O
-                                    }, e.id) : e.type === z.DATE ? (0, i.jsx)(lm, {
+                                    }, e.id) : e.type === z.DATE ? (0, i.jsx)(lN, {
                                         placement: e,
                                         isActive: M.activeSignatureId === e.id,
                                         onDateClick: I,
@@ -7484,7 +7620,7 @@
                     reject: a
                 }
             }), ic.EA.workerSrc = "https://cdnjs.cloudflare.com/ajax/libs/pdf.js/".concat(ic.rE, "/pdf.worker.min.mjs");
-            let lj = e => {
+            let lI = e => {
                 let {
                     viewingMode: a = g.EDITOR,
                     onNextClick: t,
@@ -8741,7 +8877,7 @@
                     }, [eh, e1, au]);
                 return c || a !== g.EDITOR ? (0, i.jsx)(i.Fragment, {
                     children: c && (0, i.jsxs)("div", {
-                        className: a === g.VIEWER ? lc().containerFullWidth : lc().containerWithSidebar,
+                        className: a === g.VIEWER ? lD().containerFullWidth : lD().containerWithSidebar,
                         children: [a === g.EDITOR && (0, i.jsx)(iH, {
                             documentTitle: j,
                             onDocumentTitleChange: e => N(ei.actions.setDocumentTitle(e)),
@@ -8759,15 +8895,15 @@
                             selectedFieldTool: f,
                             onFieldToolSelect: e => N(eX.actions.setSelectedFieldTool(e))
                         }), (0, i.jsxs)("div", {
-                            className: ai()(lc().mainContent, {
-                                [lc().mainContentNoMargin]: a === g.VIEWER
+                            className: ai()(lD().mainContent, {
+                                [lD().mainContentNoMargin]: a === g.VIEWER
                             }),
                             children: [(0, i.jsx)("input", {
                                 type: "file",
                                 accept: ".pdf,application/pdf",
                                 onChange: am,
-                                className: lc().hiddenFileInput
-                            }), (0, i.jsx)(lD, {
+                                className: lD().hiddenFileInput
+                            }), (0, i.jsx)(lj, {
                                 pdfFile: c,
                                 pdfWidth: eS,
                                 numPages: eU,
@@ -8805,7 +8941,7 @@
                                 isConfirmAndSendDisabled: r,
                                 isConfirmAndSending: _
                             })]
-                        }), (0, i.jsx)(ly, {
+                        }), (0, i.jsx)(l_, {
                             isSignaturePopupOpen: X,
                             signatureMode: q,
                             signatureStrokes: eL,
@@ -8846,7 +8982,7 @@
                             viewingMode: a
                         })]
                     })
-                }) : tX.Ay.isMobile && !x ? (0, i.jsx)(iP, {}) : (0, i.jsx)(lr, {
+                }) : tX.Ay.isMobile && !x ? (0, i.jsx)(iP, {}) : (0, i.jsx)(lo, {
                     onFileSelect: ax,
                     isDragOver: p,
                     onDragOver: aN,
@@ -8856,9 +8992,9 @@
                     acceptedFileTypes: ".pdf,application/pdf"
                 })
             };
-            var lI = t(96189),
-                lT = t.n(lI);
-            let lh = e => {
+            var lT = t(96189),
+                lh = t.n(lT);
+            let lb = e => {
                     let {
                         needsPasswordlessLogin: a,
                         needsPolicyConsent: t,
@@ -8890,7 +9026,7 @@
                         t: E
                     } = (0, Y.Bd)();
                     if (d === g.VIEWER && y) return (0, i.jsxs)("div", {
-                        className: lT().errorContainer,
+                        className: lh().errorContainer,
                         children: [(0, i.jsxs)("div", {
                             children: [E("wetransfer_sign.transfer_flow.error_loading"), y]
                         }), (0, i.jsx)(e5.$, {
@@ -8923,7 +9059,7 @@
                         description: ""
                     });
                     if (w) return (0, i.jsxs)("div", {
-                        className: lT().errorContainer,
+                        className: lh().errorContainer,
                         children: [(0, i.jsxs)("div", {
                             children: [E("wetransfer_sign.transfer_flow.error_loading"), w]
                         }), (0, i.jsx)(e5.$, {
@@ -8968,7 +9104,7 @@
                     }
                     return null
                 },
-                lb = e => {
+                lz = e => {
                     let {
                         needsPasswordlessLogin: a,
                         needsPolicyConsent: t,
@@ -9004,7 +9140,7 @@
                         onDocumentLoaded: C,
                         isMultisigner: f = !1
                     } = e;
-                    return a || t || d === g.VIEWER && y || d === g.VIEWER && !1 === M || d === g.VIEWER && (o || void 0 === M || !u) || w || N ? (0, i.jsx)(lh, {
+                    return a || t || d === g.VIEWER && y || d === g.VIEWER && !1 === M || d === g.VIEWER && (o || void 0 === M || !u) || w || N ? (0, i.jsx)(lb, {
                         needsPasswordlessLogin: a,
                         needsPolicyConsent: t,
                         passwordlessEmail: l,
@@ -9031,7 +9167,7 @@
                         onDownloadClick: z,
                         onLogoutClick: A,
                         isMultisigner: f
-                    }) : (d !== g.VIEWER || !1 !== M) && (d === g.EDITOR || d === g.VIEWER && x.transferId && x.secret || S) ? (0, i.jsx)(lj, {
+                    }) : (d !== g.VIEWER || !1 !== M) && (d === g.EDITOR || d === g.VIEWER && x.transferId && x.secret || S) ? (0, i.jsx)(lI, {
                         viewingMode: d,
                         onNextClick: E,
                         isNextDisabled: p,
@@ -9041,9 +9177,9 @@
                         onDocumentLoaded: C
                     }) : null
                 };
-            var lz = t(95413),
-                lA = t.n(lz);
-            let lS = e => {
+            var lA = t(95413),
+                lS = t.n(lA);
+            let lE = e => {
                     let {
                         waitingForOthers: a,
                         actionRequired: t,
@@ -9054,65 +9190,65 @@
                         t: s
                     } = (0, Y.Bd)();
                     return (0, i.jsxs)("div", {
-                        className: lA().container,
+                        className: lS().container,
                         children: [(0, i.jsx)("h1", {
-                            className: lA().title,
+                            className: lS().title,
                             children: s("wetransfer_sign.dashboard.title")
                         }), (0, i.jsxs)("div", {
-                            className: lA().statsGrid,
+                            className: lS().statsGrid,
                             children: [(0, i.jsxs)("div", {
-                                className: lA().statCard,
+                                className: lS().statCard,
                                 onClick: () => null == n ? void 0 : n(r.aR.WAITING),
                                 role: "button",
                                 tabIndex: 0,
                                 children: [(0, i.jsx)("div", {
-                                    className: lA().statNumber,
+                                    className: lS().statNumber,
                                     children: d ? (0, i.jsx)(aY.y, {
                                         size: "medium"
                                     }) : a
                                 }), (0, i.jsxs)("div", {
-                                    className: lA().statLabel,
+                                    className: lS().statLabel,
                                     children: [(0, i.jsx)("span", {
-                                        className: "".concat(lA().statusIndicator, " ").concat(lA().waiting)
+                                        className: "".concat(lS().statusIndicator, " ").concat(lS().waiting)
                                     }), s("wetransfer_sign.dashboard.waiting_for_others")]
                                 })]
                             }), (0, i.jsxs)("div", {
-                                className: lA().statCard,
+                                className: lS().statCard,
                                 onClick: () => null == n ? void 0 : n(r.aR.ACTION_REQUIRED),
                                 role: "button",
                                 tabIndex: 0,
                                 children: [(0, i.jsx)("div", {
-                                    className: lA().statNumber,
+                                    className: lS().statNumber,
                                     children: d ? (0, i.jsx)(aY.y, {
                                         size: "medium"
                                     }) : t
                                 }), (0, i.jsxs)("div", {
-                                    className: lA().statLabel,
+                                    className: lS().statLabel,
                                     children: [(0, i.jsx)("span", {
-                                        className: "".concat(lA().statusIndicator, " ").concat(lA().action)
+                                        className: "".concat(lS().statusIndicator, " ").concat(lS().action)
                                     }), s("wetransfer_sign.dashboard.action_required")]
                                 })]
                             }), (0, i.jsxs)("div", {
-                                className: lA().statCard,
+                                className: lS().statCard,
                                 onClick: () => null == n ? void 0 : n(r.aR.COMPLETED),
                                 role: "button",
                                 tabIndex: 0,
                                 children: [(0, i.jsx)("div", {
-                                    className: lA().statNumber,
+                                    className: lS().statNumber,
                                     children: d ? (0, i.jsx)(aY.y, {
                                         size: "medium"
                                     }) : l
                                 }), (0, i.jsxs)("div", {
-                                    className: lA().statLabel,
+                                    className: lS().statLabel,
                                     children: [(0, i.jsx)("span", {
-                                        className: "".concat(lA().statusIndicator, " ").concat(lA().completed)
+                                        className: "".concat(lS().statusIndicator, " ").concat(lS().completed)
                                     }), s("wetransfer_sign.dashboard.completed")]
                                 })]
                             })]
                         })]
                     })
                 },
-                lE = () => {
+                lp = () => {
                     var e;
                     let {
                         t: a
@@ -9633,7 +9769,7 @@
                         }, [I]),
                         eU = (0, n.useCallback)(() => {
                             t((0, i.jsxs)("div", {
-                                className: lT().toastMessage,
+                                className: lh().toastMessage,
                                 children: [(0, i.jsx)(e2.CA6, {}), a("wetransfer_sign.transfer_flow.download_started_description")]
                             }), {
                                 actions: e => (0, i.jsxs)(i.Fragment, {
@@ -9693,7 +9829,7 @@
                             })
                         }, [ew, G, ex, M, _, x, m, O, j, D, S, eg.email]);
                     return (0, i.jsxs)("div", {
-                        className: lT().pageContainer,
+                        className: lh().pageContainer,
                         children: [(0, i.jsx)(t4, {
                             onNextClick: eL,
                             isNextDisabled: eY(),
@@ -9711,15 +9847,15 @@
                                 clearAllSignatures: eO
                             }
                         }), (0, i.jsxs)("div", {
-                            className: lT().content,
+                            className: lh().content,
                             children: [eh ? (0, i.jsx)("div", {
-                                className: lT().loadingOverlay,
+                                className: lh().loadingOverlay,
                                 children: (0, i.jsx)(im, {
                                     state: "loading",
                                     title: a("wetransfer_sign.copy_document.loading_title"),
                                     description: a("wetransfer_sign.copy_document.loading_description")
                                 })
-                            }) : eo ? (0, i.jsx)(lb, {
+                            }) : eo ? (0, i.jsx)(lz, {
                                 needsPasswordlessLogin: p,
                                 needsPolicyConsent: c,
                                 passwordlessEmail: S,
@@ -9758,12 +9894,12 @@
                                 },
                                 isMultisigner: w > 1
                             }) : (0, i.jsx)("div", {
-                                className: lT().loadingOverlay,
+                                className: lh().loadingOverlay,
                                 children: (0, i.jsx)(im, {
                                     state: "loading"
                                 })
                             }), ew === g.VIEWER && M && !eI && !N && (0, i.jsx)("div", {
-                                className: lT().loadingOverlay,
+                                className: lh().loadingOverlay,
                                 children: (0, i.jsx)(im, {
                                     state: "loading",
                                     title: a("wetransfer_sign.viewer.loading_document"),
@@ -9808,7 +9944,7 @@
                         })]
                     })
                 },
-                lp = (0, ea.U1)({
+                lO = (0, ea.U1)({
                     reducer: {
                         document: ei.reducer,
                         editor: eV.reducer,
@@ -9823,7 +9959,7 @@
                         }
                     })
                 }),
-                lO = () => {
+                lL = () => {
                     let {
                         experiments: e,
                         isLoading: a
@@ -9853,12 +9989,12 @@
                         }
                     }, [e, a]), null
                 },
-                lL = () => (0, i.jsxs)(i.Fragment, {
-                    children: [(0, i.jsx)(lO, {}), (0, i.jsx)(d.Kq, {
-                        store: lp,
+                lk = () => (0, i.jsxs)(i.Fragment, {
+                    children: [(0, i.jsx)(lL, {}), (0, i.jsx)(d.Kq, {
+                        store: lO,
                         context: eK,
                         children: (0, i.jsx)(e1, {
-                            children: (0, i.jsx)(lE, {})
+                            children: (0, i.jsx)(lp, {})
                         })
                     })]
                 })
@@ -13075,4 +13211,4 @@
         }
     }
 ]);
-//# sourceMappingURL=wetransfer-sign.c3548bba0373e051.js.map
+//# sourceMappingURL=wetransfer-sign.2bdd6645d42f5c84.js.map

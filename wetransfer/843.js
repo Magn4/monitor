@@ -6815,7 +6815,8 @@
         },
         26647: e => {
             e.exports = {
-                settingsContainer: "SettingsSidePanel_settingsContainer__qmHmi"
+                settingsContainer: "SettingsSidePanel_settingsContainer__qmHmi",
+                settingsContainer__tall: "SettingsSidePanel_settingsContainer__tall__TE51v"
             }
         },
         27154: (e, t, a) => {
@@ -22762,7 +22763,7 @@
                         })]
                     })
                 };
-            var nc = a(23433),
+            var nc = a(49352),
                 np = a(38031),
                 ny = a.n(np);
 
@@ -27050,13 +27051,15 @@
                 var t;
                 let {
                     isVisible: a
-                } = e, l = (0, s.wA)(), d = s6(null != (t = (0, s.d4)(lq.pe)) ? t : lq.zj.Options);
+                } = e, l = (0, s.wA)(), n = null != (t = (0, s.d4)(lq.pe)) ? t : lq.zj.Options, r = s6(n);
                 return (0, i.jsx)(r$, {
                     isVisible: a,
                     onClickOutside: () => l((0, lq.NQ)()),
                     children: (0, i.jsx)("div", {
-                        className: s7().settingsContainer,
-                        children: (0, i.jsx)(d, {})
+                        className: d()(s7().settingsContainer, {
+                            [s7().settingsContainer__tall]: [lq.zj.Price, lq.zj.AccessControl].includes(n)
+                        }),
+                        children: (0, i.jsx)(r, {})
                     })
                 })
             }
@@ -46285,7 +46288,8 @@
             a.d(t, {
                 QS: () => n,
                 Zg: () => i,
-                kC: () => r,
+                kC: () => o,
+                xG: () => r,
                 xh: () => l,
                 xp: () => d
             });
@@ -46652,6 +46656,30 @@
                     }
                 },
                 r = {
+                    documentCopied: () => ({
+                        kind: "sign_document_copied",
+                        info: {}
+                    }),
+                    documentOpened: e => ({
+                        kind: "sign_document_opened",
+                        info: {
+                            action: e
+                        }
+                    }),
+                    certificateDownloaded: () => ({
+                        kind: "sign_document_certificate_downloaded",
+                        info: {}
+                    }),
+                    documentDeleted: () => ({
+                        kind: "sign_document_deleted",
+                        info: {}
+                    }),
+                    documentReviewed: () => ({
+                        kind: "sign_document_reviewed",
+                        info: {}
+                    })
+                },
+                o = {
                     sampleDocumentBannerCtaClicked(e) {
                         let {
                             signSessionId: t
@@ -47046,4 +47074,4 @@
         }
     }
 ]);
-//# sourceMappingURL=8205.7c33197a37897d50.js.map
+//# sourceMappingURL=8205.5c44c786b32cede8.js.map

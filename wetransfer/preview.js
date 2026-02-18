@@ -780,7 +780,7 @@
             });
             var l = t(23798),
                 i = t(21462),
-                d = t(23433),
+                d = t(49352),
                 n = t(53526),
                 r = t.n(n),
                 o = t(75546),
@@ -2183,8 +2183,8 @@
                 e6 = t(89187),
                 e8 = t(86781),
                 e7 = t(29788),
-                e3 = t.n(e7),
-                e5 = t(11096);
+                e5 = t.n(e7),
+                e3 = t(11096);
 
             function e9(e) {
                 let {
@@ -2248,7 +2248,7 @@
                 (0, i.useEffect)(() => {
                     ec(), D.current = !1, k.current = !1, S(!1), F(null)
                 }, [a, ec]), (0, i.useEffect)(() => {
-                    D.current || !($.length >= 0) || eo || (D.current = !0, (0, x.Od)().trackUserAction(e5.e.commentsSectionViewed({
+                    D.current || !($.length >= 0) || eo || (D.current = !0, (0, x.Od)().trackUserAction(e3.e.commentsSectionViewed({
                         transferId: t,
                         fileId: a,
                         commentCount: $.length
@@ -2320,13 +2320,13 @@
                                     recipientId: n,
                                     guestSecret: o
                                 })) {
-                                es(c, l, s), U(V("preview.comments.error.update_failed")), (0, x.Od)().trackUserAction(e5.e.commentUpdateFailed({
+                                es(c, l, s), U(V("preview.comments.error.update_failed")), (0, x.Od)().trackUserAction(e3.e.commentUpdateFailed({
                                     transferId: t,
                                     fileId: a,
                                     commentId: c
                                 })), eC();
                                 return
-                            }(0, x.Od)().trackUserAction(e5.e.commentUpdated({
+                            }(0, x.Od)().trackUserAction(e3.e.commentUpdated({
                                 transferId: t,
                                 fileId: a,
                                 commentId: c,
@@ -2347,13 +2347,13 @@
                                 recipientId: n,
                                 guestSecret: l
                             })) {
-                            i && e_(i), U(V("preview.comments.error.delete_failed")), (0, x.Od)().trackUserAction(e5.e.commentDeleteFailed({
+                            i && e_(i), U(V("preview.comments.error.delete_failed")), (0, x.Od)().trackUserAction(e3.e.commentDeleteFailed({
                                 transferId: t,
                                 fileId: a,
                                 commentId: e
                             }));
                             return
-                        }(0, x.Od)().trackUserAction(e5.e.commentDeleted({
+                        }(0, x.Od)().trackUserAction(e3.e.commentDeleted({
                             transferId: t,
                             fileId: a,
                             commentId: e,
@@ -2389,10 +2389,10 @@
                             guestEmail: l,
                             guestName: i
                         });
-                        return "error" in m ? (em(s.id), U(V("preview.comments.error.create_failed")), (0, x.Od)().trackUserAction(e5.e.commentCreateFailed({
+                        return "error" in m ? (em(s.id), U(V("preview.comments.error.create_failed")), (0, x.Od)().trackUserAction(e3.e.commentCreateFailed({
                             transferId: t,
                             fileId: a
-                        })), !1) : ((null == (o = m.data) ? void 0 : o.guestSecret) && Z(a, m.data.id, m.data.guestSecret), (0, x.Od)().trackUserAction(e5.e.commentCreated({
+                        })), !1) : ((null == (o = m.data) ? void 0 : o.guestSecret) && Z(a, m.data.id, m.data.guestSecret), (0, x.Od)().trackUserAction(e3.e.commentCreated({
                             transferId: t,
                             fileId: a,
                             isLoggedIn: H,
@@ -2406,13 +2406,13 @@
                             await eS(e, null == a ? void 0 : a.email, null == a ? void 0 : a.name);
                             return
                         }
-                        O(e), E(!0), (0, x.Od)().trackUserAction(e5.e.guestModalShown({
+                        O(e), E(!0), (0, x.Od)().trackUserAction(e3.e.guestModalShown({
                             transferId: t,
                             fileId: a
                         }))
                     }, [a, Q, X, H, eS, t]),
                     eF = (0, i.useCallback)(() => {
-                        E(!1), B(L), O(""), (0, x.Od)().trackUserAction(e5.e.guestModalDismissed({
+                        E(!1), B(L), O(""), (0, x.Od)().trackUserAction(e3.e.guestModalDismissed({
                             transferId: t,
                             fileId: a
                         }))
@@ -2421,14 +2421,14 @@
                         B("")
                     }, []),
                     ej = (0, i.useCallback)(async (e, l) => {
-                        Y(e, l), E(!1), (0, x.Od)().trackUserAction(e5.e.guestModalSubmitted({
+                        Y(e, l), E(!1), (0, x.Od)().trackUserAction(e3.e.guestModalSubmitted({
                             transferId: t,
                             fileId: a,
                             hasName: !!l.trim()
                         })), await eS(L, e, l) || B(L), O("")
                     }, [a, L, Y, eS, t]),
                     eT = (0, i.useCallback)(() => {
-                        E(!1), (0, x.Od)().trackUserAction(e5.e.guestModalSignupClicked({
+                        E(!1), (0, x.Od)().trackUserAction(e3.e.guestModalSignupClicked({
                             transferId: t,
                             fileId: a
                         })), G((0, e2.Hh)({
@@ -2438,22 +2438,22 @@
                     }, [G, a, t]);
                 return (0, l.jsxs)(l.Fragment, {
                     children: [(0, l.jsxs)("div", {
-                        className: e3().commentsSectionWrapper,
+                        className: e5().commentsSectionWrapper,
                         children: [(0, l.jsx)("div", {
-                            className: N()(e3().commentsSectionShadowTop, {
-                                [e3().commentsSectionShadowVisible]: eb && !eu
+                            className: N()(e5().commentsSectionShadowTop, {
+                                [e5().commentsSectionShadowVisible]: eb && !eu
                             })
                         }), (0, l.jsx)("div", {
-                            className: N()(e3().commentsSectionShadowBottom, {
-                                [e3().commentsSectionShadowVisible]: eb && !eh
+                            className: N()(e5().commentsSectionShadowBottom, {
+                                [e5().commentsSectionShadowVisible]: eb && !eh
                             })
                         }), b && (0, l.jsxs)("div", {
-                            className: e3().reportSelectionBanner,
+                            className: e5().reportSelectionBanner,
                             children: [(0, l.jsx)("span", {
                                 children: V("preview.comments.select_to_report")
                             }), (0, l.jsx)("button", {
                                 type: "button",
-                                className: e3().reportSelectionCloseButton,
+                                className: e5().reportSelectionCloseButton,
                                 onClick: u,
                                 "aria-label": V("preview.comments.cancel_report_selection"),
                                 children: (0, l.jsx)(s.$Td, {
@@ -2462,12 +2462,12 @@
                             })]
                         }), (0, l.jsxs)("div", {
                             ref: eg,
-                            className: N()(e3().commentsSection, {
-                                [e3().commentsSectionWithBanner]: b
+                            className: N()(e5().commentsSection, {
+                                [e5().commentsSectionWithBanner]: b
                             }),
                             children: [ea && (0, l.jsx)("div", {
                                 ref: A,
-                                className: e3().spinnerContainer,
+                                className: e5().spinnerContainer,
                                 children: eo && (0, l.jsx)(T.y, {
                                     size: "small",
                                     appearance: "neutral",
@@ -3771,8 +3771,8 @@
                 a6 = t(91192),
                 a8 = t(45401),
                 a7 = t(23376),
-                a3 = t(39623),
-                a5 = t(63306),
+                a5 = t(39623),
+                a3 = t(63306),
                 a9 = t(26137),
                 te = t(12637),
                 ta = t(45477),
@@ -3851,7 +3851,7 @@
                             ...B
                         });
                     (0, i.useEffect)(() => {
-                        F && u && !P.current && (!h || 0 === h.length) && (P.current = !0, a((0, a3.V0)({
+                        F && u && !P.current && (!h || 0 === h.length) && (P.current = !0, a((0, a5.V0)({
                             name: "string" == typeof u ? u : ""
                         })))
                     }, [a, F, u, h]);
@@ -3981,7 +3981,7 @@
                         {
                             selectedItem: e8,
                             onSelectItem: e7,
-                            onDeselectItem: e3
+                            onDeselectItem: e5
                         } = (0, af.m)({
                             items: H,
                             isLoading: e6,
@@ -3999,7 +3999,7 @@
                             e.removeEventListener("scroll", a)
                         }
                     }, [e8, e6, eg]);
-                    let e5 = (0, i.useCallback)(() => {
+                    let e3 = (0, i.useCallback)(() => {
                             var e;
                             null == (e = eV.current) || e.scrollTo({
                                 top: 0,
@@ -4174,7 +4174,7 @@
                             if (e) {
                                 let e = n.password_protected && !n.password ? ti.r.PASSWORD_PROTECTED : ti.r.DOWNLOADABLE;
                                 a({
-                                    type: a5.o1.TRANSFER_SET_STATE,
+                                    type: a3.o1.TRANSFER_SET_STATE,
                                     state: e
                                 })
                             } else(0, a8.m)(A || "", Z || "", q)
@@ -4214,7 +4214,7 @@
                         }, [a, A]),
                         ac = (0, i.useCallback)(() => {
                             ew(!0), a({
-                                type: a5.o1.TRANSFER_STATE_DOWNLOAD_STARTING
+                                type: a3.o1.TRANSFER_STATE_DOWNLOAD_STARTING
                             }), (0, x.Od)().trackUserAction(aZ.Sf.downloadRequested({
                                 location: aZ.Cx.PREVIEW_PAGE,
                                 downloadType: aZ.zh.ALL_FILES
@@ -4312,7 +4312,7 @@
                                     (0, x.Od)().trackUserAction(er.fh.previewFileClosed({
                                         transferId: A || "",
                                         fileId: e8.id
-                                    })), e3()
+                                    })), e5()
                                 },
                                 onNext: () => {
                                     let e = ak();
@@ -4467,7 +4467,7 @@
                             }), eG && (0, l.jsx)(_.K, {
                                 ref: ez,
                                 className: tr().scrollToTopButton,
-                                onClick: e5,
+                                onClick: e3,
                                 variation: "neutral",
                                 "aria-label": "Scroll to top",
                                 icon: s.Pq0
@@ -5937,4 +5937,4 @@
         }
     }
 ]);
-//# sourceMappingURL=preview.04f9a721ca8af3b6.js.map
+//# sourceMappingURL=preview.8a0f550e744079e1.js.map
