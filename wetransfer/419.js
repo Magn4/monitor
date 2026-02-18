@@ -535,9 +535,9 @@
                         if (s && null == n) return n;
                         let i = y(e),
                             a = y(n);
-                        throw TypeError(`The value of ${t.path||"field"} could not be cast to a value that satisfies the schema type: "${r.type}". 
+                        throw TypeError(`The value of ${t.path||"field"} could not be cast to a value that satisfies the schema type: "${r.type}".
 
-attempted value: ${i} 
+attempted value: ${i}
 ` + (a !== i ? `result of cast: ${a}` : ""))
                     }
                     return n

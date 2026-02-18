@@ -120,6 +120,7 @@
             let x = "identity";
             async function P() {
                 let e = await
+
                 function(e, t, {
                     blocked: r,
                     upgrade: o,

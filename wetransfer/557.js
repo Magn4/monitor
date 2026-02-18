@@ -1273,7 +1273,7 @@
                             break
                         }
                     while (n < o && i < s);
-                    n -= w = p >> 3, p -= w << 3, d &= (1 << p) - 1, t.next_in = n, t.next_out = i, t.avail_in = n < o ? 5 + (o - n) : 5 - (n - o), t.avail_out = i < s ? 257 + (s - i) : 257 - (i - s), r.hold = d, r.bits = p
+                n -= w = p >> 3, p -= w << 3, d &= (1 << p) - 1, t.next_in = n, t.next_out = i, t.avail_in = n < o ? 5 + (o - n) : 5 - (n - o), t.avail_out = i < s ? 257 + (s - i) : 257 - (i - s), r.hold = d, r.bits = p
             }
         },
         76985: t => {
