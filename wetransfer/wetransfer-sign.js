@@ -324,7 +324,7 @@
                         canConfirmAndSend: (0, n.useCallback)(e => {
                             let {
                                 currentUserEmail: a
-                            } = e, t = (a ? e.signaturePlacements.filter(e => e.type === z.SIGNER_BOX && (!e.assignedTo || e.assignedTo === a)) : e.signaturePlacements.filter(e => e.type === z.SIGNER_BOX)).length > 0, i = O(e.signaturePlacements), l = a ? e.signaturePlacements.filter(e => e.type === z.TEXT_BOX && e.signingMode === o.SIGNERS && (!e.assignedTo || e.assignedTo === a)) : e.signaturePlacements.filter(e => e.type === z.TEXT_BOX && e.signingMode === o.SIGNERS), n = 0 === l.length || l.every(e => e.content && e.content.trim().length > 0), d = a ? e.signaturePlacements.filter(e => e.type === z.DATE && e.signingMode === o.SIGNERS && (!e.assignedTo || e.assignedTo === a)) : e.signaturePlacements.filter(e => e.type === z.DATE && e.signingMode === o.SIGNERS), s = 0 === d.length || d.every(e => e.dateValue && e.dateValue.trim().length > 0), r = e.signaturePlacements.some(e => e.type === z.DATE), g = i || l.length > 0 || r;
+                            } = e, t = (a ? e.signaturePlacements.filter(e => e.type === z.SIGNER_BOX && (!e.assignedTo || e.assignedTo.toLowerCase() === a.toLowerCase())) : e.signaturePlacements.filter(e => e.type === z.SIGNER_BOX)).length > 0, i = O(e.signaturePlacements), l = a ? e.signaturePlacements.filter(e => e.type === z.TEXT_BOX && e.signingMode === o.SIGNERS && (!e.assignedTo || e.assignedTo.toLowerCase() === a.toLowerCase())) : e.signaturePlacements.filter(e => e.type === z.TEXT_BOX && e.signingMode === o.SIGNERS), n = 0 === l.length || l.every(e => e.content && e.content.trim().length > 0), d = a ? e.signaturePlacements.filter(e => e.type === z.DATE && e.signingMode === o.SIGNERS && (!e.assignedTo || e.assignedTo.toLowerCase() === a.toLowerCase())) : e.signaturePlacements.filter(e => e.type === z.DATE && e.signingMode === o.SIGNERS), s = 0 === d.length || d.every(e => e.dateValue && e.dateValue.trim().length > 0), r = e.signaturePlacements.some(e => e.type === z.DATE), g = i || l.length > 0 || r;
                             return !!(e.pdfBytes && !t && g && n && s)
                         }, [])
                     }
@@ -2079,7 +2079,7 @@
                         currentUserEmail: m
                     } = e, {
                         t: N
-                    } = (0, Y.Bd)(), c = _ === g.EDITOR, D = a.assignedTo && w.length > 0 ? ad(a.assignedTo, w) : c ? "#92D39D" : "#D6FFC4", j = an(D, .5), I = a.type === z.SIGNER_BOX, T = l.length > 0 || n, b = !a.assignedTo || a.assignedTo === m, A = I && b, S = I ? u || N("wetransfer_sign.signer_selection.someone_else_label") : N("wetransfer_sign.sidebar.myself"), E = aM(e => s(a.id, e), () => null == y ? void 0 : y(a.id)), p = aM(e => s(a.id, e), () => {
+                    } = (0, Y.Bd)(), c = _ === g.EDITOR, D = a.assignedTo && w.length > 0 ? ad(a.assignedTo, w) : c ? "#92D39D" : "#D6FFC4", j = an(D, .5), I = a.type === z.SIGNER_BOX, T = l.length > 0 || n, b = !a.assignedTo || a.assignedTo.toLowerCase() === (null == m ? void 0 : m.toLowerCase()), A = I && b, S = I ? u || N("wetransfer_sign.signer_selection.someone_else_label") : N("wetransfer_sign.sidebar.myself"), E = aM(e => s(a.id, e), () => null == y ? void 0 : y(a.id)), p = aM(e => s(a.id, e), () => {
                         null == M || M(a.id)
                     }), O = e => {
                         if (!c) {
@@ -4765,7 +4765,7 @@
                     onTextChange: c
                 } = e, {
                     t: D
-                } = (0, Y.Bd)(), j = M === g.EDITOR, I = M === g.VIEWER, T = x === o.SIGNERS && j && a.assignedTo && m.length > 0 ? ad(a.assignedTo, m) : void 0, h = T ? an(T, .5) : void 0, b = !a.assignedTo || a.assignedTo === N, z = a.assignedTo || "", [A, S] = (0, n.useState)(w || D("wetransfer_sign.textbox.placeholder")), [E, p] = (0, n.useState)(!1), [O, L] = (0, n.useState)(null), k = (0, n.useRef)(null), C = (0, n.useRef)(null), f = I && x === o.SIGNERS && b || j && x === o.MYSELF && E, v = x === o.MYSELF && I, Q = v || I && !b;
+                } = (0, Y.Bd)(), j = M === g.EDITOR, I = M === g.VIEWER, T = x === o.SIGNERS && j && a.assignedTo && m.length > 0 ? ad(a.assignedTo, m) : void 0, h = T ? an(T, .5) : void 0, b = !a.assignedTo || a.assignedTo.toLowerCase() === (null == N ? void 0 : N.toLowerCase()), z = a.assignedTo || "", [A, S] = (0, n.useState)(w || D("wetransfer_sign.textbox.placeholder")), [E, p] = (0, n.useState)(!1), [O, L] = (0, n.useState)(null), k = (0, n.useRef)(null), C = (0, n.useRef)(null), f = I && x === o.SIGNERS && b || j && x === o.MYSELF && E, v = x === o.MYSELF && I, Q = v || I && !b;
                 (0, n.useEffect)(() => {
                     S(w || "")
                 }, [w]), (0, n.useEffect)(() => {
@@ -4931,7 +4931,7 @@
                 })
             };
             var tU = t(30149),
-                tY = t(14767),
+                tY = t(44259),
                 tF = t(18005),
                 tP = t(59457),
                 tR = t(33901),
@@ -7371,7 +7371,7 @@
                     onDateEdit: m
                 } = e, {
                     t: N
-                } = (0, Y.Bd)(), c = M === g.EDITOR, D = M === g.VIEWER, j = u === o.SIGNERS && c && a.assignedTo && w.length > 0 ? ad(a.assignedTo, w) : void 0, I = j ? an(j, .5) : void 0, T = !a.assignedTo || a.assignedTo === x, h = D && u === o.SIGNERS && T, b = u === o.MYSELF && D, z = b || D && !T, A = a.assignedTo || "", S = (0, n.useCallback)(() => {
+                } = (0, Y.Bd)(), c = M === g.EDITOR, D = M === g.VIEWER, j = u === o.SIGNERS && c && a.assignedTo && w.length > 0 ? ad(a.assignedTo, w) : void 0, I = j ? an(j, .5) : void 0, T = !a.assignedTo || a.assignedTo.toLowerCase() === (null == x ? void 0 : x.toLowerCase()), h = D && u === o.SIGNERS && T, b = u === o.MYSELF && D, z = b || D && !T, A = a.assignedTo || "", S = (0, n.useCallback)(() => {
                     D && u === o.SIGNERS && m && m(a.id)
                 }, [D, u, m, a.id]), E = tb(e => d(a.id, e), () => {
                     c && m && m(a.id)
@@ -10840,7 +10840,7 @@
                 l = t(46001),
                 n = t.n(l),
                 d = t(21462),
-                s = t(14767),
+                s = t(44259),
                 r = t(15321),
                 o = t(84530);
             let g = e => {
@@ -13211,4 +13211,4 @@
         }
     }
 ]);
-//# sourceMappingURL=wetransfer-sign.2bdd6645d42f5c84.js.map
+//# sourceMappingURL=wetransfer-sign.4c5d718c6e8472cd.js.map

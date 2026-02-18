@@ -233,7 +233,6 @@
                     use_content_protection_banner: !1,
                     use_content_protection_banner_sender: !1,
                     is_banner_email_experiment_enabled: !1,
-                    enable_favorites_in_previews: !1,
                     transfer_recovery_enabled_by_default: !0,
                     recap_ultimate_secondary_features_variant: s.R.NONE,
                     recap_ultimate_secondary_features_frequency_days: 9999,
@@ -577,4 +576,4 @@
         }
     }
 ]);
-//# sourceMappingURL=2760.f120efea588de95b.js.map
+//# sourceMappingURL=2760.6816780dd4045fdb.js.map
