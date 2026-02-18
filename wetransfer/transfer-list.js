@@ -1019,7 +1019,7 @@
                 en = a(13181),
                 eo = a(532),
                 e_ = a(97396),
-                em = a(44259),
+                em = a(14767),
                 ew = a(42947),
                 eg = a(64448),
                 eu = a.n(eg);
@@ -1858,8 +1858,8 @@
                 e4 = function(e) {
                     return e.Date = "DATE", e.Expiration = "EXPIRATION", e.Size = "SIZE", e.Title = "TITLE", e
                 }({}),
-                e9 = a(41732),
-                e6 = a.n(e9);
+                e6 = a(41732),
+                e9 = a.n(e6);
             let e7 = {
                     DATE: "date",
                     SIZE: "size",
@@ -1897,7 +1897,7 @@
                         }
                     }), [d]);
                     return ez.Ay.isMobile ? (0, l.jsx)("div", {
-                        className: e6().SortSelect,
+                        className: e9().SortSelect,
                         children: (0, l.jsx)(e5, {
                             name: "sort",
                             onChange: e => t(e),
@@ -1916,7 +1916,7 @@
                             ref: _,
                             tabIndex: 0,
                             role: "button",
-                            className: e6().Sort,
+                            className: e9().Sort,
                             children: C.A.t("page.transfers.".concat(n))
                         })
                     })
@@ -1926,7 +1926,7 @@
                         onSortOptionClick: t,
                         onSortOrderClick: a,
                         className: r
-                    } = e, s = i()(e6().ListSorting, r), {
+                    } = e, s = i()(e9().ListSorting, r), {
                         sortOrder: d
                     } = j();
                     return (0, l.jsxs)("div", {
@@ -1934,18 +1934,18 @@
                         children: [!ez.Ay.isMobile && (0, l.jsx)("span", {
                             children: C.A.t("page.transfers.sort_on")
                         }), (0, l.jsxs)("div", {
-                            className: e6().SortWrapper,
+                            className: e9().SortWrapper,
                             children: [(0, l.jsx)(te, {
                                 onSortOptionClick: t
                             }), (0, l.jsx)(eY.A, {
                                 id: "transfers_page_sort_order",
-                                className: e6().SortArrow,
+                                className: e9().SortArrow,
                                 ariaLabel: "ASC" === d ? "Ascending" : "Descending",
                                 onClick: a,
                                 icon: (0, l.jsx)(em.Ay, {
                                     orientation: "ASC" === d ? eK.eJ : eK.HM,
                                     type: "DoubleArrows",
-                                    className: e6().SortArrowIcon
+                                    className: e9().SortArrowIcon
                                 }, "arrow_icon")
                             })]
                         })]
@@ -3107,9 +3107,9 @@
                     })]
                 })
             };
-            var t9 = a(80714),
-                t6 = a(16182),
-                t7 = a.n(t6),
+            var t6 = a(80714),
+                t9 = a(16182),
+                t7 = a.n(t9),
                 ae = a(89395),
                 at = a(31838),
                 aa = a(61670),
@@ -3303,7 +3303,7 @@
                         return !(0, tR.Z_)(t) && e.transfer_folders
                     })(), [ee, ea] = (0, s.useState)(null), [el, er] = (0, s.useState)(!1), [ei, es] = (0, s.useState)(!1), [ed, en] = (0, s.useState)(null), [eo, e_] = (0, s.useState)(null), em = (0, s.useMemo)(() => (0, an.s)(E, 300), [E]), ew = (0, n.d4)(f.mB), eg = (0, n.d4)(f.R2), eu = (0, n.d4)(x.bF), eh = (0, n.d4)(af.n9), {
                         batchDeleteTransferCustomizations: ec
-                    } = (0, t9.H)(), {
+                    } = (0, t6.H)(), {
                         updateDisplayName: eb
                     } = (0, y.$S)(), ep = (0, ac.P)(), ex = (0, ac.L)(), {
                         data: ef = []
@@ -3451,8 +3451,8 @@
                         }, [r, C, S, o, _, $, ee]),
                         {
                             data: e4,
-                            loading: e9,
-                            error: e6
+                            loading: e6,
+                            error: e9
                         } = function() {
                             let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : {
                                     page: 1,
@@ -3901,12 +3901,12 @@
                         }, !1)
                     }, [tk]);
                     (0, s.useEffect)(() => {
-                        e9 ? eA(!0) : e4 ? eV === e4.currentPage ? eA(!1) : (ej({
+                        e6 ? eA(!0) : e4 ? eV === e4.currentPage ? eA(!1) : (ej({
                             transfers: e4.transfers,
                             total_number_of_transfers: e4.totalCount,
                             page_number: e4.currentPage
-                        }), eA(!1), eq(null), eU(0)) : e6 && (eq(e6), eA(!1), eU(0), eP.A.track(e6))
-                    }, [e4, e9, e6, eV, S]), (0, s.useEffect)(() => {
+                        }), eA(!1), eq(null), eU(0)) : e9 && (eq(e9), eA(!1), eU(0), eP.A.track(e9))
+                    }, [e4, e6, e9, eV, S]), (0, s.useEffect)(() => {
                         if (I && e8.some(e => e.id === I)) {
                             let e = e8.filter(e => e.id !== I);
                             ej(t => t ? {
@@ -4730,4 +4730,4 @@
         }
     }
 ]);
-//# sourceMappingURL=transfer-list.c1a10f9a480d4060.js.map
+//# sourceMappingURL=transfer-list.c924590f3934403b.js.map

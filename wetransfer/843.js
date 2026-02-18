@@ -1853,7 +1853,7 @@
                 l = a(46001),
                 d = a.n(l);
             a(21462);
-            var n = a(44259),
+            var n = a(14767),
                 r = a(15321),
                 o = a(94311),
                 s = a.n(o),
@@ -2110,7 +2110,7 @@
                 l = a(50084),
                 d = a.n(l),
                 n = a(21462),
-                r = a(44259),
+                r = a(14767),
                 o = a(15321),
                 s = a(62373),
                 _ = a(30631),
@@ -4352,7 +4352,7 @@
             var i = a(23798),
                 l = a(21462),
                 d = a(38169),
-                n = a(44259),
+                n = a(14767),
                 r = a(46001),
                 o = a.n(r),
                 s = a(50084),
@@ -7992,7 +7992,7 @@
                 $: () => d
             });
             var i = a(23798),
-                l = a(44259);
+                l = a(14767);
             let d = e => {
                 let {
                     type: t,
@@ -8105,7 +8105,7 @@
                 l = a(50084),
                 d = a.n(l),
                 n = a(21462),
-                r = a(44259),
+                r = a(14767),
                 o = a(15321);
             class s extends n.Component {
                 disableNotification() {
@@ -11368,7 +11368,7 @@
                 s = a(85633),
                 _ = a(50496),
                 w = a(74941),
-                g = a(44259),
+                g = a(14767),
                 m = a(53661),
                 u = a(45401),
                 c = a(30631),
@@ -15187,7 +15187,7 @@
                 })
             }
             var W = a(71322),
-                V = a(44259),
+                V = a(14767),
                 q = a(55851),
                 Z = a(63306),
                 H = a(41846),
@@ -29852,7 +29852,7 @@
                 o = a(81436),
                 s = a(97116),
                 _ = a(76616),
-                w = a(44259),
+                w = a(14767),
                 g = a(30631),
                 m = a(47385),
                 u = a.n(m),
@@ -31630,7 +31630,7 @@
                 o = a(37828),
                 s = a(73278),
                 _ = a(44765),
-                w = a(44259),
+                w = a(14767),
                 g = a(89187),
                 m = a(51853),
                 u = a(7012),
@@ -41925,9 +41925,7 @@
                             children: d("fair_use_policy_popup.title")
                         }), (0, i.jsx)("p", {
                             className: iQ().contentText,
-                            dangerouslySetInnerHTML: {
-                                __html: d("fair_use_policy_popup.body")
-                            }
+                            children: d("fair_use_policy_popup.body")
                         }), (0, i.jsx)(eh.$, {
                             onClick: () => {
                                 s.A.navigateTo("/transfers"), a()
@@ -41940,7 +41938,7 @@
             }
             var iY = a(32976),
                 iW = a(15566),
-                iV = a(44259),
+                iV = a(14767),
                 iq = a(18005),
                 iZ = a(15321);
             let iH = () => {
@@ -42104,9 +42102,12 @@
                                 className: iK().contentWrapper,
                                 children: [!tp.A.isMobile && (0, i.jsx)(il.A, {}), (0, i.jsx)("span", {
                                     className: iK().text,
-                                    dangerouslySetInnerHTML: {
-                                        __html: s("free_trial_bottom_banner.text")
-                                    }
+                                    children: (0, i.jsx)(ey.x6, {
+                                        i18nKey: "free_trial_bottom_banner.text",
+                                        components: {
+                                            b: (0, i.jsx)("b", {})
+                                        }
+                                    })
                                 }), (0, i.jsx)(id.$n, {
                                     small: !0,
                                     variant: "secondary",
@@ -42239,9 +42240,12 @@
                                         className: i1().leftContentText,
                                         children: [!tp.A.isMobile && (0, i.jsx)(il.A, {}), (0, i.jsx)("span", {
                                             className: i1().text,
-                                            dangerouslySetInnerHTML: {
-                                                __html: m("free_trial_timed_banner.text")
-                                            }
+                                            children: (0, i.jsx)(ey.x6, {
+                                                i18nKey: "free_trial_timed_banner.text",
+                                                components: {
+                                                    b: (0, i.jsx)("b", {})
+                                                }
+                                            })
                                         })]
                                     }), (0, i.jsxs)("div", {
                                         className: i1().countdown,
@@ -47042,4 +47046,4 @@
         }
     }
 ]);
-//# sourceMappingURL=8205.25a93a823966c83f.js.map
+//# sourceMappingURL=8205.7c33197a37897d50.js.map

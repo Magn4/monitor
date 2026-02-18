@@ -4931,7 +4931,7 @@
                 })
             };
             var tU = t(30149),
-                tY = t(44259),
+                tY = t(14767),
                 tF = t(18005),
                 tP = t(59457),
                 tR = t(33901),
@@ -10704,7 +10704,7 @@
                 l = t(46001),
                 n = t.n(l),
                 d = t(21462),
-                s = t(44259),
+                s = t(14767),
                 r = t(15321),
                 o = t(84530);
             let g = e => {
@@ -13075,4 +13075,4 @@
         }
     }
 ]);
-//# sourceMappingURL=wetransfer-sign.a452934fbdbfc589.js.map
+//# sourceMappingURL=wetransfer-sign.c3548bba0373e051.js.map
