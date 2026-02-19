@@ -17,35 +17,35 @@ import {
     ar as x,
     Q as f,
     f as g
-} from "./index-afe8eeea.js";
+} from "./index-684a1b71.js";
 import {
     t as b,
     f as j,
-    a8 as v,
+    aa as v,
     R as k,
     v as w,
     w as C
-} from "./app-ba64cf70.js";
+} from "./app-91bc7f76.js";
 import {
     W as $,
     s as N,
     A as _
-} from "./Loader2-e1b3d35e.js";
+} from "./Loader2-db3a3ef5.js";
 import {
     B as y
-} from "./Button-5479c84f.js";
+} from "./Button-106d6f41.js";
 import {
     a as P,
     s as S,
     m as R
-} from "./viewports-c65d73a1.js";
+} from "./viewports-a6773e3e.js";
 import {
     I
-} from "./Icon-1cc9e506.js";
+} from "./Icon-6914d147.js";
 import {
     W as U,
     C as T
-} from "./modal.constants-0cca4730.js";
+} from "./modal.constants-e7a21a8a.js";
 const z = "/assets/IllustrationPower-92920737.svg",
     E = $`
   0%{
@@ -171,13 +171,13 @@ const A = ({
                 className: "absolute top-6 right-6 h-2.5 w-2.5",
                 onClick: () => o && o()
             }), s, t.jsxs(B, {
-                children: [e, r, n && t.jsxs(Q, {
+                children: [e, r, n && t.jsxs(J, {
                     children: [t.jsx(a, {
                         event: "upgrade_to_premium_click",
                         data: {
                             origin: d ?? ""
                         },
-                        children: t.jsx(J, {
+                        children: t.jsx(K, {
                             $big: !0,
                             icon: "GetPremium",
                             theme: "premium",
@@ -186,7 +186,7 @@ const A = ({
                                 id: "premium.modal.abt.cta"
                             })
                         })
-                    }), t.jsx(K, {
+                    }), t.jsx(Q, {
                         theme: "linkSecondary",
                         onClick: () => o && o(),
                         children: t.jsx(i, {
@@ -253,10 +253,10 @@ const A = ({
     font-weight: normal;
   }
 `,
-    K = N(y)`
+    Q = N(y)`
   color: ${r};
 `,
-    Q = N.div`
+    J = N.div`
   display: flex;
   align-items: center;
   margin-top: 16px;
@@ -266,7 +266,7 @@ const A = ({
     align-items: flex-start;
   `)}
 `,
-    J = N(D)`
+    K = N(D)`
   margin-right: 24px;
 
   ${R(_`
@@ -397,8 +397,8 @@ const Z = e => {
             s && ((async () => {
                 try {
                     const e = await v(Object.assign({
-                        "../../../comps/premium/themes/default.tsx": () => h((() => import("./default-1fdb5677.js")), ["assets/default-1fdb5677.js", "assets/index-afe8eeea.js", "assets/index-8c55763e.css", "assets/app-ba64cf70.js", "assets/Loader2-e1b3d35e.js", "assets/modal.constants-0cca4730.js", "assets/modal-d7fe36af.css", "assets/moment-e0d604bc.js", "assets/app-f2784ea6.css"]),
-                        "../../../comps/premium/themes/emojis.tsx": () => h((() => import("./emojis-d4934fa3.js")), ["assets/emojis-d4934fa3.js", "assets/index-afe8eeea.js", "assets/index-8c55763e.css", "assets/app-ba64cf70.js", "assets/Loader2-e1b3d35e.js", "assets/modal.constants-0cca4730.js", "assets/modal-d7fe36af.css", "assets/moment-e0d604bc.js", "assets/app-f2784ea6.css", "assets/crown-c1567456.js"])
+                        "../../../comps/premium/themes/default.tsx": () => h((() => import("./default-a585c54b.js")), ["assets/default-a585c54b.js", "assets/index-684a1b71.js", "assets/index-80b9a872.css", "assets/app-91bc7f76.js", "assets/Loader2-db3a3ef5.js", "assets/modal.constants-e7a21a8a.js", "assets/modal-d7fe36af.css", "assets/moment-e0d604bc.js", "assets/app-f2784ea6.css"]),
+                        "../../../comps/premium/themes/emojis.tsx": () => h((() => import("./emojis-bb168e72.js")), ["assets/emojis-bb168e72.js", "assets/index-684a1b71.js", "assets/index-80b9a872.css", "assets/app-91bc7f76.js", "assets/Loader2-db3a3ef5.js", "assets/modal.constants-e7a21a8a.js", "assets/modal-d7fe36af.css", "assets/moment-e0d604bc.js", "assets/app-f2784ea6.css", "assets/crown-2c07e9fa.js"])
                     }), `../../../comps/premium/themes/${l}.tsx`);
                     k.current = e.default, w.current = e.Image, c(!1)
                 } catch (e) {

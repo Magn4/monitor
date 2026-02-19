@@ -1,6 +1,6 @@
 import {
     n as s
-} from "./index-afe8eeea.js";
+} from "./index-684a1b71.js";
 const e = e => s.get(`/memberships/latest/guilds/${e}/plans`),
     i = (e, i) => s.get(`/memberships/latest/users/${e}/subscriptions${i?`?guild_id=${i}`:""}`),
     t = e => s.get(`/memberships/guilds/${e}/config`),

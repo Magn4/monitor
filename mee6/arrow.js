@@ -1,6 +1,6 @@
 import {
     j as o
-} from "./index-afe8eeea.js";
+} from "./index-684a1b71.js";
 const r = ({
     stroke: r = "currentColor",
     fill: t = "transparent",

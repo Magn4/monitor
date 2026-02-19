@@ -1,11 +1,11 @@
 import {
     e,
-    ba as t,
+    bc as t,
     al as s,
-    aT as r,
+    aU as r,
     j as i,
-    L as a,
-    F as o,
+    L as o,
+    F as a,
     a9 as n,
     I as l,
     v as c,
@@ -17,48 +17,48 @@ import {
     aH as f,
     r as x,
     t as g
-} from "./index-afe8eeea.js";
+} from "./index-684a1b71.js";
 import {
     s as y
-} from "./Loader2-e1b3d35e.js";
+} from "./Loader2-db3a3ef5.js";
 import {
     C as j
-} from "./Loader-95f6f9ca.js";
+} from "./Loader-ea4de7b3.js";
 import {
-    a4 as b,
-    a5 as w,
-    a6 as v,
+    a6 as b,
+    a7 as w,
+    a8 as v,
     q as N,
-    a7 as O,
+    a9 as O,
     b as A
-} from "./app-ba64cf70.js";
+} from "./app-91bc7f76.js";
 import {
     F as E
-} from "./Footer-55333e9b.js";
+} from "./Footer-c0771483.js";
 import {
     Error404 as $
-} from "./404-3bee9d2e.js";
+} from "./404-86d43f79.js";
 import {
     h as k
 } from "./moment-e0d604bc.js";
 import {
     G as S
-} from "./page_view-108bcc78.js";
+} from "./page_view-956ac92e.js";
 import {
     S as T
-} from "./select-966e140c.js";
-import "./channels-selector.constants-d3f1e4ee.js";
-import "./CSSTransition-7bc0e7a3.js";
+} from "./select-23e38ebc.js";
+import "./channels-selector.constants-65100461.js";
+import "./CSSTransition-f7f7974d.js";
 import "./objectWithoutPropertiesLoose-87a5ea27.js";
-import "./modal.constants-0cca4730.js";
-import "./viewports-c65d73a1.js";
+import "./modal.constants-e7a21a8a.js";
+import "./viewports-a6773e3e.js";
 import "./404Illustration-b32a696b.js";
-import "./tslib-5722c53c.js";
-import "./label-2077b41d.js";
-import "./lodash-6f76b56e.js";
-import "./edit-7c7674d2.js";
-import "./useMount-3d38109f.js";
-import "./useEffectOnce-e5eb90ec.js";
+import "./tslib-2a382dea.js";
+import "./label-e3f8b961.js";
+import "./lodash-f0bb2534.js";
+import "./edit-03c87f9a.js";
+import "./useMount-6e43746a.js";
+import "./useEffectOnce-d6a661a4.js";
 var z = {},
     C = e => encodeURIComponent(e).replace(/[!'()*]/g, (e => `%${e.charCodeAt(0).toString(16).toUpperCase()}`)),
     I = (e, t) => {
@@ -68,10 +68,10 @@ var z = {},
         return -1 === s ? [e] : [e.slice(0, s), e.slice(s + t.length)]
     },
     U = function(e, t) {
-        for (var s = {}, r = Object.keys(e), i = Array.isArray(t), a = 0; a < r.length; a++) {
-            var o = r[a],
-                n = e[o];
-            (i ? -1 !== t.indexOf(o) : t(o, n, e)) && (s[o] = n)
+        for (var s = {}, r = Object.keys(e), i = Array.isArray(t), o = 0; o < r.length; o++) {
+            var a = r[o],
+                n = e[a];
+            (i ? -1 !== t.indexOf(a) : t(a, n, e)) && (s[a] = n)
         }
         return s
     };
@@ -79,9 +79,9 @@ var z = {},
     const s = C,
         r = t,
         i = I,
-        a = U;
+        o = U;
 
-    function o(e) {
+    function a(e) {
         if ("string" != typeof e || 1 !== e.length) throw new TypeError("arrayFormatSeparator must be single character string")
     }
 
@@ -112,7 +112,7 @@ var z = {},
     }
 
     function m(e, t) {
-        o((t = Object.assign({
+        a((t = Object.assign({
             decode: !0,
             sort: !0,
             arrayFormat: "none",
@@ -135,10 +135,10 @@ var z = {},
                     case "separator":
                         return (t, s, r) => {
                             const i = "string" == typeof s && s.includes(e.arrayFormatSeparator),
-                                a = "string" == typeof s && !i && l(s, e).includes(e.arrayFormatSeparator);
-                            s = a ? l(s, e) : s;
-                            const o = i || a ? s.split(e.arrayFormatSeparator).map((t => l(t, e))) : null === s ? s : l(s, e);
-                            r[t] = o
+                                o = "string" == typeof s && !i && l(s, e).includes(e.arrayFormatSeparator);
+                            s = o ? l(s, e) : s;
+                            const a = i || o ? s.split(e.arrayFormatSeparator).map((t => l(t, e))) : null === s ? s : l(s, e);
+                            r[t] = a
                         };
                     default:
                         return (e, t, s) => {
@@ -149,10 +149,10 @@ var z = {},
             r = Object.create(null);
         if ("string" != typeof e) return r;
         if (!(e = e.trim().replace(/^[?#&]/, ""))) return r;
-        for (const a of e.split("&")) {
-            if ("" === a) continue;
-            let [e, o] = i(t.decode ? a.replace(/\+/g, " ") : a, "=");
-            o = void 0 === o ? null : ["comma", "separator"].includes(t.arrayFormat) ? o : l(o, t), s(l(e, t), o, r)
+        for (const o of e.split("&")) {
+            if ("" === o) continue;
+            let [e, a] = i(t.decode ? o.replace(/\+/g, " ") : o, "=");
+            a = void 0 === a ? null : ["comma", "separator"].includes(t.arrayFormat) ? a : l(a, t), s(l(e, t), a, r)
         }
         for (const i of Object.keys(r)) {
             const e = r[i];
@@ -167,7 +167,7 @@ var z = {},
     }
     e.extract = p, e.parse = m, e.stringify = (e, t) => {
         if (!e) return "";
-        o((t = Object.assign({
+        a((t = Object.assign({
             encode: !0,
             strict: !0,
             arrayFormat: "none",
@@ -195,9 +195,9 @@ var z = {},
                 }
             }(t),
             i = {};
-        for (const o of Object.keys(e)) s(o) || (i[o] = e[o]);
-        const a = Object.keys(i);
-        return !1 !== t.sort && a.sort(t.sort), a.map((s => {
+        for (const a of Object.keys(e)) s(a) || (i[a] = e[a]);
+        const o = Object.keys(i);
+        return !1 !== t.sort && o.sort(t.sort), o.map((s => {
             const i = e[s];
             return void 0 === i ? "" : null === i ? n(s, t) : Array.isArray(i) ? i.reduce(r(s), []).join("&") : n(s, t) + "=" + n(i, t)
         })).filter((e => e.length > 0)).join("&")
@@ -219,11 +219,11 @@ var z = {},
         }, s);
         const r = d(t.url).split("?")[0] || "",
             i = e.extract(t.url),
-            a = e.parse(i, {
+            o = e.parse(i, {
                 sort: !1
             }),
-            o = Object.assign(a, t.query);
-        let l = e.stringify(o, s);
+            a = Object.assign(o, t.query);
+        let l = e.stringify(a, s);
         l && (l = `?${l}`);
         let c = function(e) {
             let t = "";
@@ -237,12 +237,12 @@ var z = {},
         }, r);
         const {
             url: i,
-            query: o,
+            query: a,
             fragmentIdentifier: n
         } = e.parseUrl(t, r);
         return e.stringifyUrl({
             url: i,
-            query: a(o, s),
+            query: o(a, s),
             fragmentIdentifier: n
         }, r)
     }, e.exclude = (t, s, r) => {
@@ -263,13 +263,13 @@ var F, H, J = {
         var i = t[(r = "string" == typeof r ? {
                 replacement: r
             } : r || {}).locale] || {},
-            a = void 0 === r.replacement ? "-" : r.replacement,
-            o = void 0 === r.trim || r.trim,
+            o = void 0 === r.replacement ? "-" : r.replacement,
+            a = void 0 === r.trim || r.trim,
             n = s.normalize().split("").reduce((function(t, s) {
-                var o = i[s] || e[s] || s;
-                return o === a && (o = " "), t + o.replace(r.remove || /[^\w\s$*_+~.()'"!\-:@]+/g, "")
+                var a = i[s] || e[s] || s;
+                return a === o && (a = " "), t + a.replace(r.remove || /[^\w\s$*_+~.()'"!\-:@]+/g, "")
             }), "");
-        return r.strict && (n = n.replace(/[^A-Za-z0-9\s]/g, "")), o && (n = n.trim()), n = n.replace(/\s+/g, a), r.lower && (n = n.toLowerCase()), n
+        return r.strict && (n = n.replace(/[^A-Za-z0-9\s]/g, "")), a && (n = n.trim()), n = n.replace(/\s+/g, o), r.lower && (n = n.toLowerCase()), n
     }
     return s.extend = function(t) {
         Object.assign(e, t)
@@ -288,7 +288,7 @@ function P({
     text: t,
     url: s
 }) {
-    return i.jsxs(a, {
+    return i.jsxs(o, {
         to: s,
         className: `flex flex-row text-white justify-start opacity-40 hover:opacity-70 ${e||""}`,
         children: [i.jsx("svg", {
@@ -305,7 +305,7 @@ function P({
             })
         }), i.jsx("span", {
             className: "font-bold ml-[7px] text-[15px]",
-            children: i.jsx(o, {
+            children: i.jsx(a, {
                 id: t
             })
         })]
@@ -325,16 +325,16 @@ function D({
             className: "flex flex-col h-[70px] px-10 py-6 max-w-[960px] m-auto",
             children: i.jsxs("nav", {
                 className: "h-[70px] tracking-widest uppercase font-light",
-                children: [i.jsx(a, {
+                children: [i.jsx(o, {
                     className: `hover:underline mr-[50px] ${l?r:""}`,
                     to: `/${t}/tutorials`,
-                    children: i.jsx(o, {
+                    children: i.jsx(a, {
                         id: "tutorials.home"
                     })
                 }), e.map((e => {
-                    const o = new RegExp(`.*/tutorials/category/${Y(e).toLowerCase()}/?`),
-                        n = s.pathname.match(o);
-                    return i.jsx(a, {
+                    const a = new RegExp(`.*/tutorials/category/${Y(e).toLowerCase()}/?`),
+                        n = s.pathname.match(a);
+                    return i.jsx(o, {
                         className: `hover:underline mr-[50px] ${n?r:""}`,
                         to: `/${t}/tutorials/category/${Y(e).toLowerCase()}`,
                         children: e
@@ -404,15 +404,15 @@ function q(e) {
     const s = document.location.href.split(/[?#]/)[0],
         r = e.sys?.createdAt?.split("T")[0],
         i = e.sys?.updatedAt?.split("T")[0],
-        a = t[0].anchor,
-        o = [];
-    for (const l of t) o.push(l.data.target.fields.steps.content.find((e => "ordered-list" === e.nodeType))?.content.map((e => ({
+        o = t[0].anchor,
+        a = [];
+    for (const l of t) a.push(l.data.target.fields.steps.content.find((e => "ordered-list" === e.nodeType))?.content.map((e => ({
         "@type": "HowToStep",
         text: w(e),
         image: v(e),
         url: `${s}#${e.anchor}`
     }))));
-    const n = 1 === t.length ? o : o.map(((e, s) => ({
+    const n = 1 === t.length ? a : a.map(((e, s) => ({
         "@type": "HowToSection",
         name: t[s].data.target.fields.title,
         itemListElement: e
@@ -424,7 +424,7 @@ function q(e) {
         name: e.fields.title,
         mainEntityOfPage: {
             "@type": "WebPage",
-            id: `${document.location.href.split(/[?#]/)[0]}#${a}`
+            id: `${document.location.href.split(/[?#]/)[0]}#${o}`
         },
         author: R,
         datePublished: r,
@@ -570,12 +570,12 @@ const W = y.div`
   font-weight: bold;
   color: white;
 `,
-    ae = {
+    oe = {
         "how-to-enable-intents-for-your-custom-bot": "how-to-enable-intents-for-your-bot-personalizer",
         "custom-bot-and-2-factor-authentication": "bot-personalizer-and-2-factor-authentication",
         "how-to-generate-a-custom-bot-token": "how-to-generate-a-bot-personalizer-token"
     };
-class oe extends l.PureComponent {
+class ae extends l.PureComponent {
     state = {
         anchors: [],
         loading: !0,
@@ -606,11 +606,11 @@ class oe extends l.PureComponent {
                     t.anchor = `ht-${e.data.target.sys.id.slice(0,4)}-${r.toString().padStart(2,"0")}`, s(t.anchor, `Step ${r+1}: ${w(t)}`)
                 }))
             },
-            a = e => {
+            o = e => {
                 e.anchor = `faq-${e.data.target.sys.id.slice(0,4)}`, s(e.anchor, e.data.target.fields.title)
             };
-        for (const n of e.fields.content.content) "heading-2" === n.nodeType && ((o = n).anchor = r.toString().padStart(2, "0"), s(o.anchor, o.content?.[0]?.value), r++), "embedded-entry-block" === n.nodeType && "howTo" === n.data.target.sys.contentType.sys.id && i(n), "embedded-entry-block" === n.nodeType && "faq" === n.data.target.sys.contentType.sys.id && a(n);
-        var o;
+        for (const n of e.fields.content.content) "heading-2" === n.nodeType && ((a = n).anchor = r.toString().padStart(2, "0"), s(a.anchor, a.content?.[0]?.value), r++), "embedded-entry-block" === n.nodeType && "howTo" === n.data.target.sys.contentType.sys.id && i(n), "embedded-entry-block" === n.nodeType && "faq" === n.data.target.sys.contentType.sys.id && o(n);
+        var a;
         return [e, t]
     };
     _fetchArticle() {
@@ -650,7 +650,7 @@ class oe extends l.PureComponent {
         alt: this.state.tutorial.fields.thumbnail.fields.file.description || this.state.tutorial.fields.thumbnail.fields.file.title
     }) : null;
     render() {
-        return ae[this.props.params.slug] && this.props.navigate(`/${this.props.locale}/tutorials/${ae[this.props.params.slug]}`), this.state.loading ? i.jsx("div", {
+        return oe[this.props.params.slug] && this.props.navigate(`/${this.props.locale}/tutorials/${oe[this.props.params.slug]}`), this.state.loading ? i.jsx("div", {
             className: "min-h-screen flex items-center justify-center",
             children: i.jsx(j, {})
         }) : this.state.tutorial ? i.jsx(S, {
@@ -689,7 +689,7 @@ class oe extends l.PureComponent {
                             url: `/${this.props.locale}/tutorials`,
                             className: "mb-[30px]"
                         }), i.jsx(ee, {
-                            children: i.jsx(o, {
+                            children: i.jsx(a, {
                                 id: "tutorials.tags"
                             })
                         }), i.jsx("div", {
@@ -701,7 +701,7 @@ class oe extends l.PureComponent {
                         })]
                     }) : null, this.state.anchors.length > 0 ? i.jsxs(se, {
                         children: [i.jsx(ie, {
-                            children: i.jsx(o, {
+                            children: i.jsx(a, {
                                 id: "tutorials.toc"
                             })
                         }), i.jsx("ol", {
@@ -725,7 +725,7 @@ class oe extends l.PureComponent {
                             children: this.state.tutorial.fields.title
                         }), i.jsxs(K, {
                             children: [i.jsx("b", {
-                                children: i.jsx(o, {
+                                children: i.jsx(a, {
                                     id: "tutorials.lastUpdate"
                                 })
                             }), " ", k(this.state.tutorial.sys.updatedAt || this.state.tutorial.sys.createdAt).format("LL")]
@@ -745,13 +745,13 @@ const ne = d((e => {
         {
             locale: r
         } = u(),
-        a = m();
-    return i.jsx(oe, {
+        o = m();
+    return i.jsx(ae, {
         ...e,
         params: t,
         location: s,
         locale: r,
-        navigate: a
+        navigate: o
     })
 }));
 y.section`
@@ -836,7 +836,7 @@ const le = y.div`
             }))
         }), []);
         const n = g(),
-            l = t => t.fields.thumbnail ? i.jsx(a, {
+            l = t => t.fields.thumbnail ? i.jsx(o, {
                 to: `/${e.locale}/tutorials/${t.fields.slug}`,
                 children: i.jsx(ce, {
                     url: t.fields.thumbnail.fields.file.url
@@ -844,7 +844,7 @@ const le = y.div`
             }) : null,
             d = t => t.fields.category ? i.jsx("span", {
                 className: "font-medium font-[Helvetica Neue] mb-[10px] block pt-[0] text-blue-default text-[14px] uppercase",
-                children: i.jsx(a, {
+                children: i.jsx(o, {
                     to: `/${e.locale}/tutorials/category/${Y(t.fields.category).toLowerCase()}`,
                     children: t.fields.category
                 })
@@ -853,13 +853,13 @@ const le = y.div`
                 children: t.map((t => i.jsxs(le, {
                     children: [l(t), i.jsxs(de, {
                         dir: "ltr",
-                        children: [d(t), i.jsx(a, {
+                        children: [d(t), i.jsx(o, {
                             to: `/${e.locale}/tutorials/${t.fields.slug}`,
                             children: i.jsx(pe, {
                                 children: t.fields.title
                             })
                         }), i.jsx("p", {
-                            children: i.jsx(a, {
+                            children: i.jsx(o, {
                                 to: `/${e.locale}/tutorials/${t.fields.slug}`,
                                 children: t.fields.excerpt
                             })
@@ -978,12 +978,12 @@ const le = y.div`
                         className: "text-center mb-[130px] mt-[110px] width-[100%]",
                         children: [i.jsx("h1", {
                             className: "text-[50px] font-bold",
-                            children: i.jsx(o, {
+                            children: i.jsx(a, {
                                 id: "tutorials.hero.title"
                             })
                         }), i.jsx("p", {
                             className: "text-[24px] mt-[10px]",
-                            children: i.jsx(o, {
+                            children: i.jsx(a, {
                                 id: "tutorials.hero.subtitle"
                             })
                         })]
@@ -997,7 +997,7 @@ const le = y.div`
                         className: "flex flex-col px-10 py-6 max-w-[960px] m-auto",
                         children: [i.jsx("h1", {
                             className: "font-bold mb-[20px] uppercase text-[30px] tracking-widest border-b-[4px] border-blue-default w-fit pb-[5px]",
-                            children: i.jsx(o, {
+                            children: i.jsx(a, {
                                 id: "tutorials.mostPopular"
                             })
                         }), u(t.entries.filter((e => e.fields.popular)))]
@@ -1008,7 +1008,7 @@ const le = y.div`
                         className: "relative flex flex-col px-10 py-6 max-w-[960px] m-auto",
                         children: [i.jsx("h1", {
                             className: "font-bold mb-[20px] uppercase text-[30px] tracking-widest border-b-[4px] border-blue-default w-fit pb-[5px]",
-                            children: i.jsx(o, {
+                            children: i.jsx(a, {
                                 id: "tutorials.browseAll"
                             })
                         }), i.jsx("div", {

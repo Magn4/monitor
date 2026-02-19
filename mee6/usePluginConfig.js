@@ -1,28 +1,28 @@
 import {
-    bt as i,
-    bB as e,
+    bu as i,
+    bC as e,
     r as t,
     a6 as A,
     a as s,
     z as o,
-    bC as n,
+    bD as n,
     ah as a,
-    bD as r,
+    bE as r,
     j as l,
-    bE as c,
+    bF as c,
     b as d,
-    bc as h,
+    b0 as h,
     Q as C,
     aj as g,
     ar as p
-} from "./index-afe8eeea.js";
+} from "./index-684a1b71.js";
 import {
     L as m,
-    aB as u
-} from "./app-ba64cf70.js";
+    aD as u
+} from "./app-91bc7f76.js";
 import {
     A as w
-} from "./award-28406fde.js";
+} from "./award-2bab3f62.js";
 
 function f(...e) {
     console.log(... function(e) {
@@ -331,11 +331,11 @@ const k = {
             automation: i
         })
     },
-    x = t.createContext({
+    v = t.createContext({
         gw: null,
         isConnected: !1
     }),
-    v = ({
+    x = ({
         children: i,
         className: e = ""
     }) => {
@@ -406,7 +406,7 @@ const k = {
                     i += 1, console.log(`[GATEWAY_RECONNECT] Reconnecting in ${e/1e3}s`), setTimeout((() => h.current?.open && h.current.open()), e)
                 }
             })), h.current.open(), () => h.current?.close()
-        }), [d.guildID]), l.jsx(x.Provider, {
+        }), [d.guildID]), l.jsx(v.Provider, {
             value: {
                 gw: h.current,
                 isConnected: C
@@ -425,7 +425,7 @@ const k = {
         const {
             gw: i,
             isConnected: e
-        } = t.useContext(x);
+        } = t.useContext(v);
         return {
             gw: i,
             isConnected: e
@@ -2179,6 +2179,22 @@ const k = {
                     premium: !1
                 }
             }, {
+                label: "Setup Wizard",
+                path: "setup-wizard",
+                icon: b,
+                pageId: "setup-wizard",
+                isBeta: !0,
+                unleash: {
+                    feature: "setup-wizard",
+                    variantOptional: !0
+                },
+                tooltip: {
+                    icon: N,
+                    title: "AI Setup Wizard",
+                    description: "Describe your ideal Discord server and AI will set it all up — channels, roles, plugins, and more.",
+                    premium: !1
+                }
+            }, {
                 label: "Leaderboard",
                 path: "leaderboard",
                 icon: w,
@@ -2314,5 +2330,5 @@ const k = {
         }
     };
 export {
-    k as G, H as P, Q as T, E as a, W as b, v as c, B as d, P as u
+    k as G, H as P, Q as T, E as a, W as b, x as c, B as d, P as u
 };

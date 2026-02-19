@@ -1,16 +1,16 @@
 import {
-    af as e,
-    ag as t,
+    ah as e,
+    ai as t,
     L as s,
     J as a,
     b as i
-} from "./app-ba64cf70.js";
+} from "./app-91bc7f76.js";
 import {
     R as n,
     s as r,
     C as l,
     a as o
-} from "./Grid-9ce94e5a.js";
+} from "./Grid-a755585d.js";
 import {
     B as c,
     C as d,
@@ -19,28 +19,28 @@ import {
     A as h,
     F as x,
     b as p
-} from "./Typography-ca85812f.js";
+} from "./Typography-90366282.js";
 import {
     az as g,
     aA as f,
-    bj as j,
-    bk as b,
-    bl as w,
-    bm as v,
+    bk as j,
+    bl as b,
+    bm as w,
+    bn as v,
     j as y,
     F as N,
     C as E,
-    bn as S,
+    bo as S,
     aO as k,
     q as C,
     r as F,
-    bo as P,
-    bp as T,
+    bp as P,
+    bq as T,
     K as R,
     y as $,
     aj as M,
-    d as H,
-    B as D,
+    d as D,
+    B as H,
     W as A,
     D as O,
     e as W,
@@ -48,65 +48,65 @@ import {
     k as K,
     Y as U,
     a as L
-} from "./index-afe8eeea.js";
+} from "./index-684a1b71.js";
 import {
     s as B,
     A as _
-} from "./Loader2-e1b3d35e.js";
+} from "./Loader2-db3a3ef5.js";
 import {
     m as I
-} from "./viewports-c65d73a1.js";
+} from "./viewports-a6773e3e.js";
 import {
     h as z
 } from "./moment-e0d604bc.js";
 import {
     m as V,
-    p as G
-} from "./mixins-31afc8b6.js";
+    p as q
+} from "./mixins-b8067724.js";
 import {
-    I as q
-} from "./Icon-1cc9e506.js";
+    I as G
+} from "./Icon-6914d147.js";
 import {
     W as Q
-} from "./modal.constants-0cca4730.js";
+} from "./modal.constants-e7a21a8a.js";
 import {
     S as J
-} from "./select-966e140c.js";
-import "./channels-selector.constants-d3f1e4ee.js";
+} from "./select-23e38ebc.js";
+import "./channels-selector.constants-65100461.js";
 import {
     L as X
-} from "./label-2077b41d.js";
+} from "./label-e3f8b961.js";
 import {
     I as Z
-} from "./input.utils-654b48eb.js";
+} from "./input.utils-adf94200.js";
 import {
     a as ee
-} from "./plus-e77bd2b8.js";
+} from "./plus-8f99844e.js";
 import {
     _ as te
-} from "./_baseAssignValue-146b97a7.js";
+} from "./_baseAssignValue-605f8d85.js";
 import {
     _ as se
-} from "./_baseEach-97516612.js";
+} from "./_baseEach-273a8841.js";
 import {
     f as ae
-} from "./_baseIteratee-30f45b1d.js";
+} from "./_baseIteratee-cd21cbb3.js";
 import {
     a as ie
-} from "./isArguments-f1611f5d.js";
+} from "./isArguments-8420dec1.js";
 import {
     u as ne
-} from "./useInfiniteScroll-92d84bfe.js";
+} from "./useInfiniteScroll-338508e9.js";
 import {
     a as re
-} from "./wallet-248745a6.js";
-import "./tslib-5722c53c.js";
-import "./lodash-6f76b56e.js";
-import "./edit-7c7674d2.js";
-import "./useMount-3d38109f.js";
-import "./useEffectOnce-e5eb90ec.js";
-import "./_defineProperty-15ba29dd.js";
-import "./throttle-57801fc9.js";
+} from "./wallet-9531d810.js";
+import "./tslib-2a382dea.js";
+import "./lodash-f0bb2534.js";
+import "./edit-03c87f9a.js";
+import "./useMount-6e43746a.js";
+import "./useEffectOnce-d6a661a4.js";
+import "./_defineProperty-1a750d2c.js";
+import "./throttle-66ded47c.js";
 var le = function(e) {
     function t(t, s) {
         return e.call(this, t, s) || this
@@ -200,7 +200,7 @@ const oe = B.img`
   ${e=>e.onClick?`\n  cursor: pointer;\n  transition: all 300ms ease;\n  border: 1px solid transparent;\n\n  &:hover {\n    border: 1px solid ${S};\n  }\n  `:""}
 
   ${e=>V(e)}
-    ${e=>G(e)}
+    ${e=>q(e)}
 `,
     he = B.hr`
   width: 100%;
@@ -250,7 +250,7 @@ const oe = B.img`
                     verticalAlign: "center",
                     children: [y.jsx(l, {
                         mRight: !0,
-                        children: y.jsx(q, {
+                        children: y.jsx(G, {
                             icon: "withdraw" === t.type ? "Withdrawal" : "Wallet",
                             main: P,
                             secondary: T,
@@ -382,7 +382,7 @@ const oe = B.img`
     }) => {
         const {
             user: s
-        } = H(), [a, i] = F.useState(0), [n, r] = F.useState(!1), l = F.useRef();
+        } = D(), [a, i] = F.useState(0), [n, r] = F.useState(!1), l = F.useRef();
         return F.useEffect((() => {
             t && 0 !== parseFloat(t) ? (async () => {
                 const e = parseFloat(t, 10);
@@ -450,7 +450,7 @@ const oe = B.img`
                 children: y.jsx(N, {
                     id: t
                 })
-            }) : null, i ? y.jsx(D, {
+            }) : null, i ? y.jsx(H, {
                 onClick: i,
                 size: "large",
                 className: "mt-6",
@@ -548,7 +548,7 @@ const oe = B.img`
             inputETH: u
         }), {
             outputAmount: R,
-            computing: H
+            computing: D
         } = pe({
             user: e,
             wallet: o,
@@ -616,7 +616,7 @@ const oe = B.img`
                         max: i,
                         suffix: "ETH",
                         disabled: S,
-                        loading: H
+                        loading: D
                     }), "=", y.jsx(Z, {
                         className: "flex-1",
                         placeholder: "0",
@@ -648,7 +648,7 @@ const oe = B.img`
                 }) : null]
             }), y.jsxs("div", {
                 className: "flex py-6 justify-end gap-4",
-                children: [t ? y.jsx(D, {
+                children: [t ? y.jsx(H, {
                     size: "large",
                     theme: "secondary",
                     onClick: t,
@@ -656,12 +656,12 @@ const oe = B.img`
                     children: y.jsx(N, {
                         id: "button.cancel"
                     })
-                }) : null, y.jsx(D, {
+                }) : null, y.jsx(H, {
                     size: "large",
                     onClick: async () => {
                         (await k("ETH" === g ? u : R))?.ok && b(!0)
                     },
-                    disabled: !w || !u && "ETH" === g || !parseFloat(R) && "USD" === g || H && "USD" === g || S || i < parseFloat(u) && "ETH" === g || l < parseFloat(h) && "USD" === g,
+                    disabled: !w || !u && "ETH" === g || !parseFloat(R) && "USD" === g || D && "USD" === g || S || i < parseFloat(u) && "ETH" === g || l < parseFloat(h) && "USD" === g,
                     loading: S,
                     pLeft: r.m3,
                     pRight: r.m3,
@@ -678,7 +678,7 @@ const oe = B.img`
     }) => y.jsx(y.Fragment, {
         children: y.jsx("div", {
             className: "flex items-center justify-center mb-6",
-            children: y.jsx(D, {
+            children: y.jsx(H, {
                 onClick: t,
                 children: y.jsx(N, {
                     id: "public.wallet." + (e ? "verify" : "connect")
@@ -829,23 +829,23 @@ var Re = function(e, t, s, a) {
         })), a
     },
     Me = ae,
-    He = ie;
-var De = te,
+    De = ie;
+var He = te,
     Ae = function(e, t) {
         return function(s, a) {
-            var i = He(s) ? Re : $e,
+            var i = De(s) ? Re : $e,
                 n = t ? t() : {};
             return i(s, e, Me(a), n)
         }
     },
     Oe = Object.prototype.hasOwnProperty;
 const We = W(Ae((function(e, t, s) {
-        Oe.call(e, s) ? e[s].push(t) : De(e, s, [t])
+        Oe.call(e, s) ? e[s].push(t) : He(e, s, [t])
     }))),
     Ye = () => {
         const {
             user: e
-        } = H(), {
+        } = D(), {
             fetchNextPage: s,
             data: a,
             isLoading: i,
@@ -928,7 +928,7 @@ const We = W(Ae((function(e, t, s) {
                                 children: [e.subscription.plan?.icon_url ? y.jsx("img", {
                                     className: "rounded-md h-[20px] w-[20px]",
                                     src: e.subscription.plan?.icon_url
-                                }) : y.jsx(q, {
+                                }) : y.jsx(G, {
                                     className: "bg-yellow-default/0.16",
                                     icon: "IconSocialConnector",
                                     main: U
@@ -991,7 +991,7 @@ const We = W(Ae((function(e, t, s) {
         }), []), u || l ? y.jsx(s, {}) : y.jsxs(y.Fragment, {
             children: [i?.includes(n) ? y.jsx("div", {
                 className: "flex gap-4 mb-10 items-center justify-center",
-                children: y.jsx(D, {
+                children: y.jsx(H, {
                     icon: "Withdrawal",
                     theme: "secondary",
                     onClick: () => c(!0),
@@ -1033,7 +1033,7 @@ const We = W(Ae((function(e, t, s) {
     Le = () => {
         const {
             user: e
-        } = H(), {
+        } = D(), {
             browserName: t
         } = {
             browserName: -1 !== navigator.userAgent.indexOf("Edge") ? "Edge" : -1 !== navigator.userAgent.indexOf("Firefox") ? "Firefox" : -1 === navigator.userAgent.indexOf("Chrome") && -1 !== navigator.userAgent.indexOf("Safri") ? "Safari" : -1 !== navigator.userAgent.indexOf("Chrome") ? "Chrome" : ""

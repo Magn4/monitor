@@ -6,7 +6,7 @@ import {
     f as a,
     F as n,
     B as o
-} from "./index-afe8eeea.js";
+} from "./index-684a1b71.js";
 const i = ({
         stroke: t = "currentColor",
         width: l = 24,
