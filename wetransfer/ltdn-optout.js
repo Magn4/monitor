@@ -1,40 +1,40 @@
 "use strict";
 (self.webpackChunk_N_E = self.webpackChunk_N_E || []).push([
     [5251], {
-        22775: (e, s, r) => {
-            r.r(s), r.d(s, {
+        22775: (e, s, i) => {
+            i.r(s), i.d(s, {
                 LinkTransferUnsubscribePage: () => l,
                 default: () => d
             });
-            var i = r(23798),
-                n = r(50084),
-                t = r.n(n);
-            r(21462);
-            var a = r(38169),
-                c = r(71318),
-                u = r(84530),
-                o = r(10995);
+            var r = i(23798),
+                n = i(50084),
+                a = i.n(n);
+            i(21462);
+            var t = i(38169),
+                c = i(71318),
+                u = i(84530),
+                o = i(10995);
             let l = e => {
                 let {
                     unsubscribeLinkTransfer: s,
-                    route: r
+                    route: i
                 } = e;
-                return (0, i.jsx)(c.A, {
+                return (0, r.jsx)(c.A, {
                     message: u.A.t("page.link_downloads_unsubscribe.body"),
                     successHeading: u.A.t("page.unsubscribeonboarding.done"),
                     successCtaLabel: u.A.t("page.link_downloads_unsubscribe.cta"),
                     successCtaUrl: "/transfers",
-                    action: () => s(r.query.vid)
+                    action: () => s(i.query.vid)
                 })
             };
             l.propTypes = {
-                route: t().object.isRequired,
-                unsubscribeLinkTransfer: t().func.isRequired
+                route: a().object.isRequired,
+                unsubscribeLinkTransfer: a().func.isRequired
             };
             let b = {
                     unsubscribeLinkTransfer: o.A.User.unsubscribeLinkTransfer
                 },
-                d = (0, a.Ng)(e => {
+                d = (0, t.Ng)(e => {
                     let {
                         route: s
                     } = e;
@@ -43,94 +43,96 @@
                     }
                 }, b)(l)
         },
-        71318: (e, s, r) => {
-            r.d(s, {
-                A: () => f
+        71318: (e, s, i) => {
+            i.d(s, {
+                A: () => _
             });
-            var i = r(23798),
-                n = r(50084),
-                t = r.n(n),
-                a = r(21462),
-                c = r(38169),
-                u = r(29069),
-                o = r(42789),
-                l = r(84530),
-                b = r(96644);
-            let d = "unsubscribe",
-                g = e => {
+            var r = i(23798),
+                n = i(50084),
+                a = i.n(n),
+                t = i(21462),
+                c = i(75546),
+                u = i(38169),
+                o = i(29069),
+                l = i(42789),
+                b = i(84530),
+                d = i(96644);
+            let g = "unsubscribe",
+                p = e => {
                     let {
-                        heading: s = l.A.t("page.unsubscribeonboarding.title"),
-                        message: r,
-                        ctaLabel: n = l.A.t("page.unsubscribeonboarding.action"),
-                        footerHtml: t = l.A.t("page.unsubscribeonboarding.contact", {
-                            email: '<a href="mailto:subscriptions@wetransfer.com">subscriptions@wetransfer.com</a>'
-                        }),
-                        successHeading: c,
-                        successCtaLabel: g,
+                        heading: s = b.A.t("page.unsubscribeonboarding.title"),
+                        message: i,
+                        ctaLabel: n = b.A.t("page.unsubscribeonboarding.action"),
+                        successHeading: a,
+                        successCtaLabel: u,
                         successCtaUrl: p,
                         action: f,
                         setNotification: _
-                    } = e, [h, m] = a.useState(!1), [x, N] = a.useState(!1);
-                    if (h) return (0, i.jsxs)("div", {
-                        className: d,
-                        children: [(0, i.jsx)("h1", {
-                            children: c
-                        }), (0, i.jsx)("a", {
+                    } = e, [h, x] = t.useState(!1), [N, j] = t.useState(!1);
+                    if (h) return (0, r.jsxs)("div", {
+                        className: g,
+                        children: [(0, r.jsx)("h1", {
+                            children: a
+                        }), (0, r.jsx)("a", {
                             href: p,
                             className: "button button--enabled",
-                            children: g
+                            children: u
                         })]
                     });
                     let k = async () => {
-                        N(!0);
+                        j(!0);
                         try {
-                            await f(), m(!0)
+                            await f(), x(!0)
                         } catch (e) {
-                            e.status === o.iu.FORBIDDEN ? _({
-                                category: b.aF.Error,
+                            e.status === l.iu.FORBIDDEN ? _({
+                                category: d.aF.Error,
                                 details: "unsubscribe_expiration_invalid_signature"
                             }) : _({
-                                category: b.aF.Error,
+                                category: d.aF.Error,
                                 details: "unsubscribe_expiration_exception"
                             })
                         }
-                        N(!1)
+                        j(!1)
                     };
-                    return (0, i.jsxs)("div", {
-                        className: d,
-                        children: [(0, i.jsx)("h1", {
+                    return (0, r.jsxs)("div", {
+                        className: g,
+                        children: [(0, r.jsx)("h1", {
                             children: s
-                        }), (0, i.jsx)("p", {
-                            className: "".concat(d, "__message"),
-                            children: r
-                        }), (0, i.jsx)(u.A, {
+                        }), (0, r.jsx)("p", {
+                            className: "".concat(g, "__message"),
+                            children: i
+                        }), (0, r.jsx)(o.A, {
                             text: n,
-                            active: !x,
+                            active: !N,
                             onClick: k
-                        }), (0, i.jsx)("p", {
-                            className: "".concat(d, "__footer"),
-                            dangerouslySetInnerHTML: {
-                                __html: t
-                            }
+                        }), (0, r.jsx)("p", {
+                            className: "".concat(g, "__footer"),
+                            children: (0, r.jsx)(c.x6, {
+                                i18nKey: "page.unsubscribeonboarding.contact",
+                                components: {
+                                    a: (0, r.jsx)("a", {
+                                        href: "mailto:subscriptions@wetransfer.com"
+                                    })
+                                }
+                            })
                         })]
                     })
                 };
-            g.propTypes = {
-                heading: t().string,
-                message: t().string.isRequired,
-                ctaLabel: t().string,
-                footerHtml: t().string,
-                successHeading: t().string.isRequired,
-                successCtaLabel: t().string.isRequired,
-                successCtaUrl: t().string.isRequired,
-                action: t().func.isRequired,
-                setNotification: t().func.isRequired
+            p.propTypes = {
+                heading: a().string,
+                message: a().string.isRequired,
+                ctaLabel: a().string,
+                successHeading: a().string.isRequired,
+                successCtaLabel: a().string.isRequired,
+                successCtaUrl: a().string.isRequired,
+                action: a().func.isRequired,
+                setNotification: a().func.isRequired
             };
-            let p = {
-                    setNotification: b.P9.setPanelNotification
+            let f = {
+                    setNotification: d.P9.setPanelNotification
                 },
-                f = (0, c.Ng)(null, p)(g)
+                _ = (0, u.Ng)(null, f)(p)
         }
     }
 ]);
-//# sourceMappingURL=ltdn-optout.8fe3227327cc5337.js.map
+//# sourceMappingURL=ltdn-optout.293ca454185c56d9.js.map

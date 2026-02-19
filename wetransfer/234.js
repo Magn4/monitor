@@ -253,7 +253,10 @@
                     show_icons_only_on_hover_preview: !1,
                     recovery_reminder_variant: "none",
                     better_pdf_visualization: !1,
-                    preview_resolution_segment: "default"
+                    preview_resolution_segment: "default",
+                    preview_opens_allowed_before_paywall_macos: -1,
+                    preview_opens_allowed_before_paywall_non_macos: -1,
+                    ultimate_welcome_modal_enabled: !1
                 }
         },
         12130: (e, _, a) => {
@@ -290,8 +293,8 @@
                 p = a(46424),
                 c = a(7012),
                 b = a(77612),
-                f = a(30631),
-                m = a(41993),
+                m = a(30631),
+                f = a(41993),
                 y = a(66976),
                 g = a(3473);
             let w = {
@@ -381,16 +384,16 @@
                                         defaultSettings: g.L,
                                         deviceAttributeGetters: {
                                             localStorageId: d.a,
-                                            deviceType: async () => f.Ay.isMobile ? "mobile" : f.Ay.isTablet ? "tablet" : "desktop"
+                                            deviceType: async () => m.Ay.isMobile ? "mobile" : m.Ay.isTablet ? "tablet" : "desktop"
                                         },
                                         baseUrl: w[e],
                                         logger: {
-                                            info: m.A.info,
-                                            warn: m.A.warn,
-                                            error: m.A.error,
-                                            fatal: m.A.error,
-                                            trace: m.A.info,
-                                            debug: m.A.info
+                                            info: f.A.info,
+                                            warn: f.A.warn,
+                                            error: f.A.error,
+                                            fatal: f.A.error,
+                                            trace: f.A.info,
+                                            debug: f.A.info
                                         },
                                         shouldReturnDefaultsImmediately: (0, l.H)(),
                                         fetcher: function() {
@@ -402,7 +405,7 @@
                                     });
                                 k(a)
                             } catch (e) {
-                                m.A.error("Failed to initialize Orion", e)
+                                f.A.error("Failed to initialize Orion", e)
                             }
                         })()
                     }, [v, a, _.auth0UserId, E]), (0, n.jsx)(h.Provider, {
@@ -576,4 +579,4 @@
         }
     }
 ]);
-//# sourceMappingURL=2760.6816780dd4045fdb.js.map
+//# sourceMappingURL=2760.d930dc38a952ab44.js.map

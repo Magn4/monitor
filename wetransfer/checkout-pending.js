@@ -1,11 +1,11 @@
 (self.webpackChunk_N_E = self.webpackChunk_N_E || []).push([
     [5413], {
-        12390: (e, a, s) => {
+        12390: (e, a, i) => {
             "use strict";
-            s.d(a, {
-                L: () => i
+            i.d(a, {
+                L: () => s
             });
-            let i = 6
+            let s = 6
         },
         45713: e => {
             e.exports = {
@@ -98,29 +98,29 @@
                 inlineError: "UpdateEmailForm_inlineError__dNx11"
             }
         },
-        63412: (e, a, s) => {
+        63412: (e, a, i) => {
             "use strict";
-            s.r(a), s.d(a, {
-                default: () => ek
+            i.r(a), i.d(a, {
+                default: () => eE
             });
-            var i = s(23798),
-                t = s(76585),
-                o = s(56094),
-                r = s(45781),
-                l = s(44652),
-                d = s(76327),
-                n = s(21462),
-                m = s(75546),
-                w = s(38169),
-                _ = s(6561),
-                g = s(46636),
-                u = s(13722),
-                c = s(91053),
-                h = s(60848),
-                b = s(8078),
-                p = s(85388),
-                y = s(91295),
-                x = s(86781);
+            var s = i(23798),
+                t = i(76585),
+                o = i(56094),
+                r = i(45781),
+                l = i(44652),
+                d = i(76327),
+                n = i(21462),
+                m = i(75546),
+                w = i(38169),
+                _ = i(6561),
+                g = i(46636),
+                u = i(13722),
+                c = i(91053),
+                h = i(60848),
+                b = i(8078),
+                p = i(85388),
+                y = i(91295),
+                x = i(86781);
 
             function f() {
                 let e = (0, w.d4)(p.HC),
@@ -132,16 +132,16 @@
                     })
                 }, [e, a])
             }
-            var C = s(22352),
-                F = s(61149),
-                L = s(87963),
-                P = s(15913),
-                M = s(95467),
-                k = s(28330);
+            var C = i(22352),
+                F = i(61149),
+                L = i(87963),
+                M = i(15913),
+                P = i(95467),
+                k = i(28330);
             let E = function() {
                 let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : 10,
                     a = (0, w.wA)(),
-                    [s, i] = (0, n.useState)(null),
+                    [i, s] = (0, n.useState)(null),
                     [t, o] = (0, n.useState)(0),
                     r = (0, w.d4)(x.JV),
                     l = (0, w.d4)(p.P2),
@@ -149,10 +149,10 @@
                         let [e] = (0, C.L8)();
                         return (0, n.useCallback)(async a => {
                             let {
-                                teamId: s
+                                teamId: i
                             } = a;
                             return await e({
-                                teamId: s,
+                                teamId: i,
                                 isGuestAuth: !0
                             }).unwrap()
                         }, [e])
@@ -160,16 +160,16 @@
                     [m] = (0, C.L8)(),
                     {
                         ownTeam: _
-                    } = (0, P.o)(),
+                    } = (0, M.o)(),
                     [g, u] = (0, n.useState)(null),
                     h = (0, n.useCallback)(async () => {
                         try {
                             if (r) {
-                                let e = await a(M.default.getUser()),
-                                    i = await m({
+                                let e = await a(P.default.getUser()),
+                                    s = await m({
                                         teamId: null == _ ? void 0 : _.id
                                     }).unwrap();
-                                s === e.plan_tier && i.status !== k.dH.incomplete && u(e.plan_tier)
+                                i === e.plan_tier && s.status !== k.dH.incomplete && u(e.plan_tier)
                             } else if (l) {
                                 let {
                                     tier: e,
@@ -177,7 +177,7 @@
                                 } = await d({
                                     teamId: l
                                 });
-                                s === e && a !== k.dH.incomplete && u(e)
+                                i === e && a !== k.dH.incomplete && u(e)
                             }
                         } catch (e) {
                             (0, L.Od)().trackUserAction(c.X.errorShown({
@@ -185,45 +185,45 @@
                             }))
                         }
                         setTimeout(() => o(t + 1), 1e3)
-                    }, [r, a, m, null == _ ? void 0 : _.id, s, l, d, t]);
+                    }, [r, a, m, null == _ ? void 0 : _.id, i, l, d, t]);
                 return (0, n.useEffect)(() => {
-                    !s || g || t >= e || h()
-                }, [h, s, g, t, e]), {
-                    startPolling: e => i(e),
+                    !i || g || t >= e || h()
+                }, [h, i, g, t, e]), {
+                    startPolling: e => s(e),
                     updatedPlanTier: g,
                     maxPollingAttemptsReached: t >= e
                 }
             };
-            var A = s(36813),
-                v = s(46001),
-                j = s.n(v),
-                S = s(30149),
-                I = s(37796),
-                T = s(97116),
-                N = s(82187),
-                U = s(22056),
-                O = s(14388),
-                R = s(12390),
-                X = s(94670),
-                D = s(85633),
-                K = s(96826),
-                V = s.n(K);
+            var A = i(36813),
+                j = i(46001),
+                v = i.n(j),
+                S = i(30149),
+                I = i(37796),
+                T = i(97116),
+                N = i(82187),
+                U = i(22056),
+                O = i(14388),
+                R = i(12390),
+                X = i(94670),
+                D = i(85633),
+                K = i(96826),
+                V = i.n(K);
 
             function G(e) {
                 let {
                     email: a,
-                    className: s
+                    className: i
                 } = e;
-                return (0, i.jsxs)("div", {
-                    className: j()(V().confirmationMessage, s),
-                    children: [(0, i.jsx)(D.CA6, {
+                return (0, s.jsxs)("div", {
+                    className: v()(V().confirmationMessage, i),
+                    children: [(0, s.jsx)(D.CA6, {
                         "aria-hidden": "true",
                         size: "small"
-                    }), (0, i.jsx)("p", {
+                    }), (0, s.jsx)("p", {
                         className: V().message,
-                        children: (0, i.jsx)(m.x6, {
+                        children: (0, s.jsx)(m.x6, {
                             i18nKey: "checkout.passwordless.confirmation-message",
-                            components: [(0, i.jsx)("span", {}, 0)],
+                            components: [(0, s.jsx)("span", {}, 0)],
                             values: {
                                 email: a
                             }
@@ -231,37 +231,39 @@
                     })]
                 })
             }
-            var J = s(75600),
-                B = s(20657),
-                H = s(71915),
-                z = s(82710),
-                Y = s(43427),
-                q = s(4905),
-                Q = s(78080),
-                W = s(33809),
-                Z = s(19492),
-                $ = s(7686),
-                ee = s(36165),
-                ea = s(5619),
-                es = s(5712),
-                ei = s(31543),
-                et = s(72255),
-                eo = s(25825),
-                er = s.n(eo),
-                el = s(45713),
-                ed = s.n(el);
+            var J = i(75600),
+                B = i(20657),
+                H = i(71915),
+                z = i(91665),
+                Y = i(82710),
+                q = i(43427),
+                Q = i(89187),
+                W = i(4905),
+                Z = i(78080),
+                $ = i(33809),
+                ee = i(19492),
+                ea = i(7686),
+                ei = i(36165),
+                es = i(5619),
+                et = i(5712),
+                eo = i(31543),
+                er = i(72255),
+                el = i(25825),
+                ed = i.n(el),
+                en = i(45713),
+                em = i.n(en);
 
-            function en() {
+            function ew() {
                 var e;
                 let {
                     t: a
-                } = (0, m.Bd)(), s = (0, w.d4)(p.HC), t = (0, w.d4)(p.P2), o = (0, W.V)(), {
+                } = (0, m.Bd)(), i = (0, w.d4)(p.HC), t = (0, w.d4)(p.P2), o = (0, $.V)(), {
                     planTier: r,
                     billingPeriod: l,
                     isForBusiness: d,
                     selectedPaymentMethod: _,
                     startFreeTrial: g
-                } = (0, w.d4)(p.q5), u = (0, ee.jL)(), b = function() {
+                } = (0, w.d4)(p.q5), u = (0, ei.jL)(), b = function() {
                     let {
                         t: e
                     } = (0, m.Bd)();
@@ -274,46 +276,46 @@
                 }(), y = f(), {
                     countDownTimer: x,
                     startCountDownTimer: C
-                } = (0, Q.g)(), F = (0, h.mX)(), {
-                    errors: P,
-                    isSubmitting: M
+                } = (0, Z.g)(), F = (0, h.mX)(), {
+                    errors: M,
+                    isSubmitting: P
                 } = b.formState, k = null !== x && x > 0;
-                (0, es.S)(() => {
+                (0, et.S)(() => {
                     (0, L.Od)().trackUserAction(c.X.passwordlessLoginShown({
                         billingPeriod: l,
                         isForBusiness: d,
                         isFreeTrialAvailable: g,
-                        isMobile: ei.A.isMobile,
+                        isMobile: eo.A.isMobile,
                         paymentMethod: _,
                         subscriptionTier: r
                     }))
                 });
                 let E = b.handleSubmit(async e => {
-                        if ((0, L.Od)().trackUserAction(c.X.verifyClicked()), s && t) try {
+                        if ((0, L.Od)().trackUserAction(c.X.verifyClicked()), i && t) try {
                             await o({
-                                email: s,
+                                email: i,
                                 verificationCode: e.verificationCode
-                            }), u(J.jf.actions.deleteSession()), (0, ea.aC)(t), (0, L.Od)().trackUserAction(c.X.userVerified()), (0, L.Od)().trackUserAction(N.xO.userLogin((0, N.Gi)({
+                            }), u(J.jf.actions.deleteSession()), (0, es.aC)(t), (0, L.Od)().trackUserAction(c.X.userVerified()), (0, L.Od)().trackUserAction(N.xO.userLogin((0, N.Gi)({
                                 emailVerificationCompleted: !0,
                                 ...F
                             })));
                             let a = (0, B.pu)();
-                            (0, B.u4)(), a && (0, $.t)(a) ? ((0, Z.OP)(), window.location.href = a) : ((0, H.Et)(), et.A.navigateTo("/"), window.location.reload())
+                            (0, B.u4)(), r === Q.js.ULTIMATE && (0, z.FF)(F.trigger), a && (0, ea.t)(a) ? ((0, ee.OP)(), window.location.href = a) : ((0, H.Et)(), er.A.navigateTo("/"), window.location.reload())
                         } catch (e) {
-                            if ((0, z.E)(e)) {
-                                var i, r;
-                                let s = null == (i = e.data) ? void 0 : i.error,
-                                    t = null == (r = e.data) ? void 0 : r.error_description,
-                                    o = "invite_required" === s;
-                                if ("invalid_grant" === s || o) {
+                            if ((0, Y.E)(e)) {
+                                var s, l;
+                                let i = null == (s = e.data) ? void 0 : s.error,
+                                    t = null == (l = e.data) ? void 0 : l.error_description,
+                                    o = "invite_required" === i;
+                                if ("invalid_grant" === i || o) {
                                     let e = null == t ? void 0 : t.includes("maximum number of attempts"),
-                                        s = e ? a("checkout.passwordless.form.error.verification-code.max-attempts") : o ? a("checkout.passwordless.form.error.verification-code.invite-required") : a("checkout.passwordless.form.error.verification-code.invalid");
+                                        i = e ? a("checkout.passwordless.form.error.verification-code.max-attempts") : o ? a("checkout.passwordless.form.error.verification-code.invite-required") : a("checkout.passwordless.form.error.verification-code.invalid");
                                     b.setError("verificationCode", {
                                         type: "invalid",
-                                        message: s
+                                        message: i
                                     }), (0, L.Od)().trackUserAction(c.X.errorShown({
                                         errorCode: e ? "MAX_ATTEMPTS_REACHED" : o ? "INVITE_REQUIRED" : "INVALID_VERIFICATION_CODE",
-                                        message: s
+                                        message: i
                                     }));
                                     return
                                 }
@@ -328,7 +330,7 @@
                         }
                     }),
                     A = (0, n.useCallback)(async () => {
-                        (0, L.Od)().trackUserAction(c.X.resendClicked()), b.setValue("verificationCode", ""), b.clearErrors(), C(q.X);
+                        (0, L.Od)().trackUserAction(c.X.resendClicked()), b.setValue("verificationCode", ""), b.clearErrors(), C(W.X);
                         try {
                             await y()
                         } catch (e) {
@@ -341,73 +343,73 @@
                             }))
                         }
                     }, [b, C, y, a]);
-                return (0, i.jsxs)("div", {
-                    className: j()(ed().form, er().fadeInFromBottom),
-                    children: [(0, i.jsx)(G, {
-                        email: s,
-                        className: ed().confirmationMessage
-                    }), (0, i.jsxs)("form", {
+                return (0, s.jsxs)("div", {
+                    className: v()(em().form, ed().fadeInFromBottom),
+                    children: [(0, s.jsx)(G, {
+                        email: i,
+                        className: em().confirmationMessage
+                    }), (0, s.jsxs)("form", {
                         onSubmit: E,
                         noValidate: !0,
-                        children: [(0, i.jsx)(Y.J, {
+                        children: [(0, s.jsx)(q.J, {
                             title: a("checkout.passwordless.form.header.title"),
-                            body: (0, i.jsx)(m.x6, {
+                            body: (0, s.jsx)(m.x6, {
                                 i18nKey: "checkout.passwordless.form.header.body",
-                                components: [(0, i.jsx)("span", {
-                                    className: ed().email
+                                components: [(0, s.jsx)("span", {
+                                    className: em().email
                                 }, 0)],
                                 values: {
-                                    email: s
+                                    email: i
                                 }
                             }),
-                            body2: (0, i.jsx)(m.x6, {
+                            body2: (0, s.jsx)(m.x6, {
                                 i18nKey: "checkout.passwordless.form.header.body2",
-                                components: [(0, i.jsx)(S.N, {
+                                components: [(0, s.jsx)(S.N, {
                                     as: "button",
                                     typography: "wt-body-medium",
-                                    className: ed().modifyEmailButton,
+                                    className: em().modifyEmailButton,
                                     type: "button",
                                     onClick: () => {
                                         u(J.jf.actions.setShowPasswordlessLoginForm(!1)), u(J.jf.actions.setShowUpdateEmailForm(!0))
                                     }
                                 }, 0)]
                             })
-                        }), b.formState.errors.root && (0, i.jsx)("div", {
-                            className: ed().inlineError,
-                            children: (0, i.jsx)(U.j, {
+                        }), b.formState.errors.root && (0, s.jsx)("div", {
+                            className: em().inlineError,
+                            children: (0, s.jsx)(U.j, {
                                 type: "error",
                                 children: b.formState.errors.root.message
                             })
-                        }), (0, i.jsx)("div", {
-                            className: ed().textField,
-                            children: (0, i.jsx)(I.A, {
+                        }), (0, s.jsx)("div", {
+                            className: em().textField,
+                            children: (0, s.jsx)(I.A, {
                                 ...b.register("verificationCode"),
                                 label: a("checkout.passwordless.form.input.label"),
                                 labelType: "hidden",
-                                inputClassName: ed().input,
+                                inputClassName: em().input,
                                 maxLength: R.L,
-                                caption: null == (e = P.verificationCode) ? void 0 : e.message,
-                                state: P.verificationCode ? "invalid" : "default"
+                                caption: null == (e = M.verificationCode) ? void 0 : e.message,
+                                state: M.verificationCode ? "invalid" : "default"
                             })
-                        }), (0, i.jsx)(T.$, {
+                        }), (0, s.jsx)(T.$, {
                             type: "submit",
                             fullwidth: !0,
-                            className: ed().button,
-                            disabled: M,
+                            className: em().button,
+                            disabled: P,
                             children: a("checkout.passwordless.form.submit-button.text")
-                        }), (0, i.jsx)(T.$, {
+                        }), (0, s.jsx)(T.$, {
                             appearance: "tertiary",
                             type: "button",
                             fullwidth: !0,
-                            disabled: M || k,
+                            disabled: P || k,
                             onClick: A,
                             children: a("checkout.passwordless.form.resend-button.text")
-                        }), k ? (0, i.jsx)("p", {
-                            className: ed().resendCodeMessage,
-                            children: (0, i.jsx)(m.x6, {
+                        }), k ? (0, s.jsx)("p", {
+                            className: em().resendCodeMessage,
+                            children: (0, s.jsx)(m.x6, {
                                 i18nKey: "checkout.passwordless.form.resend-code-message",
-                                components: [(0, i.jsx)("span", {
-                                    className: ed().countDownTimer
+                                components: [(0, s.jsx)("span", {
+                                    className: em().countDownTimer
                                 }, 0)],
                                 values: {
                                     timer: x.toLocaleString("en-US", {
@@ -420,23 +422,23 @@
                     })]
                 })
             }
-            var em = s(59668),
-                ew = s(87563),
-                e_ = s(94990),
-                eg = s(58375),
-                eu = s.n(eg);
+            var e_ = i(59668),
+                eg = i(87563),
+                eu = i(94990),
+                ec = i(58375),
+                eh = i.n(ec);
 
-            function ec() {
+            function eb() {
                 var e;
                 let {
                     t: a
-                } = (0, m.Bd)(), s = (0, ee.jL)(), t = function() {
+                } = (0, m.Bd)(), i = (0, ei.jL)(), t = function() {
                     let {
                         t: e
                     } = (0, m.Bd)();
                     return (0, X.s)({
                         schema: (0, O.Ik)({
-                            newEmail: (0, e_.m)({
+                            newEmail: (0, eu.m)({
                                 requiredMessage: e("checkout.update-email.form.error.new-email.required"),
                                 invalidMessage: e("checkout.update-email.form.error.new-email.invalid")
                             })
@@ -447,19 +449,19 @@
                     errors: r,
                     isSubmitting: l
                 } = t.formState;
-                (0, es.S)(() => {
+                (0, et.S)(() => {
                     (0, L.Od)().trackUserAction(c.X.updateEmailFormShown())
                 });
                 let d = t.handleSubmit(async e => {
                     (0, L.Od)().trackUserAction(c.X.updateEmailSubmitted());
-                    let i = await o({
+                    let s = await o({
                         email: e.newEmail,
                         isGuestAuth: !0
                     });
-                    if ("error" in i) {
+                    if ("error" in s) {
                         let {
                             type: e,
-                            messageKey: s,
+                            messageKey: i,
                             errorCode: o
                         } = function(e) {
                             if ("status" in e && 401 === e.status) return {
@@ -480,33 +482,33 @@
                                 messageKey: "checkout.update-email.form.error.unknown",
                                 errorCode: "UNKNOWN_ERROR"
                             }
-                        }(i.error);
+                        }(s.error);
                         t.setError("root", {
                             type: e,
-                            message: a(s)
+                            message: a(i)
                         }), (0, L.Od)().trackUserAction(c.X.errorShown({
                             errorCode: o,
-                            message: a(s)
+                            message: a(i)
                         }));
                         return
-                    }(0, L.Od)().trackUserAction(c.X.emailUpdated()), s(J.jf.actions.setEmail(e.newEmail)), s(J.jf.actions.setShowUpdateEmailForm(!1)), s(J.jf.actions.setShowPasswordlessLoginForm(!0))
+                    }(0, L.Od)().trackUserAction(c.X.emailUpdated()), i(J.jf.actions.setEmail(e.newEmail)), i(J.jf.actions.setShowUpdateEmailForm(!1)), i(J.jf.actions.setShowPasswordlessLoginForm(!0))
                 });
-                return (0, i.jsx)("div", {
-                    className: j()(eu().form, er().fadeInFromBottom),
-                    children: (0, i.jsxs)("form", {
+                return (0, s.jsx)("div", {
+                    className: v()(eh().form, ed().fadeInFromBottom),
+                    children: (0, s.jsxs)("form", {
                         onSubmit: d,
                         noValidate: !0,
-                        children: [(0, i.jsx)(Y.J, {
+                        children: [(0, s.jsx)(q.J, {
                             title: a("checkout.update-email.form.header.title")
-                        }), r.root && (0, i.jsx)("div", {
-                            className: eu().inlineError,
-                            children: (0, i.jsx)(U.j, {
+                        }), r.root && (0, s.jsx)("div", {
+                            className: eh().inlineError,
+                            children: (0, s.jsx)(U.j, {
                                 type: "error",
                                 children: r.root.message
                             })
-                        }), (0, i.jsx)("div", {
-                            className: eu().textField,
-                            children: (0, i.jsx)(I.A, {
+                        }), (0, s.jsx)("div", {
+                            className: eh().textField,
+                            children: (0, s.jsx)(I.A, {
                                 ...t.register("newEmail"),
                                 value: t.watch("newEmail") || "",
                                 label: a("checkout.update-email.form.input.label"),
@@ -514,60 +516,59 @@
                                 caption: null == (e = r.newEmail) ? void 0 : e.message,
                                 state: r.newEmail ? "invalid" : "default"
                             })
-                        }), (0, i.jsx)(T.$, {
+                        }), (0, s.jsx)(T.$, {
                             type: "submit",
                             fullwidth: !0,
-                            className: eu().button,
+                            className: eh().button,
                             disabled: l,
                             children: a("checkout.update-email.form.submit-button.text")
-                        }), (0, i.jsx)(T.$, {
+                        }), (0, s.jsx)(T.$, {
                             appearance: "tertiary",
                             type: "button",
                             fullwidth: !0,
                             disabled: l,
                             onClick: () => {
-                                s(J.jf.actions.setShowUpdateEmailForm(!1)), s(J.jf.actions.setShowPasswordlessLoginForm(!0))
+                                i(J.jf.actions.setShowUpdateEmailForm(!1)), i(J.jf.actions.setShowPasswordlessLoginForm(!0))
                             },
                             children: a("checkout.update-email.form.back-button.text")
                         })]
                     })
                 })
             }
-            var eh = s(24761),
-                eb = s(25402),
-                ep = s(89187),
-                ey = s(51853),
-                ex = s(88848),
-                ef = s(33615),
-                eC = s(74067),
-                eF = s(98172),
-                eL = s(95894),
-                eP = s.n(eL);
+            var ep = i(24761),
+                ey = i(25402),
+                ex = i(51853),
+                ef = i(88848),
+                eC = i(33615),
+                eF = i(74067),
+                eL = i(98172),
+                eM = i(95894),
+                eP = i.n(eM);
 
-            function eM() {
+            function ek() {
                 let {
                     t: e
-                } = (0, m.Bd)(), a = (0, h.mX)(), s = (0, w.d4)(x.JV), t = (0, w.d4)(p.HC), o = (0, w.d4)(p.P2), r = (0, w.d4)(p.l_), y = (0, w.d4)(eF.RJ), C = (0, w.d4)(eF.Lm), M = f(), k = (0, n.useRef)(""), v = (0, w.d4)(p.eV), j = (0, w.d4)(p.vY), {
+                } = (0, m.Bd)(), a = (0, h.mX)(), i = (0, w.d4)(x.JV), t = (0, w.d4)(p.HC), o = (0, w.d4)(p.P2), r = (0, w.d4)(p.l_), y = (0, w.d4)(eL.RJ), C = (0, w.d4)(eL.Lm), P = f(), k = (0, n.useRef)(""), j = (0, w.d4)(p.eV), v = (0, w.d4)(p.vY), {
                     ownTeam: S
-                } = (0, P.o)(), I = (0, d.useStripe)(), T = (0, ee.jL)(), {
+                } = (0, M.o)(), I = (0, d.useStripe)(), T = (0, ei.jL)(), {
                     searchParams: N
                 } = new URL(location.href), [U, O] = (0, n.useState)(!1), [R, X] = (0, n.useState)(!1), [D, K] = (0, n.useState)(!1), {
                     createSubscription: V,
                     hCaptchaRef: G
-                } = (0, b.v)(), [z, Y] = (0, n.useState)(!1), [q, Q] = (0, n.useState)(!1), W = (0, n.useMemo)(() => {
+                } = (0, b.v)(), [Y, q] = (0, n.useState)(!1), [W, Z] = (0, n.useState)(!1), $ = (0, n.useMemo)(() => {
                     let e = N.get("redirect_status");
                     return "failed" === e || "canceled" === e
-                }, [N]), ea = (0, _.Gk)();
+                }, [N]), es = (0, _.Gk)();
                 (0, n.useEffect)(() => {
-                    if (!U && (q || !a.junoSubscriptionRedirect || W)) {
-                        if (W && ("1" === N.get("id") || a.paymentMethod === ew.l.IDEAL) && !R)(0, L.Od)().trackUserAction(c.X.errorShown({
+                    if (!U && (W || !a.junoSubscriptionRedirect || $)) {
+                        if ($ && ("1" === N.get("id") || a.paymentMethod === eg.l.IDEAL) && !R)(0, L.Od)().trackUserAction(c.X.errorShown({
                             errorCode: F.tG.IDEAL_PAYMENT_FAILED
                         })), X(!0);
-                        else if (W && ("1" === N.get("pp") || a.paymentMethod === ew.l.PAYPAL) && !R)(0, L.Od)().trackUserAction(c.X.errorShown({
+                        else if ($ && ("1" === N.get("pp") || a.paymentMethod === eg.l.PAYPAL) && !R)(0, L.Od)().trackUserAction(c.X.errorShown({
                             errorCode: F.tG.PAYPAL_PAYMENT_FAILED
                         })), X(!0);
                         else if (!U) {
-                            "none" !== ea && a.startFreeTrial && a.trigger === ex.vW.DW_RECOVER_EXPIRED_TRANSFER && a.tier === ep.js.ULTIMATE && a.transferId ? (0, g.wc)(a.transferId, C) : (0, g.Z6)(), (0, g.Ze)(), (0, L.Od)().trackUserAction(c.X.userConverted({
+                            "none" !== es && a.startFreeTrial && a.trigger === ef.vW.DW_RECOVER_EXPIRED_TRANSFER && a.tier === Q.js.ULTIMATE && a.transferId ? (0, g.wc)(a.transferId, C) : (0, g.Z6)(), (0, g.Ze)(), (0, L.Od)().trackUserAction(c.X.userConverted({
                                 subscriptionTier: a.tier,
                                 billingPeriod: a.billing,
                                 paywallType: a.paywall,
@@ -576,9 +577,9 @@
                                 isFreeTrialAvailable: a.startFreeTrial,
                                 enterpriseSeats: a.seats,
                                 areNorCheckoutTermsAccepted: a.areNorCheckoutTermsAccepted
-                            })), (0, ef.Ho)();
+                            })), (0, eC.Ho)();
                             let e = void 0 !== a.seats && null !== a.seats ? parseInt(a.seats.toString(), 10) : void 0,
-                                s = void 0 === e || isNaN(e) ? void 0 : e;
+                                i = void 0 === e || isNaN(e) ? void 0 : e;
                             (0, L.Od)().trackUserAction(c.X.paymentSucceeded({
                                 subscriptionTier: a.tier,
                                 billingPeriod: a.billing,
@@ -589,8 +590,8 @@
                                 junoSubscription: a.junoSubscriptionRedirect,
                                 paywallType: a.paywall,
                                 paywallTrigger: a.trigger,
-                                seatsCount: s
-                            })), T((0, eh.SI)(a.paywallId, {
+                                seatsCount: i
+                            })), T((0, ep.SI)(a.paywallId, {
                                 tier: a.tier,
                                 billingPeriod: a.billing,
                                 paymentMethod: a.paymentMethod
@@ -598,29 +599,29 @@
                         }
                         O(!0)
                     }
-                }, [W, a, U, R, N, q, T, ea, C]);
+                }, [$, a, U, R, N, W, T, es, C]);
                 let {
-                    startPolling: es,
-                    updatedPlanTier: ei,
-                    maxPollingAttemptsReached: eo
+                    startPolling: et,
+                    updatedPlanTier: eo,
+                    maxPollingAttemptsReached: el
                 } = E();
                 (0, n.useEffect)(() => {
-                    U && a.tier && es(a.tier)
-                }, [U, a.tier, es]), (0, n.useEffect)(() => {
-                    if (eo && K(!0), ei)
-                        if (s)
-                            if ([ep.js.ENTERPRISE].includes(ei)) et.A.navigateTo(ey.PJ.route, !0);
+                    U && a.tier && et(a.tier)
+                }, [U, a.tier, et]), (0, n.useEffect)(() => {
+                    if (el && K(!0), eo)
+                        if (i)
+                            if ([Q.js.ENTERPRISE].includes(eo)) er.A.navigateTo(ex.PJ.route, !0);
                             else {
                                 let e = (0, B.pu)();
-                                (0, B.u4)(), e && (0, $.t)(e) ? ((0, Z.OP)(), window.location.href = e) : ((0, H.Et)(), window.location.href = "/")
+                                (0, B.u4)(), eo === Q.js.ULTIMATE && (0, z.FF)(a.trigger), e && (0, ea.t)(e) ? ((0, ee.OP)(), window.location.href = e) : ((0, H.Et)(), window.location.href = "/")
                             }
-                    else W || T(J.jf.actions.setShowPasswordlessLoginForm(!0))
-                }, [W, ei, eo, s, T]), (0, n.useEffect)(() => {
-                    v && t !== k.current && (k.current = t, M())
-                }, [t, v, M]);
-                let er = (0, n.useCallback)(async e => {
-                    let s = await e.stripeClient.retrieveSetupIntent(e.setupIntentSecret);
-                    if (!s.setupIntent) {
+                    else $ || T(J.jf.actions.setShowPasswordlessLoginForm(!0))
+                }, [$, eo, el, i, T, a.trigger]), (0, n.useEffect)(() => {
+                    j && t !== k.current && (k.current = t, P())
+                }, [t, j, P]);
+                let ed = (0, n.useCallback)(async e => {
+                    let i = await e.stripeClient.retrieveSetupIntent(e.setupIntentSecret);
+                    if (!i.setupIntent) {
                         X(!0), (0, L.Od)().trackUserAction(c.X.errorShown({
                             errorCode: F.tG.JUNO_SUBSCRIPTION_CREATION_FAILED,
                             message: "missing_setup_intent",
@@ -628,22 +629,22 @@
                         }));
                         return
                     }
-                    if (!z) try {
-                        let i = (0, eC.LT)();
-                        i.delete(h.WV), i.delete("redirect_status"), i.delete(h.w4);
-                        let t = (0, B.mM)("/checkout/pending".concat(i.toString()));
+                    if (!Y) try {
+                        let s = (0, eF.LT)();
+                        s.delete(h.WV), s.delete("redirect_status"), s.delete(h.w4);
+                        let t = (0, B.mM)("/checkout/pending".concat(s.toString()));
                         await V({
                             coupon: a.coupon,
                             currency: e.currency,
                             quantity: e.seats ? parseInt(e.seats.toString(), 10) : 1,
                             teamId: e.teamId,
                             userId: e.userId,
-                            setupIntent: s.setupIntent,
+                            setupIntent: i.setupIntent,
                             startFreeTrial: e.startFreeTrial,
                             priceAndPackageToken: e.priceAndPackageToken,
                             paymentMethod: e.paymentMethod,
                             redirectUrl: t
-                        }), Q(!0)
+                        }), Z(!0)
                     } catch (e) {
                         X(!0), (0, L.Od)().trackUserAction(c.X.errorShown({
                             errorCode: F.tG.JUNO_SUBSCRIPTION_CREATION_FAILED,
@@ -651,11 +652,11 @@
                             junoSubscription: !0
                         }))
                     }
-                }, [V, z, a.coupon]);
+                }, [V, Y, a.coupon]);
                 (0, n.useEffect)(() => {
-                    if (!W && a.junoSubscriptionRedirect && a.currency && a.priceToken && a.setupIntentSecret && a.paymentMethod && a.seats && !z && ((null == S ? void 0 : S.id) || o) && I) {
+                    if (!$ && a.junoSubscriptionRedirect && a.currency && a.priceToken && a.setupIntentSecret && a.paymentMethod && a.seats && !Y && ((null == S ? void 0 : S.id) || o) && I) {
                         var e;
-                        Y(!0), er({
+                        q(!0), ed({
                             stripeClient: I,
                             setupIntentSecret: a.setupIntentSecret,
                             currency: a.currency,
@@ -667,39 +668,39 @@
                             seats: a.seats
                         })
                     }
-                }, [a, o, er, z, null == S ? void 0 : S.id, I, r, W]);
-                let el = (0, n.useMemo)(() => z ? e("checkout.payment.pending.activating") : R ? e("checkout.payment.pending.failed") : D ? e("checkout.payment.pending.too-long") : e("checkout.payment.pending.processing"), [R, D, e, z]);
-                return j ? (0, i.jsx)(A.t, {
+                }, [a, o, ed, Y, null == S ? void 0 : S.id, I, r, $]);
+                let en = (0, n.useMemo)(() => Y ? e("checkout.payment.pending.activating") : R ? e("checkout.payment.pending.failed") : D ? e("checkout.payment.pending.too-long") : e("checkout.payment.pending.processing"), [R, D, e, Y]);
+                return v ? (0, s.jsx)(A.t, {
                     isLoading: !y,
-                    main: (0, i.jsx)(ec, {}),
+                    main: (0, s.jsx)(eb, {}),
                     showPlansInTopNav: !1,
-                    currentStep: em.b.LOGIN
-                }) : v ? (0, i.jsx)(A.t, {
+                    currentStep: e_.b.LOGIN
+                }) : j ? (0, s.jsx)(A.t, {
                     isLoading: !y,
-                    main: (0, i.jsx)(en, {}),
+                    main: (0, s.jsx)(ew, {}),
                     showPlansInTopNav: !1,
-                    currentStep: em.b.LOGIN
-                }) : (0, i.jsxs)("div", {
+                    currentStep: e_.b.LOGIN
+                }) : (0, s.jsxs)("div", {
                     className: eP().container,
-                    children: [(0, i.jsx)(u.y, {
+                    children: [(0, s.jsx)(u.y, {
                         centered: !0,
                         size: "large",
-                        message: el
-                    }), (0, i.jsx)(l.A, {
+                        message: en
+                    }), (0, s.jsx)(l.A, {
                         ref: G,
-                        sitekey: (0, eb.A)().NEXT_PUBLIC_HCAPTCHA_SITE_KEY || "",
+                        sitekey: (0, ey.A)().NEXT_PUBLIC_HCAPTCHA_SITE_KEY || "",
                         size: "invisible"
                     })]
                 })
             }
 
-            function ek() {
-                return (0, t.D)(), (0, i.jsx)(r.A, {
+            function eE() {
+                return (0, t.D)(), (0, s.jsx)(r.A, {
                     showModal: !0,
                     contentHeight: "100vh",
-                    children: (0, i.jsx)(o.D, {
+                    children: (0, s.jsx)(o.D, {
                         options: {},
-                        children: (0, i.jsx)(eM, {})
+                        children: (0, s.jsx)(ek, {})
                     })
                 })
             }
@@ -785,4 +786,4 @@
         }
     }
 ]);
-//# sourceMappingURL=checkout-pending.19aa82f9f8113a6f.js.map
+//# sourceMappingURL=checkout-pending.5978adc383806cea.js.map

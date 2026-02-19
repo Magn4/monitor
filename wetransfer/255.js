@@ -186,7 +186,7 @@
                     var l;
                     let {
                         children: t
-                    } = e, i = (0, s.wA)(), A = (0, s.d4)(f.Kj), P = (0, p.$)(), T = (0, s.d4)(S.nn), k = (0, s.d4)(v.fO), R = (0, s.d4)(x.JV), I = (0, w.l)(), j = (0, d.wE)(), {
+                    } = e, i = (0, s.wA)(), A = (0, s.d4)(f.Kj), P = (0, p.$)(), T = (0, s.d4)(S.nn), k = (0, s.d4)(v.fO), R = (0, s.d4)(x.JV), j = (0, w.l)(), I = (0, d.wE)(), {
                         settings: {
                             passwordless_anticipated_upload_enabled: M,
                             anonymous_login_step_enabled: O,
@@ -202,7 +202,7 @@
                         teamId: (null == z ? void 0 : z.id) || ""
                     }, {
                         skip: !(null == z ? void 0 : z.id)
-                    }), B = (R || M || O) && !A.parent_id && !A.resumeUploadInProgress && !P && !(null == W ? void 0 : W.length) && !I && !N, [H, V] = (0, n.useState)(!1), [Z, q] = (0, n.useState)(null), G = (0, n.useCallback)(() => {
+                    }), B = (R || M || O) && !A.parent_id && !A.resumeUploadInProgress && !P && !(null == W ? void 0 : W.length) && !j && !N, [H, V] = (0, n.useState)(!1), [Z, q] = (0, n.useState)(null), G = (0, n.useCallback)(() => {
                         q({
                             displayName: A.displayName,
                             message: A.message,
@@ -235,11 +235,11 @@
                             transferExpiry: A.expiry,
                             currentSize: T,
                             isRecoverable: A.isRecoverable
-                        }), n = !0), A.downloaderEmailVerification !== (null == Z ? void 0 : Z.accessControl) && (r.accessControl = A.downloaderEmailVerification, n = !0), (null == (e = A.price) ? void 0 : e.amount) !== (null == Z || null == (l = Z.price) ? void 0 : l.amount) && ((null == (t = A.price) ? void 0 : t.amount) !== void 0 && (r.price = A.price.amount), (null == (a = A.price) ? void 0 : a.currency) !== void 0 && (r.currency = A.price.currency), n = !0), A.viewOption === (null == Z ? void 0 : Z.viewOption) || j || (r.viewOption = A.viewOption, n = !0), (0, L.i)(A) && (r.extendedExpiryDate = null, n = !0, (null === A.expiry || A.expiry && A.expiry > _.i.DAYS_60_IN_SECONDS) && (r.expiry = new Date(new Date().setSeconds(_.i.DAYS_60_IN_SECONDS)).toISOString())), n && await i(y.Ay.updateTransferDetails({
+                        }), n = !0), A.downloaderEmailVerification !== (null == Z ? void 0 : Z.accessControl) && (r.accessControl = A.downloaderEmailVerification, n = !0), (null == (e = A.price) ? void 0 : e.amount) !== (null == Z || null == (l = Z.price) ? void 0 : l.amount) && ((null == (t = A.price) ? void 0 : t.amount) !== void 0 && (r.price = A.price.amount), (null == (a = A.price) ? void 0 : a.currency) !== void 0 && (r.currency = A.price.currency), n = !0), A.viewOption === (null == Z ? void 0 : Z.viewOption) || I || (r.viewOption = A.viewOption, n = !0), (0, L.i)(A) && (r.extendedExpiryDate = null, n = !0, (null === A.expiry || A.expiry && A.expiry > _.i.DAYS_60_IN_SECONDS) && (r.expiry = new Date(new Date().setSeconds(_.i.DAYS_60_IN_SECONDS)).toISOString())), n && await i(y.Ay.updateTransferDetails({
                             id: A.id,
                             updateParams: r
                         }))
-                    }, [A, null == Z ? void 0 : Z.displayName, null == Z ? void 0 : Z.message, null == Z ? void 0 : Z.expiry, null == Z ? void 0 : Z.password, null == Z ? void 0 : Z.isRecoverable, null == Z ? void 0 : Z.accessControl, null == Z || null == (l = Z.price) ? void 0 : l.amount, null == Z ? void 0 : Z.viewOption, j, T, i]), J = (0, n.useCallback)(async () => {
+                    }, [A, null == Z ? void 0 : Z.displayName, null == Z ? void 0 : Z.message, null == Z ? void 0 : Z.expiry, null == Z ? void 0 : Z.password, null == Z ? void 0 : Z.isRecoverable, null == Z ? void 0 : Z.accessControl, null == Z || null == (l = Z.price) ? void 0 : l.amount, null == Z ? void 0 : Z.viewOption, I, T, i]), J = (0, n.useCallback)(async () => {
                         if (i(h.Ay.setState(b.r.STARTED)), i(h.Ay.setUploadPending()), (0, E.y9)(!0), A.id) try {
                             await Y()
                         } catch (e) {}
@@ -551,7 +551,7 @@
                             account_creation_date: e.accountCreationDate ? Math.floor(new Date(e.accountCreationDate).getTime() / 1e3) : -1
                         }))(_),
                         ...(e => {
-                            var l, t, a, i, r, n, s, d, o, _, c, u, w, m, p, g, h, y, x, L, E, S, C, A, P, T, k, R, I, j, M, O, N, F, U, D, z;
+                            var l, t, a, i, r, n, s, d, o, _, c, u, w, m, p, g, h, y, x, L, E, S, C, A, P, T, k, R, j, I, M, O, N, F, U, D, z;
                             return {
                                 context_battery_level: v(null == e || null == (l = e.battery) ? void 0 : l.level),
                                 context_battery_is_charging: f(null == e || null == (t = e.battery) ? void 0 : t.isCharging),
@@ -566,8 +566,8 @@
                                 context_window_height_px: v(null == e || null == (c = e.window) ? void 0 : c.heightPx),
                                 context_window_zoom: v(null == e || null == (u = e.window) ? void 0 : u.zoom),
                                 context_device_type: null != (R = null == e || null == (w = e.device) ? void 0 : w.type) ? R : "",
-                                context_device_os: null != (I = null == e || null == (m = e.device) ? void 0 : m.os) ? I : "",
-                                context_device_os_version: null != (j = null == e || null == (p = e.device) ? void 0 : p.osVersion) ? j : "",
+                                context_device_os: null != (j = null == e || null == (m = e.device) ? void 0 : m.os) ? j : "",
+                                context_device_os_version: null != (I = null == e || null == (p = e.device) ? void 0 : p.osVersion) ? I : "",
                                 context_device_browser: null != (M = null == e || null == (g = e.device) ? void 0 : g.browser) ? M : "",
                                 context_device_browser_version: null != (O = null == e || null == (h = e.device) ? void 0 : h.browserVersion) ? O : "",
                                 context_device_first_language: b(null == e || null == (x = e.device) || null == (y = x.languages) ? void 0 : y[0]),
@@ -1156,10 +1156,10 @@
                 A: () => _
             });
             var a = t(23798),
-                i = t(50496),
-                r = t(85633),
-                n = t(81436),
-                s = t(84530),
+                i = t(75546),
+                r = t(50496),
+                n = t(85633),
+                s = t(81436),
                 d = t(10988),
                 o = t.n(d);
 
@@ -1174,8 +1174,8 @@
                     isInputDisabled: w = !1
                 } = e, m = e => {
                     t(Math.max(1, Math.min(e, 999)))
-                }, p = 1 === l || d, g = (0, a.jsx)(i.K, {
-                    icon: r.Rpb,
+                }, p = 1 === l || d, g = (0, a.jsx)(r.K, {
+                    icon: n.Rpb,
                     size: "x-small",
                     appearance: "tertiary",
                     variation: "neutral",
@@ -1184,14 +1184,16 @@
                 });
                 return (0, a.jsxs)("div", {
                     className: o().container,
-                    children: [p ? (0, a.jsx)(n.A, {
+                    children: [p ? (0, a.jsx)(s.A, {
                         containerClassName: o().containerPopover,
                         positions: "top",
-                        content: (0, a.jsx)("span", {
-                            dangerouslySetInnerHTML: {
-                                __html: s.A.t("checkout" === u ? "members.suggest_plan_switch" : "minimum_commitment" === u ? "members.members_below_minimum_commitment" : "members.seats_selector_warning", {
-                                    totalMemberCount: c
-                                })
+                        content: (0, a.jsx)(i.x6, {
+                            i18nKey: "checkout" === u ? "members.suggest_plan_switch" : "minimum_commitment" === u ? "members.members_below_minimum_commitment" : "members.seats_selector_warning",
+                            values: {
+                                totalMemberCount: c
+                            },
+                            components: {
+                                b: (0, a.jsx)("b", {})
                             }
                         }),
                         eventTrigger: "hover",
@@ -1206,8 +1208,8 @@
                         onChange: e => m(Number(e.target.value)),
                         value: l,
                         disabled: w
-                    }), (0, a.jsx)(i.K, {
-                        icon: r.kS3,
+                    }), (0, a.jsx)(r.K, {
+                        icon: n.kS3,
                         size: "x-small",
                         appearance: "tertiary",
                         variation: "neutral",
@@ -1456,10 +1458,10 @@
             t.d(l, {
                 bV: () => M,
                 eK: () => k,
-                ev: () => j,
+                ev: () => I,
                 fR: () => R,
                 ks: () => T,
-                zi: () => I
+                zi: () => j
             });
             var a = t(21462),
                 i = t(38169),
@@ -1524,7 +1526,7 @@
                         getScrollPosition: () => e.current.getScrollPosition()
                     }
                 },
-                I = () => {
+                j = () => {
                     let {
                         createTransfer: e
                     } = T(), l = (0, i.d4)(S.Jz), {
@@ -1534,7 +1536,7 @@
                         "downloadable" === l && e(t)
                     }, [e, l, t])
                 },
-                j = e => {
+                I = e => {
                     let l = (0, p.Z)(e),
                         t = (0, i.wA)(),
                         c = (0, i.d4)(v.jZ),
@@ -1545,8 +1547,8 @@
                         T = (0, i.d4)(P.nn),
                         k = (0, i.d4)(P.Y2),
                         R = (0, i.d4)(f.CL),
-                        I = (0, i.d4)(E.vC),
-                        j = (0, i.d4)(S.Kj),
+                        j = (0, i.d4)(E.vC),
+                        I = (0, i.d4)(S.Kj),
                         M = (0, i.d4)(L.mB),
                         O = (0, r.U)().quota,
                         {
@@ -1569,11 +1571,11 @@
                         G = (0, a.useMemo)(() => Z || q, [Z, q]),
                         K = (0, d.wE)(),
                         Y = (0, a.useCallback)(() => {
-                            null != j && j.resumeUploadInProgress || t(A.DG({
+                            null != I && I.resumeUploadInProgress || t(A.DG({
                                 channel: C,
                                 account: c,
                                 user: M,
-                                session: I,
+                                session: j,
                                 notification: R,
                                 allowedSize: y,
                                 isForwardedTransfer: k,
@@ -1588,14 +1590,14 @@
                                 canUseUploadCdn: G,
                                 forcePreviewAndDownloadViewOption: K
                             }))
-                        }, [c, C, T, t, V, N, k, O, R, I, D, K, H, null == j ? void 0 : j.resumeUploadInProgress, y, z, W, M, G]),
+                        }, [c, C, T, t, V, N, k, O, R, j, D, K, H, null == I ? void 0 : I.resumeUploadInProgress, y, z, W, M, G]),
                         J = (0, a.useCallback)(() => {
                             g.A.trackSnowplowEvent({
                                 category: "transfer",
                                 action: "click_transfer",
-                                label: "transfer-".concat(j.password ? "with" : "without", "-password-expiryDate-").concat(j.expiry)
+                                label: "transfer-".concat(I.password ? "with" : "without", "-password-expiryDate-").concat(I.expiry)
                             })
-                        }, [j.expiry, j.password]);
+                        }, [I.expiry, I.password]);
                     (0, a.useEffect)(() => {
                         e && !l && (t(x.P.clearTransferNotification()), J(), Y())
                     }, [e, l, Y, J, t])
@@ -1779,8 +1781,9 @@
             });
             var a = t(23798),
                 i = t(46001),
-                r = t.n(i),
-                n = t(85633),
+                r = t.n(i);
+            t(21462);
+            var n = t(85633),
                 s = t(24595),
                 d = t.n(s);
 
@@ -1814,9 +1817,7 @@
                             children: l
                         }), (0, a.jsx)("span", {
                             className: r()(d().perkDescription, "medium" === i && d().medium, "large" === i && d().large),
-                            dangerouslySetInnerHTML: {
-                                __html: t
-                            }
+                            children: t
                         })]
                     })]
                 })
@@ -1899,13 +1900,13 @@
                 XI: () => A,
                 YP: () => c,
                 aB: () => E,
-                cA: () => I,
+                cA: () => j,
                 cg: () => d,
                 cu: () => Z,
                 g6: () => s,
                 j2: () => M,
                 l_: () => q,
-                oF: () => j,
+                oF: () => I,
                 oZ: () => P,
                 pZ: () => w,
                 qw: () => T,
@@ -1946,8 +1947,8 @@
                 usePaidSubscriptionMutation: T,
                 useRefundAndCancelSubscriptionMutation: k,
                 useRemoveMemberMutation: R,
-                useRequestWorkspaceInvitationMutation: I,
-                useRevokeInviteMutation: j,
+                useRequestWorkspaceInvitationMutation: j,
+                useRevokeInviteMutation: I,
                 useSendInvitesMutation: M,
                 useSetDefaultPaymentMethodMutation: O,
                 useSetMinimumCommitmentSeatsMutation: N,
@@ -3203,8 +3204,8 @@
                 },
                 R = ["title", "titleId"];
 
-            function I() {
-                return (I = Object.assign ? Object.assign.bind() : function(e) {
+            function j() {
+                return (j = Object.assign ? Object.assign.bind() : function(e) {
                     for (var l = 1; l < arguments.length; l++) {
                         var t = arguments[l];
                         for (var a in t)({}).hasOwnProperty.call(t, a) && (e[a] = t[a])
@@ -3212,7 +3213,7 @@
                     return e
                 }).apply(null, arguments)
             }
-            var j = function(e) {
+            var I = function(e) {
                     var l = e.title,
                         t = e.titleId,
                         a = function(e, l) {
@@ -3232,7 +3233,7 @@
                             }
                             return i
                         }(e, R);
-                    return g.createElement("svg", I({
+                    return g.createElement("svg", j({
                         width: 32,
                         height: 32,
                         fill: "none",
@@ -3469,7 +3470,7 @@
                     ...e
                 }),
                 G = e => (0, p.jsx)(v, {
-                    svg: j,
+                    svg: I,
                     ...e
                 }),
                 K = e => (0, p.jsx)(v, {
@@ -3540,10 +3541,10 @@
                     mainCTAAppearance: T = "primary",
                     secondaryCTAAppearance: k = "secondary",
                     shouldDisableClickOutside: R = !1
-                } = e, I = (0, d.useRef)(null), j = (0, d.useRef)(null);
+                } = e, j = (0, d.useRef)(null), I = (0, d.useRef)(null);
                 return (0, a.jsxs)(a.Fragment, {
                     children: [(0, a.jsx)(o.A, {
-                        nodeRef: I,
+                        nodeRef: j,
                         in: !0,
                         appear: !0,
                         timeout: 200,
@@ -3554,7 +3555,7 @@
                             appearActive: h().backgroundAppearActive
                         },
                         children: (0, a.jsx)("div", {
-                            ref: I,
+                            ref: j,
                             className: h().background,
                             onClick: R ? void 0 : () => {
                                 v(p.tS.CLICK_OUTSIDE)
@@ -3564,7 +3565,7 @@
                     }), (0, a.jsx)("div", {
                         className: h().paywallContainer,
                         children: (0, a.jsx)(o.A, {
-                            nodeRef: j,
+                            nodeRef: I,
                             in: !0,
                             appear: !0,
                             timeout: 200,
@@ -3577,7 +3578,7 @@
                                 exitActive: h().paywallExitActive
                             },
                             children: (0, a.jsxs)("div", {
-                                ref: j,
+                                ref: I,
                                 className: h().paywall,
                                 children: [f && (0, a.jsx)("div", {
                                     className: h().imageContainer,
@@ -3609,11 +3610,9 @@
                                         children: (0, a.jsx)(_.y, {
                                             size: "large"
                                         })
-                                    }), (0, a.jsx)("p", {
+                                    }), (0, a.jsx)("div", {
                                         className: L ? h().textCenter : h().text,
-                                        dangerouslySetInnerHTML: {
-                                            __html: t
-                                        }
+                                        children: t
                                     }), C && (0, a.jsx)("p", {
                                         className: h().text,
                                         children: C
@@ -3963,7 +3962,7 @@
                 WD: () => M,
                 ZK: () => O,
                 a6: () => k,
-                ir: () => I,
+                ir: () => j,
                 oR: () => L
             });
             var a = t(21462),
@@ -4015,10 +4014,10 @@
                     } = A(m, l, v);
                     if (!k || !R || "disabled" === k.type) return;
                     let {
-                        canShow: I,
-                        updateLastShownTime: j
+                        canShow: j,
+                        updateLastShownTime: I
                     } = (0, d.w)(k.frequency_seconds, b + R, k.time_window_seconds, "spontaneous_paywall_first_shown/" + R);
-                    if (!t && !I) return;
+                    if (!t && !j) return;
                     let M = p.Ay.isMobile && f(k.type) && !k.is_upload_allowed;
                     if ("fullscreen" !== k.type && !M) return;
                     M && (k.type = "fullscreen", k.dismiss_on_outside_click = !1, k.close_on_left = !1);
@@ -4035,14 +4034,14 @@
                         isLeftCloseButton: k.close_on_left,
                         trigger: R,
                         onPaywallDismiss: () => {
-                            j(), e((0, _.Cb)(_.pU.SPONTANEOUS_FULLSCREEN)), O && e((0, _.ZL)(T)), F()
+                            I(), e((0, _.Cb)(_.pU.SPONTANEOUS_FULLSCREEN)), O && e((0, _.ZL)(T)), F()
                         },
                         isFreeTrialEnabled: k.free_trial_enabled && !c,
                         billingCycle: k.billing_cycle,
                         couponCode: k.coupon_code,
                         allowActionOnDismiss: k.allow_action_on_dismiss && U,
                         closeButtonDelaySeconds: k.close_button_delay_seconds,
-                        updateLastShownTime: j,
+                        updateLastShownTime: I,
                         autoDismissSeconds: k.auto_dismiss_seconds
                     }
                 },
@@ -4075,10 +4074,10 @@
                     } = A(x, t, v);
                     if (!k || !R || p.Ay.isMobile && !k.is_upload_allowed || !f(k.type)) return;
                     let {
-                        canShow: I,
-                        updateLastShownTime: j
+                        canShow: j,
+                        updateLastShownTime: I
                     } = (0, d.w)(k.frequency_seconds, b + R);
-                    if (l || I) switch ((R === _.vW.INTRO_PAYWALL_NEW_USERS || R === _.vW.INTRO_PAYWALL_PUA_USERS) && e((0, _.jt)(R)), R) {
+                    if (l || j) switch ((R === _.vW.INTRO_PAYWALL_NEW_USERS || R === _.vW.INTRO_PAYWALL_PUA_USERS) && e((0, _.jt)(R)), R) {
                         case _.vW.BEFORE_TRANSFER_UPLOAD:
                         case _.vW.INTRO_PAYWALL_NEW_USERS:
                         case _.vW.INTRO_PAYWALL_PUA_USERS:
@@ -4090,7 +4089,7 @@
                                 trigger: R,
                                 onPaywallDismiss: function() {
                                     let l = !(arguments.length > 0) || void 0 === arguments[0] || arguments[0];
-                                    if (j(), e((0, _.Cb)(M)), !l) return void e((0, c.BV)(!0));
+                                    if (I(), e((0, _.Cb)(M)), !l) return void e((0, c.BV)(!0));
                                     (R === _.vW.BEFORE_TRANSFER_UPLOAD || R === _.vW.INTRO_PAYWALL_NEW_USERS || R === _.vW.INTRO_PAYWALL_PUA_USERS) && e((0, _.ZL)(T))
                                 },
                                 isFreeTrialEnabled: k.free_trial_enabled && !o,
@@ -4098,7 +4097,7 @@
                                 billingCycle: k.billing_cycle,
                                 couponCode: k.coupon_code,
                                 areWeekliesEnabled: k.weeklies_enabled && y,
-                                updateLastShownTime: j,
+                                updateLastShownTime: I,
                                 autoDismissSeconds: k.auto_dismiss_seconds,
                                 showCloseButton: k.show_close_button,
                                 secondaryCtaType: k.secondary_cta_type,
@@ -4245,7 +4244,7 @@
                         dismissOnOutsideClick: T,
                         dismissOnMouseLeave: k,
                         isLeftCloseButton: R,
-                        isHomeScreenPaywallNewUsersEnabled: I
+                        isHomeScreenPaywallNewUsersEnabled: j
                     } = "fullscreen" === S ? V(d) : {
                         trigger: _.vW.BEFORE_TRANSFER_UPLOAD,
                         isLowDismissibility: d.spontaneous_paywall_low_dismissibility,
@@ -4253,19 +4252,19 @@
                         dismissOnMouseLeave: d.spontaneous_paywall_dismiss_on_mouse_leave,
                         isLeftCloseButton: !1,
                         isHomeScreenPaywallNewUsersEnabled: !1
-                    }, j = A === _.vW.BEFORE_TRANSFER_UPLOAD && n === x.r.PAYWALL, M = I && l === _.vW.TRANSFER_PAGE_OPENED && l === A;
-                    if (!(M && (!H() || z())) && (l === A || t === _.pU.SPONTANEOUS_FULLSCREEN || j)) return t !== _.pU.SPONTANEOUS_FULLSCREEN && (j || e((0, _.jt)(void 0)), e((0, _.UK)(_.pU.SPONTANEOUS_FULLSCREEN))), M && H() && !localStorage.getItem(U) && D(), {
+                    }, I = A === _.vW.BEFORE_TRANSFER_UPLOAD && n === x.r.PAYWALL, M = j && l === _.vW.TRANSFER_PAGE_OPENED && l === A;
+                    if (!(M && (!H() || z())) && (l === A || t === _.pU.SPONTANEOUS_FULLSCREEN || I)) return t !== _.pU.SPONTANEOUS_FULLSCREEN && (I || e((0, _.jt)(void 0)), e((0, _.UK)(_.pU.SPONTANEOUS_FULLSCREEN))), M && H() && !localStorage.getItem(U) && D(), {
                         isLowDismissibility: P,
                         dismissOnOutsideClick: T,
                         dismissOnMouseLeave: k,
                         isLeftCloseButton: R,
                         trigger: A,
                         onPaywallDismiss: () => {
-                            c(), e((0, _.Cb)(_.pU.SPONTANEOUS_FULLSCREEN)), j && e((0, _.ZL)(E))
+                            c(), e((0, _.Cb)(_.pU.SPONTANEOUS_FULLSCREEN)), I && e((0, _.ZL)(E))
                         }
                     }
                 },
-                I = () => {
+                j = () => {
                     let e = (0, i.d4)(h.lD),
                         l = (0, i.d4)(o.My),
                         {
@@ -4284,7 +4283,7 @@
                         } = (0, g.k)();
                     return !!e && !a && !r && !!t && ((0, s.g)() ? p === _.vW.BEFORE_TRANSFER_UPLOAD && !l && "disabled" !== m : (!n || c !== _.vW.BEFORE_TRANSFER_UPLOAD || !l) && (!!f(d) || "fullscreen" === d) && c === _.vW.BEFORE_TRANSFER_UPLOAD)
                 },
-                j = () => {
+                I = () => {
                     let e = (0, i.d4)(_.oR),
                         l = (0, i.d4)(_.wn),
                         t = (0, i.d4)(h.lD),
@@ -4318,7 +4317,7 @@
                         } = (0, g.k)(),
                         t = (0, r.VW)(),
                         n = (0, a.useMemo)(() => l || t, [l, t]),
-                        s = j();
+                        s = I();
                     if (s) return s.currentPaywall !== _.pU.SPONTANEOUS_TRANSFER_WINDOW && e((0, _.UK)(_.pU.SPONTANEOUS_TRANSFER_WINDOW)), {
                         isLowDismissibility: s.isLowDismissibility,
                         dismissOnMouseLeave: s.dismissOnMouseLeave,
@@ -4331,7 +4330,7 @@
                 O = () => {
                     let e = (0, i.wA)(),
                         l = (0, w.A)(),
-                        t = j();
+                        t = I();
                     if (t && t.isUnpaidUser && t.canShow && !l && t.currentTrigger === t.trigger && t.trigger == _.vW.DOWNLOAD_PAGE_OPENED) return t.currentPaywall !== _.pU.SPONTANEOUS_TRANSFER_WINDOW && e((0, _.UK)(_.pU.SPONTANEOUS_TRANSFER_WINDOW)), {
                         isLowDismissibility: t.isLowDismissibility,
                         dismissOnMouseLeave: t.dismissOnMouseLeave,
@@ -4444,12 +4443,13 @@
         33665: (e, l, t) => {
             "use strict";
             t.d(l, {
-                rz: () => A,
-                iK: () => S,
-                Ch: () => P,
-                YS: () => C,
-                wE: () => E,
-                Sv: () => T
+                rz: () => I,
+                iK: () => R,
+                Ch: () => M,
+                YS: () => j,
+                Rv: () => N,
+                wE: () => k,
+                Sv: () => O
             });
             var a = t(53526),
                 i = t.n(a),
@@ -4460,8 +4460,9 @@
                 o = "".concat(d, "_tw"),
                 _ = "".concat(d, "_fs"),
                 c = "".concat(d, "_pp"),
-                u = 25 * s.MB,
-                w = [{
+                u = "preview_open_count_pw",
+                w = 25 * s.MB,
+                m = [{
                     extension: "avif",
                     maxSize: 256 * s.MB
                 }, {
@@ -4576,138 +4577,187 @@
                     extension: "xlsx",
                     maxSize: 256 * s.MB
                 }];
-            var m = function(e) {
-                return e.NONE = "none", e.TW_PAYWALL = "tw_paywall", e.FULLSCREEN_PAYWALL = "fullscreen_paywall", e.PREVIEW_PAGE_PAYWALL = "preview_page_paywall", e
-            }({});
-            let p = e => e.flatMap(e => e.items && Array.isArray(e.items) ? p(e.items) : [e]);
-            var g = t(89187),
-                h = t(88848),
-                y = t(72754),
-                x = t(7012),
-                f = t(62760),
-                v = t(86781),
-                b = t(72546);
-            let L = () => {
+            var p = function(e) {
+                    return e.NONE = "none", e.TW_PAYWALL = "tw_paywall", e.FULLSCREEN_PAYWALL = "fullscreen_paywall", e.PREVIEW_PAGE_PAYWALL = "preview_page_paywall", e
+                }({}),
+                g = t(582),
+                h = t.n(g);
+            let y = e => e.flatMap(e => e.items && Array.isArray(e.items) ? y(e.items) : [e]),
+                x = e => {
+                    let l = y(e.items).filter(e => (e => {
+                        var l;
+                        let t = null != (l = e.name) ? l : "",
+                            a = t.lastIndexOf(".");
+                        if (a <= 0) return !1;
+                        let i = t.slice(a + 1).toLowerCase();
+                        return m.some(l => {
+                            let {
+                                extension: t,
+                                maxSize: a
+                            } = l;
+                            return t === i && e.size <= a
+                        })
+                    })(e));
+                    return l.length >= 5 || l.some(e => e.size >= w)
+                },
+                f = () => {
+                    try {
+                        if ("undefined" == typeof localStorage) return 0;
+                        let e = localStorage.getItem(u);
+                        if (null === e) return 0;
+                        let l = parseInt(e, 10);
+                        return Number.isNaN(l) ? 0 : Math.max(0, l)
+                    } catch (e) {
+                        return 0
+                    }
+                };
+            var v = t(89187),
+                b = t(88848),
+                L = t(72754),
+                E = t(7012),
+                S = t(13732),
+                C = t(62760),
+                A = t(86781),
+                P = t(72546);
+            let T = () => {
                     let {
                         settings: e
-                    } = (0, f.k)(), l = (0, n.d4)(v.mB), t = (0, x.wx)(l);
+                    } = (0, C.k)(), l = (0, n.d4)(A.mB), t = (0, E.wx)(l);
                     return e.is_previews_monetization_enabled && t
                 },
-                E = e => {
-                    let l = L(),
-                        t = (0, n.d4)(b.Kj);
-                    return l && (e => {
-                        let l = p(e.items).filter(e => (e => {
-                            var l;
-                            let t = null != (l = e.name) ? l : "",
-                                a = t.lastIndexOf(".");
-                            if (a <= 0) return !1;
-                            let i = t.slice(a + 1).toLowerCase();
-                            return w.some(l => {
-                                let {
-                                    extension: t,
-                                    maxSize: a
-                                } = l;
-                                return t === i && e.size <= a
-                            })
-                        })(e));
-                        return l.length >= 5 || l.some(e => e.size >= u)
-                    })(null != e ? e : t)
+                k = e => {
+                    let l = T(),
+                        t = (0, n.d4)(P.Kj);
+                    return l && x(null != e ? e : t)
                 },
-                S = () => {
+                R = () => {
                     let e = (0, n.wA)(),
-                        l = (0, n.d4)(y.oR),
-                        t = (0, n.d4)(y.wn),
-                        a = L(),
+                        l = (0, n.d4)(L.oR),
+                        t = (0, n.d4)(L.wn),
+                        a = T(),
                         {
                             isFullscreenPaywall: i
-                        } = A(),
-                        s = (0, r.useMemo)(() => a && l === h.pU.PREVIEWS_HARD_MONETIZATION_FULLSCREEN && t === h.vW.PREVIEWS_HARD_MONETIZATION_SENDER, [a, l, t]),
-                        d = (0, r.useMemo)(() => i && l === h.pU.PREVIEWS_HARD_MONETIZATION_FULLSCREEN && t === h.vW.PREVIEWS_HARD_MONETIZATION_DOWNLOADER, [i, l, t]);
+                        } = I(),
+                        s = (0, r.useMemo)(() => a && l === b.pU.PREVIEWS_HARD_MONETIZATION_FULLSCREEN && t === b.vW.PREVIEWS_HARD_MONETIZATION_SENDER, [a, l, t]),
+                        d = (0, r.useMemo)(() => i && l === b.pU.PREVIEWS_HARD_MONETIZATION_FULLSCREEN && t === b.vW.PREVIEWS_HARD_MONETIZATION_DOWNLOADER, [i, l, t]);
                     if (s || d) return {
                         onDismiss: () => {
-                            e((0, h.Cb)(h.pU.PREVIEWS_HARD_MONETIZATION_FULLSCREEN))
+                            e((0, b.Cb)(b.pU.PREVIEWS_HARD_MONETIZATION_FULLSCREEN))
                         },
                         context: s ? "sender" : "downloader"
                     }
                 },
-                C = () => {
+                j = () => {
                     let e = (0, n.wA)(),
-                        l = (0, n.d4)(y.oR),
-                        t = (0, n.d4)(y.wn),
+                        l = (0, n.d4)(L.oR),
+                        t = (0, n.d4)(L.wn),
                         {
                             isTransferWindowPaywall: a
-                        } = A();
-                    if ((0, r.useMemo)(() => a && l === h.pU.PREVIEWS_HARD_MONETIZATION_TRANSFER_WINDOW && t === h.vW.PREVIEWS_HARD_MONETIZATION_DOWNLOADER, [a, l, t])) return {
+                        } = I();
+                    if ((0, r.useMemo)(() => a && l === b.pU.PREVIEWS_HARD_MONETIZATION_TRANSFER_WINDOW && t === b.vW.PREVIEWS_HARD_MONETIZATION_DOWNLOADER, [a, l, t])) return {
                         isLowDismissibility: !1,
                         onPaywallDismiss: () => {
-                            e((0, h.Cb)(h.pU.PREVIEWS_HARD_MONETIZATION_TRANSFER_WINDOW))
+                            e((0, b.Cb)(b.pU.PREVIEWS_HARD_MONETIZATION_TRANSFER_WINDOW))
                         },
-                        trigger: h.vW.PREVIEWS_HARD_MONETIZATION_DOWNLOADER,
+                        trigger: b.vW.PREVIEWS_HARD_MONETIZATION_DOWNLOADER,
                         dismissOnMouseLeave: !1,
-                        type: h.pU.PREVIEWS_HARD_MONETIZATION_TRANSFER_WINDOW,
+                        type: b.pU.PREVIEWS_HARD_MONETIZATION_TRANSFER_WINDOW,
                         isFreeTrialEnabled: !0,
-                        billingCycle: g.CS.WEEKLY,
+                        billingCycle: v.CS.WEEKLY,
                         areWeekliesEnabled: !0,
                         isPreviewsVariation: !0
                     }
                 },
-                A = () => {
+                I = () => {
                     var e;
-                    let l = (0, n.d4)(b.Kj),
-                        t = (0, n.d4)(v.mB),
-                        a = (0, x.wx)(t),
-                        i = null == (e = l.experimentIds) ? void 0 : e.find(e => e.startsWith(d)),
-                        s = (0, r.useMemo)(() => {
-                            if (!i || !a) return m.NONE;
-                            switch (i) {
+                    let l = (0, n.d4)(P.Kj),
+                        t = (0, n.d4)(A.mB),
+                        a = (0, E.wx)(t),
+                        i = (0, S.A)(),
+                        {
+                            shouldMonetize: s,
+                            limit: u
+                        } = F(),
+                        w = null == (e = l.experimentIds) ? void 0 : e.find(e => e.startsWith(d)),
+                        m = (0, r.useMemo)(() => {
+                            if (!a || i) return p.NONE;
+                            if (s && f() >= u) return p.PREVIEW_PAGE_PAYWALL;
+                            if (!w) return p.NONE;
+                            switch (w) {
                                 case o:
-                                    return m.TW_PAYWALL;
+                                    return p.TW_PAYWALL;
                                 case _:
-                                    return m.FULLSCREEN_PAYWALL;
+                                    return p.FULLSCREEN_PAYWALL;
                                 case c:
-                                    return m.PREVIEW_PAGE_PAYWALL;
+                                    return p.PREVIEW_PAGE_PAYWALL;
                                 default:
-                                    return m.NONE
+                                    return p.NONE
                             }
-                        }, [i, a]),
-                        u = s !== m.NONE,
-                        w = s === m.TW_PAYWALL,
-                        p = s === m.FULLSCREEN_PAYWALL;
+                        }, [w, a, i, s, u]),
+                        g = m !== p.NONE,
+                        h = m === p.TW_PAYWALL,
+                        y = m === p.FULLSCREEN_PAYWALL;
                     return {
-                        isActive: u,
-                        isTransferWindowPaywall: w,
-                        isFullscreenPaywall: p,
-                        isPreviewPagePaywall: s === m.PREVIEW_PAGE_PAYWALL,
-                        isDownloadPagePaywall: w || p
+                        isActive: g,
+                        isTransferWindowPaywall: h,
+                        isFullscreenPaywall: y,
+                        isPreviewPagePaywall: m === p.PREVIEW_PAGE_PAYWALL,
+                        isDownloadPagePaywall: h || y
                     }
                 },
-                P = () => {
+                M = () => {
                     let {
                         settings: e
-                    } = (0, f.k)();
-                    if (E()) switch (e.downloaders_previews_monetization_style) {
-                        case m.TW_PAYWALL:
+                    } = (0, C.k)();
+                    if (k()) switch (e.downloaders_previews_monetization_style) {
+                        case p.TW_PAYWALL:
                             return o;
-                        case m.FULLSCREEN_PAYWALL:
+                        case p.FULLSCREEN_PAYWALL:
                             return _;
-                        case m.PREVIEW_PAGE_PAYWALL:
+                        case p.PREVIEW_PAGE_PAYWALL:
                             return c;
-                        case m.NONE:
+                        case p.NONE:
                         default:
                             return
                     }
                 },
-                T = () => {
+                O = () => {
                     let {
                         isFullscreenPaywall: e,
                         isTransferWindowPaywall: l
-                    } = A(), t = (0, n.wA)();
+                    } = I(), t = (0, n.wA)();
                     return l ? () => {
-                        t((0, h.jt)(h.vW.PREVIEWS_HARD_MONETIZATION_DOWNLOADER)), t((0, h.UK)(h.pU.PREVIEWS_HARD_MONETIZATION_TRANSFER_WINDOW))
+                        t((0, b.jt)(b.vW.PREVIEWS_HARD_MONETIZATION_DOWNLOADER)), t((0, b.UK)(b.pU.PREVIEWS_HARD_MONETIZATION_TRANSFER_WINDOW))
                     } : e ? () => {
-                        t((0, h.jt)(h.vW.PREVIEWS_HARD_MONETIZATION_DOWNLOADER)), t((0, h.UK)(h.pU.PREVIEWS_HARD_MONETIZATION_FULLSCREEN))
+                        t((0, b.jt)(b.vW.PREVIEWS_HARD_MONETIZATION_DOWNLOADER)), t((0, b.UK)(b.pU.PREVIEWS_HARD_MONETIZATION_FULLSCREEN))
                     } : i()
+                },
+                N = () => {
+                    let {
+                        shouldMonetize: e
+                    } = F(), l = (0, r.useRef)(!1);
+                    (0, r.useEffect)(() => {
+                        !l.current && e && ((() => {
+                            try {
+                                if ("undefined" == typeof localStorage) return;
+                                let e = f();
+                                localStorage.setItem(u, String(e + 1))
+                            } catch (e) {}
+                        })(), l.current = !0)
+                    }, [e])
+                },
+                F = () => {
+                    let {
+                        settings: e
+                    } = (0, C.k)(), l = (0, n.d4)(P.Kj), t = (0, n.d4)(A.mB), a = (0, E.wx)(t), i = (0, S.A)(), r = (() => {
+                        if ("undefined" == typeof navigator || !navigator.userAgent) return !1;
+                        let e = new(h())(navigator.userAgent).getOS().name;
+                        return "Mac OS" === e || "macOS" === e
+                    })() ? e.preview_opens_allowed_before_paywall_macos : e.preview_opens_allowed_before_paywall_non_macos;
+                    return {
+                        shouldMonetize: !i && a && r >= 0 && x(l),
+                        limit: r
+                    }
                 }
         },
         34361: (e, l, t) => {
@@ -5081,7 +5131,7 @@
                 Ih: () => E,
                 bF: () => T,
                 VW: () => C,
-                Gu: () => I,
+                Gu: () => j,
                 UG: () => P,
                 XB: () => A,
                 vr: () => k,
@@ -5227,7 +5277,7 @@
                         a && i && (t.current = !0), a || (t.current = !1)
                     }, [a, i]), a && (i || l === v.r.INIT && t.current)
                 },
-                I = () => {
+                j = () => {
                     let e = (0, n.d4)(w.oR),
                         l = (0, n.d4)(f.Jz),
                         t = (0, n.wA)(),
@@ -5296,9 +5346,9 @@
                     T = (0, n.d4)(g.bF),
                     k = (0, n.d4)(h.JV),
                     R = (0, n.d4)(h.mB).email,
-                    I = (0, n.wA)(),
+                    j = (0, n.wA)(),
                     {
-                        addToast: j
+                        addToast: I
                     } = (0, s.d)(),
                     {
                         t: M
@@ -5315,7 +5365,7 @@
                             let t = !0;
                             if (A && (t = null != (a = null == (e = (await y({
                                     email: A
-                                })).data) ? void 0 : e.exists) && a), t) I((0, _.iD)(void 0, {
+                                })).data) ? void 0 : e.exists) && a), t) j((0, _.iD)(void 0, {
                                 loginHint: A || void 0,
                                 trigger: "workspace_invite",
                                 triggerUrl: window.location.href,
@@ -5323,7 +5373,7 @@
                             }));
                             else {
                                 let e = new URLSearchParams;
-                                C && e.set(b, C), e.set(L, "true"), I((0, _.Hh)({
+                                C && e.set(b, C), e.set(L, "true"), j((0, _.Hh)({
                                     tier: u.js.FREE,
                                     search: e.toString(),
                                     customParameters: {
@@ -5357,7 +5407,7 @@
                         }
                     };
                     P && !T && e()
-                }, [I, R, E, S, C, T, k, P, l, t, y, A]), (0, i.useEffect)(() => {
+                }, [j, R, E, S, C, T, k, P, l, t, y, A]), (0, i.useEffect)(() => {
                     if (O) {
                         let e = "GENERIC_ERROR" === O ? M("join_workspace.error_generic") : O;
                         "INVALID_EMAIL" === O && (null == F ? void 0 : F.email) && (e = (0, a.jsx)(r.x6, {
@@ -5371,9 +5421,9 @@
                                 workspaceName: F.team.name,
                                 email: F.email
                             }
-                        })), j(e), m.A.navigateTo("/")
+                        })), I(e), m.A.navigateTo("/")
                     }
-                }, [O, F, j, M]), (0, a.jsx)(c.r, {})
+                }, [O, F, I, M]), (0, a.jsx)(c.r, {})
             }
         },
         44259: (e, l, t) => {
@@ -8504,9 +8554,9 @@
                         subscription: k
                     } = (0, g.f)(),
                     R = (0, v.m4)(null == k ? void 0 : k.interval),
-                    I = (0, r.d4)(s.yW),
+                    j = (0, r.d4)(s.yW),
                     {
-                        getPlanByTierAndInterval: j
+                        getPlanByTierAndInterval: I
                     } = (0, c.d)(),
                     [M, O] = (0, i.useState)(null),
                     [N, F] = (0, i.useState)(null),
@@ -8516,9 +8566,9 @@
                     V = (0, i.useMemo)(() => {
                         var e;
                         if (!z || !M || !N) return null;
-                        let l = j(M, N);
+                        let l = I(M, N);
                         return null == l || null == (e = l.price) ? void 0 : e.priceAndPackageToken
-                    }, [z, M, N, j]),
+                    }, [z, M, N, I]),
                     Z = (null == k ? void 0 : k.endsAt) && (0, a.A)(new Date(k.endsAt)),
                     q = !!(null == k ? void 0 : k.cancelAtPeriodEnd) && !Z,
                     G = (0, i.useCallback)(() => {
@@ -8547,16 +8597,16 @@
                     Y = (0, i.useMemo)(() => {
                         var e, l, t, a;
                         if (!M) return;
-                        let i = null == (l = j(M, v.CS.MONTHLY)) || null == (e = l.price) ? void 0 : e.totalBeforeDiscountInCents,
-                            r = null == (a = j(M, v.CS.YEARLY)) || null == (t = a.price) ? void 0 : t.totalBeforeDiscountInCents;
+                        let i = null == (l = I(M, v.CS.MONTHLY)) || null == (e = l.price) ? void 0 : e.totalBeforeDiscountInCents,
+                            r = null == (a = I(M, v.CS.YEARLY)) || null == (t = a.price) ? void 0 : t.totalBeforeDiscountInCents;
                         if (i && r) return Math.round(100 - r / (12 * i) * 100)
-                    }, [M, j]),
+                    }, [M, I]),
                     J = (0, i.useMemo)(() => {
                         var e, l;
                         if (!M) return;
-                        let t = null == (l = j(M, v.CS.MONTHLY)) || null == (e = l.price) ? void 0 : e.totalAmountInCents;
-                        if (t) return M === v.js.ENTERPRISE ? 12 * t * I : 12 * t
-                    }, [M, j, I]),
+                        let t = null == (l = I(M, v.CS.MONTHLY)) || null == (e = l.price) ? void 0 : e.totalAmountInCents;
+                        if (t) return M === v.js.ENTERPRISE ? 12 * t * j : 12 * t
+                    }, [M, I, j]),
                     X = (0, i.useCallback)(e => q && l === e && R === N, [q, l, R, N]),
                     Q = (0, i.useCallback)(function(t, a) {
                         let i = arguments.length > 2 && void 0 !== arguments[2] && arguments[2];
@@ -8590,7 +8640,7 @@
                                     action: "click_upgrade_to_".concat(M, "_monthly_to_yearly")
                                 }), a = B ? await C(V) : await A({
                                     priceAndPackageToken: V,
-                                    newQuantity: I
+                                    newQuantity: j
                                 })), a && !B) try {
                                 let e = {
                                     teamId: null != T ? T : "",
@@ -8603,10 +8653,10 @@
                             D(!1), G(), a && ((0, x.Od)().trackUserAction(f.userUpgraded({
                                 previousTier: l,
                                 upgradedTo: M,
-                                seats: I
+                                seats: j
                             })), window.location.assign("/workspace/payment"))
                         }
-                    }, [N, G, R, l, C, I, B, q, V, P, M, t, T, A, e.planTier]),
+                    }, [N, G, R, l, C, j, B, q, V, P, M, t, T, A, e.planTier]),
                     closeUpgradeSubscriptionModal: G,
                     selectedTierName: K,
                     selectedTier: M,
@@ -8933,12 +8983,12 @@
                         isLimitReached: l
                     } = (0, r.i)(), t = (0, s.bV)(), f = (0, i.d4)(h.R2), L = (0, i.d4)(h.eQ), E = (0, i.d4)(g.G9), {
                         settings: S
-                    } = (0, m.k)(), C = (0, i.d4)(y.Kj), A = "displayed" === (0, i.d4)(w.vb), P = (0, i.wA)(), T = (0, i.d4)(x.nn), k = v(), R = b(), I = !S.disable_gb_limits && (k || l(T)), j = !S.disable_transfer_numbers_limits && (R || e()), M = (0, _.q)(), O = (0, i.d4)(w.cN), N = (0, a.useMemo)(() => M || O, [M, O]), F = "tooltip_and_popup_every_time" === S.one_day_expiry_free_transfer_kind && (A || C.expiry === o.i.ONE_DAY_IN_SECONDS || !(0, u.dB)()), U = !N && (I || j) && !F;
+                    } = (0, m.k)(), C = (0, i.d4)(y.Kj), A = "displayed" === (0, i.d4)(w.vb), P = (0, i.wA)(), T = (0, i.d4)(x.nn), k = v(), R = b(), j = !S.disable_gb_limits && (k || l(T)), I = !S.disable_transfer_numbers_limits && (R || e()), M = (0, _.q)(), O = (0, i.d4)(w.cN), N = (0, a.useMemo)(() => M || O, [M, O]), F = "tooltip_and_popup_every_time" === S.one_day_expiry_free_transfer_kind && (A || C.expiry === o.i.ONE_DAY_IN_SECONDS || !(0, u.dB)()), U = !N && (j || I) && !F;
                     if (!t || f && [d.js.ULTIMATE, d.js.ENTERPRISE, d.js.ENTERPRISE_CUSTOM_CONTRACT].includes(f) || L) return () => !1;
                     let D = (0, p.c)().name;
                     return D && D !== E ? () => !1 : U ? () => (P((0, c.UK)(c.pU.FREE_LIMIT_FULLSCREEN)), P((0, c.EQ)({
-                        accountStorage: I,
-                        transferNumber: j,
+                        accountStorage: j,
+                        transferNumber: I,
                         singleTransferSize: !1
                     })), !0) : () => !1
                 },
@@ -9354,8 +9404,8 @@
                         allowedPaywallStyles: k
                     } = e, {
                         predictionPolicy: R,
-                        displayThreshold: I,
-                        predictionTimeoutSeconds: j
+                        displayThreshold: j,
+                        predictionTimeoutSeconds: I
                     } = (e => {
                         var l, t;
                         let {
@@ -9400,7 +9450,7 @@
                     }), [M, {
                         isLoading: O,
                         isError: N
-                    }] = (0, w.C)(), F = (0, a.useRef)(!1), U = (0, i.wA)(), D = (0, i.d4)(L.Kj), z = (0, i.d4)(v.mB), W = (0, i.d4)(b.zj), B = (0, i.d4)(A.KO), H = (0, i.d4)(L.Jz), [V, Z] = (0, a.useState)(!0), [q, G] = (0, a.useState)(!1), [K, Y] = (0, a.useState)(void 0), [J, X] = (0, a.useState)(void 0), [Q, $] = (0, a.useState)(!1), ee = (0, a.useMemo)(() => t === h.vW.DW_RECOVER_EXPIRED_TRANSFER || H === E.r.RECOVERING, [t, H]), el = (0, a.useMemo)(() => R !== h.y5.DISABLED, [R]), et = (0, a.useMemo)(() => [h.y5.ENABLED_AWAIT, h.y5.ENABLED_USE_PREDICTION].includes(R), [R]), ea = (0, a.useMemo)(() => R === h.y5.ENABLED_USE_PREDICTION, [R]), ei = (0, a.useMemo)(() => !!l && !!t && (!ea || !O && !N && !Q && !!q && void 0 !== J && void 0 !== I && J >= I), [ea, N, O, Q, q, J, I, l, t]), {
+                    }] = (0, w.C)(), F = (0, a.useRef)(!1), U = (0, i.wA)(), D = (0, i.d4)(L.Kj), z = (0, i.d4)(v.mB), W = (0, i.d4)(b.zj), B = (0, i.d4)(A.KO), H = (0, i.d4)(L.Jz), [V, Z] = (0, a.useState)(!0), [q, G] = (0, a.useState)(!1), [K, Y] = (0, a.useState)(void 0), [J, X] = (0, a.useState)(void 0), [Q, $] = (0, a.useState)(!1), ee = (0, a.useMemo)(() => t === h.vW.DW_RECOVER_EXPIRED_TRANSFER || H === E.r.RECOVERING, [t, H]), el = (0, a.useMemo)(() => R !== h.y5.DISABLED, [R]), et = (0, a.useMemo)(() => [h.y5.ENABLED_AWAIT, h.y5.ENABLED_USE_PREDICTION].includes(R), [R]), ea = (0, a.useMemo)(() => R === h.y5.ENABLED_USE_PREDICTION, [R]), ei = (0, a.useMemo)(() => !!l && !!t && (!ea || !O && !N && !Q && !!q && void 0 !== J && void 0 !== j && J >= j), [ea, N, O, Q, q, J, j, l, t]), {
                         isSupported: er,
                         isDismissible: en,
                         isBlocking: es
@@ -9476,12 +9526,12 @@
                         }, eg));
                         let s = setTimeout(() => {
                             et && ($(!0), (0, m.Od)().trackUserAction(C.$.predictionTimeout(ed, t)), clearTimeout(s))
-                        }, 1e3 * j);
+                        }, 1e3 * I);
                         return M(eg).unwrap().then(e => {
                             clearTimeout(s);
                             let l = performance.now(),
                                 a = e.prediction,
-                                i = ea && void 0 !== I && a >= I;
+                                i = ea && void 0 !== j && a >= j;
                             X(a), U((0, _.Mq)({
                                 prediction: a,
                                 isExperienceModifiedByPrediction: i
@@ -10039,8 +10089,8 @@
                         T = e.get(u),
                         k = e.get(b),
                         R = e.get(L),
-                        I = e.get(E),
-                        j = e.get(w),
+                        j = e.get(E),
+                        I = e.get(w),
                         M = "true" === e.get(m),
                         O = "true" === e.get(g),
                         N = "true" === e.get(x),
@@ -10054,7 +10104,7 @@
                         coupon: null != a ? a : void 0,
                         isForBusiness: M,
                         junoSubscriptionRedirect: N,
-                        paymentMethod: null != j ? j : void 0,
+                        paymentMethod: null != I ? I : void 0,
                         paywall: null != S ? S : void 0,
                         paywallId: null != C ? C : void 0,
                         seats: null != U ? U : void 0,
@@ -10069,7 +10119,7 @@
                         priceToken: null != k ? k : void 0,
                         currency: R || void 0,
                         areNorCheckoutTermsAccepted: null != W ? W : void 0,
-                        transferId: null != I ? I : void 0
+                        transferId: null != j ? j : void 0
                     }
                 }, [])
         },
@@ -10561,8 +10611,8 @@
                 return e.ConsentChanged = "consent.onetrust", e.BannerLoaded = "OneTrustBannerLoaded", e.PreferenceCenterOpened = "OneTrustPCLoaded", e.PreferenceCenterClosed = "OneTrustPCClosed", e
             }({});
             let R = !1,
-                I = !1,
-                j = null,
+                j = !1,
+                I = null,
                 M = null;
 
             function O() {
@@ -10570,7 +10620,7 @@
             }
 
             function N(e) {
-                I || (I = !0, j && (clearTimeout(j), j = null), M && (M.disconnect(), M = null), "timeout" === e && function() {
+                j || (j = !0, I && (clearTimeout(I), I = null), M && (M.disconnect(), M = null), "timeout" === e && function() {
                     if ("undefined" == typeof document) return;
                     let e = new Date;
                     e.setDate(e.getDate() + 365);
@@ -10584,8 +10634,8 @@
             }
 
             function U() {
-                j || I || (j = setTimeout(() => {
-                    I || O() || N("timeout")
+                I || j || (I = setTimeout(() => {
+                    j || O() || N("timeout")
                 }, 1e4))
             }
             let D = "onetrust-overlay-visible",
@@ -10640,7 +10690,7 @@
                 },
                 Q = () => {
                     let e = J().includes(r.TARGETING);
-                    return w() ? e && !X() : e && (!!O() || I)
+                    return w() ? e && !X() : e && (!!O() || j)
                 },
                 $ = e => (window.addEventListener(k.ConsentChanged, e), () => {
                     window.removeEventListener(k.ConsentChanged, e)
@@ -11158,7 +11208,7 @@
             t.d(l, {
                 it: () => C,
                 U_: () => A,
-                o9: () => I
+                o9: () => j
             });
             var a = t(23798),
                 i = t(11927),
@@ -11321,7 +11371,7 @@
                         survey: t
                     } = e, {
                         dismissSurvey: i
-                    } = I(), n = (0, d.d4)(y.mB), o = L(t.id), _ = (0, s.useMemo)(() => n.language && t.localized[n.language] ? t.localized[n.language] : t.fallbackLanguage && t.localized[t.fallbackLanguage] ? t.localized[t.fallbackLanguage] : null, [t, n.language]);
+                    } = j(), n = (0, d.d4)(y.mB), o = L(t.id), _ = (0, s.useMemo)(() => n.language && t.localized[n.language] ? t.localized[n.language] : t.fallbackLanguage && t.localized[t.fallbackLanguage] ? t.localized[t.fallbackLanguage] : null, [t, n.language]);
                     (0, g.S)(() => {
                         (0, w.Od)().trackUserAction(p.popupShown(t.id)), localStorage.setItem(o, Date.now().toString())
                     });
@@ -11373,7 +11423,7 @@
                         })
                     })
                 },
-                I = () => {
+                j = () => {
                     let {
                         setSurvey: e
                     } = (0, s.useContext)(C), l = (() => {
@@ -11606,8 +11656,8 @@
                 T = t(11428),
                 k = t(15913),
                 R = t(62760),
-                I = t(84530),
-                j = t(28330),
+                j = t(84530),
+                I = t(28330),
                 M = t(9209),
                 O = t(69887),
                 N = t.n(O),
@@ -11653,7 +11703,7 @@
                 }, [eo, eu, null == er ? void 0 : er.quantity]);
                 let ew = !el || el.members.length <= 1,
                     em = null != (t = null == er ? void 0 : er.currency) ? t : w.Sj.EUR,
-                    ep = null != (i = null == er ? void 0 : er.interval) ? i : j.YF.month,
+                    ep = null != (i = null == er ? void 0 : er.interval) ? i : I.YF.month,
                     eg = e => (0, f.W)({
                         amount: e / 100,
                         currency: em,
@@ -11683,21 +11733,21 @@
                     eT = H ? "- ".concat(eg(H ? H - eL : 0)) : void 0,
                     ek = !et && K ? (0, M.se)(K) : ep,
                     eR = !et && !(null == er ? void 0 : er.isPaidDowngrade) && (null == ey ? void 0 : ey.recurringAt),
-                    eI = null != eR ? eR : null == er ? void 0 : er.endsAt,
-                    ej = eI ? I.A.date(new Date(eI), "without_day") : null,
-                    eM = ek === j.YF.year ? I.A.t("page.account_payment.modal.year_term") : I.A.t("page.account_payment.modal.month_term"),
-                    eO = ek === j.YF.year ? I.A.t("page.account_payment.modal.yearly") : I.A.t("page.account_payment.modal.monthly"),
+                    ej = null != eR ? eR : null == er ? void 0 : er.endsAt,
+                    eI = ej ? j.A.date(new Date(ej), "without_day") : null,
+                    eM = ek === I.YF.year ? j.A.t("page.account_payment.modal.year_term") : j.A.t("page.account_payment.modal.month_term"),
+                    eO = ek === I.YF.year ? j.A.t("page.account_payment.modal.yearly") : j.A.t("page.account_payment.modal.monthly"),
                     eN = null == er ? void 0 : er.quantity,
-                    eF = et ? I.A.t("page.account_payment.modal.title", {
+                    eF = et ? j.A.t("page.account_payment.modal.title", {
                         plan_tier: z,
                         price: eS
-                    }) : eo ? Y("page.account_payment.modal.plan_upgrade_title_enterprise") : I.A.t("page.account_payment.modal.plan_upgrade_title", {
+                    }) : eo ? Y("page.account_payment.modal.plan_upgrade_title_enterprise") : j.A.t("page.account_payment.modal.plan_upgrade_title", {
                         plan_tier: z
                     }),
-                    eU = et ? I.A.t("page.account_payment.modal.plan_info", {
+                    eU = et ? j.A.t("page.account_payment.modal.plan_info", {
                         plan_term: eO,
                         plan_name: z
-                    }) : I.A.t("page.account_payment.modal.plan_upgrade_info", {
+                    }) : j.A.t("page.account_payment.modal.plan_upgrade_info", {
                         billing_interval: eO,
                         plan_tier: z
                     });
@@ -11717,7 +11767,7 @@
                                     i18nKey: "downgrade.already_requested.body",
                                     values: {
                                         current_plan: (0, P.Is)(null == er ? void 0 : er.tier),
-                                        renewal_date: ej
+                                        renewal_date: eI
                                     },
                                     components: {
                                         b: (0, a.jsx)("b", {})
@@ -11757,7 +11807,7 @@
                             className: N().planInfo,
                             children: [(0, a.jsx)("dt", {
                                 className: N().planInfoTitle,
-                                children: I.A.t("page.account_payment.modal.todays_total")
+                                children: j.A.t("page.account_payment.modal.todays_total")
                             }), (0, a.jsx)("dd", {
                                 className: N().planInfoPrice,
                                 children: eS
@@ -11770,7 +11820,7 @@
                             values: {
                                 price: eE,
                                 interval: eM,
-                                renewal: ej
+                                renewal: eI
                             },
                             components: {
                                 strong: (0, a.jsx)("strong", {})
@@ -11857,17 +11907,17 @@
                     onClose: D,
                     children: [(0, a.jsx)("h2", {
                         className: r()(N().modalTitle, J && N().pendingDowngrade),
-                        children: J ? I.A.t("page.account_payment.cancel_state.reactivate_cta_text") + " " + z : eF
+                        children: J ? j.A.t("page.account_payment.cancel_state.reactivate_cta_text") + " " + z : eF
                     }), eo && !eb && (0, a.jsx)("p", {
                         className: N().subtitle,
-                        children: I.A.t("page.account_payment.modal.plan_upgrade_subtitle_enterprise")
+                        children: j.A.t("page.account_payment.modal.plan_upgrade_subtitle_enterprise")
                     }), (0, a.jsxs)("div", {
                         className: N().modalDetails,
                         children: [eo && !eb && (0, a.jsxs)("dl", {
                             className: N().planInfo,
                             children: [(0, a.jsx)("dt", {
                                 className: N().planInfoTitle,
-                                children: I.A.t("checkout.payment.form.seat-management.selected-seats")
+                                children: j.A.t("checkout.payment.form.seat-management.selected-seats")
                             }), (0, a.jsx)("dd", {
                                 className: N().planInfoPrice,
                                 children: (0, a.jsx)(T.A, {
@@ -11896,7 +11946,7 @@
                             className: N().planInfo,
                             children: [(0, a.jsx)("dt", {
                                 className: N().discountTitle,
-                                children: I.A.t("page.account_payment.modal.yearly_savings_title", {
+                                children: j.A.t("page.account_payment.modal.yearly_savings_title", {
                                     savings_percentage: B
                                 })
                             }), (0, a.jsx)("dd", {
@@ -11907,20 +11957,20 @@
                             className: N().planInfo,
                             children: [(0, a.jsxs)("dt", {
                                 className: N().creditTitle,
-                                children: [I.A.t("page.account_payment.modal.plan_upgrade_credit"), (0, a.jsx)("div", {
+                                children: [j.A.t("page.account_payment.modal.plan_upgrade_credit"), (0, a.jsx)("div", {
                                     ref: $,
                                     className: N().tooltipContainer,
                                     children: (0, a.jsx)(_.m, {
                                         content: (0, a.jsx)("span", {
                                             className: N().tooltipText,
-                                            children: I.A.t("page.account_payment.modal.credit_information")
+                                            children: j.A.t("page.account_payment.modal.credit_information")
                                         }),
                                         parentElement: null != (U = $.current) ? U : void 0,
                                         mode: "dark",
                                         className: N().tooltip,
                                         isCondensed: !0,
                                         children: (0, a.jsx)(c.cFx, {
-                                            "aria-label": I.A.t("page.account_payment.modal.credit_icon_label")
+                                            "aria-label": j.A.t("page.account_payment.modal.credit_icon_label")
                                         })
                                     })
                                 })]
@@ -11930,14 +11980,14 @@
                             })]
                         }), !J && et && (0, a.jsx)("p", {
                             className: N().disclaimer,
-                            children: I.A.t("page.account_payment.modal.disclaimer")
+                            children: j.A.t("page.account_payment.modal.disclaimer")
                         }), (0, a.jsx)("div", {
                             className: N().seperator
                         }), (0, a.jsxs)("dl", {
                             className: N().planInfo,
                             children: [(0, a.jsx)("dt", {
                                 className: N().planInfoTitle,
-                                children: et ? I.A.t("page.account_payment.modal.final_price") : I.A.t("page.account_payment.modal.todays_total")
+                                children: et ? j.A.t("page.account_payment.modal.final_price") : j.A.t("page.account_payment.modal.todays_total")
                             }), (0, a.jsx)("dd", {
                                 className: N().planInfoPrice,
                                 children: eP
@@ -11948,7 +11998,7 @@
                         children: (0, a.jsx)(s.x6, {
                             i18nKey: "page.account_payment.modal.plan_summary",
                             values: {
-                                renewal_date: ej
+                                renewal_date: eI
                             },
                             components: {
                                 b: (0, a.jsx)("b", {})
@@ -11961,7 +12011,7 @@
                             className: N().payButton,
                             onClick: W,
                             disabled: Z || ex,
-                            children: J ? Y("downgrade.reactivate.confirm_cta") : eo ? I.A.t("page.account_payment.modal.confirm_cta_enterprise") : I.A.t("page.account_payment.modal.confirm_cta")
+                            children: J ? Y("downgrade.reactivate.confirm_cta") : eo ? j.A.t("page.account_payment.modal.confirm_cta_enterprise") : j.A.t("page.account_payment.modal.confirm_cta")
                         }), eo && (0, a.jsx)(o.$, {
                             as: "a",
                             size: "large",
@@ -11971,7 +12021,7 @@
                             href: es,
                             target: "_blank",
                             disabled: Z || ex,
-                            children: I.A.t("enterprise_banners.self_service.cta")
+                            children: j.A.t("enterprise_banners.self_service.cta")
                         }), ed && (0, a.jsx)(o.$, {
                             size: "medium",
                             variation: "default",
@@ -12324,8 +12374,8 @@
                 T = t(15168),
                 k = t(36165),
                 R = t(62760),
-                I = t(55296),
-                j = t(82261);
+                j = t(55296),
+                I = t(82261);
             let M = () => {
                     let [e, l] = (0, y.useState)(C.l.NONE), {
                         settings: {
@@ -12336,7 +12386,7 @@
                             l = !!(0, n.d4)((0, T.fj)(e || "")),
                             t = !!(0, n.d4)(T.K0);
                         return (0, P.x)() && l || t
-                    }(), i = (0, n.d4)(A.h), r = (0, k.GV)(j.MK), s = (0, I.g)();
+                    }(), i = (0, n.d4)(A.h), r = (0, k.GV)(I.MK), s = (0, j.g)();
                     return (0, y.useEffect)(() => {
                         if (!r) {
                             t || l(C.l.NONE);
@@ -12653,8 +12703,8 @@
                     isLeftCloseButton: n,
                     trigger: T,
                     onPaywallDismiss: R,
-                    isFreeTrialEnabled: I = !1,
-                    billingCycle: j,
+                    isFreeTrialEnabled: j = !1,
+                    billingCycle: I,
                     couponCode: M,
                     closeButtonDelaySeconds: O = 0,
                     updateLastShownTime: N,
@@ -12680,11 +12730,11 @@
                     return {
                         canSeeFreeTrialForThisTrigger: e === b.vW.TW_INCREASE_GB_LIMIT && l.tw_increase_gb_limit_free_trial_enabled && !t
                     }
-                })(T), V = D || z || W || B || I || H, Z = (0, A.NA)(), q = T === b.vW.DOWNLOAD_PAGE_OPENED, G = T === b.vW.ADD_FOLDER_CLICKED, {
+                })(T), V = D || z || W || B || j || H, Z = (0, A.NA)(), q = T === b.vW.DOWNLOAD_PAGE_OPENED, G = T === b.vW.ADD_FOLDER_CLICKED, {
                     user: K
                 } = (0, _.d4)(e => ({
                     user: e.user
-                })), [Y, J] = (0, d.useState)(!1), X = (0, _.wA)(), Q = (0, _.d4)(g.KO), $ = Z ? f.CS.WEEKLY : null != j ? j : f.CS.MONTHLY, ee = (0, d.useCallback)(e => {
+                })), [Y, J] = (0, d.useState)(!1), X = (0, _.wA)(), Q = (0, _.d4)(g.KO), $ = Z ? f.CS.WEEKLY : null != I ? I : f.CS.MONTHLY, ee = (0, d.useCallback)(e => {
                     (0, h.Od)().trackUserAction(i.wj.paywallDismissed({
                         dismissMethod: e,
                         trigger: T,
@@ -12906,8 +12956,8 @@
                     })]
                 })
             }
-            var I = t(85633),
-                j = t(32976),
+            var j = t(85633),
+                I = t(32976),
                 M = t(83489),
                 O = t(16342),
                 N = t(87983),
@@ -13003,7 +13053,7 @@
                     {
                         quota: em,
                         currentUsage: ep
-                    } = (0, j.i)(),
+                    } = (0, I.i)(),
                     {
                         canSeeFreeTrials: eg
                     } = (0, C.av)(),
@@ -13043,11 +13093,11 @@
                         }
                     }, [em, eu, eC, eA, ep, ew, ey.size, T.are_higher_limits_for_free_users_enabled, ex]),
                     eR = (0, d.useMemo)(() => ek.countUsage >= ek.countQuota, [ek.countUsage, ek.countQuota]),
-                    eI = (0, d.useMemo)(() => {
+                    ej = (0, d.useMemo)(() => {
                         let e = eR ? b.vW.TRANSFER_BUTTON_CLICKED_TRANSFER_NUMBER_LIMIT_HIT : b.vW.TRANSFER_BUTTON_CLICKED_GB_LIMIT_HIT;
                         return P((0, b.jt)(e)), e
                     }, [eR, P]),
-                    ej = (0, d.useMemo)(() => eR ? b.pU.POP_UP_LIMIT_NUMBER : b.pU.POP_UP_LIMIT_GB, [eR]),
+                    eI = (0, d.useMemo)(() => eR ? b.pU.POP_UP_LIMIT_NUMBER : b.pU.POP_UP_LIMIT_GB, [eR]),
                     eM = (0, d.useCallback)(e => {
                         let {
                             method: l
@@ -13055,10 +13105,10 @@
                         g(), (0, h.Od)().trackUserAction(W.Sm.paywallDismissed({
                             dismissMethod: l,
                             usageData: ek,
-                            trigger: eI,
-                            type: ej
+                            trigger: ej,
+                            type: eI
                         })), P((0, O.OT)()), k.enabled && (k.shouldShowUnlockPopup ? P((0, q.wb)(G.B.UnlockTransfer)) : (P($.Ay.changeExpiry(z.i.ONE_DAY_IN_SECONDS)), P((0, q.jW)())))
-                    }, [g, ek, eI, ej, k.enabled, k.shouldShowUnlockPopup, P]),
+                    }, [g, ek, ej, eI, k.enabled, k.shouldShowUnlockPopup, P]),
                     eO = (0, X.x)(),
                     eN = f.js.ULTIMATE,
                     eF = eT ? f.CS.WEEKLY : f.CS.MONTHLY,
@@ -13076,19 +13126,19 @@
                 (0, d.useEffect)(() => {
                     if (ef || ek.sizeQuota != 1 / 0) {
                         (0, h.Od)().trackUserAction(W.Sm.paywallDisplayed({
-                            trigger: eI,
-                            type: ej,
+                            trigger: ej,
+                            type: eI,
                             usageData: ek
                         }));
                         let {
                             isSupported: e,
                             isDismissible: l,
                             isBlocking: t
-                        } = (0, w.VO)(eI);
+                        } = (0, w.VO)(ej);
                         e && P((0, O.qJ)({
                             paywallInfo: {
                                 style: b.pU.FREE_LIMIT_FULLSCREEN,
-                                trigger: eI,
+                                trigger: ej,
                                 isDismissible: l,
                                 isBlocking: t,
                                 isFirstPaywall: void 0,
@@ -13107,14 +13157,14 @@
                         (0, h.Od)().trackUserAction(W.Sm.paywallDismissed({
                             dismissMethod: i.tS.AUTO_DISMISS,
                             usageData: ek,
-                            trigger: eI,
-                            type: ej
+                            trigger: ej,
+                            type: eI
                         })), g(), P((0, O.OT)())
                     };
                     return n && document.addEventListener("mouseleave", e), () => {
                         n && document.removeEventListener("mouseleave", e)
                     }
-                }, [g, n, ek, eI, ej, P]);
+                }, [g, n, ek, ej, eI, P]);
                 let ez = p ? ea().buttonCloseLeft : ea().buttonCloseRight,
                     eW = p ? x.Uv : x.$A,
                     eB = (0, d.useMemo)(() => (0, L.kQ)({
@@ -13212,7 +13262,7 @@
                                         children: E("paywalls.free_limit.title")
                                     }), (0, r.jsxs)("div", {
                                         className: ea().highlightContainer,
-                                        children: [(0, r.jsx)(I.O5q, {
+                                        children: [(0, r.jsx)(j.O5q, {
                                             className: ea().warningIcon,
                                             size: "medium"
                                         }), (0, r.jsxs)("div", {
@@ -13222,15 +13272,19 @@
                                                 children: E("paywalls.free_limit.highlight_title")
                                             }), (0, r.jsx)("span", {
                                                 className: ea().highlightText,
-                                                dangerouslySetInnerHTML: {
-                                                    __html: eR ? E("paywalls.free_limit.transfers_count", {
+                                                children: eR ? (0, r.jsx)(o.x6, {
+                                                    i18nKey: "paywalls.free_limit.transfers_count",
+                                                    values: {
                                                         usedTransfers: ek.countUsage,
                                                         totalTransfers: ek.countQuota
-                                                    }) : E("paywalls.free_limit.highlight_text_size", {
-                                                        plan: String(l = ex || f.js.FREE).charAt(0).toUpperCase() + String(l || f.js.FREE).slice(1).toLowerCase(),
-                                                        size: Q.A.numberOfGigabytes(ek.sizeQuota, 0) + " GB"
-                                                    })
-                                                }
+                                                    },
+                                                    components: {
+                                                        b: (0, r.jsx)("b", {})
+                                                    }
+                                                }) : E("paywalls.free_limit.highlight_text_size", {
+                                                    plan: String(l = ex || f.js.FREE).charAt(0).toUpperCase() + String(l || f.js.FREE).slice(1).toLowerCase(),
+                                                    size: Q.A.numberOfGigabytes(ek.sizeQuota, 0) + " GB"
+                                                })
                                             })]
                                         })]
                                     }), (0, r.jsx)("div", {
@@ -13242,11 +13296,21 @@
                                             description: E("paywalls.free_limit.perk_1"),
                                             icon: "zap"
                                         }), (0, r.jsx)(v.T, {
-                                            description: E(eS ? "paywalls.free_limit.perk_2_softer" : "paywalls.free_limit.perk_2", {
-                                                days: Q.A.t("datetime.distance_in_words.x_days", {
-                                                    count: eO
-                                                }),
-                                                href: "https://help.wetransfer.com/hc/en-us/articles/23797009758098"
+                                            description: (0, r.jsx)(o.x6, {
+                                                i18nKey: eS ? "paywalls.free_limit.perk_2_softer" : "paywalls.free_limit.perk_2",
+                                                values: {
+                                                    days: Q.A.t("datetime.distance_in_words.x_days", {
+                                                        count: eO
+                                                    })
+                                                },
+                                                components: {
+                                                    strong: (0, r.jsx)("strong", {}),
+                                                    a: (0, r.jsx)("a", {
+                                                        href: "https://help.wetransfer.com/hc/en-us/articles/23797009758098",
+                                                        target: "_blank",
+                                                        rel: "noreferrer"
+                                                    })
+                                                }
                                             }),
                                             icon: "disabled-check"
                                         })]
@@ -13261,8 +13325,8 @@
                                             (0, h.Od)().trackUserAction(W.Sm.paywallPurchaseButtonTapped({
                                                 usageData: ek,
                                                 isFreeTrialAvailable: eP,
-                                                trigger: eI,
-                                                type: ej
+                                                trigger: ej,
+                                                type: eI
                                             })), eH()
                                         },
                                         tabIndex: 0,
@@ -13302,7 +13366,7 @@
                 } = (0, M.J)(), {
                     currentUsage: P,
                     quota: T
-                } = (0, j.i)(), {
+                } = (0, I.i)(), {
                     canSeeFreeTrials: k
                 } = (0, C.av)(), R = Y(), N = (0, _.d4)(ee.Kj), F = (0, _.d4)(Z.R2), U = (0, _.d4)(Z.Me), D = (0, A.NA)(), z = J(), H = (0, _.d4)(O.KO), V = (0, _.d4)(e => {
                     var l;
@@ -13513,7 +13577,7 @@
                                         className: eo().perksContainer,
                                         children: [(0, r.jsxs)("div", {
                                             className: eo().perkItem,
-                                            children: [(0, r.jsx)(I.DmQ, {
+                                            children: [(0, r.jsx)(j.DmQ, {
                                                 size: "small",
                                                 className: eo().perkIcon
                                             }), (0, r.jsx)("span", {
@@ -13522,19 +13586,26 @@
                                             })]
                                         }), (0, r.jsxs)("div", {
                                             className: eo().perkItem,
-                                            children: [(0, r.jsx)(I.a1W, {
+                                            children: [(0, r.jsx)(j.a1W, {
                                                 size: "small",
                                                 className: eo().perkIconDisabled
                                             }), (0, r.jsx)("span", {
                                                 className: eo().perkText,
-                                                dangerouslySetInnerHTML: {
-                                                    __html: g("paywalls.free_limit.higher_limits.perk_2", {
+                                                children: (0, r.jsx)(o.x6, {
+                                                    i18nKey: "paywalls.free_limit.higher_limits.perk_2",
+                                                    values: {
                                                         days: Q.A.t("datetime.distance_in_words.x_days", {
                                                             count: el
-                                                        }),
-                                                        href: "https://help.wetransfer.com/hc/en-us/articles/23797009758098"
-                                                    })
-                                                }
+                                                        })
+                                                    },
+                                                    components: {
+                                                        a: (0, r.jsx)("a", {
+                                                            href: "https://help.wetransfer.com/hc/en-us/articles/23797009758098",
+                                                            target: "_blank",
+                                                            rel: "noreferrer"
+                                                        })
+                                                    }
+                                                })
                                             })]
                                         })]
                                     }), (0, r.jsx)(u.$, {
@@ -13667,7 +13738,13 @@
                     }, [u, P, s, null == c ? void 0 : c.interval]);
                 return y ? null : (0, r.jsx)(ec.o, {
                     title: t("paywalls.multi_step_expiration.title"),
-                    body: t("paywalls.multi_step_expiration.body"),
+                    body: (0, r.jsx)(o.x6, {
+                        i18nKey: "paywalls.multi_step_expiration.body",
+                        components: {
+                            p: (0, r.jsx)("p", {}),
+                            b: (0, r.jsx)("b", {})
+                        }
+                    }),
                     mainCta: t(n ? "paywalls.multi_step_expiration.cta_free_trial" : "v2" === a.multi_step_expiration_cta_copy ? "paywalls.multi_step_expiration.cta_checkout_v2" : "paywalls.multi_step_expiration.cta_checkout_v1"),
                     mainCtaVariation: "upsell",
                     onClickMainCta: T,
@@ -13812,7 +13889,7 @@
                                             objectFit: "cover"
                                         }
                                     })
-                                }), (0, r.jsx)(I.$Td, {
+                                }), (0, r.jsx)(j.$Td, {
                                     "aria-hidden": !0,
                                     className: ef().closeButton,
                                     onClick: () => {
@@ -14973,4 +15050,4 @@
         }
     }
 ]);
-//# sourceMappingURL=8716.dcd475300ee79d44.js.map
+//# sourceMappingURL=8716.8cbc9e3fd80cbb62.js.map

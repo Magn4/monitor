@@ -1,60 +1,5 @@
 (self.webpackChunk_N_E = self.webpackChunk_N_E || []).push([
     [928], {
-        1427: (e, l, t) => {
-            "use strict";
-            t.d(l, {
-                T: () => n
-            });
-            var i = t(23798),
-                a = t(21462),
-                d = t(26932);
-
-            function r() {
-                let {
-                    innerWidth: e,
-                    innerHeight: l
-                } = window;
-                return {
-                    width: e,
-                    height: l
-                }
-            }
-            let n = () => {
-                let [e, l] = a.useState(!0), {
-                    width: t,
-                    height: n
-                } = function() {
-                    let [e, l] = (0, a.useState)(r());
-                    return (0, a.useEffect)(() => {
-                        function e() {
-                            l(r())
-                        }
-                        return window.addEventListener("resize", e), () => window.removeEventListener("resize", e)
-                    }, []), e
-                }();
-                return ((e, l) => {
-                    let t = a.useRef();
-                    a.useEffect(() => {
-                        t.current = e
-                    }, [e]), a.useEffect(() => {
-                        {
-                            let e = setTimeout(function() {
-                                t.current()
-                            }, 2e3);
-                            return () => clearTimeout(e)
-                        }
-                    }, [l])
-                })(() => l(!1), 2e3), (0, i.jsx)(d.A, {
-                    width: t,
-                    height: n,
-                    recycle: e,
-                    colors: ["#FF8E47", "#F15555", "#6040DD", "#FFC847"],
-                    drawShape: function(e) {
-                        e.fillRect(-this.w / 2, -this.h / 2, this.w, this.h)
-                    }
-                })
-            }
-        },
         20502: e => {
             e.exports = {
                 "wt-display-heading-x-small-bold": "SelfServiceSurvey_wt-display-heading-x-small-bold__JYDhz",
@@ -135,18 +80,18 @@
                 surveyCompleted: "SelfServiceSurvey_surveyCompleted__CvwN0"
             }
         },
-        28233: (e, l, t) => {
+        28233: (e, l, i) => {
             "use strict";
-            t.d(l, {
+            i.d(l, {
                 z: () => o
             });
-            var i = t(13897),
-                a = t(23798),
-                d = t(71623),
-                r = t(21462),
-                n = t(22929),
-                s = t(67584);
-            (0, t(85752).$)(".styles_module_selectInsideLabel__de7c2301{padding-right:0}.styles_module_selectInsideButton__de7c2301{margin-bottom:0;margin-top:-1rem;padding-bottom:0;padding-top:1rem}.styles_module_selectInsideOptions__de7c2301{left:calc(-1rem - 2px);top:calc(100% + 16px);width:calc(100% + 1rem + 4px)}");
+            var t = i(13897),
+                a = i(23798),
+                d = i(71623),
+                r = i(21462),
+                s = i(22929),
+                n = i(67584);
+            (0, i(85752).$)(".styles_module_selectInsideLabel__de7c2301{padding-right:0}.styles_module_selectInsideButton__de7c2301{margin-bottom:0;margin-top:-1rem;padding-bottom:0;padding-top:1rem}.styles_module_selectInsideOptions__de7c2301{left:calc(-1rem - 2px);top:calc(100% + 16px);width:calc(100% + 1rem + 4px)}");
             var _ = {
                 "select-inside-label": "styles_module_selectInsideLabel__de7c2301",
                 "select-inside-button": "styles_module_selectInsideButton__de7c2301",
@@ -154,14 +99,14 @@
             };
             let u = (0, r.forwardRef)((e, l) => {
                 var {
-                    children: t,
+                    children: i,
                     className: u,
                     inputClassName: o,
                     labelType: w = "default",
                     trailingElement: m
-                } = e, y = (0, i.Tt)(e, ["children", "className", "inputClassName", "labelType", "trailingElement"]);
+                } = e, y = (0, t.Tt)(e, ["children", "className", "inputClassName", "labelType", "trailingElement"]);
                 let g = (0, r.useMemo)(() => "inside" === w, [w]);
-                return (0, a.jsx)(n.F, Object.assign({}, y, {
+                return (0, a.jsx)(s.F, Object.assign({}, y, {
                     labelAs: g ? "span" : "label",
                     labelType: w,
                     ref: l,
@@ -172,19 +117,19 @@
                     inputClassName: (0, d.A)({
                         [_["select-inside-button"]]: g
                     }, o),
-                    children: g ? (0, a.jsx)(s.r, {
+                    children: g ? (0, a.jsx)(n.r, {
                         optionsClassName: _["select-inside-options"],
                         trailingElement: m,
-                        children: t
-                    }) : (0, a.jsx)(s.l, {
+                        children: i
+                    }) : (0, a.jsx)(n.l, {
                         trailingElement: m,
-                        children: t
+                        children: i
                     })
                 }))
             });
             u.displayName = "SelectField";
             let o = Object.assign(u, {
-                Option: s.l.Option
+                Option: n.l.Option
             })
         },
         42408: e => {
@@ -262,173 +207,173 @@
                 answerFullWidth: "SurveyQuestion_answerFullWidth__HCBMO"
             }
         },
-        79467: (e, l, t) => {
+        79467: (e, l, i) => {
             "use strict";
-            t.r(l), t.d(l, {
-                default: () => B
+            i.r(l), i.d(l, {
+                default: () => U
             });
-            var i = t(23798),
-                a = t(21462),
-                d = t(38169),
-                r = t(60848),
-                n = t(45781),
-                s = t(8681),
-                _ = t(75546),
-                u = t(30403),
-                o = t(97116),
-                w = t(37828),
-                m = t(52236),
-                y = t(87963),
-                g = t(73278),
-                S = t(44765),
-                v = t(1427),
-                h = t(11115),
-                c = t(89187),
-                b = t(17944),
-                p = t(54494),
-                x = t(37796),
-                f = t(28233),
-                Q = t(67584),
-                j = t(31582),
-                k = t(42408),
-                T = t.n(k);
+            var t = i(23798),
+                a = i(21462),
+                d = i(38169),
+                r = i(60848),
+                s = i(45781),
+                n = i(8681),
+                _ = i(75546),
+                u = i(30403),
+                o = i(97116),
+                w = i(37828),
+                m = i(52236),
+                y = i(87963),
+                g = i(73278),
+                S = i(44765),
+                v = i(1427),
+                b = i(11115),
+                h = i(89187),
+                c = i(17944),
+                p = i(54494),
+                x = i(37796),
+                f = i(28233),
+                Q = i(67584),
+                j = i(31582),
+                k = i(42408),
+                N = i.n(k);
 
-            function E(e) {
+            function T(e) {
                 let {
                     step: {
                         question: l,
-                        answers: t
+                        answers: i
                     },
                     errors: a,
                     i18nPrefix: d,
                     onAnswerChange: r
                 } = e, {
-                    t: n
+                    t: s
                 } = (0, _.Bd)();
-                return (0, i.jsxs)("form", {
-                    className: T().container,
-                    children: [(0, i.jsx)("span", {
-                        className: T().question,
-                        children: n("".concat(d).concat(l, ".question"))
-                    }), t.map(e => {
+                return (0, t.jsxs)("form", {
+                    className: N().container,
+                    children: [(0, t.jsx)("span", {
+                        className: N().question,
+                        children: s("".concat(d).concat(l, ".question"))
+                    }), i.map(e => {
                         switch (e.type) {
                             case j.G8.TEXT:
-                                return (0, i.jsx)(x.A, {
-                                    label: n("".concat(d).concat(l, ".").concat(e.key)),
+                                return (0, t.jsx)(x.A, {
+                                    label: s("".concat(d).concat(l, ".").concat(e.key)),
                                     labelType: "inside",
-                                    className: T().answerFullWidth,
+                                    className: N().answerFullWidth,
                                     value: e.value,
                                     type: e.fieldType,
                                     state: a.includes(e.key) ? "invalid" : "default",
-                                    caption: a.includes(e.key) ? n("".concat(d).concat(l, ".").concat(e.key, "_error")) : void 0,
+                                    caption: a.includes(e.key) ? s("".concat(d).concat(l, ".").concat(e.key, "_error")) : void 0,
                                     onChange: l => null == r ? void 0 : r({
                                         ...e,
                                         value: l.target.value
                                     })
                                 }, e.key);
                             case j.G8.OPTIONS:
-                                return (0, i.jsx)(f.z, {
-                                    className: T().answerFullWidth,
-                                    label: n("".concat(d).concat(l, ".").concat(e.key)),
+                                return (0, t.jsx)(f.z, {
+                                    className: N().answerFullWidth,
+                                    label: s("".concat(d).concat(l, ".").concat(e.key)),
                                     labelType: "inside",
                                     value: e.selected,
                                     onChange: l => null == r ? void 0 : r({
                                         ...e,
                                         selected: l
                                     }),
-                                    children: e.optionKeys.map(e => (0, i.jsx)(Q.l.Option, {
+                                    children: e.optionKeys.map(e => (0, t.jsx)(Q.l.Option, {
                                         value: e,
-                                        children: n("".concat(d).concat(l, ".").concat(e))
+                                        children: s("".concat(d).concat(l, ".").concat(e))
                                     }, e))
                                 }, e.key)
                         }
                     })]
                 })
             }
-            var N = t(53123),
-                C = t(7686),
-                I = t(62760),
-                A = t(72255),
-                q = t(86781),
-                M = t(20502),
-                O = t.n(M);
+            var E = i(53123),
+                C = i(7686),
+                I = i(62760),
+                A = i(72255),
+                q = i(86781),
+                M = i(20502),
+                O = i.n(M);
 
-            function F() {
+            function B() {
                 let {
                     t: e
                 } = (0, _.Bd)(), {
                     addToast: l
-                } = (0, u.d)(), t = (0, d.d4)(q.mB), {
+                } = (0, u.d)(), i = (0, d.d4)(q.mB), {
                     subscription: r
                 } = (0, w.f)(), {
-                    showUpgradeSubscriptionModal: n,
-                    confirmPlanSwitchOrReactivate: s,
+                    showUpgradeSubscriptionModal: s,
+                    confirmPlanSwitchOrReactivate: n,
                     closeUpgradeSubscriptionModal: x,
                     selectedTierName: f,
                     isModalVisible: Q,
                     isSwitchInProgress: k,
-                    selectedTier: T,
+                    selectedTier: N,
                     selectedBillingInterval: M
                 } = (0, S.W)(), {
                     settings: {
-                        enterprise_onboarding_survey_seats_threshold: F,
-                        pricing_page_teams_enterprise_split: B
+                        enterprise_onboarding_survey_seats_threshold: B,
+                        pricing_page_teams_enterprise_split: U
                     }
-                } = (0, I.k)(), [U, P] = (0, a.useState)(0), [X, z] = (0, a.useState)(!1), [G, H] = (0, a.useState)(!1), [W, L] = (0, a.useState)(j.ag), [R, J] = (0, a.useState)([]), K = (0, a.useCallback)(() => {
-                    x(), H(!1)
+                } = (0, I.k)(), [P, X] = (0, a.useState)(0), [F, G] = (0, a.useState)(!1), [H, W] = (0, a.useState)(!1), [z, J] = (0, a.useState)(j.ag), [L, R] = (0, a.useState)([]), K = (0, a.useCallback)(() => {
+                    x(), W(!1)
                 }, [x]);
                 (0, a.useEffect)(() => {
-                    t && t.loggedIn && L(e => e.map(e => ({
+                    i && i.loggedIn && J(e => e.map(e => ({
                         ...e,
-                        answers: e.answers.map(e => e.key === j.vS.EMAIL && t.email && !e.value ? {
+                        answers: e.answers.map(e => e.key === j.vS.EMAIL && i.email && !e.value ? {
                             ...e,
-                            value: t.email
-                        } : e.key === j.vS.NAME && t.given_name && !e.value ? {
+                            value: i.email
+                        } : e.key === j.vS.NAME && i.given_name && !e.value ? {
                             ...e,
-                            value: "".concat(t.given_name, " ").concat(t.family_name)
+                            value: "".concat(i.given_name, " ").concat(i.family_name)
                         } : e)
                     })))
-                }, [t]);
+                }, [i]);
                 let D = (0, a.useCallback)(async () => {
-                        let i = W[U].answers.filter(e => e.type === j.G8.TEXT).reduce((e, l) => {
-                            var t;
-                            return ("email" !== l.fieldType || N.A.validateEmail(l.value)) && ("number" !== l.fieldType || Number(l.value)) && (null == (t = l.value) ? void 0 : t.length) ? e : [...e, l.key]
+                        let t = z[P].answers.filter(e => e.type === j.G8.TEXT).reduce((e, l) => {
+                            var i;
+                            return ("email" !== l.fieldType || E.A.validateEmail(l.value)) && ("number" !== l.fieldType || Number(l.value)) && (null == (i = l.value) ? void 0 : i.length) ? e : [...e, l.key]
                         }, []);
-                        if (i.length) return void J(i);
-                        if ((0, y.Od)().trackUserAction(b.XH.surveyStepNextClicked(W.slice(0, U + 1).reduce((e, l) => {
-                                let t = l.answers.reduce((e, l) => {
-                                    var t, i;
-                                    return l.type === j.G8.TEXT && (null == (t = l.value) ? void 0 : t.length) ? {
+                        if (t.length) return void R(t);
+                        if ((0, y.Od)().trackUserAction(c.XH.surveyStepNextClicked(z.slice(0, P + 1).reduce((e, l) => {
+                                let i = l.answers.reduce((e, l) => {
+                                    var i, t;
+                                    return l.type === j.G8.TEXT && (null == (i = l.value) ? void 0 : i.length) ? {
                                         ...e,
                                         [l.key]: l.value
                                     } : l.type === j.G8.OPTIONS ? {
                                         ...e,
-                                        [l.key]: null != (i = l.selected) ? i : l.optionKeys[0]
+                                        [l.key]: null != (t = l.selected) ? t : l.optionKeys[0]
                                     } : e
                                 }, {});
                                 return {
                                     ...e,
-                                    [l.question]: t
+                                    [l.question]: i
                                 }
-                            }, {}), U + 1)), U === j.ag.length - 1) {
-                            if (H(!0), B || W.find(e => e.answers.some(e => e.key === j.vS.SEATS && Number(e.value) > F))) try {
+                            }, {}), P + 1)), P === j.ag.length - 1) {
+                            if (W(!0), U || z.find(e => e.answers.some(e => e.key === j.vS.SEATS && Number(e.value) > B))) try {
                                 await (0, m.U)({
-                                    surveyData: W
-                                }), z(!0)
-                            } catch (t) {
-                                l(e("enterprise_onboarding_survey.request_error")), H(!1)
-                            } else t.planTier === c.js.ULTIMATE ? n(c.js.ENTERPRISE, null == r ? void 0 : r.interval) : window.location.href = (0, C.kQ)({
-                                tier: c.js.ENTERPRISE
+                                    surveyData: z
+                                }), G(!0)
+                            } catch (i) {
+                                l(e("enterprise_onboarding_survey.request_error")), W(!1)
+                            } else i.planTier === h.js.ULTIMATE ? s(h.js.ENTERPRISE, null == r ? void 0 : r.interval) : window.location.href = (0, C.kQ)({
+                                tier: h.js.ENTERPRISE
                             });
                             return
                         }
-                        P(e => Math.min(e + 1, j.ag.length - 1))
-                    }, [l, null == r ? void 0 : r.interval, U, B, F, n, W, e, t.planTier]),
+                        X(e => Math.min(e + 1, j.ag.length - 1))
+                    }, [l, null == r ? void 0 : r.interval, P, U, B, s, z, e, i.planTier]),
                     Y = (0, a.useCallback)(() => {
-                        P(e => Math.max(e - 1, 0))
-                    }, [P]),
+                        X(e => Math.max(e - 1, 0))
+                    }, [X]),
                     V = (0, a.useCallback)(e => {
-                        J([]), L(l => l.map((l, t) => t === U ? {
+                        R([]), J(l => l.map((l, i) => i === P ? {
                             ...l,
                             answers: l.answers.map(l => l.key !== e.key ? l : l.type === j.G8.TEXT && e.type === j.G8.TEXT ? {
                                 ...l,
@@ -438,55 +383,55 @@
                                 selected: e.selected
                             } : l)
                         } : l))
-                    }, [U]);
-                return (0, i.jsxs)("div", {
+                    }, [P]);
+                return (0, t.jsxs)("div", {
                     className: O().container,
-                    children: [(0, i.jsx)(h.g, {}), (0, i.jsx)("h1", {
+                    children: [(0, t.jsx)(b.g, {}), (0, t.jsx)("h1", {
                         className: O().title,
-                        children: X ? e("enterprise_onboarding_survey.request_received.title") : B ? e("enterprise_onboarding_survey.title_enterprise") : e("enterprise_onboarding_survey.title")
-                    }), !X && (0, i.jsx)(p.S, {
-                        currentStep: U,
-                        steps: W.length
-                    }), X ? (0, i.jsxs)("div", {
+                        children: F ? e("enterprise_onboarding_survey.request_received.title") : U ? e("enterprise_onboarding_survey.title_enterprise") : e("enterprise_onboarding_survey.title")
+                    }), !F && (0, t.jsx)(p.S, {
+                        currentStep: P,
+                        steps: z.length
+                    }), F ? (0, t.jsxs)("div", {
                         className: O().surveyCompleted,
-                        children: [(0, i.jsx)("span", {
+                        children: [(0, t.jsx)("span", {
                             className: O().surveyCompletedBody,
                             children: e("enterprise_onboarding_survey.request_received.body")
-                        }), (0, i.jsx)(o.$, {
+                        }), (0, t.jsx)(o.$, {
                             fullwidth: !0,
                             size: "large",
                             onClick: () => A.A.navigateTo("/", !0),
                             children: e("enterprise_onboarding_survey.request_received.cta")
-                        }), (0, i.jsx)(v.T, {})]
-                    }) : (0, i.jsxs)("div", {
+                        }), (0, t.jsx)(v.T, {})]
+                    }) : (0, t.jsxs)("div", {
                         className: O().survey,
-                        children: [(0, i.jsx)(E, {
-                            step: W[U],
-                            errors: R,
+                        children: [(0, t.jsx)(T, {
+                            step: z[P],
+                            errors: L,
                             i18nPrefix: "enterprise_onboarding_survey.questions.",
                             onAnswerChange: V
-                        }), (0, i.jsxs)("div", {
+                        }), (0, t.jsxs)("div", {
                             className: O().buttons,
-                            children: [U > 0 && (0, i.jsx)(o.$, {
+                            children: [P > 0 && (0, t.jsx)(o.$, {
                                 appearance: "secondary",
                                 onClick: Y,
                                 fullwidth: !0,
                                 size: "large",
-                                disabled: G,
+                                disabled: H,
                                 children: e("enterprise_onboarding_survey.back")
-                            }), (0, i.jsx)(o.$, {
+                            }), (0, t.jsx)(o.$, {
                                 onClick: D,
                                 fullwidth: !0,
                                 size: "large",
-                                disabled: G,
+                                disabled: H,
                                 children: e("enterprise_onboarding_survey.next")
                             })]
-                        }), 0 === U && (0, i.jsx)("span", {
+                        }), 0 === P && (0, t.jsx)("span", {
                             className: O().privacy,
-                            children: (0, i.jsx)(_.x6, {
+                            children: (0, t.jsx)(_.x6, {
                                 i18nKey: "enterprise_onboarding_survey.privacy",
                                 components: {
-                                    1: (0, i.jsx)("a", {
+                                    1: (0, t.jsx)("a", {
                                         href: "https://wetransfer.com/explore/legal/privacy",
                                         target: "_blank",
                                         rel: "noreferrer"
@@ -494,18 +439,18 @@
                                 }
                             })
                         })]
-                    }), Q && (0, i.jsx)(g.r, {
+                    }), Q && (0, t.jsx)(g.r, {
                         closeModal: K,
                         planName: f,
-                        switchPlansOrReactivate: s,
+                        switchPlansOrReactivate: n,
                         isLoading: k,
-                        planTier: T,
+                        planTier: N,
                         selectedBillingInterval: M
                     })]
                 })
             }
 
-            function B() {
+            function U() {
                 let {
                     settings: {
                         enterprise_onboarding_survey_enabled: e
@@ -516,13 +461,13 @@
                         let e = new URLSearchParams;
                         e.set("redirect", "enterprise"), e.set(r.GH, "enterprise_onboarding"), e.set(r.q0, window.location.href), e.set(r.MB, window.location.pathname), A.A.navigateTo("/log-in?".concat(e.toString()))
                     }
-                }, [e, l.loggedIn]), (0, i.jsx)(n.A, {
+                }, [e, l.loggedIn]), (0, t.jsx)(s.A, {
                     showModal: !0,
                     contentHeight: "100vh",
-                    children: e ? (0, i.jsx)(F, {}) : (0, i.jsx)(s.L, {})
+                    children: e ? (0, t.jsx)(B, {}) : (0, t.jsx)(n.L, {})
                 })
             }
         }
     }
 ]);
-//# sourceMappingURL=enterprise-onboarding.5a77c038e1dde82e.js.map
+//# sourceMappingURL=enterprise-onboarding.e69dc2cb7da0b0d6.js.map

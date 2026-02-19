@@ -1220,9 +1220,7 @@
                             name: "tier selector"
                         }), a && (0, l.jsx)("p", {
                             className: u().price,
-                            dangerouslySetInnerHTML: {
-                                __html: a
-                            }
+                            children: a
                         })]
                     })]
                 })
@@ -1409,8 +1407,8 @@
                 })
             };
             var p = a(47869),
-                b = a(59668),
-                h = a(85388),
+                h = a(59668),
+                b = a(85388),
                 D = a(11222),
                 x = a(91053),
                 j = a(72255),
@@ -1421,8 +1419,8 @@
                 S = a.n(z),
                 A = a(96996),
                 L = a(51087),
-                O = a(80848),
-                k = a(87983),
+                k = a(80848),
+                O = a(87983),
                 U = a(97875),
                 P = a(89187),
                 E = a(58061);
@@ -1434,12 +1432,12 @@
                     t: a
                 } = (0, n.Bd)(), {
                     getPlanByTierAndInterval: i
-                } = (0, k.d)(), {
+                } = (0, O.d)(), {
                     planTier: d,
                     billingPeriod: _
-                } = (0, r.d4)(h.q5), {
+                } = (0, r.d4)(b.q5), {
                     startFreeTrial: w
-                } = (0, r.d4)(h.q5), m = (0, U.G)(), s = (0, A.m)(), g = (0, T.Ht)(), u = g === I.w.PRICE_CARD || g === I.w.PRICE_CARD_SWAPPED || g === I.w.PRICE_BOX_LEFT || g === I.w.PRICE_BOX_RIGHT, N = (0, O.c)(), M = (0, L.L)(), y = (0, o.useMemo)(() => N || M, [N, M]);
+                } = (0, r.d4)(b.q5), m = (0, U.G)(), s = (0, A.m)(), g = (0, T.Ht)(), u = g === I.w.PRICE_CARD || g === I.w.PRICE_CARD_SWAPPED || g === I.w.PRICE_BOX_LEFT || g === I.w.PRICE_BOX_RIGHT, N = (0, k.c)(), M = (0, L.L)(), y = (0, o.useMemo)(() => N || M, [N, M]);
                 if (t) return (0, l.jsx)("u", {
                     children: a("paid_transfers.transfer_settings_drawer.close")
                 });
@@ -1450,22 +1448,22 @@
                         currency: c.price.currency,
                         locale: m
                     }),
-                    b = w && d != P.js.ENTERPRISE;
+                    h = w && d != P.js.ENTERPRISE;
                 return (0, l.jsxs)(l.Fragment, {
                     children: [(0, P.dg)(d), " ", !y && !u && (0, l.jsxs)("span", {
                         className: S().boldPrice,
                         "data-testid": "plan-price",
                         children: [(0, l.jsx)("span", {
-                            className: b ? S().originalPriceText : "",
+                            className: h ? S().originalPriceText : "",
                             children: p
-                        }), b && (0, l.jsx)("span", {
+                        }), h && (0, l.jsx)("span", {
                             children: a("checkout.payment.form.bottom-sheet.free")
                         })]
                     })]
                 })
             }
 
-            function Y() {
+            function v() {
                 let e = (0, T.Ht)(),
                     [t, a] = (0, o.useState)(!1);
                 return (0, l.jsxs)("div", {
@@ -1528,8 +1526,8 @@
                     })]
                 })
             }
-            var v = a(84495),
-                F = a.n(v);
+            var Y = a(84495),
+                F = a.n(Y);
 
             function B(e) {
                 let {
@@ -1552,7 +1550,7 @@
                         })
                     }) : (0, l.jsx)(D.Q, {
                         mode: "light"
-                    }), t ? (0, l.jsx)(Y, {}) : null]
+                    }), t ? (0, l.jsx)(v, {}) : null]
                 })
             }
             var f = a(27934),
@@ -1560,8 +1558,8 @@
                 W = a(45817),
                 H = a(88848),
                 Z = a(36165),
-                G = a(29401),
-                J = a.n(G);
+                J = a(29401),
+                G = a.n(J);
             let V = (0, o.forwardRef)((e, t) => {
                 var a;
                 let {
@@ -1579,14 +1577,14 @@
                         displayType: "banner"
                     })))
                 }, [u, c, p]);
-                let b = (0, o.useCallback)(() => {
+                let h = (0, o.useCallback)(() => {
                         (0, g.Od)().trackUserAction(W.wj.paywallPurchaseButtonTapped({
                             trigger: c,
                             type: H.pU.NUDGE_STARTER_TO_ULTIMATE_BANNER,
                             webpage: p
                         })), d(s.jf.actions.setPlanTier(P.js.ULTIMATE)), d(s.jf.actions.setBillingPeriod(P.CS.YEARLY)), d(s.jf.actions.setStartFreeTrial(!0))
                     }, [d, c, p]),
-                    h = (0, o.useCallback)(() => {
+                    b = (0, o.useCallback)(() => {
                         (0, g.Od)().trackUserAction(W.wj.paywallDismissed({
                             dismissMethod: W.tS.TOP_RIGHT_X,
                             trigger: c,
@@ -1595,23 +1593,23 @@
                         })), M(!0)
                     }, [c, p]);
                 return !u || N ? null : (0, l.jsx)("div", {
-                    className: J().bannerWrapper,
+                    className: G().bannerWrapper,
                     ref: t,
                     children: (0, l.jsxs)("div", {
-                        className: J().banner,
+                        className: G().banner,
                         children: [(0, l.jsx)(_.$Td, {
                             "aria-hidden": !0,
-                            className: J().closeButton,
-                            onClick: h
+                            className: G().closeButton,
+                            onClick: b
                         }), (0, l.jsxs)("div", {
-                            className: J().content,
+                            className: G().content,
                             children: [(0, l.jsxs)("div", {
-                                className: J().contentWrapper,
+                                className: G().contentWrapper,
                                 children: [(0, l.jsx)("h3", {
-                                    className: J().title,
+                                    className: G().title,
                                     children: i("nudge_starter_to_ultimate_ft_banner.title")
                                 }), (0, l.jsx)("p", {
-                                    className: J().subtitle,
+                                    className: G().subtitle,
                                     children: (0, l.jsx)(n.x6, {
                                         i18nKey: "nudge_starter_to_ultimate_ft_banner.subtitle",
                                         components: {
@@ -1619,32 +1617,32 @@
                                         }
                                     })
                                 }), (0, l.jsxs)("div", {
-                                    className: J().features,
+                                    className: G().features,
                                     children: [(0, l.jsxs)("div", {
-                                        className: J().featureItem,
+                                        className: G().featureItem,
                                         children: [(0, l.jsx)(_.bT1, {
                                             "aria-hidden": !0,
-                                            className: J().featureIcon
+                                            className: G().featureIcon
                                         }), (0, l.jsx)("div", {
-                                            className: J().featureText,
+                                            className: G().featureText,
                                             children: i("nudge_starter_to_ultimate_ft_banner.features.unlimited_transfers")
                                         })]
                                     }), (0, l.jsxs)("div", {
-                                        className: J().featureItem,
+                                        className: G().featureItem,
                                         children: [(0, l.jsx)(_.bT1, {
                                             "aria-hidden": !0,
-                                            className: J().featureIcon
+                                            className: G().featureIcon
                                         }), (0, l.jsx)("div", {
-                                            className: J().featureText,
+                                            className: G().featureText,
                                             children: i("nudge_starter_to_ultimate_ft_banner.features.remove_after_expiry")
                                         })]
                                     }), (0, l.jsxs)("div", {
-                                        className: J().featureItem,
+                                        className: G().featureItem,
                                         children: [(0, l.jsx)(_.bT1, {
                                             "aria-hidden": !0,
-                                            className: J().featureIcon
+                                            className: G().featureIcon
                                         }), (0, l.jsx)("div", {
-                                            className: J().featureText,
+                                            className: G().featureText,
                                             children: i("nudge_starter_to_ultimate_ft_banner.features.password_tracking")
                                         })]
                                     })]
@@ -1653,8 +1651,8 @@
                                 fullwidth: !0,
                                 variation: "upsell",
                                 appearance: "primary",
-                                onClick: b,
-                                className: J().bannerButton,
+                                onClick: h,
+                                className: G().bannerButton,
                                 children: i("nudge_starter_to_ultimate_ft_banner.cta")
                             })]
                         })]
@@ -1682,16 +1680,16 @@
                 } = e, {
                     planTier: N,
                     showPayment: M
-                } = (0, r.d4)(h.q5), y = N === P.js.ENTERPRISE, D = N === P.js.STARTER, x = (0, r.d4)(h.cq), j = (0, r.d4)(et.JV), {
+                } = (0, r.d4)(b.q5), y = N === P.js.ENTERPRISE, D = N === P.js.STARTER, x = (0, r.d4)(b.cq), j = (0, r.d4)(et.JV), {
                     t: T
-                } = (0, n.Bd)(), I = (0, o.useRef)(null), C = (0, o.useRef)(null), [z, S] = (0, o.useState)(!1), A = (0, m.mX)().trigger, L = (0, $.v)(N, A), O = (0, o.useCallback)(() => {
+                } = (0, n.Bd)(), I = (0, o.useRef)(null), C = (0, o.useRef)(null), [z, S] = (0, o.useState)(!1), A = (0, m.mX)().trigger, L = (0, $.v)(N, A), k = (0, o.useCallback)(() => {
                     I.current && S(I.current.clientHeight + I.current.scrollTop + 10 < I.current.scrollHeight)
                 }, []);
                 return ((0, o.useEffect)(() => {
                     if (i || !C.current) return;
-                    let e = new ResizeObserver(() => O());
+                    let e = new ResizeObserver(() => k());
                     return e.observe(C.current), () => e.disconnect()
-                }, [O, i]), (0, o.useEffect)(() => (window.addEventListener("resize", O), () => window.removeEventListener("resize", O)), [O]), i) ? (0, l.jsx)("div", {
+                }, [k, i]), (0, o.useEffect)(() => (window.addEventListener("resize", k), () => window.removeEventListener("resize", k)), [k]), i) ? (0, l.jsx)("div", {
                     className: el().mainLayout,
                     children: (0, l.jsx)("div", {
                         className: el().loadingSpinner,
@@ -1701,7 +1699,7 @@
                     })
                 }) : (0, l.jsxs)("div", {
                     ref: I,
-                    onScroll: () => O(),
+                    onScroll: () => k(),
                     className: d()(el().mainLayout, {
                         [el().withStepper]: L === $.E.STEPPER
                     }),
@@ -1721,7 +1719,7 @@
                                         [el().withAside]: a,
                                         [el().withStepper]: L === $.E.STEPPER
                                     }),
-                                    children: [L === $.E.STEPPER ? (0, l.jsx)(b.H, {
+                                    children: [L === $.E.STEPPER ? (0, l.jsx)(h.H, {
                                         currentStep: s,
                                         trigger: A
                                     }) : null, (0, l.jsxs)("div", {
@@ -1742,7 +1740,7 @@
                                         [el().withAsideSwapped]: a,
                                         [el().withStepper]: L === $.E.STEPPER
                                     }),
-                                    children: [L === $.E.STEPPER ? (0, l.jsx)(b.H, {
+                                    children: [L === $.E.STEPPER ? (0, l.jsx)(h.H, {
                                         currentStep: s,
                                         trigger: A
                                     }) : null, (0, l.jsxs)("div", {
@@ -2110,9 +2108,7 @@
                         }), (0, l.jsxs)("span", {
                             className: N().price,
                             children: [(0, l.jsx)("span", {
-                                dangerouslySetInnerHTML: {
-                                    __html: i
-                                }
+                                children: i
                             }), r && ", ".concat(_("checkout.payment.plans.billed-yearly"))]
                         })]
                     })]
@@ -2135,9 +2131,9 @@
                     strokeLinejoin: "round"
                 })
             });
-            var b = a(89187),
-                h = a(45953),
-                D = a.n(h);
+            var h = a(89187),
+                b = a(45953),
+                D = a.n(b);
 
             function x(e) {
                 let {
@@ -2169,7 +2165,7 @@
                                 children: (0, l.jsx)(n.x6, {
                                     i18nKey: "checkout.compliant-checkout.free-trial-timeline.body_one",
                                     values: {
-                                        tier: (0, b.dg)(t)
+                                        tier: (0, h.dg)(t)
                                     }
                                 })
                             })]
@@ -2233,14 +2229,14 @@
                 S = a(51555),
                 A = a(85388),
                 L = a(75600),
-                O = a(61149),
-                k = a(75181),
+                k = a(61149),
+                O = a(75181),
                 U = a(87983),
                 P = a(8502),
                 E = a(51853),
                 Q = a(59457),
-                Y = a(11428),
-                v = a(58061),
+                v = a(11428),
+                Y = a(58061),
                 F = a(83658),
                 B = a.n(F);
 
@@ -2254,34 +2250,34 @@
                     t: y,
                     i18n: c
                 } = (0, n.Bd)(), p = (0, r.wA)(), {
-                    planTier: h,
+                    planTier: b,
                     billingPeriod: D,
                     startFreeTrial: F
                 } = (0, r.d4)(A.q5), {
                     getPlanByTierAndInterval: f
-                } = (0, U.d)(), R = F && h != b.js.ENTERPRISE, W = u && R && !N, H = u && !R, Z = N && R, G = f(h, b.CS.WEEKLY), J = f(h, b.CS.MONTHLY), V = f(h, b.CS.YEARLY), X = f(h, D), {
+                } = (0, U.d)(), R = F && b != h.js.ENTERPRISE, W = u && R && !N, H = u && !R, Z = N && R, J = f(b, h.CS.WEEKLY), G = f(b, h.CS.MONTHLY), V = f(b, h.CS.YEARLY), X = f(b, D), {
                     couponCode: K,
                     isCouponCodeInvalid: q,
                     isCouponCodeInvalidForSelectedPlan: $
                 } = (0, j.d)({
                     locale: c.language
-                }), ee = h === b.js.ENTERPRISE, et = K && !q && !$, ea = (0, T.m)(), [el, ei] = (0, o.useState)(!1), ed = function() {
+                }), ee = b === h.js.ENTERPRISE, et = K && !q && !$, ea = (0, T.m)(), [el, ei] = (0, o.useState)(!1), ed = function() {
                     let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : 1;
                     switch (D) {
-                        case b.CS.WEEKLY:
-                            return G && (0, v.F)({
-                                amount: G.price.totalAmountPerSeatInCents * e / 100,
-                                currency: G.price.currency,
-                                locale: c.language
-                            });
-                        case b.CS.MONTHLY:
-                            return J && (0, v.F)({
+                        case h.CS.WEEKLY:
+                            return J && (0, Y.F)({
                                 amount: J.price.totalAmountPerSeatInCents * e / 100,
                                 currency: J.price.currency,
                                 locale: c.language
                             });
-                        case b.CS.YEARLY:
-                            return V && (0, v.F)({
+                        case h.CS.MONTHLY:
+                            return G && (0, Y.F)({
+                                amount: G.price.totalAmountPerSeatInCents * e / 100,
+                                currency: G.price.currency,
+                                locale: c.language
+                            });
+                        case h.CS.YEARLY:
+                            return V && (0, Y.F)({
                                 amount: V.price.totalAmountPerSeatInCents * e / 100,
                                 currency: V.price.currency,
                                 locale: c.language
@@ -2290,20 +2286,20 @@
                 }, eo = function() {
                     let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : 1;
                     switch (D) {
-                        case b.CS.WEEKLY:
-                            return G && (0, v.F)({
-                                amount: G.price.totalAmountPerSeatInCents * e / 100,
-                                currency: G.price.currency,
-                                locale: c.language
-                            });
-                        case b.CS.MONTHLY:
-                            return J && (0, v.F)({
+                        case h.CS.WEEKLY:
+                            return J && (0, Y.F)({
                                 amount: J.price.totalAmountPerSeatInCents * e / 100,
                                 currency: J.price.currency,
                                 locale: c.language
                             });
-                        case b.CS.YEARLY:
-                            return V && (0, v.F)({
+                        case h.CS.MONTHLY:
+                            return G && (0, Y.F)({
+                                amount: G.price.totalAmountPerSeatInCents * e / 100,
+                                currency: G.price.currency,
+                                locale: c.language
+                            });
+                        case h.CS.YEARLY:
+                            return V && (0, Y.F)({
                                 amount: V.price.totalAmountPerSeatInCents * e / 12 / 100,
                                 currency: V.price.currency,
                                 locale: c.language
@@ -2313,37 +2309,45 @@
                     p(L.jf.actions.setBillingPeriod(e))
                 }, er = R ? (0, l.jsx)(S.N1, {
                     offerPrice: 0,
-                    currency: null != (i = null == X || null == (t = X.price) ? void 0 : t.currency) ? i : O.Sj.EUR,
+                    currency: null != (i = null == X || null == (t = X.price) ? void 0 : t.currency) ? i : k.Sj.EUR,
                     useSummaryStyles: !0,
                     useSmallSummaryStyles: W
                 }) : ed(ea.current), e_ = (0, o.useMemo)(() => {
                     switch (D) {
-                        case b.CS.WEEKLY:
+                        case h.CS.WEEKLY:
                             return y("checkout.billing.weekly");
-                        case b.CS.MONTHLY:
+                        case h.CS.MONTHLY:
                             return y("checkout.billing.monthly");
-                        case b.CS.YEARLY:
+                        case h.CS.YEARLY:
                             return y("checkout.billing.yearly")
                     }
                 }, [y, D]), ew = (0, o.useMemo)(() => {
                     switch (D) {
-                        case b.CS.WEEKLY:
+                        case h.CS.WEEKLY:
                             return y("checkout.billing.weekly");
-                        case b.CS.MONTHLY:
-                        case b.CS.YEARLY:
+                        case h.CS.MONTHLY:
+                        case h.CS.YEARLY:
                             return y("checkout.billing.monthly")
                     }
-                }, [y, D]), em = D === b.CS.YEARLY, es = R ? "<b>".concat(ed(ea.current), "</b>/").concat(e_) : "<b>".concat(eo(ea.current), "</b>/").concat(ew), eg = "".concat(eo(ea.current), "/").concat(ew), eu = new Date;
+                }, [y, D]), em = D === h.CS.YEARLY, es = R ? (0, l.jsxs)(l.Fragment, {
+                    children: [(0, l.jsx)("b", {
+                        children: ed(ea.current)
+                    }), "/", e_]
+                }) : (0, l.jsxs)(l.Fragment, {
+                    children: [(0, l.jsx)("b", {
+                        children: eo(ea.current)
+                    }), "/", ew]
+                }), eg = "".concat(eo(ea.current), "/").concat(ew), eu = new Date;
                 return (eu.setDate(eu.getDate() + 7), m) ? (0, l.jsx)("div", {
                     className: B().containerWrapperLarge,
                     children: (0, l.jsxs)("div", {
                         className: B().containerLarge,
                         "data-testid": "payment-cycle-summary",
                         children: [(0, l.jsx)(z.W, {
-                            planTier: h,
-                            formattedSubscriptionPrice: h !== b.js.ENTERPRISE ? es : "",
+                            planTier: b,
+                            formattedSubscriptionPrice: b !== h.js.ENTERPRISE ? es : void 0,
                             largerText: !0
-                        }), J && V && (0, l.jsxs)("div", {
+                        }), G && V && (0, l.jsxs)("div", {
                             children: [ee && (0, l.jsxs)(l.Fragment, {
                                 children: [(0, l.jsx)(g.c, {}), (0, l.jsxs)("div", {
                                     className: B().seatManagement,
@@ -2351,17 +2355,17 @@
                                         children: y("checkout.payment.form.seat-management.heading")
                                     }), (0, l.jsx)("p", {
                                         children: y("checkout.payment.form.seat-management.description", {
-                                            minimumCommitmentSeats: k.K
+                                            minimumCommitmentSeats: O.K
                                         })
                                     })]
                                 }), (0, l.jsxs)("div", {
                                     className: B().seatManagementSelector,
                                     children: [(0, l.jsx)("p", {
                                         children: y("checkout.payment.form.seat-management.selected-seats")
-                                    }), (0, l.jsx)(Y.A, {
+                                    }), (0, l.jsx)(v.A, {
                                         seats: ea.current,
                                         setSeats: e => {
-                                            p(L.jf.actions.setEnterpriseSeats(e)), ei(e === k.f)
+                                            p(L.jf.actions.setEnterpriseSeats(e)), ei(e === O.f)
                                         },
                                         disableMinSeats: ea.current === ea.minimum,
                                         disableMaxSeats: ea.current === ea.maximum,
@@ -2375,12 +2379,19 @@
                                         className: B().seatManagementSwitchToEnterpriseIcon,
                                         color: "#3767EA"
                                     }), (0, l.jsx)("p", {
-                                        dangerouslySetInnerHTML: {
-                                            __html: y("checkout.payment.form.seat-management.switch-to-enterprise", {
-                                                maxSeats: k.f,
-                                                href: "".concat(Q.h7, "?ticket_form_id=23888951936786")
-                                            })
-                                        }
+                                        children: (0, l.jsx)(n.x6, {
+                                            i18nKey: "checkout.payment.form.seat-management.switch-to-enterprise",
+                                            values: {
+                                                maxSeats: O.f
+                                            },
+                                            components: {
+                                                a: (0, l.jsx)("a", {
+                                                    href: "".concat(Q.h7, "?ticket_form_id=23888951936786"),
+                                                    target: "_blank",
+                                                    rel: "noreferrer"
+                                                })
+                                            }
+                                        })
                                     })]
                                 })]
                             }), (0, l.jsx)(l.Fragment, {
@@ -2400,7 +2411,7 @@
                                         }), (0, l.jsx)(I.G, {
                                             handleBillingPeriodChange: en,
                                             billingPeriod: D,
-                                            planTier: h
+                                            planTier: b
                                         })]
                                     }), (0, l.jsx)("div", {
                                         className: d()(B().couponCode, B().withFreeTrialTimeline),
@@ -2411,7 +2422,7 @@
                                 }), (ee || !R) && (0, l.jsx)(g.c, {
                                     size: "small"
                                 }), R && (0, l.jsx)(x, {
-                                    tier: h
+                                    tier: b
                                 }), (0, l.jsxs)("div", {
                                     className: d()(B().todaysTotalContainer, B().withFreeTrialTimeline, B().amountSummary),
                                     children: [(0, l.jsx)("p", {
@@ -2453,10 +2464,10 @@
                         className: B().container,
                         "data-testid": "payment-cycle-summary",
                         children: [(0, l.jsx)(z.W, {
-                            planTier: h,
-                            formattedSubscriptionPrice: u ? "" : h !== b.js.ENTERPRISE ? es : "",
+                            planTier: b,
+                            formattedSubscriptionPrice: u ? void 0 : b !== h.js.ENTERPRISE ? es : void 0,
                             reducedHeadingStyle: u
-                        }), J && V && (0, l.jsxs)("div", {
+                        }), G && V && (0, l.jsxs)("div", {
                             children: [ee && (0, l.jsxs)(l.Fragment, {
                                 children: [(0, l.jsx)(g.c, {}), (0, l.jsxs)("div", {
                                     className: B().seatManagement,
@@ -2464,17 +2475,17 @@
                                         children: y("checkout.payment.form.seat-management.heading")
                                     }), (0, l.jsx)("p", {
                                         children: y("checkout.payment.form.seat-management.description", {
-                                            minimumCommitmentSeats: k.K
+                                            minimumCommitmentSeats: O.K
                                         })
                                     })]
                                 }), (0, l.jsxs)("div", {
                                     className: B().seatManagementSelector,
                                     children: [(0, l.jsx)("p", {
                                         children: y("checkout.payment.form.seat-management.selected-seats")
-                                    }), (0, l.jsx)(Y.A, {
+                                    }), (0, l.jsx)(v.A, {
                                         seats: ea.current,
                                         setSeats: e => {
-                                            p(L.jf.actions.setEnterpriseSeats(e)), ei(e === k.f)
+                                            p(L.jf.actions.setEnterpriseSeats(e)), ei(e === O.f)
                                         },
                                         disableMinSeats: ea.current === ea.minimum,
                                         disableMaxSeats: ea.current === ea.maximum,
@@ -2488,12 +2499,19 @@
                                         className: B().seatManagementSwitchToEnterpriseIcon,
                                         color: "#3767EA"
                                     }), (0, l.jsx)("p", {
-                                        dangerouslySetInnerHTML: {
-                                            __html: y("checkout.payment.form.seat-management.switch-to-enterprise", {
-                                                maxSeats: k.f,
-                                                href: "".concat(Q.h7, "?ticket_form_id=23888951936786")
-                                            })
-                                        }
+                                        children: (0, l.jsx)(n.x6, {
+                                            i18nKey: "checkout.payment.form.seat-management.switch-to-enterprise",
+                                            values: {
+                                                maxSeats: O.f
+                                            },
+                                            components: {
+                                                a: (0, l.jsx)("a", {
+                                                    href: "".concat(Q.h7, "?ticket_form_id=23888951936786"),
+                                                    target: "_blank",
+                                                    rel: "noreferrer"
+                                                })
+                                            }
+                                        })
                                     })]
                                 })]
                             }), (0, l.jsx)(l.Fragment, {
@@ -2511,7 +2529,7 @@
                                 }), (0, l.jsx)(I.G, {
                                     handleBillingPeriodChange: en,
                                     billingPeriod: D,
-                                    planTier: h
+                                    planTier: b
                                 })]
                             }), (0, l.jsx)("div", {
                                 className: d()(B().couponCode),
@@ -2528,14 +2546,14 @@
                                     trialDays: 7,
                                     renewalDate: eu,
                                     formattedPrice: eg,
-                                    currency: null != (w = null == X || null == (a = X.price) ? void 0 : a.currency) ? w : O.Sj.EUR,
+                                    currency: null != (w = null == X || null == (a = X.price) ? void 0 : a.currency) ? w : k.Sj.EUR,
                                     isYearlyBilling: em
                                 })
                             }), R && !Z && (0, l.jsx)(s, {}), W && (0, l.jsxs)("div", {
                                 className: B().planPriceRow,
                                 children: [(0, l.jsx)("p", {
                                     children: y("checkout.payment.plans.plan-label", {
-                                        planName: (0, b.Is)(h)
+                                        planName: (0, h.Is)(b)
                                     })
                                 }), (0, l.jsxs)("p", {
                                     className: B().reducedPriceText,
@@ -2914,13 +2932,6 @@
                 bgCover: "PlansDropdownButton_bgCover__XNq7g"
             }
         },
-        47869: (e, t, a) => {
-            "use strict";
-            a.d(t, {
-                A: () => l
-            }), a(21462);
-            let l = "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTQ0MCIgaGVpZ2h0PSIxMDI0IiB2aWV3Qm94PSIwIDAgMTQ0MCAxMDI0IiBmaWxsPSJub25lIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8ZyBvcGFjaXR5PSIwLjMiIGZpbHRlcj0idXJsKCNmaWx0ZXIwX2ZfNzc5M182NTIzNykiPgo8ZWxsaXBzZSBjeD0iMTIxMy4zOSIgY3k9IjcxOC44ODgiIHJ4PSIzNzEuMTU1IiByeT0iMzMzLjExOSIgdHJhbnNmb3JtPSJyb3RhdGUoOS4xNDc2MiAxMjEzLjM5IDcxOC44ODgpIiBmaWxsPSIjQzI5N0ZGIi8+CjwvZz4KPGcgb3BhY2l0eT0iMC4zIiBmaWx0ZXI9InVybCgjZmlsdGVyMV9mXzc3OTNfNjUyMzcpIj4KPHBhdGggZD0iTTc4Ni4zMzcgNDYzLjEyMkM3NzcuOTQ5IDQ4Mi43NzYgNzU0LjE5OCA0OTYuNjY5IDc0Ny45NTkgNTE3LjEwN0M2OTMuMTQ3IDY5Ni42MzcgMjM2LjYxMSA2NTguMjc3IDExNi4yNTYgNjQxLjk0OUMxMDUuNzMxIDY0MC41MjEgOTUuMzQ5OCA2NDMuMzEyIDg2LjYwMzUgNjQ5LjM0Qy01Ni4zNTY5IDc0Ny44NTggLTcxLjQ1MzEgNjAxLjIwOCAtNTguNDcwNiA1MjAuNTg1Qy00Ni41NzI3IDQ0Ni42OTcgLTQuMjMzMTMgMjg5LjcyNyA3MC4wOTU5IDI2Ni4zMzRDODYuNzkxNyAyNjEuMDggMTA0LjM3MiAyNTIuNzM1IDExMy4xMzEgMjM3LjU4MUMyOTcuODcgLTgyLjAzMSA4MjUuNzM2IDM3MC44MDggNzg2LjMzNyA0NjMuMTIyWiIgZmlsbD0iI0MyOTdGRiIvPgo8L2c+CjxnIG9wYWNpdHk9IjAuOSIgZmlsdGVyPSJ1cmwoI2ZpbHRlcjJfZl83NzkzXzY1MjM3KSI+CjxwYXRoIGQ9Ik04NDMuMzExIDkyMC40ODFDNTIzLjk4IDEwOTYuOTggNjcwLjkyNCA4NjUuMTY0IDYyMi4wMjEgNzI3LjI0N0MzNDQuOTU1IDYwMi4xNjYgNTQyLjQzNCA0NjQuOTI5IDY2Ni4yMTggNDIxLjAzOEM3OTAuMDAxIDM3Ny4xNDcgMTA4Ni40NyAzMDcuMjk5IDExMzUuMzcgNDQ1LjIxN0MxMTg0LjI4IDU4My4xMzQgOTkyLjA4MSAxMTgyLjY2IDg0My4zMTEgOTIwLjQ4MVoiIGZpbGw9IiNCM0M3RjMiLz4KPC9nPgo8ZGVmcz4KPGZpbHRlciBpZD0iZmlsdGVyMF9mXzc3OTNfNjUyMzciIHg9IjM0My4xMDQiIHk9Ii0xMTUuMzAzIiB3aWR0aD0iMTc0MC41OCIgaGVpZ2h0PSIxNjY4LjM4IiBmaWx0ZXJVbml0cz0idXNlclNwYWNlT25Vc2UiIGNvbG9yLWludGVycG9sYXRpb24tZmlsdGVycz0ic1JHQiI+CjxmZUZsb29kIGZsb29kLW9wYWNpdHk9IjAiIHJlc3VsdD0iQmFja2dyb3VuZEltYWdlRml4Ii8+CjxmZUJsZW5kIG1vZGU9Im5vcm1hbCIgaW49IlNvdXJjZUdyYXBoaWMiIGluMj0iQmFja2dyb3VuZEltYWdlRml4IiByZXN1bHQ9InNoYXBlIi8+CjxmZUdhdXNzaWFuQmx1ciBzdGREZXZpYXRpb249IjI1MCIgcmVzdWx0PSJlZmZlY3QxX2ZvcmVncm91bmRCbHVyXzc3OTNfNjUyMzciLz4KPC9maWx0ZXI+CjxmaWx0ZXIgaWQ9ImZpbHRlcjFfZl83NzkzXzY1MjM3IiB4PSItNTYyLjE3MiIgeT0iLTM3NS4wMjMiIHdpZHRoPSIxODUwLjYiIGhlaWdodD0iMTU1Ny4yNCIgZmlsdGVyVW5pdHM9InVzZXJTcGFjZU9uVXNlIiBjb2xvci1pbnRlcnBvbGF0aW9uLWZpbHRlcnM9InNSR0IiPgo8ZmVGbG9vZCBmbG9vZC1vcGFjaXR5PSIwIiByZXN1bHQ9IkJhY2tncm91bmRJbWFnZUZpeCIvPgo8ZmVCbGVuZCBtb2RlPSJub3JtYWwiIGluPSJTb3VyY2VHcmFwaGljIiBpbjI9IkJhY2tncm91bmRJbWFnZUZpeCIgcmVzdWx0PSJzaGFwZSIvPgo8ZmVHYXVzc2lhbkJsdXIgc3RkRGV2aWF0aW9uPSIyNTAiIHJlc3VsdD0iZWZmZWN0MV9mb3JlZ3JvdW5kQmx1cl83NzkzXzY1MjM3Ii8+CjwvZmlsdGVyPgo8ZmlsdGVyIGlkPSJmaWx0ZXIyX2ZfNzc5M182NTIzNyIgeD0iLTE4LjM5ODkiIHk9Ii0xMzYuMDc1IiB3aWR0aD0iMTY2MS41NCIgaGVpZ2h0PSIxNjIyLjEzIiBmaWx0ZXJVbml0cz0idXNlclNwYWNlT25Vc2UiIGNvbG9yLWludGVycG9sYXRpb24tZmlsdGVycz0ic1JHQiI+CjxmZUZsb29kIGZsb29kLW9wYWNpdHk9IjAiIHJlc3VsdD0iQmFja2dyb3VuZEltYWdlRml4Ii8+CjxmZUJsZW5kIG1vZGU9Im5vcm1hbCIgaW49IlNvdXJjZUdyYXBoaWMiIGluMj0iQmFja2dyb3VuZEltYWdlRml4IiByZXN1bHQ9InNoYXBlIi8+CjxmZUdhdXNzaWFuQmx1ciBzdGREZXZpYXRpb249IjI1MCIgcmVzdWx0PSJlZmZlY3QxX2ZvcmVncm91bmRCbHVyXzc3OTNfNjUyMzciLz4KPC9maWx0ZXI+CjwvZGVmcz4KPC9zdmc+Cg=="
-        },
         50168: (e, t, a) => {
             "use strict";
             a.d(t, {
@@ -2964,8 +2975,8 @@
                             currency: u.price.currency,
                             locale: a
                         }),
-                        b = 0 === u.price.totalAmountInCents,
-                        h = (0, n.F)({
+                        h = 0 === u.price.totalAmountInCents,
+                        b = (0, n.F)({
                             amount: c / 100,
                             currency: u.price.currency,
                             locale: a,
@@ -2974,8 +2985,8 @@
                     return {
                         couponCode: _.code,
                         discount: p,
-                        discountAmount: Number(h),
-                        isCouponCode100PercentOff: b,
+                        discountAmount: Number(b),
+                        isCouponCode100PercentOff: h,
                         isCouponCodeInvalid: N || M,
                         isCouponCodeNonExistent: N,
                         isCouponCodeExpired: M,
@@ -3912,9 +3923,9 @@
                 y = a(50496),
                 c = a(95281),
                 p = a(71078),
-                b = a.n(p);
+                h = a.n(p);
 
-            function h(e) {
+            function b(e) {
                 let {
                     variation: t = "default",
                     couponCode: a,
@@ -3926,13 +3937,13 @@
                 } = (0, d.Bd)(), _ = (0, c.qp)(a);
                 return (0, l.jsxs)("div", {
                     children: [(0, l.jsxs)("div", {
-                        className: M()(b().pill, b()[t], {
-                            [b()["no-icon"]]: _
+                        className: M()(h().pill, h()[t], {
+                            [h()["no-icon"]]: _
                         }),
                         children: [a, o && (0, l.jsxs)("span", {
                             children: ["-", o]
                         }), !_ && (0, l.jsx)(y.K, {
-                            className: M()(b().closeButton, b()[t]),
+                            className: M()(h().closeButton, h()[t]),
                             icon: m.$Td,
                             shape: "rounded",
                             size: "small",
@@ -3941,10 +3952,10 @@
                             children: r("checkout.payment.plans.promo-codes.remove-button-accessible-label")
                         })]
                     }), i && (0, l.jsxs)("div", {
-                        className: M()(b().messageContainer, b()[t]),
+                        className: M()(h().messageContainer, h()[t]),
                         children: ["error" === t && (0, l.jsx)(m.BPZ, {
                             "aria-hidden": !0,
-                            className: b().errorIcon
+                            className: h().errorIcon
                         }), (0, l.jsx)("span", {
                             children: i
                         })]
@@ -3970,9 +3981,9 @@
                 } = (0, o.d4)(D.q5), M = (0, c.eL)(), {
                     i18n: y,
                     t: p
-                } = (0, d.Bd)(), [b, z] = (0, i.useState)(!1), [A, L] = (0, i.useState)(!1), {
-                    isLoading: O
-                } = (0, T.d)(), k = (0, C.s)({
+                } = (0, d.Bd)(), [h, z] = (0, i.useState)(!1), [A, L] = (0, i.useState)(!1), {
+                    isLoading: k
+                } = (0, T.d)(), O = (0, C.s)({
                     schema: (0, n.Ik)({
                         couponCode: (0, n.Yj)().required()
                     }),
@@ -3985,49 +3996,49 @@
                     discount: P,
                     isCouponCodeInvalid: E,
                     isCouponCodeNonExistent: Q,
-                    isCouponCodeExpired: Y,
-                    isCouponCodeInvalidForSelectedPlan: v
+                    isCouponCodeExpired: v,
+                    isCouponCodeInvalidForSelectedPlan: Y
                 } = (0, _.d)({
                     locale: y.language
                 });
                 (0, i.useEffect)(() => {
-                    N.code && (k.setValue("couponCode", N.code), g(!0))
-                }, [N.code, k]), (0, i.useEffect)(() => {
-                    b && O && L(!0), A && !O && (L(!1), z(!1))
-                }, [O, A, b]), (0, I.S)(() => {
-                    M && N && v && f()
+                    N.code && (O.setValue("couponCode", N.code), g(!0))
+                }, [N.code, O]), (0, i.useEffect)(() => {
+                    h && k && L(!0), A && !k && (L(!1), z(!1))
+                }, [k, A, h]), (0, I.S)(() => {
+                    M && N && Y && f()
                 });
-                let F = k.handleSubmit(e => {
+                let F = O.handleSubmit(e => {
                         z(!0), m(x.jf.actions.setCoupon({
                             code: e.couponCode,
                             method: j.tx.Manual
                         }))
                     }),
-                    B = k.watch("couponCode"),
+                    B = O.watch("couponCode"),
                     f = () => {
                         m(x.jf.actions.setCoupon({
                             code: null,
                             method: j.tx.Manual
-                        })), g(!1), k.reset({
+                        })), g(!1), O.reset({
                             couponCode: ""
                         })
                     },
-                    R = p(Y ? "checkout.payment.plans.promo-codes.expired-error-message" : Q ? "checkout.payment.plans.promo-codes.does-not-exist-error-message" : v ? "checkout.payment.plans.promo-codes.not-applicable-to-selected-plan-billing-period-error-message" : "checkout.payment.plans.promo-codes.unknown-error-message"),
+                    R = p(v ? "checkout.payment.plans.promo-codes.expired-error-message" : Q ? "checkout.payment.plans.promo-codes.does-not-exist-error-message" : Y ? "checkout.payment.plans.promo-codes.not-applicable-to-selected-plan-billing-period-error-message" : "checkout.payment.plans.promo-codes.unknown-error-message"),
                     W = E && !A,
                     H = U && !A,
                     Z = s || A;
                 return W ? (0, l.jsx)("form", {
                     onSubmit: F,
                     children: (0, l.jsx)(u, {
-                        ...k.register("couponCode"),
+                        ...O.register("couponCode"),
                         value: B,
                         isButtonDisabled: !B,
                         error: R,
                         isLoading: A
                     })
-                }) : H ? v ? (0, l.jsx)("div", {
+                }) : H ? Y ? (0, l.jsx)("div", {
                     className: S().appliedCouponCodeContainer,
-                    children: (0, l.jsx)(h, {
+                    children: (0, l.jsx)(b, {
                         couponCode: U,
                         variation: "error",
                         message: R,
@@ -4035,7 +4046,7 @@
                     })
                 }) : (0, l.jsxs)("div", {
                     className: S().appliedCouponCodeContainer,
-                    children: [(0, l.jsx)(h, {
+                    children: [(0, l.jsx)(b, {
                         couponCode: U,
                         discount: t ? P : void 0,
                         onCloseIconClick: f
@@ -4046,7 +4057,7 @@
                 }) : Z ? (0, l.jsx)("form", {
                     onSubmit: F,
                     children: (0, l.jsx)(u, {
-                        ...k.register("couponCode"),
+                        ...O.register("couponCode"),
                         value: B,
                         isButtonDisabled: !B,
                         isLoading: A
@@ -4304,4 +4315,4 @@
         }
     }
 ]);
-//# sourceMappingURL=2616.dc0fc7e94df992ce.js.map
+//# sourceMappingURL=2616.fb76359391fcee81.js.map

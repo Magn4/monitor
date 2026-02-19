@@ -848,7 +848,7 @@
         98225: (e, a, t) => {
             "use strict";
             t.r(a), t.d(a, {
-                CoverEditor: () => e7
+                CoverEditor: () => e5
             });
             var l = t(23798),
                 i = t(21462),
@@ -856,16 +856,17 @@
                 o = t(38169),
                 r = t(35320),
                 n = t(80341),
-                _ = t(62594),
-                s = t(48777),
-                w = t(24870),
-                m = t(46001),
-                c = t.n(m),
-                g = t(11417),
-                b = t(13245),
-                h = t.n(b);
+                _ = t(65882),
+                s = t(62594),
+                w = t(48777),
+                m = t(24870),
+                c = t(46001),
+                g = t.n(c),
+                b = t(11417),
+                h = t(13245),
+                u = t.n(h);
 
-            function u(e) {
+            function p(e) {
                 let {
                     appearance: a = "hovered",
                     children: t,
@@ -875,26 +876,26 @@
                 } = e;
                 return (0, l.jsxs)("div", {
                     "data-testid": "selection-frame",
-                    className: c()(h().frame, i && h().background, "hovered" == a && h().hoverAppearance, d && h().rounded),
-                    children: [t, o ? (0, l.jsx)(g.E, {
-                        className: h().badge,
+                    className: g()(u().frame, i && u().background, "hovered" == a && u().hoverAppearance, d && u().rounded),
+                    children: [t, o ? (0, l.jsx)(b.E, {
+                        className: u().badge,
                         children: o
                     }) : null]
                 })
             }
-            var p = t(42403),
-                x = t(15168),
-                v = t(51153),
-                y = t(17109),
-                S = t(5712),
-                C = t(62760),
-                T = t(12637),
-                B = t(45477),
-                k = t(13672),
+            var x = t(42403),
+                v = t(15168),
+                y = t(51153),
+                S = t(17109),
+                C = t(5712),
+                T = t(62760),
+                B = t(12637),
+                k = t(45477),
+                f = t(13672),
                 I = t(20243),
-                f = t.n(I);
+                j = t.n(I);
 
-            function j(e) {
+            function A(e) {
                 let {
                     colors: a,
                     selectedColor: t,
@@ -907,7 +908,7 @@
                 }, [o]);
                 return (0, l.jsx)("div", {
                     role: "listbox",
-                    className: f().colorPalette,
+                    className: j().colorPalette,
                     "aria-label": "Color selection list",
                     "data-testid": "background-color-selector",
                     ...r,
@@ -919,26 +920,26 @@
                         style: {
                             backgroundColor: e.color
                         },
-                        className: c()(f().colorButton, {
-                            [f().whiteBorder]: "#FFFFFF" === e.color,
-                            [f().selected]: e.color === t
+                        className: g()(j().colorButton, {
+                            [j().whiteBorder]: "#FFFFFF" === e.color,
+                            [j().selected]: e.color === t
                         }),
                         onClick: () => _(e.color)
                     }, a))
                 })
             }
-            var A = t(83263),
-                E = t(18986),
-                z = t.n(E),
-                F = t(97116),
-                N = t(50496),
-                V = t(85633),
-                L = t(87963),
-                M = t(89395),
-                D = t(80714),
-                W = t(24463),
-                K = t(30403);
-            let P = e => {
+            var E = t(83263),
+                z = t(18986),
+                F = t.n(z),
+                N = t(97116),
+                V = t(50496),
+                L = t(85633),
+                M = t(87963),
+                D = t(89395),
+                W = t(80714),
+                K = t(24463),
+                P = t(30403);
+            let R = e => {
                 let {
                     onAccept: a,
                     cancelText: t,
@@ -949,13 +950,13 @@
                 } = (0, d.Bd)(), {
                     addToast: _,
                     dismissToast: s
-                } = (0, K.d)(), [w, m] = (0, i.useState)(null), [c, g] = (0, i.useState)(!1);
+                } = (0, P.d)(), [w, m] = (0, i.useState)(null), [c, g] = (0, i.useState)(!1);
                 return {
                     show: (0, i.useCallback)(() => {
                         g(!0);
                         let e = _(n(r), {
                             actions: e => (0, l.jsxs)(l.Fragment, {
-                                children: [(0, l.jsx)(F.$, {
+                                children: [(0, l.jsx)(N.$, {
                                     appearance: "primary",
                                     onClick: () => {
                                         null == a || a(), s(e)
@@ -963,7 +964,7 @@
                                     variation: "neutral",
                                     mode: "dark",
                                     children: n(o)
-                                }), (0, l.jsx)(F.$, {
+                                }), (0, l.jsx)(N.$, {
                                     appearance: "secondary",
                                     onClick: () => s(e),
                                     variation: "neutral",
@@ -982,23 +983,23 @@
                     hide: (0, i.useCallback)(() => w && s(w), [w, s])
                 }
             };
-            var R = t(78283),
-                O = t(2269),
-                Z = t(88359),
-                Q = t(68505);
-            let J = {
+            var O = t(78283),
+                Z = t(2269),
+                Q = t(88359),
+                J = t(68505);
+            let H = {
                     acceptText: "showcase.modal.actions.cancel.confirmation.confirm_button_label",
                     cancelText: "showcase.modal.actions.cancel.confirmation.cancel_button_label",
                     promptText: "showcase.modal.actions.cancel.confirmation.prompt"
                 },
-                H = {
+                X = {
                     acceptText: "showcase.modal.actions.delete.confirmation.confirm_button_label",
                     cancelText: "showcase.modal.actions.delete.confirmation.cancel_button_label",
                     promptText: "showcase.modal.actions.delete.confirmation.prompt"
                 };
-            var X = t(38749),
-                q = t.n(X);
-            let G = {
+            var q = t(38749),
+                G = t.n(q);
+            let U = {
                 customBackgroundSet(e) {
                     let {
                         isExistingTransfer: a,
@@ -1020,80 +1021,80 @@
                 }
             };
 
-            function U() {
+            function Y() {
                 var e;
-                let a = (0, o.d4)(O.LJ),
-                    t = (0, o.d4)(x.$e),
-                    r = (0, o.d4)(x.eL),
-                    _ = (0, o.d4)(x.Bt),
-                    s = (0, o.d4)(x.HD),
-                    m = (0, o.d4)(x.A3),
-                    c = (0, o.d4)(x.lv),
-                    g = (0, o.d4)(x.K0),
-                    b = (0, o.d4)(x.pS),
-                    h = (0, o.d4)(x.Di),
-                    u = (0, o.d4)(x.MJ),
-                    p = (0, o.d4)(x.TB),
-                    y = (0, o.d4)(x.jV),
-                    S = (0, o.d4)(x._Q),
-                    T = (0, o.d4)((0, x.fj)(m || "")),
-                    B = (0, o.d4)(x.lc),
-                    k = (0, o.d4)(x.mA),
-                    I = (0, o.d4)(x.R),
-                    f = (0, o.d4)(x.YF),
-                    j = (0, o.d4)(x.u0),
+                let a = (0, o.d4)(Z.LJ),
+                    t = (0, o.d4)(v.$e),
+                    r = (0, o.d4)(v.eL),
+                    _ = (0, o.d4)(v.Bt),
+                    s = (0, o.d4)(v.HD),
+                    w = (0, o.d4)(v.A3),
+                    c = (0, o.d4)(v.lv),
+                    g = (0, o.d4)(v.K0),
+                    b = (0, o.d4)(v.pS),
+                    h = (0, o.d4)(v.Di),
+                    u = (0, o.d4)(v.MJ),
+                    p = (0, o.d4)(v.TB),
+                    x = (0, o.d4)(v.jV),
+                    S = (0, o.d4)(v._Q),
+                    C = (0, o.d4)((0, v.fj)(w || "")),
+                    B = (0, o.d4)(v.lc),
+                    k = (0, o.d4)(v.mA),
+                    f = (0, o.d4)(v.R),
+                    I = (0, o.d4)(v.YF),
+                    j = (0, o.d4)(v.u0),
                     A = (0, o.wA)(),
                     {
                         settings: {
                             is_branded_previews_enabled: E
                         }
-                    } = (0, C.k)(),
+                    } = (0, T.k)(),
                     {
                         deleteTransferCustomization: z
-                    } = (0, D.H)(),
-                    K = b === n.hK.image && r.assetId && r.assetId !== (null == T || null == (e = T.background) ? void 0 : e.assetId),
-                    X = !!(null == B ? void 0 : B.assetId) || k === n.hK.solidColor && I !== n.hK.solidColor || k === n.hK.solidColor && I === n.hK.solidColor && null !== j && f !== j,
-                    U = async () => {
-                        if (m) try {
-                            await z(m)
+                    } = (0, W.H)(),
+                    F = b === n.hK.image && r.assetId && r.assetId !== (null == C || null == (e = C.background) ? void 0 : e.assetId),
+                    P = !!(null == B ? void 0 : B.assetId) || k === n.hK.solidColor && f !== n.hK.solidColor || k === n.hK.solidColor && f === n.hK.solidColor && null !== j && I !== j,
+                    q = async () => {
+                        if (w) try {
+                            await z(w)
                         } catch (e) {
-                            Q.A.track(e)
+                            J.A.track(e)
                         }
-                        A((0, O.l1)()), setTimeout(() => {
-                            if (m) {
+                        A((0, Z.l1)()), setTimeout(() => {
+                            if (w) {
                                 var e;
-                                A((0, O.DZ)()), r.assetId && r.assetId === (null == s || null == (e = s.background) ? void 0 : e.assetId) && (0, M.AO)({
+                                A((0, Z.DZ)()), r.assetId && r.assetId === (null == s || null == (e = s.background) ? void 0 : e.assetId) && (0, D.AO)({
                                     assetId: r.assetId || ""
                                 })
                             }
-                            c === v.$.transferWindow && A((0, O.BW)()), A((0, O.Vx)(r.assetId || "")), A((0, O._L)(w.u6)), A((0, O.pz)(n.hK.image)), A((0, O._R)())
-                        }, w.Uk)
-                    }, Y = P({
-                        ...H,
-                        onAccept: U
+                            c === y.$.transferWindow && A((0, Z.BW)()), A((0, Z.Vx)(r.assetId || "")), A((0, Z._L)(m.u6)), A((0, Z.pz)(n.hK.image)), A((0, Z._R)())
+                        }, m.Uk)
+                    }, Y = R({
+                        ...X,
+                        onAccept: q
                     }), $ = (0, i.useCallback)(async () => {
-                        if (t === O.fW.SPLASH) return void A((0, O.l1)());
-                        if (Y.isShown && Y.hide(), !m) {
-                            let e = S.filter(e => e.assetId && e.assetId !== w.u6.assetId);
+                        if (t === Z.fW.SPLASH) return void A((0, Z.l1)());
+                        if (Y.isShown && Y.hide(), !w) {
+                            let e = S.filter(e => e.assetId && e.assetId !== m.u6.assetId);
                             await Promise.all(e.map(async e => {
-                                e.assetId && (await (0, M.AO)({
+                                e.assetId && (await (0, D.AO)({
                                     assetId: e.assetId
-                                }), A((0, O.Vx)(e.assetId)))
+                                }), A((0, Z.Vx)(e.assetId)))
                             }))
                         }
-                        A((0, O.l1)()), A((0, O.DZ)())
-                    }, [m, S, Y, A, t]), ee = P({
-                        ...J,
+                        A((0, Z.l1)()), A((0, Z.DZ)())
+                    }, [w, S, Y, A, t]), ee = R({
+                        ...H,
                         onAccept: $
                     }), ea = async () => {
-                        if (ee.isShown && ee.hide(), E && (K || X) && m && (c === v.$.transferDetails || c === v.$.previews)) return void A((0, O.zj)(O.fW.APPLY_CHANGES));
-                        if (m && s && (c === v.$.transferDetails || c === v.$.previews)) {
-                            A((0, O.F6)(!0));
+                        if (ee.isShown && ee.hide(), E && (F || P) && w && (c === y.$.transferDetails || c === y.$.previews)) return void A((0, Z.zj)(Z.fW.APPLY_CHANGES));
+                        if (w && s && (c === y.$.transferDetails || c === y.$.previews)) {
+                            A((0, Z.F6)(!0));
                             try {
                                 let e = s;
-                                if (u && b === n.hK.image && y.length > 1) try {
-                                    let a = await (0, Z.E)({
-                                            assets: y,
+                                if (u && b === n.hK.image && x.length > 1) try {
+                                    let a = await (0, Q.E)({
+                                            assets: x,
                                             layout: p
                                         }),
                                         t = new File([a], "composite-background.jpg", {
@@ -1105,13 +1106,13 @@
                                             fileName: d,
                                             fileSize: o,
                                             error: r
-                                        } = await (0, M.tc)({
+                                        } = await (0, D.tc)({
                                             file: t,
                                             fileName: t.name,
                                             fileSize: t.size
                                         });
                                     if (r) throw Error("Failed to upload composite image");
-                                    A((0, O.lo)({
+                                    A((0, Z.lo)({
                                         assetId: l,
                                         previews: i,
                                         fileName: d,
@@ -1125,8 +1126,8 @@
                                         }
                                     }
                                 } catch (t) {
-                                    Q.A.track(t);
-                                    let a = y[0];
+                                    J.A.track(t);
+                                    let a = x[0];
                                     e = {
                                         ...s,
                                         background: {
@@ -1139,40 +1140,40 @@
                                 let {
                                     layout: a,
                                     deletedAssetIds: t
-                                } = (0, W.Hh)(b, e);
-                                await A((0, O.Qv)(m, a)), await Promise.all(t.map(async e => {
+                                } = (0, K.Hh)(b, e);
+                                await A((0, Z.Qv)(w, a)), await Promise.all(t.map(async e => {
                                     try {
-                                        await (0, M.AO)({
+                                        await (0, D.AO)({
                                             assetId: e
-                                        }), A((0, O.Vx)(e))
+                                        }), A((0, Z.Vx)(e))
                                     } catch (e) {
-                                        Q.A.track(e)
+                                        J.A.track(e)
                                     }
-                                })), (0, L.Od)().trackUserAction(G.customBackgroundSet({
+                                })), (0, M.Od)().trackUserAction(U.customBackgroundSet({
                                     isExistingTransfer: !0,
                                     multiImageLayout: u && b === n.hK.image ? p : void 0,
-                                    multiImageCount: u && b === n.hK.image ? y.length : void 0
-                                })), A((0, O.F6)(!1)), A((0, O.l1)()), setTimeout(() => {
-                                    A((0, O._L)(w.u6))
-                                }, w.Uk)
+                                    multiImageCount: u && b === n.hK.image ? x.length : void 0
+                                })), A((0, Z.F6)(!1)), A((0, Z.l1)()), setTimeout(() => {
+                                    A((0, Z._L)(m.u6))
+                                }, m.Uk)
                             } catch (e) {
-                                A((0, O.F6)(!1)), Q.A.track(e)
+                                A((0, Z.F6)(!1)), J.A.track(e)
                             }
                             return
-                        }(0, L.Od)().trackUserAction(G.customBackgroundSet({
+                        }(0, M.Od)().trackUserAction(U.customBackgroundSet({
                             isExistingTransfer: !1,
                             multiImageLayout: u && b === n.hK.image ? p : void 0,
-                            multiImageCount: u && b === n.hK.image ? y.length : void 0
-                        })), A((0, O.Cf)()), A((0, O.l1)())
+                            multiImageCount: u && b === n.hK.image ? x.length : void 0
+                        })), A((0, Z.Cf)()), A((0, Z.l1)())
                     }, {
                         t: et
-                    } = (0, d.Bd)(), el = !!(c === v.$.transferWindow && g || (c === v.$.transferDetails || c === v.$.previews) && T), ei = (0, l.jsxs)(l.Fragment, {
-                        children: [(0, l.jsx)(F.$, {
+                    } = (0, d.Bd)(), el = !!(c === y.$.transferWindow && g || (c === y.$.transferDetails || c === y.$.previews) && C), ei = (0, l.jsxs)(l.Fragment, {
+                        children: [(0, l.jsx)(N.$, {
                             autoFocus: a,
                             disabled: h,
                             onClick: () => {
-                                if (Y.isShown && Y.hide(), t === O.fW.SPLASH || !_) {
-                                    A((0, O.l1)()), A((0, O.DZ)());
+                                if (Y.isShown && Y.hide(), t === Z.fW.SPLASH || !_) {
+                                    A((0, Z.l1)()), A((0, Z.DZ)());
                                     return
                                 }
                                 ee.isShown || ee.show()
@@ -1183,17 +1184,17 @@
                             as: "button",
                             "data-testid": "cancel-button",
                             children: et("showcase.modal.actions.cancel.label")
-                        }), (0, l.jsx)(F.$, {
+                        }), (0, l.jsx)(N.$, {
                             onClick: ea,
                             disabled: h || !_,
                             as: "button",
                             "data-testid": "save-button",
                             children: et("showcase.modal.actions.save.label")
-                        }), el && (0, l.jsx)(N.K, {
+                        }), el && (0, l.jsx)(V.K, {
                             appearance: "primary",
                             "aria-label": et("showcase.modal.actions.delete.label"),
-                            className: E ? q().inlineDeleteButton : q().deleteButton,
-                            icon: V.rkR,
+                            className: E ? G().inlineDeleteButton : G().deleteButton,
+                            icon: L.rkR,
                             mode: E ? "light" : "dark",
                             onClick: () => {
                                 ee.isShown && ee.hide(), Y.show()
@@ -1204,17 +1205,17 @@
                         })]
                     });
                 return E ? (0, l.jsx)("div", {
-                    className: q().inlineContainer,
+                    className: G().inlineContainer,
                     children: ei
-                }) : (0, l.jsx)(R.j, {
+                }) : (0, l.jsx)(O.j, {
                     children: ei
                 })
             }
-            var Y = t(74941),
-                $ = t(9697),
-                ee = t.n($);
+            var $ = t(74941),
+                ee = t(9697),
+                ea = t.n(ee);
 
-            function ea(e) {
+            function et(e) {
                 let {
                     tabs: a,
                     className: t,
@@ -1225,13 +1226,13 @@
                     t: s
                 } = (0, d.Bd)();
                 return (0, l.jsx)("div", {
-                    className: c()(ee().tabBar, t),
+                    className: g()(ea().tabBar, t),
                     role: "tablist",
                     ref: _,
                     ...n,
                     children: a.map(e => {
                         var a;
-                        return (0, l.jsx)(Y.m, {
+                        return (0, l.jsx)($.m, {
                             content: (0, l.jsx)("span", {
                                 children: s(e.labelTranslationKey)
                             }),
@@ -1239,16 +1240,16 @@
                             isCondensed: !0,
                             position: "top",
                             parentElement: null != (a = _.current) ? a : void 0,
-                            className: ee().tooltip,
+                            className: ea().tooltip,
                             "aria-hidden": !0,
-                            children: (0, l.jsx)(N.K, {
+                            children: (0, l.jsx)(V.K, {
                                 size: "x-small",
                                 role: "tab",
                                 shape: "rounded",
                                 "aria-label": s(e.labelTranslationKey),
                                 "aria-selected": o.id === e.id,
                                 appearance: "tertiary",
-                                className: ee().button,
+                                className: ea().button,
                                 onClick: () => r(e),
                                 icon: e.icon
                             })
@@ -1257,7 +1258,7 @@
                 })
             }
 
-            function et() {
+            function el() {
                 return (0, l.jsxs)("svg", {
                     xmlns: "http://www.w3.org/2000/svg",
                     viewBox: "0 0 207 301",
@@ -1327,54 +1328,54 @@
                     })]
                 })
             }
-            var el = t(20301),
-                ei = t(65585),
-                ed = t.n(ei);
+            var ei = t(20301),
+                ed = t(65585),
+                eo = t.n(ed);
 
-            function eo(e) {
+            function er(e) {
                 let {
                     children: a,
                     className: t
                 } = e;
                 return (0, l.jsxs)("div", {
-                    className: c()(ed().skeleton, t),
+                    className: g()(eo().skeleton, t),
                     "aria-hidden": !0,
                     tabIndex: -1,
-                    children: [(0, l.jsx)(el.Y, {}), a, (0, l.jsx)(et, {})]
+                    children: [(0, l.jsx)(ei.Y, {}), a, (0, l.jsx)(el, {})]
                 })
             }
-            var er = t(75721),
-                en = t.n(er);
-            let e_ = () => {
+            var en = t(75721),
+                e_ = t.n(en);
+            let es = () => {
                 let e = (0, o.wA)(),
-                    a = (0, o.d4)(x.TB),
+                    a = (0, o.d4)(v.TB),
                     {
                         t
                     } = (0, d.Bd)();
                 return (0, l.jsxs)("div", {
-                    className: en().container,
+                    className: e_().container,
                     role: "group",
-                    children: [(0, l.jsx)(F.$, {
+                    children: [(0, l.jsx)(N.$, {
                         size: "small",
                         appearance: a === n.n3.Columns ? "primary" : "secondary",
-                        onClick: () => e((0, p.b)(n.n3.Columns)),
+                        onClick: () => e((0, x.b)(n.n3.Columns)),
                         "aria-pressed": a === n.n3.Columns,
                         children: t("showcase.editor.multi_image_layout.columns")
-                    }), (0, l.jsx)(F.$, {
+                    }), (0, l.jsx)(N.$, {
                         size: "small",
                         appearance: a === n.n3.Rows ? "primary" : "secondary",
-                        onClick: () => e((0, p.b)(n.n3.Rows)),
+                        onClick: () => e((0, x.b)(n.n3.Rows)),
                         "aria-pressed": a === n.n3.Rows,
                         children: t("showcase.editor.multi_image_layout.rows")
                     })]
                 })
             };
-            var es = t(26284),
-                ew = t(63381),
-                em = t(41241),
-                ec = t.n(em);
+            var ew = t(26284),
+                em = t(63381),
+                ec = t(41241),
+                eg = t.n(ec);
 
-            function eg(e) {
+            function eb(e) {
                 let {
                     blockType: a,
                     isMobileLayout: t,
@@ -1383,31 +1384,31 @@
                 } = e, {
                     t: r
                 } = (0, d.Bd)();
-                return a === n._B.TitleText ? (0, l.jsx)(ew.a, {
-                    text: r(A.pP),
-                    className: c()({
-                        [ec().placeholderText]: o === n._B.TitleText
+                return a === n._B.TitleText ? (0, l.jsx)(em.a, {
+                    text: r(E.pP),
+                    className: g()({
+                        [eg().placeholderText]: o === n._B.TitleText
                     }),
                     isThumbnail: !0,
                     isMobileLayout: t,
                     textColor: i
-                }) : a === n._B.BodyText ? (0, l.jsx)(es.a, {
-                    text: r(A.EQ),
-                    className: c()({
-                        [ec().placeholderText]: o === n._B.BodyText
+                }) : a === n._B.BodyText ? (0, l.jsx)(ew.a, {
+                    text: r(E.EQ),
+                    className: g()({
+                        [eg().placeholderText]: o === n._B.BodyText
                     }),
                     isThumbnail: !0,
                     isMobileLayout: t,
                     textColor: i
                 }) : null
             }
-            var eb = t(19632),
-                eh = t(85564),
-                eu = t.n(eh),
-                ep = t(78860),
-                ex = t.n(ep);
+            var eh = t(19632),
+                eu = t(85564),
+                ep = t.n(eu),
+                ex = t(78860),
+                ev = t.n(ex);
 
-            function ev(e) {
+            function ey(e) {
                 let {
                     isOpen: a,
                     isRemoveBottomPadding: t = !1,
@@ -1422,14 +1423,14 @@
                     "grid-template-rows" === e.propertyName && (e.stopPropagation(), _(!0))
                 }, [_]);
                 return (0, l.jsx)("div", {
-                    className: c()(ex().container, {
-                        [ex().active]: s,
-                        [ex().noBottomPadding]: t
+                    className: g()(ev().container, {
+                        [ev().active]: s,
+                        [ev().noBottomPadding]: t
                     }),
                     "data-testid": d || "expand-container",
                     onTransitionEnd: m,
                     children: (0, l.jsx)("div", {
-                        className: ex().content,
+                        className: ev().content,
                         hidden: !s && n,
                         "aria-labelledby": o,
                         "data-testid": "expand-box",
@@ -1437,9 +1438,9 @@
                     })
                 })
             }
-            var ey = t(59608),
-                eS = t.n(ey);
-            let eC = e => {
+            var eS = t(59608),
+                eC = t.n(eS);
+            let eT = e => {
                     let {
                         label: a,
                         prefixIcon: t,
@@ -1449,12 +1450,12 @@
                         closeOnBackgroundTypeSelected: _,
                         shouldPanelBeOpenOnMount: s = !1,
                         testId: w
-                    } = e, [m, g] = (0, i.useState)(s), [b, h] = (0, i.useState)(), u = (0, o.wA)(), [v, y] = (0, i.useState)(!1), S = (0, o.d4)(x.zr), C = (0, o.d4)(x.Z6), T = (0, o.d4)(x.pS), B = (0, i.useRef)(null);
+                    } = e, [m, c] = (0, i.useState)(s), [b, h] = (0, i.useState)(), u = (0, o.wA)(), [p, y] = (0, i.useState)(!1), S = (0, o.d4)(v.zr), C = (0, o.d4)(v.Z6), T = (0, o.d4)(v.pS), B = (0, i.useRef)(null);
                     return (0, i.useEffect)(() => {
-                        if (h(T), _ === T && b !== T) return void g(!1);
+                        if (h(T), _ === T && b !== T) return void c(!1);
                         if (S) {
                             let e = null == n ? void 0 : n.includes(null == S ? void 0 : S.type);
-                            e || y(!1), e && !m && g(!0), e && !v && (setTimeout(() => {
+                            e || y(!1), e && !m && c(!0), e && !p && (setTimeout(() => {
                                 var e;
                                 return null == (e = B.current) ? void 0 : e.scrollIntoView({
                                     behavior: "smooth",
@@ -1462,34 +1463,34 @@
                                 })
                             }, 405), y(!0))
                         }
-                    }, [n, T, _, b, v, m, S]), (0, l.jsxs)("div", {
+                    }, [n, T, _, b, p, m, S]), (0, l.jsxs)("div", {
                         ref: B,
-                        className: c()(eS().panel, {
-                            [eS().panel__onHover]: (!m || (null == n ? void 0 : n.length) === 1) && C && (null == n ? void 0 : n.includes(null == C ? void 0 : C.type))
+                        className: g()(eC().panel, {
+                            [eC().panel__onHover]: (!m || (null == n ? void 0 : n.length) === 1) && C && (null == n ? void 0 : n.includes(null == C ? void 0 : C.type))
                         }),
                         "aria-expanded": m,
                         "data-testid": w,
                         children: [(0, l.jsxs)("button", {
-                            className: eS().trigger,
+                            className: eC().trigger,
                             id: "".concat(r, "--accordionPanel"),
                             onClick: () => {
-                                m ? u((0, p.WI)()) : (null == n ? void 0 : n.length) && u((0, p.D8)({
+                                m ? u((0, x.WI)()) : (null == n ? void 0 : n.length) && u((0, x.D8)({
                                     type: n[0]
-                                })), g(!m)
+                                })), c(!m)
                             },
                             "aria-controls": "".concat(r, "--accordionPanelContent"),
                             children: [(0, l.jsxs)("span", {
-                                className: eS().heading,
+                                className: eC().heading,
                                 children: [(0, l.jsx)("span", {
-                                    className: eS().prefixIcon,
+                                    className: eC().prefixIcon,
                                     children: t
                                 }), a]
-                            }), (0, l.jsx)(V._mK, {
-                                className: c()(eS().icon, {
-                                    [eS().iconExpanded]: m
+                            }), (0, l.jsx)(L._mK, {
+                                className: g()(eC().icon, {
+                                    [eC().iconExpanded]: m
                                 })
                             })]
-                        }), (0, l.jsx)(ev, {
+                        }), (0, l.jsx)(ey, {
                             dataTestId: "".concat(r, "--accordionPanelContent"),
                             ariaLabeledBy: "".concat(r, "--accordionPanel"),
                             isOpen: m,
@@ -1497,7 +1498,7 @@
                         })]
                     })
                 },
-                eT = e => {
+                eB = e => {
                     let {
                         items: a,
                         hasOverflowed: t
@@ -1505,7 +1506,7 @@
                     return (0, l.jsx)("div", {
                         ref: d,
                         "aria-label": "Editor components",
-                        className: eu().container,
+                        className: ep().container,
                         onScroll: e => {
                             t(e.target.scrollTop > 0)
                         },
@@ -1521,7 +1522,7 @@
                                 shouldPanelBeOpenOnMount: _,
                                 testId: s
                             } = e;
-                            return (0, l.jsx)(eC, {
+                            return (0, l.jsx)(eT, {
                                 label: a,
                                 prefixIcon: t,
                                 testId: s,
@@ -1535,10 +1536,10 @@
                         })
                     })
                 };
-            var eB = t(43699),
-                ek = t(32380),
-                eI = t.n(ek);
-            let ef = e => {
+            var ek = t(43699),
+                ef = t(32380),
+                eI = t.n(ef);
+            let ej = e => {
                 let {
                     tabs: a,
                     selectedTab: t,
@@ -1550,7 +1551,7 @@
                     children: a.map(e => (0, l.jsx)("button", {
                         role: "tab",
                         "aria-selected": t === e.id,
-                        className: c()(eI().tab, {
+                        className: g()(eI().tab, {
                             [eI().selected]: t === e.id
                         }),
                         onClick: () => i(e.id),
@@ -1558,36 +1559,51 @@
                     }, e.id))
                 })
             };
-            var ej = t(21868),
-                eA = t.n(ej);
-            let eE = "wt_showcase_multi_image_banner_dismissed";
-            var ez = t(51384);
-            let eF = function() {
+            var eA = t(21868),
+                eE = t.n(eA);
+            let ez = "wt_showcase_multi_image_banner_dismissed";
+            var eF = t(51384);
+            let eN = function() {
                 var e;
                 let {
                     target: a = "wallpapers"
-                } = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : {}, t = "previews_wallpapers" === a, l = (0, o.d4)(x.jV), r = (0, o.d4)(x.Uf), _ = (0, o.d4)(x._Q), s = (0, o.d4)(x.RK), m = t ? r : l, c = t ? s : _, g = t ? 1 : w.jp, b = (0, o.d4)(x.Di), h = null == (e = (0, o.d4)(x.HD)) ? void 0 : e.background, u = (0, i.useRef)(null), p = (0, o.d4)(x.pS), v = (0, o.wA)(), {
-                    addToast: y
-                } = (0, K.d)(), [S, C] = (0, i.useState)(0), {
-                    t: T
+                } = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : {}, t = "previews_wallpapers" === a, l = (0, o.d4)(v.jV), r = (0, o.d4)(v.Uf), s = (0, o.d4)(v._Q), w = (0, o.d4)(v.RK), c = (0, _.u)(t ? "previews" : "wallpapers"), g = t ? r : l, b = t ? w : s, h = (0, i.useMemo)(() => c ? b.map(e => {
+                    if (!(e.fileName === m.u6.fileName && !e.assetId)) return e;
+                    let {
+                        thumbnail: a
+                    } = m.u6.previews;
+                    return {
+                        ...e,
+                        previews: {
+                            ...e.previews,
+                            thumbnail: {
+                                ...a,
+                                url: c
+                            }
+                        }
+                    }
+                }) : b, [b, c]), u = t ? 1 : m.jp, p = (0, o.d4)(v.Di), x = null == (e = (0, o.d4)(v.HD)) ? void 0 : e.background, y = (0, i.useRef)(null), S = (0, o.d4)(v.pS), C = (0, o.wA)(), {
+                    addToast: T
+                } = (0, P.d)(), [B, k] = (0, i.useState)(0), {
+                    t: f
                 } = (0, d.Bd)("translation", {
                     keyPrefix: "showcase.editor.backgroundAsset"
-                }), B = async e => {
+                }), I = async e => {
                     let {
                         target: {
                             files: a
                         }
                     } = e;
                     if (!a || 0 === a.length) return;
-                    let l = Array.from(a).filter(e => !!(0, W.Y9)(e) || (y(T("invalid_image")), !1));
+                    let l = Array.from(a).filter(e => !!(0, K.Y9)(e) || (T(f("invalid_image")), !1));
                     if (0 === l.length) return;
-                    v((0, O.F6)(!0)), C(l.length);
+                    C((0, Z.F6)(!0)), k(l.length);
                     let i = null,
                         d = !0,
                         o = 0,
-                        r = t ? O.r6 : O.cP,
-                        _ = t ? O.Bc : O._L,
-                        s = t ? O.al : O.L4;
+                        r = t ? Z.r6 : Z.cP,
+                        _ = t ? Z.Bc : Z._L,
+                        s = t ? Z.al : Z.L4;
                     for (let e of l) {
                         var w, m;
                         let {
@@ -1596,75 +1612,75 @@
                             assetId: l,
                             error: n,
                             previews: c
-                        } = await (0, M.tc)({
+                        } = await (0, D.tc)({
                             file: e,
                             fileName: null != (w = e.name) ? w : "",
                             fileSize: null != (m = e.size) ? m : 0
                         });
-                        if (C(e => e - 1), n) {
-                            y(T("error"));
+                        if (k(e => e - 1), n) {
+                            T(f("error"));
                             continue
                         }
-                        let b = {
+                        let g = {
                             assetId: l,
                             previews: c,
                             fileName: a,
                             fileSize: t
                         };
-                        l && (0, ez.h7)(l, e), v((0, O.lo)(b)), v(r(b)), o < g && (d ? (v(_(b)), d = !1) : v(s(b)), o++, i = b)
+                        l && (0, eF.h7)(l, e), C((0, Z.lo)(g)), C(r(g)), o < u && (d ? (C(_(g)), d = !1) : C(s(g)), o++, i = g)
                     }
-                    i && !t && v((0, O.Bm)({
-                        ...h || {
+                    i && !t && C((0, Z.Bm)({
+                        ...x || {
                             type: n._B.Background
                         },
                         assetId: i.assetId
-                    })), t ? v((0, O.gG)(n.hK.image)) : v((0, O.pz)(n.hK.image)), v((0, O.F6)(!1)), u.current && (u.current.value = "")
-                }, k = (0, i.useCallback)(e => {
-                    t ? (v((0, O.Bc)(e)), v((0, O.gG)(n.hK.image))) : (v((0, O._L)(e)), v((0, O.Bm)({
-                        ...h || {
+                    })), t ? C((0, Z.gG)(n.hK.image)) : C((0, Z.pz)(n.hK.image)), C((0, Z.F6)(!1)), y.current && (y.current.value = "")
+                }, j = (0, i.useCallback)(e => {
+                    t ? (C((0, Z.Bc)(e)), C((0, Z.gG)(n.hK.image))) : (C((0, Z._L)(e)), C((0, Z.Bm)({
+                        ...x || {
                             type: n._B.Background
                         },
                         assetId: e.assetId
                     })))
-                }, [v, h, t]), I = (0, i.useCallback)(e => {
-                    let a = m.some(a => a.assetId === e.assetId);
-                    if (!b || a) {
+                }, [C, x, t]), A = (0, i.useCallback)(e => {
+                    let a = g.some(a => a.assetId === e.assetId);
+                    if (!p || a) {
                         if (t) {
                             if (a) return;
-                            v((0, O.Bc)(e)), v((0, O.gG)(n.hK.image));
+                            C((0, Z.Bc)(e)), C((0, Z.gG)(n.hK.image));
                             return
                         }
-                        if (!a && m.length >= g) return void y(T("max_images_reached"));
-                        v((0, O.L4)(e))
+                        if (!a && g.length >= u) return void T(f("max_images_reached"));
+                        C((0, Z.L4)(e))
                     }
-                }, [v, m, y, T, b, t, g]);
+                }, [C, g, T, f, p, t, u]);
                 return {
-                    fileUploadRef: u,
-                    handleFileUploadChange: B,
+                    fileUploadRef: y,
+                    handleFileUploadChange: I,
                     handleUploadNewBackgroundAssetOnClick: () => {
                         var e;
-                        null == (e = u.current) || e.click()
+                        null == (e = y.current) || e.click()
                     },
-                    isAssetSelected: (0, i.useCallback)(e => m.some(a => a.assetId === e.assetId), [m]),
-                    isLoading: b,
+                    isAssetSelected: (0, i.useCallback)(e => g.some(a => a.assetId === e.assetId), [g]),
+                    isLoading: p,
                     isPreviews: t,
-                    loadingCount: S,
-                    maxSelectableImages: g,
-                    selectBackgroundAsset: k,
-                    selectedAssets: m,
-                    selectedBackgroundType: p,
-                    t: T,
-                    toggleAssetSelection: I,
-                    uploadedAssets: c
+                    loadingCount: B,
+                    maxSelectableImages: u,
+                    selectBackgroundAsset: j,
+                    selectedAssets: g,
+                    selectedBackgroundType: S,
+                    t: f,
+                    toggleAssetSelection: A,
+                    uploadedAssets: h
                 }
             };
-            var eN = t(30899),
-                eV = t(61502),
-                eL = t.n(eV),
-                eM = function(e) {
+            var eV = t(30899),
+                eL = t(61502),
+                eM = t.n(eL),
+                eD = function(e) {
                     return e.CHECKBOX = "checkbox", e.RADIO = "radio", e
                 }({});
-            let eD = e => {
+            let eW = e => {
                     let {
                         thumbnailUrl: a,
                         isSelected: t,
@@ -1673,11 +1689,11 @@
                         onClick: o,
                         isLoading: r = !1,
                         selectionMode: n = "checkbox"
-                    } = e, _ = a || eN.A.lookup("showcase/WeTransfer-Default.jpeg"), s = "radio" === n, w = !s && t && d > 1 && i, m = !s && t && 1 === d;
+                    } = e, _ = a || eV.A.lookup("showcase/WeTransfer-Default.jpeg"), s = "radio" === n, w = !s && t && d > 1 && i, m = !s && t && 1 === d;
                     return (0, l.jsxs)("button", {
                         type: "button",
-                        className: c()(eL().container, {
-                            [eL().loading]: r
+                        className: g()(eM().container, {
+                            [eM().loading]: r
                         }),
                         onClick: o,
                         role: s ? "radio" : void 0,
@@ -1685,30 +1701,30 @@
                         "aria-pressed": s ? void 0 : t,
                         disabled: r,
                         children: [r ? (0, l.jsx)("div", {
-                            className: eL().skeleton,
+                            className: eM().skeleton,
                             children: (0, l.jsx)("div", {
-                                className: eL().shimmer
+                                className: eM().shimmer
                             })
                         }) : (0, l.jsx)("img", {
                             src: _,
                             alt: "Background thumbnail",
-                            className: eL().thumbnail
+                            className: eM().thumbnail
                         }), !r && (0, l.jsxs)("span", {
-                            className: c()(eL().indicator, {
-                                [eL().indicatorSelected]: t
+                            className: g()(eM().indicator, {
+                                [eM().indicatorSelected]: t
                             }),
-                            children: [m && (0, l.jsx)(V.bT1, {
-                                className: eL().checkIcon
+                            children: [m && (0, l.jsx)(L.bT1, {
+                                className: eM().checkIcon
                             }), w && (0, l.jsx)("span", {
-                                className: eL().positionNumber,
+                                className: eM().positionNumber,
                                 children: i
-                            }), s && t && (0, l.jsx)(V.bT1, {
-                                className: eL().checkIcon
+                            }), s && t && (0, l.jsx)(L.bT1, {
+                                className: eM().checkIcon
                             })]
                         })]
                     })
                 },
-                eW = e => {
+                eK = e => {
                     let {
                         target: a = "wallpapers"
                     } = e, {
@@ -1723,105 +1739,105 @@
                         t: b,
                         toggleAssetSelection: h,
                         uploadedAssets: u
-                    } = eF({
+                    } = eN({
                         target: a
-                    }), [p] = (0, i.useState)(() => "true" === localStorage.getItem(eE)), v = (0, i.useCallback)(e => {
+                    }), [p] = (0, i.useState)(() => "true" === localStorage.getItem(ez)), x = (0, i.useCallback)(e => {
                         let a = g.findIndex(a => a.assetId === e);
                         return a >= 0 ? a + 1 : void 0
                     }, [g]), {
                         t: y
                     } = (0, d.Bd)("translation", {
                         keyPrefix: "showcase.editor.backgroundAsset.label"
-                    }), S = (0, o.wA)(), C = (0, o.d4)(x.pS), T = (0, o.d4)(x.mA), B = (0, o.d4)(x.Py), k = (0, o.d4)(x.YF), I = m ? T : C, f = m ? k : B, E = (0, i.useMemo)(() => [{
+                    }), S = (0, o.wA)(), C = (0, o.d4)(v.pS), T = (0, o.d4)(v.mA), B = (0, o.d4)(v.Py), k = (0, o.d4)(v.YF), f = m ? T : C, I = m ? k : B, j = (0, i.useMemo)(() => [{
                         id: n.hK.image,
                         label: y("image")
                     }, {
                         id: n.hK.solidColor,
                         label: y("solid")
                     }], [y]), z = (0, i.useCallback)(e => {
-                        m ? (S((0, O.gG)(e)), e === n.hK.solidColor && S((0, O.LG)())) : (S((0, O.pz)(e)), S((0, O.D8)({
+                        m ? (S((0, Z.gG)(e)), e === n.hK.solidColor && S((0, Z.LG)())) : (S((0, Z.pz)(e)), S((0, Z.D8)({
                             type: "background"
                         })))
-                    }, [S, m]), N = (0, i.useCallback)(e => {
-                        m ? S((0, O.yX)(e)) : S((0, O.xm)(e))
-                    }, [S, m]), L = I === n.hK.image, M = I === n.hK.solidColor, D = !m && L && !p;
-                    return D && localStorage.setItem(eE, "true"), (0, l.jsxs)("div", {
-                        className: eA().container,
-                        children: [(0, l.jsx)(ef, {
-                            tabs: E,
-                            selectedTab: I,
+                    }, [S, m]), F = (0, i.useCallback)(e => {
+                        m ? S((0, Z.yX)(e)) : S((0, Z.xm)(e))
+                    }, [S, m]), V = f === n.hK.image, M = f === n.hK.solidColor, D = !m && V && !p;
+                    return D && localStorage.setItem(ez, "true"), (0, l.jsxs)("div", {
+                        className: eE().container,
+                        children: [(0, l.jsx)(ej, {
+                            tabs: j,
+                            selectedTab: f,
                             onTabChange: z
-                        }), L && (0, l.jsxs)("div", {
-                            className: eA().mediaContent,
-                            children: [D && (0, l.jsx)(eB.l, {
+                        }), V && (0, l.jsxs)("div", {
+                            className: eE().mediaContent,
+                            children: [D && (0, l.jsx)(ek.l, {
                                 mode: "light",
                                 variation: "information",
-                                children: (0, l.jsxs)(eB.l.Content, {
+                                children: (0, l.jsxs)(ek.l.Content, {
                                     children: [(0, l.jsx)("div", {
-                                        className: eA().multiImageBannerTitle,
+                                        className: eE().multiImageBannerTitle,
                                         children: b("multi_image_banner.title")
                                     }), (0, l.jsx)("div", {
-                                        className: eA().multiImageBannerDescription,
+                                        className: eE().multiImageBannerDescription,
                                         children: b("multi_image_banner.description")
                                     })]
                                 })
                             }), (0, l.jsxs)("div", {
-                                className: eA().thumbnailGrid,
+                                className: eE().thumbnailGrid,
                                 role: m ? "radiogroup" : void 0,
                                 children: [u.map(e => {
                                     var a, t, i;
-                                    return (0, l.jsx)(eD, {
+                                    return (0, l.jsx)(eW, {
                                         thumbnailUrl: null == (t = e.previews) || null == (a = t.thumbnail) ? void 0 : a.url,
                                         isSelected: s(e),
-                                        selectionPosition: v(e.assetId),
+                                        selectionPosition: x(e.assetId),
                                         totalSelected: g.length,
                                         onClick: () => h(e),
-                                        selectionMode: m ? eM.RADIO : eM.CHECKBOX
+                                        selectionMode: m ? eD.RADIO : eD.CHECKBOX
                                     }, null != (i = e.assetId) ? i : "default")
                                 }), Array.from({
                                     length: c
-                                }).map((e, a) => (0, l.jsx)(eD, {
+                                }).map((e, a) => (0, l.jsx)(eW, {
                                     isSelected: !1,
                                     totalSelected: 0,
                                     isLoading: !0
                                 }, "loading-".concat(a)))]
                             }), (0, l.jsxs)("div", {
-                                className: eA().uploadContainer,
+                                className: eE().uploadContainer,
                                 children: [(0, l.jsx)("input", {
                                     type: "file",
                                     ref: t,
                                     onChange: r,
-                                    className: eA().fileInput,
+                                    className: eE().fileInput,
                                     multiple: !m,
                                     accept: ".jpg,.jpeg,.png,image/png,image/jpeg"
-                                }), (0, l.jsxs)(F.$, {
+                                }), (0, l.jsxs)(N.$, {
                                     onClick: _,
                                     disabled: w,
                                     size: "medium",
                                     appearance: "secondary",
                                     fullwidth: !0,
-                                    children: [(0, l.jsx)(V.tdb, {
-                                        className: eA().icon__download,
+                                    children: [(0, l.jsx)(L.tdb, {
+                                        className: eE().icon__download,
                                         size: "medium"
                                     }), b("cta.upload")]
                                 })]
                             })]
                         }), M && (0, l.jsx)("div", {
-                            className: eA().colorContent,
-                            children: (0, l.jsx)(j, {
-                                colors: A.dK,
-                                selectedColor: f,
-                                onSelectColor: N
+                            className: eE().colorContent,
+                            children: (0, l.jsx)(A, {
+                                colors: E.dK,
+                                selectedColor: I,
+                                onSelectColor: F
                             })
                         })]
                     })
                 };
-            var eK = t(25547),
-                eP = t.n(eK),
-                eR = t(14603),
-                eO = t(83868),
-                eZ = t.n(eO);
-            let eQ = (0, i.forwardRef)((e, a) => {
+            var eP = t(25547),
+                eR = t.n(eP),
+                eO = t(14603),
+                eZ = t(83868),
+                eQ = t.n(eZ);
+            let eJ = (0, i.forwardRef)((e, a) => {
                 let {
                     label: t,
                     className: d,
@@ -1836,37 +1852,37 @@
                         let e = w.current;
                         e && e.focus()
                     }, [w]),
-                    g = (0, i.useCallback)(() => {
+                    c = (0, i.useCallback)(() => {
                         void 0 !== n && n()
                     }, [n]),
                     b = (0, i.useCallback)(() => {
                         null == r || r()
                     }, [r]),
-                    h = eP()(s, ["highlight"]);
+                    h = eR()(s, ["highlight"]);
                 return (0, l.jsx)("div", {
                     className: d,
                     children: (0, l.jsxs)("div", {
-                        className: eZ().container,
-                        children: [(0, l.jsx)(eR.T, {
-                            className: c()(eZ().textArea, {
-                                [eZ().highlight]: s.highlight
+                        className: eQ().container,
+                        children: [(0, l.jsx)(eO.T, {
+                            className: g()(eQ().textArea, {
+                                [eQ().highlight]: s.highlight
                             }),
-                            inputClassName: eZ().textAreaInput,
+                            inputClassName: eQ().textAreaInput,
                             name: t,
                             placeholder: "",
                             ref: w,
                             value: o,
-                            onBlur: g,
+                            onBlur: c,
                             onFocus: b,
                             disabled: _,
                             ...h
                         }, t), (0, l.jsx)("div", {
                             onClick: m,
-                            className: c()(eZ().labelContainer, {
-                                [eZ().disabled]: _
+                            className: g()(eQ().labelContainer, {
+                                [eQ().disabled]: _
                             }),
                             children: (0, l.jsx)("div", {
-                                className: eZ().label,
+                                className: eQ().label,
                                 children: t
                             })
                         })]
@@ -1874,7 +1890,7 @@
                 })
             });
 
-            function eJ() {
+            function eH() {
                 return (0, l.jsx)("svg", {
                     width: "16",
                     height: "15",
@@ -1887,10 +1903,10 @@
                     })
                 })
             }
-            eQ.displayName = "LabeledTextArea";
-            var eH = t(55788),
-                eX = t.n(eH);
-            let eq = e => {
+            eJ.displayName = "LabeledTextArea";
+            var eX = t(55788),
+                eq = t.n(eX);
+            let eG = e => {
                 let {
                     titleText: a,
                     bodyText: t,
@@ -1901,7 +1917,7 @@
                     settings: {
                         is_branded_previews_enabled: s
                     }
-                } = (0, C.k)(), w = (0, o.wA)(), m = (0, o.d4)(x.zr), g = (0, o.d4)(x.Z6), b = (0, i.useRef)(null), h = (0, i.useRef)(null);
+                } = (0, T.k)(), w = (0, o.wA)(), m = (0, o.d4)(v.zr), c = (0, o.d4)(v.Z6), b = (0, i.useRef)(null), h = (0, i.useRef)(null);
                 (0, i.useLayoutEffect)(() => {
                     if (m && (m.type === n._B.TitleText && setTimeout(() => {
                             var e;
@@ -1915,98 +1931,98 @@
                     }
                 }, [m]);
                 let u = (e, a) => {
-                        w((0, O.Tr)({
+                        w((0, Z.Tr)({
                             blockType: a,
                             text: e.target.value
                         }))
                     },
                     p = (e, a) => {
-                        w((0, O.o$)({
+                        w((0, Z.o$)({
                             blockType: e,
                             visibility: a
                         }))
                     },
-                    v = (0, i.useCallback)(async (e, a) => {
+                    x = (0, i.useCallback)(async (e, a) => {
                         if (!a) {
                             var t, l;
-                            await w((0, O.o$)({
+                            await w((0, Z.o$)({
                                 blockType: e,
                                 visibility: !0
                             })), e === n._B.BodyText && (null == (t = b.current) || t.focus()), e === n._B.TitleText && (null == (l = h.current) || l.focus())
                         }
                     }, [w]),
                     y = (0, i.useCallback)(e => {
-                        e === n._B.TitleText && a && w((0, O.D8)(a)), e === n._B.BodyText && t && w((0, O.D8)(t))
+                        e === n._B.TitleText && a && w((0, Z.D8)(a)), e === n._B.BodyText && t && w((0, Z.D8)(t))
                     }, [w, a, t]);
                 return (0, l.jsxs)("div", {
-                    className: c()(eX().textEditor, r.className),
+                    className: g()(eq().textEditor, r.className),
                     children: [a && (0, l.jsxs)("div", {
-                        className: eX().editorRow,
+                        className: eq().editorRow,
                         children: [(0, l.jsx)("div", {
-                            onClick: () => v(a.type, a.visibility),
+                            onClick: () => x(a.type, a.visibility),
                             "data-testid": "title-text-wrapper",
-                            className: eX().inputs,
-                            children: (0, l.jsx)(eQ, {
+                            className: eq().inputs,
+                            children: (0, l.jsx)(eJ, {
                                 "data-testid": "title-text-area",
                                 label: _("showcase.editor.text.label_title"),
-                                placeholder: _(A.pP),
+                                placeholder: _(E.pP),
                                 ref: h,
                                 rows: 1,
                                 value: null == a ? void 0 : a.text,
                                 onChange: e => u(e, a.type),
                                 handleFocus: () => y(a.type),
-                                highlight: (null == g ? void 0 : g.type) === a.type,
+                                highlight: (null == c ? void 0 : c.type) === a.type,
                                 disabled: !a.visibility
                             }, "EnterTitle")
                         }), (0, l.jsx)("button", {
-                            className: eX().visibility,
+                            className: eq().visibility,
                             "data-testid": "visibility-title-toggle",
                             onClick: () => p(a.type, !a.visibility),
-                            children: a.visibility ? (0, l.jsx)(V.I7u, {
+                            children: a.visibility ? (0, l.jsx)(L.I7u, {
                                 size: "small"
-                            }) : (0, l.jsx)(eJ, {})
+                            }) : (0, l.jsx)(eH, {})
                         })]
                     }), t && (0, l.jsxs)("div", {
-                        className: eX().editorRow,
+                        className: eq().editorRow,
                         children: [(0, l.jsx)("div", {
-                            onClick: () => v(t.type, t.visibility),
-                            className: eX().inputs,
+                            onClick: () => x(t.type, t.visibility),
+                            className: eq().inputs,
                             "data-testid": "body-text-wrapper",
-                            children: (0, l.jsx)(eQ, {
+                            children: (0, l.jsx)(eJ, {
                                 "data-testid": "description-text-area",
                                 label: _("showcase.editor.text.label_description"),
-                                placeholder: _(A.tw),
+                                placeholder: _(E.tw),
                                 ref: b,
                                 rows: 7,
                                 value: null == t ? void 0 : t.text,
                                 onChange: e => u(e, t.type),
                                 handleFocus: () => y(t.type),
-                                highlight: (null == g ? void 0 : g.type) === t.type,
+                                highlight: (null == c ? void 0 : c.type) === t.type,
                                 disabled: !t.visibility
                             }, "EnterDescription")
                         }), (0, l.jsx)("button", {
-                            className: eX().visibility,
+                            className: eq().visibility,
                             "data-testid": "visibility-body-toggle",
                             onClick: () => p(t.type, !t.visibility),
-                            children: t.visibility ? (0, l.jsx)(V.I7u, {
+                            children: t.visibility ? (0, l.jsx)(L.I7u, {
                                 size: "small"
-                            }) : (0, l.jsx)(eJ, {})
+                            }) : (0, l.jsx)(eH, {})
                         })]
                     }), s && (0, l.jsxs)("div", {
-                        className: eX().infoBanner,
+                        className: eq().infoBanner,
                         children: [(0, l.jsx)("span", {
-                            className: eX().infoBannerTitle,
+                            className: eq().infoBannerTitle,
                             children: _("showcase.editor.text.banner_title")
                         }), (0, l.jsx)("span", {
-                            className: eX().infoBannerDescription,
+                            className: eq().infoBannerDescription,
                             children: _("showcase.editor.text.banner_description")
                         })]
                     })]
                 })
             };
-            var eG = t(94645),
-                eU = t.n(eG);
-            let eY = e => {
+            var eU = t(94645),
+                eY = t.n(eU);
+            let e$ = e => {
                 let {
                     className: a
                 } = e, [t, r] = (0, i.useState)(!1), {
@@ -2015,21 +2031,21 @@
                 return (0, l.jsxs)("div", {
                     className: a,
                     children: [(0, l.jsxs)("div", {
-                        className: eU().titleBlock,
+                        className: eY().titleBlock,
                         children: [(0, l.jsx)("p", {
-                            className: eU().title,
+                            className: eY().title,
                             children: _("showcase.modal.title")
                         }), (0, l.jsx)("p", {
-                            className: eU().subtitle,
+                            className: eY().subtitle,
                             children: _("showcase.modal.description")
                         })]
                     }), (0, l.jsx)("hr", {
-                        className: c()(eU().divider, {
-                            [eU().divider__neutral]: !t
+                        className: g()(eY().divider, {
+                            [eY().divider__neutral]: !t
                         })
-                    }), (0, l.jsx)(eT, {
+                    }), (0, l.jsx)(eB, {
                         items: function() {
-                            let e = (0, o.d4)(x.HD),
+                            let e = (0, o.d4)(v.HD),
                                 {
                                     t: a
                                 } = (0, d.Bd)(),
@@ -2037,31 +2053,31 @@
                                     settings: {
                                         is_branded_previews_enabled: t
                                     }
-                                } = (0, C.k)();
+                                } = (0, T.k)();
                             return (0, i.useMemo)(() => {
                                 if (!e) return [];
                                 let i = [{
                                     id: "background-group",
-                                    prefixIcon: (0, l.jsx)(V.r6B, {
+                                    prefixIcon: (0, l.jsx)(L.r6B, {
                                         "aria-hidden": "true",
                                         size: "small"
                                     }),
                                     label: a("showcase.editor.backgroundAsset.panel_label"),
                                     testId: "background-form-section",
-                                    content: (0, l.jsx)(eW, {}),
+                                    content: (0, l.jsx)(eK, {}),
                                     acceptableBlockTypes: [n._B.Background],
                                     turnOffContentPadding: !0,
                                     shouldPanelBeOpenOnMount: !t
                                 }];
                                 return t && i.push({
                                     id: "previews-cover-group",
-                                    prefixIcon: (0, l.jsx)(V.r6B, {
+                                    prefixIcon: (0, l.jsx)(L.r6B, {
                                         "aria-hidden": "true",
                                         size: "small"
                                     }),
                                     label: a("showcase.editor.backgroundAsset.previews_panel_label"),
                                     testId: "previews-cover-form-section",
-                                    content: (0, l.jsx)(eW, {
+                                    content: (0, l.jsx)(eK, {
                                         target: "previews_wallpapers"
                                     }),
                                     acceptableBlockTypes: [n._B.PreviewsBackground],
@@ -2069,13 +2085,13 @@
                                     shouldPanelBeOpenOnMount: !0
                                 }), i.push({
                                     id: "text-group",
-                                    prefixIcon: (0, l.jsx)(V.Civ, {
+                                    prefixIcon: (0, l.jsx)(L.Civ, {
                                         "aria-hidden": "true",
                                         size: "small"
                                     }),
                                     testId: "text-form-section",
                                     label: a("showcase.editor.text.panel_label"),
-                                    content: (0, l.jsx)(eq, {
+                                    content: (0, l.jsx)(eG, {
                                         titleText: e.titleText,
                                         bodyText: e.bodyText
                                     }),
@@ -2087,10 +2103,10 @@
                     })]
                 })
             };
-            var e$ = t(93453),
-                e0 = t.n(e$);
+            var e0 = t(93453),
+                e1 = t.n(e0);
 
-            function e1(e) {
+            function e7(e) {
                 let {
                     children: a,
                     previewsPagePreview: t,
@@ -2102,243 +2118,270 @@
                     focusedPreview: w
                 } = e, {
                     t: m
-                } = (0, d.Bd)(), g = (0, i.useRef)(null), b = (0, i.useRef)(null);
+                } = (0, d.Bd)(), c = (0, i.useRef)(null), b = (0, i.useRef)(null);
                 return ((0, i.useEffect)(() => {
                     if (!w) return;
-                    let e = "download" === w ? g.current : b.current;
+                    let e = "download" === w ? c.current : b.current;
                     null == e || e.scrollIntoView({
                         behavior: "smooth",
                         block: "nearest",
                         inline: "start"
                     })
                 }, [w]), o && t) ? (0, l.jsxs)("div", {
-                    className: c()(e0().dualContainer, {
-                        [e0().dualContainerMobile]: _
+                    className: g()(e1().dualContainer, {
+                        [e1().dualContainerMobile]: _
                     }),
                     children: [r && (0, l.jsx)("div", {
-                        className: e0().deviceSelectorWrapper,
+                        className: e1().deviceSelectorWrapper,
                         children: r
                     }), (0, l.jsxs)("div", {
-                        className: e0().previewsRow,
+                        className: e1().previewsRow,
                         children: [(0, l.jsxs)("div", {
-                            ref: g,
-                            className: e0().previewColumn,
+                            ref: c,
+                            className: e1().previewColumn,
                             children: [(0, l.jsx)("span", {
-                                className: e0().previewLabel,
+                                className: e1().previewLabel,
                                 children: m("showcase.editor.preview_label.download_page")
                             }), (0, l.jsx)("div", {
-                                className: e0().previewWrapper,
+                                className: e1().previewWrapper,
                                 children: a
                             })]
                         }), (0, l.jsxs)("div", {
                             ref: b,
-                            className: e0().previewColumn,
+                            className: e1().previewColumn,
                             children: [(0, l.jsx)("span", {
-                                className: e0().previewLabel,
+                                className: e1().previewLabel,
                                 children: m("showcase.editor.preview_label.previews")
                             }), (0, l.jsx)("div", {
-                                className: e0().previewWrapper,
+                                className: e1().previewWrapper,
                                 children: t
                             })]
                         })]
                     }), n && (0, l.jsx)("div", {
-                        className: e0().footerWrapper,
+                        className: e1().footerWrapper,
                         children: n
                     }), s && (0, l.jsx)("div", {
-                        className: e0().actionsWrapper,
+                        className: e1().actionsWrapper,
                         children: s
                     })]
                 }) : (0, l.jsxs)("div", {
-                    className: e0().container,
+                    className: e1().container,
                     children: [r, a, n]
                 })
             }
 
-            function e7() {
+            function e5() {
                 var e;
-                let a = (0, o.d4)(x.wv),
-                    t = (0, o.d4)(x.Z6),
-                    m = (0, o.d4)(x.zr),
-                    c = (0, o.d4)(x.W5),
-                    g = (0, o.d4)(x.Py),
-                    b = (0, o.d4)(x.LJ),
-                    h = (0, o.d4)(x.pS),
-                    I = (0, o.d4)(x.eL),
-                    f = (0, o.d4)(x.jV),
-                    E = (0, o.d4)(x.lc),
-                    F = (0, o.d4)(x.mA),
-                    N = (0, o.d4)(x.YF),
-                    V = (0, o.d4)(x.Di),
-                    L = (0, o.d4)(x.A3),
-                    M = (0, o.d4)(e => (0, k.aE)(e, L || "")),
-                    D = (0, o.d4)(B.M0),
-                    K = (0, o.d4)(T.yD),
-                    P = (0, o.wA)(),
+                let a = (0, o.d4)(v.wv),
+                    t = (0, o.d4)(v.Z6),
+                    c = (0, o.d4)(v.zr),
+                    g = (0, o.d4)(v.W5),
+                    b = (0, o.d4)(v.Py),
+                    h = (0, o.d4)(v.LJ),
+                    u = (0, o.d4)(v.pS),
+                    I = (0, o.d4)(v.eL),
+                    j = (0, o.d4)(v.jV),
+                    z = (0, o.d4)(v.lc),
+                    N = (0, o.d4)(v.mA),
+                    V = (0, o.d4)(v.YF),
+                    L = (0, o.d4)(v.Di),
+                    M = (0, o.d4)(v.A3),
+                    D = (0, o.d4)(e => (0, f.aE)(e, M || "")),
+                    W = (0, o.d4)(k.M0),
+                    P = (0, o.d4)(B.yD),
+                    R = (0, _.u)("wallpapers"),
+                    O = (0, o.wA)(),
                     {
                         settings: {
-                            is_branded_previews_enabled: R
+                            is_branded_previews_enabled: Z
                         }
-                    } = (0, C.k)(),
-                    O = (0, o.d4)(x.MJ),
-                    Z = (0, o.d4)(x.TB),
-                    Q = (0, o.d4)(x.lv);
+                    } = (0, T.k)(),
+                    Q = (0, o.d4)(v.MJ),
+                    J = (0, o.d4)(v.TB),
+                    H = (0, o.d4)(v.lv);
                 (0, i.useEffect)(() => {
-                    b || (P((0, p.WI)()), P((0, p.Wr)()))
-                }, [P, b]), (0, S.S)(() => {
-                    let e = Q === v.$.previews ? n._B.PreviewsBackground : n._B.Background;
-                    P((0, p.D8)({
+                    h || (O((0, x.WI)()), O((0, x.Wr)()))
+                }, [O, h]), (0, C.S)(() => {
+                    let e = H === y.$.previews ? n._B.PreviewsBackground : n._B.Background;
+                    O((0, x.D8)({
                         type: e
                     }))
                 });
-                let J = (0, i.useCallback)((e, a) => {
-                        e.stopPropagation(), e.preventDefault(), P((0, p.D8)(a)), P((0, p.Wr)())
-                    }, [P]),
-                    H = (0, i.useCallback)(e => {
-                        c ? P((0, p.sA)({
-                            blockType: null == m ? void 0 : m.type,
+                let X = (0, i.useCallback)((e, a) => {
+                        e.stopPropagation(), e.preventDefault(), O((0, x.D8)(a)), O((0, x.Wr)())
+                    }, [O]),
+                    q = (0, i.useCallback)(e => {
+                        g ? O((0, x.sA)({
+                            blockType: null == c ? void 0 : c.type,
                             color: e
-                        })) : P((0, p.xm)(e))
-                    }, [P, c, null == m ? void 0 : m.type]),
-                    X = (0, i.useMemo)(() => c && h === n.hK.solidColor ? A.T1 : A.dK, [h, c]),
-                    q = (0, i.useCallback)((e, a) => {
-                        P((0, p.VX)(a))
-                    }, [P]),
-                    G = (0, i.useCallback)(() => {
-                        P((0, p.Wr)())
-                    }, [P]),
+                        })) : O((0, x.xm)(e))
+                    }, [O, g, null == c ? void 0 : c.type]),
+                    G = (0, i.useMemo)(() => g && u === n.hK.solidColor ? E.T1 : E.dK, [u, g]),
+                    U = (0, i.useCallback)((e, a) => {
+                        O((0, x.VX)(a))
+                    }, [O]),
+                    $ = (0, i.useCallback)(() => {
+                        O((0, x.Wr)())
+                    }, [O]),
                     {
-                        t: Y
+                        t: ee
                     } = (0, d.Bd)(),
-                    [$, ee] = (0, i.useState)(A.k4),
-                    et = (0, i.useCallback)((e, a) => {
+                    [ea, el] = (0, i.useState)(E.k4),
+                    ei = (0, i.useCallback)((e, a) => {
                         let i = (null == t ? void 0 : t.type) === e.type,
-                            d = (null == m ? void 0 : m.type) === e.type,
-                            o = e.type !== n._B.Background || $ !== A.QA,
-                            r = (0, W.CT)(e) ? (0, l.jsx)(eg, {
+                            d = (null == c ? void 0 : c.type) === e.type,
+                            o = e.type !== n._B.Background || ea !== E.QA,
+                            r = (0, K.CT)(e) ? (0, l.jsx)(eb, {
                                 blockType: e.type,
                                 textColor: "textColor" in e ? e.textColor : void 0,
-                                selectedBlockType: null == m ? void 0 : m.type
+                                selectedBlockType: null == c ? void 0 : c.type
                             }) : a;
-                        return d ? (0, l.jsx)(u, {
+                        return d ? (0, l.jsx)(p, {
                             appearance: "selected",
                             isBackground: e.type === n._B.Background,
                             isRounded: o,
                             children: r
-                        }) : i ? (0, l.jsx)(u, {
+                        }) : i ? (0, l.jsx)(p, {
                             appearance: "hovered",
-                            label: Y((0, s.u)(e.type) || ""),
+                            label: ee((0, w.u)(e.type) || ""),
                             isBackground: e.type === n._B.Background,
                             isRounded: o,
                             children: r
                         }) : r
-                    }, [null == t ? void 0 : t.type, null == m ? void 0 : m.type, $, Y]),
-                    el = (0, i.useMemo)(() => {
-                        if (!a) return a;
-                        let {
-                            layout: e
-                        } = (0, W.Hh)(h, I.fileName === w.u6.fileName ? (0, W.Xb)(I, a) : a);
-                        return e
-                    }, [h, a, I]),
-                    ei = (0, i.useMemo)(() => {
-                        let e = null == D ? void 0 : D[0];
-                        if (null == e ? void 0 : e.src) return e.src;
-                        let a = null == K ? void 0 : K[0];
-                        if (null == a ? void 0 : a.asset_url) return a.asset_url
-                    }, [D, K]),
+                    }, [null == t ? void 0 : t.type, null == c ? void 0 : c.type, ea, ee]),
                     ed = (0, i.useMemo)(() => {
+                        if (!a) return a;
+                        let e = I.fileName === m.u6.fileName,
+                            t = I;
+                        if (e && R) {
+                            let {
+                                thumbnail: e,
+                                editorPreview: a,
+                                large: l
+                            } = m.u6.previews;
+                            t = {
+                                ...I,
+                                previews: {
+                                    thumbnail: {
+                                        ...e,
+                                        url: R
+                                    },
+                                    editorPreview: {
+                                        ...a,
+                                        url: R
+                                    },
+                                    large: {
+                                        ...l,
+                                        url: R
+                                    }
+                                }
+                            }
+                        }
+                        let {
+                            layout: l
+                        } = (0, K.Hh)(u, e ? (0, K.Xb)(t, a) : a);
+                        return l
+                    }, [u, a, I, R]),
+                    eo = (0, i.useMemo)(() => {
+                        let e = null == W ? void 0 : W[0];
+                        if (null == e ? void 0 : e.src) return e.src;
+                        let a = null == P ? void 0 : P[0];
+                        if (null == a ? void 0 : a.asset_url) return a.asset_url
+                    }, [W, P]),
+                    en = (0, i.useMemo)(() => {
                         var e, a, t, l, i, d, o, r;
-                        if (F !== n.hK.solidColor) return (null == E ? void 0 : E.assetId) ? (null == (l = E.previews) || null == (t = l.large) ? void 0 : t.url) || (null == (d = E.previews) || null == (i = d.editorPreview) ? void 0 : i.url) || (null == (r = E.previews) || null == (o = r.thumbnail) ? void 0 : o.url) : ei || (null == (a = w.u6.previews) || null == (e = a.large) ? void 0 : e.url)
-                    }, [F, E, ei]),
-                    er = (0, i.useMemo)(() => {
-                        if (F === n.hK.solidColor) return N
-                    }, [F, N]),
-                    en = (0, i.useCallback)(() => {
-                        P((0, p.D8)({
+                        if (N !== n.hK.solidColor) return (null == z ? void 0 : z.assetId) ? (null == (l = z.previews) || null == (t = l.large) ? void 0 : t.url) || (null == (d = z.previews) || null == (i = d.editorPreview) ? void 0 : i.url) || (null == (r = z.previews) || null == (o = r.thumbnail) ? void 0 : o.url) : eo || (null == (a = m.u6.previews) || null == (e = a.large) ? void 0 : e.url)
+                    }, [N, z, eo]),
+                    e_ = (0, i.useMemo)(() => {
+                        if (N === n.hK.solidColor) return V
+                    }, [N, V]),
+                    ew = (0, i.useCallback)(() => {
+                        O((0, x.D8)({
                             type: n._B.PreviewsBackground
-                        })), P((0, p.Wr)())
-                    }, [P]),
-                    es = (0, i.useMemo)(() => (null == m ? void 0 : m.type) === n._B.Background ? "download" : (null == m ? void 0 : m.type) === n._B.PreviewsBackground ? "previews" : null, [null == m ? void 0 : m.type]);
-                if (!el) return null;
-                let ew = {
-                        "aria-label": Y("showcase.accessible_label"),
+                        })), O((0, x.Wr)())
+                    }, [O]),
+                    em = (0, i.useMemo)(() => (null == c ? void 0 : c.type) === n._B.Background ? "download" : (null == c ? void 0 : c.type) === n._B.PreviewsBackground ? "previews" : null, [null == c ? void 0 : c.type]);
+                if (!ed) return null;
+                let ec = {
+                        "aria-label": ee("showcase.accessible_label"),
                         isInteractive: !0,
                         isThumbnail: !0,
-                        layout: el,
-                        onClickBlock: J,
-                        onMouseEnterBlock: q,
-                        onMouseLeaveBlock: G,
-                        renderElement: et,
-                        isLoading: V,
-                        selectedBackgroundAssets: O ? f : void 0,
-                        multiImageLayout: O ? Z : void 0
+                        layout: ed,
+                        onClickBlock: X,
+                        onMouseEnterBlock: U,
+                        onMouseLeaveBlock: $,
+                        renderElement: ei,
+                        isLoading: L,
+                        selectedBackgroundAssets: Q ? j : void 0,
+                        multiImageLayout: Q ? J : void 0
                     },
-                    em = $ === A.QA,
-                    ec = R ? (0, l.jsx)(eb.C, {
-                        backgroundImageUrl: ed,
-                        backgroundColor: er,
-                        isMobile: em,
-                        transferTitle: null == M ? void 0 : M.display_name,
+                    eg = ea === E.QA,
+                    eu = Z ? (0, l.jsx)(eh.C, {
+                        backgroundImageUrl: en,
+                        backgroundColor: e_,
+                        isMobile: eg,
+                        transferTitle: null == D ? void 0 : D.display_name,
                         transferMessage: null == a || null == (e = a.bodyText) ? void 0 : e.text,
-                        onClickBackground: en
+                        onClickBackground: ew
                     }) : void 0,
-                    eh = (0, l.jsx)(l.Fragment, {
-                        children: $ === A.k4 ? (0, l.jsx)("div", {
-                            className: z().desktopViewerWrapper,
-                            children: (0, l.jsx)(_._, {
-                                ...ew,
-                                ...A.L8,
-                                className: z().desktopViewer,
+                    ep = (0, l.jsx)(l.Fragment, {
+                        children: ea === E.k4 ? (0, l.jsx)("div", {
+                            className: F().desktopViewerWrapper,
+                            children: (0, l.jsx)(s._, {
+                                ...ec,
+                                ...E.L8,
+                                className: F().desktopViewer,
                                 children: (0, l.jsx)(r.z, {})
                             })
-                        }) : (0, l.jsx)(eo, {
-                            className: z().mobileSkeleton,
-                            children: (0, l.jsx)(_._, {
-                                ...ew,
-                                ...A.bG,
-                                className: z().mobileViewer,
+                        }) : (0, l.jsx)(er, {
+                            className: F().mobileSkeleton,
+                            children: (0, l.jsx)(s._, {
+                                ...ec,
+                                ...E.bG,
+                                className: F().mobileViewer,
                                 isMobileLayout: !0,
-                                children: (0, l.jsx)(y.v, {
-                                    socialLinksClassName: z().mobileSocialLinks
+                                children: (0, l.jsx)(S.v, {
+                                    socialLinksClassName: F().mobileSocialLinks
                                 })
                             })
                         })
                     });
                 return (0, l.jsxs)(l.Fragment, {
                     children: [(0, l.jsxs)("div", {
-                        className: z().container,
+                        className: F().container,
                         "data-testid": "cover-editor",
-                        children: [(0, l.jsx)(eY, {
-                            className: z().sidebarContainer
-                        }), (0, l.jsx)(e1, {
-                            showDualPreview: R,
-                            previewsPagePreview: ec,
-                            isMobile: em,
-                            focusedPreview: es,
-                            deviceSelector: (0, l.jsx)(ea, {
-                                tabs: A.od,
-                                className: z().deviceSelector,
+                        children: [(0, l.jsx)(e$, {
+                            className: F().sidebarContainer
+                        }), (0, l.jsx)(e7, {
+                            showDualPreview: Z,
+                            previewsPagePreview: eu,
+                            isMobile: eg,
+                            focusedPreview: em,
+                            deviceSelector: (0, l.jsx)(et, {
+                                tabs: E.od,
+                                className: F().deviceSelector,
                                 "aria-label": "Device",
-                                onSelectTab: ee,
-                                selectedTab: $,
+                                onSelectTab: el,
+                                selectedTab: ea,
                                 "data-testid": "device-preview-selector"
                             }),
                             footer: (0, l.jsxs)("div", {
-                                className: z().footer,
-                                children: [O && h === n.hK.image && (0, l.jsx)(e_, {}), c && (0, l.jsx)(j, {
-                                    colors: X,
-                                    selectedColor: g,
+                                className: F().footer,
+                                children: [Q && u === n.hK.image && (0, l.jsx)(es, {}), g && (0, l.jsx)(A, {
+                                    colors: G,
+                                    selectedColor: b,
                                     onSelectColor: e => {
-                                        H(e)
+                                        q(e)
                                     }
                                 })]
                             }),
-                            actions: R ? (0, l.jsx)(U, {}) : void 0,
-                            children: eh
+                            actions: Z ? (0, l.jsx)(Y, {}) : void 0,
+                            children: ep
                         })]
-                    }), !R && (0, l.jsx)(U, {})]
+                    }), !Z && (0, l.jsx)(Y, {})]
                 })
             }
         }
     }
 ]);
-//# sourceMappingURL=8225.22e36eceaa04b28d.js.map
+//# sourceMappingURL=8225.d7e15b2f082a64f0.js.map

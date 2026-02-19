@@ -176,7 +176,7 @@
                 sentinel: "CompliantCancellationPage_sentinel__CUYpa"
             }
         },
-        90738: (e, a, l) => {
+        84796: (e, a, l) => {
             "use strict";
             l.r(a), l.d(a, {
                 default: () => eo
@@ -186,117 +186,82 @@
                 n = l(75546),
                 d = l(38169),
                 o = l(97116),
-                r = l(85633),
-                _ = l(64674),
+                _ = l(85633),
+                r = l(64674),
                 s = l(29336),
                 g = l(61149),
                 m = l(46001),
                 c = l.n(m),
-                w = l(39602),
-                p = l.n(w),
+                p = l(39602),
+                w = l.n(p),
                 u = l(7758),
                 b = l(91632),
                 h = l(87963),
                 C = l(44259),
-                A = l(89187),
-                x = l(53123),
-                y = l(15913),
-                P = l(72255),
-                k = l(99823),
-                S = l(10995);
-            let U = {
-                    src: "/_next/static/media/branding.1fd542b3.png",
-                    height: 240,
-                    width: 224,
-                    blurDataURL: "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAcAAAAICAMAAAAC2hU0AAAAe1BMVEVMaXGz5M/c3/8YQ9oSPdPu4v11uKXb3f8dSdHm7fax4tNskuD89v9zk//Q6eMZQ9D45/w9dbAeRdDk5/1llNja8+UVPtBjqpVAcvVqsJMXQc8eSNF9ovrd3f/J2v9EePiFpvq7yv+qwfz/9P8bSt/15/9prppGd/rO3v+BkAlbAAAAI3RSTlMA/WSp/ewmKFo5qkuqaPHbxnUhtu3K5mHy5iv21nnmd/4iZK9+h3sAAAAJcEhZcwAALEsAACxLAaU9lqkAAABBSURBVHicBcEFAoAgAACxAxGwu1us/7/QDcYSrcGqthieDu9StRAhdsqiJg3Y3j7J/YBznyvnYuS3Lv4twRwYww9ruQOJ9uiXRAAAAABJRU5ErkJggg==",
-                    blurWidth: 7,
-                    blurHeight: 8
-                },
-                f = {
-                    src: "/_next/static/media/expiry.691ca984.png",
-                    height: 240,
-                    width: 224,
-                    blurDataURL: "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAcAAAAICAMAAAAC2hU0AAAAMFBMVEVMaXE0ZutDc/EbW+1Bauk2Z+3/xLRumeV9r8x/pP90gfI2Z+o0ZeyEfsQ+bvg8cf7wlbe8AAAAD3RSTlMAo/0Kd/oGNj0+x7G9xNSoCg42AAAACXBIWXMAACxLAAAsSwGlPZapAAAAMklEQVR4nCWLRw4AIBCE2NG1l///1qgcCQAkLiG2GADbaxtkubkyVd6HyvVye9183f8OGyIA1INR6aAAAAAASUVORK5CYII=",
-                    blurWidth: 7,
-                    blurHeight: 8
-                },
-                v = {
-                    src: "/_next/static/media/limit-gb.090e0262.png",
-                    height: 240,
-                    width: 224,
-                    blurDataURL: "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAcAAAAICAMAAAAC2hU0AAAATlBMVEU2Zuo6bfdHau5Jb+rIku04Zuo4Zus2aOyvhvI3ZevBeP/Kjdh4qqzmtlu10pHFyP9fedP/UUXQ4/80ZevJ3f/R3rY5bfg/df9ac/+iuvUg9RODAAAAFnRSTlP7tI/8M39NsgZ36fv++/5LO0I3mv39n1lkDQAAAAlwSFlzAAAsSwAALEsBpT2WqQAAADtJREFUeJxj4OBgEeRn4WBg4eLmFRURYmCSYObhkxRgYBdjYGAQE4bS7HCaUVxMTEyckYGNlZOTk5UNAE2iAl+F+fsBAAAAAElFTkSuQmCC",
-                    blurWidth: 7,
-                    blurHeight: 8
-                },
-                M = {
-                    src: "/_next/static/media/limit-number.8b73c1e0.png",
-                    height: 240,
-                    width: 224,
-                    blurDataURL: "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAcAAAAICAMAAAAC2hU0AAAAOVBMVEXA1f/ozNOrzLuyz7++yryTsPflzNTF1/3E1/+70P7C1f+zyrvO18nQybvK0O/nzdXN4f/a3Pjd5vxyD60MAAAAEHRSTlP9voywy/6e/Zj9lLrebTGu453fXQAAAAlwSFlzAAAsSwAALEsBpT2WqQAAADdJREFUeJwlyVsOwCAMxEDTFpL0ueT+h0XQr5Flnta+Ul7ulJTO0THTMmIZtcq5OiBnz/9vNvscQ50B7eqH2k8AAAAASUVORK5CYII=",
-                    blurWidth: 7,
-                    blurHeight: 8
-                },
-                N = {
-                    src: "/_next/static/media/malware.fc779166.png",
-                    height: 240,
-                    width: 224,
-                    blurDataURL: "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAcAAAAICAMAAAAC2hU0AAAATlBMVEVMaXGLqfr///+OrvpjjPOux/+jwP+zzv+wyv+UtPy40v9VgPAjV+etzP+vxv8wYepDdPakwf9Hd/UqXuigt/QfVei1xvemxP8nX/d7nv9jbQpXAAAAGHRSTlMA+wGksiEUSmuZW7PnMi3Px4TFy/n8/nb/Mt+uAAAACXBIWXMAACxLAAAsSwGlPZapAAAAO0lEQVR4nAXBCQKAIAgAwUVRIC27j/9/tBmgWAGqh4ZXHu1Xbxu+y/mtjqncohM1jndEAcstGyQWn0k/OzsB1uvuSJoAAAAASUVORK5CYII=",
-                    blurWidth: 7,
-                    blurHeight: 8
-                },
-                E = {
-                    src: "/_next/static/media/recovery.d842bd6f.png",
-                    height: 240,
-                    width: 232,
-                    blurDataURL: "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAAICAMAAADz0U65AAAAWlBMVEXJ592Uua7J592lyLy22M2009PJ591MaXHM7Nna+e7J5tzL6+B7o5jW9uzN6uHQ7uWy0snU9OnJ59/W9uy1x8KLlZLS1dWrtrKOjo7T8Obf//XH592nu7VEQUIQTVmIAAAAGXRSTlO2/db7/AXDAAj+por92NjY+Nh4r7j7RO0y4SXg1wAAAAlwSFlzAAAsSwAALEsBpT2WqQAAAERJREFUeJwdyUkSgCAMAMFBkCTgvoP6/29aZV+bNgNxEbSvZnUVtClhKknQ4e5cRdAxOP9sf/mwvwc6m1k5L9oUIWb5AGQFAtZ508ukAAAAAElFTkSuQmCC",
-                    blurWidth: 8,
-                    blurHeight: 8
-                };
-            var T = l(62702),
-                I = l.n(T);
+                x = l(89187),
+                y = l(53123),
+                P = l(15913),
+                k = l(72255),
+                S = l(99823),
+                f = l(10995),
+                U = l(74138),
+                v = l(28222),
+                N = l(8526);
+            let A = {
+                src: "/_next/static/media/limit-number.8b73c1e0.png",
+                height: 240,
+                width: 224,
+                blurDataURL: "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAcAAAAICAMAAAAC2hU0AAAAOVBMVEXA1f/ozNOrzLuyz7++yryTsPflzNTF1/3E1/+70P7C1f+zyrvO18nQybvK0O/nzdXN4f/a3Pjd5vxyD60MAAAAEHRSTlP9voywy/6e/Zj9lLrebTGu453fXQAAAAlwSFlzAAAsSwAALEsBpT2WqQAAADdJREFUeJwlyVsOwCAMxEDTFpL0ueT+h0XQr5Flnta+Ul7ulJTO0THTMmIZtcq5OiBnz/9vNvscQ50B7eqH2k8AAAAASUVORK5CYII=",
+                blurWidth: 7,
+                blurHeight: 8
+            };
+            var M = l(77484),
+                T = l(70886),
+                E = l(62702),
+                j = l.n(E);
 
-            function j(e) {
+            function I(e) {
                 let {
                     expiryDate: a,
                     onDismiss: l
                 } = e, {
-                    t: r
+                    t: _
                 } = (0, n.Bd)("translation", {
                     keyPrefix: "page.manage_plan.cancel.compliance.page"
-                }), _ = (0, d.wA)(), s = (0, i.useRef)(null), g = (0, i.useRef)(null), [m, w] = (0, i.useState)(!0), T = (0, u.X)(), {
-                    user: j
+                }), r = (0, d.wA)(), s = (0, i.useRef)(null), g = (0, i.useRef)(null), [m, p] = (0, i.useState)(!0), E = (0, u.X)(), {
+                    user: I
                 } = (0, d.d4)(e => ({
                     user: e.user
                 })), {
-                    currentTeam: R
-                } = (0, y.o)(), O = j.planTier === A.js.STARTER ? [{
-                    title: r("benefits_starter.benefit_1.title"),
-                    description: r("benefits_starter.benefit_1.description"),
-                    image: v
+                    currentTeam: O
+                } = (0, P.o)(), D = I.planTier === x.js.STARTER ? [{
+                    title: _("benefits_starter.benefit_1.title"),
+                    description: _("benefits_starter.benefit_1.description"),
+                    image: N.A
                 }] : [{
-                    title: r("benefits_ultimate.benefit_1.title"),
-                    description: r("benefits_ultimate.benefit_1.description"),
-                    image: v
+                    title: _("benefits_ultimate.benefit_1.title"),
+                    description: _("benefits_ultimate.benefit_1.description"),
+                    image: N.A
                 }, {
-                    title: r("benefits_ultimate.benefit_2.title"),
-                    description: r("benefits_ultimate.benefit_2.description"),
-                    image: M
+                    title: _("benefits_ultimate.benefit_2.title"),
+                    description: _("benefits_ultimate.benefit_2.description"),
+                    image: A
                 }, {
-                    title: r("benefits_ultimate.benefit_3.title"),
-                    description: r("benefits_ultimate.benefit_3.description"),
-                    image: f
+                    title: _("benefits_ultimate.benefit_3.title"),
+                    description: _("benefits_ultimate.benefit_3.description"),
+                    image: v.A
                 }, {
-                    title: r("benefits_ultimate.benefit_4.title"),
-                    description: r("benefits_ultimate.benefit_4.description"),
-                    image: U
+                    title: _("benefits_ultimate.benefit_4.title"),
+                    description: _("benefits_ultimate.benefit_4.description"),
+                    image: U.A
                 }, {
-                    title: r("benefits_ultimate.benefit_5.title"),
-                    description: r("benefits_ultimate.benefit_5.description"),
-                    image: E
+                    title: _("benefits_ultimate.benefit_5.title"),
+                    description: _("benefits_ultimate.benefit_5.description"),
+                    image: T.A
                 }, {
-                    title: r("benefits_ultimate.benefit_6.title"),
-                    description: r("benefits_ultimate.benefit_6.description"),
-                    image: N
+                    title: _("benefits_ultimate.benefit_6.title"),
+                    description: _("benefits_ultimate.benefit_6.description"),
+                    image: M.A
                 }];
                 (0, i.useEffect)(() => {
                     (0, h.Od)().trackUserAction(b.$.confirmationDisplayed("page"))
@@ -304,7 +269,7 @@
                     if (!g.current) return;
                     let e = new IntersectionObserver(e => {
                         let [a] = e;
-                        w(!a.isIntersecting)
+                        p(!a.isIntersecting)
                     }, {
                         threshold: 0,
                         rootMargin: "0px 0px -100px 0px"
@@ -313,55 +278,55 @@
                         e.disconnect()
                     }
                 }, []);
-                let D = x.A.getWorkspaceName(R, j),
+                let R = y.A.getWorkspaceName(O, I),
                     L = () => {
                         (0, h.Od)().trackUserAction(b.$.confirmationDismissed("page")), l()
                     },
-                    B = (0, i.useCallback)(async () => {
-                        (0, h.Od)().trackUserAction(k.f.confirmCancelButtonClicked()), await T(), (0, h.Od)().trackUserAction(k.f.subscriptionCanceled()), _(S.A.Account.setCanSeeGoodbyeOffer(!0)), l(), P.A.navigateTo("/workspace/payment")
-                    }, [T, _, l]);
+                    F = (0, i.useCallback)(async () => {
+                        (0, h.Od)().trackUserAction(S.f.confirmCancelButtonClicked()), await E(), (0, h.Od)().trackUserAction(S.f.subscriptionCanceled()), r(f.A.Account.setCanSeeGoodbyeOffer(!0)), l(), k.A.navigateTo("/workspace/payment")
+                    }, [E, r, l]);
                 return (0, t.jsxs)("div", {
-                    className: I().container,
+                    className: j().container,
                     children: [(0, t.jsx)("div", {
-                        className: I().workspaceName,
-                        children: D
+                        className: j().workspaceName,
+                        children: R
                     }), (0, t.jsxs)("div", {
-                        className: I().header,
+                        className: j().header,
                         children: [(0, t.jsxs)("div", {
-                            className: I().backNavigation,
+                            className: j().backNavigation,
                             onClick: L,
                             children: [(0, t.jsx)(C.Ay, {
                                 type: "ArrowLeft"
                             }), (0, t.jsx)("div", {
-                                className: I().backNavigationText,
-                                children: r("back_to_manage")
+                                className: j().backNavigationText,
+                                children: _("back_to_manage")
                             })]
                         }), (0, t.jsx)("h1", {
-                            className: I().title,
-                            children: r("title")
+                            className: j().title,
+                            children: _("title")
                         })]
                     }), (0, t.jsxs)("div", {
-                        className: I().content,
+                        className: j().content,
                         children: [(0, t.jsx)("div", {
-                            className: I().subtitle,
-                            children: r("subtitle", {
+                            className: j().subtitle,
+                            children: _("subtitle", {
                                 renewal_date: a
                             })
                         }), (0, t.jsx)("div", {
-                            className: I().benefits,
-                            children: O.map((e, a) => (0, t.jsxs)("div", {
-                                className: I().benefitItem,
-                                children: [(0, t.jsx)(p(), {
+                            className: j().benefits,
+                            children: D.map((e, a) => (0, t.jsxs)("div", {
+                                className: j().benefitItem,
+                                children: [(0, t.jsx)(w(), {
                                     src: e.image,
                                     alt: "",
-                                    className: I().benefitItemImage
+                                    className: j().benefitItemImage
                                 }), (0, t.jsxs)("div", {
-                                    className: I().benefitItemText,
+                                    className: j().benefitItemText,
                                     children: [(0, t.jsx)("div", {
-                                        className: I().benefitItemTitle,
+                                        className: j().benefitItemTitle,
                                         children: e.title
                                     }), (0, t.jsx)("div", {
-                                        className: I().benefitItemDescription,
+                                        className: j().benefitItemDescription,
                                         children: e.description
                                     })]
                                 })]
@@ -369,50 +334,50 @@
                         })]
                     }), (0, t.jsx)("div", {
                         ref: g,
-                        className: c()(I().sentinel, {
-                            [I().buttonsInFlow]: !m
+                        className: c()(j().sentinel, {
+                            [j().buttonsInFlow]: !m
                         })
                     }), (0, t.jsxs)("div", {
                         ref: s,
-                        className: c()(I().buttons, {
-                            [I().buttonsFixed]: m,
-                            [I().buttonsInFlow]: !m
+                        className: c()(j().buttons, {
+                            [j().buttonsFixed]: m,
+                            [j().buttonsInFlow]: !m
                         }),
                         children: [(0, t.jsx)(o.$, {
                             variation: "default",
                             appearance: "primary",
                             size: "medium",
                             onClick: L,
-                            className: I().button,
-                            children: r("buttons.keep_my_plan")
+                            className: j().button,
+                            children: _("buttons.keep_my_plan")
                         }), (0, t.jsx)(o.$, {
                             variation: "destructive",
                             appearance: "secondary",
                             size: "medium",
-                            onClick: B,
-                            className: I().button,
-                            children: r("buttons.cancel_plan")
+                            onClick: F,
+                            className: j().button,
+                            children: _("buttons.cancel_plan")
                         })]
                     })]
                 })
             }
-            var R = l(5866),
-                O = l(4838),
-                D = l(87983),
+            var O = l(5866),
+                D = l(4838),
+                R = l(87983),
                 L = l(97875),
-                B = l(24510),
-                W = l(37828),
-                F = l(98851),
-                H = l(39377),
-                V = l(51853),
-                K = l(88848),
-                G = l(62373),
-                q = l(30631),
+                F = l(24510),
+                B = l(37828),
+                H = l(98851),
+                W = l(39377),
+                K = l(51853),
+                q = l(88848),
+                z = l(62373),
+                Y = l(30631),
                 Z = l(84530),
-                Q = l(43657),
-                z = l(11417),
-                Y = l(73278),
-                J = l(44765),
+                V = l(43657),
+                G = l(11417),
+                J = l(73278),
+                Q = l(44765),
                 X = l(28330),
                 $ = l(5732),
                 ee = l.n($);
@@ -421,53 +386,53 @@
                     currentMonthlyPrice: a,
                     currentYearlyPrice: l,
                     tierId: d,
-                    currency: r,
-                    showSavingsInfo: _ = !0
+                    currency: _,
+                    showSavingsInfo: r = !0
                 } = e, {
                     showUpgradeSubscriptionModal: s,
                     confirmPlanSwitchOrReactivate: g,
                     closeUpgradeSubscriptionModal: m,
                     selectedTierName: c,
-                    isModalVisible: w,
-                    isSwitchInProgress: p,
+                    isModalVisible: p,
+                    isSwitchInProgress: w,
                     yearlySavingsPercentage: u,
                     monthlyTotalCostCents: b,
                     selectedTier: h,
                     selectedBillingInterval: C
-                } = (0, J.W)(), {
-                    t: A
-                } = (0, n.Bd)(), x = (0, L.G)(), {
-                    subscription: y
-                } = (0, W.f)(), P = (0, i.useMemo)(() => (null == y ? void 0 : y.interval) === X.YF.week, [y]), k = (0, i.useCallback)(e => {
-                    G.A.trackSnowplowEvent({
+                } = (0, Q.W)(), {
+                    t: x
+                } = (0, n.Bd)(), y = (0, L.G)(), {
+                    subscription: P
+                } = (0, B.f)(), k = (0, i.useMemo)(() => (null == P ? void 0 : P.interval) === X.YF.week, [P]), S = (0, i.useCallback)(e => {
+                    z.A.trackSnowplowEvent({
                         category: "manage_plan_page",
                         action: "click_upgrade_billing_cycle"
                     }), s(d, e)
-                }, [d, s]), S = (0, i.useMemo)(() => 12 * a, [a]), U = (0, i.useMemo)(() => l / 12, [l]), f = (0, i.useMemo)(() => Math.round(100 - l / S * 100), [l, S]), v = (0, F.W)({
+                }, [d, s]), f = (0, i.useMemo)(() => 12 * a, [a]), U = (0, i.useMemo)(() => l / 12, [l]), v = (0, i.useMemo)(() => Math.round(100 - l / f * 100), [l, f]), N = (0, H.W)({
                     amount: a,
-                    currency: r,
-                    locale: x
-                }), M = (0, F.W)({
+                    currency: _,
+                    locale: y
+                }), A = (0, H.W)({
                     amount: l,
-                    currency: r,
-                    locale: x
-                }), N = (0, F.W)({
-                    amount: S,
-                    currency: r,
-                    locale: x
-                }), E = (0, F.W)({
+                    currency: _,
+                    locale: y
+                }), M = (0, H.W)({
+                    amount: f,
+                    currency: _,
+                    locale: y
+                }), T = (0, H.W)({
                     amount: U,
-                    currency: r,
-                    locale: x
+                    currency: _,
+                    locale: y
                 });
                 return (0, t.jsxs)("div", {
                     className: ee().upgradeCycle,
                     children: [(0, t.jsx)("h5", {
                         className: ee().upgradeCycleHeader,
-                        children: A("page.manage_plan.cycle_upgrade")
+                        children: x("page.manage_plan.cycle_upgrade")
                     }), (0, t.jsx)("p", {
                         className: ee().upgradeCycleText,
-                        children: A("page.manage_plan.cycle_upgrade_subtext")
+                        children: x("page.manage_plan.cycle_upgrade_subtext")
                     }), (0, t.jsxs)("div", {
                         className: ee().cardContainer,
                         children: [(0, t.jsxs)("div", {
@@ -476,13 +441,13 @@
                                 className: ee().planInfo,
                                 children: [(0, t.jsx)("dt", {
                                     className: ee().planText,
-                                    children: A("page.manage_plan.monthly")
+                                    children: x("page.manage_plan.monthly")
                                 }), (0, t.jsx)("dd", {
                                     className: ee().planText,
                                     children: (0, t.jsx)(n.x6, {
                                         i18nKey: "page.manage_plan.monthly_price",
                                         values: {
-                                            price: v
+                                            price: N
                                         },
                                         components: {
                                             billingIntervalLabel: (0, t.jsx)("span", {
@@ -495,25 +460,25 @@
                                 className: ee().planSubheading,
                                 children: [(0, t.jsx)("dt", {
                                     className: ee().billingFrequency,
-                                    children: A("page.manage_plan.monthly_billing_frequency")
+                                    children: x("page.manage_plan.monthly_billing_frequency")
                                 }), (0, t.jsx)("dd", {
                                     className: ee().yearlyTotal,
-                                    children: A("page.manage_plan.yearly_price", {
-                                        price: N
+                                    children: x("page.manage_plan.yearly_price", {
+                                        price: M
                                     })
                                 })]
-                            }), P ? (0, t.jsx)(o.$, {
+                            }), k ? (0, t.jsx)(o.$, {
                                 fullwidth: !0,
                                 className: ee().button,
-                                onClick: () => k(X.YF.month),
-                                children: A("pricing_2024.ctas.switch_billing_cycle")
+                                onClick: () => S(X.YF.month),
+                                children: x("pricing_2024.ctas.switch_billing_cycle")
                             }) : (0, t.jsx)(o.$, {
                                 fullwidth: !0,
                                 disabled: !0,
                                 appearance: "secondary",
                                 variation: "neutral",
                                 className: ee().button,
-                                children: A("pricing_2024.ctas.current_plan")
+                                children: x("pricing_2024.ctas.current_plan")
                             })]
                         }), (0, t.jsxs)("div", {
                             className: ee().card,
@@ -523,23 +488,23 @@
                                     className: ee().planText,
                                     children: (0, t.jsxs)("div", {
                                         className: ee().yearlyInfo,
-                                        children: [A("page.manage_plan.yearly"), _ && (0, t.jsx)(z.E, {
+                                        children: [x("page.manage_plan.yearly"), r && (0, t.jsx)(G.E, {
                                             appearance: "green",
                                             size: "small",
-                                            children: A("page.manage_plan.save_percentage", {
-                                                percentage: f
+                                            children: x("page.manage_plan.save_percentage", {
+                                                percentage: v
                                             })
                                         })]
                                     })
                                 }), (0, t.jsxs)("dd", {
                                     className: ee().planText,
-                                    children: [_ && (0, t.jsx)("span", {
+                                    children: [r && (0, t.jsx)("span", {
                                         className: ee().previousPrice,
-                                        children: v
+                                        children: N
                                     }), " ", (0, t.jsx)(n.x6, {
                                         i18nKey: "page.manage_plan.monthly_price",
                                         values: {
-                                            price: E
+                                            price: T
                                         },
                                         components: {
                                             billingIntervalLabel: (0, t.jsx)("span", {
@@ -551,23 +516,23 @@
                             }), (0, t.jsxs)("dl", {
                                 className: ee().planSubheading,
                                 children: [(0, t.jsx)("dt", {
-                                    children: A("page.manage_plan.yearly_billing_frequency")
+                                    children: x("page.manage_plan.yearly_billing_frequency")
                                 }), (0, t.jsx)("dd", {
-                                    children: A("page.manage_plan.yearly_price", {
-                                        price: M
+                                    children: x("page.manage_plan.yearly_price", {
+                                        price: A
                                     })
                                 })]
                             }), (0, t.jsx)(o.$, {
                                 fullwidth: !0,
                                 className: ee().button,
-                                onClick: () => k(X.YF.year),
-                                children: A("pricing_2024.ctas.switch_billing_cycle")
+                                onClick: () => S(X.YF.year),
+                                children: x("pricing_2024.ctas.switch_billing_cycle")
                             })]
                         })]
-                    }), w && (0, t.jsx)(Y.r, {
+                    }), p && (0, t.jsx)(J.r, {
                         switchPlansOrReactivate: g,
                         planName: c,
-                        isLoading: p,
+                        isLoading: w,
                         closeModal: m,
                         yearlySavingsPercentage: u,
                         monthlyTotalCostCents: b,
@@ -583,74 +548,74 @@
                 ed = l.n(en);
 
             function eo(e) {
-                var a, l, m, c, w, p, u;
+                var a, l, m, c, p, w, u;
                 let {
                     setReturnPath: b
-                } = e, C = (0, d.wA)(), x = (0, d.d4)(et.mB), S = (0, d.d4)(et.dw), U = (0, d.d4)(el.SO), {
-                    catalog: f,
-                    isLoading: v
-                } = (0, D.d)(), {
-                    currentTeam: M
-                } = (0, y.o)(), {
-                    t: N
-                } = (0, n.Bd)(), E = (0, L.G)(), T = (0, s.p)(), I = (0, B.f)(), {
-                    subscription: z,
-                    isLoading: Y
-                } = (0, W.f)(), [J, $] = (0, i.useState)(!1), ee = (0, O.pR)(), en = (0, i.useMemo)(() => ee === O.Gn.PAGE && J, [ee, J]), eo = (null == z ? void 0 : z.isPaidDowngrade) || (null == z ? void 0 : z.isPaused), er = (null == z ? void 0 : z.status) === X.dH.trialing, e_ = !eo && !er && ee !== O.Gn.NONE, es = () => {
-                    G.A.trackSnowplowEvent({
+                } = e, C = (0, d.wA)(), y = (0, d.d4)(et.mB), f = (0, d.d4)(et.dw), U = (0, d.d4)(el.SO), {
+                    catalog: v,
+                    isLoading: N
+                } = (0, R.d)(), {
+                    currentTeam: A
+                } = (0, P.o)(), {
+                    t: M
+                } = (0, n.Bd)(), T = (0, L.G)(), E = (0, s.p)(), j = (0, F.f)(), {
+                    subscription: G,
+                    isLoading: J
+                } = (0, B.f)(), [Q, $] = (0, i.useState)(!1), ee = (0, D.pR)(), en = (0, i.useMemo)(() => ee === D.Gn.PAGE && Q, [ee, Q]), eo = (null == G ? void 0 : G.isPaidDowngrade) || (null == G ? void 0 : G.isPaused), e_ = (null == G ? void 0 : G.status) === X.dH.trialing, er = !eo && !e_ && ee !== D.Gn.NONE, es = () => {
+                    z.A.trackSnowplowEvent({
                         category: "manage_plan_page",
                         action: "back_to_account"
                     })
                 };
                 (0, i.useEffect)(() => {
-                    I ? b("/workspace/payment", N("page.payment.pagename"), es) : (C((0, K.jt)(K.vW.MANAGE_PLAN_FREE_USER)), P.A.navigateTo(V.bP.route))
-                }, [b, N, I, C]);
-                let eg = (null != (l = null == M || null == (a = M.members) ? void 0 : a.length) ? l : 0) <= 1 && (null == z ? void 0 : z.quantity) === 1 || !M,
-                    em = v || !f[x.planTier] || Y,
-                    ec = S || x.planTier === A.js.DISTRIBUTE && (null == z ? void 0 : z.interval) === X.YF.year,
-                    ew = (null == z ? void 0 : z.interval) === X.YF.week,
-                    ep = (null == z ? void 0 : z.interval) === X.YF.month,
-                    eu = (0, F.W)({
-                        amount: (null != (m = null == z ? void 0 : z.totalCentsPerSeat) ? m : 0) / 100,
-                        currency: null != (c = null == z ? void 0 : z.currency) ? c : g.Sj.EUR,
-                        locale: E
+                    j ? b("/workspace/payment", M("page.payment.pagename"), es) : (C((0, q.jt)(q.vW.MANAGE_PLAN_FREE_USER)), k.A.navigateTo(K.bP.route))
+                }, [b, M, j, C]);
+                let eg = (null != (l = null == A || null == (a = A.members) ? void 0 : a.length) ? l : 0) <= 1 && (null == G ? void 0 : G.quantity) === 1 || !A,
+                    em = N || !v[y.planTier] || J,
+                    ec = f || y.planTier === x.js.DISTRIBUTE && (null == G ? void 0 : G.interval) === X.YF.year,
+                    ep = (null == G ? void 0 : G.interval) === X.YF.week,
+                    ew = (null == G ? void 0 : G.interval) === X.YF.month,
+                    eu = (0, H.W)({
+                        amount: (null != (m = null == G ? void 0 : G.totalCentsPerSeat) ? m : 0) / 100,
+                        currency: null != (c = null == G ? void 0 : G.currency) ? c : g.Sj.EUR,
+                        locale: T
                     }),
-                    eb = (0, F.W)({
-                        amount: (null != (w = null == z ? void 0 : z.totalCents) ? w : 0) / 100,
-                        currency: null != (p = null == z ? void 0 : z.currency) ? p : g.Sj.EUR,
-                        locale: E
+                    eb = (0, H.W)({
+                        amount: (null != (p = null == G ? void 0 : G.totalCents) ? p : 0) / 100,
+                        currency: null != (w = null == G ? void 0 : G.currency) ? w : g.Sj.EUR,
+                        locale: T
                     }),
-                    eh = (null == z ? void 0 : z.endsAt) ? Z.A.date(new Date(z.endsAt), "without_day") : "",
+                    eh = (null == G ? void 0 : G.endsAt) ? Z.A.date(new Date(G.endsAt), "without_day") : "",
                     eC = (0, i.useMemo)(() => ({
-                        plan_tier: (0, A.Is)(x.planTier),
+                        plan_tier: (0, x.Is)(y.planTier),
                         total: eb,
-                        interval: null == z ? void 0 : z.interval,
+                        interval: null == G ? void 0 : G.interval,
                         renewal_date: eh
-                    }), [x.planTier, eb, z, eh]),
-                    eA = (0, i.useMemo)(() => ({
-                        plan_tier: (0, A.Is)(x.planTier),
+                    }), [y.planTier, eb, G, eh]),
+                    ex = (0, i.useMemo)(() => ({
+                        plan_tier: (0, x.Is)(y.planTier),
                         workspace_total: eb,
-                        interval: null == z ? void 0 : z.interval,
-                        member_count: null == z ? void 0 : z.quantity,
+                        interval: null == G ? void 0 : G.interval,
+                        member_count: null == G ? void 0 : G.quantity,
                         tier_amount: eu,
                         renewal_date: eh
-                    }), [x.planTier, eb, null == z ? void 0 : z.interval, null == z ? void 0 : z.quantity, eu, eh]),
-                    ex = (0, i.useCallback)((e, a) => (0, t.jsx)(n.x6, {
+                    }), [y.planTier, eb, null == G ? void 0 : G.interval, null == G ? void 0 : G.quantity, eu, eh]),
+                    ey = (0, i.useCallback)((e, a) => (0, t.jsx)(n.x6, {
                         i18nKey: e,
                         values: a,
                         components: {
                             pricingPageLink: (0, t.jsx)("a", {
-                                href: V.bP.route,
+                                href: K.bP.route,
                                 className: ed().planDetailsLink
                             })
                         },
                         onClick: () => {
-                            C((0, K.jt)(K.vW.MANAGE_PLAN_CREATE_WORKSPACE))
+                            C((0, q.jt)(q.vW.MANAGE_PLAN_CREATE_WORKSPACE))
                         }
                     }), [C]),
-                    ey = eg ? ex((null == z ? void 0 : z.isPaidDowngrade) ? "page.manage_plan.downgrade.current_solo_workspace_information" : "page.manage_plan.current_solo_workspace_information", eC) : ex((null == z ? void 0 : z.isPaidDowngrade) ? "page.manage_plan.downgrade.current_team_workspace_information" : "page.manage_plan.current_team_workspace_information", eA),
-                    eP = i.useCallback(e => {
-                        G.A.trackSnowplowEvent({
+                    eP = eg ? ey((null == G ? void 0 : G.isPaidDowngrade) ? "page.manage_plan.downgrade.current_solo_workspace_information" : "page.manage_plan.current_solo_workspace_information", eC) : ey((null == G ? void 0 : G.isPaidDowngrade) ? "page.manage_plan.downgrade.current_team_workspace_information" : "page.manage_plan.current_team_workspace_information", ex),
+                    ek = i.useCallback(e => {
+                        z.A.trackSnowplowEvent({
                             category: "manage_plan_page",
                             action: "click_cancel"
                         }), (0, h.Od)().trackUserAction(ei.X.cancelButtonClicked({
@@ -658,13 +623,13 @@
                         }))
                     }, []),
                     {
-                        currentMonthlyPrice: ek,
-                        isMonthlyPriceFromCatalog: eS
+                        currentMonthlyPrice: eS,
+                        isMonthlyPriceFromCatalog: ef
                     } = (0, i.useMemo)(() => {
                         var e, a, l, t, i;
-                        let n = f ? (null != (t = null == (l = f[x.planTier]) || null == (a = l.month) || null == (e = a.price) ? void 0 : e.totalBeforeDiscountInCents) ? t : 0) / 100 : void 0;
-                        if (I) {
-                            let e = (null != (i = null == z ? void 0 : z.totalCentsBeforeTaxesAndDiscounts) ? i : 0) / 100;
+                        let n = v ? (null != (t = null == (l = v[y.planTier]) || null == (a = l.month) || null == (e = a.price) ? void 0 : e.totalBeforeDiscountInCents) ? t : 0) / 100 : void 0;
+                        if (j) {
+                            let e = (null != (i = null == G ? void 0 : G.totalCentsBeforeTaxesAndDiscounts) ? i : 0) / 100;
                             return {
                                 currentMonthlyPrice: e,
                                 isMonthlyPriceFromCatalog: e === n
@@ -674,65 +639,65 @@
                             currentMonthlyPrice: n,
                             isMonthlyPriceFromCatalog: !0
                         }
-                    }, [f, x.planTier, I, null == z ? void 0 : z.totalCentsBeforeTaxesAndDiscounts]),
+                    }, [v, y.planTier, j, null == G ? void 0 : G.totalCentsBeforeTaxesAndDiscounts]),
                     eU = (0, i.useMemo)(() => {
                         var e, a, l, t;
-                        return f ? (null != (t = null == (l = f[x.planTier]) || null == (a = l.year) || null == (e = a.price) ? void 0 : e.totalBeforeDiscountInCents) ? t : 0) / 100 : void 0
-                    }, [f, x.planTier]),
-                    ef = (0, i.useCallback)(async () => {
-                        (0, h.Od)().trackUserAction(k.f.pauseSubscriptionButtonClicked()), await T(), P.A.navigateTo("/workspace/payment?".concat(s.T, "=true"))
-                    }, [T]);
-                return em ? (0, t.jsx)(H.A, {}) : (0, t.jsx)(i.Fragment, {
-                    children: en ? (0, t.jsx)(j, {
+                        return v ? (null != (t = null == (l = v[y.planTier]) || null == (a = l.year) || null == (e = a.price) ? void 0 : e.totalBeforeDiscountInCents) ? t : 0) / 100 : void 0
+                    }, [v, y.planTier]),
+                    ev = (0, i.useCallback)(async () => {
+                        (0, h.Od)().trackUserAction(S.f.pauseSubscriptionButtonClicked()), await E(), k.A.navigateTo("/workspace/payment?".concat(s.T, "=true"))
+                    }, [E]);
+                return em ? (0, t.jsx)(W.A, {}) : (0, t.jsx)(i.Fragment, {
+                    children: en ? (0, t.jsx)(I, {
                         expiryDate: eh,
                         onDismiss: () => $(!1)
                     }) : (0, t.jsxs)("div", {
-                        children: [q.Ay.isMobile ? (0, t.jsx)("h1", {
+                        children: [Y.Ay.isMobile ? (0, t.jsx)("h1", {
                             className: ed().mobileHeader,
-                            children: N("page.manage_plan.pagename")
-                        }) : (0, t.jsx)(_.a, {
+                            children: M("page.manage_plan.pagename")
+                        }) : (0, t.jsx)(r.a, {
                             showWorkspaceName: !0,
-                            panelName: N("page.manage_plan.pagename"),
+                            panelName: M("page.manage_plan.pagename"),
                             children: (0, t.jsx)("div", {
                                 className: ed().planInfo,
-                                children: ey
+                                children: eP
                             })
-                        }), (ep || ew) && ek && eU && (0, t.jsx)(ea, {
-                            currentMonthlyPrice: ek,
+                        }), (ew || ep) && eS && eU && (0, t.jsx)(ea, {
+                            currentMonthlyPrice: eS,
                             currentYearlyPrice: eU,
-                            tierId: x.planTier,
-                            showSavingsInfo: eS,
-                            currency: null != (u = null == z ? void 0 : z.currency) ? u : g.Sj.EUR
+                            tierId: y.planTier,
+                            showSavingsInfo: ef,
+                            currency: null != (u = null == G ? void 0 : G.currency) ? u : g.Sj.EUR
                         }), !ec && (0, t.jsxs)("div", {
                             className: ed().upgradeContainer,
                             children: [(0, t.jsx)("h5", {
                                 className: ed().upgradeHeader,
-                                children: N("page.manage_plan.change_plan")
+                                children: M("page.manage_plan.change_plan")
                             }), (0, t.jsxs)("p", {
                                 className: ed().upgradeText,
-                                children: [N("page.manage_plan.upgrade_text"), " "]
+                                children: [M("page.manage_plan.upgrade_text"), " "]
                             }), (0, t.jsxs)(o.$, {
                                 variation: "upsell",
                                 size: "small",
                                 className: ed().upgradeButton,
                                 as: "a",
-                                href: V.bP.route,
+                                href: K.bP.route,
                                 onClick: () => {
-                                    C((0, K.jt)(K.vW.MANAGE_PLAN_UPGRADE))
+                                    C((0, q.jt)(q.vW.MANAGE_PLAN_UPGRADE))
                                 },
-                                children: [(0, t.jsx)(r.DmQ, {
+                                children: [(0, t.jsx)(_.DmQ, {
                                     size: "medium"
-                                }), N("page.manage_plan.upgrade_button")]
+                                }), M("page.manage_plan.upgrade_button")]
                             })]
-                        }), e_ && (0, t.jsx)(R.A, {
+                        }), er && (0, t.jsx)(O.A, {
                             context: "page",
                             shouldShowThirdFeature: !0,
-                            onPauseSubscription: ef
-                        }), (0, t.jsx)(Q.f, {
-                            user: x,
+                            onPauseSubscription: ev
+                        }), (0, t.jsx)(V.f, {
+                            user: y,
                             expiryDate: eh,
                             pendingCancellation: U.cancelSubscription,
-                            trackClick: eP,
+                            trackClick: ek,
                             setShowCompliantCancellationPage: $
                         })]
                     })
@@ -743,7 +708,7 @@
             "use strict";
             l.d(a, {
                 V: () => o,
-                X: () => r
+                X: () => _
             });
             var t = l(98876),
                 i = l(45817),
@@ -756,7 +721,7 @@
                 o = function(e) {
                     return e.Email = "email", e.GoogleSSO = "google_sso", e
                 }({});
-            let r = {
+            let _ = {
                 errorShown(e) {
                     let {
                         errorCode: a,
@@ -784,8 +749,8 @@
                         isForBusiness: n,
                         paymentMethod: d,
                         subscriptionTier: o,
-                        isMobile: r,
-                        isFreeTrialAvailable: _,
+                        isMobile: _,
+                        isFreeTrialAvailable: r,
                         paywallType: s,
                         paywallTrigger: g
                     } = e, m = (0, t.v)();
@@ -793,8 +758,8 @@
                         kind: "checkout_payment_shown",
                         info: {
                             isNewCheckout: !0,
-                            isMobile: r,
-                            isFreeTrialAvailable: _,
+                            isMobile: _,
+                            isFreeTrialAvailable: r,
                             subscriptionTier: o,
                             billingPeriod: a,
                             isForBusiness: n,
@@ -823,8 +788,8 @@
                         subscriptionTier: n,
                         isMobile: d,
                         isFreeTrialAvailable: o,
-                        paymentFormKind: r,
-                        expressCheckoutAvailablePaymentMethods: _
+                        paymentFormKind: _,
+                        expressCheckoutAvailablePaymentMethods: r
                     } = e;
                     return {
                         kind: "checkout_payment_form_loaded",
@@ -835,13 +800,13 @@
                             subscriptionTier: n,
                             billingPeriod: a,
                             isForBusiness: t,
-                            paymentFormKind: r,
+                            paymentFormKind: _,
                             isCouponCode100PercentOff: l,
                             ...!l && {
                                 paymentMethod: i
                             },
-                            ..._ && {
-                                expressCheckoutAvailablePaymentMethods: _
+                            ...r && {
+                                expressCheckoutAvailablePaymentMethods: r
                             }
                         }
                     }
@@ -853,8 +818,8 @@
                         isForBusiness: n,
                         paymentMethod: d,
                         subscriptionTier: o,
-                        isFreeTrialAvailable: r,
-                        paywallType: _,
+                        isFreeTrialAvailable: _,
+                        paywallType: r,
                         paywallTrigger: s,
                         seatsCount: g,
                         areNorCheckoutTermsAccepted: m
@@ -871,9 +836,9 @@
                             ...!l && {
                                 paymentMethod: d
                             },
-                            isFreeTrialAvailable: r,
-                            ..._ && {
-                                paywallType: _
+                            isFreeTrialAvailable: _,
+                            ...r && {
+                                paywallType: r
                             },
                             ...s && {
                                 paywallTrigger: (0, i.aO)(s)
@@ -898,8 +863,8 @@
                         isForBusiness: n,
                         isFreeTrialAvailable: d,
                         junoSubscription: o,
-                        couponCode: r,
-                        couponValue: _,
+                        couponCode: _,
+                        couponValue: r,
                         trkCode: s,
                         paywallType: g,
                         paywallTrigger: m,
@@ -922,11 +887,11 @@
                             ...m && {
                                 paywallTrigger: (0, i.aO)(m)
                             },
-                            ...r && {
-                                couponCode: r
-                            },
                             ..._ && {
-                                couponValue: _
+                                couponCode: _
+                            },
+                            ...r && {
+                                couponValue: r
                             },
                             ...s && {
                                 trkCode: s
@@ -944,8 +909,8 @@
                         junoSubscription: n,
                         isFreeTrialAvailable: d,
                         paywallType: o,
-                        paywallTrigger: r,
-                        enterpriseSeats: _,
+                        paywallTrigger: _,
+                        enterpriseSeats: r,
                         areNorCheckoutTermsAccepted: s
                     } = e, g = (0, t.v)();
                     return {
@@ -960,14 +925,14 @@
                             ...o && {
                                 paywallType: o
                             },
-                            ...r && {
-                                paywallTrigger: (0, i.aO)(r)
+                            ..._ && {
+                                paywallTrigger: (0, i.aO)(_)
                             },
                             ...void 0 !== d && {
                                 isFreeTrialAvailable: d
                             },
-                            ..._ && {
-                                enterpriseSeats: _
+                            ...r && {
+                                enterpriseSeats: r
                             },
                             ...void 0 !== s && {
                                 areNorCheckoutTermsAccepted: s
@@ -1211,4 +1176,4 @@
         }
     }
 ]);
-//# sourceMappingURL=payment-manage-plan.c121bae8d12c8760.js.map
+//# sourceMappingURL=payment-manage-plan.5f1e80b3e39b6d9d.js.map

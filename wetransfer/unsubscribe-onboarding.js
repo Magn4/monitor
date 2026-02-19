@@ -3,102 +3,104 @@
     [3548], {
         71318: (e, s, i) => {
             i.d(s, {
-                A: () => f
+                A: () => x
             });
-            var r = i(23798),
-                n = i(50084),
-                t = i.n(n),
-                a = i(21462),
-                c = i(38169),
-                u = i(29069),
-                o = i(42789),
-                b = i(84530),
+            var n = i(23798),
+                r = i(50084),
+                a = i.n(r),
+                t = i(21462),
+                c = i(75546),
+                u = i(38169),
+                o = i(29069),
+                b = i(42789),
+                d = i(84530),
                 l = i(96644);
-            let d = "unsubscribe",
-                g = e => {
+            let g = "unsubscribe",
+                p = e => {
                     let {
-                        heading: s = b.A.t("page.unsubscribeonboarding.title"),
+                        heading: s = d.A.t("page.unsubscribeonboarding.title"),
                         message: i,
-                        ctaLabel: n = b.A.t("page.unsubscribeonboarding.action"),
-                        footerHtml: t = b.A.t("page.unsubscribeonboarding.contact", {
-                            email: '<a href="mailto:subscriptions@wetransfer.com">subscriptions@wetransfer.com</a>'
-                        }),
-                        successHeading: c,
-                        successCtaLabel: g,
+                        ctaLabel: r = d.A.t("page.unsubscribeonboarding.action"),
+                        successHeading: a,
+                        successCtaLabel: u,
                         successCtaUrl: p,
-                        action: f,
-                        setNotification: h
-                    } = e, [m, _] = a.useState(!1), [x, N] = a.useState(!1);
-                    if (m) return (0, r.jsxs)("div", {
-                        className: d,
-                        children: [(0, r.jsx)("h1", {
-                            children: c
-                        }), (0, r.jsx)("a", {
+                        action: h,
+                        setNotification: x
+                    } = e, [f, N] = t.useState(!1), [_, j] = t.useState(!1);
+                    if (f) return (0, n.jsxs)("div", {
+                        className: g,
+                        children: [(0, n.jsx)("h1", {
+                            children: a
+                        }), (0, n.jsx)("a", {
                             href: p,
                             className: "button button--enabled",
-                            children: g
+                            children: u
                         })]
                     });
-                    let j = async () => {
-                        N(!0);
+                    let m = async () => {
+                        j(!0);
                         try {
-                            await f(), _(!0)
+                            await h(), N(!0)
                         } catch (e) {
-                            e.status === o.iu.FORBIDDEN ? h({
+                            e.status === b.iu.FORBIDDEN ? x({
                                 category: l.aF.Error,
                                 details: "unsubscribe_expiration_invalid_signature"
-                            }) : h({
+                            }) : x({
                                 category: l.aF.Error,
                                 details: "unsubscribe_expiration_exception"
                             })
                         }
-                        N(!1)
+                        j(!1)
                     };
-                    return (0, r.jsxs)("div", {
-                        className: d,
-                        children: [(0, r.jsx)("h1", {
+                    return (0, n.jsxs)("div", {
+                        className: g,
+                        children: [(0, n.jsx)("h1", {
                             children: s
-                        }), (0, r.jsx)("p", {
-                            className: "".concat(d, "__message"),
+                        }), (0, n.jsx)("p", {
+                            className: "".concat(g, "__message"),
                             children: i
-                        }), (0, r.jsx)(u.A, {
-                            text: n,
-                            active: !x,
-                            onClick: j
-                        }), (0, r.jsx)("p", {
-                            className: "".concat(d, "__footer"),
-                            dangerouslySetInnerHTML: {
-                                __html: t
-                            }
+                        }), (0, n.jsx)(o.A, {
+                            text: r,
+                            active: !_,
+                            onClick: m
+                        }), (0, n.jsx)("p", {
+                            className: "".concat(g, "__footer"),
+                            children: (0, n.jsx)(c.x6, {
+                                i18nKey: "page.unsubscribeonboarding.contact",
+                                components: {
+                                    a: (0, n.jsx)("a", {
+                                        href: "mailto:subscriptions@wetransfer.com"
+                                    })
+                                }
+                            })
                         })]
                     })
                 };
-            g.propTypes = {
-                heading: t().string,
-                message: t().string.isRequired,
-                ctaLabel: t().string,
-                footerHtml: t().string,
-                successHeading: t().string.isRequired,
-                successCtaLabel: t().string.isRequired,
-                successCtaUrl: t().string.isRequired,
-                action: t().func.isRequired,
-                setNotification: t().func.isRequired
+            p.propTypes = {
+                heading: a().string,
+                message: a().string.isRequired,
+                ctaLabel: a().string,
+                successHeading: a().string.isRequired,
+                successCtaLabel: a().string.isRequired,
+                successCtaUrl: a().string.isRequired,
+                action: a().func.isRequired,
+                setNotification: a().func.isRequired
             };
-            let p = {
+            let h = {
                     setNotification: l.P9.setPanelNotification
                 },
-                f = (0, c.Ng)(null, p)(g)
+                x = (0, u.Ng)(null, h)(p)
         },
         76525: (e, s, i) => {
             i.r(s), i.d(s, {
                 UnsubscribeOnboardingPage: () => b,
-                default: () => d
+                default: () => l
             });
-            var r = i(23798),
-                n = i(50084),
-                t = i.n(n);
+            var n = i(23798),
+                r = i(50084),
+                a = i.n(r);
             i(21462);
-            var a = i(38169),
+            var t = i(38169),
                 c = i(71318),
                 u = i(84530),
                 o = i(10995);
@@ -107,7 +109,7 @@
                     unsubscribeOnboarding: s,
                     route: i
                 } = e;
-                return (0, r.jsx)(c.A, {
+                return (0, n.jsx)(c.A, {
                     message: u.A.t("page.unsubscribeonboarding.message"),
                     successHeading: u.A.t("page.unsubscribeonboarding.done"),
                     successCtaLabel: u.A.t("page.unsubscribeonboarding.back"),
@@ -116,21 +118,21 @@
                 })
             };
             b.propTypes = {
-                route: t().object.isRequired,
-                unsubscribeOnboarding: t().func.isRequired
+                route: a().object.isRequired,
+                unsubscribeOnboarding: a().func.isRequired
             };
-            let l = {
+            let d = {
                     unsubscribeOnboarding: o.A.User.unsubscribeOnboarding
                 },
-                d = (0, a.Ng)(e => {
+                l = (0, t.Ng)(e => {
                     let {
                         route: s
                     } = e;
                     return {
                         route: s
                     }
-                }, l)(b)
+                }, d)(b)
         }
     }
 ]);
-//# sourceMappingURL=unsubscribe-onboarding.d2ddaa0ba91b02b1.js.map
+//# sourceMappingURL=unsubscribe-onboarding.1047d5f419a4d8e2.js.map

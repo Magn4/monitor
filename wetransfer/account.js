@@ -1199,7 +1199,7 @@
             };
             var G = t(64867),
                 K = t.n(G);
-            let H = () => {
+            let z = () => {
                 var e;
                 let {
                     t: a
@@ -1246,8 +1246,8 @@
                     })]
                 })
             };
-            var z = t(78313),
-                Y = t.n(z);
+            var H = t(78313),
+                Y = t.n(H);
             let V = () => {
                     let {
                         t: e
@@ -1284,7 +1284,7 @@
                         isEnterprise: a
                     } = e;
                     return (0, l.jsxs)(l.Fragment, {
-                        children: [!a && (0, l.jsx)(V, {}), (0, l.jsx)(H, {})]
+                        children: [!a && (0, l.jsx)(V, {}), (0, l.jsx)(z, {})]
                     })
                 };
             var Q = t(25402),
@@ -1687,16 +1687,17 @@
                     className: eS().deleteAccount,
                     children: [(0, l.jsx)("p", {
                         className: eS().text,
-                        dangerouslySetInnerHTML: {
-                            __html: e("page.delete_account.text")
-                        }
+                        children: e("page.delete_account.text")
                     }), k && (0, l.jsx)("p", {
                         className: eS().text,
-                        dangerouslySetInnerHTML: {
-                            __html: e("page.delete_account.text_manage_subscription", {
-                                href: "/workspace/payment/manage-plan"
-                            })
-                        }
+                        children: (0, l.jsx)(d.x6, {
+                            i18nKey: "page.delete_account.text_manage_subscription",
+                            components: {
+                                a: (0, l.jsx)("a", {
+                                    href: "/workspace/payment/manage-plan"
+                                })
+                            }
+                        })
                     }), (0, l.jsx)(T.$, {
                         fullwidth: ek.A.isMobile,
                         onClick: C,
@@ -1820,32 +1821,36 @@
                 let {
                     accountEmail: a,
                     showEmailVerificationMessages: t
-                } = e, d = (0, n.wA)(), [o, s] = (0, i.useState)(!1), [_, r] = (0, i.useState)(null);
-                async function m(e) {
-                    if ("BUTTON" === e.target.tagName) try {
-                        r(!1), await d(eO.A.User.resendVerifyAccountEmail({
+                } = e, o = (0, n.wA)(), [s, _] = (0, i.useState)(!1), [r, m] = (0, i.useState)(null);
+                async function w() {
+                    try {
+                        m(!1), await o(eO.A.User.resendVerifyAccountEmail({
                             email: a,
                             showTransferNotification: !1
-                        })), s(!0)
+                        })), _(!0)
                     } catch (e) {
-                        e.status === eR.iu.TOO_MANY_REQUESTS ? r("form.account.email-verification-resend.throttle-error") : r("form.account.email-verification-resend.error"), s(!1)
+                        e.status === eR.iu.TOO_MANY_REQUESTS ? m("form.account.email-verification-resend.throttle-error") : m("form.account.email-verification-resend.error"), _(!1)
                     }
                 }
-                return t ? _ ? (0, l.jsx)(eW.Ay, {
-                    message: eU.A.t(_, {
+                return t ? r ? (0, l.jsx)(eW.Ay, {
+                    message: eU.A.t(r, {
                         throttle_time: eU.A.t("datetime.distance_in_words.x_minutes", {
                             count: 60
                         })
                     }),
                     type: eW.YT
-                }) : o ? (0, l.jsx)(eW.Ay, {
+                }) : s ? (0, l.jsx)(eW.Ay, {
                     message: eU.A.t("form.account.email-verification-resend.info_link"),
                     type: eW.Y5
                 }) : (0, l.jsx)(eW.Ay, {
-                    message: (0, l.jsx)("div", {
-                        onClick: m,
-                        dangerouslySetInnerHTML: {
-                            __html: eU.A.t("form.account.email-verification-not-verified-link")
+                    message: (0, l.jsx)(d.x6, {
+                        i18nKey: "form.account.email-verification-not-verified-link",
+                        components: {
+                            button: (0, l.jsx)("button", {
+                                type: "button",
+                                className: "button button--link",
+                                onClick: w
+                            })
                         }
                     }),
                     type: eW.iN
@@ -1853,9 +1858,9 @@
             }
             var eG = t(25134),
                 eK = t(93246),
-                eH = t.n(eK);
+                ez = t.n(eK);
 
-            function ez(e) {
+            function eH(e) {
                 let {
                     imageUrl: a,
                     pending: t = !1,
@@ -1865,7 +1870,7 @@
                 } = e, o = (0, l.jsx)(T.$, {
                     appearance: "secondary",
                     disabled: t,
-                    className: r()(eH().button, eH().uploadButton),
+                    className: r()(ez().button, ez().uploadButton),
                     ...ek.A.isMobile ? {
                         size: "small",
                         fullwidth: !0
@@ -1874,7 +1879,7 @@
                 }), s = (0, l.jsx)(T.$, {
                     appearance: "secondary",
                     disabled: a === n || t || !a,
-                    className: eH().button,
+                    className: ez().button,
                     ...ek.A.isMobile ? {
                         size: "small",
                         fullwidth: !0
@@ -2141,16 +2146,16 @@
                 }, [N, r, null == (a = x.user) ? void 0 : a.email]), (0, i.useEffect)(() => {
                     I(m.hasProfilePicture ? m.profile_picture.image_url : void 0)
                 }, [null == (t = m.profile_picture) ? void 0 : t.image_url, m.hasProfilePicture]);
-                let H = m.hasProfilePicture || A ? A : "",
-                    z = B || m.hasProfilePicture && A !== (null == (o = m.profile_picture) ? void 0 : o.image_url) || !m.hasProfilePicture && A,
-                    Y = z && !C && !j && !g.account,
+                let z = m.hasProfilePicture || A ? A : "",
+                    H = B || m.hasProfilePicture && A !== (null == (o = m.profile_picture) ? void 0 : o.image_url) || !m.hasProfilePicture && A,
+                    Y = H && !C && !j && !g.account,
                     V = g.account ? r("account.personal_details.submitting") : r("account.personal_details.save_changes"),
                     X = !m.isVerified && M;
                 return (0, l.jsxs)("form", {
                     onSubmit: N.handleSubmit(G),
                     onBlur: F,
-                    children: [(0, l.jsx)(ez, {
-                        imageUrl: null != H ? H : "",
+                    children: [(0, l.jsx)(eH, {
+                        imageUrl: null != z ? z : "",
                         defaultThumb: e0.A.getAvatar(m.id),
                         pending: !!g.uploadAsset_profile_picture,
                         onChange: W,
@@ -2185,7 +2190,7 @@
                                 disabled: w.emailIsLocked || X,
                                 caption: null == (_ = P.email) ? void 0 : _.message,
                                 state: P.email ? "invalid" : "default"
-                            }), z ? null : (0, l.jsx)(eF, {
+                            }), H ? null : (0, l.jsx)(eF, {
                                 accountEmail: N.watch("email"),
                                 showEmailVerificationMessages: X
                             })]
@@ -2303,16 +2308,8 @@
                     let {
                         isLoading: a,
                         email: t,
-                        resetPassword: d
-                    } = e, [n, o] = (0, i.useState)(!1), [s, _] = (0, i.useState)(!1), r = {
-                        __html: n ? eU.A.t("form.account.sso.password_reset.success", {
-                            email: t
-                        }) : eU.A.t("form.account.sso.password_reset.instructions", {
-                            email: t
-                        })
-                    }, m = {
-                        __html: eU.A.t("exception.something_went_wrong")
-                    };
+                        resetPassword: n
+                    } = e, [o, s] = (0, i.useState)(!1), [_, r] = (0, i.useState)(!1);
                     return (0, l.jsxs)("div", {
                         children: [(0, l.jsx)("h3", {
                             className: as().title,
@@ -2321,17 +2318,35 @@
                             className: as().text,
                             children: [(0, l.jsx)("p", {
                                 className: as().description,
-                                dangerouslySetInnerHTML: r
-                            }), s && (0, l.jsx)("p", {
+                                children: o ? eU.A.t("form.account.sso.password_reset.success", {
+                                    email: t
+                                }) : (0, l.jsx)(d.x6, {
+                                    i18nKey: "form.account.sso.password_reset.instructions",
+                                    values: {
+                                        email: t
+                                    },
+                                    components: {
+                                        span: (0, l.jsx)("span", {})
+                                    }
+                                })
+                            }), _ && (0, l.jsx)("p", {
                                 className: as().error,
-                                dangerouslySetInnerHTML: m
+                                children: (0, l.jsx)(d.x6, {
+                                    i18nKey: "exception.something_went_wrong",
+                                    components: {
+                                        a: (0, l.jsx)("a", {
+                                            href: "https://wetransfer.zendesk.com",
+                                            rel: "external"
+                                        })
+                                    }
+                                })
                             })]
-                        }), !n && (0, l.jsx)(T.$, {
+                        }), !o && (0, l.jsx)(T.$, {
                             onClick: function() {
-                                _(!1), d().then(() => {
-                                    o(!0)
+                                r(!1), n().then(() => {
+                                    s(!0)
                                 }).catch(() => {
-                                    _(!0)
+                                    r(!0)
                                 })
                             },
                             disabled: a,
@@ -2773,8 +2788,8 @@
                 })
             }
             var aK = t(22352),
-                aH = t(34464),
-                az = t.n(aH);
+                az = t(34464),
+                aH = t.n(az);
 
             function aY() {
                 var e;
@@ -2817,23 +2832,23 @@
                     }
                 }, [x, p]);
                 return (0, l.jsxs)("div", {
-                    className: az().scim,
+                    className: aH().scim,
                     children: [(0, l.jsx)("form", {
                         children: (0, l.jsxs)("div", {
-                            className: az().row,
+                            className: aH().row,
                             children: [(0, l.jsxs)("div", {
-                                className: az().rowLeft,
+                                className: aH().rowLeft,
                                 children: [(0, l.jsx)("h2", {
                                     children: a("saml_sso.scim.title")
                                 }), (0, l.jsx)("p", {
                                     children: a("saml_sso.scim.description")
                                 })]
                             }), (0, l.jsxs)("div", {
-                                className: r()(az().rowRight, az().fields),
+                                className: r()(aH().rowRight, aH().fields),
                                 children: [(0, l.jsxs)("div", {
-                                    className: az().checkbox,
+                                    className: aH().checkbox,
                                     children: [(0, l.jsx)(E._, {
-                                        wrapperClassName: az().checkboxWrapper,
+                                        wrapperClassName: aH().checkboxWrapper,
                                         label: a("saml_sso.scim.enable"),
                                         checked: f,
                                         onChange: N,
@@ -2842,14 +2857,14 @@
                                         size: "small"
                                     }) : null]
                                 }), (0, l.jsxs)("div", {
-                                    className: az().fields,
+                                    className: aH().fields,
                                     children: [(0, l.jsx)(aS, {
                                         label: a("saml_sso.scim.endpoint_url"),
                                         value: C
                                     }), (0, l.jsx)(aM, {
                                         label: a("saml_sso.scim.configuration_endpoints"),
                                         value: (0, l.jsxs)("ul", {
-                                            className: az().configurationEndpoints,
+                                            className: aH().configurationEndpoints,
                                             children: [(0, l.jsx)("li", {
                                                 children: S
                                             }), (0, l.jsx)("li", {
@@ -2863,16 +2878,16 @@
                                         value: a("saml_sso.scim.bearer_token_description"),
                                         children: (0, l.jsx)(T.$, {
                                             appearance: "secondary",
-                                            className: az().generateTokenButton,
+                                            className: aH().generateTokenButton,
                                             onClick: () => o(!0),
                                             children: a("saml_sso.scim.generate_new_token")
                                         })
                                     })]
                                 }), j.length > 0 ? (0, l.jsxs)(l.Fragment, {
                                     children: [(0, l.jsx)("hr", {
-                                        className: az().divider
+                                        className: aH().divider
                                     }), (0, l.jsx)("div", {
-                                        className: az().tokens,
+                                        className: aH().tokens,
                                         children: j.map(e => {
                                             let {
                                                 value: a,
@@ -3646,7 +3661,7 @@
             var tG = t(17399),
                 tK = t.n(tG);
 
-            function tH(e) {
+            function tz(e) {
                 let {
                     children: a,
                     description: t,
@@ -3664,8 +3679,8 @@
                     }), a]
                 })
             }
-            var tz = t(5553),
-                tY = t.n(tz);
+            var tH = t(5553),
+                tY = t.n(tH);
 
             function tV(e) {
                 let {
@@ -3729,7 +3744,7 @@
                             })
                         })]
                     });
-                    if (g || t === tP.DG.PENDING_VERIFICATION) return (0, l.jsx)(tH, {
+                    if (g || t === tP.DG.PENDING_VERIFICATION) return (0, l.jsx)(tz, {
                         description: eU.A.t("integrations.status.not_connected.text.stripe"),
                         type: o,
                         children: (0, l.jsx)(tL.A, {
@@ -3737,7 +3752,7 @@
                             message: eU.A.t(tJ.GO)
                         })
                     });
-                    if (c) return (0, l.jsx)(tH, {
+                    if (c) return (0, l.jsx)(tz, {
                         description: eU.A.t(tJ.iP),
                         type: o,
                         children: (0, l.jsx)(tL.A, {
@@ -3745,7 +3760,7 @@
                             message: eU.A.t("integrations.status.error")
                         })
                     });
-                    if (x) return (0, l.jsx)(tH, {
+                    if (x) return (0, l.jsx)(tz, {
                         description: S,
                         type: o,
                         children: (0, l.jsx)(tL.A, {
@@ -3753,7 +3768,7 @@
                             message: eU.A.t(tJ.Ik)
                         })
                     });
-                    if (k) return (0, l.jsx)(tH, {
+                    if (k) return (0, l.jsx)(tz, {
                         description: S,
                         type: o,
                         children: (0, l.jsx)(tL.A, {
@@ -3761,7 +3776,7 @@
                             message: eU.A.t(tJ.rx)
                         })
                     });
-                    if (f) return (0, l.jsx)(tH, {
+                    if (f) return (0, l.jsx)(tz, {
                         description: eU.A.t(tJ.iP),
                         type: o,
                         children: (0, l.jsx)(tL.A, {
@@ -3775,7 +3790,7 @@
                             target: "_blank",
                             rel: "noopener noreferrer"
                         });
-                        return (0, l.jsx)(tH, {
+                        return (0, l.jsx)(tz, {
                             description: S,
                             type: o,
                             children: (0, l.jsx)(tL.A, {
@@ -3795,12 +3810,12 @@
                     if (t === tP.DG.FETCHING) return null;
                     switch (t) {
                         case tP.DG.ACTIVE:
-                            return (0, l.jsx)(tH, {
+                            return (0, l.jsx)(tz, {
                                 description: S,
                                 type: o
                             });
                         case tP.DG.NOT_CONNECTED:
-                            return (0, l.jsx)(tH, {
+                            return (0, l.jsx)(tz, {
                                 description: eU.A.t(tJ.iP),
                                 type: o,
                                 children: (0, l.jsx)(eY.A, {
@@ -3815,7 +3830,7 @@
                         case tP.DG.PENDING:
                         case tP.DG.INACTIVE:
                         case tP.DG.DUE:
-                            return (0, l.jsx)(tH, {
+                            return (0, l.jsx)(tz, {
                                 description: A,
                                 type: o,
                                 children: (0, l.jsx)(tX.A, {
@@ -4900,35 +4915,51 @@
                     } catch (e) {
                         b(g("members.list.remove_unexpected_error"))
                     }
-                }, [c, x, b, g, M]), S = (0, i.useMemo)(() => Math.max(y - f, 0), [y, f]), A = (0, i.useMemo)(() => y === f ? (0, l.jsx)("span", {
-                    className: lT().heading,
-                    children: (0, l.jsx)(d.x6, {
-                        i18nKey: "members.list.seats_management_description.no_seats_available",
-                        values: {
-                            memberQuantity: f,
-                            seatsQuantity: y
-                        },
-                        components: {
-                            strong: (0, l.jsx)("strong", {}),
-                            paymentLink: (0, l.jsx)("a", {
-                                href: "/workspace/payment"
-                            })
-                        }
+                }, [c, x, b, g, M]), S = (0, i.useMemo)(() => Math.max(y - f, 0), [y, f]), A = (0, i.useMemo)(() => {
+                    let e = g("members.list.seats_management_description.member", {
+                            count: f
+                        }),
+                        a = g("members.list.seats_management_description.seat", {
+                            count: y
+                        }),
+                        t = g("members.list.seats_management_description.free_seat", {
+                            count: S
+                        });
+                    return y === f ? (0, l.jsx)("span", {
+                        className: lT().heading,
+                        children: (0, l.jsx)(d.x6, {
+                            i18nKey: "members.list.seats_management_description.no_seats_available",
+                            values: {
+                                memberCount: f,
+                                memberWord: e,
+                                seatCount: y,
+                                seatWord: a
+                            },
+                            components: {
+                                strong: (0, l.jsx)("strong", {}),
+                                paymentLink: (0, l.jsx)("a", {
+                                    href: "/workspace/payment"
+                                })
+                            }
+                        })
+                    }) : (0, l.jsx)("span", {
+                        className: lT().heading,
+                        children: (0, l.jsx)(d.x6, {
+                            i18nKey: "members.list.seats_management_description.available_seats",
+                            values: {
+                                memberCount: f,
+                                memberWord: e,
+                                seatCount: y,
+                                seatWord: a,
+                                freeSeatCount: S,
+                                freeSeatWord: t
+                            },
+                            components: {
+                                strong: (0, l.jsx)("strong", {})
+                            }
+                        })
                     })
-                }) : (0, l.jsx)("span", {
-                    className: lT().heading,
-                    children: (0, l.jsx)(d.x6, {
-                        i18nKey: "members.list.seats_management_description.available_seats",
-                        values: {
-                            memberQuantity: f,
-                            seatsQuantity: y,
-                            seatsLeft: S
-                        },
-                        components: {
-                            strong: (0, l.jsx)("strong", {})
-                        }
-                    })
-                }), [y, f, S]);
+                }, [y, f, S, g]);
                 return (0, l.jsxs)("div", {
                     className: lT().container,
                     children: [m && !w ? A : (0, l.jsx)("span", {
@@ -4955,7 +4986,7 @@
                 })
             }
 
-            function lH() {
+            function lz() {
                 let {
                     t: e
                 } = (0, d.Bd)(), {
@@ -5024,7 +5055,7 @@
                     }) : (0, l.jsx)(t8, {})]
                 })
             }
-            var lz = t(98062),
+            var lH = t(98062),
                 lY = t(74941),
                 lV = t(52505),
                 lX = t(61149),
@@ -6030,29 +6061,29 @@
                 })
             };
             var iK = t(65075),
-                iH = t.n(iK);
+                iz = t.n(iK);
 
-            function iz() {
+            function iH() {
                 let {
                     t: e
                 } = (0, d.Bd)(), a = (0, i.useCallback)(() => window.open("mailto:".concat("enterprise.support@wetransfer.com")), []);
                 return (0, l.jsxs)("div", {
-                    className: iH().container,
+                    className: iz().container,
                     children: [(0, l.jsx)("div", {
-                        className: iH().header,
+                        className: iz().header,
                         children: (0, l.jsx)("span", {
-                            className: iH().header__title,
+                            className: iz().header__title,
                             children: e("enterprise_banners.custom_contract.account_manager.title")
                         })
                     }), (0, l.jsxs)("div", {
-                        className: iH().body,
+                        className: iz().body,
                         children: [(0, l.jsx)("span", {
-                            className: iH().body__message,
+                            className: iz().body__message,
                             children: e("enterprise_banners.custom_contract.account_manager.message")
                         }), (0, l.jsx)(T.$, {
                             onClick: a,
                             size: "large",
-                            className: iH().body__button,
+                            className: iz().body__button,
                             children: e("enterprise_banners.custom_contract.account_manager.cta")
                         })]
                     })]
@@ -6159,9 +6190,9 @@
                     amount: (null != (_ = null == f ? void 0 : f.totalCentsPerSeat) ? _ : 0) / 100,
                     currency: null != (r = null == f ? void 0 : f.currency) ? r : lX.Sj.EUR,
                     locale: O
-                }), K = (null == f ? void 0 : f.endsAt) ? eU.A.date(new Date(null == f ? void 0 : f.endsAt), "without_day") : "", H = (0, i.useCallback)(async () => {
+                }), K = (null == f ? void 0 : f.endsAt) ? eU.A.date(new Date(null == f ? void 0 : f.endsAt), "without_day") : "", z = (0, i.useCallback)(async () => {
                     (null == f ? void 0 : f.interval) && C(v.planTier, null == f ? void 0 : f.interval)
-                }, [C, v.planTier, null == f ? void 0 : f.interval]), z = e => {
+                }, [C, v.planTier, null == f ? void 0 : f.interval]), H = e => {
                     w((0, tx.jt)(e))
                 }, Y = (0, l.jsxs)("div", {
                     className: i9().downgradeText,
@@ -6178,14 +6209,14 @@
                         className: i9().buttonContainer,
                         children: [(0, l.jsx)(T.$, {
                             className: i9().reactivateButton,
-                            onClick: H,
+                            onClick: z,
                             children: m("subscription_card.reactivate_cta")
                         }), (0, l.jsx)(T.$, {
                             as: "a",
                             href: tu.bP.route,
                             appearance: "secondary",
                             className: i9().compareButton,
-                            onClick: () => z(tx.vW.DOWNGRADE_REACTIVATE),
+                            onClick: () => H(tx.vW.DOWNGRADE_REACTIVATE),
                             children: m("subscription_card.compare_plans")
                         })]
                     })]
@@ -6346,7 +6377,7 @@
                                     as: "a",
                                     href: tu.bP.route,
                                     className: i9().compareButton,
-                                    onClick: () => z(tx.vW.SETTINGS_PLAN_AND_PAYMENT_COMPARE_ALL_PLANS),
+                                    onClick: () => H(tx.vW.SETTINGS_PLAN_AND_PAYMENT_COMPARE_ALL_PLANS),
                                     children: m("subscription_card.compare_plans")
                                 })]
                             })]
@@ -6364,7 +6395,7 @@
                                 appearance: "secondary",
                                 variation: "neutral",
                                 size: "small",
-                                onClick: () => z(tx.vW.PLAN_DETAILS_BUTTON),
+                                onClick: () => H(tx.vW.PLAN_DETAILS_BUTTON),
                                 children: m("page.account_payment.plan_details_button")
                             })]
                         }), I && (0, l.jsx)(i1.r, {
@@ -6496,7 +6527,7 @@
                     skip: !C
                 }), j = (0, i0.J)(), D = da.az.includes(null == s ? void 0 : s.status), {
                     addToast: N
-                } = (0, o.d)(), P = (null == s ? void 0 : s.endsAt) ? eU.A.date(new Date(s.endsAt), "without_day") : "", B = "marketing" === x.query.from, [E, L] = (0, i.useState)(g), [W, R] = (0, i.useState)(!1), [U, O] = (0, i.useState)(!1), [F, G] = (0, i.useState)(!1), K = (0, is.r)(), H = (0, n.d4)(e2.oz), z = (() => {
+                } = (0, o.d)(), P = (null == s ? void 0 : s.endsAt) ? eU.A.date(new Date(s.endsAt), "without_day") : "", B = "marketing" === x.query.from, [E, L] = (0, i.useState)(g), [W, R] = (0, i.useState)(!1), [U, O] = (0, i.useState)(!1), [F, G] = (0, i.useState)(!1), K = (0, is.r)(), z = (0, n.d4)(e2.oz), H = (() => {
                     let e = (() => {
                             let e = new URLSearchParams(window.location.search);
                             return {
@@ -6538,12 +6569,12 @@
                 (0, k.S)(() => {
                     document.title = "".concat(y("page.payment.pagename"), " - WeTransfer")
                 }), (0, i.useEffect)(() => {
-                    K && H && setTimeout(() => {
+                    K && z && setTimeout(() => {
                         O(!0)
                     }, 1500)
-                }, [K, H]), (0, i.useEffect)(() => {
-                    z && G(!0)
-                }, [z]), (0, i.useEffect)(() => {
+                }, [K, z]), (0, i.useEffect)(() => {
+                    H && G(!0)
+                }, [H]), (0, i.useEffect)(() => {
                     var e;
                     null == t || null == (e = t.current) || e.focus()
                 }, [t, c]);
@@ -6584,7 +6615,7 @@
                         children: [(0, l.jsx)("h5", {
                             className: ds().subscriptionCardHeader,
                             children: eU.A.t("page.account_payment.title")
-                        }), (0, l.jsx)(de, {}), u.planTier === ey.js.ENTERPRISE && (0, l.jsx)(iX, {}), u.planTier === ey.js.ENTERPRISE_CUSTOM_CONTRACT && (0, l.jsx)(iz, {})]
+                        }), (0, l.jsx)(de, {}), u.planTier === ey.js.ENTERPRISE && (0, l.jsx)(iX, {}), u.planTier === ey.js.ENTERPRISE_CUSTOM_CONTRACT && (0, l.jsx)(iH, {})]
                     }), _ && (0, l.jsxs)("div", {
                         className: ds().seatsSelectorSection,
                         children: [(0, l.jsx)("h4", {
@@ -6903,7 +6934,7 @@
                         let e = {
                             href: tu.kH.route,
                             label: "members.title",
-                            component: lH,
+                            component: lz,
                             key: "members"
                         };
                         return _ || !t ? e : s ? {
@@ -6973,7 +7004,7 @@
                         subscriberBenefits: {
                             href: "/workspace/subscriber-benefits",
                             label: "page.subscriber_benefits.pagename",
-                            component: lz.default,
+                            component: lH.default,
                             key: "subscriber_benefits",
                             hidden: (0, ef.yw)(e.user) || (null == h ? void 0 : h.interval) === a7.YF.month || !y || f,
                             icon: (0, l.jsx)(dx, {
@@ -6994,16 +7025,16 @@
                             key: "account_navigation_buttons",
                             hidden: !v.Ay.isMobile
                         }
-                    }), [G, y, f, M, O, F, null == h ? void 0 : h.interval, e.user]), H = (0, i.useMemo)(() => [K.brand, K.integrations, K.subscriberBenefits, K.payment, K.manageTeam, K.samlSso].filter(e => !e.hidden), [K.brand, K.manageTeam, K.integrations, K.subscriberBenefits, K.payment, K.samlSso]), z = (0, i.useMemo)(() => [K.profileAndSecurity, K.notificationSettings, K.accountNavigationButtons].filter(e => !e.hidden), [K.accountNavigationButtons, K.notificationSettings, K.profileAndSecurity]), Y = (null == z ? void 0 : z.find(a => a.href === e.routePath)) || H.find(a => a.href === e.routePath), V = (0, i.useMemo)(() => {
+                    }), [G, y, f, M, O, F, null == h ? void 0 : h.interval, e.user]), z = (0, i.useMemo)(() => [K.brand, K.integrations, K.subscriberBenefits, K.payment, K.manageTeam, K.samlSso].filter(e => !e.hidden), [K.brand, K.manageTeam, K.integrations, K.subscriberBenefits, K.payment, K.samlSso]), H = (0, i.useMemo)(() => [K.profileAndSecurity, K.notificationSettings, K.accountNavigationButtons].filter(e => !e.hidden), [K.accountNavigationButtons, K.notificationSettings, K.profileAndSecurity]), Y = (null == H ? void 0 : H.find(a => a.href === e.routePath)) || z.find(a => a.href === e.routePath), V = (0, i.useMemo)(() => {
                         if (v.Ay.isMobile) switch (e.routePath) {
                             case tu.$X.route:
-                                return H;
+                                return z;
                             case tu.u4.route:
                             case tu.U_.route:
-                                return z
+                                return H
                         }
                         return Y ? [Y] : []
-                    }, [Y, e.routePath, H, z]), X = null, Q = !1;
+                    }, [Y, e.routePath, z, H]), X = null, Q = !1;
                     !v.Ay.isMobile && Y ? Y.hidden || (X = (0, l.jsxs)("div", {
                         className: "account__menu",
                         children: [(0, l.jsxs)(l.Fragment, {
@@ -7011,14 +7042,14 @@
                                 className: "nav-title",
                                 children: eU.A.t("navigation.user.items.account")
                             }), (0, l.jsx)(dy.A, {
-                                items: z,
+                                items: H,
                                 activeItem: e.routePath,
                                 onClick: R
                             }), (0, l.jsx)("h3", {
                                 className: "nav-title",
                                 children: eU.A.t("page.workspace_bar.workspace")
                             }), (0, l.jsx)(dy.A, {
-                                items: H,
+                                items: z,
                                 activeItem: e.routePath,
                                 onClick: R
                             })]
@@ -9969,4 +10000,4 @@
         }
     }
 ]);
-//# sourceMappingURL=account.3f534e946fd74c2d.js.map
+//# sourceMappingURL=account.f7bfd9f7a9825dc0.js.map

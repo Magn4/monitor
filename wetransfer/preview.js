@@ -3809,11 +3809,14 @@
                                 is_branded_previews_enabled: M,
                                 open_preview_automatically_enabled: F,
                                 preview_resolution_segment: O
-                            }
+                            },
+                            isLoading: L
                         } = (0, W.k)(),
-                        L = (0, eU.So)(n.viewOption),
-                        R = (0, i.useMemo)(() => {
-                            if (!L) switch (O) {
+                        R = !!n.id,
+                        D = R && (0, eU.So)(n.viewOption),
+                        k = R && !L,
+                        A = (0, i.useMemo)(() => {
+                            if (!D) switch (O) {
                                 case "low":
                                     return {
                                         variant: "low_resolution", width: 960, height: 512
@@ -3829,24 +3832,25 @@
                                 default:
                                     return
                             }
-                        }, [O, L]),
-                        D = (0, eU.IX)(n.viewOption),
+                        }, [O, D]),
+                        H = (0, eU.IX)(n.viewOption),
                         {
-                            transferId: k,
-                            items: A,
-                            isLoading: H,
-                            transferTitle: V,
-                            transferMessage: U,
-                            recipientId: z,
-                            securityHash: q,
-                            previewsCompletedCount: Z,
-                            previewsProcessingCount: J,
-                            isUsingPreviewV2: K,
-                            transferPassword: Q,
-                            hasPreviewItems: Y
+                            transferId: V,
+                            items: U,
+                            isLoading: z,
+                            transferTitle: q,
+                            transferMessage: Z,
+                            recipientId: J,
+                            securityHash: K,
+                            previewsCompletedCount: Q,
+                            previewsProcessingCount: Y,
+                            isUsingPreviewV2: $,
+                            transferPassword: ee,
+                            hasPreviewItems: ea
                         } = (0, aF.J)({
                             shouldFetchAllPreviews: !0,
-                            ...R
+                            bypass: !k,
+                            ...A
                         });
                     (0, i.useEffect)(() => {
                         M && u && !P.current && (!h || 0 === h.length) && (P.current = !0, a((0, a5.V0)({
@@ -3854,10 +3858,10 @@
                         })))
                     }, [a, M, u, h]);
                     let {
-                        customization: $,
-                        brandingWallpapers: ee,
-                        backgroundColor: ea,
-                        displayMessage: et
+                        customization: et,
+                        brandingWallpapers: el,
+                        backgroundColor: ei,
+                        displayMessage: ed
                     } = ((e, a) => {
                         var t;
                         let {
@@ -3921,7 +3925,7 @@
                             isDescriptionVisible: y,
                             displayMessage: I
                         }
-                    })(M ? k : null, {
+                    })(M ? V : null, {
                         previewsWallpapers: (0, i.useMemo)(() => h && h.length > 0 ? h.filter(e => e.src).map(e => ({
                             url: e.src,
                             type: e.wallpaperType || es.B.IMAGE
@@ -3929,96 +3933,97 @@
                             url: e.asset_url,
                             type: e.wallpaper_type || es.B.IMAGE
                         })) : [], [h, y, w]),
-                        transferMessage: U,
+                        transferMessage: Z,
                         isBrandedPreviewsEnabled: M,
                         refreshKey: C
-                    }), el = (null == $ ? void 0 : $.workspaceId) || null, {
-                        state: ei
+                    }), eo = (null == et ? void 0 : et.workspaceId) || null, {
+                        state: em
                     } = (0, p.d4)(a9._), {
-                        canScanForMalware: ed
+                        canScanForMalware: ew
                     } = (0, a4.F)();
                     (0, i.useEffect)(() => {
-                        let e = !!(ee.length > 0 || ea);
+                        let e = !!(el.length > 0 || ei);
                         return M && e ? document.body.setAttribute("is-branded-preview", "true") : document.body.removeAttribute("is-branded-preview"), () => {
                             document.body.removeAttribute("is-branded-preview")
                         }
-                    }, [M, ee, ea]);
-                    let [eo, em] = (0, i.useState)(!1), [ew, eg] = (0, i.useState)(!1), [eb, eu] = (0, i.useState)(!1), [eh, ex] = (0, i.useState)(!1), [ec, ey] = (0, i.useState)(!1), [ev, eI] = (0, i.useState)(!1), [eP, ef] = (0, i.useState)([]), [eS, eM] = (0, i.useState)(e_._6.NAME), [eF, eN] = (0, i.useState)(e_.qi.GRID), [ej, eT] = (0, i.useState)(!1), [eE, eO] = (0, i.useState)(V), {
-                        updateDisplayName: eL
+                    }, [M, el, ei]);
+                    let [eg, eb] = (0, i.useState)(!1), [eu, eh] = (0, i.useState)(!1), [ex, ec] = (0, i.useState)(!1), [ey, ev] = (0, i.useState)(!1), [eI, eP] = (0, i.useState)(!1), [ef, eS] = (0, i.useState)(!1), [eM, eF] = (0, i.useState)([]), [eN, ej] = (0, i.useState)(e_._6.NAME), [eT, eE] = (0, i.useState)(e_.qi.GRID), [eO, eL] = (0, i.useState)(!1), [eB, eR] = (0, i.useState)(q), {
+                        updateDisplayName: eD
                     } = (0, aq.$S)();
                     (0, i.useEffect)(() => {
-                        eO(V)
-                    }, [V]);
-                    let [eB, eR] = (0, i.useState)(50), eD = (0, i.useCallback)(e => {
-                        eR(50), eM(e)
-                    }, []), ek = (0, i.useRef)(v);
+                        eR(q)
+                    }, [q]);
+                    let [ek, eA] = (0, i.useState)(50), eG = (0, i.useCallback)(e => {
+                        eA(50), ej(e)
+                    }, []), eH = (0, i.useRef)(v);
                     (0, i.useEffect)(() => {
-                        ek.current && !v && I(e => e + 1), ek.current = v
+                        eH.current && !v && I(e => e + 1), eH.current = v
                     }, [v]);
-                    let [eA, eG] = (0, i.useState)(!1), eH = (0, i.useRef)(null), eV = (0, i.useRef)(null), eW = (0, i.useRef)({
+                    let [eV, eW] = (0, i.useState)(!1), ez = (0, i.useRef)(null), eq = (0, i.useRef)(null), eZ = (0, i.useRef)({
                         top: 0,
                         element: "page"
-                    }), ez = (0, i.useRef)(null), eq = (0, i.useRef)(!1), eZ = (0, i.useRef)(Date.now()), eJ = (0, i.useMemo)(() => A.some(e => e.commentCount > 0), [A]), eK = (0, i.useMemo)(() => !!w || (n.workspaceId ? (0, a1.g)() === n.workspaceId : !!el && (0, a1.g)() === el), [w, n.workspaceId, el]);
-                    (0, aY.I)(M && w ? k : void 0), (0, aY.I)(M && eK ? k : void 0);
-                    let eQ = (f || w && eJ) && n.allowComments,
+                    }), eJ = (0, i.useRef)(null), eK = (0, i.useRef)(!1), eQ = (0, i.useRef)(Date.now()), eY = (0, i.useMemo)(() => U.some(e => e.commentCount > 0), [U]), eX = (0, i.useMemo)(() => !!w || (n.workspaceId ? (0, a1.g)() === n.workspaceId : !!eo && (0, a1.g)() === eo), [w, n.workspaceId, eo]);
+                    (0, aY.I)(M && w ? V : void 0), (0, aY.I)(M && eX ? V : void 0);
+                    let e$ = (f || w && eY) && n.allowComments,
                         {
-                            isPreviewPagePaywall: eY,
-                            isDownloadPagePaywall: eX
-                        } = (0, g.rz)(),
-                        e$ = eY && b === aH.pU.PREVIEWS_HARD_MONETIZATION_PREVIEW_PAGE,
-                        e0 = (0, i.useCallback)(() => {
-                            eY && a((0, aH.UK)(aH.pU.PREVIEWS_HARD_MONETIZATION_PREVIEW_PAGE))
-                        }, [a, eY]),
-                        e1 = (0, i.useMemo)(() => Y && n.viewOption !== eU._9.DOWNLOAD_ONLY, [Y, n.viewOption]),
-                        e4 = (0, i.useMemo)(() => n.state === ti.r.PASSWORD_PROTECTED && !Q, [n.state, Q]),
-                        e2 = (0, i.useMemo)(() => d || H, [d, H]),
+                            isPreviewPagePaywall: e0,
+                            isDownloadPagePaywall: e1
+                        } = (0, g.rz)();
+                    (0, g.Rv)();
+                    let e4 = e0 && b === aH.pU.PREVIEWS_HARD_MONETIZATION_PREVIEW_PAGE,
+                        e2 = (0, i.useCallback)(() => {
+                            e0 && a((0, aH.UK)(aH.pU.PREVIEWS_HARD_MONETIZATION_PREVIEW_PAGE))
+                        }, [a, e0]),
+                        e8 = (0, i.useMemo)(() => ea && n.viewOption !== eU._9.DOWNLOAD_ONLY, [ea, n.viewOption]),
+                        e6 = (0, i.useMemo)(() => n.state === ti.r.PASSWORD_PROTECTED && !ee, [n.state, ee]),
+                        e7 = (0, i.useMemo)(() => d || z, [d, z]),
                         {
-                            selectedItem: e8,
-                            onSelectItem: e6,
-                            onDeselectItem: e7
+                            selectedItem: e5,
+                            onSelectItem: e3,
+                            onDeselectItem: e9
                         } = (0, aS.m)({
-                            items: A,
-                            isLoading: e2,
-                            allowAutoSelectFromUrl: !eY
+                            items: U,
+                            isLoading: e7,
+                            allowAutoSelectFromUrl: !e0
                         });
                     (0, i.useEffect)(() => {
-                        let e = eH.current;
+                        let e = ez.current;
                         if (!e) return;
                         let a = () => {
-                            eG(e.scrollTop > 400)
+                            eW(e.scrollTop > 400)
                         };
                         return e.addEventListener("scroll", a, {
                             passive: !0
                         }), () => {
                             e.removeEventListener("scroll", a)
                         }
-                    }, [e8, e2, ew]);
-                    let e5 = (0, i.useCallback)(() => {
+                    }, [e5, e7, eu]);
+                    let ae = (0, i.useCallback)(() => {
                             var e;
-                            null == (e = eH.current) || e.scrollTo({
+                            null == (e = ez.current) || e.scrollTo({
                                 top: 0,
                                 behavior: "smooth"
                             })
                         }, []),
                         {
-                            notifySender: e3
+                            notifySender: aa
                         } = (0, aM.N)({
-                            transferId: k || ""
+                            transferId: V || ""
                         }),
                         {
-                            isGuestModalOpen: e9,
-                            toggleFavorite: ae,
-                            handleGuestModalClose: aa,
-                            handleGuestModalConfirm: at,
-                            handleGuestModalSignUp: al,
-                            canRemoveFavorite: ai,
-                            isItemLoading: ad
+                            isGuestModalOpen: at,
+                            toggleFavorite: al,
+                            handleGuestModalClose: ai,
+                            handleGuestModalConfirm: ad,
+                            handleGuestModalSignUp: an,
+                            canRemoveFavorite: ao,
+                            isItemLoading: a_
                         } = (0, af.r)({
-                            transferId: k || "",
-                            securityHash: q || "",
-                            recipientId: z,
-                            password: Q,
-                            currentFileId: null == e8 ? void 0 : e8.id
+                            transferId: V || "",
+                            securityHash: K || "",
+                            recipientId: J,
+                            password: ee,
+                            currentFileId: null == e5 ? void 0 : e5.id
                         });
                     (e => {
                         let {
@@ -4058,87 +4063,87 @@
                             t && n()
                         }, [t, n])
                     })({
-                        transferId: k || "",
-                        enabled: !e2 && ew && e1
+                        transferId: V || "",
+                        enabled: !e7 && eu && e8
                     });
-                    let an = (0, i.useCallback)(e => {
-                            eR(50), ef(a => [...a, e])
+                    let as = (0, i.useCallback)(e => {
+                            eA(50), eF(a => [...a, e])
                         }, []),
-                        ao = (0, i.useCallback)(e => {
-                            eR(50), ef(e)
+                        am = (0, i.useCallback)(e => {
+                            eA(50), eF(e)
                         }, []),
-                        a_ = (0, i.useMemo)(() => (0, G.d9)(A), [A]),
-                        as = (0, i.useMemo)(() => Y && A.filter(e => !e.isUnavailable).length > 0, [Y, A]);
+                        aw = (0, i.useMemo)(() => (0, G.d9)(U), [U]),
+                        ag = (0, i.useMemo)(() => ea && U.filter(e => !e.isUnavailable).length > 0, [ea, U]);
                     (0, i.useEffect)(() => {
-                        e0()
-                    }, [e0]), (0, i.useEffect)(() => {
-                        eX && (0, a6.m)(k || "", q || "", z, "")
-                    }, [eX, k, q, z]), (0, i.useEffect)(() => {
-                        if (e2 || 0 === A.length || eq.current) return;
-                        let e = (0, G.q_)(A);
-                        e && ef([e]), eq.current = !0
-                    }, [A, e2]), (0, i.useEffect)(() => {
-                        if (!e8 || e2) return;
-                        let e = e8.name.split("/");
+                        e2()
+                    }, [e2]), (0, i.useEffect)(() => {
+                        e1 && (0, a6.m)(V || "", K || "", J, "")
+                    }, [e1, V, K, J]), (0, i.useEffect)(() => {
+                        if (e7 || 0 === U.length || eK.current) return;
+                        let e = (0, G.q_)(U);
+                        e && eF([e]), eK.current = !0
+                    }, [U, e7]), (0, i.useEffect)(() => {
+                        if (!e5 || e7) return;
+                        let e = e5.name.split("/");
                         if (e.length > 1) {
                             let a = e.slice(0, -1);
-                            a.length === eP.length && a.every((e, a) => e === eP[a]) || ef(a)
-                        } else eP.length > 0 && ef([])
-                    }, [e8, eP, e2]);
-                    let am = (0, i.useMemo)(() => {
-                            let e = (0, G.Xl)(a_, eP);
-                            return (0, G.Ls)(e, eS)
-                        }, [a_, eP, eS]),
-                        aw = (0, i.useCallback)(e => {
-                            eV.current && eV.current.scrollHeight > eV.current.clientHeight ? eW.current = {
-                                top: eV.current.scrollTop,
+                            a.length === eM.length && a.every((e, a) => e === eM[a]) || eF(a)
+                        } else eM.length > 0 && eF([])
+                    }, [e5, eM, e7]);
+                    let au = (0, i.useMemo)(() => {
+                            let e = (0, G.Xl)(aw, eM);
+                            return (0, G.Ls)(e, eN)
+                        }, [aw, eM, eN]),
+                        ah = (0, i.useCallback)(e => {
+                            eq.current && eq.current.scrollHeight > eq.current.clientHeight ? eZ.current = {
+                                top: eq.current.scrollTop,
                                 element: "grid"
-                            } : eH.current ? eW.current = {
-                                top: eH.current.scrollTop,
+                            } : ez.current ? eZ.current = {
+                                top: ez.current.scrollTop,
                                 element: "page"
-                            } : eW.current = {
+                            } : eZ.current = {
                                 top: window.scrollY,
                                 element: "window"
-                            }, e6(e)
-                        }, [e6]);
+                            }, e3(e)
+                        }, [e3]);
                     (0, i.useLayoutEffect)(() => {
-                        if (e8) return;
+                        if (e5) return;
                         let {
                             top: e,
                             element: a
-                        } = eW.current;
-                        "grid" === a && eV.current ? eV.current.scrollTo(0, e) : "page" === a && eH.current ? eH.current.scrollTo(0, e) : window.scrollTo(0, e)
-                    }, [e8]), (0, i.useEffect)(() => {
+                        } = eZ.current;
+                        "grid" === a && eq.current ? eq.current.scrollTo(0, e) : "page" === a && ez.current ? ez.current.scrollTo(0, e) : window.scrollTo(0, e)
+                    }, [e5]), (0, i.useEffect)(() => {
                         var e;
-                        if (e2 || eh || ec) return;
-                        ey(!0);
-                        let a = Date.now() - eZ.current,
+                        if (e7 || ey || eI) return;
+                        eP(!0);
+                        let a = Date.now() - eQ.current,
                             t = new URLSearchParams(window.location.search).get("itemId"),
-                            l = e8 || t ? er.rh.FULL_SCREEN : er.rh.GRID,
-                            i = A.filter(e => !e.isUnavailable).length;
+                            l = e5 || t ? er.rh.FULL_SCREEN : er.rh.GRID,
+                            i = U.filter(e => !e.isUnavailable).length;
                         (0, x.Od)().trackUserAction(er.fh.previewOpened({
-                            transferId: k || "",
-                            isUsingPreviewV2: K,
-                            isPreviewMonetized: eY,
+                            transferId: V || "",
+                            isUsingPreviewV2: $,
+                            isPreviewMonetized: e0,
                             fileCount: null == (e = n.items) ? void 0 : e.length,
                             previewedFileCount: i,
                             renderTimeInMs: a,
                             viewMode: l
-                        })), ey(!1), ex(!0)
-                    }, [eh, e2, ec, K, eY, k, A, null == (e = n.items) ? void 0 : e.length, e8]), (0, i.useEffect)(() => {
-                        if (e2 || ev || !ew || J > 0) return;
-                        let e = Date.now() - eZ.current,
-                            a = A.filter(e => !e.isUnavailable).length;
+                        })), eP(!1), ev(!0)
+                    }, [ey, e7, eI, $, e0, V, U, null == (e = n.items) ? void 0 : e.length, e5]), (0, i.useEffect)(() => {
+                        if (e7 || ef || !eu || Y > 0) return;
+                        let e = Date.now() - eQ.current,
+                            a = U.filter(e => !e.isUnavailable).length;
                         (0, x.Od)().trackUserAction(er.fh.allPreviewsLoaded({
-                            transferId: k || "",
+                            transferId: V || "",
                             loadTimeInMs: e,
                             previewResolutionSegment: null != O ? O : "default",
-                            previewResolutionUsed: L ? "default" : null != O ? O : "default",
-                            hasWatermark: L,
+                            previewResolutionUsed: D ? "default" : null != O ? O : "default",
+                            hasWatermark: D,
                             previewableFileCount: a
-                        })), eI(!0)
-                    }, [e2, ev, ew, J, A, k, O, L]), (0, i.useEffect)(() => {
-                        !k || e2 || !ew || !e1 || n.downloaderEmailVerification !== aK.B.TRACKING && n.downloaderEmailVerification !== aK.B.RESTRICTED && (e => {
+                        })), eS(!0)
+                    }, [e7, ef, eu, Y, U, V, O, D]), (0, i.useEffect)(() => {
+                        !V || e7 || !eu || !e8 || n.downloaderEmailVerification !== aK.B.TRACKING && n.downloaderEmailVerification !== aK.B.RESTRICTED && (e => {
                             try {
                                 let a = sessionStorage.getItem(tr);
                                 if (!a) return !1;
@@ -4146,27 +4151,27 @@
                             } catch (e) {
                                 return !1
                             }
-                        })(k) || (async () => {
-                            await e3(), (e => {
+                        })(V) || (async () => {
+                            await aa(), (e => {
                                 try {
                                     let a = sessionStorage.getItem(tr),
                                         t = a ? JSON.parse(a) : [];
                                     t.includes(e) || (t.push(e), sessionStorage.setItem(tr, JSON.stringify(t)))
                                 } catch (e) {}
-                            })(k)
+                            })(V)
                         })()
-                    }, [k, e2, ew, e3, e1, n.downloaderEmailVerification]), (0, i.useEffect)(() => {
-                        d || eb || ew || k && q && (eu(!0), a((0, td.A4)({
-                            id: k,
-                            secret: q,
-                            recipientId: z,
-                            password: Q,
-                            canScanForMalware: ed
-                        })), eu(!1), eg(!0))
-                    }, [d, ed, a, ew, eb, z, q, k, Q]), (0, i.useEffect)(() => {
-                        if (!ew) return;
-                        n.state === ti.r.EXPIRED && (0, a6.m)(k || "", q || "", z);
-                        let e = (0, td.d5)(k);
+                    }, [V, e7, eu, aa, e8, n.downloaderEmailVerification]), (0, i.useEffect)(() => {
+                        d || ex || eu || V && K && (ec(!0), a((0, td.A4)({
+                            id: V,
+                            secret: K,
+                            recipientId: J,
+                            password: ee,
+                            canScanForMalware: ew
+                        })), ec(!1), eh(!0))
+                    }, [d, ew, a, eu, ex, J, K, V, ee]), (0, i.useEffect)(() => {
+                        if (!eu) return;
+                        n.state === ti.r.EXPIRED && (0, a6.m)(V || "", K || "", J);
+                        let e = (0, td.d5)(V);
                         if (n.state === ti.r.RECOVERING)
                             if (e) {
                                 let e = n.password_protected && !n.password ? ti.r.PASSWORD_PROTECTED : ti.r.DOWNLOADABLE;
@@ -4174,51 +4179,51 @@
                                     type: a3.o1.TRANSFER_SET_STATE,
                                     state: e
                                 })
-                            } else(0, a6.m)(k || "", q || "", z)
-                    }, [a, ew, z, q, n.password, n.password_protected, n.state, k, n]), (0, i.useEffect)(() => {
-                        ew && (n.state !== ti.r.PASSWORD_PROTECTED || e4 || (0, a6.m)(k || "", q || "", z))
-                    }, [e4, ew, z, q, n.state, k]), (0, i.useEffect)(() => {
-                        if (!ew || !k) return;
-                        let e = !!(0, a0.TS)(k);
-                        n.paid && !e && (0, a6.m)(k, null != q ? q : "", z)
-                    }, [ew, q, n.paid, k, z]), (0, i.useEffect)(() => {
-                        ew && k && q && !H && (e1 || (0, a6.m)(k || "", q || "", z))
-                    }, [ew, H, e1, z, q, k]);
-                    let ag = S && !c.Ay.isMobile && !localStorage.getItem(E.V),
-                        au = (0, i.useCallback)(() => {
-                            eT(!0)
+                            } else(0, a6.m)(V || "", K || "", J)
+                    }, [a, eu, J, K, n.password, n.password_protected, n.state, V, n]), (0, i.useEffect)(() => {
+                        eu && (n.state !== ti.r.PASSWORD_PROTECTED || e6 || (0, a6.m)(V || "", K || "", J))
+                    }, [e6, eu, J, K, n.state, V]), (0, i.useEffect)(() => {
+                        if (!eu || !V) return;
+                        let e = !!(0, a0.TS)(V);
+                        n.paid && !e && (0, a6.m)(V, null != K ? K : "", J)
+                    }, [eu, K, n.paid, V, J]), (0, i.useEffect)(() => {
+                        eu && V && K && !z && (e8 || (0, a6.m)(V || "", K || "", J))
+                    }, [eu, z, e8, J, K, V]);
+                    let ap = S && !c.Ay.isMobile && !localStorage.getItem(E.V),
+                        ax = (0, i.useCallback)(() => {
+                            eL(!0)
                         }, []),
-                        ah = (0, i.useCallback)(() => {
+                        ac = (0, i.useCallback)(() => {
                             (0, x.Od)().trackUserAction(er.fh.titleEditCancelled({
-                                transferId: k || ""
-                            })), eT(!1)
-                        }, [k]),
-                        ap = (0, i.useCallback)(async e => {
+                                transferId: V || ""
+                            })), eL(!1)
+                        }, [V]),
+                        ay = (0, i.useCallback)(async e => {
                             let a = X.A.stripHtmlTags(e.trim());
                             try {
-                                await eL({
-                                    id: k || "",
+                                await eD({
+                                    id: V || "",
                                     displayName: a
-                                }), eO(a), eT(!1), (0, x.Od)().trackUserAction(er.fh.titleEditSaved({
-                                    transferId: k || ""
+                                }), eR(a), eL(!1), (0, x.Od)().trackUserAction(er.fh.titleEditSaved({
+                                    transferId: V || ""
                                 }))
                             } catch (e) {
                                 throw e
                             }
-                        }, [eL, k]),
-                        ax = (0, i.useCallback)(() => {
-                            k && a((0, aX.VK)(a$.$.previews, k))
-                        }, [a, k]),
-                        ac = (0, i.useCallback)(() => {
-                            em(!0), a({
+                        }, [eD, V]),
+                        aC = (0, i.useCallback)(() => {
+                            V && a((0, aX.VK)(a$.$.previews, V))
+                        }, [a, V]),
+                        aI = (0, i.useCallback)(() => {
+                            eb(!0), a({
                                 type: a3.o1.TRANSFER_STATE_DOWNLOAD_STARTING
                             }), (0, x.Od)().trackUserAction(aJ.Sf.downloadRequested({
                                 location: aJ.Cx.PREVIEW_PAGE,
                                 downloadType: aJ.zh.ALL_FILES
-                            })), ag && !b && a((0, aH.UK)(aH.pU.WE_TRANSFER_SIGN)), a((0, td.F4)({
+                            })), ap && !b && a((0, aH.UK)(aH.pU.WE_TRANSFER_SIGN)), a((0, td.F4)({
                                 transfer: n,
-                                secret: q,
-                                recipientId: null != z && z,
+                                secret: K,
+                                recipientId: null != J && J,
                                 domainUserId: o.domainUserId,
                                 uploadInProgress: !1,
                                 transferGroup: aQ.a.RECEIVED,
@@ -4226,215 +4231,215 @@
                                 isFromQRCode: !1,
                                 fromPreviewPage: !0
                             }))
-                        }, [ag, b, a, m, z, q, o.domainUserId, n]),
-                        ay = (0, i.useCallback)(() => {
+                        }, [ap, b, a, m, J, K, o.domainUserId, n]),
+                        aR = (0, i.useCallback)(() => {
                             (0, x.Od)().trackUserAction(er.fh.backToTransferClicked({
-                                transferId: k || "",
-                                isPreviewMonetized: eY
-                            })), F ? (0, a6.m)(k || "", q || "", z) : window.history.back()
-                        }, [k, eY, F, q, z]),
-                        aC = (0, i.useCallback)(e => {
+                                transferId: V || "",
+                                isPreviewMonetized: e0
+                            })), F ? (0, a6.m)(V || "", K || "", J) : window.history.back()
+                        }, [V, e0, F, K, J]),
+                        aD = (0, i.useCallback)(e => {
                             (0, x.Od)().trackUserAction(aJ.Sf.downloadRequested({
                                 location: aJ.Cx.PREVIEW_PAGE,
                                 downloadType: aJ.zh.SINGLE_FILE
-                            })), ag && !b && a((0, aH.UK)(aH.pU.WE_TRANSFER_SIGN)), a((0, td.Vv)({
+                            })), ap && !b && a((0, aH.UK)(aH.pU.WE_TRANSFER_SIGN)), a((0, td.Vv)({
                                 transfer: n,
-                                secret: q,
-                                recipientId: null != z && z,
+                                secret: K,
+                                recipientId: null != J && J,
                                 items: n.items,
                                 fileId: e,
                                 domainUserId: o.domainUserId,
                                 uploadInProgress: !1,
                                 transferGroup: aQ.a.RECEIVED,
                                 orionClient: m,
-                                malwareProtectionStatus: ei,
+                                malwareProtectionStatus: em,
                                 isFromQRCode: !1,
                                 fromPreviewPage: !0
                             }))
-                        }, [b, a, ei, m, z, q, o.domainUserId, n, ag]),
-                        aI = (0, i.useRef)(null),
-                        aR = (0, i.useMemo)(() => am.filter(e => !(0, G.mf)(e)), [am]),
-                        aD = (0, i.useMemo)(() => e8 ? aR.findIndex(e => e.id === e8.id) : 0, [aR, e8]),
-                        ak = (0, i.useCallback)(() => {
-                            if (!e8 || 0 === aR.length) return;
-                            let e = (aR.findIndex(e => e.id === e8.id) + 1) % aR.length,
-                                a = aR[e];
-                            return e6(a), a.id
-                        }, [e8, aR, e6]),
-                        aA = (0, i.useCallback)(() => {
-                            if (!e8 || 0 === aR.length) return;
-                            let e = (aR.findIndex(e => e.id === e8.id) - 1 + aR.length) % aR.length,
-                                a = aR[e];
-                            return e6(a), a.id
-                        }, [e8, aR, e6]),
-                        aG = (0, i.useCallback)(e => {
+                        }, [b, a, em, m, J, K, o.domainUserId, n, ap]),
+                        ak = (0, i.useRef)(null),
+                        aA = (0, i.useMemo)(() => au.filter(e => !(0, G.mf)(e)), [au]),
+                        aG = (0, i.useMemo)(() => e5 ? aA.findIndex(e => e.id === e5.id) : 0, [aA, e5]),
+                        aV = (0, i.useCallback)(() => {
+                            if (!e5 || 0 === aA.length) return;
+                            let e = (aA.findIndex(e => e.id === e5.id) + 1) % aA.length,
+                                a = aA[e];
+                            return e3(a), a.id
+                        }, [e5, aA, e3]),
+                        aU = (0, i.useCallback)(() => {
+                            if (!e5 || 0 === aA.length) return;
+                            let e = (aA.findIndex(e => e.id === e5.id) - 1 + aA.length) % aA.length,
+                                a = aA[e];
+                            return e3(a), a.id
+                        }, [e5, aA, e3]),
+                        aW = (0, i.useCallback)(e => {
                             var a, t;
-                            if ((0, G.mf)(e)) return void an(e.name);
+                            if ((0, G.mf)(e)) return void as(e.name);
                             (0, x.Od)().trackUserAction(er.fh.previewFileClicked({
-                                transferId: k || "",
+                                transferId: V || "",
                                 fileId: e.id,
                                 fileType: null != (t = null == (a = e.preview) ? void 0 : a.fileType) ? t : "",
-                                isPreviewMonetized: eY
-                            })), eY ? e0() : aw(e)
-                        }, [aw, an, eY, e0, k]),
-                        aV = (0, i.useCallback)(e => {
-                            e !== eF && ((0, x.Od)().trackUserAction(er.fh.viewModeSelected({
-                                transferId: k || "",
+                                isPreviewMonetized: e0
+                            })), e0 ? e2() : ah(e)
+                        }, [ah, as, e0, e2, V]),
+                        tn = (0, i.useCallback)(e => {
+                            e !== eT && ((0, x.Od)().trackUserAction(er.fh.viewModeSelected({
+                                transferId: V || "",
                                 viewMode: e
-                            })), eR(50), eN(e))
-                        }, [k, eF]);
-                    return e2 || !ew ? (0, l.jsx)("div", {
+                            })), eA(50), eE(e))
+                        }, [V, eT]);
+                    return e7 || !eu ? (0, l.jsx)("div", {
                         className: to().loadingContainer,
                         children: (0, l.jsx)(T.y, {
                             size: "large",
                             appearance: "neutral",
                             mode: "dark"
                         })
-                    }) : e1 ? e4 ? (0, l.jsx)(av, {
-                        transferId: k || "",
-                        secret: q || "",
-                        recipientId: z
+                    }) : e8 ? e6 ? (0, l.jsx)(av, {
+                        transferId: V || "",
+                        secret: K || "",
+                        recipientId: J
                     }) : (0, l.jsxs)(l.Fragment, {
-                        children: [e$ && (0, l.jsx)(az, {}), e8 ? (0, l.jsxs)(l.Fragment, {
+                        children: [e4 && (0, l.jsx)(az, {}), e5 ? (0, l.jsxs)(l.Fragment, {
                             children: [(0, l.jsx)(ar, {
-                                item: e8,
-                                transferId: k || "",
-                                securityHash: q || "",
-                                recipientId: z,
-                                password: Q,
-                                currentIndex: aD,
-                                totalCount: aR.length,
-                                onDownload: aC,
+                                item: e5,
+                                transferId: V || "",
+                                securityHash: K || "",
+                                recipientId: J,
+                                password: ee,
+                                currentIndex: aG,
+                                totalCount: aA.length,
+                                onDownload: aD,
                                 onClose: () => {
                                     (0, x.Od)().trackUserAction(er.fh.previewFileClosed({
-                                        transferId: k || "",
-                                        fileId: e8.id
-                                    })), e7()
+                                        transferId: V || "",
+                                        fileId: e5.id
+                                    })), e9()
                                 },
                                 onNext: () => {
-                                    let e = ak();
+                                    let e = aV();
                                     (0, x.Od)().trackUserAction(er.fh.previewFileNextClicked({
-                                        transferId: k || "",
-                                        fileId: e8.id,
+                                        transferId: V || "",
+                                        fileId: e5.id,
                                         nextFileId: null != e ? e : ""
                                     }))
                                 },
                                 onPrevious: () => {
-                                    let e = aA();
+                                    let e = aU();
                                     (0, x.Od)().trackUserAction(er.fh.previewFilePreviousClicked({
-                                        transferId: k || "",
-                                        fileId: e8.id,
+                                        transferId: V || "",
+                                        fileId: e5.id,
                                         nextFileId: null != e ? e : ""
                                     }))
                                 },
-                                isPreviewOnly: D,
+                                isPreviewOnly: H,
                                 viewOption: n.viewOption,
-                                hasAvailablePreviewItems: as,
-                                showComments: eQ,
-                                onToggleFavorite: ae,
-                                canRemoveFavorite: ai,
-                                isFavoriteLoading: ad,
-                                isTransferOwner: eK
+                                hasAvailablePreviewItems: ag,
+                                showComments: e$,
+                                onToggleFavorite: al,
+                                canRemoveFavorite: ao,
+                                isFavoriteLoading: a_,
+                                isTransferOwner: eX
                             }), (0, l.jsx)(eC, {
-                                isOpen: e9,
-                                onClose: aa,
-                                onConfirm: at,
-                                onSignUp: al,
+                                isOpen: at,
+                                onClose: ai,
+                                onConfirm: ad,
+                                onSignUp: an,
                                 isFavorites: !0
                             })]
                         }) : (0, l.jsxs)("div", {
-                            ref: eH,
+                            ref: ez,
                             className: to().page,
                             children: [(0, l.jsxs)(l.Fragment, {
                                 children: [(0, l.jsx)(ep, {
                                     transferId: n.id || "",
-                                    transferTitle: eE,
-                                    transferMessage: et,
+                                    transferTitle: eB,
+                                    transferMessage: ed,
                                     transferExpiryInSeconds: n.expiryInSeconds,
-                                    itemsCount: A.length,
-                                    isDownloading: eo,
-                                    onBackToTransfer: ay,
-                                    onDownload: ac,
-                                    isPreviewOnly: D,
+                                    itemsCount: U.length,
+                                    isDownloading: eg,
+                                    onBackToTransfer: aR,
+                                    onDownload: aI,
+                                    isPreviewOnly: H,
                                     viewOption: n.viewOption,
-                                    hasAvailablePreviewItems: as,
-                                    brandingWallpapers: M ? ee : void 0,
-                                    brandingBackgroundColor: M ? ea : void 0,
-                                    isTransferOwner: eK,
-                                    isEditingTitle: ej,
-                                    onEditTitleStart: au,
-                                    onEditTitleSave: ap,
-                                    onEditTitleCancel: ah,
-                                    onEditImageStart: ax
-                                }), !e2 && ew && (0, l.jsxs)(l.Fragment, {
+                                    hasAvailablePreviewItems: ag,
+                                    brandingWallpapers: M ? el : void 0,
+                                    brandingBackgroundColor: M ? ei : void 0,
+                                    isTransferOwner: eX,
+                                    isEditingTitle: eO,
+                                    onEditTitleStart: ax,
+                                    onEditTitleSave: ay,
+                                    onEditTitleCancel: ac,
+                                    onEditImageStart: aC
+                                }), !e7 && eu && (0, l.jsxs)(l.Fragment, {
                                     children: [(0, l.jsxs)("div", {
                                         className: N()(to().toolbar, {
-                                            [to().toolbarWithBreadcrumbs]: eP.length > 0
+                                            [to().toolbarWithBreadcrumbs]: eM.length > 0
                                         }),
                                         children: [(0, l.jsx)(B, {
-                                            currentPath: eP,
-                                            onNavigate: ao
+                                            currentPath: eM,
+                                            onNavigate: am
                                         }), (0, l.jsxs)("div", {
                                             className: to().toolbarControls,
                                             children: [(0, l.jsx)(aP, {
-                                                value: eS,
-                                                onChange: eD
+                                                value: eN,
+                                                onChange: eG
                                             }), (0, l.jsx)("button", {
                                                 className: N()(to().iconButton, {
-                                                    [to().iconButtonActive]: eF === e_.qi.GRID
+                                                    [to().iconButtonActive]: eT === e_.qi.GRID
                                                 }),
-                                                onClick: () => aV(e_.qi.GRID),
+                                                onClick: () => tn(e_.qi.GRID),
                                                 "aria-label": "Grid view",
                                                 children: (0, l.jsx)(s.WhD, {})
                                             }), (0, l.jsx)("button", {
                                                 className: N()(to().iconButton, {
-                                                    [to().iconButtonActive]: eF === e_.qi.LIST
+                                                    [to().iconButtonActive]: eT === e_.qi.LIST
                                                 }),
-                                                onClick: () => aV(e_.qi.LIST),
+                                                onClick: () => tn(e_.qi.LIST),
                                                 "aria-label": "List view",
                                                 children: (0, l.jsx)(s.YVe, {})
                                             })]
                                         })]
                                     }), (0, l.jsx)("div", {
                                         className: N()(to().gridContainer, {
-                                            [to().gridContainerWithProcessing]: J > 0
+                                            [to().gridContainerWithProcessing]: Y > 0
                                         }),
-                                        ref: eV,
-                                        children: eF === e_.qi.GRID ? (0, l.jsx)(en, {
-                                            onSelectItem: aG,
-                                            onDownloadItem: aC,
-                                            onToggleFavorite: ae,
-                                            canRemoveFavorite: ai,
-                                            isFavoriteLoading: ad,
-                                            items: am,
-                                            isPreviewOnly: D,
-                                            showComments: eQ,
-                                            shouldBlurThumbnails: eY,
-                                            visibleCount: eB,
-                                            onVisibleCountChange: eR
+                                        ref: eq,
+                                        children: eT === e_.qi.GRID ? (0, l.jsx)(en, {
+                                            onSelectItem: aW,
+                                            onDownloadItem: aD,
+                                            onToggleFavorite: al,
+                                            canRemoveFavorite: ao,
+                                            isFavoriteLoading: a_,
+                                            items: au,
+                                            isPreviewOnly: H,
+                                            showComments: e$,
+                                            shouldBlurThumbnails: e0,
+                                            visibleCount: ek,
+                                            onVisibleCountChange: eA
                                         }) : (0, l.jsx)(ab, {
-                                            onSelectItem: aG,
-                                            onDownloadItem: aC,
-                                            onToggleFavorite: ae,
-                                            canRemoveFavorite: ai,
-                                            isFavoriteLoading: ad,
-                                            items: am,
-                                            isPreviewOnly: D,
-                                            showComments: eQ,
-                                            shouldBlurThumbnails: eY,
-                                            visibleCount: eB,
-                                            onVisibleCountChange: eR
+                                            onSelectItem: aW,
+                                            onDownloadItem: aD,
+                                            onToggleFavorite: al,
+                                            canRemoveFavorite: ao,
+                                            isFavoriteLoading: a_,
+                                            items: au,
+                                            isPreviewOnly: H,
+                                            showComments: e$,
+                                            shouldBlurThumbnails: e0,
+                                            visibleCount: ek,
+                                            onVisibleCountChange: eA
                                         })
-                                    }), eB >= am.length && (0, l.jsx)("div", {
+                                    }), ek >= au.length && (0, l.jsx)("div", {
                                         className: to().reportTransferContainer,
                                         children: (0, l.jsx)(aZ.A, {
                                             customClassName: "report__transfer--preview",
-                                            publicId: k || void 0
+                                            publicId: V || void 0
                                         })
                                     })]
                                 }), (0, l.jsx)(j.A, {
-                                    nodeRef: aI,
-                                    in: J > 0,
+                                    nodeRef: ak,
+                                    in: Y > 0,
                                     timeout: 300,
                                     classNames: {
                                         enter: to().processingEnter,
@@ -4446,24 +4451,24 @@
                                     },
                                     unmountOnExit: !0,
                                     children: (0, l.jsxs)("div", {
-                                        ref: aI,
+                                        ref: ak,
                                         className: to().processingCount,
                                         children: [(0, l.jsx)(T.y, {
                                             size: "large",
                                             appearance: "neutral"
-                                        }), Z, "/", A.length, " —", " ", t("preview.processing")]
+                                        }), Q, "/", U.length, " —", " ", t("preview.processing")]
                                     })
                                 }), (0, l.jsx)(eC, {
-                                    isOpen: e9,
-                                    onClose: aa,
-                                    onConfirm: at,
-                                    onSignUp: al,
+                                    isOpen: at,
+                                    onClose: ai,
+                                    onConfirm: ad,
+                                    onSignUp: an,
                                     isFavorites: !0
                                 })]
-                            }), eA && (0, l.jsx)(_.K, {
-                                ref: ez,
+                            }), eV && (0, l.jsx)(_.K, {
+                                ref: eJ,
                                 className: to().scrollToTopButton,
-                                onClick: e5,
+                                onClick: ae,
                                 variation: "neutral",
                                 "aria-label": "Scroll to top",
                                 icon: s.Pq0
@@ -5933,4 +5938,4 @@
         }
     }
 ]);
-//# sourceMappingURL=preview.d7574585b05ea8c9.js.map
+//# sourceMappingURL=preview.3ea887d2e039ea6c.js.map

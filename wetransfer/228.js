@@ -7,8 +7,8 @@
             });
             var s = l(98175),
                 n = l(68018),
-                d = l(68081),
-                i = l(57912),
+                i = l(68081),
+                d = l(57912),
                 t = l(27498),
                 r = l(63306),
                 o = l(53155),
@@ -18,18 +18,18 @@
             let h = {
                 Transfer: r.Ay,
                 Session: {
-                    acceptTermsConditions: d.Ee,
-                    acceptTrackers: d.qM,
-                    declineTrackers: d.yc,
-                    setDomainUserId: d.tm,
-                    setLanguage: d.xC,
-                    setRedirect: d.LE,
-                    setShowDataProcessingPrompt: d.rK
+                    acceptTermsConditions: i.Ee,
+                    acceptTrackers: i.qM,
+                    declineTrackers: i.yc,
+                    setDomainUserId: i.tm,
+                    setLanguage: i.xC,
+                    setRedirect: i.LE,
+                    setShowDataProcessingPrompt: i.rK
                 },
                 Transfers: o.Ay,
                 TransfersReceived: g.A,
                 User: _.default,
-                Account: i.A,
+                Account: d.A,
                 Pending: {
                     setPending: n.m$,
                     resetPending: n.lX
@@ -45,13 +45,13 @@
         16192: (e, a, l) => {
             "use strict";
             l.r(a), l.d(a, {
-                ApplyChangesPage: () => S
+                ApplyChangesPage: () => O
             });
             var s = l(23798),
                 n = l(46001),
-                d = l.n(n),
-                i = l(16182),
-                t = l.n(i),
+                i = l.n(n),
+                d = l(16182),
+                t = l.n(d),
                 r = l(21462),
                 o = l(75546),
                 g = l(38169),
@@ -61,26 +61,27 @@
                 w = l(89395),
                 m = l(35320),
                 c = l(80341),
+                u = l(65882),
                 y = l(62594),
-                u = l(24870),
-                b = l(19632),
-                C = l(24463),
-                A = l(78283),
-                x = l(2269),
+                b = l(24870),
+                C = l(19632),
+                A = l(24463),
+                x = l(78283),
+                v = l(2269),
                 P = l(15168),
-                v = l(51384),
-                k = l(68505),
-                f = l(62760),
-                j = l(10995),
-                N = l(12637),
+                k = l(51384),
+                f = l(68505),
+                j = l(62760),
+                N = l(10995),
+                I = l(12637),
                 L = l(13672),
                 T = l(86781),
-                I = l(59204),
-                D = l.n(I),
+                D = l(59204),
+                M = l.n(D),
                 E = function(e) {
                     return e.USE_FOR_TRANSFER_CLICKED = "apply_branded_changes_transfer", e.SAVE_TO_BRAND_CLICKED = "apply_branded_changes_brand", e.CANCEL_CLICKED = "apply_branded_changes_cancelled", e
                 }(E || {});
-            let M = {
+            let B = {
                     applyToTransferClicked(e) {
                         let {
                             hasCoverChanges: a,
@@ -112,252 +113,309 @@
                         info: {}
                     })
                 },
-                B = {
+                K = {
                     safeAreaTop: 32,
                     safeAreaBottom: 32,
                     safeAreaLeft: 60,
                     safeAreaRight: 60
                 },
-                K = {
+                R = {
                     background: {
                         type: c._B.Background,
                         backgroundColor: "#f5f5f5"
                     }
                 };
 
-            function R(e) {
-                var a, l, s, n, d, i;
-                return (null == e || null == (l = e.previews) || null == (a = l.large) ? void 0 : a.url) || (null == e || null == (n = e.previews) || null == (s = n.editorPreview) ? void 0 : s.url) || (null == e || null == (i = e.previews) || null == (d = i.thumbnail) ? void 0 : d.url)
+            function S(e) {
+                var a, l, s, n, i, d;
+                return (null == e || null == (l = e.previews) || null == (a = l.large) ? void 0 : a.url) || (null == e || null == (n = e.previews) || null == (s = n.editorPreview) ? void 0 : s.url) || (null == e || null == (d = e.previews) || null == (i = d.thumbnail) ? void 0 : i.url)
             }
 
-            function S() {
+            function O() {
                 var e, a, l, n;
                 let {
-                    t: i
-                } = (0, o.Bd)(), I = (0, g.wA)(), {
+                    t: d
+                } = (0, o.Bd)(), D = (0, g.wA)(), {
                     settings: {
                         is_branded_previews_enabled: E
                     }
-                } = (0, f.k)(), S = (0, g.d4)(x.LJ), O = (0, g.d4)(P.Di), U = (0, g.d4)(P.Bt), F = (0, g.d4)(P.A3), H = (0, g.d4)(P.HD), W = (0, g.d4)(P.pS), q = (0, g.d4)(P.eL), J = (0, g.d4)(N.n9), V = (0, g.d4)(N.Pq), z = (0, g.d4)(T.Ce), X = (0, g.d4)(P.MJ), G = (0, g.d4)(P.TB), Z = (0, g.d4)(P.jV), Q = (0, g.d4)(P.wv), $ = (0, g.d4)(P.lc), Y = (0, g.d4)(P.D4), ee = (0, g.d4)(P.mA), ea = (0, g.d4)(P.YF), el = (0, g.d4)(P.R), es = (0, g.d4)(P.u0), en = (0, g.d4)(N.yD), ed = (0, g.d4)(e => (0, L.aE)(e, F || "")), ei = (0, g.d4)(e => (0, P.yi)(e, F || "")), et = (0, g.d4)(e => (0, P.r7)(e, F || "")), er = (0, r.useMemo)(() => {
-                    if (!H) return !1;
+                } = (0, j.k)(), O = (0, g.d4)(v.LJ), U = (0, g.d4)(P.Di), F = (0, g.d4)(P.Bt), H = (0, g.d4)(P.A3), W = (0, g.d4)(P.HD), q = (0, g.d4)(P.pS), J = (0, g.d4)(P.eL), V = (0, g.d4)(I.n9), z = (0, g.d4)(I.Pq), X = (0, u.u)("wallpapers"), G = (0, g.d4)(T.Ce), Z = (0, g.d4)(P.MJ), Q = (0, g.d4)(P.TB), $ = (0, g.d4)(P.jV), Y = (0, g.d4)(P.wv), ee = (0, g.d4)(P.lc), ea = (0, g.d4)(P.D4), el = (0, g.d4)(P.mA), es = (0, g.d4)(P.YF), en = (0, g.d4)(P.R), ei = (0, g.d4)(P.u0), ed = (0, g.d4)(I.yD), et = (0, g.d4)(e => (0, L.aE)(e, H || "")), er = (0, g.d4)(e => (0, P.yi)(e, H || "")), eo = (0, g.d4)(e => (0, P.r7)(e, H || "")), eg = (0, r.useMemo)(() => {
+                    if (!W) return !1;
                     let {
                         layout: e
-                    } = (0, C.Hh)(W, H), a = null != et ? et : u.dL;
+                    } = (0, A.Hh)(q, W), a = null != eo ? eo : b.dL;
                     return !t()(JSON.parse(JSON.stringify(a)), JSON.parse(JSON.stringify(e)))
-                }, [W, H, et]), eo = (0, r.useMemo)(() => ee !== (null != el ? el : c.hK.image) || (ee === c.hK.solidColor ? null === es || ea !== es : !!$ && (!Y || $.assetId !== Y.assetId)), [$, Y, ee, el, ea, es]), eg = (0, r.useMemo)(() => {
+                }, [q, W, eo]), ep = (0, r.useMemo)(() => el !== (null != en ? en : c.hK.image) || (el === c.hK.solidColor ? null === ei || es !== ei : !!ee && (ea ? ee.assetId !== ea.assetId : !!ee.assetId)), [ee, ea, el, en, es, ei]), e_ = (0, r.useMemo)(() => {
                     var e;
-                    if (el !== c.hK.solidColor) return R(Y) || (null == (e = en[0]) ? void 0 : e.asset_url)
-                }, [Y, en, el]), ep = (0, r.useMemo)(() => {
+                    if (en !== c.hK.solidColor) return S(ea) || (null == (e = ed[0]) ? void 0 : e.asset_url)
+                }, [ea, ed, en]), eh = (0, r.useMemo)(() => {
                     var e;
-                    return el === c.hK.solidColor ? es || void 0 : eg || null == ei || null == (e = ei.background) ? void 0 : e.backgroundColor
-                }, [el, es, eg, null == ei || null == (e = ei.background) ? void 0 : e.backgroundColor]), e_ = (0, r.useMemo)(() => {
-                    if (!Q) return;
-                    let e = q.fileName === u.u6.fileName ? (0, C.Xb)(q, Q) : Q;
-                    return (0, C.Hh)(W, e).layout
-                }, [W, Q, q]), eh = (0, r.useMemo)(() => {
-                    if (ee !== c.hK.solidColor) return eo ? R($) : eg
-                }, [ee, eo, $, eg]), ew = (0, r.useMemo)(() => {
-                    if (ee === c.hK.solidColor) return ea;
-                    if (!eh) {
-                        if (W === c.hK.solidColor) {
-                            var e;
-                            return null == e_ || null == (e = e_.background) ? void 0 : e.backgroundColor
+                    return en === c.hK.solidColor ? ei || void 0 : e_ || null == er || null == (e = er.background) ? void 0 : e.backgroundColor
+                }, [en, ei, e_, null == er || null == (e = er.background) ? void 0 : e.backgroundColor]), ew = (0, r.useMemo)(() => {
+                    if (J.fileName !== b.u6.fileName || !X) return J;
+                    let {
+                        thumbnail: e,
+                        editorPreview: a,
+                        large: l
+                    } = b.u6.previews;
+                    return {
+                        ...J,
+                        previews: {
+                            thumbnail: {
+                                ...e,
+                                url: X
+                            },
+                            editorPreview: {
+                                ...a,
+                                url: X
+                            },
+                            large: {
+                                ...l,
+                                url: X
+                            }
                         }
-                        return ep
                     }
-                }, [ee, ea, eh, W, null == e_ || null == (a = e_.background) ? void 0 : a.backgroundColor, ep]), em = (0, r.useMemo)(() => {
-                    let e = null == q ? void 0 : q.assetId;
-                    return !!e && !!(0, v.i5)(e)
-                }, [null == q ? void 0 : q.assetId]), ec = (0, r.useMemo)(() => {
+                }, [J, X]), em = (0, r.useMemo)(() => {
+                    var e;
+                    if (!er || !X) return er;
+                    let a = null == (e = er.background) ? void 0 : e.asset;
+                    if (null == a ? void 0 : a.assetId) return er;
+                    let {
+                        thumbnail: l,
+                        editorPreview: s,
+                        large: n
+                    } = b.u6.previews;
+                    return {
+                        ...er,
+                        background: {
+                            ...er.background,
+                            asset: {
+                                ...a || b.u6,
+                                previews: {
+                                    thumbnail: {
+                                        ...l,
+                                        url: X
+                                    },
+                                    editorPreview: {
+                                        ...s,
+                                        url: X
+                                    },
+                                    large: {
+                                        ...n,
+                                        url: X
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }, [er, X]), ec = (0, r.useMemo)(() => {
+                    if (!Y) return;
+                    let e = J.fileName === b.u6.fileName ? (0, A.Xb)(ew, Y) : Y;
+                    return (0, A.Hh)(q, e).layout
+                }, [q, Y, J, ew]), eu = (0, r.useMemo)(() => {
+                    if (el !== c.hK.solidColor) return ep ? S(ee) : e_
+                }, [el, ep, ee, e_]), ey = (0, r.useMemo)(() => {
+                    if (el === c.hK.solidColor) return es;
+                    if (!eu) {
+                        if (q === c.hK.solidColor) {
+                            var e;
+                            return null == ec || null == (e = ec.background) ? void 0 : e.backgroundColor
+                        }
+                        return eh
+                    }
+                }, [el, es, eu, q, null == ec || null == (a = ec.background) ? void 0 : a.backgroundColor, eh]), eb = (0, r.useMemo)(() => {
+                    let e = null == J ? void 0 : J.assetId;
+                    return !!e && !!(0, k.i5)(e)
+                }, [null == J ? void 0 : J.assetId]), eC = (0, r.useMemo)(() => {
                     if (!E) return !1;
-                    let e = null == $ ? void 0 : $.assetId;
-                    return !!e && !!(0, v.i5)(e)
-                }, [null == $ ? void 0 : $.assetId, E]), ey = em || ec, eu = (0, r.useMemo)(() => z ? ey ? X ? i("showcase.apply_changes.save_to_brand_disabled.multi_image") : em && V.length >= 5 ? i("showcase.apply_changes.save_to_brand_disabled.max_wallpapers") : ec && en.length >= 5 ? i("showcase.apply_changes.save_to_brand_disabled.max_previews_wallpapers") : null : i("showcase.apply_changes.save_to_brand_disabled.no_images") : i("showcase.apply_changes.save_to_brand_disabled.no_access"), [z, ey, X, em, ec, V.length, en.length, i]), eb = (0, r.useCallback)(() => {
-                    (0, h.Od)().trackUserAction(M.cancelClicked()), I((0, x.zj)(x.fW.EDITOR))
-                }, [I]), eC = (0, r.useCallback)(async () => {
-                    if (F && H) {
-                        I((0, x.F6)(!0));
+                    let e = null == ee ? void 0 : ee.assetId;
+                    return !!e && !!(0, k.i5)(e)
+                }, [null == ee ? void 0 : ee.assetId, E]), eA = eb || eC, ex = (0, r.useMemo)(() => G ? eA ? Z ? d("showcase.apply_changes.save_to_brand_disabled.multi_image") : eb && z.length >= 5 ? d("showcase.apply_changes.save_to_brand_disabled.max_wallpapers") : eC && ed.length >= 5 ? d("showcase.apply_changes.save_to_brand_disabled.max_previews_wallpapers") : null : d("showcase.apply_changes.save_to_brand_disabled.no_images") : d("showcase.apply_changes.save_to_brand_disabled.no_access"), [G, eA, Z, eb, eC, z.length, ed.length, d]), ev = (0, r.useCallback)(() => {
+                    (0, h.Od)().trackUserAction(B.cancelClicked()), D((0, v.zj)(v.fW.EDITOR))
+                }, [D]), eP = (0, r.useCallback)(async () => {
+                    if (H && W) {
+                        D((0, v.F6)(!0));
                         try {
                             let e, {
                                 layout: a,
                                 deletedAssetIds: l
-                            } = (0, C.Hh)(W, H);
-                            ee === c.hK.solidColor ? e = {
-                                previewBackgroundColor: ea
-                            } : $ && (e = {
-                                previewBackgroundAsset: $
-                            }), await I((0, x.Qv)(F, a, e)), await Promise.all(l.map(async e => {
+                            } = (0, A.Hh)(q, W);
+                            el === c.hK.solidColor ? e = {
+                                previewBackgroundColor: es
+                            } : ee && (e = {
+                                previewBackgroundAsset: ee
+                            }), await D((0, v.Qv)(H, a, e)), await Promise.all(l.map(async e => {
                                 try {
                                     await (0, w.AO)({
                                         assetId: e
-                                    }), I((0, x.Vx)(e))
+                                    }), D((0, v.Vx)(e))
                                 } catch (e) {
-                                    k.A.track(e)
+                                    f.A.track(e)
                                 }
-                            })), (0, h.Od)().trackUserAction(M.applyToTransferClicked({
-                                hasCoverChanges: er,
-                                hasPreviewBackgroundChanges: eo
-                            })), I((0, x.F6)(!1)), I((0, x.l1)()), setTimeout(() => {
-                                I((0, x._L)(u.u6)), I((0, x.LG)())
-                            }, u.Uk)
+                            })), (0, h.Od)().trackUserAction(B.applyToTransferClicked({
+                                hasCoverChanges: eg,
+                                hasPreviewBackgroundChanges: ep
+                            })), D((0, v.F6)(!1)), D((0, v.l1)()), setTimeout(() => {
+                                D((0, v._L)(b.u6)), D((0, v.LG)())
+                            }, b.Uk)
                         } catch (e) {
-                            I((0, x.F6)(!1)), k.A.track(e)
+                            D((0, v.F6)(!1)), f.A.track(e)
                         }
                     }
-                }, [F, H, W, $, ee, ea, er, eo, I]), eA = (0, r.useCallback)(async () => {
-                    if (J) {
-                        I((0, x.F6)(!0));
+                }, [H, W, q, ee, el, es, eg, ep, D]), ek = (0, r.useCallback)(async () => {
+                    if (V) {
+                        D((0, v.F6)(!0));
                         try {
                             let e = {},
-                                a = null == q ? void 0 : q.assetId,
-                                l = a && (0, v.i5)(a);
+                                a = null == J ? void 0 : J.assetId,
+                                l = a && (0, k.i5)(a);
                             if (l) {
-                                let a = await I(j.A.UI.uploadAsset(l, "wallpaper"));
-                                a && (e.wallpapers = [...V, a].slice(0, 5))
+                                let a = await D(N.A.UI.uploadAsset(l, "wallpaper"));
+                                a && (e.wallpapers = [...z, a].slice(0, 5))
                             }
                             if (E) {
-                                let a = null == $ ? void 0 : $.assetId,
-                                    l = a && (0, v.i5)(a);
+                                let a = null == ee ? void 0 : ee.assetId,
+                                    l = a && (0, k.i5)(a);
                                 if (l) {
-                                    let a = await I(j.A.UI.uploadAsset(l, "wallpaper", "previews"));
+                                    let a = await D(N.A.UI.uploadAsset(l, "wallpaper", "previews"));
                                     a && (e.previews_wallpapers = [a])
                                 }
                             }
-                            Object.keys(e).length > 0 && await I(j.A.Account.editAccount(J, e, {
+                            Object.keys(e).length > 0 && await D(N.A.Account.editAccount(V, e, {
                                 notification: !1
-                            })), (0, h.Od)().trackUserAction(M.saveToBrandClicked({
-                                hasCoverChanges: er,
-                                hasPreviewBackgroundChanges: eo
-                            })), I((0, x.F6)(!1)), I((0, x.l1)()), setTimeout(() => {
-                                I((0, x._L)(u.u6)), I((0, x.LG)())
-                            }, u.Uk)
+                            })), (0, h.Od)().trackUserAction(B.saveToBrandClicked({
+                                hasCoverChanges: eg,
+                                hasPreviewBackgroundChanges: ep
+                            })), D((0, v.F6)(!1)), D((0, v.l1)()), setTimeout(() => {
+                                D((0, v._L)(b.u6)), D((0, v.LG)())
+                            }, b.Uk)
                         } catch (e) {
-                            I((0, x.F6)(!1)), k.A.track(e)
+                            D((0, v.F6)(!1)), f.A.track(e)
                         }
                     }
-                }, [q, $, J, V, E, er, eo, I]), ex = O || E && !U, eP = E ? "light" : "dark", ev = E ? "secondary" : "primary", ek = E ? "default" : "neutral", ef = (0, s.jsxs)(s.Fragment, {
+                }, [J, ee, V, z, E, eg, ep, D]), ef = U || E && !F, ej = E ? "light" : "dark", eN = E ? "secondary" : "primary", eI = E ? "default" : "neutral", eL = (0, s.jsxs)(s.Fragment, {
                     children: [(0, s.jsx)(p.$, {
-                        autoFocus: S,
-                        disabled: O,
-                        onClick: eb,
-                        mode: eP,
-                        variation: ek,
-                        appearance: ev,
+                        autoFocus: O,
+                        disabled: U,
+                        onClick: ev,
+                        mode: ej,
+                        variation: eI,
+                        appearance: eN,
                         as: "button",
                         "data-testid": "cancel-button",
-                        children: i("showcase.apply_changes.cancel")
-                    }), eu ? (0, s.jsx)(_.m, {
-                        content: eu,
+                        children: d("showcase.apply_changes.cancel")
+                    }), ex ? (0, s.jsx)(_.m, {
+                        content: ex,
                         position: "top",
                         mode: "dark",
-                        className: D().tooltip,
+                        className: M().tooltip,
                         children: (0, s.jsx)("span", {
                             children: (0, s.jsx)(p.$, {
                                 disabled: !0,
-                                mode: eP,
-                                variation: ek,
-                                appearance: ev,
+                                mode: ej,
+                                variation: eI,
+                                appearance: eN,
                                 as: "button",
                                 "data-testid": "save-to-brand-button",
-                                children: i("showcase.apply_changes.save_to_brand")
+                                children: d("showcase.apply_changes.save_to_brand")
                             })
                         })
                     }) : (0, s.jsx)(p.$, {
-                        disabled: ex,
-                        onClick: eA,
-                        mode: eP,
-                        variation: ek,
-                        appearance: ev,
+                        disabled: ef,
+                        onClick: ek,
+                        mode: ej,
+                        variation: eI,
+                        appearance: eN,
                         as: "button",
                         "data-testid": "save-to-brand-button",
-                        children: i("showcase.apply_changes.save_to_brand")
+                        children: d("showcase.apply_changes.save_to_brand")
                     }), (0, s.jsx)(p.$, {
-                        disabled: ex,
-                        onClick: eC,
+                        disabled: ef,
+                        onClick: eP,
                         as: "button",
                         "data-testid": "use-for-transfer-button",
-                        children: i("showcase.apply_changes.use_for_transfer")
+                        children: d("showcase.apply_changes.use_for_transfer")
                     })]
-                }), ej = E && (er || eo) && (0, s.jsxs)("div", {
-                    className: D().comparisonContainer,
+                }), eT = E && (eg || ep) && (0, s.jsxs)("div", {
+                    className: M().comparisonContainer,
                     children: [(0, s.jsxs)("div", {
-                        className: D().comparisonColumn,
+                        className: M().comparisonColumn,
                         children: [(0, s.jsxs)("span", {
-                            className: D().comparisonLabel,
+                            className: M().comparisonLabel,
                             children: [(0, s.jsx)("span", {
-                                className: d()(D().comparisonIcon, D().comparisonIconLive)
-                            }), i("showcase.apply_changes.current_label")]
+                                className: i()(M().comparisonIcon, M().comparisonIconLive)
+                            }), d("showcase.apply_changes.current_label")]
                         }), (0, s.jsxs)("div", {
-                            className: D().previewsRow,
-                            children: [er && (0, s.jsx)("div", {
-                                className: D().previewWrapper,
+                            className: M().previewsRow,
+                            children: [eg && (0, s.jsx)("div", {
+                                className: M().previewWrapper,
                                 children: (0, s.jsx)(y._, {
-                                    layout: ei || K,
+                                    layout: em || R,
                                     isThumbnail: !0,
-                                    ...B,
-                                    className: D().coverViewer,
+                                    ...K,
+                                    className: M().coverViewer,
                                     children: (0, s.jsx)(m.z, {})
                                 })
-                            }), eo && (0, s.jsx)("div", {
-                                className: D().previewWrapper,
-                                children: (0, s.jsx)(b.C, {
-                                    backgroundImageUrl: eg,
-                                    backgroundColor: ep,
-                                    className: D().previewsSkeleton,
-                                    transferTitle: null == ed ? void 0 : ed.display_name,
-                                    transferMessage: null == ei || null == (l = ei.bodyText) ? void 0 : l.text
+                            }), ep && (0, s.jsx)("div", {
+                                className: M().previewWrapper,
+                                children: (0, s.jsx)(C.C, {
+                                    backgroundImageUrl: e_,
+                                    backgroundColor: eh,
+                                    className: M().previewsSkeleton,
+                                    transferTitle: null == et ? void 0 : et.display_name,
+                                    transferMessage: null == er || null == (l = er.bodyText) ? void 0 : l.text
                                 })
                             })]
                         })]
                     }), (0, s.jsxs)("div", {
-                        className: D().comparisonColumn,
+                        className: M().comparisonColumn,
                         children: [(0, s.jsxs)("span", {
-                            className: D().comparisonLabel,
+                            className: M().comparisonLabel,
                             children: [(0, s.jsx)("span", {
-                                className: D().comparisonIcon
-                            }), i("showcase.apply_changes.new_label")]
+                                className: M().comparisonIcon
+                            }), d("showcase.apply_changes.new_label")]
                         }), (0, s.jsxs)("div", {
-                            className: D().previewsRow,
-                            children: [er && (0, s.jsx)("div", {
-                                className: D().previewWrapper,
+                            className: M().previewsRow,
+                            children: [eg && (0, s.jsx)("div", {
+                                className: M().previewWrapper,
                                 children: (0, s.jsx)(y._, {
-                                    layout: e_ || K,
+                                    layout: ec || R,
                                     isThumbnail: !0,
-                                    ...B,
-                                    className: D().coverViewer,
-                                    selectedBackgroundAssets: X ? Z : void 0,
-                                    multiImageLayout: X ? G : void 0,
+                                    ...K,
+                                    className: M().coverViewer,
+                                    selectedBackgroundAssets: Z ? $ : void 0,
+                                    multiImageLayout: Z ? Q : void 0,
                                     children: (0, s.jsx)(m.z, {})
                                 })
-                            }), eo && (0, s.jsx)("div", {
-                                className: D().previewWrapper,
-                                children: (0, s.jsx)(b.C, {
-                                    backgroundImageUrl: eh,
-                                    backgroundColor: ew,
-                                    className: D().previewsSkeleton,
-                                    transferTitle: null == ed ? void 0 : ed.display_name,
-                                    transferMessage: null == e_ || null == (n = e_.bodyText) ? void 0 : n.text
+                            }), ep && (0, s.jsx)("div", {
+                                className: M().previewWrapper,
+                                children: (0, s.jsx)(C.C, {
+                                    backgroundImageUrl: eu,
+                                    backgroundColor: ey,
+                                    className: M().previewsSkeleton,
+                                    transferTitle: null == et ? void 0 : et.display_name,
+                                    transferMessage: null == ec || null == (n = ec.bodyText) ? void 0 : n.text
                                 })
                             })]
                         })]
                     })]
                 });
                 return (0, s.jsxs)("div", {
-                    className: D().container,
+                    className: M().container,
                     children: [(0, s.jsxs)("div", {
-                        className: D().content,
+                        className: M().content,
                         children: [(0, s.jsx)("h1", {
-                            className: D().title,
-                            children: i("showcase.apply_changes.title")
+                            className: M().title,
+                            children: d("showcase.apply_changes.title")
                         }), (0, s.jsxs)("p", {
-                            className: D().description,
-                            children: [i("showcase.apply_changes.description"), i("showcase.apply_changes.description_secondary")]
+                            className: M().description,
+                            children: [d("showcase.apply_changes.description"), d("showcase.apply_changes.description_secondary")]
                         })]
-                    }), ej, E ? (0, s.jsx)("div", {
-                        className: D().inlineActions,
-                        children: ef
-                    }) : (0, s.jsx)(A.j, {
-                        children: ef
+                    }), eT, E ? (0, s.jsx)("div", {
+                        className: M().inlineActions,
+                        children: eL
+                    }) : (0, s.jsx)(x.j, {
+                        children: eL
                     })]
                 })
             }
@@ -452,4 +510,4 @@
         }
     }
 ]);
-//# sourceMappingURL=6192.c214d0d874907205.js.map
+//# sourceMappingURL=6192.a37887e10f2cb1d7.js.map

@@ -1,24 +1,25 @@
 "use strict";
 (self.webpackChunk_N_E = self.webpackChunk_N_E || []).push([
     [113], {
-        77555: (e, s, t) => {
-            t.r(s), t.d(s, {
+        77555: (e, s, i) => {
+            i.r(s), i.d(s, {
                 default: () => g
             });
-            var i = t(23798),
-                n = t(46001),
-                r = t.n(n),
-                u = t(21462),
-                a = t(97116),
-                c = t(87963),
-                b = t(45223),
-                l = t(84530),
-                _ = t(72255),
-                d = t(74067),
+            var t = i(23798),
+                n = i(46001),
+                r = i.n(n),
+                u = i(21462),
+                a = i(75546),
+                c = i(97116),
+                b = i(87963),
+                l = i(45223),
+                o = i(84530),
+                d = i(72255),
+                _ = i(74067),
                 k = function(e) {
                     return e.UNSUBSCRIBE_CLICKED = "marketing_email_unsubscribe_clicked", e.UNSUBSCRIBE_SUCCESS = "marketing_email_unsubscribe_success", e
                 }(k || {});
-            let o = {
+            let m = {
                 unsubscribeClicked: e => ({
                     kind: "marketing_email_unsubscribe_clicked",
                     info: {
@@ -38,45 +39,50 @@
             };
 
             function g() {
-                let [e, s] = (0, u.useState)(!1), [t, n] = (0, u.useState)(!1), {
+                let [e, s] = (0, u.useState)(!1), [i, n] = (0, u.useState)(!1), {
                     setMarketingConsent: k
-                } = (0, b.l)(), g = (0, d.LT)(), m = "pro" === g.get("account_type"), p = g.get("email"), f = (0, u.useCallback)(async () => {
-                    if (!t) {
-                        if (e) return void _.A.navigateTo("/");
-                        n(!0), (0, c.Od)().trackUserAction(o.unsubscribeClicked(p));
+                } = (0, l.l)(), g = (0, _.LT)(), p = "pro" === g.get("account_type"), f = g.get("email"), C = (0, u.useCallback)(async () => {
+                    if (!i) {
+                        if (e) return void d.A.navigateTo("/");
+                        n(!0), (0, b.Od)().trackUserAction(m.unsubscribeClicked(f));
                         try {
-                            await k(!1), s(!0), (0, c.Od)().trackUserAction(o.unsubscribeSuccess(p))
+                            await k(!1), s(!0), (0, b.Od)().trackUserAction(m.unsubscribeSuccess(f))
                         } finally {
                             n(!1)
                         }
                     }
-                }, [t, e, k]), S = e ? l.A.t("page.unsubscribemarketing.title_unsubscribed") : l.A.t("page.unsubscribemarketing.title"), C = e ? l.A.t("page.unsubscribemarketing.description_unsubscribed") : l.A.t("page.unsubscribemarketing.description"), A = e ? l.A.t("page.unsubscribemarketing.button_unsubscribed") : l.A.t("page.unsubscribemarketing.button"), [h, y] = (0, u.useState)(t);
+                }, [i, e, k]), S = e ? o.A.t("page.unsubscribemarketing.title_unsubscribed") : o.A.t("page.unsubscribemarketing.title"), h = e ? o.A.t("page.unsubscribemarketing.description_unsubscribed") : o.A.t("page.unsubscribemarketing.description"), x = e ? o.A.t("page.unsubscribemarketing.button_unsubscribed") : o.A.t("page.unsubscribemarketing.button"), [A, y] = (0, u.useState)(i);
                 return (0, u.useEffect)(() => {
-                    y(t)
-                }, [t]), (0, i.jsxs)("div", {
+                    y(i)
+                }, [i]), (0, t.jsxs)("div", {
                     className: "MarketingEmailsUnsubscribe",
-                    children: [(0, i.jsx)("h1", {
+                    children: [(0, t.jsx)("h1", {
                         children: S
-                    }), (0, i.jsx)("p", {
-                        children: C
-                    }), (0, i.jsx)(a.$, {
+                    }), (0, t.jsx)("p", {
+                        children: h
+                    }), (0, t.jsx)(c.$, {
                         type: "submit",
-                        disabled: h,
-                        onClick: f,
+                        disabled: A,
+                        onClick: C,
                         className: r()("transfer__button", "transfer__button--expiry-selector", {
-                            "transfer__button--inactive": h
+                            "transfer__button--inactive": A
                         }),
                         "data-testid": "uploaderForm-transfer-button",
-                        children: A
-                    }), m && (0, i.jsx)("p", {
-                        dangerouslySetInnerHTML: {
-                            __html: l.A.t("page.unsubscribemarketing.pro.body")
-                        },
-                        className: "pro-message"
+                        children: x
+                    }), p && (0, t.jsx)("p", {
+                        className: "pro-message",
+                        children: (0, t.jsx)(a.x6, {
+                            i18nKey: "page.unsubscribemarketing.pro.body",
+                            components: {
+                                a: (0, t.jsx)("a", {
+                                    href: "mailto:subscriptions@wetransfer.com"
+                                })
+                            }
+                        })
                     })]
                 })
             }
         }
     }
 ]);
-//# sourceMappingURL=unsubscribe-marketing.485a05d474a58da3.js.map
+//# sourceMappingURL=unsubscribe-marketing.50d951e852752c29.js.map

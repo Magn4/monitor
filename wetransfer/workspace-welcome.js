@@ -1,60 +1,5 @@
 (self.webpackChunk_N_E = self.webpackChunk_N_E || []).push([
     [1221], {
-        1427: (e, a, l) => {
-            "use strict";
-            l.d(a, {
-                T: () => d
-            });
-            var t = l(23798),
-                i = l(21462),
-                s = l(26932);
-
-            function r() {
-                let {
-                    innerWidth: e,
-                    innerHeight: a
-                } = window;
-                return {
-                    width: e,
-                    height: a
-                }
-            }
-            let d = () => {
-                let [e, a] = i.useState(!0), {
-                    width: l,
-                    height: d
-                } = function() {
-                    let [e, a] = (0, i.useState)(r());
-                    return (0, i.useEffect)(() => {
-                        function e() {
-                            a(r())
-                        }
-                        return window.addEventListener("resize", e), () => window.removeEventListener("resize", e)
-                    }, []), e
-                }();
-                return ((e, a) => {
-                    let l = i.useRef();
-                    i.useEffect(() => {
-                        l.current = e
-                    }, [e]), i.useEffect(() => {
-                        {
-                            let e = setTimeout(function() {
-                                l.current()
-                            }, 2e3);
-                            return () => clearTimeout(e)
-                        }
-                    }, [a])
-                })(() => a(!1), 2e3), (0, t.jsx)(s.A, {
-                    width: l,
-                    height: d,
-                    recycle: e,
-                    colors: ["#FF8E47", "#F15555", "#6040DD", "#FFC847"],
-                    drawShape: function(e) {
-                        e.fillRect(-this.w / 2, -this.h / 2, this.w, this.h)
-                    }
-                })
-            }
-        },
         17913: (e, a, l) => {
             "use strict";
             l.d(a, {
@@ -63,16 +8,16 @@
             var t = l(23798),
                 i = l(46001),
                 s = l.n(i),
-                r = l(21462),
-                d = l(38169),
+                d = l(21462),
+                r = l(38169),
                 o = l(11732),
                 n = l(78598),
-                c = l(10995);
-            let _ = "coreShape",
+                _ = l(10995);
+            let c = "coreShape",
                 m = e => {
                     let {
                         className: a,
-                        pathId: l = _
+                        pathId: l = c
                     } = e;
                     return (0, t.jsx)("svg", {
                         shapeRendering: "geometricPrecision",
@@ -92,7 +37,7 @@
                 w = () => (0, t.jsxs)(t.Fragment, {
                     children: [(0, t.jsx)(m, {
                         className: "Shapes__Hidden",
-                        pathId: _
+                        pathId: c
                     }), (0, t.jsx)("svg", {
                         viewBox: "0 0 220 220",
                         className: "Shapes__Hidden",
@@ -101,7 +46,7 @@
                             clipPathUnits: "objectBoundingBox",
                             transform: "scale(0.00450)",
                             children: (0, t.jsx)("use", {
-                                xlinkHref: "#".concat(_)
+                                xlinkHref: "#".concat(c)
                             })
                         })
                     })]
@@ -134,18 +79,18 @@
                         onUpload: a,
                         src: l,
                         className: i,
-                        large: r,
-                        squircle: d,
+                        large: d,
+                        squircle: r,
                         userId: o,
                         displayName: n
-                    } = e, c = a ? "button" : "div", _ = l === (o ? g.A.getAvatar(o) : null);
-                    return (0, t.jsxs)(c, {
+                    } = e, _ = a ? "button" : "div", c = l === (o ? g.A.getAvatar(o) : null);
+                    return (0, t.jsxs)(_, {
                         onClick: a,
                         className: s()("Avatar", i, {
-                            "Avatar--Large": r,
-                            "Avatar--Small": !r,
-                            "Avatar--Squircle": d,
-                            "Avatar--Circle": !d
+                            "Avatar--Large": d,
+                            "Avatar--Small": !d,
+                            "Avatar--Squircle": r,
+                            "Avatar--Circle": !r
                         }),
                         children: [(0, t.jsx)(w, {}), a && (0, t.jsx)(p.PE, {
                             className: "Avatar__UploadIcon",
@@ -154,9 +99,9 @@
                             className: "Avatar__dropshadow",
                             children: (0, t.jsx)("div", {
                                 className: s()("Avatar__ImageWrapper", {
-                                    "Avatar__ImageWrapper--initials": _
+                                    "Avatar__ImageWrapper--initials": c
                                 }),
-                                children: _ ? (0, t.jsx)(W, {
+                                children: c ? (0, t.jsx)(W, {
                                     familyName: n.familyName,
                                     givenName: n.givenName
                                 }) : (0, t.jsx)("img", {
@@ -173,14 +118,14 @@
                         className: a
                     } = e, {
                         user: l
-                    } = (0, d.d4)(e => {
+                    } = (0, r.d4)(e => {
                         let {
                             user: a
                         } = e;
                         return {
                             user: a
                         }
-                    }), i = (0, r.useRef)(null), _ = (0, d.wA)(), {
+                    }), i = (0, d.useRef)(null), c = (0, r.wA)(), {
                         given_name: m,
                         family_name: w,
                         id: g,
@@ -190,10 +135,10 @@
                     } = l;
                     async function W(e) {
                         try {
-                            let a = await _(c.A.UI.uploadAsset(e, "profile_picture"));
+                            let a = await c(_.A.UI.uploadAsset(e, "profile_picture"));
                             a && (await o.A.updateUser({
                                 profile_picture: a
-                            }), _(c.A.User.getUser()))
+                            }), c(_.A.User.getUser()))
                         } catch (e) {
                             n.A.track(e)
                         }
@@ -233,7 +178,7 @@
             l.d(a, {
                 Jv: () => i,
                 Wr: () => s,
-                XH: () => r
+                XH: () => d
             });
             var t = function(e) {
                     return e.SIGN_UP_CLICKED = "enterprise_sign_up_clicked", e.SWITCH_SCREEN_DISPLAYED = "enterprise_switch_screen_displayed", e.SWITCH_SCREEN_CONTINUED = "enterprise_switch_screen_continued", e.CONTACT_BUBBLE_CLICKED = "enterprise_contact_bubble_clicked", e.SEATS_SIMULATOR_EDITED = "enterprise_seats_simulator_edited", e.WORKSPACE_SETTINGS_WELCOME_CLICKED = "enterprise_workspace_settings_welcome_clicked", e.SURVEY_STEP_NEXT_CLICKED = "enterprise_survey_step_next_clicked", e
@@ -244,7 +189,7 @@
                 s = function(e) {
                     return e.SWITCH = "switch", e.CHECKOUT = "checkout", e
                 }({});
-            let r = {
+            let d = {
                 enterpriseSignUpClicked: {
                     kind: "enterprise_sign_up_clicked"
                 },
@@ -367,17 +312,17 @@
         86780: (e, a, l) => {
             "use strict";
             l.r(a), l.d(a, {
-                default: () => C
+                default: () => f
             });
             var t = l(23798),
                 i = l(21462),
                 s = l(38169),
-                r = l(45781),
-                d = l(75546),
+                d = l(45781),
+                r = l(75546),
                 o = l(97116),
                 n = l(87963),
-                c = l(1427),
-                _ = l(24834),
+                _ = l(1427),
+                c = l(24834),
                 m = l(27469),
                 w = l(83552),
                 g = l(17913),
@@ -386,35 +331,35 @@
                 h = l(17944),
                 u = l(86781),
                 b = l(83438),
-                x = l.n(b);
+                k = l.n(b);
 
-            function k() {
+            function x() {
                 var e;
                 let {
                     t: a
-                } = (0, d.Bd)(), l = (0, s.d4)(u.mB), i = null != (e = l.planTier) ? e : p.js.ENTERPRISE, r = (0, p.dg)(i), b = (0, p.Is)(i), {
-                    isEnabled: k,
+                } = (0, r.Bd)(), l = (0, s.d4)(u.mB), i = null != (e = l.planTier) ? e : p.js.ENTERPRISE, d = (0, p.dg)(i), b = (0, p.Is)(i), {
+                    isEnabled: x,
                     canShowSpontaneousFlow: y
-                } = (0, m.S)(), f = k && y;
+                } = (0, m.S)(), C = x && y;
                 return (0, t.jsxs)("div", {
-                    className: x().container,
-                    children: [(0, t.jsx)(c.T, {}), !f && (0, t.jsx)(g.e, {}), (0, t.jsx)("h1", {
-                        className: x().title,
-                        children: f ? a("enterprise_onboarding.welcome.title_no_name", {
-                            planName: r
+                    className: k().container,
+                    children: [(0, t.jsx)(_.T, {}), !C && (0, t.jsx)(g.e, {}), (0, t.jsx)("h1", {
+                        className: k().title,
+                        children: C ? a("enterprise_onboarding.welcome.title_no_name", {
+                            planName: d
                         }) : a("enterprise_onboarding.welcome.title", {
                             firstName: l.given_name,
-                            planName: r
+                            planName: d
                         })
-                    }), !f && (0, t.jsxs)("div", {
-                        className: x().messageContainer,
+                    }), !C && (0, t.jsxs)("div", {
+                        className: k().messageContainer,
                         children: [(0, t.jsx)("p", {
-                            className: x().message,
+                            className: k().message,
                             children: a("enterprise_onboarding.welcome.message", {
                                 planTier: b
                             })
                         }), (0, t.jsx)(o.$, {
-                            className: x().button,
+                            className: k().button,
                             onClick: () => {
                                 (0, n.Od)().trackUserAction(h.XH.workspaceSettingsWelcomeClicked), window.location.href = W.kH.route
                             },
@@ -422,34 +367,34 @@
                             size: "medium",
                             children: a("enterprise_onboarding.welcome.cta")
                         })]
-                    }), f && (0, t.jsx)("div", {
-                        className: x().inviteDomainMembersContainer,
+                    }), C && (0, t.jsx)("div", {
+                        className: k().inviteDomainMembersContainer,
                         children: (0, t.jsx)(w.o, {
                             onDismiss: () => {
                                 window.location.href = W.kH.route
                             },
-                            origin: _.nh.WELCOME_PAGE
+                            origin: c.nh.WELCOME_PAGE
                         })
                     })]
                 })
             }
             var y = l(63334),
-                f = l.n(y);
+                C = l.n(y);
 
-            function C() {
+            function f() {
                 let e = (0, s.d4)(u.dw);
                 return (0, i.useEffect)(() => {
                     e || (window.location.href = "/")
-                }, [e]), (0, t.jsx)(r.A, {
+                }, [e]), (0, t.jsx)(d.A, {
                     showModal: !0,
                     contentHeight: "100vh",
                     children: (0, t.jsx)("div", {
-                        className: f().container,
-                        children: (0, t.jsx)(k, {})
+                        className: C().container,
+                        children: (0, t.jsx)(x, {})
                     })
                 })
             }
         }
     }
 ]);
-//# sourceMappingURL=workspace-welcome.f8d870beaa37bd13.js.map
+//# sourceMappingURL=workspace-welcome.81d672e4e106046a.js.map

@@ -121,12 +121,7 @@
                     size: c = "default"
                 } = t, _ = m()("checkboxinput__label", {
                     "checkboxinput__label--disabled": s
-                }), r = "string" == typeof i ? (0, l.jsx)("span", {
-                    className: _,
-                    dangerouslySetInnerHTML: {
-                        __html: i
-                    }
-                }) : (0, l.jsx)("span", {
+                }), r = (0, l.jsx)("span", {
                     className: _,
                     children: i
                 }), w = m()("checkboxinput", e, {
@@ -162,7 +157,7 @@
             C.propTypes = {
                 checked: b().bool,
                 className: b().string,
-                label: b().string,
+                label: b().node,
                 name: b().string.isRequired,
                 onChange: b().func,
                 tabIndex: b().number,
@@ -200,9 +195,9 @@
                     userLoggedIn: R.loggedIn,
                     channelName: S.name,
                     accountSubDomainName: O.subdomain_name
-                }), H = t => {
+                }), Q = t => {
                     a(t)
-                }, Q = () => {
+                }, H = () => {
                     Z && z(!0), p.recipients.some(t => t === e.email) || (p.type === B.aG.LINK && b(j.Ay.changeType(B.aG.EMAIL)), b(j.Ay.addRecipient(e.email, F, M.j.CONTACT_LIST)), window.innerWidth <= y.o.panel.full_panel_breakpoint ? G(!0) : b(v.P9.setPanelNotification({
                         category: v.aF.Notification,
                         details: "contact_added_confirmation"
@@ -219,7 +214,7 @@
                             [T().selected]: i
                         }),
                         onClick: () => {
-                            n && H(e.id)
+                            n && Q(e.id)
                         },
                         onMouseEnter: () => K(!0),
                         onMouseLeave: () => K(!1),
@@ -230,7 +225,7 @@
                                 name: "contact_item_".concat(e.id),
                                 className: T().checkbox,
                                 checked: i,
-                                onChange: () => H(e.id)
+                                onChange: () => Q(e.id)
                             }) : null, (() => {
                                 let t = e.email;
                                 return _ && e.searchType === g.tX.EMAIL && (t = I.A.highlightText(e.email, _, "span")), (0, l.jsxs)("div", {
@@ -264,11 +259,11 @@
                                         children: Y("page.contact.edit")
                                     }), (0, l.jsx)("button", {
                                         className: T().contactItemOption,
-                                        onClick: () => H(e.id),
+                                        onClick: () => Q(e.id),
                                         children: Y("page.contact.remove")
                                     }), !t && (0, l.jsx)("button", {
                                         className: T().contactItemOption,
-                                        onClick: Q,
+                                        onClick: H,
                                         children: Y("page.contact.add_to_transfer")
                                     }), t && (0, l.jsx)("button", {
                                         className: T().contactItemOption,
@@ -471,7 +466,7 @@
                     })
                 };
             var Z = e(97396);
-            class H extends d.Component {
+            class Q extends d.Component {
                 onChange(t) {
                     this.props.onChange && this.props.onChange(t.target.value)
                 }
@@ -508,13 +503,13 @@
                     super(t), this.onKeyDown = this.onKeyDown.bind(this), this.onReset = this.onReset.bind(this), this.onChange = this.onChange.bind(this)
                 }
             }
-            H.propTypes = {
+            Q.propTypes = {
                 className: b().string,
                 onChange: b().func,
                 placeholder: b().string,
                 value: b().string
             };
-            class Q extends d.Component {
+            class H extends d.Component {
                 renderNumbers() {
                     let t = Math.ceil(this.props.maxPages / 2),
                         a = this.props.activePage + 1 < t ? 1 : this.props.activePage + 1 - t + 1,
@@ -559,12 +554,12 @@
                     super(t), this.renderNumbers = this.renderNumbers.bind(this)
                 }
             }
-            Q.propTypes = {
+            H.propTypes = {
                 pages: b().number,
                 activePage: b().number,
                 onClick: b().func,
                 maxPages: b().number
-            }, Q.defaultProps = {
+            }, H.defaultProps = {
                 activePage: 0,
                 maxPages: L.Ay.isMobile ? 4 : 5
             };
@@ -633,7 +628,7 @@
                     }, [r, C]), F = (0, d.useMemo)(() => i ? O(i) : [], [O, i]), K = (0, d.useMemo)(() => {
                         let t = /[a-zA-Z]/i,
                             a = Math.floor((F.length + 20 - 1) / 20),
-                            e = a > 1 ? (0, l.jsx)(Q, {
+                            e = a > 1 ? (0, l.jsx)(H, {
                                 pages: a,
                                 activePage: k,
                                 onClick: t => M(t)
@@ -704,7 +699,7 @@
                                 size: "large",
                                 children: t("page.contact.add_new")
                             })]
-                        }), (0, l.jsx)(H, {
+                        }), (0, l.jsx)(Q, {
                             placeholder: t("page.contact.search_placeholder"),
                             value: h,
                             onChange: S
@@ -914,4 +909,4 @@
         }
     }
 ]);
-//# sourceMappingURL=contact-list.5a63f8b97001a427.js.map
+//# sourceMappingURL=contact-list.cb8471cd2f42a904.js.map

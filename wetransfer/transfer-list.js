@@ -397,7 +397,7 @@
             "use strict";
             a.r(t), a.d(t, {
                 TransferList: () => aN,
-                default: () => aL
+                default: () => aj
             });
             var l = a(23798),
                 r = a(46001),
@@ -412,8 +412,8 @@
             let {
                 useGetFoldersQuery: g,
                 useCreateFolderMutation: u,
-                useUpdateFolderMutation: h,
-                useDeleteFolderMutation: c,
+                useUpdateFolderMutation: c,
+                useDeleteFolderMutation: h,
                 useAssignTransfersMutation: b
             } = a(10861).l.injectEndpoints({
                 endpoints: e => ({
@@ -486,8 +486,8 @@
                 T = a(87963),
                 F = a(39377),
                 S = a(66976),
-                I = a(72255);
-            let v = {
+                v = a(72255);
+            let I = {
                 queryToParamsObj: N
             };
 
@@ -540,7 +540,7 @@
                 }
             }
 
-            function L(e, t) {
+            function j(e, t) {
                 let {
                     transferGroup: a,
                     sortOrder: l,
@@ -554,19 +554,19 @@
                     ...N(new URL(window.location.href).search),
                     ...e
                 };
-                if ("requested" === a) return void I.A.navigateTo("/requests");
+                if ("requested" === a) return void v.A.navigateTo("/requests");
                 let _ = new URLSearchParams;
-                void 0 !== a && _.set("group", a), void 0 !== r && _.set("sortBy", r), void 0 !== l && _.set("sortOrder", l), void 0 !== i && _.set("search", i), void 0 !== s && _.set("id", s), void 0 !== d && _.set("p", d), void 0 !== n && _.set("receivingEmail", n), void 0 !== o && _.set("afterDeletion", o), I.A.navigateTo("/transfers", t, {
+                void 0 !== a && _.set("group", a), void 0 !== r && _.set("sortBy", r), void 0 !== l && _.set("sortOrder", l), void 0 !== i && _.set("search", i), void 0 !== s && _.set("id", s), void 0 !== d && _.set("p", d), void 0 !== n && _.set("receivingEmail", n), void 0 !== o && _.set("afterDeletion", o), v.A.navigateTo("/transfers", t, {
                     search: _.toString()
                 })
             }
-            let j = () => {
+            let L = () => {
                 let {
                     route: {
                         query: e
                     }
                 } = S.default.getState();
-                return v.queryToParamsObj(e)
+                return I.queryToParamsObj(e)
             };
             var C = a(84530),
                 E = a(44954),
@@ -574,7 +574,7 @@
             let A = () => {
                 let {
                     transferGroup: e
-                } = j();
+                } = L();
                 return (0, l.jsx)(l.Fragment, {
                     children: "sent" === e ? (0, l.jsxs)("div", {
                         className: B().SentTransfersEmptyState,
@@ -634,10 +634,10 @@
                 } = (0, d.Bd)(), [o, m] = (0, s.useState)(""), [w, g] = (0, s.useState)(!1), u = (0, s.useMemo)(() => {
                     let e = o.trim().toLowerCase();
                     return !!e && a.some(t => t.name.toLowerCase() === e)
-                }, [o, a]), h = o.trim() && !u, c = (0, s.useCallback)(e => {
+                }, [o, a]), c = o.trim() && !u, h = (0, s.useCallback)(e => {
                     m(e.target.value)
                 }, []), b = (0, s.useCallback)(async () => {
-                    if (h) {
+                    if (c) {
                         g(!0);
                         try {
                             await i(o.trim()), m(""), r()
@@ -645,11 +645,11 @@
                             g(!1)
                         }
                     }
-                }, [h, o, i, r]), p = (0, s.useCallback)(() => {
+                }, [c, o, i, r]), p = (0, s.useCallback)(() => {
                     m(""), r()
                 }, [r]), x = (0, s.useCallback)(e => {
-                    "Enter" === e.key && h && !w && b()
-                }, [h, w, b]);
+                    "Enter" === e.key && c && !w && b()
+                }, [c, w, b]);
                 return (0, l.jsx)(q.a, {
                     isOpen: t,
                     onClose: p,
@@ -672,7 +672,7 @@
                                 label: n("folders.folder_name_placeholder"),
                                 labelType: "inside",
                                 value: o,
-                                onChange: c,
+                                onChange: h,
                                 onKeyDown: x,
                                 autoFocus: !0,
                                 maxLength: 100,
@@ -688,7 +688,7 @@
                                 children: n("folders.cancel")
                             }), (0, l.jsx)(z.$, {
                                 onClick: b,
-                                disabled: !h || w,
+                                disabled: !c || w,
                                 fullwidth: !0,
                                 children: n("folders.create_folder")
                             })]
@@ -841,8 +841,8 @@
                     }) : null
                 };
             var J = a(81436),
-                Y = a(6324),
-                K = a.n(Y);
+                K = a(6324),
+                Y = a.n(K);
             let $ = e => {
                     let {
                         folder: t,
@@ -856,32 +856,32 @@
                     }, [t, r]), g = (0, s.useCallback)(() => {
                         m(!1), i(t)
                     }, [t, i]), u = (0, l.jsxs)("div", {
-                        className: K().folderMenu,
+                        className: Y().folderMenu,
                         children: [(0, l.jsx)("button", {
                             type: "button",
-                            className: K().folderMenuItem,
+                            className: Y().folderMenuItem,
                             onClick: w,
                             children: n("folders.edit_folder_name")
                         }), (0, l.jsx)("button", {
                             type: "button",
-                            className: K().folderMenuItem,
+                            className: Y().folderMenuItem,
                             onClick: g,
                             children: n("folders.remove_folder")
                         })]
                     });
                     return (0, l.jsxs)("div", {
-                        className: K().folderHeader,
+                        className: Y().folderHeader,
                         children: [(0, l.jsx)("button", {
                             type: "button",
-                            className: K().backButton,
+                            className: Y().backButton,
                             onClick: a,
                             "aria-label": n("folders.back_to_transfers"),
                             children: (0, l.jsx)(_.LYB, {})
                         }), (0, l.jsx)("h1", {
-                            className: K().folderHeaderTitle,
+                            className: Y().folderHeaderTitle,
                             children: t.name
                         }), (0, l.jsx)("div", {
-                            className: K().folderHeaderActions,
+                            className: Y().folderHeaderActions,
                             children: (0, l.jsx)(J.A, {
                                 position: "bottom",
                                 isCondensed: !0,
@@ -891,7 +891,7 @@
                                 callback: m,
                                 children: (0, l.jsx)("button", {
                                     type: "button",
-                                    className: K().folderMenuButton,
+                                    className: Y().folderMenuButton,
                                     "aria-label": n("folders.folder_options"),
                                     children: (0, l.jsx)(_.I7C, {})
                                 })
@@ -913,54 +913,54 @@
                         e.stopPropagation(), m(!1), r(t)
                     }, [t, r]), u = (0, s.useCallback)(e => {
                         e.stopPropagation(), m(!1), i(t)
-                    }, [t, i]), h = (0, s.useCallback)(e => {
+                    }, [t, i]), c = (0, s.useCallback)(e => {
                         e.stopPropagation(), m(e => !e)
-                    }, []), c = (0, l.jsxs)("div", {
-                        className: K().folderMenu,
+                    }, []), h = (0, l.jsxs)("div", {
+                        className: Y().folderMenu,
                         children: [(0, l.jsx)("button", {
                             type: "button",
-                            className: K().folderMenuItem,
+                            className: Y().folderMenuItem,
                             onClick: g,
                             children: n("folders.edit_folder_name")
                         }), (0, l.jsx)("button", {
                             type: "button",
-                            className: K().folderMenuItem,
+                            className: Y().folderMenuItem,
                             onClick: u,
                             children: n("folders.remove_folder")
                         })]
                     });
                     return (0, l.jsx)("div", {
-                        className: K().folderItem,
+                        className: Y().folderItem,
                         children: (0, l.jsxs)("button", {
                             type: "button",
-                            className: K().folderItemWrapper,
+                            className: Y().folderItemWrapper,
                             onClick: w,
                             "aria-label": n("folders.open_folder", {
                                 name: t.name
                             }),
                             children: [(0, l.jsxs)("div", {
-                                className: K().folderItemContent,
+                                className: Y().folderItemContent,
                                 children: [(0, l.jsx)(_.n$W, {
-                                    className: K().folderIcon
+                                    className: Y().folderIcon
                                 }), (0, l.jsx)("span", {
-                                    className: K().folderName,
+                                    className: Y().folderName,
                                     children: t.name
                                 })]
                             }), (0, l.jsx)("div", {
-                                className: K().folderItemActions,
+                                className: Y().folderItemActions,
                                 onClick: e => e.stopPropagation(),
                                 children: (0, l.jsx)(J.A, {
                                     position: "bottom",
                                     align: "end",
                                     isCondensed: !0,
                                     hideArrow: !0,
-                                    content: c,
+                                    content: h,
                                     isOpen: o,
                                     callback: m,
                                     children: (0, l.jsx)("button", {
                                         type: "button",
-                                        className: K().folderMenuButton,
-                                        onClick: h,
+                                        className: Y().folderMenuButton,
+                                        onClick: c,
                                         "aria-label": n("folders.folder_options"),
                                         children: (0, l.jsx)(_.I7C, {
                                             size: "small"
@@ -981,25 +981,25 @@
                         t: n
                     } = (0, d.Bd)(), [o, m] = (0, s.useState)(!0);
                     return 0 === t.length ? null : (0, l.jsxs)("div", {
-                        className: K().folderSection,
+                        className: Y().folderSection,
                         children: [(0, l.jsxs)("button", {
                             type: "button",
-                            className: K().folderSectionHeader,
+                            className: Y().folderSectionHeader,
                             onClick: () => {
                                 m(e => !e)
                             },
                             "aria-expanded": o,
                             children: [(0, l.jsx)("span", {
-                                className: K().folderSectionLabel,
+                                className: Y().folderSectionLabel,
                                 children: n("folders.title")
                             }), (0, l.jsx)("span", {
-                                className: "".concat(K().folderSectionChevron, " ").concat(o ? K().folderSectionChevronExpanded : ""),
+                                className: "".concat(Y().folderSectionChevron, " ").concat(o ? Y().folderSectionChevronExpanded : ""),
                                 children: (0, l.jsx)(_.A0v, {})
                             })]
                         }), (0, l.jsx)("div", {
-                            className: "".concat(K().folderSectionContent, " ").concat(o ? K().folderSectionContentExpanded : ""),
+                            className: "".concat(Y().folderSectionContent, " ").concat(o ? Y().folderSectionContentExpanded : ""),
                             children: (0, l.jsx)("div", {
-                                className: K().folderSectionInner,
+                                className: Y().folderSectionInner,
                                 children: t.map(e => (0, l.jsx)(ee, {
                                     folder: e,
                                     onFolderClick: a,
@@ -1023,7 +1023,7 @@
                 ew = a(42947),
                 eg = a(64448),
                 eu = a.n(eg);
-            let eh = e => {
+            let ec = e => {
                 let {
                     onSave: t,
                     onCancel: a,
@@ -1037,9 +1037,9 @@
                     formState: {
                         errors: w
                     }
-                } = (0, eo.mN)(), g = (0, s.useRef)(), [u, h] = (0, s.useState)(!1), c = (0, s.useCallback)(async e => {
+                } = (0, eo.mN)(), g = (0, s.useRef)(), [u, c] = (0, s.useState)(!1), h = (0, s.useCallback)(async e => {
                     if (!u) try {
-                        h(!0), await t(e)
+                        c(!0), await t(e)
                     } catch (e) {
                         m("title", {
                             type: "focus"
@@ -1047,7 +1047,7 @@
                             shouldFocus: !0
                         })
                     } finally {
-                        h(!1)
+                        c(!1)
                     }
                 }, [u, t, m]), b = (0, s.useCallback)(() => {
                     u || a()
@@ -1064,12 +1064,12 @@
                     }, [e, t])
                 }(b, g), (0, s.useEffect)(() => {
                     function e(e) {
-                        e.stopPropagation(), (e.key === ew.ok || e.key === ew._f) && b(), e.key === ew.Fm && c(_("title"))
+                        e.stopPropagation(), (e.key === ew.ok || e.key === ew._f) && b(), e.key === ew.Fm && h(_("title"))
                     }
                     return document.addEventListener("keydown", e), () => {
                         document.removeEventListener("keydown", e)
                     }
-                }, [b, c, _]);
+                }, [b, h, _]);
                 let {
                     onChange: p,
                     onBlur: x,
@@ -1104,7 +1104,7 @@
                                     [eu().SaveButtonDisabled]: u
                                 }),
                                 type: "CheckCircle",
-                                onClick: o(e => c(e.title)),
+                                onClick: o(e => h(e.title)),
                                 tabIndex: 0
                             }), (0, l.jsx)(em.Ay, {
                                 className: i()(eu().CancelButton, {
@@ -1118,7 +1118,7 @@
                     })]
                 })
             };
-            var ec = a(66257),
+            var eh = a(66257),
                 eb = a(81620),
                 ep = a(56993),
                 ex = a(53012),
@@ -1127,8 +1127,8 @@
                 eT = a(35302),
                 eF = a(56682),
                 eS = a(27154),
-                eI = a(90512);
-            let ev = e => {
+                ev = a(90512);
+            let eI = e => {
                 let {
                     requested: t = !1,
                     expiresAt: a,
@@ -1137,9 +1137,9 @@
                     state: _
                 } = e, {
                     t: m
-                } = (0, d.Bd)(), w = eS.A.getExpiryTimeInSeconds(a), g = o === eF.a.RECEIVED && r, u = o === eF.a.SENT || !g, h = eS.A.transferIsAboutToExpire(a), c = i()("TransferExpiry__string", {
-                    "TransferExpiry__string--alert": h && u || "expired" === _
-                }), b = w && Math.abs(Math.ceil(w / 86400)), p = w && Math.abs(Math.ceil(w / 3600)), x = (0, n.d4)(eI.pe), f = (0, s.useMemo)(() => !!a && new Date(a) < new Date || "expired" === _, [a, _]), y = (0, s.useMemo)(() => o === eF.a.SENT && t, [o, t]), T = "";
+                } = (0, d.Bd)(), w = eS.A.getExpiryTimeInSeconds(a), g = o === eF.a.RECEIVED && r, u = o === eF.a.SENT || !g, c = eS.A.transferIsAboutToExpire(a), h = i()("TransferExpiry__string", {
+                    "TransferExpiry__string--alert": c && u || "expired" === _
+                }), b = w && Math.abs(Math.ceil(w / 86400)), p = w && Math.abs(Math.ceil(w / 3600)), x = (0, n.d4)(ev.pe), f = (0, s.useMemo)(() => !!a && new Date(a) < new Date || "expired" === _, [a, _]), y = (0, s.useMemo)(() => o === eF.a.SENT && t, [o, t]), T = "";
                 return T = !w || w <= 0 ? f && !y ? C.A.t("page.transfers.expired") : C.A.t("page.transfers.deleting_now") : a ? "/transfers" !== x ? new Date(a).toLocaleString(C.A.locale, {
                     day: "numeric",
                     month: "long",
@@ -1153,16 +1153,14 @@
                     children: (0, l.jsx)("div", {
                         className: "TransferExpiry__time",
                         children: (0, l.jsx)("span", {
-                            className: c,
-                            dangerouslySetInnerHTML: {
-                                __html: T
-                            }
+                            className: h,
+                            children: T
                         })
                     })
                 })
             };
             var eN = a(12155);
-            let eL = e => {
+            let ej = e => {
                     let {
                         transferFrom: t,
                         numberOfDownloads: a,
@@ -1172,16 +1170,16 @@
                         numberOfFiles: w,
                         transferDate: g,
                         teamMember: u,
-                        expiresAt: h,
-                        state: c,
+                        expiresAt: c,
+                        state: h,
                         separatorClassName: b,
                         className: p,
                         requested: x
                     } = e, {
                         transferGroup: y
-                    } = j(), T = (0, n.d4)(f.mB), {
+                    } = L(), T = (0, n.d4)(f.mB), {
                         t: F
-                    } = (0, d.Bd)(), S = (0, s.useMemo)(() => a < 1 ? C.A.t("page.transfer.not_downloaded") : C.A.t("page.transfer.download_status_received_text.one"), [a, r, y, C.A.locale]), I = new Date(g).getTime() >= Date.now(), v = (0, s.useMemo)(() => {
+                    } = (0, d.Bd)(), S = (0, s.useMemo)(() => a < 1 ? C.A.t("page.transfer.not_downloaded") : C.A.t("page.transfer.download_status_received_text.one"), [a, r, y, C.A.locale]), v = new Date(g).getTime() >= Date.now(), I = (0, s.useMemo)(() => {
                         var e, a, r, s, d;
                         let n = {
                                 auth0UserId: (null == u || null == (e = u.user) ? void 0 : e.auth0UserId) || (null == (a = T.id) ? void 0 : a.toString()),
@@ -1202,14 +1200,14 @@
                     return (0, l.jsxs)("span", {
                         className: i()("Metadata", p),
                         "data-testid": "Metadata",
-                        children: [u && v, "received" === y && !u && (0, l.jsxs)(l.Fragment, {
+                        children: [u && I, "received" === y && !u && (0, l.jsxs)(l.Fragment, {
                             children: [t, " ", (0, l.jsx)("span", {
                                 className: b
                             })]
                         }), (0, l.jsx)("span", {
                             "data-testid": "transfer-date",
                             className: "transfer-date",
-                            children: (0, eN.FM)(I ? Date.now() - 1e3 : g || new Date, y)
+                            children: (0, eN.FM)(v ? Date.now() - 1e3 : g || new Date, y)
                         }), null != m && (0, l.jsxs)(l.Fragment, {
                             children: [(0, l.jsx)("span", {
                                 "data-testid": "filesize",
@@ -1228,20 +1226,20 @@
                             children: [a > 0 && (0, l.jsx)(_.tdb, {
                                 "aria-hidden": "true"
                             }), S]
-                        }), (void 0 !== h || "expired" === c) && (0, l.jsxs)(l.Fragment, {
+                        }), (void 0 !== c || "expired" === h) && (0, l.jsxs)(l.Fragment, {
                             children: [(0, l.jsx)("span", {
                                 className: i()(b)
-                            }), (0, l.jsx)(ev, {
+                            }), (0, l.jsx)(eI, {
                                 requested: x,
-                                expiresAt: null == h ? void 0 : h.toString(),
+                                expiresAt: null == c ? void 0 : c.toString(),
                                 transferDownloaded: a > 0,
                                 transferGroup: y,
-                                state: c
+                                state: h
                             })]
                         })]
                     })
                 },
-                ej = e => {
+                eL = e => {
                     let {
                         transfer: t,
                         ...a
@@ -1257,16 +1255,16 @@
                         creator: w,
                         from: g,
                         files: u = [],
-                        requested: h = !1,
-                        downloader_email_verification: c
-                    } = t, b = u.length, p = (0, s.useMemo)(() => c === ef.B.TRACKING || c === ef.B.RESTRICTED ? o : m.length > 0 ? m.reduce((e, t) => !0 === t.transfer_downloaded ? ++e : e, 0) : o, [c, m, o]), x = (0, s.useMemo)(() => n ? Math.floor(function(e, t, a) {
+                        requested: c = !1,
+                        downloader_email_verification: h
+                    } = t, b = u.length, p = (0, s.useMemo)(() => h === ef.B.TRACKING || h === ef.B.RESTRICTED ? o : m.length > 0 ? m.reduce((e, t) => !0 === t.transfer_downloaded ? ++e : e, 0) : o, [h, m, o]), x = (0, s.useMemo)(() => n ? Math.floor(function(e, t, a) {
                         (0, ep.A)(2, arguments);
-                        var l = (0, eb.A)(e, t) / ec.s0;
+                        var l = (0, eb.A)(e, t) / eh.s0;
                         return (0, ex.u)(null == a ? void 0 : a.roundingMethod)(l)
                     }(new Date(n), new Date) / 24) : void 0, [n]), f = (0, s.useMemo)(() => void 0 !== x && x < 7, [x]), y = (0, s.useMemo)(() => {
                         if (null != w && w.email) return i(w.email)
                     }, [w, i]);
-                    return (0, l.jsx)(eL, {
+                    return (0, l.jsx)(ej, {
                         ...a,
                         numberOfRecipients: m.length,
                         numberOfDownloads: p,
@@ -1276,7 +1274,7 @@
                         transferFrom: g,
                         expiresAt: f ? n : void 0,
                         teamMember: r ? y : void 0,
-                        requested: h
+                        requested: c
                     })
                 };
             var eC = a(89187),
@@ -1376,19 +1374,19 @@
                         canDeleteTransfer: w,
                         shouldShowCopyLinkButton: g = !0,
                         shouldShowDeleteButton: u = !0,
-                        shouldShowEditTransferBackgroundButton: h = !0,
-                        shouldShowEditDisplayNameButton: c = !0,
+                        shouldShowEditTransferBackgroundButton: c = !0,
+                        shouldShowEditDisplayNameButton: h = !0,
                         onRecoverTransfer: b,
                         isTransferExpiredAndRecoverable: p,
                         isRecoveryAvailableOnUserPlan: x = !1,
                         onMoveToFolder: f
                     } = e, {
                         transferGroup: y
-                    } = j(), {
+                    } = L(), {
                         t: F
                     } = (0, d.Bd)("translation", {
                         keyPrefix: "account.workspace.transfers.transferListItem.actions"
-                    }), S = (0, ek.jL)(), I = (0, s.useCallback)(async e => {
+                    }), S = (0, ek.jL)(), v = (0, s.useCallback)(async e => {
                         try {
                             null == e || e.preventDefault(), null == e || e.stopPropagation(), await (0, eO.l)(n), (e => {
                                 let t = "sent" === e ? eU.LM.SENT_TRANSFERS_LIST : eU.LM.RECEIVED_TRANSFERS_LIST;
@@ -1412,7 +1410,7 @@
                         } catch (e) {
                             eP.A.track(e)
                         }
-                    }, [S, y, n]), v = (0, s.useCallback)(e => {
+                    }, [S, y, n]), I = (0, s.useCallback)(e => {
                         null == e || e.preventDefault(), null == e || e.stopPropagation(), eW.A.trackSnowplowEvent({
                             category: "transfer_action",
                             action: "transfer_title_edit_initiated",
@@ -1424,7 +1422,7 @@
                             action: "transfer_delete_initiated",
                             label: "sent_transfers_page"
                         }), r()
-                    }, [r]), L = (0, s.useCallback)(e => {
+                    }, [r]), j = (0, s.useCallback)(e => {
                         null == e || e.preventDefault(), null == e || e.stopPropagation(), null == f || f()
                     }, [f]);
                     return (0, l.jsxs)("span", {
@@ -1437,25 +1435,25 @@
                                 className: eX().Icon
                             }), (0, l.jsx)(eV.$n, {
                                 className: t,
-                                onClick: I,
+                                onClick: v,
                                 disabled: !(0, eO.j)(),
                                 value: n,
                                 "aria-label": F("copyLink"),
                                 children: F("copyLink")
                             })]
                         }), y === eF.a.SENT && (0, l.jsxs)(l.Fragment, {
-                            children: [c && (0, l.jsxs)("span", {
+                            children: [h && (0, l.jsxs)("span", {
                                 className: eX().Separator,
                                 children: [(0, l.jsx)(_.P2e, {
                                     size: "small",
                                     className: eX().Icon
                                 }), (0, l.jsx)(eV.$n, {
                                     className: t,
-                                    onClick: v,
+                                    onClick: I,
                                     "aria-label": F("editDisplayName"),
                                     children: F("editDisplayName")
                                 })]
-                            }), o && h && (0, l.jsxs)("span", {
+                            }), o && c && (0, l.jsxs)("span", {
                                 className: eX().Separator,
                                 children: [(0, l.jsx)(_.r6B, {
                                     size: "small",
@@ -1474,7 +1472,7 @@
                                 className: eX().Icon
                             }), (0, l.jsx)(eV.$n, {
                                 className: t,
-                                onClick: L,
+                                onClick: j,
                                 "aria-label": F("moveToFolder"),
                                 children: F("moveToFolder")
                             })]
@@ -1512,8 +1510,8 @@
                         highlightTitle: w,
                         matchTitle: g,
                         selected: u,
-                        selectMode: h,
-                        title: c,
+                        selectMode: c,
+                        title: h,
                         url: b,
                         onDelete: p,
                         onEditTitleSave: x,
@@ -1521,10 +1519,10 @@
                         onSelect: y,
                         onMoveToFolder: F,
                         ...S
-                    } = e, [I, v] = (0, s.useState)(!1), {
+                    } = e, [v, I] = (0, s.useState)(!1), {
                         transferGroup: N
-                    } = j(), {
-                        t: L
+                    } = L(), {
+                        t: j
                     } = (0, d.Bd)(), C = (0, ek.jL)(), E = !!(0, n.d4)((0, eB.fj)(r.id)) && !eq.A.isMobile, [B, A] = (0, s.useState)(!1), R = (0, el.Z)(), {
                         id: M,
                         security_hash: k,
@@ -1559,16 +1557,16 @@
                             shouldShowEditTransferBackgroundButton: e,
                             shouldShowEditDisplayNameButton: e
                         }
-                    }, [P, G]), Y = (0, en.c)(), K = (0, s.useMemo)(() => Y.map(eC.Is).join(" ".concat(L("transfer.recover.recovering.plans_conjunction"), " ")), [Y, L]), $ = eR.A.stripHtmlTags(c), ee = (0, s.useCallback)(e => {
+                    }, [P, G]), K = (0, en.c)(), Y = (0, s.useMemo)(() => K.map(eC.Is).join(" ".concat(j("transfer.recover.recovering.plans_conjunction"), " ")), [K, j]), $ = eR.A.stripHtmlTags(h), ee = (0, s.useCallback)(e => {
                         e.preventDefault(), e.stopPropagation(), C((0, eE.VK)(eA.$.transferDetails, M)), C(eD.P9.clearTransferNotification())
                     }, [C, M]), et = (0, s.useCallback)(() => {
-                        v(e => !e)
+                        I(e => !e)
                     }, []), eo = (0, s.useCallback)(() => {
                         void 0 !== p && p(M, D ? D.toString() : "0")
                     }, [p, M, D]), e_ = (0, s.useCallback)(() => {
                         void 0 !== y && y(M, D ? D.toString() : "0")
                     }, [y, M, D]), em = (0, s.useCallback)(async e => {
-                        void 0 !== x && (await x(M, e), v(!1))
+                        void 0 !== x && (await x(M, e), I(!1))
                     }, [x, M]), ew = (0, s.useCallback)(() => {
                         null == F || F(M, null != D ? D : 0)
                     }, [F, M, D]), eg = (0, s.useCallback)(() => {
@@ -1576,12 +1574,12 @@
                             transferId: r.id,
                             transferGroup: N
                         })), f())
-                    }, [f, r.id, N]), eu = (0, s.useMemo)(() => h || z && N !== eF.a.RECEIVED ? "button" : "a", [h, z, N]), ec = eX().Separator, eb = i()(eX().Action, ec), ep = (0, s.useMemo)(() => N === eF.a.SENT || N === eF.a.RECEIVED && z, [z, N]), ex = (0, l.jsxs)("div", {
+                    }, [f, r.id, N]), eu = (0, s.useMemo)(() => c || z && N !== eF.a.RECEIVED ? "button" : "a", [c, z, N]), eh = eX().Separator, eb = i()(eX().Action, eh), ep = (0, s.useMemo)(() => N === eF.a.SENT || N === eF.a.RECEIVED && z, [z, N]), ex = (0, l.jsxs)("div", {
                         className: i()(eX().ListItem, eX().Group, t),
                         "data-testid": $,
                         onMouseEnter: () => A(!0),
                         onMouseLeave: () => A(!1),
-                        children: [I && (0, l.jsx)(eh, {
+                        children: [v && (0, l.jsx)(ec, {
                             title: $,
                             onCancel: et,
                             onSave: em
@@ -1589,14 +1587,14 @@
                             disabled: G,
                             className: i()(eX().Wrapper, {
                                 [eX().WrapperSelected]: u,
-                                [eX().ItemHover]: !h,
-                                [eX().DisplayNone]: I,
+                                [eX().ItemHover]: !c,
+                                [eX().DisplayNone]: v,
                                 [eX().Disabled]: G
                             }),
-                            role: I ? "none" : void 0,
-                            href: h || G ? void 0 : b,
-                            onClick: h ? e_ : eg,
-                            children: [h && (0, l.jsx)("input", {
+                            role: v ? "none" : void 0,
+                            href: c || G ? void 0 : b,
+                            onClick: c ? e_ : eg,
+                            children: [c && (0, l.jsx)("input", {
                                 type: "checkbox",
                                 className: eX().Checkbox,
                                 "aria-label": "Select transfer",
@@ -1616,20 +1614,20 @@
                                     }), z && (0, l.jsx)(ea.E, {
                                         size: "small",
                                         appearance: "darken",
-                                        children: L("transfer_list.requested_label")
+                                        children: j("transfer_list.requested_label")
                                     }), r.paid && (0, l.jsx)(ea.E, {
                                         size: "small",
                                         appearance: "darken",
-                                        children: L("transfer_list.paid_label")
+                                        children: j("transfer_list.paid_label")
                                     }), U && (0, l.jsx)(ea.E, {
                                         size: "small",
                                         appearance: R ? "blue-subtle" : "upsell-subtle",
-                                        children: L("transfer_list.recoverable_label")
+                                        children: j("transfer_list.recoverable_label")
                                     }), a && (0, l.jsx)(o.m, {
                                         position: "top",
                                         mode: "dark",
                                         isCondensed: !0,
-                                        content: L("transfer_list.password_tooltip"),
+                                        content: j("transfer_list.password_tooltip"),
                                         className: eX().TitleIconTooltip,
                                         children: (0, l.jsx)(_.Kaf, {
                                             "data-testid": "password-icon",
@@ -1639,27 +1637,27 @@
                                         position: "top",
                                         mode: "dark",
                                         isCondensed: !0,
-                                        content: L("account.workspace.transfers.transferListItem.showcaseIconTooltip"),
+                                        content: j("account.workspace.transfers.transferListItem.showcaseIconTooltip"),
                                         className: eX().TitleIconTooltip,
                                         children: (0, l.jsx)(_.NJ2, {
                                             size: "small",
                                             "arial-label": "Has custom background"
                                         })
                                     })]
-                                }), G ? (0, l.jsx)(ej, {
+                                }), G ? (0, l.jsx)(eL, {
                                     highlightFiles: m,
                                     transfer: r,
-                                    separatorClassName: ec,
+                                    separatorClassName: eh,
                                     state: r.state
-                                }) : (0, l.jsx)(ej, {
+                                }) : (0, l.jsx)(eL, {
                                     highlightFiles: m,
                                     transfer: r,
                                     className: i()({
-                                        [eX().ItemHideOnHover]: !h
+                                        [eX().ItemHideOnHover]: !c
                                     }),
-                                    separatorClassName: ec,
+                                    separatorClassName: eh,
                                     state: r.state
-                                }), G || I || h ? null : (0, l.jsx)(eZ, {
+                                }), G || v || c ? null : (0, l.jsx)(eZ, {
                                     ...S,
                                     className: i()(eX().Actions, eX().ItemFlexOnHover),
                                     buttonClasses: eb,
@@ -1679,7 +1677,7 @@
                                     isRecoveryAvailableOnUserPlan: R,
                                     onMoveToFolder: F ? ew : void 0
                                 })]
-                            }), !h && !G && !P && (0, l.jsx)(_._mK, {
+                            }), !c && !G && !P && (0, l.jsx)(_._mK, {
                                 "aria-hidden": "true",
                                 className: eX().ChevronIconWrapper
                             }), U && B && !eq.A.isMobile && (0, l.jsx)(er.w, {
@@ -1691,9 +1689,9 @@
                         })]
                     });
                     if (G || P) {
-                        let e = G ? L("transfer_list.requested_transfer_tooltip_text") : [L("transfer_list.expired_transfer_tooltip_text", {
-                            plan: K
-                        }), "received" == N ? "" : L("transfer_list.expired_transfer_deletable")].join(" ");
+                        let e = G ? j("transfer_list.requested_transfer_tooltip_text") : [j("transfer_list.expired_transfer_tooltip_text", {
+                            plan: Y
+                        }), "received" == N ? "" : j("transfer_list.expired_transfer_deletable")].join(" ");
                         return (0, l.jsx)("div", {
                             children: (0, l.jsx)(o.m, {
                                 position: "top",
@@ -1716,7 +1714,7 @@
                     } = e, {
                         sortBy: i,
                         transferGroup: d
-                    } = j(), {
+                    } = L(), {
                         display_name: n,
                         password_protected: o
                     } = t, _ = "/transfers/".concat(d, "/").concat(t.id), {
@@ -1776,8 +1774,8 @@
                         matchTitle: u
                     })
                 };
-            var eY = a(29069),
-                eK = a(64976),
+            var eK = a(29069),
+                eY = a(64976),
                 e$ = a(32770),
                 e0 = a.n(e$),
                 e1 = a(50084),
@@ -1852,14 +1850,14 @@
                 onChange: e2().func.isRequired,
                 options: e2().array.isRequired
             };
-            var e3 = function(e) {
+            var e6 = function(e) {
                     return e.Date = "DATE", e.Expiration = "EXPIRATION", e.Sender = "SENDER", e.Size = "SIZE", e
                 }({}),
-                e4 = function(e) {
+                e3 = function(e) {
                     return e.Date = "DATE", e.Expiration = "EXPIRATION", e.Size = "SIZE", e.Title = "TITLE", e
                 }({}),
-                e9 = a(41732),
-                e6 = a.n(e9);
+                e4 = a(41732),
+                e9 = a.n(e4);
             let e7 = {
                     DATE: "date",
                     SIZE: "size",
@@ -1873,7 +1871,7 @@
                     } = e, {
                         transferGroup: a,
                         sortBy: r
-                    } = j(), d = (0, s.useMemo)(() => "sent" === a ? [e4.Date, e4.Size, e4.Title, e4.Expiration] : [e3.Date, e3.Size, e3.Sender, e3.Expiration], [a]), n = e7[r], o = (0, s.useRef)(null), _ = (0, s.useRef)(null), m = (0, s.useCallback)(e => {
+                    } = L(), d = (0, s.useMemo)(() => "sent" === a ? [e3.Date, e3.Size, e3.Title, e3.Expiration] : [e6.Date, e6.Size, e6.Sender, e6.Expiration], [a]), n = e7[r], o = (0, s.useRef)(null), _ = (0, s.useRef)(null), m = (0, s.useCallback)(e => {
                         t(e), _.current && _.current.focus()
                     }, [t]), w = (0, s.useMemo)(() => (0, l.jsx)("div", {
                         className: "menu",
@@ -1897,7 +1895,7 @@
                         }
                     }), [d]);
                     return ez.Ay.isMobile ? (0, l.jsx)("div", {
-                        className: e6().SortSelect,
+                        className: e9().SortSelect,
                         children: (0, l.jsx)(e5, {
                             name: "sort",
                             onChange: e => t(e),
@@ -1916,7 +1914,7 @@
                             ref: _,
                             tabIndex: 0,
                             role: "button",
-                            className: e6().Sort,
+                            className: e9().Sort,
                             children: C.A.t("page.transfers.".concat(n))
                         })
                     })
@@ -1926,26 +1924,26 @@
                         onSortOptionClick: t,
                         onSortOrderClick: a,
                         className: r
-                    } = e, s = i()(e6().ListSorting, r), {
+                    } = e, s = i()(e9().ListSorting, r), {
                         sortOrder: d
-                    } = j();
+                    } = L();
                     return (0, l.jsxs)("div", {
                         className: s,
                         children: [!ez.Ay.isMobile && (0, l.jsx)("span", {
                             children: C.A.t("page.transfers.sort_on")
                         }), (0, l.jsxs)("div", {
-                            className: e6().SortWrapper,
+                            className: e9().SortWrapper,
                             children: [(0, l.jsx)(te, {
                                 onSortOptionClick: t
-                            }), (0, l.jsx)(eY.A, {
+                            }), (0, l.jsx)(eK.A, {
                                 id: "transfers_page_sort_order",
-                                className: e6().SortArrow,
+                                className: e9().SortArrow,
                                 ariaLabel: "ASC" === d ? "Ascending" : "Descending",
                                 onClick: a,
                                 icon: (0, l.jsx)(em.Ay, {
-                                    orientation: "ASC" === d ? eK.eJ : eK.HM,
+                                    orientation: "ASC" === d ? eY.eJ : eY.HM,
                                     type: "DoubleArrows",
-                                    className: e6().SortArrowIcon
+                                    className: e9().SortArrowIcon
                                 }, "arrow_icon")
                             })]
                         })]
@@ -1960,8 +1958,8 @@
                         totalCount: t
                     } = e, {
                         p: a
-                    } = j(), r = parseInt(a, 10), [d, n] = (0, s.useState)(r), o = t % 20 == 0 ? t / 20 : Math.floor(t / 20) + 1, _ = e => {
-                        n(e), L({
+                    } = L(), r = parseInt(a, 10), [d, n] = (0, s.useState)(r), o = t % 20 == 0 ? t / 20 : Math.floor(t / 20) + 1, _ = e => {
+                        n(e), j({
                             p: "".concat(e)
                         }, !1)
                     }, m = (0, s.useMemo)(() => {
@@ -1982,14 +1980,14 @@
                             onClick: () => _(e),
                             children: null != a ? a : e
                         }, t)
-                    }), [d, m, w]), u = d !== o, h = d > 1;
+                    }), [d, m, w]), u = d !== o, c = d > 1;
                     return (0, l.jsxs)("nav", {
                         "aria-label": "Transfer List Pagination",
                         className: tl().Pagination,
                         children: [(0, l.jsx)("button", {
                             "data-testid": "previous-button",
                             className: tl().Arrow,
-                            disabled: !h,
+                            disabled: !c,
                             onClick: () => _(r - 1),
                             name: "Previous",
                             children: (0, l.jsx)(em.Ay, {
@@ -2134,13 +2132,13 @@
                                 children: i
                             })]
                         }),
-                        children: [(0, l.jsx)(eY.A, {
+                        children: [(0, l.jsx)(eK.A, {
                             id: "transfers_page_confirm_multi_delete",
                             active: !!s,
                             type: "actionbar-action",
                             text: C.A.t("form.delete"),
                             onClick: a
-                        }), (0, l.jsx)(eY.A, {
+                        }), (0, l.jsx)(eK.A, {
                             id: "transfers_page_cancel_multi_delete",
                             type: "actionbar-cancel",
                             text: C.A.t("form.cancel"),
@@ -2167,13 +2165,13 @@
                             className: "transferlist__actionbar",
                             children: n
                         }),
-                        children: [(0, l.jsx)(eY.A, {
+                        children: [(0, l.jsx)(eK.A, {
                             id: "transfers_page_confirm_multi_move",
                             active: !!r,
                             type: "actionbar-action",
                             text: s("folders.move_to_folder"),
                             onClick: a
-                        }), (0, l.jsx)(eY.A, {
+                        }), (0, l.jsx)(eK.A, {
                             id: "transfers_page_cancel_multi_move",
                             type: "actionbar-cancel",
                             text: C.A.t("form.cancel"),
@@ -2183,8 +2181,8 @@
                 }
             };
             var tu = a(504),
-                th = a.n(tu);
-            let tc = e => {
+                tc = a.n(tu);
+            let th = e => {
                     let {
                         folder: t,
                         transfers: a,
@@ -2196,8 +2194,8 @@
                         onDeleteClick: w,
                         onMoveToFolder: g,
                         selectMode: u,
-                        selectionMode: h,
-                        selectedTransfers: c,
+                        selectionMode: c,
+                        selectedTransfers: h,
                         isAllSelected: b,
                         selectedSize: p,
                         storageFull: x,
@@ -2205,27 +2203,27 @@
                         onSelect: y,
                         onNavigateToTransferDetails: T,
                         onEditTitleSave: S,
-                        onConfirmDelete: I,
-                        onCancelDelete: v,
+                        onConfirmDelete: v,
+                        onCancelDelete: I,
                         onConfirmMoveSelection: N,
                         onCancelMoveSelection: C,
                         onSelectAllOnAllPages: E,
                         selectAllOnAllPagesLabel: B
                     } = e, {
                         t: A
-                    } = (0, d.Bd)(), R = j(), {
+                    } = (0, d.Bd)(), R = L(), {
                         sortBy: M
                     } = R, k = (0, s.useCallback)(() => {
                         let {
                             sortOrder: e
                         } = R;
-                        L({
+                        j({
                             ...R,
                             sortOrder: "ASC" === e ? "DESC" : "ASC",
                             p: "1"
                         }, !1)
                     }, [R]), q = (0, s.useCallback)(e => {
-                        L({
+                        j({
                             ...R,
                             sortBy: e,
                             p: "1"
@@ -2235,17 +2233,17 @@
                         className: "transfer-list-loader",
                         children: (0, l.jsx)(F.A, {})
                     }) : a.length ? (0, l.jsx)("div", {
-                        className: th().listHolder,
+                        className: tc().listHolder,
                         children: D.groups.map(e => (0, l.jsxs)(s.Fragment, {
                             children: [(0, l.jsx)("div", {
-                                className: th().groupLabel,
+                                className: tc().groupLabel,
                                 children: (0, l.jsx)("span", {
                                     children: e
                                 })
                             }), D.transfers[e].map((e, t) => (0, l.jsx)(eJ, {
                                 transfer: e,
                                 selectMode: u,
-                                selected: c.has(e.id),
+                                selected: h.has(e.id),
                                 storageFull: x,
                                 onDelete: f,
                                 onSelect: y,
@@ -2255,27 +2253,27 @@
                             }, "".concat(t, ":").concat(e.display_name)))]
                         }, e))
                     }) : (0, l.jsxs)("div", {
-                        className: th().folderEmptyState,
+                        className: tc().folderEmptyState,
                         children: [(0, l.jsx)(_.n$W, {
-                            className: th().folderEmptyStateIcon
+                            className: tc().folderEmptyStateIcon
                         }), (0, l.jsx)("p", {
-                            className: th().folderEmptyStateTitle,
+                            className: tc().folderEmptyStateTitle,
                             children: A("folders.empty_folder_title")
                         }), (0, l.jsx)("p", {
-                            className: th().folderEmptyStateDescription,
+                            className: tc().folderEmptyStateDescription,
                             children: A("folders.empty_folder_description")
                         })]
                     }), (0, l.jsxs)("div", {
-                        className: th().folderTransfersView,
+                        className: tc().folderTransfersView,
                         children: [(0, l.jsxs)("div", {
-                            className: th().header,
+                            className: tc().header,
                             children: [(0, l.jsx)($, {
                                 folder: t,
                                 onBackClick: o,
                                 onRenameClick: m,
                                 onDeleteClick: w
                             }), (0, l.jsx)("div", {
-                                className: th().sortContainer,
+                                className: tc().sortContainer,
                                 children: (0, l.jsx)(tt, {
                                     onSortOptionClick: q,
                                     onSortOrderClick: k
@@ -2283,17 +2281,17 @@
                             })]
                         }), z, !i && !n && r > 20 && (0, l.jsx)(ts, {
                             totalCount: r
-                        }), h === td.Delete && (0, l.jsx)(tg.Delete, {
-                            selectedCount: b ? r : c.size,
-                            onDelete: I,
-                            onCancel: v,
+                        }), c === td.Delete && (0, l.jsx)(tg.Delete, {
+                            selectedCount: b ? r : h.size,
+                            onDelete: v,
+                            onCancel: I,
                             onSelectAll: E,
                             selectAllLabel: B,
                             selectedSize: p,
                             isAllSelected: b,
                             isFoldersEnabled: !0
-                        }), h === td.Move && (0, l.jsx)(tg.Move, {
-                            selectedCount: b ? r : c.size,
+                        }), c === td.Move && (0, l.jsx)(tg.Move, {
+                            selectedCount: b ? r : h.size,
                             onMove: N,
                             onCancel: C,
                             selectedSize: p
@@ -2309,15 +2307,15 @@
                         onConfirm: o
                     } = e, {
                         t: m
-                    } = (0, d.Bd)(), [w, g] = (0, s.useState)(null), [u, h] = (0, s.useState)(!1), c = (0, s.useCallback)(e => {
+                    } = (0, d.Bd)(), [w, g] = (0, s.useState)(null), [u, c] = (0, s.useState)(!1), h = (0, s.useCallback)(e => {
                         g(e)
                     }, []), b = (0, s.useCallback)(async () => {
                         if (w) {
-                            h(!0);
+                            c(!0);
                             try {
                                 await o(w), g(null), n()
                             } finally {
-                                h(!1)
+                                c(!1)
                             }
                         }
                     }, [w, o, n]), p = (0, s.useCallback)(() => {
@@ -2342,7 +2340,7 @@
                                         className: i()(V().folderSelectItem, {
                                             [V().folderSelectItemSelected]: w === e.id
                                         }),
-                                        onClick: () => c(e.id),
+                                        onClick: () => h(e.id),
                                         children: [(0, l.jsx)(_.n$W, {
                                             className: V().folderSelectIcon
                                         }), (0, l.jsx)("span", {
@@ -2381,12 +2379,12 @@
                     (0, s.useEffect)(() => {
                         a && w(a.name)
                     }, [a]);
-                    let h = (0, s.useMemo)(() => {
+                    let c = (0, s.useMemo)(() => {
                             let e = m.trim().toLowerCase();
                             return !!e && r.some(t => t.id !== (null == a ? void 0 : a.id) && t.name.toLowerCase() === e)
                         }, [m, r, null == a ? void 0 : a.id]),
-                        c = (0, s.useMemo)(() => (null == a ? void 0 : a.name) === m.trim(), [null == a ? void 0 : a.name, m]),
-                        b = m.trim() && !h && !c,
+                        h = (0, s.useMemo)(() => (null == a ? void 0 : a.name) === m.trim(), [null == a ? void 0 : a.name, m]),
+                        b = m.trim() && !c && !h,
                         p = (0, s.useCallback)(e => {
                             w(e.target.value)
                         }, []),
@@ -2432,8 +2430,8 @@
                                     onKeyDown: y,
                                     autoFocus: !0,
                                     maxLength: 100,
-                                    state: h ? "invalid" : "default",
-                                    caption: h ? o("folders.folder_already_exists") : void 0
+                                    state: c ? "invalid" : "default",
+                                    caption: c ? o("folders.folder_already_exists") : void 0
                                 })
                             }), (0, l.jsxs)("div", {
                                 className: V().modalFooter,
@@ -2474,16 +2472,16 @@
                     } = e, {
                         transferGroup: g,
                         search: u
-                    } = j(), {
-                        t: h
-                    } = (0, d.Bd)(), [c, b] = (0, s.useState)(!1), p = (0, s.useRef)(null), x = (0, s.useRef)(null), f = (0, s.useRef)(null), y = (0, s.useRef)(null), T = "sent" === g, F = "received" === g, S = "requested" === g, I = i()(tT().Item, {
+                    } = L(), {
+                        t: c
+                    } = (0, d.Bd)(), [h, b] = (0, s.useState)(!1), p = (0, s.useRef)(null), x = (0, s.useRef)(null), f = (0, s.useRef)(null), y = (0, s.useRef)(null), T = "sent" === g, F = "received" === g, S = "requested" === g, v = i()(tT().Item, {
                         [tT().ItemSelected]: T
-                    }), v = i()(tT().Item, {
+                    }), I = i()(tT().Item, {
                         [tT().ItemSelected]: F
                     }), N = i()(tT().Item, {
                         [tT().ItemSelected]: S
-                    }), L = i()(tT().Slider, {
-                        [tT().SliderAnimation]: c
+                    }), j = i()(tT().Slider, {
+                        [tT().SliderAnimation]: h
                     });
                     (0, s.useEffect)(() => {
                         b(!0)
@@ -2507,13 +2505,13 @@
                             position: "top",
                             mode: "dark",
                             isCondensed: !0,
-                            content: h("folders.create_button"),
+                            content: c("folders.create_button"),
                             className: tT().createFolderTooltip,
                             children: (0, l.jsx)("button", {
                                 type: "button",
                                 className: tT().createFolderIcon,
                                 onClick: m,
-                                "aria-label": h("folders.create_button"),
+                                "aria-label": c("folders.create_button"),
                                 children: (0, l.jsx)(_.n$W, {
                                     size: "small"
                                 })
@@ -2528,27 +2526,27 @@
                                 children: [(0, l.jsx)("li", {
                                     className: tT().ListItem,
                                     ref: p,
-                                    children: (0, l.jsx)(eY.A, {
+                                    children: (0, l.jsx)(eK.A, {
                                         id: "transfers_page_sent",
-                                        className: I,
+                                        className: v,
                                         onClick: () => null == r ? void 0 : r("sent"),
                                         text: C.A.t("navigation.user.items.sent")
                                     })
                                 }), (0, l.jsx)("li", {
                                     className: tT().ListItem,
                                     ref: f,
-                                    children: (0, l.jsx)(eY.A, {
+                                    children: (0, l.jsx)(eK.A, {
                                         id: "transfers_page_requested",
                                         className: N,
                                         onClick: () => null == r ? void 0 : r("requested"),
-                                        text: h("navigation.requested")
+                                        text: c("navigation.requested")
                                     })
                                 }), (0, l.jsx)("li", {
                                     className: tT().ListItem,
                                     ref: x,
-                                    children: (0, l.jsx)(eY.A, {
+                                    children: (0, l.jsx)(eK.A, {
                                         id: "transfers_page_received",
-                                        className: v,
+                                        className: I,
                                         onClick: () => null == r ? void 0 : r("received"),
                                         text: C.A.t("navigation.user.items.received")
                                     })
@@ -2560,7 +2558,7 @@
                                     }), E]
                                 })]
                             }), (0, l.jsx)("div", {
-                                className: L,
+                                className: j,
                                 ref: y
                             })]
                         }), !S && ez.Ay.isMobile && !u && (0, l.jsxs)("div", {
@@ -2578,12 +2576,12 @@
                         createFolderEnabled: a,
                         onCreateFolderClick: r,
                         hasFolders: i
-                    } = e, d = j();
+                    } = e, d = L();
                     (0, s.useEffect)(() => {
-                        L(d, !0)
+                        j(d, !0)
                     }, [d]);
                     let n = (0, s.useCallback)(e => {
-                            L({
+                            j({
                                 ...d,
                                 transferGroup: e,
                                 p: "1",
@@ -2596,14 +2594,14 @@
                             let {
                                 sortOrder: e
                             } = d;
-                            L({
+                            j({
                                 ...d,
                                 sortOrder: "ASC" === e ? "DESC" : "ASC",
                                 p: "1"
                             }, !1)
                         }, [d]),
                         _ = (0, s.useCallback)(e => {
-                            L({
+                            j({
                                 ...d,
                                 sortBy: e,
                                 p: "1"
@@ -2620,12 +2618,12 @@
                         })
                     })
                 };
-            var tI = a(79758),
-                tv = a(96773),
+            var tv = a(79758),
+                tI = a(96773),
                 tN = a(62278),
-                tL = a.n(tN),
-                tj = a(7092),
-                tC = a.n(tj);
+                tj = a.n(tN),
+                tL = a(7092),
+                tC = a.n(tL);
             let tE = (0, s.forwardRef)((e, t) => {
                 let {
                     id: a,
@@ -2672,12 +2670,12 @@
                     (e => {
                         let {
                             transferGroup: t
-                        } = j();
+                        } = L();
                         (0, s.useEffect)(() => {
                             let a = e.current,
                                 l = !0,
                                 r = () => {
-                                    a && a.value.length >= 2 && l && (tv.Ay.trackSnowplowEvent({
+                                    a && a.value.length >= 2 && l && (tI.Ay.trackSnowplowEvent({
                                         category: "transfers_search",
                                         action: "transfers_searched",
                                         label: "".concat(t, "_transfers_page")
@@ -2691,12 +2689,12 @@
                             }
                         }, [e, t])
                     })(u);
-                    let h = (0, s.useCallback)(e => {
+                    let c = (0, s.useCallback)(e => {
                             d(eR.A.stripHtmlTags(e))
                         }, [d]),
-                        c = (0, s.useCallback)(e => {
-                            m(!1), h(e)
-                        }, [h]);
+                        h = (0, s.useCallback)(e => {
+                            m(!1), c(e)
+                        }, [c]);
                     (0, s.useEffect)(() => {
                         var e;
                         null == (e = u.current) || e.focus({
@@ -2710,29 +2708,29 @@
                             return ((null == (t = g.current) || null == (e = t.firstChild) ? void 0 : e.offsetHeight) || l) * a
                         }, [r.length]),
                         p = (0, s.useMemo)(() => r.map((e, t) => {
-                            let a = i()(tL().ListItem, {
-                                    [tL().ListItemSelected]: t === n
+                            let a = i()(tj().ListItem, {
+                                    [tj().ListItemSelected]: t === n
                                 }),
                                 r = e.label.match(/<em\b[^>]*>.*<\/em>/i),
                                 [s, d] = e.label.split(r[0]),
                                 o = r[0].replace(/<\/?em[^>]*>/g, "");
                             return (0, l.jsxs)("li", {
                                 className: a,
-                                onMouseDown: () => c(e.label),
+                                onMouseDown: () => h(e.label),
                                 children: [s || "", (0, l.jsx)("em", {
                                     children: o
                                 }), d || ""]
                             }, e.id)
-                        }), [r, n, c]),
+                        }), [r, n, h]),
                         x = (0, s.useCallback)(() => {
-                            h("")
-                        }, [h]),
+                            c("")
+                        }, [c]),
                         f = (0, s.useCallback)(() => {
                             m(!1)
                         }, []),
                         y = (0, s.useCallback)(e => {
-                            m(!0), h(e.currentTarget.value)
-                        }, [h]),
+                            m(!0), c(e.currentTarget.value)
+                        }, [c]),
                         T = (0, s.useCallback)(e => {
                             let t, a = r.length - 1;
                             "ArrowDown" === e ? t = n < a ? n + 1 : 0 : "ArrowUp" === e && (t = n > 0 ? n - 1 : a), o(t);
@@ -2746,12 +2744,12 @@
                             if (l.indexOf(t) > -1 && (o(0), e.preventDefault()), i.includes(t) && T(t), t === ew._f && m(!1), t === ew.Fm) {
                                 let e = r[n];
                                 if (!a || !(null == e ? void 0 : e.id)) return;
-                                m(!1), h(e.label)
+                                m(!1), c(e.label)
                             }
-                        }, [r, T, h, n, a]),
-                        S = i()(tL().Autocomplete, t),
-                        I = i()(tL().List, {
-                            [tL().ListHidden]: !_ || !a || !r.length
+                        }, [r, T, c, n, a]),
+                        S = i()(tj().Autocomplete, t),
+                        v = i()(tj().List, {
+                            [tj().ListHidden]: !_ || !a || !r.length
                         });
                     return (0, l.jsxs)("div", {
                         className: S,
@@ -2774,14 +2772,14 @@
                                 color: e8.$A
                             }, "RemoveIcon")
                         }), (0, l.jsx)("div", {
-                            className: I,
+                            className: v,
                             style: {
                                 height: b + 2
                             },
-                            children: (0, l.jsx)(tI.A, {
+                            children: (0, l.jsx)(tv.A, {
                                 ref: w,
                                 children: (0, l.jsx)("ul", {
-                                    className: tL().Autocomplete,
+                                    className: tj().Autocomplete,
                                     ref: g,
                                     children: p
                                 })
@@ -2848,8 +2846,8 @@
                 }
                 return (0, tQ.A)(e)
             }
-            var tY = a(88079),
-                tK = a(9723),
+            var tK = a(88079),
+                tY = a(9723),
                 t$ = a(56915),
                 t0 = a(48585),
                 t1 = a(42572),
@@ -2865,11 +2863,11 @@
                     latestTransferReceived: w,
                     recipients: g,
                     openRequestsCount: u
-                } = e, [h, c] = (0, s.useState)(!1), {
+                } = e, [c, h] = (0, s.useState)(!1), {
                     t: b
                 } = (0, d.Bd)(), p = (0, n.wA)(), x = (0, n.d4)(f.mB), {
                     quota: y
-                } = (0, tV.M)(), [T] = (0, tU.rH)(), [F] = (0, tU.$9)(), [S] = (0, tU.kp)(), I = (0, tK.qN)(x, u, y), [v, N] = (0, s.useState)(!1), E = e => e.toLocaleString("en-US", {
+                } = (0, tV.M)(), [T] = (0, tU.rH)(), [F] = (0, tU.$9)(), [S] = (0, tU.kp)(), v = (0, tY.qN)(x, u, y), [I, N] = (0, s.useState)(!1), E = e => e.toLocaleString("en-US", {
                     day: "numeric",
                     month: "short",
                     year: "numeric"
@@ -2888,7 +2886,7 @@
                         }))
                     }
                 }, R = async e => {
-                    if (e.stopPropagation(), I) return void p(t$.P.setPanelNotification({
+                    if (e.stopPropagation(), v) return void p(t$.P.setPanelNotification({
                         category: t0.a.Error,
                         details: "request_limit_reached"
                     }));
@@ -2923,8 +2921,8 @@
                     count: g.length - 1
                 }) : b("request_list.recipient_notified_single", {
                     email: z
-                }), P = i ? D : O, V = i || g.length ? P : b("request_list.no_uploads"), H = j(), U = (0, s.useCallback)(() => {
-                    L({
+                }), P = i ? D : O, V = i || g.length ? P : b("request_list.no_uploads"), H = L(), U = (0, s.useCallback)(() => {
+                    j({
                         ...H,
                         transferGroup: "received",
                         search: a
@@ -2933,8 +2931,8 @@
                 return (0, l.jsxs)(l.Fragment, {
                     children: [(0, l.jsxs)("li", {
                         className: t2().requestItem,
-                        onMouseOver: () => c(!0),
-                        onMouseLeave: () => c(!1),
+                        onMouseOver: () => h(!0),
+                        onMouseLeave: () => h(!1),
                         onClick: U,
                         children: [(0, l.jsxs)("div", {
                             className: t2().requestItemDetails,
@@ -2943,7 +2941,7 @@
                                 children: a
                             }), (0, l.jsx)("div", {
                                 className: t2().requestMetaData,
-                                children: h ? (0, l.jsxs)("div", {
+                                children: c ? (0, l.jsxs)("div", {
                                     className: t2().actionsContainer,
                                     children: [m === tW.t.OPEN && (0, l.jsxs)(l.Fragment, {
                                         children: [(0, l.jsx)(_.R3g, {
@@ -3007,18 +3005,18 @@
                         }), (0, l.jsx)(_._mK, {
                             className: t2().Icon
                         })]
-                    }), v && (0, l.jsx)(tY.B, {
+                    }), I && (0, l.jsx)(tK.B, {
                         html: C.A.t("notification.link_copied")
                     }), M && (0, l.jsxs)(tw.A, {
                         text: (0, l.jsx)("div", {
                             className: "transferlist__actionbar",
                             children: b("request_list.delete_request_confirmation")
                         }),
-                        children: [(0, l.jsx)(eY.A, {
+                        children: [(0, l.jsx)(eK.A, {
                             type: "actionbar-action",
                             text: b("request_list.delete_request"),
                             onClick: q
-                        }), (0, l.jsx)(eY.A, {
+                        }), (0, l.jsx)(eK.A, {
                             type: "actionbar-cancel",
                             text: b("request_list.cancel_delete"),
                             onClick: () => k(!1)
@@ -3027,8 +3025,8 @@
                 })
             };
             var t5 = a(113),
-                t3 = a.n(t5);
-            let t4 = () => {
+                t6 = a.n(t5);
+            let t3 = () => {
                 var e, t, a;
                 let r = (0, n.d4)(f.mB),
                     i = (0, n.wA)(),
@@ -3045,28 +3043,28 @@
                         t: u
                     } = (0, d.Bd)(),
                     {
-                        quota: h
+                        quota: c
                     } = (0, tV.M)(),
                     {
-                        quota: c
+                        quota: h
                     } = (0, tH.H)(),
-                    b = C.A.size(c, {
+                    b = C.A.size(h, {
                         allowNull: !0
                     }),
-                    p = h > 0;
+                    p = c > 0;
                 return _ || m ? (0, l.jsx)("div", {
-                    className: t3().loadingWrapper,
+                    className: t6().loadingWrapper,
                     children: (0, l.jsx)(F.A, {})
                 }) : (null == o ? void 0 : o.length) ? (0, l.jsx)(l.Fragment, {
                     children: w.groups.sort(e => e === tW.t.OPEN ? -1 : 1).map(e => (0, l.jsxs)("div", {
-                        className: t3().groupContainer,
+                        className: t6().groupContainer,
                         children: [(0, l.jsx)("h2", {
-                            className: t3().groupLabel,
+                            className: t6().groupLabel,
                             children: (0, l.jsx)("span", {
                                 children: e === tW.t.OPEN ? C.A.t("request_list.request_status_open") : C.A.t("request_list.request_status_closed")
                             })
                         }), (0, l.jsx)("ol", {
-                            className: t3().list,
+                            className: t6().list,
                             children: w.requests[e].sort((e, t) => new Date(t.createdAt).getTime() - new Date(e.createdAt).getTime()).map(e => {
                                 var t;
                                 return (0, l.jsx)(t8, {
@@ -3084,19 +3082,28 @@
                         })]
                     }, e))
                 }) : (0, l.jsxs)("div", {
-                    className: t3().empty,
+                    className: t6().empty,
                     children: [(0, l.jsx)("h2", {
-                        className: t3().emptyTitle,
+                        className: t6().emptyTitle,
                         children: u(p ? "request_list.no_results.entitled_title" : "request_list.no_results.unentitled_title")
                     }), (0, l.jsxs)("div", {
-                        className: t3().emptyBody,
+                        className: t6().emptyBody,
                         children: [(0, l.jsx)("p", {
-                            className: t3().emptyBodyText,
-                            dangerouslySetInnerHTML: {
-                                __html: p ? c === 1 / 0 ? u("request_list.no_results.entitled_body_unlimited") : u("request_list.no_results.entitled_body", {
+                            className: t6().emptyBodyText,
+                            children: p ? h === 1 / 0 ? (0, l.jsx)(d.x6, {
+                                i18nKey: "request_list.no_results.entitled_body_unlimited",
+                                components: {
+                                    br: (0, l.jsx)("br", {})
+                                }
+                            }) : (0, l.jsx)(d.x6, {
+                                i18nKey: "request_list.no_results.entitled_body",
+                                values: {
                                     transferSizeLimit: b
-                                }) : u("request_list.no_results.unentitled_body")
-                            }
+                                },
+                                components: {
+                                    br: (0, l.jsx)("br", {})
+                                }
+                            }) : u("request_list.no_results.unentitled_body")
                         }), !p && (0, l.jsx)("div", {
                             children: (0, l.jsx)(tP.N, {
                                 href: tG.bP.route,
@@ -3107,9 +3114,9 @@
                     })]
                 })
             };
-            var t9 = a(80714),
-                t6 = a(16182),
-                t7 = a.n(t6),
+            var t4 = a(80714),
+                t9 = a(16182),
+                t7 = a.n(t9),
                 ae = a(89395),
                 at = a(31838),
                 aa = a(61670),
@@ -3125,14 +3132,14 @@
                 aw = a(12924),
                 ag = a(58253),
                 au = a.n(ag);
-            let ah = () => {
+            let ac = () => {
                 let {
                     t: e
                 } = (0, d.Bd)(), t = (0, n.wA)(), {
                     currentUsage: a,
                     quota: r
                 } = (0, am.J)(!0), i = (0, aw.x)(), o = a >= r ? 100 : a / r * 100, _ = a >= r, m = (0, s.useCallback)(() => {
-                    t((0, tX.jt)(tX.vW.TRANSFERS_SENT_INCREASE_NUMBER_LIMIT)), I.A.navigateTo(tG.bP.route)
+                    t((0, tX.jt)(tX.vW.TRANSFERS_SENT_INCREASE_NUMBER_LIMIT)), v.A.navigateTo(tG.bP.route)
                 }, [t]);
                 return (0, l.jsxs)(ao.l, {
                     variation: "upsell",
@@ -3157,17 +3164,27 @@
                                 })]
                             }), (0, l.jsx)("p", {
                                 className: au().Banner__text,
-                                dangerouslySetInnerHTML: {
-                                    __html: _ ? e("transfers_number_banner.limit_reached", {
+                                children: _ ? (0, l.jsx)(d.x6, {
+                                    i18nKey: "transfers_number_banner.limit_reached",
+                                    values: {
                                         days: C.A.t("datetime.distance_in_words.x_days", {
                                             count: i
                                         }),
                                         quota: r
-                                    }) : e("transfers_number_banner.title", {
+                                    },
+                                    components: {
+                                        strong: (0, l.jsx)("strong", {})
+                                    }
+                                }) : (0, l.jsx)(d.x6, {
+                                    i18nKey: "transfers_number_banner.title",
+                                    values: {
                                         count: a,
                                         quota: r
-                                    })
-                                }
+                                    },
+                                    components: {
+                                        b: (0, l.jsx)("b", {})
+                                    }
+                                })
                             })]
                         })
                     }), (0, l.jsx)(ao.l.Actions, {
@@ -3180,7 +3197,7 @@
                     })]
                 })
             };
-            var ac = a(69782),
+            var ah = a(69782),
                 ab = a(51686),
                 ap = a(66823),
                 ax = a.n(ap),
@@ -3191,7 +3208,7 @@
                     } = e, {
                         t: a
                     } = (0, d.Bd)(), r = (0, n.d4)(af.G9), i = (0, s.useCallback)(() => {
-                        I.A.navigateTo(tG.$X.route)
+                        v.A.navigateTo(tG.$X.route)
                     }, [t]);
                     return r ? (0, l.jsx)(l.Fragment, {}) : (0, l.jsx)(l.Fragment, {
                         children: (0, l.jsxs)(ao.l, {
@@ -3224,30 +3241,30 @@
                 };
             var aF = a(53155),
                 aS = a(88629),
-                aI = a.n(aS);
-            let av = () => {
+                av = a.n(aS);
+            let aI = () => {
                     let {
                         t: e
                     } = (0, d.Bd)(), t = (0, n.wA)(), {
                         currentUsage: a,
                         quota: r
                     } = (0, m.i)(!0), i = (0, aw.x)(), o = a >= r ? 100 : a / r * 100, _ = a >= r, w = (0, s.useCallback)(() => {
-                        t((0, tX.jt)(tX.vW.TRANSFERS_SENT_INCREASE_GB_LIMIT)), I.A.navigateTo(tG.bP.route)
+                        t((0, tX.jt)(tX.vW.TRANSFERS_SENT_INCREASE_GB_LIMIT)), v.A.navigateTo(tG.bP.route)
                     }, [t]);
                     return (0, l.jsxs)(ao.l, {
                         variation: "upsell",
                         children: [(0, l.jsx)(ao.l.Content, {
                             children: (0, l.jsxs)("div", {
-                                className: aI().bannerContent,
+                                className: av().bannerContent,
                                 children: [(0, l.jsxs)("div", {
-                                    className: aI().progressBarContainer,
+                                    className: av().progressBarContainer,
                                     children: [(0, l.jsxs)("p", {
-                                        className: aI().Banner__text,
+                                        className: av().Banner__text,
                                         children: [(0, l.jsx)("b", {
-                                            className: "".concat(_ ? aI().Banner__limitExceeded : ""),
+                                            className: "".concat(_ ? av().Banner__limitExceeded : ""),
                                             children: C.A.numberOfGigabytes(a, 2)
                                         }), (0, l.jsxs)("span", {
-                                            className: aI().Banner__textQuota,
+                                            className: av().Banner__textQuota,
                                             children: ["/", C.A.numberOfGigabytes(r, 0)]
                                         })]
                                     }), (0, l.jsx)(a_.z, {
@@ -3256,22 +3273,32 @@
                                         appearance: _ || 100 === o ? "red" : "neutral"
                                     })]
                                 }), (0, l.jsx)("p", {
-                                    className: aI().Banner__description,
-                                    dangerouslySetInnerHTML: {
-                                        __html: _ ? e("transfers_size_banner.limit_reached", {
+                                    className: av().Banner__description,
+                                    children: _ ? (0, l.jsx)(d.x6, {
+                                        i18nKey: "transfers_size_banner.limit_reached",
+                                        values: {
                                             days: C.A.t("datetime.distance_in_words.x_days", {
                                                 count: i
                                             }),
                                             quota: C.A.size(r, {
                                                 precision: 0
                                             })
-                                        }) : e("transfers_size_banner.title", {
+                                        },
+                                        components: {
+                                            strong: (0, l.jsx)("strong", {})
+                                        }
+                                    }) : (0, l.jsx)(d.x6, {
+                                        i18nKey: "transfers_size_banner.title",
+                                        values: {
                                             used: C.A.numberOfGigabytes(a, 2),
                                             quota: C.A.size(r, {
                                                 precision: 0
                                             })
-                                        })
-                                    }
+                                        },
+                                        components: {
+                                            b: (0, l.jsx)("b", {})
+                                        }
+                                    })
                                 })]
                             })
                         }), (0, l.jsx)(ao.l.Actions, {
@@ -3293,23 +3320,23 @@
                         sortBy: o,
                         sortOrder: _,
                         p: S = "",
-                        afterDeletion: I
-                    } = j(), v = (0, ek.jL)(), {
+                        afterDeletion: v
+                    } = L(), I = (0, ek.jL)(), {
                         t: N
-                    } = (0, d.Bd)(), [C, E] = (0, s.useState)(a || ""), B = void 0 !== C && C.length > 1, [R, M] = (0, s.useState)(null), q = null !== R, [D, z] = (0, s.useState)(new Map), [O, P] = (0, s.useState)(0), [V, U] = (0, s.useState)(0), [W, G] = (0, s.useState)(!1), [X, Z] = (0, s.useState)(!1), [J, Y] = (0, s.useState)(null), K = (0, s.useRef)(S), $ = (() => {
+                    } = (0, d.Bd)(), [C, E] = (0, s.useState)(a || ""), B = void 0 !== C && C.length > 1, [R, M] = (0, s.useState)(null), q = null !== R, [D, z] = (0, s.useState)(new Map), [O, P] = (0, s.useState)(0), [V, U] = (0, s.useState)(0), [W, G] = (0, s.useState)(!1), [X, Z] = (0, s.useState)(!1), [J, K] = (0, s.useState)(null), Y = (0, s.useRef)(S), $ = (() => {
                         let {
                             settings: e
                         } = (0, ad.k)(), t = (0, n.d4)(f.mB);
                         return !(0, tR.Z_)(t) && e.transfer_folders
-                    })(), [ee, ea] = (0, s.useState)(null), [el, er] = (0, s.useState)(!1), [ei, es] = (0, s.useState)(!1), [ed, en] = (0, s.useState)(null), [eo, e_] = (0, s.useState)(null), em = (0, s.useMemo)(() => (0, an.s)(E, 300), [E]), ew = (0, n.d4)(f.mB), eg = (0, n.d4)(f.R2), eu = (0, n.d4)(x.bF), eh = (0, n.d4)(af.n9), {
-                        batchDeleteTransferCustomizations: ec
-                    } = (0, t9.H)(), {
+                    })(), [ee, ea] = (0, s.useState)(null), [el, er] = (0, s.useState)(!1), [ei, es] = (0, s.useState)(!1), [ed, en] = (0, s.useState)(null), [eo, e_] = (0, s.useState)(null), em = (0, s.useMemo)(() => (0, an.s)(E, 300), [E]), ew = (0, n.d4)(f.mB), eg = (0, n.d4)(f.R2), eu = (0, n.d4)(x.bF), ec = (0, n.d4)(af.n9), {
+                        batchDeleteTransferCustomizations: eh
+                    } = (0, t4.H)(), {
                         updateDisplayName: eb
-                    } = (0, y.$S)(), ep = (0, ac.P)(), ex = (0, ac.L)(), {
+                    } = (0, y.$S)(), ep = (0, ah.P)(), ex = (0, ah.L)(), {
                         data: ef = []
                     } = g(void 0, {
                         skip: !$ || r !== eF.a.SENT
-                    }), [eT] = u(), [eS] = h(), [eI] = c(), [ev] = b(), eN = (0, s.useMemo)(() => ef.find(e => e.id === ee) || null, [ef, ee]), [eL, ej] = (0, s.useState)(null), [eC, eA] = (0, s.useState)(!0), [eM, eq] = (0, s.useState)(null), [ez, eO] = (0, s.useState)(null), [eV, eU] = (0, s.useState)(0);
+                    }), [eT] = u(), [eS] = c(), [ev] = h(), [eI] = b(), eN = (0, s.useMemo)(() => ef.find(e => e.id === ee) || null, [ef, ee]), [ej, eL] = (0, s.useState)(null), [eC, eA] = (0, s.useState)(!0), [eM, eq] = (0, s.useState)(null), [ez, eO] = (0, s.useState)(null), [eV, eU] = (0, s.useState)(0);
                     (0, as.S)(() => {
                         (0, T.Od)().trackUserAction(eH.transferListOpened());
                         let e = new URLSearchParams(window.location.search),
@@ -3335,12 +3362,12 @@
                     }, [eX, eZ]);
                     (0, s.useEffect)(() => {
                         z(new Map)
-                    }, [eL]), (0, s.useEffect)(() => {
+                    }, [ej]), (0, s.useEffect)(() => {
                         null !== R && (z(new Map), U(0), G(!1))
                     }, [C]);
                     let {
-                        currentUsage: eY,
-                        isLimitReached: eK,
+                        currentUsage: eK,
+                        isLimitReached: eY,
                         quota: e$
                     } = (0, m.i)(!0);
                     (0, s.useEffect)(() => {
@@ -3369,11 +3396,11 @@
                             eP.A.track(e)
                         }
                         return {
-                            storageUsed: null != eY ? eY : 0,
-                            storageFull: eK() || e,
+                            storageUsed: null != eK ? eK : 0,
+                            storageFull: eY() || e,
                             storageLimit: e$
                         }
-                    }, [eY, eK, e$, ez]), e8 = (0, s.useMemo)(() => eL ? (e => ({
+                    }, [eK, eY, e$, ez]), e8 = (0, s.useMemo)(() => ej ? (e => ({
                         ...e,
                         transfers: e.transfers.map(e => {
                             let t = e.expires_at && new Date(e.expires_at) < new Date;
@@ -3386,7 +3413,7 @@
                                 totalFileSize: e.size
                             }
                         })
-                    }))(eL).transfers : [], [eL]);
+                    }))(ej).transfers : [], [ej]);
                     (e => {
                         let t = (0, n.wA)(),
                             a = (0, ar.Z)(e),
@@ -3432,8 +3459,8 @@
                             })()
                         }, [r, t, l, a, e])
                     })(e8);
-                    let e5 = (0, s.useMemo)(() => (null == eL ? void 0 : eL.total_number_of_transfers) || 0, [eL]),
-                        e3 = (0, s.useMemo)(() => {
+                    let e5 = (0, s.useMemo)(() => (null == ej ? void 0 : ej.total_number_of_transfers) || 0, [ej]),
+                        e6 = (0, s.useMemo)(() => {
                             let e = {
                                 type: r === eF.a.SENT ? "SENT" : "RECEIVED",
                                 requested: !0,
@@ -3450,9 +3477,9 @@
                             return $ && r === eF.a.SENT && (e.folder_id = null === ee ? "null" : ee), e
                         }, [r, C, S, o, _, $, ee]),
                         {
-                            data: e4,
-                            loading: e9,
-                            error: e6
+                            data: e3,
+                            loading: e4,
+                            error: e9
                         } = function() {
                             let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : {
                                     page: 1,
@@ -3485,13 +3512,13 @@
                                 loading: !!_ || !!m,
                                 error: w
                             }
-                        }(eG && (null == eG ? void 0 : eG.id) && !eu && eg && ("requested" !== r || "requested" === r) ? e3 : void 0);
+                        }(eG && (null == eG ? void 0 : eG.id) && !eu && eg && ("requested" !== r || "requested" === r) ? e6 : void 0);
                     (0, s.useEffect)(() => {
-                        eM && v(eD.P9.setPanelNotification({
+                        eM && I(eD.P9.setPanelNotification({
                             category: eD.aF.Error,
                             details: "something_went_wrong"
                         }))
-                    }, [eM, v]), (0, s.useEffect)(() => {
+                    }, [eM, I]), (0, s.useEffect)(() => {
                         e0 && P(e0)
                     }, [e0]), (0, s.useEffect)(() => {
                         let e = document.querySelector(".panel .scrollable__content");
@@ -3504,22 +3531,22 @@
                             M(null), z(e => (e.clear(), new Map(e))), ea(null)
                         }, []),
                         te = (0, s.useCallback)(e => {
-                            E(""), L({
+                            E(""), j({
                                 search: "",
                                 transferGroup: r,
                                 sortBy: o,
                                 sortOrder: _,
                                 p: "1"
-                            }, !1), ea(e.id), ej(null), eA(!0), 0 !== eV && v(p.Db.util.invalidateTags(["Page"])), eU(0), M(null), z(new Map), U(0), G(!1)
-                        }, [r, o, _, eV, v]),
+                            }, !1), ea(e.id), eL(null), eA(!0), 0 !== eV && I(p.Db.util.invalidateTags(["Page"])), eU(0), M(null), z(new Map), U(0), G(!1)
+                        }, [r, o, _, eV, I]),
                         tt = (0, s.useCallback)(() => {
-                            ea(null), ej(null), eA(!0), 0 !== eV && v(p.Db.util.invalidateTags(["Page"])), eU(0), M(null), z(new Map), U(0), G(!1)
-                        }, [eV, v]),
+                            ea(null), eL(null), eA(!0), 0 !== eV && I(p.Db.util.invalidateTags(["Page"])), eU(0), M(null), z(new Map), U(0), G(!1)
+                        }, [eV, I]),
                         ta = (0, s.useCallback)(async e => {
                             try {
                                 await eT({
                                     name: e
-                                }).unwrap(), (0, T.Od)().trackUserAction(eH.transferFolderCreated()), v(eD.P9.setPanelNotification({
+                                }).unwrap(), (0, T.Od)().trackUserAction(eH.transferFolderCreated()), I(eD.P9.setPanelNotification({
                                     category: eD.aF.Notification,
                                     details: "folder_created"
                                 }))
@@ -3527,12 +3554,12 @@
                                 var t;
                                 eP.A.track(a);
                                 let e = ((null == a || null == (t = a.data) ? void 0 : t.message) || "").toLowerCase().includes("name already exists");
-                                v(eD.P9.setPanelNotification({
+                                I(eD.P9.setPanelNotification({
                                     category: eD.aF.Error,
                                     details: e ? "folder_name_exists" : "something_went_wrong"
                                 }))
                             }
-                        }, [eT, v]),
+                        }, [eT, I]),
                         tl = (0, s.useCallback)(async (e, t) => {
                             try {
                                 await eS({
@@ -3540,7 +3567,7 @@
                                     name: t
                                 }).unwrap(), (0, T.Od)().trackUserAction(eH.transferFolderRenamed({
                                     folderId: e
-                                })), v(eD.P9.setPanelNotification({
+                                })), I(eD.P9.setPanelNotification({
                                     category: eD.aF.Notification,
                                     details: "folder_renamed"
                                 }))
@@ -3548,36 +3575,36 @@
                                 var a;
                                 eP.A.track(t);
                                 let e = ((null == t || null == (a = t.data) ? void 0 : a.message) || "").toLowerCase().includes("name already exists");
-                                v(eD.P9.setPanelNotification({
+                                I(eD.P9.setPanelNotification({
                                     category: eD.aF.Error,
                                     details: e ? "folder_name_exists" : "something_went_wrong"
                                 }))
                             }
-                        }, [eS, v]),
+                        }, [eS, I]),
                         tr = (0, s.useCallback)(async e => {
                             try {
-                                await eI(e).unwrap(), (0, T.Od)().trackUserAction(eH.transferFolderDeleted({
+                                await ev(e).unwrap(), (0, T.Od)().trackUserAction(eH.transferFolderDeleted({
                                     folderId: e
-                                })), ee === e && ea(null), v(eD.P9.setPanelNotification({
+                                })), ee === e && ea(null), I(eD.P9.setPanelNotification({
                                     category: eD.aF.Notification,
                                     details: "folder_removed"
                                 }))
                             } catch (e) {
-                                eP.A.track(e), v(eD.P9.setPanelNotification({
+                                eP.A.track(e), I(eD.P9.setPanelNotification({
                                     category: eD.aF.Error,
                                     details: "something_went_wrong"
                                 }))
                             }
-                        }, [eI, ee, v]),
+                        }, [ev, ee, I]),
                         ti = (0, s.useCallback)(async e => {
                             let t = Array.from(D.keys());
                             if (0 !== t.length) try {
-                                if (await ev({
+                                if (await eI({
                                         transfer_ids: t,
                                         folder_id: e
                                     }).unwrap(), e !== ee) {
                                     let e = new Set(t);
-                                    ej(a => {
+                                    eL(a => {
                                         if (!a) return null;
                                         let l = a.transfers.filter(t => !e.has(t.id));
                                         return {
@@ -3589,17 +3616,17 @@
                                 }(0, T.Od)().trackUserAction(eH.listItemsMovedToFolder({
                                     transferIds: t,
                                     folderId: e
-                                })), v(eD.P9.setPanelNotification({
+                                })), I(eD.P9.setPanelNotification({
                                     category: eD.aF.Notification,
                                     details: 1 === t.length ? "transfer_moved" : "transfers_moved"
                                 })), Z(!1), M(null), z(new Map), U(0), G(!1)
                             } catch (e) {
-                                eP.A.track(e), v(eD.P9.setPanelNotification({
+                                eP.A.track(e), I(eD.P9.setPanelNotification({
                                     category: eD.aF.Error,
                                     details: "something_went_wrong"
                                 }))
                             }
-                        }, [D, ee, ev, v]),
+                        }, [D, ee, eI, I]),
                         tn = (0, s.useCallback)(async e => {
                             let t, a = Array.from(D.keys());
                             if (0 !== a.length) {
@@ -3608,18 +3635,18 @@
                                         name: e
                                     }).unwrap(), (0, T.Od)().trackUserAction(eH.transferFolderCreated())
                                 } catch (e) {
-                                    throw eP.A.track(e), v(eD.P9.setPanelNotification({
+                                    throw eP.A.track(e), I(eD.P9.setPanelNotification({
                                         category: eD.aF.Error,
                                         details: "something_went_wrong"
                                     })), e
                                 }
                                 try {
-                                    if (await ev({
+                                    if (await eI({
                                             transfer_ids: a,
                                             folder_id: t.id
                                         }).unwrap(), t.id !== ee) {
                                         let e = new Set(a);
-                                        ej(t => {
+                                        eL(t => {
                                             if (!t) return null;
                                             let l = t.transfers.filter(t => !e.has(t.id));
                                             return {
@@ -3631,18 +3658,18 @@
                                     }(0, T.Od)().trackUserAction(eH.listItemsMovedToFolder({
                                         transferIds: a,
                                         folderId: t.id
-                                    })), v(eD.P9.setPanelNotification({
+                                    })), I(eD.P9.setPanelNotification({
                                         category: eD.aF.Notification,
                                         details: 1 === a.length ? "transfer_moved" : "transfers_moved"
                                     })), M(null), z(new Map), U(0), G(!1)
                                 } catch (e) {
-                                    eP.A.track(e), v(eD.P9.setPanelNotification({
+                                    eP.A.track(e), I(eD.P9.setPanelNotification({
                                         category: eD.aF.Error,
                                         details: "something_went_wrong"
                                     }))
                                 }
                             }
-                        }, [D, ee, eT, ev, v]),
+                        }, [D, ee, eT, eI, I]),
                         to = (0, s.useCallback)((e, t) => {
                             M(td.Move), z(a => new Map(a.set(e, "string" == typeof t ? parseInt(t) : t))), U(e => e + ("string" == typeof t ? parseInt(t) : t))
                         }, []),
@@ -3672,7 +3699,7 @@
                             id: e
                         })), [r, e8]),
                         tu = (0, s.useMemo)(() => e8.every(e => D.has(e.id)), [e8, D]),
-                        th = (0, s.useCallback)((e, t) => {
+                        tc = (0, s.useCallback)((e, t) => {
                             D.has(e) ? (z(t => (t.delete(e), new Map(t))), U(e => e - ("string" == typeof t ? parseInt(t) : t)), G(!1)) : (z(new Map(D.set(e, "string" == typeof t ? parseInt(t) : t))), U(e => e + ("string" == typeof t ? parseInt(t) : t)))
                         }, [D, U]),
                         tf = (0, s.useCallback)(() => {
@@ -3704,10 +3731,10 @@
                         tF = (0, s.useCallback)(() => {
                             M(null), z(e => (e.clear(), new Map(e))), U(0), G(!1), (0, T.Od)().trackUserAction(eH.listItemDeleteCancelled())
                         }, []),
-                        tI = (0, s.useCallback)(() => {
+                        tv = (0, s.useCallback)(() => {
                             M(null), z(e => (e.clear(), new Map(e))), U(0), G(!1)
                         }, []),
-                        tv = (0, s.useCallback)(() => {
+                        tI = (0, s.useCallback)(() => {
                             0 !== D.size && (0 === ef.filter(e => e.id !== ee).length ? es(!0) : Z(!0))
                         }, [D.size, ef, ee]),
                         tN = (0, s.useCallback)(async (e, t) => {
@@ -3724,7 +3751,7 @@
                                     transferId: e
                                 }));
                                 let t = N("page.transfer.display_name_fallback");
-                                ej(l => l ? {
+                                eL(l => l ? {
                                     ...l,
                                     transfers: l.transfers.map(l => l.id === e ? {
                                         ...l,
@@ -3734,8 +3761,8 @@
                             } catch (e) {
                                 eP.A.track(e)
                             }
-                        }, [eb, N, ej]),
-                        tL = (0, s.useCallback)(() => {
+                        }, [eb, N, eL]),
+                        tj = (0, s.useCallback)(() => {
                             (0, tx.Ge)({
                                 isSearchValueValid: B,
                                 transferGroup: r
@@ -3743,7 +3770,7 @@
                             let e = new URL(location.href);
                             null !== ee && e.searchParams.set("folderId", String(ee)), t(e.pathname + e.search + e.hash, null !== ee && eN ? eN.name : N("page.transfers.pagename"))
                         }, [B, r, t, N, ee, eN]),
-                        tj = (0, s.useMemo)(() => W ? N("page.transfers.deselect_all_transfers", {
+                        tL = (0, s.useMemo)(() => W ? N("page.transfers.deselect_all_transfers", {
                             count: e5
                         }) : N("page.transfers.select_all_transfers", {
                             count: e5
@@ -3765,10 +3792,10 @@
                                     d = [];
                                 if (s) try {
                                     let e = {
-                                            ...e3,
+                                            ...e6,
                                             page: l + 1
                                         },
-                                        t = await v(p.Db.endpoints.getTransfers.initiate(e, {
+                                        t = await I(p.Db.endpoints.getTransfers.initiate(e, {
                                             forceRefetch: !0
                                         }));
                                     t.data && (d = t.data.transfers || [])
@@ -3785,39 +3812,39 @@
                                         if (!window.confirm(N("transfer_list.confirm_delete_all", {
                                                 count: e5
                                             }))) return;
-                                        $ && (e = null !== ee ? String(ee) : aF.gg), await v(aF.Ay.deleteAllTransfers(eh, e)), G(!1)
+                                        $ && (e = null !== ee ? String(ee) : aF.gg), await I(aF.Ay.deleteAllTransfers(ec, e)), G(!1)
                                     }
                                 else {
                                     if (a > 1 && !window.confirm(N("transfer_list.confirm_delete_all", {
                                             count: a
                                         }))) return;
-                                    await v(aF.Ay.deleteMultipleTransfers(t, eh))
+                                    await I(aF.Ay.deleteMultipleTransfers(t, ec))
                                 }
-                                if (r === a || W) v(p.Db.util.resetApiState()), G(!1);
+                                if (r === a || W) I(p.Db.util.resetApiState()), G(!1);
                                 else {
                                     let e = Math.ceil(e5 / 20);
-                                    for (let t = l + 1; t <= e; t++) v(p.Db.util.invalidateTags([{
+                                    for (let t = l + 1; t <= e; t++) I(p.Db.util.invalidateTags([{
                                         type: "Page",
                                         id: "page_".concat(t)
                                     }]));
                                     if (l > 1)
-                                        for (let e = l - 1; e >= 1; e--) v(p.Db.util.invalidateTags([{
+                                        for (let e = l - 1; e >= 1; e--) I(p.Db.util.invalidateTags([{
                                             type: "Page",
                                             id: "page_".concat(e)
                                         }]))
                                 }
-                                Y(l), M(null), e = W ? e5 : t.length, eW.A.trackSnowplowEvent({
+                                K(l), M(null), e = W ? e5 : t.length, eW.A.trackSnowplowEvent({
                                     category: "transfer_action",
                                     action: "transfer_delete_confirmed",
                                     label: "sent_transfers_page",
                                     property: "transfers_number",
                                     value: e
-                                }), W ? ej(e => e ? {
+                                }), W ? eL(e => e ? {
                                     ...e,
                                     total_number_of_transfers: 0,
                                     transfers: [],
                                     page_number: parseInt(S || "1")
-                                } : null) : ej(e => {
+                                } : null) : eL(e => {
                                     if (!e) return null;
                                     let a = e.transfers.filter(e => !t.includes(e.id));
                                     if (s && d.length > 0) {
@@ -3830,26 +3857,26 @@
                                         transfers: a,
                                         total_number_of_transfers: l
                                     }
-                                }), ec(W ? [] : t), P(e => e - V), z(e => (e.clear(), new Map(e))), U(0), G(!1), eU(l), (0, T.Od)().trackUserAction(eH.listItemDeleteConfirmed(t))
+                                }), eh(W ? [] : t), P(e => e - V), z(e => (e.clear(), new Map(e))), U(0), G(!1), eU(l), (0, T.Od)().trackUserAction(eH.listItemDeleteConfirmed(t))
                             } catch (e) {
                                 eP.A.track(e)
                             }
-                        }, [W, D, e5, v, eh, S, N, ec, V, e3, e8.length, ee, $]);
+                        }, [W, D, e5, I, ec, S, N, eh, V, e6, e8.length, ee, $]);
                     (0, s.useEffect)(() => {
-                        if (K.current === S) {
-                            K.current = S;
+                        if (Y.current === S) {
+                            Y.current = S;
                             return
                         }
-                        null !== J && (v(p.Db.util.resetApiState()), setTimeout(() => {
-                            Y(null)
-                        }, 1e3)), K.current = S
-                    }, [S, J, v]);
+                        null !== J && (I(p.Db.util.resetApiState()), setTimeout(() => {
+                            K(null)
+                        }, 1e3)), Y.current = S
+                    }, [S, J, I]);
                     let tM = null;
                     if ((eC || eM) && "requested" !== r) tM = (0, l.jsx)("div", {
                         className: "transfer-list-loader",
                         children: (0, l.jsx)(F.A, {})
                     });
-                    else if ("requested" === r) tM = (0, l.jsx)(t4, {});
+                    else if ("requested" === r) tM = (0, l.jsx)(t3, {});
                     else if (e8.length) {
                         let e = $ && r === eF.a.SENT && null === ee && ef.length > 0;
                         tM = (0, l.jsx)("div", {
@@ -3878,21 +3905,21 @@
                                     selected: D.has(e.id),
                                     storageFull: e1,
                                     onDelete: tT,
-                                    onSelect: th,
-                                    onNavigateToTransferDetails: tL,
+                                    onSelect: tc,
+                                    onNavigateToTransferDetails: tj,
                                     onEditTitleSave: tN,
                                     onMoveToFolder: $ && r === eF.a.SENT ? to : void 0
                                 }, "".concat(t, ":").concat(e.display_name)))]
                             }, e))
                         })
                     } else tM = B ? (0, l.jsx)(k, {}) : (0, l.jsx)(A, {});
-                    let tk = j();
+                    let tk = L();
                     (0, s.useEffect)(() => {
-                        L(tk, !0)
+                        j(tk, !0)
                     }, [tk]);
                     let tD = (0, s.useCallback)(e => {
                         let t = (e || "").length > 1;
-                        L({
+                        j({
                             ...tk,
                             search: e,
                             ...t && {
@@ -3901,20 +3928,20 @@
                         }, !1)
                     }, [tk]);
                     (0, s.useEffect)(() => {
-                        e9 ? eA(!0) : e4 ? eV === e4.currentPage ? eA(!1) : (ej({
-                            transfers: e4.transfers,
-                            total_number_of_transfers: e4.totalCount,
-                            page_number: e4.currentPage
-                        }), eA(!1), eq(null), eU(0)) : e6 && (eq(e6), eA(!1), eU(0), eP.A.track(e6))
-                    }, [e4, e9, e6, eV, S]), (0, s.useEffect)(() => {
-                        if (I && e8.some(e => e.id === I)) {
-                            let e = e8.filter(e => e.id !== I);
-                            ej(t => t ? {
+                        e4 ? eA(!0) : e3 ? eV === e3.currentPage ? eA(!1) : (eL({
+                            transfers: e3.transfers,
+                            total_number_of_transfers: e3.totalCount,
+                            page_number: e3.currentPage
+                        }), eA(!1), eq(null), eU(0)) : e9 && (eq(e9), eA(!1), eU(0), eP.A.track(e9))
+                    }, [e3, e4, e9, eV, S]), (0, s.useEffect)(() => {
+                        if (v && e8.some(e => e.id === v)) {
+                            let e = e8.filter(e => e.id !== v);
+                            eL(t => t ? {
                                 ...t,
                                 transfers: e
                             } : null)
                         }
-                    }, [e8, I]), (0, s.useEffect)(() => {
+                    }, [e8, v]), (0, s.useEffect)(() => {
                         G(!1), M(null), z(new Map), U(0)
                     }, [r]);
                     let tz = $ && r === eF.a.SENT && null !== ee && null !== eN,
@@ -3929,7 +3956,7 @@
                             className: "TransferList",
                             children: [!tz && (0, l.jsx)(tO, {
                                 user: ew
-                            }), tz && eN ? (0, l.jsx)(tc, {
+                            }), tz && eN ? (0, l.jsx)(th, {
                                 folder: eN,
                                 transfers: e8,
                                 totalCount: e5,
@@ -3946,15 +3973,15 @@
                                 selectedSize: V,
                                 storageFull: e1,
                                 onDelete: tT,
-                                onSelect: th,
-                                onNavigateToTransferDetails: tL,
+                                onSelect: tc,
+                                onNavigateToTransferDetails: tj,
                                 onEditTitleSave: tN,
                                 onConfirmDelete: tE,
                                 onCancelDelete: tF,
-                                onConfirmMoveSelection: tv,
-                                onCancelMoveSelection: tI,
+                                onConfirmMoveSelection: tI,
+                                onCancelMoveSelection: tv,
                                 onSelectAllOnAllPages: ty,
-                                selectAllOnAllPagesLabel: tj
+                                selectAllOnAllPagesLabel: tL
                             }) : (0, l.jsxs)(l.Fragment, {
                                 children: [(0, l.jsxs)("div", {
                                     className: ax().Header,
@@ -3965,7 +3992,7 @@
                                         children: [(0, l.jsx)(tq, {
                                             storageUsed: O,
                                             storageLimit: e2
-                                        }), eQ && (0, l.jsx)(aj, {})]
+                                        }), eQ && (0, l.jsx)(aL, {})]
                                     }), (0, l.jsx)("div", {
                                         className: ax().Banner,
                                         children: (0, l.jsx)(aT, {
@@ -3987,10 +4014,10 @@
                                     className: ax().Search
                                 }), r === eF.a.SENT && ep && (0, l.jsx)("div", {
                                     className: ax().Banner,
-                                    children: (0, l.jsx)(ah, {})
+                                    children: (0, l.jsx)(ac, {})
                                 }), r === eF.a.SENT && ex && (0, l.jsx)("div", {
                                     className: ax().Banner,
-                                    children: (0, l.jsx)(av, {})
+                                    children: (0, l.jsx)(aI, {})
                                 }), tP && tV.length > 0 && (0, l.jsx)(et, {
                                     folders: tV,
                                     onFolderClick: te,
@@ -4006,15 +4033,15 @@
                                     onDelete: tE,
                                     onCancel: tF,
                                     onSelectAll: ty,
-                                    selectAllLabel: tj,
+                                    selectAllLabel: tL,
                                     selectedSize: V,
                                     isAllSelected: W,
                                     isFoldersEnabled: $,
                                     hideSelectAll: B
                                 }), R === td.Move && (0, l.jsx)(tg.Move, {
                                     selectedCount: W ? e5 : D.size,
-                                    onMove: tv,
-                                    onCancel: tI,
+                                    onMove: tI,
+                                    onCancel: tv,
                                     selectedSize: V
                                 })]
                             }), $ && (0, l.jsxs)(l.Fragment, {
@@ -4050,9 +4077,9 @@
                         })
                     })
                 },
-                aL = aN;
+                aj = aN;
 
-            function aj() {
+            function aL() {
                 let {
                     t: e
                 } = (0, d.Bd)();
@@ -4730,4 +4757,4 @@
         }
     }
 ]);
-//# sourceMappingURL=transfer-list.c1a10f9a480d4060.js.map
+//# sourceMappingURL=transfer-list.d958bcad39e241a5.js.map

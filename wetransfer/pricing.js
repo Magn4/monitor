@@ -268,7 +268,7 @@
             let x = e => {
                     let {
                         question: a,
-                        answer: t,
+                        answerKey: t,
                         trackingLabel: l
                     } = e, [r, n] = (0, g.useState)(!1);
 
@@ -302,9 +302,13 @@
                         }), (0, i.jsx)("div", {
                             className: r ? "Collapsible__content Collapsible__content--is-expanded" : "Collapsible__content",
                             children: (0, i.jsx)("p", {
-                                dangerouslySetInnerHTML: {
-                                    __html: t
-                                }
+                                children: (0, i.jsx)(m.x6, {
+                                    i18nKey: t,
+                                    components: {
+                                        br: (0, i.jsx)("br", {}),
+                                        strong: (0, i.jsx)("strong", {})
+                                    }
+                                })
                             })
                         })]
                     })
@@ -314,39 +318,39 @@
                         t: e
                     } = (0, m.Bd)(), a = [{
                         question: e("page.pricing_panel.faq.questions.question_1"),
-                        answer: e("page.pricing_panel.faq.answers.answer_1"),
+                        answerKey: "page.pricing_panel.faq.answers.answer_1",
                         trackingLabel: "q1_after_signup"
                     }, {
                         question: e("page.pricing_panel.faq.questions.question_2"),
-                        answer: e("page.pricing_panel.faq.answers.answer_2"),
+                        answerKey: "page.pricing_panel.faq.answers.answer_2",
                         trackingLabel: "q2_recipients"
                     }, {
                         question: e("page.pricing_panel.faq.questions.question_3"),
-                        answer: e("page.pricing_panel.faq.answers.answer_3"),
+                        answerKey: "page.pricing_panel.faq.answers.answer_3",
                         trackingLabel: "q3_bigger_transfers"
                     }, {
                         question: e("page.pricing_panel.faq.questions.question_4"),
-                        answer: e("page.pricing_panel.faq.answers.answer_4"),
+                        answerKey: "page.pricing_panel.faq.answers.answer_4",
                         trackingLabel: "q4_team_members"
                     }, {
                         question: e("page.pricing_panel.faq.questions.question_5"),
-                        answer: e("page.pricing_panel.faq.answers.answer_5"),
+                        answerKey: "page.pricing_panel.faq.answers.answer_5",
                         trackingLabel: "q5_payment_methods"
                     }, {
                         question: e("page.pricing_panel.faq.questions.question_6"),
-                        answer: e("page.pricing_panel.faq.answers.answer_6"),
+                        answerKey: "page.pricing_panel.faq.answers.answer_6",
                         trackingLabel: "q6_storage_limit"
                     }, {
                         question: e("page.pricing_panel.faq.questions.question_7"),
-                        answer: e("page.pricing_panel.faq.answers.answer_7"),
+                        answerKey: "page.pricing_panel.faq.answers.answer_7",
                         trackingLabel: "q7_free_plan"
                     }, {
                         question: e("page.pricing_panel.faq.questions.question_8"),
-                        answer: e("page.pricing_panel.faq.answers.answer_8"),
+                        answerKey: "page.pricing_panel.faq.answers.answer_8",
                         trackingLabel: "q8_cancel"
                     }, {
                         question: e("page.pricing_panel.faq.questions.question_9"),
-                        answer: e("page.pricing_panel.faq.answers.answer_9"),
+                        answerKey: "page.pricing_panel.faq.answers.answer_9",
                         trackingLabel: "q9_trust"
                     }];
                     return (0, i.jsxs)("div", {
@@ -357,7 +361,7 @@
                             children: "FAQ"
                         }), a.map(e => (0, i.jsx)(x, {
                             question: e.question,
-                            answer: e.answer,
+                            answerKey: e.answerKey,
                             trackingLabel: e.trackingLabel
                         }, e.question))]
                     })
@@ -411,9 +415,9 @@
                             })]
                         }), e.subtext && (0, i.jsx)("div", {
                             className: "RepackagingPricingFeatureTable__header-subtext",
-                            dangerouslySetInnerHTML: {
-                                __html: "<span>".concat(e.subtext, "</span>")
-                            }
+                            children: (0, i.jsx)("span", {
+                                children: e.subtext
+                            })
                         })]
                     }),
                     getFirstColumn: e => (0, i.jsxs)("div", {
@@ -2802,4 +2806,4 @@
         }
     }
 ]);
-//# sourceMappingURL=pricing.05d1c7938a319aba.js.map
+//# sourceMappingURL=pricing.078a0b5cf6e976be.js.map

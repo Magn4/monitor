@@ -2269,9 +2269,10 @@
                     })
                 })
             };
-            var U = l(85830),
-                Q = l.n(U);
-            let v = e => {
+            var U = l(84530),
+                Q = l(85830),
+                v = l.n(Q);
+            let Y = e => {
                 let {
                     transferId: a,
                     allowlist: l = [],
@@ -2287,11 +2288,11 @@
                     })), c(!0)
                 }, b = o && !r, T = (0, i.useMemo)(() => n.map(e => e.email).filter(Boolean), [n]), h = b ? T : l, j = h.length > 3 && !g, z = r && 0 === h.length;
                 return (0, t.jsxs)("div", {
-                    className: Q().listSection,
+                    className: v().listSection,
                     children: [(0, t.jsxs)("div", {
-                        className: Q().listHeader,
+                        className: v().listHeader,
                         children: [(0, t.jsx)("div", {
-                            className: Q().listTitle,
+                            className: v().listTitle,
                             children: s
                         }), r && h.length > 0 && x && (0, t.jsx)(D.$, {
                             appearance: "tertiary",
@@ -2300,15 +2301,15 @@
                             children: _("page.transfer.detail.allowlist.edit")
                         })]
                     }), z ? (0, t.jsxs)("div", {
-                        className: Q().emptyState,
+                        className: v().emptyState,
                         children: [(0, t.jsx)(y.sRj, {
                             size: "large"
                         }), (0, t.jsx)("div", {
-                            className: Q().emptyTitle,
+                            className: v().emptyTitle,
                             children: _("page.transfer.detail.allowlist.empty.title")
                         }), x && (0, t.jsxs)(t.Fragment, {
                             children: [(0, t.jsx)("div", {
-                                className: Q().emptyDescription,
+                                className: v().emptyDescription,
                                 children: _("page.transfer.detail.allowlist.empty.description")
                             }), (0, t.jsx)(D.$, {
                                 appearance: "tertiary",
@@ -2319,25 +2320,52 @@
                         })]
                     }) : (0, t.jsxs)(t.Fragment, {
                         children: [(0, t.jsx)("ul", {
-                            className: Q().contentList,
+                            className: v().contentList,
                             children: (() => {
                                 let e = h;
                                 return g || (e = h.slice(0, 3)), e.map((e, a) => {
-                                    let l = r && o && e && T.some(a => a.toLowerCase() === e.toLowerCase());
+                                    let l = r && o && e && T.some(a => a.toLowerCase() === e.toLowerCase()),
+                                        i = b ? n.find(a => {
+                                            var l;
+                                            return (null == (l = a.email) ? void 0 : l.toLowerCase()) === e.toLowerCase()
+                                        }) : null,
+                                        d = b && (null == i ? void 0 : i.transfer_downloaded),
+                                        s = null == i ? void 0 : i.downloaded_at;
                                     return (0, t.jsxs)("li", {
-                                        className: Q().listItem,
+                                        className: v().listItem,
                                         children: [(0, t.jsx)("span", {
-                                            className: Q().emailText,
+                                            className: v().emailText,
                                             children: e
                                         }), l && (0, t.jsx)(N.m, {
                                             content: _("page.transfer.detail.allowlist.tooltip"),
                                             position: "bottom",
                                             mode: "dark",
-                                            className: Q().tooltip,
+                                            className: v().tooltip,
                                             isCondensed: !0,
                                             children: (0, t.jsx)(y.sRj, {
                                                 size: "small",
-                                                className: Q().mailIcon,
+                                                className: v().mailIcon,
+                                                style: {
+                                                    verticalAlign: "middle"
+                                                }
+                                            })
+                                        }), d && s && (0, t.jsx)(N.m, {
+                                            content: _("page.transfer.detail.recipients.downloaded_on", {
+                                                date: new Date(s).toLocaleString(U.A.locale, {
+                                                    day: "numeric",
+                                                    month: "long",
+                                                    year: "numeric",
+                                                    hour: "2-digit",
+                                                    minute: "2-digit"
+                                                })
+                                            }),
+                                            position: "bottom",
+                                            mode: "dark",
+                                            className: v().tooltip,
+                                            isCondensed: !0,
+                                            children: (0, t.jsx)(y.TDu, {
+                                                size: "small",
+                                                className: v().checkIcon,
                                                 style: {
                                                     verticalAlign: "middle"
                                                 }
@@ -2347,7 +2375,7 @@
                                 })
                             })()
                         }), j && (0, t.jsx)("span", {
-                            className: Q().expand,
+                            className: v().expand,
                             onClick: () => m(!0),
                             children: _("page.transfer.detail.and_more", {
                                 count: h.length - 3
@@ -2361,8 +2389,7 @@
                     })]
                 })
             };
-            var Y = l(84530),
-                P = l(1624),
+            var P = l(1624),
                 R = l.n(P),
                 V = function(e) {
                     return e.DOWNLOAD = "download", e.PREVIEW = "preview", e
@@ -2392,8 +2419,8 @@
                                         visibility: d ? "visible" : "hidden"
                                     }
                                 }), s(g, {
-                                    date: Y.A.date(new Date(e), "without_day"),
-                                    time: Y.A.time(new Date(e))
+                                    date: U.A.date(new Date(e), "without_day"),
+                                    time: U.A.time(new Date(e))
                                 }), n && (0, t.jsx)("span", {
                                     className: "".concat(R().expandButton, " ").concat(o ? R().expanded : ""),
                                     children: (0, t.jsx)(y.A0v, {})
@@ -2490,7 +2517,7 @@
                         }), u && (0, t.jsxs)(t.Fragment, {
                             children: [(0, t.jsx)("div", {
                                 className: c().divider
-                            }), (0, t.jsx)(v, {
+                            }), (0, t.jsx)(Y, {
                                 transferId: a,
                                 allowlist: d,
                                 recipients: n,
@@ -3522,7 +3549,7 @@
                     className: aA().fileListBlock,
                     children: [(0, t.jsx)("div", {
                         className: aA().title,
-                        children: Y.A.t("page.transfer.count_files", {
+                        children: U.A.t("page.transfer.count_files", {
                             count: x
                         })
                     }), n.description && (0, t.jsx)(ac, {
@@ -3576,7 +3603,7 @@
                         count: a.items.length
                     }), (0, t.jsx)("span", {
                         className: aL().separator
-                    }), Y.A.size(a.size, {
+                    }), U.A.size(a.size, {
                         precision: 1
                     }), (0, t.jsx)("span", {
                         className: aL().separator
@@ -3972,13 +3999,13 @@
                 } = (0, ef.k)(), T = (0, d.d4)(l_.Kj), [h, j] = (0, i.useState)(!1), [z, A] = (0, i.useState)(!1), k = (0, d.d4)(I.JV), O = (0, d.wA)(), {
                     updateExpiry: L,
                     isLoading: S
-                } = (0, eV.RY)(), C = (0, lr.yZ)(x, u, b.is_7_days_expiration_supported_for_anonymous_users_enabled, b.is_7_days_expiration_supported_for_free_users_enabled), B = (0, ls.c)(), E = (0, i.useMemo)(() => B.map(ed.Is).join(" ".concat(c("transfer.recover.recovering.plans_conjunction"), " ")), [B, c]), f = (0, lt.N)(), U = 0 === f, Q = f === 1 / 0, v = (0, i.useMemo)(() => M ? Math.min(f === 1 / 0 ? lo.i.DAYS_60_IN_SECONDS : f, lo.i.DAYS_60_IN_SECONDS) : Q || C ? f : lo.i.DAYS_3_IN_SECONDS, [C, f, Q, M]), P = (0, i.useMemo)(() => new Date(null === n ? T.uploadStartedAt ? new Date(T.uploadStartedAt).toISOString() : new Date().toISOString() : n), [T.uploadStartedAt, n]), R = (0, i.useMemo)(() => {
+                } = (0, eV.RY)(), C = (0, lr.yZ)(x, u, b.is_7_days_expiration_supported_for_anonymous_users_enabled, b.is_7_days_expiration_supported_for_free_users_enabled), B = (0, ls.c)(), E = (0, i.useMemo)(() => B.map(ed.Is).join(" ".concat(c("transfer.recover.recovering.plans_conjunction"), " ")), [B, c]), f = (0, lt.N)(), Q = 0 === f, v = f === 1 / 0, Y = (0, i.useMemo)(() => M ? Math.min(f === 1 / 0 ? lo.i.DAYS_60_IN_SECONDS : f, lo.i.DAYS_60_IN_SECONDS) : v || C ? f : lo.i.DAYS_3_IN_SECONDS, [C, f, v, M]), P = (0, i.useMemo)(() => new Date(null === n ? T.uploadStartedAt ? new Date(T.uploadStartedAt).toISOString() : new Date().toISOString() : n), [T.uploadStartedAt, n]), R = (0, i.useMemo)(() => {
                     let e = new Date;
-                    return !Q || M ? {
+                    return !v || M ? {
                         startDateRange: e.toDateString(),
-                        endDateRange: new Date(P.setSeconds(P.getSeconds() + v)).toDateString()
+                        endDateRange: new Date(P.setSeconds(P.getSeconds() + Y)).toDateString()
                     } : {}
-                }, [Q, v, P, M]), V = au.A.getExpiryTimeInSeconds(s), F = !U && !g && (o === ex.a.SENT || o === ex.a.RECEIVED && l) && V > 0 && k, Z = au.A.transferIsAboutToExpire(s), W = (0, i.useMemo)(() => g ? c("page.transfers.expired") : !V || V <= 0 ? c("page.transfers.deleting_now") : s ? new Date(s).toLocaleString(Y.A.locale, {
+                }, [v, Y, P, M]), V = au.A.getExpiryTimeInSeconds(s), F = !Q && !g && (o === ex.a.SENT || o === ex.a.RECEIVED && l) && V > 0 && k, Z = au.A.transferIsAboutToExpire(s), W = (0, i.useMemo)(() => g ? c("page.transfers.expired") : !V || V <= 0 ? c("page.transfers.deleting_now") : s ? new Date(s).toLocaleString(U.A.locale, {
                     day: "numeric",
                     month: "short",
                     year: "numeric"
@@ -4004,7 +4031,7 @@
                             expiryDate: ""
                         }))
                     } catch (e) {}
-                }, H = !X.Ay.isMobile && U && o === ex.a.SENT, q = r && r > 0, K = (0, t.jsx)(t.Fragment, {
+                }, H = !X.Ay.isMobile && Q && o === ex.a.SENT, q = r && r > 0, K = (0, t.jsx)(t.Fragment, {
                     children: S ? (0, t.jsx)(eP.y, {
                         className: lg().spinner
                     }) : (0, t.jsxs)("div", {
@@ -4067,7 +4094,7 @@
                                     date: $,
                                     onSelect: G,
                                     ...R
-                                }), Q ? (0, t.jsx)(D.$, {
+                                }), v ? (0, t.jsx)(D.$, {
                                     className: lg().calendarExpireButton,
                                     onClick: J,
                                     appearance: "secondary",
@@ -5405,6 +5432,7 @@
                 listItem: "RecipientsAllowlistSection_listItem__bMVik",
                 emailText: "RecipientsAllowlistSection_emailText__tsHLu",
                 mailIcon: "RecipientsAllowlistSection_mailIcon__aeq4D",
+                checkIcon: "RecipientsAllowlistSection_checkIcon__CM7FQ",
                 emptyState: "RecipientsAllowlistSection_emptyState__7FidY"
             }
         },
@@ -5598,4 +5626,4 @@
         }
     }
 ]);
-//# sourceMappingURL=8883.29fb34fb69ea6358.js.map
+//# sourceMappingURL=8883.7de4c98909a553ff.js.map

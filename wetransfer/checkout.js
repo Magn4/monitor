@@ -267,10 +267,10 @@
             }
             var U = a(14722),
                 z = a(22056),
-                q = a(70028),
-                K = a(55189),
-                H = a(56993),
-                X = a(18585),
+                K = a(70028),
+                q = a(55189),
+                X = a(56993),
+                H = a(18585),
                 W = a(75600),
                 V = a(61149),
                 Z = a(98463),
@@ -328,7 +328,7 @@
                         } catch (e) {
                             if ((0, ee.E)(e) && 400 === e.status && (null == (s = e.data) || null == (r = s.errors) ? void 0 : r.email)) throw new V.aB("Email is already in use", V.tG.EMAIL_ALREADY_EXISTS);
                             if ((0, ee.E)(e) && 500 === e.status && (null == (m = e.data) ? void 0 : m.code) === "guest_team_creation_failed") throw new V.aB("Failed to create team for guest user", V.tG.GUEST_TEAM_CREATION_FAILED);
-                            if ((0, ee.E)(e) && 500 === e.status && (null == (_ = e.data) ? void 0 : _.error) === "internal_error") throw (0, F.Od)().trackUserAction(X.L.networkRequestError({
+                            if ((0, ee.E)(e) && 500 === e.status && (null == (_ = e.data) ? void 0 : _.error) === "internal_error") throw (0, F.Od)().trackUserAction(H.L.networkRequestError({
                                 errorCode: e.data.error,
                                 context: "guest_checkout_user_creation"
                             })), new V.aB("Failed to create team for guest user", V.tG.GUEST_TEAM_CREATION_FAILED);
@@ -345,9 +345,9 @@
                             return e(W.jf.actions.setGuestToken({
                                 accessToken: n.access_token,
                                 expiresAt: (function(e, t) {
-                                    (0, H.A)(2, arguments);
-                                    var a = (0, q.A)(t);
-                                    return (0, K.A)(e, 1e3 * a)
+                                    (0, X.A)(2, arguments);
+                                    var a = (0, K.A)(t);
+                                    return (0, q.A)(e, 1e3 * a)
                                 })(new Date, n.expires_in).toISOString()
                             })), e(W.jf.actions.setUserId(c.userId)), e(W.jf.actions.setTeamId(c.teamId)), (0, F.ax)(c.userId), (0, F.Tk)(c.teamId), (0, F.YO)(i.email), c
                         } catch (e) {
@@ -688,10 +688,10 @@
             }
             var eU = a(75181),
                 ez = a(87983),
-                eq = a(8502),
-                eK = a(51853),
-                eH = a(59457),
-                eX = a(11428),
+                eK = a(8502),
+                eq = a(51853),
+                eX = a(59457),
+                eH = a(11428),
                 eW = a(58061),
                 eV = a(20058),
                 eZ = a(62760),
@@ -737,23 +737,23 @@
                     isCouponCodeInvalidForSelectedPlan: G
                 } = (0, ek.d)({
                     locale: h.language
-                }), z = p === eB.js.ENTERPRISE, q = (0, ef.m)(), K = Y && !R && !G, H = O && (0, eW.F)({
+                }), z = p === eB.js.ENTERPRISE, K = (0, ef.m)(), q = Y && !R && !G, X = O && (0, eW.F)({
                     amount: (null != (d = O.price.totalBeforeDiscountPerSeatInCents) ? d : 0) / 100,
                     currency: O.price.currency,
                     locale: h.language
-                }), X = F && (0, eW.F)({
+                }), H = F && (0, eW.F)({
                     amount: (null != (o = F.price.totalBeforeDiscountPerSeatInCents) ? o : 0) / 100,
                     currency: F.price.currency,
                     locale: h.language
                 }), Z = O && (0, eW.F)({
-                    amount: (null != (r = O.price.totalBeforeDiscountPerSeatInCents) ? r : 0) * q.current / 100,
+                    amount: (null != (r = O.price.totalBeforeDiscountPerSeatInCents) ? r : 0) * K.current / 100,
                     currency: O.price.currency,
                     locale: h.language
                 }), Q = F && (0, eW.F)({
-                    amount: (null != (s = F.price.totalBeforeDiscountPerSeatInCents) ? s : 0) * q.current / 100,
+                    amount: (null != (s = F.price.totalBeforeDiscountPerSeatInCents) ? s : 0) * K.current / 100,
                     currency: F.price.currency,
                     locale: h.language
-                }), J = F && (null != (m = F.price.totalBeforeDiscountPerSeatInCents) ? m : 0) * q.current * 12 / 100, $ = J && (0, eW.F)({
+                }), J = F && (null != (m = F.price.totalBeforeDiscountPerSeatInCents) ? m : 0) * K.current * 12 / 100, $ = J && (0, eW.F)({
                     amount: J,
                     currency: F.price.currency,
                     locale: h.language
@@ -769,7 +769,7 @@
                 })(), el = new Intl.NumberFormat("en", {
                     style: "percent",
                     maximumFractionDigits: 0
-                }), ei = D && J && D.price.totalBeforeDiscountPerSeatInCents && el.format(1 - D.price.totalBeforeDiscountPerSeatInCents * q.current / 100 / J), en = J && D && D.price.totalBeforeDiscountPerSeatInCents && J - D.price.totalBeforeDiscountPerSeatInCents * q.current / 100, ed = en && "- ".concat((0, eW.F)({
+                }), ei = D && J && D.price.totalBeforeDiscountPerSeatInCents && el.format(1 - D.price.totalBeforeDiscountPerSeatInCents * K.current / 100 / J), en = J && D && D.price.totalBeforeDiscountPerSeatInCents && J - D.price.totalBeforeDiscountPerSeatInCents * K.current / 100, ed = en && "- ".concat((0, eW.F)({
                     amount: en,
                     currency: D.price.currency,
                     locale: h.language
@@ -801,7 +801,7 @@
                     offerPrice: 0,
                     currency: null != (_ = null == L || null == (t = L.price) ? void 0 : t.currency) ? _ : V.Sj.EUR,
                     useSummaryStyles: !0
-                }) : er(q.current), e_ = (0, i.useMemo)(() => !z || K, [z, K]), ec = !I.should_use_new_checkout_summary && !M && y === eB.CS.MONTHLY, eu = (0, i.useMemo)(() => !M && I.should_use_new_checkout_summary, [I.should_use_new_checkout_summary, M]), ew = (0, i.useMemo)(() => f && M || u, [f, M, u]), eh = new Date;
+                }) : er(K.current), e_ = (0, i.useMemo)(() => !z || q, [z, q]), ec = !I.should_use_new_checkout_summary && !M && y === eB.CS.MONTHLY, eu = (0, i.useMemo)(() => !M && I.should_use_new_checkout_summary, [I.should_use_new_checkout_summary, M]), ew = (0, i.useMemo)(() => f && M || u, [f, M, u]), eh = new Date;
                 return eh.setDate(eh.getDate() + 7), (0, l.jsxs)("div", {
                     className: e$().containerWrapper,
                     children: [(0, l.jsxs)("div", {
@@ -828,29 +828,36 @@
                                     className: e$().seatManagementSelector,
                                     children: [(0, l.jsx)("p", {
                                         children: w("checkout.payment.form.seat-management.selected-seats")
-                                    }), (0, l.jsx)(eX.A, {
-                                        seats: q.current,
+                                    }), (0, l.jsx)(eH.A, {
+                                        seats: K.current,
                                         setSeats: e => {
                                             g(W.jf.actions.setEnterpriseSeats(e)), et(e === eU.f)
                                         },
-                                        disableMinSeats: q.current === q.minimum,
-                                        disableMaxSeats: q.current === q.maximum,
-                                        totalMemberCount: q.current,
-                                        minSeatsDisabledReason: q.isMinimumBoundByPreviousSubscription ? "members" : "checkout",
+                                        disableMinSeats: K.current === K.minimum,
+                                        disableMaxSeats: K.current === K.maximum,
+                                        totalMemberCount: K.current,
+                                        minSeatsDisabledReason: K.isMinimumBoundByPreviousSubscription ? "members" : "checkout",
                                         isInputDisabled: !0
                                     })]
                                 }), ee && (0, l.jsxs)("div", {
                                     className: e$().seatManagementSwitchToEnterprise,
-                                    children: [(0, l.jsx)(eq.A, {
+                                    children: [(0, l.jsx)(eK.A, {
                                         className: e$().seatManagementSwitchToEnterpriseIcon,
                                         color: "#3767EA"
                                     }), (0, l.jsx)("p", {
-                                        dangerouslySetInnerHTML: {
-                                            __html: w("checkout.payment.form.seat-management.switch-to-enterprise", {
-                                                maxSeats: eU.f,
-                                                href: "".concat(eH.h7, "?ticket_form_id=23888951936786")
-                                            })
-                                        }
+                                        children: (0, l.jsx)(N.x6, {
+                                            i18nKey: "checkout.payment.form.seat-management.switch-to-enterprise",
+                                            values: {
+                                                maxSeats: eU.f
+                                            },
+                                            components: {
+                                                a: (0, l.jsx)("a", {
+                                                    href: "".concat(eX.h7, "?ticket_form_id=23888951936786"),
+                                                    target: "_blank",
+                                                    rel: "noreferrer"
+                                                })
+                                            }
+                                        })
                                     })]
                                 })]
                             }), (0, l.jsxs)(l.Fragment, {
@@ -875,37 +882,37 @@
                                 children: [e_ && (0, l.jsxs)("div", {
                                     className: e$().planItem,
                                     children: [(0, l.jsx)("p", {
-                                        children: 1 === q.current ? (e => {
+                                        children: 1 === K.current ? (e => {
                                             switch (e) {
                                                 case eB.CS.WEEKLY:
                                                     return w("checkout.payment.plans.billing-period.weekly-multiplied", {
-                                                        formattedWeeklyPrice: H
+                                                        formattedWeeklyPrice: X
                                                     });
                                                 case eB.CS.MONTHLY:
                                                     return w("checkout.payment.plans.billing-period.monthly-multiplied", {
-                                                        formattedMonthlyPrice: X
+                                                        formattedMonthlyPrice: H
                                                     });
                                                 case eB.CS.YEARLY:
                                                     return w("checkout.payment.plans.billing-period.yearly-multiplied", {
-                                                        formattedMonthlyPrice: X
+                                                        formattedMonthlyPrice: H
                                                     })
                                             }
                                         })(y) : (e => {
                                             switch (e) {
                                                 case eB.CS.WEEKLY:
                                                     return w("checkout.payment.plans.billing-period.weekly-multiplied-with-seats", {
-                                                        formattedWeeklyPrice: H,
-                                                        subscriptionQuantity: q.current
+                                                        formattedWeeklyPrice: X,
+                                                        subscriptionQuantity: K.current
                                                     });
                                                 case eB.CS.MONTHLY:
                                                     return w("checkout.payment.plans.billing-period.monthly-multiplied-with-seats", {
-                                                        formattedMonthlyPrice: X,
-                                                        subscriptionQuantity: q.current
+                                                        formattedMonthlyPrice: H,
+                                                        subscriptionQuantity: K.current
                                                     });
                                                 case eB.CS.YEARLY:
                                                     return w("checkout.payment.plans.billing-period.yearly-multiplied-with-seats", {
-                                                        formattedMonthlyPrice: X,
-                                                        subscriptionQuantity: q.current
+                                                        formattedMonthlyPrice: H,
+                                                        subscriptionQuantity: K.current
                                                     })
                                             }
                                         })(y)
@@ -945,7 +952,7 @@
                                         children: em
                                     }), z && (0, l.jsx)("span", {
                                         children: "".concat(er(), " ").concat(w("checkout.payment.form.seat-management.payment-summary", {
-                                            desiredSeats: q.current
+                                            desiredSeats: K.current
                                         }))
                                     })]
                                 })]
@@ -967,14 +974,14 @@
                             }), M && (0, l.jsx)(eF.YP, {
                                 title: w("checkout.payment.form.footer.free-trial-applied"),
                                 currency: null != (c = null == L || null == (a = L.price) ? void 0 : a.currency) ? c : V.Sj.EUR
-                            }), K && (0, l.jsx)("div", {
+                            }), q && (0, l.jsx)("div", {
                                 className: e$().offerTermsContainer,
                                 children: (0, l.jsx)(N.x6, {
                                     i18nKey: "checkout.payment.terms.promo-code",
                                     components: [(0, l.jsx)(v.N, {
                                         className: e$().offerTermsLink,
                                         target: "_blank",
-                                        href: eK.Rl.route
+                                        href: eq.Rl.route
                                     }, 0)]
                                 })
                             })]
@@ -1693,7 +1700,7 @@
                         plan: t,
                         planName: a,
                         billingPeriod: k,
-                        billingManagementUrl: "".concat(window.location.origin).concat(eK.vB.route),
+                        billingManagementUrl: "".concat(window.location.origin).concat(eq.vB.route),
                         startFreeTrial: E
                     })), g(W.jf.actions.setSelectedPaymentMethod(i)))
                 }, T = (e, t) => {
@@ -1888,7 +1895,7 @@
                 tU = a(63808),
                 tz = a.n(tU);
 
-            function tq(e) {
+            function tK(e) {
                 let {
                     offerPrice: t,
                     regularPrice: a,
@@ -1934,11 +1941,11 @@
                             i18nKey: "checkout.payment.terms.by-clicking-purchase",
                             components: [(0, l.jsx)("a", {
                                 target: "_blank",
-                                href: eK.yy.route,
+                                href: eq.yy.route,
                                 rel: "noreferrer"
                             }, 0), (0, l.jsx)("a", {
                                 target: "_blank",
-                                href: eK.cg.route,
+                                href: eq.cg.route,
                                 rel: "noreferrer"
                             }, 1)]
                         })
@@ -1946,7 +1953,7 @@
                 })
             }
 
-            function tK(e) {
+            function tq(e) {
                 var t, a, o, r, s, m, _, c, u, w, h, g, p, y, b, x, C, k, f;
                 let {
                     tier: v,
@@ -1957,8 +1964,8 @@
                     t: T,
                     i18n: O
                 } = (0, N.Bd)(), D = (0, n.wA)(), Y = (0, e1.useElements)(), G = (0, e1.useStripe)(), {
-                    getPlanByTierAndInterval: q
-                } = (0, ez.d)(), K = (0, n.d4)(eN.JV), H = (0, n.d4)(eQ.EA), X = (0, n.d4)(eQ.JQ), Z = (0, A.mX)(), Q = tw(), {
+                    getPlanByTierAndInterval: K
+                } = (0, ez.d)(), q = (0, n.d4)(eN.JV), X = (0, n.d4)(eQ.EA), H = (0, n.d4)(eQ.JQ), Z = (0, A.mX)(), Q = tw(), {
                     planTier: J,
                     countryCode: $,
                     selectedPaymentMethod: ee,
@@ -1979,7 +1986,7 @@
                 } = (0, ts.rz)({
                     teamId: null == en ? void 0 : en.id
                 }, {
-                    skip: !K || !(null == en ? void 0 : en.id)
+                    skip: !q || !(null == en ? void 0 : en.id)
                 }), eS = (0, i.useRef)(null);
                 (0, i.useEffect)(() => {
                     ek && eS.current && setTimeout(() => {
@@ -1999,15 +2006,15 @@
                         case eB.CS.YEARLY:
                             return T("checkout.billing.yearly")
                     }
-                }, [T, S]), [eO, eD] = (0, i.useState)(!1), [eL, eY] = (0, i.useState)(0), [eR, eU] = (0, i.useState)(!1), eq = (0, eV.v)(J, Z.trigger), eK = q(v, S), eH = (0, i.useMemo)(() => {
+                }, [T, S]), [eO, eD] = (0, i.useState)(!1), [eL, eY] = (0, i.useState)(0), [eR, eU] = (0, i.useState)(!1), eK = (0, eV.v)(J, Z.trigger), eq = K(v, S), eX = (0, i.useMemo)(() => {
                     var e, t, a, l;
                     return (0, eW.F)({
-                        amount: (null != (a = null == eK || null == (e = eK.price) ? void 0 : e.totalAmountInCents) ? a : 0) / 100,
-                        currency: null != (l = null == eK || null == (t = eK.price) ? void 0 : t.currency) ? l : V.Sj.EUR,
+                        amount: (null != (a = null == eq || null == (e = eq.price) ? void 0 : e.totalAmountInCents) ? a : 0) / 100,
+                        currency: null != (l = null == eq || null == (t = eq.price) ? void 0 : t.currency) ? l : V.Sj.EUR,
                         locale: O.language
                     })
-                }, [eK, O.language]), eX = (0, to.CN)($), eJ = (0, to.mB)($), e$ = tm({
-                    isVATAccepted: eX
+                }, [eq, O.language]), eH = (0, to.CN)($), eJ = (0, to.mB)($), e$ = tm({
+                    isVATAccepted: eH
                 }), [e0] = (0, i.useState)(() => {
                     var e;
                     return !(null == (e = e$.formState.defaultValues) ? void 0 : e.firstName)
@@ -2066,8 +2073,8 @@
                     } = e;
                     return e$.handleSubmit(async e => {
                         var a, l, i;
-                        let n = K ? null == er ? void 0 : er.email : H ? X : ea;
-                        if (!G || !Y || !n || !(null == eK || null == (a = eK.price) ? void 0 : a.priceAndPackageToken) || !(null == eK || null == (l = eK.price) ? void 0 : l.currency)) return void tC();
+                        let n = q ? null == er ? void 0 : er.email : X ? H : ea;
+                        if (!G || !Y || !n || !(null == eq || null == (a = eq.price) ? void 0 : a.priceAndPackageToken) || !(null == eq || null == (l = eq.price) ? void 0 : l.currency)) return void tC();
                         if (e2) {
                             D(W.jf.actions.setShowFakeDoorModal(!0)), tC();
                             return
@@ -2093,7 +2100,7 @@
                         });
                         if (t === tB.l.APPLE_PAY || tk()) try {
                             let a, l = null == en ? void 0 : en.id;
-                            K || H || (l = el, a = ei), (0, F.Od)().trackUserAction({
+                            q || X || (l = el, a = ei), (0, F.Od)().trackUserAction({
                                 kind: "checkout_team_id_debug",
                                 info: {
                                     ...l ? {
@@ -2104,8 +2111,8 @@
                                     } : {},
                                     fetchingTeams: ed,
                                     freeTrial: !0,
-                                    isLoggedIn: K,
-                                    isAuthLoggedIn: H,
+                                    isLoggedIn: q,
+                                    isAuthLoggedIn: X,
                                     juno: !0
                                 }
                             });
@@ -2113,8 +2120,8 @@
                                     stripe: G,
                                     elements: Y,
                                     email: n,
-                                    currency: eK.price.currency,
-                                    priceToken: eK.price.priceAndPackageToken,
+                                    currency: eq.price.currency,
+                                    priceToken: eq.price.priceAndPackageToken,
                                     teamId: l,
                                     userId: a,
                                     quantity: M || 1,
@@ -2137,13 +2144,13 @@
                             });
                             let o = (0, t_.mM)("/checkout/pending?".concat(d.toString()));
                             await es({
-                                currency: eK.price.currency,
+                                currency: eq.price.currency,
                                 quantity: M || 1,
                                 teamId: l,
                                 userId: a,
                                 setupIntent: i,
                                 startFreeTrial: et,
-                                priceAndPackageToken: eK.price.priceAndPackageToken,
+                                priceAndPackageToken: eq.price.priceAndPackageToken,
                                 paymentMethod: t,
                                 redirectUrl: o
                             }), window.location.href = o
@@ -2166,8 +2173,8 @@
                             className: tz().mobileBottomSheetOriginalPrice,
                             children: (0, eW.F)({
                                 locale: O.language,
-                                amount: (null != (y = null == eK || null == (t = eK.price) ? void 0 : t.totalAmountInCents) ? y : 0) / 100,
-                                currency: null != (b = null == eK || null == (a = eK.price) ? void 0 : a.currency) ? b : V.Sj.EUR
+                                amount: (null != (y = null == eq || null == (t = eq.price) ? void 0 : t.totalAmountInCents) ? y : 0) / 100,
+                                currency: null != (b = null == eq || null == (a = eq.price) ? void 0 : a.currency) ? b : V.Sj.EUR
                             })
                         }), (0, l.jsx)("p", {
                             className: tz().mobileBottomSheetFreeText,
@@ -2207,9 +2214,9 @@
                                 height: 0,
                                 overflow: "hidden"
                             },
-                            children: [eK && (0, l.jsxs)(l.Fragment, {
+                            children: [eq && (0, l.jsxs)(l.Fragment, {
                                 children: [(0, l.jsx)(tF, {
-                                    plan: eK,
+                                    plan: eq,
                                     planName: (0, eB.dg)(v),
                                     style: "all",
                                     setShowAddressForm: eD,
@@ -2308,7 +2315,7 @@
                                             state: tr.companyName ? "invalid" : void 0,
                                             id: "companyName"
                                         })
-                                    }), eX && (0, l.jsx)("div", {
+                                    }), eH && (0, l.jsx)("div", {
                                         children: (0, l.jsx)(E.A, {
                                             ...e$.register("vatNumber"),
                                             value: e$.watch("vatNumber") || "",
@@ -2367,10 +2374,10 @@
                                 className: ta.Ay.isMobile && 0 === eL ? P()(tz().buttonWrapperMobile, {
                                     [tz().error]: tr.root && !ep
                                 }) : P()(tz().buttonWrapperDesktop, {
-                                    [tz().withBanner]: eq === eV.E.BANNER,
-                                    [tz().withButton]: eq === eV.E.BANNER && eR
+                                    [tz().withBanner]: eK === eV.E.BANNER,
+                                    [tz().withButton]: eK === eV.E.BANNER && eR
                                 }),
-                                children: [eq === eV.E.BANNER ? (0, l.jsx)(eG, {
+                                children: [eK === eV.E.BANNER ? (0, l.jsx)(eG, {
                                     trigger: Z.trigger,
                                     position: "main"
                                 }) : null, !ep && tr.root && (0, l.jsx)(z.j, {
@@ -2406,16 +2413,16 @@
                             children: [(0, l.jsxs)("footer", {
                                 className: P()(tz().legal, tz().footerContainer, !eg && !ew && !tr.root && tz().error),
                                 children: [(0, l.jsx)(eF.Lp, {
-                                    regularPrice: (null != (x = null == eK || null == (w = eK.price) ? void 0 : w.totalAmountInCents) ? x : 0) / 100,
+                                    regularPrice: (null != (x = null == eq || null == (w = eq.price) ? void 0 : w.totalAmountInCents) ? x : 0) / 100,
                                     offerPrice: 0,
                                     planName: tx,
                                     billingPeriod: S,
-                                    currency: null != (C = null == eK || null == (h = eK.price) ? void 0 : h.currency) ? C : V.Sj.EUR
-                                }), !eg && !ew && (0, l.jsx)(tq, {
+                                    currency: null != (C = null == eq || null == (h = eq.price) ? void 0 : h.currency) ? C : V.Sj.EUR
+                                }), !eg && !ew && (0, l.jsx)(tK, {
                                     offerPrice: 0,
-                                    regularPrice: (null != (k = null == eK || null == (g = eK.price) ? void 0 : g.totalAmountInCents) ? k : 0) / 100,
+                                    regularPrice: (null != (k = null == eq || null == (g = eq.price) ? void 0 : g.totalAmountInCents) ? k : 0) / 100,
                                     billingPeriod: S,
-                                    currency: null != (f = null == eK || null == (p = eK.price) ? void 0 : p.currency) ? f : V.Sj.EUR
+                                    currency: null != (f = null == eq || null == (p = eq.price) ? void 0 : p.currency) ? f : V.Sj.EUR
                                 })]
                             }), ew ? (0, l.jsxs)("div", {
                                 className: tz().norFreeTrialCheckoutTextContainer,
@@ -2425,7 +2432,7 @@
                                         i18nKey: "checkout.nor-checkout.text_one_free_trial",
                                         values: {
                                             start_date: tj,
-                                            price: eH + "/" + eA
+                                            price: eX + "/" + eA
                                         }
                                     })
                                 }), (0, l.jsx)("p", {
@@ -2433,7 +2440,7 @@
                                     children: T("checkout.nor-checkout.text_two")
                                 })]
                             }) : eg ? (0, l.jsx)(tE, {
-                                price: eH,
+                                price: eX,
                                 billing: eA
                             }) : null, eI && (0, l.jsx)("div", {
                                 ref: eS,
@@ -2453,10 +2460,10 @@
                                     [tz().error]: tr.root && !ep
                                 }) : P()(tz().buttonWrapperDesktop, {
                                     [tz().error]: tr.root && !ep,
-                                    [tz().withBanner]: eq === eV.E.BANNER,
-                                    [tz().withButton]: eq === eV.E.BANNER && eR
+                                    [tz().withBanner]: eK === eV.E.BANNER,
+                                    [tz().withButton]: eK === eV.E.BANNER && eR
                                 }),
-                                children: [eq === eV.E.BANNER ? (0, l.jsx)(eG, {
+                                children: [eK === eV.E.BANNER ? (0, l.jsx)(eG, {
                                     trigger: Z.trigger,
                                     position: "main"
                                 }) : null, !ep && tr.root && (0, l.jsx)("div", {
@@ -2488,14 +2495,14 @@
                         onDismiss: () => {
                             ej(!1), e$.clearErrors("root")
                         },
-                        price: eH + "/" + eA,
+                        price: eX + "/" + eA,
                         billing: eA,
                         isFreeTrial: !0
                     })]
                 })
             }
 
-            function tH(e) {
+            function tX(e) {
                 var t, a;
                 let {
                     isGuestCheckout: i = !1
@@ -2531,7 +2538,7 @@
                         className: tz().formContainer,
                         children: (0, l.jsx)(tG.D, {
                             options: tR(g, h, d.language),
-                            children: (0, l.jsx)(tK, {
+                            children: (0, l.jsx)(tq, {
                                 tier: o,
                                 billingPeriod: r,
                                 quantity: w,
@@ -2541,7 +2548,7 @@
                     })
                 })
             }
-            var tX = a(37828),
+            var tH = a(37828),
                 tW = a(28330),
                 tV = a(87427),
                 tZ = a(30026),
@@ -2797,9 +2804,9 @@
                 } = (0, ez.d)(), S = (0, n.d4)(eN.JV), M = (0, n.d4)(eQ.EA), B = (0, n.d4)(eQ.JQ), T = (0, A.mX)(), O = T.trigger, D = tw(), L = (0, tQ.G)(), {
                     countryCode: Y,
                     selectedPaymentMethod: G,
-                    coupon: q,
-                    planTier: K
-                } = (0, n.d4)(eo.q5), H = (0, eV.v)(K, O), X = (0, n.d4)(eo.HC), Z = (0, n.d4)(eo.P2), Q = (0, n.d4)(eo.l_), {
+                    coupon: K,
+                    planTier: q
+                } = (0, n.d4)(eo.q5), X = (0, eV.v)(q, O), H = (0, n.d4)(eo.HC), Z = (0, n.d4)(eo.P2), Q = (0, n.d4)(eo.l_), {
                     isCouponCode100PercentOff: J,
                     isCouponCodeInvalid: $,
                     isCouponCodeInvalidForSelectedPlan: ee
@@ -2836,24 +2843,24 @@
                         case eB.CS.YEARLY:
                             return y("checkout.billing.yearly")
                     }
-                }, [y, g]), [eD, eL] = (0, i.useState)(J), eY = (0, to.CN)(Y), eR = (0, to.mB)(Y), eU = f(h, g), eq = (0, i.useMemo)(() => {
+                }, [y, g]), [eD, eL] = (0, i.useState)(J), eY = (0, to.CN)(Y), eR = (0, to.mB)(Y), eU = f(h, g), eK = (0, i.useMemo)(() => {
                     var e, t, a;
                     return (0, eW.F)({
                         amount: (null != (a = null == eU || null == (e = eU.price) ? void 0 : e.totalAmountInCents) ? a : 0) / 100,
                         currency: (null == eU || null == (t = eU.price) ? void 0 : t.currency) || V.Sj.EUR,
                         locale: b.language
                     })
-                }, [eU, b.language]), eK = tm({
+                }, [eU, b.language]), eq = tm({
                     isVATAccepted: eY
-                }), [eH] = (0, i.useState)(() => {
+                }), [eX] = (0, i.useState)(() => {
                     var e;
-                    return !(null == (e = eK.formState.defaultValues) ? void 0 : e.firstName)
-                }), eX = (0, i.useCallback)(() => {
-                    eu || (eg(!1), eK.clearErrors("root")), (0, F.Od)().trackUserAction(I.X.norCheckoutCheckboxClicked(!eu)), x(W.jf.actions.setAreNorCheckoutTermsAccepted(!eu)), ew(!eu)
-                }, [eu, x, ew, eg, eK]), eZ = (0, n.d4)(eo.nC), eJ = (0, t7.qp)(q.code), [e$, e0] = (0, i.useState)(!1), {
+                    return !(null == (e = eq.formState.defaultValues) ? void 0 : e.firstName)
+                }), eH = (0, i.useCallback)(() => {
+                    eu || (eg(!1), eq.clearErrors("root")), (0, F.Od)().trackUserAction(I.X.norCheckoutCheckboxClicked(!eu)), x(W.jf.actions.setAreNorCheckoutTermsAccepted(!eu)), ew(!eu)
+                }, [eu, x, ew, eg, eq]), eZ = (0, n.d4)(eo.nC), eJ = (0, t7.qp)(K.code), [e$, e0] = (0, i.useState)(!1), {
                     errors: e5,
                     isSubmitSuccessful: e2
-                } = eK.formState, e6 = e$ || e2, te = (0, i.useRef)(null);
+                } = eq.formState, e6 = e$ || e2, te = (0, i.useRef)(null);
                 (0, i.useEffect)(() => {
                     ec && e5.root && te.current && setTimeout(() => {
                         var e;
@@ -2863,18 +2870,18 @@
                         })
                     }, 100)
                 }, [e5.root, ec]);
-                let ta = eK.watch("isForBusiness");
+                let ta = eq.watch("isForBusiness");
                 (0, i.useEffect)(() => {
                     ta ? V.q.map(e => {
-                        eK.register(e)
+                        eq.register(e)
                     }) : V.q.map(e => {
-                        eK.unregister(e)
+                        eq.unregister(e)
                     })
-                }, [eK.register, eK.unregister, ta]);
+                }, [eq.register, eq.unregister, ta]);
                 let tr = p || 1,
                     tc = (0, i.useMemo)(() => {
                         var e, t, a, l, i, n, d, o;
-                        return eJ && (0, t7.JA)(q.code) ? (0, eW.F)({
+                        return eJ && (0, t7.JA)(K.code) ? (0, eW.F)({
                             amount: (null != (i = null == eU || null == (e = eU.price) ? void 0 : e.totalBeforeDiscountPerSeatInCents) ? i : 0) * tr / 100,
                             currency: null != (n = null == eU || null == (t = eU.price) ? void 0 : t.currency) ? n : V.Sj.EUR,
                             locale: L
@@ -2883,13 +2890,13 @@
                             currency: null != (o = null == eU || null == (l = eU.price) ? void 0 : l.currency) ? o : V.Sj.EUR,
                             locale: L
                         })
-                    }, [L, eJ, q.code, null == eU || null == (t = eU.price) ? void 0 : t.totalBeforeDiscountPerSeatInCents, null == eU || null == (a = eU.price) ? void 0 : a.totalAmountPerSeatInCents, null == eU || null == (o = eU.price) ? void 0 : o.currency, tr]);
+                    }, [L, eJ, K.code, null == eU || null == (t = eU.price) ? void 0 : t.totalBeforeDiscountPerSeatInCents, null == eU || null == (a = eU.price) ? void 0 : a.totalAmountPerSeatInCents, null == eU || null == (o = eU.price) ? void 0 : o.currency, tr]);
                 if (!C || !k) return (0, l.jsx)(tD.W, {});
                 let tu = Y && V.g7.has(Y),
                     tg = (0, eB.dg)(h),
                     tp = e9({
                         t: y,
-                        setError: eK.setError,
+                        setError: eq.setError,
                         setIsSubmitting: e0
                     }),
                     tb = () => {
@@ -2919,7 +2926,7 @@
                         } = e;
                         return eE && !a ? e => {
                             null == e || e.preventDefault(), ef(!0)
-                        } : eS && !l ? eK.handleSubmit(async () => {
+                        } : eS && !l ? eq.handleSubmit(async () => {
                             let {
                                 error: e
                             } = await C.submit();
@@ -2928,11 +2935,11 @@
                                 code: e.code
                             });
                             ej(!0)
-                        }) : eK.handleSubmit(async e => {
+                        }) : eq.handleSubmit(async e => {
                             var a, l, n, d;
                             let o, r = null != i ? i : g,
                                 s = f(h, r),
-                                m = S ? null == el ? void 0 : el.email : M ? B : X;
+                                m = S ? null == el ? void 0 : el.email : M ? B : H;
                             if (!k || !C || !m || !(null == s || null == (a = s.price) ? void 0 : a.priceAndPackageToken) || !(null == s || null == (l = s.price) ? void 0 : l.currency)) return void tp();
                             if (e0(!0), (0, F.Od)().trackUserAction(I.X.paymentSubmitted({
                                     billingPeriod: r,
@@ -2959,7 +2966,7 @@
                                 return
                             }
                             x(W.jf.actions.setIsForBusiness(null != (d = e.isForBusiness) && d));
-                            let c = $ || ee || !q.code ? void 0 : q.code,
+                            let c = $ || ee || !K.code ? void 0 : K.code,
                                 u = null == et ? void 0 : et.id;
                             S || M || (u = Z, o = Q);
                             try {
@@ -3068,17 +3075,17 @@
                                         x(W.jf.actions.setShowFakeDoorModal(!0)), tp();
                                         return
                                     }
-                                    eK.getValues("country") === t.address.country && t.address.state && eK.setValue("state", t.address.state), eK.setValue("firstName", t.name), eK.setValue("zipCode", t.address.postal_code), tx({
+                                    eq.getValues("country") === t.address.country && t.address.state && eq.setValue("state", t.address.state), eq.setValue("firstName", t.name), eq.setValue("zipCode", t.address.postal_code), tx({
                                         paymentMethod: a
                                     })()
                                 }
                             }), eD && (0, l.jsx)(U.c, {})]
                         }), eD && (0, l.jsxs)("div", {
                             className: P()(tz().metaInputs, e6 && tz().submitting),
-                            children: [eH && (0, l.jsx)("div", {
+                            children: [eX && (0, l.jsx)("div", {
                                 children: (0, l.jsx)(E.A, {
-                                    ...eK.register("firstName"),
-                                    value: eK.watch("firstName") || "",
+                                    ...eq.register("firstName"),
+                                    value: eq.watch("firstName") || "",
                                     type: "text",
                                     labelType: "inside",
                                     label: y("checkout.payment.form.first-name-input.placeholder"),
@@ -3092,8 +3099,8 @@
                                 className: P()(tz().row),
                                 children: [(0, l.jsx)("div", {
                                     children: (0, l.jsx)(E.A, {
-                                        ...eK.register("zipCode"),
-                                        value: eK.watch("zipCode") || "",
+                                        ...eq.register("zipCode"),
+                                        value: eq.watch("zipCode") || "",
                                         type: "text",
                                         labelType: "inside",
                                         label: y("checkout.payment.form.zip-code-input.placeholder"),
@@ -3103,25 +3110,25 @@
                                         id: "zipCode"
                                     })
                                 }), tu && (0, l.jsx)(e8, {
-                                    ...eK.register("state"),
+                                    ...eq.register("state"),
                                     error: null == (m = e5.state) ? void 0 : m.message,
                                     label: y("checkout.payment.form.state-select.placeholder"),
                                     required: !0,
                                     placeholder: y("checkout.payment.form.state-select.placeholder"),
                                     children: (0, e7.Kn)(Y)
                                 }), (0, l.jsx)(e8, {
-                                    ...eK.register("country"),
+                                    ...eq.register("country"),
                                     label: y("checkout.payment.form.country-select.placeholder"),
                                     required: !0,
                                     onChange: e => {
-                                        x(W.jf.actions.setCountryCode(e.target.value)), eK.setValue("state", void 0), eK.setValue("country", e.target.value)
+                                        x(W.jf.actions.setCountryCode(e.target.value)), eq.setValue("state", void 0), eq.setValue("country", e.target.value)
                                     },
                                     placeholder: y("checkout.payment.form.country-select.placeholder"),
                                     disabled: !(null == eM ? void 0 : eM.canChangeCountryAndCurrency),
                                     children: (0, e7.b8)()
                                 })]
                             }), (0, l.jsx)(e3._, {
-                                ...eK.register("isForBusiness"),
+                                ...eq.register("isForBusiness"),
                                 label: y("checkout.payment.form.is-for-business-checkbox.label"),
                                 wrapperClassName: ta ? void 0 : tz().businessCheckbox
                             }), (0, l.jsxs)("div", {
@@ -3130,8 +3137,8 @@
                                 className: P()(tz().metaInputs, !ta && tz().hidden),
                                 children: [(0, l.jsx)("div", {
                                     children: (0, l.jsx)(E.A, {
-                                        ...eK.register("companyName"),
-                                        value: eK.watch("companyName") || "",
+                                        ...eq.register("companyName"),
+                                        value: eq.watch("companyName") || "",
                                         type: "text",
                                         required: !0,
                                         labelType: "inside",
@@ -3143,8 +3150,8 @@
                                     })
                                 }), eY && (0, l.jsx)("div", {
                                     children: (0, l.jsx)(E.A, {
-                                        ...eK.register("vatNumber"),
-                                        value: eK.watch("vatNumber") || "",
+                                        ...eq.register("vatNumber"),
+                                        value: eq.watch("vatNumber") || "",
                                         type: "text",
                                         caption: e5.vatNumber ? null == (c = e5.vatNumber) ? void 0 : c.message : eR ? y("checkout.payment.form.vat-number-input.help", {
                                             prefix: eR
@@ -3170,8 +3177,8 @@
                                     })
                                 }), (0, l.jsx)("div", {
                                     children: (0, l.jsx)(E.A, {
-                                        ...eK.register("streetAndNumber"),
-                                        value: eK.watch("streetAndNumber") || "",
+                                        ...eq.register("streetAndNumber"),
+                                        value: eq.watch("streetAndNumber") || "",
                                         type: "text",
                                         required: !0,
                                         labelType: "inside",
@@ -3183,8 +3190,8 @@
                                     })
                                 }), (0, l.jsx)("div", {
                                     children: (0, l.jsx)(E.A, {
-                                        ...eK.register("city"),
-                                        value: eK.watch("city") || "",
+                                        ...eq.register("city"),
+                                        value: eq.watch("city") || "",
                                         type: "text",
                                         required: !0,
                                         labelType: "inside",
@@ -3203,7 +3210,7 @@
                                 children: (0, l.jsx)(N.x6, {
                                     i18nKey: "checkout.nor-checkout.text_one",
                                     values: {
-                                        price: eq,
+                                        price: eK,
                                         billing: eF
                                     }
                                 })
@@ -3249,7 +3256,7 @@
                             ref: eT,
                             children: (0, l.jsx)(ty, {
                                 checked: eu,
-                                onChange: eX,
+                                onChange: eH,
                                 showError: eh,
                                 mainText: (0, l.jsx)(N.x6, {
                                     i18nKey: "checkout.nor-checkout.checkbox.main-text.above",
@@ -3261,9 +3268,9 @@
                         }), (0, l.jsxs)("div", {
                             className: P()(tz().buttonWrapper, {
                                 [tz().error]: e5.root && !ec,
-                                [tz().withBanner]: H === eV.E.BANNER
+                                [tz().withBanner]: X === eV.E.BANNER
                             }),
-                            children: [H === eV.E.BANNER ? (0, l.jsx)(eG, {
+                            children: [X === eV.E.BANNER ? (0, l.jsx)(eG, {
                                 trigger: O,
                                 position: "main"
                             }) : null, !ec && e5.root && (0, l.jsx)(z.j, {
@@ -3286,14 +3293,14 @@
                     }), e_ && (0, l.jsx)(tf, {
                         isVisible: eb,
                         onSubmit: () => {
-                            eK.clearErrors("root"), x(W.jf.actions.setAreNorCheckoutTermsAccepted(!0)), tx({
+                            eq.clearErrors("root"), x(W.jf.actions.setAreNorCheckoutTermsAccepted(!0)), tx({
                                 paymentMethod: G
                             })()
                         },
                         onDismiss: () => {
-                            ex(!1), eK.clearErrors("root")
+                            ex(!1), eq.clearErrors("root")
                         },
-                        price: eq,
+                        price: eK,
                         billing: eF
                     }), (0, l.jsx)(t6, {
                         isVisible: eC,
@@ -3350,7 +3357,7 @@
                         t: i
                     } = (0, N.Bd)(), {
                         subscription: n
-                    } = (0, tX.f)();
+                    } = (0, tH.f)();
                     return l ? i("checkout.guest-checkout.header.payment-step") : n && tW.BD.includes(n.status) ? i("checkout.payment.form.header.pending-title", {
                         planName: t
                     }) : i(a ? "checkout.payment.form.header.nothing-due-title" : "checkout.payment.form.header.title")
@@ -3396,7 +3403,7 @@
                     startFreeTrial: a,
                     planTier: i
                 } = (0, n.d4)(eo.q5);
-                return a && i != eB.js.ENTERPRISE ? (0, l.jsx)(tH, {
+                return a && i != eB.js.ENTERPRISE ? (0, l.jsx)(tX, {
                     isGuestCheckout: t
                 }) : (0, l.jsx)(ae, {
                     isGuestCheckout: t
@@ -3428,8 +3435,8 @@
                     countryCode: L,
                     selectedPaymentMethod: Y,
                     coupon: G
-                } = (0, n.d4)(eo.q5), q = (0, n.d4)(eo.HC), K = (0, n.d4)(eo.P2), H = (0, n.d4)(eo.l_), {
-                    isCouponCode100PercentOff: X,
+                } = (0, n.d4)(eo.q5), K = (0, n.d4)(eo.HC), q = (0, n.d4)(eo.P2), X = (0, n.d4)(eo.l_), {
+                    isCouponCode100PercentOff: H,
                     isCouponCodeInvalid: Z,
                     isCouponCodeInvalidForSelectedPlan: Q
                 } = (0, ek.d)({
@@ -3513,7 +3520,7 @@
                         setError: eE.setError,
                         setIsSubmitting: eT
                     }),
-                    eq = e => {
+                    eK = e => {
                         let {
                             paymentMethod: t,
                             skipPeriodicitySwitchModal: a = !1,
@@ -3535,11 +3542,11 @@
                             var a, l, n, d;
                             let o, r = null != i ? i : u,
                                 s = S(c, r),
-                                m = M ? null == ee ? void 0 : ee.email : B ? T : q;
+                                m = M ? null == ee ? void 0 : ee.email : B ? T : K;
                             if (!k || !C || !m || !(null == s || null == (a = s.price) ? void 0 : a.priceAndPackageToken) || !(null == s || null == (l = s.price) ? void 0 : l.currency)) return void eU();
                             eT(!0), (0, F.Od)().trackUserAction(I.X.paymentSubmitted({
                                 billingPeriod: r,
-                                isCouponCode100PercentOff: !w && X,
+                                isCouponCode100PercentOff: !w && H,
                                 isForBusiness: null != (n = e.isForBusiness) && n,
                                 paymentMethod: t,
                                 subscriptionTier: c,
@@ -3559,7 +3566,7 @@
                             x(W.jf.actions.setIsForBusiness(null != (d = e.isForBusiness) && d));
                             let g = Z || Q || !G.code ? void 0 : G.code,
                                 p = null == J ? void 0 : J.id;
-                            M || B || (p = K, o = H);
+                            M || B || (p = q, o = X);
                             try {
                                 (0, F.Od)().trackUserAction({
                                     kind: "checkout_team_id_debug",
@@ -3625,7 +3632,7 @@
                             eT(!1)
                         })
                     },
-                    eK = e => {
+                    eq = e => {
                         let {
                             billingDetails: t,
                             expressPaymentType: a
@@ -3633,15 +3640,15 @@
                         if (!t || !t.name || !t.address.postal_code || "MX" === t.address.country && a === tB.l.APPLE_PAY) return void eU({
                             code: V.tG.EXPRESS_CHECKOUT_ERROR
                         });
-                        eE.getValues("country") === t.address.country && t.address.state && eE.setValue("state", t.address.state), eE.setValue("firstName", t.name), eE.setValue("zipCode", t.address.postal_code), eq({
+                        eE.getValues("country") === t.address.country && t.address.state && eE.setValue("state", t.address.state), eE.setValue("firstName", t.name), eE.setValue("zipCode", t.address.postal_code), eK({
                             paymentMethod: a
                         })()
                     },
-                    eH = new Date,
-                    eX = new Date;
-                return eX.setDate(eH.getDate() + 7), (0, l.jsxs)(l.Fragment, {
+                    eX = new Date,
+                    eH = new Date;
+                return eH.setDate(eX.getDate() + 7), (0, l.jsxs)(l.Fragment, {
                     children: [(0, l.jsxs)("form", {
-                        onSubmit: eq({
+                        onSubmit: eK({
                             paymentMethod: Y
                         }),
                         className: P()(ad().stripeForm, {
@@ -3673,7 +3680,7 @@
                                     forceExpanded: p,
                                     setShowAddressForm: () => {},
                                     className: P()(eO && ad().submitting),
-                                    handleConfirmExpressCheckout: eK
+                                    handleConfirmExpressCheckout: eq
                                 })
                             })]
                         }) : (0, l.jsxs)("div", {
@@ -3963,7 +3970,7 @@
                                             forceExpanded: p,
                                             setShowAddressForm: () => {},
                                             className: P()(eO && ad().submitting),
-                                            handleConfirmExpressCheckout: eK
+                                            handleConfirmExpressCheckout: eq
                                         })
                                     })]
                                 })
@@ -3977,7 +3984,7 @@
                                         i18nKey: "checkout.compliant-checkout.footer.reduced-footer.free-trial",
                                         values: {
                                             n: 7,
-                                            start_date: eX,
+                                            start_date: eH,
                                             price: ej(h || 1),
                                             billing: ex
                                         },
@@ -3991,7 +3998,7 @@
                                         values: {
                                             price: ej(h || 1),
                                             billing: ex,
-                                            start_date: eH
+                                            start_date: eX
                                         },
                                         components: {
                                             highlight: (0, l.jsx)("span", {
@@ -4002,7 +4009,7 @@
                                         i18nKey: "checkout.compliant-checkout.footer.free-trial",
                                         values: {
                                             plan: (0, eB.dg)(c),
-                                            start_date: eX,
+                                            start_date: eH,
                                             price: ej(h || 1),
                                             billing: ex
                                         }
@@ -4049,7 +4056,7 @@
                                     forceExpanded: p,
                                     setShowAddressForm: () => {},
                                     className: P()(eO && ad().submitting),
-                                    handleConfirmExpressCheckout: eK,
+                                    handleConfirmExpressCheckout: eq,
                                     onExpressCheckoutReady: e => {
                                         var t, a;
                                         ed(void 0 !== e.availablePaymentMethods && ((null == (t = e.availablePaymentMethods) ? void 0 : t.googlePay) === !0 || (null == (a = e.availablePaymentMethods) ? void 0 : a.applePay) === !0))
@@ -4065,7 +4072,7 @@
                         isVisible: er,
                         planTier: c,
                         onDismiss: () => {
-                            es(!1), eq({
+                            es(!1), eK({
                                 paymentMethod: Y,
                                 skipPeriodicitySwitchModal: !0
                             })()
@@ -4077,7 +4084,7 @@
                         isVisible: e_,
                         planTier: c,
                         onDismiss: e => {
-                            ec(!1), eq({
+                            ec(!1), eK({
                                 paymentMethod: Y,
                                 skipOneClickCheckoutModal: !0,
                                 billingPeriodOverride: e
@@ -4517,9 +4524,9 @@
                     settings: Y
                 } = (0, eZ.k)(), {
                     countryCode: G,
-                    selectedPaymentMethod: q,
-                    coupon: K
-                } = (0, n.d4)(eo.q5), H = (0, n.d4)(eo.HC), X = (0, n.d4)(eo.P2), Z = (0, n.d4)(eo.l_), {
+                    selectedPaymentMethod: K,
+                    coupon: q
+                } = (0, n.d4)(eo.q5), X = (0, n.d4)(eo.HC), H = (0, n.d4)(eo.P2), Z = (0, n.d4)(eo.l_), {
                     isCouponCode100PercentOff: Q,
                     isCouponCodeInvalid: J,
                     isCouponCodeInvalidForSelectedPlan: $
@@ -4597,7 +4604,7 @@
                         } = e;
                         return ex.handleSubmit(async e => {
                             var a, l, i, n;
-                            let d, o = M ? null == ea ? void 0 : ea.email : B ? T : H;
+                            let d, o = M ? null == ea ? void 0 : ea.email : B ? T : X;
                             if (!f || !k || !o || !(null == ew || null == (a = ew.price) ? void 0 : a.priceAndPackageToken) || !(null == ew || null == (l = ew.price) ? void 0 : l.currency)) return void eO();
                             ej(!0), (0, F.Od)().trackUserAction(I.X.paymentSubmitted({
                                 billingPeriod: g,
@@ -4619,9 +4626,9 @@
                                 code: r.code
                             });
                             C(W.jf.actions.setIsForBusiness(null != (n = e.isForBusiness) && n));
-                            let s = J || $ || !K.code ? void 0 : K.code,
+                            let s = J || $ || !q.code ? void 0 : q.code,
                                 m = null == ee ? void 0 : ee.id;
-                            M || B || (m = X, d = Z);
+                            M || B || (m = H, d = Z);
                             try {
                                 (0, F.Od)().trackUserAction({
                                     kind: "checkout_team_id_debug",
@@ -4732,7 +4739,7 @@
                     });
                 return (0, l.jsxs)("form", {
                     onSubmit: eF({
-                        paymentMethod: q
+                        paymentMethod: K
                     }),
                     className: af().stripeForm,
                     style: {
@@ -5013,7 +5020,7 @@
                     } = (0, aa.J)(),
                     N = !t || f;
                 if ((0, i.useEffect)(() => {
-                        d.tier === eB.js.ENTERPRISE_CUSTOM_CONTRACT && (window.location.href = eK.s0.route)
+                        d.tier === eB.js.ENTERPRISE_CUSTOM_CONTRACT && (window.location.href = eq.s0.route)
                     }, [d.tier]), (0, i.useEffect)(() => {
                         var t, a, l;
                         if (N) return;
@@ -6663,4 +6670,4 @@
         }
     }
 ]);
-//# sourceMappingURL=checkout.9d6a5c6077bc7832.js.map
+//# sourceMappingURL=checkout.5a8237b9739946b5.js.map

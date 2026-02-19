@@ -14900,7 +14900,7 @@
                 s = r(75586),
                 l = r.n(s),
                 d = r(76616);
-            let c = l()(() => Promise.all([r.e(6028), r.e(4932), r.e(2206), r.e(646), r.e(8135), r.e(5831), r.e(2962), r.e(7273), r.e(2760), r.e(365), r.e(5481), r.e(8225)]).then(r.bind(r, 98225)).then(e => {
+            let c = l()(() => Promise.all([r.e(6028), r.e(4932), r.e(2206), r.e(646), r.e(8135), r.e(5831), r.e(2962), r.e(7273), r.e(2760), r.e(365), r.e(3768), r.e(8225)]).then(r.bind(r, 98225)).then(e => {
                     let {
                         CoverEditor: t
                     } = e;
@@ -14922,7 +14922,7 @@
                     },
                     loading: () => (0, o.jsx)(d.y, {})
                 }),
-                _ = l()(() => Promise.all([r.e(6028), r.e(4932), r.e(2206), r.e(646), r.e(5831), r.e(2760), r.e(365), r.e(5481), r.e(6192)]).then(r.bind(r, 16192)).then(e => {
+                _ = l()(() => Promise.all([r.e(6028), r.e(4932), r.e(2206), r.e(646), r.e(5831), r.e(2760), r.e(365), r.e(3768), r.e(6192)]).then(r.bind(r, 16192)).then(e => {
                     let {
                         ApplyChangesPage: t
                     } = e;
@@ -14953,4 +14953,4 @@
         }
     }
 ]);
-//# sourceMappingURL=7963.b3495e0e52aa6952.js.map
+//# sourceMappingURL=7963.c16e7b12670b460c.js.map
