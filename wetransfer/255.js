@@ -4094,6 +4094,7 @@
                                     (R === _.vW.BEFORE_TRANSFER_UPLOAD || R === _.vW.INTRO_PAYWALL_NEW_USERS || R === _.vW.INTRO_PAYWALL_PUA_USERS) && e((0, _.ZL)(T))
                                 },
                                 isFreeTrialEnabled: k.free_trial_enabled && !o,
+                                isFreeTrialCheckedByDefault: k.free_trial_enabled && k.free_trial_checked_by_default && !o,
                                 billingCycle: k.billing_cycle,
                                 couponCode: k.coupon_code,
                                 areWeekliesEnabled: k.weeklies_enabled && y,
@@ -14957,6 +14958,7 @@
                                     E(), p((0, n.Cb)(e))
                                 },
                                 isFreeTrialEnabled: a.free_trial_enabled && !g,
+                                isFreeTrialCheckedByDefault: a.free_trial_enabled && a.free_trial_checked_by_default && !g,
                                 billingCycle: a.billing_cycle,
                                 couponCode: a.coupon_code,
                                 areWeekliesEnabled: a.weeklies_enabled && h,
@@ -14971,4 +14973,4 @@
         }
     }
 ]);
-//# sourceMappingURL=8716.8e566998f414a684.js.map
+//# sourceMappingURL=8716.dcd475300ee79d44.js.map

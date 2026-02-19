@@ -12305,7 +12305,9 @@
                         transferId: t,
                         loadTimeInMs: a,
                         previewResolutionSegment: i,
-                        previewableFileCount: l
+                        previewResolutionUsed: l,
+                        hasWatermark: d,
+                        previewableFileCount: n
                     } = e;
                     return {
                         kind: "preview_all_loaded",
@@ -12313,8 +12315,10 @@
                             transferPublicId: t,
                             loadTimeInMs: a,
                             previewResolutionSegment: i,
-                            ...void 0 !== l && {
-                                previewableFileCount: l
+                            previewResolutionUsed: l,
+                            hasWatermark: d,
+                            ...void 0 !== n && {
+                                previewableFileCount: n
                             }
                         }
                     }
@@ -16899,32 +16903,33 @@
                     dismissOnMouseLeave: l = !1,
                     billingCycle: n = M.CS.YEARLY,
                     isFreeTrialEnabled: r = !1,
-                    areWeekliesEnabled: _ = !1,
-                    trigger: w,
-                    updateLastShownTime: g,
-                    autoDismissSeconds: m,
-                    showCloseButton: p = !1,
-                    secondaryCtaType: h = L.Xl.NONE,
-                    isUploadAllowed: b,
-                    autoDismissOnTransferCompletion: D = !1,
-                    isPreviewsVariation: I = !1
+                    isFreeTrialCheckedByDefault: _ = !1,
+                    areWeekliesEnabled: w = !1,
+                    trigger: g,
+                    updateLastShownTime: m,
+                    autoDismissSeconds: p,
+                    showCloseButton: h = !1,
+                    secondaryCtaType: b = L.Xl.NONE,
+                    isUploadAllowed: D,
+                    autoDismissOnTransferCompletion: I = !1,
+                    isPreviewsVariation: A = !1
                 } = e, {
-                    t: A
-                } = (0, u.Bd)(), S = (0, tC.G)(), z = (0, s.wA)(), v = (0, s.d4)(tf.KO), {
-                    subscription: O
-                } = (0, ei.f)(), k = (0, s.d4)(T.Jz), {
-                    shouldShowCompleteState: f
-                } = (0, tg.DC)(), [E, C] = (0, o.useState)(() => _ && n === M.CS.WEEKLY || !_ && n === M.CS.MONTHLY || n === M.CS.YEARLY ? n : M.CS.YEARLY), [U, P] = (0, o.useState)(!1), R = (() => {
+                    t: S
+                } = (0, u.Bd)(), z = (0, tC.G)(), v = (0, s.wA)(), O = (0, s.d4)(tf.KO), {
+                    subscription: k
+                } = (0, ei.f)(), f = (0, s.d4)(T.Jz), {
+                    shouldShowCompleteState: E
+                } = (0, tg.DC)(), [C, U] = (0, o.useState)(() => w && n === M.CS.WEEKLY || !w && n === M.CS.MONTHLY || n === M.CS.YEARLY ? n : M.CS.YEARLY), [P, R] = (0, o.useState)(r && _), F = (() => {
                     let {
                         settings: e
                     } = (0, eo.k)();
                     return e.billing_selector_paywall_checkbox_position
                 })(), {
-                    weeklyPrice: F,
-                    monthlyPrice: Q,
-                    yearlyPricePerMonth: B,
-                    yearlyPricePerWeek: Y,
-                    freeTrialPrice: W
+                    weeklyPrice: Q,
+                    monthlyPrice: B,
+                    yearlyPricePerMonth: Y,
+                    yearlyPricePerWeek: W,
+                    freeTrialPrice: q
                 } = ((e, t) => {
                     let {
                         getPlanByTierAndInterval: a
@@ -16944,59 +16949,59 @@
                         yearlyPricePerWeek: d ? n(d.price.totalAmountInCents / 100 / 52) : "",
                         freeTrialPrice: n(0, !0)
                     }
-                })(null != (t = null == O ? void 0 : O.currency) ? t : ee.Sj.EUR, S), q = !b, Z = (0, o.useRef)(null), [H, G] = (0, o.useState)(!1), J = (0, o.useMemo)(() => I ? A("paywalls.pricing_selector.previews_variation.title") : q ? A("paywalls.pricing_selector.title") : A("paywalls.pricing_selector.continue"), [I, q, A]), K = (0, o.useCallback)(e => {
-                    q ? ((0, y.Od)().trackUserAction(tR.wj.paywallDismissed({
+                })(null != (t = null == k ? void 0 : k.currency) ? t : ee.Sj.EUR, z), Z = !D, H = (0, o.useRef)(null), [G, J] = (0, o.useState)(!1), K = (0, o.useMemo)(() => A ? S("paywalls.pricing_selector.previews_variation.title") : Z ? S("paywalls.pricing_selector.title") : S("paywalls.pricing_selector.continue"), [A, Z, S]), X = (0, o.useCallback)(e => {
+                    Z ? ((0, y.Od)().trackUserAction(tR.wj.paywallDismissed({
                         dismissMethod: e,
-                        trigger: w,
+                        trigger: g,
                         type: L.pU.BILLING_SELECTOR_FT_CHECKBOX
-                    })), (0, tL.VO)(w).isSupported && z((0, tk.OT)()), a(!0)) : z((0, x.BV)(!0))
-                }, [z, a, w, q]);
+                    })), (0, tL.VO)(g).isSupported && v((0, tk.OT)()), a(!0)) : v((0, x.BV)(!0))
+                }, [v, a, g, Z]);
                 (0, o.useEffect)(() => {
                     let e = () => {
-                        let e = Z.current;
+                        let e = H.current;
                         if (!e) return;
                         let t = parseInt(window.getComputedStyle(e).lineHeight),
                             a = t && !isNaN(t) ? t : 24;
-                        G(e.offsetHeight > 1.2 * a)
+                        J(e.offsetHeight > 1.2 * a)
                     };
                     return e(), window.addEventListener("resize", e), () => {
                         window.removeEventListener("resize", e)
                     }
-                }, [J]);
+                }, [K]);
                 let {
-                    availableProducts: X,
-                    allowedPaymentMethods: $
+                    availableProducts: $,
+                    allowedPaymentMethods: et
                 } = (0, eL._)({
                     defaultPlanTier: M.js.ULTIMATE,
-                    defaultBillingPeriod: E,
-                    freeTrialAvailable: U,
+                    defaultBillingPeriod: C,
+                    freeTrialAvailable: P,
                     starterPlanEnabled: !1,
                     monthlyBillingEnabled: !0,
-                    weeklyBillingEnabled: _
+                    weeklyBillingEnabled: w
                 });
                 (0, o.useEffect)(() => {
                     (0, y.Od)().trackUserAction(tR.wj.paywallDisplayed({
-                        trigger: w,
+                        trigger: g,
                         type: L.pU.BILLING_SELECTOR_FT_CHECKBOX,
-                        isBlockingUpload: q
-                    })), q || z((0, x.BV)(!1)), w === L.vW.DOWNLOAD_PAGE_OPENED && g && g();
+                        isBlockingUpload: Z
+                    })), Z || v((0, x.BV)(!1)), g === L.vW.DOWNLOAD_PAGE_OPENED && m && m();
                     let {
                         isSupported: e,
                         isDismissible: t,
                         isBlocking: a
-                    } = (0, tL.VO)(w, {
+                    } = (0, tL.VO)(g, {
                         dismissOnMouseLeave: l,
-                        autoDismissSeconds: m
+                        autoDismissSeconds: p
                     });
-                    e && z((0, tk.qJ)({
+                    e && v((0, tk.qJ)({
                         paywallInfo: {
                             style: L.pU.BILLING_SELECTOR_FT_CHECKBOX,
-                            trigger: w,
+                            trigger: g,
                             isDismissible: t,
                             isBlocking: a,
                             isFirstPaywall: void 0,
-                            productsDisplayed: X,
-                            paymentMethodsAvailable: $
+                            productsDisplayed: $,
+                            paymentMethodsAvailable: et
                         },
                         predictionInfo: {
                             prediction: void 0,
@@ -17005,98 +17010,98 @@
                         }
                     }))
                 }, []), (0, o.useEffect)(() => {
-                    (!q || D) && k === j.r.FINISHED && f && (z((0, x.BV)(!0)), z((0, x.TL)({
+                    (!Z || I) && f === j.r.FINISHED && E && (v((0, x.BV)(!0)), v((0, x.TL)({
                         shouldShowUpsellCard: !0,
-                        billingPeriod: E,
+                        billingPeriod: C,
                         requestFreeTrial: !0,
-                        requestWeeklies: _,
-                        paywallId: v,
-                        trigger: w,
+                        requestWeeklies: w,
+                        paywallId: O,
+                        trigger: g,
                         paywall: L.pU.BILLING_SELECTOR_FT_CHECKBOX
                     })), a(!1), (0, y.Od)().trackUserAction(tR.wj.paywallDismissed({
-                        trigger: w,
+                        trigger: g,
                         type: L.pU.BILLING_SELECTOR_FT_CHECKBOX,
                         dismissMethod: tR.tS.AUTO_DISMISS
-                    })), (0, tL.VO)(w).isSupported && z((0, tk.OT)()))
-                }, [k, D, z, f, E, U, _, v, w, q, a]), (0, o.useEffect)(() => {
+                    })), (0, tL.VO)(g).isSupported && v((0, tk.OT)()))
+                }, [f, I, v, E, C, P, w, O, g, Z, a]), (0, o.useEffect)(() => {
                     let e = () => {
-                        K(tR.tS.AUTO_DISMISS)
+                        X(tR.tS.AUTO_DISMISS)
                     };
                     return l && document.addEventListener("mouseleave", e), () => {
                         l && document.removeEventListener("mouseleave", e)
                     }
-                }, [l, K]), (0, o.useEffect)(() => {
-                    if (!m || m <= 0) return;
+                }, [l, X]), (0, o.useEffect)(() => {
+                    if (!p || p <= 0) return;
                     let e = setTimeout(() => {
-                        K(tR.tS.AUTO_DISMISS)
-                    }, 1e3 * m);
+                        X(tR.tS.AUTO_DISMISS)
+                    }, 1e3 * p);
                     return () => clearTimeout(e)
-                }, [m, K]);
-                let et = e => {
+                }, [p, X]);
+                let ea = e => {
                         let t = e.target.value;
                         (0, y.Od)().trackUserAction(tR.wj.periodicityChanged({
-                            changedFrom: E,
+                            changedFrom: C,
                             changedTo: t,
                             paywallType: L.pU.BILLING_SELECTOR_FT_CHECKBOX
-                        })), C(t)
+                        })), U(t)
                     },
-                    ea = (0, o.useCallback)(() => {
+                    el = (0, o.useCallback)(() => {
                         (0, y.Od)().trackUserAction(tR.wj.paywallPurchaseButtonTapped({
-                            trigger: w,
+                            trigger: g,
                             type: L.pU.BILLING_SELECTOR_FT_CHECKBOX
                         }));
                         let e = (0, N.kQ)({
                             tier: M.js.ULTIMATE,
-                            billingPeriod: E,
-                            requestFreeTrial: U,
-                            requestWeeklies: _,
-                            paywallId: v,
-                            triggerOverride: w
+                            billingPeriod: C,
+                            requestFreeTrial: P,
+                            requestWeeklies: w,
+                            paywallId: O,
+                            triggerOverride: g
                         });
-                        e_.A.navigateTo(e), a(q)
-                    }, [_, U, a, E, w, v, q]),
-                    el = (0, o.useMemo)(() => U ? I ? A("paywalls.pricing_selector.continue_with_free_trial") : q ? A("paywalls.pricing_selector.free") : A("paywalls.pricing_selector.cta.free_trial") : I || q ? A("paywalls.pricing_selector.continue") : A("paywalls.pricing_selector.cta.default"), [U, q, I, A]),
-                    ed = (0, o.useMemo)(() => w === L.vW.DOWNLOAD_PAGE_OPENED ? A("paywalls.pricing_selector.proceed_download") : q ? A("paywalls.pricing_selector.proceed_transfer") : A("paywalls.pricing_selector.skip"), [w, q, A]),
-                    en = (0, i.jsx)(tB, {
-                        title: A("paywalls.pricing_selector.weekly"),
-                        price: A("paywalls.pricing_selector.weekly_price", {
-                            price: F
-                        }),
-                        isSelected: E === M.CS.WEEKLY,
-                        value: M.CS.WEEKLY,
-                        onChange: et
-                    }),
+                        e_.A.navigateTo(e), a(Z)
+                    }, [w, P, a, C, g, O, Z]),
+                    ed = (0, o.useMemo)(() => P ? A ? S("paywalls.pricing_selector.continue_with_free_trial") : Z ? S("paywalls.pricing_selector.free") : S("paywalls.pricing_selector.cta.free_trial") : A || Z ? S("paywalls.pricing_selector.continue") : S("paywalls.pricing_selector.cta.default"), [P, Z, A, S]),
+                    en = (0, o.useMemo)(() => g === L.vW.DOWNLOAD_PAGE_OPENED ? S("paywalls.pricing_selector.proceed_download") : Z ? S("paywalls.pricing_selector.proceed_transfer") : S("paywalls.pricing_selector.skip"), [g, Z, S]),
                     er = (0, i.jsx)(tB, {
-                        title: A("paywalls.pricing_selector.monthly"),
-                        price: A("paywalls.pricing_selector.monthly_price", {
+                        title: S("paywalls.pricing_selector.weekly"),
+                        price: S("paywalls.pricing_selector.weekly_price", {
                             price: Q
                         }),
-                        isSelected: E === M.CS.MONTHLY,
-                        value: M.CS.MONTHLY,
-                        onChange: et
+                        isSelected: C === M.CS.WEEKLY,
+                        value: M.CS.WEEKLY,
+                        onChange: ea
                     }),
                     es = (0, i.jsx)(tB, {
-                        title: A("paywalls.pricing_selector.yearly"),
-                        price: _ ? A("paywalls.pricing_selector.weekly_price", {
-                            price: Y
-                        }) : A("paywalls.pricing_selector.monthly_price", {
+                        title: S("paywalls.pricing_selector.monthly"),
+                        price: S("paywalls.pricing_selector.monthly_price", {
                             price: B
                         }),
-                        isSelected: E === M.CS.YEARLY,
-                        value: M.CS.YEARLY,
-                        onChange: et,
-                        additionalText: A("paywalls.pricing_selector.billed_yearly")
+                        isSelected: C === M.CS.MONTHLY,
+                        value: M.CS.MONTHLY,
+                        onChange: ea
                     }),
-                    ew = (0, i.jsxs)(i.Fragment, {
-                        children: [!U && (0, i.jsx)("span", {
+                    ew = (0, i.jsx)(tB, {
+                        title: S("paywalls.pricing_selector.yearly"),
+                        price: w ? S("paywalls.pricing_selector.weekly_price", {
+                            price: W
+                        }) : S("paywalls.pricing_selector.monthly_price", {
+                            price: Y
+                        }),
+                        isSelected: C === M.CS.YEARLY,
+                        value: M.CS.YEARLY,
+                        onChange: ea,
+                        additionalText: S("paywalls.pricing_selector.billed_yearly")
+                    }),
+                    eg = (0, i.jsxs)(i.Fragment, {
+                        children: [!P && (0, i.jsx)("span", {
                             className: tQ().optionPrice,
-                            children: A("paywalls.pricing_selector.enable_free")
-                        }), U && !q && (0, i.jsx)("span", {
+                            children: S("paywalls.pricing_selector.enable_free")
+                        }), P && !Z && (0, i.jsx)("span", {
                             className: tQ().optionPrice,
                             children: (0, i.jsx)(u.x6, {
                                 i18nKey: "paywalls.pricing_selector.free_enabled_subtitle",
                                 values: {
-                                    price: W
+                                    price: q
                                 },
                                 components: [(0, i.jsx)("span", {
                                     className: d()(tQ().optionPrice, tQ().freeTrialEnabled)
@@ -17104,9 +17109,9 @@
                             })
                         })]
                     }),
-                    eg = r && (0, i.jsx)("div", {
+                    em = r && (0, i.jsx)("div", {
                         className: d()(tQ().options, {
-                            [tQ().selected]: U
+                            [tQ().selected]: P
                         }),
                         children: (0, i.jsx)("div", {
                             className: tQ().option,
@@ -17116,16 +17121,16 @@
                                     className: tQ().optionLabel,
                                     children: [(0, i.jsx)("span", {
                                         className: tQ().optionTitle,
-                                        children: U ? A("paywalls.pricing_selector.free_enabled") : A("paywalls.pricing_selector.not_sure")
-                                    }), ew]
+                                        children: P ? S("paywalls.pricing_selector.free_enabled") : S("paywalls.pricing_selector.not_sure")
+                                    }), eg]
                                 }), (0, i.jsx)(tO.S, {
-                                    checked: U,
+                                    checked: P,
                                     onChange: () => {
-                                        let e = !U;
+                                        let e = !P;
                                         (0, y.Od)().trackUserAction(tR.wj.checkboxToggled({
                                             changedTo: e ? "enabled" : "disabled",
                                             paywallType: L.pU.BILLING_SELECTOR_FT_CHECKBOX
-                                        })), P(e)
+                                        })), R(e)
                                     },
                                     "data-testid": "free-trial-checkbox"
                                 })]
@@ -17134,9 +17139,9 @@
                     });
                 return (0, i.jsxs)("div", {
                     className: tQ().container,
-                    children: [p && (0, i.jsx)("div", {
+                    children: [h && (0, i.jsx)("div", {
                         className: tQ().buttonClose,
-                        onClick: () => K(tR.tS.TOP_RIGHT_X),
+                        onClick: () => X(tR.tS.TOP_RIGHT_X),
                         children: (0, i.jsx)(V.Ay, {
                             color: tP.$A,
                             hoverColor: tP.Id,
@@ -17144,76 +17149,76 @@
                         })
                     }), (0, i.jsxs)("div", {
                         className: d()(tQ().window, {
-                            [tQ().previewsVariation]: I
+                            [tQ().previewsVariation]: A
                         }),
                         children: [(0, i.jsxs)("div", {
                             className: d()(tQ().header, {
-                                [tQ().centered]: !p
+                                [tQ().centered]: !h
                             }),
                             children: [(0, i.jsx)("h2", {
-                                ref: Z,
+                                ref: H,
                                 className: d()(tQ().title, {
-                                    [tQ().multiline]: H
+                                    [tQ().multiline]: G
                                 }),
-                                children: J
-                            }), h !== L.Xl.BUTTON_ABOVE_CTA && h !== L.Xl.BUTTON_BELOW_CTA && (0, i.jsx)("span", {
+                                children: K
+                            }), b !== L.Xl.BUTTON_ABOVE_CTA && b !== L.Xl.BUTTON_BELOW_CTA && (0, i.jsx)("span", {
                                 className: tQ().subtitle,
-                                children: I ? A("paywalls.pricing_selector.previews_variation.subtitle") : A("paywalls.pricing_selector.subtitle")
+                                children: A ? S("paywalls.pricing_selector.previews_variation.subtitle") : S("paywalls.pricing_selector.subtitle")
                             })]
                         }), (0, i.jsxs)("div", {
                             className: tQ().content,
-                            children: ["top" === R && eg, (0, i.jsxs)("div", {
+                            children: ["top" === F && em, (0, i.jsxs)("div", {
                                 className: tQ().options,
-                                children: [_ ? en : er, (0, i.jsx)("div", {
+                                children: [w ? er : es, (0, i.jsx)("div", {
                                     className: tQ().divider
-                                }), es]
-                            }), "bottom" === R && eg, h === L.Xl.BUTTON_ABOVE_CTA && (0, i.jsx)(c.$, {
+                                }), ew]
+                            }), "bottom" === F && em, b === L.Xl.BUTTON_ABOVE_CTA && (0, i.jsx)(c.$, {
                                 appearance: "secondary",
                                 size: "small",
                                 fullwidth: !0,
-                                disabled: !E,
-                                onClick: () => K(tR.tS.SECONDARY_CTA),
-                                children: w === L.vW.DOWNLOAD_PAGE_OPENED ? A("paywalls.pricing_selector.proceed_download") : A("paywalls.pricing_selector.proceed_transfer")
-                            }), I ? (0, i.jsxs)("div", {
+                                disabled: !C,
+                                onClick: () => X(tR.tS.SECONDARY_CTA),
+                                children: g === L.vW.DOWNLOAD_PAGE_OPENED ? S("paywalls.pricing_selector.proceed_download") : S("paywalls.pricing_selector.proceed_transfer")
+                            }), A ? (0, i.jsxs)("div", {
                                 className: tQ().previewVariationButtons,
                                 children: [(0, i.jsx)(c.$, {
                                     appearance: "primary",
                                     size: "medium",
                                     fullwidth: !0,
-                                    disabled: !E,
-                                    onClick: ea,
+                                    disabled: !C,
+                                    onClick: el,
                                     variation: "upsell",
-                                    children: el
+                                    children: ed
                                 }), (0, i.jsx)(c.$, {
                                     className: tQ().secondaryCta,
                                     appearance: "secondary",
                                     size: "small",
                                     fullwidth: !0,
-                                    disabled: !E,
-                                    onClick: () => K(tR.tS.SECONDARY_CTA),
-                                    children: A("paywalls.pricing_selector.previews_variation.secondary_cta")
+                                    disabled: !C,
+                                    onClick: () => X(tR.tS.SECONDARY_CTA),
+                                    children: S("paywalls.pricing_selector.previews_variation.secondary_cta")
                                 })]
                             }) : (0, i.jsx)(c.$, {
                                 appearance: "primary",
                                 size: "medium",
                                 fullwidth: !0,
-                                disabled: !E,
-                                onClick: ea,
-                                children: el
-                            }), h === L.Xl.BUTTON_BELOW_CTA && (0, i.jsx)(c.$, {
+                                disabled: !C,
+                                onClick: el,
+                                children: ed
+                            }), b === L.Xl.BUTTON_BELOW_CTA && (0, i.jsx)(c.$, {
                                 appearance: "secondary",
                                 size: "small",
                                 fullwidth: !0,
-                                disabled: !E,
-                                onClick: () => K(tR.tS.SECONDARY_CTA),
-                                children: w === L.vW.DOWNLOAD_PAGE_OPENED ? A("paywalls.pricing_selector.proceed_download") : A("paywalls.pricing_selector.proceed_transfer")
-                            }), (h === L.Xl.TEXT_SMALL || h === L.Xl.TEXT_MEDIUM) && (0, i.jsx)("span", {
-                                onClick: () => K(tR.tS.SECONDARY_CTA),
+                                disabled: !C,
+                                onClick: () => X(tR.tS.SECONDARY_CTA),
+                                children: g === L.vW.DOWNLOAD_PAGE_OPENED ? S("paywalls.pricing_selector.proceed_download") : S("paywalls.pricing_selector.proceed_transfer")
+                            }), (b === L.Xl.TEXT_SMALL || b === L.Xl.TEXT_MEDIUM) && (0, i.jsx)("span", {
+                                onClick: () => X(tR.tS.SECONDARY_CTA),
                                 className: d()(tQ().proceed, {
-                                    [tQ().extraSmall]: h === L.Xl.TEXT_SMALL,
-                                    [tQ().small]: h === L.Xl.TEXT_MEDIUM
+                                    [tQ().extraSmall]: b === L.Xl.TEXT_SMALL,
+                                    [tQ().small]: b === L.Xl.TEXT_MEDIUM
                                 }),
-                                children: ed
+                                children: en
                             })]
                         })]
                     })]
@@ -47073,4 +47078,4 @@
         }
     }
 ]);
-//# sourceMappingURL=8205.4e6aadfb89d49f0c.js.map
+//# sourceMappingURL=8205.41ada85e4a1344a7.js.map

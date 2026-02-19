@@ -6820,19 +6820,17 @@
                     } = e, R = (0, i.useCallback)(e => {
                         W(), t3.A.navigateTo(e)
                     }, [W]), U = (0, i.useCallback)(() => {
-                        let a = e.routeQueryDuration,
-                            t = e.routeQueryRenewal;
-                        if (!/year|month/.test(a)) return;
-                        let i = "page.accountinfo.payment_success.".concat(a, "ly");
-                        return "1" === t && (i += "_renewal"), (0, l.jsx)(dh.A, {
+                        let t = e.routeQueryDuration,
+                            i = e.routeQueryRenewal;
+                        if (!/year|month/.test(t)) return;
+                        let d = "page.accountinfo.payment_success.".concat(t, "ly");
+                        return "1" === i && (d += "_renewal"), (0, l.jsx)(dh.A, {
                             showClose: !0,
                             children: (0, l.jsx)("p", {
-                                dangerouslySetInnerHTML: {
-                                    __html: eU.A.t(i)
-                                }
+                                children: a(d)
                             })
                         })
-                    }, [e.routeQueryDuration, e.routeQueryRenewal]), O = (0, i.useCallback)(() => te.Il.includes(null == h ? void 0 : h.externalProvider) ? {
+                    }, [e.routeQueryDuration, e.routeQueryRenewal, a]), O = (0, i.useCallback)(() => te.Il.includes(null == h ? void 0 : h.externalProvider) ? {
                         component: dc
                     } : c ? {
                         component: dw,
@@ -9971,4 +9969,4 @@
         }
     }
 ]);
-//# sourceMappingURL=account.2f815ba54211b696.js.map
+//# sourceMappingURL=account.3f534e946fd74c2d.js.map

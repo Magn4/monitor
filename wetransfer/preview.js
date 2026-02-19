@@ -884,8 +884,8 @@
                     })
                 };
             var f = t(46817),
-                M = t.n(f);
-            let S = e => {
+                S = t.n(f);
+            let M = e => {
                 var a;
                 let {
                     children: t,
@@ -904,18 +904,18 @@
                     return e
                 })(), {
                     isPreviewPagePaywall: v
-                } = (0, g.rz)(), I = d === p && !v, P = d === h, f = u[d], S = (null == f ? void 0 : f.titleKey) ? b(f.titleKey) : "", F = (null == f ? void 0 : f.descriptionKey) ? b(f.descriptionKey) : "", N = null != (a = null != n ? n : null == f ? void 0 : f.position) ? a : "bottom";
+                } = (0, g.rz)(), I = d === p && !v, P = d === h, f = u[d], M = (null == f ? void 0 : f.titleKey) ? b(f.titleKey) : "", F = (null == f ? void 0 : f.descriptionKey) ? b(f.descriptionKey) : "", N = null != (a = null != n ? n : null == f ? void 0 : f.position) ? a : "bottom";
                 if (!I) return (0, l.jsx)(l.Fragment, {
                     children: t
                 });
                 let j = (0, l.jsxs)("div", {
-                    className: M().tooltipContent,
+                    className: S().tooltipContent,
                     children: [(0, l.jsxs)("div", {
                         children: [(0, l.jsxs)("div", {
-                            className: M().header,
+                            className: S().header,
                             children: [(0, l.jsx)("div", {
-                                className: M().title,
-                                children: S
+                                className: S().title,
+                                children: M
                             }), (0, l.jsx)(_.K, {
                                 icon: s.$Td,
                                 size: "x-small",
@@ -925,11 +925,11 @@
                                 onClick: y
                             })]
                         }), (0, l.jsx)("div", {
-                            className: M().description,
+                            className: S().description,
                             children: F
                         })]
                     }), (0, l.jsxs)("div", {
-                        className: M().navigation,
+                        className: S().navigation,
                         children: [1 !== d && (0, l.jsx)(_.K, {
                             icon: s.pkz,
                             size: "x-small",
@@ -938,7 +938,7 @@
                             mode: "dark",
                             onClick: c
                         }), (0, l.jsx)("div", {
-                            className: M().spacer
+                            className: S().spacer
                         }), (0, l.jsxs)(m.$, {
                             appearance: P ? "secondary" : "tertiary",
                             variation: "neutral",
@@ -956,7 +956,7 @@
                     position: N,
                     align: "start",
                     mode: "dark",
-                    containerClassName: M().popoverContainer,
+                    containerClassName: S().popoverContainer,
                     isCondensed: !0,
                     children: t
                 })
@@ -1134,7 +1134,7 @@
                         settings: {
                             show_icons_only_on_hover_preview: v
                         }
-                    } = (0, W.k)(), C = (0, G.mf)(m), I = (0, i.useMemo)(() => !(0, G.mf)(m) && m.favoriteCount > 0, [m]), P = (0, i.useMemo)(() => !!v && !C && x && m.commentCount > 0, [v, C, x, m]), f = (0, i.useMemo)(() => !!v && !C && I, [v, C, I]), M = (0, i.useMemo)(() => u(m.id) || I && !b(m.id), [u, I, b, m.id]);
+                    } = (0, W.k)(), C = (0, G.mf)(m), I = (0, i.useMemo)(() => !(0, G.mf)(m) && m.favoriteCount > 0, [m]), P = (0, i.useMemo)(() => !!v && !C && x && m.commentCount > 0, [v, C, x, m]), f = (0, i.useMemo)(() => !!v && !C && I, [v, C, I]), S = (0, i.useMemo)(() => u(m.id) || I && !b(m.id), [u, I, b, m.id]);
                     return (0, l.jsxs)("div", {
                         className: N()(q().imageWrapper, {
                             [q().hoverMode]: v && !C,
@@ -1241,7 +1241,7 @@
                                     onClick: e => {
                                         e.stopPropagation(), g(m.id, I, "grid")
                                     },
-                                    disabled: M,
+                                    disabled: S,
                                     children: I ? (0, l.jsx)(s.k8v, {}) : (0, l.jsx)(s.LC, {})
                                 })
                             })]
@@ -1379,9 +1379,9 @@
                                 shouldBlurThumbnail: m
                             }, e.id);
                             return 0 === a ? (0, l.jsx)("div", {
-                                children: (0, l.jsx)(S, {
+                                children: (0, l.jsx)(M, {
                                     forStep: 2,
-                                    children: (0, l.jsx)(S, {
+                                    children: (0, l.jsx)(M, {
                                         forStep: 3,
                                         children: i
                                     })
@@ -1483,7 +1483,7 @@
                     onEditTitleStart: I,
                     onEditTitleSave: P,
                     onEditTitleCancel: f,
-                    onEditImageStart: M
+                    onEditImageStart: S
                 } = e, {
                     t: F
                 } = (0, r.Bd)(), {
@@ -1506,7 +1506,7 @@
                         (0, x.Od)().trackUserAction(er.fh.editButtonClicked({
                             transferId: a,
                             source: e
-                        })), e === e_.Ck.TITLE && I ? I() : e === e_.Ck.IMAGE && M && M()
+                        })), e === e_.Ck.TITLE && I ? I() : e === e_.Ck.IMAGE && S && S()
                     },
                     R = j && (O || y),
                     D = (0, i.useMemo)(() => {
@@ -1589,7 +1589,7 @@
                         className: eh().headerContent,
                         children: [(0, l.jsxs)("div", {
                             className: eh().leftContent,
-                            children: [(0, l.jsx)(S, {
+                            children: [(0, l.jsx)(M, {
                                 forStep: 1,
                                 children: (0, l.jsx)("div", {
                                     className: eh().titleContainer,
@@ -1765,14 +1765,14 @@
                 })
             };
             var ef = t(79016),
-                eM = t.n(ef);
-            let eS = e => {
+                eS = t.n(ef);
+            let eM = e => {
                 let {
                     zoomLevel: a,
                     onZoomChange: t
                 } = e;
                 return (0, l.jsxs)("nav", {
-                    className: eM().zoomControls,
+                    className: eS().zoomControls,
                     "aria-label": "Zoom controls",
                     children: [(0, l.jsx)(m.$, {
                         variation: "neutral",
@@ -1952,12 +1952,13 @@
                 }({}),
                 eH = t(26513),
                 eV = t(9675),
-                eU = t(68566),
-                eW = t(39241),
-                ez = t(16970),
-                eq = t.n(ez);
+                eU = t(50820),
+                eW = t(68566),
+                ez = t(39241),
+                eq = t(16970),
+                eZ = t.n(eq);
 
-            function eZ(e) {
+            function eJ(e) {
                 let {
                     fileId: a,
                     hasComments: t,
@@ -2017,30 +2018,30 @@
                 return (0, i.useEffect)(() => {
                     !d && c.current && y()
                 }, [d, y]), (0, l.jsxs)("div", {
-                    className: eq().commentInputSection,
+                    className: eZ().commentInputSection,
                     children: [(0, l.jsxs)("div", {
-                        className: N()(eq().noCommentsHint, {
-                            [eq().noCommentsHintHidden]: t || !g
+                        className: N()(eZ().noCommentsHint, {
+                            [eZ().noCommentsHintHidden]: t || !g
                         }),
                         children: [(0, l.jsx)("span", {
                             children: h("preview.comments.share_thoughts")
-                        }), (0, l.jsx)(eW.A, {})]
+                        }), (0, l.jsx)(ez.A, {})]
                     }), (0, l.jsxs)("div", {
-                        className: eq().commentInputWrapper,
+                        className: eZ().commentInputWrapper,
                         children: [(0, l.jsx)("textarea", {
                             id: "comment-textarea",
                             ref: c,
-                            className: eq().commentTextarea,
+                            className: eZ().commentTextarea,
                             placeholder: h("preview.comments.add_comment_placeholder"),
                             value: p,
                             onChange: v,
                             onKeyDown: I,
-                            maxLength: eU.TO,
+                            maxLength: eW.TO,
                             disabled: d
                         }), (0, l.jsx)("button", {
-                            className: N()(eq().sendButton, {
-                                [eq().sendButtonActive]: p.trim().length > 0,
-                                [eq().sendButtonDisabled]: d
+                            className: N()(eZ().sendButton, {
+                                [eZ().sendButtonActive]: p.trim().length > 0,
+                                [eZ().sendButtonDisabled]: d
                             }),
                             onClick: C,
                             disabled: !p.trim() || d,
@@ -2049,11 +2050,11 @@
                     })]
                 })
             }
-            var eJ = t(18608),
-                eK = t(81301),
-                eQ = t.n(eK);
+            var eK = t(18608),
+                eQ = t(81301),
+                eY = t.n(eQ);
 
-            function eY(e) {
+            function eX(e) {
                 let {
                     comment: a,
                     isCurrentUser: t,
@@ -2073,7 +2074,7 @@
                 } = (0, r.Bd)(), [y, v] = (0, i.useState)(!1), C = (0, i.useRef)(null), {
                     getAuthorDisplayName: I,
                     formatTimestamp: P
-                } = (0, eJ.I)(), f = (0, i.useCallback)(() => {
+                } = (0, eK.I)(), f = (0, i.useCallback)(() => {
                     let e = C.current;
                     e && (e.style.height = "auto", e.style.height = "".concat(Math.min(e.scrollHeight, 120), "px"))
                 }, []);
@@ -2086,10 +2087,10 @@
                         e.setSelectionRange(a, a)
                     }
                 }, [n]);
-                let M = (0, i.useCallback)(e => {
+                let S = (0, i.useCallback)(e => {
                         b(e.target.value), f()
                     }, [b, f]),
-                    S = (0, i.useCallback)(e => {
+                    M = (0, i.useCallback)(e => {
                         if ("Escape" === e.key) {
                             e.preventDefault(), m();
                             return
@@ -2105,11 +2106,11 @@
                 return (0, l.jsxs)("div", {
                     "data-comment-item": !0,
                     "data-comment-id": a.id,
-                    className: N()(eQ().commentItem, {
-                        [eQ().commentItemEditing]: n,
-                        [eQ().commentItemHighlighted]: p,
-                        [eQ().commentItemSelectable]: u,
-                        [eQ().commentItemSelectableHovered]: u && y
+                    className: N()(eY().commentItem, {
+                        [eY().commentItemEditing]: n,
+                        [eY().commentItemHighlighted]: p,
+                        [eY().commentItemSelectable]: u,
+                        [eY().commentItemSelectableHovered]: u && y
                     }),
                     onMouseEnter: () => v(!0),
                     onMouseLeave: () => v(!1),
@@ -2118,28 +2119,28 @@
                     role: u ? "button" : void 0,
                     tabIndex: u ? 0 : void 0,
                     children: [(0, l.jsxs)("div", {
-                        className: eQ().commentHeader,
+                        className: eY().commentHeader,
                         children: [(0, l.jsx)("span", {
                             title: I(a, t),
-                            className: N()(eQ().commentAuthor, {
-                                [eQ().commentAuthorCurrentUser]: t
+                            className: N()(eY().commentAuthor, {
+                                [eY().commentAuthorCurrentUser]: t
                             }),
                             children: I(a, t)
                         }), (0, l.jsx)("span", {
-                            className: eQ().commentTimestamp,
+                            className: eY().commentTimestamp,
                             children: P(a.createdAt)
                         }), t && n && (0, l.jsxs)("div", {
-                            className: eQ().commentEditActions,
+                            className: eY().commentEditActions,
                             children: [(0, l.jsx)("button", {
                                 type: "button",
-                                className: eQ().commentEditActionButton,
+                                className: eY().commentEditActionButton,
                                 onClick: m,
                                 children: (0, l.jsx)(s.$Td, {
                                     size: "small"
                                 })
                             }), (0, l.jsx)("button", {
                                 type: "button",
-                                className: eQ().commentEditActionButtonActive,
+                                className: eY().commentEditActionButtonActive,
                                 onClick: w,
                                 disabled: !o.trim(),
                                 children: (0, l.jsx)(s.bT1, {
@@ -2147,17 +2148,17 @@
                                 })
                             })]
                         }), (t || d) && (y || c.Ay.isMobile) && !n && !u && (0, l.jsxs)("div", {
-                            className: eQ().commentActions,
+                            className: eY().commentActions,
                             children: [t && (0, l.jsx)("button", {
                                 type: "button",
-                                className: eQ().commentActionButton,
+                                className: eY().commentActionButton,
                                 onClick: () => _(a.id, a.body),
                                 children: (0, l.jsx)(s.P2e, {
                                     size: "small"
                                 })
                             }), (0, l.jsx)("button", {
                                 type: "button",
-                                className: eQ().commentActionButton,
+                                className: eY().commentActionButton,
                                 onClick: () => g(a.id),
                                 children: (0, l.jsx)(s.rkR, {
                                     size: "small"
@@ -2166,36 +2167,36 @@
                         })]
                     }), n ? (0, l.jsx)("textarea", {
                         ref: C,
-                        className: eQ().commentEditTextarea,
+                        className: eY().commentEditTextarea,
                         value: o,
-                        onChange: M,
-                        onKeyDown: S,
-                        maxLength: eU.TO,
+                        onChange: S,
+                        onKeyDown: M,
+                        maxLength: eW.TO,
                         autoFocus: !0
                     }) : (0, l.jsxs)("div", {
-                        className: eQ().commentBody,
+                        className: eY().commentBody,
                         children: [(0, l.jsx)("span", {
                             children: a.body
                         }), a.edited && (0, l.jsx)("span", {
-                            className: eQ().commentEdited,
+                            className: eY().commentEdited,
                             children: x("preview.comments.edited")
                         })]
                     })]
                 })
             }
-            var eX = t(7048),
-                e$ = t.n(eX),
-                e0 = t(30403),
-                e1 = t(59289),
-                e4 = t(28513),
-                e2 = t(21848),
-                e8 = t(89187),
-                e6 = t(86781),
-                e7 = t(29788),
-                e5 = t.n(e7),
-                e3 = t(11096);
+            var e$ = t(7048),
+                e0 = t.n(e$),
+                e1 = t(30403),
+                e4 = t(59289),
+                e2 = t(28513),
+                e8 = t(21848),
+                e6 = t(89187),
+                e7 = t(86781),
+                e5 = t(29788),
+                e3 = t.n(e5),
+                e9 = t(11096);
 
-            function e9(e) {
+            function ae(e) {
                 let {
                     fileId: a,
                     transferId: t,
@@ -2209,19 +2210,19 @@
                     isSelectingForReport: b = !1,
                     onCancelReportSelection: u,
                     onReportComment: h
-                } = e, [c, y] = (0, i.useState)(null), [v, C] = (0, i.useState)(""), [I, P] = (0, i.useState)(""), [f, M] = (0, i.useState)(!1), [S, F] = (0, i.useState)(null), [j, E] = (0, i.useState)(!1), [O, L] = (0, i.useState)(""), [B, R] = (0, i.useState)(""), D = (0, i.useRef)(!1), k = (0, i.useRef)(!1), A = (0, i.useRef)(null), G = (0, p.wA)(), H = (0, p.d4)(e6.JV), {
+                } = e, [c, y] = (0, i.useState)(null), [v, C] = (0, i.useState)(""), [I, P] = (0, i.useState)(""), [f, S] = (0, i.useState)(!1), [M, F] = (0, i.useState)(null), [j, E] = (0, i.useState)(!1), [O, L] = (0, i.useState)(""), [B, R] = (0, i.useState)(""), D = (0, i.useRef)(!1), k = (0, i.useRef)(!1), A = (0, i.useRef)(null), G = (0, p.wA)(), H = (0, p.d4)(e7.JV), {
                     t: V
                 } = (0, r.Bd)(), {
                     addToast: U
-                } = (0, e0.d)(), [W] = (0, eU.eR)(), [z] = (0, eU.DN)(), [q] = (0, eU.HI)(), {
+                } = (0, e1.d)(), [W] = (0, eW.eR)(), [z] = (0, eW.DN)(), [q] = (0, eW.HI)(), {
                     saveGuestSecret: Z,
                     getGuestSecret: J,
                     removeGuestSecret: K
-                } = (0, e1.xE)(t, e1.bU.COMMENT), {
+                } = (0, e4.xE)(t, e4.bU.COMMENT), {
                     getGuestInfo: Q,
                     saveGuestInfo: Y,
                     hasGuestInfo: X
-                } = (0, e1.uc)(), {
+                } = (0, e4.uc)(), {
                     comments: $,
                     guestCommentIds: ee,
                     hasMorePages: ea,
@@ -2236,7 +2237,7 @@
                     updateOptimisticComment: es,
                     removeOptimisticComment: em,
                     setIsSingleCommentOperation: ew
-                } = (0, e1._9)({
+                } = (0, e4._9)({
                     transferId: t,
                     fileId: a,
                     securityHash: d,
@@ -2249,15 +2250,15 @@
                     isAtCommentsBottom: eh,
                     checkIfCommentsCanScroll: ep,
                     findCenterAnchor: ex
-                } = (0, e4.v)({
+                } = (0, e2.v)({
                     comments: $
                 }), ec = (0, i.useCallback)(() => {
                     y(null), C(""), E(!1), L(""), R(""), ei()
                 }, [ei]);
                 (0, i.useEffect)(() => {
-                    ec(), D.current = !1, k.current = !1, M(!1), F(null)
+                    ec(), D.current = !1, k.current = !1, S(!1), F(null)
                 }, [a, ec]), (0, i.useEffect)(() => {
-                    D.current || !($.length >= 0) || er || (D.current = !0, (0, x.Od)().trackUserAction(e3.e.commentsSectionViewed({
+                    D.current || !($.length >= 0) || er || (D.current = !0, (0, x.Od)().trackUserAction(e9.e.commentsSectionViewed({
                         transferId: t,
                         fileId: a,
                         commentCount: $.length
@@ -2275,8 +2276,8 @@
                             d = l.top + l.height / 2,
                             n = i.top + i.height / 2 - d,
                             o = Math.max(-(a.scrollHeight - a.clientHeight), Math.min(0, a.scrollTop + n));
-                        Math.abs(n) > 1 && (a.scrollTop = o), k.current = !0, F(String(_)), M(!0), null == w || w(), e = window.setTimeout(() => {
-                            M(!1), F(null)
+                        Math.abs(n) > 1 && (a.scrollTop = o), k.current = !0, F(String(_)), S(!0), null == w || w(), e = window.setTimeout(() => {
+                            S(!1), F(null)
                         }, 3e3)
                     }), () => {
                         null !== e && window.clearTimeout(e), window.cancelAnimationFrame(a)
@@ -2329,13 +2330,13 @@
                                     recipientId: n,
                                     guestSecret: r
                                 })) {
-                                es(c, l, s), U(V("preview.comments.error.update_failed")), (0, x.Od)().trackUserAction(e3.e.commentUpdateFailed({
+                                es(c, l, s), U(V("preview.comments.error.update_failed")), (0, x.Od)().trackUserAction(e9.e.commentUpdateFailed({
                                     transferId: t,
                                     fileId: a,
                                     commentId: c
                                 })), ev();
                                 return
-                            }(0, x.Od)().trackUserAction(e3.e.commentUpdated({
+                            }(0, x.Od)().trackUserAction(e9.e.commentUpdated({
                                 transferId: t,
                                 fileId: a,
                                 commentId: c,
@@ -2356,13 +2357,13 @@
                                 recipientId: n,
                                 guestSecret: l
                             })) {
-                            i && e_(i), U(V("preview.comments.error.delete_failed")), (0, x.Od)().trackUserAction(e3.e.commentDeleteFailed({
+                            i && e_(i), U(V("preview.comments.error.delete_failed")), (0, x.Od)().trackUserAction(e9.e.commentDeleteFailed({
                                 transferId: t,
                                 fileId: a,
                                 commentId: e
                             }));
                             return
-                        }(0, x.Od)().trackUserAction(e3.e.commentDeleted({
+                        }(0, x.Od)().trackUserAction(e9.e.commentDeleted({
                             transferId: t,
                             fileId: a,
                             commentId: e,
@@ -2370,7 +2371,7 @@
                             wasGuestComment: !!l
                         })), l && K(a, e), en(!0)
                     }, [e_, U, $, q, a, J, H, o, n, K, em, d, en, V, t]),
-                    eM = (0, i.useCallback)(async (e, l, i) => {
+                    eS = (0, i.useCallback)(async (e, l, i) => {
                         var r;
                         let _ = e.trim(),
                             s = {
@@ -2378,7 +2379,7 @@
                                 fileId: a,
                                 body: _,
                                 author: {
-                                    type: H ? eU.LD.USER : eU.LD.GUEST,
+                                    type: H ? eW.LD.USER : eW.LD.GUEST,
                                     name: i || "",
                                     email: l || "",
                                     isCurrentUser: !0
@@ -2398,30 +2399,30 @@
                             guestEmail: l,
                             guestName: i
                         });
-                        return "error" in m ? (em(s.id), U(V("preview.comments.error.create_failed")), (0, x.Od)().trackUserAction(e3.e.commentCreateFailed({
+                        return "error" in m ? (em(s.id), U(V("preview.comments.error.create_failed")), (0, x.Od)().trackUserAction(e9.e.commentCreateFailed({
                             transferId: t,
                             fileId: a
-                        })), !1) : ((null == (r = m.data) ? void 0 : r.guestSecret) && Z(a, m.data.id, m.data.guestSecret), (0, x.Od)().trackUserAction(e3.e.commentCreated({
+                        })), !1) : ((null == (r = m.data) ? void 0 : r.guestSecret) && Z(a, m.data.id, m.data.guestSecret), (0, x.Od)().trackUserAction(e9.e.commentCreated({
                             transferId: t,
                             fileId: a,
                             isLoggedIn: H,
                             commentLength: _.length
                         })), en(!0), !0)
                     }, [e_, U, W, a, H, o, n, em, Z, d, en, V, t]),
-                    eS = (0, i.useCallback)(async e => {
-                        if (H) return void await eM(e);
+                    eM = (0, i.useCallback)(async e => {
+                        if (H) return void await eS(e);
                         if (X()) {
                             let a = Q();
-                            await eM(e, null == a ? void 0 : a.email, null == a ? void 0 : a.name);
+                            await eS(e, null == a ? void 0 : a.email, null == a ? void 0 : a.name);
                             return
                         }
-                        L(e), E(!0), (0, x.Od)().trackUserAction(e3.e.guestModalShown({
+                        L(e), E(!0), (0, x.Od)().trackUserAction(e9.e.guestModalShown({
                             transferId: t,
                             fileId: a
                         }))
-                    }, [a, Q, X, H, eM, t]),
+                    }, [a, Q, X, H, eS, t]),
                     eF = (0, i.useCallback)(() => {
-                        E(!1), R(O), L(""), (0, x.Od)().trackUserAction(e3.e.guestModalDismissed({
+                        E(!1), R(O), L(""), (0, x.Od)().trackUserAction(e9.e.guestModalDismissed({
                             transferId: t,
                             fileId: a
                         }))
@@ -2430,39 +2431,39 @@
                         R("")
                     }, []),
                     ej = (0, i.useCallback)(async (e, l) => {
-                        Y(e, l), E(!1), (0, x.Od)().trackUserAction(e3.e.guestModalSubmitted({
+                        Y(e, l), E(!1), (0, x.Od)().trackUserAction(e9.e.guestModalSubmitted({
                             transferId: t,
                             fileId: a,
                             hasName: !!l.trim()
-                        })), await eM(O, e, l) || R(O), L("")
-                    }, [a, O, Y, eM, t]),
+                        })), await eS(O, e, l) || R(O), L("")
+                    }, [a, O, Y, eS, t]),
                     eT = (0, i.useCallback)(() => {
-                        E(!1), (0, x.Od)().trackUserAction(e3.e.guestModalSignupClicked({
+                        E(!1), (0, x.Od)().trackUserAction(e9.e.guestModalSignupClicked({
                             transferId: t,
                             fileId: a
-                        })), G((0, e2.Hh)({
-                            tier: e8.js.FREE,
+                        })), G((0, e8.Hh)({
+                            tier: e6.js.FREE,
                             redirectUri: window.location.href
                         }))
                     }, [G, a, t]);
                 return (0, l.jsxs)(l.Fragment, {
                     children: [(0, l.jsxs)("div", {
-                        className: e5().commentsSectionWrapper,
+                        className: e3().commentsSectionWrapper,
                         children: [(0, l.jsx)("div", {
-                            className: N()(e5().commentsSectionShadowTop, {
-                                [e5().commentsSectionShadowVisible]: eb && !eu
+                            className: N()(e3().commentsSectionShadowTop, {
+                                [e3().commentsSectionShadowVisible]: eb && !eu
                             })
                         }), (0, l.jsx)("div", {
-                            className: N()(e5().commentsSectionShadowBottom, {
-                                [e5().commentsSectionShadowVisible]: eb && !eh
+                            className: N()(e3().commentsSectionShadowBottom, {
+                                [e3().commentsSectionShadowVisible]: eb && !eh
                             })
                         }), b && (0, l.jsxs)("div", {
-                            className: e5().reportSelectionBanner,
+                            className: e3().reportSelectionBanner,
                             children: [(0, l.jsx)("span", {
                                 children: V("preview.comments.select_to_report")
                             }), (0, l.jsx)("button", {
                                 type: "button",
-                                className: e5().reportSelectionCloseButton,
+                                className: e3().reportSelectionCloseButton,
                                 onClick: u,
                                 "aria-label": V("preview.comments.cancel_report_selection"),
                                 children: (0, l.jsx)(s.$Td, {
@@ -2471,12 +2472,12 @@
                             })]
                         }), (0, l.jsxs)("div", {
                             ref: eg,
-                            className: N()(e5().commentsSection, {
-                                [e5().commentsSectionWithBanner]: b
+                            className: N()(e3().commentsSection, {
+                                [e3().commentsSectionWithBanner]: b
                             }),
                             children: [ea && (0, l.jsx)("div", {
                                 ref: A,
-                                className: e5().spinnerContainer,
+                                className: e3().spinnerContainer,
                                 children: er && (0, l.jsx)(T.y, {
                                     size: "small",
                                     appearance: "neutral",
@@ -2485,7 +2486,7 @@
                             }), $.map(e => {
                                 let a = e.author.isCurrentUser || ee.has(e.id),
                                     t = a || g;
-                                return (0, l.jsx)(eY, {
+                                return (0, l.jsx)(eX, {
                                     comment: e,
                                     isCurrentUser: a,
                                     canDelete: t,
@@ -2496,17 +2497,17 @@
                                     onSaveEdit: eP,
                                     onDelete: ef,
                                     onEditingTextChange: C,
-                                    isHighlighted: f && S === e.id,
+                                    isHighlighted: f && M === e.id,
                                     isSelectingForReport: b,
                                     onReportClick: eI
                                 }, e.id)
                             })]
                         })]
-                    }), (0, l.jsx)(eZ, {
+                    }), (0, l.jsx)(eJ, {
                         fileId: a,
                         hasComments: $.length > 0,
                         isDisabled: null !== c,
-                        onSendComment: eS,
+                        onSendComment: eM,
                         commentsSectionRef: eg,
                         isAtCommentsBottom: eh,
                         findCenterAnchor: ex,
@@ -2524,7 +2525,7 @@
                 })
             }
 
-            function ae(e) {
+            function aa(e) {
                 let {
                     isOpen: a,
                     onClose: t,
@@ -2558,22 +2559,22 @@
                     c(!1)
                 }, []), I = (0, i.useCallback)(async e => (c(!1), y(e)), [y]);
                 return a ? (0, l.jsx)("div", {
-                    className: e$().overlay,
+                    className: e0().overlay,
                     onClick: t,
                     children: (0, l.jsxs)("div", {
-                        className: e$().modal,
+                        className: e0().modal,
                         onClick: e => e.stopPropagation(),
                         children: [(0, l.jsxs)("div", {
-                            className: e$().header,
+                            className: e0().header,
                             children: [(0, l.jsx)("button", {
-                                className: e$().closeButton,
+                                className: e0().closeButton,
                                 onClick: t,
                                 children: (0, l.jsx)(s.$Td, {})
                             }), (0, l.jsxs)("h2", {
-                                className: e$().title,
+                                className: e0().title,
                                 children: [p("preview.comments.title"), " (", w, ")"]
                             }), (0, l.jsx)("button", {
-                                className: e$().reportButton,
+                                className: e0().reportButton,
                                 onClick: v,
                                 "aria-label": p("preview.report_comment"),
                                 children: (0, l.jsx)(s.DFU, {
@@ -2581,8 +2582,8 @@
                                 })
                             })]
                         }), (0, l.jsx)("div", {
-                            className: e$().content,
-                            children: (0, l.jsx)(e9, {
+                            className: e0().content,
+                            children: (0, l.jsx)(ae, {
                                 fileId: d,
                                 transferId: n,
                                 securityHash: o,
@@ -2600,26 +2601,26 @@
                     })
                 }) : null
             }
-            var aa = t(1502),
-                at = t.n(aa);
+            var at = t(1502),
+                al = t.n(at);
 
-            function al(e) {
+            function ai(e) {
                 let {
                     errorMessage: a
                 } = e;
                 return (0, l.jsx)("div", {
-                    className: at().qualityIndicatorBadgeWrapper,
+                    className: al().qualityIndicatorBadgeWrapper,
                     children: (0, l.jsx)(A.m, {
                         content: a,
                         positions: ["right", "bottom"],
                         mode: "dark",
                         align: "center",
-                        className: at().qualityBadgeTooltip,
-                        containerClassName: at().qualityBadgeTooltipContainer,
+                        className: al().qualityBadgeTooltip,
+                        containerClassName: al().qualityBadgeTooltipContainer,
                         children: (0, l.jsx)("div", {
-                            className: at().qualityIndicatorBadge,
+                            className: al().qualityIndicatorBadge,
                             children: (0, l.jsx)("span", {
-                                className: at().qualityIndicatorIcon,
+                                className: al().qualityIndicatorIcon,
                                 children: (0, l.jsx)(U.Ay, {
                                     type: "Alert",
                                     color: "#FFFFFF"
@@ -2629,10 +2630,10 @@
                     })
                 })
             }
-            var ai = t(39587),
-                ad = t.n(ai);
+            var ad = t(39587),
+                an = t.n(ad);
 
-            function an(e) {
+            function ao(e) {
                 let {
                     transferId: a,
                     showComments: t,
@@ -2644,15 +2645,15 @@
                 }, [a]), g = (0, i.useCallback)(() => {
                     _(!1), d()
                 }, [d]), b = (0, l.jsxs)("div", {
-                    className: ad().menu,
+                    className: an().menu,
                     children: [(0, l.jsx)("button", {
                         type: "button",
-                        className: ad().menuItem,
+                        className: an().menuItem,
                         onClick: m,
                         children: n("preview.report_transfer")
                     }), t && (0, l.jsx)("button", {
                         type: "button",
-                        className: ad().menuItem,
+                        className: an().menuItem,
                         onClick: g,
                         children: n("preview.report_comment")
                     })]
@@ -2665,7 +2666,7 @@
                     callback: _,
                     children: (0, l.jsx)("button", {
                         type: "button",
-                        className: ad().reportButton,
+                        className: an().reportButton,
                         "aria-label": u,
                         children: (0, l.jsx)(s.DFU, {
                             size: "small"
@@ -2674,11 +2675,11 @@
                 })
             }
 
-            function ao(e) {
+            function ar(e) {
                 var a, t, n, o, _, w, g, b, u, h, p, y, v, C, I, P, f;
                 let {
-                    item: M,
-                    transferId: S,
+                    item: S,
+                    transferId: M,
                     securityHash: F,
                     recipientId: j,
                     password: E,
@@ -2699,8 +2700,8 @@
                 } = e, [ee, ea] = (0, i.useState)(!1), [et, el] = (0, i.useState)(!1), [ei, ed] = (0, i.useState)(!1), {
                     reportComment: en
                 } = (0, eH.B)({
-                    transferId: S,
-                    fileId: M.id,
+                    transferId: M,
+                    fileId: S.id,
                     securityHash: F,
                     password: E,
                     recipientId: j
@@ -2711,9 +2712,9 @@
                         enable_full_quality_previews: ew,
                         better_pdf_visualization: eg
                     }
-                } = (0, W.k)(), [eb, eu] = (0, i.useState)(!0), [eh, ep] = (0, i.useState)(!1), [ex, ec] = (0, i.useState)(1), [ey, ev] = (0, i.useState)(!1), eC = (0, i.useRef)(!1), eI = (0, i.useMemo)(() => M.favoriteCount > 0, [M.favoriteCount]), eP = (0, i.useMemo)(() => Z(M.id) || eI && !q(M.id), [Z, eI, q, M.id]), {
+                } = (0, W.k)(), [eb, eu] = (0, i.useState)(!0), [eh, ep] = (0, i.useState)(!1), [ex, ec] = (0, i.useState)(1), [ey, ev] = (0, i.useState)(!1), eC = (0, i.useRef)(!1), eI = (0, i.useMemo)(() => S.favoriteCount > 0, [S.favoriteCount]), eP = (0, i.useMemo)(() => Z(S.id) || eI && !q(S.id), [Z, eI, q, S.id]), {
                     fullQualityUrl: ef,
-                    status: eM,
+                    status: eS,
                     loadedFileId: eF,
                     setStatus: eN
                 } = (e => {
@@ -2779,46 +2780,46 @@
                         setStatus: x
                     }
                 })({
-                    transferId: S,
+                    transferId: M,
                     securityHash: F,
                     recipientId: j,
                     password: E,
-                    fileId: M.id,
-                    fileSize: M.size,
-                    preview: M.preview || void 0,
-                    enabled: ew
-                }), [ej, eT] = (0, i.useState)(null), eE = (0, i.useRef)(null), eO = (0, i.useRef)(null), eL = ej === M.id;
+                    fileId: S.id,
+                    fileSize: S.size,
+                    preview: S.preview || void 0,
+                    enabled: ew && !(0, eU.So)(Y)
+                }), [ej, eT] = (0, i.useState)(null), eE = (0, i.useRef)(null), eO = (0, i.useRef)(null), eL = ej === S.id;
                 (0, i.useEffect)(() => {
                     var e;
                     let a = eE.current,
                         t = null != (e = null == a ? void 0 : a.muted) && e;
-                    if (eL && eF === M.id && a && eO.current) {
+                    if (eL && eF === S.id && a && eO.current) {
                         let e = eO.current;
                         a.muted = !0, e.currentTime = a.currentTime, e.volume = a.volume, e.muted = t, a.paused ? e.pause() : e.play().catch(() => {})
                     }
                     return () => {
                         a && (a.muted = t)
                     }
-                }, [eL, eF, M.id]), (0, i.useEffect)(() => {
+                }, [eL, eF, S.id]), (0, i.useEffect)(() => {
                     let e;
                     return eC.current = !1, eu(!0), ea(!1), el(!1), ed(!1), em(null), eT(null), ec(1), ev(!1), eh && (ev(!0), ep(!1), e = setTimeout(() => {
                         ev(!1)
                     }, 50)), () => {
                         e && clearTimeout(e)
                     }
-                }, [M.id]);
+                }, [S.id]);
                 let eB = (0, i.useCallback)(() => {
                     (0, x.Od)().trackUserAction(er.fh.expandViewToggled({
-                        transferId: S,
-                        fileId: M.id,
+                        transferId: M,
+                        fileId: S.id,
                         isExpanded: !eh
                     })), ep(e => !e)
-                }, [S, M.id, eh]);
+                }, [M, S.id, eh]);
                 (0, i.useEffect)(() => {
                     if (es) return;
                     let e = new URLSearchParams(window.location.search).get("commentToHighlight");
                     e && em(e)
-                }, [es, M.id]);
+                }, [es, S.id]);
                 let eR = (0, i.useCallback)(() => {
                         {
                             let e = new URL(window.location.href);
@@ -2826,23 +2827,23 @@
                         }
                         em(null)
                     }, []),
-                    eU = (0, i.useCallback)(() => {
+                    eW = (0, i.useCallback)(() => {
                         ed(!0)
                     }, []),
-                    eW = (0, i.useCallback)(() => {
+                    ez = (0, i.useCallback)(() => {
                         ed(!1)
                     }, []),
-                    ez = (0, i.useCallback)(async e => (ed(!1), en(e)), [en]),
-                    eq = (0, i.useCallback)(() => {
+                    eq = (0, i.useCallback)(async e => (ed(!1), en(e)), [en]),
+                    eZ = (0, i.useCallback)(() => {
                         el(!0)
                     }, []),
-                    eZ = (0, i.useCallback)(() => {
+                    eJ = (0, i.useCallback)(() => {
                         el(!1)
                     }, []),
-                    eJ = (0, i.useCallback)(() => {
+                    eK = (0, i.useCallback)(() => {
                         ea(!1), R()
                     }, [R]),
-                    eK = (0, i.useCallback)(() => {
+                    eQ = (0, i.useCallback)(() => {
                         ea(!1), D()
                     }, [D]);
                 (0, i.useEffect)(() => {
@@ -2851,10 +2852,10 @@
                             t = a instanceof HTMLTextAreaElement || a instanceof HTMLInputElement;
                         switch (e.key) {
                             case "ArrowRight":
-                                t || eJ();
+                                t || eK();
                                 break;
                             case "ArrowLeft":
-                                t || eK();
+                                t || eQ();
                                 break;
                             case "Escape":
                                 t || B()
@@ -2863,89 +2864,89 @@
                     return document.addEventListener("keydown", e), () => {
                         document.removeEventListener("keydown", e)
                     }
-                }, [eJ, eK, B]);
-                let eQ = (0, i.useCallback)(() => {
+                }, [eK, eQ, B]);
+                let eY = (0, i.useCallback)(() => {
                         ea(!1), B()
                     }, [B]),
-                    eY = (0, i.useCallback)(() => {
-                        ea(!0), k(M.id)
-                    }, [k, M.id]),
                     eX = (0, i.useCallback)(() => {
-                        eJ()
-                    }, [eJ]),
+                        ea(!0), k(S.id)
+                    }, [k, S.id]),
                     e$ = (0, i.useCallback)(() => {
                         eK()
                     }, [eK]),
+                    e0 = (0, i.useCallback)(() => {
+                        eQ()
+                    }, [eQ]),
                     {
-                        handleTouchStart: e0,
-                        handleTouchEnd: e1
+                        handleTouchStart: e1,
+                        handleTouchEnd: e4
                     } = (0, eV.h)({
-                        onSwipeLeft: eX,
-                        onSwipeRight: e$
+                        onSwipeLeft: e$,
+                        onSwipeRight: e0
                     }),
-                    e4 = (0, i.useCallback)(() => {
+                    e2 = (0, i.useCallback)(() => {
                         eC.current || ((0, x.Od)().trackUserAction(er.fh.previewPdfFileLoaded({
-                            transferId: S,
-                            fileId: M.id,
+                            transferId: M,
+                            fileId: S.id,
                             shouldUseCustomPdfPreview: !0,
                             hasError: !0
                         })), eC.current = !0), eu(!1)
-                    }, [M.id, S]),
-                    e2 = (0, i.useCallback)(() => {
+                    }, [S.id, M]),
+                    e8 = (0, i.useCallback)(() => {
                         eC.current || ((0, x.Od)().trackUserAction(er.fh.previewPdfFileLoaded({
-                            transferId: S,
-                            fileId: M.id,
+                            transferId: M,
+                            fileId: S.id,
                             shouldUseCustomPdfPreview: !0,
                             hasError: !1
                         })), eC.current = !0)
-                    }, [M.id, S]),
-                    e8 = (0, i.useMemo)(() => {
+                    }, [S.id, M]),
+                    e6 = (0, i.useMemo)(() => {
                         var e;
-                        return (0, G.OV)((null == (e = M.preview) ? void 0 : e.originalFileMetadata) || {}, M.name, M.size, e_)
-                    }, [null == (a = M.preview) ? void 0 : a.originalFileMetadata, M.name, M.size, e_]),
-                    e6 = eg && (null == (t = M.preview) ? void 0 : t.fileType) === V.t.PDF && c.Ay.isMobile;
+                        return (0, G.OV)((null == (e = S.preview) ? void 0 : e.originalFileMetadata) || {}, S.name, S.size, e_)
+                    }, [null == (a = S.preview) ? void 0 : a.originalFileMetadata, S.name, S.size, e_]),
+                    e7 = eg && (null == (t = S.preview) ? void 0 : t.fileType) === V.t.PDF && c.Ay.isMobile;
                 return (0, l.jsxs)(l.Fragment, {
                     children: [(0, l.jsxs)("div", {
-                        className: N()(at().container, {
-                            [at().containerScrollablePdf]: e6
+                        className: N()(al().container, {
+                            [al().containerScrollablePdf]: e7
                         }),
-                        onTouchStart: e0,
-                        onTouchEnd: e1,
+                        onTouchStart: e1,
+                        onTouchEnd: e4,
                         children: [(0, l.jsxs)("div", {
-                            className: at().header,
+                            className: al().header,
                             children: [(0, l.jsxs)("button", {
-                                className: at().backButton,
-                                onClick: eQ,
+                                className: al().backButton,
+                                onClick: eY,
                                 children: [(0, l.jsx)(U.Ay, {
                                     type: "ArrowLeft"
                                 }), (0, l.jsx)("span", {
-                                    children: (0, H.r)(M.name)
+                                    children: (0, H.r)(S.name)
                                 })]
                             }), (0, l.jsxs)("div", {
-                                className: at().headerRight,
-                                children: [(0, l.jsx)(an, {
-                                    transferId: S,
+                                className: al().headerRight,
+                                children: [(0, l.jsx)(ao, {
+                                    transferId: M,
                                     showComments: K,
-                                    onReportComment: eU
+                                    onReportComment: eW
                                 }), (0, l.jsx)("button", {
-                                    className: at().navButton,
-                                    onClick: eK,
+                                    className: al().navButton,
+                                    onClick: eQ,
                                     disabled: 0 === O,
                                     children: (0, l.jsx)(s.LYB, {})
                                 }), (0, l.jsx)("span", {
-                                    className: at().fileCounter,
+                                    className: al().fileCounter,
                                     children: e_("preview.file_x_of_y", {
                                         current: O + 1,
                                         total: L
                                     })
                                 }), (0, l.jsx)("button", {
-                                    className: at().navButton,
-                                    onClick: eJ,
+                                    className: al().navButton,
+                                    onClick: eK,
                                     disabled: O === L - 1,
                                     children: (0, l.jsx)(s._mK, {})
                                 }), !J && (0, l.jsx)("button", {
-                                    className: at().headerDownloadButton,
-                                    onClick: eY,
+                                    className: al().headerDownloadButton,
+                                    onClick: eX,
                                     disabled: ee,
                                     children: ee ? (0, l.jsx)(U.Ay, {
                                         type: "CheckCircle"
@@ -2956,21 +2957,21 @@
                                 })]
                             })]
                         }), (0, l.jsxs)("div", {
-                            className: at().mainContent,
+                            className: al().mainContent,
                             children: [(0, l.jsxs)("div", {
-                                className: N()(at().metadataSidebar, {
-                                    [at().metadataSidebarCollapsed]: eh,
-                                    [at().metadataSidebarNoTransition]: ey
+                                className: N()(al().metadataSidebar, {
+                                    [al().metadataSidebarCollapsed]: eh,
+                                    [al().metadataSidebarNoTransition]: ey
                                 }),
                                 children: [(0, l.jsxs)("div", {
-                                    className: N()(at().sidebarCollapsedContent, {
-                                        [at().sidebarCollapsedContentVisible]: eh
+                                    className: N()(al().sidebarCollapsedContent, {
+                                        [al().sidebarCollapsedContentVisible]: eh
                                     }),
                                     children: [(0, l.jsxs)("div", {
-                                        className: at().sidebarCollapsedTop,
+                                        className: al().sidebarCollapsedTop,
                                         children: [!J && (0, l.jsx)("button", {
-                                            className: at().sidebarCollapsedDownloadButton,
-                                            onClick: eY,
+                                            className: al().sidebarCollapsedDownloadButton,
+                                            onClick: eX,
                                             disabled: ee,
                                             "aria-label": e_(ee ? "preview.downloading" : "preview.download"),
                                             children: ee ? (0, l.jsx)(U.Ay, {
@@ -2981,53 +2982,53 @@
                                                 color: d.Jx
                                             })
                                         }), (0, l.jsx)("button", {
-                                            className: N()(at().sidebarCollapsedFavoriteButton, {
-                                                [at().sidebarCollapsedFavoriteButtonSelected]: eI
+                                            className: N()(al().sidebarCollapsedFavoriteButton, {
+                                                [al().sidebarCollapsedFavoriteButtonSelected]: eI
                                             }),
                                             onClick: e => {
-                                                e.stopPropagation(), z(M.id, eI, "item_detail")
+                                                e.stopPropagation(), z(S.id, eI, "item_detail")
                                             },
                                             disabled: eP,
                                             "aria-label": e_("preview.favorites.tooltip_text"),
                                             children: eI ? (0, l.jsx)(s.k8v, {}) : (0, l.jsx)(s.LC, {})
                                         })]
                                     }), K && (0, l.jsxs)("button", {
-                                        className: at().sidebarCollapsedCommentButton,
+                                        className: al().sidebarCollapsedCommentButton,
                                         onClick: eB,
                                         "aria-label": e_("preview.comments.title"),
                                         children: [(0, l.jsx)(s.qks, {}), (0, l.jsx)("span", {
-                                            children: M.commentCount
+                                            children: S.commentCount
                                         })]
                                     })]
                                 }), (0, l.jsxs)("div", {
-                                    className: N()(at().sidebarFullContent, {
-                                        [at().sidebarFullContentHidden]: eh
+                                    className: N()(al().sidebarFullContent, {
+                                        [al().sidebarFullContentHidden]: eh
                                     }),
                                     children: [(0, l.jsxs)("div", {
-                                        className: at().metadataSection,
+                                        className: al().metadataSection,
                                         children: [(0, l.jsx)("div", {
-                                            className: at().metadataContent,
-                                            children: e8.map((e, a) => (0, l.jsxs)("div", {
-                                                className: at().metadataRow,
+                                            className: al().metadataContent,
+                                            children: e6.map((e, a) => (0, l.jsxs)("div", {
+                                                className: al().metadataRow,
                                                 children: [(0, l.jsx)("span", {
-                                                    className: at().metadataLabel,
+                                                    className: al().metadataLabel,
                                                     children: e.label
                                                 }), e.label === e_("preview.format") ? (0, l.jsx)("span", {
-                                                    className: at().metadataValueTag,
+                                                    className: al().metadataValueTag,
                                                     children: e.value
                                                 }) : (0, l.jsx)("span", {
-                                                    className: at().metadataValue,
+                                                    className: al().metadataValue,
                                                     children: e.value
                                                 })]
                                             }, a))
                                         }), (0, l.jsxs)("div", {
-                                            className: at().actionButtons,
+                                            className: al().actionButtons,
                                             children: [J ? (0, l.jsx)("div", {
-                                                className: at().viewOptionBadge,
+                                                className: al().viewOptionBadge,
                                                 children: (0, l.jsx)(A.m, {
                                                     isCondensed: !0,
                                                     mode: "dark",
-                                                    className: at().viewOptionTooltip,
+                                                    className: al().viewOptionTooltip,
                                                     content: $ ? e_("transfer.upload.view_options.".concat(Y, ".tooltip")) : e_("transfer.upload.view_options.".concat(Y, ".no_previews")),
                                                     children: (0, l.jsx)(eo.E, {
                                                         size: "small",
@@ -3035,8 +3036,8 @@
                                                     })
                                                 })
                                             }) : (0, l.jsxs)("button", {
-                                                className: at().downloadButton,
-                                                onClick: eY,
+                                                className: al().downloadButton,
+                                                onClick: eX,
                                                 disabled: ee,
                                                 children: [ee ? (0, l.jsx)(U.Ay, {
                                                     type: "CheckCircle",
@@ -3047,7 +3048,7 @@
                                                 }), e_(ee ? "preview.downloading" : "preview.download")]
                                             }), (0, l.jsx)(A.m, {
                                                 content: (0, l.jsx)("span", {
-                                                    className: at().tooltipText,
+                                                    className: al().tooltipText,
                                                     children: e_("preview.favorites.tooltip_text")
                                                 }),
                                                 mode: "dark",
@@ -3055,29 +3056,29 @@
                                                 isCondensed: !0,
                                                 align: "end",
                                                 children: (0, l.jsx)("button", {
-                                                    className: N()(at().favoriteButton, {
-                                                        [at().favoriteButtonSelected]: eI
+                                                    className: N()(al().favoriteButton, {
+                                                        [al().favoriteButtonSelected]: eI
                                                     }),
                                                     onClick: e => {
-                                                        e.stopPropagation(), z(M.id, eI, "item_detail")
+                                                        e.stopPropagation(), z(S.id, eI, "item_detail")
                                                     },
                                                     disabled: eP,
                                                     children: eI ? (0, l.jsx)(s.k8v, {}) : (0, l.jsx)(s.LC, {})
                                                 })
                                             })]
                                         }), (0, l.jsxs)("a", {
-                                            href: X.A.getSafetyUrl(S, "transfer"),
-                                            className: at().reportLinkMobile,
+                                            href: X.A.getSafetyUrl(M, "transfer"),
+                                            className: al().reportLinkMobile,
                                             "aria-label": e_("preview.report_transfer"),
                                             children: [(0, l.jsx)(s.DFU, {
                                                 size: "small"
                                             }), e_("preview.report_transfer")]
                                         })]
                                     }), K && !ey && (0, l.jsx)("div", {
-                                        className: at().commentsSectionDesktop,
-                                        children: (0, l.jsx)(e9, {
-                                            fileId: M.id,
-                                            transferId: S,
+                                        className: al().commentsSectionDesktop,
+                                        children: (0, l.jsx)(ae, {
+                                            fileId: S.id,
+                                            transferId: M,
                                             securityHash: F,
                                             recipientId: j,
                                             password: E,
@@ -3086,27 +3087,27 @@
                                             onHighlightHandled: eR,
                                             isTransferOwner: Q,
                                             isSelectingForReport: ei,
-                                            onCancelReportSelection: eW,
-                                            onReportComment: ez
+                                            onCancelReportSelection: ez,
+                                            onReportComment: eq
                                         })
                                     })]
                                 })]
                             }), (0, l.jsxs)("div", {
-                                className: N()(at().previewArea, {
-                                    [at().previewAreaLight]: M.isUnavailable || (null == (n = M.preview) ? void 0 : n.fileType) === V.t.AUDIO,
-                                    [at().previewAreaExpanded]: eh,
-                                    [at().previewAreaPdfScrollable]: e6
+                                className: N()(al().previewArea, {
+                                    [al().previewAreaLight]: S.isUnavailable || (null == (n = S.preview) ? void 0 : n.fileType) === V.t.AUDIO,
+                                    [al().previewAreaExpanded]: eh,
+                                    [al().previewAreaPdfScrollable]: e7
                                 }),
-                                children: [!M.isUnavailable && (null == (o = M.preview) ? void 0 : o.status) !== "processing" && ((null == (_ = M.preview) ? void 0 : _.fileType) === V.t.IMAGE || (null == (w = M.preview) ? void 0 : w.fileType) === V.t.PDF) && (0, l.jsxs)("div", {
-                                    className: N()(at().expandButtonWrapper, {
-                                        [at().actionsToolbar]: eg
+                                children: [!S.isUnavailable && (null == (o = S.preview) ? void 0 : o.status) !== "processing" && ((null == (_ = S.preview) ? void 0 : _.fileType) === V.t.IMAGE || (null == (w = S.preview) ? void 0 : w.fileType) === V.t.PDF) && (0, l.jsxs)("div", {
+                                    className: N()(al().expandButtonWrapper, {
+                                        [al().actionsToolbar]: eg
                                     }),
-                                    children: [eg && (null == (g = M.preview) ? void 0 : g.fileType) === V.t.PDF && (0, l.jsx)(eS, {
+                                    children: [eg && (null == (g = S.preview) ? void 0 : g.fileType) === V.t.PDF && (0, l.jsx)(eM, {
                                         zoomLevel: ex,
                                         onZoomChange: ec
                                     }), (0, l.jsx)(A.m, {
                                         content: (0, l.jsx)("span", {
-                                            className: at().tooltipText,
+                                            className: al().tooltipText,
                                             children: e_(eh ? "preview.collapse_view" : "preview.expand_view")
                                         }),
                                         mode: "dark",
@@ -3115,8 +3116,8 @@
                                         children: (0, l.jsx)(m.$, {
                                             variation: "neutral",
                                             size: "small",
-                                            className: N()(at().expandButton, {
-                                                [at().expandButtonExpanded]: eh
+                                            className: N()(al().expandButton, {
+                                                [al().expandButtonExpanded]: eh
                                             }),
                                             onClick: eB,
                                             "aria-label": e_(eh ? "preview.collapse_view" : "preview.expand_view"),
@@ -3127,14 +3128,14 @@
                                             })
                                         })
                                     })]
-                                }), M.isUnavailable ? (0, l.jsxs)("div", {
-                                    className: at().unavailableContainer,
+                                }), S.isUnavailable ? (0, l.jsxs)("div", {
+                                    className: al().unavailableContainer,
                                     children: [(0, l.jsx)("div", {
-                                        className: at().unavailableIcon,
+                                        className: al().unavailableIcon,
                                         children: (0, l.jsx)(s.VBm, {})
                                     }), !J && (0, l.jsxs)("button", {
-                                        className: at().centerDownloadButton,
-                                        onClick: eY,
+                                        className: al().centerDownloadButton,
+                                        onClick: eX,
                                         disabled: ee,
                                         children: [ee ? (0, l.jsx)(U.Ay, {
                                             type: "CheckCircle",
@@ -3144,43 +3145,43 @@
                                             color: d.Jx
                                         }), e_(ee ? "preview.downloading" : "preview.download")]
                                     }), (0, l.jsx)("span", {
-                                        className: at().unavailableFileName,
-                                        children: (0, H.r)(M.name)
+                                        className: al().unavailableFileName,
+                                        children: (0, H.r)(S.name)
                                     })]
-                                }) : (null == (b = M.preview) ? void 0 : b.status) === "processing" ? (0, l.jsx)(T.y, {
+                                }) : (null == (b = S.preview) ? void 0 : b.status) === "processing" ? (0, l.jsx)(T.y, {
                                     appearance: "neutral",
                                     size: "large",
                                     mode: "dark"
-                                }) : (null == (u = M.preview) ? void 0 : u.fileType) === V.t.IMAGE ? (0, l.jsx)("div", {
-                                    className: N()(at().imageContainer, {
-                                        [at().imageContainerExpanded]: eh
+                                }) : (null == (u = S.preview) ? void 0 : u.fileType) === V.t.IMAGE ? (0, l.jsx)("div", {
+                                    className: N()(al().imageContainer, {
+                                        [al().imageContainerExpanded]: eh
                                     }),
                                     children: (0, l.jsxs)("div", {
-                                        className: N()(at().previewMediaWrapper, {
-                                            [at().previewMediaWrapperExpanded]: eh
+                                        className: N()(al().previewMediaWrapper, {
+                                            [al().previewMediaWrapperExpanded]: eh
                                         }),
                                         children: [(0, l.jsx)("img", {
-                                            src: null == (h = M.preview) ? void 0 : h.url,
-                                            alt: M.name,
-                                            className: N()(at().previewImage, {
-                                                [at().previewImageExpanded]: eh
+                                            src: null == (h = S.preview) ? void 0 : h.url,
+                                            alt: S.name,
+                                            className: N()(al().previewImage, {
+                                                [al().previewImageExpanded]: eh
                                             }),
                                             onContextMenu: e => {
                                                 J && e.preventDefault()
                                             },
                                             draggable: !J && !eh
-                                        }), ef && eM === eG.LOADED && eF === M.id && (0, l.jsx)("img", {
+                                        }), ef && eS === eG.LOADED && eF === S.id && (0, l.jsx)("img", {
                                             src: ef,
                                             alt: "",
-                                            "data-file-id": M.id,
+                                            "data-file-id": S.id,
                                             className: N()({
-                                                [at().previewImageFullQualityLoaded]: eL,
-                                                [at().previewImageFullQualityLoading]: !eL,
-                                                [at().previewImageExpanded]: eh
+                                                [al().previewImageFullQualityLoaded]: eL,
+                                                [al().previewImageFullQualityLoading]: !eL,
+                                                [al().previewImageExpanded]: eh
                                             }),
                                             onLoad: e => {
                                                 let a = e.target.dataset.fileId;
-                                                a === M.id && eT(a)
+                                                a === S.id && eT(a)
                                             },
                                             onError: () => {
                                                 eN(eG.ERROR)
@@ -3189,17 +3190,17 @@
                                                 J && e.preventDefault()
                                             },
                                             draggable: !J && !eh
-                                        }), eM === eG.ERROR && (0, l.jsx)(al, {
+                                        }), eS === eG.ERROR && (0, l.jsx)(ai, {
                                             errorMessage: e_("preview.full_quality.error")
                                         })]
                                     })
-                                }) : (null == (p = M.preview) ? void 0 : p.fileType) === V.t.VIDEO ? (0, l.jsxs)("div", {
-                                    className: at().previewMediaWrapper,
+                                }) : (null == (p = S.preview) ? void 0 : p.fileType) === V.t.VIDEO ? (0, l.jsxs)("div", {
+                                    className: al().previewMediaWrapper,
                                     children: [(0, l.jsx)("video", {
                                         ref: eE,
-                                        src: null == (y = M.preview) ? void 0 : y.url,
-                                        className: N()(at().previewVideo, {
-                                            [at().previewVideoFadingOut]: eL
+                                        src: null == (y = S.preview) ? void 0 : y.url,
+                                        className: N()(al().previewVideo, {
+                                            [al().previewVideoFadingOut]: eL
                                         }),
                                         preload: "metadata",
                                         controls: !eL,
@@ -3208,13 +3209,13 @@
                                             J && e.preventDefault()
                                         },
                                         controlsList: J ? "nodownload" : void 0
-                                    }), ef && eM === eG.LOADED && eF === M.id && (0, l.jsx)("video", {
+                                    }), ef && eS === eG.LOADED && eF === S.id && (0, l.jsx)("video", {
                                         ref: eO,
                                         src: ef,
-                                        "data-file-id": M.id,
-                                        className: N()(at().previewVideo, {
-                                            [at().previewVideoFullQualityLoaded]: eL,
-                                            [at().previewVideoFullQualityLoading]: !eL
+                                        "data-file-id": S.id,
+                                        className: N()(al().previewVideo, {
+                                            [al().previewVideoFullQualityLoaded]: eL,
+                                            [al().previewVideoFullQualityLoading]: !eL
                                         }),
                                         preload: "auto",
                                         controls: !0,
@@ -3222,7 +3223,7 @@
                                         onCanPlayThrough: e => {
                                             let a = e.target,
                                                 t = a.dataset.fileId;
-                                            t === M.id && a.videoWidth > 0 && a.videoHeight > 0 ? eT(t) : t === M.id && eN(eG.ERROR)
+                                            t === S.id && a.videoWidth > 0 && a.videoHeight > 0 ? eT(t) : t === S.id && eN(eG.ERROR)
                                         },
                                         onError: () => {
                                             eN(eG.ERROR)
@@ -3231,17 +3232,17 @@
                                             J && e.preventDefault()
                                         },
                                         controlsList: J ? "nodownload" : void 0
-                                    }), eM === eG.ERROR && (0, l.jsx)(al, {
+                                    }), eS === eG.ERROR && (0, l.jsx)(ai, {
                                         errorMessage: e_("preview.full_quality.error")
                                     })]
-                                }) : (null == (v = M.preview) ? void 0 : v.fileType) === V.t.AUDIO ? (0, l.jsxs)("div", {
-                                    className: at().audioContainer,
+                                }) : (null == (v = S.preview) ? void 0 : v.fileType) === V.t.AUDIO ? (0, l.jsxs)("div", {
+                                    className: al().audioContainer,
                                     children: [(0, l.jsx)("span", {
-                                        className: at().audioFileName,
-                                        children: (0, H.r)(M.name)
+                                        className: al().audioFileName,
+                                        children: (0, H.r)(S.name)
                                     }), (0, l.jsx)("audio", {
-                                        src: null == (C = M.preview) ? void 0 : C.url,
-                                        className: at().previewAudio,
+                                        src: null == (C = S.preview) ? void 0 : C.url,
+                                        className: al().previewAudio,
                                         preload: "metadata",
                                         controls: !0,
                                         autoPlay: !0,
@@ -3250,24 +3251,24 @@
                                         },
                                         controlsList: J ? "nodownload" : void 0
                                     })]
-                                }) : (null == (I = M.preview) ? void 0 : I.fileType) === V.t.PDF && eb ? (0, l.jsx)(eD, {
-                                    fileUrl: (null == (P = M.preview) ? void 0 : P.url) || "",
-                                    itemId: M.id,
-                                    onLoadSuccess: e2,
-                                    onLoadError: e4,
+                                }) : (null == (I = S.preview) ? void 0 : I.fileType) === V.t.PDF && eb ? (0, l.jsx)(eD, {
+                                    fileUrl: (null == (P = S.preview) ? void 0 : P.url) || "",
+                                    itemId: S.id,
+                                    onLoadSuccess: e8,
+                                    onLoadError: e2,
                                     isPreviewOnly: J,
                                     isExpanded: eh,
                                     zoomLevel: ex,
-                                    enablePageScroll: e6,
+                                    enablePageScroll: e7,
                                     onZoomChange: ec
-                                }) : (null == (f = M.preview) ? void 0 : f.fileType) !== V.t.PDF || eb ? (0, l.jsx)(U.Ay, {
+                                }) : (null == (f = S.preview) ? void 0 : f.fileType) !== V.t.PDF || eb ? (0, l.jsx)(U.Ay, {
                                     type: "DocumentFilled",
                                     color: "white"
                                 }) : (0, l.jsxs)("div", {
-                                    className: at().pdfContainer,
+                                    className: al().pdfContainer,
                                     onClick: () => {
                                         var e;
-                                        return window.open(null == (e = M.preview) ? void 0 : e.url, "_blank")
+                                        return window.open(null == (e = S.preview) ? void 0 : e.url, "_blank")
                                     },
                                     style: {
                                         cursor: "pointer"
@@ -3276,40 +3277,40 @@
                                         type: "DocumentFilled",
                                         color: "white"
                                     }), (0, l.jsx)("span", {
-                                        className: at().pdfText,
+                                        className: al().pdfText,
                                         children: e_("preview.pdf_text_preview")
                                     })]
                                 })]
                             }), (0, l.jsxs)("div", {
-                                className: at().mobileActionButtons,
+                                className: al().mobileActionButtons,
                                 children: [K && (0, l.jsxs)("button", {
-                                    className: at().mobileCommentsButton,
-                                    onClick: eq,
+                                    className: al().mobileCommentsButton,
+                                    onClick: eZ,
                                     children: [(0, l.jsx)(s.qks, {}), (0, l.jsxs)("span", {
-                                        children: [e_("preview.comments.title"), " (", M.commentCount, ")"]
+                                        children: [e_("preview.comments.title"), " (", S.commentCount, ")"]
                                     })]
                                 }), (0, l.jsx)("button", {
-                                    className: N()(at().mobileFavoriteButton, {
-                                        [at().mobileFavoriteButtonSelected]: eI,
-                                        [at().mobileFavoriteButtonWithoutComments]: !K
+                                    className: N()(al().mobileFavoriteButton, {
+                                        [al().mobileFavoriteButtonSelected]: eI,
+                                        [al().mobileFavoriteButtonWithoutComments]: !K
                                     }),
                                     onClick: e => {
-                                        e.stopPropagation(), z(M.id, eI, "item_detail")
+                                        e.stopPropagation(), z(S.id, eI, "item_detail")
                                     },
                                     disabled: eP,
                                     children: eI ? (0, l.jsx)(s.k8v, {}) : (0, l.jsx)(s.LC, {})
                                 })]
                             })]
                         })]
-                    }), K && (0, l.jsx)(ae, {
+                    }), K && (0, l.jsx)(aa, {
                         isOpen: et,
-                        onClose: eZ,
-                        fileId: M.id,
-                        transferId: S,
+                        onClose: eJ,
+                        fileId: S.id,
+                        transferId: M,
                         securityHash: F,
                         recipientId: j,
                         password: E,
-                        commentsCount: M.commentCount,
+                        commentsCount: S.commentCount,
                         commentToHighlight: es,
                         isHighlightEnabled: et,
                         onHighlightHandled: eR,
@@ -3317,11 +3318,11 @@
                     })]
                 })
             }
-            var ar = t(41690),
-                a_ = t.n(ar),
-                as = t(51329),
-                am = t.n(as);
-            let aw = e => {
+            var a_ = t(41690),
+                as = t.n(a_),
+                am = t(51329),
+                aw = t.n(am);
+            let ag = e => {
                     let {
                         item: a,
                         onItemClick: t,
@@ -3342,101 +3343,101 @@
                         }) : ((null == (t = a.preview) || null == (e = t.originalFileMetadata) ? void 0 : e.format) || X.A.getFileExtension(a.name) || "—").toUpperCase()
                     };
                     return (0, l.jsxs)("div", {
-                        className: N()(am().row, {
-                            [am().rowWithComments]: g
+                        className: N()(aw().row, {
+                            [aw().rowWithComments]: g
                         }),
                         onClick: () => t(a),
                         children: [(0, l.jsxs)("div", {
-                            className: am().nameColumn,
+                            className: aw().nameColumn,
                             children: [(0, l.jsx)("div", {
-                                className: am().thumbnail,
+                                className: aw().thumbnail,
                                 children: (() => {
                                     var e, t, i, d, n;
                                     return h ? (0, l.jsx)("div", {
-                                        className: am().folderIcon,
+                                        className: aw().folderIcon,
                                         children: (0, l.jsx)(s.I98, {})
                                     }) : (null == (e = a.preview) ? void 0 : e.status) === "processing" ? (0, l.jsx)("div", {
-                                        className: am().processingIcon,
+                                        className: aw().processingIcon,
                                         children: (0, l.jsx)(T.y, {
                                             appearance: "neutral",
                                             size: "small"
                                         })
                                     }) : (null == (t = a.preview) ? void 0 : t.fileType) === V.t.AUDIO ? (0, l.jsx)("div", {
-                                        className: am().audioIcon,
+                                        className: aw().audioIcon,
                                         children: (0, l.jsx)(s.Oo4, {})
                                     }) : !a.isUnavailable && (null == (i = a.preview) ? void 0 : i.thumbnailUrl) ? (0, l.jsxs)("div", {
-                                        className: am().thumbnailContainer,
+                                        className: aw().thumbnailContainer,
                                         children: [(0, l.jsx)("img", {
                                             src: null == (d = a.preview) ? void 0 : d.thumbnailUrl,
                                             alt: a.name.split("/").pop(),
-                                            className: N()(am().thumbnail, {
-                                                [am().blurred]: b
+                                            className: N()(aw().thumbnail, {
+                                                [aw().blurred]: b
                                             }),
                                             onContextMenu: e => {
                                                 w && e.preventDefault()
                                             },
                                             draggable: !w
                                         }), (null == (n = a.preview) ? void 0 : n.fileType) === V.t.VIDEO && (0, l.jsx)("div", {
-                                            className: am().videoPlayIcon,
+                                            className: aw().videoPlayIcon,
                                             children: (0, l.jsx)(U.Ay, {
                                                 type: "Play",
                                                 color: "white"
                                             })
                                         })]
                                     }) : (0, l.jsx)("div", {
-                                        className: am().documentIcon,
+                                        className: aw().documentIcon,
                                         children: (0, l.jsx)(s.VBm, {})
                                     })
                                 })()
                             }), (0, l.jsxs)("div", {
-                                className: am().fileInfo,
+                                className: aw().fileInfo,
                                 children: [(0, l.jsx)("span", {
-                                    className: am().fileName,
+                                    className: aw().fileName,
                                     children: h ? "↳ ".concat(a.name) : (0, H.r)(a.name)
                                 }), (0, l.jsxs)("div", {
-                                    className: am().mobileMetadata,
+                                    className: aw().mobileMetadata,
                                     children: [(0, l.jsx)("span", {
-                                        className: am().format,
+                                        className: aw().format,
                                         children: c()
                                     }), (0, l.jsx)("span", {
-                                        className: am().metaSeparator,
+                                        className: aw().metaSeparator,
                                         children: "•"
                                     }), (0, l.jsx)("span", {
-                                        className: am().size,
+                                        className: aw().size,
                                         children: $.A.size(a.size)
                                     })]
                                 })]
                             })]
                         }), (0, l.jsx)("div", {
-                            className: am().formatColumn,
+                            className: aw().formatColumn,
                             children: (0, l.jsx)("span", {
-                                className: am().format,
+                                className: aw().format,
                                 children: c()
                             })
                         }), (0, l.jsx)("div", {
-                            className: am().sizeColumn,
+                            className: aw().sizeColumn,
                             children: (0, l.jsx)("span", {
-                                className: am().size,
+                                className: aw().size,
                                 children: $.A.size(a.size)
                             })
                         }), g && (0, l.jsx)("div", {
-                            className: am().commentsColumn,
+                            className: aw().commentsColumn,
                             children: (0, l.jsx)("span", {
-                                className: am().comments,
+                                className: aw().comments,
                                 children: h ? "-" : (0, l.jsxs)("span", {
-                                    className: N()(am().commentsCount, {
-                                        [am().commentsCountEmpty]: 0 === a.commentCount
+                                    className: N()(aw().commentsCount, {
+                                        [aw().commentsCountEmpty]: 0 === a.commentCount
                                     }),
                                     children: [(0, l.jsx)(s.R6C, {}), a.commentCount]
                                 })
                             })
                         }), (0, l.jsx)("div", {
-                            className: am().actionColumn,
+                            className: aw().actionColumn,
                             children: !h && (0, l.jsxs)("div", {
-                                className: am().actionButtons,
+                                className: aw().actionButtons,
                                 children: [(0, l.jsx)("button", {
-                                    className: N()(am().favoriteButton, {
-                                        [am().favoriteButtonSelected]: p
+                                    className: N()(aw().favoriteButton, {
+                                        [aw().favoriteButtonSelected]: p
                                     }),
                                     onClick: e => {
                                         e.stopPropagation(), n(a.id, p, "list")
@@ -3444,7 +3445,7 @@
                                     disabled: x,
                                     children: p ? (0, l.jsx)(s.k8v, {}) : (0, l.jsx)(s.LC, {})
                                 }), !w && (0, l.jsx)("button", {
-                                    className: am().downloadButton,
+                                    className: aw().downloadButton,
                                     onClick: e => d(e, a.id),
                                     disabled: m,
                                     children: m ? (0, l.jsx)(U.Ay, {
@@ -3458,7 +3459,7 @@
                         })]
                     })
                 },
-                ag = e => {
+                ab = e => {
                     let {
                         items: a,
                         onSelectItem: t,
@@ -3484,30 +3485,30 @@
                         e.stopPropagation(), p(e => new Set([...e, a])), d(a)
                     }, [d]);
                     return a.length ? (0, l.jsxs)("div", {
-                        className: a_().listContainer,
+                        className: as().listContainer,
                         children: [(0, l.jsxs)("div", {
-                            className: N()(a_().listHeader, {
-                                [a_().listHeaderWithComments]: m
+                            className: N()(as().listHeader, {
+                                [as().listHeaderWithComments]: m
                             }),
                             children: [(0, l.jsx)("div", {
-                                className: a_().nameColumn,
+                                className: as().nameColumn,
                                 children: u("preview.list.name")
                             }), (0, l.jsx)("div", {
-                                className: a_().formatColumn,
+                                className: as().formatColumn,
                                 children: u("preview.list.format")
                             }), (0, l.jsx)("div", {
-                                className: a_().sizeColumn,
+                                className: as().sizeColumn,
                                 children: u("preview.list.size")
                             }), m && (0, l.jsx)("div", {
-                                className: a_().commentsColumn,
+                                className: as().commentsColumn,
                                 children: u("preview.list.comments")
                             }), (0, l.jsx)("div", {
-                                className: a_().actionColumn
+                                className: as().actionColumn
                             })]
                         }), (0, l.jsxs)("div", {
-                            className: a_().listBody,
+                            className: as().listBody,
                             children: [x.map((e, a) => {
-                                let i = (0, l.jsx)(aw, {
+                                let i = (0, l.jsx)(ag, {
                                     item: e,
                                     onItemClick: t,
                                     onDownloadClick: v,
@@ -3520,10 +3521,10 @@
                                     shouldBlurThumbnail: w
                                 }, e.id);
                                 return 0 === a ? (0, l.jsx)("div", {
-                                    children: (0, l.jsx)(S, {
+                                    children: (0, l.jsx)(M, {
                                         forStep: 2,
                                         positionOverride: "bottom",
-                                        children: (0, l.jsx)(S, {
+                                        children: (0, l.jsx)(M, {
                                             forStep: 3,
                                             children: i
                                         })
@@ -3531,31 +3532,31 @@
                                 }, e.id) : i
                             }), c && (0, l.jsx)("div", {
                                 ref: y,
-                                className: a_().loadMoreSentinel,
+                                className: as().loadMoreSentinel,
                                 "aria-hidden": "true"
                             })]
                         })]
                     }) : null
                 };
-            var ab = t(72797),
-                au = t(56915),
-                ah = t(44614),
-                ap = t(88797),
-                ax = t(79524),
-                ac = t.n(ax);
+            var au = t(72797),
+                ah = t(56915),
+                ap = t(44614),
+                ax = t(88797),
+                ac = t(79524),
+                ay = t.n(ac);
 
-            function ay(e) {
+            function av(e) {
                 let {
                     transferId: a,
                     secret: d,
                     recipientId: n
-                } = e, o = (0, p.wA)(), r = (0, p.d4)(ah.vF), [_, s] = (0, i.useState)(""), [w, g] = (0, i.useState)(!1), [b, u] = (0, i.useState)(!1), [h, x] = (0, i.useState)(!1), c = (0, i.useCallback)(e => {
-                    o(au.P.clearTransferNotification()), s(e.target.value)
+                } = e, o = (0, p.wA)(), r = (0, p.d4)(ap.vF), [_, s] = (0, i.useState)(""), [w, g] = (0, i.useState)(!1), [b, u] = (0, i.useState)(!1), [h, x] = (0, i.useState)(!1), c = (0, i.useCallback)(e => {
+                    o(ah.P.clearTransferNotification()), s(e.target.value)
                 }, [o]), y = (0, i.useCallback)(async () => {
                     if (_) {
                         u(!0), g(!0);
                         try {
-                            await o((0, ap.BE)(a, d, n, _, t.g.navigator.onLine))
+                            await o((0, ax.BE)(a, d, n, _, t.g.navigator.onLine))
                         } finally {
                             g(!1)
                         }
@@ -3566,19 +3567,19 @@
                 }, [b, w, _, a, v]);
                 let C = !w && !!_;
                 return (0, l.jsx)("div", {
-                    className: ac().container,
+                    className: ay().container,
                     children: (0, l.jsxs)("div", {
-                        className: ac().wrapper,
+                        className: ay().wrapper,
                         children: [(0, l.jsxs)("div", {
-                            className: ac().body,
+                            className: ay().body,
                             children: [(0, l.jsx)("h2", {
                                 children: $.A.t("transfer.password.title")
                             }), (0, l.jsx)("p", {
                                 children: $.A.t("transfer.password.text")
                             }), (0, l.jsxs)("div", {
-                                className: ac().passwordInputWrapper,
+                                className: ay().passwordInputWrapper,
                                 children: [(0, l.jsx)(ec.A, {
-                                    className: ac().input,
+                                    className: ay().input,
                                     label: "password",
                                     labelType: "hidden",
                                     type: h ? "text" : "password",
@@ -3590,13 +3591,13 @@
                                     value: _,
                                     size: "medium",
                                     state: v ? "invalid" : "default"
-                                }), (0, l.jsx)(ab.K, {
+                                }), (0, l.jsx)(au.K, {
                                     isVisible: h,
                                     onToggle: () => x(!h)
                                 })]
                             })]
                         }), (0, l.jsx)("div", {
-                            className: ac().footer,
+                            className: ay().footer,
                             children: (0, l.jsx)(m.$, {
                                 onClick: y,
                                 disabled: !C,
@@ -3606,9 +3607,9 @@
                     })
                 })
             }
-            var av = t(11564),
-                aC = t.n(av);
-            let aI = e => {
+            var aC = t(11564),
+                aI = t.n(aC);
+            let aP = e => {
                 let {
                     value: a,
                     onChange: t
@@ -3623,10 +3624,10 @@
                         document.removeEventListener("mousedown", e)
                     }
                 }, [n]), (0, l.jsxs)("div", {
-                    className: aC().sortSelector,
+                    className: aI().sortSelector,
                     ref: _,
                     children: [(0, l.jsxs)("button", {
-                        className: aC().sortButton,
+                        className: aI().sortButton,
                         onClick: () => o(!n),
                         "aria-expanded": n,
                         children: [(0, l.jsx)(s.Dgq, {
@@ -3635,10 +3636,10 @@
                             children: d("preview.sort.".concat(a))
                         })]
                     }), n && (0, l.jsx)("div", {
-                        className: aC().sortDropdown,
+                        className: aI().sortDropdown,
                         children: Object.values(e_._6).map(e => (0, l.jsx)("button", {
-                            className: N()(aC().sortOption, {
-                                [aC().sortOptionSelected]: a === e
+                            className: N()(aI().sortOption, {
+                                [aI().sortOptionSelected]: a === e
                             }),
                             onClick: () => {
                                 t(e), o(!1)
@@ -3648,75 +3649,75 @@
                     })]
                 })
             };
-            var aP = t(13955),
-                af = t(51580),
+            var af = t(13955),
+                aS = t(51580),
                 aM = t(49089),
-                aS = t(4471),
-                aF = t(81529);
-            let aN = "preview_visited_";
-            var aj = t(89395),
-                aT = t(31838),
-                aE = t(61670),
-                aO = t(9198),
-                aL = t(68505),
-                aB = t(71322),
-                aR = t(87676),
-                aD = t(61360),
-                ak = t(45817),
-                aA = t(20409),
-                aG = t(88848),
-                aH = t(7686),
-                aV = t(76912),
-                aU = t.n(aV);
-            let aW = () => {
+                aF = t(4471),
+                aN = t(81529);
+            let aj = "preview_visited_";
+            var aT = t(89395),
+                aE = t(31838),
+                aO = t(61670),
+                aL = t(9198),
+                aB = t(68505),
+                aR = t(71322),
+                aD = t(87676),
+                ak = t(61360),
+                aA = t(45817),
+                aG = t(20409),
+                aH = t(88848),
+                aV = t(7686),
+                aU = t(76912),
+                aW = t.n(aU);
+            let az = () => {
                 let {
                     t: e
                 } = (0, r.Bd)(), a = (0, p.wA)(), {
                     hasRedeemedFreeTrial: t
-                } = (0, aR.J)(), d = (0, p.d4)(e6.mB);
-                (0, aB.A)(() => {
-                    (0, x.Od)().trackUserAction(ak.wj.paywallDisplayed({
-                        trigger: aG.vW.PREVIEWS_HARD_MONETIZATION_DOWNLOADER,
-                        type: aG.pU.PREVIEWS_HARD_MONETIZATION_PREVIEW_PAGE
+                } = (0, aD.J)(), d = (0, p.d4)(e7.mB);
+                (0, aR.A)(() => {
+                    (0, x.Od)().trackUserAction(aA.wj.paywallDisplayed({
+                        trigger: aH.vW.PREVIEWS_HARD_MONETIZATION_DOWNLOADER,
+                        type: aH.pU.PREVIEWS_HARD_MONETIZATION_PREVIEW_PAGE
                     }))
                 });
                 let n = (0, i.useCallback)(() => {
-                        a((0, aG.Cb)(aG.pU.PREVIEWS_HARD_MONETIZATION_PREVIEW_PAGE)), (0, x.Od)().trackUserAction(ak.wj.paywallDismissed({
-                            dismissMethod: ak.tS.TOP_RIGHT_X,
-                            trigger: aG.vW.PREVIEWS_HARD_MONETIZATION_DOWNLOADER,
-                            type: aG.pU.PREVIEWS_HARD_MONETIZATION_PREVIEW_PAGE
+                        a((0, aH.Cb)(aH.pU.PREVIEWS_HARD_MONETIZATION_PREVIEW_PAGE)), (0, x.Od)().trackUserAction(aA.wj.paywallDismissed({
+                            dismissMethod: aA.tS.TOP_RIGHT_X,
+                            trigger: aH.vW.PREVIEWS_HARD_MONETIZATION_DOWNLOADER,
+                            type: aH.pU.PREVIEWS_HARD_MONETIZATION_PREVIEW_PAGE
                         }))
                     }, [a]),
-                    o = (0, i.useMemo)(() => (0, aH.kQ)({
+                    o = (0, i.useMemo)(() => (0, aV.kQ)({
                         loginHint: null == d ? void 0 : d.email,
-                        tier: e8.js.ULTIMATE,
-                        billingPeriod: e8.CS.MONTHLY,
+                        tier: e6.js.ULTIMATE,
+                        billingPeriod: e6.CS.MONTHLY,
                         requestFreeTrial: !t,
-                        triggerOverride: aG.vW.PREVIEWS_HARD_MONETIZATION_DOWNLOADER
+                        triggerOverride: aH.vW.PREVIEWS_HARD_MONETIZATION_DOWNLOADER
                     }), [null == d ? void 0 : d.email, t]),
                     _ = (0, i.useCallback)(() => {
-                        (0, x.Od)().trackUserAction(ak.wj.paywallPurchaseButtonTapped({
-                            trigger: aG.vW.PREVIEWS_HARD_MONETIZATION_DOWNLOADER,
-                            type: aG.pU.PREVIEWS_HARD_MONETIZATION_PREVIEW_PAGE
-                        })), a((0, aG.Cb)(aG.pU.PREVIEWS_HARD_MONETIZATION_PREVIEW_PAGE)), window.open(o, "_blank", "noopener,noreferrer")
+                        (0, x.Od)().trackUserAction(aA.wj.paywallPurchaseButtonTapped({
+                            trigger: aH.vW.PREVIEWS_HARD_MONETIZATION_DOWNLOADER,
+                            type: aH.pU.PREVIEWS_HARD_MONETIZATION_PREVIEW_PAGE
+                        })), a((0, aH.Cb)(aH.pU.PREVIEWS_HARD_MONETIZATION_PREVIEW_PAGE)), window.open(o, "_blank", "noopener,noreferrer")
                     }, [o, a]);
                 return (0, l.jsx)(ex.a, {
                     isOpen: !0,
                     onClose: n,
                     classes: {
-                        containerClass: aU().modal
+                        containerClass: aW().modal
                     },
                     showCloseButton: !0,
-                    appElement: (0, aD.Y)(),
+                    appElement: (0, ak.Y)(),
                     children: (0, l.jsxs)("div", {
-                        className: aU().modalContent,
+                        className: aW().modalContent,
                         children: [(0, l.jsxs)("div", {
-                            className: aU().textContainer,
+                            className: aW().textContainer,
                             children: [(0, l.jsx)("div", {
-                                className: aU().title,
+                                className: aW().title,
                                 children: e("previews_monetization.previews_page_paywall.title")
                             }), (0, l.jsx)("div", {
-                                className: aU().body,
+                                className: aW().body,
                                 children: (0, l.jsx)(r.x6, {
                                     i18nKey: "previews_monetization.previews_page_paywall.body",
                                     components: {
@@ -3724,26 +3725,26 @@
                                     }
                                 })
                             }), (0, l.jsxs)("div", {
-                                className: aU().benefitsContainer,
+                                className: aW().benefitsContainer,
                                 children: [(0, l.jsx)("span", {
-                                    className: aU().body,
+                                    className: aW().body,
                                     children: e("previews_monetization.previews_page_paywall.benefits.intro")
-                                }), (0, l.jsx)(aA.T, {
+                                }), (0, l.jsx)(aG.T, {
                                     description: e("previews_monetization.previews_page_paywall.benefits.perk_1"),
                                     icon: "check",
                                     textSize: "medium"
-                                }), (0, l.jsx)(aA.T, {
+                                }), (0, l.jsx)(aG.T, {
                                     description: e("previews_monetization.previews_page_paywall.benefits.perk_2"),
                                     icon: "check",
                                     textSize: "medium"
-                                }), (0, l.jsx)(aA.T, {
+                                }), (0, l.jsx)(aG.T, {
                                     description: e("previews_monetization.previews_page_paywall.benefits.perk_3"),
                                     icon: "check",
                                     textSize: "medium"
                                 })]
                             })]
                         }), (0, l.jsx)(m.$, {
-                            className: aU().button,
+                            className: aW().button,
                             appearance: "primary",
                             size: "medium",
                             variation: "upsell",
@@ -3754,11 +3755,10 @@
                     })
                 })
             };
-            var az = t(6037),
-                aq = t(14781),
-                aZ = t(71303),
-                aJ = t(28338),
-                aK = t(50820),
+            var aq = t(6037),
+                aZ = t(14781),
+                aJ = t(71303),
+                aK = t(28338),
                 aQ = t(56682),
                 aY = t(91025),
                 aX = t(2269),
@@ -3795,7 +3795,7 @@
                         o = (0, p.d4)(tt.vC),
                         m = (0, a7.VI)(),
                         w = !!(0, a8.c)(n),
-                        b = (0, p.d4)(aG.oR),
+                        b = (0, p.d4)(aH.oR),
                         u = (0, p.d4)(ta.jk),
                         h = (0, p.d4)(ta.M0),
                         y = (0, p.d4)(te.yD),
@@ -3805,14 +3805,15 @@
                         {
                             settings: {
                                 enable_comments_in_previews: f,
-                                is_wetransfer_sign_enabled: M,
-                                is_branded_previews_enabled: S,
+                                is_wetransfer_sign_enabled: S,
+                                is_branded_previews_enabled: M,
                                 open_preview_automatically_enabled: F,
                                 preview_resolution_segment: O
                             }
                         } = (0, W.k)(),
-                        L = (0, i.useMemo)(() => {
-                            switch (O) {
+                        L = (0, eU.So)(n.viewOption),
+                        R = (0, i.useMemo)(() => {
+                            if (!L) switch (O) {
                                 case "low":
                                     return {
                                         variant: "low_resolution", width: 960, height: 512
@@ -3828,35 +3829,35 @@
                                 default:
                                     return
                             }
-                        }, [O]),
-                        R = (0, aK.IX)(n.viewOption),
+                        }, [O, L]),
+                        D = (0, eU.IX)(n.viewOption),
                         {
-                            transferId: D,
-                            items: k,
-                            isLoading: A,
-                            transferTitle: H,
-                            transferMessage: V,
-                            recipientId: U,
-                            securityHash: z,
-                            previewsCompletedCount: q,
-                            previewsProcessingCount: Z,
-                            isUsingPreviewV2: J,
-                            transferPassword: K,
-                            hasPreviewItems: Q
-                        } = (0, aS.J)({
+                            transferId: k,
+                            items: A,
+                            isLoading: H,
+                            transferTitle: V,
+                            transferMessage: U,
+                            recipientId: z,
+                            securityHash: q,
+                            previewsCompletedCount: Z,
+                            previewsProcessingCount: J,
+                            isUsingPreviewV2: K,
+                            transferPassword: Q,
+                            hasPreviewItems: Y
+                        } = (0, aF.J)({
                             shouldFetchAllPreviews: !0,
-                            ...L
+                            ...R
                         });
                     (0, i.useEffect)(() => {
-                        S && u && !P.current && (!h || 0 === h.length) && (P.current = !0, a((0, a5.V0)({
+                        M && u && !P.current && (!h || 0 === h.length) && (P.current = !0, a((0, a5.V0)({
                             name: "string" == typeof u ? u : ""
                         })))
-                    }, [a, S, u, h]);
+                    }, [a, M, u, h]);
                     let {
-                        customization: Y,
-                        brandingWallpapers: $,
-                        backgroundColor: ee,
-                        displayMessage: ea
+                        customization: $,
+                        brandingWallpapers: ee,
+                        backgroundColor: ea,
+                        displayMessage: et
                     } = ((e, a) => {
                         var t;
                         let {
@@ -3871,8 +3872,8 @@
                                 _(null), m(null), g(null), u(!1);
                                 return
                             }
-                            return _(null), m(null), g(null), u(!0), (0, aE.RI)(e).then(async e => {
-                                if (!a && !(0, aO.CR)(e) && e) {
+                            return _(null), m(null), g(null), u(!0), (0, aO.RI)(e).then(async e => {
+                                if (!a && !(0, aL.CR)(e) && e) {
                                     var t, l, i, d;
                                     _(e);
                                     let n = null == (t = e.views) ? void 0 : t[0],
@@ -3882,18 +3883,18 @@
                                     if (o) try {
                                         let {
                                             previews: e
-                                        } = await (0, aj.Ue)({
+                                        } = await (0, aT.Ue)({
                                             assetId: o
                                         });
                                         if (a) return;
-                                        let t = (null == (d = (0, aT.f)(e).large) ? void 0 : d.url) || null;
+                                        let t = (null == (d = (0, aE.f)(e).large) ? void 0 : d.url) || null;
                                         m(t)
                                     } catch (e) {
-                                        aL.A.track(e)
+                                        aB.A.track(e)
                                     }
                                 }
                             }).catch(e => {
-                                aL.A.track(e)
+                                aB.A.track(e)
                             }).finally(() => {
                                 a || u(!1)
                             }), () => {
@@ -3920,7 +3921,7 @@
                             isDescriptionVisible: y,
                             displayMessage: I
                         }
-                    })(S ? D : null, {
+                    })(M ? k : null, {
                         previewsWallpapers: (0, i.useMemo)(() => h && h.length > 0 ? h.filter(e => e.src).map(e => ({
                             url: e.src,
                             type: e.wallpaperType || es.B.IMAGE
@@ -3928,106 +3929,106 @@
                             url: e.asset_url,
                             type: e.wallpaper_type || es.B.IMAGE
                         })) : [], [h, y, w]),
-                        transferMessage: V,
-                        isBrandedPreviewsEnabled: S,
+                        transferMessage: U,
+                        isBrandedPreviewsEnabled: M,
                         refreshKey: C
-                    }), et = (null == Y ? void 0 : Y.workspaceId) || null, {
-                        state: el
+                    }), el = (null == $ ? void 0 : $.workspaceId) || null, {
+                        state: ei
                     } = (0, p.d4)(a9._), {
-                        canScanForMalware: ei
+                        canScanForMalware: ed
                     } = (0, a4.F)();
                     (0, i.useEffect)(() => {
-                        let e = !!($.length > 0 || ee);
-                        return S && e ? document.body.setAttribute("is-branded-preview", "true") : document.body.removeAttribute("is-branded-preview"), () => {
+                        let e = !!(ee.length > 0 || ea);
+                        return M && e ? document.body.setAttribute("is-branded-preview", "true") : document.body.removeAttribute("is-branded-preview"), () => {
                             document.body.removeAttribute("is-branded-preview")
                         }
-                    }, [S, $, ee]);
-                    let [ed, eo] = (0, i.useState)(!1), [em, ew] = (0, i.useState)(!1), [eg, eb] = (0, i.useState)(!1), [eu, eh] = (0, i.useState)(!1), [ex, ec] = (0, i.useState)(!1), [ey, ev] = (0, i.useState)(!1), [eI, eP] = (0, i.useState)([]), [ef, eM] = (0, i.useState)(e_._6.NAME), [eS, eF] = (0, i.useState)(e_.qi.GRID), [eN, ej] = (0, i.useState)(!1), [eT, eE] = (0, i.useState)(H), {
-                        updateDisplayName: eO
-                    } = (0, az.$S)();
+                    }, [M, ee, ea]);
+                    let [eo, em] = (0, i.useState)(!1), [ew, eg] = (0, i.useState)(!1), [eb, eu] = (0, i.useState)(!1), [eh, ex] = (0, i.useState)(!1), [ec, ey] = (0, i.useState)(!1), [ev, eI] = (0, i.useState)(!1), [eP, ef] = (0, i.useState)([]), [eS, eM] = (0, i.useState)(e_._6.NAME), [eF, eN] = (0, i.useState)(e_.qi.GRID), [ej, eT] = (0, i.useState)(!1), [eE, eO] = (0, i.useState)(V), {
+                        updateDisplayName: eL
+                    } = (0, aq.$S)();
                     (0, i.useEffect)(() => {
-                        eE(H)
-                    }, [H]);
-                    let [eL, eB] = (0, i.useState)(50), eR = (0, i.useCallback)(e => {
-                        eB(50), eM(e)
-                    }, []), eD = (0, i.useRef)(v);
+                        eO(V)
+                    }, [V]);
+                    let [eB, eR] = (0, i.useState)(50), eD = (0, i.useCallback)(e => {
+                        eR(50), eM(e)
+                    }, []), ek = (0, i.useRef)(v);
                     (0, i.useEffect)(() => {
-                        eD.current && !v && I(e => e + 1), eD.current = v
+                        ek.current && !v && I(e => e + 1), ek.current = v
                     }, [v]);
-                    let [ek, eA] = (0, i.useState)(!1), eG = (0, i.useRef)(null), eH = (0, i.useRef)(null), eV = (0, i.useRef)({
+                    let [eA, eG] = (0, i.useState)(!1), eH = (0, i.useRef)(null), eV = (0, i.useRef)(null), eW = (0, i.useRef)({
                         top: 0,
                         element: "page"
-                    }), eU = (0, i.useRef)(null), eW = (0, i.useRef)(!1), ez = (0, i.useRef)(Date.now()), eq = (0, i.useMemo)(() => k.some(e => e.commentCount > 0), [k]), eZ = (0, i.useMemo)(() => !!w || (n.workspaceId ? (0, a1.g)() === n.workspaceId : !!et && (0, a1.g)() === et), [w, n.workspaceId, et]);
-                    (0, aY.I)(S && w ? D : void 0), (0, aY.I)(S && eZ ? D : void 0);
-                    let eJ = (f || w && eq) && n.allowComments,
+                    }), ez = (0, i.useRef)(null), eq = (0, i.useRef)(!1), eZ = (0, i.useRef)(Date.now()), eJ = (0, i.useMemo)(() => A.some(e => e.commentCount > 0), [A]), eK = (0, i.useMemo)(() => !!w || (n.workspaceId ? (0, a1.g)() === n.workspaceId : !!el && (0, a1.g)() === el), [w, n.workspaceId, el]);
+                    (0, aY.I)(M && w ? k : void 0), (0, aY.I)(M && eK ? k : void 0);
+                    let eQ = (f || w && eJ) && n.allowComments,
                         {
-                            isPreviewPagePaywall: eK,
-                            isDownloadPagePaywall: eQ
+                            isPreviewPagePaywall: eY,
+                            isDownloadPagePaywall: eX
                         } = (0, g.rz)(),
-                        eY = eK && b === aG.pU.PREVIEWS_HARD_MONETIZATION_PREVIEW_PAGE,
-                        eX = (0, i.useCallback)(() => {
-                            eK && a((0, aG.UK)(aG.pU.PREVIEWS_HARD_MONETIZATION_PREVIEW_PAGE))
-                        }, [a, eK]),
-                        e$ = (0, i.useMemo)(() => Q && n.viewOption !== aK._9.DOWNLOAD_ONLY, [Q, n.viewOption]),
-                        e0 = (0, i.useMemo)(() => n.state === ti.r.PASSWORD_PROTECTED && !K, [n.state, K]),
-                        e1 = (0, i.useMemo)(() => d || A, [d, A]),
+                        e$ = eY && b === aH.pU.PREVIEWS_HARD_MONETIZATION_PREVIEW_PAGE,
+                        e0 = (0, i.useCallback)(() => {
+                            eY && a((0, aH.UK)(aH.pU.PREVIEWS_HARD_MONETIZATION_PREVIEW_PAGE))
+                        }, [a, eY]),
+                        e1 = (0, i.useMemo)(() => Y && n.viewOption !== eU._9.DOWNLOAD_ONLY, [Y, n.viewOption]),
+                        e4 = (0, i.useMemo)(() => n.state === ti.r.PASSWORD_PROTECTED && !Q, [n.state, Q]),
+                        e2 = (0, i.useMemo)(() => d || H, [d, H]),
                         {
-                            selectedItem: e4,
-                            onSelectItem: e2,
-                            onDeselectItem: e8
-                        } = (0, af.m)({
-                            items: k,
-                            isLoading: e1,
-                            allowAutoSelectFromUrl: !eK
+                            selectedItem: e8,
+                            onSelectItem: e6,
+                            onDeselectItem: e7
+                        } = (0, aS.m)({
+                            items: A,
+                            isLoading: e2,
+                            allowAutoSelectFromUrl: !eY
                         });
                     (0, i.useEffect)(() => {
-                        let e = eG.current;
+                        let e = eH.current;
                         if (!e) return;
                         let a = () => {
-                            eA(e.scrollTop > 400)
+                            eG(e.scrollTop > 400)
                         };
                         return e.addEventListener("scroll", a, {
                             passive: !0
                         }), () => {
                             e.removeEventListener("scroll", a)
                         }
-                    }, [e4, e1, em]);
-                    let e6 = (0, i.useCallback)(() => {
+                    }, [e8, e2, ew]);
+                    let e5 = (0, i.useCallback)(() => {
                             var e;
-                            null == (e = eG.current) || e.scrollTo({
+                            null == (e = eH.current) || e.scrollTo({
                                 top: 0,
                                 behavior: "smooth"
                             })
                         }, []),
                         {
-                            notifySender: e7
+                            notifySender: e3
                         } = (0, aM.N)({
-                            transferId: D || ""
+                            transferId: k || ""
                         }),
                         {
-                            isGuestModalOpen: e5,
-                            toggleFavorite: e3,
-                            handleGuestModalClose: e9,
-                            handleGuestModalConfirm: ae,
-                            handleGuestModalSignUp: aa,
-                            canRemoveFavorite: at,
-                            isItemLoading: al
-                        } = (0, aP.r)({
-                            transferId: D || "",
-                            securityHash: z || "",
-                            recipientId: U,
-                            password: K,
-                            currentFileId: null == e4 ? void 0 : e4.id
+                            isGuestModalOpen: e9,
+                            toggleFavorite: ae,
+                            handleGuestModalClose: aa,
+                            handleGuestModalConfirm: at,
+                            handleGuestModalSignUp: al,
+                            canRemoveFavorite: ai,
+                            isItemLoading: ad
+                        } = (0, af.r)({
+                            transferId: k || "",
+                            securityHash: q || "",
+                            recipientId: z,
+                            password: Q,
+                            currentFileId: null == e8 ? void 0 : e8.id
                         });
                     (e => {
                         let {
                             transferId: a,
                             enabled: t
-                        } = e, [l] = (0, aF.DE)(), d = (0, i.useRef)(null), n = (0, i.useCallback)(async () => {
+                        } = e, [l] = (0, aN.DE)(), d = (0, i.useRef)(null), n = (0, i.useCallback)(async () => {
                             if (a && d.current !== a) {
                                 if (!(e => {
                                         try {
-                                            let a = "".concat(aN).concat(e),
+                                            let a = "".concat(aj).concat(e),
                                                 t = sessionStorage.getItem(a);
                                             if (!t) return !0;
                                             let l = parseInt(t, 10);
@@ -4046,7 +4047,7 @@
                                         transferId: a
                                     }).unwrap(), (e => {
                                         try {
-                                            let a = "".concat(aN).concat(e);
+                                            let a = "".concat(aj).concat(e);
                                             sessionStorage.setItem(a, Date.now().toString())
                                         } catch (e) {}
                                     })(a)
@@ -4057,85 +4058,87 @@
                             t && n()
                         }, [t, n])
                     })({
-                        transferId: D || "",
-                        enabled: !e1 && em && e$
+                        transferId: k || "",
+                        enabled: !e2 && ew && e1
                     });
-                    let ai = (0, i.useCallback)(e => {
-                            eB(50), eP(a => [...a, e])
+                    let an = (0, i.useCallback)(e => {
+                            eR(50), ef(a => [...a, e])
                         }, []),
-                        ad = (0, i.useCallback)(e => {
-                            eB(50), eP(e)
+                        ao = (0, i.useCallback)(e => {
+                            eR(50), ef(e)
                         }, []),
-                        an = (0, i.useMemo)(() => (0, G.d9)(k), [k]),
-                        ar = (0, i.useMemo)(() => Q && k.filter(e => !e.isUnavailable).length > 0, [Q, k]);
+                        a_ = (0, i.useMemo)(() => (0, G.d9)(A), [A]),
+                        as = (0, i.useMemo)(() => Y && A.filter(e => !e.isUnavailable).length > 0, [Y, A]);
                     (0, i.useEffect)(() => {
-                        eX()
-                    }, [eX]), (0, i.useEffect)(() => {
-                        eQ && (0, a6.m)(D || "", z || "", U, "")
-                    }, [eQ, D, z, U]), (0, i.useEffect)(() => {
-                        if (e1 || 0 === k.length || eW.current) return;
-                        let e = (0, G.q_)(k);
-                        e && eP([e]), eW.current = !0
-                    }, [k, e1]), (0, i.useEffect)(() => {
-                        if (!e4 || e1) return;
-                        let e = e4.name.split("/");
+                        e0()
+                    }, [e0]), (0, i.useEffect)(() => {
+                        eX && (0, a6.m)(k || "", q || "", z, "")
+                    }, [eX, k, q, z]), (0, i.useEffect)(() => {
+                        if (e2 || 0 === A.length || eq.current) return;
+                        let e = (0, G.q_)(A);
+                        e && ef([e]), eq.current = !0
+                    }, [A, e2]), (0, i.useEffect)(() => {
+                        if (!e8 || e2) return;
+                        let e = e8.name.split("/");
                         if (e.length > 1) {
                             let a = e.slice(0, -1);
-                            a.length === eI.length && a.every((e, a) => e === eI[a]) || eP(a)
-                        } else eI.length > 0 && eP([])
-                    }, [e4, eI, e1]);
-                    let a_ = (0, i.useMemo)(() => {
-                            let e = (0, G.Xl)(an, eI);
-                            return (0, G.Ls)(e, ef)
-                        }, [an, eI, ef]),
-                        as = (0, i.useCallback)(e => {
-                            eH.current && eH.current.scrollHeight > eH.current.clientHeight ? eV.current = {
-                                top: eH.current.scrollTop,
+                            a.length === eP.length && a.every((e, a) => e === eP[a]) || ef(a)
+                        } else eP.length > 0 && ef([])
+                    }, [e8, eP, e2]);
+                    let am = (0, i.useMemo)(() => {
+                            let e = (0, G.Xl)(a_, eP);
+                            return (0, G.Ls)(e, eS)
+                        }, [a_, eP, eS]),
+                        aw = (0, i.useCallback)(e => {
+                            eV.current && eV.current.scrollHeight > eV.current.clientHeight ? eW.current = {
+                                top: eV.current.scrollTop,
                                 element: "grid"
-                            } : eG.current ? eV.current = {
-                                top: eG.current.scrollTop,
+                            } : eH.current ? eW.current = {
+                                top: eH.current.scrollTop,
                                 element: "page"
-                            } : eV.current = {
+                            } : eW.current = {
                                 top: window.scrollY,
                                 element: "window"
-                            }, e2(e)
-                        }, [e2]);
+                            }, e6(e)
+                        }, [e6]);
                     (0, i.useLayoutEffect)(() => {
-                        if (e4) return;
+                        if (e8) return;
                         let {
                             top: e,
                             element: a
-                        } = eV.current;
-                        "grid" === a && eH.current ? eH.current.scrollTo(0, e) : "page" === a && eG.current ? eG.current.scrollTo(0, e) : window.scrollTo(0, e)
-                    }, [e4]), (0, i.useEffect)(() => {
+                        } = eW.current;
+                        "grid" === a && eV.current ? eV.current.scrollTo(0, e) : "page" === a && eH.current ? eH.current.scrollTo(0, e) : window.scrollTo(0, e)
+                    }, [e8]), (0, i.useEffect)(() => {
                         var e;
-                        if (e1 || eu || ex) return;
-                        ec(!0);
-                        let a = Date.now() - ez.current,
+                        if (e2 || eh || ec) return;
+                        ey(!0);
+                        let a = Date.now() - eZ.current,
                             t = new URLSearchParams(window.location.search).get("itemId"),
-                            l = e4 || t ? er.rh.FULL_SCREEN : er.rh.GRID,
-                            i = k.filter(e => !e.isUnavailable).length;
+                            l = e8 || t ? er.rh.FULL_SCREEN : er.rh.GRID,
+                            i = A.filter(e => !e.isUnavailable).length;
                         (0, x.Od)().trackUserAction(er.fh.previewOpened({
-                            transferId: D || "",
-                            isUsingPreviewV2: J,
-                            isPreviewMonetized: eK,
+                            transferId: k || "",
+                            isUsingPreviewV2: K,
+                            isPreviewMonetized: eY,
                             fileCount: null == (e = n.items) ? void 0 : e.length,
                             previewedFileCount: i,
                             renderTimeInMs: a,
                             viewMode: l
-                        })), ec(!1), eh(!0)
-                    }, [eu, e1, ex, J, eK, D, k, null == (e = n.items) ? void 0 : e.length, e4]), (0, i.useEffect)(() => {
-                        if (e1 || ey || !em || Z > 0) return;
-                        let e = Date.now() - ez.current,
-                            a = k.filter(e => !e.isUnavailable).length;
+                        })), ey(!1), ex(!0)
+                    }, [eh, e2, ec, K, eY, k, A, null == (e = n.items) ? void 0 : e.length, e8]), (0, i.useEffect)(() => {
+                        if (e2 || ev || !ew || J > 0) return;
+                        let e = Date.now() - eZ.current,
+                            a = A.filter(e => !e.isUnavailable).length;
                         (0, x.Od)().trackUserAction(er.fh.allPreviewsLoaded({
-                            transferId: D || "",
+                            transferId: k || "",
                             loadTimeInMs: e,
                             previewResolutionSegment: null != O ? O : "default",
+                            previewResolutionUsed: L ? "default" : null != O ? O : "default",
+                            hasWatermark: L,
                             previewableFileCount: a
-                        })), ev(!0)
-                    }, [e1, ey, em, Z, k, D, O]), (0, i.useEffect)(() => {
-                        !D || e1 || !em || !e$ || n.downloaderEmailVerification !== aJ.B.TRACKING && n.downloaderEmailVerification !== aJ.B.RESTRICTED && (e => {
+                        })), eI(!0)
+                    }, [e2, ev, ew, J, A, k, O, L]), (0, i.useEffect)(() => {
+                        !k || e2 || !ew || !e1 || n.downloaderEmailVerification !== aK.B.TRACKING && n.downloaderEmailVerification !== aK.B.RESTRICTED && (e => {
                             try {
                                 let a = sessionStorage.getItem(tr);
                                 if (!a) return !1;
@@ -4143,27 +4146,27 @@
                             } catch (e) {
                                 return !1
                             }
-                        })(D) || (async () => {
-                            await e7(), (e => {
+                        })(k) || (async () => {
+                            await e3(), (e => {
                                 try {
                                     let a = sessionStorage.getItem(tr),
                                         t = a ? JSON.parse(a) : [];
                                     t.includes(e) || (t.push(e), sessionStorage.setItem(tr, JSON.stringify(t)))
                                 } catch (e) {}
-                            })(D)
+                            })(k)
                         })()
-                    }, [D, e1, em, e7, e$, n.downloaderEmailVerification]), (0, i.useEffect)(() => {
-                        d || eg || em || D && z && (eb(!0), a((0, td.A4)({
-                            id: D,
-                            secret: z,
-                            recipientId: U,
-                            password: K,
-                            canScanForMalware: ei
-                        })), eb(!1), ew(!0))
-                    }, [d, ei, a, em, eg, U, z, D, K]), (0, i.useEffect)(() => {
-                        if (!em) return;
-                        n.state === ti.r.EXPIRED && (0, a6.m)(D || "", z || "", U);
-                        let e = (0, td.d5)(D);
+                    }, [k, e2, ew, e3, e1, n.downloaderEmailVerification]), (0, i.useEffect)(() => {
+                        d || eb || ew || k && q && (eu(!0), a((0, td.A4)({
+                            id: k,
+                            secret: q,
+                            recipientId: z,
+                            password: Q,
+                            canScanForMalware: ed
+                        })), eu(!1), eg(!0))
+                    }, [d, ed, a, ew, eb, z, q, k, Q]), (0, i.useEffect)(() => {
+                        if (!ew) return;
+                        n.state === ti.r.EXPIRED && (0, a6.m)(k || "", q || "", z);
+                        let e = (0, td.d5)(k);
                         if (n.state === ti.r.RECOVERING)
                             if (e) {
                                 let e = n.password_protected && !n.password ? ti.r.PASSWORD_PROTECTED : ti.r.DOWNLOADABLE;
@@ -4171,51 +4174,51 @@
                                     type: a3.o1.TRANSFER_SET_STATE,
                                     state: e
                                 })
-                            } else(0, a6.m)(D || "", z || "", U)
-                    }, [a, em, U, z, n.password, n.password_protected, n.state, D, n]), (0, i.useEffect)(() => {
-                        em && (n.state !== ti.r.PASSWORD_PROTECTED || e0 || (0, a6.m)(D || "", z || "", U))
-                    }, [e0, em, U, z, n.state, D]), (0, i.useEffect)(() => {
-                        if (!em || !D) return;
-                        let e = !!(0, a0.TS)(D);
-                        n.paid && !e && (0, a6.m)(D, null != z ? z : "", U)
-                    }, [em, z, n.paid, D, U]), (0, i.useEffect)(() => {
-                        em && D && z && !A && (e$ || (0, a6.m)(D || "", z || "", U))
-                    }, [em, A, e$, U, z, D]);
-                    let am = M && !c.Ay.isMobile && !localStorage.getItem(E.V),
-                        aw = (0, i.useCallback)(() => {
-                            ej(!0)
+                            } else(0, a6.m)(k || "", q || "", z)
+                    }, [a, ew, z, q, n.password, n.password_protected, n.state, k, n]), (0, i.useEffect)(() => {
+                        ew && (n.state !== ti.r.PASSWORD_PROTECTED || e4 || (0, a6.m)(k || "", q || "", z))
+                    }, [e4, ew, z, q, n.state, k]), (0, i.useEffect)(() => {
+                        if (!ew || !k) return;
+                        let e = !!(0, a0.TS)(k);
+                        n.paid && !e && (0, a6.m)(k, null != q ? q : "", z)
+                    }, [ew, q, n.paid, k, z]), (0, i.useEffect)(() => {
+                        ew && k && q && !H && (e1 || (0, a6.m)(k || "", q || "", z))
+                    }, [ew, H, e1, z, q, k]);
+                    let ag = S && !c.Ay.isMobile && !localStorage.getItem(E.V),
+                        au = (0, i.useCallback)(() => {
+                            eT(!0)
                         }, []),
-                        ab = (0, i.useCallback)(() => {
+                        ah = (0, i.useCallback)(() => {
                             (0, x.Od)().trackUserAction(er.fh.titleEditCancelled({
-                                transferId: D || ""
-                            })), ej(!1)
-                        }, [D]),
-                        au = (0, i.useCallback)(async e => {
+                                transferId: k || ""
+                            })), eT(!1)
+                        }, [k]),
+                        ap = (0, i.useCallback)(async e => {
                             let a = X.A.stripHtmlTags(e.trim());
                             try {
-                                await eO({
-                                    id: D || "",
+                                await eL({
+                                    id: k || "",
                                     displayName: a
-                                }), eE(a), ej(!1), (0, x.Od)().trackUserAction(er.fh.titleEditSaved({
-                                    transferId: D || ""
+                                }), eO(a), eT(!1), (0, x.Od)().trackUserAction(er.fh.titleEditSaved({
+                                    transferId: k || ""
                                 }))
                             } catch (e) {
                                 throw e
                             }
-                        }, [eO, D]),
-                        ah = (0, i.useCallback)(() => {
-                            D && a((0, aX.VK)(a$.$.previews, D))
-                        }, [a, D]),
-                        ap = (0, i.useCallback)(() => {
-                            eo(!0), a({
+                        }, [eL, k]),
+                        ax = (0, i.useCallback)(() => {
+                            k && a((0, aX.VK)(a$.$.previews, k))
+                        }, [a, k]),
+                        ac = (0, i.useCallback)(() => {
+                            em(!0), a({
                                 type: a3.o1.TRANSFER_STATE_DOWNLOAD_STARTING
-                            }), (0, x.Od)().trackUserAction(aZ.Sf.downloadRequested({
-                                location: aZ.Cx.PREVIEW_PAGE,
-                                downloadType: aZ.zh.ALL_FILES
-                            })), am && !b && a((0, aG.UK)(aG.pU.WE_TRANSFER_SIGN)), a((0, td.F4)({
+                            }), (0, x.Od)().trackUserAction(aJ.Sf.downloadRequested({
+                                location: aJ.Cx.PREVIEW_PAGE,
+                                downloadType: aJ.zh.ALL_FILES
+                            })), ag && !b && a((0, aH.UK)(aH.pU.WE_TRANSFER_SIGN)), a((0, td.F4)({
                                 transfer: n,
-                                secret: z,
-                                recipientId: null != U && U,
+                                secret: q,
+                                recipientId: null != z && z,
                                 domainUserId: o.domainUserId,
                                 uploadInProgress: !1,
                                 transferGroup: aQ.a.RECEIVED,
@@ -4223,215 +4226,215 @@
                                 isFromQRCode: !1,
                                 fromPreviewPage: !0
                             }))
-                        }, [am, b, a, m, U, z, o.domainUserId, n]),
-                        ax = (0, i.useCallback)(() => {
+                        }, [ag, b, a, m, z, q, o.domainUserId, n]),
+                        ay = (0, i.useCallback)(() => {
                             (0, x.Od)().trackUserAction(er.fh.backToTransferClicked({
-                                transferId: D || "",
-                                isPreviewMonetized: eK
-                            })), F ? (0, a6.m)(D || "", z || "", U) : window.history.back()
-                        }, [D, eK, F, z, U]),
-                        ac = (0, i.useCallback)(e => {
-                            (0, x.Od)().trackUserAction(aZ.Sf.downloadRequested({
-                                location: aZ.Cx.PREVIEW_PAGE,
-                                downloadType: aZ.zh.SINGLE_FILE
-                            })), am && !b && a((0, aG.UK)(aG.pU.WE_TRANSFER_SIGN)), a((0, td.Vv)({
+                                transferId: k || "",
+                                isPreviewMonetized: eY
+                            })), F ? (0, a6.m)(k || "", q || "", z) : window.history.back()
+                        }, [k, eY, F, q, z]),
+                        aC = (0, i.useCallback)(e => {
+                            (0, x.Od)().trackUserAction(aJ.Sf.downloadRequested({
+                                location: aJ.Cx.PREVIEW_PAGE,
+                                downloadType: aJ.zh.SINGLE_FILE
+                            })), ag && !b && a((0, aH.UK)(aH.pU.WE_TRANSFER_SIGN)), a((0, td.Vv)({
                                 transfer: n,
-                                secret: z,
-                                recipientId: null != U && U,
+                                secret: q,
+                                recipientId: null != z && z,
                                 items: n.items,
                                 fileId: e,
                                 domainUserId: o.domainUserId,
                                 uploadInProgress: !1,
                                 transferGroup: aQ.a.RECEIVED,
                                 orionClient: m,
-                                malwareProtectionStatus: el,
+                                malwareProtectionStatus: ei,
                                 isFromQRCode: !1,
                                 fromPreviewPage: !0
                             }))
-                        }, [b, a, el, m, U, z, o.domainUserId, n, am]),
-                        av = (0, i.useRef)(null),
-                        aC = (0, i.useMemo)(() => a_.filter(e => !(0, G.mf)(e)), [a_]),
-                        aB = (0, i.useMemo)(() => e4 ? aC.findIndex(e => e.id === e4.id) : 0, [aC, e4]),
-                        aR = (0, i.useCallback)(() => {
-                            if (!e4 || 0 === aC.length) return;
-                            let e = (aC.findIndex(e => e.id === e4.id) + 1) % aC.length,
-                                a = aC[e];
-                            return e2(a), a.id
-                        }, [e4, aC, e2]),
-                        aD = (0, i.useCallback)(() => {
-                            if (!e4 || 0 === aC.length) return;
-                            let e = (aC.findIndex(e => e.id === e4.id) - 1 + aC.length) % aC.length,
-                                a = aC[e];
-                            return e2(a), a.id
-                        }, [e4, aC, e2]),
-                        ak = (0, i.useCallback)(e => {
+                        }, [b, a, ei, m, z, q, o.domainUserId, n, ag]),
+                        aI = (0, i.useRef)(null),
+                        aR = (0, i.useMemo)(() => am.filter(e => !(0, G.mf)(e)), [am]),
+                        aD = (0, i.useMemo)(() => e8 ? aR.findIndex(e => e.id === e8.id) : 0, [aR, e8]),
+                        ak = (0, i.useCallback)(() => {
+                            if (!e8 || 0 === aR.length) return;
+                            let e = (aR.findIndex(e => e.id === e8.id) + 1) % aR.length,
+                                a = aR[e];
+                            return e6(a), a.id
+                        }, [e8, aR, e6]),
+                        aA = (0, i.useCallback)(() => {
+                            if (!e8 || 0 === aR.length) return;
+                            let e = (aR.findIndex(e => e.id === e8.id) - 1 + aR.length) % aR.length,
+                                a = aR[e];
+                            return e6(a), a.id
+                        }, [e8, aR, e6]),
+                        aG = (0, i.useCallback)(e => {
                             var a, t;
-                            if ((0, G.mf)(e)) return void ai(e.name);
+                            if ((0, G.mf)(e)) return void an(e.name);
                             (0, x.Od)().trackUserAction(er.fh.previewFileClicked({
-                                transferId: D || "",
+                                transferId: k || "",
                                 fileId: e.id,
                                 fileType: null != (t = null == (a = e.preview) ? void 0 : a.fileType) ? t : "",
-                                isPreviewMonetized: eK
-                            })), eK ? eX() : as(e)
-                        }, [as, ai, eK, eX, D]),
-                        aA = (0, i.useCallback)(e => {
-                            e !== eS && ((0, x.Od)().trackUserAction(er.fh.viewModeSelected({
-                                transferId: D || "",
+                                isPreviewMonetized: eY
+                            })), eY ? e0() : aw(e)
+                        }, [aw, an, eY, e0, k]),
+                        aV = (0, i.useCallback)(e => {
+                            e !== eF && ((0, x.Od)().trackUserAction(er.fh.viewModeSelected({
+                                transferId: k || "",
                                 viewMode: e
-                            })), eB(50), eF(e))
-                        }, [D, eS]);
-                    return e1 || !em ? (0, l.jsx)("div", {
+                            })), eR(50), eN(e))
+                        }, [k, eF]);
+                    return e2 || !ew ? (0, l.jsx)("div", {
                         className: to().loadingContainer,
                         children: (0, l.jsx)(T.y, {
                             size: "large",
                             appearance: "neutral",
                             mode: "dark"
                         })
-                    }) : e$ ? e0 ? (0, l.jsx)(ay, {
-                        transferId: D || "",
-                        secret: z || "",
-                        recipientId: U
+                    }) : e1 ? e4 ? (0, l.jsx)(av, {
+                        transferId: k || "",
+                        secret: q || "",
+                        recipientId: z
                     }) : (0, l.jsxs)(l.Fragment, {
-                        children: [eY && (0, l.jsx)(aW, {}), e4 ? (0, l.jsxs)(l.Fragment, {
-                            children: [(0, l.jsx)(ao, {
-                                item: e4,
-                                transferId: D || "",
-                                securityHash: z || "",
-                                recipientId: U,
-                                password: K,
-                                currentIndex: aB,
-                                totalCount: aC.length,
-                                onDownload: ac,
+                        children: [e$ && (0, l.jsx)(az, {}), e8 ? (0, l.jsxs)(l.Fragment, {
+                            children: [(0, l.jsx)(ar, {
+                                item: e8,
+                                transferId: k || "",
+                                securityHash: q || "",
+                                recipientId: z,
+                                password: Q,
+                                currentIndex: aD,
+                                totalCount: aR.length,
+                                onDownload: aC,
                                 onClose: () => {
                                     (0, x.Od)().trackUserAction(er.fh.previewFileClosed({
-                                        transferId: D || "",
-                                        fileId: e4.id
-                                    })), e8()
+                                        transferId: k || "",
+                                        fileId: e8.id
+                                    })), e7()
                                 },
                                 onNext: () => {
-                                    let e = aR();
+                                    let e = ak();
                                     (0, x.Od)().trackUserAction(er.fh.previewFileNextClicked({
-                                        transferId: D || "",
-                                        fileId: e4.id,
+                                        transferId: k || "",
+                                        fileId: e8.id,
                                         nextFileId: null != e ? e : ""
                                     }))
                                 },
                                 onPrevious: () => {
-                                    let e = aD();
+                                    let e = aA();
                                     (0, x.Od)().trackUserAction(er.fh.previewFilePreviousClicked({
-                                        transferId: D || "",
-                                        fileId: e4.id,
+                                        transferId: k || "",
+                                        fileId: e8.id,
                                         nextFileId: null != e ? e : ""
                                     }))
                                 },
-                                isPreviewOnly: R,
+                                isPreviewOnly: D,
                                 viewOption: n.viewOption,
-                                hasAvailablePreviewItems: ar,
-                                showComments: eJ,
-                                onToggleFavorite: e3,
-                                canRemoveFavorite: at,
-                                isFavoriteLoading: al,
-                                isTransferOwner: eZ
+                                hasAvailablePreviewItems: as,
+                                showComments: eQ,
+                                onToggleFavorite: ae,
+                                canRemoveFavorite: ai,
+                                isFavoriteLoading: ad,
+                                isTransferOwner: eK
                             }), (0, l.jsx)(eC, {
-                                isOpen: e5,
-                                onClose: e9,
-                                onConfirm: ae,
-                                onSignUp: aa,
+                                isOpen: e9,
+                                onClose: aa,
+                                onConfirm: at,
+                                onSignUp: al,
                                 isFavorites: !0
                             })]
                         }) : (0, l.jsxs)("div", {
-                            ref: eG,
+                            ref: eH,
                             className: to().page,
                             children: [(0, l.jsxs)(l.Fragment, {
                                 children: [(0, l.jsx)(ep, {
                                     transferId: n.id || "",
-                                    transferTitle: eT,
-                                    transferMessage: ea,
+                                    transferTitle: eE,
+                                    transferMessage: et,
                                     transferExpiryInSeconds: n.expiryInSeconds,
-                                    itemsCount: k.length,
-                                    isDownloading: ed,
-                                    onBackToTransfer: ax,
-                                    onDownload: ap,
-                                    isPreviewOnly: R,
+                                    itemsCount: A.length,
+                                    isDownloading: eo,
+                                    onBackToTransfer: ay,
+                                    onDownload: ac,
+                                    isPreviewOnly: D,
                                     viewOption: n.viewOption,
-                                    hasAvailablePreviewItems: ar,
-                                    brandingWallpapers: S ? $ : void 0,
-                                    brandingBackgroundColor: S ? ee : void 0,
-                                    isTransferOwner: eZ,
-                                    isEditingTitle: eN,
-                                    onEditTitleStart: aw,
-                                    onEditTitleSave: au,
-                                    onEditTitleCancel: ab,
-                                    onEditImageStart: ah
-                                }), !e1 && em && (0, l.jsxs)(l.Fragment, {
+                                    hasAvailablePreviewItems: as,
+                                    brandingWallpapers: M ? ee : void 0,
+                                    brandingBackgroundColor: M ? ea : void 0,
+                                    isTransferOwner: eK,
+                                    isEditingTitle: ej,
+                                    onEditTitleStart: au,
+                                    onEditTitleSave: ap,
+                                    onEditTitleCancel: ah,
+                                    onEditImageStart: ax
+                                }), !e2 && ew && (0, l.jsxs)(l.Fragment, {
                                     children: [(0, l.jsxs)("div", {
                                         className: N()(to().toolbar, {
-                                            [to().toolbarWithBreadcrumbs]: eI.length > 0
+                                            [to().toolbarWithBreadcrumbs]: eP.length > 0
                                         }),
                                         children: [(0, l.jsx)(B, {
-                                            currentPath: eI,
-                                            onNavigate: ad
+                                            currentPath: eP,
+                                            onNavigate: ao
                                         }), (0, l.jsxs)("div", {
                                             className: to().toolbarControls,
-                                            children: [(0, l.jsx)(aI, {
-                                                value: ef,
-                                                onChange: eR
+                                            children: [(0, l.jsx)(aP, {
+                                                value: eS,
+                                                onChange: eD
                                             }), (0, l.jsx)("button", {
                                                 className: N()(to().iconButton, {
-                                                    [to().iconButtonActive]: eS === e_.qi.GRID
+                                                    [to().iconButtonActive]: eF === e_.qi.GRID
                                                 }),
-                                                onClick: () => aA(e_.qi.GRID),
+                                                onClick: () => aV(e_.qi.GRID),
                                                 "aria-label": "Grid view",
                                                 children: (0, l.jsx)(s.WhD, {})
                                             }), (0, l.jsx)("button", {
                                                 className: N()(to().iconButton, {
-                                                    [to().iconButtonActive]: eS === e_.qi.LIST
+                                                    [to().iconButtonActive]: eF === e_.qi.LIST
                                                 }),
-                                                onClick: () => aA(e_.qi.LIST),
+                                                onClick: () => aV(e_.qi.LIST),
                                                 "aria-label": "List view",
                                                 children: (0, l.jsx)(s.YVe, {})
                                             })]
                                         })]
                                     }), (0, l.jsx)("div", {
                                         className: N()(to().gridContainer, {
-                                            [to().gridContainerWithProcessing]: Z > 0
+                                            [to().gridContainerWithProcessing]: J > 0
                                         }),
-                                        ref: eH,
-                                        children: eS === e_.qi.GRID ? (0, l.jsx)(en, {
-                                            onSelectItem: ak,
-                                            onDownloadItem: ac,
-                                            onToggleFavorite: e3,
-                                            canRemoveFavorite: at,
-                                            isFavoriteLoading: al,
-                                            items: a_,
-                                            isPreviewOnly: R,
-                                            showComments: eJ,
-                                            shouldBlurThumbnails: eK,
-                                            visibleCount: eL,
-                                            onVisibleCountChange: eB
-                                        }) : (0, l.jsx)(ag, {
-                                            onSelectItem: ak,
-                                            onDownloadItem: ac,
-                                            onToggleFavorite: e3,
-                                            canRemoveFavorite: at,
-                                            isFavoriteLoading: al,
-                                            items: a_,
-                                            isPreviewOnly: R,
-                                            showComments: eJ,
-                                            shouldBlurThumbnails: eK,
-                                            visibleCount: eL,
-                                            onVisibleCountChange: eB
+                                        ref: eV,
+                                        children: eF === e_.qi.GRID ? (0, l.jsx)(en, {
+                                            onSelectItem: aG,
+                                            onDownloadItem: aC,
+                                            onToggleFavorite: ae,
+                                            canRemoveFavorite: ai,
+                                            isFavoriteLoading: ad,
+                                            items: am,
+                                            isPreviewOnly: D,
+                                            showComments: eQ,
+                                            shouldBlurThumbnails: eY,
+                                            visibleCount: eB,
+                                            onVisibleCountChange: eR
+                                        }) : (0, l.jsx)(ab, {
+                                            onSelectItem: aG,
+                                            onDownloadItem: aC,
+                                            onToggleFavorite: ae,
+                                            canRemoveFavorite: ai,
+                                            isFavoriteLoading: ad,
+                                            items: am,
+                                            isPreviewOnly: D,
+                                            showComments: eQ,
+                                            shouldBlurThumbnails: eY,
+                                            visibleCount: eB,
+                                            onVisibleCountChange: eR
                                         })
-                                    }), eL >= a_.length && (0, l.jsx)("div", {
+                                    }), eB >= am.length && (0, l.jsx)("div", {
                                         className: to().reportTransferContainer,
-                                        children: (0, l.jsx)(aq.A, {
+                                        children: (0, l.jsx)(aZ.A, {
                                             customClassName: "report__transfer--preview",
-                                            publicId: D || void 0
+                                            publicId: k || void 0
                                         })
                                     })]
                                 }), (0, l.jsx)(j.A, {
-                                    nodeRef: av,
-                                    in: Z > 0,
+                                    nodeRef: aI,
+                                    in: J > 0,
                                     timeout: 300,
                                     classNames: {
                                         enter: to().processingEnter,
@@ -4443,24 +4446,24 @@
                                     },
                                     unmountOnExit: !0,
                                     children: (0, l.jsxs)("div", {
-                                        ref: av,
+                                        ref: aI,
                                         className: to().processingCount,
                                         children: [(0, l.jsx)(T.y, {
                                             size: "large",
                                             appearance: "neutral"
-                                        }), q, "/", k.length, " —", " ", t("preview.processing")]
+                                        }), Z, "/", A.length, " —", " ", t("preview.processing")]
                                     })
                                 }), (0, l.jsx)(eC, {
-                                    isOpen: e5,
-                                    onClose: e9,
-                                    onConfirm: ae,
-                                    onSignUp: aa,
+                                    isOpen: e9,
+                                    onClose: aa,
+                                    onConfirm: at,
+                                    onSignUp: al,
                                     isFavorites: !0
                                 })]
-                            }), ek && (0, l.jsx)(_.K, {
-                                ref: eU,
+                            }), eA && (0, l.jsx)(_.K, {
+                                ref: ez,
                                 className: to().scrollToTopButton,
-                                onClick: e6,
+                                onClick: e5,
                                 variation: "neutral",
                                 "aria-label": "Scroll to top",
                                 icon: s.Pq0
@@ -5930,4 +5933,4 @@
         }
     }
 ]);
-//# sourceMappingURL=preview.a96cae9fb3b771bc.js.map
+//# sourceMappingURL=preview.d7574585b05ea8c9.js.map
