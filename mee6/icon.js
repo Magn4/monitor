@@ -1,1167 +1,8648 @@
 import {
-    al as e,
-    am as t,
-    an as s,
-    C as l,
-    ao as r,
-    ap as o,
-    aq as L,
-    D as i,
-    p as a,
-    v as n,
-    w as c,
-    a as h,
-    ar as C,
-    as as d,
-    at as M,
-    au as p,
-    G as k,
-    av as Z,
-    aw as x,
-    ax as w,
-    X as m,
-    ay as v,
-    az as j,
-    aA as f,
-    aB as z,
-    aC as u,
-    aD as g,
-    aE as V,
-    aF as H,
-    aG as W,
-    aH as B,
-    S as R,
-    af as A,
-    aI as D,
-    aJ as F,
-    aK as y,
-    aL as E,
-    aM as P,
-    aN as S,
-    aO as T,
-    aj as _,
-    aP as G
-} from "./app-91bc7f76.js";
+    j as l,
+    P as i,
+    cw as a,
+    bq as t,
+    W as s
+} from "./index-75d73738.js";
 import {
-    A as N
-} from "./award-2bab3f62.js";
+    s as n,
+    A as e,
+    L as r
+} from "./Loader2-aadfe498.js";
 import {
-    A as O,
-    a as b,
-    E as I,
-    F as U,
-    S as J,
-    b as X,
-    T as K,
-    V as q
-} from "./edit-03c87f9a.js";
-import {
-    C as Q,
-    W as $
-} from "./warning-65941f11.js";
-import {
-    C as Y
-} from "./clock-8e1d59d0.js";
-import {
-    a as ee,
-    C as te
-} from "./modal.constants-e7a21a8a.js";
-import {
-    L as se
-} from "./lock-a994fee8.js";
-import {
-    M as le
-} from "./minus-d147ba3c.js";
-import {
-    j as re
-} from "./index-684a1b71.js";
-import {
-    S as oe,
-    W as Le
-} from "./wallet-b9b43863.js";
-import {
-    T as ie
-} from "./trash-c8acbec7.js";
-import {
-    N as ae
-} from "./nft_check-f97d110c.js";
-import {
-    P as ne,
-    a as ce
-} from "./plus-8f99844e.js";
-import {
-    T as he
-} from "./twitter-03834edd.js";
-import {
-    A as Ce
-} from "./arrow-92dd685d.js";
-import {
-    D as de,
-    a as Me
-} from "./discord_verified-45963170.js";
-import {
-    C as pe
-} from "./collapse-ed10eaef.js";
-const ke = ({
-        stroke: e = "currentColor",
-        fill: t = "transparent",
-        ...s
-    }) => re.jsxs("svg", {
+    m as h,
+    p as d
+} from "./mixins-1c1f239e.js";
+
+function o(i) {
+    return l.jsxs("svg", {
+        ...i,
+        xmlns: "http://www.w3.org/2000/svg",
+        width: "40",
+        height: "40",
+        fill: "none",
+        viewBox: "0 0 40 40",
+        children: [l.jsx("path", {
+            fill: "#60D1F6",
+            d: "M20 40c11.046 0 20-8.954 20-20S31.046 0 20 0 0 8.954 0 20s8.954 20 20 20z"
+        }), l.jsx("path", {
+            fill: "#17181E",
+            fillRule: "evenodd",
+            d: "M13.636 25.394c1.85-.538 4.03-.848 6.365-.848 2.333 0 4.512.31 6.363.847-.472 3.123-3.141 5.516-6.364 5.516s-5.893-2.393-6.364-5.515z",
+            clipRule: "evenodd"
+        }), l.jsx("mask", {
+            id: "mask0",
+            width: "14",
+            height: "7",
+            x: "13",
+            y: "24",
+            maskUnits: "userSpaceOnUse",
+            children: l.jsx("path", {
+                fill: "#fff",
+                fillRule: "evenodd",
+                d: "M13.636 25.394c1.85-.538 4.03-.848 6.365-.848 2.333 0 4.512.31 6.363.847-.472 3.123-3.141 5.516-6.364 5.516s-5.893-2.393-6.364-5.515z",
+                clipRule: "evenodd"
+            })
+        }), l.jsx("g", {
+            mask: "url(#mask0)",
+            children: l.jsx("path", {
+                fill: "#F90043",
+                d: "M20 35.151c2.929 0 5.303-1.662 5.303-3.712 0-2.05-2.374-3.712-5.303-3.712s-5.303 1.662-5.303 3.712c0 2.05 2.374 3.712 5.303 3.712z"
+            })
+        }), l.jsx("path", {
+            fill: "#17181E",
+            d: "M13.182 18.182a2.273 2.273 0 100-4.546 2.273 2.273 0 000 4.546zM26.818 18.182a2.273 2.273 0 100-4.546 2.273 2.273 0 000 4.546z"
+        })]
+    })
+}
+
+function C(i) {
+    return l.jsxs("svg", {
+        width: "40",
+        height: "40",
+        viewBox: "0 0 40 40",
+        fill: "none",
+        xmlns: "http://www.w3.org/2000/svg",
+        ...i,
+        children: [l.jsx("circle", {
+            cx: "20",
+            cy: "20",
+            r: "20",
+            fill: "#88BFFF"
+        }), l.jsx("path", {
+            d: "M17.5 15L22.5 20L17.5 25",
+            stroke: "#F2F4FB",
+            strokeWidth: "1.5",
+            strokeLinecap: "round",
+            strokeLinejoin: "round"
+        })]
+    })
+}
+
+function c(i) {
+    return l.jsxs("svg", {
         width: 24,
         height: 24,
         viewBox: "0 0 24 24",
         fill: "none",
         xmlns: "http://www.w3.org/2000/svg",
-        ...s,
-        children: [re.jsx("circle", {
-            cx: "12",
-            cy: "12",
-            r: "12",
-            fill: "#FDB766"
-        }), re.jsx("path", {
-            d: "M6.23525 9.96695C6.66958 8.11534 8.11534 6.66958 9.96696 6.23525C11.3042 5.92158 12.6958 5.92158 14.033 6.23525C15.8847 6.66958 17.3304 8.11534 17.7647 9.96696C18.0784 11.3042 18.0784 12.6958 17.7647 14.033C17.3304 15.8847 15.8847 17.3304 14.033 17.7648C12.6958 18.0784 11.3042 18.0784 9.96696 17.7647C8.11534 17.3304 6.66958 15.8847 6.23525 14.033C5.92158 12.6958 5.92158 11.3042 6.23525 9.96695Z",
-            stroke: "#5E3C14",
-            strokeWidth: "1.5"
-        }), re.jsx("path", {
-            d: "M13.6668 13.6667L11.7744 12.4626V10",
-            stroke: "#5E3C14",
-            strokeWidth: "1.5",
-            strokeLinecap: "round",
-            strokeLinejoin: "round"
+        ...i,
+        children: [l.jsx("path", {
+            d: "M3.353 8.95A7.511 7.511 0 018.95 3.353c2.006-.47 4.094-.47 6.1 0a7.511 7.511 0 015.597 5.597c.47 2.006.47 4.094 0 6.1a7.511 7.511 0 01-5.597 5.597c-2.006.47-4.094.47-6.1 0a7.511 7.511 0 01-5.597-5.597 13.354 13.354 0 010-6.1z",
+            fill: i.secondary,
+            "data-fill": "secondary",
+            stroke: i.main,
+            "data-stroke": "main",
+            strokeWidth: 1.5
+        }), l.jsx("path", {
+            d: "M14.5 12h-5m2.5 2.5v-5",
+            stroke: i.main,
+            "data-stroke": "main",
+            strokeWidth: 1.5,
+            strokeLinecap: "round"
         })]
-    }),
-    Ze = ({
-        stroke: e = "currentColor",
-        fill: t = "transparent",
-        ...s
-    }) => re.jsxs("svg", {
+    })
+}
+
+function p(i) {
+    return l.jsxs("svg", {
         width: 24,
         height: 24,
         viewBox: "0 0 24 24",
         fill: "none",
         xmlns: "http://www.w3.org/2000/svg",
-        ...s,
-        children: [re.jsx("circle", {
-            cx: "12",
-            cy: "12",
-            r: "12",
-            fill: "#63F58C"
-        }), re.jsx("path", {
-            d: "M16 8.66675L10.2857 15.3334L8 12.6667",
-            stroke: "#1C4E2A",
-            strokeWidth: "1.5",
+        ...i,
+        children: [l.jsx("path", {
+            d: "M17.88 18.6a2.4 2.4 0 11-4.8 0 2.4 2.4 0 014.8 0zM9.48 12a2.4 2.4 0 11-4.8 0 2.4 2.4 0 014.8 0zM17.88 5.4a2.4 2.4 0 11-4.8 0 2.4 2.4 0 014.8 0z",
+            fill: i.secondary,
+            "data-fill": "secondary"
+        }), l.jsx("path", {
+            d: "M18.48 18.537H21M4.68 12L3 12.044M4.68 12a2.4 2.4 0 104.8 0 2.4 2.4 0 00-4.8 0zm5.489.044H21m-8.199-6.493H3m18 0h-2.52M3 18.537h9.801m5.079.063a2.4 2.4 0 11-4.8 0 2.4 2.4 0 014.8 0zm0-13.2a2.4 2.4 0 11-4.8 0 2.4 2.4 0 014.8 0z",
+            stroke: i.main,
+            "data-stroke": "main",
+            strokeWidth: 1.5,
+            strokeLinecap: "round"
+        })]
+    })
+}
+
+function x(i) {
+    return l.jsx("svg", {
+        width: 24,
+        height: 24,
+        viewBox: "0 0 24 24",
+        fill: "none",
+        xmlns: "http://www.w3.org/2000/svg",
+        ...i,
+        children: l.jsx("path", {
+            d: "M12 6.5v11m0 0l4-4.588M12 17.5l-4-4.588",
+            stroke: i.main,
+            "data-stroke": "main",
+            strokeWidth: 1.5,
+            strokeLinecap: "round",
+            strokeLinejoin: "round"
+        })
+    })
+}
+
+function f(i) {
+    return l.jsx("svg", {
+        width: 24,
+        height: 24,
+        viewBox: "0 0 24 24",
+        fill: "none",
+        xmlns: "http://www.w3.org/2000/svg",
+        ...i,
+        children: l.jsx("path", {
+            d: "M17.5 12h-11m0 0l4.588 4M6.5 12l4.588-4",
+            stroke: i.main,
+            "data-stroke": "main",
+            strokeWidth: 1.5,
+            strokeLinecap: "round",
+            strokeLinejoin: "round"
+        })
+    })
+}
+
+function m(i) {
+    return l.jsx("svg", {
+        width: 24,
+        height: 24,
+        viewBox: "0 0 24 24",
+        fill: "none",
+        xmlns: "http://www.w3.org/2000/svg",
+        ...i,
+        children: l.jsx("path", {
+            d: "M6.5 12h11m0 0l-4.588-4m4.588 4l-4.588 4",
+            stroke: i.main,
+            "data-stroke": "main",
+            strokeWidth: 1.5,
+            strokeLinecap: "round",
+            strokeLinejoin: "round"
+        })
+    })
+}
+
+function j(i) {
+    return l.jsx("svg", {
+        width: 24,
+        height: 24,
+        viewBox: "0 0 24 24",
+        fill: "none",
+        xmlns: "http://www.w3.org/2000/svg",
+        ...i,
+        children: l.jsx("path", {
+            d: "M12 17.5v-11m0 0l-4 4.588M12 6.5l4 4.588",
+            stroke: i.main,
+            "data-stroke": "main",
+            strokeWidth: 1.5,
+            strokeLinecap: "round",
+            strokeLinejoin: "round"
+        })
+    })
+}
+
+function w(i) {
+    return l.jsxs("svg", {
+        width: 24,
+        height: 24,
+        viewBox: "0 0 24 24",
+        fill: "none",
+        xmlns: "http://www.w3.org/2000/svg",
+        ...i,
+        children: [l.jsx("path", {
+            d: "M10.72 20H7.747a.758.758 0 01-.727-.933L8.745 14H12v4.667c0 .746-.575 1.333-1.28 1.333zM13.28 20h2.973a.758.758 0 00.727-.933L15.255 14H12v4.667c0 .746.575 1.333 1.28 1.333z",
+            stroke: i.main,
+            "data-stroke": "main",
+            strokeWidth: 1.5,
+            strokeLinecap: "round",
+            strokeLinejoin: "round"
+        }), l.jsx("path", {
+            d: "M12 14a5 5 0 100-10 5 5 0 000 10z",
+            fill: i.main,
+            "data-fill": "main",
+            stroke: i.main,
+            "data-stroke": "main",
+            strokeWidth: 1.5,
+            strokeLinecap: "round",
+            strokeLinejoin: "round",
+            fillOpacity: .16
+        })]
+    })
+}
+
+function M(i) {
+    return l.jsxs("svg", {
+        width: 24,
+        height: 24,
+        fill: "none",
+        xmlns: "http://www.w3.org/2000/svg",
+        viewBox: "0 0 24 24",
+        ...i,
+        children: [l.jsx("path", {
+            d: "M12 20.5a8.5 8.5 0 100-17 8.5 8.5 0 000 17z",
+            fill: i.main,
+            "data-fill": "main",
+            fillOpacity: .16,
+            stroke: i.main,
+            "data-stroke": "main",
+            strokeWidth: 1.5,
+            strokeLinecap: "round",
+            strokeLinejoin: "round"
+        }), l.jsx("path", {
+            d: "M8.5 11.7a1.5 1.5 0 100-3 1.5 1.5 0 000 3zM15.5 11.7a1.5 1.5 0 100-3 1.5 1.5 0 000 3zM15 14.66a3 3 0 01-5.82 1 2.77 2.77 0 01-.18-1 1 1 0 011-1h4a1 1 0 011 1z",
+            fill: i.main,
+            "data-fill": "main"
+        })]
+    })
+}
+
+function g(i) {
+    return l.jsxs("svg", {
+        width: 24,
+        height: 24,
+        viewBox: "0 0 24 24",
+        fill: "none",
+        xmlns: "http://www.w3.org/2000/svg",
+        ...i,
+        children: [l.jsx("path", {
+            d: "M3.833 9.353c.616-2.684 2.664-4.78 5.287-5.41a12.33 12.33 0 015.76 0c2.623.63 4.671 2.726 5.287 5.41a13.2 13.2 0 010 5.896c-.616 2.684-2.664 4.78-5.287 5.41a12.33 12.33 0 01-5.76 0c-2.623-.63-4.671-2.726-5.287-5.41a13.202 13.202 0 010-5.896z",
+            fill: i.secondary,
+            "data-fill": "secondary"
+        }), l.jsx("path", {
+            d: "M3.833 15.248l.731-.167-.73.168zm0-5.895l.731.168-.73-.168zm16.334 0l-.731.168.73-.168zm0 5.896l-.731-.168.73.168zm-5.287 5.41l.175.73-.175-.73zm-5.76 0l.175-.73-.175.73zm0-16.716l.175.73-.175-.73zm5.76 0l.175-.73-.175.73zM8.82 3a.75.75 0 00-1.5 0h1.5zm-1.5 2.514a.75.75 0 001.5 0h-1.5zM16.68 3a.75.75 0 00-1.5 0h1.5zm-1.5 2.514a.75.75 0 001.5 0h-1.5zM4.564 15.08a12.452 12.452 0 010-5.56l-1.462-.335a13.952 13.952 0 000 6.23l1.462-.335zm14.872-5.56c.419 1.828.419 3.731 0 5.56l1.462.335c.47-2.049.47-4.181 0-6.23l-1.462.335zm-4.73 10.409a11.58 11.58 0 01-5.411 0l-.35 1.458a13.08 13.08 0 006.11 0l-.35-1.458zM9.294 4.672c1.78-.427 3.63-.427 5.41 0l.35-1.458a13.08 13.08 0 00-6.11 0l.35 1.458zm0 15.258c-2.339-.562-4.177-2.435-4.73-4.85l-1.463.336c.677 2.955 2.935 5.274 5.843 5.972l.35-1.458zm5.76 1.458c2.908-.698 5.166-3.017 5.843-5.972l-1.462-.335c-.554 2.414-2.392 4.287-4.73 4.849l.35 1.458zm-.35-16.716c2.339.562 4.177 2.434 4.73 4.849l1.463-.335c-.677-2.955-2.935-5.275-5.843-5.972l-.35 1.458zm-5.76-1.458C6.037 3.91 3.779 6.23 3.102 9.186l1.462.335c.554-2.415 2.392-4.287 4.73-4.849l-.35-1.458zM4.14 9.029h15.72v-1.5H4.14v1.5zM7.32 3v2.514h1.5V3h-1.5zm7.86 0v2.514h1.5V3h-1.5zM13.442 13.924c.405-.288.657-.72.657-1.305 0-1.215-.936-1.845-2.043-1.845-1.107 0-2.052.63-2.052 1.845 0 .585.26 1.017.657 1.305a1.74 1.74 0 00-.864 1.521c0 1.161.855 1.881 2.259 1.881 1.395 0 2.259-.72 2.259-1.881a1.73 1.73 0 00-.873-1.521zm-1.386-1.98c.468 0 .81.27.81.738 0 .459-.342.747-.81.747s-.81-.288-.81-.747c0-.468.342-.738.81-.738zm0 4.212c-.594 0-1.026-.306-1.026-.873 0-.558.432-.864 1.026-.864.594 0 1.026.306 1.026.864 0 .567-.432.873-1.026.873z",
+            fill: i.main,
+            "data-fill": "main"
+        })]
+    })
+}
+
+function z(i) {
+    return l.jsxs("svg", {
+        width: 24,
+        height: 24,
+        viewBox: "0 0 24 24",
+        fill: "none",
+        xmlns: "http://www.w3.org/2000/svg",
+        ...i,
+        children: [l.jsx("path", {
+            d: "M8.44 5.762C8.815 4.18 10.267 3 12 3s3.186 1.18 3.56 2.762l.155.031C18.1 6.28 20 8.038 20.622 10.338c.504 1.867.504 3.83 0 5.696-.622 2.3-2.522 4.06-4.907 4.545l-.456.093c-2.15.437-4.369.437-6.518 0l-.456-.093C5.9 20.094 4 18.334 3.378 16.034a10.905 10.905 0 010-5.696C4 8.038 5.9 6.278 8.285 5.793l.156-.031z",
+            fill: i.secondary,
+            "data-fill": "secondary",
+            stroke: i.main,
+            "data-stroke": "main",
+            strokeWidth: 1.5,
+            strokeLinejoin: "round"
+        }), l.jsx("path", {
+            d: "M9.5 13a2.5 2.5 0 115 0 2.5 2.5 0 01-5 0z",
+            stroke: i.main,
+            "data-stroke": "main",
+            strokeWidth: 1.5
+        })]
+    })
+}
+
+function v(i) {
+    return l.jsxs("svg", {
+        width: 24,
+        height: 24,
+        viewBox: "0 0 24 24",
+        fill: "none",
+        xmlns: "http://www.w3.org/2000/svg",
+        ...i,
+        children: [l.jsx("path", {
+            d: "M12 3a3.501 3.501 0 00-3.41 2.711l-.15.031c-.72.15-1.336.383-1.94.758l12 12c.812-.773 1.465-1.578 1.762-2.704.484-1.833.484-3.76 0-5.592a6.164 6.164 0 00-4.702-4.462l-.15-.03A3.501 3.501 0 0012 3z",
+            fill: i.secondary,
+            "data-fill": "secondary"
+        }), l.jsx("path", {
+            d: "M8.59 5.711l.152.734a.75.75 0 00.578-.565l-.73-.169zm6.82 0l-.73.169a.75.75 0 00.578.565l.153-.734zm.15.031l-.153.735.153-.735zm4.702 4.462l-.725.191.725-.191zm0 5.592l-.725-.191.725.191zm-4.702 4.462l.153.734-.153-.734zm-.437.09l.154.735-.154-.734zm-6.246 0l.153-.733-.153.734zm-.437-.09l-.153.734.153-.734zm-4.702-4.462l.725-.191-.725.191zm0-5.592l.725.191-.725-.191zM8.44 5.742l-.153-.734.153.734zM5.419 8.46a.75.75 0 10-1.185-.92l1.185.92zm11.6 12.122a.75.75 0 10-.59-1.38l.59 1.38zM3.53 2.47a.75.75 0 00-1.06 1.06l1.06-1.06zm16.94 19.06a.75.75 0 101.06-1.06l-1.06 1.06zM11.023 9.9a.75.75 0 10.45 1.43l-.45-1.43zm-.703 2.606a.75.75 0 10-1.439-.422l1.44.422zm3.348 1.026a.75.75 0 001.43.455l-1.43-.455zm-.759 2.589a.75.75 0 00-.419-1.44l.42 1.44zM9.32 5.88A2.751 2.751 0 0112 3.75v-1.5a4.251 4.251 0 00-4.142 3.293l1.462.337zM12 3.75c1.305 0 2.399.91 2.68 2.13l1.462-.337A4.251 4.251 0 0012 2.25v1.5zm3.258 2.695l.15.032.305-1.469-.15-.031-.305 1.468zm.15.032a5.414 5.414 0 014.129 3.918l1.45-.383a6.914 6.914 0 00-5.274-5.004l-.306 1.469zm4.129 3.918c.45 1.707.45 3.503 0 5.21l1.45.383a11.71 11.71 0 000-5.976l-1.45.383zm-4.13 9.128l-.437.091.306 1.469.437-.091-.306-1.469zm-.437.091c-1.959.409-3.981.409-5.94 0l-.307 1.469c2.162.45 4.392.45 6.553 0l-.306-1.468zm-5.94 0l-.437-.09-.306 1.468.436.091.307-1.468zm-.437-.09a5.414 5.414 0 01-4.13-3.92l-1.45.384a6.914 6.914 0 005.274 5.004l.306-1.469zm-4.13-3.92a10.208 10.208 0 010-5.209l-1.45-.383a11.708 11.708 0 000 5.976l1.45-.383zm4.13-9.127l.15-.032-.307-1.468-.15.031.307 1.469zm-4.13 3.918a5.406 5.406 0 01.956-1.935l-1.185-.92a6.907 6.907 0 00-1.221 2.472l1.45.383zm11.966 8.807a5.413 5.413 0 01-1.022.321l.306 1.469c.453-.095.89-.233 1.306-.41l-.59-1.38zM6.896 7.137a5.034 5.034 0 011.697-.66l-.306-1.469a6.53 6.53 0 00-2.183.855l.792 1.274zm12.641 8.468c-.246.93-.784 1.62-1.554 2.352l1.034 1.086c.855-.813 1.622-1.735 1.97-3.055l-1.45-.383zM2.47 3.53l3.5 3.5 1.06-1.06-3.5-3.5-1.06 1.06zm3.5 3.5l12 12 1.06-1.06-12-12-1.06 1.06zm12 12l2.5 2.5 1.06-1.06-2.5-2.5-1.06 1.06zM12 14.75A1.75 1.75 0 0110.25 13h-1.5A3.25 3.25 0 0012 16.25v-1.5zm0-3.5c.966 0 1.75.784 1.75 1.75h1.5A3.25 3.25 0 0012 9.75v1.5zm0-1.5c-.34 0-.668.052-.977.15l.45 1.43c.166-.052.342-.08.527-.08v-1.5zm-3.119 2.334A3.25 3.25 0 008.75 13h1.5c0-.172.025-.338.07-.494l-1.439-.422zM13.75 13c0 .187-.029.365-.082.532l1.43.455c.099-.312.152-.644.152-.987h-1.5zm-1.26 1.68a1.75 1.75 0 01-.49.07v1.5c.315 0 .62-.045.91-.13l-.42-1.44z",
+            fill: i.main,
+            "data-fill": "main"
+        })]
+    })
+}
+
+function L(i) {
+    return l.jsxs("svg", {
+        width: 24,
+        height: 24,
+        viewBox: "0 0 24 24",
+        fill: "none",
+        xmlns: "http://www.w3.org/2000/svg",
+        ...i,
+        children: [l.jsx("path", {
+            d: "M2.885 8.849a7.353 7.353 0 015.546-5.407l.453-.101a14.401 14.401 0 016.232 0l.453.1a7.353 7.353 0 015.546 5.408c.514 2.07.514 4.233 0 6.302a7.353 7.353 0 01-5.546 5.407l-.453.101a14.402 14.402 0 01-6.232 0l-.453-.1a7.353 7.353 0 01-5.546-5.408 13.077 13.077 0 010-6.302z",
+            fill: i.secondary,
+            "data-fill": "secondary"
+        }), l.jsx("path", {
+            d: "M3.203 8.7h17.594M2.885 15.151a13.077 13.077 0 010-6.302 7.353 7.353 0 015.546-5.407l.453-.101a14.401 14.401 0 016.232 0l.453.1a7.353 7.353 0 015.546 5.408c.514 2.07.514 4.233 0 6.302a7.353 7.353 0 01-5.546 5.407l-.453.101a14.402 14.402 0 01-6.232 0l-.453-.1a7.353 7.353 0 01-5.546-5.408z",
+            stroke: i.main,
+            "data-stroke": "main",
+            strokeWidth: 1.5
+        }), l.jsx("path", {
+            d: "M7 12h4",
+            stroke: i.main,
+            "data-stroke": "main",
+            strokeWidth: 1.5,
+            strokeLinecap: "round"
+        })]
+    })
+}
+
+function F(i) {
+    return l.jsxs("svg", {
+        width: 24,
+        height: 24,
+        viewBox: "0 0 24 24",
+        fill: "none",
+        xmlns: "http://www.w3.org/2000/svg",
+        ...i,
+        children: [l.jsx("path", {
+            d: "M3.353 8.95A7.511 7.511 0 018.95 3.353c2.006-.47 4.094-.47 6.1 0a7.511 7.511 0 015.597 5.597c.47 2.006.47 4.094 0 6.1a7.511 7.511 0 01-5.597 5.597c-2.006.47-4.094.47-6.1 0a7.511 7.511 0 01-5.597-5.597 13.354 13.354 0 010-6.1z",
+            fill: i.secondary,
+            "data-fill": "secondary",
+            stroke: i.main,
+            "data-stroke": "main",
+            strokeWidth: 1.5
+        }), l.jsx("path", {
+            d: "M9.25 11.75l2 2 3.5-3.75",
+            stroke: i.main,
+            "data-stroke": "main",
+            strokeWidth: 1.5,
             strokeLinecap: "round",
             strokeLinejoin: "round"
         })]
-    }),
-    xe = ({
-        stroke: e = "currentColor",
-        fill: t = "transparent",
-        ...s
-    }) => re.jsx("svg", {
-        width: 12,
-        height: 12,
-        viewBox: "0 0 12 12",
+    })
+}
+
+function u(i) {
+    return l.jsx("svg", {
+        "aria-hidden": "false",
+        width: 24,
+        height: 24,
+        viewBox: "0 0 18 18",
+        xmlns: "http://www.w3.org/2000/svg",
+        ...i,
+        children: l.jsx("g", {
+            fill: "none",
+            fillRule: "evenodd",
+            children: l.jsx("polyline", {
+                stroke: i.main,
+                strokeWidth: "2",
+                points: "3.5 9.5 7 13 15 5",
+                "data-stroke": "main"
+            })
+        })
+    })
+}
+
+function y(i) {
+    return l.jsxs("svg", {
+        width: 24,
+        height: 24,
+        viewBox: "0 0 24 24",
         fill: "none",
         xmlns: "http://www.w3.org/2000/svg",
-        ...s,
-        children: re.jsx("path", {
+        ...i,
+        children: [l.jsx("path", {
+            d: "M3.353 8.95A7.511 7.511 0 018.95 3.353c2.006-.47 4.094-.47 6.1 0a7.511 7.511 0 015.597 5.597c.47 2.006.47 4.094 0 6.1a7.511 7.511 0 01-5.597 5.597c-2.006.47-4.094.47-6.1 0a7.511 7.511 0 01-5.597-5.597 13.354 13.354 0 010-6.1z",
+            fill: i.secondary,
+            "data-fill": "secondary",
+            stroke: i.main,
+            "data-stroke": "main",
+            strokeWidth: 1.5
+        }), l.jsx("path", {
+            d: "M13.768 13.768l-3.536-3.536m0 3.536l3.536-3.536",
+            stroke: i.main,
+            "data-stroke": "main",
+            strokeWidth: 1.5,
+            strokeLinecap: "round"
+        })]
+    })
+}
+
+function k(i) {
+    return l.jsxs("svg", {
+        width: 24,
+        height: 24,
+        viewBox: "0 0 24 24",
+        fill: "none",
+        xmlns: "http://www.w3.org/2000/svg",
+        ...i,
+        children: [l.jsx("path", {
+            d: "M3.353 8.95A7.511 7.511 0 018.95 3.353c2.006-.47 4.094-.47 6.1 0a7.511 7.511 0 015.597 5.597c.47 2.006.47 4.094 0 6.1a7.511 7.511 0 01-5.597 5.597c-2.006.47-4.094.47-6.1 0a7.511 7.511 0 01-5.597-5.597 13.354 13.354 0 010-6.1z",
+            fill: i.secondary,
+            "data-fill": "secondary",
+            stroke: i.main,
+            "data-stroke": "main",
+            strokeWidth: 1.5
+        }), l.jsx("path", {
             fillRule: "evenodd",
             clipRule: "evenodd",
-            d: "M7.333 0h4.666v4.666h-1.333v-2.39L5.138 7.804l-.943-.942 5.529-5.529H7.333V0zM4.666 0v1.334H1.333v9.333h9.333V7.334H12v3.083C12 11.29 11.29 12 10.416 12H1.583C.71 12 0 11.29 0 10.417V1.584C0 .71.71 0 1.583 0h3.083z",
-            fill: e
+            d: "M14.5 14.5l-2.838-1.806V9",
+            fill: i.secondary,
+            "data-fill": "secondary"
+        }), l.jsx("path", {
+            d: "M14.5 14.5l-2.838-1.806V9",
+            stroke: i.main,
+            "data-stroke": "main",
+            strokeWidth: 1.5,
+            strokeLinecap: "round",
+            strokeLinejoin: "round"
+        })]
+    })
+}
+
+function H(i) {
+    return l.jsx("svg", {
+        width: 24,
+        height: 24,
+        viewBox: "0 0 24 24",
+        fill: "none",
+        xmlns: "http://www.w3.org/2000/svg",
+        ...i,
+        children: l.jsx("path", {
+            d: "M7.757 7.757l8.486 8.486m0-8.486l-8.486 8.486",
+            stroke: i.main,
+            "data-stroke": "main",
+            strokeWidth: 1.5,
+            strokeLinecap: "round"
         })
-    }),
-    we = ({
-        fill: e = "currentColor",
-        ...t
-    }) => re.jsxs("svg", {
+    })
+}
+
+function V(i) {
+    return l.jsxs("svg", {
+        width: 24,
+        height: 24,
+        viewBox: "0 0 24 24",
+        fill: "none",
+        xmlns: "http://www.w3.org/2000/svg",
+        ...i,
+        children: [l.jsx("path", {
+            d: "M3.353 8.95A7.511 7.511 0 018.95 3.353c2.006-.47 4.094-.47 6.1 0a7.511 7.511 0 015.597 5.597c.47 2.006.47 4.094 0 6.1a7.511 7.511 0 01-5.597 5.597c-2.006.47-4.094.47-6.1 0a7.511 7.511 0 01-5.597-5.597 13.354 13.354 0 010-6.1z",
+            fill: i.secondary,
+            "data-fill": "secondary",
+            stroke: i.main,
+            "data-stroke": "main",
+            strokeWidth: 1.5
+        }), l.jsx("path", {
+            d: "M13.768 10.232l-3.536 3.536m3.536 0l-3.536-3.536",
+            stroke: i.main,
+            "data-stroke": "main",
+            strokeWidth: 1.5,
+            strokeLinecap: "round"
+        })]
+    })
+}
+
+function Z(i) {
+    return l.jsxs("svg", {
+        width: 24,
+        height: 24,
+        viewBox: "0 0 24 24",
+        fill: "none",
+        xmlns: "http://www.w3.org/2000/svg",
+        ...i,
+        children: [l.jsx("path", {
+            d: "M7.426 7.577a5.778 5.778 0 014.306-4.306 10.272 10.272 0 014.691 0 5.778 5.778 0 014.306 4.306 10.271 10.271 0 010 4.691 5.778 5.778 0 01-4.306 4.306 10.271 10.271 0 01-4.691 0 5.778 5.778 0 01-4.306-4.306 10.271 10.271 0 010-4.691z",
+            fill: i.secondary,
+            "data-fill": "secondary"
+        }), l.jsx("path", {
+            d: "M7.173 9.31a8.779 8.779 0 00-.25.055 4.952 4.952 0 00-3.69 3.69 8.804 8.804 0 000 4.022 4.952 4.952 0 003.69 3.69c1.322.31 2.699.31 4.021 0a4.952 4.952 0 003.69-3.69c.02-.083.038-.167.055-.25a10.27 10.27 0 01-2.957-.253 5.778 5.778 0 01-4.306-4.306 10.271 10.271 0 01-.253-2.957z",
+            fill: i.secondary,
+            "data-fill": "secondary"
+        }), l.jsx("path", {
+            d: "M7.426 12.268a10.271 10.271 0 010-4.691 5.778 5.778 0 014.306-4.306 10.272 10.272 0 014.691 0 5.778 5.778 0 014.306 4.306 10.271 10.271 0 010 4.691 5.778 5.778 0 01-4.306 4.306 10.271 10.271 0 01-4.691 0m-4.306-4.306a5.778 5.778 0 004.306 4.306m-4.306-4.306a10.271 10.271 0 01-.253-2.957 8.779 8.779 0 00-.25.054 4.952 4.952 0 00-3.69 3.69 8.804 8.804 0 000 4.022 4.952 4.952 0 003.69 3.69c1.322.31 2.699.31 4.021 0a4.952 4.952 0 003.69-3.69c.02-.083.038-.167.055-.25a10.27 10.27 0 01-2.957-.253",
+            stroke: i.main,
+            "data-stroke": "main",
+            strokeWidth: 1.5
+        })]
+    })
+}
+
+function B(i) {
+    return l.jsx("svg", {
+        width: 24,
+        height: 24,
+        viewBox: "0 0 24 24",
+        fill: "none",
+        xmlns: "http://www.w3.org/2000/svg",
+        ...i,
+        children: l.jsx("path", {
+            d: "M3.297 5.234a2.599 2.599 0 011.937-1.937 5.544 5.544 0 012.532 0 2.599 2.599 0 011.937 1.937c.195.833.195 1.7 0 2.532a2.599 2.599 0 01-1.937 1.937c-.833.195-1.7.195-2.532 0a2.599 2.599 0 01-1.937-1.937 5.545 5.545 0 010-2.532zM3.297 16.234a2.599 2.599 0 011.937-1.937 5.546 5.546 0 012.532 0 2.599 2.599 0 011.937 1.937c.195.833.195 1.7 0 2.532a2.599 2.599 0 01-1.937 1.937c-.833.195-1.7.195-2.532 0a2.599 2.599 0 01-1.937-1.937 5.545 5.545 0 010-2.532zM14.297 5.234a2.599 2.599 0 011.937-1.937 5.544 5.544 0 012.532 0 2.599 2.599 0 011.937 1.937c.195.833.195 1.7 0 2.532a2.599 2.599 0 01-1.937 1.937c-.833.195-1.7.195-2.532 0a2.599 2.599 0 01-1.937-1.937 5.546 5.546 0 010-2.532zM14.297 16.234a2.599 2.599 0 011.937-1.937 5.546 5.546 0 012.532 0 2.599 2.599 0 011.937 1.937c.195.833.195 1.7 0 2.532a2.599 2.599 0 01-1.937 1.937c-.833.195-1.7.195-2.532 0a2.599 2.599 0 01-1.937-1.937 5.546 5.546 0 010-2.532z",
+            fill: i.secondary,
+            "data-fill": "secondary",
+            stroke: i.main,
+            "data-stroke": "main",
+            strokeWidth: 1.5
+        })
+    })
+}
+
+function E(i) {
+    return l.jsxs("svg", {
+        width: 24,
+        height: 24,
+        viewBox: "0 0 24 24",
+        fill: "none",
+        xmlns: "http://www.w3.org/2000/svg",
+        ...i,
+        children: [l.jsx("path", {
+            d: "M3.353 8.95A7.511 7.511 0 018.95 3.353c2.006-.47 4.094-.47 6.1 0a7.511 7.511 0 015.597 5.597c.47 2.006.47 4.094 0 6.1a7.511 7.511 0 01-5.597 5.597c-2.006.47-4.094.47-6.1 0a7.511 7.511 0 01-5.597-5.597 13.354 13.354 0 010-6.1z",
+            fill: i.secondary,
+            "data-fill": "secondary",
+            stroke: i.main,
+            "data-stroke": "main",
+            strokeWidth: 1.5
+        }), l.jsx("path", {
+            d: "M10.182 11.296a2 2 0 011.114-1.114l2.038-.815c.816-.327 1.626.483 1.3 1.3l-.816 2.037a2 2 0 01-1.114 1.114l-2.038.815c-.816.327-1.626-.483-1.3-1.3l.816-2.037z",
+            fill: i.secondary,
+            "data-fill": "secondary",
+            stroke: i.main,
+            "data-stroke": "main",
+            strokeWidth: 1.5,
+            strokeLinecap: "round",
+            strokeLinejoin: "round"
+        })]
+    })
+}
+
+function A(i) {
+    return l.jsxs("svg", {
+        width: 24,
+        height: 24,
+        viewBox: "0 0 24 24",
+        fill: "none",
+        xmlns: "http://www.w3.org/2000/svg",
+        ...i,
+        children: [l.jsx("path", {
+            d: "M2.885 8.849a7.353 7.353 0 015.546-5.407l.453-.101a14.401 14.401 0 016.232 0l.453.1a7.353 7.353 0 015.546 5.408c.514 2.07.514 4.233 0 6.302a7.353 7.353 0 01-5.546 5.407l-.453.101a14.402 14.402 0 01-6.232 0l-.453-.1a7.353 7.353 0 01-5.546-5.408 13.077 13.077 0 010-6.302z",
+            fill: i.secondary,
+            "data-fill": "secondary",
+            stroke: i.main,
+            "data-stroke": "main",
+            strokeWidth: 1.5
+        }), l.jsx("path", {
+            fillRule: "evenodd",
+            clipRule: "evenodd",
+            d: "M12 7c.383 0 .693.292.693.652v.534h.076C14.057 8.186 15 9.24 15 10.419c0 .36-.31.652-.692.652-.383 0-.693-.292-.693-.652 0-.568-.434-.929-.846-.929h-.076v2.053l.934.32a2.03 2.03 0 01-.66 3.95h-.274v.535c0 .36-.31.652-.693.652-.382 0-.692-.292-.692-.652v-.534h-.077C9.943 15.814 9 14.76 9 13.581c0-.36.31-.652.692-.652.383 0 .693.292.693.652 0 .568.434.929.846.929h.077v-2.053l-.935-.32a2.03 2.03 0 01.66-3.95h.275V7.65c0-.36.31-.652.692-.652zm-.692 2.49h-.275c-.302 0-.648.27-.648.726 0 .349.215.61.46.695l.463.158V9.49zm1.385 3.441v1.579h.274c.302 0 .648-.27.648-.726 0-.349-.215-.61-.46-.695l-.462-.158z",
+            fill: i.main,
+            "data-fill": "main"
+        })]
+    })
+}
+
+function P(i) {
+    return l.jsxs("svg", {
+        width: 24,
+        height: 24,
+        viewBox: "0 0 24 24",
+        fill: "none",
+        xmlns: "http://www.w3.org/2000/svg",
+        ...i,
+        children: [l.jsx("path", {
+            fillRule: "evenodd",
+            clipRule: "evenodd",
+            d: "M20.16 8.3l-5.67-5.4a18.2 18.2 0 00-2.45-.15c-6.29 0-8.39 2.32-8.39 9.25 0 6.94 2.1 9.25 8.39 9.25 6.3 0 8.4-2.31 8.4-9.25 0-1.42-.09-2.65-.28-3.7z",
+            fill: i.secondary,
+            "data-fill": "secondary",
+            stroke: i.main,
+            "data-stroke": "main",
+            strokeWidth: 1.5,
+            strokeLinecap: "round",
+            strokeLinejoin: "round"
+        }), l.jsx("path", {
+            d: "M13.934 2.833v2.66a3.363 3.363 0 003.364 3.364h2.951M11.66 16.017v-6.04M9.315 13.662l2.345 2.355 2.345-2.355",
+            stroke: i.main,
+            "data-stroke": "main",
+            strokeWidth: 1.5,
+            strokeLinecap: "round",
+            strokeLinejoin: "round"
+        })]
+    })
+}
+
+function T(i) {
+    return l.jsx("svg", {
+        width: 24,
+        height: 24,
+        viewBox: "0 0 24 24",
+        fill: "none",
+        xmlns: "http://www.w3.org/2000/svg",
+        ...i,
+        children: l.jsx("path", {
+            d: "M17 9.5l-5 5-5-5",
+            stroke: i.main,
+            "data-stroke": "main",
+            strokeWidth: 1.5,
+            strokeLinecap: "round",
+            strokeLinejoin: "round"
+        })
+    })
+}
+
+function W(i) {
+    return l.jsx("svg", {
+        width: 24,
+        height: 24,
+        viewBox: "0 0 24 24",
+        fill: "none",
+        xmlns: "http://www.w3.org/2000/svg",
+        ...i,
+        children: l.jsx("path", {
+            d: "M14.5 17l-5-5 5-5",
+            stroke: i.main,
+            "data-stroke": "main",
+            strokeWidth: 1.5,
+            strokeLinecap: "round",
+            strokeLinejoin: "round"
+        })
+    })
+}
+
+function D(i) {
+    return l.jsx("svg", {
+        width: 24,
+        height: 24,
+        viewBox: "0 0 24 24",
+        fill: "none",
+        xmlns: "http://www.w3.org/2000/svg",
+        ...i,
+        children: l.jsx("path", {
+            d: "M9.5 7l5 5-5 5",
+            stroke: i.main,
+            "data-stroke": "main",
+            strokeWidth: 1.5,
+            strokeLinecap: "round",
+            strokeLinejoin: "round"
+        })
+    })
+}
+
+function _(i) {
+    return l.jsx("svg", {
+        width: 24,
+        height: 24,
+        viewBox: "0 0 24 24",
+        fill: "none",
+        xmlns: "http://www.w3.org/2000/svg",
+        ...i,
+        children: l.jsx("path", {
+            d: "M7 14.5l5-5 5 5",
+            stroke: i.main,
+            "data-stroke": "main",
+            strokeWidth: 1.5,
+            strokeLinecap: "round",
+            strokeLinejoin: "round"
+        })
+    })
+}
+
+function R(i) {
+    return l.jsxs("svg", {
+        width: 24,
+        height: 24,
+        viewBox: "0 0 24 24",
+        fill: "none",
+        xmlns: "http://www.w3.org/2000/svg",
+        ...i,
+        children: [l.jsx("path", {
+            d: "M9.31 10.448l4.57-4.57a3 3 0 014.241 4.243l-4.57 4.57a15.501 15.501 0 01-7.2 4.077l-.884.22a.376.376 0 01-.455-.455l.22-.883a15.501 15.501 0 014.078-7.202z",
+            fill: i.secondary,
+            "data-fill": "secondary"
+        }), l.jsx("path", {
+            d: "M17.25 10.992c-2.121.707-4.95-2.121-4.242-4.242m.871-.871l-4.57 4.57a15.501 15.501 0 00-4.077 7.2l-.22.884a.376.376 0 00.455.455l.883-.22a15.501 15.501 0 007.202-4.078l4.57-4.57a3 3 0 10-4.243-4.241z",
+            stroke: i.main,
+            "data-stroke": "main",
+            strokeWidth: 1.5
+        })]
+    })
+}
+
+function b(i) {
+    return l.jsxs("svg", {
+        width: 24,
+        height: 24,
+        viewBox: "0 0 24 24",
+        fill: "none",
+        xmlns: "http://www.w3.org/2000/svg",
+        ...i,
+        children: [l.jsx("path", {
+            d: "M12 3c-1.023 0-2.047.118-3.05.353A7.511 7.511 0 003.353 8.95a13.354 13.354 0 000 6.1 7.511 7.511 0 005.597 5.597c2.006.47 4.094.47 6.1 0a7.511 7.511 0 005.597-5.597c.235-1.003.353-2.027.353-3.05",
+            stroke: i.main,
+            "data-stroke": "main",
+            strokeWidth: 1.5,
+            strokeLinecap: "round"
+        }), l.jsx("path", {
+            d: "M17 3h4m0 0v4.667M21 3l-6 7",
+            stroke: i.main,
+            "data-stroke": "main",
+            strokeWidth: 1.5,
+            strokeLinecap: "round",
+            strokeLinejoin: "round"
+        })]
+    })
+}
+
+function S(i) {
+    return l.jsxs("svg", {
+        width: 24,
+        height: 24,
+        viewBox: "0 0 24 24",
+        fill: "none",
+        xmlns: "http://www.w3.org/2000/svg",
+        ...i,
+        children: [l.jsx("path", {
+            d: "M3.907 8.651c3.63-6.201 12.555-6.201 16.186 0a6.633 6.633 0 010 6.698c-3.63 6.201-12.555 6.201-16.186 0a6.633 6.633 0 010-6.698z",
+            fill: i.secondary,
+            "data-fill": "secondary"
+        }), l.jsx("path", {
+            d: "M3.907 8.651l-.647-.379.647.38zm16.186 0l.647-.379-.647.38zm0 6.698l-.648-.38.648.38zm-16.186 0l.648-.38-.648.38zm.648-6.319c3.34-5.707 11.55-5.707 14.89 0l1.295-.758c-3.92-6.696-13.56-6.696-17.48 0l1.295.758zm14.89 0a5.883 5.883 0 010 5.94l1.295.757a7.383 7.383 0 000-7.455l-1.295.758zm0 5.94c-3.34 5.707-11.55 5.707-14.89 0l-1.295.757c3.92 6.697 13.56 6.697 17.48 0l-1.295-.757zm-14.89 0a5.883 5.883 0 010-5.94L3.26 8.272a7.383 7.383 0 000 7.455l1.295-.757zm10.252-2.91c0 1.593-1.268 2.863-2.808 2.863v1.5c2.39 0 4.308-1.963 4.308-4.362h-1.5zm-2.808 2.863c-1.539 0-2.806-1.27-2.806-2.862h-1.5c0 2.398 1.917 4.362 4.306 4.362v-1.5zm-2.806-2.862c0-1.594 1.268-2.864 2.806-2.864v-1.5c-2.39 0-4.306 1.964-4.306 4.364h1.5zM12 9.197c1.54 0 2.808 1.27 2.808 2.864h1.5c0-2.4-1.918-4.364-4.308-4.364v1.5z",
+            fill: i.main,
+            "data-fill": "main"
+        })]
+    })
+}
+
+function I(i) {
+    return l.jsxs("svg", {
+        width: 24,
+        height: 24,
+        viewBox: "0 0 24 24",
+        fill: "none",
+        xmlns: "http://www.w3.org/2000/svg",
+        ...i,
+        children: [l.jsx("path", {
+            d: "M3.907 15.349a6.633 6.633 0 010-6.698C6.86 3.61 13.31 2.666 17.57 5.823l.257.257-3.343 3.396-5.021 5.102-3.338 3.39-.157-.156a9.48 9.48 0 01-2.06-2.463z",
+            fill: i.secondary,
+            "data-fill": "secondary"
+        }), l.jsx("path", {
+            d: "M20.74 8.272a.75.75 0 00-1.295.758l1.295-.758zm-.647 7.077l-.648-.38.648.38zM9.165 18.778a.75.75 0 10-.489 1.418l.489-1.418zm-5.258-3.43l.648-.378-.648.379zm0-6.697l.648.38-.648-.38zm2.061 9.16l.53-.53-.022-.022-.023-.02-.485.573zM17.57 5.824l.53-.53-.04-.04-.044-.033-.446.603zm-3.136 3.603l.53-.53a.498.498 0 00-.013-.013l-.517.543zm-5.12 5.002l-.57.488.039.043.53-.53zm6.993-2.367a.75.75 0 00-1.5 0h1.5zm-4.308 2.862a.75.75 0 000 1.5v-1.5zm-7.846 3.98a.75.75 0 001.069 1.052l-1.069-1.053zM20.409 4.525a.75.75 0 00-1.069-1.052l1.07 1.052zM17.828 6.08l.535.526-.535-.526zm1.618 2.95a5.883 5.883 0 010 5.94l1.295.757a7.383 7.383 0 000-7.455l-1.295.758zm0 5.94c-2.223 3.799-6.605 5.073-10.28 3.808l-.489 1.418c4.298 1.48 9.451-.005 12.064-4.469l-1.295-.757zm-14.89 0a5.883 5.883 0 010-5.94L3.26 8.272a7.383 7.383 0 000 7.455l1.295-.757zm1.898 2.269a8.728 8.728 0 01-1.898-2.27l-1.295.758a10.228 10.228 0 002.224 2.657l.969-1.145zM4.555 9.03c2.713-4.636 8.647-5.51 12.568-2.605l.893-1.205C13.417 1.813 6.45 2.824 3.26 8.272l1.295.758zm4.638 3.03c0-1.593 1.268-2.863 2.806-2.863v-1.5c-2.39 0-4.306 1.964-4.306 4.364h1.5zM12 9.198c.74 0 1.414.291 1.917.771l1.035-1.085A4.266 4.266 0 0012 7.697v1.5zm-2.116 4.744a2.882 2.882 0 01-.69-1.88h-1.5c0 1.09.396 2.089 1.05 2.855l1.14-.975zm4.924-1.88c0 1.592-1.268 2.862-2.808 2.862v1.5c2.39 0 4.308-1.963 4.308-4.362h-1.5zM5.59 17.442l-1.438 1.46 1.069 1.053 1.438-1.46-1.07-1.053zm-.153.9l.157.157 1.06-1.061-.156-.157-1.061 1.06zm3.49-4.29l-3.337 3.39 1.069 1.052 3.337-3.39-1.069-1.052zm-.145.907l.15.149 1.06-1.06-.15-.15-1.06 1.06zM13.95 8.95l-5.022 5.102 1.07 1.052 5.02-5.102L13.95 8.95zm-.046 1.006l.05.05 1.06-1.06-.05-.05-1.06 1.06zm5.436-6.482l-2.047 2.08 1.069 1.052 2.048-2.08-1.07-1.052zm-2.047 2.08L13.95 8.95l1.069 1.052 3.343-3.396-1.07-1.052zm-.254.799l.258.258 1.06-1.061-.257-.258-1.06 1.061z",
+            fill: i.main,
+            "data-fill": "main"
+        })]
+    })
+}
+
+function O(i) {
+    return l.jsxs("svg", {
+        width: 24,
+        height: 24,
+        viewBox: "0 0 24 24",
+        fill: "none",
+        xmlns: "http://www.w3.org/2000/svg",
+        ...i,
+        children: [l.jsx("path", {
+            d: "M3.353 8.95A7.511 7.511 0 018.95 3.353c2.006-.47 4.094-.47 6.1 0a7.511 7.511 0 015.597 5.597c.47 2.006.47 4.094 0 6.1a7.511 7.511 0 01-5.597 5.597c-2.006.47-4.094.47-6.1 0a7.511 7.511 0 01-5.597-5.597 13.354 13.354 0 010-6.1z",
+            fill: i.secondary,
+            "data-fill": "secondary"
+        }), l.jsx("path", {
+            d: "M3.353 15.05l.73-.172-.73.172zm0-6.1l.73.172-.73-.172zm17.294 0l-.73.172.73-.172zm0 6.1l.73.17-.73-.17zm-5.597 5.597l-.172-.73.172.73zm-6.1 0l-.17.73.17-.73zm0-17.294l.172.73-.172-.73zm6.1 0l-.172.73.172-.73zM4.188 16.67a.75.75 0 001.06 1.06l-1.06-1.06zm2.269-1.208l.53.53-.53-.53zm5.885 0l-.53.53.53-.53zm2.443 1.034l.53.53-.53-.53zm1.366 3.835a.75.75 0 001.06-1.06l-1.06 1.06zm3.238-3.626l-.576.48.576-.48zm-.163.976a.75.75 0 101.152-.96l-1.152.96zM4.083 14.877a12.604 12.604 0 010-5.756l-1.46-.343a14.103 14.103 0 000 6.442l1.46-.343zm15.834-5.756a12.603 12.603 0 010 5.756l1.46.343a14.104 14.104 0 000-6.442l-1.46.343zm-5.039 10.795a12.603 12.603 0 01-5.756 0l-.343 1.46c2.119.497 4.323.497 6.442 0l-.343-1.46zM9.122 4.083a12.604 12.604 0 015.756 0l.343-1.46a14.103 14.103 0 00-6.442 0l.343 1.46zm0 15.834a6.761 6.761 0 01-5.039-5.039l-1.46.343a8.261 8.261 0 006.156 6.156l.343-1.46zm6.099 1.46a8.261 8.261 0 006.156-6.156l-1.46-.343a6.761 6.761 0 01-5.039 5.039l.343 1.46zm-.343-17.294a6.761 6.761 0 015.039 5.039l1.46-.343a8.261 8.261 0 00-6.156-6.156l-.343 1.46zM8.78 2.623a8.261 8.261 0 00-6.156 6.156l1.46.343a6.761 6.761 0 015.039-5.039l-.343-1.46zM5.25 17.732l1.738-1.74-1.06-1.06-1.74 1.739 1.061 1.06zm6.562-1.74l1.74 1.74 1.06-1.061-1.739-1.739-1.06 1.06zm2.8 1.74l.704-.705-1.06-1.06-.705.704 1.06 1.06zm-1.06 0l2.6 2.6 1.06-1.06-2.6-2.601-1.06 1.06zm5.262-.546l.413.495 1.152-.96-.413-.495-1.152.96zm-3.498-.159a2.371 2.371 0 013.498.159l1.152-.96a3.87 3.87 0 00-5.71-.26l1.06 1.061zm-8.328-1.034a3.411 3.411 0 014.824 0l1.061-1.06a4.911 4.911 0 00-6.945 0l1.06 1.06z",
+            fill: i.main,
+            "data-fill": "main"
+        }), l.jsx("rect", {
+            x: 13,
+            y: 7,
+            width: 4,
+            height: 4,
+            rx: 2,
+            stroke: i.main,
+            "data-stroke": "main",
+            strokeWidth: 1.5
+        })]
+    })
+}
+
+function G(i) {
+    return l.jsxs("svg", {
+        width: 24,
+        height: 24,
+        viewBox: "0 0 24 24",
+        fill: "none",
+        xmlns: "http://www.w3.org/2000/svg",
+        ...i,
+        children: [l.jsx("path", {
+            d: "M9.255 12.062v3.576M11.08 13.85H7.431M15.478 12.171h-.102M17.208 15.583h-.102M8.514 2.216v0a1.293 1.293 0 001.306 1.28h1.008a2.005 2.005 0 012.02 1.978v1.007",
+            stroke: i.main,
+            "data-stroke": "main",
+            strokeWidth: 1.5,
+            strokeLinecap: "round",
+            strokeLinejoin: "round"
+        }), l.jsx("path", {
+            fillRule: "evenodd",
+            clipRule: "evenodd",
+            d: "M21.812 13.895c0-5.56-2.386-7.414-9.547-7.414-7.162 0-9.549 1.854-9.549 7.414 0 5.561 2.387 7.414 9.549 7.414 7.16 0 9.547-1.853 9.547-7.414z",
+            fill: i.secondary,
+            "data-fill": "secondary",
+            stroke: i.main,
+            "data-stroke": "main",
+            strokeWidth: 1.5,
+            strokeLinecap: "round",
+            strokeLinejoin: "round"
+        })]
+    })
+}
+
+function N(i) {
+    return l.jsxs("svg", {
+        width: "24",
+        height: "24",
+        viewBox: "0 0 24 24",
+        fill: "none",
+        xmlns: "http://www.w3.org/2000/svg",
+        ...i,
+        children: [l.jsxs("g", {
+            clipPath: "url(#clip0_6101_17485)",
+            children: [l.jsx("path", {
+                d: "M11.71 2.25002H10.29C8.7658 2.25266 7.3048 2.85931 6.22703 3.93707C5.14927 5.01484 4.54262 6.47583 4.53998 8.00002V17.42C4.53998 18.038 4.78546 18.6306 5.22242 19.0676C5.65938 19.5045 6.25202 19.75 6.86998 19.75H11V16.55C10.9961 15.8139 11.2631 15.1021 11.75 14.55V3.75002C12.8771 3.75002 13.9582 4.19778 14.7552 4.99481C15.5522 5.79184 16 6.87285 16 8.00002V10.43H17.5V8.00002C17.4987 7.24191 17.3477 6.49153 17.0558 5.79188C16.7639 5.09224 16.3367 4.45711 15.7988 3.92291C15.2609 3.38871 14.6228 2.96595 13.9211 2.67888C13.2195 2.39181 12.4681 2.24607 11.71 2.25002ZM10.25 18.25H6.86998C6.75766 18.2554 6.64542 18.238 6.54005 18.1987C6.43469 18.1594 6.33841 18.0991 6.25705 18.0215C6.17569 17.9439 6.11095 17.8506 6.06676 17.7472C6.02257 17.6438 5.99985 17.5325 5.99998 17.42V8.00002C5.99993 6.87974 6.4422 5.80476 7.2306 5.00887C8.019 4.21298 9.08975 3.76056 10.21 3.75002L10.25 18.25Z",
+                fill: i.main,
+                "data-fill": "main"
+            }), l.jsx("path", {
+                d: "M20.15 14.52V13.44C20.15 12.9705 19.9635 12.5203 19.6316 12.1884C19.2997 11.8565 18.8495 11.67 18.38 11.67H15.62C15.1506 11.67 14.7004 11.8565 14.3684 12.1884C14.0365 12.5203 13.85 12.9705 13.85 13.44V14.52C13.5018 14.6337 13.1983 14.8544 12.9828 15.1507C12.7673 15.4469 12.6509 15.8036 12.65 16.17V20.17C12.65 20.6368 12.8355 21.0844 13.1655 21.4145C13.4956 21.7446 13.9432 21.93 14.41 21.93H19.59C19.8212 21.93 20.05 21.8845 20.2635 21.796C20.4771 21.7076 20.6711 21.5779 20.8345 21.4145C20.998 21.2511 21.1276 21.057 21.2161 20.8435C21.3045 20.63 21.35 20.4011 21.35 20.17V16.17C21.3492 15.8036 21.2327 15.4469 21.0172 15.1507C20.8018 14.8544 20.4983 14.6337 20.15 14.52ZM15.62 13.17H18.38C18.4516 13.17 18.5203 13.1984 18.5709 13.2491C18.6216 13.2997 18.65 13.3684 18.65 13.44V14.44H15.35V13.44C15.35 13.4045 15.357 13.3694 15.3706 13.3367C15.3841 13.3039 15.404 13.2741 15.4291 13.2491C15.4542 13.224 15.4839 13.2041 15.5167 13.1905C15.5495 13.177 15.5846 13.17 15.62 13.17ZM19.85 20.17C19.85 20.2389 19.8226 20.3051 19.7739 20.3538C19.7251 20.4026 19.659 20.43 19.59 20.43H14.41C14.3411 20.43 14.2749 20.4026 14.2262 20.3538C14.1774 20.3051 14.15 20.2389 14.15 20.17V16.17C14.1526 16.1028 14.1811 16.0392 14.2296 15.9926C14.2781 15.9459 14.3428 15.9199 14.41 15.92H19.59C19.6573 15.9199 19.7219 15.9459 19.7704 15.9926C19.8189 16.0392 19.8474 16.1028 19.85 16.17V20.17Z",
+                fill: i.main,
+                "data-fill": "main"
+            }), l.jsx("path", {
+                d: "M18 17.67C18 17.4048 17.8946 17.1504 17.7071 16.9629C17.5196 16.7753 17.2652 16.67 17 16.67C16.7348 16.67 16.4804 16.7753 16.2929 16.9629C16.1054 17.1504 16 17.4048 16 17.67C16.0033 17.854 16.0574 18.0335 16.1562 18.1888C16.255 18.344 16.3947 18.469 16.56 18.55L16 19.67H18L17.44 18.55C17.6053 18.469 17.745 18.344 17.8438 18.1888C17.9426 18.0335 17.9967 17.854 18 17.67Z",
+                fill: i.main,
+                "data-fill": "main"
+            })]
+        }), l.jsx("defs", {
+            children: l.jsx("clipPath", {
+                id: "clip0_6101_17485",
+                children: l.jsx("rect", {
+                    width: "24",
+                    height: "24",
+                    fill: "white"
+                })
+            })
+        })]
+    })
+}
+
+function U(i) {
+    return l.jsxs("svg", {
+        width: "40",
+        height: "40",
+        viewBox: "0 0 40 40",
+        fill: "none",
+        xmlns: "http://www.w3.org/2000/svg",
+        ...i,
+        children: [l.jsx("circle", {
+            cx: "20",
+            cy: "20",
+            r: "20",
+            fill: "#88BFFF"
+        }), l.jsx("path", {
+            d: "M20 11C18.9767 11 17.9533 11.1176 16.9504 11.3529C14.173 12.0044 12.0044 14.173 11.3529 16.9504C10.8824 18.9563 10.8824 21.0437 11.3529 23.0496C12.0044 25.827 14.173 27.9956 16.9504 28.6471C18.9563 29.1176 21.0437 29.1176 23.0496 28.6471C25.827 27.9956 27.9956 25.827 28.6471 23.0496C28.8824 22.0466 29 21.0233 29 20",
+            stroke: "#F2F4FB",
+            strokeWidth: "1.5",
+            strokeLinecap: "round"
+        }), l.jsx("path", {
+            d: "M25 11H29M29 11V15.6667M29 11L23 18",
+            stroke: "#F2F4FB",
+            strokeWidth: "1.5",
+            strokeLinecap: "round",
+            strokeLinejoin: "round"
+        })]
+    })
+}
+
+function X(i) {
+    return l.jsxs("svg", {
+        width: 24,
+        height: 24,
+        viewBox: "0 0 24 24",
+        fill: "none",
+        xmlns: "http://www.w3.org/2000/svg",
+        ...i,
+        children: [l.jsx("path", {
+            d: "M3.353 8.95A7.511 7.511 0 018.95 3.353c2.006-.47 4.094-.47 6.1 0a7.511 7.511 0 015.597 5.597c.47 2.006.47 4.094 0 6.1a7.511 7.511 0 01-5.597 5.597c-2.006.47-4.094.47-6.1 0a7.511 7.511 0 01-5.597-5.597 13.354 13.354 0 010-6.1z",
+            fill: i.secondary,
+            "data-fill": "secondary"
+        }), l.jsx("path", {
+            d: "M3.678 8.88H12m0 6.24h8.322M12 3.679v16.644M3.353 15.05a13.354 13.354 0 010-6.1A7.511 7.511 0 018.95 3.353c2.006-.47 4.094-.47 6.1 0a7.511 7.511 0 015.597 5.597c.47 2.006.47 4.094 0 6.1a7.511 7.511 0 01-5.597 5.597c-2.006.47-4.094.47-6.1 0a7.511 7.511 0 01-5.597-5.597z",
+            stroke: i.main,
+            "data-stroke": "main",
+            strokeWidth: 1.5
+        })]
+    })
+}
+
+function Y(i) {
+    return l.jsxs("svg", {
+        width: 24,
+        height: 24,
+        viewBox: "0 0 24 24",
+        fill: "none",
+        xmlns: "http://www.w3.org/2000/svg",
+        ...i,
+        children: [l.jsx("path", {
+            d: "M22 18.432C22 19.85 20.876 21 19.49 21c-.314 0-.627-.044-.93-.132l-.29-.084c-1.372-.398-2.408-1.55-2.68-2.983a7.228 7.228 0 010-2.697c.272-1.432 1.308-2.586 2.68-2.983l.29-.084c.303-.088.616-.132.93-.132 1.386 0 2.51 1.15 2.51 2.568v3.959zM2 18.432C2 19.85 3.124 21 4.51 21c.314 0 .627-.044.93-.132l.29-.084c1.372-.398 2.408-1.55 2.68-2.983a7.23 7.23 0 000-2.697c-.272-1.432-1.308-2.586-2.68-2.983l-.29-.084a3.34 3.34 0 00-.93-.132c-1.386 0-2.51 1.15-2.51 2.568v3.959z",
+            fill: i.secondary,
+            "data-fill": "secondary"
+        }), l.jsx("path", {
+            d: "M2 17.02v-3.978l.024-.364c.314-4.68 3.648-8.566 8.142-9.491a9.093 9.093 0 013.668 0c4.494.925 7.828 4.812 8.142 9.49l.024.365v3.979m-6.41.78a7.228 7.228 0 010-2.697c.272-1.432 1.308-2.586 2.68-2.983l.29-.084c.303-.088.616-.132.93-.132 1.386 0 2.51 1.15 2.51 2.568v3.959C22 19.85 20.876 21 19.49 21c-.314 0-.627-.044-.93-.132l-.29-.084c-1.372-.398-2.408-1.55-2.68-2.983zm-7.18 0a7.23 7.23 0 000-2.697c-.272-1.432-1.308-2.586-2.68-2.983l-.29-.084a3.34 3.34 0 00-.93-.132c-1.386 0-2.51 1.15-2.51 2.568v3.959C2 19.85 3.124 21 4.51 21c.314 0 .627-.044.93-.132l.29-.084c1.372-.398 2.408-1.55 2.68-2.983z",
+            stroke: i.main,
+            "data-stroke": "main",
+            strokeWidth: 1.5
+        })]
+    })
+}
+
+function K(i) {
+    return l.jsxs("svg", {
+        width: 24,
+        height: 24,
+        viewBox: "0 0 24 24",
+        fill: "none",
+        xmlns: "http://www.w3.org/2000/svg",
+        ...i,
+        children: [l.jsx("path", {
+            d: "M22 18.432C22 19.85 20.877 21 19.49 21a3.34 3.34 0 01-.929-.132l-.291-.084c-1.372-.397-2.408-1.55-2.68-2.983a7.232 7.232 0 010-2.697c.272-1.432 1.308-2.586 2.68-2.983l.291-.084a3.34 3.34 0 01.93-.132c1.386 0 2.51 1.15 2.51 2.568v3.959z",
+            fill: i.secondary,
+            "data-fill": "secondary"
+        }), l.jsx("path", {
+            d: "M22 17.02v-3.978l-.024-.364A10.553 10.553 0 0020.5 7.95m-4.91 9.851a7.232 7.232 0 010-2.697c.272-1.432 1.308-2.586 2.68-2.983l.291-.084a3.34 3.34 0 01.93-.132c1.386 0 2.51 1.15 2.51 2.568v3.959C22 19.85 20.876 21 19.49 21a3.34 3.34 0 01-.93-.132l-.291-.084c-1.372-.397-2.408-1.55-2.68-2.983z",
+            stroke: i.main,
+            "data-stroke": "main",
+            strokeWidth: 1.5,
+            strokeLinecap: "round"
+        }), l.jsx("path", {
+            d: "M5.44 12.037l.29.084a3.82 3.82 0 012.56 2.512c.1.308.12.633.12.957L3.5 20.5h-.478A2.584 2.584 0 012 18.432v-3.96c0-1.418 1.124-2.567 2.51-2.567.314 0 .627.044.93.132z",
+            fill: i.secondary,
+            "data-fill": "secondary"
+        }), l.jsx("path", {
+            d: "M1.25 17.02a.75.75 0 001.5 0h-1.5zM2 13.043l-.748-.05-.002.024v.026H2zm.024-.364l.749.05-.749-.05zm8.142-9.491l.151.735-.151-.735zm3.668 0l-.151.735.151-.735zM5.73 12.12l.209-.72-.209.72zm-.29-.084l-.21.72.21-.72zM2 14.473h.75H2zm6.29.16l.715-.23-.714.23zM2 18.433h.75H2zM3.022 20.5l-.452.599.2.151h.252v-.75zM18.27 5.335l.53-.53-.023-.023-.026-.022-.481.575zM8.41 15.59l.53.53-.53-.53zm-6.94 5.88a.75.75 0 101.06 1.06l-1.06-1.06zM22.53 2.53a.75.75 0 00-1.06-1.06l1.06 1.06zm-4.063 3.003l.53.53-.53-.53zM2.75 17.02v-3.98h-1.5v3.98h1.5zm-.002-3.93l.025-.363-1.497-.1-.024.363 1.496.1zm7.57-9.17a8.343 8.343 0 013.365 0l.302-1.469a9.843 9.843 0 00-3.97 0l.302 1.47zm-7.545 8.807c.292-4.353 3.39-7.951 7.544-8.806l-.302-1.47c-4.835.995-8.403 5.17-8.739 10.176l1.497.1zm3.166-1.327l-.291-.085-.417 1.441.29.084.418-1.44zm-.291-.085a4.094 4.094 0 00-1.138-.161v1.5c.243 0 .486.034.72.102l.418-1.44zm-1.138-.161c-1.817 0-3.26 1.502-3.26 3.318h1.5c0-1.02.804-1.818 1.76-1.818v-1.5zm1.012 1.686a3.07 3.07 0 012.055 2.021l1.428-.459a4.569 4.569 0 00-3.066-3.002l-.417 1.44zM1.25 14.473v3.96h1.5v-3.96h-1.5zM3.473 19.9a1.834 1.834 0 01-.723-1.469h-1.5c0 1.09.517 2.06 1.32 2.667l.903-1.198zm15.278-15.14a10.801 10.801 0 00-4.766-2.309l-.302 1.47a9.3 9.3 0 014.105 1.988l.963-1.15zM7.882 15.058L2.97 19.97l1.06 1.061 4.91-4.91-1.06-1.06zM2.97 19.97l-1.5 1.5 1.06 1.061 1.5-1.5-1.06-1.06zm.052 1.281H3.5v-1.5H3.02v1.5zM21.47 1.47l-3.533 3.532 1.06 1.061L22.53 2.53l-1.06-1.06zm-3.533 3.532L7.88 15.06l1.06 1.06L18.999 6.064l-1.061-1.06zm-.198.864l.198.197 1.06-1.06-.197-.198-1.06 1.06zM7.577 14.862c.062.196.083.429.083.728h1.5c0-.348-.02-.767-.155-1.187l-1.428.46z",
+            fill: i.main,
+            "data-fill": "main"
+        })]
+    })
+}
+
+function Q(i) {
+    return l.jsxs("svg", {
+        width: 24,
+        height: 24,
+        viewBox: "0 0 24 24",
+        fill: "none",
+        xmlns: "http://www.w3.org/2000/svg",
+        ...i,
+        children: [l.jsx("path", {
+            fillRule: "evenodd",
+            clipRule: "evenodd",
+            d: "M2.922 12.446C1.849 9.096 3.104 4.931 6.62 3.8c1.85-.597 4.133-.099 5.43 1.69 1.223-1.855 3.572-2.283 5.42-1.69 3.516 1.132 4.778 5.297 3.706 8.647-1.67 5.31-7.497 8.076-9.126 8.076-1.628 0-7.403-2.704-9.13-8.076z",
+            fill: i.secondary,
+            "data-fill": "secondary",
+            stroke: i.main,
+            "data-stroke": "main",
+            strokeWidth: 1.5,
+            strokeLinecap: "round",
+            strokeLinejoin: "round"
+        }), l.jsx("path", {
+            d: "M15.789 7.564c1.207.124 1.962 1.081 1.917 2.422",
+            stroke: i.main,
+            "data-stroke": "main",
+            strokeWidth: 1.5,
+            strokeLinecap: "round",
+            strokeLinejoin: "round"
+        })]
+    })
+}
+
+function q(i) {
+    return l.jsxs("svg", {
+        width: 24,
+        height: 24,
+        viewBox: "0 0 24 24",
+        fill: "none",
+        xmlns: "http://www.w3.org/2000/svg",
+        ...i,
+        children: [l.jsx("path", {
+            d: "M19.29 14.637V9.508l-4.462-4.494C13.495 3.671 12.828 3 12 3c-.828 0-1.495.671-2.828 2.014L4.71 9.508V14.637c0 2.895 1.978 5.409 4.777 6.07 1.653.39 3.373.39 5.026 0 2.799-.661 4.777-3.175 4.777-6.07z",
+            fill: i.secondary,
+            "data-fill": "secondary"
+        }), l.jsx("path", {
+            d: "M14.513 20.707l-.172-.73.172.73zm-5.026 0l.172-.73-.172.73zm5.341-15.693l.533-.528-.019-.019-.02-.017-.494.564zm0 0l-.532.529.019.018.02.018.493-.565zm-5.656 0l.532.529-.532-.529zm.546 13.306l-.737-.138.737.138zm.02-.103l.737.139-.737-.139zm4.524 0l-.737.139.737-.139zm.02.103l.737-.138-.737.138zm-.29 2.232l.677.322-.677-.322zm-.794-.077a.75.75 0 001.354.645l-1.354-.645zm-3.19.077l-.677.322.677-.322zm-.56.568a.75.75 0 001.354-.645l-1.354.645zm1.913-4.677l-.2-.723.2.723zm1.278 0l.2-.723-.2.723zM2.468 10.7a.75.75 0 101.064 1.057l-1.064-1.057zm18 1.057a.75.75 0 101.064-1.057l-1.064 1.057zM18.54 9.72v4.918h1.5V9.72h-1.5zM5.46 14.637V9.72h-1.5v4.918h1.5zm8.88 5.34a10.18 10.18 0 01-4.68 0l-.346 1.46a11.68 11.68 0 005.372 0l-.345-1.46zm-4.68 0c-2.457-.58-4.2-2.79-4.2-5.34h-1.5c0 3.24 2.214 6.058 5.354 6.8l.345-1.46zm5.026 1.46c3.14-.742 5.354-3.56 5.354-6.8h-1.5c0 2.55-1.743 4.76-4.2 5.34l.346 1.46zm.636-16.987l-.987 1.129.987-1.13zm.039.036c-.652-.657-1.193-1.204-1.68-1.577-.502-.387-1.035-.659-1.681-.659v1.5c.183 0 .397.064.768.348.387.298.847.758 1.528 1.445l1.065-1.057zM9.704 5.543c.681-.687 1.14-1.147 1.528-1.445.37-.284.585-.348.768-.348v-1.5c-.646 0-1.178.272-1.682.659-.486.373-1.027.92-1.679 1.577l1.065 1.057zm.752 12.916l.019-.103L9 18.079l-.02.103 1.475.277zm3.07-.103l.018.103 1.475-.277-.02-.103-1.474.277zm-.211 1.874l-.117.245 1.354.645.117-.246-1.354-.644zm-3.984.644l.117.246 1.354-.645-.117-.245-1.354.644zm4.213-2.415c.113.6.032 1.22-.23 1.77l1.355.645c.399-.837.52-1.78.35-2.692l-1.475.277zm-4.563-.277a4.385 4.385 0 00.35 2.692l1.354-.644a2.884 2.884 0 01-.23-1.771l-1.474-.277zm2.58-1.017c.287-.08.59-.08.877 0l.401-1.445a3.138 3.138 0 00-1.678 0l.4 1.445zM15 18.08a3.024 3.024 0 00-2.16-2.36l-.4 1.446c.554.154.978.614 1.086 1.19L15 18.08zm-4.524.277a1.524 1.524 0 011.087-1.19l-.401-1.446A3.024 3.024 0 009 18.079l1.474.277zM8.639 4.486L4.178 8.979l1.064 1.057 4.462-4.493-1.065-1.057zM4.178 8.979l-1.71 1.722 1.064 1.057 1.71-1.722-1.064-1.057zm1.282.74v-.211h-1.5v.211h1.5zm8.836-4.176l4.462 4.493 1.064-1.057-4.461-4.493-1.065 1.057zm4.462 4.493l1.71 1.722 1.064-1.057-1.71-1.722-1.064 1.057zm1.282-.317v-.211h-1.5v.211h1.5z",
+            fill: i.main,
+            "data-fill": "main"
+        })]
+    })
+}
+
+function J(i) {
+    return l.jsxs("svg", {
+        width: 24,
+        height: 24,
+        viewBox: "0 0 24 24",
+        fill: "none",
+        xmlns: "http://www.w3.org/2000/svg",
+        ...i,
+        children: [l.jsx("path", {
+            d: "M2.885 8.849a7.353 7.353 0 015.546-5.407l.453-.101a14.401 14.401 0 016.232 0l.453.1a7.353 7.353 0 015.546 5.408c.514 2.07.514 4.233 0 6.302a7.353 7.353 0 01-5.546 5.407l-.453.101a14.402 14.402 0 01-6.232 0l-.453-.1a7.353 7.353 0 01-5.546-5.408 13.077 13.077 0 010-6.302z",
+            fill: i.secondary,
+            "data-fill": "secondary"
+        }), l.jsx("path", {
+            d: "M2.885 15.151l.728-.18-.728.18zm0-6.302l.728.18-.728-.18zm18.23 0l.728-.181-.728.18zm0 6.302l.728.181-.728-.18zm-6 5.508l-.162-.732.163.732zm-6.23 0l-.163.732.162-.732zm0-17.318l-.163-.732.162.732zm6.23 0l-.162.732.163-.732zM8.432 20.558l.162-.732-.162.732zm7.138 0l.163.733-.163-.733zm0-17.116l.163-.733-.163.733zm-7.138 0l.162.732-.162-.732zM4.738 5.89a.75.75 0 00-.872 1.22l.872-1.22zm5.344 4.74l-.436.61.436-.61zm3.835 0l-.435-.61.436.61zm6.217-3.52a.75.75 0 10-.872-1.22l.872 1.22zM8.593 4.175l.454-.1-.325-1.465-.454.1.325 1.465zm6.36-.1l.454.1.325-1.465-.454-.1-.325 1.464zm.454 15.752l-.454.1.325 1.465.454-.1-.325-1.465zm-6.36.1l-.454-.1-.325 1.465.454.1.325-1.464zm-5.434-4.955a12.326 12.326 0 010-5.942l-1.455-.361a13.826 13.826 0 000 6.664l1.455-.362zM20.387 9.03c.484 1.95.484 3.99 0 5.94l1.456.362a13.827 13.827 0 000-6.664l-1.456.362zm-5.434 10.897a13.65 13.65 0 01-5.906 0l-.325 1.464c2.16.479 4.397.479 6.556 0l-.325-1.464zM9.047 4.073a13.651 13.651 0 015.906 0l.325-1.464a15.151 15.151 0 00-6.556 0l.325 1.464zm-.454 15.753a6.603 6.603 0 01-4.98-4.856l-1.455.362a8.103 8.103 0 006.11 5.959l.325-1.465zm7.139 1.465a8.103 8.103 0 006.11-5.959l-1.455-.362a6.603 6.603 0 01-4.98 4.856l.325 1.465zm-.325-17.117a6.603 6.603 0 014.98 4.856l1.456-.362a8.103 8.103 0 00-6.111-5.959l-.325 1.465zM8.268 2.709a8.103 8.103 0 00-6.11 5.959l1.455.361a6.603 6.603 0 014.98-4.855l-.325-1.465zM3.866 7.111l5.78 4.13.872-1.221-5.78-4.13-.872 1.22zm10.488 4.13l5.78-4.13-.872-1.22-5.78 4.129.872 1.22zm-4.708 0a4.049 4.049 0 004.707 0l-.871-1.221a2.548 2.548 0 01-2.963 0l-.873 1.22z",
+            fill: i.main,
+            "data-fill": "main"
+        })]
+    })
+}
+
+function $(i) {
+    return l.jsxs("svg", {
+        width: 24,
+        height: 24,
+        viewBox: "0 0 24 24",
+        fill: "none",
+        xmlns: "http://www.w3.org/2000/svg",
+        ...i,
+        children: [l.jsx("path", {
+            d: "M3.353 8.95A7.511 7.511 0 018.95 3.353c2.006-.47 4.094-.47 6.1 0a7.511 7.511 0 015.597 5.597c.47 2.006.47 4.094 0 6.1a7.511 7.511 0 01-5.597 5.597c-2.006.47-4.094.47-6.1 0a7.511 7.511 0 01-5.597-5.597 13.354 13.354 0 010-6.1z",
+            fill: i.secondary,
+            "data-fill": "secondary",
+            stroke: i.main,
+            "data-stroke": "main",
+            strokeWidth: 1.5
+        }), l.jsx("path", {
+            fillRule: "evenodd",
+            clipRule: "evenodd",
+            d: "M12 15.5v-4 4z",
+            fill: i.secondary,
+            "data-fill": "secondary"
+        }), l.jsx("path", {
+            d: "M12 15.5v-4",
+            stroke: i.main,
+            "data-stroke": "main",
+            strokeWidth: 1.5,
+            strokeLinecap: "round",
+            strokeLinejoin: "round"
+        }), l.jsx("circle", {
+            cx: 12,
+            cy: 9,
+            r: .5,
+            fill: i.secondary,
+            "data-fill": "secondary",
+            stroke: i.main,
+            "data-stroke": "main",
+            strokeLinecap: "round",
+            strokeLinejoin: "round"
+        })]
+    })
+}
+
+function ll(i) {
+    return l.jsxs("svg", {
+        width: 24,
+        height: 24,
+        viewBox: "0 0 24 24",
+        fill: "none",
+        xmlns: "http://www.w3.org/2000/svg",
+        ...i,
+        children: [l.jsx("path", {
+            d: "M20 11.175C20 15.691 16.418 21 12 21s-8-5.31-8-9.825S7.582 3 12 3s8 3.66 8 8.175z",
+            fill: i.secondary,
+            "data-fill": "secondary",
+            stroke: i.main,
+            "data-stroke": "main",
+            strokeWidth: 1.5
+        }), l.jsx("path", {
+            d: "M9.5 10.5a2.5 2.5 0 115 0 2.5 2.5 0 01-5 0z",
+            stroke: i.main,
+            "data-stroke": "main",
+            strokeWidth: 1.5
+        })]
+    })
+}
+
+function il(i) {
+    return l.jsxs("svg", {
+        width: 24,
+        height: 24,
+        viewBox: "0 0 24 24",
+        fill: "none",
+        xmlns: "http://www.w3.org/2000/svg",
+        ...i,
+        children: [l.jsx("path", {
+            d: "M4.306 11.397c.51-1.887 2.088-3.335 4.074-3.739l.276-.056a16.792 16.792 0 016.688 0l.276.056c1.986.404 3.563 1.852 4.074 3.74a8.807 8.807 0 01-.347 5.628l-.093.229c-.746 1.834-2.445 3.153-4.469 3.47l-.748.117c-1.35.21-2.725.21-4.073 0l-.75-.117c-2.023-.317-3.722-1.636-4.468-3.47l-.093-.229a8.807 8.807 0 01-.347-5.629z",
+            fill: i.secondary,
+            "data-fill": "secondary"
+        }), l.jsx("path", {
+            d: "M4.653 17.026l-.695.283.695-.283zm-.347-5.629l.724.196-.724-.196zm15.388 0l-.724.196.724-.196zm-.347 5.63l.695.282-.695-.283zm-5.31 3.815l-.116-.741.116.74zm-4.073 0l-.116.74.116-.74zM8.656 7.602l-.15-.735.15.735zm6.688 0l.15-.735-.15.735zm-6.13 13.123l.117-.741-.116.74zm-4.468-3.47l.695-.283-.695.283zm10.04 3.47l.115.74-.116-.74zm4.468-3.47l-.695-.283.695.283zM15.62 7.658l-.15.735.15-.735zm-7.24 0l.15.735-.15-.735zm-1.486-.227a.75.75 0 101.5 0h-1.5zm.75-.303h-.75.75zm8.712 0h-.75.75zm-.75.303a.75.75 0 001.5 0h-1.5zm-4.754-4.29l-.182-.727.182.727zm2.296 0l.182-.727-.182.727zM8.53 8.393l.276-.056-.3-1.47-.275.056.299 1.47zm6.664-.056l.276.056.3-1.47-.277-.056-.299 1.47zm-.525 11.647l-.748.117.231 1.482.75-.117-.233-1.482zm-4.59.117l-.748-.117-.232 1.482.749.117.231-1.482zm8.573-3.357l-.093.228 1.39.565.093-.228-1.39-.565zm-13.211.228l-.093-.228-1.39.565.093.228 1.39-.565zm-.093-.228a8.057 8.057 0 01-.318-5.151l-1.448-.392a9.556 9.556 0 00.376 6.108l1.39-.565zm13.622-5.151a8.057 8.057 0 01-.318 5.15l1.39.566a9.556 9.556 0 00.376-6.108l-1.448.392zm-5.05 8.508c-1.271.199-2.569.199-3.84 0l-.232 1.482c1.425.223 2.879.223 4.304 0l-.231-1.482zM8.807 8.337a16.042 16.042 0 016.388 0l.3-1.47a17.542 17.542 0 00-6.987 0l.299 1.47zm.525 11.647c-1.775-.278-3.247-1.432-3.89-3.012l-1.39.565c.85 2.088 2.775 3.573 5.048 3.929l.232-1.482zm5.57 1.482c2.273-.356 4.198-1.84 5.048-3.929l-1.39-.565c-.643 1.58-2.115 2.734-3.89 3.012l.232 1.482zm.57-13.073c1.72.35 3.066 1.6 3.499 3.2l1.448-.392c-.588-2.173-2.398-3.82-4.649-4.278l-.299 1.47zm-7.24-1.47c-2.251.458-4.06 2.105-4.649 4.278l1.448.392c.433-1.6 1.779-2.85 3.5-3.2l-.3-1.47zm.163.508v-.303h-1.5v.303h1.5zm7.212-.303v.303h1.5v-.303h-1.5zm-4.572-3.26a3.988 3.988 0 011.932 0l.364-1.454a5.487 5.487 0 00-2.66 0l.364 1.455zm6.072 3.26c0-2.238-1.571-4.163-3.776-4.714l-.364 1.455c1.574.393 2.64 1.746 2.64 3.259h1.5zm-8.712 0c0-1.513 1.066-2.865 2.64-3.26l-.364-1.454c-2.205.551-3.776 2.476-3.776 4.714h1.5z",
+            fill: i.main,
+            "data-fill": "main"
+        }), l.jsx("path", {
+            d: "M12 13.5v2",
+            stroke: i.main,
+            "data-stroke": "main",
+            strokeWidth: 1.5,
+            strokeLinecap: "round"
+        })]
+    })
+}
+
+function al(i) {
+    return l.jsx("svg", {
+        width: 24,
+        height: 24,
+        viewBox: "0 0 24 24",
+        fill: "none",
+        xmlns: "http://www.w3.org/2000/svg",
+        ...i,
+        children: l.jsx("path", {
+            d: "M7.283 19H20m0-7H4m16-7h-7.028",
+            stroke: i.main,
+            "data-stroke": "main",
+            strokeWidth: 1.5,
+            strokeLinecap: "round"
+        })
+    })
+}
+
+function tl(i) {
+    return l.jsxs("svg", {
+        width: 24,
+        height: 24,
+        viewBox: "0 0 24 24",
+        fill: "none",
+        xmlns: "http://www.w3.org/2000/svg",
+        ...i,
+        children: [l.jsx("path", {
+            d: "M2.885 8.849a7.353 7.353 0 015.546-5.407l.453-.101a14.401 14.401 0 016.232 0l.453.1a7.353 7.353 0 015.546 5.408c.514 2.07.514 4.233 0 6.302a7.353 7.353 0 01-5.546 5.407l-.453.101a14.402 14.402 0 01-6.232 0l-.453-.1a7.353 7.353 0 01-5.546-5.408 13.077 13.077 0 010-6.302z",
+            fill: i.secondary,
+            "data-fill": "secondary"
+        }), l.jsx("path", {
+            d: "M2.885 15.151l.728-.18-.728.18zm0-6.302l.728.18-.728-.18zm18.23 0l.728-.181-.728.18zm0 6.302l-.728-.18.728.18zm-6 5.508l-.162-.732.163.732zm-6.23 0l.162-.732-.163.732zm0-17.318l.162.732-.163-.732zm6.23 0l.163-.732-.162.732zM8.432 20.558l-.163.733.163-.733zm7.138 0l.163.733-.163-.733zm0-17.116l-.162.732.162-.732zm-7.138 0l-.163-.733.163.733zm.156 6.298a.75.75 0 10-.872 1.22l.872-1.22zm2.135 2.447l.436-.61-.436.61zm2.556 0l.436.61-.436-.61zm3.007-1.227a.75.75 0 00-.872-1.22l.872 1.22zM8.593 4.174l.454-.1-.325-1.465-.454.1.325 1.465zm6.36-.1l.454.1.325-1.465-.454-.1-.325 1.464zm.454 15.752l-.454.1.325 1.465.454-.1-.325-1.465zm-6.36.1l-.454-.1-.325 1.465.454.1.325-1.464zm-5.434-4.955a12.326 12.326 0 010-5.942l-1.455-.361a13.826 13.826 0 000 6.664l1.455-.362zM20.387 9.03c.484 1.95.484 3.99 0 5.94l1.456.362a13.827 13.827 0 000-6.664l-1.456.362zm-5.434 10.897a13.65 13.65 0 01-5.906 0l-.325 1.464c2.16.479 4.397.479 6.556 0l-.325-1.464zM9.047 4.073a13.651 13.651 0 015.906 0l.325-1.464a15.151 15.151 0 00-6.556 0l.325 1.464zm-.454 15.753a6.603 6.603 0 01-4.98-4.856l-1.455.362a8.103 8.103 0 006.11 5.959l.325-1.465zm7.139 1.465a8.103 8.103 0 006.11-5.959l-1.455-.362a6.603 6.603 0 01-4.98 4.856l.325 1.465zm-.325-17.117a6.603 6.603 0 014.98 4.856l1.456-.362a8.103 8.103 0 00-6.111-5.959l-.325 1.465zM8.268 2.709a8.103 8.103 0 00-6.11 5.959l1.455.361a6.603 6.603 0 014.98-4.855l-.325-1.465zm-.553 8.251l2.57 1.837.873-1.22-2.57-1.837-.873 1.22zm6 1.837l2.57-1.837-.872-1.22-2.57 1.836.871 1.22zm-3.43 0a2.95 2.95 0 003.43 0l-.873-1.22a1.45 1.45 0 01-1.684 0l-.872 1.22z",
+            fill: i.main,
+            "data-fill": "main"
+        })]
+    })
+}
+
+function sl(i) {
+    return l.jsxs("svg", {
+        width: 24,
+        height: 24,
+        viewBox: "0 0 24 24",
+        fill: "none",
+        xmlns: "http://www.w3.org/2000/svg",
+        ...i,
+        children: [l.jsx("path", {
+            d: "M3.776 9.226c.676-2.942 2.88-5.229 5.69-5.901l.224-.054a9.853 9.853 0 014.593 0l.381.092c2.713.649 4.842 2.857 5.495 5.698l.089.386a9.955 9.955 0 010 4.455c-.678 2.948-3.19 5.025-6.076 5.025h-1.061a.866.866 0 00-.797.563c-.481 1.23-1.825 1.835-2.998 1.333l-.118-.05c-2.711-1.16-4.732-3.646-5.419-6.635a11.008 11.008 0 01-.003-4.912z",
+            fill: i.secondary,
+            "data-fill": "secondary"
+        }), l.jsx("path", {
+            d: "M12.314 19.49l-.698-.273.698.273zM3.78 14.138l-.73.168.73-.168zm-.003-4.912l-.731-.168.73.168zm16.472.221l.73-.168-.73.168zm0 4.455l-.731-.168.73.168zM9.316 20.823l.295-.69-.295.69zM9.69 3.271l.174.73-.174-.73zm4.593 0l-.175.73.175-.73zM9.198 20.773l-.295.69.295-.69zm5.466-17.41l.175-.73-.175.73zM20.16 9.06l-.731.168.73-.168zM9.466 3.325l-.174-.73.174.73zm-.77 4.983a.75.75 0 000 1.5v-1.5zm6.032 1.5a.75.75 0 100-1.5v1.5zm-6.032 1.956a.75.75 0 000 1.5v-1.5zm3.839 1.5a.75.75 0 000-1.5v1.5zM9.64 4.054l.223-.053-.35-1.459-.222.053.35 1.46zm4.467-.053l.381.091.35-1.459-.381-.091-.35 1.459zM9.611 20.134l-.118-.05-.59 1.378.118.05.59-1.378zm9.817-10.905l.089.386 1.462-.336-.09-.386-1.461.336zm-5.256 8.948h-1.061v1.5h1.061v-1.5zm-1.061 0c-.679 0-1.258.434-1.495 1.04l1.397.546c.028-.07.079-.086.098-.086v-1.5zM4.51 13.97a10.259 10.259 0 01-.003-4.576l-1.462-.336a11.758 11.758 0 00.003 5.248l1.462-.336zm15.007-4.355a9.205 9.205 0 010 4.12l1.462.335a10.705 10.705 0 000-4.79l-1.462.335zM9.02 21.513c1.592.68 3.368-.155 3.992-1.75l-1.397-.546c-.34.867-1.251 1.24-2.005.917l-.59 1.379zM9.864 4a9.103 9.103 0 014.244 0l.35-1.459a10.603 10.603 0 00-4.943 0l.35 1.459zm-.371 16.082c-2.478-1.06-4.347-3.345-4.983-6.113l-1.462.336c.738 3.209 2.911 5.898 5.855 7.156l.59-1.379zm10.024-6.349c-.605 2.63-2.831 4.443-5.345 4.443v1.5c3.26 0 6.056-2.342 6.807-5.607l-1.462-.336zM14.49 4.092c2.42.58 4.345 2.557 4.938 5.137l1.462-.336c-.713-3.103-3.046-5.54-6.051-6.26l-.35 1.459zM9.291 2.595c-3.102.743-5.51 3.259-6.247 6.463l1.462.336c.616-2.68 2.617-4.737 5.134-5.34l-.35-1.459zm-.596 7.213h6.032v-1.5H8.696v1.5zm0 3.456h3.839v-1.5H8.696v1.5z",
+            fill: i.main,
+            "data-fill": "main"
+        })]
+    })
+}
+
+function nl(i) {
+    return l.jsxs("svg", {
+        width: 24,
+        height: 24,
+        viewBox: "0 0 24 24",
+        fill: "none",
+        xmlns: "http://www.w3.org/2000/svg",
+        ...i,
+        children: [l.jsx("path", {
+            d: "M11.444 15.616c-1.83-.262-3.279-1.769-3.564-3.703a17.697 17.697 0 010-5.156c.285-1.934 1.732-3.442 3.56-3.708l.112-.016c.3-.044.604-.044.904 0l.097.014c1.837.267 3.29 1.784 3.573 3.727a17.757 17.757 0 010 5.122c-.283 1.944-1.739 3.458-3.577 3.722l-.1.014a3.135 3.135 0 01-.89 0l-.115-.016z",
+            fill: i.secondary,
+            "data-fill": "secondary"
+        }), l.jsx("path", {
+            d: "M12.45 15.632l.106.743-.106-.743zm-.891 0l.107-.742-.107.742zm-.007-12.6l-.108-.741.108.742zm.904 0l.108-.741-.108.742zm-4.576 8.88l-.742.11.742-.11zm0-5.155l.742.11-.742-.11zm8.246.017l.742-.108-.742.108zm0 5.122l-.742-.109.742.109zm-3.577 3.722l-.106-.742.107.742zm.004-12.571l-.108.742.108-.742zm-1.113.002l.108.742-.108-.742zm.004 12.567l-.107.742.107-.742zm8.306-4.163a.75.75 0 00-1.5 0h1.5zm-14 0a.75.75 0 00-1.5 0h1.5zM11.25 21a.75.75 0 001.5 0h-1.5zm.298-17.209l.112-.016-.216-1.484-.112.016.216 1.484zm.8-.016l.097.014.216-1.484-.097-.014-.216 1.484zm.095 11.1l-.1.015.213 1.485.1-.015-.213-1.484zm-.777.015l-.116-.017-.213 1.485.116.017.213-1.485zm.677 0a2.39 2.39 0 01-.678 0l-.212 1.485c.366.052.737.052 1.103 0l-.213-1.485zM11.66 3.775c.229-.033.46-.033.688 0l.216-1.484a3.887 3.887 0 00-1.12 0l.216 1.484zm-3.038 8.028a16.947 16.947 0 010-4.937l-1.484-.218a18.446 18.446 0 000 5.374l1.484-.219zm6.762-4.92c.237 1.624.237 3.28 0 4.904l1.485.217c.258-1.769.258-3.57 0-5.338l-1.485.216zm0 4.904c-.24 1.642-1.458 2.876-2.94 3.089l.212 1.484c2.193-.314 3.885-2.11 4.213-4.356l-1.485-.217zm1.485-5.121c-.328-2.245-2.017-4.043-4.208-4.361l-.216 1.484c1.482.216 2.7 1.452 2.94 3.093l1.484-.216zm-8.247.2c.24-1.632 1.452-2.86 2.926-3.075l-.216-1.484c-2.182.317-3.865 2.106-4.194 4.34l1.484.22zm-1.484 5.156c.33 2.237 2.016 4.023 4.2 4.336l.212-1.485c-1.475-.211-2.688-1.437-2.928-3.07l-1.484.219zm11.112-.569c0 3.73-2.84 6.675-6.25 6.675v1.5c4.321 0 7.75-3.702 7.75-8.175h-1.5zM12 18.128c-3.41 0-6.25-2.946-6.25-6.675h-1.5c0 4.473 3.429 8.175 7.75 8.175v-1.5zm-.75.75V21h1.5v-2.122h-1.5z",
+            fill: i.main,
+            "data-fill": "main"
+        })]
+    })
+}
+
+function el(i) {
+    return l.jsx("svg", {
+        width: 24,
+        height: 24,
+        viewBox: "0 0 24 24",
+        fill: "none",
+        xmlns: "http://www.w3.org/2000/svg",
+        ...i,
+        children: l.jsx("path", {
+            d: "M8 12h8",
+            stroke: i.main,
+            "data-stroke": "main",
+            strokeWidth: 1.5,
+            strokeLinecap: "round"
+        })
+    })
+}
+
+function rl(i) {
+    return l.jsxs("svg", {
+        width: 24,
+        height: 24,
+        viewBox: "0 0 24 24",
+        fill: "none",
+        xmlns: "http://www.w3.org/2000/svg",
+        ...i,
+        children: [l.jsx("path", {
+            d: "M13.399 7.646a.308.308 0 01.577 0l.264.735c.031.086.1.154.187.184l.744.26a.301.301 0 010 .571l-.744.26a.305.305 0 00-.187.185l-.264.735a.308.308 0 01-.577 0l-.264-.735a.305.305 0 00-.187-.184l-.744-.26a.301.301 0 010-.571l.744-.26a.305.305 0 00.187-.185l.264-.735zM16.307 10.912c.065-.179.321-.179.386 0l.175.49c.021.058.067.103.125.123l.496.174a.2.2 0 010 .38l-.496.174a.203.203 0 00-.125.123l-.175.49a.205.205 0 01-.386 0l-.175-.49a.203.203 0 00-.125-.123l-.496-.174a.2.2 0 010-.38l.496-.174a.203.203 0 00.125-.123l.175-.49zM17.77 3.292c.139-.39.696-.39.836 0l.478 1.334a.44.44 0 00.27.266l1.35.473a.436.436 0 010 .826l-1.35.472a.44.44 0 00-.27.267l-.478 1.334a.446.446 0 01-.837 0l-.478-1.334a.44.44 0 00-.27-.267l-1.35-.472a.436.436 0 010-.826l1.35-.473a.44.44 0 00.27-.266l.478-1.334z",
+            fill: i.main,
+            "data-fill": "main"
+        }), l.jsx("path", {
+            d: "M3 13.46C3 17.624 6.474 21 10.76 21c3.3 0 6.117-2 7.24-4.822a7.04 7.04 0 01-2.93.633c-3.809 0-6.897-3-6.897-6.703 0-1.548.54-2.973 1.448-4.108C5.875 6.535 3 9.671 3 13.46z",
+            fill: i.secondary,
+            "data-fill": "secondary",
+            stroke: i.main,
+            "data-stroke": "main",
+            strokeWidth: 1.5,
+            strokeLinecap: "round",
+            strokeLinejoin: "round"
+        })]
+    })
+}
+
+function hl(i) {
+    return l.jsx("svg", {
+        width: 24,
+        height: 24,
+        viewBox: "0 0 24 24",
+        fill: "none",
+        xmlns: "http://www.w3.org/2000/svg",
+        ...i,
+        children: l.jsx("path", {
+            d: "M14 5c0-1.1-.9-2-2-2s-2 .9-2 2 .9 2 2 2 2-.9 2-2zM14 19c0-1.1-.9-2-2-2s-2 .9-2 2 .9 2 2 2 2-.9 2-2zM14 12c0-1.1-.9-2-2-2s-2 .9-2 2 .9 2 2 2 2-.9 2-2z",
+            fill: i.secondary,
+            "data-fill": "secondary",
+            stroke: i.main,
+            "data-stroke": "main",
+            strokeWidth: 1.5
+        })
+    })
+}
+
+function dl(i) {
+    return l.jsxs("svg", {
+        width: "24",
+        height: "24",
+        viewBox: "0 0 24 24",
+        fill: "none",
+        xmlns: "http://www.w3.org/2000/svg",
+        ...i,
+        children: [l.jsx("path", {
+            d: "M15.75 3.25H6.25C5.71957 3.25 5.21086 3.46071 4.83579 3.83579C4.46071 4.21086 4.25 4.71957 4.25 5.25V14.75C4.25 15.2804 4.46071 15.7891 4.83579 16.1642C5.21086 16.5393 5.71957 16.75 6.25 16.75H12.77L11.91 15.25H6.25C6.11739 15.25 5.99021 15.1973 5.89645 15.1036C5.80268 15.0098 5.75 14.8826 5.75 14.75V5.25C5.75 5.11739 5.80268 4.99021 5.89645 4.89645C5.99021 4.80268 6.11739 4.75 6.25 4.75H15.75C15.8826 4.75 16.0098 4.80268 16.1036 4.89645C16.1973 4.99021 16.25 5.11739 16.25 5.25V9.25H17.42H17.75V5.25C17.75 4.71957 17.5393 4.21086 17.1642 3.83579C16.7891 3.46071 16.2804 3.25 15.75 3.25Z",
+            fill: i.main,
+            "data-fill": "main"
+        }), l.jsx("path", {
+            d: "M22.08 17.3L18.45 10.92C18.2797 10.6183 18.0007 10.393 17.67 10.29C17.5903 10.2797 17.5097 10.2797 17.43 10.29H16.12C15.88 9.82002 15.61 9.36002 15.35 8.90002C14.29 7.02002 13.23 6.37002 12.22 6.90002C11.21 7.43002 11.22 8.72002 12.31 10.59C12.4065 10.7586 12.5655 10.8825 12.7526 10.9349C12.9397 10.9873 13.1399 10.964 13.31 10.87C13.4784 10.7733 13.6027 10.6151 13.6568 10.4285C13.7109 10.242 13.6905 10.0418 13.6 9.87002C13.2817 9.36962 13.0517 8.81828 12.92 8.24002C13.01 8.24002 13.38 8.48002 14.03 9.62002L14.43 10.33C14.3291 10.346 14.2326 10.3826 14.1465 10.4377C14.0604 10.4928 13.9867 10.5651 13.93 10.65L12.45 13.08C12.4008 13.145 12.3666 13.2202 12.35 13.3C12.2756 13.6405 12.329 13.9964 12.5 14.3L16.13 20.69C16.2547 20.9 16.4317 21.0739 16.6438 21.1949C16.856 21.3158 17.0958 21.3796 17.34 21.38C17.5788 21.3831 17.814 21.3209 18.02 21.2L21.54 19.2C21.7018 19.1124 21.8445 18.9932 21.9596 18.8496C22.0748 18.706 22.16 18.5408 22.2103 18.3638C22.2606 18.1867 22.275 18.0014 22.2526 17.8187C22.2303 17.6361 22.1716 17.4597 22.08 17.3ZM17.4 19.83L13.88 13.64L15 11.78H15.17C15.3983 12.1717 15.5383 12.6086 15.58 13.06C15.4284 13.1723 15.3246 13.3375 15.2894 13.5229C15.2542 13.7082 15.2901 13.9 15.39 14.06C15.4544 14.1757 15.5487 14.272 15.6631 14.3389C15.7774 14.4057 15.9076 14.4406 16.04 14.44C16.1693 14.4349 16.2958 14.4008 16.41 14.34C17.25 13.86 17.2 12.91 16.79 11.79H17.18L20.7 17.98L17.4 19.83Z",
+            fill: i.main,
+            "data-fill": "main"
+        })]
+    })
+}
+
+function ol(i) {
+    return l.jsxs("svg", {
+        width: "24",
+        height: "24",
+        viewBox: "0 0 24 24",
+        fill: "none",
+        xmlns: "http://www.w3.org/2000/svg",
+        ...i,
+        children: [l.jsx("path", {
+            d: "M5.25 5.74999H13.48C14.3047 5.25608 15.2319 4.95841 16.19 4.87999C16.0076 4.67983 15.7851 4.5203 15.537 4.41176C15.2889 4.30321 15.0208 4.2481 14.75 4.24999H5.25C4.71957 4.24999 4.21086 4.4607 3.83579 4.83577C3.46071 5.21084 3.25 5.71955 3.25 6.24999V15.75C3.25 16.2804 3.46071 16.7891 3.83579 17.1642C4.21086 17.5393 4.71957 17.75 5.25 17.75H8.83L10 16.25H5.25C5.11739 16.25 4.99021 16.1973 4.89645 16.1035C4.80268 16.0098 4.75 15.8826 4.75 15.75V6.24999C4.75 6.11738 4.80268 5.9902 4.89645 5.89643C4.99021 5.80266 5.11739 5.74999 5.25 5.74999Z",
+            fill: i.main,
+            "data-fill": "main"
+        }), l.jsx("path", {
+            d: "M19.85 7.13999C18.8451 6.36791 17.5897 5.99591 16.3264 6.09594C15.0631 6.19597 13.8819 6.76091 13.011 7.6815C12.1402 8.60209 11.6417 9.81292 11.612 11.0798C11.5822 12.3467 12.0233 13.5795 12.85 14.54L9.14 19.4C9.05912 19.5047 8.99984 19.6245 8.96559 19.7523C8.93134 19.8802 8.9228 20.0135 8.94048 20.1447C8.95815 20.2758 9.00168 20.4022 9.06854 20.5164C9.13541 20.6306 9.22428 20.7304 9.33 20.81L9.46 20.91C9.63777 21.0381 9.85088 21.108 10.07 21.11C10.2269 21.1116 10.382 21.0762 10.5227 21.0067C10.6635 20.9372 10.7858 20.8355 10.88 20.71L14.58 15.85C15.2549 16.1711 15.9926 16.3385 16.74 16.34C16.9698 16.3549 17.2002 16.3549 17.43 16.34C18.4343 16.203 19.3754 15.7715 20.1347 15.1001C20.894 14.4287 21.4374 13.5474 21.6963 12.5674C21.9552 11.5875 21.918 10.5528 21.5894 9.59398C21.2608 8.63515 20.6555 7.79515 19.85 7.17999V7.13999ZM19.63 13.41C19.3419 13.7899 18.9815 14.1092 18.5697 14.3494C18.1578 14.5897 17.7025 14.7462 17.23 14.81C16.7585 14.8758 16.2787 14.8469 15.8185 14.725C15.3583 14.603 14.9271 14.3906 14.55 14.1C13.9489 13.6388 13.5071 13.0011 13.2867 12.2762C13.0662 11.5513 13.0781 10.7756 13.3207 10.0578C13.5633 9.34003 14.0243 8.71614 14.6393 8.27358C15.2543 7.83103 15.9923 7.592 16.75 7.58999C17.5419 7.58694 18.3123 7.84726 18.94 8.32999C19.704 8.91293 20.2057 9.77507 20.3351 10.7274C20.4644 11.6796 20.2109 12.6444 19.63 13.41Z",
+            fill: i.main,
+            "data-fill": "main"
+        })]
+    })
+}
+
+function Cl(i) {
+    return l.jsxs("svg", {
+        width: "24",
+        height: "24",
+        viewBox: "0 0 24 24",
+        fill: "none",
+        xmlns: "http://www.w3.org/2000/svg",
+        ...i,
+        children: [l.jsx("path", {
+            d: "M9.93006 5.93002C10.7956 5.90899 11.6503 6.12698 12.4001 6.56002C12.7842 6.19541 13.2146 5.88275 13.6801 5.63002C12.6051 4.81096 11.2808 4.38719 9.93006 4.43002C7.20006 4.43002 5.06006 5.91002 5.06006 7.79002C5.06401 8.39748 5.27974 8.98453 5.67006 9.45002C5.27707 9.90995 5.06115 10.4951 5.06115 11.1C5.06115 11.705 5.27707 12.2901 5.67006 12.75C5.28192 13.2129 5.06633 13.796 5.06006 14.4C5.06006 16.04 6.67006 17.4 8.87006 17.69L10.0001 16.27C8.00006 16.27 6.63006 15.27 6.63006 14.4C6.64116 14.1446 6.74006 13.9009 6.91006 13.71C7.85947 14.2189 8.92302 14.477 10.0001 14.46C10.4258 14.4599 10.8507 14.4231 11.2701 14.35C11.0141 13.9 10.8159 13.4196 10.6801 12.92C10.4537 12.9354 10.2265 12.9354 10.0001 12.92C9.48271 12.9225 8.96762 12.8518 8.47006 12.71C7.86027 12.5435 7.31594 12.1946 6.91006 11.71C6.73277 11.524 6.63387 11.277 6.63387 11.02C6.63387 10.7631 6.73277 10.516 6.91006 10.33C7.55184 10.7164 8.26101 10.9777 9.00006 11.1C9.29495 11.1409 9.59235 11.161 9.89006 11.16C10.0399 11.1702 10.1902 11.1702 10.3401 11.16C10.3469 10.6473 10.414 10.1371 10.5401 9.64002C10.3237 9.65555 10.1064 9.65555 9.89006 9.64002C9.38703 9.64525 8.88567 9.58132 8.40006 9.45002C7.78768 9.28303 7.24029 8.93437 6.83006 8.45002C6.66297 8.25816 6.56756 8.01432 6.56006 7.76002C6.56006 6.91002 8.00006 5.93002 9.93006 5.93002Z",
+            fill: i.main,
+            "data-fill": "main"
+        }), l.jsx("path", {
+            d: "M19.85 7.13999C18.8451 6.36791 17.5897 5.99591 16.3264 6.09594C15.0631 6.19597 13.8819 6.76091 13.011 7.6815C12.1402 8.60209 11.6417 9.81292 11.612 11.0798C11.5822 12.3467 12.0233 13.5795 12.85 14.54L9.14 19.4C9.05912 19.5047 8.99984 19.6245 8.96559 19.7523C8.93134 19.8802 8.9228 20.0135 8.94048 20.1447C8.95815 20.2758 9.00168 20.4022 9.06854 20.5164C9.13541 20.6306 9.22428 20.7304 9.33 20.81L9.46 20.91C9.63777 21.0381 9.85088 21.108 10.07 21.11C10.2269 21.1116 10.382 21.0762 10.5227 21.0067C10.6635 20.9372 10.7858 20.8355 10.88 20.71L14.58 15.85C15.2549 16.1711 15.9926 16.3385 16.74 16.34C16.9698 16.3549 17.2002 16.3549 17.43 16.34C18.4343 16.203 19.3754 15.7715 20.1347 15.1001C20.894 14.4287 21.4374 13.5474 21.6963 12.5674C21.9552 11.5875 21.918 10.5528 21.5894 9.59398C21.2608 8.63515 20.6555 7.79515 19.85 7.17999V7.13999ZM19.63 13.41C19.3419 13.7899 18.9815 14.1092 18.5697 14.3494C18.1578 14.5897 17.7025 14.7462 17.23 14.81C16.7585 14.8758 16.2787 14.8469 15.8185 14.725C15.3583 14.603 14.9271 14.3906 14.55 14.1C13.9489 13.6388 13.5071 13.0011 13.2867 12.2762C13.0662 11.5513 13.0781 10.7756 13.3207 10.0578C13.5633 9.34003 14.0243 8.71614 14.6393 8.27358C15.2543 7.83103 15.9923 7.592 16.75 7.58999C17.5419 7.58694 18.3123 7.84726 18.94 8.32999C19.704 8.91293 20.2057 9.77507 20.3351 10.7274C20.4644 11.6796 20.2109 12.6444 19.63 13.41Z",
+            fill: i.main,
+            "data-fill": "main"
+        })]
+    })
+}
+
+function cl(i) {
+    return l.jsxs("svg", {
+        width: 24,
+        height: 24,
+        viewBox: "0 0 24 24",
+        fill: "none",
+        xmlns: "http://www.w3.org/2000/svg",
+        ...i,
+        children: [l.jsx("path", {
+            d: "M3.353 8.833c.651-2.723 2.82-4.848 5.597-5.487a13.616 13.616 0 016.1 0c2.777.639 4.946 2.764 5.597 5.487.47 1.966.47 4.012 0 5.979-.651 2.722-2.82 4.848-5.597 5.487a13.616 13.616 0 01-6.1 0c-2.777-.639-4.946-2.765-5.597-5.487a12.838 12.838 0 010-5.979z",
+            fill: i.secondary,
+            "data-fill": "secondary"
+        }), l.jsx("path", {
+            d: "M3.353 14.812l.73-.175-.73.175zm0-5.979l.73.175-.73-.175zm17.294 0l-.73.175.73-.175zm0 5.979l-.73-.175.73.175zm-5.597 5.487l.168.73-.168-.73zm-6.1 0l.168-.731-.168.73zm0-16.953l.168.73-.168-.73zm6.1 0l.168-.731-.168.73zM4.082 14.637a12.089 12.089 0 010-5.63l-1.459-.349a13.589 13.589 0 000 6.328l1.46-.349zm15.836-5.63a12.087 12.087 0 010 5.63l1.459.35a13.588 13.588 0 000-6.329l-1.46.35zm-5.036 10.56a12.868 12.868 0 01-5.764 0l-.336 1.463c2.117.486 4.32.486 6.436 0l-.336-1.462zM9.117 4.078a12.865 12.865 0 015.764 0l.336-1.462a14.365 14.365 0 00-6.436 0l.336 1.462zm0 15.49c-2.506-.575-4.452-2.49-5.036-4.93l-1.459.35c.72 3.005 3.11 5.342 6.16 6.043l.335-1.462zm6.1 1.463c3.048-.701 5.44-3.038 6.159-6.044l-1.46-.349c-.583 2.44-2.53 4.355-5.036 4.93l.337 1.463zm-.336-16.953c2.506.576 4.452 2.491 5.036 4.93l1.459-.349c-.72-3.005-3.11-5.342-6.16-6.043l-.335 1.462zm-6.1-1.462c-3.048.701-5.44 3.038-6.159 6.043l1.46.35c.583-2.44 2.53-4.355 5.035-4.931l-.336-1.462zM14.831 21c0-1.464.001-2.485.107-3.255.102-.747.29-1.146.582-1.432l-1.05-1.071c-.623.61-.892 1.38-1.018 2.3-.123.895-.121 2.037-.121 3.458h1.5zm5.491-6.868c-1.45 0-2.612-.002-3.522.118-.93.123-1.71.384-2.33.992l1.05 1.071c.293-.288.706-.474 1.476-.576.79-.104 1.834-.105 3.326-.105v-1.5z",
+            fill: i.main,
+            "data-fill": "main"
+        }), l.jsx("path", {
+            d: "M9 9h3m-3 3h5",
+            stroke: i.main,
+            "data-stroke": "main",
+            strokeWidth: 1.5,
+            strokeLinecap: "round"
+        })]
+    })
+}
+
+function pl(i) {
+    return l.jsxs("svg", {
+        width: 24,
+        height: 24,
+        viewBox: "0 0 24 24",
+        fill: "none",
+        xmlns: "http://www.w3.org/2000/svg",
+        ...i,
+        children: [l.jsx("path", {
+            d: "M9.01 17.903c1.987.224 3.993.224 5.98 0a3.451 3.451 0 01-.09.574l-.082.334a2.867 2.867 0 01-2.114 2.106c-.463.11-.945.11-1.408 0a2.867 2.867 0 01-2.114-2.106l-.082-.334a3.453 3.453 0 01-.09-.574z",
+            fill: i.secondary,
+            "data-fill": "secondary"
+        }), l.jsx("path", {
+            d: "M10.158 4.302a6.303 6.303 0 00-4.13 4.33l-.59 2.18-.468 2.116c-.144.651-.34 1.322-.443 1.981a2.239 2.239 0 001.76 2.548l.368.075c3.527.719 7.163.719 10.69 0l.367-.075a2.239 2.239 0 001.76-2.548c-.102-.66-.298-1.33-.442-1.982l-.468-2.116-.583-2.223a6.145 6.145 0 00-4.012-4.28 6.143 6.143 0 00-3.809-.006z",
+            fill: i.secondary,
+            "data-fill": "secondary"
+        }), l.jsx("path", {
+            d: "M9.01 17.903l.083-.745-.897-.1.065.9.748-.055zm5.98 0l.749.055.065-.9-.897.1.084.745zm-.09.574l.729.18-.729-.18zm-.082.334l-.728-.18.728.18zm-2.114 2.106l.174.73-.174-.73zm-1.408 0l-.174.73.174-.73zm-2.114-2.106l-.728.179.728-.18zm-.082-.334l.728-.179-.728.18zM6.028 8.633l.724.196-.724-.196zm4.13-4.33l.232.713-.232-.714zm-4.72 6.508l-.724-.196-.005.017-.004.018.732.161zm-.468 2.117l.733.161-.733-.162zm1.318 4.53l.15-.736-.15.735zm.367.074l.15-.735-.15.735zm10.69 0l-.15-.735.15.735zm.367-.075l.15.735-.15-.735zm1.318-4.53l-.733.162.733-.162zm-.468-2.116l.733-.162-.003-.014-.004-.014-.726.19zm-.583-2.223l-.725.19.725-.19zm-4.012-4.28l.235-.712-.235.712zm5.506 10.601l-.741.116.74-.116zm-14.946 0l-.74-.116.74.116zM12.75 3a.75.75 0 00-1.5 0h1.5zm-1.5 1.005a.75.75 0 001.5 0h-1.5zM8.925 18.649c2.044.23 4.106.23 6.15 0l-.168-1.49a26.021 26.021 0 01-5.814 0l-.168 1.49zm6.704.007c.056-.23.093-.463.11-.698l-1.496-.109a2.699 2.699 0 01-.071.45l1.457.357zm-.082.334l.082-.334-1.457-.358-.082.334 1.457.358zm-2.669 2.656a3.617 3.617 0 002.668-2.656l-1.456-.358a2.117 2.117 0 01-1.56 1.555l.348 1.46zm-1.756 0c.577.139 1.179.139 1.756 0l-.349-1.459c-.348.084-.71.084-1.058 0l-.35 1.46zM8.454 18.99a3.617 3.617 0 002.668 2.656l.349-1.459a2.117 2.117 0 01-1.56-1.556l-1.457.359zm-.082-.334l.082.334 1.456-.358-.082-.334-1.456.358zm-.11-.698c.016.235.053.469.11.698l1.456-.358a2.703 2.703 0 01-.07-.449l-1.497.109zm-1.51-9.13a5.553 5.553 0 013.638-3.812l-.463-1.427a7.053 7.053 0 00-4.623 4.847l1.448.393zm-.59 2.18l.59-2.18-1.448-.392-.59 2.18 1.447.391zm-.46 2.081l.468-2.116-1.465-.324-.467 2.117 1.465.323zM5.25 15.26c0-.08.006-.159.018-.235l-1.482-.232a3.018 3.018 0 00-.036.467h1.5zm1.187 1.462A1.489 1.489 0 015.25 15.26h-1.5c0 1.42.996 2.649 2.388 2.932l.3-1.47zm.368.075l-.368-.075-.3 1.47.368.075.3-1.47zm10.39 0a26.021 26.021 0 01-10.39 0l-.3 1.47c3.627.739 7.363.739 10.99 0l-.3-1.47zm.368-.075l-.368.075.3 1.47.367-.075-.3-1.47zm1.187-1.462c0 .713-.499 1.322-1.187 1.462l.3 1.47a2.989 2.989 0 002.387-2.932h-1.5zm-.018-.235c.012.076.018.155.018.235h1.5c0-.158-.012-.314-.036-.467l-1.482.232zm-.902-4.052l.467 2.116 1.465-.323-.467-2.117-1.465.324zm-.576-2.194l.583 2.223 1.45-.381-.582-2.223-1.451.38zM13.732 5.02a5.396 5.396 0 013.522 3.758l1.45-.381a6.895 6.895 0 00-4.502-4.802l-.47 1.425zm-3.342-.005a5.393 5.393 0 013.342.005l.47-1.425a6.893 6.893 0 00-4.275-.007l.463 1.427zm9.824 9.777c-.107-.684-.324-1.448-.452-2.027l-1.465.323c.16.725.335 1.302.435 1.936l1.482-.232zM4.238 12.766c-.128.579-.345 1.343-.452 2.027l1.482.232c.1-.634.274-1.21.435-1.936l-1.465-.323zM11.25 3v1.005h1.5V3h-1.5z",
+            fill: i.main,
+            "data-fill": "main"
+        })]
+    })
+}
+
+function xl(i) {
+    return l.jsxs("svg", {
+        width: 24,
+        height: 24,
+        viewBox: "0 0 24 24",
+        fill: "none",
+        xmlns: "http://www.w3.org/2000/svg",
+        ...i,
+        children: [l.jsx("path", {
+            d: "M14.541 15C13.138 15 12 16.031 12 17.303c0 .289.044.576.13.854l.084.267c.393 1.259 1.534 2.21 2.951 2.46a7.705 7.705 0 002.67 0c1.417-.25 2.558-1.201 2.951-2.46l.083-.267c.087-.278.131-.565.131-.854C21 16.031 19.862 15 18.459 15H14.54zM9 5.541C9 4.138 7.969 3 6.697 3a2.86 2.86 0 00-.854.13l-.267.084c-1.259.393-2.21 1.534-2.46 2.951a7.704 7.704 0 000 2.67c.25 1.417 1.201 2.558 2.46 2.951l.267.083c.278.087.565.131.854.131C7.969 12 9 10.862 9 9.459V5.54z",
+            fill: i.secondary,
+            "data-fill": "secondary"
+        }), l.jsx("path", {
+            d: "M15.165 20.884a7.705 7.705 0 002.67 0c1.417-.25 2.558-1.201 2.951-2.46l.083-.267c.087-.278.131-.565.131-.854C21 16.031 19.862 15 18.459 15H14.54C13.138 15 12 16.031 12 17.303c0 .289.044.576.13.854l.084.267c.393 1.259 1.534 2.21 2.951 2.46zm0 0A15.04 15.04 0 013.117 8.834m0 0a7.704 7.704 0 010-2.669c.25-1.417 1.2-2.558 2.46-2.951l.266-.083A2.86 2.86 0 016.697 3C7.969 3 9 4.138 9 5.541V9.46C9 10.862 7.969 12 6.697 12c-.289 0-.576-.044-.854-.13l-.267-.084c-1.259-.393-2.21-1.534-2.46-2.951z",
+            stroke: i.main,
+            "data-stroke": "main",
+            strokeWidth: 1.5
+        })]
+    })
+}
+
+function fl(i) {
+    return l.jsx("svg", {
+        width: 24,
+        height: 24,
+        viewBox: "0 0 24 24",
+        fill: "none",
+        xmlns: "http://www.w3.org/2000/svg",
+        ...i,
+        children: l.jsx("path", {
+            d: "M18.158 8.605c2.456 1.509 2.456 5.281 0 6.79l-6.632 4.074C9.07 20.978 6 19.092 6 16.074V7.926c0-3.018 3.07-4.904 5.526-3.395l6.632 4.074z",
+            fill: i.secondary,
+            "data-fill": "secondary",
+            stroke: i.main,
+            "data-stroke": "main",
+            strokeWidth: 1.5
+        })
+    })
+}
+
+function ml(i) {
+    return l.jsxs("svg", {
+        width: 24,
+        height: 24,
+        viewBox: "0 0 16 16",
+        fill: "none",
+        xmlns: "http://www.w3.org/2000/svg",
+        ...i,
+        children: [l.jsx("path", {
+            d: "M1.33325 2.66671C1.33325 1.93033 1.93021 1.33337 2.66659 1.33337H5.33325C6.06963 1.33337 6.66658 1.93033 6.66658 2.66671V13.3334C6.66658 14.0698 6.06963 14.6667 5.33325 14.6667H2.66659C1.93021 14.6667 1.33325 14.0698 1.33325 13.3334V2.66671Z",
+            fill: i.secondary,
+            stroke: i.main,
+            "data-fill": "secondary",
+            "data-stroke": "main"
+        }), l.jsx("path", {
+            d: "M9.33325 2.66671C9.33325 1.93033 9.93021 1.33337 10.6666 1.33337H13.3333C14.0696 1.33337 14.6666 1.93033 14.6666 2.66671V13.3334C14.6666 14.0698 14.0696 14.6667 13.3333 14.6667H10.6666C9.93021 14.6667 9.33325 14.0698 9.33325 13.3334V2.66671Z",
+            fill: i.secondary,
+            stroke: i.main,
+            "data-fill": "secondary",
+            "data-stroke": "main"
+        })]
+    })
+}
+
+function jl(i) {
+    return l.jsx("svg", {
+        width: 24,
+        height: 24,
+        viewBox: "0 0 24 24",
+        fill: "none",
+        xmlns: "http://www.w3.org/2000/svg",
+        ...i,
+        children: l.jsx("path", {
+            d: "M6 12h12m-6-6v12",
+            stroke: i.main,
+            "data-stroke": "main",
+            strokeWidth: 1.5,
+            strokeLinecap: "round"
+        })
+    })
+}
+
+function wl(i) {
+    return l.jsxs("svg", {
+        width: 24,
+        height: 24,
+        viewBox: "0 0 24 24",
+        fill: "none",
+        xmlns: "http://www.w3.org/2000/svg",
+        ...i,
+        children: [l.jsx("path", {
+            fillRule: "evenodd",
+            clipRule: "evenodd",
+            d: "M21.44 13.994c-2.661 0-2.661-4.114 0-4.114 0-4.768 0-6.47-9.395-6.47S2.65 5.113 2.65 9.88c2.66 0 2.66 4.114 0 4.114 0 4.768 0 6.47 9.395 6.47s9.395-1.702 9.395-6.47z",
+            fill: i.secondary,
+            "data-fill": "secondary",
+            stroke: i.main,
+            "data-stroke": "main",
+            strokeWidth: 1.5,
+            strokeLinecap: "round",
+            strokeLinejoin: "round"
+        }), l.jsx("path", {
+            clipRule: "evenodd",
+            d: "M12.045 9.171c-.683 0-.748 1.09-1.154 1.475-.407.385-1.67-.055-1.846.628-.175.684.962.916 1.103 1.503.14.586-.554 1.41.04 1.822.593.409 1.232-.519 1.857-.519s1.264.928 1.858.519c.594-.412-.1-1.236.04-1.822.14-.587 1.277-.819 1.102-1.503-.176-.683-1.439-.243-1.846-.628-.406-.385-.47-1.475-1.154-1.475z",
+            stroke: i.main,
+            "data-stroke": "main",
+            strokeWidth: 1.5,
+            strokeLinecap: "round",
+            strokeLinejoin: "round"
+        })]
+    })
+}
+
+function Ml(i) {
+    return l.jsxs("svg", {
+        width: 24,
+        height: 24,
+        viewBox: "0 0 24 24",
+        fill: "none",
+        xmlns: "http://www.w3.org/2000/svg",
+        ...i,
+        children: [l.jsx("path", {
+            d: "M2.42 8.72c.691-2.65 2.802-4.676 5.452-5.235l.507-.107a17.537 17.537 0 017.242 0l.507.107c2.65.559 4.76 2.586 5.451 5.234.561 2.15.561 4.411 0 6.562-.69 2.649-2.8 4.675-5.451 5.234l-.507.107a17.536 17.536 0 01-7.242 0l-.507-.107c-2.65-.559-4.76-2.585-5.451-5.234-.561-2.15-.561-4.411 0-6.562z",
+            fill: i.secondary,
+            "data-fill": "secondary",
+            stroke: i.main,
+            "data-stroke": "main",
+            strokeWidth: 1.5
+        }), l.jsx("path", {
+            d: "M6 12h2l2 3 4-6 2 3h2",
+            stroke: i.main,
+            "data-stroke": "main",
+            strokeWidth: 1.5,
+            strokeLinecap: "round",
+            strokeLinejoin: "round"
+        })]
+    })
+}
+
+function gl(i) {
+    return l.jsxs("svg", {
+        width: 24,
+        height: 24,
+        viewBox: "0 0 24 24",
+        fill: "none",
+        xmlns: "http://www.w3.org/2000/svg",
+        ...i,
+        children: [l.jsx("path", {
+            d: "M3.353 8.95A7.511 7.511 0 018.95 3.353c2.006-.47 4.094-.47 6.1 0a7.511 7.511 0 015.597 5.597c.47 2.006.47 4.094 0 6.1a7.511 7.511 0 01-5.597 5.597c-2.006.47-4.094.47-6.1 0a7.511 7.511 0 01-5.597-5.597 13.354 13.354 0 010-6.1z",
+            fill: i.secondary,
+            "data-fill": "secondary",
+            stroke: i.main,
+            "data-stroke": "main",
+            strokeWidth: 1.5
+        }), l.jsx("path", {
+            d: "M8 9.5l2.078 1.732a1 1 0 010 1.536L8 14.5",
+            stroke: i.main,
+            "data-stroke": "main",
+            strokeWidth: 1.5,
+            strokeLinecap: "round",
+            strokeLinejoin: "round"
+        }), l.jsx("path", {
+            d: "M12.5 14.5H16",
+            stroke: i.main,
+            "data-stroke": "main",
+            strokeWidth: 1.5,
+            strokeLinecap: "round"
+        })]
+    })
+}
+
+function zl(i) {
+    return l.jsxs("svg", {
+        width: 24,
+        height: 24,
+        viewBox: "0 0 24 24",
+        fill: "none",
+        xmlns: "http://www.w3.org/2000/svg",
+        ...i,
+        children: [l.jsx("path", {
+            d: "M8.95 20.647a7.511 7.511 0 01-5.597-5.597 13.354 13.354 0 010-6.1A7.511 7.511 0 018.95 3.353c2.006-.47 4.094-.47 6.1 0a7.511 7.511 0 015.597 5.597c.47 2.006.47 4.094 0 6.1a7.511 7.511 0 01-5.597 5.597c-2.006.47-4.094.47-6.1 0z",
+            fill: i.secondary,
+            "data-fill": "secondary",
+            stroke: i.main,
+            "data-stroke": "main",
+            strokeWidth: 1.5
+        }), l.jsx("circle", {
+            cx: 12,
+            cy: 15.5,
+            r: 1,
+            fill: i.main,
+            "data-fill": "main"
+        }), l.jsx("path", {
+            d: "M10 10v-.5a2 2 0 012-2v0a2 2 0 012 2v.121c0 .563-.223 1.102-.621 1.5L12 12.5",
+            stroke: i.main,
+            "data-stroke": "main",
+            strokeWidth: 1.5,
+            strokeLinecap: "round",
+            strokeLinejoin: "round"
+        })]
+    })
+}
+
+function vl(i) {
+    return l.jsxs("svg", {
+        width: 24,
+        height: 24,
+        viewBox: "0 0 24 24",
+        fill: "none",
+        xmlns: "http://www.w3.org/2000/svg",
+        ...i,
+        children: [l.jsx("path", {
+            d: "M6 14.462h10.19c1.417 0 2.282-1.688 1.536-2.995l-.49-.858a2.808 2.808 0 010-2.756l.49-.858C18.472 5.688 17.606 4 16.191 4H6v10.462z",
+            fill: i.secondary,
+            "data-fill": "secondary"
+        }), l.jsx("path", {
+            d: "M6 14.462h10.19c1.417 0 2.282-1.688 1.536-2.995l-.49-.858a2.808 2.808 0 010-2.756l.49-.858C18.472 5.688 17.606 4 16.191 4H6v10.462zm0 0V20",
+            stroke: i.main,
+            "data-stroke": "main",
+            strokeWidth: 1.5,
+            strokeLinecap: "round",
+            strokeLinejoin: "round"
+        })]
+    })
+}
+
+function Ll(i) {
+    return l.jsxs("svg", {
+        width: 24,
+        height: 24,
+        viewBox: "0 0 24 24",
+        fill: "none",
+        xmlns: "http://www.w3.org/2000/svg",
+        ...i,
+        children: [l.jsx("circle", {
+            cx: 12,
+            cy: 12,
+            r: 9,
+            fill: i.secondary,
+            "data-fill": "secondary",
+            fillOpacity: .16
+        }), l.jsx("path", {
+            d: "M3 12.152C3 17.04 7.03 21 12 21s9-3.961 9-8.848c0-4.886-4-8.847-9-8.847-6 0-9 4.915-9 4.915m0 0V3m0 5.22h4.655",
+            stroke: i.main,
+            "data-stroke": "main",
+            strokeWidth: 1.5,
+            strokeLinecap: "round",
+            strokeLinejoin: "round"
+        })]
+    })
+}
+
+function Fl(i) {
+    return l.jsxs("svg", {
+        width: 24,
+        height: 24,
+        viewBox: "0 0 24 24",
+        fill: "none",
+        xmlns: "http://www.w3.org/2000/svg",
+        ...i,
+        children: [l.jsx("circle", {
+            cx: 12,
+            cy: 12,
+            r: 9,
+            fill: i.secondary,
+            "data-fill": "secondary",
+            fillOpacity: .16
+        }), l.jsx("path", {
+            d: "M21 12.152C21 17.04 16.97 21 12 21s-9-3.961-9-8.848c0-4.886 4-8.847 9-8.847 6 0 9 4.915 9 4.915m0 0V3m0 5.22h-4.655",
+            stroke: i.main,
+            "data-stroke": "main",
+            strokeWidth: 1.5,
+            strokeLinecap: "round",
+            strokeLinejoin: "round"
+        })]
+    })
+}
+
+function ul(i) {
+    return l.jsx("svg", {
+        width: 24,
+        height: 24,
+        viewBox: "0 0 24 24",
+        fill: "none",
+        xmlns: "http://www.w3.org/2000/svg",
+        ...i,
+        children: l.jsx("path", {
+            d: "M18.5 18.864V8.076a4.356 4.356 0 00-3.492-4.278 15.343 15.343 0 00-6.016 0A4.356 4.356 0 005.5 8.076v10.788c0 1.262 1.363 2.047 2.446 1.41l2.96-1.742a2.157 2.157 0 012.189 0l2.959 1.742c1.083.637 2.446-.148 2.446-1.41z",
+            fill: i.secondary,
+            "data-fill": "secondary",
+            stroke: i.main,
+            "data-stroke": "main",
+            strokeWidth: 1.5,
+            strokeLinecap: "round",
+            strokeLinejoin: "round"
+        })
+    })
+}
+
+function yl(i) {
+    return l.jsxs("svg", {
+        width: 24,
+        height: 24,
+        viewBox: "0 0 24 24",
+        fill: "none",
+        xmlns: "http://www.w3.org/2000/svg",
+        ...i,
+        children: [l.jsx("path", {
+            d: "M3.316 8.324a6.72 6.72 0 015.008-5.008 11.948 11.948 0 015.457 0 6.72 6.72 0 015.008 5.008 11.947 11.947 0 010 5.457 6.72 6.72 0 01-5.008 5.008 11.947 11.947 0 01-5.457 0 6.72 6.72 0 01-5.008-5.008 11.948 11.948 0 010-5.457z",
+            fill: i.secondary,
+            "data-fill": "secondary"
+        }), l.jsx("path", {
+            d: "M3.316 13.781l.73-.171-.73.171zm0-5.457l.73.171-.73-.171zm15.473 0l.73-.171-.73.171zm0 5.457l.73.171-.73-.171zm-5.008 5.008l-.171-.73.171.73zm-5.457 0l-.171.73.171-.73zm0-15.473l-.171-.73.171.73zm5.457 0l.171-.73-.171.73zM20.47 21.53a.75.75 0 101.06-1.06l-1.06 1.06zM4.046 13.61a11.198 11.198 0 010-5.115l-1.46-.342a12.698 12.698 0 000 5.8l1.46-.343zm14.013-5.115a11.196 11.196 0 010 5.115l1.46.342a12.698 12.698 0 000-5.8l-1.46.343zm-4.45 9.564a11.196 11.196 0 01-5.114 0l-.342 1.46c1.907.448 3.892.448 5.8 0l-.343-1.46zM8.496 4.046a11.198 11.198 0 015.115 0l.342-1.46a12.698 12.698 0 00-5.8 0l.343 1.46zm0 14.013a5.97 5.97 0 01-4.45-4.45l-1.46.343a7.47 7.47 0 005.568 5.568l.342-1.46zm5.457 1.46a7.47 7.47 0 005.568-5.567l-1.46-.342a5.97 5.97 0 01-4.45 4.45l.342 1.46zM13.61 4.046a5.97 5.97 0 014.45 4.45l1.46-.343a7.47 7.47 0 00-5.568-5.567l-.342 1.46zm-5.457-1.46a7.47 7.47 0 00-5.567 5.567l1.46.342a5.97 5.97 0 014.45-4.45l-.343-1.46zm8.652 15.28l3.665 3.664 1.06-1.06-3.665-3.665-1.06 1.06z",
+            fill: i.main,
+            "data-fill": "main"
+        })]
+    })
+}
+
+function kl(i) {
+    return l.jsxs("svg", {
+        width: 24,
+        height: 24,
+        viewBox: "0 0 24 24",
+        fill: "none",
+        xmlns: "http://www.w3.org/2000/svg",
+        ...i,
+        children: [l.jsx("path", {
+            d: "M5.694 12L3.294 4.41c-.18-.57.438-1.074.966-.788l14.4 7.8a.75.75 0 010 1.316l-14.4 7.8c-.528.286-1.146-.218-.966-.788L5.694 12z",
+            fill: i.secondary,
+            "data-fill": "secondary"
+        }), l.jsx("path", {
+            d: "M5.694 12h5.556M3.294 4.41l14.4 7.8a.75.75 0 010 1.316l-14.4 7.8c-.528.286-1.146-.218-.966-.788L4.728 12.75H11.25a.75.75 0 000-1.5H4.728L2.328 5.198c-.18-.57.438-1.074.966-.788z",
+            stroke: i.main,
+            strokeWidth: 1.5,
+            strokeLinecap: "round",
+            strokeLinejoin: "round",
+            "data-fill": "main"
+        })]
+    })
+}
+
+function Hl(i) {
+    return l.jsxs("svg", {
+        width: 24,
+        height: 24,
+        viewBox: "0 0 24 24",
+        fill: "none",
+        xmlns: "http://www.w3.org/2000/svg",
+        ...i,
+        children: [l.jsx("path", {
+            d: "M13.752 4.693c0-.835-.61-1.544-1.436-1.67a2.111 2.111 0 00-.632 0 1.689 1.689 0 00-1.436 1.67v1.181c-.471.135-.92.322-1.34.556l-.836-.835a1.689 1.689 0 00-2.196-.166c-.17.126-.32.277-.447.447a1.689 1.689 0 00.166 2.196l.835.835a6.33 6.33 0 00-.556 1.341h-1.18c-.836 0-1.545.61-1.67 1.436-.032.21-.032.423 0 .632a1.689 1.689 0 001.67 1.436h1.18c.135.471.322.92.556 1.34l-.835.836c-.59.59-.66 1.523-.166 2.196.126.17.277.32.447.447a1.688 1.688 0 002.196-.166l.835-.835c.42.234.87.421 1.341.556v1.18c0 .836.61 1.545 1.436 1.67.21.032.423.032.632 0a1.688 1.688 0 001.436-1.67v-1.18a6.335 6.335 0 001.34-.556l.836.835c.59.59 1.523.66 2.196.166a2.11 2.11 0 00.447-.447 1.688 1.688 0 00-.166-2.196l-.835-.835c.234-.42.421-.87.556-1.341h1.18c.836 0 1.545-.61 1.67-1.436.032-.21.032-.423 0-.632a1.688 1.688 0 00-1.67-1.436h-1.18a6.332 6.332 0 00-.556-1.34l.835-.836c.59-.59.66-1.524.166-2.196a2.11 2.11 0 00-.447-.447 1.689 1.689 0 00-2.196.166l-.835.835a6.328 6.328 0 00-1.341-.556v-1.18z",
+            fill: i.secondary,
+            "data-fill": "secondary",
+            stroke: i.main,
+            "data-stroke": "main",
+            strokeWidth: 1.5,
+            strokeLinecap: "round",
+            strokeLinejoin: "round"
+        }), l.jsx("path", {
+            d: "M9.5 12a2.5 2.5 0 115 0 2.5 2.5 0 01-5 0z",
+            stroke: i.main,
+            "data-stroke": "main",
+            strokeWidth: 1.5
+        })]
+    })
+}
+
+function Vl(i) {
+    return l.jsxs("svg", {
+        width: 24,
+        height: 24,
+        viewBox: "0 0 24 24",
+        fill: "none",
+        xmlns: "http://www.w3.org/2000/svg",
+        ...i,
+        children: [l.jsx("path", {
+            fill: "url(#prefix__pattern0)",
+            d: "M0 0h24v24H0z"
+        }), l.jsxs("defs", {
+            children: [l.jsx("pattern", {
+                id: "prefix__pattern0",
+                patternContentUnits: "objectBoundingBox",
+                width: 1,
+                height: 1,
+                children: l.jsx("use", {
+                    xlinkHref: "#prefix__image0_5249_13712",
+                    transform: "scale(.00667)"
+                })
+            }), l.jsx("image", {
+                id: "prefix__image0_5249_13712",
+                width: 150,
+                height: 150,
+                style: {
+                    filter: "grayscale(1)",
+                    opacity: .7
+                },
+                xlinkHref: "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAJYAAACWCAYAAAA8AXHiAAAdR0lEQVR4Ae1deXQcxZlXkreBJVaPHQibiw3Z4CWYxAFjE8AHtnpkzOHEHN6YkASyIRzJspiQDQYCUdCMZDDYxnlgYwfwFR+S79j4fralmZHvY33I9sqWj+e8/LP7MjMrW9JK89v361ZLPe2Z6a4+RtLM6L153equrqrv+3711VdfVX1VVJTHfzh017WoKR2KutInEJKDCMvVCMs1CMv7EJaPISw3IuT/K0L+GMJ+KD/e8xnfqWmYlt9UK3kwL+Z56K5r85i1+UM69vp9iMjjEPbPQMS/E2F/vBMsGmjcv8Y7ypqBsP/7rEP+cDxHKcXesVchNLoUoZJKhPy7EfK3ZQFIqlZLB1DWoVbepdSpVvazjjnK/twiCyj6FCKlMsLyQoT8F7sdSOkApj1X6si6yqNY99ySRg5Qg3DJ11DrL1Ptng5bSBNer7nKjagr+R1pyQGR9F4SEBn/96iTH0O4ZAvCcqLHayfLACctJVsQ8f8QR8d/tvdKqJfVHHtv+zuES36KkP947oApnZYtqVdGrBj/mV4mpt5TXRwa/TlESiaiVj6f+4AyAC0kn0Ko5Bk0jryy90ish9dUMcjZ5eUjoIzdJ3lQW/powdB3CFpESm7v8ANlHsYbBZDr/9MPFym53SF78+9z7Bz5VcVlkFNGuaF7cwx+OYGQvIC8yj+ECFKsODVVt0FT3tlRtoEmNyFU+nrB2ZoGbNgpD0DY39DtgNp+N7BlOLB5OLBxGLBhKPDJncC6O9Qf7/ls41A1DdPyG9vAcE2TNZCHadibn48RGfVU1j3l2+5WAbNyCFA1CFj0HWD+t539mAfzWjFEzZtlZBNw6mzDz/MTRTqqcWBkX4TllVlhfs0oYMNdwIrBwEIXQGQVhCxr+WC1bNYhK0CTV5K3Olbnzy3qSgYh5D/nKaNrS4D1dwFLb3WmiayCyEo6ajQCnHXzEmTkbV3JoPxBVFFREcLyIwjLzd4wVgY2DQOWDe45YEoHONaRtlxY9ghk5LH8SF6ACxH5eU/m9kKyate4YSulA4JXz1lnalbS4LoWkxPkeU6DCyH/NNcZxy5lzXeBBQN7voYyAybtMY4+vegmQ/5pOQcuztIj7K9yFVRs3evuzA1AGQHHRkK3hvsarCpnVkxg570Swv7troKKdsniLI7sjILP1v+kUbHBXPN1savdTpn0au2F/7r3CkTkba6Bio7IZbf1/i5PFJik2VUnrLwVvXUpjrIqIez/s2ugou0xPwfsKFFQdabv6B7dMu45z9gbl0Mj4p/pCqh2jAKqB+WfluoElGE2oPo2gDxxBWDy9F7VJarrz12wCzYNBxbms5YygEoDG3lCX50b4Ir4J/UKcCEkP+2cYBngHJ7GyMI1NS9WDXHHuVonP9ajwYVdIwcj7G93BCzOp/WkKRgN1FV3phau9r67ruSV8znIduyWh/RIcCk7jZVt5w66wO0je54bYfkIYO+rwPlq4PTHQM1TwOIeNl1EtwR556hrlBt75E5thP2rHBG2dUR2Vx2YaZg19wIHg8CF5Zf/zi4CIhOBnqTF6LUnD52AKySv6FFaS9k944QgGuk9YkpmILD+IeDY1GQwnVsEnHgbOP0+cKG66925KmDPq8DykT2jmyQPyUsnsoiUTOwR4Oqwq1ptE8NW1t2gYmvf/EPgxMwu0FBTnZsPHJ8MHHkJODKp4/cqcHI6cH5pctqDFcCa+7ofYOSlM83V0u0rUR3bVbQLutOdsIge7SeBUx8lg+TsR0B9QAcmDVT668uqFqM203eXx6YDGx8GFnTjlBN56sTmCpUe4U7zbtNcjvxVdPJ113zfktuB8HPAmT8lg6JxDlBfZgIoPbh4/5Kq1ajd9ABrmA1s/Qmw8Jbu0WLkrRNHaq2/rFuA1bFFy95ivZoSYEk3MLx6GLD7N8A5fTe2DDg9Ezj6uiCgjACbpGq5Mx8mA+z0PKD2GWBJN/jlyGPbS3Dk5m7ZWuZoFJjt1Z0rZWBfmeoy0LTK+Srg1LvA0VetAWr/8wB/nbZWCmBp746VAY0fABeWdYHs7GKg7lfZH0lyvb19Y35VVrVWR2Q8exXmGiqzob5b79eNBQ6/2SVcxSBfApycChx5xRpIDkwENn5PtZloN/H+wAvWvj36GnD6PeBCVVcd6A/b+xqwYlQW+XCnPVkRkJGRY7ICLmXRnt1NEBytuAWadPkowh8P1M/oEqYCqD8BJ96yBghqnv3/Dqy/P3V9Wcb6sWoaTUtluh59BWiYdvlI8lAlsPaB1GWko8/uc9tb0Urqs7I40LbPin29l8Y6jeStjwMNc5IBdXYucLzCOqD2/AJYLVsX9ho/sOeXFvN/GTg5BThnGDTUvwtsHO+t28WJveW1b4thdBD2/8VWn73aI+OV0ys0jmkka/YTr41/BOrLLQp8ErD7aTFAGTXHqhKg9kfWyzsxGThrHEnOURvHIo+2q1EG9uytC54uDFRiNNmpmBddIKdTIi8ANIo7AbVMNZqP/c66gEOPAytc7KIX3ipmhx0rBxoNI8nG+UDNs96MJO06T+tKn/DE1iJiEZZPCiOeGwLcXK3ASWFOo3A6pRNQVaqRTGM5k62jf7f9B0DVd613eUYNZeV/GvqHf22tThxJnp5lGEkuAep+DVQPda+elIUd5RCST3iitZSQhXYqtN6lUeCaMcDB8mTGc1qlYTpA41gPmnT3B18ANo0DFmVxReriQcCWh4FDL1qrIxvHqT8AdIdoDYcjyf2vA3SbWAG0WRoGNbEjy7A8wVWtZVtb0RHqdMqGNtT+si4mk9nnF6vTKUdetiasfc8B68a4IxQzoaV7z5HkhgcEXBWvqG6R80uSaT8xC6ge7owWzo3aWcMV8u9xF1hheYIthHMjaTpGW31+4I0uxp5dkGJSOIOjcu9zwNrRzutgta5W030yBtj1tLVGcXiS6ibRjyQ5H2m1rHTpKBs7Wisij3MNXAjLG4QrQfeCU23FaRBqqHMEVNCaINgN7nkGWFPqnPnphOLWc9pOtT+xTtfxSqBxtsqT6ruc0UfZsEcRB5c73njUDP8Cwn7xZTHKdq00mwGsCmb1aODMHOuM3/0MsCqLHm2rdJilq7oDCP/UOp20wcgbs3zN3lNG4sBqdeUAKlsO0VrZnUBmNNhpmB+dlPl34DnVflk5AujNv3Wjgb2/yEwreUHbcrULNiODkVBWouByw2GKsHxQuGC35gM3PAjQxkg3ysvX54dfAsgbM41k5T1H7cLA8u90ZGchMvqbwoXSb+VWKKG1pQVQpWs8btmQnGYTDj6iHMvyDdvgsrWQj8FerbQUK2mWDikAKx2wyBsrPLSShjIT1VpOFgLa6gZd3Gja/uGNaF5RUgCXAVwtS4ci8dGN7gGLMhMFVlg+aEtjdaxnFztViy4GNzdGzB2AWNCH+NQvAbsfLPx2P4j4O19UeIJ5A9wDFmUm3B362/Gfw/oJg8vWYj5OFVhRvQJp2mZ/A/HJn0dii0uxCoRbpoMNuC6X1b7hDoUXbXP6u85nW7Eg7DhLEZanC6tHD5ccX/rgOhvquueAQpiXKUCp8ECgUQo1csouRZmZn9mIViNsX1GVLnDoEM3AtFhFXzQvuNEG8bkBruYPv4745H7uayqN55SdcHcoaGdhx+jrhCMbuzka1IjVXZtnXKfYFonae03BRQBm+rWtNfc4t2+VM+bB/Jkmc4v2g2VlqgvfmeVBmmlrkgdCWkjHP0vfiY8OxewsW0tk1row4ZyJEXMHoOmtq2EFWBRCpl8zW6eJ2m9bPypjHsyfaczyYVmZ6sJ3ZnmQ5kvTvuQtqMh7ytCEL5e9F7GzbNlXWYq6l6gdC9SNy/gzE2QzR1QmebR9YgFYn4wyzYdlmdXHrC4KzZkanVvvKENRYIUF7CzhPYMe21d6Nd6+w3xdOUdNGX+LBpv6xlpXlWbOY05/MI3ZdFPbosGm+ZjlodDsFngy5WPLzvJbX+0gfJC3F2va0zDACrD0QEx1387VBAano/H/tjX3mHY9ShqTfJSy0tDSWTezPNiYzPJw673omviQ/7glXxZQ9GmE/G1CKtED/1VaRkaeNAVF2m815nMFhIkwscnCJC/TmOXDsrRy013N8iDN6b51+7nosmViBUWfNgWXrYlnrw13PfMKwPIWZHYM+LqR11sAljxOSFvR2OMZgHrhe3lfAJa3vKYsRQ14K9vwbS3sqyoAK22X2Nu6QspSGFgWogAiLE8WylgZEWYxyFhBY3mrsbiDR9wDP9m8KwyVzhIC1o4sx98sAMtbYNGMEY2pFSqdZQFY8pICsCYhb0eFBBaVhUh3GCmdaw4s0bDaPJXKS2PdmHdBY3nPb9GTxkLyEgvAEtxDmEXnqALgArC8B5aokzQsbzAFVmLHqANCanCLBQegUes4+b8ALO+BRZmKdIXhkn0WgDXynFCmmwrGe1pXAz3qvc3dwEa/WWyHdGL73Q3mwNo2/LQQsLa7sCNXRIMVNJb3GosyFdBYia3DT5kCq33z0DMimWLHWO8J1QOvACzv+b39PiFgETPmwNp4h5jGCj3kPaEFYGWXx7XfFwPWxjtOmwKrbd2QBiGNVTchu0QXNJb3/I78ixCwiBlzYK28VQxYex7zntCCxsoujylTARurbeWtFoC1fKCYjbXvJ8D8wlxh2pFhrxsVDgQoUwFgtSz71klTjfV/Vd++IJIp9j4KOA0CptdIZveFrtBb7UVZUqYiwKq62VxjNc+74bxIptjzEMDTSM0A4db7ArC85TVlSZkKAKt5fn9z473p/a+IOUh3jQO2ZHFNdgFY3gKLsqx7QAhYxIxpVxifeo3YlA4rwUD+bmkks3wKwPKW15RlnZgfK/7ONeZTOvEKaUNCaNlEqRqD3AwQbr0vAMtbYDGefLjUusaquRvxoGQ+CR0NSKvaN5pvQU/qg+sne0usHpQFYHnLa8pSwL4iVqIVkvmyGSZqXfEdocxxsjJ7I8MCsLwDFkeElKUAsIiVWEAyX+gXC/pmtSw0D1SRVPjR3wCbH/WO4CSN9Thw4EnV17L3R0CqH4PjZ/ptHJn6O31e2+7NnAfzZxr9N6nuWVamuvBdqu/4jP4k0lr3RHZ4SxlSlgLAIlaIGVPjPRYsnnxRNBbVwWeBvS97T/wqOyENcyOMEVwMwZl2oEUZHnhKCFgX3/syiBlTYEUD0sTYm/2QENmpsWc8cGqOt8Cye2qVQOsTaalZT0t5uHmKmr4X0O4pQwEfVqK2BLEKH4gZc2BVSmMYHUXYgD/7J2/tLPHYTUItL+tAsQP4TS5GpNbApF1pX/G8HoF6ta8bokTSiVZK5udGX6q88noCq2XpAKFCcPItYJuHtoDoliQBBokws1vTkgcaENy+UnaUoQDfOuwrEDOmGgtlRZ+OBaU2YTvr8ETg2FR3CV8+HKh7Cjho8TBJs+AaufD+4ItA3c+B5cPc5TVlRxkKAIv2VTToixMzpsBigmjQd9yWnXV+mfOz9LSWuLoQ3z3tigmtgaxyab9B1TCAsqOtbBFYmn0VCxRbj/dOJ6liZ60THIXRztrxc+ctidu8979gHiJIY3C+XnnAp9YQnVxrnxW2r9rW3KbaVwHJeuC1eFCaTmBd+vB6ywhWkH68HKh/1zmxPPw7X8EiSrcbXeKJmQBlZ1FbMR2xQYxYcjVo/WQsWPyE8tHkfqDKs1zgvh+phzTymBInLWjrw+rRaqJMzrf0PGJui8M9B5QVDxul7CwCS+kGK/upGisoWT8nWhsZElxtqwVPPT87H+Bxu3aBtX1CQVuJNpBtDvYdUFZnPrIMKoKPmFC1lZTA5CKfppAsXWMB6Qw/vjT7H4UKRf1rqiFo50Dstf4CqERBpaVfbeOE+xWyKqtjrwjJmB4DBVgihruGOk4sKh+zOxRZRsORBVWrnSmebT8oAEsDiuiVvBPtJfa9pspKZDRYM1LxthMbtMU1vFi+dtpZQR9alw8UQjQaZwHnq8RdD5stBIsVZXi+pN/4PTFgsUehjCgri7YV0xELisKh4V5eLH6ivd7OaprxJaHCceBfOwzC14SIbZt7MxL7Jxa0lmBjIM/aPr5ZiNfQtBVlZRFYnD9umv4P9u0rTa1pdhYRynkhqxVQ0jX+UQXXylLLBPOsmKYZ16GNxig9zIIMzrf0iQMvKrxqevc6sXN21tyvyub0TCGZar4rRWPZsa80YGn+LGZE970QsLiUhraWMs0z0BK4tIOYOlWtyZk4hXRdZwZZP8BpIEC/FWVja4mMVqaFpTIakIzX/w32vUUvvPb1twuAqxTQtJbFXTw8pkRfXuFeE6L51fLhmJxsJqgoG4G17ZS9Xh7EhhEvQv9zLkjLUHhimi1CIWIesGiQJa3VOut68GxCrczC1QRUFX1BnlkaES4eApxZZE9baS4G9iJOukENfcrCP12X1L55qIDW8gOn3lMJobFodTg8d4DpwUYZD2EyO6Qph95jrsDZ0JrB3jBNSIZtG+5IauiWFvZpAEp3jVf0+UIsKCU0zSGstfZOAM5Xq+DK1rp4qwDOp3TkPXsPymK32E7nToeoomCkVpQVXZMOL0LP/1bu264Bi1eODoQM+foylaizi4HlLi31yCdQOKV12d0AeU9gcWbEonuB6ZJGgkFlGbL11QxmKNM7Swms+NRrxSan6+4HznUQdvw9YEEWo9M4FUpv/37hrcCJ9zsa9gIgMsYysDjZHJ/6heRuUGTS2QxYfB8N+E7otVbL4pssV1BpIZohz1aTzS35vR0YTuu/6z9UUJHvgu4Fylgv82jQZx6uyAqY9GmMWis2uR/aRTc4cM0PCeRvy4+tG/NOmZuv329+rIvfguut2rcOB2WsBxYxoMeEK/eoKvpMLChd0BckvPIhcg/Q+IFKLI3IAri8a1wElTZoapwNkPcCthVlq5d1LCD9hRhwBUzGTIyuBxbctkbwGLLdj6iTn9RaJHzDeO+Ym6+aagN53DESP7cE2P2wEKja1qrbuvTAcsXFYASU9j8+LroyGvT9j77A+FtXo33bcKGKK7tBtC6RM+zrvl8Al1uNYN33uhoueXz434Rkk9g24vIukNrq46IrNRx4co2W9y3TA4v3Te99RWznNFXy8WBX/39uaUFzuQGs9Q8D5KXWaOt/JwYqrl5QtswbvP0VvkmegEmfKcqK+kQD0jkjuIQDiXCe6uSULiZw+xHtAjcYnI95bPqhuhpUAxV5K2BTMa22ATVZtsXnMaXoc3oMeHYfDUoTkgtXEd62VtDeCo8GTndM+WgMCf2yAC7RhhH6RVcDJR/JU/JWAFip7CpFxnYW8zlBXjQobTGCy5a9xbCEZz5MZszulwrgsgSugcCeScm846hbMNSjYle99fnkUaC69Ng8Up8TEKX6trn8ihtjQanZCK6md7+IRO0oodaCXQ8CZ+clM+hQJbDk9gLA0gGMvDnydjLPyMO6sUK8p6woM6McKdvmsiv+OZXsPX+WypBnBS/Oug6JkMB+RKpsBsk1doun5wJrHyiAywgu8oS80cwHpft7H+DUmUD3RxldnNmx40a3goUypGw9B1C6AlBW9NlUhrwCrjmCu6jJEDrxGqYnM+zCMqBuYmF+keDiHGtkIkCe6EHV8I6wA5Tr1y/O/loKTeVjoI/jlG06uWflebyiz4BYQGq5XJX60Dy/v1ALUltbKXCiIplxZCInUldl+WxEo6bozv9JuzaZrAfVCQajFYhy3KHRmud9IyWo4kGpqaX8szdlBTxmhaTyyGtAE46zpRBeChyZmOzoU5jJiCiTAK6E7E4hZ7Ns0srBjFFL0bN+5AVboDJOLmuy4jVe2ecZM3ln9f3fgr4V+grq74VXQmh2wp4JwJmPL9deZ+YBm7IUTDebIDKWxblU0qrXULw/MxfYI3b0m2Z7tSwZkFJTUV6MMpRV0FgpjHv4Y0GpUQ8o/f2lef3FvfOK3XUfQBvCyFz+z64hF+caOdd3smMnjZFuRt2L3CtsYtCmujT3hrSgouyE4zBYAYYbaZoqrxqSzt4iyGgsCkWv0TQXbYiUXWPHEpxcAVgmQHV2feJRoMnzix8YViskjQKl1qbAVYPdwIBneUQD0mN6TWW851xUokbQz6UBjGu102mv3qzBMgGKdJFmwXXqWtdHXjf9gSGzDfN/uv8pM88A4WbGsQrfpEyEKE7UbSOE1bnGLOx7XA29Y+wmtP/PLgB2vQgI7MLO+mBgpV+tI+uq1dt4ZXgh0qo1LMFrYvuINM5PHciyMcHsJrj0u6hTgSw+5Rq0iW7b1zM2UqouCUll3OsF1DAL2P4zYNmI7h9JciNJzVMA66Svo/GeNHG5C2nU0yxw3/bJ7YhPuTqjprIVLcZNkNjJCyj6VDQorU4Fqs5nFT40L7gREDmswMhcqwCj8M7MBw4FgB1PAWvuA7jRwDgSc+t/5s0yCKRDQbVsI4CM/7sAKPKyeeE3O0MNdfJa1/Wpz6QFlJEd2Xb7N5hRdEUsULw1PXGqSqYNwDXWdlun8p0IwDoFukwdfe0vA2qeAT55EKi2Eeaa3/DbHU8DzOskNZLBO95ZZseAQ/+/G4AK+9G+ZRgYGciM35SJZ8uMs4U6rt+KBX2HTYmd3A+tywVPHTNqL/5PgB34GXDizRQO1hRC1QtYf88I0Kc/Bk5+AByfARx7W/3xns/4jmn034jcc+Us68gwQg66PK0xKqdwdcQFzcjrgLSLMsmW/D0th/NOsYD054wEd6hqjhrbN93lTHtpgOPykcPPA6c69tWJCN6rtKdmqPaT4NIWDUDGK3llNurr5HuFr6rb5wDdRpqyyyfgm91J5GV9ftJIBS0L+gO1I90BGIG2a6x6RNvRVwEKlxrDK/Bo+bKMU38Ajv0WOMjj4cTOWjaCSP8/w3c2z+1vwZbq4GvA96HbMu1R+cUr+vzWErg4b/X2NWhdcYt74NI0mXbd+yhw+DmAIQAIAG23tgYMkSsPOGp4F6h/XdVIzFsrx+Vr68pbEJ9y+cK8dHyNV/R5vUeBwKvKxILFT+oDjaRjiPa8acYXQWY6Gj1aFe7uccB+HkL5Y2s/puU3VvO3my4ko3XlrSAvNL6YX6W2WEXxT72SY4/M929BX2ksKP3VnDldXWTT1GtVA9+Je8KuYLvrOwJq+XdA2kV4Rd6Sxz1S+F5XKl7W59p4QNooxjAfmt65Bi1V3wJEl0B3FzjslFs7SqGRtIryhzwlb72WX4/On066WKD4V7Gg1CrMwClXo2XJTfbnHu0I3ONvFKN80U2mXvPUvJJaY4HiX/dax6cXSG0KXjUoGvQ1pGZYV3eY7n3TtGvRvPgmJLYO897ecRlcrDPrThrS0Wf2nLwjD72QTa/PEx8UXRUt7/tGqt0/ZozVv2eE55aqbyOx4+4eCzLWjXVkXfV1F7+XmqPlvgB51+sB4DUBzZVX/pNVh2pGQVT4lNn95rk3gJ7phGjYJRc1U2LLMKUOrIsy7VJhroUz0kY/YEBaf2nKlV/3Wh45l380KN3vpHtMJRjO+HPLU/O8/mip/ha4e9vN7pPgZZ4cXDTPu0Epy2yVQap6ZnoWDfhORYPSPTkn8GwSxIlsN7rHTILS3tHGuTjzq7j0x+tBzcKVFy1Lb1Y0DWNx8kfNx2d8xzRMy2+c2Eda+WZX7qCJB/u8Sp5kUwY5XVbTm1d9ORbwBaMB33+bCSDX3is0lxdXkAc5LeTuJE4x8IPS85k2buQKsBjzM17e59mCYZ5FxHFS+2J5n4ei5b5IrgBJo4M0XSzv80jBH5VFQKUqigHtuWk2HpT2asLpbVfWnTS4Fpw/FaMKz+xzgBFSooG+v3d7NOkFUFlHDky6LaqLfTbn95eMKxENSi/Eg9KGWFC65AU4xPKULilzo4HiX8Xf+PzN+S2dHKFeDcwr3ROvkKbFgtLOaNAXFwOFuENTLUPayTKjldIYzwPE5oisej0ZXAFwsaJ4qHI4QsAXjAV91dFyqSYekPZFA75j6shT+ms04ItpIFTvudxHamQaJW25VMNv6Q5hXswz31cX/D8ED2IXqVkA0AAAAABJRU5ErkJggg=="
+            })]
+        })]
+    })
+}
+
+function Zl(i) {
+    return l.jsx("svg", {
+        width: 20,
+        height: 20,
+        viewBox: "0 0 24 24",
+        fill: "none",
+        xmlns: "http://www.w3.org/2000/svg",
+        ...i,
+        children: l.jsx("path", {
+            d: "M22 2L2 8.66667L11.5833 12.4167M22 2L15.3333 22L11.5833 12.4167M22 2L11.5833 12.4167",
+            stroke: "#F2F4FB",
+            strokeWidth: 1.5,
+            strokeLinecap: "round",
+            strokeLinejoin: "round"
+        })
+    })
+}
+
+function Bl(i) {
+    return l.jsx("svg", {
+        width: 24,
+        height: 24,
+        viewBox: "0 0 24 24",
+        fill: "none",
+        xmlns: "http://www.w3.org/2000/svg",
+        ...i,
+        children: l.jsx("path", {
+            d: "M18 12H6M21 4H3M9 20h6",
+            stroke: i.main,
+            "data-stroke": "main",
+            strokeWidth: 1.5,
+            strokeLinecap: "round"
+        })
+    })
+}
+
+function El(i) {
+    return l.jsxs("svg", {
+        width: 24,
+        height: 24,
+        viewBox: "0 0 24 24",
+        fill: "none",
+        xmlns: "http://www.w3.org/2000/svg",
+        ...i,
+        children: [l.jsx("path", {
+            d: "M12.877 16.168c.152-.414.76-.414.913 0l.417 1.134a.476.476 0 00.294.285l1.176.401c.43.147.43.734 0 .88l-1.176.403a.476.476 0 00-.294.284l-.417 1.134c-.152.415-.76.415-.913 0l-.417-1.134a.476.476 0 00-.295-.284l-1.176-.402a.462.462 0 010-.88l1.176-.402a.476.476 0 00.295-.285l.417-1.134zM14.64 3.473c.231-.63 1.156-.63 1.387 0l.794 2.16c.074.202.239.36.448.432l2.24.766a.702.702 0 010 1.338l-2.24.766a.724.724 0 00-.448.432l-.794 2.16c-.231.63-1.156.63-1.388 0l-.793-2.16a.723.723 0 00-.448-.432l-2.241-.766a.702.702 0 010-1.338l2.24-.766a.723.723 0 00.448-.432l.794-2.16zM6.486 9.363a.545.545 0 011.028 0l.468 1.323a.545.545 0 00.332.332l1.323.468a.545.545 0 010 1.028l-1.323.468a.545.545 0 00-.332.332l-.468 1.323a.545.545 0 01-1.028 0l-.468-1.323a.545.545 0 00-.332-.332l-1.323-.468a.545.545 0 010-1.028l1.323-.468a.545.545 0 00.332-.332l.468-1.323z",
+            fill: i.secondary,
+            "data-fill": "secondary"
+        }), l.jsx("path", {
+            d: "M12.877 16.168c.152-.414.76-.414.913 0l.417 1.134a.476.476 0 00.294.285l1.176.401c.43.147.43.734 0 .88l-1.176.403a.476.476 0 00-.294.284l-.417 1.134c-.152.415-.76.415-.913 0l-.417-1.134a.476.476 0 00-.295-.284l-1.176-.402a.462.462 0 010-.88l1.176-.402a.476.476 0 00.295-.285l.417-1.134zM14.64 3.473c.231-.63 1.156-.63 1.387 0l.794 2.16c.074.202.239.36.448.432l2.24.766a.702.702 0 010 1.338l-2.24.766a.724.724 0 00-.448.432l-.794 2.16c-.231.63-1.156.63-1.388 0l-.793-2.16a.723.723 0 00-.448-.432l-2.241-.766a.702.702 0 010-1.338l2.24-.766a.723.723 0 00.448-.432l.794-2.16zM6.486 9.363a.545.545 0 011.028 0l.468 1.323a.545.545 0 00.332.332l1.323.468a.545.545 0 010 1.028l-1.323.468a.545.545 0 00-.332.332l-.468 1.323a.545.545 0 01-1.028 0l-.468-1.323a.545.545 0 00-.332-.332l-1.323-.468a.545.545 0 010-1.028l1.323-.468a.545.545 0 00.332-.332l.468-1.323z",
+            stroke: i.main,
+            "data-stroke": "main",
+            strokeWidth: 1.5,
+            strokeLinejoin: "round"
+        })]
+    })
+}
+
+function Al(i) {
+    return l.jsx("svg", {
+        width: 24,
+        height: 24,
+        viewBox: "0 0 24 24",
+        fill: "none",
+        xmlns: "http://www.w3.org/2000/svg",
+        ...i,
+        children: l.jsx("path", {
+            d: "M9.654 4.586c.878-2.115 3.814-2.115 4.692 0l.612 1.474a2.555 2.555 0 002.065 1.57l1.707.194c2.155.244 3.046 2.951 1.471 4.475L18.752 13.7a2.636 2.636 0 00-.745 2.404l.35 1.77c.443 2.243-1.96 3.936-3.855 2.718l-1.145-.736a2.503 2.503 0 00-2.714 0l-1.145.736c-1.896 1.218-4.298-.475-3.855-2.717l.35-1.771a2.637 2.637 0 00-.745-2.404L3.798 12.3c-1.574-1.524-.683-4.23 1.472-4.475l1.707-.194a2.555 2.555 0 002.065-1.57l.612-1.474z",
+            fill: i.secondary,
+            "data-fill": "secondary",
+            stroke: i.main,
+            "data-stroke": "main",
+            strokeWidth: 1.5,
+            strokeLinecap: "round",
+            strokeLinejoin: "round"
+        })
+    })
+}
+
+function Pl(i) {
+    return l.jsxs("svg", {
+        width: 24,
+        height: 24,
+        viewBox: "0 0 24 24",
+        fill: "none",
+        xmlns: "http://www.w3.org/2000/svg",
+        ...i,
+        children: [l.jsx("path", {
+            d: "M17 12a5 5 0 11-10 0 5 5 0 0110 0z",
+            fill: i.secondary,
+            "data-fill": "secondary",
+            stroke: i.main,
+            "data-stroke": "main",
+            strokeWidth: 1.5
+        }), l.jsx("path", {
+            d: "M18.312 5.688l.117-.117M5.57 18.43l.117-.117M12 3.074V3m0 18v-.074M3.074 12H3m18 0h-.074M5.688 5.688l-.117-.117M18.43 18.43l-.117-.117",
+            stroke: i.main,
+            "data-stroke": "main",
+            strokeWidth: 1.5,
+            strokeLinecap: "round",
+            strokeLinejoin: "round"
+        })]
+    })
+}
+
+function Tl(i) {
+    return l.jsxs("svg", {
+        width: 24,
+        height: 24,
+        viewBox: "0 0 24 24",
+        fill: "none",
+        xmlns: "http://www.w3.org/2000/svg",
+        ...i,
+        children: [l.jsx("path", {
+            d: "M3.776 9.226c.676-2.942 2.88-5.229 5.69-5.901l.224-.054a9.853 9.853 0 014.593 0l.381.092c2.713.649 4.842 2.857 5.495 5.698l.089.386a9.955 9.955 0 010 4.455c-.678 2.948-3.19 5.025-6.076 5.025h-1.061a.866.866 0 00-.797.563c-.481 1.23-1.825 1.835-2.998 1.333l-.118-.05c-2.711-1.16-4.732-3.646-5.419-6.635a11.008 11.008 0 01-.003-4.912z",
+            fill: i.main,
+            "data-fill": "main",
+            fillOpacity: "0.16"
+        }), l.jsx("path", {
+            d: "M12.314 19.49l-.698-.273.698.273zM3.78 14.138l-.73.168.73-.168zm-.003-4.912l-.731-.168.73.168zm16.472.221l.73-.168-.73.168zm0 4.455l-.731-.168.73.168zM9.316 20.823l.295-.69-.295.69zM9.69 3.271l.174.73-.174-.73zm4.593 0l-.175.73.175-.73zM9.198 20.773l-.295.69.295-.69zm5.466-17.41l.175-.73-.175.73zM20.16 9.06l-.731.168.73-.168zM9.466 3.325l-.174-.73.174.73zm-.77 4.983a.75.75 0 000 1.5v-1.5zm6.032 1.5a.75.75 0 100-1.5v1.5zm-6.032 1.956a.75.75 0 000 1.5v-1.5zm3.839 1.5a.75.75 0 000-1.5v1.5zM9.64 4.054l.223-.053-.35-1.459-.222.053.35 1.46zm4.467-.053l.381.091.35-1.459-.381-.091-.35 1.459zM9.611 20.134l-.118-.05-.59 1.378.118.05.59-1.378zm9.817-10.905l.089.386 1.462-.336-.09-.386-1.461.336zm-5.256 8.948h-1.061v1.5h1.061v-1.5zm-1.061 0c-.679 0-1.258.434-1.495 1.04l1.397.546c.028-.07.079-.086.098-.086v-1.5zM4.51 13.97a10.259 10.259 0 01-.003-4.576l-1.462-.336a11.758 11.758 0 00.003 5.248l1.462-.336zm15.007-4.355a9.205 9.205 0 010 4.12l1.462.335a10.705 10.705 0 000-4.79l-1.462.335zM9.02 21.513c1.592.68 3.368-.155 3.992-1.75l-1.397-.546c-.34.867-1.251 1.24-2.005.917l-.59 1.379zM9.864 4a9.103 9.103 0 014.244 0l.35-1.459a10.603 10.603 0 00-4.943 0l.35 1.459zm-.371 16.082c-2.478-1.06-4.347-3.345-4.983-6.113l-1.462.336c.738 3.209 2.911 5.898 5.855 7.156l.59-1.379zm10.024-6.349c-.605 2.63-2.831 4.443-5.345 4.443v1.5c3.26 0 6.056-2.342 6.807-5.607l-1.462-.336zM14.49 4.092c2.42.58 4.345 2.557 4.938 5.137l1.462-.336c-.713-3.103-3.046-5.54-6.051-6.26l-.35 1.459zM9.291 2.595c-3.102.743-5.51 3.259-6.247 6.463l1.462.336c.616-2.68 2.617-4.737 5.134-5.34l-.35-1.459zm-.596 7.213h6.032v-1.5H8.696v1.5zm0 3.456h3.839v-1.5H8.696v1.5z",
+            fill: i.main,
+            "data-fill": "main"
+        })]
+    })
+}
+
+function Wl(i) {
+    return l.jsx("svg", {
+        width: 24,
+        height: 24,
+        viewBox: "0 0 24 24",
+        fill: "none",
+        xmlns: "http://www.w3.org/2000/svg",
+        ...i,
+        children: l.jsx("path", {
+            d: "M18 7L9.429 17 6 13",
+            stroke: i.main,
+            "data-stroke": "main",
+            strokeWidth: 1.5,
+            strokeLinecap: "round",
+            strokeLinejoin: "round"
+        })
+    })
+}
+
+function Dl(i) {
+    return l.jsxs("svg", {
+        width: 24,
+        height: 24,
+        viewBox: "0 0 24 24",
+        fill: "none",
+        xmlns: "http://www.w3.org/2000/svg",
+        ...i,
+        children: [l.jsx("path", {
+            d: "M3.353 8.95A7.511 7.511 0 018.95 3.353c2.006-.47 4.094-.47 6.1 0a7.511 7.511 0 015.597 5.597c.47 2.006.47 4.094 0 6.1a7.511 7.511 0 01-5.597 5.597c-2.006.47-4.094.47-6.1 0a7.511 7.511 0 01-5.597-5.597 13.354 13.354 0 010-6.1z",
+            fill: i.secondary,
+            "data-fill": "secondary"
+        }), l.jsx("path", {
+            d: "M3.353 15.05l-.73.17.73-.17zm0-6.1l-.73-.17.73.17zm17.294 0l-.73.172.73-.172zm0 6.1l-.73-.172.73.172zm-5.597 5.597l-.172-.73.172.73zm-6.1 0l.172-.73-.172.73zm0-17.294l.172.73-.172-.73zm6.1 0l-.172.73.172-.73zm-7.2 5.516a.75.75 0 00-1.062 1.06L7.85 8.87zm.509 1.57l-.53.53a.75.75 0 001.06 0l-.53-.53zm2.61-1.55a.75.75 0 10-1.06-1.06l1.06 1.06zm2.071.28a.75.75 0 000 1.5v-1.5zm3.641 1.5a.75.75 0 000-1.5v1.5zM7.85 14.07a.75.75 0 00-1.06 1.061l1.06-1.06zm.51 1.571l-.53.53a.75.75 0 001.06 0l-.53-.53zm2.61-1.55a.75.75 0 10-1.06-1.06l1.06 1.06zm2.071.28a.75.75 0 000 1.5v-1.5zm3.641 1.5a.75.75 0 000-1.5v1.5zm-12.598-.993a12.604 12.604 0 010-5.756l-1.46-.343a14.104 14.104 0 000 6.442l1.46-.343zm15.834-5.756a12.603 12.603 0 010 5.756l1.46.343a14.104 14.104 0 000-6.442l-1.46.343zm-5.039 10.795a12.603 12.603 0 01-5.756 0l-.343 1.46c2.119.497 4.323.497 6.442 0l-.343-1.46zM9.122 4.083a12.604 12.604 0 015.756 0l.343-1.46a14.103 14.103 0 00-6.442 0l.343 1.46zm0 15.834a6.761 6.761 0 01-5.039-5.039l-1.46.343a8.261 8.261 0 006.156 6.156l.343-1.46zm6.099 1.46a8.261 8.261 0 006.156-6.156l-1.46-.343a6.761 6.761 0 01-5.039 5.039l.343 1.46zm-.343-17.294a6.761 6.761 0 015.039 5.039l1.46-.343a8.261 8.261 0 00-6.156-6.156l-.343 1.46zM8.78 2.623a8.261 8.261 0 00-6.156 6.156l1.46.343a6.761 6.761 0 015.039-5.039l-.343-1.46zM6.79 9.93l1.04 1.04 1.06-1.06-1.04-1.041-1.06 1.06zm2.1 1.04l2.08-2.08-1.06-1.061-2.08 2.08 1.06 1.06zm4.151-.3h3.641v-1.5h-3.64v1.5zM6.788 15.13l1.04 1.04 1.061-1.06-1.04-1.04-1.06 1.06zm2.101 1.04l2.08-2.08-1.06-1.06-2.08 2.08 1.06 1.06zm4.151-.3h3.641v-1.5h-3.64v1.5z",
+            fill: i.main,
+            "data-fill": "main"
+        })]
+    })
+}
+
+function _l(i) {
+    return l.jsxs("svg", {
+        width: 24,
+        height: 24,
+        viewBox: "0 0 24 24",
+        fill: "none",
+        xmlns: "http://www.w3.org/2000/svg",
+        ...i,
+        children: [l.jsx("path", {
+            d: "M5 7.033h14v5.143c0 1.575-.222 3.142-.658 4.654a5.627 5.627 0 01-4.46 3.999l-.158.026a10.344 10.344 0 01-3.448 0l-.158-.026a5.627 5.627 0 01-4.46-3.999A16.783 16.783 0 015 12.176V7.033z",
+            fill: i.secondary,
+            "data-fill": "secondary"
+        }), l.jsx("path", {
+            d: "M3 6.283a.75.75 0 000 1.5v-1.5zm18 1.5a.75.75 0 000-1.5v1.5zm-16-.75v-.75h-.75v.75H5zm14 0h.75v-.75H19v.75zm-.658 9.797l.72.208-.72-.208zm-4.618 4.025l.125.74-.125-.74zm-3.448 0l.125-.74-.125.74zm-.158-.026l-.125.74.125-.74zm-4.46-3.999l-.72.208.72-.208zm8.224 3.999l-.125-.74.125.74zm-6.04-15.34l.681.315-.68-.315zm.976-1.308l-.5-.558.5.558zm1.46-.874l.26.703-.26-.703zm3.444 0l.261-.703-.26.703zm2.435 2.182l.681-.314-.68.314zM3 7.783h18v-1.5H3v1.5zm10.757 12.306l-.158.027.25 1.479.158-.027-.25-1.479zm-3.356.027l-.158-.027-.25 1.48.158.026.25-1.48zM18.25 7.033v5.143h1.5V7.033h-1.5zm-12.5 5.143V7.033h-1.5v5.143h1.5zm12.5 0c0 1.505-.212 3.002-.629 4.446l1.441.416c.456-1.58.688-3.217.688-4.862h-1.5zm-4.651 7.94a9.595 9.595 0 01-3.198 0l-.25 1.479c1.224.207 2.474.207 3.698 0l-.25-1.48zm-3.356-.027a4.877 4.877 0 01-3.864-3.467l-1.441.416a6.377 6.377 0 005.055 4.53l.25-1.479zM6.38 16.622a16.033 16.033 0 01-.629-4.446h-1.5c0 1.645.231 3.282.688 4.862l1.44-.416zm7.628 4.946a6.377 6.377 0 005.055-4.53l-1.44-.416a4.877 4.877 0 01-3.865 3.467l.25 1.48zM8.25 7.033c0-.42.092-.837.273-1.229l-1.361-.63a4.422 4.422 0 00-.412 1.859h1.5zm.273-1.229c.182-.393.45-.755.796-1.064L8.317 3.623c-.49.44-.884.966-1.155 1.552l1.361.63zM9.32 4.74c.345-.31.759-.559 1.22-.73l-.522-1.406c-.63.234-1.209.579-1.7 1.019L9.32 4.74zm1.22-.73c.461-.171.958-.26 1.461-.26v-1.5c-.679 0-1.352.12-1.983.354l.522 1.406zM12 3.75c.503 0 1 .089 1.461.26l.522-1.406A5.707 5.707 0 0012 2.25v1.5zm1.461.26c.461.171.875.42 1.22.73l1.002-1.117a5.317 5.317 0 00-1.7-1.02l-.522 1.407zm1.22.73c.345.309.614.671.796 1.064l1.361-.63a4.784 4.784 0 00-1.156-1.551l-1 1.117zm.796 1.064c.181.392.273.81.273 1.229h1.5c0-.64-.14-1.272-.412-1.858l-1.361.63zM5 7.783h14v-1.5H5v1.5z",
+            fill: i.main,
+            "data-fill": "main"
+        }), l.jsx("path", {
+            d: "M10 12v4m4-4v4",
+            stroke: i.main,
+            "data-stroke": "main",
+            strokeWidth: 1.5,
+            strokeLinecap: "round"
+        })]
+    })
+}
+
+function Rl(i) {
+    return l.jsx("svg", {
+        width: 24,
+        height: 24,
+        viewBox: "0 0 24 24",
+        fill: "none",
+        xmlns: "http://www.w3.org/2000/svg",
+        ...i,
+        children: l.jsx("path", {
+            d: "M18.364 5.364a9.212 9.212 0 012.463 4.69 9.31 9.31 0 01-.512 5.292A9.126 9.126 0 0117 19.456 8.889 8.889 0 0112 21c-1.78 0-3.52-.537-5-1.544a9.126 9.126 0 01-3.315-4.11 9.31 9.31 0 01-.512-5.292 9.21 9.21 0 012.463-4.69M12 3v4.727",
+            stroke: i.main,
+            "data-stroke": "main",
+            strokeWidth: 1.5,
+            strokeLinecap: "round"
+        })
+    })
+}
+
+function bl(i) {
+    return l.jsxs("svg", {
+        width: 24,
+        height: 24,
+        viewBox: "0 0 24 24",
+        fill: "none",
+        xmlns: "http://www.w3.org/2000/svg",
+        ...i,
+        children: [l.jsx("path", {
+            d: "M3 18.433a4.074 4.074 0 013.432-4.023l.178-.029a15.163 15.163 0 014.78 0l.178.029A4.074 4.074 0 0115 18.433c0 .865-.702 1.567-1.567 1.567H4.567A1.567 1.567 0 013 18.433zM12.5 7.5a3.5 3.5 0 11-7 0 3.5 3.5 0 017 0z",
+            fill: i.secondary,
+            "data-fill": "secondary"
+        }), l.jsx("path", {
+            d: "M3 18.433a4.074 4.074 0 013.432-4.023l.178-.029a15.163 15.163 0 014.78 0l.178.029A4.074 4.074 0 0115 18.433c0 .865-.702 1.567-1.567 1.567H4.567A1.567 1.567 0 013 18.433zM12.5 7.5a3.5 3.5 0 11-7 0 3.5 3.5 0 017 0z",
+            stroke: i.main,
+            "data-stroke": "main",
+            strokeWidth: 1.5
+        }), l.jsx("path", {
+            d: "M15 11a3.5 3.5 0 100-7m2.39 16h2.043c.865 0 1.567-.702 1.567-1.567a4.074 4.074 0 00-3.432-4.023v0a2.28 2.28 0 00-.359-.029h-.968",
+            stroke: i.main,
+            "data-stroke": "main",
+            strokeWidth: 1.5,
+            strokeLinecap: "round"
+        })]
+    })
+}
+
+function Sl(i) {
+    return l.jsxs("svg", {
+        width: 24,
+        height: 24,
+        viewBox: "0 0 24 24",
+        fill: "none",
+        xmlns: "http://www.w3.org/2000/svg",
+        ...i,
+        children: [l.jsx("path", {
+            d: "M4.306 11.408c.51-1.886 2.088-3.332 4.074-3.735l.276-.056a16.81 16.81 0 016.688 0l.276.056c1.986.403 3.563 1.85 4.074 3.735a8.788 8.788 0 01-.347 5.623l-.093.228c-.746 1.832-2.445 3.15-4.469 3.466l-.748.117c-1.35.21-2.725.21-4.073 0l-.75-.117c-2.023-.316-3.722-1.634-4.468-3.466l-.093-.228a8.788 8.788 0 01-.347-5.623z",
+            fill: i.secondary,
+            "data-fill": "secondary"
+        }), l.jsx("path", {
+            d: "M4.653 17.03l-.694.284.694-.283zm-.347-5.622l.724.196-.724-.196zm15.388 0l-.724.196.724-.196zm-.347 5.623l.694.283-.694-.283zm-5.31 3.811l-.116-.741.116.741zm-4.073 0l-.116.741.116-.741zM8.656 7.617l-.15-.735.15.735zm6.688 0l-.15.735.15-.735zm-6.13 13.108l.117-.741-.116.741zm-4.468-3.466l.695-.283-.695.283zm10.04 3.466l.115.741-.116-.741zm4.468-3.466l-.695-.283.695.283zM15.62 7.673l.15-.735-.15.735zm-7.24 0l.15.735-.15-.735zm-1.486-.228a.75.75 0 001.5 0h-1.5zm.75-.236h-.75.75zm3.275-4.065l-.182-.728.182.728zm.068-.017l.182.728-.182-.728zm3.934 1.026l-.52.54.52-.54zm-.264.786a.75.75 0 101.038-1.082l-1.038 1.082zm-1.642-1.821l.175-.73-.175.73zM8.53 8.408l.277-.056-.3-1.47-.275.056.298 1.47zm6.665-.056l.277.056.298-1.47-.276-.056-.299 1.47zm-.525 11.632l-.748.117.231 1.482.749-.117-.232-1.482zm-4.59.117l-.748-.117-.232 1.482.749.117.231-1.482zm8.573-3.353l-.093.228 1.39.566.092-.228-1.389-.566zm-13.211.228l-.093-.228-1.39.566.093.228 1.39-.566zm-.093-.228a8.038 8.038 0 01-.318-5.144l-1.448-.392a9.538 9.538 0 00.377 6.102l1.389-.566zm13.622-5.144a8.038 8.038 0 01-.318 5.144l1.39.566a9.538 9.538 0 00.376-6.102l-1.448.392zM13.92 20.1c-1.271.199-2.569.199-3.84 0l-.232 1.482a13.95 13.95 0 004.304 0l-.231-1.482zM8.807 8.35a16.06 16.06 0 016.389 0l.298-1.47a17.56 17.56 0 00-6.986 0l.299 1.47zm.525 11.633c-1.775-.277-3.248-1.43-3.89-3.008l-1.39.566c.85 2.086 2.776 3.569 5.048 3.924l.232-1.482zm5.57 1.482c2.272-.355 4.198-1.838 5.048-3.924l-1.39-.566c-.642 1.578-2.115 2.73-3.89 3.008l.232 1.482zm.57-13.058c1.72.35 3.066 1.597 3.499 3.196l1.448-.392c-.588-2.172-2.398-3.817-4.649-4.274l-.298 1.47zm-7.24-1.47c-2.251.457-4.06 2.102-4.649 4.274l1.448.392c.433-1.599 1.778-2.846 3.5-3.196l-.3-1.47zm.163.507V7.21h-1.5v.236h1.5zm2.707-3.573l.068-.017-.364-1.456-.068.017.364 1.456zm3.3.822l.256.245 1.038-1.082-.255-.246-1.038 1.083zm-1.56-.847a3.399 3.399 0 011.56.847L15.44 3.61a4.898 4.898 0 00-2.25-1.223l-.35 1.459zm-1.672.008a3.52 3.52 0 011.671-.008l.35-1.459a5.02 5.02 0 00-2.385.011l.364 1.456zM8.394 7.209c0-1.549 1.093-2.934 2.707-3.337l-.364-1.456c-2.244.561-3.843 2.518-3.843 4.793h1.5z",
+            fill: i.main,
+            "data-fill": "main"
+        }), l.jsx("path", {
+            d: "M12 13.5v2",
+            stroke: i.main,
+            "data-stroke": "main",
+            strokeWidth: 1.5,
+            strokeLinecap: "round"
+        })]
+    })
+}
+
+function Il(i) {
+    return l.jsxs("svg", {
         width: 20,
         height: 20,
         viewBox: "0 0 20 20",
         fill: "none",
         xmlns: "http://www.w3.org/2000/svg",
-        ...t,
-        children: [re.jsx("path", {
-            d: "M5.83301 9.72229H14.167C14.3199 9.72247 14.4442 9.84672 14.4443 9.99963C14.4443 10.1527 14.32 10.2778 14.167 10.278H5.83301C5.67998 10.2778 5.55566 10.1527 5.55566 9.99963C5.55584 9.84672 5.68009 9.72247 5.83301 9.72229Z",
-            fill: e,
-            stroke: e,
-            strokeWidth: 1.11111
-        }), re.jsx("path", {
-            d: "M16.9444 3.88892H3.0555C2.5955 3.88892 2.22217 4.26225 2.22217 4.72225C2.22217 5.18225 2.5955 5.55558 3.0555 5.55558H16.9444C17.4044 5.55558 17.7777 5.18225 17.7777 4.72225C17.7777 4.26225 17.4044 3.88892 16.9444 3.88892Z",
-            fill: e
-        }), re.jsx("path", {
-            d: "M11.1111 14.4445H8.88888C8.42888 14.4445 8.05554 14.8178 8.05554 15.2778C8.05554 15.7378 8.42888 16.1111 8.88888 16.1111H11.1111C11.5711 16.1111 11.9444 15.7378 11.9444 15.2778C11.9444 14.8178 11.5711 14.4445 11.1111 14.4445Z",
-            fill: e
+        ...i,
+        children: [l.jsx("path", {
+            fillRule: "evenodd",
+            clipRule: "evenodd",
+            d: "M18.1599 6.29988L12.4899 0.899878C11.7599 0.799878 10.9399 0.749878 10.0399 0.749878C3.7499 0.749878 1.6499 3.06988 1.6499 9.99988C1.6499 16.9399 3.7499 19.2499 10.0399 19.2499C16.3399 19.2499 18.4399 16.9399 18.4399 9.99988C18.4399 8.57988 18.3499 7.34988 18.1599 6.29988Z",
+            fill: i.main,
+            "data-fill": "main",
+            fillOpacity: i.fillOpacity,
+            stroke: i.main,
+            "data-stroke": "main",
+            strokeWidth: "1.5",
+            strokeLinecap: "round",
+            strokeLinejoin: "round"
+        }), l.jsx("path", {
+            d: "M11.9336 0.832581V3.49358C11.9336 5.35158 13.4396 6.85658 15.2976 6.85658H18.2486",
+            stroke: i.main,
+            "data-stroke": "main",
+            strokeWidth: "1.5",
+            strokeLinecap: "round",
+            strokeLinejoin: "round"
+        }), l.jsx("path", {
+            d: "M9.65918 7.97607V14.0171",
+            stroke: i.main,
+            "data-stroke": "main",
+            strokeWidth: "1.5",
+            strokeLinecap: "round",
+            strokeLinejoin: "round"
+        }), l.jsx("path", {
+            d: "M12.0045 10.3316L9.65945 7.97656L7.31445 10.3316",
+            stroke: i.main,
+            "data-stroke": "main",
+            strokeWidth: "1.5",
+            strokeLinecap: "round",
+            strokeLinejoin: "round"
         })]
-    }),
-    me = Object.freeze(Object.defineProperty({
+    })
+}
+
+function Ol(i) {
+    return l.jsxs("svg", {
+        width: 24,
+        height: 24,
+        viewBox: "0 0 24 24",
+        fill: "none",
+        xmlns: "http://www.w3.org/2000/svg",
+        ...i,
+        children: [l.jsx("path", {
+            d: "M5 19.111c0-2.413 1.697-4.468 4.004-4.848l.208-.035a17.134 17.134 0 015.576 0l.208.035c2.307.38 4.004 2.435 4.004 4.848C19 20.154 18.181 21 17.172 21H6.828C5.818 21 5 20.154 5 19.111zM16.083 6.938c0 2.174-1.828 3.937-4.083 3.937S7.917 9.112 7.917 6.937C7.917 4.764 9.745 3 12 3s4.083 1.763 4.083 3.938z",
+            fill: i.secondary,
+            "data-fill": "secondary"
+        }), l.jsx("path", {
+            d: "M5 19.111c0-2.413 1.697-4.468 4.004-4.848l.208-.035a17.134 17.134 0 015.576 0l.208.035c2.307.38 4.004 2.435 4.004 4.848C19 20.154 18.181 21 17.172 21H6.828C5.818 21 5 20.154 5 19.111zM16.083 6.938c0 2.174-1.828 3.937-4.083 3.937S7.917 9.112 7.917 6.937C7.917 4.764 9.745 3 12 3s4.083 1.763 4.083 3.938z",
+            stroke: i.main,
+            "data-stroke": "main",
+            strokeWidth: 1.5
+        })]
+    })
+}
+
+function Gl(i) {
+    return l.jsx("svg", {
+        width: 24,
+        height: 24,
+        fill: "none",
+        viewBox: "0 0 24 24",
+        xmlns: "http://www.w3.org/2000/svg",
+        ...i,
+        children: l.jsx("path", {
+            d: "M3.297 5.234a2.599 2.599 0 011.937-1.937 5.544 5.544 0 012.532 0 2.599 2.599 0 011.937 1.937c.195.833.195 1.7 0 2.532a2.599 2.599 0 01-1.937 1.937c-.833.195-1.7.195-2.532 0a2.599 2.599 0 01-1.937-1.937 5.545 5.545 0 010-2.532zM3.297 16.234a2.599 2.599 0 011.937-1.937 5.546 5.546 0 012.532 0 2.599 2.599 0 011.937 1.937c.195.833.195 1.7 0 2.532a2.599 2.599 0 01-1.937 1.937c-.833.195-1.7.195-2.532 0a2.599 2.599 0 01-1.937-1.937 5.545 5.545 0 010-2.532zM14.297 5.234a2.599 2.599 0 011.937-1.937 5.544 5.544 0 012.532 0 2.599 2.599 0 011.937 1.937c.195.833.195 1.7 0 2.532a2.599 2.599 0 01-1.937 1.937c-.833.195-1.7.195-2.532 0a2.599 2.599 0 01-1.937-1.937 5.546 5.546 0 010-2.532zM14.297 16.234a2.599 2.599 0 011.937-1.937 5.546 5.546 0 012.532 0 2.599 2.599 0 011.937 1.937c.195.833.195 1.7 0 2.532a2.599 2.599 0 01-1.937 1.937c-.833.195-1.7.195-2.532 0a2.599 2.599 0 01-1.937-1.937 5.546 5.546 0 010-2.532z",
+            fill: i.main,
+            "data-fill": "main",
+            stroke: i.main,
+            "data-stroke": "main",
+            strokeWidth: 1.5,
+            fillOpacity: .16
+        })
+    })
+}
+
+function Nl(i) {
+    return l.jsxs("svg", {
+        width: 24,
+        height: 24,
+        viewBox: "0 0 24 24",
+        fill: "none",
+        xmlns: "http://www.w3.org/2000/svg",
+        ...i,
+        children: [l.jsx("path", {
+            d: "M2.944 8.284a4.493 4.493 0 013.323-3.372 14.631 14.631 0 016.924.007c1.641.401 2.945 1.674 3.358 3.302l.025.099a14.963 14.963 0 010 7.36l-.025.099c-.413 1.628-1.717 2.901-3.358 3.302a14.63 14.63 0 01-6.924.007 4.493 4.493 0 01-3.323-3.372l-.062-.274a15.677 15.677 0 010-6.884l.062-.274z",
+            fill: i.secondary,
+            "data-fill": "secondary"
+        }), l.jsx("path", {
+            d: "M16.663 15.308l.197.066c.052.016.101.037.15.061l1.684.836c1.289.64 2.806-.29 2.806-1.723V9.81c0-1.513-1.675-2.435-2.967-1.633l-1.486.922a1.142 1.142 0 00-.202.16l-.055.054c.363 1.985.32 4.024-.127 5.995z",
+            fill: i.secondary,
+            "data-fill": "secondary"
+        }), l.jsx("path", {
+            d: "M2.944 8.284a4.493 4.493 0 013.323-3.372 14.631 14.631 0 016.924.007c1.641.401 2.945 1.674 3.358 3.302l.025.099a14.963 14.963 0 010 7.36l-.025.099c-.413 1.628-1.717 2.901-3.358 3.302a14.63 14.63 0 01-6.924.007 4.493 4.493 0 01-3.323-3.372l-.062-.274a15.677 15.677 0 010-6.884l.062-.274z",
+            stroke: i.main,
+            "data-stroke": "main",
+            strokeWidth: 1.5
+        }), l.jsx("path", {
+            d: "M16.663 15.308l.197.066c.052.016.101.037.15.061l1.684.836c1.289.64 2.806-.29 2.806-1.723V9.81c0-1.513-1.675-2.435-2.967-1.633l-1.486.922a1.142 1.142 0 00-.202.16l-.055.054c.363 1.985.32 4.024-.127 5.995z",
+            stroke: i.main,
+            "data-stroke": "main",
+            strokeWidth: 1.5
+        })]
+    })
+}
+
+function Ul(i) {
+    return l.jsxs("svg", {
+        width: 24,
+        height: 24,
+        viewBox: "0 0 24 24",
+        fill: "none",
+        xmlns: "http://www.w3.org/2000/svg",
+        ...i,
+        children: [l.jsx("path", {
+            d: "M8.866 7.006h-.738a7.07 7.07 0 00-2.436.434c-1.367.502-2.362 1.753-2.59 3.258l-.008.05a8.366 8.366 0 000 2.504l.008.05c.228 1.505 1.223 2.756 2.59 3.258a7.07 7.07 0 002.436.434h.738c.445 0 .871.187 1.184.52l.541.577c1.597 1.7 4.347.896 4.88-1.428a20.854 20.854 0 000-9.326c-.533-2.324-3.283-3.129-4.88-1.428l-.541.577c-.313.333-.74.52-1.184.52z",
+            fill: i.secondary,
+            "data-fill": "secondary",
+            stroke: i.main,
+            "data-stroke": "main",
+            strokeWidth: 1.5
+        }), l.jsx("path", {
+            d: "M19 7c1.793.998 3 2.863 3 5 0 2.136-1.207 4.002-3 5",
+            stroke: i.main,
+            "data-stroke": "main",
+            strokeWidth: 1.5,
+            strokeLinecap: "round",
+            strokeLinejoin: "round"
+        }), l.jsx("path", {
+            d: "M18.5 10c.598.4 1 1.145 1 2s-.402 1.6-1 2",
+            stroke: i.main,
+            "data-stroke": "main",
+            strokeWidth: 1.5,
+            strokeLinecap: "round",
+            strokeLinejoin: "round"
+        })]
+    })
+}
+
+function Xl(i) {
+    return l.jsxs("svg", {
+        width: 24,
+        height: 24,
+        viewBox: "0 0 24 24",
+        fill: "none",
+        xmlns: "http://www.w3.org/2000/svg",
+        ...i,
+        children: [l.jsx("path", {
+            d: "M20 10c.598.4 1 1.145 1 2s-.402 1.6-1 2",
+            stroke: i.main,
+            "data-stroke": "main",
+            strokeWidth: 1.5,
+            strokeLinecap: "round",
+            strokeLinejoin: "round"
+        }), l.jsx("path", {
+            d: "M9.317 7.006h-.794a8.14 8.14 0 00-2.624.434c-1.473.502-2.544 1.753-2.79 3.258l-.008.05a7.775 7.775 0 000 2.504l.009.05c.245 1.505 1.316 2.756 2.789 3.258.843.287 1.73.434 2.624.434h.794c.48 0 .938.187 1.275.52l.583.577c1.72 1.7 4.681.896 5.256-1.428a19.403 19.403 0 000-9.326c-.575-2.324-3.536-3.129-5.256-1.428l-.583.577c-.337.333-.796.52-1.275.52z",
+            fill: i.secondary,
+            "data-fill": "secondary",
+            stroke: i.main,
+            "data-stroke": "main",
+            strokeWidth: 1.5
+        })]
+    })
+}
+
+function Yl(i) {
+    return l.jsxs("svg", {
+        width: 24,
+        height: 24,
+        viewBox: "0 0 24 24",
+        fill: "none",
+        xmlns: "http://www.w3.org/2000/svg",
+        ...i,
+        children: [l.jsx("path", {
+            d: "M10.369 7.278h-.83c-.932 0-1.858.148-2.739.438-1.537.506-2.655 1.768-2.912 3.286l-.008.05a7.581 7.581 0 000 2.526l.008.05c.256 1.517 1.374 2.779 2.91 3.285L17.234 6.477c-1.134-1.423-3.461-1.706-4.926-.306l-.608.582c-.352.336-.831.525-1.331.525z",
+            fill: i.secondary,
+            "data-fill": "secondary"
+        }), l.jsx("path", {
+            d: "M12.309 18.459L11.79 19l.519-.542zm-.61-.582l.519-.542-.518.542zm6.097-.858l.726.186-.726-.186zm-7.427-.417a.75.75 0 100 1.5v-1.5zm8.647-6.481a.75.75 0 10-1.49.167l1.49-.167zM3.888 13.628l.74-.125-.74.125zm-.008-.05l-.74.124.74-.124zm0-2.526l.74.125-.74-.125zm.008-.05l-.74-.125.74.125zm7.812-4.25l.518.543-.518-.542zm.609-.581l-.519-.542.519.542zM6.8 7.716l-.234-.713.234.713zm-.235 9.91a.75.75 0 10.47-1.424l-.47 1.424zM19.741 5.03a.75.75 0 00-1.06-1.06l1.06 1.06zM3.97 18.68a.75.75 0 101.06 1.061l-1.06-1.06zm8.857-.763l-.609-.582-1.036 1.084.608.582 1.037-1.084zM11.79 19c2.178 2.081 5.979 1.145 6.732-1.796l-1.453-.372c-.447 1.746-2.83 2.433-4.242 1.084L11.79 19zm-1.421-.9c.313 0 .605.12.813.318l1.036-1.084a2.677 2.677 0 00-1.85-.733v1.5zm7.157-7.813a18.18 18.18 0 01-.457 6.545l1.453.372c.595-2.324.76-4.72.494-7.084l-1.49.167zm-7.987-2.26h.83v-1.5h-.83v1.5zm-4.911 5.475l-.009-.05-1.479.25.009.05 1.479-.25zm-.009-2.326l.009-.05-1.48-.25-.008.05 1.48.25zm7.599-3.882l.609-.582-1.037-1.084-.608.582 1.036 1.084zm-7.599 6.158a6.831 6.831 0 010-2.276l-1.479-.25a8.331 8.331 0 000 2.775l1.48-.25zm2.416-5.025a8.018 8.018 0 012.504-.4v-1.5c-1.011 0-2.017.16-2.973.475l.469 1.425zm0 7.774l-.002-.001-.47 1.424.002.001.47-1.424zm-.002-.001c-1.289-.425-2.198-1.472-2.405-2.698l-1.48.25c.306 1.808 1.632 3.285 3.415 3.872l.47-1.424zm3.336-8.173c.687 0 1.354-.26 1.849-.733L11.182 6.21c-.208.198-.5.317-.813.317v1.5zM6.566 7.003c-1.785.588-3.112 2.065-3.417 3.874l1.479.25C4.835 9.9 5.745 8.852 7.035 8.428l-.47-1.425zm6.26-.29c1.132-1.081 2.95-.863 3.82.232l1.174-.935c-1.396-1.753-4.233-2.099-6.03-.381l1.037 1.084zm3.82.232c.053.065.102.134.147.206l1.271-.797a3.765 3.765 0 00-.244-.344l-1.173.935zm2.035-2.975l-1.978 1.977 1.06 1.06 1.978-1.977-1.06-1.06zm-1.978 1.977L6.267 16.383l1.061 1.06L17.764 7.009l-1.06-1.06zM6.267 16.383L3.97 18.68l1.06 1.06 2.298-2.297-1.06-1.061z",
+            fill: i.main,
+            "data-fill": "main"
+        })]
+    })
+}
+
+function Kl(i) {
+    return l.jsxs("svg", {
+        width: 24,
+        height: 24,
+        viewBox: "0 0 24 24",
+        fill: "none",
+        xmlns: "http://www.w3.org/2000/svg",
+        ...i,
+        children: [l.jsx("path", {
+            d: "M8 9h4",
+            stroke: i.main,
+            "data-stroke": "main",
+            strokeWidth: 1.5,
+            strokeLinecap: "round"
+        }), l.jsx("path", {
+            d: "M2.885 8.849a7.353 7.353 0 015.546-5.407l.453-.101a14.401 14.401 0 016.232 0l.453.1a7.353 7.353 0 015.546 5.408c.514 2.07.514 4.233 0 6.302a7.353 7.353 0 01-5.546 5.407l-.453.101a14.402 14.402 0 01-6.232 0l-.453-.1a7.353 7.353 0 01-5.546-5.408 13.077 13.077 0 010-6.302z",
+            fill: i.secondary,
+            "data-fill": "secondary"
+        }), l.jsx("path", {
+            d: "M2.885 15.151l.728-.18-.728.18zm0-6.302l.728.18-.728-.18zm18.23 0l.728-.181-.728.18zm0 6.302l-.728-.18.728.18zm-6 5.508l-.162-.732.163.732zm-6.23 0l.162-.732-.163.732zm0-17.318l.162.732-.163-.732zm6.23 0l.163-.732-.162.732zM8.432 20.558l-.163.733.163-.733zm7.138 0l.163.733-.163-.733zm0-17.116l-.162.732.162-.732zm-7.138 0l-.163-.733.163.733zm10.262 11.062l-.134.738.134-.738zm-.058-.011l.134-.738-.134.738zm0-4.986l.134.738-.134-.738zm.058-.01l-.134-.738.134.737zm2.307.99a.75.75 0 00.601-1.374L21 10.487zm.601 4.4A.75.75 0 1021 13.513l.601 1.374zm-5.023-2.259l-.721.206.721-.206zm0-1.256l.721.206-.72-.206zM8.593 4.174l.454-.1-.325-1.465-.454.1.325 1.465zm6.36-.1l.454.1.325-1.465-.454-.1-.325 1.464zm.454 15.752l-.454.1.325 1.465.454-.1-.325-1.465zm-6.36.1l-.454-.1-.325 1.465.454.1.325-1.464zm-5.434-4.955a12.326 12.326 0 010-5.942l-1.455-.361a13.826 13.826 0 000 6.664l1.455-.362zM20.387 9.03c.484 1.95.484 3.99 0 5.94l1.456.362a13.827 13.827 0 000-6.664l-1.456.362zm-5.434 10.897a13.65 13.65 0 01-5.906 0l-.325 1.464c2.16.479 4.397.479 6.556 0l-.325-1.464zM9.047 4.073a13.651 13.651 0 015.906 0l.325-1.464a15.151 15.151 0 00-6.556 0l.325 1.464zm-.454 15.753a6.603 6.603 0 01-4.98-4.856l-1.455.362a8.103 8.103 0 006.11 5.959l.325-1.465zm7.139 1.465a8.103 8.103 0 006.11-5.959l-1.455-.362a6.603 6.603 0 01-4.98 4.856l.325 1.465zm-.325-17.117a6.603 6.603 0 014.98 4.856l1.456-.362a8.103 8.103 0 00-6.111-5.959l-.325 1.465zM8.268 2.709a8.103 8.103 0 00-6.11 5.959l1.455.361a6.603 6.603 0 014.98-4.855l-.325-1.465zm10.56 11.057l-.059-.01-.269 1.475.059.01.269-1.475zm-.059-3.521l.059-.01-.27-1.476-.058.01.27 1.476zm.059-.01a3.743 3.743 0 012.172.252l.601-1.374a5.244 5.244 0 00-3.042-.354l.269 1.475zm-.27 5.007a5.244 5.244 0 003.043-.355L21 13.513a3.743 3.743 0 01-2.172.253l-.27 1.476zm-1.259-2.82a1.538 1.538 0 010-.844l-1.442-.412a3.038 3.038 0 000 1.668l1.442-.412zM18.5 8.77a3.38 3.38 0 00-2.643 2.397l1.442.412a1.88 1.88 0 011.47-1.333L18.5 8.769zm.27 4.986a1.88 1.88 0 01-1.47-1.333l-1.443.412a3.38 3.38 0 002.643 2.397l.27-1.476z",
+            fill: i.main,
+            "data-fill": "main"
+        })]
+    })
+}
+
+function Ql(i) {
+    return l.jsxs("svg", {
+        width: 24,
+        height: 24,
+        viewBox: "0 0 24 24",
+        fill: "none",
+        xmlns: "http://www.w3.org/2000/svg",
+        ...i,
+        children: [l.jsx("path", {
+            fillRule: "evenodd",
+            clipRule: "evenodd",
+            d: "M12 15.5v-4 4z",
+            fill: i.secondary,
+            "data-fill": "secondary"
+        }), l.jsx("path", {
+            d: "M12 15.5v-4",
+            stroke: i.main,
+            "data-stroke": "main",
+            strokeWidth: 1.5,
+            strokeLinecap: "round",
+            strokeLinejoin: "round"
+        }), l.jsx("circle", {
+            cx: 12,
+            cy: 9,
+            r: .5,
+            fill: i.secondary,
+            "data-fill": "secondary",
+            stroke: i.main,
+            "data-stroke": "main",
+            strokeLinecap: "round",
+            strokeLinejoin: "round"
+        }), l.jsx("path", {
+            d: "M19 11.39l-4.118-6.9c-1.478-1.986-4.287-1.986-5.764 0L5 11.39C3.688 13.151 2.672 16.236 3.984 18c2 2 4.79 2 8.016 2s6.016 0 8.016-2c1.312-1.763.296-4.848-1.016-6.61z",
+            fill: i.secondary,
+            "data-fill": "secondary",
+            stroke: i.main,
+            "data-stroke": "main",
+            strokeWidth: 1.5,
+            strokeLinecap: "round",
+            strokeLinejoin: "round"
+        })]
+    })
+}
+
+function ql(i) {
+    return l.jsxs("svg", {
+        width: 20,
+        height: 20,
+        viewBox: "0 0 20 20",
+        fill: "none",
+        xmlns: "http://www.w3.org/2000/svg",
+        ...i,
+        children: [l.jsx("path", {
+            d: "M2.794 7.459A6.26 6.26 0 017.46 2.794a11.128 11.128 0 015.082 0 6.26 6.26 0 014.665 4.665 11.128 11.128 0 010 5.082 6.26 6.26 0 01-4.665 4.665 11.128 11.128 0 01-5.082 0 6.26 6.26 0 01-4.665-4.665 11.128 11.128 0 010-5.082z",
+            fill: i.main,
+            "data-fill": "main",
+            fillOpacity: .16,
+            stroke: "#F2F4FB",
+            strokeWidth: 1.5
+        }), l.jsx("path", {
+            d: "M10 12.917V7.083m0 0L7.915 9.167m2.083-2.084l2.084 2.084",
+            stroke: "#F2F4FB",
+            strokeWidth: 1.5,
+            strokeLinecap: "round",
+            strokeLinejoin: "round"
+        })]
+    })
+}
+
+function Jl(i) {
+    return l.jsxs("svg", {
+        width: 24,
+        height: 24,
+        viewBox: "0 0 24 24",
+        fill: "none",
+        xmlns: "http://www.w3.org/2000/svg",
+        ...i,
+        children: [l.jsx("path", {
+            d: "M3.316 8.324a6.72 6.72 0 015.008-5.008 11.948 11.948 0 015.457 0 6.72 6.72 0 015.008 5.008 11.947 11.947 0 010 5.457 6.72 6.72 0 01-5.008 5.008 11.947 11.947 0 01-5.457 0 6.72 6.72 0 01-5.008-5.008 11.948 11.948 0 010-5.457z",
+            fill: i.secondary,
+            "data-fill": "secondary"
+        }), l.jsx("path", {
+            d: "M3.316 13.781l.73-.171-.73.171zm0-5.457l.73.171-.73-.171zm15.473 0l.73-.171-.73.171zm0 5.457l.73.171-.73-.171zm-5.008 5.008l-.171-.73.171.73zm-5.457 0l-.171.73.171-.73zm0-15.473l-.171-.73.171.73zm5.457 0l.171-.73-.171.73zM20.47 21.53a.75.75 0 101.06-1.06l-1.06 1.06zm-6.8-9.728a.75.75 0 000-1.5v1.5zm-5.235-1.5a.75.75 0 000 1.5v-1.5zm1.867 3.368a.75.75 0 001.5 0h-1.5zm1.5-5.235a.75.75 0 00-1.5 0h1.5zM4.046 13.61a11.198 11.198 0 010-5.115l-1.46-.342a12.698 12.698 0 000 5.8l1.46-.343zm14.013-5.115a11.196 11.196 0 010 5.115l1.46.342a12.698 12.698 0 000-5.8l-1.46.343zm-4.45 9.564a11.196 11.196 0 01-5.114 0l-.342 1.46c1.907.448 3.892.448 5.8 0l-.343-1.46zM8.496 4.046a11.198 11.198 0 015.115 0l.342-1.46a12.698 12.698 0 00-5.8 0l.343 1.46zm0 14.013a5.97 5.97 0 01-4.45-4.45l-1.46.343a7.47 7.47 0 005.568 5.568l.342-1.46zm5.457 1.46a7.47 7.47 0 005.568-5.567l-1.46-.342a5.97 5.97 0 01-4.45 4.45l.342 1.46zM13.61 4.046a5.97 5.97 0 014.45 4.45l1.46-.343a7.47 7.47 0 00-5.568-5.567l-.342 1.46zm-5.457-1.46a7.47 7.47 0 00-5.567 5.567l1.46.342a5.97 5.97 0 014.45-4.45l-.343-1.46zm8.652 15.28l3.665 3.664 1.06-1.06-3.665-3.665-1.06 1.06zm-3.135-7.563h-2.617v1.5h2.617v-1.5zm-2.617 0H8.434v1.5h2.617v-1.5zm.75 3.367v-2.617h-1.5v2.617h1.5zm0-2.617V8.434h-1.5v2.617h1.5z",
+            fill: i.main,
+            "data-fill": "main"
+        })]
+    })
+}
+
+function $l(i) {
+    return l.jsxs("svg", {
+        width: 24,
+        height: 24,
+        viewBox: "0 0 24 24",
+        fill: "none",
+        xmlns: "http://www.w3.org/2000/svg",
+        ...i,
+        children: [l.jsx("path", {
+            d: "M3.316 8.324a6.72 6.72 0 015.008-5.008 11.948 11.948 0 015.457 0 6.72 6.72 0 015.008 5.008 11.947 11.947 0 010 5.457 6.72 6.72 0 01-5.008 5.008 11.947 11.947 0 01-5.457 0 6.72 6.72 0 01-5.008-5.008 11.948 11.948 0 010-5.457z",
+            fill: i.secondary,
+            "data-fill": "secondary"
+        }), l.jsx("path", {
+            d: "M3.316 13.781l.73-.171-.73.171zm0-5.457l.73.171-.73-.171zm15.473 0l.73-.171-.73.171zm0 5.457l.73.171-.73-.171zm-5.008 5.008l-.171-.73.171.73zm-5.457 0l-.171.73.171-.73zm0-15.473l-.171-.73.171.73zm5.457 0l.171-.73-.171.73zM20.47 21.53a.75.75 0 101.06-1.06l-1.06 1.06zm-6.8-9.728a.75.75 0 000-1.5v1.5zm-5.235-1.5a.75.75 0 000 1.5v-1.5zm-4.39 3.308a11.198 11.198 0 010-5.115l-1.46-.342a12.698 12.698 0 000 5.8l1.46-.343zM18.06 8.495a11.196 11.196 0 010 5.115l1.46.342a12.698 12.698 0 000-5.8l-1.46.343zm-4.45 9.564a11.196 11.196 0 01-5.114 0l-.342 1.46c1.907.448 3.892.448 5.8 0l-.343-1.46zM8.496 4.046a11.198 11.198 0 015.115 0l.342-1.46a12.698 12.698 0 00-5.8 0l.343 1.46zm0 14.013a5.97 5.97 0 01-4.45-4.45l-1.46.343a7.47 7.47 0 005.568 5.568l.342-1.46zm5.457 1.46a7.47 7.47 0 005.568-5.567l-1.46-.342a5.97 5.97 0 01-4.45 4.45l.342 1.46zM13.61 4.046a5.97 5.97 0 014.45 4.45l1.46-.343a7.47 7.47 0 00-5.568-5.567l-.342 1.46zm-5.457-1.46a7.47 7.47 0 00-5.567 5.567l1.46.342a5.97 5.97 0 014.45-4.45l-.343-1.46zm8.652 15.28l3.665 3.664 1.06-1.06-3.665-3.665-1.06 1.06zm-3.135-7.563H8.435v1.5h5.235v-1.5z",
+            fill: i.main,
+            "data-fill": "main"
+        })]
+    })
+}
+
+function li(i) {
+    return l.jsx("svg", {
+        width: 24,
+        height: 24,
+        viewBox: "0 0 24 24",
+        fill: "none",
+        xmlns: "http://www.w3.org/2000/svg",
+        ...i,
+        children: l.jsx("path", {
+            d: "M12 23c6.075 0 11-4.925 11-11S18.075 1 12 1 1 5.925 1 12",
+            "data-stroke": "main",
+            stroke: i.main,
+            strokeWidth: 2,
+            strokeLinecap: "round"
+        })
+    })
+}
+
+function ii(i) {
+    return l.jsx("svg", {
+        width: 24,
+        height: 24,
+        viewBox: "0 0 18 18",
+        fill: "none",
+        xmlns: "http://www.w3.org/2000/svg",
+        ...i,
+        children: l.jsx("path", {
+            d: "M12.3334 5.66686L14.3035 3.69674M3.69692 14.3033L5.66688 12.3333M13.7138 9H16.5M1.5 9H4.28596M9 4.28618L9 1.5M9 16.5L9 13.714M5.66686 5.66686L3.69674 3.69674M14.3033 14.3033L12.3333 12.3333",
+            "data-stroke": "main",
+            stroke: i.main,
+            strokeWidth: 1.5,
+            strokeLinecap: "round",
+            strokeLinejoin: "round"
+        })
+    })
+}
+
+function ai(i) {
+    return l.jsx("svg", {
+        width: 24,
+        height: 24,
+        viewBox: "0 0 24 24",
+        fill: "none",
+        xmlns: "http://www.w3.org/2000/svg",
+        ...i,
+        children: l.jsx("path", {
+            d: "M20 12H9m0 0l4.588 4M9 12l4.588-4M4.75 4.75v14.5",
+            stroke: i.main,
+            "data-stroke": "main",
+            strokeWidth: 1.5,
+            strokeLinecap: "round",
+            strokeLinejoin: "round"
+        })
+    })
+}
+
+function ti(i) {
+    return l.jsx("svg", {
+        width: 24,
+        height: 24,
+        viewBox: "0 0 24 24",
+        fill: "none",
+        xmlns: "http://www.w3.org/2000/svg",
+        ...i,
+        children: l.jsx("path", {
+            d: "M4 12h11m0 0l-4.588-4M15 12l-4.588 4M20.75 4.75v14.5",
+            stroke: i.main,
+            "data-stroke": "main",
+            strokeWidth: 1.5,
+            strokeLinecap: "round",
+            strokeLinejoin: "round"
+        })
+    })
+}
+
+function si(i) {
+    return l.jsxs("svg", {
+        width: 16,
+        height: 16,
+        viewBox: "0 0 16 16",
+        fill: "none",
+        xmlns: "http://www.w3.org/2000/svg",
+        ...i,
+        children: [l.jsx("path", {
+            d: "M13.423 5.231H3.273v1.044h10.15V5.23zM12.728 9.753H2.578v1.043h10.15V9.753z",
+            fill: i.main
+        }), l.jsx("path", {
+            d: "M5.043 13.231H4L5.74 2.77h1.043L5.043 13.23zM9.913 13.231H8.869L10.61 2.77h1.043L9.912 13.23z",
+            fill: i.main
+        })]
+    })
+}
+
+function ni(i) {
+    return l.jsxs("svg", {
+        width: 16,
+        height: 16,
+        viewBox: "0 0 16 16",
+        fill: "none",
+        xmlns: "http://www.w3.org/2000/svg",
+        ...i,
+        children: [l.jsx("path", {
+            d: "M7.305 2.94L4.982 5.564H2.947a.511.511 0 00-.511.512v3.847a.511.511 0 00.51.511h2.036l2.323 2.626a.602.602 0 001.044-.396v-9.33a.602.602 0 00-1.044-.396zM9.217 12.348v-1.043a3.304 3.304 0 100-6.61V3.653a4.348 4.348 0 010 8.696z",
+            fill: i.main
+        }), l.jsx("path", {
+            d: "M9.39 9.913V8.87a.87.87 0 100-1.74V6.087a1.913 1.913 0 010 3.826z",
+            fill: i.main
+        })]
+    })
+}
+
+function ei(i) {
+    return l.jsxs("svg", {
+        width: 21,
+        height: 20,
+        fill: "none",
+        xmlns: "http://www.w3.org/2000/svg",
+        ...i,
+        children: [l.jsxs("g", {
+            clipPath: "url(#prefix__clip0_6847_14049)",
+            fill: i.main,
+            "data-fill": "main",
+            children: [l.jsx("path", {
+                d: "M18.16 6.05c0-.494-.099-.984-.29-1.44a3.7 3.7 0 00-.81-1.19 3.49 3.49 0 00-1.22-.8 3.811 3.811 0 00-.45-.13l-.25-.07a3.91 3.91 0 00-2.79.58l-.17.14a3.116 3.116 0 00-.4.32l-.54.54-2.13 2.08h.31a5.16 5.16 0 011.57.25l.51-.52 1.34-1.33a2.06 2.06 0 01.73-.48 2.36 2.36 0 012.43.47c.102.106.195.22.28.34a2.3 2.3 0 01.38 1.25A2.221 2.221 0 0116 7.64l-2.84 2.85a2.25 2.25 0 01-3.17 0 2.16 2.16 0 01-.27-.33.75.75 0 10-1.22.84 3.738 3.738 0 005.73.54l2.83-2.84a3.742 3.742 0 001.1-2.65z"
+            }), l.jsx("path", {
+                d: "M11.57 13.89a5.16 5.16 0 01-1.57-.25l-.31.36-1.53 1.49a2.23 2.23 0 01-2.66.35 2.08 2.08 0 01-.48-.36 2.002 2.002 0 01-.29-.35 1.51 1.51 0 01-.11-.22 1.284 1.284 0 01-.12-.16 2.25 2.25 0 01.49-2.43l2.85-2.84a2.28 2.28 0 013.16 0c.1.091.187.196.26.31a.76.76 0 001.05.19.76.76 0 00.19-1.05 3.8 3.8 0 00-5.72-.51l-2.85 2.84a3.71 3.71 0 00-.22 5.02l.22.27a3.81 3.81 0 001 .7 3.76 3.76 0 001.63.39 3.73 3.73 0 001.75-.45c.33-.167.633-.383.9-.64l.86-.86 1.8-1.81-.3.01z"
+            })]
+        }), l.jsx("defs", {
+            children: l.jsx("clipPath", {
+                id: "prefix__clip0_6847_14049",
+                children: l.jsx("path", {
+                    fill: "#fff",
+                    transform: "translate(.5)",
+                    d: "M0 0h20v20H0z"
+                })
+            })
+        })]
+    })
+}
+
+function ri(i) {
+    return l.jsxs("svg", {
+        width: 20,
+        height: 20,
+        viewBox: "0 0 20 20",
+        xmlns: "http://www.w3.org/2000/svg",
+        ...i,
+        children: [l.jsxs("g", {
+            clipPath: "url(#prefix__clip0_6974_12482)",
+            fill: i.main,
+            "data-fill": "main",
+            children: [l.jsx("path", {
+                d: "M4 15.32a.76.76 0 01-.75-.75V4.6a.75.75 0 111.5 0v10a.76.76 0 01-.75.72z"
+            }), l.jsx("path", {
+                d: "M17 10.34H4a.75.75 0 110-1.5h13a.75.75 0 110 1.5z"
+            }), l.jsx("path", {
+                d: "M12 14.34a.75.75 0 01-.47-1.34l4.27-3.41-4.27-3.42A.75.75 0 1112.47 5l5 4a.75.75 0 010 1.17l-5 4a.75.75 0 01-.47.17z"
+            })]
+        }), l.jsx("defs", {
+            children: l.jsx("clipPath", {
+                id: "prefix__clip0_6974_12482",
+                children: l.jsx("path", {
+                    fill: "#fff",
+                    d: "M0 0h20v20H0z"
+                })
+            })
+        })]
+    })
+}
+
+function hi(i) {
+    return l.jsxs("svg", {
+        width: 24,
+        height: 24,
+        viewBox: "0 0 24 24",
+        fill: "none",
+        xmlns: "http://www.w3.org/2000/svg",
+        ...i,
+        children: [l.jsx("path", {
+            d: "M5.514 11h12.982c.93 0 1.82.403 2.478 1.12.657.719 1.026 1.692 1.026 2.707v6.99c0 .314-.114.614-.317.836a1.04 1.04 0 01-.767.347H3.084a1.04 1.04 0 01-.767-.347A1.24 1.24 0 012 21.817v-6.98a4.136 4.136 0 01.265-1.47c.176-.466.435-.89.761-1.246a3.5 3.5 0 011.142-.832c.427-.192.884-.29 1.346-.289z",
+            fill: i.main,
+            "data-fill": "main",
+            stroke: i.main,
+            "data-stroke": "main",
+            strokeWidth: 1.5,
+            strokeLinecap: "round",
+            strokeLinejoin: "round",
+            fillOpacity: .16
+        }), l.jsx("path", {
+            d: "M18.697 10.877H5.263c-.866 0-1.696.35-2.307.97A3.336 3.336 0 002 14.19v.81a.795.795 0 00.231.55.772.772 0 00.547.229v0a.21.21 0 01.15.063c.04.04.062.095.062.152v.461a1.225 1.225 0 00.345.862 1.19 1.19 0 00.847.358h1.666a1.187 1.187 0 00.85-.357 1.222 1.222 0 00.353-.863v0c0-.18.07-.352.195-.478a.662.662 0 01.471-.199h.91a.708.708 0 01.513.21.728.728 0 01.214.518v0a.95.95 0 00.268.664.923.923 0 00.65.28h.172c.292 0 .572-.118.779-.328.206-.21.322-.494.322-.79 0-.147.058-.287.16-.391a.541.541 0 01.386-.162h.323c.233 0 .457.093.622.26a.899.899 0 01.257.631v1.026c.003.352.142.69.387.939.246.25.579.39.926.393.35 0 .684-.14.932-.39s.389-.588.391-.942v-1.23c0-.183.072-.357.199-.486a.672.672 0 01.478-.201h.616c.18 0 .352.072.479.2a.692.692 0 01.198.486c0 .272.106.533.296.725.19.192.446.3.714.3h1.445c.436 0 .855-.176 1.164-.489.308-.313.482-.738.482-1.181v0-1.63c0-.439-.086-.873-.252-1.277a3.314 3.314 0 00-.718-1.08 3.259 3.259 0 00-1.072-.714 3.22 3.22 0 00-1.261-.24v0z",
+            stroke: i.main,
+            "data-stroke": "main",
+            strokeWidth: 1.5,
+            strokeLinecap: "round",
+            strokeLinejoin: "round"
+        }), l.jsx("path", {
+            d: "M16.687 8h.638c.18 0 .35.06.477.167a.528.528 0 01.198.402V11h-2V8.548a.534.534 0 01.21-.392.749.749 0 01.477-.156zM17.896 5.808C17.78 5.406 17.456 4 17.006 4s-.751 1.426-.89 1.808A.721.721 0 0016 6.22a.841.841 0 00.328.556c.185.144.424.224.672.224.248 0 .487-.08.672-.224A.842.842 0 0018 6.22a.815.815 0 00-.104-.412zM11.687 6h.638c.089 0 .177.015.259.043.081.028.156.07.218.121a.567.567 0 01.147.183.48.48 0 01.051.214V11h-2V6.582a.477.477 0 01.046-.224.561.561 0 01.147-.19.697.697 0 01.227-.126.797.797 0 01.267-.042zM12.885 3.763C12.77 3.373 12.448 2 12 2s-.747 1.393-.885 1.763a.781.781 0 00-.115.39c0 .224.105.44.293.599.187.159.442.248.707.248.265 0 .52-.09.707-.248a.788.788 0 00.293-.6.781.781 0 00-.115-.389zM6.67 7h.647a.72.72 0 01.483.182c.128.116.2.273.2.438V11H6V7.62c0-.163.07-.319.196-.435A.719.719 0 016.67 7zM7.885 4.763C7.828 4.423 7.448 3 7 3s-.747 1.422-.885 1.763a.78.78 0 00-.115.39c0 .11.026.221.076.324.05.103.124.196.217.275.093.078.203.14.324.184a1.158 1.158 0 00.766 0c.121-.043.231-.106.324-.184a.853.853 0 00.217-.275A.737.737 0 008 5.153a.78.78 0 00-.115-.39z",
+            fill: i.main,
+            "data-fill": "main"
+        })]
+    })
+}
+
+function di(i) {
+    return l.jsxs("svg", {
+        width: 24,
+        height: 24,
+        viewBox: "0 0 24 24",
+        fill: "none",
+        xmlns: "http://www.w3.org/2000/svg",
+        ...i,
+        children: [l.jsx("path", {
+            d: "M12 4c-4.971 0-9 3.585-9 8 .016 1.342.378 2.643 1.036 3.713L3 20l4.143-1.276C8.668 19.577 10.325 20.013 12 20c4.971 0 9-3.585 9-8s-4.029-8-9-8z",
+            fill: i.main,
+            "data-fill": "main",
+            stroke: i.main,
+            "data-stroke": "main",
+            strokeWidth: 1.5,
+            strokeLinecap: "round",
+            strokeLinejoin: "round",
+            fillOpacity: .16
+        }), l.jsx("path", {
+            d: "M12.05 7.65h-.84a.44.44 0 00-.39.49l.18 5.25a.43.43 0 00.38.45h1.28a.43.43 0 00.38-.45l.21-5.25a.439.439 0 00-.39-.49h-.81zM12.06 16.35a1.08 1.08 0 100-2.16 1.08 1.08 0 000 2.16z",
+            fill: i.main,
+            "data-fill": "main"
+        })]
+    })
+}
+
+function oi(i) {
+    return l.jsxs("svg", {
+        width: 24,
+        height: 24,
+        viewBox: "0 0 24 24",
+        fill: "none",
+        xmlns: "http://www.w3.org/2000/svg",
+        ...i,
+        children: [l.jsx("path", {
+            d: "M12 3L4.268 8.344a.619.619 0 00-.233.31.643.643 0 00-.008.391c.038.129.115.24.22.32.105.079.231.12.36.118h14.785c.13.002.256-.04.361-.118a.621.621 0 00.22-.32.643.643 0 00-.008-.392.618.618 0 00-.233-.309L12 3z",
+            fill: "#33353B",
+            stroke: i.main,
+            "data-stroke": "main",
+            strokeWidth: 1.5,
+            strokeLinecap: "round",
+            strokeLinejoin: "round",
+            fillOpacity: .16
+        }), l.jsx("path", {
+            d: "M7.015 8.966H5.018v9.32h1.997v-9.32zM15.007 8.966H13.01v9.32h1.998v-9.32zM11.011 8.966H9.013v9.32h1.998v-9.32zM19.003 8.966h-1.998v9.32h1.998v-9.32z",
+            fill: i.main,
+            "data-fill": "main"
+        }), l.jsx("path", {
+            d: "M4.817 17.893h14.366c.214 0 .42.133.572.369.151.236.236.556.236.89V21H4.008v-1.849c0-.165.021-.328.062-.481.04-.153.1-.292.175-.408a.896.896 0 01.262-.273.569.569 0 01.31-.096z",
+            fill: "#33353B",
+            stroke: i.main,
+            "data-stroke": "main",
+            strokeWidth: 1.5,
+            strokeLinecap: "round",
+            strokeLinejoin: "round"
+        })]
+    })
+}
+
+function Ci(i) {
+    return l.jsxs("svg", {
+        width: 24,
+        height: 24,
+        viewBox: "0 0 24 24",
+        fill: "none",
+        xmlns: "http://www.w3.org/2000/svg",
+        ...i,
+        children: [l.jsx("path", {
+            d: "M15.934 4H8.066C5.268 4 3 6.667 3 9.956v4.088C3 17.334 5.268 20 8.066 20h7.868C18.732 20 21 17.334 21 14.044V9.956C21 6.666 18.732 4 15.934 4z",
+            fill: i.main,
+            "data-fill": "main",
+            stroke: i.main,
+            "data-stroke": "main",
+            strokeWidth: 1.5,
+            strokeLinecap: "round",
+            strokeLinejoin: "round",
+            fillOpacity: .16
+        }), l.jsx("path", {
+            d: "M16.44 7.28h-5.9a.89.89 0 000 1.78h5.9a.89.89 0 000-1.78zM15.44 14.69h-3.76a.89.89 0 000 1.78h3.76a.89.89 0 100-1.78zM8.01 7.28h-.12a.89.89 0 100 1.78h.12a.89.89 0 000-1.78zM8.99 14.69h-.12a.89.89 0 000 1.78h.12a.89.89 0 000-1.78zM17.44 11.01h-8.8a.89.89 0 000 1.78h8.8a.89.89 0 100-1.78z",
+            fill: i.main,
+            "data-fill": "main"
+        })]
+    })
+}
+
+function ci(i) {
+    return l.jsxs("svg", {
+        width: 24,
+        height: 24,
+        fill: "none",
+        viewBox: "0 0 24 24",
+        xmlns: "http://www.w3.org/2000/svg",
+        ...i,
+        children: [l.jsx("path", {
+            d: "M12 3a9 9 0 00-9 9v.31a9 9 0 0018 0V12a9 9 0 00-9-9zm3.29 12.29A4.66 4.66 0 0112 16.66a4.68 4.68 0 01-4.64-4.35V12a4.65 4.65 0 018.13-3.09A4.59 4.59 0 0116.66 12v.31a4.59 4.59 0 01-1.37 2.98z",
+            fill: i.main,
+            "data-fill": "main",
+            stroke: i.main,
+            "data-stroke": "main",
+            strokeWidth: 1.5,
+            strokeLinecap: "round",
+            strokeLinejoin: "round",
+            fillOpacity: .16
+        }), l.jsx("path", {
+            d: "M12 21v-4.34M12 7.34V3M3 12.31H7.36M21 12.31H16.64M8.41 9.05L5.33 6.26M18.34 18.06l-3.05-2.77M8.55 15.11l-3.25 2.9v.01M18.37 6.3l-2.9 2.61",
+            stroke: i.main,
+            "data-stroke": "main",
+            strokeWidth: 1.5,
+            strokeLinecap: "round",
+            strokeLinejoin: "round",
+            fillOpacity: .16
+        })]
+    })
+}
+
+function pi(i) {
+    return l.jsxs("svg", {
+        width: 24,
+        height: 24,
+        fill: "none",
+        xmlns: "http://www.w3.org/2000/svg",
+        ...i,
+        children: [l.jsx("path", {
+            d: "M16.2 7.008H7.631C5.626 7.008 4 8.65 4 10.678v6.65c0 2.026 1.626 3.67 3.631 3.67h8.57c2.005 0 3.63-1.644 3.63-3.67v-6.65c0-2.027-1.625-3.67-3.63-3.67z",
+            stroke: i.main,
+            strokeWidth: 1.5,
+            strokeLinecap: "round",
+            strokeLinejoin: "round"
+        }), l.jsx("path", {
+            d: "M11.426 20.497V7.507h.98v12.99h-.98z",
+            fill: i.main,
+            stroke: i.main
+        }), l.jsx("path", {
+            d: "M4.668 13.498H19.5v1H4.668v-1z",
+            fill: i.main,
+            stroke: i.main
+        }), l.jsx("path", {
+            d: "M11.866 6.298s-1.652.69-2.622-.13-1.375-1.98-.89-2.68c.485-.7 1.652-.64 2.632.14.98.78.88 2.67.88 2.67zM12.104 6.298s1.652.64 2.622-.13 1.375-2 .9-2.68c-.474-.68-1.652-.64-2.632.14-.98.78-.89 2.67-.89 2.67z",
+            stroke: i.main,
+            strokeWidth: 1.5,
+            strokeLinecap: "round",
+            strokeLinejoin: "round"
+        })]
+    })
+}
+
+function xi(i) {
+    return l.jsxs("svg", {
+        width: 24,
+        height: 24,
+        viewBox: "0 0 24 24",
+        fill: "none",
+        xmlns: "http://www.w3.org/2000/svg",
+        ...i,
+        children: [l.jsx("path", {
+            d: "M7.225 11.076a3.388 3.388 0 01-2.161-.848 3.01 3.01 0 01-1.008-1.987c-.372-3.08 1.158-3.194 3.016-2.054M18.775 11.076a3.388 3.388 0 002.162-.848 3.01 3.01 0 001.007-1.987c.372-3.08-1.158-3.194-3.016-2.054",
+            stroke: i.main,
+            "data-stroke": "main",
+            strokeWidth: 1.5,
+            strokeLinecap: "round",
+            strokeLinejoin: "round"
+        }), l.jsx("path", {
+            d: "M16.713 18.064h-2.189v-4.78H11.32v4.78H9.246a1.391 1.391 0 00-.907.382c-.233.23-.354 1.746-.337 2.054h9.996a1.042 1.042 0 00-.079-.456c-.06-.146-.153-1.497-.273-1.61a1.327 1.327 0 00-.424-.269 1.462 1.462 0 00-.51-.101z",
+            fill: "#33353B",
+            stroke: i.main,
+            "data-stroke": "main",
+            strokeWidth: 1.5,
+            strokeLinecap: "round",
+            strokeLinejoin: "round"
+        }), l.jsx("path", {
+            d: "M8.477 4H17.5c.398 0 .78.147 1.06.408.282.261.44.616.44.985v4.044c0 .732-.156 1.458-.458 2.134a5.557 5.557 0 01-1.304 1.807 6.041 6.041 0 01-1.95 1.204 6.39 6.39 0 01-2.3.418c-1.588 0-3.11-.586-4.234-1.63C7.631 12.328 7 10.914 7 9.438V5.393c0-.366.155-.717.431-.978.277-.26.653-.41 1.046-.415z",
+            fill: "#33353B",
+            stroke: i.main,
+            "data-stroke": "main",
+            strokeWidth: 1.5,
+            strokeLinecap: "round",
+            strokeLinejoin: "round"
+        })]
+    })
+}
+
+function fi(i) {
+    return l.jsxs("svg", {
+        width: 24,
+        height: 24,
+        viewBox: "0 0 24 24",
+        fill: "none",
+        xmlns: "http://www.w3.org/2000/svg",
+        ...i,
+        children: [l.jsx("path", {
+            d: "M20 4.512v6.445c0 .401-.148.786-.41 1.07-.264.283-.62.442-.993.442H5.403c-.372 0-.73-.16-.992-.443A1.574 1.574 0 014 10.957V4.512c0-.4.148-.786.41-1.07.264-.283.62-.442.993-.442h13.281c.357.024.692.194.936.475.245.28.38.652.38 1.037z",
+            fill: "#A6AAAD",
+            stroke: i.main,
+            "data-stroke": "main",
+            strokeWidth: 1.5,
+            strokeLinecap: "round",
+            strokeLinejoin: "round",
+            fillOpacity: .16
+        }), l.jsx("path", {
+            d: "M10.897 12.47h2.235v7.3c.004.161-.023.322-.078.473a1.21 1.21 0 01-.244.402 1.11 1.11 0 01-.371.267 1.073 1.073 0 01-1.225-.263 1.249 1.249 0 01-.326-.848v-7.3l.01-.032z",
+            fill: "#A6AAAD",
+            stroke: i.main,
+            "data-stroke": "main",
+            strokeWidth: 1.5,
+            strokeLinecap: "round",
+            strokeLinejoin: "round",
+            fillOpacity: .16
+        })]
+    })
+}
+
+function mi(i) {
+    return l.jsx("svg", {
+        width: 24,
+        height: 24,
+        viewBox: "0 0 24 24",
+        fill: "none",
+        xmlns: "http://www.w3.org/2000/svg",
+        ...i,
+        children: l.jsx("path", {
+            d: "M18.128 3.021L8.724 4.425c-.369.057-.706.25-.95.542a1.657 1.657 0 00-.38 1.055v9.89a3.972 3.972 0 00-1.098-.171C4.494 15.741 3 16.881 3 18.376 3 19.871 4.45 21 6.296 21c1.846 0 4.028-1.14 4.116-2.59V8.93l7.497-1.243v7.084a4.14 4.14 0 00-1.209-.182c-1.79 0-3.296 1.14-3.296 2.624 0 1.483 1.45 2.623 3.296 2.623 1.846 0 4.278-1.14 4.3-2.578V4.618c0-.234-.05-.466-.145-.68a1.614 1.614 0 00-.406-.553c-.172-.152-1.433-.263-1.651-.326a1.504 1.504 0 00-.67-.038z",
+            fill: i.main,
+            "data-fill": "main",
+            stroke: i.main,
+            "data-stroke": "main",
+            strokeWidth: 1.5,
+            strokeLinecap: "round",
+            strokeLinejoin: "round",
+            fillOpacity: .16
+        })
+    })
+}
+
+function ji(i) {
+    return l.jsxs("svg", {
+        width: 24,
+        height: 24,
+        viewBox: "0 0 24 24",
+        fill: "none",
+        xmlns: "http://www.w3.org/2000/svg",
+        ...i,
+        children: [l.jsx("path", {
+            d: "M12 4.09a7.8 7.8 0 00-2.17.31A7.89 7.89 0 004.09 12v.08a7.91 7.91 0 107.91-8v.01z",
+            fill: i.main,
+            "data-fill": "main",
+            stroke: i.main,
+            "data-stroke": "main",
+            strokeWidth: 1.5,
+            strokeLinecap: "round",
+            strokeLinejoin: "round",
+            fillOpacity: .16
+        }), l.jsx("path", {
+            d: "M11.07 10.21L8.8 5.89a6.9 6.9 0 00-2.34 2.28l3.93 2.71c.17-.275.402-.505.68-.67zM5.76 9.23a6 6 0 00-.3 1L10 11.54c.02-.103.05-.203.09-.3L5.76 9.23z",
+            fill: i.main,
+            "data-fill": "main"
+        }), l.jsx("path", {
+            d: "M12 9.83a2.19 2.19 0 00-1 .27c-.44.24-.79.616-1 1.07a1.4 1.4 0 00-.09.29A2.17 2.17 0 0012 14.17a2.17 2.17 0 000-4.34zM12 13a1 1 0 01-1-1 1.153 1.153 0 010-.26.78.78 0 010-.14.559.559 0 01.09-.17 1 1 0 01.37-.34A1.06 1.06 0 0112 11a1 1 0 110 2z",
+            fill: i.main,
+            "data-fill": "main"
+        })]
+    })
+}
+
+function wi(i) {
+    return l.jsxs("svg", {
+        width: 24,
+        height: 24,
+        viewBox: "0 0 24 24",
+        fill: "none",
+        xmlns: "http://www.w3.org/2000/svg",
+        ...i,
+        children: [l.jsx("path", {
+            d: "M21.65 11.46v-.74a7.46 7.46 0 00-7.46-7.46H9.81a7.46 7.46 0 00-7.46 7.46v.74a7.46 7.46 0 007.46 7.45h4.55l6 1.83-1.49-3.5a7.45 7.45 0 002.78-5.78z",
+            fill: i.main,
+            "data-fill": "main",
+            stroke: i.main,
+            "data-stroke": "main",
+            strokeWidth: 1.5,
+            strokeLinecap: "round",
+            strokeLinejoin: "round",
+            fillOpacity: .16
+        }), l.jsx("path", {
+            d: "M14.54 7.35a2.22 2.22 0 00-2.66.73 2.21 2.21 0 00-2.65-.73 2 2 0 00-1.11 1.09 2.19 2.19 0 002 3.1 2.17 2.17 0 001.77-.91 2.19 2.19 0 003.77-2.19 2 2 0 00-1.12-1.09z",
+            fill: i.main,
+            "data-fill": "main"
+        }), l.jsx("path", {
+            d: "M8.32 10.6h7.13l-3.37 4.31a.278.278 0 01-.35.083.28.28 0 01-.1-.083L8.32 10.6z",
+            fill: i.main,
+            "data-fill": "main"
+        })]
+    })
+}
+
+function Mi(i) {
+    return l.jsxs("svg", {
+        width: 24,
+        height: 24,
+        viewBox: "0 0 24 24",
+        fill: "none",
+        xmlns: "http://www.w3.org/2000/svg",
+        ...i,
+        children: [l.jsx("circle", {
+            cx: "6.4",
+            cy: "6.4",
+            r: "2.4",
+            stroke: i.main,
+            strokeWidth: "1.5"
+        }), l.jsx("circle", {
+            cx: "17.5992",
+            cy: "17.5992",
+            r: "2.4",
+            stroke: i.main,
+            strokeWidth: "1.5"
+        }), l.jsx("path", {
+            d: "M11.2002 5.65039C10.786 5.65039 10.4502 5.98618 10.4502 6.40039C10.4502 6.8146 10.786 7.15039 11.2002 7.15039V5.65039ZM12.8002 17.6004L13.3305 18.1307C13.4712 17.9901 13.5502 17.7993 13.5502 17.6004C13.5502 17.4015 13.4712 17.2107 13.3305 17.0701L12.8002 17.6004ZM16.1647 9.35025L16.5673 9.98299L16.5673 9.98299L16.1647 9.35025ZM7.83567 14.6505L8.23833 15.2833L8.23833 15.2833L7.83567 14.6505ZM12.1305 15.8701C11.8376 15.5772 11.3627 15.5772 11.0698 15.8701C10.777 16.163 10.777 16.6378 11.0698 16.9307L12.1305 15.8701ZM11.0698 18.2701C10.777 18.563 10.777 19.0378 11.0698 19.3307C11.3627 19.6236 11.8376 19.6236 12.1305 19.3307L11.0698 18.2701ZM15.3057 5.65039H11.2002V7.15039H15.3057V5.65039ZM12.8002 16.8504H8.69467V18.3504H12.8002V16.8504ZM15.762 8.7175L7.43301 14.0178L8.23833 15.2833L16.5673 9.98299L15.762 8.7175ZM13.3305 17.0701L12.1305 15.8701L11.0698 16.9307L12.2698 18.1307L13.3305 17.0701ZM12.2698 17.0701L11.0698 18.2701L12.1305 19.3307L13.3305 18.1307L12.2698 17.0701ZM8.69467 16.8504C7.84429 16.8504 7.52089 15.7398 8.23833 15.2833L7.43301 14.0178C5.44953 15.28 6.34361 18.3504 8.69467 18.3504V16.8504ZM15.3057 7.15039C16.1561 7.15039 16.4795 8.26095 15.762 8.7175L16.5673 9.98299C18.5508 8.72077 17.6567 5.65039 15.3057 5.65039V7.15039Z",
+            fill: i.main
+        })]
+    })
+}
+
+function gi(i) {
+    return l.jsxs("svg", {
+        width: 24,
+        height: 24,
+        viewBox: "0 0 24 24",
+        fill: "none",
+        xmlns: "http://www.w3.org/2000/svg",
+        ...i,
+        children: [l.jsx("path", {
+            d: "M16.102 1.801a7.478 7.478 0 00-5.18-.578 7.274 7.274 0 00-4.25 2.932A6.89 6.89 0 005.538 9.09a7.01 7.01 0 002.561 4.407l-3.927 7.315a1.46 1.46 0 00-.099 1.14c.124.378.396.693.758.877a1.571 1.571 0 001.704-.182 1.5 1.5 0 00.375-.457l3.95-7.293a7.48 7.48 0 005.173-.536 7.138 7.138 0 003.482-3.75 6.86 6.86 0 00.01-5.048 7.136 7.136 0 00-3.468-3.763h.046z",
+            fill: i.main,
+            "data-fill": "main",
+            stroke: i.main,
+            "data-stroke": "main",
+            strokeWidth: 1.5,
+            strokeLinecap: "round",
+            strokeLinejoin: "round",
+            fillOpacity: .16
+        }), l.jsx("path", {
+            d: "M16.543 10.146c1.162-2.235.338-4.964-1.84-6.097-2.177-1.133-4.885-.24-6.047 1.994-1.162 2.235-.339 4.964 1.84 6.097 2.177 1.133 4.885.24 6.047-1.995z",
+            stroke: i.main,
+            "data-stroke": "main",
+            strokeWidth: 1.5,
+            strokeLinecap: "round",
+            strokeLinejoin: "round"
+        })]
+    })
+}
+
+function zi(i) {
+    return l.jsx("svg", {
+        width: 24,
+        height: 24,
+        viewBox: "0 0 24 24",
+        fill: "none",
+        xmlns: "http://www.w3.org/2000/svg",
+        ...i,
+        children: l.jsx("path", {
+            d: "M20.399 3.518c0-.392-.43-.644-.706-.453l-4.667 3.363a.543.543 0 00-.168.45.537.537 0 00.26.405l1.146.755-3.285 5.587-4.728-1.63a.238.238 0 00-.184 0c-.245-.101-.552 0-.747.372l-4.267 7.308a.991.991 0 00-.001.634c.069.206.204.384.384.509a1.036 1.036 0 001.223-.036l4.237-5.033 4.984 1.912c.05.01.103.01.153 0h.154a.733.733 0 00.491-.352l4.308-7.58 1.392.896a.404.404 0 00.592-.175.387.387 0 00.022-.227L20.4 3.518z",
+            fill: i.main,
+            "data-fill": "main",
+            stroke: i.main,
+            "data-stroke": "main",
+            strokeWidth: 1.5,
+            strokeLinecap: "round",
+            strokeLinejoin: "round",
+            fillOpacity: .16
+        })
+    })
+}
+
+function vi(i) {
+    return l.jsxs("svg", {
+        width: 24,
+        height: 24,
+        viewBox: "0 0 24 24",
+        fill: "none",
+        xmlns: "http://www.w3.org/2000/svg",
+        ...i,
+        children: [l.jsx("path", {
+            d: "M11.667 2h.645a3.79 3.79 0 011.068.145c.34.098.647.243.907.426s.466.4.607.64c.14.24.213.496.213.756v1.051H8.893v-1.05c0-.523.292-1.023.812-1.392S10.931 2 11.667 2z",
+            fill: "#A6AAAD",
+            stroke: i.main,
+            "data-stroke": "main",
+            strokeWidth: 1.5,
+            strokeLinecap: "round",
+            strokeLinejoin: "round",
+            fillOpacity: .16
+        }), l.jsx("path", {
+            d: "M12 22c4.97 0 9-3.914 9-8.742 0-4.829-4.03-8.743-9-8.743S3 8.43 3 13.257C3 18.087 7.03 22 12 22z",
+            fill: "#A6AAAD",
+            stroke: i.main,
+            "data-stroke": "main",
+            strokeWidth: 1.5,
+            strokeLinecap: "round",
+            strokeLinejoin: "round",
+            fillOpacity: .16
+        }), l.jsx("path", {
+            d: "M12.135 12l-.135.06-3.78-3.4 2.423 4.406a1.51 1.51 0 00.185 1.36c.175.253.423.45.713.566.29.117.61.146.917.086.308-.06.59-.207.811-.424.221-.216.371-.491.431-.79.06-.3.027-.61-.094-.89a1.55 1.55 0 00-.588-.69 1.618 1.618 0 00-.883-.254V12z",
+            fill: "#33353B",
+            stroke: "#A6AAAD",
+            strokeLinecap: "round",
+            strokeLinejoin: "round"
+        })]
+    })
+}
+
+function Li(i) {
+    return l.jsxs("svg", {
+        width: 24,
+        height: 24,
+        viewBox: "0 0 24 24",
+        fill: "none",
+        xmlns: "http://www.w3.org/2000/svg",
+        ...i,
+        children: [l.jsx("path", {
+            d: "M20.45 9.85a1.14 1.14 0 00-1.73.13L16 13.4l-.12-.27 2.54-5.9a1.64 1.64 0 00-.65-2.09 1.34 1.34 0 00-1.87.73l-2.15 5-.4-.2L15 4.17a1.62 1.62 0 00-1-1.95 1.41 1.41 0 00-1.74 1.1l-1.77 7.09-.37.11.59-6.08a1.43 1.43 0 00-1.15-1.61 1.35 1.35 0 00-1.45 1.29l-.85 8.76h-.15l-.26.1-1-3.23a1.32 1.32 0 00-1.64-1l-.17.06a1.56 1.56 0 00-.75 1.93l1.74 5.74a4 4 0 00.13.74 3.38 3.38 0 003 2.67 4.9 4.9 0 002 1.27c2.64.82 5.37-.9 6.11-3.85a.43.43 0 000-.11l4.23-5.42a1.5 1.5 0 00-.05-1.93z",
+            fill: i.main,
+            dataFill: "main",
+            stroke: i.main,
+            "data-stroke": "main",
+            strokeWidth: 1.5,
+            strokeLinecap: "round",
+            strokeLinejoin: "round",
+            fillOpacity: .16
+        }), l.jsx("path", {
+            d: "M19.28 3a3.58 3.58 0 012.31 2.11M20.28 2a2.37 2.37 0 011.6 1.47M4.67 21.07a3.56 3.56 0 01-2.1-2.32M3.57 22a2.39 2.39 0 01-1.45-1.62",
+            stroke: i.main,
+            "data-stroke": "main",
+            strokeMiterlimit: 10,
+            strokeLinecap: "round"
+        })]
+    })
+}
+C.propTypes = {
+    main: i.string
+}, C.defaultProps = {
+    main: a
+}, c.propTypes = {
+    main: i.string,
+    secondary: i.string
+}, c.defaultProps = {
+    main: a,
+    secondary: t
+}, p.propTypes = {
+    main: i.string,
+    secondary: i.string
+}, p.defaultProps = {
+    main: a,
+    secondary: t
+}, x.propTypes = {
+    main: i.string
+}, x.defaultProps = {
+    main: a
+}, f.propTypes = {
+    main: i.string
+}, f.defaultProps = {
+    main: a
+}, m.propTypes = {
+    main: i.string
+}, m.defaultProps = {
+    main: a
+}, j.propTypes = {
+    main: i.string
+}, j.defaultProps = {
+    main: a
+}, w.propTypes = {
+    main: i.string
+}, w.defaultProps = {
+    main: a
+}, M.propTypes = {
+    main: i.string
+}, M.defaultProps = {
+    main: a
+}, g.propTypes = {
+    main: i.string,
+    secondary: i.string
+}, g.defaultProps = {
+    main: a,
+    secondary: t
+}, z.propTypes = {
+    main: i.string,
+    secondary: i.string
+}, z.defaultProps = {
+    main: a,
+    secondary: t
+}, v.propTypes = {
+    main: i.string,
+    secondary: i.string
+}, v.defaultProps = {
+    main: a,
+    secondary: t
+}, L.propTypes = {
+    main: i.string,
+    secondary: i.string
+}, L.defaultProps = {
+    main: a,
+    secondary: t
+}, F.propTypes = {
+    main: i.string,
+    secondary: i.string
+}, F.defaultProps = {
+    main: a,
+    secondary: t
+}, u.propTypes = {
+    main: i.string,
+    secondary: i.string
+}, u.defaultProps = {
+    main: a,
+    secondary: t
+}, y.propTypes = {
+    main: i.string,
+    secondary: i.string
+}, y.defaultProps = {
+    main: a,
+    secondary: t
+}, k.propTypes = {
+    main: i.string,
+    secondary: i.string
+}, k.defaultProps = {
+    main: a,
+    secondary: t
+}, H.propTypes = {
+    main: i.string
+}, H.defaultProps = {
+    main: a
+}, V.propTypes = {
+    main: i.string,
+    secondary: i.string
+}, V.defaultProps = {
+    main: a,
+    secondary: t
+}, Z.propTypes = {
+    main: i.string,
+    secondary: i.string
+}, Z.defaultProps = {
+    main: a,
+    secondary: t
+}, B.propTypes = {
+    main: i.string,
+    secondary: i.string
+}, B.defaultProps = {
+    main: a,
+    secondary: t
+}, E.propTypes = {
+    main: i.string,
+    secondary: i.string
+}, E.defaultProps = {
+    main: a,
+    secondary: t
+}, A.propTypes = {
+    main: i.string,
+    secondary: i.string
+}, A.defaultProps = {
+    main: a,
+    secondary: t
+}, P.propTypes = {
+    main: i.string,
+    secondary: i.string
+}, P.defaultProps = {
+    main: a,
+    secondary: t
+}, T.propTypes = {
+    main: i.string
+}, T.defaultProps = {
+    main: a
+}, W.propTypes = {
+    main: i.string
+}, W.defaultProps = {
+    main: a
+}, D.propTypes = {
+    main: i.string
+}, D.defaultProps = {
+    main: a
+}, _.propTypes = {
+    main: i.string
+}, _.defaultProps = {
+    main: a
+}, R.propTypes = {
+    main: i.string,
+    secondary: i.string
+}, R.defaultProps = {
+    main: a,
+    secondary: t
+}, b.propTypes = {
+    main: i.string
+}, b.defaultProps = {
+    main: a
+}, S.propTypes = {
+    main: i.string,
+    secondary: i.string
+}, S.defaultProps = {
+    main: a,
+    secondary: t
+}, I.propTypes = {
+    main: i.string,
+    secondary: i.string
+}, I.defaultProps = {
+    main: a,
+    secondary: t
+}, O.propTypes = {
+    main: i.string,
+    secondary: i.string
+}, O.defaultProps = {
+    main: a,
+    secondary: t
+}, G.propTypes = {
+    main: i.string,
+    secondary: i.string
+}, G.defaultProps = {
+    main: a,
+    secondary: t
+}, N.propTypes = {
+    main: i.string
+}, N.defaultProps = {
+    main: a
+}, U.propTypes = {
+    main: i.string
+}, U.defaultProps = {
+    main: a
+}, X.propTypes = {
+    main: i.string,
+    secondary: i.string
+}, X.defaultProps = {
+    main: a,
+    secondary: t
+}, Y.propTypes = {
+    main: i.string,
+    secondary: i.string
+}, Y.defaultProps = {
+    main: a,
+    secondary: t
+}, K.propTypes = {
+    main: i.string,
+    secondary: i.string
+}, K.defaultProps = {
+    main: a,
+    secondary: t
+}, Q.propTypes = {
+    main: i.string,
+    secondary: i.string
+}, Q.defaultProps = {
+    main: a,
+    secondary: t
+}, q.propTypes = {
+    main: i.string,
+    secondary: i.string
+}, q.defaultProps = {
+    main: a,
+    secondary: t
+}, J.propTypes = {
+    main: i.string,
+    secondary: i.string
+}, J.defaultProps = {
+    main: a,
+    secondary: t
+}, $.propTypes = {
+    main: i.string,
+    secondary: i.string
+}, $.defaultProps = {
+    main: a,
+    secondary: t
+}, ll.propTypes = {
+    main: i.string,
+    secondary: i.string
+}, ll.defaultProps = {
+    main: a,
+    secondary: t
+}, il.propTypes = {
+    main: i.string,
+    secondary: i.string
+}, il.defaultProps = {
+    main: a,
+    secondary: t
+}, al.propTypes = {
+    main: i.string
+}, al.defaultProps = {
+    main: a
+}, tl.propTypes = {
+    main: i.string,
+    secondary: i.string
+}, tl.defaultProps = {
+    main: a,
+    secondary: t
+}, sl.propTypes = {
+    main: i.string,
+    secondary: i.string
+}, sl.defaultProps = {
+    main: a,
+    secondary: t
+}, nl.propTypes = {
+    main: i.string,
+    secondary: i.string
+}, nl.defaultProps = {
+    main: a,
+    secondary: t
+}, el.propTypes = {
+    main: i.string
+}, el.defaultProps = {
+    main: a
+}, rl.propTypes = {
+    main: i.string,
+    secondary: i.string
+}, rl.defaultProps = {
+    main: a,
+    secondary: t
+}, hl.propTypes = {
+    main: i.string,
+    secondary: i.string
+}, hl.defaultProps = {
+    main: a,
+    secondary: t
+}, dl.propTypes = {
+    main: i.string
+}, dl.defaultProps = {
+    main: a
+}, ol.propTypes = {
+    main: i.string
+}, ol.defaultProps = {
+    main: a
+}, Cl.propTypes = {
+    main: i.string
+}, Cl.defaultProps = {
+    main: a
+}, cl.propTypes = {
+    main: i.string,
+    secondary: i.string
+}, cl.defaultProps = {
+    main: a,
+    secondary: t
+}, pl.propTypes = {
+    main: i.string,
+    secondary: i.string
+}, pl.defaultProps = {
+    main: a,
+    secondary: t
+}, xl.propTypes = {
+    main: i.string,
+    secondary: i.string
+}, xl.defaultProps = {
+    main: a,
+    secondary: t
+}, fl.propTypes = {
+    main: i.string,
+    secondary: i.string
+}, fl.defaultProps = {
+    main: a,
+    secondary: t
+}, ml.propTypes = {
+    main: i.string,
+    secondary: i.string
+}, ml.defaultProps = {
+    main: a,
+    secondary: t
+}, jl.propTypes = {
+    main: i.string
+}, jl.defaultProps = {
+    main: a
+}, wl.propTypes = {
+    main: i.string,
+    secondary: i.string
+}, wl.defaultProps = {
+    main: a,
+    secondary: t
+}, Ml.propTypes = {
+    main: i.string,
+    secondary: i.string
+}, Ml.defaultProps = {
+    main: a,
+    secondary: t
+}, gl.propTypes = {
+    main: i.string,
+    secondary: i.string
+}, gl.defaultProps = {
+    main: a,
+    secondary: t
+}, zl.propTypes = {
+    main: i.string,
+    secondary: i.string
+}, zl.defaultProps = {
+    main: a,
+    secondary: t
+}, vl.propTypes = {
+    main: i.string,
+    secondary: i.string
+}, vl.defaultProps = {
+    main: a,
+    secondary: t
+}, Ll.propTypes = {
+    main: i.string,
+    secondary: i.string
+}, Ll.defaultProps = {
+    main: a,
+    secondary: t
+}, Fl.propTypes = {
+    main: i.string,
+    secondary: i.string
+}, Fl.defaultProps = {
+    main: a,
+    secondary: t
+}, ul.propTypes = {
+    main: i.string,
+    secondary: i.string
+}, ul.defaultProps = {
+    main: a,
+    secondary: t
+}, yl.propTypes = {
+    main: i.string,
+    secondary: i.string
+}, yl.defaultProps = {
+    main: a,
+    secondary: t
+}, kl.propTypes = {
+    main: i.string,
+    secondary: i.string
+}, kl.defaultProps = {
+    main: a,
+    secondary: t
+}, Hl.propTypes = {
+    main: i.string,
+    secondary: i.string
+}, Hl.defaultProps = {
+    main: a,
+    secondary: t
+}, Vl.propTypes = {
+    main: i.string
+}, Vl.defaultProps = {
+    main: a
+}, Zl.propTypes = {
+    main: i.string
+}, Zl.defaultProps = {
+    main: a
+}, Bl.propTypes = {
+    main: i.string
+}, Bl.defaultProps = {
+    main: a
+}, El.propTypes = {
+    main: i.string,
+    secondary: i.string
+}, El.defaultProps = {
+    main: a,
+    secondary: t
+}, Al.propTypes = {
+    main: i.string,
+    secondary: i.string
+}, Al.defaultProps = {
+    main: a,
+    secondary: t
+}, Pl.propTypes = {
+    main: i.string,
+    secondary: i.string
+}, Pl.defaultProps = {
+    main: a,
+    secondary: t
+}, Tl.propTypes = {
+    main: i.string
+}, Tl.defaultProps = {
+    main: a
+}, Wl.propTypes = {
+    main: i.string
+}, Wl.defaultProps = {
+    main: a
+}, Dl.propTypes = {
+    main: i.string,
+    secondary: i.string
+}, Dl.defaultProps = {
+    main: a,
+    secondary: t
+}, _l.propTypes = {
+    main: i.string,
+    secondary: i.string
+}, _l.defaultProps = {
+    main: a,
+    secondary: t
+}, Rl.propTypes = {
+    main: i.string
+}, Rl.defaultProps = {
+    main: a
+}, bl.propTypes = {
+    main: i.string,
+    secondary: i.string
+}, bl.defaultProps = {
+    main: a,
+    secondary: t
+}, Sl.propTypes = {
+    main: i.string,
+    secondary: i.string
+}, Sl.defaultProps = {
+    main: a,
+    secondary: t
+}, Il.propTypes = {
+    main: i.string,
+    fillOpacity: i.string
+}, Il.defaultProps = {
+    main: a,
+    fillOpacity: "0.16"
+}, Ol.propTypes = {
+    main: i.string,
+    secondary: i.string
+}, Ol.defaultProps = {
+    main: a,
+    secondary: t
+}, Gl.propTypes = {
+    main: i.string
+}, Gl.defaultProps = {
+    main: a
+}, Nl.propTypes = {
+    main: i.string,
+    secondary: i.string
+}, Nl.defaultProps = {
+    main: a,
+    secondary: t
+}, Ul.propTypes = {
+    main: i.string,
+    secondary: i.string
+}, Ul.defaultProps = {
+    main: a,
+    secondary: t
+}, Xl.propTypes = {
+    main: i.string,
+    secondary: i.string
+}, Xl.defaultProps = {
+    main: a,
+    secondary: t
+}, Yl.propTypes = {
+    main: i.string,
+    secondary: i.string
+}, Yl.defaultProps = {
+    main: a,
+    secondary: t
+}, Kl.propTypes = {
+    main: i.string,
+    secondary: i.string
+}, Kl.defaultProps = {
+    main: a,
+    secondary: t
+}, Ql.propTypes = {
+    main: i.string,
+    secondary: i.string
+}, Ql.defaultProps = {
+    main: a,
+    secondary: t
+}, ql.propTypes = {
+    main: i.string
+}, ql.defaultProps = {
+    main: a
+}, Jl.propTypes = {
+    main: i.string,
+    secondary: i.string
+}, Jl.defaultProps = {
+    main: a,
+    secondary: t
+}, $l.propTypes = {
+    main: i.string,
+    secondary: i.string
+}, $l.defaultProps = {
+    main: a,
+    secondary: t
+}, li.propTypes = {
+    main: i.string
+}, li.defaultProps = {
+    main: s
+}, ii.propTypes = {
+    main: i.string
+}, ii.defaultProps = {
+    main: s
+}, ai.propTypes = {
+    main: i.string
+}, ai.defaultProps = {
+    main: a
+}, ti.propTypes = {
+    main: i.string
+}, ti.defaultProps = {
+    main: a
+}, si.propTypes = {
+    main: i.string
+}, si.defaultProps = {
+    main: a
+}, ni.propTypes = {
+    main: i.string
+}, ni.defaultProps = {
+    main: a
+}, ei.propTypes = {
+    main: i.string
+}, ei.defaultProps = {
+    main: a
+}, ri.propTypes = {
+    main: i.string
+}, ri.defaultProps = {
+    main: a
+}, hi.propTypes = {
+    main: i.string
+}, hi.defaultProps = {
+    main: a
+}, di.propTypes = {
+    main: i.string
+}, di.defaultProps = {
+    main: a
+}, oi.propTypes = {
+    main: i.string
+}, oi.defaultProps = {
+    main: a
+}, Ci.propTypes = {
+    main: i.string
+}, Ci.defaultProps = {
+    main: a
+}, ci.propTypes = {
+    main: i.string
+}, ci.defaultProps = {
+    main: a
+}, pi.propTypes = {
+    main: i.string
+}, pi.defaultProps = {
+    main: a
+}, xi.propTypes = {
+    main: i.string
+}, xi.defaultProps = {
+    main: a
+}, fi.propTypes = {
+    main: i.string
+}, fi.defaultProps = {
+    main: a
+}, mi.propTypes = {
+    main: i.string
+}, mi.defaultProps = {
+    main: a
+}, ji.propTypes = {
+    main: i.string
+}, ji.defaultProps = {
+    main: a
+}, wi.propTypes = {
+    main: i.string
+}, wi.defaultProps = {
+    main: a
+}, Mi.propTypes = {
+    main: i.string
+}, Mi.defaultProps = {
+    main: a
+}, gi.propTypes = {
+    main: i.string
+}, gi.defaultProps = {
+    main: a
+}, zi.propTypes = {
+    main: i.string
+}, zi.defaultProps = {
+    main: a
+}, vi.propTypes = {
+    main: i.string
+}, vi.defaultProps = {
+    main: a
+}, Li.propTypes = {
+    main: i.string
+}, Li.defaultProps = {
+    main: a
+};
+
+function Fi(i) {
+    return l.jsxs("svg", {
+        width: 24,
+        height: 24,
+        viewBox: "0 0 24 24",
+        fill: "none",
+        xmlns: "http://www.w3.org/2000/svg",
+        ...i,
+        children: [l.jsx("path", {
+            d: "M12.877 16.168c.152-.414.76-.414.913 0l.417 1.134a.476.476 0 00.294.285l1.176.401c.43.147.43.734 0 .88l-1.176.403a.476.476 0 00-.294.284l-.417 1.134c-.152.415-.76.415-.913 0l-.417-1.134a.476.476 0 00-.295-.284l-1.176-.402a.462.462 0 010-.88l1.176-.402a.476.476 0 00.295-.285l.417-1.134zM14.64 3.473c.231-.63 1.156-.63 1.387 0l.794 2.16c.074.202.239.36.448.432l2.24.766a.702.702 0 010 1.338l-2.24.766a.724.724 0 00-.448.432l-.794 2.16c-.231.63-1.156.63-1.388 0l-.793-2.16a.723.723 0 00-.448-.432l-2.241-.766a.702.702 0 010-1.338l2.24-.766a.723.723 0 00.448-.432l.794-2.16zM6.486 9.363a.545.545 0 011.028 0l.468 1.323a.545.545 0 00.332.332l1.323.468a.545.545 0 010 1.028l-1.323.468a.545.545 0 00-.332.332l-.468 1.323a.545.545 0 01-1.028 0l-.468-1.323a.545.545 0 00-.332-.332l-1.323-.468a.545.545 0 010-1.028l1.323-.468a.545.545 0 00.332-.332l.468-1.323z",
+            fill: i.main,
+            "data-fill": "main",
+            fillOpacity: .16
+        }), l.jsx("path", {
+            d: "M12.877 16.168c.152-.414.76-.414.913 0l.417 1.134a.476.476 0 00.294.285l1.176.401c.43.147.43.734 0 .88l-1.176.403a.476.476 0 00-.294.284l-.417 1.134c-.152.415-.76.415-.913 0l-.417-1.134a.476.476 0 00-.295-.284l-1.176-.402a.462.462 0 010-.88l1.176-.402a.476.476 0 00.295-.285l.417-1.134zM14.64 3.473c.231-.63 1.156-.63 1.387 0l.794 2.16c.074.202.239.36.448.432l2.24.766a.702.702 0 010 1.338l-2.24.766a.724.724 0 00-.448.432l-.794 2.16c-.231.63-1.156.63-1.388 0l-.793-2.16a.723.723 0 00-.448-.432l-2.241-.766a.702.702 0 010-1.338l2.24-.766a.723.723 0 00.448-.432l.794-2.16zM6.486 9.363a.545.545 0 011.028 0l.468 1.323a.545.545 0 00.332.332l1.323.468a.545.545 0 010 1.028l-1.323.468a.545.545 0 00-.332.332l-.468 1.323a.545.545 0 01-1.028 0l-.468-1.323a.545.545 0 00-.332-.332l-1.323-.468a.545.545 0 010-1.028l1.323-.468a.545.545 0 00.332-.332l.468-1.323z",
+            stroke: i.main,
+            "data-stroke": "main",
+            strokeWidth: 1.5,
+            strokeLinejoin: "round"
+        })]
+    })
+}
+
+function ui(i) {
+    return l.jsxs("svg", {
+        width: 24,
+        height: 24,
+        viewBox: "0 0 24 24",
+        fill: "none",
+        xmlns: "http://www.w3.org/2000/svg",
+        ...i,
+        children: [l.jsxs("g", {
+            clipPath: "url(#prefix__clip0_5441_14202)",
+            stroke: i.main,
+            strokeLinecap: "round",
+            strokeLinejoin: "round",
+            children: [l.jsx("path", {
+                d: "M16.5 5v6h-2.84a.56.56 0 00-.47.26l-.84 1.33a.55.55 0 01-.47.27H7.5V5h9z",
+                strokeWidth: 1.5
+            }), l.jsx("path", {
+                d: "M10 7.25h4M10 8.61h4"
+            }), l.jsx("path", {
+                d: "M19 11.56v6.88a.56.56 0 01-.56.56H5.56a.56.56 0 01-.56-.56v-5a.56.56 0 01.56-.56h6.32a.55.55 0 00.47-.27l.84-1.33a.56.56 0 01.47-.26h4.78a.56.56 0 01.56.54z",
+                strokeWidth: 1.5
+            })]
+        }), l.jsx("defs", {
+            children: l.jsx("clipPath", {
+                id: "prefix__clip0_5441_14202",
+                children: l.jsx("path", {
+                    fill: "#fff",
+                    d: "M0 0h24v24H0z"
+                })
+            })
+        })]
+    })
+}
+
+function yi(i) {
+    return l.jsxs("svg", {
+        width: 24,
+        height: 24,
+        viewBox: "0 0 24 24",
+        fill: "none",
+        xmlns: "http://www.w3.org/2000/svg",
+        ...i,
+        children: [l.jsx("g", {
+            clipPath: "url(#prefix__clip0_4966_10308)",
+            children: l.jsxs("g", {
+                clipPath: "url(#prefix__clip1_4966_10308)",
+                stroke: i.main,
+                strokeWidth: 1.5,
+                strokeLinecap: "round",
+                strokeLinejoin: "round",
+                children: [l.jsx("path", {
+                    d: "M3 8V6.68A3.68 3.68 0 016.68 3H8M8 21H6.68A3.68 3.68 0 013 17.32V16M16 3h1.32A3.68 3.68 0 0121 6.68V8M21 16v1.32A3.68 3.68 0 0117.32 21H16M15.5 6.5h-7v9h7v-9z"
+                }), l.jsx("path", {
+                    d: "M15.5 15.5l-4 4v-9l4-4v9z",
+                    fill: i.main
+                })]
+            })
+        }), l.jsxs("defs", {
+            children: [l.jsx("clipPath", {
+                id: "prefix__clip0_4966_10308",
+                children: l.jsx("path", {
+                    fill: "#fff",
+                    d: "M0 0h24v24H0z"
+                })
+            }), l.jsx("clipPath", {
+                id: "prefix__clip1_4966_10308",
+                children: l.jsx("path", {
+                    fill: "#fff",
+                    d: "M0 0h24v24H0z"
+                })
+            })]
+        })]
+    })
+}
+
+function ki(i) {
+    return l.jsxs("svg", {
+        width: 24,
+        height: 24,
+        viewBox: "0 0 24 24",
+        fill: "none",
+        xmlns: "http://www.w3.org/2000/svg",
+        ...i,
+        children: [l.jsxs("g", {
+            clipPath: "url(#prefix__clip0_6414_18957)",
+            fill: i.main,
+            children: [l.jsx("path", {
+                d: "M18.5 5.38h-15c-.42 0-.75.34-.75.75v9c0 .41.33.75.75.75h6.19c.21-.41.51-.77.88-1.05.04-.15.08-.3.13-.45H4.25v-6.6l5.2 3.32c.43.27.94.41 1.45.41s1-.13 1.42-.39l5.43-3.34v2.62c.53.12 1.03.32 1.5.58V6.13c0-.41-.34-.75-.75-.75zm-6.96 4.47c-.38.23-.91.23-1.28-.01L5.61 6.88h10.75l-4.82 2.97z"
+            }), l.jsx("path", {
+                d: "M21.08 15.61c-.32-2.32-2.28-4.11-4.69-4.11-2.41 0-4.37 1.8-4.69 4.11-.62.24-1.06.83-1.06 1.54v1.7c0 .91.74 1.65 1.65 1.65h.6c.1 0 .2-.02.29-.06.64.51 1.34.79 1.99.79.44 0 .85-.13 1.19-.4.32-.26.37-.73.11-1.05a.748.748 0 00-1.05-.12c-.26.21-1.1-.03-1.78-.86v-2.55c0-.3-.18-.55-.43-.67A3.26 3.26 0 0116.39 13a3.26 3.26 0 013.18 2.58c-.25.12-.43.37-.43.67v3.5c0 .41.34.75.75.75h.6c.91 0 1.65-.74 1.65-1.65v-1.7c0-.7-.44-1.3-1.06-1.54z"
+            })]
+        }), l.jsx("defs", {
+            children: l.jsx("clipPath", {
+                id: "prefix__clip0_6414_18957",
+                children: l.jsx("path", {
+                    fill: "#fff",
+                    d: "M0 0h24v24H0z"
+                })
+            })
+        })]
+    })
+}
+
+function Hi(i) {
+    return l.jsxs("svg", {
+        width: 24,
+        height: 24,
+        viewBox: "0 0 24 24",
+        fill: "none",
+        xmlns: "http://www.w3.org/2000/svg",
+        ...i,
+        children: [l.jsx("g", {
+            clipPath: "url(#prefix__clip0_6406_18902)",
+            fill: i.main,
+            children: l.jsx("path", {
+                d: "M6.44 21.25H3.56c-.73 0-1.31-.59-1.31-1.31v-4.87c0-.72.59-1.31 1.31-1.31h2.87c.72 0 1.31.59 1.31 1.31v4.87c0 .72-.59 1.31-1.31 1.31h.01zm-2.69-1.5h2.5v-4.5h-2.5v4.5zM13.44 21.25h-2.87c-.73 0-1.31-.59-1.31-1.31V6.06c0-.72.59-1.31 1.31-1.31h2.87c.72 0 1.31.59 1.31 1.31v13.87c0 .72-.59 1.31-1.31 1.31v.01zm-2.69-1.5h2.5V6.25h-2.5v13.5zM20.44 21.25h-2.87c-.73 0-1.31-.59-1.31-1.31v-8.88c0-.72.59-1.31 1.31-1.31h2.87c.72 0 1.31.59 1.31 1.31v8.87c0 .72-.59 1.31-1.31 1.31v.01zm-2.69-1.5h2.5v-8.5h-2.5v8.5z"
+            })
+        }), l.jsx("defs", {
+            children: l.jsx("clipPath", {
+                id: "prefix__clip0_6406_18902",
+                children: l.jsx("path", {
+                    fill: "#fff",
+                    d: "M0 0h24v24H0z"
+                })
+            })
+        })]
+    })
+}
+
+function Vi(i) {
+    return l.jsx("svg", {
+        width: 24,
+        height: 24,
+        viewBox: "0 0 24 24",
+        fill: "none",
+        xmlns: "http://www.w3.org/2000/svg",
+        ...i,
+        children: l.jsx("g", {
+            id: "Page-1",
+            stroke: "none",
+            strokeWidth: "1",
+            fill: "none",
+            fillRule: "evenodd",
+            children: l.jsxs("g", {
+                id: "Group",
+                children: [l.jsx("rect", {
+                    id: "Rectangle",
+                    x: "0",
+                    y: "0",
+                    width: "24",
+                    height: "24"
+                }), l.jsx("ellipse", {
+                    id: "Oval",
+                    fill: i.main,
+                    fillRule: "nonzero",
+                    cx: "7.67",
+                    cy: "16.42",
+                    rx: "1.34",
+                    ry: "1.3"
+                }), l.jsxs("g", {
+                    transform: "translate(6.330000, 7.210000)",
+                    fill: i.main,
+                    fillRule: "nonzero",
+                    id: "Path",
+                    children: [l.jsx("path", {
+                        d: "M7.26,10.51 L5.76,10.51 C5.76,7.34 3.18,4.75 -1.77635684e-15,4.75 L-1.77635684e-15,3.25 C4,3.25 7.26,6.5 7.26,10.51 Z"
+                    }), l.jsx("path", {
+                        d: "M10.51,10.51 L9.01,10.51 C9.01,5.54 4.97,1.5 -1.77635684e-15,1.5 L-1.77635684e-15,-1.77635684e-15 C5.79,-1.77635684e-15 10.51,4.71 10.51,10.51 Z"
+                    })]
+                }), l.jsx("path", {
+                    d: "M17.19,21.16 L6.85,21.16 C4.65,21.16 2.86,19.37 2.86,17.17 L2.86,6.84 C2.86,4.64 4.65,2.86 6.85,2.86 L17.19,2.86 C19.39,2.86 21.17,4.65 21.17,6.84 L21.17,17.18 C21.17,19.38 19.38,21.17 17.19,21.17 L17.19,21.16 Z M6.85,4.35 C5.48,4.35 4.36,5.46 4.36,6.83 L4.36,17.17 C4.36,18.54 5.48,19.66 6.85,19.66 L17.19,19.66 C18.56,19.66 19.67,18.54 19.67,17.17 L19.67,6.84 C19.67,5.47 18.56,4.36 17.19,4.36 L6.85,4.36 L6.85,4.35 Z",
+                    id: "Shape",
+                    fill: i.main,
+                    fillRule: "nonzero"
+                })]
+            })
+        })
+    })
+}
+
+function Zi(i) {
+    return l.jsxs("svg", {
+        width: 24,
+        height: 24,
+        viewBox: "0 0 24 24",
+        fill: "none",
+        xmlns: "http://www.w3.org/2000/svg",
+        ...i,
+        children: [l.jsxs("g", {
+            clipPath: "url(#prefix__clip0_6412_18946)",
+            fill: i.main,
+            children: [l.jsx("path", {
+                d: "M11.727 21.065a.976.976 0 01-.429-.1c-8.647-4.463-7.866-14.46-7.853-14.56a.958.958 0 01.693-.833l7.337-1.991a.818.818 0 01.492 0l7.336 1.991c.391.101.681.454.694.87.012.404.353 10.047-7.829 14.497a.933.933 0 01-.454.114l.013.012zM5.297 7.211c-.012 2.068.442 8.446 6.405 11.825 5.56-3.328 6.303-9.732 6.391-11.825l-6.379-1.727-6.416 1.74V7.21z"
+            }), l.jsx("path", {
+                d: "M11.588 7.388L7.063 8.61c.176 2.13 1.008 5.875 4.488 8.257l.037-9.48z"
+            })]
+        }), l.jsx("defs", {
+            children: l.jsx("clipPath", {
+                id: "prefix__clip0_6412_18946",
+                children: l.jsx("path", {
+                    fill: "#fff",
+                    d: "M0 0h24v24H0z"
+                })
+            })
+        })]
+    })
+}
+
+function Bi(i) {
+    return l.jsx("svg", {
+        width: 24,
+        height: 24,
+        viewBox: "0 0 24 24",
+        fill: "none",
+        xmlns: "http://www.w3.org/2000/svg",
+        ...i,
+        children: l.jsx("path", {
+            d: "M18.248 6.089A15.431 15.431 0 0014.534 5a9.534 9.534 0 00-.476.921 14.505 14.505 0 00-4.12 0A9.581 9.581 0 009.461 5a15.54 15.54 0 00-3.717 1.091c-2.35 3.314-2.987 6.545-2.669 9.73A15.269 15.269 0 007.631 18c.369-.473.695-.974.975-1.499a9.896 9.896 0 01-1.536-.699c.13-.089.255-.18.377-.27 1.424.639 2.979.97 4.553.97 1.574 0 3.129-.331 4.553-.97.123.096.25.188.377.27a9.94 9.94 0 01-1.54.7c.28.525.607 1.026.976 1.498a15.2 15.2 0 004.558-2.178c.373-3.693-.639-6.895-2.676-9.733zM9.01 13.862c-.888 0-1.621-.767-1.621-1.712 0-.944.708-1.719 1.618-1.719.91 0 1.638.775 1.623 1.72-.016.944-.715 1.711-1.62 1.711zm5.98 0c-.889 0-1.62-.767-1.62-1.712 0-.944.708-1.719 1.62-1.719.912 0 1.634.775 1.618 1.72-.015.944-.713 1.711-1.618 1.711z",
+            fill: "#5865F2"
+        })
+    })
+}
+
+function Ei(i) {
+    return l.jsxs("svg", {
+        width: 24,
+        height: 24,
+        viewBox: "0 0 24 24",
+        fill: "none",
+        xmlns: "http://www.w3.org/2000/svg",
+        ...i,
+        children: [l.jsx("path", {
+            d: "M12.003 2c-4.175 0-5.396.004-5.633.024-.857.071-1.39.206-1.97.495-.448.223-.801.48-1.15.842-.634.659-1.019 1.47-1.158 2.433-.068.467-.087.563-.091 2.952-.002.796 0 1.844 0 3.25 0 4.173.004 5.393.024 5.63.07.834.2 1.358.477 1.932a4.213 4.213 0 002.73 2.231c.413.106.868.165 1.452.192.248.011 2.772.019 5.298.019 2.526 0 5.051-.003 5.293-.015.677-.032 1.07-.085 1.504-.197a4.188 4.188 0 002.73-2.236c.272-.56.41-1.105.472-1.895.013-.172.019-2.92.019-5.664 0-2.744-.006-5.486-.02-5.658-.063-.804-.2-1.344-.48-1.914a3.964 3.964 0 00-.857-1.174c-.661-.632-1.47-1.016-2.434-1.155-.468-.068-.56-.088-2.951-.092h-3.255z",
+            fill: "url(#prefix__paint0_radial)"
+        }), l.jsx("path", {
+            d: "M12.003 2c-4.175 0-5.396.004-5.633.024-.857.071-1.39.206-1.97.495-.448.223-.801.48-1.15.842-.634.659-1.019 1.47-1.158 2.433-.068.467-.087.563-.091 2.952-.002.796 0 1.844 0 3.25 0 4.173.004 5.393.024 5.63.07.834.2 1.358.477 1.932a4.213 4.213 0 002.73 2.231c.413.106.868.165 1.452.192.248.011 2.772.019 5.298.019 2.526 0 5.051-.003 5.293-.015.677-.032 1.07-.085 1.504-.197a4.188 4.188 0 002.73-2.236c.272-.56.41-1.105.472-1.895.013-.172.019-2.92.019-5.664 0-2.744-.006-5.486-.02-5.658-.063-.804-.2-1.344-.48-1.914a3.964 3.964 0 00-.857-1.174c-.661-.632-1.47-1.016-2.434-1.155-.468-.068-.56-.088-2.951-.092h-3.255z",
+            fill: "url(#prefix__paint1_radial)"
+        }), l.jsx("path", {
+            d: "M12 4.616c-2.006 0-2.258.008-3.045.044-.786.036-1.323.16-1.792.343a3.615 3.615 0 00-1.308.852c-.41.41-.663.822-.852 1.308-.183.47-.308 1.007-.343 1.793-.036.787-.045 1.04-.045 3.045 0 2.006.01 2.257.045 3.044.036.787.16 1.323.343 1.793.189.485.44.897.851 1.308.41.41.823.664 1.308.852.47.183 1.006.307 1.792.343.788.036 1.04.045 3.044.045 2.006 0 2.256-.009 3.044-.044.786-.037 1.323-.161 1.793-.344a3.614 3.614 0 001.307-.852c.41-.41.663-.823.852-1.308.181-.47.306-1.007.343-1.793.035-.787.044-1.038.044-3.044 0-2.006-.009-2.258-.044-3.045-.037-.787-.162-1.323-.343-1.793a3.625 3.625 0 00-.852-1.308 3.608 3.608 0 00-1.308-.852c-.47-.182-1.007-.307-1.793-.343-.788-.036-1.039-.044-3.044-.044h.002zm-.663 1.33h.662c1.971 0 2.205.008 2.983.043.72.033 1.111.153 1.371.254.345.134.59.294.849.553.258.258.418.504.552.849.101.26.222.65.255 1.37.035.78.043 1.013.043 2.984s-.008 2.205-.043 2.983c-.033.72-.154 1.111-.255 1.371-.134.345-.294.59-.552.849a2.284 2.284 0 01-.849.552c-.26.102-.65.222-1.37.255-.779.035-1.013.043-2.984.043s-2.205-.008-2.983-.043c-.72-.034-1.11-.154-1.371-.255a2.286 2.286 0 01-.85-.552 2.29 2.29 0 01-.552-.85c-.101-.26-.221-.65-.254-1.37-.036-.779-.043-1.012-.043-2.985 0-1.972.007-2.204.043-2.983.033-.72.153-1.11.254-1.371.134-.345.294-.591.553-.85.258-.258.504-.418.849-.552.26-.102.65-.222 1.37-.255.682-.03.946-.04 2.322-.041v.001zm4.603 1.227a.886.886 0 100 1.772.886.886 0 000-1.773zM12 8.208a3.792 3.792 0 100 7.585A3.792 3.792 0 0012 8.208zm0 1.331a2.461 2.461 0 11-.002 4.923A2.461 2.461 0 0112 9.539z",
+            fill: "#fff"
+        }), l.jsxs("defs", {
+            children: [l.jsxs("radialGradient", {
+                id: "prefix__paint0_radial",
+                cx: 0,
+                cy: 0,
+                r: 1,
+                gradientUnits: "userSpaceOnUse",
+                gradientTransform: "matrix(0 -19.8215 18.4355 0 7.313 23.54)",
+                children: [l.jsx("stop", {
+                    stopColor: "#FD5"
+                }), l.jsx("stop", {
+                    offset: .1,
+                    stopColor: "#FD5"
+                }), l.jsx("stop", {
+                    offset: .5,
+                    stopColor: "#FF543E"
+                }), l.jsx("stop", {
+                    offset: 1,
+                    stopColor: "#C837AB"
+                })]
+            }), l.jsxs("radialGradient", {
+                id: "prefix__paint1_radial",
+                cx: 0,
+                cy: 0,
+                r: 1,
+                gradientUnits: "userSpaceOnUse",
+                gradientTransform: "matrix(1.73908 8.68793 -35.81207 7.16857 -1.35 3.44)",
+                children: [l.jsx("stop", {
+                    stopColor: "#3771C8"
+                }), l.jsx("stop", {
+                    offset: .128,
+                    stopColor: "#3771C8"
+                }), l.jsx("stop", {
+                    offset: 1,
+                    stopColor: "#60F",
+                    stopOpacity: 0
+                })]
+            })]
+        })]
+    })
+}
+
+function Ai(i) {
+    return l.jsxs("svg", {
+        width: 24,
+        height: 24,
+        viewBox: "0 0 24 24",
+        fill: "none",
+        xmlns: "http://www.w3.org/2000/svg",
+        ...i,
+        children: [l.jsx("path", {
+            fill: "#fff",
+            d: "M5 12h14v8H5z"
+        }), l.jsx("path", {
+            d: "M15.779 15.685c-.948 0-1.72-.788-1.72-1.755 0-.967.772-1.755 1.72-1.755s1.72.788 1.72 1.755c0 .967-.772 1.755-1.72 1.755zm.304 2.88c-1.176 1.195-3.424 1.29-4.085 1.29-.66 0-2.912-.095-4.084-1.29a.46.46 0 010-.644.438.438 0 01.63 0c.74.755 2.322 1.024 3.454 1.024 1.13 0 2.714-.27 3.454-1.024a.438.438 0 01.63 0 .466.466 0 010 .643zM6.49 13.93c0-.967.773-1.755 1.72-1.755.948 0 1.72.788 1.72 1.755 0 .967-.772 1.755-1.72 1.755-.947 0-1.72-.788-1.72-1.755zM23 12.175c0-1.357-1.076-2.455-2.407-2.455-.65 0-1.238.262-1.67.69-1.645-1.212-3.913-1.994-6.44-2.085l1.097-5.264 3.582.778c.043.93.79 1.67 1.71 1.67.952 0 1.721-.784 1.721-1.754S19.823 2 18.873 2c-.677 0-1.255.4-1.536.98l-4.001-.869a.422.422 0 00-.324.06.433.433 0 00-.185.277l-1.202 5.776c-.006.034 0 .064 0 .098-2.572.067-4.883.852-6.554 2.082a2.364 2.364 0 00-1.664-.684C2.077 9.72 1 10.82 1 12.175c0 .997.584 1.856 1.423 2.24a5.029 5.029 0 00-.056.744c0 3.78 4.312 6.841 9.631 6.841 5.32 0 9.632-3.062 9.632-6.84 0-.25-.02-.496-.056-.738A2.47 2.47 0 0023 12.175z",
+            fill: "#F40"
+        })]
+    })
+}
+
+function Pi(i) {
+    return l.jsxs("svg", {
+        width: 24,
+        height: 24,
+        fill: "none",
+        viewBox: "0 0 24 24",
+        xmlns: "http://www.w3.org/2000/svg",
+        ...i,
+        children: [l.jsx("path", {
+            d: "M7 3h14l-1 9.5-7 4.5H7V3z",
+            fill: "#fff"
+        }), l.jsx("path", {
+            d: "M7.542 2L4 5.571V18.43h4.25V22l3.542-3.571h2.833L21 12V2H7.542zm12.041 9.286l-2.833 2.857h-2.833l-2.48 2.5v-2.5H8.25V3.429h11.333v7.857z",
+            fill: "#863DFF"
+        }), l.jsx("path", {
+            d: "M17.458 5.929h-1.416v4.285h1.416V5.93zM13.563 5.929h-1.417v4.285h1.417V5.93z",
+            fill: "#863DFF"
+        })]
+    })
+}
+
+function Ti(i) {
+    return l.jsx("svg", {
+        width: 24,
+        height: 24,
+        fill: "none",
+        viewBox: "0 0 24 24",
+        xmlns: "http://www.w3.org/2000/svg",
+        ...i,
+        children: l.jsx("path", {
+            d: "M22 5.8a8.49 8.49 0 01-2.36.64 4.13 4.13 0 001.81-2.27 8.21 8.21 0 01-2.61 1 4.1 4.1 0 00-7 3.74 11.64 11.64 0 01-8.45-4.29 4.16 4.16 0 00-.55 2.07 4.09 4.09 0 001.82 3.41 4.05 4.05 0 01-1.86-.51v.05a4.1 4.1 0 003.3 4 3.933 3.933 0 01-1.1.17 4.92 4.92 0 01-.77-.07 4.11 4.11 0 003.83 2.84A8.22 8.22 0 012 18.28a11.57 11.57 0 006.29 1.85A11.589 11.589 0 0020 8.45v-.53a8.43 8.43 0 002-2.12z",
+            fill: "#1B97F0"
+        })
+    })
+}
+
+function Wi(i) {
+    return l.jsxs("svg", {
+        width: 24,
+        height: 24,
+        fill: "none",
+        viewBox: "0 0 24 24",
+        xmlns: "http://www.w3.org/2000/svg",
+        ...i,
+        children: [l.jsx("path", {
+            fill: "#fff",
+            d: "M9 8h7v8H9z"
+        }), l.jsx("path", {
+            d: "M23 9.71a8.499 8.499 0 00-.91-4.13 2.92 2.92 0 00-1.72-1A78.362 78.362 0 0012 4.27a78.45 78.45 0 00-8.34.3 2.87 2.87 0 00-1.46.74c-.9.83-1 2.25-1.1 3.45a48.29 48.29 0 000 6.48 9.55 9.55 0 00.3 2c.12.505.365.972.71 1.36a2.86 2.86 0 001.49.78c2.156.266 4.328.376 6.5.33 3.5.05 6.57 0 10.2-.28a2.88 2.88 0 001.53-.78c.28-.28.49-.623.61-1 .358-1.097.533-2.246.52-3.4.04-.56.04-3.94.04-4.54zM9.74 14.85V8.66l5.92 3.11c-1.66.92-3.85 1.96-5.92 3.08z",
+            fill: "red"
+        })]
+    })
+}
+Fi.propTypes = {
+    main: i.string
+}, Fi.defaultProps = {
+    main: a
+}, ui.propTypes = {
+    main: i.string
+}, ui.defaultProps = {
+    main: a
+}, yi.propTypes = {
+    main: i.string
+}, yi.defaultProps = {
+    main: a
+}, ki.propTypes = {
+    main: i.string
+}, ki.defaultProps = {
+    main: a
+}, Hi.propTypes = {
+    main: i.string
+}, Hi.defaultProps = {
+    main: a
+}, Vi.propTypes = {
+    main: i.string
+}, Vi.defaultProps = {
+    main: a
+}, Zi.propTypes = {
+    main: i.string
+}, Zi.defaultProps = {
+    main: a
+};
+const Di = n.span`
+  background: #ff424d;
+  border-radius: 50%;
+  padding: 0.9em;
+  display: inline-flex;
+  box-sizing: border-box;
+
+  ${l=>e`
+    width: ${l.width}px;
+    height: ${l.height}px;
+  `}
+
+  > svg {
+    max-width: 100%;
+    max-height: 100%;
+  }
+`;
+
+function _i(i) {
+    return l.jsx("svg", {
+        xmlns: "http://www.w3.org/2000/svg",
+        width: 799,
+        height: 767,
+        viewBox: "0 0 799 799",
+        ...i,
+        children: l.jsx("g", {
+            fill: "#fff",
+            fillRule: "evenodd",
+            children: l.jsx("path", {
+                d: "M512.652.001c-158.768 0-287.939 129.287-287.939 288.212 0 158.444 129.171 287.35 287.939 287.35 158.277 0 287.043-128.906 287.043-287.35C799.695 129.288 670.929.001 512.652.001M0 767.707h140.588V-.001H0v767.708"
+            })
+        })
+    })
+}
+
+function Ri(i) {
+    return l.jsx("svg", {
+        width: 24,
+        height: 24,
+        viewBox: "0 0 24 24",
+        fill: "none",
+        xmlns: "http://www.w3.org/2000/svg",
+        ...i,
+        children: l.jsx("path", {
+            d: "M10.138 10.63a1.053 1.053 0 100 2.106 1.053 1.053 0 000-2.106zm3.755 0a1.146 1.146 0 101.049 1.141 1.097 1.097 0 00-1.05-1.141zM18.89 2H5.11A2.114 2.114 0 003 4.119v13.906a2.113 2.113 0 002.109 2.119h11.664l-.546-1.903 1.317 1.224 1.245 1.152L21 22.571V4.12A2.113 2.113 0 0018.891 2zm-3.97 13.433s-.37-.442-.679-.833a3.246 3.246 0 001.862-1.224c-.37.246-.767.45-1.183.607a6.765 6.765 0 01-1.491.442 7.206 7.206 0 01-2.664-.01 8.648 8.648 0 01-1.512-.442 6.034 6.034 0 01-.751-.35c-.031-.02-.062-.031-.093-.052a.142.142 0 01-.04-.03 3.65 3.65 0 01-.289-.175 3.2 3.2 0 001.8 1.213c-.308.391-.689.854-.689.854a3.729 3.729 0 01-3.137-1.563c.033-2.085.54-4.136 1.481-5.997a5.086 5.086 0 012.89-1.08l.103.124a6.938 6.938 0 00-2.705 1.347s.226-.123.607-.298a7.722 7.722 0 012.335-.648c.057-.012.116-.02.175-.02a8.384 8.384 0 015.174.967 6.846 6.846 0 00-2.562-1.307l.144-.165a5.086 5.086 0 012.89 1.08 13.774 13.774 0 011.482 5.997 3.76 3.76 0 01-3.148 1.563z",
+            fill: i.main,
+            "data-fill": "main"
+        })
+    })
+}
+
+function bi(i) {
+    return l.jsx("svg", {
+        width: 24,
+        height: 24,
+        viewBox: "0 0 24 24",
+        fill: "none",
+        xmlns: "http://www.w3.org/2000/svg",
+        ...i,
+        children: l.jsx("path", {
+            d: "M20.9 2H3.1A1.1 1.1 0 002 3.1v17.8A1.1 1.1 0 003.1 22h9.58v-7.75h-2.6v-3h2.6V9a3.64 3.64 0 013.88-4 20.26 20.26 0 012.33.12v2.7H17.3c-1.26 0-1.5.6-1.5 1.47v1.93h3l-.39 3H15.8V22h5.1a1.1 1.1 0 001.1-1.1V3.1A1.1 1.1 0 0020.9 2z",
+            fill: i.main,
+            "data-fill": "main"
+        })
+    })
+}
+
+function Si(i) {
+    return l.jsx("svg", {
+        width: 24,
+        height: 24,
+        viewBox: "0 0 24 24",
+        fill: "none",
+        xmlns: "http://www.w3.org/2000/svg",
+        ...i,
+        children: l.jsx("path", {
+            d: "M12 9.52a2.48 2.48 0 100 4.96 2.48 2.48 0 000-4.96zm9.93-2.45a6.532 6.532 0 00-.42-2.26 4 4 0 00-2.32-2.32 6.53 6.53 0 00-2.26-.42C15.64 2 15.26 2 12 2s-3.64 0-4.93.07a6.53 6.53 0 00-2.26.42 4 4 0 00-2.32 2.32 6.53 6.53 0 00-.42 2.26C2 8.36 2 8.74 2 12s0 3.64.07 4.93a6.86 6.86 0 00.42 2.27c.2.526.51 1.004.91 1.4.398.402.88.713 1.41.91a6.532 6.532 0 002.26.42C8.36 22 8.74 22 12 22s3.64 0 4.93-.07a6.532 6.532 0 002.26-.42 3.89 3.89 0 001.41-.91c.4-.396.71-.874.91-1.4a6.6 6.6 0 00.42-2.27C22 15.64 22 15.26 22 12s0-3.64-.07-4.93zm-2.54 8a5.73 5.73 0 01-.39 1.8A3.86 3.86 0 0116.87 19a5.73 5.73 0 01-1.81.35H8.94A5.73 5.73 0 017.13 19a3.51 3.51 0 01-1.31-.86A3.51 3.51 0 015 16.87a5.49 5.49 0 01-.34-1.81V12 8.94A5.49 5.49 0 015 7.13a3.51 3.51 0 01.86-1.31c.36-.36.793-.64 1.27-.82a5.73 5.73 0 011.81-.35h6.12a5.73 5.73 0 011.81.35 3.51 3.51 0 011.31.86c.362.359.642.792.82 1.27a5.73 5.73 0 01.35 1.81V12c0 2.06.07 2.27.04 3.06v.01zm-1.6-7.44a2.38 2.38 0 00-1.41-1.41A4 4 0 0015 6H9a4 4 0 00-1.38.26 2.38 2.38 0 00-1.41 1.36A4.27 4.27 0 006 9v6c.01.471.098.938.26 1.38a2.38 2.38 0 001.41 1.41 4.27 4.27 0 001.33.26h6a4 4 0 001.38-.26 2.38 2.38 0 001.41-1.41 4 4 0 00.26-1.38v-3-3c0-.472-.088-.94-.26-1.38v.01zM12 15.82A3.81 3.81 0 018.19 12 3.82 3.82 0 1112 15.82zm4-6.89a.9.9 0 010-1.79.9.9 0 010 1.79z",
+            fill: i.main,
+            "data-fill": "main"
+        })
+    })
+}
+
+function Ii(i) {
+    return l.jsx("svg", {
+        width: 24,
+        height: 24,
+        viewBox: "0 0 24 24",
+        fill: "none",
+        xmlns: "http://www.w3.org/2000/svg",
+        ...i,
+        children: l.jsx("path", {
+            d: "M15.779 15.685c-.948 0-1.72-.788-1.72-1.755 0-.967.772-1.755 1.72-1.755s1.72.788 1.72 1.755c0 .967-.772 1.755-1.72 1.755zm.304 2.88c-1.176 1.195-3.424 1.29-4.085 1.29-.66 0-2.912-.095-4.084-1.29a.46.46 0 010-.644.438.438 0 01.63 0c.74.755 2.322 1.024 3.454 1.024 1.13 0 2.714-.27 3.454-1.024a.438.438 0 01.63 0 .466.466 0 010 .643zM6.49 13.93c0-.967.773-1.755 1.72-1.755.948 0 1.72.788 1.72 1.755 0 .967-.772 1.755-1.72 1.755-.947 0-1.72-.788-1.72-1.755zM23 12.175c0-1.357-1.076-2.455-2.407-2.455-.65 0-1.238.262-1.67.69-1.645-1.212-3.913-1.994-6.44-2.085l1.097-5.264 3.582.778c.043.93.79 1.67 1.71 1.67.952 0 1.721-.784 1.721-1.754S19.823 2 18.873 2c-.677 0-1.255.4-1.536.98l-4.001-.869a.422.422 0 00-.324.06.433.433 0 00-.185.277l-1.202 5.776c-.006.034 0 .064 0 .098-2.572.067-4.883.852-6.554 2.082a2.364 2.364 0 00-1.664-.684C2.077 9.72 1 10.82 1 12.175c0 .997.584 1.856 1.423 2.24a5.029 5.029 0 00-.056.744c0 3.78 4.312 6.841 9.631 6.841 5.32 0 9.632-3.062 9.632-6.84 0-.25-.02-.496-.056-.738A2.47 2.47 0 0023 12.175z",
+            fill: i.main,
+            "data-fill": "main"
+        })
+    })
+}
+
+function Oi(i) {
+    return l.jsxs("svg", {
+        width: 24,
+        height: 24,
+        viewBox: "0 0 24 24",
+        fill: "none",
+        xmlns: "http://www.w3.org/2000/svg",
+        ...i,
+        children: [l.jsx("path", {
+            d: "M7.542 2L4 5.571V18.43h4.25V22l3.542-3.571h2.833L21 12V2H7.542zm12.041 9.286l-2.833 2.857h-2.833l-2.48 2.5v-2.5H8.25V3.429h11.333v7.857z",
+            fill: i.main,
+            "data-fill": "main"
+        }), l.jsx("path", {
+            d: "M17.458 5.929h-1.416v4.285h1.416V5.93zM13.563 5.929h-1.417v4.285h1.417V5.93z",
+            fill: i.main,
+            "data-fill": "main"
+        })]
+    })
+}
+
+function Gi(i) {
+    return l.jsx("svg", {
+        width: 24,
+        height: 24,
+        viewBox: "0 0 24 24",
+        fill: "none",
+        xmlns: "http://www.w3.org/2000/svg",
+        ...i,
+        children: l.jsx("path", {
+            d: "M22 5.8a8.49 8.49 0 01-2.36.64 4.13 4.13 0 001.81-2.27 8.21 8.21 0 01-2.61 1 4.1 4.1 0 00-7 3.74 11.64 11.64 0 01-8.45-4.29 4.16 4.16 0 00-.55 2.07 4.09 4.09 0 001.82 3.41 4.05 4.05 0 01-1.86-.51v.05a4.1 4.1 0 003.3 4 3.933 3.933 0 01-1.1.17 4.92 4.92 0 01-.77-.07 4.11 4.11 0 003.83 2.84A8.22 8.22 0 012 18.28a11.57 11.57 0 006.29 1.85A11.589 11.589 0 0020 8.45v-.53a8.43 8.43 0 002-2.12z",
+            fill: i.main,
+            "data-fill": "main"
+        })
+    })
+}
+
+function Ni(i) {
+    return l.jsx("svg", {
+        width: 24,
+        height: 24,
+        viewBox: "0 0 24 24",
+        fill: "none",
+        xmlns: "http://www.w3.org/2000/svg",
+        ...i,
+        children: l.jsx("path", {
+            d: "M23 9.71a8.499 8.499 0 00-.91-4.13 2.92 2.92 0 00-1.72-1A78.362 78.362 0 0012 4.27a78.45 78.45 0 00-8.34.3 2.87 2.87 0 00-1.46.74c-.9.83-1 2.25-1.1 3.45a48.29 48.29 0 000 6.48 9.55 9.55 0 00.3 2c.12.505.365.972.71 1.36a2.86 2.86 0 001.49.78c2.156.266 4.328.376 6.5.33 3.5.05 6.57 0 10.2-.28a2.88 2.88 0 001.53-.78c.28-.28.49-.623.61-1 .358-1.097.533-2.246.52-3.4.04-.56.04-3.94.04-4.54zM9.74 14.85V8.66l5.92 3.11c-1.66.92-3.85 1.96-5.92 3.08z",
+            fill: i.main,
+            "data-fill": "main"
+        })
+    })
+}
+
+function Ui(i) {
+    return l.jsx("svg", {
+        width: 24,
+        height: 24,
+        viewBox: "0 0 24 24",
+        fill: "none",
+        xmlns: "http://www.w3.org/2000/svg",
+        ...i,
+        children: l.jsx("path", {
+            d: "M23 9.71a8.499 8.499 0 00-.91-4.13 2.92 2.92 0 00-1.72-1A78.362 78.362 0 0012 4.27a78.45 78.45 0 00-8.34.3 2.87 2.87 0 00-1.46.74c-.9.83-1 2.25-1.1 3.45a48.29 48.29 0 000 6.48 9.55 9.55 0 00.3 2c.12.505.365.972.71 1.36a2.86 2.86 0 001.49.78c2.156.266 4.328.376 6.5.33 3.5.05 6.57 0 10.2-.28a2.88 2.88 0 001.53-.78c.28-.28.49-.623.61-1 .358-1.097.533-2.246.52-3.4.04-.56.04-3.94.04-4.54zM9.74 14.85V8.66l5.92 3.11c-1.66.92-3.85 1.96-5.92 3.08z",
+            fill: i.main,
+            "data-fill": "main"
+        })
+    })
+}
+
+function Xi(i) {
+    return l.jsx("svg", {
+        width: 24,
+        height: 24,
+        viewBox: "0 0 24 24",
+        fill: "none",
+        xmlns: "http://www.w3.org/2000/svg",
+        ...i,
+        children: l.jsx("path", {
+            "data-fill": "main",
+            fill: i.main,
+            fillRule: "evenodd",
+            clipRule: "evenodd",
+            d: "M5.88657 21C5.57547 21 5.3399 20.7189 5.39427 20.4126L6.00001 17H2.59511C2.28449 17 2.04905 16.7198 2.10259 16.4138L2.27759 15.4138C2.31946 15.1746 2.52722 15 2.77011 15H6.35001L7.41001 9H4.00511C3.69449 9 3.45905 8.71977 3.51259 8.41381L3.68759 7.41381C3.72946 7.17456 3.93722 7 4.18011 7H7.76001L8.39677 3.41262C8.43914 3.17391 8.64664 3 8.88907 3H9.87344C10.1845 3 10.4201 3.28107 10.3657 3.58738L9.76001 7H15.76L16.3968 3.41262C16.4391 3.17391 16.6466 3 16.8891 3H17.8734C18.1845 3 18.4201 3.28107 18.3657 3.58738L17.76 7H21.1649C21.4755 7 21.711 7.28023 21.6574 7.58619L21.4824 8.58619C21.4406 8.82544 21.2328 9 20.9899 9H17.41L16.35 15H19.7549C20.0655 15 20.301 15.2802 20.2474 15.5862L20.0724 16.5862C20.0306 16.8254 19.8228 17 19.5799 17H16L15.3632 20.5874C15.3209 20.8261 15.1134 21 14.8709 21H13.8866C13.5755 21 13.3399 20.7189 13.3943 20.4126L14 17H8.00001L7.36325 20.5874C7.32088 20.8261 7.11337 21 6.87094 21H5.88657ZM9.41045 9L8.35045 15H14.3504L15.4104 9H9.41045Z"
+        })
+    })
+}
+
+function Yi(i) {
+    return l.jsx("svg", {
+        width: 24,
+        height: 24,
+        viewBox: "0 0 24 24",
+        fill: "none",
+        xmlns: "http://www.w3.org/2000/svg",
+        ...i,
+        children: l.jsx("path", {
+            "data-fill": "main",
+            fill: i.main,
+            fillRule: "evenodd",
+            clipRule: "evenodd",
+            d: "M11.383 3.07904C11.009 2.92504 10.579 3.01004 10.293 3.29604L6 8.00204H3C2.45 8.00204 2 8.45304 2 9.00204V15.002C2 15.552 2.45 16.002 3 16.002H6L10.293 20.71C10.579 20.996 11.009 21.082 11.383 20.927C11.757 20.772 12 20.407 12 20.002V4.00204C12 3.59904 11.757 3.23204 11.383 3.07904ZM14 5.00195V7.00195C16.757 7.00195 19 9.24595 19 12.002C19 14.759 16.757 17.002 14 17.002V19.002C17.86 19.002 21 15.863 21 12.002C21 8.14295 17.86 5.00195 14 5.00195ZM14 9.00195C15.654 9.00195 17 10.349 17 12.002C17 13.657 15.654 15.002 14 15.002V13.002C14.551 13.002 15 12.553 15 12.002C15 11.451 14.551 11.002 14 11.002V9.00195Z"
+        })
+    })
+}
+
+function Ki(i) {
+    return l.jsxs("svg", {
+        width: 24,
+        height: 24,
+        viewBox: "0 0 24 24",
+        fill: "none",
+        xmlns: "http://www.w3.org/2000/svg",
+        ...i,
+        children: [l.jsx("path", {
+            d: "M3.9 8.26H2V15.2941H3.9V8.26Z",
+            "data-fill": "main",
+            fill: i.main
+        }), l.jsx("path", {
+            d: "M19.1 4V5.12659L4.85 8.26447V18.1176C4.85 18.5496 5.1464 18.9252 5.5701 19.0315L9.3701 19.9727C9.4461 19.9906 9.524 20 9.6 20C9.89545 20 10.1776 19.8635 10.36 19.6235L12.7065 16.5242L19.1 17.9304V19.0588H21V4H19.1ZM9.2181 17.9944L6.75 17.3826V15.2113L10.6706 16.0753L9.2181 17.9944Z",
+            "data-fill": "main",
+            fill: i.main
+        })]
+    })
+}
+
+function Qi(i) {
+    return l.jsx("svg", {
+        width: 24,
+        height: 24,
+        viewBox: "0 0 24 24",
+        fill: "none",
+        xmlns: "http://www.w3.org/2000/svg",
+        ...i,
+        children: l.jsx("path", {
+            d: "M14 13C14 14.1 13.1 15 12 15C10.9 15 10 14.1 10 13C10 11.9 10.9 11 12 11C13.1 11 14 11.9 14 13ZM8.5 20V19.5C8.5 17.8 9.94 16.5 12 16.5C14.06 16.5 15.5 17.8 15.5 19.5V20H8.5ZM7 13C7 10.24 9.24 8 12 8C14.76 8 17 10.24 17 13C17 13.91 16.74 14.75 16.31 15.49L17.62 16.25C18.17 15.29 18.5 14.19 18.5 13C18.5 9.42 15.58 6.5 12 6.5C8.42 6.5 5.5 9.42 5.5 13C5.5 14.18 5.82 15.29 6.38 16.25L7.69 15.49C7.26 14.75 7 13.91 7 13ZM2.5 13C2.5 7.75 6.75 3.5 12 3.5C17.25 3.5 21.5 7.75 21.5 13C21.5 14.73 21.03 16.35 20.22 17.75L21.51 18.5C22.45 16.88 23 15 23 13C23 6.93 18.07 2 12 2C5.93 2 1 6.93 1 13C1 15 1.55 16.88 2.48 18.49L3.77 17.74C2.97 16.35 2.5 14.73 2.5 13Z",
+            "data-fill": "main"
+        })
+    })
+}
+
+function qi(i) {
+    return l.jsx("svg", {
+        width: 24,
+        height: 24,
+        "aria-hidden": "false",
+        viewBox: "0 0 24 24",
+        ...i,
+        children: l.jsx("path", {
+            d: "M6.56929 14.6869H2.34375C1.97079 14.6869 1.61311 14.5387 1.34938 14.275C1.08566 14.0113 0.9375 13.6536 0.9375 13.2806V8.12437C0.9375 6.38389 1.6289 4.7147 2.85961 3.484C4.09032 2.25329 5.75951 1.56189 7.49999 1.56189C9.24047 1.56189 10.9097 2.25329 12.1404 3.484C12.6953 4.03895 13.1406 4.68307 13.4623 5.38267C14.9101 5.5973 16.2513 6.29124 17.2655 7.36251C18.4194 8.58133 19.0625 10.1959 19.0625 11.8744V17.0306C19.0625 17.4036 18.9144 17.7613 18.6506 18.025C18.3869 18.2887 18.0292 18.4369 17.6563 18.4369H12.5C11.1428 18.4369 9.81899 18.0162 8.71072 17.2328C7.7871 16.58 7.05103 15.7019 6.56929 14.6869ZM4.18544 4.80982C5.06451 3.93075 6.25679 3.43689 7.49999 3.43689C8.74319 3.43689 9.93549 3.93075 10.8146 4.80983C11.6936 5.6889 12.1875 6.88119 12.1875 8.12439C12.1875 9.36759 11.6936 10.5599 10.8146 11.439C9.93549 12.318 8.74321 12.8119 7.50001 12.8119H7.20268C7.19767 12.8118 7.19266 12.8118 7.18764 12.8119H2.8125V8.12438C2.8125 6.88118 3.30636 5.6889 4.18544 4.80982ZM8.672 14.5814C8.97763 15.0132 9.35591 15.3928 9.79299 15.7017C10.5847 16.2614 11.5305 16.5619 12.5 16.5619H17.1875V11.8744C17.1875 10.6755 16.7281 9.52219 15.9039 8.65159C15.3804 8.09865 14.735 7.68644 14.027 7.44246C14.0506 7.66798 14.0625 7.89557 14.0625 8.12439C14.0625 9.86487 13.3711 11.5341 12.1404 12.7648C11.1896 13.7156 9.97697 14.3445 8.672 14.5814Z",
+            fill: i.main
+        })
+    })
+}
+
+function Ji(i) {
+    return l.jsxs("svg", {
+        width: "{48}",
+        height: "{48}",
+        viewBox: "0 0 48 48",
+        fill: "none",
+        xmlns: "http://www.w3.org/2000/svg",
+        ...i,
+        children: [l.jsxs("g", {
+            clipPath: "url(#clip0_444_1362)",
+            children: [l.jsx("path", {
+                opacity: "0.2",
+                d: "M37.5377 31.8273C44.6417 28.1497 47.5795 19.7188 44.0994 12.9964C40.6193 6.27407 32.0392 3.80583 24.9352 7.48348C17.8312 11.1611 14.8934 19.592 18.3735 26.3144C21.8536 33.0367 30.4337 35.505 37.5377 31.8273Z",
+                fill: "#3994FF"
+            }), l.jsx("path", {
+                opacity: "0.2",
+                d: "M26.3743 40.6919C33.7 36.8995 35.988 26.7736 31.4849 18.0749C26.9817 9.37633 17.3926 5.39904 10.067 9.19142C2.74133 12.9838 0.453264 23.1098 4.95642 31.8084C9.45958 40.507 19.0487 44.4843 26.3743 40.6919Z",
+                fill: "#3994FF"
+            }), l.jsx("path", {
+                d: "M17.2505 16.0481V21.7744H14.6143V16.0481C14.6153 15.8122 14.7098 15.5864 14.8771 15.4201C15.0444 15.2539 15.2709 15.1608 15.5068 15.1613H16.358C16.5939 15.1608 16.8203 15.2539 16.9877 15.4201C17.155 15.5864 17.2495 15.8122 17.2505 16.0481Z",
+                fill: "#E1FBFF"
+            }), l.jsx("path", {
+                d: "M17.0625 13.095C17.0625 13.89 16.5544 14.5331 15.9263 14.5331C15.2982 14.5331 14.79 13.89 14.79 13.095C14.79 12.4575 15.5213 10.7269 15.81 10.0688C15.8159 10.0425 15.8305 10.0191 15.8514 10.0022C15.8724 9.98542 15.8985 9.97626 15.9254 9.97626C15.9522 9.97626 15.9783 9.98542 15.9993 10.0022C16.0202 10.0191 16.0348 10.0425 16.0407 10.0688C16.335 10.7269 17.0625 12.4575 17.0625 13.095Z",
+                fill: "#F9E8B2"
+            }), l.jsx("path", {
+                d: "M16.4813 13.3275C16.4813 13.8169 16.2356 14.2125 15.9319 14.2125C15.6281 14.2125 15.375 13.8169 15.375 13.3275C15.375 12.975 15.6637 12.0712 15.8212 11.6006C15.8681 11.4637 15.9806 11.4637 16.0256 11.6006C16.1925 12.0712 16.4813 12.975 16.4813 13.3275Z",
+                fill: "white"
+            }), l.jsx("g", {
+                style: {
+                    mixBlendMode: "overlay"
+                },
+                opacity: "0.5",
+                children: l.jsx("path", {
+                    d: "M17.2505 16.0481V17.3456C16.8399 16.2206 15.3061 16.125 14.6143 17.3456V16.0481C14.6153 15.8122 14.7098 15.5864 14.8771 15.4201C15.0444 15.2539 15.2709 15.1608 15.5068 15.1613H16.358C16.5939 15.1608 16.8203 15.2539 16.9877 15.4201C17.155 15.5864 17.2495 15.8122 17.2505 16.0481Z",
+                    fill: "black"
+                })
+            }), l.jsx("path", {
+                d: "M33.938 17.5481V23.2744H31.3018V17.5481C31.3028 17.3122 31.3973 17.0864 31.5646 16.9201C31.7319 16.7539 31.9584 16.6608 32.1943 16.6613H33.0455C33.2814 16.6608 33.5078 16.7539 33.6752 16.9201C33.8425 17.0864 33.937 17.3122 33.938 17.5481Z",
+                fill: "#E1FBFF"
+            }), l.jsx("path", {
+                d: "M33.75 14.595C33.75 15.39 33.2419 16.0331 32.6138 16.0331C31.9857 16.0331 31.4775 15.39 31.4775 14.595C31.4775 13.9575 32.2088 12.2269 32.4975 11.5688C32.5034 11.5425 32.518 11.5191 32.5389 11.5022C32.5599 11.4854 32.586 11.4763 32.6129 11.4763C32.6397 11.4763 32.6658 11.4854 32.6868 11.5022C32.7077 11.5191 32.7223 11.5425 32.7282 11.5688C33.0225 12.2269 33.75 13.9575 33.75 14.595Z",
+                fill: "#F9E8B2"
+            }), l.jsx("path", {
+                d: "M33.1687 14.8275C33.1687 15.3169 32.9231 15.7125 32.6194 15.7125C32.3156 15.7125 32.0625 15.3169 32.0625 14.8275C32.0625 14.475 32.3513 13.5712 32.5088 13.1006C32.5556 12.9637 32.6681 12.9637 32.7131 13.1006C32.88 13.5712 33.1687 14.475 33.1687 14.8275Z",
+                fill: "white"
+            }), l.jsx("g", {
+                style: {
+                    mixBlendMode: "overlay"
+                },
+                opacity: "0.5",
+                children: l.jsx("path", {
+                    d: "M33.938 17.5481V18.8456C33.5274 17.7206 31.9936 17.625 31.3018 18.8456V17.5481C31.3028 17.3122 31.3973 17.0864 31.5646 16.9201C31.7319 16.7539 31.9584 16.6608 32.1943 16.6613H33.0455C33.2814 16.6608 33.5078 16.7539 33.6752 16.9201C33.8425 17.0864 33.937 17.3122 33.938 17.5481Z",
+                    fill: "black"
+                })
+            }), l.jsx("path", {
+                d: "M25.313 14.475V21.7744H22.6768V14.475C22.6768 13.8544 23.0761 13.35 23.5693 13.35H24.4205C24.9136 13.3444 25.313 13.8544 25.313 14.475Z",
+                fill: "#E1FBFF"
+            }), l.jsx("path", {
+                d: "M25.125 11.4075C25.125 12.2025 24.6169 12.8456 23.9888 12.8456C23.3607 12.8456 22.8525 12.2025 22.8525 11.4075C22.8525 10.77 23.5838 9.03938 23.8725 8.38126C23.8784 8.35502 23.893 8.33156 23.9139 8.31474C23.9349 8.29792 23.961 8.28876 23.9879 8.28876C24.0147 8.28876 24.0408 8.29792 24.0618 8.31474C24.0827 8.33156 24.0973 8.35502 24.1032 8.38126C24.3975 9.03938 25.125 10.77 25.125 11.4075Z",
+                fill: "#F9E8B2"
+            }), l.jsx("path", {
+                d: "M24.5437 11.64C24.5437 12.1294 24.2981 12.525 23.9944 12.525C23.6906 12.525 23.4375 12.1294 23.4375 11.64C23.4375 11.2875 23.7262 10.3837 23.8837 9.91311C23.9306 9.77624 24.0431 9.77624 24.0881 9.91311C24.255 10.3837 24.5437 11.2875 24.5437 11.64Z",
+                fill: "white"
+            }), l.jsx("g", {
+                style: {
+                    mixBlendMode: "overlay"
+                },
+                opacity: "0.5",
+                children: l.jsx("path", {
+                    d: "M25.313 14.475V16.125C24.9024 14.6869 23.3686 14.5669 22.6768 16.125V14.475C22.6768 13.8544 23.0761 13.35 23.5693 13.35H24.4205C24.9136 13.3444 25.313 13.8544 25.313 14.475Z",
+                    fill: "black"
+                })
+            }), l.jsx("path", {
+                d: "M12.5062 21.6263H35.4956C36.9711 21.6263 38.3862 22.212 39.43 23.2548C40.4738 24.2975 41.061 25.712 41.0625 27.1875V40.3706H6.9375V27.1875C6.93899 25.7117 7.52642 24.2969 8.57065 23.2541C9.61489 22.2113 11.0305 21.6258 12.5062 21.6263Z",
+                fill: "#B3EEFF"
+            }), l.jsx("path", {
+                d: "M41.0625 35.8763H6.9375V38.1263H41.0625V35.8763Z",
+                fill: "#5ACFF5"
+            }), l.jsx("path", {
+                d: "M35.4957 21.6263H12.5063C11.0307 21.6262 9.61536 22.2119 8.57123 23.2546C7.5271 24.2974 6.93952 25.7119 6.93753 27.1875V28.5469C6.9363 28.72 6.96933 28.8917 7.03474 29.052C7.10014 29.2124 7.19663 29.3581 7.31863 29.481C7.44063 29.6039 7.58573 29.7014 7.74559 29.768C7.90544 29.8345 8.07688 29.8688 8.25003 29.8688C8.34789 29.8687 8.44188 29.9069 8.51194 29.9753C8.582 30.0436 8.62259 30.1366 8.62503 30.2344V31.0163C8.62553 31.5575 8.84088 32.0763 9.22375 32.4589C9.60662 32.8414 10.1257 33.0563 10.6669 33.0563H13.5207C14.0607 33.0568 14.579 32.8431 14.9617 32.4621C15.3445 32.0811 15.5605 31.5638 15.5625 31.0238C15.5625 30.7197 15.6832 30.4282 15.898 30.213C16.1128 29.9979 16.4041 29.8767 16.7082 29.8763H18.27C18.5964 29.8767 18.9093 30.0068 19.1399 30.2377C19.3705 30.4687 19.5 30.7817 19.5 31.1081C19.5 31.3159 19.541 31.5215 19.6205 31.7134C19.7001 31.9053 19.8167 32.0797 19.9636 32.2265C20.1106 32.3733 20.2851 32.4896 20.4771 32.569C20.6691 32.6483 20.8748 32.689 21.0825 32.6888H21.375C21.8723 32.6888 22.3492 32.4912 22.7009 32.1396C23.0525 31.7879 23.25 31.311 23.25 30.8138C23.25 30.5651 23.3488 30.3267 23.5246 30.1508C23.7004 29.975 23.9389 29.8763 24.1875 29.8763H24.75C25.1479 29.8763 25.5294 30.0343 25.8107 30.3156C26.092 30.5969 26.25 30.9784 26.25 31.3763V33.0638C26.25 33.6605 26.4871 34.2328 26.909 34.6547C27.331 35.0767 27.9033 35.3138 28.5 35.3138C29.0968 35.3138 29.6691 35.0767 30.091 34.6547C30.513 34.2328 30.75 33.6605 30.75 33.0638V31.035C30.75 30.7277 30.8721 30.433 31.0894 30.2156C31.3067 29.9983 31.6015 29.8763 31.9088 29.8763H32.9663C33.2736 29.8763 33.5683 29.9983 33.7856 30.2156C34.003 30.433 34.125 30.7277 34.125 31.035C34.125 31.4736 34.2993 31.8942 34.6094 32.2044C34.9195 32.5145 35.3402 32.6888 35.7788 32.6888H38.25C38.996 32.6888 39.7113 32.3924 40.2388 31.865C40.7662 31.3375 41.0625 30.6222 41.0625 29.8763V27.1875C41.0605 25.7122 40.4732 24.298 39.4295 23.2553C38.3858 22.2126 36.971 21.6267 35.4957 21.6263Z",
+                fill: "#5ACFF5"
+            }), l.jsx("path", {
+                d: "M13.125 24.4388C13.5392 24.4388 13.875 24.103 13.875 23.6888C13.875 23.2745 13.5392 22.9388 13.125 22.9388C12.7108 22.9388 12.375 23.2745 12.375 23.6888C12.375 24.103 12.7108 24.4388 13.125 24.4388Z",
+                fill: "#E1FBFF"
+            }), l.jsx("path", {
+                d: "M34.6875 24.2513C35.1017 24.2513 35.4375 23.9155 35.4375 23.5013C35.4375 23.087 35.1017 22.7513 34.6875 22.7513C34.2733 22.7513 33.9375 23.087 33.9375 23.5013C33.9375 23.9155 34.2733 24.2513 34.6875 24.2513Z",
+                fill: "#E1FBFF"
+            }), l.jsx("path", {
+                d: "M29.625 25.7513C30.2463 25.7513 30.75 25.2476 30.75 24.6263C30.75 24.0049 30.2463 23.5013 29.625 23.5013C29.0037 23.5013 28.5 24.0049 28.5 24.6263C28.5 25.2476 29.0037 25.7513 29.625 25.7513Z",
+                fill: "#E1FBFF"
+            }), l.jsx("path", {
+                d: "M15.1875 25.0013C15.4982 25.0013 15.75 24.7494 15.75 24.4388C15.75 24.1281 15.4982 23.8763 15.1875 23.8763C14.8768 23.8763 14.625 24.1281 14.625 24.4388C14.625 24.7494 14.8768 25.0013 15.1875 25.0013Z",
+                fill: "#E1FBFF"
+            }), l.jsx("g", {
+                style: {
+                    mixBlendMode: "overlay"
+                },
+                opacity: "0.5",
+                children: l.jsx("path", {
+                    d: "M41.0625 27.1612C41.0625 25.6848 40.476 24.2689 39.432 23.2249C38.388 22.1809 36.9721 21.5944 35.4956 21.5944H24V40.3444H41.0625V27.1612Z",
+                    fill: "black"
+                })
+            })]
+        }), l.jsx("defs", {
+            children: l.jsx("clipPath", {
+                id: "clip0_444_1362",
+                children: l.jsx("rect", {
+                    width: "48",
+                    height: "48",
+                    fill: "white"
+                })
+            })
+        })]
+    })
+}
+
+function $i(i) {
+    return l.jsxs("svg", {
+        width: "{48}",
+        height: "{48}",
+        viewBox: "0 0 48 48",
+        fill: "none",
+        xmlns: "http://www.w3.org/2000/svg",
+        ...i,
+        children: [l.jsxs("g", {
+            clipPath: "url(#clip0_444_1359)",
+            children: [l.jsx("path", {
+                opacity: "0.2",
+                d: "M37.7709 31.9459C44.5033 28.4606 47.2874 20.4704 43.9891 14.0994C40.6909 7.7283 32.5594 5.38893 25.827 8.87424C19.0945 12.3596 16.3105 20.3497 19.6087 26.7208C22.9069 33.0919 31.0384 35.4313 37.7709 31.9459Z",
+                fill: "#3994FF"
+            }), l.jsx("path", {
+                opacity: "0.2",
+                d: "M27.1913 40.3487C34.1344 36.7543 36.303 27.1572 32.035 18.9129C27.767 10.6686 18.6787 6.89901 11.7356 10.4933C4.79254 14.0877 2.62394 23.6848 6.89192 31.9291C11.1599 40.1735 20.2482 43.943 27.1913 40.3487Z",
+                fill: "#3994FF"
+            }), l.jsx("path", {
+                d: "M39.562 23.9512C39.562 29.6437 33.1683 34.2637 25.282 34.2637C23.9114 34.2654 22.5444 34.1221 21.2039 33.8362C19.9568 33.5729 18.743 33.171 17.5852 32.6381L11.0039 34.2637L12.6314 28.7381C11.5921 27.3584 11.0218 25.6822 11.0039 23.955C11.0039 18.2606 17.3958 13.6425 25.282 13.6425C33.1683 13.6425 39.562 18.2569 39.562 23.9512Z",
+                fill: "#5ACFF5"
+            }), l.jsx("g", {
+                style: {
+                    mixBlendMode: "overlay"
+                },
+                opacity: "0.5",
+                children: l.jsx("path", {
+                    d: "M39.5622 23.9513C39.5622 29.6438 33.1685 34.2638 25.2822 34.2638V13.6388C33.161 13.6425 39.5622 18.2569 39.5622 23.9513Z",
+                    fill: "black"
+                })
+            }), l.jsx("path", {
+                d: "M25.3592 16.8H23.9773C23.6154 16.8 23.3286 17.175 23.3454 17.6006L23.6773 26.2369C23.6923 26.6437 23.9717 26.9662 24.3092 26.9662H26.4073C26.7467 26.9662 27.0242 26.6437 27.0411 26.2369L27.3748 17.6006C27.3917 17.1656 27.1029 16.8 26.7429 16.8H25.3592Z",
+                fill: "white"
+            }), l.jsx("path", {
+                d: "M25.3761 31.8544C26.3588 31.8544 27.1554 31.0577 27.1554 30.075C27.1554 29.0923 26.3588 28.2956 25.3761 28.2956C24.3933 28.2956 23.5967 29.0923 23.5967 30.075C23.5967 31.0577 24.3933 31.8544 25.3761 31.8544Z",
+                fill: "white"
+            })]
+        }), l.jsx("defs", {
+            children: l.jsx("clipPath", {
+                id: "clip0_444_1359",
+                children: l.jsx("rect", {
+                    width: "48",
+                    height: "48",
+                    fill: "white"
+                })
+            })
+        })]
+    })
+}
+
+function la(i) {
+    return l.jsxs("svg", {
+        width: "{48}",
+        height: "{48}",
+        viewBox: "0 0 48 48",
+        fill: "none",
+        xmlns: "http://www.w3.org/2000/svg",
+        ...i,
+        children: [l.jsx("path", {
+            opacity: "0.2",
+            d: "M46.9273 24.8231L31.2898 30.7556L25.4866 45.495L17.1204 34.1963L1.07227 35.955L11.5385 23.0381L7.42289 9.38625L22.2598 12.7013L35.7635 2.505L34.466 17.4713L46.9273 24.8231Z",
+            fill: "#3994FF"
+        }), l.jsx("path", {
+            opacity: "0.2",
+            d: "M10.1663 39.7312L13.1962 26.8669L3.84375 19.0519L17.5594 15.6806L24.2869 3.52875L29.7337 14.3081L43.2431 14.6119L32.895 24.6469L34.5169 36.9863L22.6744 32.4094L10.1663 39.7312Z",
+            fill: "#3994FF"
+        }), l.jsx("path", {
+            d: "M30.0377 13.6819H12.439C10.3099 13.6819 8.58398 15.4078 8.58398 17.5369V28.9613C8.58398 31.0903 10.3099 32.8163 12.439 32.8163H30.0377C32.1668 32.8163 33.8927 31.0903 33.8927 28.9613V17.5369C33.8927 15.4078 32.1668 13.6819 30.0377 13.6819Z",
+            fill: "#5ACFF5"
+        }), l.jsx("path", {
+            d: "M32.7583 13.2H14.2708C12.0351 13.2 10.2227 15.0124 10.2227 17.2481V29.25C10.2227 31.4857 12.0351 33.2981 14.2708 33.2981H32.7583C34.994 33.2981 36.8064 31.4857 36.8064 29.25V17.2481C36.8064 15.0124 34.994 13.2 32.7583 13.2Z",
+            fill: "#E1FBFF"
+        }), l.jsx("path", {
+            d: "M33.148 15.2925H20.983C20.37 15.2925 19.873 15.7895 19.873 16.4025V17.0044C19.873 17.6174 20.37 18.1144 20.983 18.1144H33.148C33.7611 18.1144 34.258 17.6174 34.258 17.0044V16.4025C34.258 15.7895 33.7611 15.2925 33.148 15.2925Z",
+            fill: "#5ACFF5"
+        }), l.jsx("path", {
+            d: "M31.6515 27.0375H22.6609C22.1265 27.0375 21.6934 27.4707 21.6934 28.005V28.8919C21.6934 29.4262 22.1265 29.8594 22.6609 29.8594H31.6515C32.1858 29.8594 32.619 29.4262 32.619 28.8919V28.005C32.619 27.4707 32.1858 27.0375 31.6515 27.0375Z",
+            fill: "#5ACFF5"
+        }), l.jsx("path", {
+            d: "M17.6328 15.2925H16.744C16.16 15.2925 15.6865 15.766 15.6865 16.35V17.0569C15.6865 17.6409 16.16 18.1144 16.744 18.1144H17.6328C18.2168 18.1144 18.6903 17.6409 18.6903 17.0569V16.35C18.6903 15.766 18.2168 15.2925 17.6328 15.2925Z",
+            fill: "#5ACFF5"
+        }), l.jsx("path", {
+            d: "M19.1796 27.0375H18.2909C17.7069 27.0375 17.2334 27.511 17.2334 28.095V28.8019C17.2334 29.3859 17.7069 29.8594 18.2909 29.8594H19.1796C19.7637 29.8594 20.2371 29.3859 20.2371 28.8019V28.095C20.2371 27.511 19.7637 27.0375 19.1796 27.0375Z",
+            fill: "#5ACFF5"
+        }), l.jsx("path", {
+            d: "M34.2691 21.21H18.1329C17.4349 21.21 16.8691 21.7758 16.8691 22.4737V22.7681C16.8691 23.4661 17.4349 24.0319 18.1329 24.0319H34.2691C34.9671 24.0319 35.5329 23.4661 35.5329 22.7681V22.4737C35.5329 21.7758 34.9671 21.21 34.2691 21.21Z",
+            fill: "#5ACFF5"
+        }), l.jsx("g", {
+            style: {
+                mixBlendMode: "overlay"
+            },
+            opacity: "0.5",
+            children: l.jsx("path", {
+                d: "M36.8065 17.25V29.25C36.8065 30.3236 36.38 31.3533 35.6209 32.1125C34.8617 32.8716 33.832 33.2981 32.7584 33.2981H23.5146V13.2H32.7584C33.2902 13.1998 33.8169 13.3044 34.3083 13.5078C34.7996 13.7113 35.2461 14.0096 35.6221 14.3858C35.998 14.7619 36.2962 15.2085 36.4994 15.7C36.7027 16.1915 36.807 16.7182 36.8065 17.25Z",
+                fill: "black"
+            })
+        })]
+    })
+}
+
+function ia(i) {
+    return l.jsxs("svg", {
+        width: 48,
+        height: 48,
+        fill: "none",
+        xmlns: "http://www.w3.org/2000/svg",
+        viewBox: "0 0 48 48",
+        ...i,
+        children: [l.jsxs("g", {
+            clipPath: "url(#clip0_444_1355)",
+            children: [l.jsx("path", {
+                opacity: "0.2",
+                d: "M38.8492 31.7989C45.9532 28.1213 48.891 19.6904 45.4109 12.9681C41.9308 6.24568 33.3507 3.77745 26.2467 7.4551C19.1427 11.1328 16.205 19.5636 19.685 26.286C23.1651 33.0084 31.7452 35.4766 38.8492 31.7989Z",
+                fill: "#3994FF"
+            }), l.jsx("path", {
+                opacity: "0.2",
+                d: "M27.6868 40.6619C35.0125 36.8695 37.3005 26.7435 32.7974 18.0449C28.2942 9.3463 18.7051 5.36901 11.3795 9.16139C4.05383 12.9538 1.76576 23.0797 6.26892 31.7783C10.7721 40.477 20.3612 44.4542 27.6868 40.6619Z",
+                fill: "#3994FF"
+            }), l.jsx("path", {
+                d: "M26.9412 30.3769H20.9355V39.8719H26.9412V30.3769Z",
+                fill: "#5ACFF5"
+            }), l.jsx("g", {
+                style: {
+                    mixBlendMode: "overlay"
+                },
+                opacity: "0.5",
+                children: l.jsx("path", {
+                    d: "M26.9431 30.3769H23.96V39.8719H26.9431V30.3769Z",
+                    fill: "black"
+                })
+            }), l.jsx("path", {
+                d: "M14.3696 24.48C10.3796 24.48 7.24458 21.6862 6.76833 17.685C6.36708 14.3794 6.95583 12.3131 8.54958 11.3662C10.0665 10.4681 12.1477 10.8037 14.7371 12.375L13.4246 14.3344C11.5177 13.1756 10.3346 13.0612 9.86208 13.3387C9.61458 13.4869 8.83271 14.2162 9.22083 17.4206C9.55833 20.2069 11.6827 22.155 14.3846 22.155L14.3696 24.48Z",
+                fill: "#5ACFF5"
+            }), l.jsx("path", {
+                d: "M33.6295 24.48V22.155C36.3313 22.155 38.4538 20.2069 38.7932 17.4206C39.1813 14.2162 38.3995 13.4831 38.1501 13.3387C37.6795 13.0612 36.4982 13.1756 34.5876 14.3344L33.2676 12.375C35.8513 10.8075 37.9307 10.4681 39.4551 11.3662C41.0545 12.3131 41.6376 14.3794 41.2363 17.685C40.7451 21.6862 37.6195 24.48 33.6295 24.48Z",
+                fill: "#5ACFF5"
+            }), l.jsx("g", {
+                style: {
+                    mixBlendMode: "overlay"
+                },
+                opacity: "0.6",
+                children: l.jsx("path", {
+                    d: "M26.9412 30.8662V31.335C26.9412 31.6556 26.7387 31.9144 26.4893 31.9144H21.3874C21.138 31.9144 20.9355 31.6556 20.9355 31.335V30.8662H26.9412Z",
+                    fill: "black"
+                })
+            }), l.jsx("path", {
+                d: "M14.1106 9.1875H33.8881C34.5843 9.1875 35.252 9.46406 35.7442 9.95634C36.2365 10.4486 36.5131 11.1163 36.5131 11.8125V20.7281C36.5131 23.502 35.4112 26.1622 33.4498 28.1236C31.4884 30.085 28.8282 31.1869 26.0543 31.1869H21.95C19.1761 31.1869 16.5159 30.085 14.5545 28.1236C12.5931 26.1622 11.4912 23.502 11.4912 20.7281V11.8125C11.4912 11.1163 11.7678 10.4486 12.2601 9.95634C12.7523 9.46406 13.42 9.1875 14.1162 9.1875H14.1106Z",
+                fill: "#B3EEFF"
+            }), l.jsx("g", {
+                style: {
+                    mixBlendMode: "overlay"
+                },
+                opacity: "0.5",
+                children: l.jsx("path", {
+                    d: "M36.51 11.52V21.135C36.51 26.2706 31.8225 31.185 26.0494 31.185H24V9.1875H33.8888C35.3363 9.1875 36.51 10.2337 36.51 11.52Z",
+                    fill: "black"
+                })
+            }), l.jsx("path", {
+                d: "M31.125 41.8912V42.2325H16.875V41.8912C16.8748 41.6284 16.9263 41.368 17.0268 41.1251C17.1272 40.8821 17.2745 40.6613 17.4603 40.4754C17.6461 40.2894 17.8667 40.1419 18.1096 40.0412C18.3524 39.9406 18.6127 39.8887 18.8756 39.8887H29.1188C29.6331 39.8871 30.1284 40.0834 30.5019 40.437C30.8754 40.7907 31.0985 41.2744 31.125 41.7881C31.125 41.8219 31.125 41.8575 31.125 41.8912Z",
+                fill: "#B3EEFF"
+            }), l.jsx("g", {
+                style: {
+                    mixBlendMode: "overlay"
+                },
+                opacity: "0.5",
+                children: l.jsx("path", {
+                    d: "M31.125 41.8913V42.2325H24V39.8888H29.1244C29.6378 39.8886 30.1316 40.0855 30.5039 40.439C30.8762 40.7925 31.0986 41.2754 31.125 41.7881C31.125 41.8219 31.125 41.8575 31.125 41.8913Z",
+                    fill: "black"
+                })
+            })]
+        }), l.jsx("defs", {
+            children: l.jsx("clipPath", {
+                id: "clip0_444_1355",
+                children: l.jsx("rect", {
+                    width: "48",
+                    height: "48",
+                    fill: "white"
+                })
+            })
+        })]
+    })
+}
+
+function aa(i) {
+    return l.jsxs("svg", {
+        width: 48,
+        height: 48,
+        viewBox: "0 0 48 48",
+        fill: "none",
+        xmlns: "http://www.w3.org/2000/svg",
+        ...i,
+        children: [l.jsxs("g", {
+            clipPath: "url(#clip0_1843_115847)",
+            children: [l.jsx("path", {
+                opacity: "0.2",
+                d: "M27.7422 39.0324C33.4022 32.6124 33.0657 23.0662 26.9906 17.7103C20.9155 12.3544 11.4024 13.2169 5.74241 19.6369C0.0824464 26.0569 0.418969 35.6031 6.49405 40.959C12.5691 46.3149 22.0823 45.4523 27.7422 39.0324Z",
+                fill: "#3994FF"
+            }), l.jsx("path", {
+                opacity: "0.2",
+                d: "M41.4205 34.3029C48.5861 29.1502 49.4351 18.0758 43.3168 9.56761C37.1986 1.05943 26.4299 -1.66068 19.2644 3.49208C12.0989 8.64483 11.2499 19.7192 17.3681 28.2274C23.4864 36.7356 34.255 39.4557 41.4205 34.3029Z",
+                fill: "#3994FF"
+            }), l.jsx("path", {
+                d: "M41.7905 18.81C41.7299 18.9439 41.6531 19.0699 41.5617 19.185L26.8242 38.2294C26.4411 38.7296 25.9309 39.1181 25.3467 39.3544C25.2162 39.4086 25.0822 39.4537 24.9455 39.4894C24.6811 39.5615 24.4093 39.6031 24.1355 39.6131C23.9028 39.6228 23.6697 39.609 23.4398 39.5719C23.3343 39.5558 23.2298 39.5338 23.1267 39.5062C22.3497 39.3163 21.661 38.8664 21.1748 38.2312L6.44108 19.1944C6.34885 19.0757 6.27082 18.9467 6.20858 18.81C6.08519 18.5401 6.0251 18.2455 6.0329 17.9488C6.0407 17.6521 6.11618 17.3612 6.25358 17.0981L6.28921 17.0306L9.49358 11.4375C9.98221 10.5841 10.6715 9.86263 11.5017 9.3356C11.6517 9.23998 11.8073 9.1481 11.9667 9.06935C12.8324 8.61853 13.7938 8.38252 14.7698 8.38123H33.2705C33.6346 8.38106 33.998 8.41432 34.3561 8.4806C35.0503 8.60554 35.7173 8.85113 36.3267 9.20623L36.5142 9.32435C36.9919 9.6254 37.4254 9.99141 37.8023 10.4119C38.0885 10.7359 38.3398 11.0891 38.5523 11.4656L41.7061 17.0344C41.7189 17.0544 41.7296 17.0758 41.738 17.0981C41.8775 17.3603 41.9548 17.6511 41.9639 17.9479C41.973 18.2448 41.9137 18.5397 41.7905 18.81V18.81Z",
+                fill: "#5ACFF5"
+            }), l.jsx("path", {
+                d: "M41.7905 18.81H6.20858C6.08519 18.5401 6.0251 18.2455 6.0329 17.9488C6.0407 17.6522 6.11618 17.3612 6.25358 17.0981H41.7492C41.8864 17.3613 41.9615 17.6525 41.9686 17.9493C41.9758 18.246 41.9148 18.5405 41.7905 18.81Z",
+                fill: "#B3EEFF"
+            }), l.jsx("path", {
+                d: "M24.9375 39.4912C24.4491 39.6254 23.9376 39.6535 23.4375 39.5737C23.332 39.5576 23.2274 39.5357 23.1243 39.5081L15.1631 18.0731C15.3726 17.8624 15.6274 17.7023 15.9081 17.6048C16.1888 17.5073 16.4881 17.4751 16.7831 17.5106L24.2081 37.5L24.9375 39.4912Z",
+                fill: "#B3EEFF"
+            }), l.jsx("path", {
+                d: "M33.6584 16.9837L25.3484 39.3562C25.2166 39.4085 25.082 39.4536 24.9453 39.4912C24.4569 39.6254 23.9455 39.6535 23.4453 39.5737L24.2141 37.5112L32.0366 16.4287C32.3313 16.3921 32.6305 16.4231 32.9115 16.5193C33.1925 16.6154 33.4479 16.7742 33.6584 16.9837Z",
+                fill: "#B3EEFF"
+            }), l.jsx("path", {
+                d: "M17.1713 17.73L17.1319 17.7562L15.9206 18.5062L15.5625 18.7256L14.8125 17.4544L14.6962 17.2669L14.3906 16.7606L10.4531 10.1981C10.7729 9.87175 11.129 9.58301 11.5144 9.33748C11.6644 9.24185 11.82 9.14998 11.9794 9.07123L16.0162 15.8062L16.2037 16.1137L16.9537 17.3775L17.16 17.7187L17.1713 17.73Z",
+                fill: "#B3EEFF"
+            }), l.jsx("path", {
+                d: "M25.693 8.38123L24.4236 9.77248L17.9586 16.8487L17.1655 17.7187L17.1318 17.7544L16.2036 18.7725L16.1999 18.7687L15.9205 18.5062L14.803 17.4543L14.6455 17.3081L14.6868 17.2612L14.9586 16.9631L16.0161 15.8062L16.0836 15.7312L22.798 8.38123H25.693Z",
+                fill: "#B3EEFF"
+            }), l.jsx("path", {
+                d: "M37.806 10.4119L34.1816 16.4437L33.8779 16.95L33.7635 17.1375L33.0004 18.4162L32.6422 18.1875L31.4329 17.4375L31.3916 17.4112V17.4L31.6035 17.0625L32.3535 15.7987L32.541 15.4912L36.3247 9.20624C36.3885 9.24374 36.4541 9.28311 36.5122 9.32436C36.992 9.62491 37.4274 9.99094 37.806 10.4119V10.4119Z",
+                fill: "#B3EEFF"
+            }), l.jsx("path", {
+                d: "M33.9168 16.995L33.763 17.1412L32.6418 18.195L32.3624 18.4575L32.3587 18.4612L31.4324 17.4431L31.3987 17.4075L30.6055 16.5375L24.4237 9.77248L23.1543 8.38123H26.0493L32.4768 15.42L32.5462 15.495L33.6037 16.6518L33.8774 16.95L33.9168 16.995Z",
+                fill: "#B3EEFF"
+            }), l.jsx("g", {
+                style: {
+                    mixBlendMode: "overlay"
+                },
+                opacity: "0.5",
+                children: l.jsx("path", {
+                    d: "M41.7907 18.81C41.7302 18.9439 41.6534 19.0699 41.562 19.185L26.8245 38.2294C26.4413 38.7296 25.9311 39.1181 25.347 39.3544C25.2165 39.4086 25.0824 39.4537 24.9457 39.4894C24.6814 39.5615 24.4096 39.6031 24.1357 39.6131V8.38123H33.2707C33.6349 8.38106 33.9983 8.41432 34.3564 8.4806C35.0506 8.60554 35.7175 8.85113 36.327 9.20623L36.5145 9.32435C36.9922 9.6254 37.4257 9.99141 37.8026 10.4119C38.0887 10.7359 38.3401 11.0891 38.5526 11.4656L41.7064 17.0344C41.7192 17.0544 41.7299 17.0758 41.7382 17.0981C41.8778 17.3603 41.9551 17.6511 41.9642 17.9479C41.9733 18.2448 41.914 18.5397 41.7907 18.81V18.81Z",
+                    fill: "black"
+                })
+            })]
+        }), l.jsx("defs", {
+            children: l.jsx("clipPath", {
+                id: "clip0_1843_115847",
+                children: l.jsx("rect", {
+                    width: "48",
+                    height: "48",
+                    fill: "white"
+                })
+            })
+        })]
+    })
+}
+
+function ta(i) {
+    return l.jsxs("svg", {
+        width: 48,
+        height: 48,
+        fill: "none",
+        xmlns: "http://www.w3.org/2000/svg",
+        viewBox: "0 0 48 48",
+        ...i,
+        children: [l.jsxs("g", {
+            clipPath: "url(#clip0_456_5136)",
+            children: [l.jsx("path", {
+                opacity: "0.2",
+                d: "M26.7891 40.022C33.077 34.2156 33.7202 24.6851 28.2258 18.735C22.7314 12.7849 13.1799 12.6684 6.89205 18.4748C0.604167 24.2811 -0.0390474 33.8116 5.45538 39.7617C10.9498 45.7118 20.5013 45.8283 26.7891 40.022Z",
+                fill: "#3994FF"
+            }), l.jsx("path", {
+                opacity: "0.2",
+                d: "M41.6428 34.0476C48.1269 28.06 47.6199 16.9647 40.5104 9.2656C33.4009 1.56647 22.381 0.179001 15.8969 6.1666C9.4127 12.1542 9.91966 23.2495 17.0292 30.9486C24.1387 38.6478 35.1586 40.0352 41.6428 34.0476Z",
+                fill: "#3994FF"
+            }), l.jsx("path", {
+                d: "M40.5005 15.06V21.48C40.5005 22.5029 40.0942 23.4839 39.3709 24.2072C38.6476 24.9305 37.6665 25.3369 36.6436 25.3369H10.5511C10.0445 25.3371 9.54275 25.2375 9.07459 25.0438C8.60644 24.8501 8.18104 24.5661 7.8227 24.2079C7.46436 23.8497 7.18009 23.4245 6.98615 22.9564C6.79221 22.4883 6.69238 21.9867 6.69238 21.48V15.06C6.69238 14.5534 6.79221 14.0517 6.98615 13.5836C7.18009 13.1155 7.46436 12.6903 7.8227 12.3321C8.18104 11.9739 8.60644 11.6899 9.07459 11.4962C9.54275 11.3025 10.0445 11.2029 10.5511 11.2031H36.6418C37.1484 11.2029 37.6501 11.3025 38.1183 11.4962C38.5865 11.6899 39.0118 11.9739 39.3702 12.3321C39.7285 12.6903 40.0128 13.1155 40.2067 13.5836C40.4007 14.0517 40.5005 14.5534 40.5005 15.06Z",
+                fill: "#5ACFF5"
+            }), l.jsx("g", {
+                style: {
+                    mixBlendMode: "overlay"
+                },
+                opacity: "0.5",
+                children: l.jsx("path", {
+                    d: "M40.5004 15.06V21.48C40.5004 22.5029 40.094 23.4839 39.3707 24.2072C38.6474 24.9305 37.6664 25.3369 36.6435 25.3369H23.6348V11.2031H36.6416C37.1483 11.2029 37.65 11.3025 38.1182 11.4962C38.5863 11.6899 39.0117 11.9739 39.3701 12.3321C39.7284 12.6903 40.0127 13.1155 40.2066 13.5836C40.4006 14.0517 40.5004 14.5534 40.5004 15.06Z",
+                    fill: "black"
+                })
+            }), l.jsx("path", {
+                d: "M38.1076 12.8719V23.7375C38.1078 24.0728 38.042 24.4048 37.9138 24.7146C37.7857 25.0245 37.5978 25.306 37.3608 25.5432C37.1238 25.7803 36.8424 25.9685 36.5327 26.0968C36.2229 26.2252 35.891 26.2913 35.5557 26.2913H11.5763C11.241 26.2913 10.909 26.2252 10.5993 26.0968C10.2896 25.9685 10.0082 25.7803 9.77119 25.5432C9.5342 25.306 9.34627 25.0245 9.21814 24.7146C9.09 24.4048 9.02418 24.0728 9.02443 23.7375V12.8719C9.02344 12.5361 9.08872 12.2035 9.21652 11.893C9.34432 11.5825 9.53213 11.3003 9.7692 11.0626C10.0063 10.8248 10.2879 10.6362 10.598 10.5075C10.9081 10.3788 11.2406 10.3125 11.5763 10.3125H35.5557C35.6119 10.3125 35.6682 10.3125 35.7244 10.3125C36.373 10.355 36.9809 10.6436 37.4238 11.1193C37.8668 11.595 38.1113 12.2219 38.1076 12.8719Z",
+                fill: "#B3EEFF"
+            }), l.jsx("g", {
+                style: {
+                    mixBlendMode: "overlay"
+                },
+                opacity: "0.5",
+                children: l.jsx("path", {
+                    d: "M38.108 12.8719V23.7375C38.1083 24.0728 38.0425 24.4048 37.9143 24.7146C37.7862 25.0245 37.5983 25.306 37.3613 25.5432C37.1243 25.7803 36.8429 25.9685 36.5332 26.0968C36.2234 26.2252 35.8914 26.2912 35.5562 26.2912H23.5918V10.3256H35.7249C36.3712 10.368 36.9772 10.6548 37.4198 11.1277C37.8624 11.6006 38.1085 12.2242 38.108 12.8719Z",
+                    fill: "black"
+                })
+            }), l.jsx("path", {
+                d: "M21.5625 26.2856H25.62V38.6606C25.6195 39.1977 25.4061 39.7127 25.0265 40.0926C24.6469 40.4726 24.1321 40.6865 23.595 40.6875C23.3278 40.688 23.0631 40.6357 22.8162 40.5336C22.5692 40.4315 22.3449 40.2817 22.156 40.0926C21.9672 39.9036 21.8175 39.6791 21.7157 39.4321C21.6138 39.1851 21.5618 38.9203 21.5625 38.6531V26.2781V26.2856Z",
+                fill: "#5ACFF5"
+            }), l.jsx("g", {
+                style: {
+                    mixBlendMode: "overlay"
+                },
+                opacity: "0.5",
+                children: l.jsx("path", {
+                    d: "M25.5983 26.2856V38.8256C25.5983 39.3179 25.4027 39.7901 25.0546 40.1382C24.7065 40.4863 24.2343 40.6819 23.742 40.6819H23.5039V26.2856H25.5983Z",
+                    fill: "black"
+                })
+            })]
+        }), l.jsx("defs", {
+            children: l.jsx("clipPath", {
+                id: "clip0_456_5136",
+                children: l.jsx("rect", {
+                    width: "48",
+                    height: "48",
+                    fill: "white"
+                })
+            })
+        })]
+    })
+}
+Ri.propTypes = {
+    main: i.string
+}, Ri.defaultProps = {
+    main: a
+}, bi.propTypes = {
+    main: i.string
+}, bi.defaultProps = {
+    main: a
+}, Si.propTypes = {
+    main: i.string
+}, Si.defaultProps = {
+    main: a
+}, Ii.propTypes = {
+    main: i.string
+}, Ii.defaultProps = {
+    main: a
+}, Oi.propTypes = {
+    main: i.string
+}, Oi.defaultProps = {
+    main: a
+}, Gi.propTypes = {
+    main: i.string
+}, Gi.defaultProps = {
+    main: a
+}, Ni.propTypes = {
+    main: i.string
+}, Ni.defaultProps = {
+    main: a
+}, Ui.propTypes = {
+    main: i.string
+}, Ui.defaultProps = {
+    main: a
+}, Xi.propTypes = {
+    main: i.string
+}, Xi.defaultProps = {
+    main: a
+}, Yi.propTypes = {
+    main: i.string
+}, Yi.defaultProps = {
+    main: a
+}, Ki.propTypes = {
+    main: i.string
+}, Ki.defaultProps = {
+    main: a
+}, Qi.propTypes = {
+    main: i.string
+}, Qi.defaultProps = {
+    main: a
+}, qi.propTypes = {
+    main: i.string
+}, qi.defaultProps = {
+    main: a
+};
+
+function sa(i) {
+    return l.jsxs("svg", {
+        width: 48,
+        height: 48,
+        fill: "none",
+        xmlns: "http://www.w3.org/2000/svg",
+        viewBox: "0 0 48 48",
+        ...i,
+        children: [l.jsxs("g", {
+            clipPath: "url(#clip0_444_1353)",
+            children: [l.jsx("path", {
+                opacity: "0.2",
+                d: "M37.2504 31.7687C43.9828 28.2834 46.7669 20.2932 43.4686 13.9221C40.1704 7.55102 32.0389 5.21165 25.3064 8.69697C18.574 12.1823 15.7899 20.1725 19.0882 26.5435C22.3864 32.9146 30.5179 35.254 37.2504 31.7687Z",
+                fill: "#3994FF"
+            }), l.jsx("path", {
+                opacity: "0.2",
+                d: "M26.6698 40.1712C33.6129 36.5768 35.7815 26.9797 31.5135 18.7354C27.2455 10.491 18.1572 6.72149 11.2141 10.3158C4.27105 13.9102 2.10246 23.5073 6.37043 31.7516C10.6384 39.9959 19.7268 43.7655 26.6698 40.1712Z",
+                fill: "#3994FF"
+            }), l.jsx("path", {
+                d: "M36.3485 7.96312L18.911 10.47C18.2247 10.5696 17.5972 10.913 17.1433 11.4374C16.6895 11.9618 16.4397 12.6321 16.4397 13.3256V30.975C15.7686 30.7858 15.0745 30.6905 14.3772 30.6919C11.0547 30.6919 8.36035 32.79 8.36035 35.3794C8.36035 37.9687 11.0547 40.0669 14.3772 40.0669C17.666 40.0669 20.336 38.0044 20.3922 35.4581H20.4166V18.5194L35.8329 16.3012V28.9575C35.1118 28.7358 34.3616 28.6239 33.6072 28.6256C30.2847 28.6256 27.5904 30.7237 27.5904 33.3131C27.5904 35.9025 30.2847 38.0006 33.6072 38.0006C36.896 38.0006 39.566 35.9381 39.6222 33.3919H39.6466V10.8169C39.6466 10.4032 39.5576 9.99429 39.3856 9.61803C39.2136 9.24177 38.9626 8.90692 38.6498 8.63622C38.3369 8.36551 37.9695 8.1653 37.5724 8.04916C37.1753 7.93302 36.7579 7.90368 36.3485 7.96312Z",
+                fill: "#5ACFF5"
+            }), l.jsx("g", {
+                style: {
+                    mixBlendMode: "overlay"
+                },
+                opacity: "0.5",
+                children: l.jsx("path", {
+                    d: "M36.3483 7.96313L27.2471 9.27563V17.535L35.8289 16.3013V28.9575C35.1079 28.7358 34.3576 28.6239 33.6033 28.6256C30.2808 28.6256 27.5864 30.7238 27.5864 33.3131C27.5864 35.9025 30.2808 38.0006 33.6033 38.0006C36.8921 38.0006 39.5621 35.9381 39.6183 33.3919H39.6427V10.8169C39.6426 10.4035 39.5537 9.99504 39.3819 9.61907C39.2101 9.24311 38.9595 8.90847 38.6471 8.63783C38.3347 8.36719 37.9677 8.16688 37.5711 8.05047C37.1745 7.93406 36.7575 7.90427 36.3483 7.96313Z",
+                    fill: "black"
+                })
+            })]
+        }), l.jsx("defs", {
+            children: l.jsx("clipPath", {
+                id: "clip0_444_1353",
+                children: l.jsx("rect", {
+                    width: "48",
+                    height: "48",
+                    fill: "white"
+                })
+            })
+        })]
+    })
+}
+
+function na(i) {
+    return l.jsxs("svg", {
+        width: 48,
+        height: 48,
+        fill: "none",
+        xmlns: "http://www.w3.org/2000/svg",
+        viewBox: "0 0 48 48",
+        ...i,
+        children: [l.jsxs("g", {
+            clipPath: "url(#clip0_444_1352)",
+            children: [l.jsx("path", {
+                opacity: "0.2",
+                d: "M38.18 34.2334C45.6243 30.3796 48.7028 21.545 45.0561 14.5008C41.4094 7.45653 32.4184 4.87017 24.9741 8.72396C17.5299 12.5778 14.4514 21.4124 18.0981 28.4566C21.7448 35.5008 30.7358 38.0872 38.18 34.2334Z",
+                fill: "#3994FF"
+            }), l.jsx("path", {
+                opacity: "0.2",
+                d: "M26.4818 43.5244C34.1587 39.5502 36.5568 28.9391 31.8379 19.8239C27.1191 10.7087 17.0704 6.54112 9.39346 10.5154C1.71654 14.4896 -0.681479 25.1007 4.03734 34.2159C8.75615 43.3311 18.8049 47.4987 26.4818 43.5244Z",
+                fill: "#3994FF"
+            }), l.jsx("path", {
+                d: "M31.7115 28.3594V30.7275C31.7095 32.225 31.1136 33.6606 30.0546 34.7194C28.9955 35.7781 27.5597 36.3735 26.0621 36.375H9.70277C8.95999 36.3752 8.22444 36.2292 7.53812 35.9451C6.85181 35.661 6.22819 35.2445 5.70287 34.7194C5.17756 34.1942 4.76085 33.5707 4.47654 32.8845C4.19223 32.1983 4.0459 31.4628 4.0459 30.72V28.3594C4.0459 27.6166 4.19223 26.8811 4.47654 26.1949C4.76085 25.5087 5.17756 24.8852 5.70287 24.36C6.22819 23.8349 6.85181 23.4184 7.53812 23.1343C8.22444 22.8502 8.95999 22.7041 9.70277 22.7044H26.0621C27.561 22.7059 28.9979 23.3023 30.0572 24.3627C31.1165 25.423 31.7115 26.8606 31.7115 28.3594Z",
+                fill: "#5ACFF5"
+            }), l.jsx("path", {
+                d: "M9.6243 36.2119L8.06055 41.3438L13.8112 36.2119H9.6243Z",
+                fill: "#5ACFF5"
+            }), l.jsx("g", {
+                style: {
+                    mixBlendMode: "overlay"
+                },
+                opacity: "0.5",
+                children: l.jsx("path", {
+                    d: "M31.7119 28.3594V30.7275C31.7099 32.225 31.114 33.6606 30.0549 34.7194C28.9958 35.7781 27.56 36.3735 26.0625 36.375H17.8125V22.7044H26.0625C27.5613 22.7059 28.9983 23.3023 30.0576 24.3627C31.1169 25.423 31.7119 26.8606 31.7119 28.3594Z",
+                    fill: "black"
+                })
+            }), l.jsx("path", {
+                d: "M14.2479 30.7988C14.9231 30.7988 15.4704 30.2514 15.4704 29.5763C15.4704 28.9011 14.9231 28.3538 14.2479 28.3538C13.5727 28.3538 13.0254 28.9011 13.0254 29.5763C13.0254 30.2514 13.5727 30.7988 14.2479 30.7988Z",
+                fill: "white"
+            }), l.jsx("path", {
+                d: "M17.9159 30.7988C18.591 30.7988 19.1384 30.2514 19.1384 29.5763C19.1384 28.9011 18.591 28.3538 17.9159 28.3538C17.2407 28.3538 16.6934 28.9011 16.6934 29.5763C16.6934 30.2514 17.2407 30.7988 17.9159 30.7988Z",
+                fill: "white"
+            }), l.jsx("path", {
+                d: "M21.5829 30.7988C22.258 30.7988 22.8054 30.2514 22.8054 29.5763C22.8054 28.9011 22.258 28.3538 21.5829 28.3538C20.9077 28.3538 20.3604 28.9011 20.3604 29.5763C20.3604 30.2514 20.9077 30.7988 21.5829 30.7988Z",
+                fill: "white"
+            }), l.jsx("path", {
+                d: "M44.8126 18.24V20.625C44.8123 22.3507 44.1585 24.0122 42.9827 25.2753C41.8069 26.5385 40.1963 27.3094 38.4751 27.4331L40.5545 32.9306L32.9326 27.4519H14.0026C12.1918 27.4519 10.4552 26.7327 9.17459 25.4524C7.894 24.1722 7.17433 22.4358 7.17383 20.625V18.24C7.17433 16.4291 7.89394 14.6924 9.17447 13.4119C10.455 12.1314 12.1916 11.4118 14.0026 11.4113H37.9838C39.7949 11.4113 41.5318 12.1307 42.8125 13.4113C44.0931 14.692 44.8126 16.4289 44.8126 18.24Z",
+                fill: "#B3EEFF"
+            }), l.jsx("g", {
+                style: {
+                    mixBlendMode: "overlay"
+                },
+                opacity: "0.5",
+                children: l.jsx("path", {
+                    d: "M44.8125 18.24V20.625C44.8122 22.3507 44.1584 24.0122 42.9826 25.2753C41.8068 26.5385 40.1962 27.3094 38.475 27.4331L40.5544 32.9306L32.9325 27.4519H25.875V11.4113H37.9856C39.7964 11.4118 41.5328 12.1314 42.8131 13.412C44.0933 14.6926 44.8125 16.4292 44.8125 18.24Z",
+                    fill: "black"
+                })
+            }), l.jsx("path", {
+                d: "M13.9818 19.4456C14.7274 19.4456 15.3318 18.5314 15.3318 17.4038C15.3318 16.2761 14.7274 15.3619 13.9818 15.3619C13.2363 15.3619 12.6318 16.2761 12.6318 17.4038C12.6318 18.5314 13.2363 19.4456 13.9818 19.4456Z",
+                fill: "#5ACFF5"
+            }), l.jsx("path", {
+                d: "M13.9821 19.4467C14.3549 18.801 13.8654 17.8205 12.8888 17.2566C11.9122 16.6928 10.8183 16.7591 10.4455 17.4048C10.0727 18.0505 10.5622 19.0311 11.5388 19.5949C12.5154 20.1588 13.6093 20.0924 13.9821 19.4467Z",
+                fill: "#5ACFF5"
+            }), l.jsx("path", {
+                d: "M12.8878 21.6367C13.8645 21.0729 14.354 20.0923 13.9812 19.4466C13.6084 18.8009 12.5145 18.7346 11.5378 19.2984C10.5612 19.8623 10.0717 20.8428 10.4445 21.4885C10.8173 22.1342 11.9112 22.2005 12.8878 21.6367Z",
+                fill: "#5ACFF5"
+            }), l.jsx("path", {
+                d: "M13.9818 23.5313C14.7274 23.5313 15.3318 22.6171 15.3318 21.4894C15.3318 20.3617 14.7274 19.4475 13.9818 19.4475C13.2363 19.4475 12.6318 20.3617 12.6318 21.4894C12.6318 22.6171 13.2363 23.5313 13.9818 23.5313Z",
+                fill: "#5ACFF5"
+            }), l.jsx("path", {
+                d: "M17.5192 21.4892C17.892 20.8435 17.4025 19.8629 16.4259 19.2991C15.4493 18.7352 14.3554 18.8016 13.9826 19.4473C13.6098 20.093 14.0993 21.0735 15.0759 21.6374C16.0525 22.2012 17.1465 22.1349 17.5192 21.4892Z",
+                fill: "#5ACFF5"
+            }), l.jsx("path", {
+                d: "M16.425 19.5956C17.4016 19.0317 17.8911 18.0512 17.5183 17.4055C17.1455 16.7598 16.0516 16.6934 15.075 17.2573C14.0983 17.8211 13.6088 18.8017 13.9816 19.4474C14.3544 20.0931 15.4483 20.1594 16.425 19.5956Z",
+                fill: "#5ACFF5"
+            }), l.jsx("path", {
+                d: "M14.0157 20.9681C14.8565 20.9681 15.5382 20.2865 15.5382 19.4456C15.5382 18.6048 14.8565 17.9231 14.0157 17.9231C13.1748 17.9231 12.4932 18.6048 12.4932 19.4456C12.4932 20.2865 13.1748 20.9681 14.0157 20.9681Z",
+                fill: "#B3EEFF"
+            }), l.jsx("path", {
+                d: "M13.7773 18.7905C13.967 18.6009 14.0109 18.3373 13.8754 18.2019C13.74 18.0664 13.4764 18.1103 13.2867 18.3C13.0971 18.4896 13.0532 18.7532 13.1886 18.8887C13.3241 19.0241 13.5877 18.9802 13.7773 18.7905Z",
+                fill: "white"
+            }), l.jsx("path", {
+                d: "M13.046 19.515C13.161 19.515 13.2541 19.4218 13.2541 19.3069C13.2541 19.1919 13.161 19.0988 13.046 19.0988C12.9311 19.0988 12.8379 19.1919 12.8379 19.3069C12.8379 19.4218 12.9311 19.515 13.046 19.515Z",
+                fill: "white"
+            }), l.jsx("g", {
+                style: {
+                    mixBlendMode: "overlay"
+                },
+                opacity: "0.5",
+                children: l.jsx("path", {
+                    d: "M17.5196 21.4894C17.1764 22.08 16.2258 22.185 15.3183 21.7613C15.2302 22.7606 14.6658 23.5313 13.9814 23.5313V15.3619C14.6658 15.3619 15.2302 16.1325 15.3183 17.13C16.2258 16.7081 17.1764 16.8113 17.5196 17.4019C17.8627 17.9925 17.4746 18.87 16.6533 19.4456C17.4746 20.0213 17.8608 20.8969 17.5196 21.4894Z",
+                    fill: "black"
+                })
+            }), l.jsx("path", {
+                d: "M28.5895 15.6019C28.119 15.3988 27.5932 15.3624 27.0991 15.4988C26.6051 15.6351 26.1724 15.9361 25.8727 16.3519C25.5729 15.9361 25.1403 15.6351 24.6462 15.4988C24.1522 15.3624 23.6264 15.3988 23.1558 15.6019C22.9004 15.7039 22.6679 15.856 22.4721 16.0492C22.2763 16.2424 22.1212 16.4728 22.0158 16.7269C21.8004 17.2312 21.7766 17.7968 21.9488 18.3174C22.1211 18.838 22.4775 19.2778 22.9512 19.5541C23.4249 19.8304 23.9831 19.9243 24.5211 19.818C25.0591 19.7117 25.5397 19.4126 25.8727 18.9769C26.2056 19.4126 26.6863 19.7117 27.2242 19.818C27.7622 19.9243 28.3205 19.8304 28.7941 19.5541C29.2678 19.2778 29.6242 18.838 29.7965 18.3174C29.9687 17.7968 29.9449 17.2312 29.7295 16.7269C29.625 16.4723 29.4701 16.2415 29.2742 16.0482C29.0783 15.8549 28.8455 15.7031 28.5895 15.6019Z",
+                fill: "#5ACFF5"
+            }), l.jsx("path", {
+                d: "M22.2207 18.9375H29.5332L26.0832 23.3606C26.0557 23.3961 26.0204 23.4247 25.9801 23.4445C25.9398 23.4642 25.8956 23.4744 25.8507 23.4744C25.8058 23.4744 25.7616 23.4642 25.7213 23.4445C25.681 23.4247 25.6457 23.3961 25.6182 23.3606L22.2207 18.9375Z",
+                fill: "#5ACFF5"
+            }), l.jsx("g", {
+                style: {
+                    mixBlendMode: "overlay"
+                },
+                opacity: "0.5",
+                children: l.jsx("path", {
+                    d: "M29.3663 19.14L26.0757 23.3569C26.0517 23.3877 26.0218 23.4134 25.9876 23.4324C25.9535 23.4514 25.9158 23.4634 25.877 23.4675V16.3538C26.1765 15.9388 26.6085 15.6384 27.1017 15.5021C27.595 15.3657 28.12 15.4016 28.5901 15.6038C28.8461 15.7049 29.079 15.8566 29.2749 16.0499C29.4708 16.2432 29.6256 16.4741 29.7301 16.7288C29.9044 17.1238 29.9627 17.5602 29.8983 17.9872C29.8339 18.4141 29.6494 18.814 29.3663 19.14Z",
+                    fill: "black"
+                })
+            }), l.jsx("path", {
+                d: "M41.6641 19.3481L41.3135 22.5356C41.2891 22.7696 41.1776 22.9859 41.0011 23.1415C40.8247 23.2971 40.5962 23.3807 40.361 23.3756L37.3122 23.3381L36.5172 23.325V18.9375H36.2979L36.5172 18.7744V18.6956H36.6185L36.6897 18.645L37.0197 18.4575C37.1716 18.3675 37.3647 18.255 37.5729 18.1275C38.051 17.8331 38.6004 17.6137 38.9266 17.3925C39.2866 17.1506 39.2847 16.7381 39.3429 16.3669C39.401 15.9956 39.3991 15.48 39.5135 15.3244C39.6822 15.2212 40.3666 15.1894 40.4754 15.7406C40.5841 16.2919 40.646 16.8375 40.4754 17.3587C40.3756 17.7366 40.203 18.0914 39.9672 18.4031C40.0572 18.5418 40.1934 18.6441 40.3516 18.6919H41.0772C41.1607 18.6907 41.2434 18.7074 41.3198 18.7409C41.3963 18.7745 41.4646 18.824 41.5203 18.8862C41.5759 18.9484 41.6175 19.0219 41.6423 19.1015C41.6672 19.1812 41.6746 19.2653 41.6641 19.3481Z",
+                fill: "#5ACFF5"
+            }), l.jsx("g", {
+                style: {
+                    mixBlendMode: "overlay"
+                },
+                opacity: "0.5",
+                children: l.jsx("path", {
+                    d: "M37.4812 19.1531V22.875C37.4803 23.0433 37.4229 23.2064 37.3181 23.3381L36.5231 23.325V18.9375H36.3037L36.5231 18.7744V18.6956H36.6243L36.6956 18.645L37.0256 18.4575C37.1617 18.5156 37.2776 18.6126 37.3586 18.7364C37.4397 18.8602 37.4824 19.0052 37.4812 19.1531Z",
+                    fill: "black"
+                })
+            }), l.jsx("path", {
+                d: "M36.0732 18.4088H34.8469C34.4358 18.4088 34.1025 18.742 34.1025 19.1531V22.875C34.1025 23.2861 34.4358 23.6194 34.8469 23.6194H36.0732C36.4843 23.6194 36.8175 23.2861 36.8175 22.875V19.1531C36.8175 18.742 36.4843 18.4088 36.0732 18.4088Z",
+                fill: "#5ACFF5"
+            })]
+        }), l.jsx("defs", {
+            children: l.jsx("clipPath", {
+                id: "clip0_444_1352",
+                children: l.jsx("rect", {
+                    width: "48",
+                    height: "48",
+                    fill: "white"
+                })
+            })
+        })]
+    })
+}
+
+function ea(i) {
+    return l.jsxs("svg", {
+        width: 48,
+        height: 48,
+        fill: "none",
+        xmlns: "http://www.w3.org/2000/svg",
+        viewBox: "0 0 48 48",
+        ...i,
+        children: [l.jsxs("g", {
+            clipPath: "url(#clip0_444_1361)",
+            children: [l.jsx("path", {
+                opacity: "0.2",
+                d: "M37.6156 28.8992C44.3481 25.4139 47.1321 17.4237 43.8339 11.0526C40.5357 4.68157 32.4042 2.34221 25.6717 5.82752C18.9392 9.31284 16.1552 17.303 19.4534 23.6741C22.7516 30.0452 30.8831 32.3845 37.6156 28.8992Z",
+                fill: "#3994FF"
+            }), l.jsx("path", {
+                opacity: "0.2",
+                d: "M27.036 37.3001C33.9791 33.7057 36.1477 24.1086 31.8797 15.8643C27.6118 7.61995 18.5234 3.85039 11.5803 7.44473C4.63726 11.0391 2.46867 20.6362 6.73665 28.8805C11.0046 37.1248 20.093 40.8944 27.036 37.3001Z",
+                fill: "#3994FF"
+            }), l.jsx("path", {
+                d: "M21.5454 30.9019H26.4092V40.3013C26.4092 40.9477 26.1524 41.5677 25.6953 42.0248C25.2381 42.482 24.6181 42.7388 23.9717 42.7388C23.3252 42.7388 22.7052 42.482 22.2481 42.0248C21.791 41.5677 21.5342 40.9477 21.5342 40.3013V30.9019H21.5454Z",
+                fill: "#5ACFF5"
+            }), l.jsx("g", {
+                style: {
+                    mixBlendMode: "overlay"
+                },
+                opacity: "0.5",
+                children: l.jsx("path", {
+                    d: "M26.4093 30.9019V40.2994C26.414 40.615 26.3564 40.9284 26.2399 41.2217C26.1235 41.5151 25.9503 41.7826 25.7304 42.0089C25.5104 42.2353 25.2481 42.4161 24.9582 42.541C24.6683 42.6659 24.3567 42.7325 24.0411 42.7369H24.0205V30.9019H26.4093Z",
+                    fill: "black"
+                })
+            }), l.jsx("g", {
+                style: {
+                    mixBlendMode: "overlay"
+                },
+                opacity: "0.6",
+                children: l.jsx("path", {
+                    d: "M21.5454 31.8206H26.4092V32.6344C26.4092 32.7338 26.3697 32.8292 26.2993 32.8995C26.229 32.9699 26.1336 33.0094 26.0342 33.0094H21.9092C21.8097 33.0094 21.7143 32.9699 21.644 32.8995C21.5737 32.8292 21.5342 32.7338 21.5342 32.6344V31.8206H21.5454Z",
+                    fill: "black"
+                })
+            }), l.jsx("path", {
+                d: "M20.6475 30.1125H27.3506V30.7238C27.3506 31.0848 27.2072 31.431 26.9519 31.6863C26.6966 31.9416 26.3504 32.085 25.9893 32.085H22.0087C21.6477 32.085 21.3014 31.9416 21.0462 31.6863C20.7909 31.431 20.6475 31.0848 20.6475 30.7238V30.1125Z",
+                fill: "#5ACFF5"
+            }), l.jsx("g", {
+                style: {
+                    mixBlendMode: "overlay"
+                },
+                opacity: "0.5",
+                children: l.jsx("path", {
+                    d: "M27.3524 30.1125V30.7238C27.3524 31.0848 27.209 31.431 26.9537 31.6863C26.6984 31.9416 26.3522 32.085 25.9911 32.085H24.0205V30.1125H27.3524Z",
+                    fill: "black"
+                })
+            }), l.jsx("path", {
+                d: "M26.092 5.26877H21.907C18.1625 5.26877 15.127 8.30428 15.127 12.0488V23.595C15.127 27.3395 18.1625 30.375 21.907 30.375H26.092C29.8364 30.375 32.872 27.3395 32.872 23.595V12.0488C32.872 8.30428 29.8364 5.26877 26.092 5.26877Z",
+                fill: "#B3EEFF"
+            }), l.jsx("path", {
+                d: "M20.8728 11.3569H16.984C16.5263 11.3569 16.1553 11.7279 16.1553 12.1856V12.6225C16.1553 13.0802 16.5263 13.4512 16.984 13.4512H20.8728C21.3305 13.4512 21.7015 13.0802 21.7015 12.6225V12.1856C21.7015 11.7279 21.3305 11.3569 20.8728 11.3569Z",
+                fill: "#5ACFF5"
+            }), l.jsx("path", {
+                d: "M24.3883 11.3569H23.6946C23.2058 11.3569 22.8096 11.7531 22.8096 12.2419V12.5662C22.8096 13.055 23.2058 13.4512 23.6946 13.4512H24.3883C24.8771 13.4512 25.2733 13.055 25.2733 12.5662V12.2419C25.2733 11.7531 24.8771 11.3569 24.3883 11.3569Z",
+                fill: "#5ACFF5"
+            }), l.jsx("path", {
+                d: "M31.1003 11.3569H27.2116C26.7539 11.3569 26.3828 11.7279 26.3828 12.1856V12.6225C26.3828 13.0802 26.7539 13.4512 27.2116 13.4512H31.1003C31.558 13.4512 31.9291 13.0802 31.9291 12.6225V12.1856C31.9291 11.7279 31.558 11.3569 31.1003 11.3569Z",
+                fill: "#5ACFF5"
+            }), l.jsx("path", {
+                d: "M20.8728 16.9012H16.984C16.5263 16.9012 16.1553 17.2723 16.1553 17.73V18.1669C16.1553 18.6246 16.5263 18.9956 16.984 18.9956H20.8728C21.3305 18.9956 21.7015 18.6246 21.7015 18.1669V17.73C21.7015 17.2723 21.3305 16.9012 20.8728 16.9012Z",
+                fill: "#5ACFF5"
+            }), l.jsx("path", {
+                d: "M24.3883 16.9012H23.6946C23.2058 16.9012 22.8096 17.2975 22.8096 17.7862V18.1106C22.8096 18.5994 23.2058 18.9956 23.6946 18.9956H24.3883C24.8771 18.9956 25.2733 18.5994 25.2733 18.1106V17.7862C25.2733 17.2975 24.8771 16.9012 24.3883 16.9012Z",
+                fill: "#5ACFF5"
+            }), l.jsx("path", {
+                d: "M31.1003 16.9012H27.2116C26.7539 16.9012 26.3828 17.2723 26.3828 17.73V18.1669C26.3828 18.6246 26.7539 18.9956 27.2116 18.9956H31.1003C31.558 18.9956 31.9291 18.6246 31.9291 18.1669V17.73C31.9291 17.2723 31.558 16.9012 31.1003 16.9012Z",
+                fill: "#5ACFF5"
+            }), l.jsx("path", {
+                d: "M20.8728 22.3238H16.984C16.5263 22.3238 16.1553 22.6948 16.1553 23.1525V23.5894C16.1553 24.0471 16.5263 24.4181 16.984 24.4181H20.8728C21.3305 24.4181 21.7015 24.0471 21.7015 23.5894V23.1525C21.7015 22.6948 21.3305 22.3238 20.8728 22.3238Z",
+                fill: "#5ACFF5"
+            }), l.jsx("path", {
+                d: "M24.3883 22.3238H23.6946C23.2058 22.3238 22.8096 22.72 22.8096 23.2088V23.5331C22.8096 24.0219 23.2058 24.4181 23.6946 24.4181H24.3883C24.8771 24.4181 25.2733 24.0219 25.2733 23.5331V23.2088C25.2733 22.72 24.8771 22.3238 24.3883 22.3238Z",
+                fill: "#5ACFF5"
+            }), l.jsx("path", {
+                d: "M31.1003 22.3238H27.2116C26.7539 22.3238 26.3828 22.6948 26.3828 23.1525V23.5894C26.3828 24.0471 26.7539 24.4181 27.2116 24.4181H31.1003C31.558 24.4181 31.9291 24.0471 31.9291 23.5894V23.1525C31.9291 22.6948 31.558 22.3238 31.1003 22.3238Z",
+                fill: "#5ACFF5"
+            }), l.jsx("g", {
+                style: {
+                    mixBlendMode: "overlay"
+                },
+                opacity: "0.5",
+                children: l.jsx("path", {
+                    d: "M32.8498 12.0487V23.595C32.8496 24.4859 32.6738 25.3681 32.3325 26.191C31.9912 27.014 31.4912 27.7616 30.8608 28.3913C30.2305 29.0209 29.4823 29.5202 28.6589 29.8605C27.8356 30.2009 26.9533 30.3757 26.0623 30.375H24.043V5.26874H26.0623C26.9533 5.268 27.8356 5.44281 28.6589 5.78318C29.4823 6.12356 30.2305 6.62282 30.8608 7.25245C31.4912 7.88208 31.9912 8.62974 32.3325 9.4527C32.6738 10.2757 32.8496 11.1578 32.8498 12.0487Z",
+                    fill: "black"
+                })
+            })]
+        }), l.jsx("defs", {
+            children: l.jsx("clipPath", {
+                id: "clip0_444_1361",
+                children: l.jsx("rect", {
+                    width: "48",
+                    height: "48",
+                    fill: "white"
+                })
+            })
+        })]
+    })
+}
+
+function ra(i) {
+    return l.jsxs("svg", {
+        width: 48,
+        height: 48,
+        fill: "none",
+        xmlns: "http://www.w3.org/2000/svg",
+        viewBox: "0 0 48 48",
+        ...i,
+        children: [l.jsxs("g", {
+            opacity: "0.2",
+            children: [l.jsx("path", {
+                d: "M23.4237 11.0625H15.47C14.9035 11.0625 14.4443 11.5217 14.4443 12.0881V13.4044C14.4443 13.9708 14.9035 14.43 15.47 14.43H23.4237C23.9901 14.43 24.4493 13.9708 24.4493 13.4044V12.0881C24.4493 11.5217 23.9901 11.0625 23.4237 11.0625Z",
+                fill: "#3994FF"
+            }), l.jsx("path", {
+                d: "M12.3975 11.0625H9.95629C9.38985 11.0625 8.93066 11.5217 8.93066 12.0881V13.4044C8.93066 13.9708 9.38985 14.43 9.95629 14.43H12.3975C12.964 14.43 13.4232 13.9708 13.4232 13.4044V12.0881C13.4232 11.5217 12.964 11.0625 12.3975 11.0625Z",
+                fill: "#3994FF"
+            }), l.jsx("path", {
+                d: "M23.4245 15.8644H11.387C10.8205 15.8644 10.3613 16.3236 10.3613 16.89V18.2063C10.3613 18.7727 10.8205 19.2319 11.387 19.2319H23.4245C23.9909 19.2319 24.4501 18.7727 24.4501 18.2063V16.89C24.4501 16.3236 23.9909 15.8644 23.4245 15.8644Z",
+                fill: "#3994FF"
+            }), l.jsx("path", {
+                d: "M7.90469 15.8644H3.83031C3.26388 15.8644 2.80469 16.3236 2.80469 16.89V18.2063C2.80469 18.7727 3.26388 19.2319 3.83031 19.2319H7.90469C8.47112 19.2319 8.93031 18.7727 8.93031 18.2063V16.89C8.93031 16.3236 8.47112 15.8644 7.90469 15.8644Z",
+                fill: "#3994FF"
+            }), l.jsx("path", {
+                d: "M23.2193 20.6681H15.47C14.9035 20.6681 14.4443 21.1273 14.4443 21.6937V23.01C14.4443 23.5764 14.9035 24.0356 15.47 24.0356H23.2193C23.7858 24.0356 24.245 23.5764 24.245 23.01V21.6937C24.245 21.1273 23.7858 20.6681 23.2193 20.6681Z",
+                fill: "#3994FF"
+            })]
+        }), l.jsxs("g", {
+            opacity: "0.2",
+            children: [l.jsx("path", {
+                d: "M23.5196 30.9281H31.4734C32.0398 30.9281 32.499 30.4689 32.499 29.9025V28.5862C32.499 28.0198 32.0398 27.5606 31.4734 27.5606H23.5196C22.9532 27.5606 22.494 28.0198 22.494 28.5862V29.9025C22.494 30.4689 22.9532 30.9281 23.5196 30.9281Z",
+                fill: "#3994FF"
+            }), l.jsx("path", {
+                d: "M34.5448 30.9281H36.9861C37.5525 30.9281 38.0117 30.4689 38.0117 29.9025V28.5862C38.0117 28.0198 37.5525 27.5606 36.9861 27.5606H34.5448C33.9784 27.5606 33.5192 28.0198 33.5192 28.5862V29.9025C33.5192 30.4689 33.9784 30.9281 34.5448 30.9281Z",
+                fill: "#3994FF"
+            }), l.jsx("path", {
+                d: "M21.4574 35.7337H33.4949C34.0613 35.7337 34.5205 35.2745 34.5205 34.7081V33.3919C34.5205 32.8254 34.0613 32.3662 33.4949 32.3662H21.4574C20.8909 32.3662 20.4318 32.8254 20.4318 33.3919V34.7081C20.4318 35.2745 20.8909 35.7337 21.4574 35.7337Z",
+                fill: "#3994FF"
+            }), l.jsx("path", {
+                d: "M36.9752 35.7337H41.0496C41.616 35.7337 42.0752 35.2745 42.0752 34.7081V33.3919C42.0752 32.8254 41.616 32.3662 41.0496 32.3662H36.9752C36.4088 32.3662 35.9496 32.8254 35.9496 33.3919V34.7081C35.9496 35.2745 36.4088 35.7337 36.9752 35.7337Z",
+                fill: "#3994FF"
+            }), l.jsx("path", {
+                d: "M28.974 40.1606H36.7234C37.2898 40.1606 37.749 39.7014 37.749 39.135V37.8187C37.749 37.2523 37.2898 36.7931 36.7234 36.7931H28.974C28.4076 36.7931 27.9484 37.2523 27.9484 37.8187V39.135C27.9484 39.7014 28.4076 40.1606 28.974 40.1606Z",
+                fill: "#3994FF"
+            })]
+        }), l.jsx("path", {
+            d: "M20.9727 26.0545L25.2078 28.2573L18.4852 41.1823C18.1998 41.7311 17.708 42.144 17.118 42.3302C16.5281 42.5165 15.8884 42.4607 15.3396 42.1753L15.2364 42.1216C14.6897 41.835 14.2789 41.3433 14.094 40.7544C13.9091 40.1654 13.9652 39.5271 14.2501 38.9795L20.9727 26.0545Z",
+            fill: "#5ACFF5"
+        }), l.jsx("g", {
+            style: {
+                mixBlendMode: "overlay"
+            },
+            opacity: "0.5",
+            children: l.jsx("path", {
+                d: "M25.204 28.2581L18.4821 41.1825C18.3408 41.4544 18.1474 41.6958 17.9128 41.8929C17.6782 42.09 17.407 42.2389 17.1149 42.3312C16.8227 42.4235 16.5152 42.4573 16.2099 42.4307C15.9047 42.4041 15.6077 42.3177 15.3359 42.1762L15.2871 42.15L23.0871 27.15L25.204 28.2581Z",
+                fill: "black"
+            })
+        }), l.jsx("path", {
+            d: "M27.2264 30.0956C33.3122 30.0956 38.2458 25.1621 38.2458 19.0763C38.2458 12.9904 33.3122 8.05688 27.2264 8.05688C21.1406 8.05688 16.207 12.9904 16.207 19.0763C16.207 25.1621 21.1406 30.0956 27.2264 30.0956Z",
+            fill: "#5ACFF5"
+        }), l.jsx("path", {
+            d: "M34.2659 22.7369C36.3421 18.7451 34.8726 13.8695 30.9838 11.8468C27.0949 9.82412 22.2593 11.4204 20.1831 15.4121C18.1069 19.4038 19.5764 24.2795 23.4652 26.3022C27.354 28.3248 32.1897 26.7286 34.2659 22.7369Z",
+            fill: "#B3EEFF"
+        }), l.jsx("g", {
+            style: {
+                mixBlendMode: "overlay"
+            },
+            opacity: "0.5",
+            children: l.jsx("path", {
+                d: "M37.0029 24.1631C35.6586 26.7474 33.3457 28.6943 30.5699 29.5779C27.7941 30.4616 24.7814 30.2102 22.1904 28.8787L32.3623 9.32812C34.9395 10.6855 36.8743 13.0081 37.744 15.788C38.6136 18.5679 38.3471 21.5791 37.0029 24.1631Z",
+                fill: "black"
+            })
+        }), l.jsx("path", {
+            d: "M26.3444 14.359C27.3029 14.1671 27.9845 13.5349 27.8668 12.947C27.7492 12.3591 26.8767 12.0381 25.9182 12.23C24.9597 12.4218 24.278 13.054 24.3957 13.6419C24.5134 14.2298 25.3858 14.5509 26.3444 14.359Z",
+            fill: "white"
+        }), l.jsx("path", {
+            d: "M23.3437 15.8813C23.7848 15.8813 24.1424 15.5236 24.1424 15.0825C24.1424 14.6414 23.7848 14.2838 23.3437 14.2838C22.9025 14.2838 22.5449 14.6414 22.5449 15.0825C22.5449 15.5236 22.9025 15.8813 23.3437 15.8813Z",
+            fill: "white"
+        })]
+    })
+}
+
+function ha(i) {
+    return l.jsxs("svg", {
+        width: 48,
+        height: 48,
+        fill: "none",
+        xmlns: "http://www.w3.org/2000/svg",
+        viewBox: "0 0 48 48",
+        ...i,
+        children: [l.jsx("path", {
+            opacity: "0.2",
+            d: "M38.0156 10.2563H4.40434C2.81272 10.2563 1.52246 11.5465 1.52246 13.1381V13.7494C1.52246 15.341 2.81272 16.6313 4.40434 16.6313H38.0156C39.6072 16.6313 40.8975 15.341 40.8975 13.7494V13.1381C40.8975 11.5465 39.6072 10.2563 38.0156 10.2563Z",
+            fill: "#3994FF"
+        }), l.jsx("path", {
+            opacity: "0.2",
+            d: "M43.4531 21.1313H9.84184C8.25022 21.1313 6.95996 22.4215 6.95996 24.0131V24.6244C6.95996 26.216 8.25022 27.5063 9.84184 27.5063H43.4531C45.0447 27.5063 46.335 26.216 46.335 24.6244V24.0131C46.335 22.4215 45.0447 21.1313 43.4531 21.1313Z",
+            fill: "#3994FF"
+        }), l.jsx("path", {
+            opacity: "0.2",
+            d: "M41.5781 32.0063H6.27934C4.68772 32.0063 3.39746 33.2965 3.39746 34.8881V35.4994C3.39746 37.091 4.68772 38.3813 6.27934 38.3813H41.5781C43.1697 38.3813 44.46 37.091 44.46 35.4994V34.8881C44.46 33.2965 43.1697 32.0063 41.5781 32.0063Z",
+            fill: "#3994FF"
+        }), l.jsx("path", {
+            d: "M28.4281 7.53751L30.0499 8.00349C30.8529 8.23419 31.5313 8.77441 31.936 9.50531C32.3406 10.2362 32.4383 11.0979 32.2076 11.9009L31.2653 15.1807L23.5902 12.9755L24.5325 9.6957C24.6467 9.29812 24.8382 8.92694 25.0958 8.60333C25.3535 8.27973 25.6724 8.01005 26.0343 7.80969C26.3962 7.60933 26.794 7.48222 27.2051 7.43561C27.6161 7.38899 28.0323 7.4238 28.4299 7.53802L28.4281 7.53751Z",
+            fill: "#E1FBFF"
+        }), l.jsx("g", {
+            style: {
+                mixBlendMode: "overlay"
+            },
+            opacity: "0.5",
+            children: l.jsx("path", {
+                d: "M32.2105 11.9006L31.273 15.18L27.2549 14.0269L29.0624 7.71936L29.9136 7.96311C31.6611 8.46561 32.6905 10.2281 32.2105 11.9006Z",
+                fill: "black"
+            })
+        }), l.jsx("path", {
+            d: "M24 40.5825C32.2325 40.5825 38.9062 33.9087 38.9062 25.6762C38.9062 17.4437 32.2325 10.77 24 10.77C15.7675 10.77 9.09375 17.4437 9.09375 25.6762C9.09375 33.9087 15.7675 40.5825 24 40.5825Z",
+            fill: "#B3EEFF"
+        }), l.jsx("path", {
+            d: "M24 38.145C30.8863 38.145 36.4688 32.5625 36.4688 25.6762C36.4688 18.7899 30.8863 13.2075 24 13.2075C17.1137 13.2075 11.5312 18.7899 11.5312 25.6762C11.5312 32.5625 17.1137 38.145 24 38.145Z",
+            fill: "#5ACFF5"
+        }), l.jsx("path", {
+            d: "M24 36.4575C29.9543 36.4575 34.7812 31.6306 34.7812 25.6762C34.7812 19.7219 29.9543 14.895 24 14.895C18.0457 14.895 13.2188 19.7219 13.2188 25.6762C13.2188 31.6306 18.0457 36.4575 24 36.4575Z",
+            fill: "#E1FBFF"
+        }), l.jsx("path", {
+            d: "M24 27.8325C25.1909 27.8325 26.1562 26.8671 26.1562 25.6762C26.1562 24.4854 25.1909 23.52 24 23.52C22.8091 23.52 21.8438 24.4854 21.8438 25.6762C21.8438 26.8671 22.8091 27.8325 24 27.8325Z",
+            fill: "#5ACFF5"
+        }), l.jsx("path", {
+            d: "M20.7539 17.6231L22.3514 24.96L24.6464 24.0075L20.7539 17.6231Z",
+            fill: "#5ACFF5"
+        }), l.jsx("g", {
+            style: {
+                mixBlendMode: "overlay"
+            },
+            opacity: "0.5",
+            children: l.jsx("path", {
+                d: "M38.3264 29.7919C37.786 31.6733 36.8802 33.4299 35.6609 34.9613C34.4416 36.4927 32.9326 37.7689 31.22 38.7171C29.5075 39.6653 27.6249 40.2669 25.6799 40.4876C23.7348 40.7082 21.7654 40.5436 19.8839 40.0031L19.7939 39.975L28.0252 11.325L28.1152 11.3494C29.9966 11.8899 31.7532 12.7956 33.2846 14.0149C34.816 15.2342 36.0922 16.7433 37.0404 18.4558C37.9886 20.1684 38.5902 22.0509 38.8109 23.9959C39.0315 25.941 38.8669 27.9105 38.3264 29.7919Z",
+                fill: "black"
+            })
+        })]
+    })
+}
+
+function da(i) {
+    return l.jsxs("svg", {
+        width: 48,
+        height: 48,
+        fill: "none",
+        xmlns: "http://www.w3.org/2000/svg",
+        ...i,
+        children: [l.jsxs("g", {
+            clipPath: "url(#clip0_444_1360)",
+            children: [l.jsx("path", {
+                opacity: "0.2",
+                d: "M38.3821 33.8941C45.8586 30.0236 48.9504 21.1509 45.288 14.0764C41.6256 7.00178 32.5958 4.40433 25.1193 8.27478C17.6429 12.1452 14.551 21.0179 18.2134 28.0925C21.8758 35.1671 30.9057 37.7646 38.3821 33.8941Z",
+                fill: "#3994FF"
+            }), l.jsx("path", {
+                opacity: "0.2",
+                d: "M26.6325 43.2267C34.3425 39.2353 36.7508 28.5783 32.0115 19.4235C27.2722 10.2688 17.18 6.08304 9.47001 10.0744C1.75998 14.0658 -0.648283 24.7228 4.091 33.8776C8.83029 43.0323 18.9225 47.218 26.6325 43.2267Z",
+                fill: "#3994FF"
+            }), l.jsx("path", {
+                d: "M16.7714 40.3425C16.6972 40.3424 16.6238 40.3271 16.5558 40.2975C13.1245 38.865 10.2183 35.0306 9.13079 31.9837C9.08106 31.843 9.08927 31.6883 9.15362 31.5536C9.21797 31.4189 9.33318 31.3153 9.47391 31.2656C9.61464 31.2159 9.76936 31.2241 9.90404 31.2884C10.0387 31.3528 10.1423 31.468 10.192 31.6087C11.1708 34.3556 13.8858 37.9706 16.987 39.2644C17.1071 39.3143 17.2062 39.4043 17.2674 39.519C17.3286 39.6338 17.3481 39.7662 17.3227 39.8937C17.2973 40.0212 17.2285 40.136 17.1279 40.2185C17.0274 40.301 16.9014 40.3462 16.7714 40.3462V40.3425Z",
+                fill: "#B3EEFF"
+            }), l.jsx("path", {
+                d: "M13.1403 40.26C13.0648 40.2607 12.99 40.2453 12.9209 40.215C11.4209 39.5756 9.3584 37.5713 8.5484 35.3269C8.51733 35.2561 8.50118 35.1796 8.50098 35.1023C8.50077 35.025 8.51651 34.9485 8.5472 34.8775C8.57789 34.8066 8.62288 34.7427 8.67937 34.6899C8.73585 34.6371 8.80261 34.5965 8.87548 34.5707C8.94835 34.5448 9.02576 34.5343 9.10289 34.5397C9.18001 34.5451 9.25519 34.5664 9.32373 34.6022C9.39228 34.6379 9.45271 34.6875 9.50126 34.7476C9.5498 34.8078 9.58543 34.8773 9.6059 34.9519C10.2846 36.8269 12.0959 38.6531 13.3559 39.1894C13.4751 39.2402 13.5731 39.3305 13.6334 39.4452C13.6936 39.5599 13.7125 39.6919 13.6867 39.8189C13.6609 39.9458 13.5921 40.06 13.4918 40.1421C13.3916 40.2242 13.2661 40.2691 13.1365 40.2694L13.1403 40.26Z",
+                fill: "#B3EEFF"
+            }), l.jsx("path", {
+                d: "M40.0159 19.2469C39.8995 19.2469 39.786 19.2109 39.6909 19.1437C39.5959 19.0766 39.524 18.9816 39.4852 18.8719C38.5327 16.1156 35.8515 12.4744 32.7615 11.1525C32.6935 11.1234 32.632 11.0813 32.5803 11.0284C32.5286 10.9756 32.4879 10.9131 32.4604 10.8445C32.4328 10.7759 32.4191 10.7025 32.42 10.6286C32.4208 10.5547 32.4362 10.4817 32.4652 10.4137C32.4943 10.3458 32.5364 10.2842 32.5893 10.2325C32.6421 10.1809 32.7047 10.1401 32.7733 10.1126C32.8419 10.0851 32.9152 10.0714 32.9891 10.0722C33.063 10.073 33.136 10.0884 33.204 10.1175C36.6277 11.5837 39.4909 15.4462 40.5484 18.5044C40.5784 18.5894 40.5876 18.6804 40.5751 18.7697C40.5626 18.859 40.5289 18.944 40.4767 19.0175C40.4245 19.091 40.3554 19.1509 40.2752 19.1922C40.195 19.2334 40.106 19.2547 40.0159 19.2544V19.2469Z",
+                fill: "#B3EEFF"
+            }), l.jsx("path", {
+                d: "M40.6332 15.9112C40.5168 15.9113 40.4033 15.8753 40.3082 15.8081C40.2132 15.7409 40.1413 15.646 40.1026 15.5362C39.4426 13.6612 37.6482 11.8125 36.3901 11.2631C36.2581 11.2006 36.1556 11.0892 36.1043 10.9525C36.0529 10.8158 36.0568 10.6645 36.115 10.5306C36.1732 10.3967 36.2812 10.2906 36.4161 10.2349C36.5511 10.1791 36.7024 10.178 36.8382 10.2319C38.3382 10.8862 40.3707 12.9094 41.1638 15.1612C41.1885 15.2309 41.1992 15.3048 41.1953 15.3786C41.1914 15.4524 41.1729 15.5247 41.1411 15.5914C41.1092 15.6581 41.0645 15.7179 41.0095 15.7673C40.9546 15.8167 40.8904 15.8548 40.8207 15.8794C40.7605 15.9008 40.6971 15.9116 40.6332 15.9112Z",
+                fill: "#B3EEFF"
+            }), l.jsx("path", {
+                d: "M21.1032 27.1875L17.5801 26.7562L18.8457 13.8319C18.9526 12.7444 19.8282 11.9569 20.8013 12.0769C21.7745 12.1969 22.4757 13.1756 22.3688 14.265L21.1032 27.1875Z",
+                fill: "#5ACFF5"
+            }), l.jsx("path", {
+                d: "M27.8284 29.625L24.4141 27.7837L29.4072 16.1962C29.8609 15.1425 30.9934 14.6962 31.9366 15.2081C32.8741 15.7162 33.2753 16.9837 32.8216 18.0375L27.8284 29.625Z",
+                fill: "#5ACFF5"
+            }), l.jsx("path", {
+                d: "M25.4344 26.2669L21.75 25.125L24.8438 12.75C25.1288 11.6119 26.1825 10.9481 27.1987 11.2669C28.215 11.5856 28.8094 12.7669 28.5244 13.9013L25.4344 26.2669Z",
+                fill: "#5ACFF5"
+            }), l.jsx("g", {
+                style: {
+                    mixBlendMode: "overlay"
+                },
+                opacity: "0.5",
+                children: l.jsx("path", {
+                    d: "M27.8284 29.625L24.4141 27.7837L29.4072 16.1962C29.8609 15.1425 30.9934 14.6962 31.9366 15.2081C32.8741 15.7162 33.2753 16.9837 32.8216 18.0375L27.8284 29.625Z",
+                    fill: "black"
+                })
+            }), l.jsx("g", {
+                style: {
+                    mixBlendMode: "overlay"
+                },
+                opacity: "0.5",
+                children: l.jsx("path", {
+                    d: "M25.4344 26.2669L21.75 25.125L24.8438 12.75C25.1288 11.6119 26.1825 10.9481 27.1987 11.2669C28.215 11.5856 28.8094 12.7669 28.5244 13.9013L25.4344 26.2669Z",
+                    fill: "black"
+                })
+            }), l.jsx("path", {
+                d: "M23.4993 37.2225C27.2107 37.2225 30.2193 33.8571 30.2193 29.7056C30.2193 25.5542 27.2107 22.1888 23.4993 22.1888C19.7879 22.1888 16.7793 25.5542 16.7793 29.7056C16.7793 33.8571 19.7879 37.2225 23.4993 37.2225Z",
+                fill: "#5ACFF5"
+            }), l.jsx("path", {
+                d: "M29.2874 32.5012L26.7393 30.015L33.1874 21.75C33.3185 21.5676 33.4878 21.4159 33.6835 21.3056C33.8792 21.1952 34.0966 21.1288 34.3205 21.111C34.5444 21.0931 34.7696 21.1243 34.9803 21.2022C35.191 21.2802 35.3821 21.4032 35.5405 21.5625L35.5743 21.5944C35.9093 21.9411 36.1094 22.3962 36.1386 22.8774C36.1679 23.3587 36.0242 23.8346 35.7336 24.2194L29.2874 32.5012Z",
+                fill: "#5ACFF5"
+            }), l.jsx("path", {
+                d: "M19.6336 35.1696C21.8263 34.7608 23.2078 32.3044 22.7191 29.6831C22.2304 27.0617 20.0567 25.2681 17.8639 25.6769C15.6711 26.0856 14.2897 28.542 14.7784 31.1634C15.2671 33.7847 17.4408 35.5783 19.6336 35.1696Z",
+                fill: "#B3EEFF"
+            }), l.jsx("path", {
+                d: "M18.6936 30.2794L14.8499 31.7138L12.1874 22.8169C11.8574 21.7088 12.3917 20.5106 13.3836 20.1394L13.6367 20.0456C14.6286 19.6706 15.6992 20.2725 16.0311 21.3806L18.6936 30.2794Z",
+                fill: "#B3EEFF"
+            })]
+        }), l.jsx("defs", {
+            children: l.jsx("clipPath", {
+                id: "clip0_444_1360",
+                children: l.jsx("rect", {
+                    width: "48",
+                    height: "48",
+                    fill: "white"
+                })
+            })
+        })]
+    })
+}
+
+function oa(i) {
+    return l.jsxs("svg", {
+        width: 48,
+        height: 48,
+        fill: "none",
+        xmlns: "http://www.w3.org/2000/svg",
+        ...i,
+        children: [l.jsxs("g", {
+            clipPath: "url(#clip0_456_6714)",
+            children: [l.jsx("path", {
+                opacity: "0.2",
+                d: "M32.3915 37.7535C37.8069 33.6919 38.3464 25.2652 33.5964 18.9319C28.8464 12.5985 20.6057 10.7569 15.1903 14.8185C9.77484 18.8801 9.2354 27.3068 13.9854 33.6401C18.7354 39.9734 26.9761 41.8151 32.3915 37.7535Z",
+                fill: "#3994FF"
+            }), l.jsx("path", {
+                opacity: "0.2",
+                d: "M40.3508 31.7752C46.4373 28.8433 48.1221 19.7212 44.114 11.4003C40.1058 3.07942 31.9225 -1.28926 25.836 1.64259C19.7495 4.57444 18.0647 13.6966 22.0728 22.0175C26.081 30.3383 34.2643 34.707 40.3508 31.7752Z",
+                fill: "#3994FF"
+            }), l.jsx("path", {
+                d: "M6.93359 10.4269L6.93359 41.3231C6.93359 41.9041 7.40453 42.375 7.98547 42.375H8.13172C8.71265 42.375 9.18359 41.9041 9.18359 41.3231L9.18359 10.4269C9.18359 9.84594 8.71265 9.375 8.13172 9.375H7.98547C7.40453 9.375 6.93359 9.84594 6.93359 10.4269Z",
+                fill: "#5ACFF5"
+            }), l.jsx("path", {
+                d: "M40.5 22.95L39.4875 11.2069C39.4294 10.53 38.7506 10.0819 38.2856 10.4306L30.2831 16.2787C29.835 16.605 29.9231 17.4206 30.4425 17.76L32.4019 19.0425L26.8125 28.8075L18.6937 25.9594C18.5884 25.9224 18.475 25.9146 18.3656 25.9369C17.9456 25.7662 17.4169 26.0194 17.0869 26.5969L8.8125 41.0625L11.7825 42.1875L19.8 32.5087L28.2469 35.8125C28.7531 36.0731 29.3513 35.8781 29.685 35.2931L37.0613 22.0987L39.45 23.6644C39.9731 24 40.5487 23.6081 40.5 22.95Z",
+                fill: "#B3EEFF"
+            }), l.jsx("path", {
+                d: "M42.9375 42.0938C42.937 42.6655 42.7097 43.2136 42.3054 43.6179C41.9011 44.0222 41.353 44.2495 40.7812 44.25H7.40625C6.83438 44.25 6.28593 44.0228 5.88155 43.6185C5.47718 43.2141 5.25 42.6656 5.25 42.0938C5.25 42.0619 5.25 42.03 5.25 42C5.27462 41.445 5.5123 40.9209 5.91358 40.5367C6.31487 40.1526 6.84884 39.9379 7.40438 39.9375H40.7794C41.3357 39.9365 41.8709 40.1505 42.2731 40.5349C42.6752 40.9193 42.9133 41.4442 42.9375 42C42.9375 42.03 42.9375 42.0619 42.9375 42.0938Z",
+                fill: "#5ACFF5"
+            }), l.jsx("g", {
+                style: {
+                    mixBlendMode: "overlay"
+                },
+                opacity: "0.5",
+                children: l.jsx("path", {
+                    d: "M42.9375 42H5.25C5.27462 41.445 5.5123 40.9209 5.91358 40.5367C6.31487 40.1526 6.84884 39.9379 7.40438 39.9375H40.7794C41.3357 39.9365 41.8709 40.1505 42.2731 40.5349C42.6752 40.9193 42.9133 41.4442 42.9375 42Z",
+                    fill: "black"
+                })
+            })]
+        }), l.jsx("defs", {
+            children: l.jsx("clipPath", {
+                id: "clip0_456_6714",
+                children: l.jsx("rect", {
+                    width: "48",
+                    height: "48",
+                    fill: "white"
+                })
+            })
+        })]
+    })
+}
+
+function Ca(i) {
+    return l.jsxs("svg", {
+        viewBox: "0 0 48 48",
+        width: 48,
+        height: 48,
+        fill: "none",
+        xmlns: "http://www.w3.org/2000/svg",
+        ...i,
+        children: [l.jsxs("g", {
+            clipPath: "url(#clip0_444_1356)",
+            children: [l.jsx("path", {
+                opacity: "0.2",
+                d: "M38.1781 31.984C45.6223 28.1302 48.7009 19.2956 45.0542 12.2514C41.4075 5.20717 32.4165 2.62081 24.9722 6.4746C17.5279 10.3284 14.4494 19.163 18.0961 26.2072C21.7428 33.2515 30.7338 35.8378 38.1781 31.984Z",
+                fill: "#3994FF"
+            }), l.jsx("path", {
+                opacity: "0.2",
+                d: "M26.4838 41.2742C34.1607 37.2999 36.5587 26.6888 31.8399 17.5736C27.1211 8.45845 17.0723 4.29088 9.39542 8.26512C1.71849 12.2394 -0.679526 22.8504 4.03929 31.9656C8.75811 41.0808 18.8068 45.2484 26.4838 41.2742Z",
+                fill: "#3994FF"
+            }), l.jsx("path", {
+                d: "M6.26953 22.2806C6.28078 22.1644 6.29391 22.05 6.30703 21.9356C6.29391 22.05 6.28078 22.1644 6.26953 22.2806Z",
+                fill: "#E1FBFF"
+            }), l.jsx("path", {
+                d: "M6.22852 22.7906C6.22852 22.6819 6.24352 22.5731 6.25289 22.4644C6.24352 22.5731 6.23602 22.6875 6.22852 22.7906Z",
+                fill: "#E1FBFF"
+            }), l.jsx("path", {
+                d: "M12.187 37.3331L11.9863 37.1456L12.187 37.3331Z",
+                fill: "#E1FBFF"
+            }), l.jsx("path", {
+                d: "M6.39746 21.2569C6.42246 21.1031 6.44871 20.9494 6.47621 20.7956C6.44871 20.9494 6.42246 21.1031 6.39746 21.2569Z",
+                fill: "#E1FBFF"
+            }), l.jsx("path", {
+                d: "M6.32422 21.7781C6.34484 21.6131 6.36734 21.4481 6.39359 21.285C6.37484 21.4481 6.34484 21.6131 6.32422 21.7781Z",
+                fill: "#E1FBFF"
+            }), l.jsx("path", {
+                d: "M6.2002 23.325C6.2002 23.2106 6.2002 23.0944 6.21707 22.9781C6.20957 23.0944 6.20582 23.2106 6.2002 23.325Z",
+                fill: "#E1FBFF"
+            }), l.jsx("path", {
+                d: "M11.542 36.7313L11.3545 36.5438L11.542 36.7313Z",
+                fill: "#E1FBFF"
+            }), l.jsx("path", {
+                d: "M11.8604 37.035L11.6729 36.8475L11.8604 37.035Z",
+                fill: "#E1FBFF"
+            }), l.jsx("path", {
+                d: "M11.2324 36.42C11.1724 36.3581 11.1105 36.2963 11.0449 36.2325C11.1105 36.2963 11.1724 36.3581 11.2324 36.42Z",
+                fill: "#E1FBFF"
+            }), l.jsx("path", {
+                d: "M9.63379 13.47C9.68066 13.4044 9.72941 13.3406 9.77629 13.2825C9.72941 13.3406 9.68066 13.4044 9.63379 13.47Z",
+                fill: "#E1FBFF"
+            }), l.jsx("path", {
+                d: "M8.72949 14.8256C8.77637 14.745 8.82699 14.6663 8.87574 14.5856C8.82699 14.6663 8.77637 14.745 8.72949 14.8256Z",
+                fill: "#E1FBFF"
+            }), l.jsx("path", {
+                d: "M7.00879 18.6413C7.05191 18.5063 7.09504 18.3713 7.14004 18.2381C7.09504 18.375 7.05191 18.5063 7.00879 18.6413Z",
+                fill: "#E1FBFF"
+            }), l.jsx("path", {
+                d: "M7.19727 18.0769C7.23102 17.9769 7.26664 17.8775 7.30414 17.7787C7.26664 17.8787 7.23102 17.9781 7.19727 18.0769Z",
+                fill: "#E1FBFF"
+            }), l.jsx("path", {
+                d: "M9.33496 13.8863C9.38934 13.8094 9.44184 13.7325 9.49809 13.6556C9.44184 13.7325 9.38934 13.8094 9.33496 13.8863Z",
+                fill: "#E1FBFF"
+            }), l.jsx("path", {
+                d: "M8.98047 14.4188C9.05547 14.3006 9.13234 14.1844 9.20922 14.07C9.13234 14.1844 9.05547 14.3006 8.98047 14.4188Z",
+                fill: "#E1FBFF"
+            }), l.jsx("path", {
+                d: "M8.48535 15.2437C8.53035 15.165 8.57535 15.0844 8.62223 15.0056C8.57535 15.0844 8.53035 15.165 8.48535 15.2437Z",
+                fill: "#E1FBFF"
+            }), l.jsx("path", {
+                d: "M7.99414 16.1738C8.04852 16.065 8.10289 15.9563 8.15914 15.8475C8.10289 15.9563 8.04852 16.065 7.99414 16.1738Z",
+                fill: "#E1FBFF"
+            }), l.jsx("path", {
+                d: "M7.74707 16.7006C7.81082 16.5581 7.87645 16.4156 7.93457 16.275C7.87457 16.4156 7.81082 16.5581 7.74707 16.7006Z",
+                fill: "#E1FBFF"
+            }), l.jsx("path", {
+                d: "M8.25 15.6788C8.295 15.5925 8.34 15.5081 8.38687 15.4256C8.33812 15.5081 8.29312 15.5925 8.25 15.6788Z",
+                fill: "#E1FBFF"
+            }), l.jsx("path", {
+                d: "M7.37207 17.6025C7.4077 17.5069 7.4452 17.415 7.4827 17.3213C7.4452 17.415 7.4077 17.5069 7.37207 17.6025Z",
+                fill: "#E1FBFF"
+            }), l.jsx("path", {
+                d: "M6.50586 20.6363C6.52648 20.5256 6.54898 20.4169 6.57148 20.3081C6.54898 20.4169 6.52648 20.5256 6.50586 20.6363Z",
+                fill: "#E1FBFF"
+            }), l.jsx("path", {
+                d: "M6.85059 19.1644C6.89559 19.0087 6.94059 18.8531 6.98934 18.6994C6.93684 18.8531 6.89559 19.0087 6.85059 19.1644Z",
+                fill: "#E1FBFF"
+            }), l.jsx("path", {
+                d: "M11.0098 11.8125C11.0491 11.7731 11.0866 11.7319 11.1241 11.6925C11.0848 11.7319 11.0491 11.7731 11.0098 11.8125Z",
+                fill: "#E1FBFF"
+            }), l.jsx("path", {
+                d: "M6.61035 20.1263C6.63285 20.0231 6.65723 19.92 6.6816 19.8188C6.65723 19.92 6.63285 20.0231 6.61035 20.1263Z",
+                fill: "#E1FBFF"
+            }), l.jsx("path", {
+                d: "M9.92383 13.0837L10.0645 12.8962L9.92383 13.0837Z",
+                fill: "#E1FBFF"
+            }), l.jsx("path", {
+                d: "M7.55371 17.145L7.68684 16.8525L7.55371 17.145Z",
+                fill: "#E1FBFF"
+            }), l.jsx("path", {
+                d: "M10.2197 12.7106L10.3585 12.5456L10.2197 12.7106Z",
+                fill: "#E1FBFF"
+            }), l.jsx("path", {
+                d: "M6.72559 19.6406C6.75371 19.5319 6.78184 19.4231 6.81184 19.3144C6.78184 19.4231 6.74996 19.5319 6.72559 19.6406Z",
+                fill: "#E1FBFF"
+            }), l.jsx("path", {
+                d: "M10.5254 12.3488L10.6229 12.2381L10.5254 12.3488Z",
+                fill: "#E1FBFF"
+            }), l.jsx("path", {
+                d: "M38.293 34.6331L38.2705 34.6612L38.293 34.6331Z",
+                fill: "#E1FBFF"
+            }), l.jsx("path", {
+                d: "M17.1504 40.4475L16.916 40.3481L17.1504 40.4475Z",
+                fill: "#E1FBFF"
+            }), l.jsx("path", {
+                d: "M17.5624 40.6144L17.3262 40.5206L17.5624 40.6144Z",
+                fill: "#E1FBFF"
+            }), l.jsx("path", {
+                d: "M38.5641 34.2563L38.5098 34.335L38.5641 34.2563Z",
+                fill: "#E1FBFF"
+            }), l.jsx("path", {
+                d: "M16.745 40.2731L16.5088 40.1644L16.745 40.2731Z",
+                fill: "#E1FBFF"
+            }), l.jsx("path", {
+                d: "M24 33.3431V41.8125C26.7082 41.8152 29.3812 41.1991 31.8151 40.0114C34.249 38.8237 36.3794 37.0958 38.0437 34.9594L31.3631 29.7469C30.4908 30.8676 29.374 31.7741 28.0979 32.3974C26.8218 33.0207 25.4202 33.3441 24 33.3431Z",
+                fill: "white"
+            }), l.jsx("path", {
+                d: "M14.6588 24H6.18751C6.18207 28.5292 7.90795 32.8892 11.0119 36.1875L17.1994 30.39C15.5677 28.6625 14.6587 26.3763 14.6588 24Z",
+                fill: "white"
+            }), l.jsx("path", {
+                d: "M24 14.6587V6.1875C20.2254 6.18052 16.5471 7.37795 13.5 9.60562L18.4988 16.4512C20.0951 15.2838 22.0223 14.6559 24 14.6587Z",
+                fill: "white"
+            }), l.jsx("path", {
+                d: "M33.3428 24H41.8122C41.8152 21.6588 41.3552 19.3402 40.4587 17.1775C39.5622 15.0147 38.2469 13.0506 36.5884 11.3981L30.6016 17.3981C31.4708 18.2638 32.1604 19.2926 32.6308 20.4256C33.1012 21.5585 33.3432 22.7733 33.3428 24Z",
+                fill: "white"
+            }), l.jsx("path", {
+                d: "M14.0618 38.7787C13.818 38.6137 13.578 38.445 13.3418 38.2687C13.5687 38.4375 13.8087 38.6137 14.0618 38.7787Z",
+                fill: "#E1FBFF"
+            }), l.jsx("path", {
+                d: "M15.1705 39.4744L14.9268 39.3319L15.1705 39.4744Z",
+                fill: "#E1FBFF"
+            }), l.jsx("path", {
+                d: "M14.7911 39.2513L14.5361 39.0919L14.7911 39.2513Z",
+                fill: "#E1FBFF"
+            }), l.jsx("path", {
+                d: "M14.4206 39.0206C14.3231 38.9588 14.2331 38.895 14.1318 38.8331C14.2275 38.895 14.3231 38.9588 14.4206 39.0206Z",
+                fill: "#E1FBFF"
+            }), l.jsx("path", {
+                d: "M12.53 37.6275L12.3125 37.44L12.53 37.6275Z",
+                fill: "#E1FBFF"
+            }), l.jsx("path", {
+                d: "M12.8865 37.9219L12.6465 37.7344L12.8865 37.9219Z",
+                fill: "#E1FBFF"
+            }), l.jsx("path", {
+                d: "M13.2816 38.2294L12.9854 38.0006L13.2816 38.2294Z",
+                fill: "#E1FBFF"
+            }), l.jsx("path", {
+                d: "M15.9463 39.8925L15.7119 39.7706L15.9463 39.8925Z",
+                fill: "#E1FBFF"
+            }), l.jsx("path", {
+                d: "M15.5621 39.6881L15.3184 39.5625L15.5621 39.6881Z",
+                fill: "#E1FBFF"
+            }), l.jsx("path", {
+                d: "M16.3418 40.0875L16.1074 39.9731L16.3418 40.0875Z",
+                fill: "#E1FBFF"
+            }), l.jsx("path", {
+                d: "M7.3125 17.7788L7.38 17.6025L7.3125 17.7788Z",
+                fill: "#FFDE39"
+            }), l.jsx("path", {
+                d: "M6.68164 19.8188C6.69664 19.7588 6.70977 19.6988 6.72477 19.6313C6.70977 19.6988 6.69664 19.7588 6.68164 19.8188Z",
+                fill: "#FFDE39"
+            }), l.jsx("path", {
+                d: "M6.30664 21.9375L6.32352 21.78L6.30664 21.9375Z",
+                fill: "#FFDE39"
+            }), l.jsx("path", {
+                d: "M7.48242 17.3212C7.5068 17.2631 7.5293 17.205 7.55367 17.145C7.5293 17.205 7.4993 17.2631 7.48242 17.3212Z",
+                fill: "#FFDE39"
+            }), l.jsx("path", {
+                d: "M6.39326 21.285C6.39235 21.2756 6.39235 21.2662 6.39326 21.2569C6.39235 21.2662 6.39235 21.2756 6.39326 21.285Z",
+                fill: "#FFDE39"
+            }), l.jsx("path", {
+                d: "M6.47559 20.7956C6.48496 20.7413 6.49434 20.6888 6.50559 20.6363C6.49434 20.6888 6.48496 20.7413 6.47559 20.7956Z",
+                fill: "#FFDE39"
+            }), l.jsx("path", {
+                d: "M6.2168 22.9781L6.22805 22.7906L6.2168 22.9781Z",
+                fill: "#FFDE39"
+            }), l.jsx("path", {
+                d: "M7.13965 18.2381C7.1584 18.1837 7.17715 18.1312 7.19777 18.0769C7.17715 18.1312 7.1584 18.1875 7.13965 18.2381Z",
+                fill: "#FFDE39"
+            }), l.jsx("path", {
+                d: "M6.98926 18.6994C6.98926 18.6788 7.00238 18.66 7.00801 18.6413C7.00238 18.66 6.99488 18.6788 6.98926 18.6994Z",
+                fill: "#FFDE39"
+            }), l.jsx("path", {
+                d: "M6.25293 22.4644L6.2698 22.2769L6.25293 22.4644Z",
+                fill: "#FFDE39"
+            }), l.jsx("path", {
+                d: "M6.81152 19.3125L6.8509 19.1625L6.81152 19.3125Z",
+                fill: "#FFDE39"
+            }), l.jsx("path", {
+                d: "M6.57129 20.3081L6.61066 20.1206L6.57129 20.3081Z",
+                fill: "#FFDE39"
+            }), l.jsx("path", {
+                d: "M7.6875 16.8525L7.755 16.7006L7.6875 16.8525Z",
+                fill: "#FFDE39"
+            }), l.jsx("path", {
+                d: "M7.94434 16.275L7.99496 16.1738L7.94434 16.275Z",
+                fill: "#FFDE39"
+            }), l.jsx("path", {
+                d: "M10.3594 12.5456C10.4156 12.48 10.47 12.4125 10.5262 12.3581C10.47 12.4125 10.4156 12.48 10.3594 12.5456Z",
+                fill: "#FFDE39"
+            }), l.jsx("path", {
+                d: "M10.623 12.2381C10.7505 12.0937 10.878 11.9531 11.0093 11.8125C10.8743 11.9531 10.7505 12.0937 10.623 12.2381Z",
+                fill: "#FFDE39"
+            }), l.jsx("path", {
+                d: "M8.15918 15.8475C8.1873 15.7912 8.2173 15.735 8.2473 15.6787C8.2173 15.735 8.1873 15.7912 8.15918 15.8475Z",
+                fill: "#FFDE39"
+            }), l.jsx("path", {
+                d: "M8.38477 15.4256L8.48602 15.2381L8.38477 15.4256Z",
+                fill: "#FFDE39"
+            }), l.jsx("path", {
+                d: "M8.625 15C8.66062 14.94 8.69437 14.88 8.73187 14.8125C8.6925 14.8856 8.65875 14.9456 8.625 15Z",
+                fill: "#FFDE39"
+            }), l.jsx("path", {
+                d: "M10.0645 12.9056L10.2201 12.7181L10.0645 12.9056Z",
+                fill: "#FFDE39"
+            }), l.jsx("path", {
+                d: "M9.20996 14.0625L9.33559 13.875L9.20996 14.0625Z",
+                fill: "#FFDE39"
+            }), l.jsx("path", {
+                d: "M8.87598 14.5856C8.9116 14.5313 8.94535 14.475 8.98098 14.4188C8.94535 14.475 8.9116 14.5313 8.87598 14.5856Z",
+                fill: "#FFDE39"
+            }), l.jsx("path", {
+                d: "M9.49805 13.6556C9.54117 13.5919 9.58805 13.5319 9.63305 13.4681C9.58805 13.5319 9.54117 13.5919 9.49805 13.6556Z",
+                fill: "#FFDE39"
+            }), l.jsx("path", {
+                d: "M9.77539 13.2769C9.82414 13.2113 9.87477 13.1475 9.92352 13.0894C9.87477 13.1475 9.82414 13.2113 9.77539 13.2769Z",
+                fill: "#FFDE39"
+            }), l.jsx("path", {
+                d: "M17.3266 40.5206L17.1504 40.4475L17.3266 40.5206Z",
+                fill: "#FFDE39"
+            }), l.jsx("path", {
+                d: "M16.9157 40.3481L16.7451 40.2731L16.9157 40.3481Z",
+                fill: "#FFDE39"
+            }), l.jsx("path", {
+                d: "M15.318 39.5625L15.1699 39.48L15.318 39.5625Z",
+                fill: "#FFDE39"
+            }), l.jsx("path", {
+                d: "M15.7123 39.7706L15.5566 39.6881L15.7123 39.7706Z",
+                fill: "#FFDE39"
+            }), l.jsx("path", {
+                d: "M16.5087 40.1644L16.3418 40.0875L16.5087 40.1644Z",
+                fill: "#FFDE39"
+            }), l.jsx("path", {
+                d: "M16.1075 39.9731L15.9463 39.8925L16.1075 39.9731Z",
+                fill: "#FFDE39"
+            }), l.jsx("path", {
+                d: "M14.926 39.3319L14.791 39.2513L14.926 39.3319Z",
+                fill: "#FFDE39"
+            }), l.jsx("path", {
+                d: "M12.6465 37.7269L12.5303 37.6275L12.6465 37.7269Z",
+                fill: "#FFDE39"
+            }), l.jsx("path", {
+                d: "M12.9861 38.0006L12.8867 37.9219L12.9861 38.0006Z",
+                fill: "#FFDE39"
+            }), l.jsx("path", {
+                d: "M13.3329 38.2687L13.2822 38.2294L13.3329 38.2687Z",
+                fill: "#FFDE39"
+            }), l.jsx("path", {
+                d: "M12.3122 37.4438L12.1885 37.3331L12.3122 37.4438Z",
+                fill: "#FFDE39"
+            }), l.jsx("path", {
+                d: "M11.0117 36.1875L11.053 36.2288L11.0117 36.1856V36.1875Z",
+                fill: "#FFDE39"
+            }), l.jsx("path", {
+                d: "M11.3562 36.5475L11.2324 36.42L11.3562 36.5475Z",
+                fill: "#FFDE39"
+            }), l.jsx("path", {
+                d: "M11.6676 36.855L11.542 36.7313L11.6676 36.855Z",
+                fill: "#FFDE39"
+            }), l.jsx("path", {
+                d: "M11.9879 37.1531L11.8604 37.035L11.9879 37.1531Z",
+                fill: "#FFDE39"
+            }), l.jsx("path", {
+                d: "M14.5362 39.0919L14.4199 39.0206L14.5362 39.0919Z",
+                fill: "#FFDE39"
+            }), l.jsx("path", {
+                d: "M14.1315 38.8312L14.0527 38.7787L14.1315 38.8312Z",
+                fill: "#FFDE39"
+            }), l.jsx("path", {
+                d: "M30.6019 17.3906L36.5887 11.3906C33.6982 8.50002 29.8987 6.69535 25.8319 6.28124H25.8206C25.6838 6.26624 25.545 6.25499 25.4062 6.24374H25.3706C25.2394 6.23249 25.1081 6.22499 24.9769 6.21749H24.9169C24.8081 6.21749 24.6975 6.21749 24.5869 6.20624H24.4594C24.3075 6.20624 24.1538 6.20624 24 6.20624V14.6587C25.2261 14.6567 26.4406 14.897 27.5736 15.3658C28.7065 15.8347 29.7357 16.5228 30.6019 17.3906Z",
+                fill: "#B3EEFF"
+            }), l.jsx("path", {
+                d: "M17.1898 30.3919L11.0117 36.1875L11.053 36.2306C11.1111 36.2944 11.173 36.3563 11.2405 36.4181L11.3642 36.5456L11.5517 36.7331L11.6773 36.8569L11.8648 37.0444L11.9923 37.1625L12.193 37.35L12.3167 37.4606L12.5342 37.6481L12.6505 37.7475L12.8905 37.935L12.9898 38.0138L13.2861 38.2425L13.3367 38.2819C13.573 38.4581 13.813 38.6269 14.0567 38.7919L14.1355 38.8444C14.2311 38.9081 14.323 38.9719 14.4242 39.0319L14.5405 39.1031L14.7955 39.2625L14.9305 39.3431L15.1742 39.4856L15.3223 39.5681L15.5605 39.6994L15.7161 39.7819L15.9505 39.9038L16.1117 39.9844L16.3461 40.0988L16.513 40.1756L16.7492 40.2844L16.9198 40.3594L17.1542 40.4588L17.3305 40.5319L17.5667 40.6256L17.7542 40.6931L17.9923 40.7813L18.1798 40.845L18.4198 40.9256L18.6073 40.9875L18.8473 41.0606L19.0348 41.1169L19.2748 41.1863L19.4623 41.2388L19.7061 41.3006L19.8936 41.3475L20.1392 41.4038L20.3267 41.445C20.4073 41.4638 20.4917 41.4788 20.5742 41.4956L20.773 41.5331L21.0223 41.5763L21.2211 41.61L21.4761 41.6475L21.6748 41.6738L21.9355 41.7056L22.123 41.7281L22.3911 41.7525C22.4548 41.7525 22.5186 41.7656 22.5786 41.7694L22.858 41.7881C22.9198 41.7881 22.9798 41.7975 23.0455 41.7994L23.3586 41.8125H23.5123C23.668 41.8125 23.8236 41.8125 23.9811 41.8125V33.3431C22.7075 33.3417 21.4477 33.0791 20.2795 32.5715C19.1114 32.0639 18.0599 31.322 17.1898 30.3919Z",
+                fill: "#B3EEFF"
+            }), l.jsx("path", {
+                d: "M38.2698 34.6613C38.1967 34.7625 38.1198 34.8619 38.043 34.9594C38.1198 34.8619 38.1967 34.7625 38.2698 34.6613Z",
+                fill: "#FFDE39"
+            }), l.jsx("path", {
+                d: "M38.7426 33.9994C38.6845 34.0856 38.6263 34.17 38.5645 34.2563C38.6245 34.17 38.6845 34.0856 38.7426 33.9994Z",
+                fill: "#FFDE39"
+            }), l.jsx("path", {
+                d: "M38.5105 34.335L38.293 34.6331L38.5105 34.335Z",
+                fill: "#FFDE39"
+            }), l.jsx("path", {
+                d: "M18.4979 16.4512L13.4991 9.60562L13.3548 9.71062L13.3116 9.75L13.0098 9.98062H12.9985C12.6816 10.2375 12.3741 10.5 12.0854 10.7587L12.0029 10.8337L11.7741 11.0456L11.6598 11.1544L11.4479 11.3625L11.3279 11.4825C11.2585 11.5519 11.191 11.6212 11.1235 11.6925C11.086 11.7319 11.0485 11.7731 11.0091 11.8125C10.8779 11.9531 10.7504 12.0937 10.6229 12.2381L10.5254 12.3487C10.4691 12.4125 10.4148 12.48 10.3585 12.5362L10.2198 12.7012L10.0641 12.8887L9.92352 13.0762C9.87477 13.14 9.82414 13.2037 9.77539 13.2637C9.72664 13.3237 9.67977 13.3912 9.63289 13.4512C9.58602 13.5112 9.54102 13.5731 9.49789 13.6387C9.45477 13.7044 9.38914 13.7925 9.33477 13.8694L9.20914 14.0569C9.13227 14.1712 9.05539 14.2875 8.98039 14.4056C8.94477 14.4619 8.91102 14.5181 8.87539 14.5725C8.83977 14.6269 8.77602 14.7319 8.72914 14.8125C8.68227 14.8931 8.65789 14.9325 8.62227 15C8.58664 15.0675 8.53039 15.1594 8.48539 15.2381L8.38414 15.4256C8.33727 15.5081 8.29227 15.5925 8.24727 15.6787C8.21727 15.735 8.18727 15.7912 8.15914 15.8475C8.10289 15.9562 8.04852 16.065 7.99414 16.1737L7.94352 16.275C7.87602 16.4156 7.81039 16.5581 7.75602 16.7006L7.68852 16.8525L7.56289 17.145C7.53852 17.205 7.51602 17.2631 7.49164 17.3212C7.45414 17.415 7.41664 17.5087 7.38102 17.6025L7.31352 17.7787C7.27602 17.8787 7.24039 17.9781 7.20664 18.0769C7.18602 18.1312 7.16727 18.1837 7.14852 18.2381C7.10352 18.3712 7.06039 18.5062 7.01727 18.6412C7.01727 18.66 7.00414 18.6787 6.99852 18.6994C6.94977 18.8531 6.90477 19.0087 6.85977 19.1644L6.82039 19.3144C6.79039 19.4231 6.76227 19.5319 6.73414 19.6406C6.71914 19.6987 6.70602 19.7587 6.69102 19.8281C6.66664 19.9294 6.64227 20.0325 6.61977 20.1356L6.58039 20.3231C6.55789 20.4319 6.53539 20.5406 6.51477 20.6512C6.50352 20.7037 6.49414 20.7562 6.48477 20.8106C6.45602 20.9644 6.42977 21.1181 6.40602 21.2719C6.4051 21.2812 6.4051 21.2906 6.40602 21.3C6.37977 21.4631 6.35727 21.6281 6.33664 21.7931L6.31977 21.9506C6.30664 22.065 6.29352 22.1794 6.28227 22.2956L6.26539 22.4831C6.25602 22.5919 6.24852 22.7006 6.24102 22.8094L6.22977 22.9969C6.22977 23.1131 6.21852 23.2294 6.21289 23.3437V23.5069C6.21289 23.6775 6.21289 23.8481 6.21289 24.0187H14.6579C14.654 22.5436 15 21.0885 15.6675 19.7731C16.3351 18.4576 17.3051 17.3191 18.4979 16.4512Z",
+                fill: "#5ACFF5"
+            }), l.jsx("path", {
+                d: "M38.2923 34.6331L38.5098 34.335L38.5642 34.2562C38.6261 34.17 38.6842 34.0856 38.7423 33.9994L38.8023 33.9112L38.9767 33.6469L39.0236 33.5719C39.0911 33.4687 39.1548 33.3637 39.2204 33.2587L39.2373 33.2306C39.3836 32.9894 39.5242 32.7444 39.6592 32.4956L39.6704 32.4769C39.7323 32.3625 39.7923 32.2481 39.8579 32.1319L39.8861 32.0756C39.9404 31.9706 39.9929 31.8637 40.0454 31.755L40.0736 31.6969C40.1279 31.5825 40.1823 31.4662 40.2348 31.35C40.2399 31.3416 40.2443 31.3329 40.2479 31.3237C40.4223 30.9394 40.5817 30.5456 40.7298 30.1462C40.7298 30.1275 40.7429 30.1069 40.7504 30.0862C40.7917 29.9756 40.8292 29.865 40.8686 29.7525C40.8686 29.7281 40.8854 29.7019 40.8948 29.6756C40.9323 29.565 40.9679 29.4525 41.0036 29.34C41.0036 29.3194 41.0167 29.2987 41.0242 29.2762C41.1086 29.0044 41.1854 28.7306 41.2567 28.4531C41.2904 28.3219 41.3223 28.1906 41.3523 28.0575C41.3523 28.0275 41.3673 27.9956 41.3729 27.9656C41.3973 27.8606 41.4198 27.7556 41.4423 27.6506C41.4423 27.6131 41.4573 27.5737 41.4667 27.5344C41.4854 27.435 41.5061 27.3337 41.5248 27.2325C41.5248 27.195 41.5379 27.1556 41.5454 27.1181C41.5642 27.0056 41.5829 26.895 41.5998 26.7825C41.5998 26.7562 41.6092 26.73 41.6129 26.7019C41.6354 26.5612 41.6542 26.4206 41.6729 26.2781C41.672 26.2688 41.672 26.2593 41.6729 26.25C41.6879 26.1206 41.7029 25.9931 41.7161 25.8637C41.7161 25.8206 41.7161 25.7775 41.7292 25.7344C41.7386 25.6369 41.7461 25.5469 41.7554 25.4437L41.7667 25.2919L41.7836 25.0144C41.7836 24.9637 41.7836 24.9131 41.7836 24.8606C41.7836 24.7631 41.7873 24.6656 41.7948 24.5681V24.4331C41.7948 24.2906 41.7948 24.1481 41.7948 24.0056H33.3423C33.3446 26.0889 32.6474 28.1127 31.3623 29.7525L38.0429 34.965C38.1198 34.8675 38.1967 34.7775 38.2698 34.6669L38.2923 34.6331Z",
+                fill: "#5ACFF5"
+            }), l.jsx("g", {
+                style: {
+                    mixBlendMode: "overlay"
+                },
+                opacity: "0.5",
+                children: l.jsx("path", {
+                    d: "M36.5869 11.3981C33.6981 8.50491 29.8991 6.6975 25.8319 6.28124H25.8206C25.6838 6.26624 25.545 6.25499 25.4062 6.24374H25.3706C25.2394 6.23249 25.1081 6.22499 24.9769 6.21749H24.9169C24.8062 6.21749 24.6975 6.21749 24.5869 6.20624H24.4594C24.3056 6.20624 24.1538 6.20624 24 6.20624V14.6587C26.4548 14.6935 28.7972 15.6931 30.5209 17.4413C32.2445 19.1895 33.2108 21.5459 33.2108 24.0009C33.2108 26.456 32.2445 28.8123 30.5209 30.5606C28.7972 32.3088 26.4548 33.3083 24 33.3431V41.8125C26.7079 41.8151 29.3807 41.1991 31.8142 40.0114C34.2478 38.8237 36.3779 37.0957 38.0419 34.9594C38.1187 34.8619 38.1956 34.7719 38.2706 34.6612L38.2931 34.6331L38.5088 34.335L38.565 34.2562C38.625 34.17 38.685 34.0856 38.7431 33.9994L38.8013 33.9112C38.8613 33.825 38.9194 33.735 38.9756 33.6469L39.0244 33.5719C39.09 33.4687 39.1556 33.3637 39.2119 33.2587L39.2306 33.2306C39.3769 32.9894 39.5175 32.7444 39.6525 32.4956V32.4769C39.7144 32.3625 39.7762 32.2481 39.84 32.1319C39.8494 32.1131 39.8588 32.0944 39.87 32.0756C39.9225 31.9706 39.9769 31.8637 40.0275 31.755C40.038 31.7362 40.0474 31.7168 40.0556 31.6969C40.1119 31.5825 40.1663 31.4662 40.2188 31.35L40.23 31.3237C40.4044 30.9394 40.5656 30.5456 40.7119 30.1462L40.7344 30.0862C40.7738 29.9756 40.8131 29.865 40.8506 29.7525C40.8506 29.7281 40.8694 29.7019 40.8769 29.6756C40.9144 29.565 40.9519 29.4525 40.9856 29.34C40.9936 29.3191 41.0005 29.2978 41.0062 29.2762C41.0906 29.0044 41.1694 28.7306 41.2406 28.4531C41.2744 28.3219 41.3062 28.1906 41.3381 28.0575C41.3381 28.0275 41.3512 27.9956 41.3587 27.9656C41.3831 27.8606 41.4056 27.7556 41.4281 27.6506L41.4506 27.5344C41.4713 27.435 41.49 27.3337 41.5088 27.2325C41.5088 27.195 41.5238 27.1556 41.5294 27.1181C41.55 27.0056 41.5687 26.895 41.5856 26.7825C41.5856 26.7562 41.595 26.73 41.5988 26.7019C41.6194 26.5612 41.64 26.4206 41.6569 26.2781C41.6578 26.2688 41.6578 26.2593 41.6569 26.25C41.6737 26.1206 41.6888 25.9931 41.7019 25.8637L41.7131 25.7344C41.7131 25.6369 41.7319 25.5469 41.7394 25.4437L41.7506 25.2919C41.7506 25.2 41.7638 25.1044 41.7694 25.0144C41.7694 24.9637 41.7694 24.9131 41.7694 24.8606L41.8125 24.5625C41.8125 24.5175 41.8125 24.4725 41.8125 24.4275C41.8125 24.285 41.8125 24.1425 41.8125 24C41.8156 21.6586 41.3555 19.3398 40.4587 17.177C39.5618 15.0142 38.246 13.0502 36.5869 11.3981Z",
+                    fill: "black"
+                })
+            })]
+        }), l.jsx("defs", {
+            children: l.jsx("clipPath", {
+                id: "clip0_444_1356",
+                children: l.jsx("rect", {
+                    width: "48",
+                    height: "48",
+                    fill: "white"
+                })
+            })
+        })]
+    })
+}
+
+function ca(i) {
+    return l.jsxs("svg", {
+        width: 48,
+        height: 48,
+        fill: "none",
+        xmlns: "http://www.w3.org/2000/svg",
+        ...i,
+        children: [l.jsxs("g", {
+            clipPath: "url(#clip0_444_1354)",
+            children: [l.jsx("path", {
+                opacity: "0.2",
+                d: "M38.2656 32.0021C45.5554 28.2283 48.5696 19.5763 44.9981 12.6774C41.4267 5.77842 32.6219 3.24502 25.3321 7.01883C18.0423 10.7926 15.0281 19.4446 18.5996 26.3436C22.171 33.2425 30.9758 35.7759 38.2656 32.0021Z",
+                fill: "#3994FF"
+            }), l.jsx("path", {
+                opacity: "0.2",
+                d: "M26.8101 41.0994C34.3279 37.2075 36.676 26.816 32.0548 17.8893C27.4336 8.96264 17.593 4.88113 10.0751 8.77301C2.5573 12.6649 0.209132 23.0564 4.83035 31.9831C9.45157 40.9097 19.2922 44.9912 26.8101 41.0994Z",
+                fill: "#3994FF"
+            }), l.jsx("path", {
+                d: "M21.7742 20.0194L16.5692 10.5938C14.4048 11.7978 12.5627 13.5061 11.1992 15.5737L20.1992 21.4819C20.599 20.8748 21.1392 20.3731 21.7742 20.0194Z",
+                fill: "white"
+            }), l.jsx("path", {
+                d: "M9.81019 18.0769C9.53044 18.7581 9.30047 19.4587 9.12207 20.1731L19.5996 22.8375C19.6533 22.6286 19.7216 22.4237 19.8039 22.2244L9.81019 18.0769Z",
+                fill: "white"
+            }), l.jsx("path", {
+                d: "M24 7.6875C20.7737 7.6875 17.6198 8.64421 14.9373 10.4367C12.2547 12.2291 10.1639 14.7768 8.92922 17.7575C7.69457 20.7382 7.37153 24.0181 8.00095 27.1824C8.63037 30.3467 10.184 33.2533 12.4653 35.5347C14.7467 37.816 17.6533 39.3696 20.8176 39.9991C23.9819 40.6285 27.2618 40.3054 30.2425 39.0708C33.2232 37.8361 35.7709 35.7453 37.5634 33.0627C39.3558 30.3802 40.3125 27.2263 40.3125 24C40.3125 19.6737 38.5939 15.5245 35.5347 12.4653C32.4755 9.40613 28.3264 7.6875 24 7.6875ZM24 28.4137H23.9381C23.2566 28.4129 22.5842 28.2566 21.9722 27.9567C21.3601 27.6568 20.8245 27.2213 20.4062 26.6832C19.9878 26.1452 19.6977 25.5188 19.5579 24.8517C19.4181 24.1847 19.4323 23.4945 19.5994 22.8337L9.12188 20.1713C9.30028 19.4568 9.53026 18.7562 9.81001 18.075L19.8038 22.2206C19.9108 21.9586 20.0427 21.7075 20.1975 21.4706L11.1975 15.5625C12.5629 13.4987 14.4055 11.7943 16.5694 10.5938L21.7744 20.0194C22.4362 19.6514 23.1808 19.4578 23.9381 19.4569H24C25.1709 19.4808 26.2858 19.9628 27.1054 20.7994C27.925 21.6359 28.384 22.7604 28.384 23.9316C28.384 25.1027 27.925 26.2272 27.1054 27.0638C26.2858 27.9003 25.1709 28.3823 24 28.4062V28.4137Z",
+                fill: "#5ACFF5"
+            }), l.jsx("path", {
+                d: "M24.0003 19.4644H23.9384C23.1811 19.4653 22.4365 19.6589 21.7747 20.0269C21.139 20.3804 20.5981 20.8821 20.1978 21.4894C20.043 21.7263 19.9111 21.9774 19.8041 22.2394C19.7217 22.4387 19.6534 22.6436 19.5997 22.8525C19.4326 23.5133 19.4184 24.2034 19.5582 24.8705C19.698 25.5376 19.9881 26.1639 20.4065 26.702C20.8248 27.24 21.3604 27.6756 21.9725 27.9754C22.5845 28.2753 23.2569 28.4316 23.9384 28.4325H24.0003C25.1712 28.4085 26.2861 27.9266 27.1057 27.09C27.9253 26.2535 28.3843 25.129 28.3843 23.9578C28.3843 22.7867 27.9253 21.6622 27.1057 20.8256C26.2861 19.9891 25.1712 19.5071 24.0003 19.4831V19.4644ZM24.0003 26.0831H23.9384C23.5864 26.0806 23.2403 25.9919 22.9304 25.8247C22.6206 25.6576 22.3564 25.4171 22.1609 25.1243C21.9654 24.8315 21.8445 24.4953 21.8089 24.1451C21.7733 23.7948 21.824 23.4412 21.9566 23.115C22.0082 22.9909 22.0709 22.8716 22.1441 22.7588C22.3387 22.4611 22.6046 22.2167 22.9176 22.0478C23.2307 21.8788 23.5809 21.7907 23.9366 21.7913H24.0003C24.558 21.8078 25.0873 22.0409 25.4759 22.4412C25.8645 22.8415 26.0819 23.3774 26.0819 23.9353C26.0819 24.4932 25.8645 25.0292 25.4759 25.4295C25.0873 25.8298 24.558 26.0629 24.0003 26.0794V26.0831Z",
+                fill: "#B3EEFF"
+            }), l.jsx("g", {
+                style: {
+                    mixBlendMode: "overlay"
+                },
+                opacity: "0.5",
+                children: l.jsx("path", {
+                    d: "M24 7.6875V21.795C24.5577 21.8115 25.087 22.0446 25.4756 22.4449C25.8642 22.8452 26.0816 23.3812 26.0816 23.9391C26.0816 24.497 25.8642 25.0329 25.4756 25.4332C25.087 25.8335 24.5577 26.0666 24 26.0831V40.3125C28.3263 40.3125 32.4755 38.5939 35.5347 35.5347C38.5939 32.4755 40.3125 28.3263 40.3125 24C40.3125 19.6737 38.5939 15.5245 35.5347 12.4653C32.4755 9.40613 28.3263 7.6875 24 7.6875Z",
+                    fill: "black"
+                })
+            })]
+        }), l.jsx("defs", {
+            children: l.jsx("clipPath", {
+                id: "clip0_444_1354",
+                children: l.jsx("rect", {
+                    width: "48",
+                    height: "48",
+                    fill: "white"
+                })
+            })
+        })]
+    })
+}
+
+function pa(i) {
+    return l.jsxs("svg", {
+        width: 48,
+        height: 48,
+        fill: "none",
+        xmlns: "http://www.w3.org/2000/svg",
+        ...i,
+        children: [l.jsx("path", {
+            opacity: "0.2",
+            d: "M18.0806 37.8102C26.1102 36.9748 31.9787 30.138 31.1882 22.5399C30.3976 14.9418 23.2474 9.45957 15.2177 10.295C7.18805 11.1305 1.31958 17.9672 2.11013 25.5653C2.90068 33.1635 10.0509 38.6457 18.0806 37.8102Z",
+            fill: "#3994FF"
+        }), l.jsx("path", {
+            opacity: "0.2",
+            d: "M32.6792 41.6865C40.9592 40.825 46.8421 32.1562 45.8191 22.324C44.7961 12.4919 37.2546 5.21975 28.9746 6.08124C20.6947 6.94273 14.8117 15.6116 15.8347 25.4438C16.8577 35.2759 24.3992 42.548 32.6792 41.6865Z",
+            fill: "#3994FF"
+        }), l.jsx("path", {
+            d: "M15.6848 18.7013V29.1244H8.86172C7.90694 29.1244 6.99127 28.7451 6.31613 28.07C5.641 27.3948 5.26172 26.4792 5.26172 25.5244V22.3013C5.26172 21.3465 5.641 20.4308 6.31613 19.7557C6.99127 19.0805 7.90694 18.7013 8.86172 18.7013H15.6848Z",
+            fill: "#5ACFF5"
+        }), l.jsx("g", {
+            style: {
+                mixBlendMode: "overlay"
+            },
+            opacity: "0.5",
+            children: l.jsx("path", {
+                d: "M13.395 18.7013H11.4769C10.2125 18.7013 9.1875 19.7263 9.1875 20.9906V26.835C9.1875 28.0994 10.2125 29.1244 11.4769 29.1244H13.395C14.6594 29.1244 15.6844 28.0994 15.6844 26.835V20.9906C15.6844 19.7263 14.6594 18.7013 13.395 18.7013Z",
+                fill: "black"
+            })
+        }), l.jsx("path", {
+            d: "M24.5047 9.14439V38.6794C24.5046 38.8961 24.4518 39.1094 24.3507 39.3011C24.2497 39.4928 24.1036 39.657 23.9249 39.7796C23.7462 39.9021 23.5404 39.9793 23.3252 40.0046C23.11 40.0298 22.8919 40.0023 22.6897 39.9244C15.4391 37.17 10.3916 31.0369 10.3916 23.9119C10.3916 16.7869 15.4391 10.6556 22.6879 7.89939C22.8901 7.82157 23.1083 7.7941 23.3236 7.81934C23.5388 7.84459 23.7448 7.9218 23.9235 8.04432C24.1023 8.16683 24.2487 8.33098 24.3499 8.52262C24.4511 8.71426 24.5043 8.92765 24.5047 9.14439Z",
+            fill: "#5ACFF5"
+        }), l.jsx("path", {
+            d: "M29.556 31.3819C29.3336 31.3817 29.1163 31.3156 28.9315 31.192C28.7466 31.0683 28.6026 30.8927 28.5175 30.6873C28.4325 30.4818 28.4102 30.2558 28.4535 30.0377C28.4968 29.8196 28.6038 29.6192 28.761 29.4619C31.7966 26.4244 31.761 21.4462 28.6803 18.3637C28.5698 18.2607 28.4811 18.1365 28.4197 17.9985C28.3582 17.8605 28.3251 17.7116 28.3224 17.5605C28.3198 17.4095 28.3476 17.2594 28.4041 17.1193C28.4607 16.9793 28.5449 16.852 28.6518 16.7452C28.7586 16.6384 28.8858 16.5541 29.0259 16.4976C29.166 16.441 29.3161 16.4132 29.4671 16.4159C29.6182 16.4185 29.7671 16.4516 29.9051 16.5131C30.0431 16.5746 30.1673 16.6632 30.2703 16.7737C34.2303 20.7319 34.266 27.1369 30.351 31.0519C30.1402 31.2629 29.8542 31.3816 29.556 31.3819Z",
+            fill: "#5ACFF5"
+        }), l.jsx("path", {
+            d: "M33.9173 36.4819C33.6945 36.482 33.4767 36.4161 33.2915 36.2924C33.1063 36.1686 32.9619 35.9927 32.8768 35.7869C32.7917 35.5811 32.7695 35.3546 32.8132 35.1362C32.8569 34.9177 32.9645 34.7172 33.1223 34.56C34.5167 33.1702 35.619 31.5155 36.3641 29.6932C37.1092 27.8709 37.4822 25.918 37.461 23.9494C37.4393 19.9341 35.8273 16.091 32.9779 13.2619C32.7699 13.0502 32.6539 12.7649 32.6553 12.4681C32.6567 12.1713 32.7753 11.8871 32.9852 11.6774C33.1952 11.4676 33.4796 11.3494 33.7764 11.3483C34.0732 11.3473 34.3583 11.4636 34.5698 11.6719C37.8383 14.9183 39.687 19.3277 39.711 23.9344C39.7347 26.2008 39.3048 28.4491 38.4467 30.547C37.5885 32.6448 36.3194 34.5499 34.7141 36.15C34.6097 36.255 34.4855 36.3384 34.3488 36.3954C34.212 36.4524 34.0654 36.4817 33.9173 36.4819Z",
+            fill: "#5ACFF5"
+        }), l.jsx("path", {
+            d: "M21.7503 37.8412C21.7506 39.2661 21.3285 40.6591 20.5371 41.8439C19.7458 43.0288 18.6209 43.9525 17.3046 44.498C15.9883 45.0435 14.5398 45.1864 13.1423 44.9087C11.7448 44.6309 10.461 43.945 9.45337 42.9376C8.44572 41.9302 7.75944 40.6466 7.48133 39.2492C7.20322 37.8518 7.34577 36.4032 7.89095 35.0868C8.43613 33.7704 9.35945 32.6452 10.5441 31.8536C11.7288 31.0619 13.1217 30.6394 14.5465 30.6394C16.4568 30.6394 18.2888 31.3981 19.6397 32.7486C20.9906 34.0992 21.7498 35.931 21.7503 37.8412Z",
+            fill: "#B3EEFF"
+        }), l.jsx("g", {
+            style: {
+                mixBlendMode: "overlay"
+            },
+            opacity: "0.5",
+            children: l.jsx("path", {
+                d: "M21.7496 37.8412C21.7496 39.7518 20.9907 41.5841 19.6397 42.9351C18.2888 44.286 16.4565 45.045 14.5459 45.045V30.6394C16.4561 30.6394 18.2881 31.3981 19.6391 32.7486C20.99 34.0992 21.7492 35.931 21.7496 37.8412Z",
+                fill: "black"
+            })
+        }), l.jsx("path", {
+            d: "M20.4529 37.8412V37.86C20.4496 39.0279 20.1002 40.1686 19.4489 41.138C18.7976 42.1074 17.8736 42.862 16.7937 43.3065C15.7137 43.7511 14.5262 43.8655 13.3812 43.6355C12.2362 43.4055 11.1851 42.8413 10.3606 42.0142C9.53605 41.187 8.97518 40.1341 8.74879 38.9884C8.5224 37.8427 8.64065 36.6556 9.0886 35.577C9.53655 34.4984 10.2941 33.5769 11.2656 32.9286C12.237 32.2804 13.3788 31.9346 14.5467 31.935H14.6048C16.1612 31.9503 17.6486 32.5793 18.7436 33.6853C19.8387 34.7913 20.453 36.2848 20.4529 37.8412Z",
+            fill: "white"
+        }), l.jsx("path", {
+            d: "M20.4521 37.8412V37.86L14.5459 37.8412L14.604 31.935C16.1604 31.9503 17.6478 32.5793 18.7428 33.6853C19.8379 34.7913 20.4522 36.2848 20.4521 37.8412Z",
+            fill: "#5ACFF5"
+        }), l.jsx("path", {
+            d: "M14.9496 31.0031C14.9496 30.8178 14.7998 30.6675 14.615 30.6675C14.4301 30.6675 14.2803 30.8178 14.2803 31.0031V32.8444C14.2803 33.0297 14.4301 33.18 14.615 33.18C14.7998 33.18 14.9496 33.0297 14.9496 32.8444V31.0031Z",
+            fill: "#B3EEFF"
+        }), l.jsx("path", {
+            d: "M14.9496 42.7275C14.9496 42.5421 14.7998 42.3919 14.615 42.3919C14.4301 42.3919 14.2803 42.5421 14.2803 42.7275V44.5688C14.2803 44.7541 14.4301 44.9044 14.615 44.9044C14.7998 44.9044 14.9496 44.7541 14.9496 44.5688V42.7275Z",
+            fill: "#B3EEFF"
+        }), l.jsx("path", {
+            d: "M9.59016 38.205C9.77552 38.205 9.92578 38.0551 9.92578 37.8703C9.92578 37.6855 9.77552 37.5356 9.59016 37.5356H7.74891C7.56355 37.5356 7.41328 37.6855 7.41328 37.8703C7.41328 38.0551 7.56355 38.205 7.74891 38.205H9.59016Z",
+            fill: "#B3EEFF"
+        }), l.jsx("path", {
+            d: "M21.3167 38.205C21.5021 38.205 21.6523 38.0551 21.6523 37.8703C21.6523 37.6855 21.5021 37.5356 21.3167 37.5356H19.4755C19.2901 37.5356 19.1398 37.6855 19.1398 37.8703C19.1398 38.0551 19.2901 38.205 19.4755 38.205H21.3167Z",
+            fill: "#B3EEFF"
+        })]
+    })
+}
+
+function xa(i) {
+    return l.jsxs("svg", {
+        width: 48,
+        height: 48,
+        fill: "none",
+        xmlns: "http://www.w3.org/2000/svg",
+        viewBox: "0 0 48 48",
+        ...i,
+        children: [l.jsxs("g", {
+            clipPath: "url(#clip0_699_44)",
+            children: [l.jsx("path", {
+                opacity: "0.2",
+                d: "M32.3753 37.2845C36.4565 29.7616 33.994 20.5323 26.8752 16.6703C19.7564 12.8083 10.677 15.7761 6.59577 23.2991C2.51454 30.822 4.97699 40.0513 12.0958 43.9133C19.2146 47.7753 28.294 44.8075 32.3753 37.2845Z",
+                fill: "#3994FF"
+            }), l.jsx("path", {
+                opacity: "0.2",
+                d: "M44.512 26.8417C48.7206 19.0839 44.6651 8.74391 35.4537 3.74669C26.2423 -1.25053 15.3632 0.98735 11.1546 8.74513C6.94595 16.5029 11.0015 26.8429 20.2129 31.8401C29.4243 36.8373 40.3034 34.5994 44.512 26.8417Z",
+                fill: "#3994FF"
+            }), l.jsx("path", {
+                d: "M22.5226 16.8712H18.6113V34.4719H22.5226V16.8712Z",
+                fill: "#B3EEFF"
+            }), l.jsx("path", {
+                d: "M30.3429 16.8712H26.4316V34.4719H30.3429V16.8712Z",
+                fill: "#B3EEFF"
+            }), l.jsx("path", {
+                d: "M38.1652 16.8712H34.2539V34.4719H38.1652V16.8712Z",
+                fill: "#B3EEFF"
+            }), l.jsx("path", {
+                d: "M14.3683 16.6931H10.457V34.2937H14.3683V16.6931Z",
+                fill: "#B3EEFF"
+            }), l.jsx("g", {
+                style: {
+                    mixBlendMode: "overlay"
+                },
+                opacity: "0.5",
+                children: l.jsx("path", {
+                    d: "M30.3429 16.8712H26.4316V34.4719H30.3429V16.8712Z",
+                    fill: "black"
+                })
+            }), l.jsx("g", {
+                style: {
+                    mixBlendMode: "overlay"
+                },
+                opacity: "0.5",
+                children: l.jsx("path", {
+                    d: "M38.1652 16.8712H34.2539V34.4719H38.1652V16.8712Z",
+                    fill: "black"
+                })
+            }), l.jsx("path", {
+                d: "M21.5455 4.18686L6.32235 14.8519C5.1786 15.6525 5.7186 17.5256 7.09297 17.5256H41.1673C42.5417 17.5256 43.0817 15.6506 41.938 14.8519L26.7392 4.18874C25.9805 3.65016 25.0731 3.36069 24.1426 3.36035C23.2122 3.36002 22.3046 3.64884 21.5455 4.18686Z",
+                fill: "#5ACFF5"
+            }), l.jsx("g", {
+                style: {
+                    mixBlendMode: "overlay"
+                },
+                opacity: "0.5",
+                children: l.jsx("path", {
+                    d: "M41.167 17.5256H24.0352V3.36188C25.0014 3.34118 25.9488 3.63028 26.7389 4.18688L41.9377 14.8519C43.0814 15.6525 42.5414 17.5256 41.167 17.5256Z",
+                    fill: "black"
+                })
+            }), l.jsx("path", {
+                d: "M10.0779 34.2919H38.2029C38.6216 34.2919 39.0231 34.4582 39.3192 34.7543C39.6153 35.0503 39.7816 35.4519 39.7816 35.8706V38.2031H8.50098V35.8706C8.50098 35.4522 8.66705 35.051 8.96272 34.7549C9.25839 34.4589 9.65947 34.2924 10.0779 34.2919Z",
+                fill: "#5ACFF5"
+            }), l.jsx("g", {
+                style: {
+                    mixBlendMode: "overlay"
+                },
+                opacity: "0.5",
+                children: l.jsx("path", {
+                    d: "M39.7895 35.8706V38.205H24.0508V34.2919H38.2108C38.6295 34.2919 39.0311 34.4582 39.3271 34.7543C39.6232 35.0503 39.7895 35.4519 39.7895 35.8706Z",
+                    fill: "black"
+                })
+            }), l.jsx("path", {
+                d: "M40.539 38.6831V40.0519C40.5385 40.3078 40.4366 40.5532 40.2557 40.7341C40.0747 40.9151 39.8293 41.017 39.5734 41.0175H8.71465C8.4587 41.017 8.21338 40.9151 8.0324 40.7341C7.85141 40.5532 7.74952 40.3078 7.74902 40.0519V38.6831C7.74952 38.2648 7.91607 37.8637 8.21209 37.568C8.50811 37.2723 8.90939 37.1063 9.32777 37.1063H38.9715C39.3464 37.109 39.708 37.2449 39.9918 37.4899C40.2755 37.7348 40.4629 38.0727 40.5203 38.4431C40.5288 38.4959 40.5344 38.5491 40.5371 38.6025C40.539 38.625 40.539 38.655 40.539 38.6831Z",
+                fill: "#B3EEFF"
+            }), l.jsx("g", {
+                style: {
+                    mixBlendMode: "overlay"
+                },
+                opacity: "0.5",
+                children: l.jsx("path", {
+                    d: "M40.5393 38.6831V40.0519C40.5388 40.3078 40.4369 40.5531 40.2559 40.7341C40.0749 40.9151 39.8296 41.017 39.5737 41.0175H24.0449V37.1044H38.9718C39.3438 37.1168 39.7004 37.2562 39.9822 37.4994C40.2639 37.7426 40.4539 38.075 40.5205 38.4412C40.5205 38.4919 40.5337 38.5462 40.5374 38.6006C40.5412 38.655 40.5393 38.655 40.5393 38.6831Z",
+                    fill: "black"
+                })
+            })]
+        }), l.jsx("defs", {
+            children: l.jsx("clipPath", {
+                id: "clip0_699_44",
+                children: l.jsx("rect", {
+                    width: "48",
+                    height: "48",
+                    fill: "white"
+                })
+            })
+        })]
+    })
+}
+
+function fa(i) {
+    return l.jsxs("svg", {
+        width: 22,
+        height: 24,
+        viewBox: "0 0 24 24",
+        fill: "none",
+        xmlns: "http://www.w3.org/2000/svg",
+        ...i,
+        children: [l.jsx("path", {
+            d: "M6.595 23.186l.418-2.642-.93-.021H1.646L4.73 1.028a.252.252 0 01.25-.213h7.482c2.483 0 4.198.515 5.093 1.532.42.477.686.976.816 1.525.135.575.137 1.263.005 2.102l-.01.062v.537l.42.237c.353.187.634.401.85.646.358.408.59.927.689 1.541.1.633.067 1.385-.098 2.237-.192.98-.501 1.833-.92 2.531a5.21 5.21 0 01-1.455 1.59 5.915 5.915 0 01-1.96.883c-.723.188-1.547.282-2.45.282h-.583c-.416 0-.82.15-1.138.418a1.757 1.757 0 00-.594 1.056l-.043.238-.737 4.656-.034.171c-.009.054-.024.081-.046.1a.124.124 0 01-.077.027H6.595z",
+            fill: "#253B80"
+        }), l.jsx("path", {
+            d: "M19.183 6.098c-.022.142-.047.288-.076.437-.987 5.051-4.362 6.796-8.673 6.796H8.239c-.528 0-.972.382-1.054.9l-1.124 7.107-.318 2.015a.56.56 0 00.554.647h3.894a.936.936 0 00.925-.787l.038-.198.733-4.638.047-.254a.935.935 0 01.925-.79h.582c3.772 0 6.725-1.526 7.588-5.945.36-1.846.174-3.387-.78-4.471a3.722 3.722 0 00-1.066-.82z",
+            fill: "#179BD7"
+        }), l.jsx("path", {
+            d: "M18.15 5.687a7.817 7.817 0 00-.959-.212c-.591-.096-1.24-.14-1.935-.14H9.392a.933.933 0 00-.924.788L7.22 14.001l-.035.23c.082-.518.526-.9 1.053-.9h2.195c4.311 0 7.687-1.746 8.673-6.796.03-.15.055-.295.077-.437a5.27 5.27 0 00-.811-.342 7.309 7.309 0 00-.221-.069z",
+            fill: "#222D65"
+        }), l.jsx("path", {
+            d: "M8.468 6.123a.93.93 0 01.925-.788h5.864c.694 0 1.343.045 1.935.14a7.817 7.817 0 011.181.28c.291.098.561.211.811.343.294-1.867-.002-3.138-1.015-4.289C17.055.542 15.04 0 12.463 0H4.98c-.526 0-.975.382-1.057.901L.808 20.597c-.061.39.24.741.634.741h4.62l1.159-7.337 1.247-7.878z",
+            fill: "#253B80"
+        })]
+    })
+}
+const ma = Object.freeze(Object.defineProperty({
         __proto__: null,
-        Activated: ke,
-        Add: O,
-        AddReaction: ({
-            stroke: e = "currentColor",
-            fill: t = "transparent",
-            ...s
-        }) => re.jsxs("svg", {
-            width: 24,
-            height: 24,
-            viewBox: "0 0 24 24",
+        AR: function(i) {
+            return l.jsxs("svg", {
+                width: 24,
+                height: 24,
+                viewBox: "0 0 24 24",
+                fill: "none",
+                xmlns: "http://www.w3.org/2000/svg",
+                ...i,
+                children: [l.jsx("path", {
+                    d: "M12 24c6.627 0 12-5.373 12-12S18.627 0 12 0 0 5.373 0 12s5.373 12 12 12z",
+                    fill: "#6DA544"
+                }), l.jsx("path", {
+                    d: "M6.783 14.348c0 .864.7 1.565 1.565 1.565h4.696c0 .72.583 1.304 1.304 1.304h1.565c.72 0 1.305-.584 1.305-1.304v-1.565H6.783zM17.348 6.783v3.652c0 .575-.468 1.043-1.044 1.043v1.565a2.612 2.612 0 002.609-2.608V6.783h-1.565zM6.13 10.436c0 .575-.468 1.043-1.043 1.043v1.565a2.612 2.612 0 002.609-2.608V6.783H6.13v3.653z",
+                    fill: "#F0F0F0"
+                }), l.jsx("path", {
+                    d: "M16.565 6.783H15v3.652h1.565V6.783zM12.652 8.87a.261.261 0 01-.522 0V6.781h-1.565V8.87a.261.261 0 01-.522 0V6.782H8.478V8.87c0 1.007.82 1.827 1.826 1.827.388 0 .748-.122 1.044-.33a1.816 1.816 0 001.273.315c-.11.456-.522.797-1.013.797v1.565a2.612 2.612 0 002.61-2.608V6.782h-1.566V8.87z",
+                    fill: "#F0F0F0"
+                }), l.jsx("path", {
+                    d: "M10.826 11.478H8.478v1.565h2.348v-1.565z",
+                    fill: "#F0F0F0"
+                })]
+            })
+        },
+        Action: C,
+        Add: c,
+        Adjustment: p,
+        Alignment: ri,
+        AnnouncementChannel: Ki,
+        ArrowBottom: x,
+        ArrowLeft: f,
+        ArrowRight: m,
+        ArrowTop: j,
+        Award: w,
+        BR: function(i) {
+            return l.jsx("svg", {
+                width: 24,
+                height: 24,
+                viewBox: "0 0 211 211",
+                version: "1.1",
+                xmlns: "http://www.w3.org/2000/svg",
+                ...i,
+                children: l.jsx("g", {
+                    id: "Page-1",
+                    stroke: "none",
+                    strokeWidth: "1",
+                    fill: "none",
+                    fillRule: "evenodd",
+                    children: l.jsxs("g", {
+                        id: "Group",
+                        fillRule: "nonzero",
+                        children: [l.jsx("circle", {
+                            id: "Oval",
+                            fill: "#00C85F",
+                            cx: "105.5",
+                            cy: "105.5",
+                            r: "105.5"
+                        }), l.jsx("path", {
+                            d: "M101.455891,43.2218395 L11.6232391,102.973933 C9.4589203,104.413937 9.4589203,107.586888 11.6232391,109.026479 L101.455891,168.77816 C103.904739,170.40728 107.095261,170.40728 109.544109,168.77816 L199.376761,109.026479 C201.54108,107.586476 201.54108,104.413524 199.376761,102.973933 L109.544109,43.2218395 C107.095261,41.5927202 103.904739,41.5927202 101.455891,43.2218395 Z",
+                            id: "Path",
+                            fill: "#FFF046"
+                        }), l.jsx("circle", {
+                            id: "Oval",
+                            fill: "#4B82E1",
+                            cx: "105.5",
+                            cy: "105.5",
+                            r: "43.5"
+                        }), l.jsx("path", {
+                            d: "M67.6205222,83.0610943 C66.186038,85.4179381 64.9735476,87.9163823 64,90.5378497 C84.3411501,89.156935 116.983312,92.7749729 145.64695,122 C146.668865,119.460686 147.467546,116.810733 148,114.061701 C119.948188,87.1959948 88.7959054,82.3716691 67.6205222,83.0610943 Z",
+                            id: "Path",
+                            fill: "#FFFFFF"
+                        })]
+                    })
+                })
+            })
+        },
+        Bot: M,
+        CN: function(i) {
+            return l.jsxs("svg", {
+                width: 24,
+                height: 24,
+                viewBox: "0 0 24 24",
+                fill: "none",
+                xmlns: "http://www.w3.org/2000/svg",
+                ...i,
+                children: [l.jsx("path", {
+                    d: "M12 24c6.627 0 12-5.373 12-12S18.627 0 12 0 0 5.373 0 12s5.373 12 12 12z",
+                    fill: "#D80027"
+                }), l.jsx("path", {
+                    d: "M6.567 7.303l1.036 3.188h3.352l-2.71 1.973 1.036 3.188-2.714-1.97-2.714 1.97 1.04-3.188-2.713-1.973H5.53l1.036-3.188zM14.226 18.586l-.792-.975-1.172.455.68-1.055-.792-.98 1.214.324.684-1.055.066 1.256 1.219.324-1.177.45.07 1.256zM15.802 15.727l.375-1.2-1.027-.727 1.256-.019.37-1.2.408 1.19 1.256-.013-1.007.75.403 1.19-1.027-.726-1.008.755zM17.925 8.808l-.553 1.13.9.876-1.242-.178-.553 1.125-.216-1.237-1.247-.179 1.116-.586-.216-1.242.9.877 1.111-.586zM14.26 5.386l-.095 1.252 1.168.473-1.224.3-.089 1.256-.66-1.069-1.224.3.81-.96-.665-1.065 1.167.474.811-.961z",
+                    fill: "#FFDA44"
+                })]
+            })
+        },
+        CS: function(i) {
+            return l.jsxs("svg", {
+                width: 24,
+                height: 24,
+                viewBox: "0 0 24 24",
+                fill: "none",
+                xmlns: "http://www.w3.org/2000/svg",
+                ...i,
+                children: [l.jsx("path", {
+                    d: "M12 24c6.627 0 12-5.373 12-12S18.627 0 12 0 0 5.373 0 12s5.373 12 12 12z",
+                    fill: "#F0F0F0"
+                }), l.jsx("path", {
+                    d: "M10.957 12s-7.435 8.487-7.442 8.485A11.963 11.963 0 0012 24c6.627 0 12-5.373 12-12H10.957z",
+                    fill: "#D80027"
+                }), l.jsx("path", {
+                    d: "M3.515 3.515c-4.687 4.686-4.687 12.284 0 16.97L12 12 3.515 3.515z",
+                    fill: "#0052B4"
+                })]
+            })
+        },
+        Calendar: g,
+        Camera: z,
+        CameraSlash: v,
+        Cancel: y,
+        Card: L,
+        Channel: si,
+        Check: F,
+        CheckRaw: u,
+        CircledClose: V,
+        Clock: k,
+        Close: H,
+        Collapse: ai,
+        Copy: Z,
+        Credits: Vl,
+        CryptoQueries: Cl,
+        CryptoQueriesPlugin: i => l.jsxs("svg", {
+            width: "48",
+            height: "48",
+            viewBox: "0 0 48 48",
             fill: "none",
             xmlns: "http://www.w3.org/2000/svg",
-            ...s,
-            children: [re.jsx("path", {
-                d: "M19.1809 12.1482L18.4419 12.0203L18.4419 12.0203L19.1809 12.1482ZM18.6165 15.412L17.8774 15.2842L17.8774 15.2842L18.6165 15.412ZM7.951 18.7817L7.20379 18.8463L7.20379 18.8463L7.951 18.7817ZM7.30127 11.2675L8.04848 11.2029L8.04848 11.2029L7.30127 11.2675ZM13.5967 6.57714L14.3369 6.6984L14.3369 6.6984L13.5967 6.57714ZM13.0666 9.81278L13.8067 9.93405L13.8067 9.93405L13.0666 9.81278ZM7.75929 10.142L7.2697 9.57383L7.2697 9.57383L7.75929 10.142ZM8.91028 9.15015L9.39988 9.71831L9.39988 9.71831L8.91028 9.15015ZM10.8152 6.22699L10.0893 6.03867L10.0893 6.03868L10.8152 6.22699ZM11.1958 4.75991L11.9218 4.94823L11.9218 4.94823L11.1958 4.75991ZM12.5349 4.05148L12.3055 4.76554L12.3055 4.76554L12.5349 4.05148ZM12.6508 4.08874L12.8802 3.37468L12.8802 3.37468L12.6508 4.08874ZM10.2903 7.57009L10.9519 7.92347L10.9519 7.92347L10.2903 7.57009ZM13.5245 4.99802L12.7986 5.18634L12.7986 5.18634L13.5245 4.99802ZM11.7401 4.10591L11.4146 3.43027L11.4146 3.43027L11.7401 4.10591ZM5.57806 19.5766L4.83085 19.6412L4.83085 19.6412L5.57806 19.5766ZM4.80078 10.5874L5.54799 10.5228C5.51339 10.1226 5.16971 9.82074 4.76845 9.83806C4.36718 9.85537 4.05078 10.1857 4.05078 10.5874L4.80078 10.5874ZM18.4419 12.0203L17.8774 15.2842L19.3555 15.5398L19.9199 12.276L18.4419 12.0203ZM12.9968 19.25H9.27786V20.75H12.9968V19.25ZM8.69821 18.717L8.04848 11.2029L6.55406 11.3321L7.20379 18.8463L8.69821 18.717ZM17.8774 15.2842C17.4851 17.5529 15.4368 19.25 12.9968 19.25V20.75C16.1268 20.75 18.8321 18.5662 19.3555 15.5398L17.8774 15.2842ZM12.8566 6.45587L12.3265 9.69152L13.8067 9.93405L14.3369 6.6984L12.8566 6.45587ZM8.24889 10.7101L9.39988 9.71831L8.42069 8.582L7.2697 9.57383L8.24889 10.7101ZM11.5412 6.41531L11.9218 4.94823L10.4698 4.57159L10.0893 6.03867L11.5412 6.41531ZM12.3055 4.76554L12.4214 4.8028L12.8802 3.37468L12.7642 3.33742L12.3055 4.76554ZM10.9519 7.92347C11.207 7.44589 11.4051 6.93995 11.5412 6.41531L10.0893 6.03868C9.98317 6.44763 9.82853 6.84284 9.62881 7.21672L10.9519 7.92347ZM12.4214 4.8028C12.6195 4.86643 12.7547 5.01736 12.7986 5.18634L14.2505 4.8097C14.0727 4.12446 13.5489 3.58949 12.8802 3.37468L12.4214 4.8028ZM11.9218 4.94823C11.9384 4.88426 11.9861 4.81991 12.0657 4.78156L11.4146 3.43027C10.9505 3.65387 10.6006 4.06732 10.4698 4.57159L11.9218 4.94823ZM12.0657 4.78156C12.1387 4.74638 12.2259 4.73998 12.3055 4.76554L12.7642 3.33742C12.32 3.19471 11.8354 3.22747 11.4146 3.43027L12.0657 4.78156ZM13.7237 11.3374H17.8686V9.83736H13.7237V11.3374ZM6.32527 19.512L5.54799 10.5228L4.05357 10.652L4.83085 19.6412L6.32527 19.512ZM5.55078 19.6102V10.5874H4.05078V19.6102H5.55078ZM4.83085 19.6412C4.81274 19.4317 4.97782 19.25 5.19015 19.25V20.75C5.85905 20.75 6.38276 20.1768 6.32527 19.512L4.83085 19.6412ZM14.3369 6.6984C14.4399 6.06969 14.4105 5.42637 14.2505 4.8097L12.7986 5.18634C12.9061 5.60083 12.9259 6.03326 12.8566 6.45587L14.3369 6.6984ZM9.27786 19.25C8.9767 19.25 8.72434 19.0193 8.69821 18.717L7.20379 18.8463C7.29685 19.9225 8.19696 20.75 9.27786 20.75V19.25ZM9.39988 9.71831C9.94622 9.24751 10.5506 8.67464 10.9519 7.92347L9.62881 7.21672C9.3655 7.70964 8.9424 8.13243 8.42069 8.582L9.39988 9.71831ZM19.9199 12.276C20.14 11.0033 19.1613 9.83736 17.8686 9.83736V11.3374C18.2287 11.3374 18.5037 11.6627 18.4419 12.0203L19.9199 12.276ZM5.19015 19.25C5.39012 19.25 5.55078 19.4121 5.55078 19.6102H4.05078C4.05078 20.2389 4.56009 20.75 5.19015 20.75V19.25ZM12.3265 9.69152C12.1853 10.5529 12.8493 11.3374 13.7237 11.3374V9.83736C13.7766 9.83736 13.8149 9.88435 13.8067 9.93405L12.3265 9.69152ZM8.04848 11.2029C8.03229 11.0157 8.10703 10.8324 8.24889 10.7101L7.2697 9.57383C6.7625 10.0109 6.49639 10.6652 6.55406 11.3321L8.04848 11.2029Z",
-                fill: e
-            }), re.jsx("path", {
-                d: "M17 5H21M19 3L19 7",
-                stroke: e,
-                strokeWidth: "1.5",
-                "stroke-linecap": "round"
+            ...i,
+            children: [l.jsx("path", {
+                opacity: "0.2",
+                d: "M38.8492 31.7989C45.9532 28.1213 48.891 19.6904 45.4109 12.9681C41.9308 6.24568 33.3507 3.77745 26.2467 7.4551C19.1427 11.1328 16.205 19.5636 19.685 26.286C23.1651 33.0084 31.7452 35.4766 38.8492 31.7989Z",
+                fill: "#965FFF"
+            }), l.jsx("path", {
+                opacity: "0.2",
+                d: "M27.6868 40.6619C35.0125 36.8695 37.3005 26.7435 32.7974 18.0449C28.2942 9.3463 18.7051 5.36901 11.3795 9.16139C4.05383 12.9538 1.76576 23.0797 6.26892 31.7783C10.7721 40.477 20.3612 44.4542 27.6868 40.6619Z",
+                fill: "#965FFF"
+            }), l.jsx("path", {
+                d: "M29.1996 28.0031C29.1996 31.1606 23.9496 33.6281 17.2502 33.6281H17.2352C14.2784 33.6281 11.6102 33.1425 9.54773 32.3306C6.93773 31.3125 5.30273 29.7638 5.30273 28.0031C5.30273 26.8256 6.03211 25.7531 7.29398 24.8531C9.22336 23.4844 12.3996 22.5563 16.1177 22.3988C16.4927 22.3819 16.8677 22.3744 17.2427 22.3744H17.2502C21.454 22.3744 25.0859 23.3475 27.2084 24.8531C28.4702 25.7456 29.1996 26.8256 29.1996 28.0031Z",
+                fill: "#624CC1"
+            }), l.jsx("path", {
+                d: "M29.1995 21.7031C29.1995 22.8806 28.4702 23.9531 27.2083 24.8531C25.0858 26.3531 21.452 27.3319 17.2502 27.3319H17.2352C15.8427 27.3377 14.4522 27.2267 13.0783 27C12.075 26.8313 11.0873 26.5804 10.1252 26.25C9.11959 25.9204 8.16575 25.4501 7.29203 24.8531C6.03016 23.9606 5.30078 22.8806 5.30078 21.7031C5.30078 20.4394 6.14266 19.2844 7.58266 18.3563C8.37901 17.8558 9.23263 17.4529 10.1252 17.1563C12.0977 16.4738 14.5483 16.0763 17.2333 16.0744H17.2502C18.2338 16.0735 19.2167 16.1292 20.1939 16.2413C22.9464 16.5563 25.2939 17.3119 26.9008 18.345C28.352 19.2769 29.1995 20.4375 29.1995 21.7031Z",
+                fill: "#8683F2"
+            }), l.jsx("path", {
+                d: "M29.182 15C29.182 16.2638 28.3402 17.4188 26.9002 18.3469C24.7495 19.7325 21.2845 20.625 17.2908 20.625H17.2345C15.3407 20.6361 13.4523 20.4209 11.6095 19.9838C10.1884 19.6629 8.82877 19.1132 7.58391 18.3563C6.13266 17.4188 5.28516 16.2675 5.28516 14.9981C5.28516 12.8081 7.81641 10.9463 11.6058 10.0125C13.4483 9.57383 15.3368 9.35791 17.2308 9.36939C19.5519 9.344 21.863 9.67795 24.082 10.3594C27.187 11.3663 29.182 13.0519 29.182 15Z",
+                fill: "#C4C2EF"
+            }), l.jsx("g", {
+                opacity: "0.2",
+                children: l.jsx("path", {
+                    d: "M29.1995 28.0031C29.1995 31.1606 23.9495 33.6281 17.2501 33.6281C14.2876 33.6281 11.6082 33.1444 9.54199 32.3306L13.0782 27L16.1251 22.3988L17.2914 20.625L20.1939 16.2413L24.0864 10.3594C27.1876 11.3663 29.1826 13.0519 29.1826 15C29.1826 16.2638 28.3407 17.4187 26.9007 18.3469C28.352 19.2844 29.1995 20.4356 29.1995 21.705C29.1995 22.8825 28.4701 23.955 27.2082 24.855C28.4701 25.7456 29.1995 26.8256 29.1995 28.0031Z",
+                    fill: "black"
+                })
+            }), l.jsx("path", {
+                d: "M25.3936 27.6212L29.4035 30.2114L21.4987 42.4491C21.163 42.9688 20.6347 43.3338 20.0299 43.4639C19.4251 43.594 18.7934 43.4785 18.2738 43.1428L18.1824 43.0838C17.6628 42.7482 17.2978 42.2198 17.1677 41.6151C17.0376 41.0103 17.1531 40.3786 17.4887 39.8589L25.3936 27.6212Z",
+                fill: "#8683F2"
+            }), l.jsx("g", {
+                opacity: "0.2",
+                children: l.jsx("path", {
+                    d: "M29.3977 30.2156L21.4927 42.4537C21.1567 42.973 20.6283 43.3377 20.0237 43.4678C19.419 43.5979 18.7874 43.4827 18.2677 43.1475L18.2227 43.1175L27.3933 28.9219L29.3977 30.2156Z",
+                    fill: "black"
+                })
+            }), l.jsx("path", {
+                d: "M32.2723 32.2837C38.3581 32.2837 43.2917 27.3502 43.2917 21.2644C43.2917 15.1785 38.3581 10.245 32.2723 10.245C26.1865 10.245 21.2529 15.1785 21.2529 21.2644C21.2529 27.3502 26.1865 32.2837 32.2723 32.2837Z",
+                fill: "#8683F2"
+            }), l.jsx("path", {
+                d: "M38.9379 25.5679C41.3792 21.7884 40.3734 16.7965 36.6914 14.4181C33.0093 12.0397 28.0453 13.1755 25.604 16.955C23.1627 20.7345 24.1685 25.7264 27.8506 28.1048C31.5326 30.4832 36.4966 29.3474 38.9379 25.5679Z",
+                fill: "#C4C2EF"
+            }), l.jsx("g", {
+                opacity: "0.2",
+                children: l.jsx("path", {
+                    d: "M41.5273 27.2438C39.9469 29.6903 37.4621 31.4117 34.6161 32.0315C31.7701 32.6513 28.7946 32.1191 26.3398 30.5513L38.2986 12.0413C40.7372 13.6337 42.4459 16.1271 43.051 18.976C43.6561 21.825 43.1082 24.7976 41.5273 27.2438Z",
+                    fill: "black"
+                })
+            }), l.jsx("path", {
+                d: "M31.8358 16.4848C32.8081 16.3836 33.546 15.8182 33.4839 15.2218C33.4219 14.6255 32.5834 14.224 31.6111 14.3252C30.6388 14.4264 29.9009 14.9918 29.9629 15.5882C30.025 16.1845 30.8635 16.5859 31.8358 16.4848Z",
+                fill: "white"
+            }), l.jsx("path", {
+                d: "M28.7812 17.7225C29.2223 17.7225 29.5799 17.3649 29.5799 16.9238C29.5799 16.4826 29.2223 16.125 28.7812 16.125C28.34 16.125 27.9824 16.4826 27.9824 16.9238C27.9824 17.3649 28.34 17.7225 28.7812 17.7225Z",
+                fill: "white"
             })]
         }),
-        Alignment: ({
-            stroke: e = "currentColor",
-            fill: t = "transparent",
-            ...s
-        }) => re.jsxs("svg", {
-            width: 20,
-            height: 20,
-            viewBox: "0 0 20 20",
-            xmlns: "http://www.w3.org/2000/svg",
-            ...s,
-            children: [re.jsxs("g", {
-                clipPath: "url(#prefix__clip0_6974_12482)",
-                fill: e,
-                "data-fill": "main",
-                children: [re.jsx("path", {
-                    d: "M4 15.32a.76.76 0 01-.75-.75V4.6a.75.75 0 111.5 0v10a.76.76 0 01-.75.72z"
-                }), re.jsx("path", {
-                    d: "M17 10.34H4a.75.75 0 110-1.5h13a.75.75 0 110 1.5z"
-                }), re.jsx("path", {
-                    d: "M12 14.34a.75.75 0 01-.47-1.34l4.27-3.41-4.27-3.42A.75.75 0 1112.47 5l5 4a.75.75 0 010 1.17l-5 4a.75.75 0 01-.47.17z"
+        CryptoStatistics: function(i) {
+            return l.jsxs("svg", {
+                width: "20",
+                height: "20",
+                viewBox: "0 0 20 20",
+                fill: "none",
+                xmlns: "http://www.w3.org/2000/svg",
+                ...i,
+                children: [l.jsx("path", {
+                    d: "M3.69995 11.1833C3.7092 10.9705 3.79162 10.7674 3.93328 10.6083C4.07221 10.4324 4.24156 10.2828 4.43328 10.1666C4.67855 10.0097 4.94519 9.88902 5.22495 9.8083C4.94519 9.72758 4.67855 9.60689 4.43328 9.44997C4.24156 9.33382 4.07221 9.18423 3.93328 9.0083C3.74375 9.10492 3.56733 9.22534 3.40828 9.36663C3.24025 9.49427 3.08904 9.64268 2.95828 9.8083C2.63483 10.194 2.45518 10.68 2.44995 11.1833C2.47898 11.6576 2.63824 12.1147 2.91024 12.5043C3.18223 12.8939 3.55641 13.2009 3.99162 13.3916L4.29995 12.8583L4.61662 12.3083C4.37846 12.2178 4.16835 12.0662 4.00742 11.8687C3.8465 11.6712 3.74045 11.4348 3.69995 11.1833V11.1833Z",
+                    fill: i.main,
+                    "data-fill": "main"
+                }), l.jsx("path", {
+                    d: "M10.05 7.05831C9.91934 6.89016 9.76817 6.739 9.60002 6.60831C9.44216 6.47566 9.27193 6.35846 9.09169 6.25831C8.74522 6.66059 8.28688 6.95068 7.77502 7.09164C8.05559 7.16618 8.32273 7.28428 8.56669 7.44164C8.76554 7.558 8.9408 7.71065 9.08335 7.89164C9.22259 8.05152 9.30211 8.25472 9.30835 8.46664C9.30546 8.62716 9.25627 8.78342 9.16669 8.91664L9.76669 9.12498L10.3584 9.33331C10.4852 9.07352 10.5535 8.78904 10.5584 8.49998C10.5674 7.97399 10.387 7.46228 10.05 7.05831V7.05831ZM4.43335 9.44998C4.24163 9.33383 4.07228 9.18424 3.93335 9.00831C3.78561 8.85333 3.7032 8.64743 3.7032 8.43331C3.7032 8.21919 3.78561 8.01329 3.93335 7.85831C4.07228 7.68238 4.24163 7.53279 4.43335 7.41664C4.67679 7.25636 4.94395 7.13544 5.22502 7.05831C4.71598 6.92156 4.26181 6.63043 3.92502 6.22498C3.74189 6.32787 3.5689 6.44785 3.40835 6.58331C3.23823 6.71173 3.08678 6.86318 2.95835 7.03331C2.63086 7.41659 2.45093 7.90417 2.45093 8.40831C2.45093 8.91245 2.63086 9.40003 2.95835 9.78331C3.08678 9.95344 3.23823 10.1049 3.40835 10.2333C3.57002 10.3688 3.74608 10.4862 3.93335 10.5833C4.35943 10.8216 4.82078 10.9904 5.30002 11.0833L5.63335 10.5083L5.95835 9.99998C5.71021 9.97016 5.46494 9.91999 5.22502 9.84998C4.94291 9.75627 4.67616 9.62148 4.43335 9.44998V9.44998Z",
+                    fill: i.main,
+                    "data-fill": "main"
+                }), l.jsx("path", {
+                    d: "M6.49995 2.875C4.23328 2.875 2.44995 4.10833 2.44995 5.68333C2.45518 6.18668 2.63483 6.67263 2.95828 7.05833C3.22627 7.39661 3.5574 7.67963 3.93328 7.89167C4.72185 8.31467 5.60519 8.52977 6.49995 8.51667C7.40013 8.53077 8.28911 8.3157 9.08328 7.89167C9.45617 7.67875 9.78441 7.39578 10.05 7.05833C10.3734 6.67263 10.5531 6.18668 10.5583 5.68333C10.5583 4.10833 8.77495 2.875 6.49995 2.875ZM7.77495 7.04167C7.36018 7.15913 6.93103 7.21804 6.49995 7.21667C6.06883 7.2187 5.63958 7.15978 5.22495 7.04167C4.71591 6.90492 4.26174 6.61379 3.92495 6.20833C3.7857 6.05175 3.70604 5.85113 3.69995 5.64167C3.69995 4.94167 4.84995 4.16667 6.49995 4.16667C8.14995 4.16667 9.30828 5 9.30828 5.725C9.30175 5.93538 9.22554 6.13763 9.09162 6.3C8.73525 6.67473 8.27791 6.93814 7.77495 7.05833V7.04167Z",
+                    fill: i.main,
+                    "data-fill": "main"
+                }), l.jsx("path", {
+                    d: "M17.1084 4.00001C17.1084 3.70835 16.7918 3.51668 16.6001 3.66668L13.1751 6.16668C13.1302 6.20893 13.0957 6.26099 13.0742 6.31878C13.0527 6.37658 13.0449 6.43856 13.0514 6.49988C13.0578 6.56119 13.0784 6.62019 13.1114 6.67225C13.1444 6.72432 13.189 6.76804 13.2418 6.80001L14.0751 7.35001L11.6751 11.5167L8.20842 10.3083C8.16485 10.2958 8.11865 10.2958 8.07509 10.3083C7.96229 10.2706 7.83925 10.2782 7.73196 10.3295C7.62466 10.3808 7.54152 10.4719 7.50009 10.5833L4.40009 16.0417C4.34728 16.1318 4.31481 16.2324 4.30496 16.3364C4.2951 16.4403 4.30809 16.5452 4.34302 16.6436C4.37795 16.7421 4.43397 16.8317 4.50716 16.9062C4.58036 16.9807 4.66896 17.0383 4.76675 17.075C4.91057 17.1327 5.0691 17.1428 5.21907 17.1038C5.36904 17.0648 5.50257 16.9788 5.60009 16.8583L8.70009 13.1167L12.3501 14.5417H12.4584H12.5751C12.651 14.5302 12.7232 14.5008 12.7855 14.4558C12.8478 14.4109 12.8985 14.3518 12.9334 14.2833L16.0918 8.63335L17.1168 9.30001C17.3418 9.45001 17.5834 9.30001 17.5584 9.00001L17.1084 4.00001Z",
+                    stroke: i.main,
+                    "data-stroke": "main",
+                    fill: i.secondary,
+                    "data-fill": "secondary",
+                    strokeWidth: "1.5",
+                    strokeLinecap: "round",
+                    strokeLinejoin: "round"
                 })]
-            }), re.jsx("defs", {
-                children: re.jsx("clipPath", {
-                    id: "prefix__clip0_6974_12482",
-                    children: re.jsx("path", {
-                        fill: "#fff",
-                        d: "M0 0h20v20H0z"
+            })
+        },
+        CryptoStatisticsPlugin: i => l.jsxs("svg", {
+            width: "48",
+            height: "48",
+            viewBox: "0 0 48 48",
+            fill: "none",
+            xmlns: "http://www.w3.org/2000/svg",
+            ...i,
+            children: [l.jsx("path", {
+                opacity: "0.2",
+                d: "M38.849 31.7989C45.953 28.1213 48.8907 19.6904 45.4107 12.9681C41.9306 6.24568 33.3505 3.77745 26.2465 7.4551C19.1425 11.1328 16.2047 19.5636 19.6848 26.286C23.1649 33.0084 31.745 35.4766 38.849 31.7989Z",
+                fill: "#965FFF"
+            }), l.jsx("path", {
+                opacity: "0.2",
+                d: "M27.6871 40.6619C35.0127 36.8695 37.3008 26.7435 32.7976 18.0449C28.2945 9.3463 18.7053 5.36901 11.3797 9.16139C4.05408 12.9538 1.76601 23.0797 6.26916 31.7783C10.7723 40.477 20.3614 44.4542 27.6871 40.6619Z",
+                fill: "#965FFF"
+            }), l.jsx("path", {
+                d: "M29.1994 28.0031C29.1994 31.1606 23.9494 33.6281 17.25 33.6281C14.2875 33.6281 11.6081 33.1444 9.54187 32.3306C6.93749 31.3125 5.30249 29.7638 5.30249 28.0031C5.30249 26.8256 6.03187 25.7531 7.29374 24.8531C9.22312 23.4844 12.3994 22.5562 16.1175 22.3987C16.4925 22.3819 16.8675 22.3744 17.2425 22.3744C21.4462 22.3744 25.0781 23.3475 27.2006 24.8531C28.47 25.7456 29.1994 26.8256 29.1994 28.0031Z",
+                fill: "#624CC1"
+            }), l.jsx("path", {
+                d: "M29.1994 21.7031C29.1994 22.8806 28.47 23.9531 27.2081 24.8531C25.0856 26.3531 21.4519 27.3319 17.25 27.3319C15.8525 27.3378 14.4571 27.2268 13.0781 27C10.6856 26.5913 8.67187 25.8394 7.29374 24.8606C6.03187 23.9681 5.30249 22.8881 5.30249 21.7106C5.30249 20.4469 6.14437 19.2919 7.58437 18.3638C9.73687 16.9631 13.2319 16.0744 17.25 16.0744C18.2336 16.0735 19.2165 16.1292 20.1937 16.2413C22.9462 16.5563 25.2937 17.3119 26.9006 18.345C28.3519 19.2769 29.1994 20.4375 29.1994 21.7031Z",
+                fill: "#8683F2"
+            }), l.jsx("path", {
+                d: "M29.1825 15C29.1825 16.2637 28.3406 17.4187 26.9006 18.3469C24.75 19.7325 21.285 20.625 17.2913 20.625H17.235C13.2281 20.625 9.73502 19.7419 7.58439 18.3544C6.13314 17.4169 5.28564 16.2656 5.28564 14.9963C5.28564 11.8406 10.5356 9.37125 17.235 9.37125C19.5562 9.34586 21.8673 9.67981 24.0863 10.3612C27.1875 11.3662 29.1825 13.0519 29.1825 15Z",
+                fill: "#C4C2EF"
+            }), l.jsx("g", {
+                style: {
+                    mixBlendMode: "overlay"
+                },
+                opacity: "0.2",
+                children: l.jsx("path", {
+                    d: "M29.1995 28.0031C29.1995 31.1606 23.9495 33.6281 17.2501 33.6281C14.2876 33.6281 11.6082 33.1444 9.54199 32.3306L13.0782 27L16.1251 22.3987L17.2914 20.625L20.1939 16.2413L24.0864 10.3594C27.1876 11.3662 29.1826 13.0519 29.1826 15C29.1826 16.2637 28.3407 17.4187 26.9007 18.3469C28.352 19.2844 29.1995 20.4356 29.1995 21.705C29.1995 22.8825 28.4701 23.955 27.2082 24.855C28.4701 25.7456 29.1995 26.8256 29.1995 28.0031Z",
+                    fill: "black"
+                })
+            }), l.jsx("path", {
+                d: "M44.3607 21.9488L41.5369 20.1019L32.8276 35.685C32.7291 35.8749 32.5883 36.0397 32.4159 36.1665C32.2436 36.2933 32.0445 36.3787 31.8338 36.4163C31.8113 36.4163 31.7888 36.4163 31.7645 36.4163C31.6953 36.4238 31.6255 36.4238 31.5563 36.4163H31.5226C31.4174 36.4018 31.3146 36.3734 31.217 36.3319L21.1388 32.4038L12.5794 42.7388C12.3136 43.0606 11.9534 43.2908 11.5497 43.3968C11.1459 43.5028 10.7191 43.4792 10.3294 43.3294C10.2576 43.3017 10.1875 43.2698 10.1194 43.2338C9.88176 43.1099 9.67153 42.9393 9.50136 42.7322C9.33119 42.5251 9.20459 42.2858 9.12913 42.0286C9.05367 41.7714 9.03091 41.5016 9.06221 41.2354C9.09352 40.9692 9.17825 40.7121 9.31132 40.4794L17.9363 25.4231C18.3282 24.7388 18.9526 24.4444 19.4513 24.6506C19.5758 24.6232 19.7052 24.6297 19.8263 24.6694L29.4376 28.0331L36.0357 16.5L33.722 14.9831C33.107 14.5819 33.0038 13.62 33.5345 13.2338L42.977 6.32625C43.1138 6.23079 43.278 6.18246 43.4448 6.18855C43.6115 6.19463 43.7718 6.25482 43.9013 6.36C44.0424 6.46288 44.1595 6.59509 44.2446 6.74754C44.3298 6.89998 44.3809 7.06906 44.3945 7.24313L45.5907 21.1181C45.6582 21.8944 44.9795 22.3538 44.3607 21.9488Z",
+                fill: "#C4C2EF"
+            }), l.jsx("path", {
+                opacity: "0.1",
+                d: "M44.3606 21.9488L41.5369 20.1019L32.8275 35.685C32.729 35.8749 32.5882 36.0397 32.4159 36.1665C32.2436 36.2933 32.0444 36.3787 31.8338 36.4163C31.8113 36.4163 31.7888 36.4163 31.7644 36.4163C31.6952 36.4238 31.6254 36.4238 31.5563 36.4163H31.5225C31.4173 36.4018 31.3146 36.3734 31.2169 36.3319L21.1388 32.4038L12.5794 42.7388C12.3136 43.0606 11.9533 43.2908 11.5496 43.3968C11.1458 43.5028 10.719 43.4792 10.3294 43.3294C10.2575 43.3017 10.1874 43.2698 10.1194 43.2337L20.0625 29.0625L30.6694 32.25L43.9013 6.36188C44.0423 6.46476 44.1595 6.59696 44.2446 6.74941C44.3297 6.90186 44.3808 7.07093 44.3944 7.245L45.5906 21.12C45.6581 21.8944 44.9794 22.3538 44.3606 21.9488Z",
+                fill: "black"
+            })]
+        }),
+        CustomBot: function(i) {
+            return l.jsxs("svg", {
+                width: 40,
+                height: 40,
+                viewBox: "0 0 40 40",
+                fill: "none",
+                xmlns: "http://www.w3.org/2000/svg",
+                ...i,
+                children: [l.jsx("path", {
+                    d: "M24.12 33.466c4.825-5.9 4.211-14.384-1.372-18.95-5.583-4.567-14.02-3.486-18.846 2.414-4.825 5.9-4.21 14.384 1.372 18.95 5.583 4.566 14.02 3.485 18.846-2.414z",
+                    fill: "#3994FF",
+                    fillOpacity: .16
+                }), l.jsx("path", {
+                    d: "M36.528 26.443c4.976-6.084 3.154-15.806-4.07-21.715-7.225-5.908-17.115-5.766-22.091.318-4.976 6.084-3.154 15.805 4.07 21.714 7.225 5.909 17.115 5.767 22.09-.317z",
+                    fill: "#3994FF",
+                    fillOpacity: .16
+                }), l.jsx("path", {
+                    d: "M34.453 20a14.375 14.375 0 11-28.75 0 14.375 14.375 0 0128.75 0z",
+                    fill: "#5ACFF5"
+                }), l.jsx("path", {
+                    opacity: .1,
+                    d: "M34.375 20A14.375 14.375 0 0120 34.375V5.625A14.375 14.375 0 0134.375 20z",
+                    fill: "#000"
+                }), l.jsx("path", {
+                    d: "M13.244 20.03c1.49 0 2.697-1.313 2.697-2.934 0-1.62-1.208-2.934-2.697-2.934-1.49 0-2.697 1.314-2.697 2.934 0 1.621 1.207 2.935 2.697 2.935zM26.911 20.234c1.49 0 2.697-1.314 2.697-2.934 0-1.621-1.208-2.935-2.697-2.935-1.49 0-2.697 1.314-2.697 2.935 0 1.62 1.208 2.934 2.697 2.934z",
+                    fill: "#313442"
+                }), l.jsx("path", {
+                    d: "M13.984 16.797a.938.938 0 100-1.875.938.938 0 000 1.875zM27.734 16.953a.938.938 0 100-1.875.938.938 0 000 1.875z",
+                    fill: "#F2F2F2"
+                }), l.jsx("path", {
+                    d: "M28.875 5c.408-.68.722-2.686.88-3.883a.111.111 0 01.218 0c.157 1.19.497 3.201 1.085 4.081A3.016 3.016 0 0032.8 6.403a.11.11 0 010 .21c-.48.157-1.242.458-1.75.966-.507.508-.882 2.388-1.059 3.563a.111.111 0 01-.219 0c-.13-1.17-.437-3.022-1.103-3.628-.504-.46-1.394-.747-1.973-.896a.11.11 0 010-.214c.647-.154 1.64-.514 2.178-1.404zM33.264 8.07c.256-.427.453-1.686.552-2.438a.069.069 0 11.137 0c.098.747.313 2.01.681 2.563.261.376.65.645 1.094.756a.069.069 0 010 .133c-.405.117-.779.323-1.094.604-.333.333-.554 1.499-.665 2.236a.069.069 0 11-.138 0c-.081-.734-.273-1.895-.692-2.276-.313-.29-.875-.469-1.238-.563a.069.069 0 010-.132c.396-.094 1.025-.32 1.363-.883zM8.906 31.486c.313-.535.567-2.111.692-3.052a.086.086 0 11.172 0c.124.938.391 2.516.852 3.208.327.47.814.807 1.37.947a.086.086 0 010 .165c-.378.12-.976.36-1.375.758-.398.399-.694 1.875-.833 2.8a.088.088 0 01-.171 0c-.104-.92-.344-2.375-.868-2.851-.397-.363-1.093-.588-1.55-.703a.086.086 0 010-.17c.502-.115 1.29-.4 1.711-1.102zM6.077 29.21c.182-.313.325-1.207.395-1.746a.05.05 0 01.098 0c.07.534.224 1.44.488 1.834.186.27.464.461.781.541a.05.05 0 01.035.048.05.05 0 01-.035.047c-.29.085-.556.233-.781.435-.24.237-.397 1.072-.477 1.6a.05.05 0 01-.049.04.05.05 0 01-.05-.04c-.057-.527-.196-1.358-.494-1.632a2.27 2.27 0 00-.888-.401.048.048 0 010-.095c.284-.068.734-.229.977-.632z",
+                    fill: "#FFE570"
+                }), l.jsx("path", {
+                    d: "M25.156 23.783v.045a5.156 5.156 0 11-10.312 0v-.045a1.045 1.045 0 011.048-1.049h8.216a1.045 1.045 0 011.048 1.049z",
+                    fill: "#313442"
+                }), l.jsx("path", {
+                    d: "M20.625 28.438v.514a5.157 5.157 0 01-5.49-3.405h2.602a2.885 2.885 0 012.888 2.89z",
+                    fill: "#E2003D"
+                })]
+            })
+        },
+        DE: function(i) {
+            return l.jsxs("svg", {
+                width: 24,
+                height: 24,
+                viewBox: "0 0 24 24",
+                fill: "none",
+                xmlns: "http://www.w3.org/2000/svg",
+                ...i,
+                children: [l.jsx("path", {
+                    d: "M.747 16.174C2.442 20.744 6.84 24 12 24c5.16 0 9.558-3.256 11.254-7.826L12 15.13.747 16.174z",
+                    fill: "#FFDA44"
+                }), l.jsx("path", {
+                    d: "M12 0C6.84 0 2.442 3.256.747 7.826L12 8.87l11.254-1.044C21.558 3.256 17.16 0 12 0z",
+                    fill: "#000"
+                }), l.jsx("path", {
+                    d: "M.746 7.826A11.974 11.974 0 000 12c0 1.468.264 2.874.746 4.174h22.508c.482-1.3.746-2.706.746-4.174 0-1.468-.264-2.874-.746-4.174H.746z",
+                    fill: "#D80027"
+                })]
+            })
+        },
+        Dashboard: B,
+        Discord: Bi,
+        DiscordPartner: function(i) {
+            return l.jsxs("svg", {
+                width: 16,
+                height: 16,
+                viewBox: "0 0 16 15.2",
+                ...i,
+                children: [l.jsx("path", {
+                    fill: "#5865F2",
+                    fillRule: "evenodd",
+                    d: "M16 7.6c0 .79-1.28 1.38-1.52 2.09s.44 2 0 2.59-1.84.35-2.46.8-.79 1.84-1.54 2.09-1.67-.8-2.47-.8-1.75 1-2.47.8-.92-1.64-1.54-2.09-2-.18-2.46-.8.23-1.84 0-2.59S0 8.39 0 7.6s1.28-1.38 1.52-2.09-.44-2 0-2.59 1.85-.35 2.48-.8S4.78.28 5.53 0 7.2.83 8 .83s1.75-1 2.47-.8.91 1.64 1.53 2.09 2 .18 2.46.8-.23 1.84 0 2.59S16 6.81 16 7.6z"
+                }), l.jsx("path", {
+                    d: "M10.59 6.4l-1.398.9c-.2.1-.3.1-.5 0-.1-.1-.299-.2-.399-.3-.4-.1-.699 0-.999.2l-.499.3-2.497 1.7c-.6.3-1.299.2-1.598-.4-.4-.5-.2-1.2.3-1.6l2.996-2c.799-.5 1.798-.7 2.697-.5.799.2 1.398.6 1.898 1.2.2.2.1.4 0 .5zM13.487 7.8c0 .4-.2.8-.5 1l-3.096 2c-.599.4-1.198.6-1.897.6-.3 0-.5 0-.8-.1-.799-.2-1.398-.6-1.897-1.2-.1-.2 0-.4.1-.5l1.398-.9c.1-.1.3-.1.4 0 .2.1.399.2.499.3.4 0 .7 0 .999-.2l.699-.4L11.39 7l.3-.2c.499-.3 1.298-.2 1.597.3.2.3.2.5.2.7z",
+                    fill: "#fff"
+                })]
+            })
+        },
+        DiscordVerified: function(i) {
+            return l.jsxs("svg", {
+                width: 16,
+                height: 16,
+                viewBox: "0 0 16 16",
+                version: "1.1",
+                xmlns: "http://www.w3.org/2000/svg",
+                ...i,
+                children: [l.jsx("path", {
+                    d: "M16,7.64528384 C16,8.43528384 14.72,9.02528384 14.48,9.73528384 C14.24,10.4452838 14.92,11.7352838 14.48,12.3252838 C14.04,12.9152838 12.64,12.6752838 12.02,13.1252838 C11.4,13.5752838 11.23,14.9652838 10.48,15.2152838 C9.73,15.4652838 8.81,14.4152838 8.01,14.4152838 C7.21,14.4152838 6.26,15.4152838 5.54,15.2152838 C4.82,15.0152838 4.62,13.5752838 4,13.1252838 C3.38,12.6752838 2,12.9452838 1.54,12.3252838 C1.08,11.7052838 1.77,10.4852838 1.54,9.73528384 C1.31,8.98528384 0,8.43528384 0,7.64528384 C0,6.85528384 1.28,6.26528384 1.52,5.55528384 C1.76,4.84528384 1.08,3.55528384 1.52,2.96528384 C1.96,2.37528384 3.37,2.61528384 4,2.16528384 C4.63,1.71528384 4.78,0.32528384 5.53,0.04528384 C6.28,-0.23471616 7.2,0.87528384 8,0.87528384 C8.8,0.87528384 9.75,-0.12471616 10.47,0.07528384 C11.19,0.27528384 11.38,1.71528384 12,2.16528384 C12.62,2.61528384 14,2.34528384 14.46,2.96528384 C14.92,3.58528384 14.23,4.80528384 14.46,5.55528384 C14.69,6.30528384 16,6.85528384 16,7.64528384 Z",
+                    id: "Path",
+                    fill: "#22A55A"
+                }), l.jsx("polygon", {
+                    id: "Path",
+                    fill: "#FFFFFF",
+                    fillRule: "nonzero",
+                    points: "7.4 11.17 4 8.62 5 7.26 7 8.79 10.64 4 12 5"
+                })]
+            })
+        },
+        Discovery: E,
+        Dollar: A,
+        Download: P,
+        DropdownBottom: T,
+        DropdownLeft: W,
+        DropdownRight: D,
+        DropdownTop: _,
+        EL: function(i) {
+            return l.jsxs("svg", {
+                width: 24,
+                height: 24,
+                viewBox: "0 0 24 24",
+                fill: "none",
+                xmlns: "http://www.w3.org/2000/svg",
+                ...i,
+                children: [l.jsx("path", {
+                    d: "M12 24c6.627 0 12-5.373 12-12S18.627 0 12 0 0 5.373 0 12s5.373 12 12 12z",
+                    fill: "#F0F0F0"
+                }), l.jsx("path", {
+                    d: "M12 8.87h11.587a11.932 11.932 0 00-1.348-3.131H12v3.13zM4.53 21.391h14.94a12.06 12.06 0 002.769-3.13H1.76a12.062 12.062 0 002.77 3.13zM4.174 2.903A12.059 12.059 0 001.76 5.74h2.413V2.903zM12 12V8.87H7.304V12h-3.13V8.87H.414A12.013 12.013 0 000 12c0 1.083.144 2.132.413 3.13h23.174c.269-.998.413-2.047.413-3.13H12z",
+                    fill: "#338AF3"
+                }), l.jsx("path", {
+                    d: "M12 0c-1.666 0-3.253.34-4.696.954v4.785H12V2.61h7.47A11.949 11.949 0 0012 0z",
+                    fill: "#338AF3"
+                })]
+            })
+        },
+        EN: function(i) {
+            return l.jsxs("svg", {
+                width: 24,
+                height: 24,
+                viewBox: "0 0 24 24",
+                fill: "none",
+                xmlns: "http://www.w3.org/2000/svg",
+                ...i,
+                children: [l.jsx("path", {
+                    d: "M12 24c6.627 0 12-5.373 12-12S18.627 0 12 0 0 5.373 0 12s5.373 12 12 12z",
+                    fill: "#F0F0F0"
+                }), l.jsx("path", {
+                    d: "M2.48 4.694A11.956 11.956 0 00.413 8.87h6.243L2.48 4.694zM23.586 8.87a11.957 11.957 0 00-2.067-4.176L17.344 8.87h6.242zM.413 15.13a11.958 11.958 0 002.067 4.176l4.176-4.176H.413zM19.305 2.48A11.957 11.957 0 0015.13.414v6.243l4.175-4.175zM4.694 21.52a11.957 11.957 0 004.175 2.067v-6.243l-4.175 4.175zM8.87.413a11.957 11.957 0 00-4.176 2.068l4.175 4.175V.413zM15.13 23.587a11.96 11.96 0 004.175-2.068l-4.175-4.175v6.242zM17.344 15.13l4.175 4.176a11.957 11.957 0 002.067-4.176h-6.242z",
+                    fill: "#0052B4"
+                }), l.jsx("path", {
+                    d: "M23.898 10.435H13.565V.102a12.12 12.12 0 00-3.13 0v10.333H.102a12.12 12.12 0 000 3.13h10.333v10.333a12.12 12.12 0 003.13 0V13.565h10.333a12.12 12.12 0 000-3.13z",
+                    fill: "#D80027"
+                }), l.jsx("path", {
+                    d: "M15.13 15.13l5.355 5.355c.247-.246.481-.503.706-.77l-4.585-4.585H15.13zM8.87 15.13l-5.355 5.355c.246.247.503.482.77.706l4.585-4.585V15.13zM8.87 8.87L3.513 3.515c-.246.246-.48.503-.705.77L7.394 8.87h1.475zM15.13 8.87l5.355-5.355a11.996 11.996 0 00-.77-.706L15.13 7.394V8.87z",
+                    fill: "#D80027"
+                })]
+            })
+        },
+        EN_US: function(i) {
+            return l.jsxs("svg", {
+                width: 24,
+                height: 24,
+                viewBox: "0 0 24 24",
+                fill: "none",
+                xmlns: "http://www.w3.org/2000/svg",
+                ...i,
+                children: [l.jsx("path", {
+                    d: "M12 24c6.627 0 12-5.373 12-12S18.627 0 12 0 0 5.373 0 12s5.373 12 12 12z",
+                    fill: "#EEE"
+                }), l.jsx("path", {
+                    d: "M11.48 12H24a11.9 11.9 0 00-.412-3.131H11.48V12zm0-6.262h10.758a12.065 12.065 0 00-2.766-3.127H11.48v3.127zM12 24c2.822 0 5.419-.975 7.472-2.61H4.528A11.949 11.949 0 0012 24zM1.763 18.262h20.475a11.928 11.928 0 001.35-3.13H.413a11.93 11.93 0 001.35 3.13z",
+                    fill: "#D80027"
+                }), l.jsx("path", {
+                    d: "M5.56 1.875h1.092l-1.018.736.39 1.2-1.018-.74-1.017.74.338-1.031a12.066 12.066 0 00-2.33 2.592h.351l-.646.469c-.102.17-.198.341-.291.515l.31.947-.577-.422c-.145.307-.276.62-.394.938l.342 1.045h1.252L1.33 9.61l.39 1.196-1.018-.746-.61.446C.033 11 0 11.5 0 12h12V0C9.628 0 7.42.69 5.56 1.875zm.463 8.925l-1.017-.74-1.017.74.39-1.195-1.018-.746h1.256l.39-1.195.388 1.195h1.257l-1.018.75.39 1.196V10.8zm-.389-4.688l.39 1.191-1.018-.736-1.017.736.39-1.195-1.018-.736h1.256l.39-1.2.388 1.2h1.257l-1.018.736v.005zm4.693 4.688l-1.018-.74-1.017.74.39-1.195-1.018-.74H8.92l.39-1.196.388 1.195h1.257l-1.018.745.39 1.196V10.8zm-.39-4.688l.39 1.191-1.018-.736-1.017.736.39-1.195-1.018-.736H8.92l.39-1.2.388 1.2h1.257l-1.018.736v.005zm0-3.501l.39 1.2-1.018-.74-1.012.74.389-1.2-1.022-.736H8.92L9.31.68l.393 1.195h1.256l-1.021.736z",
+                    fill: "#0052B4"
+                })]
+            })
+        },
+        ES: function(i) {
+            return l.jsxs("svg", {
+                width: 24,
+                height: 24,
+                viewBox: "0 0 24 24",
+                fill: "none",
+                xmlns: "http://www.w3.org/2000/svg",
+                ...i,
+                children: [l.jsx("path", {
+                    d: "M0 12c0 1.468.264 2.874.746 4.174L12 17.217l11.254-1.043c.482-1.3.746-2.706.746-4.174 0-1.468-.264-2.874-.746-4.174L12 6.783.746 7.826A11.974 11.974 0 000 12z",
+                    fill: "#FFDA44"
+                }), l.jsx("path", {
+                    d: "M23.254 7.826C21.558 3.256 17.16 0 12 0 6.84 0 2.442 3.257.747 7.826h22.507zM.747 16.174C2.442 20.744 6.84 24 12 24c5.16 0 9.558-3.256 11.254-7.826H.747z",
+                    fill: "#D80027"
+                })]
+            })
+        },
+        Edit: R,
+        Ether: function({
+            main: i,
+            secondary: a,
+            ...t
+        }) {
+            return l.jsx("svg", {
+                width: "24",
+                height: "24",
+                viewBox: "0 0 24 24",
+                fill: "none",
+                xmlns: "http://www.w3.org/2000/svg",
+                ...t,
+                children: l.jsx("path", {
+                    fillRule: "evenodd",
+                    "clip-rule": "evenodd",
+                    d: "M12.6584 0.640861C12.527 0.399915 12.2745 0.25 12 0.25C11.7255 0.25 11.473 0.399915 11.3416 0.640861L5.34158 11.6409C5.24411 11.8196 5.22346 12.0302 5.28437 12.2244C5.34528 12.4187 5.48253 12.5798 5.66459 12.6708L11.6646 15.6708C11.8757 15.7764 12.1243 15.7764 12.3354 15.6708L18.3354 12.6708C18.5175 12.5798 18.6547 12.4187 18.7156 12.2244C18.7765 12.0302 18.7559 11.8196 18.6584 11.6409L12.6584 0.640861ZM12 14.1615L7.03062 11.6768L12 2.56625L16.9694 11.6768L12 14.1615ZM6.33541 15.3292C6.01611 15.1695 5.62854 15.2571 5.40885 15.5384C5.18915 15.8198 5.19824 16.2171 5.43056 16.4881L11.4306 23.4881C11.573 23.6543 11.7811 23.75 12 23.75C12.2189 23.75 12.427 23.6543 12.5694 23.4881L18.5694 16.4881C18.8018 16.2171 18.8108 15.8198 18.5912 15.5384C18.3715 15.2571 17.9839 15.1695 17.6646 15.3292L12 18.1615L6.33541 15.3292ZM12 21.8476L8.98645 18.3318L11.6646 19.6708C11.8757 19.7764 12.1243 19.7764 12.3354 19.6708L15.0135 18.3318L12 21.8476Z",
+                    fill: i,
+                    "data-fill": "main"
+                })
+            })
+        },
+        Export: b,
+        Eye: S,
+        EyeSlash: I,
+        FR: function(i) {
+            return l.jsxs("svg", {
+                width: 24,
+                height: 24,
+                viewBox: "0 0 24 24",
+                fill: "none",
+                xmlns: "http://www.w3.org/2000/svg",
+                ...i,
+                children: [l.jsx("path", {
+                    d: "M12 24c6.627 0 12-5.373 12-12S18.627 0 12 0 0 5.373 0 12s5.373 12 12 12z",
+                    fill: "#F0F0F0"
+                }), l.jsx("path", {
+                    d: "M24 12c0-5.16-3.257-9.558-7.826-11.254v22.508C20.744 21.558 24 17.159 24 12z",
+                    fill: "#D80027"
+                }), l.jsx("path", {
+                    d: "M0 12c0 5.16 3.257 9.558 7.826 11.254V.746C3.256 2.442 0 6.84 0 12z",
+                    fill: "#0052B4"
+                })]
+            })
+        },
+        Facebook: function(i) {
+            return l.jsxs("svg", {
+                width: 24,
+                height: 24,
+                viewBox: "0 0 24 24",
+                fill: "none",
+                xmlns: "http://www.w3.org/2000/svg",
+                ...i,
+                children: [l.jsx("path", {
+                    fill: "#fff",
+                    d: "M5 5h14v17H5z"
+                }), l.jsx("path", {
+                    d: "M20.9 2H3.1A1.1 1.1 0 002 3.1v17.8A1.1 1.1 0 003.1 22h9.58v-7.75h-2.6v-3h2.6V9a3.64 3.64 0 013.88-4 20.26 20.26 0 012.33.12v2.7H17.3c-1.26 0-1.5.6-1.5 1.47v1.93h3l-.39 3H15.8V22h5.1a1.1 1.1 0 001.1-1.1V3.1A1.1 1.1 0 0020.9 2z",
+                    fill: "#047DFF"
+                })]
+            })
+        },
+        ForumChannel: qi,
+        Gallery: O,
+        Game: G,
+        GasTracker: function(i) {
+            return l.jsxs("svg", {
+                width: "24",
+                height: "24",
+                viewBox: "0 0 24 24",
+                fill: "none",
+                xmlns: "http://www.w3.org/2000/svg",
+                children: [l.jsxs("g", {
+                    clipPath: "url(#clip0_6229_18889)",
+                    children: [l.jsx("path", {
+                        d: "M9.02 7.00005C8.66 7.00005 8.34 7.13005 8.14 7.36005C8 7.53005 7.91999 7.82005 7.94999 8.03005L8.35 10.4701C8.43 10.9301 8.85 11.2401 9.41 11.2401H11.99C12.55 11.2401 12.98 10.9301 13.05 10.4701L13.45 8.03005C13.49 7.81005 13.4 7.52005 13.26 7.35005C13.07 7.12005 12.75 6.99005 12.38 6.99005H8.99L9.02 7.00005ZM11.67 9.74005H9.76L9.55 8.50005H11.87L11.66 9.74005H11.67Z",
+                        fill: "#C6C8D7"
+                    }), l.jsx("path", {
+                        d: "M19.04 5.14003L17.96 3.14003C17.76 2.78003 17.31 2.64003 16.94 2.84003C16.58 3.04003 16.44 3.49003 16.64 3.86003L17.63 5.69003V6.25003H15.85C15.52 6.25003 15.21 6.41003 15.03 6.69003C14.85 6.96003 14.81 7.31003 14.93 7.61003L15.8 9.78003C15.91 10.07 16.19 10.25 16.5 10.25H17.64V14.23C17.64 14.51 17.41 14.75 17.12 14.75H15.26L15.53 11.24C15.14 11.02 14.82 10.67 14.65 10.24L14.2 9.11003L13.53 17.75H7.91L6.98 6.25003L13.87 6.21003C13.9 6.13003 13.94 6.06003 13.99 5.99003C14.31 5.51003 14.8 5.18003 15.34 5.06003C15.09 4.86003 14.77 4.75003 14.44 4.75003H6.98C6.58 4.75003 6.19 4.92003 5.91 5.22003C5.63 5.52003 5.49 5.92003 5.52 6.33003L6.4 17.75H5.62C5.21 17.75 4.87 18.09 4.87 18.5C4.87 18.91 5.21 19.25 5.62 19.25H15.81C16.22 19.25 16.56 18.91 16.56 18.5C16.56 18.09 16.22 17.75 15.81 17.75H15.02L15.14 16.23C15.14 16.23 15.19 16.25 15.22 16.25H17.12C18.23 16.25 19.14 15.35 19.14 14.23V5.50003C19.14 5.38003 19.11 5.25003 19.05 5.14003H19.04ZM16.6 7.75003H17.63V8.75003H17L16.6 7.75003Z",
+                        fill: "#C6C8D7"
+                    })]
+                }), l.jsx("defs", {
+                    children: l.jsx("clipPath", {
+                        id: "clip0_6229_18889",
+                        children: l.jsx("rect", {
+                            width: "24",
+                            height: "24",
+                            fill: "white"
+                        })
+                    })
+                })]
+            })
+        },
+        GasTrackerPlugin: i => l.jsxs("svg", {
+            width: "48",
+            height: "48",
+            viewBox: "0 0 48 48",
+            fill: "none",
+            xmlns: "http://www.w3.org/2000/svg",
+            ...i,
+            children: [l.jsxs("g", {
+                clipPath: "url(#clip0_6229_18906)",
+                children: [l.jsx("path", {
+                    opacity: "0.2",
+                    d: "M32.0911 37.4716C36.1723 29.9486 33.7099 20.7193 26.5911 16.8573C19.4722 12.9954 10.3928 15.9632 6.31159 23.4861C2.23036 31.0091 4.69281 40.2384 11.8116 44.1003C18.9304 47.9623 28.0099 44.9945 32.0911 37.4716Z",
+                    fill: "#965FFF"
+                }), l.jsx("path", {
+                    opacity: "0.2",
+                    d: "M44.2268 27.0304C48.4355 19.2726 44.3799 8.93266 35.1685 3.93544C25.9571 -1.06178 15.078 1.1761 10.8694 8.93388C6.66079 16.6917 10.7163 27.0316 19.9277 32.0289C29.1391 37.0261 40.0182 34.7882 44.2268 27.0304Z",
+                    fill: "#965FFF"
+                }), l.jsx("path", {
+                    d: "M36.0473 35.6963H30.8142C29.9311 35.6963 29.2148 34.98 29.2148 34.0969C29.2148 33.2138 29.9311 32.4975 30.8142 32.4975H36.0473C37.0936 32.4975 37.9448 31.6463 37.9448 30.6V20.4056C37.9448 19.5225 38.6611 18.8063 39.5442 18.8063C40.4273 18.8063 41.1436 19.5225 41.1436 20.4056V30.6C41.1436 33.4106 38.858 35.6963 36.0473 35.6963Z",
+                    fill: "#C4C2EF"
+                }), l.jsx("path", {
+                    d: "M35.1 12.7725L33.165 35.52C32.9925 37.5881 31.1644 39.2119 29.0082 39.2119H16.665C14.4769 39.2119 12.69 37.6275 12.5082 35.5238L10.5732 12.7706C10.4813 11.685 10.8582 10.5919 11.6063 9.77439C12.3957 8.91376 13.5357 8.41876 14.73 8.41876H30.945C32.1394 8.41876 33.2775 8.91189 34.0688 9.77439C34.8188 10.59 35.1957 11.6831 35.1019 12.7725H35.1Z",
+                    fill: "#8683F2"
+                }), l.jsx("path", {
+                    opacity: "0.1",
+                    d: "M35.1003 12.7725L33.1653 35.52C32.9928 37.5882 31.1647 39.2119 29.0084 39.2119H22.8359V8.42065H30.9434C32.1378 8.42065 33.2759 8.91378 34.0672 9.77628C34.8172 10.5919 35.1941 11.685 35.1003 12.7744V12.7725Z",
+                    fill: "black"
+                }), l.jsx("path", {
+                    d: "M32.4938 12.5494L30.5588 35.2988C30.497 36.03 29.822 36.5963 29.0082 36.5963H16.6651C15.8532 36.5963 15.1782 36.03 15.1145 35.2988L13.1795 12.5494C13.1101 11.7338 13.8245 11.0363 14.7301 11.0363H30.9451C31.8526 11.0363 32.5651 11.7338 32.4957 12.5494H32.4938Z",
+                    fill: "#624CC1"
+                }), l.jsx("path", {
+                    d: "M39.5424 23.3325H34.3318C33.6774 23.3325 33.0905 22.935 32.8467 22.3275L30.4524 16.3406C30.173 15.6413 30.2574 14.85 30.6811 14.2275C31.103 13.6031 31.8061 13.2319 32.558 13.2319H37.9449V11.0944L35.153 5.9269C34.733 5.15065 35.0217 4.1794 35.7999 3.7594C36.578 3.3394 37.5474 3.62815 37.9674 4.40627L40.9524 9.93002C41.078 10.1644 41.1455 10.425 41.1455 10.6894V21.735C41.1455 22.6181 40.4293 23.3344 39.5461 23.3344L39.5424 23.3325ZM35.4136 20.1338H37.943V16.4288H33.9324L35.4136 20.1338Z",
+                    fill: "#C4C2EF"
+                }), l.jsx("path", {
+                    opacity: "0.1",
+                    d: "M22.8376 11.0363V36.5944H16.6651C15.8532 36.5944 15.1782 36.0282 15.1145 35.2969L13.1795 12.5475C13.1101 11.7319 13.8245 11.0344 14.7301 11.0344H22.8376V11.0363Z",
+                    fill: "black"
+                }), l.jsx("path", {
+                    d: "M36.3153 38.2688C36.3153 39.09 35.6479 39.7557 34.8285 39.7557H10.8472C10.026 39.7557 9.36035 39.09 9.36035 38.2688C9.36035 37.4475 10.026 36.7819 10.8472 36.7819H34.8266C35.646 36.7819 36.3135 37.4475 36.3135 38.2688H36.3153Z",
+                    fill: "#8683F2"
+                }), l.jsx("path", {
+                    d: "M28.9069 15.5325L27.8306 23.0588C27.7575 23.565 27.3244 23.9419 26.8125 23.9419H18.8587C18.3487 23.9419 17.9156 23.5669 17.8425 23.0588L16.7644 15.5325C16.6762 14.9138 17.1562 14.3607 17.7825 14.3607H27.8906C28.5169 14.3607 28.995 14.9138 28.9069 15.5325Z",
+                    fill: "#8683F2"
+                }), l.jsx("path", {
+                    opacity: "0.1",
+                    d: "M36.3154 38.2688C36.3154 39.09 35.6479 39.7557 34.8285 39.7557H22.8379V36.7819H34.8285C35.6479 36.7819 36.3154 37.4475 36.3154 38.2688Z",
+                    fill: "black"
+                }), l.jsx("path", {
+                    opacity: "0.1",
+                    d: "M28.9072 15.5325L27.8309 23.0588C27.7578 23.565 27.3247 23.9419 26.8128 23.9419H22.8359V14.3607H27.8891C28.5153 14.3607 28.9934 14.9138 28.9053 15.5325H28.9072Z",
+                    fill: "black"
+                })]
+            }), l.jsx("defs", {
+                children: l.jsx("clipPath", {
+                    id: "clip0_6229_18906",
+                    children: l.jsx("rect", {
+                        width: "48",
+                        height: "48",
+                        fill: "white"
                     })
                 })
             })]
         }),
-        AnnouncementChannel: b,
-        AntiRaid: e,
-        Ar: t,
-        ArrowRight: Ce,
-        Award: N,
-        Bot: s,
-        ButtonClicked: ({
-            stroke: e = "currentColor",
-            fill: t = "transparent",
-            ...s
-        }) => re.jsx("svg", {
-            width: 24,
-            height: 24,
-            viewBox: "0 0 24 24",
+        Gating: N,
+        GatingPlugin: i => l.jsxs("svg", {
+            width: "48",
+            height: "48",
+            viewBox: "0 0 48 48",
             fill: "none",
             xmlns: "http://www.w3.org/2000/svg",
-            ...s,
-            children: re.jsx("path", {
-                d: "M9.591 11.001l2.002 9.338c.084.42.5.757.918.84.417.085.918-.167 1.168-.588l1.168-2.187 3.253 3.28c.417.421 1.168.421 1.585 0l2.002-2.018c.417-.421.417-1.178 0-1.599l-3.337-3.112 2.086-1.178c.417-.252.667-.673.584-1.178-.084-.504-.417-.84-.834-.925l-9.26-1.935c-.75-.168-1.502.59-1.335 1.262zm1.085-4.795c.5 0 .834-.42.834-.841V2.84A.84.84 0 0010.676 2a.84.84 0 00-.835.841v2.524c0 .42.334.841.835.841zm-3.087.084L5.754 4.524a.778.778 0 00-1.251 0 .818.818 0 000 1.177l1.751 1.767a.902.902 0 001.252 0c.417-.252.417-.841.083-1.178zM2 10.665a.84.84 0 00.834.84h2.503c.5 0 .834-.42.834-.84 0-.421-.417-.842-.834-.842H2.834a.84.84 0 00-.834.842zm4.338 3.196l-1.752 1.767a.92.92 0 000 1.262.902.902 0 001.251 0l1.752-1.767a.92.92 0 000-1.262c-.417-.336-.917-.336-1.251 0zm8.759-6.309l1.752-1.85a.92.92 0 000-1.262.902.902 0 00-1.252 0l-1.751 1.766a.92.92 0 000 1.262c.333.42.917.42 1.251.084z",
-                fill: e
+            ...i,
+            children: [l.jsxs("g", {
+                clipPath: "url(#clip0_3107_206603)",
+                children: [l.jsx("path", {
+                    opacity: "0.2",
+                    d: "M32.0909 37.4716C36.1721 29.9486 33.7097 20.7193 26.5908 16.8574C19.472 12.9954 10.3926 15.9632 6.31138 23.4861C2.23015 31.0091 4.6926 40.2384 11.8114 44.1004C18.9302 47.9623 28.0096 44.9945 32.0909 37.4716Z",
+                    fill: "#965FFF"
+                }), l.jsx("path", {
+                    opacity: "0.2",
+                    d: "M44.2267 27.0304C48.4353 19.2726 44.3797 8.93263 35.1683 3.93541C25.9569 -1.0618 15.0779 1.17607 10.8692 8.93385C6.66061 16.6916 10.7162 27.0316 19.9276 32.0288C29.139 37.026 40.018 34.7882 44.2267 27.0304Z",
+                    fill: "#965FFF"
+                }), l.jsx("path", {
+                    d: "M37.875 19.3762V40.0819C37.873 40.6407 37.6498 41.176 37.2541 41.5706C36.8584 41.9652 36.3226 42.187 35.7638 42.1875H12.9544C12.6768 42.1877 12.4019 42.1333 12.1454 42.0272C11.8889 41.921 11.6559 41.7654 11.4596 41.5691C11.2633 41.3729 11.1077 41.1398 11.0016 40.8833C10.8955 40.6268 10.841 40.3519 10.8412 40.0744V19.3294C10.8408 17.5791 11.1851 15.8459 11.8545 14.2287C12.524 12.6116 13.5055 11.1421 14.7429 9.90431C15.9804 8.66651 17.4495 7.68462 19.0665 7.01471C20.6835 6.3448 22.4166 6 24.1669 6H24.5025C28.0494 6.00099 31.4508 7.41071 33.9585 9.91914C36.4662 12.4276 37.875 15.8293 37.875 19.3762Z",
+                    fill: "#624CC1"
+                }), l.jsx("path", {
+                    opacity: "0.1",
+                    d: "M37.875 19.3762V40.0819C37.873 40.6407 37.6498 41.176 37.2541 41.5706C36.8584 41.9652 36.3226 42.187 35.7637 42.1875H24.3581V6H24.5025C28.0494 6.00099 31.4508 7.41071 33.9585 9.91914C36.4662 12.4276 37.875 15.8293 37.875 19.3762Z",
+                    fill: "black"
+                }), l.jsx("path", {
+                    d: "M24.5025 4.40813H24.1669C20.2111 4.41259 16.4186 5.98614 13.6216 8.78351C10.8245 11.5809 9.25147 15.3736 9.2475 19.3294V40.0819C9.24849 41.0647 9.63935 42.007 10.3343 42.7019C11.0293 43.3969 11.9716 43.7878 12.9544 43.7887H35.7638C36.7466 43.7878 37.6888 43.3969 38.3838 42.7019C39.0788 42.007 39.4696 41.0647 39.4706 40.0819V19.3762C39.4662 15.4078 37.8877 11.6032 35.0816 8.79712C32.2755 5.99102 28.4709 4.41259 24.5025 4.40813ZM36.2831 40.0819C36.2831 40.2196 36.2284 40.3517 36.131 40.4491C36.0336 40.5465 35.9015 40.6012 35.7638 40.6012H12.9544C12.8166 40.6012 12.6845 40.5465 12.5871 40.4491C12.4897 40.3517 12.435 40.2196 12.435 40.0819V19.3294C12.438 16.2186 13.6749 13.2361 15.8744 11.0363C18.0738 8.83651 21.0561 7.5991 24.1669 7.59563H24.5025C27.6257 7.5996 30.6198 8.84204 32.8283 11.0505C35.0367 13.2589 36.2792 16.2531 36.2831 19.3762V40.0819Z",
+                    fill: "#8683F2"
+                }), l.jsx("path", {
+                    d: "M39.1556 22.7231H33.5625C32.5092 22.7236 31.4992 23.1421 30.7543 23.8867C30.0093 24.6313 29.5904 25.6411 29.5894 26.6944V36.5625C29.5894 36.9106 29.7277 37.2444 29.9738 37.4906C30.2199 37.7367 30.5538 37.875 30.9019 37.875H41.8125C42.1606 37.875 42.4944 37.7367 42.7406 37.4906C42.9867 37.2444 43.125 36.9106 43.125 36.5625V26.6944C43.124 25.6418 42.7055 24.6325 41.9614 23.888C41.2173 23.1436 40.2082 22.7246 39.1556 22.7231ZM40.5 35.25H32.2162V26.6944C32.2167 26.3372 32.359 25.9947 32.6118 25.7423C32.8645 25.4899 33.2071 25.3481 33.5644 25.3481H39.1556C39.5125 25.3486 39.8547 25.4906 40.107 25.743C40.3594 25.9953 40.5014 26.3375 40.5019 26.6944L40.5 35.25Z",
+                    fill: "#C4C2EF"
+                }), l.jsx("path", {
+                    opacity: "0.1",
+                    d: "M29.5913 26.6944V36.5625C29.5913 36.9106 29.7295 37.2444 29.9757 37.4906C30.2218 37.7367 30.5557 37.875 30.9038 37.875H36.36V35.25H32.2163V26.6944C32.2167 26.3372 32.359 25.9947 32.6118 25.7423C32.8645 25.4899 33.2072 25.3481 33.5644 25.3481H36.36V22.7231H33.5625C32.5096 22.7241 31.5 23.1428 30.7555 23.8874C30.011 24.6319 29.5922 25.6414 29.5913 26.6944Z",
+                    fill: "black"
+                }), l.jsx("path", {
+                    opacity: "0.05",
+                    d: "M43.125 28.6406V36.5625C43.125 36.9106 42.9867 37.2444 42.7406 37.4906C42.4944 37.7367 42.1606 37.875 41.8125 37.875H30.9038C30.5557 37.875 30.2218 37.7367 29.9757 37.4906C29.7295 37.2444 29.5913 36.9106 29.5913 36.5625V28.6406H32.2163V35.25H40.5V28.6406H43.125Z",
+                    fill: "black"
+                }), l.jsx("path", {
+                    d: "M45.375 33.0263V42.1106C45.375 42.8988 45.0619 43.6547 44.5046 44.2121C43.9472 44.7694 43.1913 45.0825 42.4031 45.0825H30.3131C29.5249 45.0825 28.769 44.7694 28.2117 44.2121C27.6544 43.6547 27.3413 42.8988 27.3413 42.1106V33.0263C27.341 32.6358 27.4177 32.2492 27.5669 31.8884C27.7162 31.5276 27.935 31.1998 28.211 30.9236C28.487 30.6474 28.8147 30.4284 29.1754 30.2789C29.5361 30.1294 29.9227 30.0525 30.3131 30.0525H42.405C43.193 30.0535 43.9485 30.3672 44.5053 30.9248C45.0622 31.4824 45.375 32.2382 45.375 33.0263Z",
+                    fill: "#C4C2EF"
+                }), l.jsx("path", {
+                    opacity: "0.1",
+                    d: "M36.3581 30.0525V45.0825H30.3131C29.5249 45.0825 28.769 44.7694 28.2117 44.2121C27.6544 43.6547 27.3413 42.8988 27.3413 42.1106V33.0263C27.341 32.6358 27.4177 32.2492 27.5669 31.8884C27.7162 31.5276 27.935 31.1998 28.211 30.9236C28.487 30.6474 28.8147 30.4284 29.1754 30.2789C29.5361 30.1294 29.9227 30.0525 30.3131 30.0525H36.3581Z",
+                    fill: "black"
+                }), l.jsx("path", {
+                    d: "M36.3581 38.82C37.7416 38.82 38.8631 37.6985 38.8631 36.315C38.8631 34.9315 37.7416 33.81 36.3581 33.81C34.9747 33.81 33.8531 34.9315 33.8531 36.315C33.8531 37.6985 34.9747 38.82 36.3581 38.82Z",
+                    fill: "#624CC1"
+                }), l.jsx("path", {
+                    d: "M38.8631 41.325H33.8531L36.3581 36.315L38.8631 41.325Z",
+                    fill: "#624CC1"
+                }), l.jsx("path", {
+                    opacity: "0.1",
+                    d: "M12.435 19.3294V40.0819C12.435 40.2196 12.4897 40.3517 12.5871 40.4491C12.6845 40.5465 12.8166 40.6012 12.9544 40.6012H24.3581V43.7887H12.9544C11.9716 43.7878 11.0293 43.3969 10.3343 42.7019C9.63935 42.007 9.24849 41.0647 9.2475 40.0819V19.3294C9.25147 15.3736 10.8245 11.5809 13.6216 8.78351C16.4186 5.98614 20.2111 4.41259 24.1669 4.40813H24.3544V7.59563H24.1669C21.0561 7.5991 18.0738 8.83651 15.8744 11.0363C13.6749 13.2361 12.438 16.2186 12.435 19.3294Z",
+                    fill: "black"
+                })]
+            }), l.jsx("defs", {
+                children: l.jsx("clipPath", {
+                    id: "clip0_3107_206603",
+                    children: l.jsx("rect", {
+                        width: "48",
+                        height: "48",
+                        fill: "white"
+                    })
+                })
+            })]
+        }),
+        GetPremium: function(i) {
+            return l.jsxs("svg", {
+                width: 24,
+                height: 24,
+                viewBox: "0 0 24 24",
+                fill: "none",
+                xmlns: "http://www.w3.org/2000/svg",
+                ...i,
+                children: [l.jsxs("g", {
+                    clipPath: "url(#prefix__clip0)",
+                    children: [l.jsx("path", {
+                        d: "M13.174 17.44h-1.349v.003h1.349v-.003z",
+                        fill: "#FFCB39"
+                    }), l.jsx("path", {
+                        opacity: .3,
+                        d: "M13.174 17.44h-1.349v.003h1.349v-.003z",
+                        fill: "#fff"
+                    }), l.jsx("path", {
+                        d: "M12.144 6.184a.317.317 0 00-.056-.074l-.019-.015a.44.44 0 00-.059-.037h-.016l-.072-.021a.332.332 0 00-.088 0v4.47l1.137-2.774-.827-1.549z",
+                        fill: "#FFCB39"
+                    }), l.jsx("path", {
+                        d: "M11.826 18.91v-1.186H4.154a1.62 1.62 0 00-1.135.462c-.301.296-.47.697-.47 1.116v.131c0 .418.169.82.47 1.116.301.295.71.462 1.135.462h6.858l.803-1.986.01-.115z",
+                        fill: "#FFE570"
+                    }), l.jsx("path", {
+                        d: "M21.977 19.088a.42.42 0 000-.052c-.009-.06-.022-.12-.04-.179v-.018a1.463 1.463 0 00-.072-.19l-.016-.034a1.655 1.655 0 00-.094-.165 1.616 1.616 0 00-.283-.321 1.673 1.673 0 00-.375-.24l-.155-.06-.153-.042h-.016l-.13-.021-1.339 3.26h1.121a1.58 1.58 0 001.012-.357c.079-.065.152-.137.22-.213a1.601 1.601 0 00.352-.818V19.302a1.346 1.346 0 00-.032-.213zM16.548 17.724L15.205 21h1.857l1.343-3.276h-1.857z",
+                        fill: "#FFCB39"
+                    }), l.jsx("path", {
+                        d: "M11.012 21h.813v-1.985L11.012 21z",
+                        fill: "#FFE570"
+                    }), l.jsx("path", {
+                        opacity: .3,
+                        d: "M11.012 21h.813v-1.985L11.012 21z",
+                        fill: "#fff"
+                    }), l.jsx("path", {
+                        d: "M12.355 17.724l-.53 1.29V21h3.38l1.343-3.276h-4.193z",
+                        fill: "#FFCB39"
+                    }), l.jsx("path", {
+                        opacity: .3,
+                        d: "M12.355 17.724l-.53 1.29V21h3.38l1.343-3.276h-4.193z",
+                        fill: "#fff"
+                    }), l.jsx("path", {
+                        d: "M11.825 19.015l.53-1.291h-.53v1.291zM20.596 17.737h-2.191l-1.338 3.276h2.21l1.338-3.26-.019-.016z",
+                        fill: "#FFCB39"
+                    }), l.jsx("path", {
+                        opacity: .3,
+                        d: "M20.596 17.737h-2.191l-1.338 3.276h2.21l1.338-3.26-.019-.016z",
+                        fill: "#fff"
+                    }), l.jsx("path", {
+                        d: "M18.763 8.784c-.789-1.717-.647-1.577-2.394-2.366 1.747-.773 1.605-.634 2.394-2.353.787 1.72.645 1.577 2.395 2.366-1.75.776-1.608.64-2.395 2.353zM22.224 6.492c-.587-1.276-.482-1.17-1.777-1.746 1.295-.576 1.19-.47 1.777-1.746.583 1.275.478 1.17 1.776 1.746-1.298.576-1.193.47-1.776 1.746z",
+                        fill: "#C8D4FF"
+                    }), l.jsx("path", {
+                        d: "M20.968 17.443H3.578a.281.281 0 00-.283.278v.003c0 .154.127.279.284.279h17.39a.281.281 0 00.283-.28v-.002a.281.281 0 00-.284-.278z",
+                        fill: "#D0A500"
+                    }), l.jsx("path", {
+                        d: "M11.825 6.024a.308.308 0 00-.22.155l-3.7 7.075a.296.296 0 01-.22.157.305.305 0 01-.259-.083l-4.91-4.822a.304.304 0 00-.474.063.293.293 0 00-.04.173l1.496 8.7h5.48l2.847-6.94V6.023z",
+                        fill: "#FFE570"
+                    }), l.jsx("path", {
+                        d: "M16.297 13.333a.308.308 0 01-.474-.082l-.522-1.001-2.14 5.19h1.806l1.902-4.636-.572.529zM22.303 8.077a.297.297 0 00-.267.074l-1.648 1.488-3.211 7.801h3.917l1.448-9.029a.29.29 0 00-.051-.214.3.3 0 00-.188-.12z",
+                        fill: "#FFCB39"
+                    }), l.jsx("path", {
+                        d: "M11.825 10.501L8.98 17.443h2.847V10.5z",
+                        fill: "#FFE570"
+                    }), l.jsx("path", {
+                        opacity: .3,
+                        d: "M11.825 10.501L8.98 17.443h2.847V10.5z",
+                        fill: "#fff"
+                    }), l.jsx("path", {
+                        d: "M12.957 7.743l-1.132 2.758v6.939h1.349l2.127-5.19-2.344-4.507z",
+                        fill: "#FFCB39"
+                    }), l.jsx("path", {
+                        opacity: .3,
+                        d: "M12.957 7.743l-1.132 2.758v6.939h1.349l2.127-5.19-2.344-4.507z",
+                        fill: "#fff"
+                    }), l.jsx("path", {
+                        d: "M16.882 12.805L14.98 17.44h2.213l3.2-7.801-3.51 3.166z",
+                        fill: "#FFCB39"
+                    }), l.jsx("path", {
+                        opacity: .3,
+                        d: "M16.882 12.805L14.98 17.44h2.213l3.2-7.801-3.51 3.166z",
+                        fill: "#fff"
+                    })]
+                }), l.jsx("defs", {
+                    children: l.jsx("clipPath", {
+                        id: "prefix__clip0",
+                        children: l.jsx("path", {
+                            fill: "#fff",
+                            transform: "translate(2 3)",
+                            d: "M0 0h22v18H0z"
+                        })
+                    })
+                })]
             })
-        }),
-        Check: Q,
-        CheckRaw: l,
-        CircleClose: ee,
-        Clock: Y,
-        Close: te,
-        Cn: r,
-        Collapse: pe,
-        CreateThread: ({
-            stroke: e = "currentColor",
-            fill: t = "transparent",
-            ...s
-        }) => re.jsxs("svg", {
-            width: 24,
-            height: 24,
-            viewBox: "0 0 24 24",
-            fill: "none",
-            xmlns: "http://www.w3.org/2000/svg",
-            ...s,
-            children: [re.jsx("path", {
-                d: "M11.0955 19.6074L11.7409 19.9894L11.7409 19.9894L11.0955 19.6074ZM11.303 19.2567L10.6576 18.8747L10.6576 18.8747L11.303 19.2567ZM9.49697 19.2567L10.1424 18.8747L10.1424 18.8747L9.49697 19.2567ZM9.70452 19.6074L9.0591 19.9894L9.0591 19.9894L9.70452 19.6074ZM4.24359 16.1038L4.9365 15.8168L4.9365 15.8168L4.24359 16.1038ZM7.43144 18.0672L7.45542 17.3176L7.45542 17.3176L7.43144 18.0672ZM5.97541 17.8357L5.6884 18.5286L5.6884 18.5286L5.97541 17.8357ZM16.5564 16.1038L17.2493 16.3909L17.2493 16.3909L16.5564 16.1038ZM13.3685 18.0672L13.3446 17.3176L13.3446 17.3176L13.3685 18.0672ZM14.8246 17.8357L15.1116 18.5286L15.1116 18.5286L14.8246 17.8357ZM15.272 7.67077L15.6639 7.03129L15.6639 7.03129L15.272 7.67077ZM16.3284 8.72723L16.9679 8.33536L16.9679 8.33536L16.3284 8.72723ZM5.528 7.67077L5.13613 7.03129L5.13613 7.03129L5.528 7.67077ZM4.47155 8.72723L3.83207 8.33536L3.83207 8.33536L4.47155 8.72723ZM8.7331 18.2571L8.35126 18.9026L8.35126 18.9026L8.7331 18.2571ZM11.7409 19.9894L11.9484 19.6388L10.6576 18.8747L10.45 19.2254L11.7409 19.9894ZM8.85155 19.6388L9.0591 19.9894L10.3499 19.2254L10.1424 18.8747L8.85155 19.6388ZM10.45 19.2254C10.4441 19.2354 10.4392 19.2389 10.4343 19.2416C10.4274 19.2453 10.4155 19.2492 10.4 19.2492C10.3845 19.2492 10.3726 19.2453 10.3656 19.2416C10.3608 19.2389 10.3559 19.2354 10.3499 19.2254L9.0591 19.9894C9.65874 21.0025 11.1412 21.0025 11.7409 19.9894L10.45 19.2254ZM9.44 7.94922H11.36V6.44922H9.44V7.94922ZM16.05 12.6392V13.2792H17.55V12.6392H16.05ZM4.75 13.2792V12.6392H3.25V13.2792H4.75ZM3.25 13.2792C3.25 14.0145 3.24959 14.6035 3.28219 15.0812C3.31524 15.5657 3.38472 15.9902 3.55068 16.3909L4.9365 15.8168C4.85887 15.6294 4.80655 15.3872 4.77871 14.9791C4.75041 14.5643 4.75 14.035 4.75 13.2792H3.25ZM7.45542 17.3176C6.82517 17.2974 6.5035 17.2426 6.26243 17.1428L5.6884 18.5286C6.19216 18.7373 6.7416 18.7955 7.40747 18.8168L7.45542 17.3176ZM3.55068 16.3909C3.95158 17.3587 4.72054 18.1277 5.6884 18.5286L6.26243 17.1428C5.66211 16.8941 5.18516 16.4172 4.9365 15.8168L3.55068 16.3909ZM16.05 13.2792C16.05 14.035 16.0496 14.5643 16.0213 14.9791C15.9934 15.3872 15.9411 15.6294 15.8635 15.8168L17.2493 16.3909C17.4153 15.9902 17.4848 15.5657 17.5178 15.0812C17.5504 14.6035 17.55 14.0145 17.55 13.2792H16.05ZM13.3925 18.8168C14.0584 18.7955 14.6078 18.7373 15.1116 18.5286L14.5376 17.1428C14.2965 17.2426 13.9748 17.2974 13.3446 17.3176L13.3925 18.8168ZM15.8635 15.8168C15.6148 16.4172 15.1379 16.8941 14.5376 17.1428L15.1116 18.5286C16.0795 18.1277 16.8484 17.3587 17.2493 16.3909L15.8635 15.8168ZM11.36 7.94922C12.422 7.94922 13.1659 7.95001 13.7421 8.0048C14.3071 8.05852 14.633 8.15883 14.8801 8.31025L15.6639 7.03129C15.1415 6.71116 14.5589 6.57569 13.884 6.51153C13.2204 6.44843 12.393 6.44922 11.36 6.44922V7.94922ZM17.55 12.6392C17.55 11.6063 17.5508 10.7789 17.4877 10.1152C17.4235 9.44035 17.2881 8.85776 16.9679 8.33536L15.689 9.1191C15.8404 9.36621 15.9407 9.69212 15.9944 10.2572C16.0492 10.8334 16.05 11.5772 16.05 12.6392H17.55ZM14.8801 8.31025C15.2098 8.51227 15.487 8.78944 15.689 9.1191L16.9679 8.33536C16.6422 7.80386 16.1954 7.35699 15.6639 7.03129L14.8801 8.31025ZM9.44 6.44922C8.40702 6.44922 7.57963 6.44843 6.91595 6.51153C6.24112 6.57569 5.65853 6.71116 5.13613 7.03129L5.91988 8.31025C6.16698 8.15883 6.4929 8.05852 7.05793 8.0048C7.63413 7.95001 8.37798 7.94922 9.44 7.94922V6.44922ZM4.75 12.6392C4.75 11.5772 4.75079 10.8334 4.80558 10.2572C4.8593 9.69212 4.95961 9.36621 5.11103 9.1191L3.83207 8.33536C3.51194 8.85776 3.37647 9.44035 3.31231 10.1152C3.24921 10.7789 3.25 11.6063 3.25 12.6392H4.75ZM5.13613 7.03129C4.60464 7.35699 4.15777 7.80386 3.83207 8.33536L5.11103 9.1191C5.31305 8.78944 5.59022 8.51227 5.91988 8.31025L5.13613 7.03129ZM10.1424 18.8747C9.98316 18.6057 9.83821 18.3593 9.69647 18.1642C9.54582 17.9568 9.36688 17.7606 9.11494 17.6116L8.35126 18.9026C8.36425 18.9103 8.40093 18.933 8.48283 19.0457C8.57363 19.1707 8.67816 19.3458 8.85155 19.6388L10.1424 18.8747ZM7.40747 18.8168C7.76652 18.8283 7.98647 18.8361 8.15129 18.8562C8.30431 18.8748 8.34289 18.8977 8.35126 18.9026L9.11494 17.6116C8.85838 17.4598 8.59171 17.3988 8.33292 17.3672C8.08593 17.3371 7.78752 17.3282 7.45542 17.3176L7.40747 18.8168ZM11.9484 19.6388C12.1218 19.3458 12.2263 19.1707 12.3171 19.0457C12.399 18.933 12.4357 18.9103 12.4487 18.9026L11.685 17.6116C11.4331 17.7606 11.2542 17.9568 11.1035 18.1642C10.9618 18.3593 10.8168 18.6057 10.6576 18.8747L11.9484 19.6388ZM13.3446 17.3176C13.0125 17.3282 12.714 17.3371 12.4671 17.3672C12.2083 17.3988 11.9416 17.4598 11.685 17.6116L12.4487 18.9026C12.4571 18.8977 12.4957 18.8748 12.6487 18.8562C12.8135 18.8361 13.0335 18.8283 13.3925 18.8168L13.3446 17.3176Z",
-                fill: e
-            }), re.jsx("path", {
-                d: "M19.7724 12.3481L20.4653 12.6351L20.4653 12.6351L19.7724 12.3481ZM18.1488 13.9717L18.4358 14.6646L18.4358 14.6646L18.1488 13.9717ZM18.5682 4.44208L18.1764 5.08156L18.1764 5.08156L18.5682 4.44208ZM19.5587 5.43251L20.1981 5.04064L20.1981 5.04064L19.5587 5.43251ZM9.43324 4.44208L9.04137 3.8026L9.04137 3.8026L9.43324 4.44208ZM8.44282 5.43251L7.80334 5.04064L7.80334 5.04064L8.44282 5.43251ZM13.1007 4.75H14.9007V3.25H13.1007V4.75ZM19.2507 9.10002V9.70002H20.7507V9.10002H19.2507ZM19.2507 9.70002C19.2507 10.4092 19.2503 10.9035 19.2239 11.2904C19.198 11.6706 19.1495 11.892 19.0795 12.0611L20.4653 12.6351C20.6236 12.2528 20.6893 11.8491 20.7205 11.3926C20.7511 10.9427 20.7507 10.3887 20.7507 9.70002H19.2507ZM19.0795 12.0611C18.8511 12.6124 18.4131 13.0504 17.8618 13.2788L18.4358 14.6646C19.3547 14.284 20.0847 13.554 20.4653 12.6351L19.0795 12.0611ZM14.9007 4.75C15.8973 4.75 16.592 4.75079 17.1295 4.80189C17.6558 4.85193 17.9533 4.94487 18.1764 5.08156L18.9601 3.8026C18.4618 3.49721 17.9076 3.36911 17.2715 3.30863C16.6465 3.24921 15.8682 3.25 14.9007 3.25V4.75ZM20.7507 9.10002C20.7507 8.13251 20.7515 7.35421 20.6921 6.72928C20.6316 6.09319 20.5035 5.53899 20.1981 5.04064L18.9192 5.82438C19.0559 6.04744 19.1488 6.34497 19.1988 6.87126C19.2499 7.40872 19.2507 8.10347 19.2507 9.10002H20.7507ZM18.1764 5.08156C18.4791 5.26709 18.7337 5.52163 18.9192 5.82438L20.1981 5.04064C19.8889 4.53605 19.4647 4.11181 18.9601 3.8026L18.1764 5.08156ZM13.1007 3.25C12.1332 3.25 11.3549 3.24921 10.73 3.30863C10.0939 3.36911 9.53972 3.49721 9.04137 3.8026L9.82512 5.08156C10.0482 4.94487 10.3457 4.85193 10.872 4.80189C11.4094 4.75079 12.1042 4.75 13.1007 4.75V3.25ZM9.04137 3.8026C8.53678 4.11181 8.11255 4.53605 7.80334 5.04064L9.0823 5.82438C9.26782 5.52163 9.52237 5.26709 9.82512 5.08156L9.04137 3.8026ZM8.77633 7.23896C8.81597 6.477 8.91454 6.09814 9.0823 5.82438L7.80334 5.04064C7.43342 5.64429 7.32129 6.33559 7.27836 7.16104L8.77633 7.23896ZM16.8257 14.9378C17.4428 14.9173 17.9596 14.8618 18.4358 14.6646L17.8618 13.2788C17.6462 13.368 17.3551 13.4194 16.7759 13.4386L16.8257 14.9378Z",
-                fill: e
-            }), re.jsx("path", {
-                d: "M8.40078 12.8C8.40078 13.2418 8.04261 13.6 7.60078 13.6C7.15895 13.6 6.80078 13.2418 6.80078 12.8C6.80078 12.3582 7.15895 12 7.60078 12C8.04261 12 8.40078 12.3582 8.40078 12.8Z",
-                fill: e
-            }), re.jsx("path", {
-                d: "M11.2008 12.8C11.2008 13.2418 10.8426 13.6 10.4008 13.6C9.95895 13.6 9.60078 13.2418 9.60078 12.8C9.60078 12.3582 9.95895 12 10.4008 12C10.8426 12 11.2008 12.3582 11.2008 12.8Z",
-                fill: e
-            }), re.jsx("path", {
-                d: "M14.0008 12.8C14.0008 13.2418 13.6426 13.6 13.2008 13.6C12.759 13.6 12.4008 13.2418 12.4008 12.8C12.4008 12.3582 12.759 12 13.2008 12C13.6426 12 14.0008 12.3582 14.0008 12.8Z",
-                fill: e
-            })]
-        }),
-        Cs: o,
-        De: L,
-        DeActivated: ({
-            stroke: e = "currentColor",
-            fill: t = "transparent",
-            ...s
-        }) => re.jsxs("svg", {
-            width: 24,
-            height: 24,
-            viewBox: "0 0 24 24",
-            fill: "none",
-            xmlns: "http://www.w3.org/2000/svg",
-            ...s,
-            children: [re.jsx("circle", {
-                cx: "12",
-                cy: "12",
-                r: "12",
-                fill: "#FF6B86"
-            }), re.jsx("path", {
-                d: "M6.23525 9.96695C6.66958 8.11534 8.11534 6.66958 9.96696 6.23525C11.3042 5.92158 12.6958 5.92158 14.033 6.23525C15.8847 6.66958 17.3304 8.11534 17.7647 9.96696C18.0784 11.3042 18.0784 12.6958 17.7647 14.033C17.3304 15.8847 15.8847 17.3304 14.033 17.7648C12.6958 18.0784 11.3042 18.0784 9.96696 17.7647C8.11534 17.3304 6.66958 15.8847 6.23525 14.033C5.92158 12.6958 5.92158 11.3042 6.23525 9.96695Z",
-                stroke: "#F2F4FB",
-                strokeWidth: "1.5"
-            }), re.jsx("path", {
-                d: "M13.1785 13.1786L10.8215 10.8216M10.8215 13.1786L13.1785 10.8216",
-                stroke: "#F2F4FB",
-                strokeWidth: "1.5",
-                strokeLinecap: "round"
-            })]
-        }),
-        DeleteMessage: ({
-            stroke: e = "currentColor",
-            fill: t = "transparent",
-            ...s
-        }) => re.jsxs("svg", {
-            width: 24,
-            height: 24,
-            viewBox: "0 0 24 24",
-            fill: "none",
-            xmlns: "http://www.w3.org/2000/svg",
-            ...s,
-            children: [re.jsx("path", {
-                d: "M13 13.2663C12.5858 13.2663 12.25 13.6021 12.25 14.0163C12.25 14.4305 12.5858 14.7663 13 14.7663V13.2663ZM21 14.7663C21.4142 14.7663 21.75 14.4305 21.75 14.0163C21.75 13.6021 21.4142 13.2663 21 13.2663V14.7663ZM13.8889 14.0163V13.2663H13.1389V14.0163H13.8889ZM20.1111 14.0163H20.8611V13.2663H20.1111V14.0163ZM19.8186 18.9152L20.5451 19.1016L19.8186 18.9152ZM17.7662 20.9277L17.9063 21.6645L17.9063 21.6645L17.7662 20.9277ZM16.2338 20.9277L16.3739 20.1909L16.3739 20.1909L16.2338 20.9277ZM16.1637 20.9143L16.0236 21.6511L16.0236 21.6511L16.1637 20.9143ZM14.1814 18.9151L13.4549 19.1015L14.1814 18.9151ZM17.8363 20.9143L17.6962 20.1775L17.6962 20.1775L17.8363 20.9143ZM15.1522 13.2447L15.846 13.5297L15.846 13.5297L15.1522 13.2447ZM15.5858 12.5906L15.0533 12.0624L15.0533 12.0624L15.5858 12.5906ZM16.2346 12.1535L16.5236 12.8456L16.5236 12.8456L16.2346 12.1535ZM17.7654 12.1535L18.0544 11.4614L18.0544 11.4614L17.7654 12.1535ZM18.8478 13.2447L19.5415 12.9597L19.5415 12.9597L18.8478 13.2447ZM13 14.7663H21V13.2663H13V14.7663ZM17.6962 20.1775L17.6261 20.1909L17.9063 21.6645L17.9764 21.6511L17.6962 20.1775ZM16.3739 20.1909L16.3037 20.1775L16.0236 21.6511L16.0937 21.6645L16.3739 20.1909ZM19.3611 14.0163V16.5879H20.8611V14.0163H19.3611ZM14.6389 16.5879V14.0163H13.1389V16.5879H14.6389ZM19.3611 16.5879C19.3611 17.3131 19.2704 18.034 19.0921 18.7287L20.5451 19.1016C20.7549 18.284 20.8611 17.4378 20.8611 16.5879H19.3611ZM17.6261 20.1909C17.2114 20.2697 16.7886 20.2697 16.3739 20.1909L16.0937 21.6645C16.6935 21.7785 17.3065 21.7785 17.9063 21.6645L17.6261 20.1909ZM16.3037 20.1775C15.6856 20.06 15.114 19.5322 14.9079 18.7287L13.4549 19.1015C13.7839 20.3835 14.753 21.4096 16.0236 21.6511L16.3037 20.1775ZM14.9079 18.7287C14.7296 18.034 14.6389 17.3131 14.6389 16.5879H13.1389C13.1389 17.4378 13.2451 18.284 13.4549 19.1015L14.9079 18.7287ZM17.9764 21.6511C19.247 21.4096 20.2161 20.3836 20.5451 19.1016L19.0921 18.7287C18.8859 19.5322 18.3144 20.06 17.6962 20.1775L17.9764 21.6511ZM15.75 14.0163C15.75 13.8492 15.7827 13.6838 15.846 13.5297L14.4585 12.9597C14.3208 13.2948 14.25 13.6539 14.25 14.0163H15.75ZM15.846 13.5297C15.9093 13.3756 16.0019 13.236 16.1183 13.1187L15.0533 12.0624C14.7982 12.3195 14.5962 12.6245 14.4585 12.9597L15.846 13.5297ZM16.1183 13.1187C16.2346 13.0014 16.3724 12.9087 16.5236 12.8456L15.9456 11.4614C15.6115 11.6009 15.3084 11.8052 15.0533 12.0624L16.1183 13.1187ZM16.5236 12.8456C16.6748 12.7824 16.8367 12.75 17 12.75V11.25C16.638 11.25 16.2797 11.3219 15.9456 11.4614L16.5236 12.8456ZM17 12.75C17.1633 12.75 17.3252 12.7824 17.4764 12.8456L18.0544 11.4614C17.7203 11.3219 17.362 11.25 17 11.25V12.75ZM17.4764 12.8456C17.6276 12.9087 17.7654 13.0014 17.8817 13.1187L18.9467 12.0624C18.6916 11.8052 18.3885 11.6009 18.0544 11.4614L17.4764 12.8456ZM17.8817 13.1187C17.9981 13.236 18.0907 13.3756 18.154 13.5297L19.5415 12.9597C19.4038 12.6245 19.2018 12.3195 18.9467 12.0624L17.8817 13.1187ZM18.154 13.5297C18.2173 13.6838 18.25 13.8492 18.25 14.0163H19.75C19.75 13.6539 19.6792 13.2948 19.5415 12.9597L18.154 13.5297ZM13.8889 14.7663H20.1111V13.2663H13.8889V14.7663Z",
-                fill: e
-            }), re.jsx("path", {
-                d: "M16 16V18M18 16V18",
-                stroke: e,
-                "stroke-linecap": "round"
-            }), re.jsx("path", {
-                d: "M18.9024 9.67498C19.9011 6.67899 20.4005 5.18099 19.6097 4.39025C18.819 3.59951 17.3209 4.09885 14.3248 5.09751L6.85982 7.58574C5.19436 8.14088 4.36163 8.41844 4.10886 9.0291C4.04946 9.17262 4.01354 9.32477 4.00249 9.4797C3.95546 10.1389 4.57614 10.7596 5.8175 12.0009L6.04361 12.227C6.24736 12.4307 6.34924 12.5326 6.42626 12.646C6.57815 12.8697 6.66437 13.1314 6.67514 13.4015C6.68061 13.5385 6.65922 13.681 6.61645 13.966C6.4599 15.009 6.38163 15.5305 6.47384 15.9318C6.65764 16.7317 7.27679 17.3596 8.07405 17.5546C8.47404 17.6525 11 17.5 11 17.5",
-                stroke: e,
-                strokeWidth: "1.5",
-                "stroke-linecap": "round"
-            }), re.jsx("path", {
-                d: "M7.19922 16.8008L19.1992 4.80078",
-                stroke: e,
-                strokeWidth: "1.5",
-                "stroke-linecap": "round"
-            })]
-        }),
-        Discord: i,
-        DiscordPartner: de,
-        DiscordVerified: Me,
-        DoubleHeart: ({
-            stroke: e = "currentColor",
-            fill: t = "transparent",
-            ...s
-        }) => re.jsx("svg", {
-            width: 48,
-            height: 49,
-            viewBox: "0 0 48 49",
-            fill: "none",
-            xmlns: "http://www.w3.org/2000/svg",
-            ...s,
-            children: re.jsx("path", {
-                d: "M19.139 36.16l.954-1.158-.954 1.157zM24 13.725l-1.104 1.016a1.5 1.5 0 002.208 0L24 13.725zm4.526 23.764l.9-1.2-.9 1.2zM31.2 26.272l-1.054 1.067a1.5 1.5 0 002.108 0L31.2 26.272zm2.674 11.217l-.9-1.2.9 1.2zm-13.781-2.487C15.162 30.938 9.5 27.082 9.5 19.808h-3c0 8.998 7.2 13.813 11.685 17.509l1.908-2.315zM9.5 19.808c0-3.543 1.915-6.461 4.447-7.672 2.418-1.155 5.726-.897 8.95 2.605l2.207-2.032c-3.976-4.32-8.668-5.087-12.45-3.28C8.985 11.183 6.5 15.217 6.5 19.81h3zm8.685 17.509c.816.673 1.712 1.407 2.625 1.965.911.557 1.992 1.036 3.19 1.036v-3c-.402 0-.921-.165-1.626-.596-.702-.429-1.436-1.024-2.281-1.72l-1.908 2.315zM41.5 19.808c0-4.592-2.486-8.626-6.153-10.378-3.783-1.808-8.475-1.04-12.45 3.279l2.207 2.032c3.223-3.502 6.531-3.76 8.95-2.605 2.532 1.21 4.446 4.13 4.446 7.672h3zm-17.6 9.505c0-1.43.85-2.631 2.013-3.137 1.087-.472 2.644-.407 4.233 1.163l2.108-2.135c-2.37-2.34-5.214-2.789-7.537-1.78-2.246.977-3.817 3.251-3.817 5.89h3zm3.727 9.376c.443.333.972.728 1.52 1.032.55.306 1.251.597 2.053.597v-3c-.078 0-.257-.03-.596-.22-.34-.188-.708-.457-1.178-.81l-1.8 2.401zm7.146 0c1.204-.902 2.904-2.046 4.23-3.466 1.379-1.475 2.497-3.382 2.497-5.91h-3c0 1.54-.65 2.75-1.688 3.862-1.09 1.166-2.453 2.075-3.838 3.113l1.8 2.401zm-1.799-2.4c-.47.352-.838.621-1.178.81-.34.188-.518.22-.596.22v3c.802 0 1.503-.292 2.053-.598.548-.304 1.077-.7 1.52-1.032l-1.799-2.4zm8.526-6.976c0-1.733-.68-3.31-1.78-4.462l-2.17 2.071c.584.612.95 1.452.95 2.391h3zm-1.78-4.462a6.18 6.18 0 00-4.443-1.933c-1.76-.009-3.558.733-5.131 2.286l2.108 2.135c1.086-1.073 2.145-1.425 3.008-1.42a3.18 3.18 0 012.289 1.003l2.17-2.071zm.269 1.683a15.355 15.355 0 001.511-6.726h-3c0 2.07-.461 3.851-1.217 5.43l2.706 1.296zm-10.563 9.754c-.23-.171-.464-.343-.697-.514l-1.773 2.42c.234.171.456.334.67.495l1.8-2.4zm-.697-.514c-2.63-1.927-4.829-3.625-4.829-6.46h-3c0 4.602 3.715 7.165 6.056 8.88l1.773-2.42zm-1.812.03c-1.329 1.042-2.224 1.514-2.917 1.514v3c1.848 0 3.494-1.154 4.769-2.154l-1.852-2.36z",
-                fill: e
+        },
+        GoTo: U,
+        Grid: X,
+        HU: function(i) {
+            return l.jsxs("svg", {
+                width: 24,
+                height: 24,
+                fill: "none",
+                viewBox: "0 0 24 24",
+                xmlns: "http://www.w3.org/2000/svg",
+                ...i,
+                children: [l.jsx("path", {
+                    d: "M.75 7.828c-1 2.692-1 5.653 0 8.344L12 17.217l11.25-1.045c1-2.691 1-5.653 0-8.344L12 6.783.75 7.828z",
+                    fill: "#EEE"
+                }), l.jsx("path", {
+                    d: "M12 0A12 12 0 00.75 7.828h22.5A12 12 0 0012 0z",
+                    fill: "#D80027"
+                }), l.jsx("path", {
+                    d: "M12 24a12 12 0 0011.25-7.828H.75A12 12 0 0012 24z",
+                    fill: "#6DA544"
+                })]
             })
-        }),
-        DropdownBottom: a,
-        DropdownLeft: n,
-        DropdownRight: c,
-        DropdownTop: h,
-        Edit: I,
-        El: C,
-        En: d,
-        Es: M,
-        External: xe,
-        Filter: ({
-            stroke: e = "currentColor",
-            fill: t = "transparent",
-            ...s
-        }) => re.jsx("svg", {
-            width: 24,
-            height: 24,
-            viewBox: "0 0 24 24",
-            fill: "none",
-            xmlns: "http://www.w3.org/2000/svg",
-            ...s,
-            children: re.jsx("path", {
-                d: "M17.6 4.8H6.4c-1.131 0-1.697 0-2.049.33C4 5.46 4 5.992 4 7.054v.551c0 .83 0 1.246.208 1.59.207.344.587.558 1.346.985l2.33 1.312c.51.286.764.43.946.588.38.33.613.717.72 1.191.05.229.05.495.05 1.03v2.135c0 .727 0 1.091.202 1.375.201.283.559.423 1.275.703 1.503.588 2.254.881 2.789.547.534-.334.534-1.098.534-2.625v-2.136c0-.534 0-.8.05-1.028.107-.475.34-.863.72-1.192.182-.158.437-.302.946-.588l2.33-1.312c.76-.427 1.139-.64 1.346-.985.208-.344.208-.76.208-1.59v-.551c0-1.062 0-1.593-.352-1.922-.35-.33-.917-.33-2.048-.33z",
-                stroke: e,
-                strokeWidth: 1.5
+        },
+        Headphone: Y,
+        HeadphoneSlash: K,
+        Heart: Q,
+        Home: q,
+        IT: function(i) {
+            return l.jsxs("svg", {
+                width: 24,
+                height: 24,
+                viewBox: "0 0 24 24",
+                fill: "none",
+                xmlns: "http://www.w3.org/2000/svg",
+                ...i,
+                children: [l.jsx("path", {
+                    d: "M12 24c6.627 0 12-5.373 12-12S18.627 0 12 0 0 5.373 0 12s5.373 12 12 12z",
+                    fill: "#F0F0F0"
+                }), l.jsx("path", {
+                    d: "M24 12c0-5.16-3.257-9.558-7.826-11.254v22.508C20.744 21.558 24 17.159 24 12z",
+                    fill: "#D80027"
+                }), l.jsx("path", {
+                    d: "M0 12c0 5.16 3.256 9.558 7.826 11.254V.746C3.256 2.442 0 6.84 0 12z",
+                    fill: "#6DA544"
+                })]
             })
-        }),
-        FilterBars: we,
-        ForumChannel: U,
-        Fr: p,
-        GainRole: ({
-            stroke: e = "currentColor",
-            fill: t = "transparent",
-            ...s
-        }) => re.jsxs("svg", {
+        },
+        IconAntiRaid: Zi,
+        IconAutomations: Mi,
+        IconBirthday: hi,
+        IconCustomCommands: di,
+        IconDiscord: Ri,
+        IconEconomy: oi,
+        IconEmbeds: Ci,
+        IconFacebook: bi,
+        IconGiveaways: pi,
+        IconHelp: ci,
+        IconInstagram: Si,
+        IconLevels: xi,
+        IconMembership: function(i) {
+            return l.jsxs("svg", {
+                width: 24,
+                height: 24,
+                viewBox: "0 0 24 24",
+                fill: "none",
+                xmlns: "http://www.w3.org/2000/svg",
+                ...i,
+                children: [l.jsx("path", {
+                    d: "M15.9338 4H8.06619C5.26821 4 3 6.66652 3 9.95584V14.0442C3 17.3335 5.26821 20 8.06619 20H15.9338C18.7318 20 21 17.3335 21 14.0442V9.95584C21 6.66652 18.7318 4 15.9338 4Z",
+                    fill: "#9B9D9F",
+                    fillOpacity: "0.16",
+                    stroke: "#9B9D9F",
+                    strokeWidth: "1.5",
+                    strokeLinecap: "round",
+                    strokeLinejoin: "round"
+                }), l.jsx("path", {
+                    fillRule: "evenodd",
+                    clipRule: "evenodd",
+                    d: "M16.3975 9.45307C16.3975 9.45307 14.9351 7.67827 14.914 7.65781C14.4778 7.23358 13.9169 7 13.3348 7H10.6652C10.083 7 9.52218 7.23358 9.086 7.65781C9.06494 7.67827 7.60253 9.45307 7.60253 9.45307C6.91631 10.1546 6.80017 11.3081 7.33703 12.1585C8.07928 13.3343 9.70192 15.504 10.8275 16.4272C11.691 17.1915 12.3102 17.1904 13.1725 16.4272C14.2981 15.504 15.9208 13.3343 16.663 12.1585C17.1998 11.3081 17.0837 10.1546 16.3975 9.45307ZM10.612 8H13.388L12 10L10.612 8ZM15.8808 10.4129C15.9364 10.4694 15.9761 10.5392 16 10.6147H13L14.5 9C14.5 9 15.8564 10.3882 15.8808 10.4129ZM9.5 9C9.5 9 8.14355 10.3882 8.11921 10.4129C8.06359 10.4693 8.02385 10.5392 8 10.6147H11L9.5 9ZM12.3084 15.7487C12.1748 15.8632 12.0716 15.9472 12 16C11.9284 15.9472 11.8252 15.8632 11.6916 15.7487L9.08478 12H14.9153L12.3084 15.7487Z",
+                    fill: "#9B9D9F"
+                })]
+            })
+        },
+        IconModMails: ki,
+        IconModerator: fi,
+        IconMusic: mi,
+        IconMusicQuiz: ji,
+        IconPolls: Hi,
+        IconRSS: Ui,
+        IconReactionRoles: wi,
+        IconRecord: function(i) {
+            return l.jsxs("svg", {
+                width: 24,
+                height: 24,
+                viewBox: "0 0 24 24",
+                fill: "none",
+                xmlns: "http://www.w3.org/2000/svg",
+                ...i,
+                children: [l.jsx("path", {
+                    d: "M13.91 15.706h-3.82a.977.977 0 00.51.799v4.28c.023.343.183.664.446.891.262.228.605.343.954.321.346.02.685-.098.944-.325.258-.227.415-.546.436-.887v-4.26a.976.976 0 00.53-.818z",
+                    fill: "#33353B",
+                    stroke: "#A6AAAD",
+                    "data-stroke": "main",
+                    "data-fill": "secondary",
+                    strokeWidth: 1.5,
+                    strokeLinecap: "round",
+                    strokeLinejoin: "round",
+                    fillOpacity: .16
+                }), l.jsx("path", {
+                    d: "M12.006 2h-.012C8.684 2 6 4.182 6 6.875v4.055c0 2.693 2.684 4.875 5.994 4.875h.012c3.31 0 5.994-2.182 5.994-4.875V6.875C18 4.182 15.316 2 12.006 2z",
+                    fill: "#33353B",
+                    stroke: "#A6AAAD",
+                    "data-stroke": "main",
+                    "data-fill": "secondary",
+                    strokeWidth: 1.5,
+                    strokeLinecap: "round",
+                    strokeLinejoin: "round"
+                }), l.jsx("path", {
+                    d: "M10.22 5.146H8.58c-.331 0-.6.264-.6.591 0 .327.269.592.6.592h1.64c.331 0 .6-.265.6-.592a.596.596 0 00-.6-.591zM12.05 5.146h-.06c-.331 0-.6.264-.6.591 0 .327.269.592.6.592h.06c.332 0 .6-.265.6-.592a.596.596 0 00-.6-.591zM15.46 5.146h-1.64c-.332 0-.6.264-.6.591 0 .327.268.592.6.592h1.64c.331 0 .6-.265.6-.592a.596.596 0 00-.6-.591zM10.22 8.271H8.58c-.331 0-.6.265-.6.592 0 .327.269.592.6.592h1.64c.331 0 .6-.265.6-.592a.596.596 0 00-.6-.592zM12.05 8.271h-.06c-.331 0-.6.265-.6.592 0 .327.269.592.6.592h.06c.332 0 .6-.265.6-.592a.596.596 0 00-.6-.592zM15.46 8.271h-1.64c-.332 0-.6.265-.6.592 0 .327.268.592.6.592h1.64c.331 0 .6-.265.6-.592a.596.596 0 00-.6-.592zM10.22 11.318H8.58c-.331 0-.6.265-.6.592 0 .327.269.592.6.592h1.64c.331 0 .6-.265.6-.592a.596.596 0 00-.6-.592zM12.05 11.318h-.06c-.331 0-.6.265-.6.592 0 .327.269.592.6.592h.06c.332 0 .6-.265.6-.592a.596.596 0 00-.6-.592zM15.46 11.318h-1.64c-.332 0-.6.265-.6.592 0 .327.268.592.6.592h1.64c.331 0 .6-.265.6-.592a.596.596 0 00-.6-.592z",
+                    fill: "#A6AAAD",
+                    "data-fill": "main"
+                })]
+            })
+        },
+        IconReddit: Ii,
+        IconRss: Vi,
+        IconSearchAnything: gi,
+        IconSocialConnector: Fi,
+        IconStatistics: zi,
+        IconTicketing: ui,
+        IconTimers: vi,
+        IconTwitch: Oi,
+        IconTwitter: Gi,
+        IconVerification: yi,
+        IconWelcome: Li,
+        IconWelcomeChannel: ({
+            main: i = a,
+            ...t
+        }) => l.jsxs("svg", {
             width: 24,
             height: 24,
             viewBox: "0 0 24 24",
             fill: "none",
             xmlns: "http://www.w3.org/2000/svg",
-            ...s,
-            children: [re.jsx("circle", {
-                cx: "10.3992",
-                cy: "7.2",
-                r: "3.2",
-                stroke: e,
-                strokeWidth: "1.5"
-            }), re.jsx("ellipse", {
-                cx: "10.4008",
-                cy: "16.0008",
-                rx: "5.6",
-                ry: "3.2",
-                stroke: e,
-                strokeWidth: "1.5"
-            }), re.jsx("path", {
-                d: "M16.8335 12.2932L17.2772 11.6886L17.2772 11.6886L16.8335 12.2932ZM17.5992 9.35386L17.0805 9.89558C17.3706 10.1733 17.8279 10.1733 18.1179 9.89558L17.5992 9.35386ZM18.3649 12.2932L17.9213 11.6886L17.9213 11.6886L18.3649 12.2932ZM17.5992 12.6628L17.5992 13.4128L17.5992 13.4128L17.5992 12.6628ZM17.2772 11.6886C16.947 11.4463 16.5887 11.1476 16.3202 10.8372C16.0322 10.5041 15.9492 10.2743 15.9492 10.1582H14.4492C14.4492 10.8296 14.8322 11.4096 15.1857 11.8184C15.5588 12.2498 16.0176 12.6248 16.3898 12.8979L17.2772 11.6886ZM15.9492 10.1582C15.9492 9.74944 16.1293 9.61368 16.2423 9.57405C16.3764 9.52705 16.69 9.52163 17.0805 9.89558L18.1179 8.81214C17.4285 8.15205 16.5421 7.87948 15.7461 8.1585C14.9292 8.44489 14.4492 9.22831 14.4492 10.1582H15.9492ZM18.8086 12.8979C19.1809 12.6248 19.6397 12.2498 20.0128 11.8184C20.3663 11.4096 20.7492 10.8296 20.7492 10.1582H19.2492C19.2492 10.2743 19.1662 10.5041 18.8782 10.8372C18.6098 11.1476 18.2514 11.4463 17.9213 11.6886L18.8086 12.8979ZM20.7492 10.1582C20.7492 9.2283 20.2693 8.44488 19.4523 8.1585C18.6564 7.87948 17.7699 8.15205 17.0805 8.81214L18.1179 9.89558C18.5085 9.52163 18.822 9.52705 18.9561 9.57405C19.0692 9.61368 19.2492 9.74944 19.2492 10.1582H20.7492ZM16.3898 12.8979C16.6745 13.1068 17.0463 13.4128 17.5992 13.4128L17.5992 11.9128C17.595 11.9128 17.6004 11.9126 17.6092 11.915C17.6167 11.917 17.6135 11.9174 17.5941 11.9072C17.5724 11.8957 17.5388 11.8754 17.4835 11.8373C17.4275 11.7987 17.3637 11.752 17.2772 11.6886L16.3898 12.8979ZM17.9213 11.6886C17.8348 11.752 17.771 11.7987 17.715 11.8373C17.6597 11.8754 17.626 11.8957 17.6043 11.9072C17.5849 11.9174 17.5818 11.917 17.5892 11.915C17.598 11.9126 17.6035 11.9128 17.5992 11.9128L17.5992 13.4128C18.1521 13.4128 18.5239 13.1068 18.8086 12.8979L17.9213 11.6886Z",
-                fill: e
-            })]
-        }),
-        GetPremium: k,
-        Gift: Z,
-        GiveCoins: ({
-            stroke: e = "currentColor",
-            fill: t = "transparent",
-            ...s
-        }) => re.jsxs("svg", {
-            width: 24,
-            height: 24,
-            viewBox: "0 0 24 24",
-            fill: "none",
-            xmlns: "http://www.w3.org/2000/svg",
-            ...s,
-            children: [re.jsx("path", {
-                fillRule: "evenodd",
-                clipRule: "evenodd",
-                d: "M19.125 7.222c1.167.525 1.562 1.112 1.562 1.515 0 .403-.395.99-1.562 1.515-1.102.496-2.673.82-4.445.82-1.771 0-3.342-.324-4.444-.82-1.167-.525-1.562-1.112-1.562-1.515 0-.403.395-.99 1.562-1.515 1.102-.497 2.673-.82 4.444-.82 1.772 0 3.343.323 4.445.82zm.548-1.217c-1.312-.59-3.077-.939-4.993-.939-1.915 0-3.68.348-4.992.939-1.25.563-2.349 1.477-2.349 2.732 0 1.255 1.099 2.17 2.349 2.732 1.312.59 3.077.939 4.992.939 1.916 0 3.68-.348 4.993-.939 1.25-.563 2.349-1.477 2.349-2.732 0-1.255-1.099-2.17-2.349-2.732z",
-                fill: e
-            }), re.jsx("path", {
-                fillRule: "evenodd",
-                clipRule: "evenodd",
-                d: "M21.354 8.07a.667.667 0 00-.667.668v3.337c0 .403-.395.99-1.56 1.514-1.104.498-2.675.821-4.447.821-1.771 0-3.342-.323-4.446-.82-1.165-.524-1.56-1.111-1.56-1.515V8.738a.667.667 0 00-1.335 0v3.337c0 1.256 1.098 2.17 2.348 2.732 1.312.59 3.078.938 4.993.938 1.916 0 3.682-.347 4.994-.938 1.25-.562 2.348-1.476 2.348-2.732V8.738a.667.667 0 00-.668-.668z",
-                fill: e
-            }), re.jsx("path", {
-                fillRule: "evenodd",
-                clipRule: "evenodd",
-                d: "M17.35 10.822a.668.668 0 00-.667.668v3.336a.667.667 0 101.335 0V11.49a.667.667 0 00-.668-.668zM8.672 9.734a.667.667 0 00-.727-.602c-1.585.147-3.013.538-4.068 1.112C2.859 10.8 2 11.637 2 12.741c0 1.256 1.097 2.17 2.347 2.733 1.313.59 3.078.938 4.994.938 1.701 0 3.284-.277 4.53-.743a.666.666 0 00.255-1.08.666.666 0 00-.722-.17c-1.075.4-2.495.658-4.063.658-1.772 0-3.343-.325-4.446-.821-1.166-.523-1.56-1.11-1.56-1.515 0-.348.288-.84 1.179-1.324.853-.465 2.094-.821 3.554-.956a.668.668 0 00.603-.727z",
-                fill: e
-            }), re.jsx("path", {
-                fillRule: "evenodd",
-                clipRule: "evenodd",
-                d: "M2.667 12.074a.667.667 0 00-.668.668v3.336c0 1.256 1.098 2.17 2.348 2.733 1.312.59 3.078.938 4.994.938 1.915 0 3.68-.347 4.993-.938 1.25-.562 2.348-1.477 2.348-2.733V15.02a.668.668 0 00-1.335 0v1.06c0 .403-.395.99-1.56 1.514-1.104.498-2.675.821-4.446.821-1.772 0-3.343-.323-4.446-.82-1.166-.524-1.56-1.111-1.56-1.516v-3.336a.667.667 0 00-.668-.668z",
-                fill: e
-            }), re.jsx("path", {
-                fillRule: "evenodd",
-                clipRule: "evenodd",
-                d: "M6.671 14.826a.667.667 0 00-.667.668v3.337a.667.667 0 101.335 0v-3.337a.667.667 0 00-.668-.668zm5.34-4.004a.667.667 0 00-.668.668v7.34a.667.667 0 101.335 0v-7.34a.668.668 0 00-.668-.668z",
-                fill: e
-            }), re.jsx("path", {
-                d: "M3.068 6.032h4.064M5.1 4v4.064",
-                stroke: e,
-                strokeWidth: 1.5,
-                strokeLinecap: "round"
-            })]
-        }),
-        GiveXP: ({
-            stroke: e = "currentColor",
-            fill: t = "transparent",
-            ...s
-        }) => re.jsxs("svg", {
-            width: 24,
-            height: 24,
-            viewBox: "0 0 24 24",
-            fill: "none",
-            xmlns: "http://www.w3.org/2000/svg",
-            ...s,
-            children: [re.jsx("path", {
-                d: "M6.069 11.013a3.153 3.153 0 01-2.057-.84 3.028 3.028 0 01-.959-1.97c-.303-2.618.725-3.074 2.14-2.437m11.865 5.247a3.153 3.153 0 002.057-.84c.55-.505.892-1.21.958-1.97.354-3.052-1.102-3.165-2.87-2.035m-12.01-.402c.234.106.479.241.73.402l-.73-.402zM15.094 17.94h-2.082V15H9.963v2.94H7.99c-.323.013-.63.148-.863.38-.222.227-.337 1.73-.32 2.035h9.51a1.071 1.071 0 00-.075-.452c-.057-.145-.146-1.484-.26-1.596a1.257 1.257 0 00-.403-.266 1.338 1.338 0 00-.485-.1z",
-                stroke: e,
-                strokeWidth: 1.5,
-                strokeLinecap: "round",
-                strokeLinejoin: "round"
-            }), re.jsx("path", {
-                d: "M7.259 4h8.585c.379 0 .742.146 1.008.404.269.26.42.61.42.977v4.008c0 .725-.15 1.445-.437 2.115a5.506 5.506 0 01-1.24 1.79c-.54.518-1.17.923-1.856 1.194a5.863 5.863 0 01-2.188.414c-1.511 0-2.96-.58-4.029-1.615A5.418 5.418 0 015.854 9.39V5.38c0-.362.147-.71.41-.969.263-.257.62-.406.995-.411z",
-                stroke: e,
-                strokeWidth: 1.5,
-                strokeLinecap: "round",
-                strokeLinejoin: "round"
-            }), re.jsx("path", {
-                d: "M9.66 9.551h3.806m-1.903-1.903v3.806",
-                stroke: e,
-                strokeWidth: 1.5,
-                strokeLinecap: "round"
-            })]
-        }),
-        Group: ({
-            stroke: e = "currentColor",
-            fill: t = "transparent",
-            ...s
-        }) => re.jsxs("svg", {
-            width: 48,
-            height: 49,
-            viewBox: "0 0 48 49",
-            fill: "none",
-            xmlns: "http://www.w3.org/2000/svg",
-            ...s,
-            children: [re.jsx("circle", {
-                cx: 24,
-                cy: 15.254,
-                r: 6.4,
-                stroke: e,
-                strokeWidth: 3
-            }), re.jsx("path", {
-                d: "M33.6 20.054c2.65 0 4.8-1.791 4.8-4 0-2.21-2.15-4-4.8-4M14.4 20.054c-2.65 0-4.8-1.791-4.8-4 0-2.21 2.15-4 4.8-4",
-                stroke: e,
-                strokeWidth: 3,
-                strokeLinecap: "round"
-            }), re.jsx("ellipse", {
-                cx: 24,
-                cy: 32.854,
-                rx: 9.6,
-                ry: 6.4,
-                stroke: e,
-                strokeWidth: 3
-            }), re.jsx("path", {
-                d: "M36.8 36.054c2.807-.616 4.8-2.175 4.8-4 0-1.826-1.993-3.385-4.8-4M11.2 36.054c-2.807-.616-4.8-2.175-4.8-4 0-1.826 1.993-3.385 4.8-4",
-                stroke: e,
-                strokeWidth: 3,
-                strokeLinecap: "round"
-            })]
-        }),
-        Handshake: x,
-        Hu: w,
-        Info: m,
-        It: v,
-        Jp: j,
-        Ko: f,
-        Lock: se,
-        LoseRole: ({
-            stroke: e = "currentColor",
-            fill: t = "transparent",
-            ...s
-        }) => re.jsxs("svg", {
-            width: 24,
-            height: 24,
-            viewBox: "0 0 24 24",
-            fill: "none",
-            xmlns: "http://www.w3.org/2000/svg",
-            ...s,
-            children: [re.jsx("circle", {
-                cx: "10.3992",
-                cy: "7.2",
-                r: "3.2",
-                stroke: e,
-                strokeWidth: "1.5"
-            }), re.jsx("path", {
-                d: "M16.8 16.4008C16.8 18.389 16.8 20.0008 10.4 20.0008C4 20.0008 4 18.389 4 16.4008C4 14.4126 6.86538 12.8008 10.4 12.8008C13.9346 12.8008 16.8 14.4126 16.8 16.4008Z",
-                stroke: e,
-                strokeWidth: "1.5"
-            }), re.jsx("path", {
-                d: "M18.7315 11.5323L17.6001 10.4009M17.6001 10.4009L16.4688 9.26954M17.6001 10.4009L18.7315 9.26953M17.6001 10.4009L16.4688 11.5323",
-                stroke: e,
-                strokeWidth: "1.5",
-                "stroke-linecap": "round"
-            })]
-        }),
-        Minus: le,
-        Moderator: ({
-            stroke: e = "currentColor",
-            fill: t = "transparent",
-            ...s
-        }) => re.jsxs("svg", {
-            width: 24,
-            height: 24,
-            viewBox: "0 0 24 24",
-            fill: "none",
-            xmlns: "http://www.w3.org/2000/svg",
-            ...s,
-            children: [re.jsx("path", {
-                d: "M20 4.512v6.445c0 .401-.148.786-.41 1.07-.264.283-.62.442-.993.442H5.403c-.372 0-.73-.16-.992-.443A1.574 1.574 0 014 10.957V4.512c0-.4.148-.786.41-1.07.264-.283.62-.442.993-.442h13.281c.357.024.692.194.936.475.245.28.38.652.38 1.037z",
-                fill: "#A6AAAD",
-                stroke: e,
-                strokeWidth: 1.5,
-                strokeLinecap: "round",
-                strokeLinejoin: "round",
-                fillOpacity: .16
-            }), re.jsx("path", {
-                d: "M10.897 12.47h2.235v7.3c.004.161-.023.322-.078.473a1.21 1.21 0 01-.244.402 1.11 1.11 0 01-.371.267 1.073 1.073 0 01-1.225-.263 1.249 1.249 0 01-.326-.848v-7.3l.01-.032z",
-                fill: "#A6AAAD",
-                stroke: e,
+            ...t,
+            children: [l.jsx("path", {
+                d: "M20.45 9.85a1.14 1.14 0 00-1.73.13L16 13.4l-.12-.27 2.54-5.9a1.64 1.64 0 00-.65-2.09 1.34 1.34 0 00-1.87.73l-2.15 5-.4-.2L15 4.17a1.62 1.62 0 00-1-1.95 1.41 1.41 0 00-1.74 1.1l-1.77 7.09-.37.11.59-6.08a1.43 1.43 0 00-1.15-1.61 1.35 1.35 0 00-1.45 1.29l-.85 8.76h-.15l-.26.1-1-3.23a1.32 1.32 0 00-1.64-1l-.17.06a1.56 1.56 0 00-.75 1.93l1.74 5.74a4 4 0 00.13.74 3.38 3.38 0 003 2.67 4.9 4.9 0 002 1.27c2.64.82 5.37-.9 6.11-3.85a.43.43 0 000-.11l4.23-5.42a1.5 1.5 0 00-.05-1.93z",
+                fill: i,
+                "data-fill": "main",
+                stroke: i,
                 "data-stroke": "main",
                 strokeWidth: 1.5,
                 strokeLinecap: "round",
                 strokeLinejoin: "round",
                 fillOpacity: .16
-            })]
-        }),
-        NftCheck: ae,
-        Nl: z,
-        Notification: u,
-        PinMessage: ({
-            stroke: e = "currentColor",
-            fill: t = "transparent",
-            ...s
-        }) => re.jsxs("svg", {
-            width: 24,
-            height: 24,
-            viewBox: "0 0 24 24",
-            fill: "none",
-            xmlns: "http://www.w3.org/2000/svg",
-            ...s,
-            children: [re.jsx("path", {
-                d: "M17.0734 9.12542L14.8761 6.92812C13.3618 5.41373 12.6046 4.65654 11.7776 4.82354C10.9506 4.99053 10.5466 5.98222 9.73859 7.9656L8.98077 9.8257C8.7579 10.3727 8.64647 10.6463 8.45439 10.855C8.389 10.9261 8.3172 10.991 8.2399 11.0489C8.01286 11.219 7.72951 11.3023 7.16282 11.469C5.82326 11.863 5.15349 12.06 4.92411 12.5208C4.84946 12.6707 4.8076 12.8349 4.80132 13.0023C4.78205 13.5166 5.27572 14.0103 6.26304 14.9976L9.00393 17.7385C9.99126 18.7258 10.4849 19.2195 10.9993 19.2002C11.1667 19.194 11.3308 19.1521 11.4808 19.0775C11.9416 18.8481 12.1386 18.1783 12.5326 16.8387C12.6992 16.2721 12.7826 15.9887 12.9526 15.7617C13.0106 15.6844 13.0755 15.6126 13.1465 15.5472C13.3553 15.3551 13.6288 15.2437 14.1759 15.0208L16.036 14.263C18.0193 13.4549 19.011 13.0509 19.178 12.224C19.345 11.397 18.5878 10.6398 17.0734 9.12542Z",
-                stroke: e,
-                strokeWidth: "1.5"
-            }), re.jsx("path", {
-                d: "M4.79929 19.1461L7.64648 16.2969",
-                stroke: e,
-                strokeWidth: "1.5",
-                "stroke-linecap": "round"
-            })]
-        }),
-        Plus: ne,
-        PlusCircle: ce,
-        Posted: Ze,
-        Premium: g,
-        Pt: V,
-        Question: H,
-        RemoveCoins: ({
-            stroke: e = "currentColor",
-            fill: t = "transparent",
-            ...s
-        }) => re.jsxs("svg", {
-            width: 24,
-            height: 24,
-            viewBox: "0 0 24 24",
-            fill: "none",
-            xmlns: "http://www.w3.org/2000/svg",
-            ...s,
-            children: [re.jsx("path", {
-                fillRule: "evenodd",
-                clipRule: "evenodd",
-                d: "M19.125 7.222c1.167.525 1.562 1.112 1.562 1.515 0 .403-.395.99-1.562 1.515-1.102.496-2.673.82-4.445.82-1.771 0-3.342-.324-4.444-.82-1.167-.525-1.562-1.112-1.562-1.515 0-.403.395-.99 1.562-1.515 1.102-.497 2.673-.82 4.444-.82 1.772 0 3.343.323 4.445.82zm.548-1.217c-1.312-.59-3.077-.939-4.993-.939-1.915 0-3.68.348-4.992.939-1.25.563-2.349 1.477-2.349 2.732 0 1.255 1.099 2.17 2.349 2.732 1.312.59 3.077.939 4.992.939 1.916 0 3.68-.348 4.993-.939 1.25-.563 2.349-1.477 2.349-2.732 0-1.255-1.099-2.17-2.349-2.732z",
-                fill: e
-            }), re.jsx("path", {
-                fillRule: "evenodd",
-                clipRule: "evenodd",
-                d: "M21.354 8.07a.667.667 0 00-.667.668v3.337c0 .403-.395.99-1.56 1.514-1.104.498-2.675.821-4.447.821-1.771 0-3.342-.323-4.446-.82-1.165-.524-1.56-1.111-1.56-1.515V8.738a.667.667 0 00-1.335 0v3.337c0 1.256 1.098 2.17 2.348 2.732 1.312.59 3.078.938 4.993.938 1.916 0 3.682-.347 4.994-.938 1.25-.562 2.348-1.476 2.348-2.732V8.738a.667.667 0 00-.668-.668z",
-                fill: e
-            }), re.jsx("path", {
-                fillRule: "evenodd",
-                clipRule: "evenodd",
-                d: "M17.35 10.822a.668.668 0 00-.667.668v3.336a.667.667 0 101.335 0V11.49a.667.667 0 00-.668-.668zM8.672 9.734a.667.667 0 00-.727-.602c-1.585.147-3.013.538-4.068 1.112C2.859 10.8 2 11.637 2 12.741c0 1.256 1.097 2.17 2.347 2.733 1.313.59 3.078.938 4.994.938 1.701 0 3.284-.277 4.53-.743a.666.666 0 00.255-1.08.666.666 0 00-.722-.17c-1.075.4-2.495.658-4.063.658-1.772 0-3.343-.325-4.446-.821-1.166-.523-1.56-1.11-1.56-1.515 0-.348.288-.84 1.179-1.324.853-.465 2.094-.821 3.554-.956a.668.668 0 00.603-.727z",
-                fill: e
-            }), re.jsx("path", {
-                fillRule: "evenodd",
-                clipRule: "evenodd",
-                d: "M2.667 12.074a.667.667 0 00-.668.668v3.336c0 1.256 1.098 2.17 2.348 2.733 1.312.59 3.078.938 4.994.938 1.915 0 3.68-.347 4.993-.938 1.25-.562 2.348-1.477 2.348-2.733V15.02a.668.668 0 00-1.335 0v1.06c0 .403-.395.99-1.56 1.514-1.104.498-2.675.821-4.446.821-1.772 0-3.343-.323-4.446-.82-1.166-.524-1.56-1.111-1.56-1.516v-3.336a.667.667 0 00-.668-.668z",
-                fill: e
-            }), re.jsx("path", {
-                fillRule: "evenodd",
-                clipRule: "evenodd",
-                d: "M6.671 14.826a.667.667 0 00-.667.668v3.337a.667.667 0 101.335 0v-3.337a.667.667 0 00-.668-.668zm5.34-4.004a.667.667 0 00-.668.668v7.34a.667.667 0 101.335 0v-7.34a.668.668 0 00-.668-.668z",
-                fill: e
-            }), re.jsx("path", {
-                d: "M3.068 6.031h4.064",
-                stroke: e,
-                strokeWidth: 1.5,
+            }), l.jsx("path", {
+                d: "M19.28 3a3.58 3.58 0 012.31 2.11M20.28 2a2.37 2.37 0 011.6 1.47M4.67 21.07a3.56 3.56 0 01-2.1-2.32M3.57 22a2.39 2.39 0 01-1.45-1.62",
+                stroke: i,
+                "data-stroke": "main",
+                strokeMiterlimit: 10,
                 strokeLinecap: "round"
             })]
         }),
-        RemoveReaction: ({
-            stroke: e = "currentColor",
-            fill: t = "transparent",
-            ...s
-        }) => re.jsxs("svg", {
-            width: 24,
-            height: 24,
-            viewBox: "0 0 24 24",
+        IconYoutube: Ni,
+        Inbox: J,
+        Info: $,
+        Instagram: Ei,
+        JP: function(i) {
+            return l.jsxs("svg", {
+                xmlns: "http://www.w3.org/2000/svg",
+                width: 24,
+                height: 24,
+                ...i,
+                viewBox: "0 0 512 512",
+                children: [l.jsx("circle", {
+                    xmlns: "http://www.w3.org/2000/svg",
+                    cx: "256",
+                    cy: "256",
+                    fill: "#f0f0f0",
+                    r: "256",
+                    "data-original": "#f0f0f0",
+                    class: ""
+                }), l.jsx("circle", {
+                    xmlns: "http://www.w3.org/2000/svg",
+                    cx: "256",
+                    cy: "256",
+                    fill: "#d80027",
+                    r: "111.304",
+                    "data-original": "#d80027"
+                })]
+            })
+        },
+        Link: ei,
+        Loader1: li,
+        Loader2: r,
+        Loader3: ii,
+        Location: ll,
+        Lock: il,
+        MEE6: o,
+        Menu: al,
+        Message: tl,
+        Message2: sl,
+        Mic: nl,
+        Minus: el,
+        Moon: rl,
+        More: hl,
+        NFTPass: function(i) {
+            return l.jsxs("svg", {
+                width: "24",
+                height: "24",
+                viewBox: "0 0 24 24",
+                fill: "none",
+                xmlns: "http://www.w3.org/2000/svg",
+                ...i,
+                children: [l.jsx("path", {
+                    d: "M18.8824 12C18.8219 12.7385 19.0087 13.4756 19.4036 14.0567C19.7984 14.6378 20.3706 15.0176 21 15.1166V17C21 18.1046 20.1046 19 19 19H5C3.89543 19 3 18.1046 3 17V15.1166C3.62945 15.0176 4.20162 14.6378 4.59645 14.0567C4.99128 13.4756 5.17808 12.7385 5.11765 12C5.18355 11.2603 4.9988 10.5198 4.60297 9.93726C4.20714 9.35471 3.63173 8.9764 3 8.88339V7C3 5.89543 3.89543 5 5 5H19C20.1046 5 21 5.89543 21 7V8.88339C20.3683 8.9764 19.7929 9.35471 19.397 9.93726C19.0012 10.5198 18.8165 11.2603 18.8824 12Z",
+                    stroke: i.main,
+                    "data-stroke": "main",
+                    strokeWidth: "1.5",
+                    strokeLinecap: "round",
+                    strokeLinejoin: "round",
+                    fill: i.secondary,
+                    "data-fill": "secondary"
+                }), l.jsx("path", {
+                    d: "M16 10H8C7.72386 10 7.5 10.2665 7.5 10.5952V10.9048C7.5 11.2335 7.72386 11.5 8 11.5H16C16.2761 11.5 16.5 11.2335 16.5 10.9048V10.5952C16.5 10.2665 16.2761 10 16 10Z",
+                    fill: i.main,
+                    "data-fill": "main"
+                }), l.jsx("path", {
+                    d: "M14 12.52H10C9.72386 12.52 9.5 12.7865 9.5 13.1153V13.4248C9.5 13.7535 9.72386 14.02 10 14.02H14C14.2761 14.02 14.5 13.7535 14.5 13.4248V13.1153C14.5 12.7865 14.2761 12.52 14 12.52Z",
+                    fill: i.secondary,
+                    "data-fill": "main"
+                })]
+            })
+        },
+        NFTSalesListing: dl,
+        NFTSalesListingPlugin: i => l.jsxs("svg", {
+            width: "56",
+            height: "56",
+            viewBox: "0 0 56 56",
             fill: "none",
             xmlns: "http://www.w3.org/2000/svg",
-            ...s,
-            children: [re.jsx("path", {
-                d: "M19.1809 11.8518L18.4419 11.9797L18.4419 11.9797L19.1809 11.8518ZM18.6165 8.58804L17.8774 8.71584L17.8774 8.71584L18.6165 8.58804ZM7.951 5.21834L7.20379 5.15373L7.20379 5.15373L7.951 5.21834ZM7.30127 12.7325L8.04848 12.7971L8.04848 12.7971L7.30127 12.7325ZM13.5967 17.4229L14.3369 17.3016L14.3369 17.3016L13.5967 17.4229ZM13.0666 14.1872L13.8067 14.0659L13.8067 14.0659L13.0666 14.1872ZM7.75929 13.858L7.2697 14.4262L7.2697 14.4262L7.75929 13.858ZM8.91028 14.8498L9.39988 14.2817L9.39988 14.2817L8.91028 14.8498ZM10.8152 17.773L10.0893 17.9613L10.0893 17.9613L10.8152 17.773ZM11.1958 19.2401L11.9218 19.0518L11.9218 19.0518L11.1958 19.2401ZM12.5349 19.9485L12.3055 19.2345L12.3055 19.2345L12.5349 19.9485ZM12.6508 19.9113L12.8802 20.6253L12.8802 20.6253L12.6508 19.9113ZM10.2903 16.4299L10.9519 16.0765L10.9519 16.0765L10.2903 16.4299ZM13.5245 19.002L12.7986 18.8137L12.7986 18.8137L13.5245 19.002ZM11.7401 19.8941L11.4146 20.5697L11.4146 20.5697L11.7401 19.8941ZM5.57806 4.42342L4.83085 4.35881L4.83085 4.35881L5.57806 4.42342ZM4.80078 13.4126L5.54799 13.4772C5.51339 13.8774 5.16971 14.1793 4.76845 14.1619C4.36718 14.1446 4.05078 13.8143 4.05078 13.4126L4.80078 13.4126ZM18.4419 11.9797L17.8774 8.71584L19.3555 8.46023L19.9199 11.724L18.4419 11.9797ZM12.9968 4.75H9.27786V3.25H12.9968V4.75ZM8.69821 5.28295L8.04848 12.7971L6.55406 12.6679L7.20379 5.15373L8.69821 5.28295ZM17.8774 8.71584C17.4851 6.44714 15.4368 4.75 12.9968 4.75V3.25C16.1268 3.25 18.8321 5.43383 19.3555 8.46023L17.8774 8.71584ZM12.8566 17.5441L12.3265 14.3085L13.8067 14.0659L14.3369 17.3016L12.8566 17.5441ZM8.24889 13.2899L9.39988 14.2817L8.42069 15.418L7.2697 14.4262L8.24889 13.2899ZM11.5412 17.5847L11.9218 19.0518L10.4698 19.4284L10.0893 17.9613L11.5412 17.5847ZM12.3055 19.2345L12.4214 19.1972L12.8802 20.6253L12.7642 20.6626L12.3055 19.2345ZM10.9519 16.0765C11.207 16.5541 11.4051 17.0601 11.5412 17.5847L10.0893 17.9613C9.98317 17.5524 9.82853 17.1572 9.62881 16.7833L10.9519 16.0765ZM12.4214 19.1972C12.6195 19.1336 12.7547 18.9826 12.7986 18.8137L14.2505 19.1903C14.0727 19.8755 13.5489 20.4105 12.8802 20.6253L12.4214 19.1972ZM11.9218 19.0518C11.9384 19.1157 11.9861 19.1801 12.0657 19.2184L11.4146 20.5697C10.9505 20.3461 10.6006 19.9327 10.4698 19.4284L11.9218 19.0518ZM12.0657 19.2184C12.1387 19.2536 12.2259 19.26 12.3055 19.2345L12.7642 20.6626C12.32 20.8053 11.8354 20.7725 11.4146 20.5697L12.0657 19.2184ZM13.7237 12.6626H17.8686V14.1626H13.7237V12.6626ZM6.32527 4.48803L5.54799 13.4772L4.05357 13.348L4.83085 4.35881L6.32527 4.48803ZM5.55078 4.38981V13.4126H4.05078V4.38981H5.55078ZM4.83085 4.35881C4.81274 4.56829 4.97782 4.75 5.19015 4.75V3.25C5.85905 3.25 6.38276 3.82316 6.32527 4.48803L4.83085 4.35881ZM14.3369 17.3016C14.4399 17.9303 14.4105 18.5736 14.2505 19.1903L12.7986 18.8137C12.9061 18.3992 12.9259 17.9667 12.8566 17.5441L14.3369 17.3016ZM9.27786 4.75C8.9767 4.75 8.72434 4.98075 8.69821 5.28295L7.20379 5.15373C7.29685 4.07747 8.19696 3.25 9.27786 3.25V4.75ZM9.39988 14.2817C9.94622 14.7525 10.5506 15.3254 10.9519 16.0765L9.62881 16.7833C9.3655 16.2904 8.9424 15.8676 8.42069 15.418L9.39988 14.2817ZM19.9199 11.724C20.14 12.9967 19.1613 14.1626 17.8686 14.1626V12.6626C18.2287 12.6626 18.5037 12.3373 18.4419 11.9797L19.9199 11.724ZM5.19015 4.75C5.39012 4.75 5.55078 4.58793 5.55078 4.38981H4.05078C4.05078 3.76111 4.56009 3.25 5.19015 3.25V4.75ZM12.3265 14.3085C12.1853 13.4471 12.8493 12.6626 13.7237 12.6626V14.1626C13.7766 14.1626 13.8149 14.1157 13.8067 14.0659L12.3265 14.3085ZM8.04848 12.7971C8.03229 12.9843 8.10703 13.1676 8.24889 13.2899L7.2697 14.4262C6.7625 13.9891 6.49639 13.3348 6.55406 12.6679L8.04848 12.7971Z",
-                fill: e
-            }), re.jsx("path", {
-                d: "M17 19L21 19",
-                stroke: e,
-                strokeWidth: "1.5",
-                "stroke-linecap": "round"
+            ...i,
+            children: [l.jsx("path", {
+                opacity: "0.2",
+                d: "M35.1722 42.7094C39.4746 34.8936 36.8787 25.305 29.3741 21.2927C21.8695 17.2803 12.298 20.3637 7.99563 28.1795C3.69323 35.9953 6.28913 45.5839 13.7937 49.5963C21.2983 53.6086 30.8698 50.5253 35.1722 42.7094Z",
+                fill: "#965FFF"
+            }), l.jsx("path", {
+                opacity: "0.2",
+                d: "M47.9666 31.8601C52.4033 23.8003 48.128 13.0578 38.4174 7.86599C28.7068 2.67423 17.2381 4.99923 12.8014 13.059C8.36473 21.1188 12.6401 31.8613 22.3507 37.0531C32.0612 42.2449 43.5299 39.9199 47.9666 31.8601Z",
+                fill: "#965FFF"
+            }), l.jsx("path", {
+                d: "M41.272 13.715H10.6345V43.9089H41.272V13.715Z",
+                fill: "#624CC1"
+            }), l.jsx("path", {
+                opacity: "0.1",
+                d: "M25.8959 14.4104V42.9193H41.2719V13.715L25.8959 14.4104Z",
+                fill: "black"
+            }), l.jsx("path", {
+                d: "M37.9413 11.243H13.8504C12.3565 11.2436 10.9239 11.8286 9.86759 12.8697C8.81124 13.9107 8.21756 15.3226 8.21704 16.7948V40.5351C8.21756 42.0073 8.81124 43.4191 9.86759 44.4602C10.9239 45.5012 12.3565 46.0863 13.8504 46.0868H37.9413C39.4351 46.0863 40.8674 45.5012 41.9234 44.4601C42.9795 43.419 43.5727 42.0071 43.5727 40.5351V16.7948C43.5727 15.3227 42.9795 13.9109 41.9234 12.8698C40.8674 11.8287 39.4351 11.2436 37.9413 11.243V11.243ZM40.3587 39.3351C40.3587 40.2857 39.9756 41.1974 39.2935 41.8696C38.6114 42.5418 37.6864 42.9194 36.7218 42.9194H15.07C14.1054 42.9194 13.1803 42.5418 12.4982 41.8696C11.8162 41.1974 11.433 40.2857 11.433 39.3351V17.9987C11.433 17.0481 11.8162 16.1364 12.4982 15.4642C13.1803 14.792 14.1054 14.4144 15.07 14.4144H36.7218C37.6864 14.4144 38.6114 14.792 39.2935 15.4642C39.9756 16.1364 40.3587 17.0481 40.3587 17.9987V39.3351Z",
+                fill: "#8683F2"
+            }), l.jsx("path", {
+                opacity: "0.1",
+                d: "M11.433 17.9987V39.3351C11.433 40.2857 11.8162 41.1974 12.4982 41.8696C13.1803 42.5418 14.1054 42.9194 15.07 42.9194H25.8959V46.0868H13.8504C12.3565 46.0863 10.9239 45.5012 9.86759 44.4602C8.81124 43.4191 8.21756 42.0073 8.21704 40.5351V16.7948C8.21756 15.3226 8.81124 13.9107 9.86759 12.8697C10.9239 11.8286 12.3565 11.2436 13.8504 11.243H25.8959V14.4105H15.07C14.592 14.4105 14.1188 14.5033 13.6772 14.6837C13.2357 14.8641 12.8346 15.1284 12.4968 15.4617C12.1591 15.7949 11.8912 16.1905 11.7087 16.6258C11.5262 17.0612 11.4325 17.5277 11.433 17.9987V17.9987Z",
+                fill: "black"
+            }), l.jsx("path", {
+                d: "M26.2971 33.6196L35.2828 49.186C35.487 49.5422 35.8265 49.8039 36.2264 49.9135C36.6264 50.0231 37.0541 49.9716 37.4156 49.7704L46.1384 44.8809C46.3175 44.7817 46.4749 44.6485 46.6017 44.4892C46.7284 44.3298 46.822 44.1474 46.8771 43.9523C46.9322 43.7572 46.9477 43.5533 46.9227 43.3523C46.8977 43.1513 46.8327 42.9572 46.7314 42.781L37.7437 27.2126C37.5513 26.877 37.237 26.6257 36.8641 26.5094L29.8175 26.601L26.137 32.5229C26.051 32.8954 26.108 33.2861 26.2971 33.6196Z",
+                fill: "#8683F2"
+            }), l.jsx("path", {
+                d: "M48.3363 41.8635L39.3546 26.301C38.9322 25.5687 38.2467 25.0189 37.4333 24.7601C37.2398 24.7078 37.0409 24.677 36.8403 24.6686L29.7917 24.7621C29.4757 24.7673 29.1662 24.8518 28.8924 25.0075C28.622 25.1584 28.3954 25.375 28.2342 25.6367L24.5537 31.5586C24.4491 31.7267 24.3723 31.9102 24.3264 32.1021C24.1334 32.9253 24.2626 33.79 24.6881 34.5235L33.6758 50.0938C33.8978 50.4782 34.1946 50.8157 34.549 51.087C34.9035 51.3583 35.3087 51.5581 35.7416 51.675C36.1744 51.7918 36.6264 51.8235 37.0717 51.7681C37.517 51.7127 37.9468 51.5714 38.3366 51.3522L42.8295 48.8335L47.0634 46.4608C47.8491 46.016 48.4241 45.2826 48.6626 44.4211C48.9012 43.5596 48.7839 42.64 48.3363 41.8635V41.8635ZM40.9715 45.6602L36.7494 48.027L28.0405 32.9359L30.8611 28.399H30.8789L36.2572 28.3269L44.9682 43.418L40.9715 45.6602Z",
+                fill: "#C4C2EF"
+            }), l.jsx("g", {
+                opacity: "0.2",
+                children: l.jsx("path", {
+                    d: "M44.9682 43.4239L40.9715 45.666L30.8789 28.4048L36.2573 28.3328L44.9682 43.4239Z",
+                    fill: "black"
+                })
+            }), l.jsx("g", {
+                opacity: "0.5",
+                children: l.jsx("path", {
+                    d: "M47.0575 46.4607L42.8295 48.8334L40.9715 45.6601L44.9682 43.4179L36.2573 28.3268L30.8789 28.3989L28.8885 25.0113C29.1623 24.8556 29.4718 24.7711 29.7878 24.7659L36.8364 24.6724C37.037 24.6808 37.2359 24.7115 37.4294 24.7639C38.2428 25.0227 38.9283 25.5725 39.3507 26.3048L48.3324 41.8673C48.7786 42.6437 48.8949 43.5625 48.656 44.4231C48.4172 45.2837 47.8425 46.0162 47.0575 46.4607V46.4607Z",
+                    fill: "black"
+                })
+            }), l.jsx("path", {
+                d: "M32.5511 34.5858C32.1628 34.5867 31.784 34.4675 31.4681 34.245C31.1523 34.0224 30.9153 33.7077 30.7906 33.3453C30.6659 32.9829 30.6598 32.591 30.7732 32.225C30.8865 31.859 31.1137 31.5373 31.4225 31.3053C31.5727 29.8346 28.7916 25.0172 27.5819 22.929C25.9868 20.1414 25.0657 19.631 24.8424 19.5434C24.9273 19.705 24.9056 20.7511 26.5067 23.5231C26.7438 23.9443 26.8028 24.4406 26.6709 24.9044C26.5389 25.3682 26.2267 25.762 25.8019 26.0003C25.3772 26.2386 24.8742 26.3021 24.4022 26.1772C23.9302 26.0522 23.5272 25.7488 23.2808 25.3328C20.644 20.7628 20.5709 17.7356 23.0674 16.3369C23.8204 15.9162 25.3563 15.4039 27.2182 16.6895C28.3805 17.4941 29.5546 18.9414 30.8097 21.1134C32.0392 23.2445 33.4327 25.6581 34.2925 27.799C35.6149 31.0969 35.3382 33.3001 33.4683 34.3481C33.1888 34.5046 32.8726 34.5865 32.5511 34.5858Z",
+                fill: "#C4C2EF"
             })]
         }),
-        RemoveXP: ({
-            stroke: e = "currentColor",
-            fill: t = "transparent",
-            ...s
-        }) => re.jsxs("svg", {
-            width: 24,
-            height: 24,
-            viewBox: "0 0 24 24",
+        NFTStatistics: function(i) {
+            return l.jsxs("svg", {
+                width: "24",
+                height: "24",
+                viewBox: "0 0 24 24",
+                fill: "none",
+                xmlns: "http://www.w3.org/2000/svg",
+                ...i,
+                children: [l.jsx("path", {
+                    d: "M5.54 17V17C4.68948 17 4 16.3105 4 15.46V7C4 5.89543 4.89543 5 6 5H15C15.5523 5 16 5.44772 16 6V6",
+                    stroke: i.main,
+                    "data-stroke": "main",
+                    fill: i.secondary,
+                    "data-fill": "secondary",
+                    strokeWidth: "1.5",
+                    strokeLinecap: "round",
+                    strokeLinejoin: "round"
+                }), l.jsx("path", {
+                    d: "M20.91 6.13C20.91 5.78 20.53 5.55 20.29 5.73L16.18 8.73C16.1284 8.78233 16.0892 8.84561 16.0654 8.91513C16.0416 8.98465 16.0337 9.05864 16.0423 9.13163C16.051 9.20461 16.0759 9.27472 16.1153 9.33675C16.1547 9.39878 16.2076 9.45116 16.27 9.49L17.27 10.15L14.4 15.15L10.23 13.69C10.1743 13.6752 10.1157 13.6752 10.06 13.69C9.9311 13.6564 9.79451 13.669 9.67395 13.7257C9.55338 13.7823 9.45645 13.8794 9.4 14L5.65 20.58C5.58837 20.6885 5.55081 20.809 5.53987 20.9334C5.52893 21.0577 5.54487 21.1829 5.58661 21.3006C5.62835 21.4182 5.6949 21.5254 5.78176 21.6151C5.86862 21.7047 5.97374 21.7746 6.09 21.82C6.2618 21.8888 6.45091 21.9016 6.63043 21.8567C6.80996 21.8119 6.97077 21.7115 7.09 21.57L10.81 17.07L15.2 18.78H15.33H15.46C15.5519 18.761 15.6386 18.7226 15.7145 18.6674C15.7904 18.6123 15.8536 18.5415 15.9 18.46L19.69 11.68L20.91 12.48C20.9676 12.5193 21.0356 12.5405 21.1054 12.5409C21.1751 12.5412 21.2434 12.5208 21.3014 12.4821C21.3594 12.4434 21.4046 12.3883 21.431 12.3238C21.4575 12.2592 21.4641 12.1883 21.45 12.12L20.91 6.13Z",
+                    stroke: i.main,
+                    "data-stroke": "main",
+                    fill: i.secondary,
+                    "data-fill": "secondary",
+                    strokeWidth: "1.5",
+                    strokeLinecap: "round",
+                    strokeLinejoin: "round"
+                })]
+            })
+        },
+        NFTStatisticsPlugin: i => l.jsxs("svg", {
+            width: "48",
+            height: "48",
+            viewBox: "0 0 48 48",
             fill: "none",
             xmlns: "http://www.w3.org/2000/svg",
-            ...s,
-            children: [re.jsx("path", {
-                d: "M6.069 11.013a3.153 3.153 0 01-2.057-.84 3.028 3.028 0 01-.959-1.97c-.303-2.618.725-3.074 2.14-2.437m11.865 5.247a3.153 3.153 0 002.057-.84c.55-.505.892-1.21.958-1.97.354-3.052-1.102-3.165-2.87-2.035m-12.01-.402c.234.106.479.241.73.402l-.73-.402zM15.094 17.94h-2.082V15H9.963v2.94H7.99c-.323.013-.63.148-.863.38-.222.227-.337 1.73-.32 2.035h9.51a1.071 1.071 0 00-.075-.452c-.057-.145-.146-1.484-.26-1.596a1.257 1.257 0 00-.403-.266 1.338 1.338 0 00-.485-.1z",
-                stroke: e,
-                strokeWidth: 1.5,
-                strokeLinecap: "round",
-                strokeLinejoin: "round"
-            }), re.jsx("path", {
-                d: "M7.259 4h8.585c.379 0 .742.146 1.008.404.269.26.42.61.42.977v4.008c0 .725-.15 1.445-.437 2.115a5.506 5.506 0 01-1.24 1.79c-.54.518-1.17.923-1.856 1.194a5.863 5.863 0 01-2.188.414c-1.511 0-2.96-.58-4.029-1.615A5.418 5.418 0 015.854 9.39V5.38c0-.362.147-.71.41-.969.263-.257.62-.406.995-.411z",
-                stroke: e,
-                strokeWidth: 1.5,
-                strokeLinecap: "round",
-                strokeLinejoin: "round"
-            }), re.jsx("path", {
-                d: "M9.66 9.55h3.806",
-                stroke: e,
-                strokeWidth: 1.5,
-                strokeLinecap: "round"
+            ...i,
+            children: [l.jsxs("g", {
+                clipPath: "url(#clip0_5167_13718)",
+                children: [l.jsx("path", {
+                    opacity: "0.2",
+                    d: "M32.2971 37.4138C36.3784 29.8908 33.9159 20.6615 26.7971 16.7995C19.6783 12.9376 10.5989 15.9054 6.51765 23.4283C2.43642 30.9513 4.89886 40.1806 12.0177 44.0425C19.1365 47.9045 28.2159 44.9367 32.2971 37.4138Z",
+                    fill: "#965FFF"
+                }), l.jsx("path", {
+                    opacity: "0.2",
+                    d: "M44.4358 26.9718C48.6445 19.214 44.5889 8.87407 35.3775 3.87685C26.1661 -1.12037 15.287 1.11751 11.0784 8.87529C6.86977 16.6331 10.9253 26.973 20.1367 31.9703C29.3481 36.9675 40.2272 34.7296 44.4358 26.9718Z",
+                    fill: "#965FFF"
+                }), l.jsx("path", {
+                    d: "M38.085 9.50626H9.02246V38.5688H38.085V9.50626Z",
+                    fill: "#624CC1"
+                }), l.jsx("path", {
+                    opacity: "0.1",
+                    d: "M23.5 10.1756V37.6144H38.0856V9.50626L23.5 10.1756Z",
+                    fill: "black"
+                }), l.jsx("path", {
+                    d: "M34.9257 7.125H12.0732C10.6561 7.1255 9.29723 7.68866 8.29519 8.6907C7.29315 9.69274 6.72999 11.0517 6.72949 12.4688V35.3213C6.72999 36.7382 7.29321 38.0969 8.2953 39.0986C9.2974 40.1004 10.6563 40.6631 12.0732 40.6631H34.9257C36.3423 40.6626 37.7008 40.0997 38.7025 39.098C39.7042 38.0963 40.2671 36.7379 40.2676 35.3213V12.4688C40.2676 11.0518 39.7049 9.6929 38.7031 8.69081C37.7014 7.68872 36.3427 7.1255 34.9257 7.125ZM37.2189 34.1644C37.2189 35.0794 36.8554 35.9569 36.2084 36.6039C35.5614 37.2509 34.6839 37.6144 33.7689 37.6144H13.2301C12.3151 37.6144 11.4376 37.2509 10.7906 36.6039C10.1436 35.9569 9.78012 35.0794 9.78012 34.1644V13.6256C9.77987 13.1724 9.86893 12.7236 10.0422 12.3048C10.2155 11.886 10.4695 11.5055 10.7899 11.1849C11.1103 10.8643 11.4907 10.61 11.9094 10.4365C12.3281 10.263 12.7769 10.1737 13.2301 10.1737H33.7689C34.2221 10.1737 34.6709 10.263 35.0896 10.4365C35.5083 10.61 35.8887 10.8643 36.209 11.1849C36.5294 11.5055 36.7835 11.886 36.9568 12.3048C37.1301 12.7236 37.2191 13.1724 37.2189 13.6256V34.1644Z",
+                    fill: "#8683F2"
+                }), l.jsx("path", {
+                    opacity: "0.1",
+                    d: "M9.78012 13.6256V34.1644C9.78012 35.0794 10.1436 35.9569 10.7906 36.6039C11.4376 37.2509 12.3151 37.6144 13.2301 37.6144H23.4995V40.6631H12.0732C10.6563 40.6631 9.2974 40.1004 8.2953 39.0986C7.29321 38.0969 6.72999 36.7382 6.72949 35.3213V12.4688C6.72999 11.0517 7.29315 9.69274 8.29519 8.6907C9.29723 7.68866 10.6561 7.1255 12.0732 7.125H23.4995V10.1737H13.2301C12.7769 10.1737 12.3281 10.263 11.9094 10.4365C11.4907 10.61 11.1103 10.8643 10.7899 11.1849C10.4695 11.5055 10.2155 11.886 10.0422 12.3048C9.86893 12.7236 9.77987 13.1724 9.78012 13.6256Z",
+                    fill: "black"
+                }), l.jsx("path", {
+                    d: "M40.3724 19.5L37.5093 17.625L28.6687 33.4387C28.5701 33.6329 28.4279 33.8017 28.2532 33.9318C28.0785 34.0619 27.8761 34.1499 27.6618 34.1887C27.6374 34.1887 27.6131 34.1887 27.5887 34.1887C27.5195 34.1953 27.4498 34.1953 27.3806 34.1887H27.3449C27.2376 34.1751 27.1327 34.1461 27.0337 34.1025L16.8074 30.1125L8.12055 40.5994C7.85144 40.9247 7.48704 41.1574 7.07868 41.2647C6.67032 41.372 6.23859 41.3485 5.8443 41.1975C5.69313 41.1403 5.54955 41.0647 5.4168 40.9725C4.99992 40.685 4.70629 40.2513 4.59411 39.7575C4.48194 39.2636 4.55941 38.7456 4.81118 38.3062L13.5637 23.025C13.963 22.3312 14.5968 22.0331 15.1012 22.2431C15.231 22.2131 15.3667 22.2196 15.493 22.2619L25.2206 25.6744L31.9256 13.9706L29.5743 12.4331C28.9537 12.0262 28.8487 11.0494 29.3868 10.6556L38.9699 3.64687C39.087 3.56268 39.2258 3.51402 39.3698 3.5067C39.5138 3.49939 39.6568 3.53373 39.7818 3.60562C39.9586 3.70261 40.1083 3.84228 40.2174 4.01192C40.3264 4.18155 40.3913 4.37575 40.4062 4.57687L41.6249 18.6544C41.6906 19.4437 41.0006 19.9125 40.3724 19.5Z",
+                    fill: "#C4C2EF"
+                }), l.jsx("path", {
+                    opacity: "0.1",
+                    d: "M40.3726 19.5L37.5095 17.625L28.6689 33.4387C28.5703 33.633 28.4281 33.8017 28.2534 33.9318C28.0787 34.0619 27.8763 34.1499 27.662 34.1887C27.6376 34.1887 27.6132 34.1887 27.5889 34.1887C27.5196 34.1953 27.45 34.1953 27.3807 34.1887H27.3451C27.2378 34.1751 27.1329 34.1461 27.0339 34.1025L16.8076 30.1125L8.12074 40.5994C7.85163 40.9247 7.48723 41.1574 7.07887 41.2647C6.67051 41.372 6.23878 41.3485 5.84449 41.1975C5.69332 41.1403 5.54974 41.0647 5.41699 40.9725L15.6976 26.3025L26.6607 29.9606L34.2639 15.2006L39.782 3.60562C39.9588 3.70262 40.1085 3.84229 40.2176 4.01192C40.3266 4.18155 40.3915 4.37576 40.4064 4.57687L41.6251 18.6544C41.6907 19.4437 41.0007 19.9125 40.3726 19.5Z",
+                    fill: "black"
+                })]
+            }), l.jsx("defs", {
+                children: l.jsx("clipPath", {
+                    id: "clip0_5167_13718",
+                    children: l.jsx("rect", {
+                        width: "48",
+                        height: "48",
+                        fill: "white"
+                    })
+                })
             })]
         }),
-        ReplyMessage: ({
-            stroke: e = "currentColor",
-            fill: t = "transparent",
-            ...s
-        }) => re.jsxs("svg", {
-            width: 24,
-            height: 24,
-            viewBox: "0 0 24 24",
+        NL: function(i) {
+            return l.jsxs("svg", {
+                width: 24,
+                height: 24,
+                viewBox: "0 0 24 24",
+                fill: "none",
+                xmlns: "http://www.w3.org/2000/svg",
+                ...i,
+                children: [l.jsx("path", {
+                    d: "M12 24c6.627 0 12-5.373 12-12S18.627 0 12 0 0 5.373 0 12s5.373 12 12 12z",
+                    fill: "#F0F0F0"
+                }), l.jsx("path", {
+                    d: "M12 0C6.84 0 2.442 3.256.747 7.826h22.507C21.558 3.256 17.16 0 12 0z",
+                    fill: "#A2001D"
+                }), l.jsx("path", {
+                    d: "M12 24c5.16 0 9.558-3.256 11.254-7.826H.747C2.442 20.744 6.84 24 12 24z",
+                    fill: "#0052B4"
+                })]
+            })
+        },
+        Next: function({
+            secondary: i = t,
+            main: s = a,
+            ...n
+        }) {
+            return l.jsxs("svg", {
+                width: 24,
+                height: 24,
+                viewBox: "0 0 16 16",
+                fill: "none",
+                xmlns: "http://www.w3.org/2000/svg",
+                ...n,
+                children: [l.jsx("path", {
+                    d: "M12.6667 2.33331C12.6667 1.78103 13.1145 1.33331 13.6667 1.33331C14.219 1.33331 14.6667 1.78103 14.6667 2.33331V13.6666C14.6667 14.2189 14.219 14.6666 13.6667 14.6666C13.1145 14.6666 12.6667 14.2189 12.6667 13.6666V2.33331Z",
+                    fill: i,
+                    stroke: s,
+                    "data-fill": "secondary",
+                    "data-stroke": "main"
+                }), l.jsx("path", {
+                    d: "M1.33325 2.66663C1.33325 1.5679 2.5876 0.940723 3.46659 1.59996L10.5777 6.93329C11.2888 7.46663 11.2888 8.53329 10.5777 9.06663L3.46659 14.4C2.5876 15.0592 1.33325 14.432 1.33325 13.3333V2.66663Z",
+                    fill: i,
+                    stroke: s,
+                    "data-fill": "secondary",
+                    "data-stroke": "main"
+                })]
+            })
+        },
+        NftQueries: ol,
+        NftQueriesPlugin: i => l.jsxs("svg", {
+            width: "48",
+            height: "48",
+            viewBox: "0 0 48 48",
             fill: "none",
             xmlns: "http://www.w3.org/2000/svg",
-            ...s,
-            children: [re.jsx("path", {
-                d: "M11.4684 6.783L8.29056 9.60775C7.03566 10.7232 6.4082 11.281 6.4082 11.9995C6.4082 12.718 7.03566 13.2757 8.29056 14.3912L11.4684 17.2159C12.0412 17.7251 12.3276 17.9797 12.5637 17.8736C12.7999 17.7676 12.7999 17.3844 12.7999 16.618V14.7423C15.6799 14.7423 18.7999 16.1137 19.9999 18.3995C19.9999 11.0852 15.7332 9.2566 12.7999 9.2566V7.38093C12.7999 6.61454 12.7999 6.23134 12.5637 6.1253C12.3276 6.01926 12.0412 6.27384 11.4684 6.783Z",
-                stroke: e,
-                strokeWidth: "1.5",
+            ...i,
+            children: [l.jsx("path", {
+                opacity: "0.2",
+                d: "M32.1583 37.4255C36.2217 29.912 33.77 20.6942 26.6822 16.837C19.5944 12.9799 10.5545 15.944 6.49107 23.4575C2.42762 30.9711 4.87934 40.1889 11.9671 44.046C19.0549 47.9032 28.0948 44.9391 32.1583 37.4255Z",
+                fill: "#965FFF"
+            }), l.jsx("path", {
+                opacity: "0.2",
+                d: "M44.2422 26.9957C48.4325 19.2476 44.3946 8.92053 35.2233 3.92955C26.0521 -1.06143 15.2204 1.17366 11.0301 8.92176C6.83978 16.6699 10.8777 26.9969 20.0489 31.9879C29.2202 36.9789 40.0519 34.7438 44.2422 26.9957Z",
+                fill: "#965FFF"
+            }), l.jsx("path", {
+                d: "M37.9193 9.55225H8.9834V38.5785H37.9193V9.55225Z",
+                fill: "#624CC1"
+            }), l.jsx("path", {
+                opacity: "0.1",
+                d: "M23.3972 10.2208V37.6272H37.9193V9.55225L23.3972 10.2208Z",
+                fill: "black"
+            }), l.jsx("path", {
+                d: "M34.7736 7.17603H12.0207C10.6097 7.17652 9.25675 7.73898 8.25907 8.73977C7.2614 9.74056 6.70069 11.0978 6.7002 12.5131V35.3352C6.70069 36.7505 7.2614 38.1077 8.25907 39.1085C9.25675 40.1093 10.6097 40.6718 12.0207 40.6723H34.7736C36.1844 40.6718 37.5372 40.1093 38.5346 39.1084C39.5319 38.1076 40.0922 36.7504 40.0922 35.3352V12.5131C40.0922 11.0979 39.5319 9.74072 38.5346 8.73988C37.5372 7.73904 36.1844 7.17652 34.7736 7.17603ZM37.0568 34.1816C37.0568 35.0955 36.6949 35.9719 36.0507 36.6181C35.4065 37.2643 34.5328 37.6273 33.6218 37.6273H13.1725C12.2615 37.6273 11.3878 37.2643 10.7436 36.6181C10.0994 35.9719 9.73753 35.0955 9.73753 34.1816V13.6704C9.73753 12.7566 10.0994 11.8801 10.7436 11.2339C11.3878 10.5877 12.2615 10.2247 13.1725 10.2247H33.6218C34.5328 10.2247 35.4065 10.5877 36.0507 11.2339C36.6949 11.8801 37.0568 12.7566 37.0568 13.6704V34.1816Z",
+                fill: "#8683F2"
+            }), l.jsx("path", {
+                opacity: "0.1",
+                d: "M9.73753 13.6704V34.1816C9.73753 35.0955 10.0994 35.9719 10.7436 36.6181C11.3878 37.2643 12.2615 37.6273 13.1725 37.6273H23.3971V40.6723H12.0207C10.6097 40.6718 9.25675 40.1093 8.25907 39.1085C7.2614 38.1077 6.70069 36.7505 6.7002 35.3352V12.5131C6.70069 11.0978 7.2614 9.74056 8.25907 8.73977C9.25675 7.73898 10.6097 7.17652 12.0207 7.17603H23.3971V10.221H13.1725C12.7211 10.221 12.2741 10.3102 11.8571 10.4836C11.4401 10.657 11.0613 10.9112 10.7423 11.2315C10.4233 11.5519 10.1703 11.9322 9.99793 12.3506C9.82553 12.7691 9.73704 13.2176 9.73753 13.6704Z",
+                fill: "black"
+            }), l.jsx("path", {
+                d: "M26.6711 26.3481L30.6636 28.9228L22.8308 41.1452C22.6659 41.4025 22.4521 41.6246 22.2016 41.7989C21.9511 41.9731 21.6688 42.0961 21.3708 42.1609C21.0729 42.2256 20.7651 42.2308 20.4652 42.1761C20.1652 42.1214 19.879 42.0079 19.6228 41.8421L19.5319 41.7834C19.0156 41.4493 18.6525 40.9233 18.5225 40.3209C18.3925 39.7186 18.506 39.0891 18.8383 38.5706L26.6711 26.3481Z",
+                fill: "#8683F2"
+            }), l.jsx("g", {
+                opacity: "0.2",
+                children: l.jsx("path", {
+                    d: "M30.5901 28.9905L22.7177 41.2115C22.5524 41.4684 22.3382 41.6902 22.0875 41.8641C21.8367 42.038 21.5543 42.1606 21.2562 42.2249C20.9582 42.2893 20.6505 42.2941 20.3506 42.2391C20.0508 42.1841 19.7646 42.0704 19.5086 41.9044L19.4619 41.8744L28.5945 27.6965L30.5901 28.9905Z",
+                    fill: "black"
+                })
+            }), l.jsx("path", {
+                d: "M33.4499 31.0562C39.5092 31.0562 44.4213 26.1288 44.4213 20.0505C44.4213 13.9723 39.5092 9.04492 33.4499 9.04492C27.3906 9.04492 22.4785 13.9723 22.4785 20.0505C22.4785 26.1288 27.3906 31.0562 33.4499 31.0562Z",
+                fill: "#8683F2"
+            }), l.jsx("path", {
+                d: "M40.0879 24.3486C42.5186 20.5739 41.5171 15.5882 37.8511 13.2127C34.1851 10.8373 29.2427 11.9717 26.812 15.7465C24.3813 19.5212 25.3828 24.507 29.0488 26.8824C32.7148 29.2578 37.6572 28.1234 40.0879 24.3486Z",
+                fill: "#C4C2EF"
+            }), l.jsx("g", {
+                opacity: "0.2",
+                children: l.jsx("path", {
+                    d: "M42.6665 26.0299C41.093 28.4735 38.6188 30.1926 35.7851 30.8113C32.9514 31.43 29.9888 30.8979 27.5452 29.3314L39.4518 10.8445C41.8799 12.4353 43.5813 14.9259 44.1837 17.7716C44.7861 20.6173 44.2406 23.5865 42.6665 26.0299Z",
+                    fill: "black"
+                })
+            }), l.jsx("path", {
+                d: "M33.0168 15.2755C33.9849 15.1744 34.7196 14.6097 34.6578 14.0141C34.596 13.4185 33.7612 13.0175 32.7931 13.1186C31.825 13.2196 31.0904 13.7844 31.1521 14.38C31.2139 14.9756 32.0488 15.3765 33.0168 15.2755Z",
+                fill: "white"
+            }), l.jsx("path", {
+                d: "M29.9759 16.513C30.4152 16.513 30.7712 16.1558 30.7712 15.7152C30.7712 15.2746 30.4152 14.9175 29.9759 14.9175C29.5367 14.9175 29.1807 15.2746 29.1807 15.7152C29.1807 16.1558 29.5367 16.513 29.9759 16.513Z",
+                fill: "white"
+            })]
+        }),
+        Note: cl,
+        Notification: pl,
+        PT: function(i) {
+            return l.jsxs("svg", {
+                width: 24,
+                height: 24,
+                viewBox: "0 0 24 24",
+                fill: "none",
+                xmlns: "http://www.w3.org/2000/svg",
+                ...i,
+                children: [l.jsx("path", {
+                    d: "M0 12c0 5.16 3.256 9.558 7.826 11.253L8.87 12 7.826.746C3.256 2.442 0 6.84 0 12z",
+                    fill: "#6DA544"
+                }), l.jsx("path", {
+                    d: "M24 12c0-6.627-5.372-12-12-12-1.468 0-2.874.264-4.174.746v22.508c1.3.482 2.706.746 4.174.746 6.628 0 12-5.373 12-12z",
+                    fill: "#D80027"
+                }), l.jsx("path", {
+                    d: "M7.826 16.174a4.174 4.174 0 100-8.348 4.174 4.174 0 000 8.348z",
+                    fill: "#FFDA44"
+                }), l.jsx("path", {
+                    d: "M5.478 9.913v2.609a2.348 2.348 0 004.696 0V9.913H5.478z",
+                    fill: "#D80027"
+                }), l.jsx("path", {
+                    d: "M7.826 13.304a.784.784 0 01-.783-.782v-1.044H8.61v1.044a.784.784 0 01-.783.782z",
+                    fill: "#F0F0F0"
+                })]
+            })
+        },
+        Patreon: function(i) {
+            return l.jsx(Di, {
+                ...i,
+                children: l.jsx(_i, {})
+            })
+        },
+        Pause: ml,
+        Phone: xl,
+        Play: fl,
+        PluginAchievements: i => l.jsxs("svg", {
+            width: 48,
+            height: 48,
+            fill: "none",
+            xmlns: "http://www.w3.org/2000/svg",
+            ...i,
+            children: [l.jsxs("g", {
+                clipPath: "url(#prefix__clip0_9016_9995)",
+                children: [l.jsx("path", {
+                    opacity: .2,
+                    d: "M27.447 38.57c5.69-6.157 5.58-15.514-.246-20.898-5.828-5.384-15.164-4.76-20.854 1.398-5.69 6.158-5.58 15.513.247 20.899 5.827 5.384 15.163 4.76 20.853-1.398z",
+                    fill: "#3994FF"
+                }), l.jsx("path", {
+                    opacity: .2,
+                    d: "M41.535 32.283c5.844-6.37 4.45-17.161-3.114-24.1-7.566-6.94-18.435-7.402-24.28-1.03-5.844 6.37-4.45 17.161 3.114 24.1 7.566 6.94 18.435 7.4 24.28 1.029v.002z",
+                    fill: "#3994FF"
+                }), l.jsx("path", {
+                    d: "M20.605 9.669h6.93a4.201 4.201 0 014.199 4.199v4.804c0 .847-.688 1.535-1.535 1.535H17.94a1.536 1.536 0 01-1.535-1.535v-4.804a4.201 4.201 0 014.2-4.2h.001z",
+                    fill: "#5ACFF5"
+                }), l.jsx("path", {
+                    d: "M30.2 21.61H17.94a2.94 2.94 0 01-2.938-2.936V13.87c0-3.089 2.513-5.601 5.601-5.601h6.93c3.089 0 5.601 2.512 5.601 5.6v4.805a2.94 2.94 0 01-2.937 2.937h.002zm-9.597-10.54a2.8 2.8 0 00-2.797 2.798v4.804c0 .073.06.133.133.133h12.262c.073 0 .133-.06.133-.133v-4.804a2.8 2.8 0 00-2.797-2.797H20.603z",
+                    fill: "#B3EEFF"
+                }), l.jsx("path", {
+                    d: "M24.07 37.56c6.09 0 11.029-4.94 11.029-11.03 0-6.092-4.938-11.03-11.03-11.03-6.091 0-11.03 4.938-11.03 11.03 0 6.09 4.939 11.03 11.03 11.03z",
+                    fill: "#5ACFF5"
+                }), l.jsx("path", {
+                    d: "M24.07 38.961c-6.856 0-12.433-5.576-12.433-12.432 0-6.855 5.577-12.431 12.432-12.431s12.432 5.576 12.432 12.431c0 6.856-5.577 12.432-12.432 12.432zm0-22.06c-5.31 0-9.629 4.32-9.629 9.628 0 5.31 4.319 9.628 9.628 9.628 5.31 0 9.628-4.318 9.628-9.628 0-5.309-4.319-9.627-9.628-9.627z",
+                    fill: "#B3EEFF"
+                }), l.jsx("path", {
+                    d: "M38.032 14.585a1.402 1.402 0 01-1.292-1.946l.183-.433-.433-.184a1.401 1.401 0 111.088-2.583l.433.183.184-.434a1.401 1.401 0 112.583 1.088l-.183.434.434.183a1.401 1.401 0 11-1.088 2.584l-.434-.183-.183.433a1.402 1.402 0 01-1.292.858zM42.208 17.595a1.18 1.18 0 100-2.36 1.18 1.18 0 000 2.36z",
+                    fill: "#5ACFF5"
+                }), l.jsx("path", {
+                    d: "M24.07 21.063l1.212 3.735h3.928l-3.178 2.309 1.215 3.735-3.178-2.309-3.178 2.31 1.215-3.736-3.178-2.309h3.928l1.213-3.735z",
+                    fill: "#E1FBFF"
+                }), l.jsx("path", {
+                    d: "M27.247 32.244c-.29 0-.578-.09-.824-.267l-2.354-1.709-2.354 1.709a1.403 1.403 0 01-2.157-1.567l.9-2.766-2.354-1.711a1.4 1.4 0 01.824-2.535h2.909l.9-2.767a1.4 1.4 0 012.665 0l.9 2.767h2.908a1.4 1.4 0 01.825 2.535l-2.354 1.71.9 2.767a1.404 1.404 0 01-1.334 1.834zm-3.178-5.113c.195 0 .389.04.568.12a1.407 1.407 0 01.352-1.082 1.411 1.411 0 01-.922-.67 1.402 1.402 0 01-.921.67 1.4 1.4 0 01.351 1.082c.181-.08.376-.12.568-.12h.004z",
+                    fill: "#E1FBFF"
+                })]
+            }), l.jsx("defs", {
+                children: l.jsx("clipPath", {
+                    id: "prefix__clip0_9016_9995",
+                    children: l.jsx("path", {
+                        fill: "#fff",
+                        d: "M0 0h48v48H0z"
+                    })
+                })
+            })]
+        }),
+        PluginAi: i => l.jsxs("svg", {
+            width: 40,
+            height: 40,
+            fill: "none",
+            viewBox: "0 0 90 80",
+            xmlns: "http://www.w3.org/2000/svg",
+            ...i,
+            children: [l.jsx("path", {
+                d: "M73.77 74.835c-13.102 7.18-30.63 4.848-32.068 4.64a1.875 1.875 0 00-.194-.021c-1.431-.09-18.618-1.382-30.052-10.766-.157-.127-.304-.254-.455-.38-9.578-8.154-14.038-21.91-8.742-37.064 1.3-3.727 3.186-7.536 5.734-11.366C20.903.458 37.787-.89 49.428.32c5.142.535 10.855 1.67 16.418 4.395h.01c7.746 3.8 15.188 10.67 20.34 23.295 8.85 21.679 1.25 39.33-12.423 46.824h-.003z",
+                fill: "url(#prefix__paint0_linear_8435_28459)"
+            }), l.jsx("path", {
+                d: "M43.337 64.824c-11.116-1.156-19.334-3.052-25.12-5.795C7.952 54.164 6.41 46.964 6.922 41.776c.735-7.45 5.443-15.284 12.584-20.959 8.05-6.39 18.344-9.305 28.988-8.198 14.269 1.485 22.717 8.48 27.29 14.089 5.59 6.853 8.482 15.463 7.733 23.03-.511 5.184-3.433 11.921-14.439 14.575-6.205 1.498-14.626 1.663-25.745.507l.003.004z",
+                fill: "#B1B3DF"
+            }), l.jsx("path", {
+                d: "M15.067 52.937c5.098 5.276 15.923 7.848 28.54 9.161 6.446.669 12.5.922 17.682.46 4.962-.443 9.124-1.543 12.073-3.56 1.527-1.045 2.73-2.338 3.547-3.911.618-1.194 1.016-2.548 1.166-4.08.562-5.699-1.427-13.026-6.241-19.26a32.127 32.127 0 00-9.375-8.187c-4.038-2.335-8.89-3.994-14.59-4.587-10.707-1.114-19.58 2.516-25.829 7.872-5.914 5.067-9.477 11.685-10.032 17.29-.154 1.543-.027 2.96.354 4.262.495 1.7 1.418 3.206 2.705 4.536v.004z",
+                fill: "url(#prefix__paint1_linear_8435_28459)"
+            }), l.jsx("path", {
+                d: "M38.792 41.256c.41-4.139-1.221-7.698-3.642-7.95-2.422-.252-4.716 2.9-5.125 7.038-.41 4.14 1.221 7.699 3.642 7.95 2.422.252 4.716-2.899 5.125-7.038zM61.171 43.583c.41-4.139-1.222-7.698-3.643-7.95-2.421-.252-4.715 2.9-5.125 7.038-.409 4.14 1.222 7.699 3.643 7.95 2.421.252 4.716-2.899 5.125-7.038z",
+                fill: "#FFEFEB"
+            }), l.jsx("path", {
+                opacity: .8,
+                d: "M23.18 35.974c2.436-2.307 3.788-4.87 3.019-5.724-.769-.854-3.368.323-5.804 2.63-2.437 2.307-3.789 4.87-3.02 5.724.769.854 3.368-.323 5.804-2.63zM31.895 29.157c1.756-.74 2.877-2.092 2.505-3.02-.372-.929-2.097-1.081-3.852-.341-1.756.74-2.877 2.093-2.505 3.021.372.928 2.097 1.08 3.852.34z",
+                fill: "#fff"
+            }), l.jsx("path", {
+                d: "M65.843 4.716C49.418.321 33.187 1.391 23.936 6.633c-9.254 5.242-17.839 15.346-21.68 24.61 1.3-3.723 3.186-7.532 5.733-11.362C20.901.461 37.784-.886 49.425.324 54.567.86 60.28 1.994 65.843 4.72v-.004z",
+                fill: "#fff"
+            }), l.jsx("path", {
+                opacity: .8,
+                d: "M73.77 74.835c-13.102 7.18-30.63 4.848-32.068 4.64a1.878 1.878 0 00-.194-.021c-1.431-.09-18.618-1.382-30.052-10.766 19.477 6.559 42.676 8.883 62.313 6.144v.003z",
+                fill: "#B1B3DF"
+            }), l.jsx("path", {
+                d: "M31.712 6.486c.926-.696 1.943-1.149 3.052-1.444.93-.246 1.886-.366 2.839-.48.374-.044.732-.003 1.05.22.274.192.521.548.571.888.107.706-.317 1.574-1.083 1.663-.9.106-1.805.22-2.684.442a13.223 13.223 0 00-.67.195 12.83 12.83 0 00-.323.13c-.201.09-.398.186-.592.292-.087.048-.17.103-.254.154l-.104.076c-.3.226-.618.37-1.003.34-.337-.025-.729-.21-.943-.488-.434-.558-.481-1.529.14-1.995",
+                fill: "url(#prefix__paint2_linear_8435_28459)"
+            }), l.jsx("path", {
+                d: "M65.659 10.062c-.769-.874-1.675-1.53-2.705-2.05-.859-.436-1.772-.751-2.684-1.063-.358-.12-.716-.158-1.073 0-.308.13-.619.428-.74.75-.243.67 0 1.605.733 1.855.86.292 1.722.59 2.54.991.198.096.389.203.58.309.01.007.023.014.036.024.097.062.194.127.29.195.181.127.355.264.522.412.074.065.147.133.22.202.031.03.058.062.088.096.25.285.531.49.913.542.334.044.755-.052 1.02-.278.534-.46.775-1.396.257-1.982",
+                fill: "url(#prefix__paint3_linear_8435_28459)"
+            }), l.jsxs("defs", {
+                children: [l.jsxs("linearGradient", {
+                    id: "prefix__paint0_linear_8435_28459",
+                    x1: 92.416,
+                    y1: 64.64,
+                    x2: 4.912,
+                    y2: 22.138,
+                    gradientUnits: "userSpaceOnUse",
+                    children: [l.jsx("stop", {
+                        stopColor: "#B9B2DE"
+                    }), l.jsx("stop", {
+                        offset: .96,
+                        stopColor: "#D1D4EA"
+                    })]
+                }), l.jsxs("linearGradient", {
+                    id: "prefix__paint1_linear_8435_28459",
+                    x1: 21.138,
+                    y1: 27.949,
+                    x2: 71.465,
+                    y2: 56.748,
+                    gradientUnits: "userSpaceOnUse",
+                    children: [l.jsx("stop", {
+                        stopColor: "#261D34"
+                    }), l.jsx("stop", {
+                        offset: 1,
+                        stopColor: "#373677"
+                    })]
+                }), l.jsxs("linearGradient", {
+                    id: "prefix__paint2_linear_8435_28459",
+                    x1: 31.353,
+                    y1: 6.343,
+                    x2: 39.129,
+                    y2: 7.121,
+                    gradientUnits: "userSpaceOnUse",
+                    children: [l.jsx("stop", {
+                        stopColor: "#261D34"
+                    }), l.jsx("stop", {
+                        offset: 1,
+                        stopColor: "#373677"
+                    })]
+                }), l.jsxs("linearGradient", {
+                    id: "prefix__paint3_linear_8435_28459",
+                    x1: 66.041,
+                    y1: 10.001,
+                    x2: 58.265,
+                    y2: 9.223,
+                    gradientUnits: "userSpaceOnUse",
+                    children: [l.jsx("stop", {
+                        stopColor: "#261D34"
+                    }), l.jsx("stop", {
+                        offset: 1,
+                        stopColor: "#373677"
+                    })]
+                })]
+            })]
+        }),
+        PluginAntiRaid: i => l.jsxs("svg", {
+            width: 48,
+            height: 48,
+            fill: "none",
+            viewBox: "0 0 48 48",
+            xmlns: "http://www.w3.org/2000/svg",
+            ...i,
+            children: [l.jsxs("g", {
+                clipPath: "url(#prefix__clip0_6412_18939)",
+                children: [l.jsx("path", {
+                    opacity: .2,
+                    d: "M33.674 35.142c7.493-1.15 12.687-7.83 11.599-14.92-1.088-7.092-8.044-11.909-15.538-10.76-7.493 1.15-12.686 7.83-11.599 14.921 1.088 7.091 8.044 11.908 15.538 10.759z",
+                    fill: "#3994FF"
+                }), l.jsx("path", {
+                    opacity: .2,
+                    d: "M20.963 39.72c7.727-1.184 12.851-9.584 11.444-18.76-1.408-9.177-8.813-15.655-16.54-14.47C8.137 7.677 3.014 16.077 4.421 25.253c1.408 9.176 8.813 15.654 16.54 14.469z",
+                    fill: "#3994FF"
+                }), l.jsx("path", {
+                    d: "M23.987 40.254C40.257 31.86 38.589 13.13 38.589 13.13L23.987 9.167 9.384 13.13s-.83 18.729 14.603 27.124z",
+                    fill: "#B3EEFF"
+                }), l.jsx("path", {
+                    d: "M24.017 14.936l-9.263 2.445c.358 4.24 2.347 11.698 9.263 16.432 6.917-4.734 8.98-12.193 9.34-16.432l-9.34-2.445z",
+                    fill: "#5ACFF5"
+                }), l.jsx("path", {
+                    opacity: .15,
+                    d: "M23.987 9.167v31.087C40.257 31.86 38.589 13.13 38.589 13.13L23.987 9.167z",
+                    fill: "#005FED"
+                })]
+            }), l.jsx("defs", {
+                children: l.jsx("clipPath", {
+                    id: "prefix__clip0_6412_18939",
+                    children: l.jsx("path", {
+                        fill: "#fff",
+                        d: "M0 0h48v48H0z"
+                    })
+                })
+            })]
+        }),
+        PluginAutomations: i => l.jsxs("svg", {
+            width: 48,
+            height: 48,
+            fill: "none",
+            viewBox: "0 0 48 48",
+            xmlns: "http://www.w3.org/2000/svg",
+            ...i,
+            children: [l.jsxs("g", {
+                clipPath: "url(#clip0_6882_18950)",
+                children: [l.jsx("path", {
+                    opacity: "0.2",
+                    d: "M32.0911 37.4716C36.1723 29.9486 33.7099 20.7193 26.5911 16.8573C19.4722 12.9954 10.3928 15.9632 6.31159 23.4861C2.23036 31.0091 4.69281 40.2384 11.8116 44.1003C18.9304 47.9623 28.0099 44.9945 32.0911 37.4716Z",
+                    fill: "#3994FF"
+                }), l.jsx("path", {
+                    opacity: "0.2",
+                    d: "M44.2268 27.0304C48.4355 19.2726 44.3799 8.93266 35.1685 3.93544C25.9571 -1.06178 15.078 1.1761 10.8694 8.93388C6.66079 16.6917 10.7163 27.0316 19.9277 32.0289C29.1391 37.0261 40.0182 34.7882 44.2268 27.0304Z",
+                    fill: "#3994FF"
+                }), l.jsx("path", {
+                    d: "M17.2086 17.1525C14.5386 19.8225 10.2074 19.8225 7.53738 17.1525C4.86738 14.4825 4.86551 10.1512 7.53738 7.48123C10.2093 4.80936 14.5405 4.81123 17.2105 7.48123C19.8824 10.1531 19.8824 14.4825 17.2105 17.1544L17.2086 17.1525Z",
+                    fill: "#5ACFF5"
+                }), l.jsx("path", {
+                    d: "M36.3136 42.6394C40.0913 42.6394 43.1536 39.577 43.1536 35.7993C43.1536 32.0217 40.0913 28.9594 36.3136 28.9594C32.536 28.9594 29.4736 32.0217 29.4736 35.7993C29.4736 39.577 32.536 42.6394 36.3136 42.6394Z",
+                    fill: "#5ACFF5"
+                }), l.jsx("path", {
+                    d: "M25.3685 37.2994H17.2029C15.0691 37.2994 13.2973 35.9794 12.686 33.9356C12.0748 31.8919 12.8341 29.8144 14.6173 28.6444L32.4223 16.9631C33.4123 16.3125 33.2098 15.3263 33.1235 15.0394C33.0373 14.7525 32.666 13.8169 31.481 13.8169H22.1754C21.3466 13.8169 20.6754 13.1456 20.6754 12.3169C20.6754 11.4881 21.3466 10.8169 22.1754 10.8169H31.481C33.6148 10.8169 35.3866 12.1369 35.9979 14.1806C36.6091 16.2244 35.8498 18.3019 34.0666 19.4719L16.2616 31.1531C15.2716 31.8038 15.4741 32.79 15.5604 33.0769C15.6466 33.3638 16.0179 34.2994 17.2029 34.2994H25.3685C26.1973 34.2994 26.8685 34.9706 26.8685 35.7994C26.8685 36.6281 26.1973 37.2994 25.3685 37.2994Z",
+                    fill: "#E1FBFF"
+                }), l.jsx("path", {
+                    d: "M22.6333 40.2263C22.2114 40.2263 21.7951 40.0369 21.5176 39.6769C21.0451 39.0619 21.1595 38.1788 21.7764 37.7044L24.2458 35.8069L21.8308 33.9506C21.2158 33.4781 21.0995 32.595 21.572 31.9781C22.0445 31.3631 22.9276 31.2469 23.5445 31.7194L27.4108 34.6913C27.7576 34.9575 27.9601 35.37 27.9601 35.8069C27.9601 36.2438 27.7576 36.6563 27.4108 36.9225L23.4901 39.9356C23.2351 40.1325 22.9333 40.2263 22.6351 40.2263H22.6333Z",
+                    fill: "#E1FBFF"
+                }), l.jsx("path", {
+                    opacity: "0.15",
+                    d: "M17.2093 17.1525C15.8462 18.5157 14.0518 19.1832 12.2649 19.155C8.64055 19.0969 7.77242 16.9163 10.3355 14.3532L14.4099 10.2788C16.973 7.71566 19.1555 8.58379 19.2118 12.2082C19.2399 13.995 18.5724 15.7894 17.2093 17.1525Z",
+                    fill: "#005FED"
+                }), l.jsx("path", {
+                    opacity: "0.15",
+                    d: "M41.1488 40.635C39.7856 41.9981 37.9894 42.6656 36.2044 42.6375C32.58 42.5813 31.7119 40.3988 34.275 37.8356L38.3494 33.7613C40.9125 31.1981 43.095 32.0663 43.1513 35.6906C43.1794 37.4775 42.5119 39.2719 41.1488 40.635Z",
+                    fill: "#005FED"
+                })]
+            }), l.jsx("defs", {
+                children: l.jsx("clipPath", {
+                    id: "clip0_6882_18950",
+                    children: l.jsx("rect", {
+                        width: "48",
+                        height: "48",
+                        fill: "white"
+                    })
+                })
+            })]
+        }),
+        PluginBirthdays: Ji,
+        PluginBlindTest: ca,
+        PluginCustomCommands: $i,
+        PluginEconomy: xa,
+        PluginEmbeds: la,
+        PluginEmojis: i => l.jsxs("svg", {
+            width: 48,
+            height: 48,
+            fill: "none",
+            xmlns: "http://www.w3.org/2000/svg",
+            ...i,
+            children: [l.jsxs("g", {
+                clipPath: "url(#prefix__clip0_9213_12761)",
+                children: [l.jsx("path", {
+                    opacity: .2,
+                    d: "M41.474 20.427c-4.906-6.799-14.098-8.547-20.532-3.905-6.435 4.642-7.673 13.916-2.767 20.716 4.905 6.799 14.097 8.547 20.532 3.905 6.435-4.642 7.672-13.916 2.767-20.716z",
+                    fill: "#3994FF"
+                }), l.jsx("path", {
+                    opacity: .2,
+                    d: "M38.748 15.988C37.21 7.48 27.773 2.064 17.672 3.89 7.569 5.72.628 14.096 2.167 22.603c1.538 8.508 10.975 13.924 21.076 12.098 10.102-1.827 17.044-10.206 15.505-18.713z",
+                    fill: "#3994FF"
+                }), l.jsx("path", {
+                    d: "M24.355 36.697c7.31 0 13.236-5.926 13.236-13.235 0-7.31-5.926-13.236-13.236-13.236-7.31 0-13.236 5.926-13.236 13.236 0 7.31 5.926 13.235 13.236 13.235z",
+                    fill: "#5ACFF5"
+                }), l.jsx("path", {
+                    d: "M38.87 23.297c-.064-5.689-3.416-10.603-8.241-12.925a14.424 14.424 0 00-6.272-1.427c-8.003 0-14.516 6.512-14.516 14.517 0 .573.033 1.14.099 1.697.577 4.93 3.632 9.11 7.883 11.262a14.4 14.4 0 006.534 1.555c8.003 0 14.514-6.511 14.514-14.514v-.167l-.002.002zM24.357 35.415c-1.926 0-3.746-.458-5.36-1.273-3.864-1.945-6.534-5.923-6.593-10.52v-.16c0-6.592 5.363-11.955 11.955-11.955 1.976 0 3.843.484 5.489 1.336 3.837 1.991 6.464 6.003 6.464 10.617v.106c-.056 6.543-5.395 11.847-11.951 11.847l-.004.002z",
+                    fill: "#B3EEFF"
+                }), l.jsx("path", {
+                    d: "M28.767 24.8a1.403 1.403 0 00-1.103-.536h-6.618a1.403 1.403 0 00-1.363 1.734c.277 1.133 1.608 3.276 4.672 3.276 3.064 0 4.395-2.143 4.67-3.276a1.4 1.4 0 00-.26-1.198h.002z",
+                    fill: "#E1FBFF"
+                }), l.jsx("path", {
+                    d: "M18.995 34.142a11.35 11.35 0 01-1.174 2.279c-4.25-2.15-7.307-6.332-7.883-11.262a4.785 4.785 0 011.23-1.01c.39-.224.806-.4 1.236-.527a5.772 5.772 0 011.654-.243c2.029 0 3.905 1.079 4.896 2.816.198.346.36.721.479 1.116.721 2.082.402 4.664-.436 6.833l-.002-.002z",
+                    fill: "#5ACFF5"
+                }), l.jsx("path", {
+                    d: "M16.14 27.829c-.68-1.195-2.244-1.586-3.493-.873-.668.38-.991 1.204-1.126 1.929a.241.241 0 01-.318.181c-.691-.252-1.564-.394-2.232-.015-1.248.713-1.71 2.259-1.028 3.451.097.17.213.32.34.456 1.36 1.664 4.583 2.399 6.458 2.085a.195.195 0 00.123-.071c1.224-1.455 2.234-4.6 1.495-6.618a2.266 2.266 0 00-.218-.527v.002z",
+                    fill: "#5ACFF5"
+                }), l.jsx("path", {
+                    d: "M13.796 36.52c-2.29 0-5.142-.928-6.569-2.636a3.8 3.8 0 01-.503-.686c-1.061-1.864-.366-4.27 1.552-5.364.636-.362 1.389-.491 2.217-.383.33-.767.823-1.35 1.46-1.712 1.92-1.094 4.345-.468 5.407 1.396.14.245.252.51.334.789.875 2.475-.194 6.1-1.757 7.955-.247.293-.59.487-.968.551a7.068 7.068 0 01-1.17.092l-.002-.002zm-3.86-6.3a.574.574 0 00-.271.05c-.576.327-.802 1.019-.505 1.539.036.063.084.125.144.19l.064.073c.86 1.053 3.14 1.716 4.692 1.636.856-1.295 1.45-3.593.982-4.87-.014-.034-.023-.067-.034-.103a.875.875 0 00-.088-.213c-.297-.52-1.006-.677-1.582-.35-.14.081-.338.418-.44.969a1.635 1.635 0 01-.803 1.124c-.42.239-.921.282-1.376.115a2.384 2.384 0 00-.787-.164l.004.004zm4.573 3.441h-.006.006z",
+                    fill: "#E1FBFF"
+                }), l.jsx("path", {
+                    d: "M38.87 23.297c-.886.178-1.76.267-2.561.271h-.09a10.06 10.06 0 01-1.844-.16 3.305 3.305 0 01-1.953-1.16c-1.787-2.187-3.08-6.11-2.576-9.405.08-.53.207-1.045.387-1.533.108-.327.24-.643.396-.94 4.825 2.322 8.179 7.235 8.24 12.925v.002z",
+                    fill: "#5ACFF5"
+                }), l.jsx("path", {
+                    d: "M42.853 17.345c.791-1.331.301-3.081-1.091-3.907-.756-.45-1.76-.294-2.55-.015a.24.24 0 01-.314-.187c-.133-.827-.479-1.782-1.234-2.23-1.393-.827-3.162-.417-3.952.914a2.758 2.758 0 00-.258.587c-.873 2.26.207 5.83 1.56 7.489.033.039.075.063.124.073 2.103.394 5.754-.37 7.32-2.22.15-.15.283-.32.395-.506v.002z",
+                    fill: "#5ACFF5"
+                }), l.jsx("path", {
+                    d: "M36.365 21.577a8.235 8.235 0 01-1.483-.127 1.605 1.605 0 01-.953-.566c-1.698-2.08-2.82-6.114-1.799-8.834a4.087 4.087 0 013.016-2.76 4.379 4.379 0 013.234.512c.813.482 1.297 1.239 1.585 1.996.802-.11 1.698-.049 2.513.434a4.374 4.374 0 011.998 2.593 4.114 4.114 0 01-.417 3.236c-.155.262-.346.51-.564.738-1.57 1.817-4.627 2.78-7.132 2.78l.002-.002zM36.1 19.11l.002.002-.002-.002zm-.262-.357c1.8.156 4.481-.544 5.55-1.805a.98.98 0 01.073-.08c.077-.078.137-.156.186-.238a1.34 1.34 0 00.129-1.05 1.583 1.583 0 00-.73-.936c-.244-.145-.78-.104-1.368.101-.46.163-.963.113-1.383-.136a1.627 1.627 0 01-.782-1.148c-.099-.613-.321-1.101-.564-1.247a1.59 1.59 0 00-1.17-.192c-.37.086-.675.304-.86.615-.05.084-.09.175-.124.284-.01.031-.02.062-.032.093-.596 1.543.077 4.234 1.075 5.738v.001zm-.447-.06h.006-.006zM19.84 21.467a2.206 2.206 0 100-4.412 2.206 2.206 0 000 4.412zM28.664 21.467a2.206 2.206 0 100-4.412 2.206 2.206 0 000 4.412z",
+                    fill: "#E1FBFF"
+                })]
+            }), l.jsx("defs", {
+                children: l.jsx("clipPath", {
+                    id: "prefix__clip0_9213_12761",
+                    children: l.jsx("path", {
+                        fill: "#fff",
+                        d: "M0 0h48v48H0z"
+                    })
+                })
+            })]
+        }),
+        PluginGiveaways: function(i) {
+            return l.jsxs("svg", {
+                width: 48,
+                height: 48,
+                fill: "none",
+                ...i,
+                children: [l.jsxs("g", {
+                    clipPath: "url(#prefix__clip0_13166_248060)",
+                    children: [l.jsx("path", {
+                        opacity: .2,
+                        d: "M32.379 37.659c4.08-7.523 1.618-16.752-5.5-20.614-7.12-3.862-16.199-.895-20.28 6.628-4.081 7.523-1.619 16.753 5.5 20.615 7.119 3.862 16.198.894 20.28-6.63z",
+                        fill: "#3994FF"
+                    }), l.jsx("path", {
+                        opacity: .2,
+                        d: "M44.515 27.216c4.209-7.758.153-18.098-9.058-23.095-9.212-4.997-20.09-2.76-24.3 4.998-4.208 7.758-.152 18.098 9.06 23.095 9.21 4.998 20.09 2.76 24.298-4.998z",
+                        fill: "#3994FF"
+                    }), l.jsx("path", {
+                        d: "M33.43 7.554c-1.894-1.365-5.605-1.025-8.45.771-.36.23-.69.504-.98.818a4.978 4.978 0 00-.99-.818c-2.85-1.796-6.56-2.137-8.454-.77-.696.508-1.056 1.17-1.056 1.914.005.36.081.716.225 1.046.394.947 1.292 1.9 2.528 2.681 1.642 1.039 3.909 1.257 5.508 1.257.638.001 1.275-.034 1.909-.107l.33-.04.326.04c.633.073 1.27.108 1.907.107h.375c1.568-.032 3.619-.291 5.138-1.251 1.235-.782 2.133-1.735 2.527-2.681.47-1.16.167-2.24-.844-2.967zm-14.626 3.797c-.733-.465-1.275-1.018-1.485-1.52-.15-.36-.058-.533-.037-.55.157-.112 1.6-.095 3.157.889.642.405.912 1.125 1.01 1.746-.927-.025-2.003-.162-2.64-.565h-.005zm11.852-1.52c-.21.502-.75 1.055-1.483 1.52-.64.403-1.714.54-2.644.563.098-.625.375-1.34 1.007-1.746a5.698 5.698 0 012.831-.937c.111-.01.223.006.327.046.039.055.056.122.049.188a.955.955 0 01-.083.366h-.004z",
+                        fill: "#B3EEFF"
+                    }), l.jsx("path", {
+                        opacity: .1,
+                        d: "M33.43 7.554c-1.894-1.365-5.605-1.025-8.45.771-.36.23-.69.504-.98.818v3.699l2.606 1.605c1.568-.032 3.619-.29 5.138-1.25 1.235-.783 2.133-1.735 2.527-2.682.473-1.153.169-2.233-.842-2.96zm-2.77 2.277c-.21.502-.75 1.055-1.483 1.52-.64.403-1.714.54-2.644.563.098-.625.375-1.34 1.007-1.746a5.698 5.698 0 012.831-.937c.111-.01.223.006.327.047.039.054.056.12.048.187a.955.955 0 01-.086.366z",
+                        fill: "#000"
+                    }), l.jsx("path", {
+                        d: "M39.527 17.813v18.603a4.271 4.271 0 01-4.277 4.272H12.726a4.271 4.271 0 01-4.268-4.272V17.813a4.27 4.27 0 014.268-4.277H35.25a4.268 4.268 0 014.277 4.277z",
+                        fill: "#5ACFF5"
+                    }), l.jsx("path", {
+                        d: "M39.527 17.813v18.603a4.271 4.271 0 01-4.277 4.272H24V13.535h11.25a4.27 4.27 0 014.277 4.277z",
+                        fill: "#2DB7F0"
+                    }), l.jsx("path", {
+                        d: "M40.313 16.946v2.074c0 .499-.342.902-.766.902H8.454c-.423 0-.765-.403-.765-.902v-2.074c0-1.894 1.313-3.431 2.912-3.431H37.4c1.601 0 2.913 1.537 2.913 3.431z",
+                        fill: "#5ACFF5"
+                    }), l.jsx("path", {
+                        d: "M40.313 27.06v.482a1.864 1.864 0 01-1.83 1.895H9.517a1.864 1.864 0 01-1.83-1.895v-.482a1.862 1.862 0 011.829-1.894h28.967a1.861 1.861 0 011.83 1.894z",
+                        fill: "#B3EEFF"
+                    }), l.jsx("path", {
+                        d: "M24 13.515v6.407H8.454c-.423 0-.765-.403-.765-.902v-2.074c0-1.894 1.313-3.431 2.912-3.431H24z",
+                        fill: "#2DB7F0"
+                    }), l.jsx("path", {
+                        opacity: .1,
+                        d: "M40.313 27.06v.482a1.864 1.864 0 01-1.83 1.895H24v-4.27h14.483a1.861 1.861 0 011.83 1.893z",
+                        fill: "#000"
+                    }), l.jsx("path", {
+                        d: "M26.128 14.389v25.048a1.875 1.875 0 01-1.895 1.847h-.48a1.875 1.875 0 01-1.896-1.847V14.389a1.875 1.875 0 011.896-1.845h.48a1.875 1.875 0 011.895 1.845z",
+                        fill: "#B3EEFF"
+                    }), l.jsx("path", {
+                        opacity: .1,
+                        d: "M26.128 14.389v25.048a1.875 1.875 0 01-1.895 1.847H24v-28.74h.24a1.875 1.875 0 011.888 1.845z",
+                        fill: "#000"
+                    })]
+                }), l.jsx("defs", {
+                    children: l.jsx("clipPath", {
+                        id: "prefix__clip0_13166_248060",
+                        children: l.jsx("path", {
+                            fill: "#fff",
+                            d: "M0 0h48v48H0z"
+                        })
+                    })
+                })]
+            })
+        },
+        PluginGoogleAlerts: i => l.jsxs("svg", {
+            width: "48",
+            height: "48",
+            viewBox: "0 0 48 48",
+            fill: "none",
+            xmlns: "http://www.w3.org/2000/svg",
+            ...i,
+            children: [l.jsx("path", {
+                opacity: "0.2",
+                d: "M30.2543 39.9801C35.3526 33.324 34.3776 24.0177 28.0795 19.1934C21.7813 14.3691 12.5421 15.8544 7.44558 22.5108C2.34719 29.1669 3.3222 38.4733 9.62036 43.2975C15.9185 48.1218 25.1577 46.6366 30.2543 39.9801Z",
+                fill: "#3994FF"
+            }), l.jsx("path", {
+                opacity: "0.2",
+                d: "M42.6382 32.0343C47.8943 25.1703 45.5488 14.5463 37.3983 8.30365C29.2475 2.06289 18.3804 2.56643 13.1243 9.43047C7.86815 16.2945 10.2137 26.9185 18.3642 33.1611C26.5147 39.4038 37.3822 38.8984 42.6401 32.0346L42.6382 32.0343Z",
+                fill: "#3994FF"
+            }), l.jsx("path", {
+                fillRule: "evenodd",
+                "clip-rule": "evenodd",
+                d: "M17.4113 23.0001C17.4113 19.6841 20.0953 17.0001 23.4113 17.0001C24.8645 17.0001 26.194 17.5129 27.2303 18.3681L28.1903 19.1603L26.6059 21.0802L25.646 20.288C25.0414 19.789 24.268 19.4893 23.4113 19.4893C21.47 19.4893 19.9005 21.0589 19.9005 23.0001C19.9005 24.9414 21.47 26.5109 23.4113 26.5109C24.9141 26.5109 26.1941 25.5703 26.6957 24.2447H22.1666V21.7555H29.4113V23.0001C29.4113 26.3161 26.7272 29.0001 23.4113 29.0001C20.0953 29.0001 17.4113 26.3161 17.4113 23.0001Z",
+                fill: "white"
+            }), l.jsx("path", {
+                d: "M29.6705 33.7249C29.6705 36.1921 26.8673 38.1985 23.4113 38.1985C19.9553 38.1985 17.1521 36.1921 17.1521 33.7249C17.1521 33.5617 17.1617 33.3985 17.1905 33.2449C19.0529 33.5617 21.1649 33.7249 23.4113 33.7249C25.6577 33.7249 27.7697 33.5617 29.6321 33.2449C29.6513 33.3985 29.6705 33.5617 29.6705 33.7249Z",
+                stroke: "#5ACFF5",
+                strokeWidth: "3",
                 "stroke-linecap": "round",
                 "stroke-linejoin": "round"
-            }), re.jsx("path", {
-                d: "M9.16923 6L4.99627 9.8749C4.36098 10.4648 4 11.2926 4 12.1595C4 13.0734 4.40098 13.9413 5.09689 14.5337L9.16923 18",
-                stroke: e,
-                strokeWidth: "1.5",
-                "stroke-linecap": "round"
+            }), l.jsx("path", {
+                d: "M36.8225 28.6945C36.8225 30.9697 33.9041 32.5153 29.6321 33.2449C27.7697 33.5617 25.6577 33.7249 23.4113 33.7249C21.1649 33.7249 19.0529 33.5617 17.1905 33.2449C12.9185 32.5153 10.0001 30.9697 10.0001 28.6945C10.0001 27.6769 10.5761 26.5153 11.5937 25.3825C12.7169 24.1249 13.3505 22.5025 13.3505 20.8225V20.0929C13.3505 14.5537 17.7281 9.88811 23.2673 9.81131C26.1089 9.77291 28.6625 10.9057 30.5153 12.7585C32.3681 14.6113 33.4625 17.0881 33.4625 19.8721V20.8321C33.4625 22.5217 34.0961 24.1441 35.2193 25.3921C36.2369 26.5153 36.8129 27.6865 36.8129 28.7041L36.8225 28.6945Z",
+                stroke: "#B3EEFF",
+                strokeWidth: "3",
+                "stroke-linecap": "round",
+                "stroke-linejoin": "round"
+            }), l.jsx("path", {
+                opacity: "0.15",
+                d: "M38.2625 28.6945C38.2625 30.2977 37.2833 33.0817 31.0529 34.4353C30.6113 37.4017 27.4145 39.6385 23.4113 39.6385V36.7585C25.3409 36.7585 27.0401 36.0001 27.8081 34.9537C27.6929 34.9633 27.5777 34.9633 27.4625 34.9729C26.9825 35.0209 26.4833 35.0593 25.9745 35.0881C25.8113 35.0977 25.6481 35.1073 25.4753 35.1169C24.8033 35.1457 24.1217 35.1649 23.4113 35.1649V32.2849C25.6001 32.2849 27.6161 32.1313 29.3921 31.8241C33.0305 31.2097 35.3825 29.9809 35.3825 28.6945C35.3825 28.0801 34.9217 27.2065 34.1633 26.3521C32.7905 24.8257 32.0321 22.8577 32.0321 20.8225V19.8721C32.0321 17.5681 31.1297 15.4081 29.5073 13.7761C27.8753 12.1441 25.7249 11.2513 23.4113 11.2513V8.37128C26.4929 8.37128 29.3729 9.57128 31.5425 11.7409C33.7121 13.9105 34.9121 16.8001 34.9121 19.8721V20.8225C34.9121 22.1473 35.4017 23.4241 36.3041 24.4321C37.5809 25.8529 38.2625 27.3313 38.2625 28.6945Z",
+                fill: "#005FED"
             })]
         }),
-        RepostMessage: ({
-            stroke: e = "currentColor",
-            fill: t = "transparent",
-            ...s
-        }) => re.jsxs("svg", {
-            width: 24,
-            height: 24,
-            viewBox: "0 0 24 24",
+        PluginHelp: Ca,
+        PluginInviteTracker: function(i) {
+            return l.jsxs("svg", {
+                width: "56",
+                height: "56",
+                viewBox: "0 0 56 56",
+                fill: "none",
+                xmlns: "http://www.w3.org/2000/svg",
+                ...i,
+                children: [l.jsx("rect", {
+                    width: "56",
+                    height: "56",
+                    rx: "8",
+                    fill: "#15355C"
+                }), l.jsx("path", {
+                    d: "M25.8233 8.68182C20.7807 8.68182 16.6785 12.8479 16.6785 17.9694C16.6785 23.091 20.7807 27.257 25.8233 27.257C30.8659 27.257 34.9681 23.091 34.9681 17.9694C34.9681 12.8479 30.8659 8.68182 25.8233 8.68182ZM25.8233 28.1059C18.6042 28.1059 12.2954 32.0014 10.1235 37.7999C8.93317 40.9829 11.3751 44.3462 14.8135 44.3462H27.663C24.3739 38.0804 27.7991 31.7542 32.5331 29.3075C30.4702 28.5355 28.1979 28.1059 25.8233 28.1059ZM37.8229 31.0185C33.2063 31.0185 29.4647 34.6672 29.464 39.1683C29.464 43.6695 33.2063 47.3182 37.8229 47.3182C42.4395 47.3182 46.1818 43.6695 46.1818 39.1683C46.1818 34.6672 42.4395 31.0185 37.8229 31.0185ZM37.8229 34.2459C38.6642 34.2459 39.347 34.9116 39.347 35.7319V37.6823H41.3474C42.1888 37.6823 42.8716 38.348 42.8716 39.1683C42.8716 39.9886 42.1888 40.6543 41.3474 40.6543H39.347V42.6047C39.347 43.425 38.6642 44.0908 37.8229 44.0908C36.9816 44.0908 36.2988 43.425 36.2988 42.6047V40.6543H34.2983C33.457 40.6543 32.7742 39.9886 32.7742 39.1683C32.7742 38.348 33.457 37.6823 34.2983 37.6823H36.2988V35.7319C36.2988 34.9116 36.9816 34.2459 37.8229 34.2459Z",
+                    fill: "#B3EEFF"
+                })]
+            })
+        },
+        PluginKick: i => l.jsxs("svg", {
+            width: 56,
+            height: 56,
+            viewBox: "0 0 56 56",
             fill: "none",
             xmlns: "http://www.w3.org/2000/svg",
-            ...s,
-            children: [re.jsx("path", {
-                d: "M7.2 16.8l12-12M18.902 9.675c1-2.996 1.498-4.494.708-5.285-.791-.79-2.29-.291-5.285.708L6.86 7.586c-1.666.555-2.498.832-2.751 1.443-.06.144-.095.296-.107.45-.047.66.574 1.28 1.816 2.522l.226.226c.203.204.305.306.382.419.152.224.238.485.25.755.005.138-.017.28-.06.565-.156 1.043-.234 1.565-.142 1.966.184.8.803 1.428 1.6 1.623.4.098 2.926-.055 2.926-.055",
-                stroke: e,
-                strokeWidth: 1.5,
-                strokeLinecap: "round"
-            }), re.jsx("path", {
-                d: "M15.978 12.388l-1.87 1.608c-.739.635-1.108.952-1.108 1.361 0 .41.37.727 1.108 1.361l1.87 1.608c.338.29.506.435.645.375.14-.06.14-.279.14-.715v-1.068c1.694 0 3.53.781 4.237 2.082 0-4.163-2.511-5.204-4.238-5.204v-1.068c0-.436 0-.654-.139-.714-.139-.06-.307.084-.645.374z",
-                stroke: e,
-                strokeWidth: 1.5,
+            ...i,
+            children: [l.jsx("rect", {
+                width: 56,
+                height: 56,
+                rx: "8",
+                fill: "#15355C"
+            }), l.jsx("path", {
+                d: "M23.9524 9H11L11 48H23.9524V39.7021H28V43.8511H32.0476V48H45V34.7234H40.9524V30.5745H36.9048V26.4255H40.9524V22.2766H45V9H32.0476V13.1489H28V17.2979H23.9524V9Z",
+                fill: "#53FC19"
+            })]
+        }),
+        PluginLevels: ia,
+        PluginMagicAvatars: i => l.jsxs("svg", {
+            width: "56",
+            height: "56",
+            viewBox: "0 0 56 56",
+            fill: "none",
+            xmlns: "http://www.w3.org/2000/svg",
+            ...i,
+            children: [l.jsx("rect", {
+                width: "56",
+                height: "56",
+                rx: "8",
+                fill: "#15355C"
+            }), l.jsx("path", {
+                d: "M28.5 42C36.5081 42 43 35.5081 43 27.5C43 19.4919 36.5081 13 28.5 13C20.4919 13 14 19.4919 14 27.5C14 35.5081 20.4919 42 28.5 42Z",
+                stroke: "#B3EEFF",
                 strokeLinecap: "round",
                 strokeLinejoin: "round"
+            }), l.jsx("path", {
+                d: "M24.5 24.5C24.5 25.6046 23.6046 26.5 22.5 26.5C21.3954 26.5 20.5 25.6046 20.5 24.5C20.5 23.3954 21.3954 22.5 22.5 22.5C23.6046 22.5 24.5 23.3954 24.5 24.5Z",
+                fill: "#B3EEFF",
+                stroke: "#B3EEFF"
+            }), l.jsx("path", {
+                opacity: "0.2",
+                d: "M34.8001 40.6274C42.2765 36.7569 45.3684 27.8842 41.706 20.8097C38.0436 13.7351 29.0138 11.1376 21.5373 15.0081C14.0609 18.8785 10.969 27.7513 14.6314 34.8258C18.2938 41.9004 27.3236 44.4979 34.8001 40.6274Z",
+                fill: "#3994FF"
+            }), l.jsx("path", {
+                d: "M36.5 24.5C36.5 25.6046 35.6046 26.5 34.5 26.5C33.3954 26.5 32.5 25.6046 32.5 24.5C32.5 23.3954 33.3954 22.5 34.5 22.5C35.6046 22.5 36.5 23.3954 36.5 24.5Z",
+                fill: "#B3EEFF",
+                stroke: "#B3EEFF"
+            }), l.jsx("path", {
+                d: "M23.5001 31.7636L23.0001 31.7602H23.5001C23.5001 31.4327 23.6354 31.1143 23.8834 30.8762C24.132 30.6375 24.4734 30.5 24.8334 30.5H32.1667C32.5267 30.5 32.8681 30.6375 33.1167 30.8762C33.3642 31.1138 33.4995 31.4315 33.5 31.7583C33.4905 32.873 33.0736 33.9521 32.3174 34.8068C31.5603 35.6625 30.5108 36.2389 29.3502 36.4304C28.1895 36.6219 26.9966 36.4152 25.981 35.8487C24.9658 35.2825 24.1949 34.3944 23.7978 33.3437L23.7979 33.3437L23.7951 33.3368C23.5964 32.8338 23.4965 32.3005 23.5001 31.7636Z",
+                fill: "#B3EEFF",
+                stroke: "#B3EEFF"
             })]
         }),
-        Ro: W,
-        Ru: B,
-        Search: R,
-        SendDM: ({
-            stroke: e = "currentColor",
-            fill: t = "transparent",
-            ...s
-        }) => re.jsxs("svg", {
-            width: 24,
-            height: 24,
-            viewBox: "0 0 24 24",
-            fill: "none",
-            xmlns: "http://www.w3.org/2000/svg",
-            ...s,
-            children: [re.jsx("path", {
-                d: "M10.8008 20V18.4M14.0008 20V18.4",
-                stroke: e,
-                strokeWidth: "1.5",
-                "stroke-linecap": "round"
-            }), re.jsx("path", {
-                d: "M11.2 18.3992V19.1492H11.95V18.3992H11.2ZM13.6 17.6492C13.1858 17.6492 12.85 17.985 12.85 18.3992C12.85 18.8134 13.1858 19.1492 13.6 19.1492V17.6492ZM16.4 6.44922C15.9858 6.44922 15.65 6.78501 15.65 7.19922C15.65 7.61343 15.9858 7.94922 16.4 7.94922V6.44922ZM8 6.44922C7.58579 6.44922 7.25 6.78501 7.25 7.19922C7.25 7.61343 7.58579 7.94922 8 7.94922V6.44922ZM9.6 17.6492C9.18579 17.6492 8.85 17.985 8.85 18.3992C8.85 18.8134 9.18579 19.1492 9.6 19.1492V17.6492ZM14.4 19.1492C14.8142 19.1492 15.15 18.8134 15.15 18.3992C15.15 17.985 14.8142 17.6492 14.4 17.6492V19.1492ZM10.45 11.3992V18.3992H11.95V11.3992H10.45ZM11.2 17.6492H5.78605V19.1492H11.2V17.6492ZM4.75 16.3155V11.3992H3.25V16.3155H4.75ZM5.78605 17.6492C5.31815 17.6492 4.75 17.1647 4.75 16.3155H3.25C3.25 17.7679 4.28113 19.1492 5.78605 19.1492V17.6492ZM7.6 7.94922C9.06971 7.94922 10.45 9.38121 10.45 11.3992H11.95C11.95 8.77804 10.1067 6.44922 7.6 6.44922V7.94922ZM7.6 6.44922C5.09326 6.44922 3.25 8.77804 3.25 11.3992H4.75C4.75 9.38121 6.13029 7.94922 7.6 7.94922V6.44922ZM19.25 11.3992V16.3394H20.75V11.3992H19.25ZM18.2345 17.6492H13.6V19.1492H18.2345V17.6492ZM19.25 16.3394C19.25 17.1754 18.691 17.6492 18.2345 17.6492V19.1492C19.7281 19.1492 20.75 17.7786 20.75 16.3394H19.25ZM20.75 11.3992C20.75 8.77804 18.9067 6.44922 16.4 6.44922V7.94922C17.8697 7.94922 19.25 9.38121 19.25 11.3992H20.75ZM8 7.94922H16.8V6.44922H8V7.94922ZM9.6 19.1492H14.4V17.6492H9.6V19.1492Z",
-                fill: e
-            }), re.jsx("path", {
-                d: "M6.40039 15.1992H8.80039",
-                stroke: e,
-                strokeWidth: "1.5",
-                "stroke-linecap": "round"
-            }), re.jsx("path", {
-                d: "M15.1992 10.3075V6.72896M15.1992 6.72896V4.50815C15.1992 4.31924 15.3333 4.1569 15.5188 4.12116L15.9076 4.04623C16.3783 3.95554 16.8649 3.99884 17.3122 4.1712L17.3755 4.1956C17.8189 4.36648 18.3038 4.3984 18.7658 4.28713C18.9867 4.23392 19.1992 4.40134 19.1992 4.62859V6.40578C19.1992 6.59536 19.0693 6.76025 18.885 6.80464L18.8317 6.81747C18.3268 6.9391 17.7968 6.9042 17.3122 6.71743C16.8649 6.54508 16.3783 6.50178 15.9076 6.59247L15.1992 6.72896Z",
-                stroke: e,
-                strokeWidth: "1.5",
-                "stroke-linecap": "round"
-            })]
-        }),
-        SendMessage: ({
-            stroke: e = "currentColor",
-            fill: t = "transparent",
-            ...s
-        }) => re.jsxs("svg", {
-            width: 24,
-            height: 24,
-            viewBox: "0 0 24 24",
-            fill: "none",
-            xmlns: "http://www.w3.org/2000/svg",
-            ...s,
-            children: [re.jsx("path", {
-                d: "M16.398 17.1881L18.9024 9.67498C19.9011 6.67899 20.4005 5.18099 19.6097 4.39025C18.819 3.59951 17.3209 4.09885 14.3248 5.09751L6.85982 7.58574C5.19436 8.14088 4.36163 8.41844 4.10886 9.0291C4.04946 9.17262 4.01354 9.32477 4.00249 9.4797C3.95546 10.1389 4.57614 10.7596 5.8175 12.0009L6.04361 12.227C6.24736 12.4307 6.34924 12.5326 6.42626 12.646C6.57815 12.8697 6.66437 13.1314 6.67514 13.4016C6.68061 13.5385 6.65922 13.681 6.61645 13.966C6.4599 15.009 6.38163 15.5305 6.47384 15.9318C6.65764 16.7317 7.27679 17.3596 8.07405 17.5546C8.47404 17.6525 8.99661 17.5816 10.0418 17.4397L10.0989 17.432C10.3935 17.392 10.5409 17.372 10.6823 17.3805C10.9391 17.396 11.1871 17.4797 11.4008 17.6228C11.5185 17.7017 11.6236 17.8068 11.8339 18.017L12.0349 18.218C13.2431 19.4262 13.8472 20.0303 14.4881 19.9988C14.6647 19.9902 14.8383 19.9492 15.0002 19.8779C15.5875 19.6195 15.8577 18.809 16.398 17.1881Z",
-                stroke: e,
-                strokeWidth: "1.5"
-            }), re.jsx("path", {
-                d: "M7.19922 16.8008L19.1992 4.80078",
-                stroke: e,
-                strokeWidth: "1.5",
-                "stroke-linecap": "round"
-            })]
-        }),
-        SheetHolder: ({
-            stroke: e = "currentColor",
-            fill: t = "currentColor",
-            ...s
-        }) => re.jsxs("svg", {
+        PluginMembership: aa,
+        PluginModMails: i => l.jsxs("svg", {
             width: 48,
-            height: 49,
-            viewBox: "0 0 48 49",
+            height: 48,
+            fill: "none",
+            viewBox: "0 0 48 48",
+            xmlns: "http://www.w3.org/2000/svg",
+            ...i,
+            children: [l.jsxs("g", {
+                clipPath: "url(#prefix__clip0_6414_18970)",
+                children: [l.jsx("path", {
+                    opacity: .2,
+                    d: "M33.676 35.143c7.493-1.15 12.686-7.83 11.599-14.921C44.187 13.13 37.23 8.314 29.737 9.463c-7.493 1.15-12.686 7.83-11.599 14.92 1.088 7.092 8.044 11.909 15.538 10.76z",
+                    fill: "#3994FF"
+                }), l.jsx("path", {
+                    opacity: .2,
+                    d: "M20.964 39.722c7.728-1.186 12.852-9.585 11.445-18.762C31 11.784 23.596 5.306 15.868 6.491 8.14 7.677 3.016 16.076 4.423 25.253c1.408 9.176 8.813 15.654 16.541 14.469z",
+                    fill: "#3994FF"
+                }), l.jsx("path", {
+                    d: "M37.36 13.22v15.92c0 1.558-1.197 2.821-2.67 2.821H7.926c-1.474 0-2.67-1.263-2.67-2.822V13.221c0-.188.017-.37.05-.546.24-1.298 1.322-2.276 2.618-2.276H34.69c1.295 0 2.377.979 2.617 2.276.034.176.05.358.05.546h.003z",
+                    fill: "#5ACFF5"
+                }), l.jsx("path", {
+                    d: "M37.36 13.506c-.104.144-.227.27-.374.365L24.33 22.21c-.95.627-1.985.94-3.022.94-1.037 0-2.074-.313-3.023-.94L5.631 13.873a1.396 1.396 0 01-.375-.367c-.475-.674-.473-1.774.09-2.434.498-.581 1.155-.936 1.873-.936h28.177c.75 0 1.431.387 1.935 1.015.523.65.49 1.706.028 2.355z",
+                    fill: "#B3EEFF"
+                }), l.jsx("path", {
+                    opacity: .15,
+                    d: "M37.36 13.506v15.633c0 1.559-1.197 2.822-2.67 2.822H21.308V10.136h14.087c.75 0 1.43.387 1.934 1.015.524.65.49 1.706.029 2.355h.002z",
+                    fill: "#005FED"
+                }), l.jsx("path", {
+                    d: "M44.586 34.594v3.896a3.785 3.785 0 01-3.78 3.782H39.43a1.72 1.72 0 01-1.72-1.72v-8.019c0-.682.408-1.26.983-1.537-.707-3.353-3.67-5.882-7.224-5.909h-.06c-3.578 0-6.572 2.54-7.282 5.91.575.278.982.855.982 1.538v5.843c1.558 1.906 3.476 2.467 4.078 1.981a1.718 1.718 0 112.153 2.682c-.771.62-1.714.915-2.727.915-1.449 0-3.035-.63-4.473-1.76-.027-.018-.051-.038-.077-.06a1.72 1.72 0 01-.673.138h-1.375a3.787 3.787 0 01-3.782-3.782v-3.896c0-1.61 1.018-2.978 2.44-3.522.722-5.306 5.235-9.423 10.736-9.423h.06c5.475.03 9.958 4.136 10.678 9.423a3.777 3.777 0 012.438 3.522v-.002z",
+                    fill: "#E1FBFF"
+                }), l.jsx("path", {
+                    opacity: .15,
+                    d: "M44.585 34.594v3.896a3.785 3.785 0 01-3.78 3.782h-1.374a1.718 1.718 0 01-1.72-1.72v-8.019c0-.682.407-1.26.983-1.537-.707-3.353-3.671-5.882-7.224-5.909V21.65c5.475.03 9.958 4.136 10.678 9.424a3.777 3.777 0 012.437 3.52z",
+                    fill: "#005FED"
+                }), l.jsx("path", {
+                    opacity: .15,
+                    d: "M38.694 30.996v11.109a1.718 1.718 0 01-.982-1.552v-8.02c0-.682.407-1.26.982-1.537z",
+                    fill: "#005FED"
+                })]
+            }), l.jsx("defs", {
+                children: l.jsx("clipPath", {
+                    id: "prefix__clip0_6414_18970",
+                    children: l.jsx("path", {
+                        fill: "#fff",
+                        d: "M0 0h48v48H0z"
+                    })
+                })
+            })]
+        }),
+        PluginModerator: ta,
+        PluginMusic: sa,
+        PluginPodcasts: i => l.jsxs("svg", {
+            width: "48",
+            height: "48",
+            viewBox: "0 0 48 48",
             fill: "none",
             xmlns: "http://www.w3.org/2000/svg",
-            ...s,
-            children: [re.jsx("path", {
-                d: "M14.4 21.218h6.4",
-                stroke: e,
-                strokeWidth: 3,
+            ...i,
+            children: [l.jsx("path", {
+                opacity: "0.2",
+                d: "M21.7979 7.64775C15.3946 13.0602 14.3577 22.3598 19.479 28.4189C24.6004 34.4779 33.9435 35.002 40.3451 29.5889C46.7485 24.1765 47.7854 14.8768 42.664 8.81777C37.5427 2.75871 28.1996 2.23463 21.7979 7.64775Z",
+                fill: "#3994FF"
+            }), l.jsx("path", {
+                opacity: "0.2",
+                d: "M7.00607 12.8564C0.404192 18.4382 0.424472 29.318 7.05218 37.1586C13.6806 44.9975 24.4041 46.8285 31.006 41.2467C37.6079 35.6649 37.5876 24.785 30.9599 16.9445C24.3322 9.10388 13.608 7.27454 7.00433 12.8557L7.00607 12.8564Z",
+                fill: "#3994FF"
+            }), l.jsx("path", {
+                d: "M17.0688 31.9888C12.5952 27.5152 12.5952 20.2576 17.0688 15.7744",
+                stroke: "#B3EEFF",
+                strokeWidth: "3",
                 strokeLinecap: "round",
                 strokeLinejoin: "round"
-            }), re.jsx("path", {
-                d: "M38.133 22.818H33.97c-2.855 0-5.17 2.15-5.17 4.8 0 2.651 2.315 4.8 5.17 4.8h4.164c.133 0 .2 0 .256-.003.863-.053 1.55-.691 1.607-1.492.004-.052.004-.114.004-.238V24.55c0-.123 0-.185-.004-.237-.056-.802-.744-1.44-1.607-1.492-.056-.004-.123-.004-.256-.004z",
-                stroke: e,
-                strokeWidth: 3
-            }), re.jsx("circle", {
-                cx: 33.6,
-                cy: 27.618,
-                r: 1.6,
-                fill: "#63F58C"
-            }), re.jsx("path", {
-                d: "M38.344 22.818c-.124-2.996-.525-4.832-1.819-6.125-1.874-1.875-4.891-1.875-10.925-1.875h-4.8c-6.034 0-9.051 0-10.925 1.875C8 18.567 8 21.584 8 27.618c0 6.034 0 9.051 1.875 10.926 1.874 1.874 4.891 1.874 10.925 1.874h4.8c6.034 0 9.051 0 10.925-1.874 1.294-1.293 1.695-3.13 1.82-6.126",
-                stroke: e,
-                strokeWidth: 3
-            }), re.jsx("path", {
-                d: "M14.4 14.818l5.977-3.963c1.683-1.116 3.963-1.116 5.647 0L32 14.818",
-                stroke: e,
-                strokeWidth: 3,
-                strokeLinecap: "round"
-            })]
-        }),
-        Shield: A,
-        SocialConnector: oe,
-        Spark: D,
-        StageChannel: J,
-        Stars: ({
-            fill: e = "currentColor",
-            ...t
-        }) => re.jsxs("svg", {
-            width: 48,
-            height: 49,
-            viewBox: "0 0 48 49",
-            fill: "none",
-            xmlns: "http://www.w3.org/2000/svg",
-            ...t,
-            children: [re.jsx("path", {
-                d: "M20.74 14.804l.557 1.393-.556-1.393zm1.74-1.81l1.409.517-1.408-.518zm-3.096 7.474l.968-1.145-.968 1.145zm.792-5.438l-.557-1.393.557 1.393zM21 23.164l-1.497.092L21 23.164zm-1.143-2.295l-.968 1.145.968-1.145zm5.934 5.445l.832 1.248-.832-1.248zm-4.753-2.52l1.497-.093-1.497.092zm7.707 1.79l.401-1.446-.4 1.445zm-2.446.391l-.832-1.248.832 1.248zm6.764-4.109l1.451-.38-1.45.38zm-3.729 3.88l-.4 1.446.4-1.446zm3.94-7.028l-1.278-.786 1.277.786zm-.37 2.538l-1.451.38 1.45-.38zm-1.753-7.985l-.094 1.497.094-1.497zm2.448 4.919l1.277.786-1.277-.786zm-5.273-6.134l1.176-.93-1.176.93zm2.218 1.177l.093-1.497-.093 1.497zm-2.606-1.666l-1.176.93 1.176-.93zm-5.241.84l-1.408-.518 1.407.518zM17.6 18.45a1.5 1.5 0 00-1.771-2.422L17.6 18.45zm-6.002 16.004l-1.482.236a1.5 1.5 0 002.902.246l-1.42-.482zm10.147-7.014a1.5 1.5 0 10-.959-2.843l.959 2.843zm5.017-14.942l.388.49 2.352-1.862-.387-.49-2.353 1.862zm3.689 2.232l.606.038.187-2.994-.607-.038-.186 2.994zm1.87 2.674l-.325.528 2.555 1.573.325-.529-2.555-1.572zm-.868 4.232l.159.61 2.902-.76-.159-.61-2.902.76zM29.735 24.3l-.589-.163-.801 2.89.588.164.802-2.891zm-4.268.426l-.508.34 1.664 2.495.508-.339-1.664-2.496zm-2.931-1.026l-.04-.629-2.993.184.038.63 2.994-.185zm-1.71-3.978l-.474-.4-1.936 2.29.473.401 1.937-2.291zm-.094-3.3l.565-.226-1.113-2.786-.565.226 1.113 2.786zm3.157-2.912l.215-.586-2.815-1.036-.216.587 2.816 1.035zm-2.592 2.686c.498-.199 1.18-.438 1.683-.962l-2.163-2.078c.044-.047.07-.049-.02-.004a9.373 9.373 0 01-.613.258l1.113 2.786zm-.224-3.721c-.126.343-.193.52-.25.645-.047.102-.05.08-.006.036l2.163 2.078c.496-.516.718-1.205.909-1.724l-2.816-1.035zm-.721 6.847c-.953-.806-1.536-1.304-1.887-1.701-.338-.384-.182-.367-.211-.163l-2.969-.432c-.161 1.108.387 1.964.931 2.58.532.602 1.322 1.265 2.2 2.007l1.936-2.291zm-.733-5.686c-1.043.417-1.992.791-2.677 1.195-.71.418-1.494 1.072-1.657 2.195l2.969.432c-.032.218-.205.202.21-.042.44-.26 1.129-.539 2.268-.994l-1.113-2.786zm2.878 9.435c-.035-.565-.05-1.277-.367-1.912l-2.686 1.336c-.022-.044-.012-.055.004.06.019.14.032.332.055.7l2.994-.184zm-3.608-1.058a10 10 0 01.516.452c.078.077.062.076.039.03l2.686-1.336c-.32-.642-.88-1.078-1.304-1.437l-1.937 2.291zm6.07 3.052c-1.027.685-1.65 1.096-2.112 1.31-.444.208-.325.036-.091.16l-1.406 2.65c1.023.543 2.029.253 2.765-.09.72-.336 1.569-.908 2.508-1.534l-1.664-2.496zm-5.418-1.18c.072 1.167.132 2.208.295 2.999.164.794.514 1.77 1.514 2.3l1.406-2.65c.21.112.127.27.018-.256-.109-.53-.16-1.313-.239-2.578l-2.994.184zm9.605.252c-.514-.143-1.21-.369-1.927-.254l.474 2.963c-.07.011-.097-.005.004.014.127.025.301.072.648.168l.801-2.891zm-2.015 3.085c.3-.2.45-.298.563-.361.09-.05.07-.027 0-.015l-.475-2.963c-.718.116-1.308.547-1.752.843l1.664 2.496zm4.481-4.977c.32 1.225.515 1.985.577 2.523.06.534-.067.41.097.239l2.163 2.079c.784-.816.812-1.852.72-2.659-.091-.802-.359-1.81-.654-2.941l-2.903.759zm-2.679 4.946c1.088.301 2.073.579 2.861.673.807.096 1.852.057 2.655-.778l-2.163-2.08c.182-.19.349-.063-.137-.121-.505-.06-1.226-.256-2.414-.585l-.802 2.89zm3.063-9.26c-.291.474-.688 1.064-.79 1.772l2.968.432c-.008.05-.023.057.027-.04.062-.122.16-.282.35-.591l-2.555-1.573zm2.36 2.945a10.524 10.524 0 01-.167-.682c-.02-.115-.008-.108-.015-.059l-2.969-.432c-.102.703.105 1.384.248 1.932l2.902-.76zm-3.299-6.11c1.225.077 1.966.128 2.465.237.47.102.31.171.212-.027l2.686-1.337c-.506-1.016-1.456-1.393-2.26-1.568-.776-.169-1.795-.228-2.916-.298l-.187 2.994zm3.82 4.21c.601-.98 1.146-1.856 1.463-2.595.324-.755.579-1.739.08-2.742l-2.686 1.337c-.092-.185.052-.25-.15.221-.21.487-.608 1.142-1.263 2.206l2.555 1.572zm-7.727-5.99c.343.434.769 1.02 1.402 1.355l1.405-2.65c.055.029.06.05-.016-.032a10.22 10.22 0 01-.439-.534l-2.352 1.862zm3.487-1.251a9.369 9.369 0 01-.663-.053c-.1-.015-.074-.021-.017.009l-1.405 2.65c.642.34 1.364.355 1.899.388l.186-2.994zm-1.523-1.1c-.718-.907-1.359-1.724-1.942-2.273-.585-.551-1.448-1.16-2.59-.977l.474 2.962c-.27.044-.323-.162.059.198.384.363.867.966 1.647 1.952l2.352-1.862zm-5.01 2.289c.434-1.18.705-1.905.957-2.37.251-.461.265-.25-.005-.207l-.475-2.962c-1.142.183-1.772 1.03-2.156 1.737-.382.704-.737 1.68-1.136 2.766l2.815 1.036zm-8.275 3.103c-4.28 3.13-7.262 8.969-5.713 18.662l2.963-.473C11.669 25.4 14.407 20.785 17.6 18.45l-1.771-2.422zm-2.81 18.908c1.105-3.257 4.571-6.095 8.726-7.496l-.959-2.843c-4.666 1.573-9.095 4.915-10.609 9.374l2.841.965z",
-                fill: e
-            }), re.jsx("path", {
-                d: "M21.249 31.254s1.012 2.225 2.26 2.99c1.248.766 3.69.659 3.69.659s-2.225 1.012-2.99 2.26c-.765 1.248-.659 3.69-.659 3.69s-1.012-2.225-2.26-2.99c-1.248-.765-3.69-.659-3.69-.659s2.225-1.012 2.99-2.26c.766-1.248.659-3.69.659-3.69zM34.367 29.654s-.674 1.483-1.506 1.994c-.832.51-2.46.439-2.46.439s1.483.674 1.993 1.506.44 2.46.44 2.46.674-1.483 1.506-1.993 2.46-.44 2.46-.44-1.483-.674-1.993-1.506-.44-2.46-.44-2.46z",
-                stroke: e,
-                strokeWidth: 2.5,
+            }), l.jsx("path", {
+                d: "M31.1424 31.9888C35.616 27.5152 35.616 20.2576 31.1424 15.7744",
+                stroke: "#5ACFF5",
+                strokeWidth: "3",
+                strokeLinecap: "round",
                 strokeLinejoin: "round"
+            }), l.jsx("path", {
+                d: "M11.9424 34.7632C5.93278 28.7536 5.93278 19.0096 11.9424 13",
+                stroke: "#B3EEFF",
+                strokeWidth: "3",
+                strokeLinecap: "round",
+                strokeLinejoin: "round"
+            }), l.jsx("path", {
+                d: "M36.2688 34.7632C42.2784 28.7536 42.2784 19.0096 36.2688 13",
+                stroke: "#5ACFF5",
+                strokeWidth: "3",
+                strokeLinecap: "round",
+                strokeLinejoin: "round"
+            }), l.jsx("path", {
+                d: "M30.1824 24.0976C30.1824 24.5776 29.9424 25.0288 29.5392 25.2976L22.944 29.6944C22.704 29.8576 22.4256 29.9344 22.1472 29.9344C21.9168 29.9344 21.6768 29.8768 21.4656 29.7616C20.9952 29.512 20.7072 29.0224 20.7072 28.4944V19.7008C20.7072 19.1728 20.9952 18.6832 21.4656 18.4336C21.936 18.184 22.5024 18.2032 22.944 18.5008L29.5392 22.8976C29.9424 23.1664 30.1824 23.6176 30.1824 24.0976Z",
+                fill: "white"
             })]
         }),
-        StatusChanged: ({
-            stroke: e = "currentColor",
-            fill: t = "transparent",
-            ...s
-        }) => re.jsxs("svg", {
-            width: 24,
-            height: 24,
-            viewBox: "0 0 24 24",
+        PluginPolls: i => l.jsxs("svg", {
+            width: 48,
+            height: 48,
             fill: "none",
+            viewBox: "0 0 48 48",
             xmlns: "http://www.w3.org/2000/svg",
-            ...s,
-            children: [re.jsx("circle", {
-                cx: 10.399,
-                cy: 7.2,
-                r: 3.2,
-                stroke: e,
-                strokeWidth: 1.5
-            }), re.jsx("path", {
-                d: "M19.326 11.816l.43.255-.43-.255zm.097-.164l-.43-.255.43.255zm-.846 0l.43-.255-.43.255zm.097.164l-.43.255.43-.255zm-2.56-1.642l.462-.191-.462.191zm1.494.92l.017-.5-.017.5zm-.682-.108l-.191.462.191-.462zm4.96-.812l.462.191-.462-.191zm-1.494.92l-.017-.5.017.5zm.682-.108l.191.462-.191-.462zm.21-4.765l.261-.426-.261.426zm.495.495l.426-.261-.426.261zm-5.063-.495l-.261-.426.261.426zm-.495.495l-.426-.261.426.261zm1.998 4.467l-.255.43.255-.43zm1.537.888l.098-.164-.861-.51-.097.165.86.509zm-1.61-.164l.098.164.86-.51-.097-.164-.86.51zm.75-.345A.125.125 0 0119 11.5c.032 0 .078.018.104.062l-.86.509a.881.881 0 001.512 0l-.86-.51zM18.55 6.5h.9v-1h-.9v1zm2.95 2.05v.3h1v-.3h-1zm-5 .3v-.3h-1v.3h1zm-1 0c0 .343 0 .625.015.855.016.234.05.451.137.66l.924-.382a1.093 1.093 0 01-.063-.346c-.013-.189-.013-.43-.013-.787h-1zm2.125 1.745c-.292-.01-.42-.035-.508-.071l-.382.924c.262.108.542.136.858.146l.032-1zm-1.973-.23a2 2 0 001.083 1.083l.382-.924a1 1 0 01-.54-.541l-.925.382zM21.5 8.85c0 .356 0 .598-.013.787-.013.183-.035.279-.063.346l.924.382c.086-.209.12-.426.137-.66.015-.23.015-.512.015-.855h-1zm-1.093 2.744c.316-.01.596-.038.858-.146l-.382-.924c-.087.036-.216.061-.508.07l.032 1zm1.017-1.611a1 1 0 01-.541.54l.382.925a2 2 0 001.083-1.083l-.924-.382zM19.45 6.5c.5 0 .841 0 1.102.025.255.025.382.068.47.122l.523-.852c-.272-.167-.57-.234-.898-.265-.32-.03-.716-.03-1.197-.03v1zm3.05 2.05c0-.481 0-.877-.03-1.197-.031-.327-.098-.626-.265-.898l-.852.522c.054.09.098.216.122.47.024.262.025.602.025 1.103h1zm-1.477-1.903a.999.999 0 01.33.33l.852-.522a2 2 0 00-.66-.66l-.523.852zM18.55 5.5c-.481 0-.877 0-1.197.03-.327.031-.626.098-.898.265l.523.852c.088-.054.215-.097.47-.122.26-.024.601-.025 1.102-.025v-1zM16.5 8.55c0-.5 0-.841.025-1.103.024-.254.068-.38.122-.47l-.852-.522c-.167.272-.234.57-.265.898-.03.32-.03.716-.03 1.197h1zm-.045-2.755a2 2 0 00-.66.66l.852.522a.999.999 0 01.33-.33l-.522-.852zm2.552 5.602c-.073-.123-.145-.246-.217-.344a1.054 1.054 0 00-.317-.3l-.509.86c-.017-.01-.014-.016.017.027.038.052.083.127.165.267l.861-.51zm-1.415.197c.172.006.267.01.336.018.061.007.057.014.036.002l.51-.861a1.067 1.067 0 00-.425-.134c-.124-.015-.271-.02-.424-.024l-.032 1zm2.262.313c.082-.14.127-.215.165-.267.031-.043.035-.037.017-.026l-.51-.861c-.141.084-.239.193-.316.3-.072.098-.144.22-.217.344l.86.51zm.521-1.312c-.152.005-.3.009-.424.024-.132.016-.28.048-.424.134l.509.86c-.02.013-.025.006.036-.002a4.37 4.37 0 01.335-.017l-.032-1z",
-                fill: e
-            }), re.jsx("ellipse", {
-                cx: 10.401,
-                cy: 16.001,
-                rx: 5.6,
-                ry: 3.2,
-                stroke: e,
-                strokeWidth: 1.5
-            }), re.jsx("path", {
-                d: "M18 8.5h2m-1-1v2",
-                stroke: e,
-                strokeWidth: .8,
-                strokeLinecap: "round"
+            ...i,
+            children: [l.jsxs("g", {
+                clipPath: "url(#prefix__clip0_6396_18915)",
+                children: [l.jsx("path", {
+                    opacity: .2,
+                    d: "M33.676 35.143c7.493-1.15 12.686-7.83 11.599-14.921C44.187 13.13 37.23 8.314 29.737 9.463c-7.493 1.15-12.686 7.83-11.599 14.92 1.088 7.092 8.044 11.909 15.538 10.76z",
+                    fill: "#3994FF"
+                }), l.jsx("path", {
+                    opacity: .2,
+                    d: "M20.964 39.722c7.728-1.186 12.852-9.585 11.445-18.762C31 11.784 23.596 5.306 15.868 6.491 8.14 7.677 3.016 16.076 4.423 25.253c1.408 9.176 8.813 15.654 16.541 14.469z",
+                    fill: "#3994FF"
+                }), l.jsx("path", {
+                    d: "M16.06 24.375h-5.494a1.19 1.19 0 00-1.191 1.19v11.682c0 .657.533 1.19 1.19 1.19h5.494a1.19 1.19 0 001.191-1.19V25.566a1.19 1.19 0 00-1.19-1.191z",
+                    fill: "#5ACFF5"
+                }), l.jsx("path", {
+                    d: "M26.747 9.563h-5.494a1.19 1.19 0 00-1.19 1.19v26.494c0 .657.533 1.19 1.19 1.19h5.494a1.19 1.19 0 001.19-1.19V10.753a1.19 1.19 0 00-1.19-1.19z",
+                    fill: "#B3EEFF"
+                }), l.jsx("path", {
+                    d: "M37.434 17.438h-5.493a1.19 1.19 0 00-1.191 1.19v18.619c0 .657.533 1.19 1.19 1.19h5.494a1.19 1.19 0 001.191-1.19V18.628a1.19 1.19 0 00-1.19-1.19z",
+                    fill: "#5ACFF5"
+                }), l.jsx("path", {
+                    opacity: .15,
+                    d: "M17.25 25.566v11.68c0 .657-.534 1.191-1.19 1.191h-2.747V24.376h2.746c.657 0 1.191.534 1.191 1.19zM27.938 10.753v26.494c0 .656-.535 1.19-1.191 1.19H24V9.564h2.747c.656 0 1.19.534 1.19 1.19zM38.625 18.628v18.619c0 .656-.534 1.19-1.19 1.19h-2.748v-21h2.747c.657 0 1.191.535 1.191 1.191z",
+                    fill: "#005FED"
+                }), l.jsx("path", {
+                    opacity: .15,
+                    d: "M9.375 37.125h7.875v.122c0 .656-.534 1.19-1.19 1.19h-5.494c-.657 0-1.191-.534-1.191-1.19v-.122zM20.063 37.125h7.875v.122c0 .656-.535 1.19-1.191 1.19h-5.494c-.656 0-1.19-.534-1.19-1.19v-.122zM38.625 37.125v.122c0 .656-.534 1.19-1.19 1.19H31.94c-.657 0-1.191-.534-1.191-1.19v-.122h7.875z",
+                    fill: "#005FED"
+                })]
+            }), l.jsx("defs", {
+                children: l.jsx("clipPath", {
+                    id: "prefix__clip0_6396_18915",
+                    children: l.jsx("path", {
+                        fill: "#fff",
+                        d: "M0 0h48v48H0z"
+                    })
+                })
             })]
         }),
-        Support: F,
-        TextChannel: X,
-        ThreadChannel: K,
-        Timers: y,
-        Tr: E,
-        Trash: ie,
-        Trophy: P,
-        Trophy2: S,
-        Tw: T,
-        Twitter: he,
-        TwoUser: _,
-        Uae: G,
-        UpdateMessage: ({
-            stroke: e = "currentColor",
-            fill: t = "transparent",
-            ...s
-        }) => re.jsxs("svg", {
-            width: 24,
-            height: 24,
-            viewBox: "0 0 24 24",
+        PluginReactionRoles: na,
+        PluginRecord: ea,
+        PluginSearchAnything: ra,
+        PluginServerDiscovery: i => l.jsxs("svg", {
+            width: "48",
+            height: "48",
+            viewBox: "0 0 48 48",
             fill: "none",
             xmlns: "http://www.w3.org/2000/svg",
-            ...s,
-            children: [re.jsx("path", {
-                d: "M11.506 10.512l-.797 2.39a.839.839 0 001.054 1.054l2.391-.797a.84.84 0 00.325-.2l5.614-5.614a1.962 1.962 0 000-2.772 1.963 1.963 0 00-2.772 0l-5.614 5.614a.833.833 0 00-.201.325z",
-                fill: e
-            }), re.jsx("path", {
-                d: "M19.833 9.833a.833.833 0 00-.833.834V16.5a2.5 2.5 0 01-2.5 2.5H8.167a2.5 2.5 0 01-2.5-2.5V8.167a2.5 2.5 0 012.5-2.5H14A.833.833 0 0014 4H8.167A4.172 4.172 0 004 8.167V16.5a4.172 4.172 0 004.167 4.167H16.5a4.172 4.172 0 004.167-4.167v-5.833a.833.833 0 00-.834-.834z",
-                fill: e
+            ...i,
+            children: [l.jsx("path", {
+                opacity: "0.2",
+                d: "M27.4473 38.5706C33.1379 32.4126 33.0276 23.056 27.2005 17.672C21.3734 12.288 12.0374 12.9124 6.34678 19.0704C0.656173 25.2283 0.76647 34.5831 6.59355 39.969C12.4206 45.353 21.7567 44.7286 27.4473 38.5706Z",
+                fill: "#3994FF"
+            }), l.jsx("path", {
+                opacity: "0.2",
+                d: "M41.5354 31.5357C47.3793 25.1646 45.9847 14.3741 38.4209 7.43473C30.8553 0.495332 19.9863 0.0335771 14.1405 6.40466C8.29662 12.7757 9.69123 23.5662 17.255 30.5056C24.8207 37.445 35.6897 37.9049 41.5354 31.5338V31.5357Z",
+                fill: "#3994FF"
+            }), l.jsx("path", {
+                d: "M35.7458 13.0747H13.2712C12.2367 13.0747 11.398 13.9134 11.398 14.9479V29.9297C11.398 30.9642 12.2367 31.8029 13.2712 31.8029H35.7458C36.7803 31.8029 37.6189 30.9642 37.6189 29.9297V14.9479C37.6189 13.9134 36.7803 13.0747 35.7458 13.0747Z",
+                fill: "#5ACFF5"
+            }), l.jsx("path", {
+                d: "M35.7457 11.6729H13.2712C11.4653 11.6729 9.99594 13.1422 9.99594 14.9481V29.9318C9.99594 31.7377 11.4653 33.2052 13.2712 33.2052H35.7457C37.5516 33.2052 39.021 31.7377 39.021 29.9318V14.9481C39.021 13.1422 37.5516 11.6729 35.7457 11.6729ZM36.2168 29.9318C36.2168 30.1898 36.0056 30.401 35.7457 30.401H13.2712C13.0114 30.401 12.8001 30.1898 12.8001 29.9318V14.9481C12.8001 14.6883 13.0114 14.477 13.2712 14.477H35.7457C36.0056 14.477 36.2168 14.6883 36.2168 14.9481V29.9318Z",
+                fill: "#B3EEFF"
+            }), l.jsx("path", {
+                d: "M15.2921 41.5263C14.5219 41.4515 13.9573 40.7654 14.0321 39.9952L14.077 39.526L13.6077 39.4811C12.8375 39.4064 12.2729 38.7203 12.3477 37.9501C12.4225 37.1798 13.1086 36.6153 13.8788 36.69L14.348 36.7349L14.3929 36.2657C14.4677 35.4955 15.1538 34.9309 15.924 35.0057C16.6942 35.0805 17.2588 35.7665 17.184 36.5368L17.1391 37.006L17.6083 37.0509C18.3786 37.1256 18.9431 37.8117 18.8684 38.5819C18.7936 39.3521 18.1075 39.9167 17.3373 39.8419L16.868 39.7971L16.8232 40.2663C16.7484 41.0365 16.0623 41.6011 15.2921 41.5263Z",
+                fill: "#5ACFF5"
+            }), l.jsx("path", {
+                d: "M35.1849 9.12484C34.8279 9.15849 34.4577 9.05754 34.1586 8.81078L33.7959 8.51166L33.4968 8.87434C33.0033 9.47069 32.119 9.55482 31.5227 9.06315C30.9263 8.56962 30.8422 7.68537 31.3339 7.08901L31.633 6.72634L31.2703 6.42723C30.6739 5.93369 30.5898 5.04944 31.0815 4.45309C31.575 3.85673 32.4574 3.77261 33.0556 4.26427L33.4183 4.56339L33.7174 4.20071C34.2109 3.60436 35.0952 3.52023 35.6915 4.0119C36.2879 4.50543 36.372 5.38968 35.8804 5.98604L35.5812 6.34871L35.9439 6.64782C36.5403 7.14136 36.6244 8.02561 36.1327 8.62196C35.886 8.92107 35.542 9.09119 35.1849 9.12484Z",
+                fill: "#5ACFF5"
+            }), l.jsx("path", {
+                d: "M10.2352 36.6859C10.8867 36.6859 11.4148 36.1578 11.4148 35.5063C11.4148 34.8548 10.8867 34.3267 10.2352 34.3267C9.58374 34.3267 9.0556 34.8548 9.0556 35.5063C9.0556 36.1578 9.58374 36.6859 10.2352 36.6859Z",
+                fill: "#5ACFF5"
+            }), l.jsx("path", {
+                d: "M31.6404 21.1211H16.9166C16.1427 21.1211 15.5146 20.4929 15.5146 19.719C15.5146 18.945 16.1427 18.3169 16.9166 18.3169H31.6404C32.4144 18.3169 33.0425 18.945 33.0425 19.719C33.0425 20.4929 32.4144 21.1211 31.6404 21.1211Z",
+                fill: "#B3EEFF"
+            }), l.jsx("path", {
+                d: "M29.442 26.4492H19.1151C18.3412 26.4492 17.713 25.8211 17.713 25.0471C17.713 24.2732 18.3412 23.645 19.1151 23.645H29.442C30.2159 23.645 30.8441 24.2732 30.8441 25.0471C30.8441 25.8211 30.2159 26.4492 29.442 26.4492Z",
+                fill: "#B3EEFF"
+            }), l.jsx("path", {
+                d: "M39.1201 11.1586C39.7716 11.1586 40.2997 10.6304 40.2997 9.97894C40.2997 9.32745 39.7716 8.79932 39.1201 8.79932C38.4686 8.79932 37.9405 9.32745 37.9405 9.97894C37.9405 10.6304 38.4686 11.1586 39.1201 11.1586Z",
+                fill: "#5ACFF5"
+            }), l.jsx("path", {
+                d: "M39.021 19.7396V32.136C39.021 32.7267 38.5424 33.2053 37.9517 33.2053H25.5554C25.5554 33.2053 25.5498 33.2053 25.5498 33.2015L25.0001 31.8032C24.8169 31.3414 24.673 30.8741 24.5664 30.4011C24.4057 29.6907 24.3271 28.9728 24.3271 28.2587C24.3271 24.8937 26.0732 21.6147 29.1915 19.8144C31.3993 18.5394 33.9062 18.231 36.2168 18.7582C36.6936 18.8666 37.1628 19.0106 37.6189 19.1919L39.021 19.7396Z",
+                fill: "#5ACFF5"
+            }), l.jsx("path", {
+                d: "M34.0689 35.2613C31.6404 35.2613 29.2756 34.0013 27.9763 31.7524C26.0414 28.4005 27.193 24.097 30.5468 22.1621C33.8987 20.2272 38.2022 21.3788 40.1371 24.7326C42.072 28.0845 40.9204 32.388 37.5666 34.3229C36.4636 34.9604 35.2578 35.2613 34.0689 35.2613ZM31.9489 24.5905C29.9355 25.7533 29.2438 28.3369 30.4047 30.3503C31.5675 32.3637 34.1511 33.0554 36.1645 31.8945C38.1779 30.7317 38.8696 28.1481 37.7087 26.1347C36.5459 24.1213 33.9623 23.4296 31.9489 24.5905Z",
+                fill: "#E1FBFF"
+            }), l.jsx("path", {
+                d: "M41.5504 42.6199C41.0662 42.6199 40.5951 42.3693 40.3353 41.9188L35.6523 33.8091C35.2653 33.138 35.4953 32.2818 36.1664 31.893C36.8375 31.506 37.6937 31.7359 38.0826 32.4071L42.7655 40.5167C43.1525 41.1879 42.9226 42.0441 42.2514 42.4329C42.0309 42.56 41.7897 42.6217 41.5523 42.6217L41.5504 42.6199Z",
+                fill: "#E1FBFF"
             })]
         }),
-        Utilities: ({
-            stroke: e = "currentColor",
-            fill: t = "transparent",
-            ...s
-        }) => re.jsx("svg", {
-            width: 24,
-            height: 24,
+        PluginStarboards: i => l.jsxs("svg", {
+            width: 48,
+            height: 48,
             fill: "none",
-            viewBox: "0 0 24 24",
             xmlns: "http://www.w3.org/2000/svg",
-            ...s,
-            children: re.jsx("path", {
-                d: "M3.297 5.234a2.599 2.599 0 011.937-1.937 5.544 5.544 0 012.532 0 2.599 2.599 0 011.937 1.937c.195.833.195 1.7 0 2.532a2.599 2.599 0 01-1.937 1.937c-.833.195-1.7.195-2.532 0a2.599 2.599 0 01-1.937-1.937 5.545 5.545 0 010-2.532zM3.297 16.234a2.599 2.599 0 011.937-1.937 5.546 5.546 0 012.532 0 2.599 2.599 0 011.937 1.937c.195.833.195 1.7 0 2.532a2.599 2.599 0 01-1.937 1.937c-.833.195-1.7.195-2.532 0a2.599 2.599 0 01-1.937-1.937 5.545 5.545 0 010-2.532zM14.297 5.234a2.599 2.599 0 011.937-1.937 5.544 5.544 0 012.532 0 2.599 2.599 0 011.937 1.937c.195.833.195 1.7 0 2.532a2.599 2.599 0 01-1.937 1.937c-.833.195-1.7.195-2.532 0a2.599 2.599 0 01-1.937-1.937 5.546 5.546 0 010-2.532zM14.297 16.234a2.599 2.599 0 011.937-1.937 5.546 5.546 0 012.532 0 2.599 2.599 0 011.937 1.937c.195.833.195 1.7 0 2.532a2.599 2.599 0 01-1.937 1.937c-.833.195-1.7.195-2.532 0a2.599 2.599 0 01-1.937-1.937 5.546 5.546 0 010-2.532z",
-                fill: t,
-                stroke: e,
-                strokeWidth: 1.5,
-                fillOpacity: .16
+            ...i,
+            children: [l.jsxs("g", {
+                clipPath: "url(#prefix__clip0_starboards)",
+                children: [l.jsx("path", {
+                    opacity: .2,
+                    d: "M24 42c9.941 0 18-8.059 18-18S33.941 6 24 6 6 14.059 6 24s8.059 18 18 18z",
+                    fill: "#3994FF"
+                }), l.jsx("path", {
+                    opacity: .15,
+                    d: "M24 38c7.732 0 14-6.268 14-14s-6.268-14-14-14-14 6.268-14 14 6.268 14 14 14z",
+                    fill: "#5ACFF5"
+                }), l.jsx("path", {
+                    d: "M24 8l4.944 10.024L40 19.416l-8 7.798 1.888 11.002L24 32.96l-9.888 5.256L16 27.214l-8-7.798 11.056-1.392L24 8z",
+                    fill: "#5ACFF5"
+                }), l.jsx("path", {
+                    d: "M24 10.5l4.125 8.354.39.79.874.11 9.218 1.16-6.671 6.502-.631.615.149.871 1.574 9.177-8.246-4.384-.782-.415-.782.415-8.246 4.384 1.574-9.177.149-.871-.631-.615-6.671-6.501 9.218-1.16.874-.11.39-.791L24 10.5z",
+                    stroke: "#B3EEFF",
+                    strokeWidth: 2.5
+                }), l.jsx("path", {
+                    d: "M24 15l2.472 5.012L32 20.708l-4 3.899.944 5.501L24 27.48l-4.944 2.628L20 24.607l-4-3.899 5.528-.696L24 15z",
+                    fill: "#E1FBFF"
+                }), l.jsx("circle", {
+                    cx: "38",
+                    cy: "12",
+                    r: "2",
+                    fill: "#5ACFF5"
+                }), l.jsx("circle", {
+                    cx: "10",
+                    cy: "14",
+                    r: "1.5",
+                    fill: "#5ACFF5"
+                }), l.jsx("circle", {
+                    cx: "40",
+                    cy: "28",
+                    r: "1",
+                    fill: "#B3EEFF"
+                })]
+            }), l.jsx("defs", {
+                children: l.jsx("clipPath", {
+                    id: "prefix__clip0_starboards",
+                    children: l.jsx("path", {
+                        fill: "#fff",
+                        d: "M0 0h48v48H0z"
+                    })
+                })
+            })]
+        }),
+        PluginStatistics: oa,
+        PluginTemporary: pa,
+        PluginTicketing: i => l.jsxs("svg", {
+            width: 48,
+            height: 48,
+            fill: "none",
+            viewBox: "0 0 48 48",
+            xmlns: "http://www.w3.org/2000/svg",
+            ...i,
+            children: [l.jsxs("g", {
+                clipPath: "url(#prefix__clip0_5433_14157)",
+                children: [l.jsx("path", {
+                    opacity: .2,
+                    d: "M37.617 31.525c6.732-3.486 9.516-11.476 6.218-17.847-3.298-6.37-11.43-8.71-18.162-5.225-6.733 3.485-9.517 11.476-6.219 17.847 3.299 6.37 11.43 8.71 18.163 5.225z",
+                    fill: "#3994FF"
+                }), l.jsx("path", {
+                    opacity: .2,
+                    d: "M27.035 39.926c6.943-3.595 9.112-13.192 4.844-21.436s-13.357-12.014-20.3-8.42c-6.943 3.595-9.111 13.192-4.843 21.436 4.268 8.244 13.356 12.014 20.3 8.42z",
+                    fill: "#3994FF"
+                }), l.jsx("path", {
+                    d: "M35.28 10.112v26.087a1.003 1.003 0 01-1.033.97H13.875a1.003 1.003 0 01-1.035-.97V10.112a1.003 1.003 0 011.035-.97h20.372a1.003 1.003 0 011.033.97z",
+                    fill: "#B3EEFF"
+                }), l.jsx("path", {
+                    d: "M30.465 14.92h-12.81a.975.975 0 110-1.947h12.81a.975.975 0 110 1.946zM30.465 18.99h-12.81a.975.975 0 110-1.946h12.81a.975.975 0 110 1.946z",
+                    fill: "#5ACFF5"
+                }), l.jsx("path", {
+                    opacity: .15,
+                    d: "M35.28 10.112v26.087a1.003 1.003 0 01-1.034.97h-8.724L24.06 25.711V9.142h10.186a1.003 1.003 0 011.034.97z",
+                    fill: "#005FED"
+                }), l.jsx("path", {
+                    d: "M39.78 21.964v16.065a1.286 1.286 0 01-1.259 1.312H9.6a1.284 1.284 0 01-1.26-1.312V26.3a1.284 1.284 0 011.26-1.313h14.192a1.255 1.255 0 001.067-.615l1.875-3.109a1.244 1.244 0 011.067-.613H38.52a1.285 1.285 0 011.258 1.313z",
+                    fill: "#5ACFF5"
+                }), l.jsx("path", {
+                    opacity: .15,
+                    d: "M39.78 21.964v16.065a1.286 1.286 0 01-1.259 1.312H24.06v-14.38a1.257 1.257 0 00.798-.584l1.875-3.109a1.243 1.243 0 011.067-.613h10.721a1.285 1.285 0 011.259 1.309z",
+                    fill: "#005FED"
+                }), l.jsx("path", {
+                    opacity: .2,
+                    d: "M39.78 37.828v.2a1.286 1.286 0 01-1.259 1.313H9.6a1.285 1.285 0 01-1.26-1.312v-.2h31.44z",
+                    fill: "#005FED"
+                })]
+            }), l.jsx("defs", {
+                children: l.jsx("clipPath", {
+                    id: "prefix__clip0_5433_14157",
+                    children: l.jsx("path", {
+                        fill: "#fff",
+                        d: "M0 0h48v48H0z"
+                    })
+                })
+            })]
+        }),
+        PluginTimers: ha,
+        PluginTwitchBot: i => l.jsx("svg", {
+            width: 48,
+            height: 48,
+            viewBox: "0 0 257 257",
+            version: "1.1",
+            xmlns: "http://www.w3.org/2000/svg",
+            ...i,
+            children: l.jsx("g", {
+                id: "Page-1",
+                stroke: "none",
+                strokeWidth: "1",
+                fill: "none",
+                fillRule: "evenodd",
+                children: l.jsxs("g", {
+                    id: "Group",
+                    children: [l.jsx("rect", {
+                        id: "Rectangle",
+                        x: "0",
+                        y: "0",
+                        width: "256.76",
+                        height: "256.76"
+                    }), l.jsx("path", {
+                        d: "M165.95,199.56 C187.34,160.14 174.43,111.78 137.13,91.54 C99.83,71.3 52.25,86.85 30.87,126.27 C9.48,165.69 22.39,214.05 59.69,234.29 C96.99,254.53 144.57,238.98 165.95,199.56 L165.95,199.56 Z",
+                        id: "Path",
+                        fill: "#3994FF",
+                        fillRule: "nonzero",
+                        opacity: "0.2"
+                    }), l.jsx("path", {
+                        d: "M229.54,144.85 C251.59,104.2 230.34,50.02 182.07,23.83 C133.8,-2.35 76.8,9.37 54.75,50.02 C32.7,90.67 53.95,144.85 102.22,171.04 C150.49,197.23 207.49,185.5 229.55,144.85 L229.54,144.85 Z",
+                        id: "Path",
+                        fill: "#3994FF",
+                        fillRule: "nonzero",
+                        opacity: "0.2"
+                    }), l.jsx("path", {
+                        d: "M87.32,40.94 L54.83,73.43 L54.83,195.27 L87.32,195.27 L87.32,227.76 L119.81,195.27 L152.3,195.27 L209.16,138.41 L209.16,40.94 L87.32,40.94 Z M192.91,130.29 L168.54,154.66 L136.05,154.66 L111.68,179.03 L111.68,154.66 L87.31,154.66 L87.31,57.18 L192.9,57.18 L192.9,130.28 L192.91,130.29 Z",
+                        id: "Shape",
+                        fill: "#B3EEFF",
+                        fillRule: "nonzero"
+                    }), l.jsx("polygon", {
+                        id: "Path",
+                        fill: "#5ACFF5",
+                        fillRule: "nonzero",
+                        points: "87.32 57.18 192.91 57.18 192.91 130.29 168.54 154.65 136.05 154.65 111.69 179.02 111.69 154.65 87.32 154.65"
+                    }), l.jsx("polygon", {
+                        id: "Path",
+                        fill: "#E1FBFF",
+                        fillRule: "nonzero",
+                        points: "156.64 132.67 147.45 123.47 167.22 103.7 147.45 83.93 156.64 74.74 185.61 103.7"
+                    }), l.jsx("polygon", {
+                        id: "Path",
+                        fill: "#005FED",
+                        fillRule: "nonzero",
+                        opacity: "0.15",
+                        points: "140.11 40.94 140.11 195.27 152.3 195.27 209.16 138.41 209.16 40.94"
+                    }), l.jsx("polygon", {
+                        id: "Path",
+                        fill: "#E1FBFF",
+                        fillRule: "nonzero",
+                        points: "125.08 132.67 96.12 103.7 125.08 74.74 134.28 83.93 114.51 103.7 134.28 123.47"
+                    })]
+                })
             })
         }),
-        VoiceChannel: q,
-        VoiceJoined: ({
-            stroke: e = "currentColor",
-            fill: t = "transparent",
-            ...s
-        }) => re.jsxs("svg", {
-            width: 24,
-            height: 24,
+        PluginVerification: i => l.jsxs("svg", {
+            width: 48,
+            height: 48,
+            fill: "none",
+            viewBox: "0 0 48 48",
+            xmlns: "http://www.w3.org/2000/svg",
+            ...i,
+            children: [l.jsxs("g", {
+                clipPath: "url(#prefix__clip0_4978_12310)",
+                children: [l.jsx("path", {
+                    opacity: .2,
+                    d: "M32.297 37.414c4.081-7.523 1.619-16.753-5.5-20.615-7.119-3.861-16.198-.894-20.28 6.63-4.08 7.522-1.618 16.752 5.5 20.613 7.12 3.862 16.199.895 20.28-6.628z",
+                    fill: "#3994FF"
+                }), l.jsx("path", {
+                    opacity: .2,
+                    d: "M44.436 26.972c4.209-7.758.153-18.098-9.059-23.095-9.21-4.997-20.09-2.76-24.299 4.998-4.208 7.758-.153 18.098 9.059 23.095 9.211 4.998 20.09 2.76 24.299-4.998z",
+                    fill: "#3994FF"
+                }), l.jsx("path", {
+                    d: "M17.648 5.777a1.52 1.52 0 01-1.522 1.519h-2.672a5.948 5.948 0 00-5.94 5.938v2.675a1.52 1.52 0 11-3.04 0v-2.675a8.985 8.985 0 018.98-8.978h2.672a1.52 1.52 0 011.522 1.52zM17.648 42.257a1.52 1.52 0 01-1.52 1.519h-2.674a8.951 8.951 0 01-6.394-2.682 8.982 8.982 0 01-2.585-6.296v-2.674a1.52 1.52 0 113.039 0v2.674a5.88 5.88 0 001.035 3.341 5.915 5.915 0 004.905 2.597h2.672a1.52 1.52 0 011.522 1.52zM43.996 13.234v2.675a1.52 1.52 0 11-3.042 0v-2.675a5.941 5.941 0 00-5.936-5.938h-2.675a1.52 1.52 0 110-3.04h2.675a8.989 8.989 0 018.978 8.978zM43.996 32.124v2.674a8.99 8.99 0 01-8.978 8.978h-2.675a1.52 1.52 0 110-3.04h2.675a5.944 5.944 0 005.936-5.938v-2.674a1.521 1.521 0 013.042 0z",
+                    fill: "#B3EEFF"
+                }), l.jsx("path", {
+                    d: "M15.621 12.073v19.832a.724.724 0 00.724.72h14.983a1.52 1.52 0 001.52-1.52V12.072a.724.724 0 00-.723-.724h-15.78a.724.724 0 00-.724.724zM29.813 29.59H18.661V14.391h11.152v15.198z",
+                    fill: "#5ACFF5"
+                }), l.jsx("path", {
+                    opacity: .15,
+                    d: "M32.848 12.064V31.11a1.52 1.52 0 01-1.52 1.52H24v-3.04h5.813v-15.2H24v-3.04h8.134a.714.714 0 01.714.714zM17.644 5.672a1.522 1.522 0 01-1.519 1.624h-2.671a5.902 5.902 0 00-2.969.795 1.5 1.5 0 01-1.983-.394l-.032-.043a1.5 1.5 0 01.461-2.175 8.917 8.917 0 014.523-1.223h2.624a1.554 1.554 0 011.566 1.416zM8.013 39.926l-.045.032a1.547 1.547 0 01-1.896-.056 8.916 8.916 0 01-1.597-5.104v-2.674a1.52 1.52 0 113.039 0v2.674a5.88 5.88 0 001.035 3.341 1.552 1.552 0 01-.536 1.787zM42.585 17.383a1.519 1.519 0 01-1.621-1.517v-2.673a5.904 5.904 0 00-.797-2.969 1.5 1.5 0 01.393-1.974l.043-.032a1.5 1.5 0 012.175.461 8.919 8.919 0 011.225 4.523v2.625a1.558 1.558 0 01-1.418 1.556zM40.46 39.958a1.47 1.47 0 01-.254 2.162 8.923 8.923 0 01-5.188 1.656h-2.625a1.552 1.552 0 01-1.567-1.42 1.521 1.521 0 011.516-1.62h2.676c1.215.001 2.4-.373 3.396-1.07a1.487 1.487 0 011.981.219l.064.073z",
+                    fill: "#005FED"
+                }), l.jsx("path", {
+                    d: "M32.835 11.813v20.469a.509.509 0 01-.243.435l-4.444 2.736-4.523 2.797a.347.347 0 01-.53-.296V17.666a.508.508 0 01.244-.435l4.818-2.966 4.313-2.655a.244.244 0 01.365.203z",
+                    fill: "#B3EEFF"
+                }), l.jsx("path", {
+                    opacity: .15,
+                    d: "M32.835 11.813v20.48a.494.494 0 01-.234.42l-4.453 2.74V14.265l4.312-2.657a.243.243 0 01.375.204z",
+                    fill: "#005FED"
+                })]
+            }), l.jsx("defs", {
+                children: l.jsx("clipPath", {
+                    id: "prefix__clip0_4978_12310",
+                    children: l.jsx("path", {
+                        fill: "#fff",
+                        d: "M0 0h48v48H0z"
+                    })
+                })
+            })]
+        }),
+        PluginWelcome: da,
+        PluginWelcomeChannel: i => l.jsxs("svg", {
+            width: "48",
+            height: "48",
+            viewBox: "0 0 48 48",
+            fill: "none",
+            xmlns: "http://www.w3.org/2000/svg",
+            ...i,
+            children: [l.jsx("path", {
+                opacity: "0.2",
+                d: "M28.2973 39.6578C33.9879 33.4999 33.8776 24.1433 28.0505 18.7592C22.2234 13.3752 12.8874 13.9996 7.19678 20.1576C1.50618 26.3156 1.61648 35.6703 7.44355 41.0562C13.2706 46.4402 22.6067 45.8158 28.2973 39.6578Z",
+                fill: "#3994FF"
+            }), l.jsx("path", {
+                opacity: "0.2",
+                d: "M42.3855 32.6231C48.2294 26.252 46.8348 15.4615 39.271 8.52213C31.7053 1.58273 20.8364 1.12098 14.9906 7.49206C9.14669 13.8632 10.5413 24.6536 18.1051 31.593C25.6708 38.5324 36.5397 38.9923 42.3855 32.6212V32.6231Z",
+                fill: "#3994FF"
+            }), l.jsx("path", {
+                d: "M21.4215 14.3732L11.7556 16.8095C11.3113 16.9215 11 17.3211 11 17.7792V29.2926C11 29.7165 11.2673 30.0944 11.6671 30.2355L21.6339 33.7546C22.0825 33.913 22.5729 33.9063 23.017 33.7357L28.8046 31.5124C28.9466 31.4579 29.0742 31.3717 29.1778 31.2604L31.4659 28.8034C31.7795 28.4666 31.8228 27.9592 31.5707 27.5742L24.2632 16.4125L23.6522 15.3297C23.2092 14.5445 22.2956 14.1528 21.4215 14.3732Z",
+                fill: "#5ACFF5",
+                stroke: "#B3EEFF",
+                strokeWidth: "3",
+                strokeLinejoin: "round"
+            }), l.jsx("path", {
+                d: "M26.4972 14.1284L36.2865 17.0562C36.7099 17.1828 37 17.5723 37 18.0142V29.2701C37 29.7361 36.6781 30.1404 36.2239 30.2447L29.5054 31.7882C28.9881 31.907 28.4681 31.601 28.3208 31.0911L25.4922 21.2988C25.3214 20.7076 24.6622 20.4094 24.1054 20.6716L20.5334 22.3537C20.2351 22.4942 19.8867 22.4786 19.6021 22.312L17.4367 21.0442C16.7856 20.663 16.775 19.7256 17.4173 19.3299L25.6861 14.2351C25.9289 14.0855 26.224 14.0467 26.4972 14.1284Z",
+                fill: "#5ACFF5",
+                stroke: "#B3EEFF",
+                strokeWidth: "3",
+                strokeLinejoin: "round"
+            }), l.jsx("rect", {
+                x: "8",
+                y: "16",
+                width: "3",
+                height: "15",
+                rx: "1",
+                fill: "#B3EEFF",
+                stroke: "#B3EEFF",
+                strokeWidth: "3",
+                strokeLinejoin: "round"
+            }), l.jsx("rect", {
+                x: "37",
+                y: "16",
+                width: "3",
+                height: "15",
+                rx: "1",
+                fill: "#B3EEFF",
+                stroke: "#B3EEFF",
+                strokeWidth: "3",
+                strokeLinejoin: "round"
+            }), l.jsx("path", {
+                d: "M31.4234 8.43295C31.0664 8.4666 30.6962 8.36565 30.3971 8.11888L30.0344 7.81977L29.7353 8.18244C29.2418 8.7788 28.3575 8.86292 27.7612 8.37126C27.1648 7.87772 27.0807 6.99347 27.5724 6.39712L27.8715 6.03445L27.5088 5.73533C26.9125 5.2418 26.8283 4.35755 27.32 3.76119C27.8135 3.16484 28.6959 3.08071 29.2941 3.57238L29.6568 3.87149L29.9559 3.50882C30.4495 2.91246 31.3337 2.82834 31.9301 3.32C32.5264 3.81354 32.6105 4.69779 32.1189 5.29414L31.8198 5.65682L32.1824 5.95593C32.7788 6.44946 32.8629 7.33371 32.3713 7.93007C32.1245 8.22918 31.7805 8.3993 31.4234 8.43295Z",
+                fill: "#5ACFF5"
+            }), l.jsx("path", {
+                d: "M35.3588 10.4669C36.0103 10.4669 36.5384 9.93878 36.5384 9.28729C36.5384 8.6358 36.0103 8.10767 35.3588 8.10767C34.7073 8.10767 34.1792 8.6358 34.1792 9.28729C34.1792 9.93878 34.7073 10.4669 35.3588 10.4669Z",
+                fill: "#5ACFF5"
+            }), l.jsx("path", {
+                d: "M14.1796 40.3592C14.8311 40.3592 15.3592 39.8311 15.3592 39.1796C15.3592 38.5281 14.8311 38 14.1796 38C13.5281 38 13 38.5281 13 39.1796C13 39.8311 13.5281 40.3592 14.1796 40.3592Z",
+                fill: "#5ACFF5"
+            })]
+        }),
+        Plus: jl,
+        Premium: wl,
+        Presentation: Ml,
+        Previous: function({
+            secondary: i = t,
+            main: s = a,
+            ...n
+        }) {
+            return l.jsxs("svg", {
+                width: 24,
+                height: 24,
+                viewBox: "0 0 16 16",
+                fill: "none",
+                xmlns: "http://www.w3.org/2000/svg",
+                ...n,
+                children: [l.jsx("path", {
+                    d: "M14.6667 2.66663C14.6667 1.5679 13.4123 0.940723 12.5334 1.59996L5.42225 6.93329C4.71114 7.46663 4.71114 8.53329 5.42225 9.06663L12.5334 14.4C13.4123 15.0592 14.6667 14.432 14.6667 13.3333V2.66663Z",
+                    fill: i,
+                    stroke: s,
+                    "data-fill": "secondary",
+                    "data-stroke": "main"
+                }), l.jsx("path", {
+                    d: "M3.33325 2.33331C3.33325 1.78103 2.88554 1.33331 2.33325 1.33331C1.78097 1.33331 1.33325 1.78103 1.33325 2.33331V13.6666C1.33325 14.2189 1.78097 14.6666 2.33325 14.6666C2.88554 14.6666 3.33325 14.2189 3.33325 13.6666V2.33331Z",
+                    fill: i,
+                    stroke: s,
+                    "data-fill": "secondary",
+                    "data-stroke": "main"
+                })]
+            })
+        },
+        Programming: gl,
+        Question: zl,
+        RO: function(i) {
+            return l.jsxs("svg", {
+                width: 24,
+                height: 24,
+                viewBox: "0 0 24 24",
+                fill: "none",
+                xmlns: "http://www.w3.org/2000/svg",
+                ...i,
+                children: [l.jsx("path", {
+                    d: "M16.174.746A11.976 11.976 0 0012 0c-1.468 0-2.874.264-4.174.746L6.783 12l1.043 11.254c1.3.482 2.706.746 4.174.746 1.468 0 2.874-.264 4.174-.746L17.217 12 16.174.746z",
+                    fill: "#FFDA44"
+                }), l.jsx("path", {
+                    d: "M24 12c0-5.16-3.257-9.558-7.826-11.254v22.508C20.744 21.558 24 17.16 24 12z",
+                    fill: "#D80027"
+                }), l.jsx("path", {
+                    d: "M0 12c0 5.16 3.256 9.558 7.826 11.254V.746C3.256 2.442 0 6.84 0 12z",
+                    fill: "#0052B4"
+                })]
+            })
+        },
+        RSS: function(i) {
+            return l.jsxs("svg", {
+                width: 24,
+                height: 24,
+                fill: "none",
+                viewBox: "0 0 24 24",
+                xmlns: "http://www.w3.org/2000/svg",
+                ...i,
+                children: [l.jsx("path", {
+                    fill: "#fff",
+                    d: "M9 8h7v8H9z"
+                }), l.jsx("path", {
+                    d: "M23 9.71a8.499 8.499 0 00-.91-4.13 2.92 2.92 0 00-1.72-1A78.362 78.362 0 0012 4.27a78.45 78.45 0 00-8.34.3 2.87 2.87 0 00-1.46.74c-.9.83-1 2.25-1.1 3.45a48.29 48.29 0 000 6.48 9.55 9.55 0 00.3 2c.12.505.365.972.71 1.36a2.86 2.86 0 001.49.78c2.156.266 4.328.376 6.5.33 3.5.05 6.57 0 10.2-.28a2.88 2.88 0 001.53-.78c.28-.28.49-.623.61-1 .358-1.097.533-2.246.52-3.4.04-.56.04-3.94.04-4.54zM9.74 14.85V8.66l5.92 3.11c-1.66.92-3.85 1.96-5.92 3.08z",
+                    fill: "red"
+                })]
+            })
+        },
+        RU: function(i) {
+            return l.jsxs("svg", {
+                width: 24,
+                height: 24,
+                viewBox: "0 0 24 24",
+                fill: "none",
+                xmlns: "http://www.w3.org/2000/svg",
+                ...i,
+                children: [l.jsx("path", {
+                    d: "M12 24c6.627 0 12-5.373 12-12S18.627 0 12 0 0 5.373 0 12s5.373 12 12 12z",
+                    fill: "#F0F0F0"
+                }), l.jsx("path", {
+                    d: "M23.254 16.174c.482-1.3.746-2.706.746-4.174 0-1.468-.264-2.874-.746-4.174H.746A11.974 11.974 0 000 12c0 1.468.264 2.874.746 4.174L12 17.217l11.254-1.043z",
+                    fill: "#0052B4"
+                }), l.jsx("path", {
+                    d: "M12 24c5.16 0 9.558-3.256 11.254-7.826H.747C2.442 20.744 6.84 24 12 24z",
+                    fill: "#D80027"
+                })]
+            })
+        },
+        Reddit: Ai,
+        Report: vl,
+        RotateLeft: Ll,
+        RotateRight: Fl,
+        Rss: i => l.jsx("svg", {
+            width: 48,
+            height: 48,
+            fill: "none",
+            viewBox: "0 0 283 300",
+            xmlns: "http://www.w3.org/2000/svg",
+            ...i,
+            children: l.jsx("g", {
+                id: "Page-1",
+                stroke: "none",
+                strokeWidth: "1",
+                fill: "none",
+                fillRule: "evenodd",
+                children: l.jsxs("g", {
+                    id: "Group",
+                    transform: "translate(-0.000000, 0.000000)",
+                    children: [l.jsxs("g", {
+                        children: [l.jsx("rect", {
+                            id: "Rectangle",
+                            x: "5.75111557",
+                            y: "27.268594",
+                            width: "256",
+                            height: "256"
+                        }), l.jsx("ellipse", {
+                            id: "Oval",
+                            fill: "#3994FF",
+                            fillRule: "nonzero",
+                            opacity: "0.2",
+                            transform: "translate(108.157124, 189.822496) rotate(-61.520000) translate(-108.157124, -189.822496) ",
+                            cx: "108.157124",
+                            cy: "189.822496",
+                            rx: "82.65",
+                            ry: "78.21"
+                        }), l.jsx("ellipse", {
+                            id: "Oval",
+                            fill: "#3994FF",
+                            fillRule: "nonzero",
+                            opacity: "0.2",
+                            transform: "translate(152.673525, 123.173193) rotate(-61.520000) translate(-152.673525, -123.173193) ",
+                            cx: "152.673525",
+                            cy: "123.173193",
+                            rx: "85.23",
+                            ry: "101.2"
+                        })]
+                    }), l.jsxs("g", {
+                        transform: "translate(36.341116, 57.858594)",
+                        fillRule: "nonzero",
+                        children: [l.jsx("ellipse", {
+                            id: "Oval",
+                            fill: "#E1FBFF",
+                            cx: "61.59",
+                            cy: "133.88",
+                            rx: "15.16",
+                            ry: "14.72"
+                        }), l.jsxs("g", {
+                            transform: "translate(40.425826, 36.630000)",
+                            fill: "#E1FBFF",
+                            id: "Path",
+                            children: [l.jsx("path", {
+                                d: "M75.1241737,117.93 C71.3441737,117.42 68.6841737,114 68.6641737,110.18 C68.4941737,76.71 41.2941737,49.51 7.82417366,49.33 C4.01417366,49.31 0.584173658,46.65 0.0741736582,42.87 C-0.545826342,38.26 3.01417366,34.33 7.50417366,34.33 C49.5041737,34.33 83.6641737,68.5 83.6641737,110.49 C83.6641737,114.98 79.7241737,118.54 75.1241737,117.92 L75.1241737,117.93 Z"
+                            }), l.jsx("path", {
+                                d: "M110.224174,117.99 C106.144174,117.85 103.004174,114.28 102.994174,110.2 C102.834174,57.78 60.2141737,15.16 7.79417366,15 C3.71417366,14.99 0.144173658,11.85 0.00417365817,7.77 C-0.135826342,3.69 3.26417366,-1.42108547e-14 7.50417366,-1.42108547e-14 C68.4341737,-1.42108547e-14 118.004174,49.57 118.004174,110.5 C118.004174,114.73 114.494174,118.15 110.234174,118 L110.224174,117.99 Z"
+                            })]
+                        }), l.jsx("path", {
+                            d: "M139,-7.10542736e-15 L55.82,-7.10542736e-15 C24.99,-7.10542736e-15 -7.10542736e-15,24.99 -7.10542736e-15,55.82 L-7.10542736e-15,139 C-7.10542736e-15,169.83 24.99,194.82 55.82,194.82 L139,194.82 C169.83,194.82 194.82,169.83 194.82,139 L194.82,55.82 C194.82,24.99 169.83,-7.10542736e-15 139,-7.10542736e-15 Z M179.82,139 C179.82,161.54 161.54,179.82 139,179.82 L55.82,179.82 C33.28,179.82 15,161.54 15,139 L15,55.82 C15,33.28 33.28,15 55.82,15 L139,15 C161.54,15 179.82,33.28 179.82,55.82 L179.82,139 Z",
+                            id: "Shape",
+                            fill: "#B3EEFF"
+                        }), l.jsx("path", {
+                            d: "M194.82,55.82 L194.82,139 C194.82,169.83 169.83,194.82 139,194.82 L106.92,194.82 C102.78,194.82 99.42,191.46 99.42,187.32 L99.42,187.32 C99.42,183.18 102.78,179.82 106.92,179.82 L139,179.82 C161.54,179.82 179.82,161.54 179.82,139 L179.82,55.82 C179.82,33.28 161.54,15 139,15 L106.92,15 C102.78,15 99.42,11.64 99.42,7.5 L99.42,7.5 C99.42,3.36 102.78,-7.10542736e-15 106.92,-7.10542736e-15 L139,-7.10542736e-15 C169.83,-7.10542736e-15 194.82,24.99 194.82,55.82 L194.82,55.82 Z",
+                            id: "Path",
+                            fill: "#5ACFF5"
+                        })]
+                    })]
+                })
+            })
+        }),
+        Saved: ul,
+        Search: yl,
+        Send: kl,
+        Sent: Zl,
+        Setting: Hl,
+        Sort: Bl,
+        Sparkle: El,
+        StageChannel: Qi,
+        Star: Al,
+        Sun: Pl,
+        Support: Tl,
+        TR: function(i) {
+            return l.jsxs("svg", {
+                width: 24,
+                height: 24,
+                viewBox: "0 0 24 24",
+                fill: "none",
+                xmlns: "http://www.w3.org/2000/svg",
+                ...i,
+                children: [l.jsx("path", {
+                    d: "M12 24c6.627 0 12-5.373 12-12S18.627 0 12 0 0 5.373 0 12s5.373 12 12 12z",
+                    fill: "#D80027"
+                }), l.jsx("path", {
+                    d: "M11.509 9.806l.984 1.357 1.595-.518-.986 1.356.984 1.357-1.594-.52-.986 1.356.001-1.676L9.913 12l1.595-.517V9.806z",
+                    fill: "#F0F0F0"
+                }), l.jsx("path", {
+                    d: "M8.822 15.391a3.391 3.391 0 111.613-6.375 4.174 4.174 0 100 5.967c-.48.26-1.03.408-1.614.408z",
+                    fill: "#F0F0F0"
+                })]
+            })
+        },
+        TW: function(i) {
+            return l.jsxs("svg", {
+                width: 24,
+                height: 24,
+                viewBox: "0 0 24 24",
+                fill: "none",
+                xmlns: "http://www.w3.org/2000/svg",
+                ...i,
+                children: [l.jsx("path", {
+                    d: "M24 12c0 6.627-5.373 12-12 12S0 18.627 0 12L12 0c6.627 0 12 5.373 12 12z",
+                    fill: "#D80027"
+                }), l.jsx("path", {
+                    d: "M12 12V0C5.373 0 0 5.373 0 12h12z",
+                    fill: "#0052B4"
+                }), l.jsx("path", {
+                    d: "M10.435 7.023l-1.466.69.78 1.419-1.59-.305-.202 1.608-1.109-1.183-1.108 1.183-.202-1.608-1.591.305.78-1.42-1.465-.69 1.465-.688-.78-1.42 1.591.305.202-1.608 1.108 1.182 1.109-1.182.201 1.608 1.592-.305-.78 1.42 1.465.689z",
+                    fill: "#F0F0F0"
+                }), l.jsx("path", {
+                    d: "M6.848 9.256a2.234 2.234 0 100-4.467 2.234 2.234 0 000 4.467z",
+                    fill: "#0052B4"
+                }), l.jsx("path", {
+                    d: "M6.848 8.213c-.656 0-1.19-.534-1.19-1.19 0-.656.534-1.19 1.19-1.19.657 0 1.19.534 1.19 1.19 0 .656-.533 1.19-1.19 1.19z",
+                    fill: "#F0F0F0"
+                })]
+            })
+        },
+        TextChannel: Xi,
+        Tick: Wl,
+        TikTok: i => l.jsxs("svg", {
+            width: "42",
+            height: "42",
             viewBox: "0 0 24 24",
             fill: "none",
             xmlns: "http://www.w3.org/2000/svg",
-            ...s,
-            children: [re.jsx("path", {
-                fillRule: "evenodd",
-                clipRule: "evenodd",
-                d: "M11.7 18.512c.367.314.833.487 1.316.488a2.08 2.08 0 002.055-2.064V6.04a2.072 2.072 0 00-3.37-1.58L8.43 7.18c-.555.46-1.2.79-1.889.97a.936.936 0 00-.104.021 4.532 4.532 0 01-1.22.138A3.221 3.221 0 002 11.563m0 .001c.001.102.007.205.018.307a3.295 3.295 0 003.3 2.793h.005a4.527 4.527 0 011.117.14.924.924 0 00.098.019c.69.18 1.337.51 1.893.972l3.27 2.717M7.604 13.2c.73.265 1.415.655 2.02 1.16l3.27 2.721a.187.187 0 00.308-.145V6.04a.187.187 0 00-.301-.15L9.625 8.617c-.607.5-1.291.888-2.02 1.152V13.2zm-1.868-.39v-2.644a7.089 7.089 0 01-.565.014c-1.778.004-1.604 2.603.131 2.616h.014m.016 0h-.028-.002m.434.014l-.023-.002a6.287 6.287 0 00-.381-.012",
-                fill: e
-            }), re.jsx("path", {
-                d: "M17 12h4m-2-2v4",
-                stroke: e,
-                strokeWidth: 1.5,
-                strokeLinecap: "round"
+            children: [l.jsxs("g", {
+                clipPath: "url(#clip0_5037_14051)",
+                children: [l.jsx("path", {
+                    opacity: .2,
+                    fillRule: "evenodd",
+                    clipRule: "evenodd",
+                    d: "M2.4 0H21.6C22.9256 0 24 1.07443 24 2.4V21.6C24 22.9256 22.9256 24 21.6 24H2.4C1.07443 24 0 22.9256 0 21.6V2.4C0 1.07443 1.07443 0 2.4 0Z",
+                    fill: "#010101"
+                }), l.jsx("path", {
+                    fillRule: "evenodd",
+                    clipRule: "evenodd",
+                    d: "M15.07 22.08C15.8003 22.08 16.3924 21.4928 16.3924 20.7684C16.3924 20.0441 15.8003 19.4568 15.07 19.4568H14.8708C15.6011 19.4568 16.1932 20.0441 16.1932 20.7684C16.1932 21.4928 15.6011 22.08 14.8708 22.08H15.07Z",
+                    fill: "#EE1D51"
+                }), l.jsx("path", {
+                    fillRule: "evenodd",
+                    clipRule: "evenodd",
+                    d: "M14.8529 19.4568H14.6537C13.9234 19.4568 13.3313 20.0441 13.3313 20.7684C13.3313 21.4928 13.9234 22.08 14.6537 22.08H14.8529C14.1225 22.08 13.5305 21.4928 13.5305 20.7684C13.5305 20.0441 14.1225 19.4568 14.8529 19.4568Z",
+                    fill: "#66C8CF"
+                }), l.jsx("path", {
+                    d: "M14.8619 21.4062C15.217 21.4062 15.505 21.1207 15.505 20.7685C15.505 20.4163 15.217 20.1307 14.8619 20.1307C14.5067 20.1307 14.2188 20.4163 14.2188 20.7685C14.2188 21.1207 14.5067 21.4062 14.8619 21.4062Z",
+                    fill: "#010101"
+                }), l.jsx("path", {
+                    fillRule: "evenodd",
+                    clipRule: "evenodd",
+                    d: "M4.80005 18.864V19.5288H5.5788V22.0621H6.35784V19.5468H6.99173L7.20907 18.864H4.80005ZM11.1759 18.864V19.5288H11.9546V22.0621H12.7337V19.5468H13.3676L13.5849 18.864H11.1759ZM7.35413 19.2413C7.35413 19.033 7.52414 18.864 7.73419 18.864C7.94443 18.864 8.11464 19.033 8.11464 19.2413C8.11464 19.4496 7.94453 19.6186 7.73419 19.6186C7.52414 19.6185 7.35413 19.4496 7.35413 19.2413ZM7.35413 19.8881H8.11464V22.0621H7.35413V19.8881ZM8.44075 18.864V22.0621H9.20155V21.2357L9.43704 21.0199L10.1796 22.08H10.9946L9.92587 20.5349L10.8859 19.6005H9.96216L9.20155 20.3551V18.864H8.44075ZM16.6459 18.864V22.0621H17.4068V21.2357L17.6422 21.0199L18.3849 22.08H19.2L18.1313 20.5349L19.0913 19.6005H18.1676L17.4068 20.3551V18.864H16.6459Z",
+                    fill: "white"
+                }), l.jsx("path", {
+                    fillRule: "evenodd",
+                    clipRule: "evenodd",
+                    d: "M15.4719 7.79387C16.5225 8.54449 17.8097 8.98619 19.1998 8.98619V6.31249C18.9367 6.3126 18.6743 6.28515 18.4169 6.2306V8.33521C17.0269 8.33521 15.74 7.89351 14.689 7.14289V12.599C14.689 15.3285 12.4753 17.541 9.74455 17.541C8.72571 17.541 7.77866 17.2332 6.99194 16.7052C7.88983 17.6227 9.14196 18.192 10.5272 18.192C13.2582 18.192 15.472 15.9795 15.472 13.2499V7.79387H15.4719ZM16.4377 5.09646C15.9008 4.51019 15.5482 3.75246 15.4719 2.91476V2.57089H14.73C14.9167 3.63553 15.5537 4.54513 16.4377 5.09646ZM8.71908 14.6107C8.41912 14.2176 8.25698 13.7366 8.2577 13.2422C8.2577 11.9938 9.27031 10.9816 10.5196 10.9816C10.7523 10.9815 10.9838 11.0172 11.2057 11.0875V8.35412C10.9464 8.31861 10.6847 8.30356 10.4231 8.3091V10.4366C10.2011 10.3663 9.96956 10.3306 9.73668 10.3308C8.48743 10.3308 7.47492 11.3429 7.47492 12.5914C7.47492 13.4741 7.98103 14.2384 8.71908 14.6107Z",
+                    fill: "#EE1D52"
+                }), l.jsx("path", {
+                    fillRule: "evenodd",
+                    clipRule: "evenodd",
+                    d: "M14.6891 7.14289C15.74 7.89352 17.027 8.33521 18.417 8.33521V6.2306C17.6411 6.06548 16.9542 5.66017 16.4378 5.09646C15.5538 4.54513 14.9168 3.63553 14.7301 2.57089H12.7814V13.2498C12.777 14.4948 11.7661 15.5028 10.5196 15.5028C9.78497 15.5028 9.13236 15.1528 8.71908 14.6107C7.98103 14.2384 7.47492 13.4741 7.47492 12.5914C7.47492 11.3429 8.48743 10.3308 9.73668 10.3308C9.97601 10.3308 10.2067 10.368 10.4231 10.4367V8.3091C7.74036 8.36449 5.58276 10.5554 5.58276 13.2499C5.58276 14.595 6.12008 15.8144 6.99204 16.7053C7.77876 17.2333 8.7258 17.5411 9.74465 17.5411C12.4754 17.5411 14.6891 15.3285 14.6891 12.5991V7.14289Z",
+                    fill: "white"
+                }), l.jsx("path", {
+                    fillRule: "evenodd",
+                    clipRule: "evenodd",
+                    d: "M18.4171 6.23061V5.66152C17.7174 5.66257 17.0315 5.46673 16.4378 5.09637C16.9633 5.67139 17.6553 6.06793 18.4171 6.23061ZM14.7302 2.57089C14.7123 2.46916 14.6987 2.36674 14.6892 2.26389V1.92001H11.9985V12.5991C11.9942 13.8439 10.9834 14.8519 9.73675 14.8519C9.3707 14.8519 9.0252 14.7651 8.71915 14.6107C9.13243 15.1528 9.78504 15.5028 10.5196 15.5028C11.7661 15.5028 12.7771 14.4948 12.7815 13.2498V2.57089H14.7302ZM10.4232 8.3091V7.70325C10.1984 7.67251 9.97174 7.65714 9.74481 7.65726C7.01381 7.65726 4.80005 9.86987 4.80005 12.5991C4.80005 14.3102 5.6701 15.8181 6.99221 16.7052C6.12024 15.8143 5.58293 14.5949 5.58293 13.2498C5.58293 10.5554 7.74043 8.36449 10.4232 8.3091Z",
+                    fill: "#69C9D0"
+                }), l.jsx("path", {
+                    fillRule: "evenodd",
+                    clipRule: "evenodd",
+                    d: "M14.8709 22.08C15.6011 22.08 16.1933 21.4928 16.1933 20.7684C16.1933 20.0441 15.6011 19.4568 14.8709 19.4568H14.8528C14.1225 19.4568 13.5305 20.0441 13.5305 20.7684C13.5305 21.4928 14.1225 22.08 14.8528 22.08H14.8709ZM14.2188 20.7684C14.2188 20.4161 14.5068 20.1307 14.862 20.1307C15.2169 20.1307 15.5049 20.4161 15.5049 20.7684C15.5049 21.1208 15.2169 21.4064 14.862 21.4064C14.5068 21.4063 14.2188 21.1208 14.2188 20.7684Z",
+                    fill: "white"
+                })]
+            }), l.jsx("defs", {
+                children: l.jsx("clipPath", {
+                    id: "clip0_5037_14051",
+                    children: l.jsx("rect", {
+                        width: "48",
+                        height: "48",
+                        fill: "white"
+                    })
+                })
             })]
         }),
-        VoiceLeft: ({
-            stroke: e = "currentColor",
-            fill: t = "transparent",
-            ...s
-        }) => re.jsxs("svg", {
-            width: 24,
-            height: 24,
-            viewBox: "0 0 24 24",
-            fill: "none",
-            xmlns: "http://www.w3.org/2000/svg",
-            ...s,
-            children: [re.jsx("path", {
+        Todo: Dl,
+        Trash: _l,
+        TurnOff: Rl,
+        Twitch: Pi,
+        Twitter: Ti,
+        TwoUser: bl,
+        UAE: function(i) {
+            return l.jsxs("svg", {
+                width: 24,
+                height: 24,
+                viewBox: "0 0 24 24",
+                fill: "none",
+                xmlns: "http://www.w3.org/2000/svg",
+                ...i,
+                children: [l.jsx("path", {
+                    d: "M12 24c6.627 0 12-5.373 12-12S18.627 0 12 0 0 5.373 0 12s5.373 12 12 12z",
+                    fill: "#F0F0F0"
+                }), l.jsx("path", {
+                    d: "M6.783 16.174l1.043 7.08c1.3.482 2.706.746 4.174.746 5.16 0 9.558-3.256 11.254-7.826H6.783z",
+                    fill: "#000"
+                }), l.jsx("path", {
+                    d: "M6.783 7.826L7.826.746C9.126.264 10.532 0 12 0c5.16 0 9.558 3.256 11.254 7.826H6.783z",
+                    fill: "#6DA544"
+                }), l.jsx("path", {
+                    d: "M0 12c0 5.16 3.257 9.558 7.826 11.254V.746C3.256 2.442 0 6.84 0 12z",
+                    fill: "#A2001D"
+                })]
+            })
+        },
+        Uncollapse: ti,
+        Unlock: Sl,
+        Upload: Il,
+        User: Ol,
+        Utilities: Gl,
+        VendorEthereum: function(i) {
+            return l.jsx("svg", {
+                xmlns: "http://www.w3.org/2000/svg",
+                shapeRendering: "geometricPrecision",
+                textRendering: "geometricPrecision",
+                imageRendering: "optimizeQuality",
                 fillRule: "evenodd",
                 clipRule: "evenodd",
-                d: "M11.7 18.512c.367.314.833.487 1.316.488a2.08 2.08 0 002.055-2.064V6.04a2.072 2.072 0 00-3.37-1.58L8.43 7.18c-.555.46-1.2.79-1.889.97a.936.936 0 00-.104.021 4.532 4.532 0 01-1.22.138A3.221 3.221 0 002 11.563m0 .001c.001.102.007.205.018.307a3.295 3.295 0 003.3 2.793h.005a4.527 4.527 0 011.117.14.924.924 0 00.098.019c.69.18 1.337.51 1.893.972l3.27 2.717M7.604 13.2c.73.265 1.415.655 2.02 1.16l3.27 2.721a.187.187 0 00.308-.145V6.04a.187.187 0 00-.301-.15L9.625 8.617c-.607.5-1.291.888-2.02 1.152V13.2zm-1.868-.39v-2.644a7.089 7.089 0 01-.565.014c-1.778.004-1.604 2.603.131 2.616h.014m.016 0h-.028-.002m.434.014l-.023-.002a6.287 6.287 0 00-.381-.012",
-                fill: e
-            }), re.jsx("path", {
-                d: "M17 12h4",
-                stroke: e,
-                strokeWidth: 1.5,
-                strokeLinecap: "round"
-            })]
-        }),
-        Wallet: Le,
-        Warning: $,
-        metamask: ({
-            stroke: e = "currentColor",
-            fill: t = "transparent",
-            ...s
-        }) => re.jsxs("svg", {
-            width: 21,
-            height: 20,
-            viewBox: "0 0 21 20",
-            fill: "none",
-            xmlns: "http://www.w3.org/2000/svg",
-            ...s,
-            children: [re.jsx("path", {
-                d: "M17.707 2.22852L11.4609 6.86756L12.616 4.13059L17.707 2.22852Z",
-                fill: "#E4761B",
-                stroke: "#E4761B",
-                strokeWidth: "0.0772128",
-                strokeLinecap: "round",
-                strokeLinejoin: "round"
-            }), re.jsx("path", {
-                d: "M3.28706 2.22852L9.48292 6.9115L8.38436 4.13059L3.28706 2.22852ZM15.4591 12.9818L13.7955 15.5305L17.3549 16.5097L18.3781 13.0383L15.4591 12.9818ZM2.62793 13.0383L3.64488 16.5097L7.2042 15.5305L5.54067 12.9818L2.62793 13.0383Z",
-                fill: "#E4761B",
-                stroke: "#E4761B",
-                strokeWidth: "0.0772128",
-                strokeLinecap: "round",
-                strokeLinejoin: "round"
-            }), re.jsx("path", {
-                d: "M7.00356 8.67546L6.01172 10.1758L9.54593 10.3327L9.42038 6.53485L7.00356 8.67546ZM13.9904 8.67546L11.5422 6.49091L11.4606 10.3327L14.9885 10.1758L13.9904 8.67546ZM7.20444 15.5305L9.32622 14.4947L7.4932 13.0634L7.20444 15.5305ZM11.6677 14.4947L13.7958 15.5305L13.5007 13.0634L11.6677 14.4947Z",
-                fill: "#E4761B",
-                stroke: "#E4761B",
-                strokeWidth: "0.0772128",
-                strokeLinecap: "round",
-                strokeLinejoin: "round"
-            }), re.jsx("path", {
-                d: "M13.7954 15.5305L11.6674 14.4947L11.8369 15.882L11.818 16.4658L13.7954 15.5305ZM7.2041 15.5305L9.1815 16.4658L9.16895 15.882L9.32588 14.4947L7.2041 15.5305Z",
-                fill: "#D7C1B3",
-                stroke: "#D7C1B3",
-                strokeWidth: "0.0772128",
-                strokeLinecap: "round",
-                strokeLinejoin: "round"
-            }), re.jsx("path", {
-                d: "M9.2136 12.1469L7.44336 11.6259L8.69257 11.0546L9.2136 12.1469ZM11.7811 12.1469L12.3021 11.0546L13.5576 11.6259L11.7811 12.1469Z",
-                fill: "#233447",
-                stroke: "#233447",
-                strokeWidth: "0.0772128",
-                strokeLinecap: "round",
-                strokeLinejoin: "round"
-            }), re.jsx("path", {
-                d: "M7.20454 15.5305L7.50586 12.9818L5.54102 13.0383L7.20454 15.5305ZM13.4946 12.9818L13.7959 15.5305L15.4594 13.0383L13.4946 12.9818ZM14.9886 10.1758L11.4607 10.3327L11.7871 12.1469L12.3081 11.0546L13.5636 11.6259L14.9886 10.1758ZM7.44309 11.6259L8.69858 11.0546L9.21333 12.1469L9.54604 10.3327L6.01183 10.1758L7.44309 11.6259Z",
-                fill: "#CD6116",
-                stroke: "#CD6116",
-                strokeWidth: "0.0772128",
-                strokeLinecap: "round",
-                strokeLinejoin: "round"
-            }), re.jsx("path", {
-                d: "M6.01172 10.1758L7.4932 13.0634L7.44298 11.6259L6.01172 10.1758ZM13.5635 11.6259L13.5007 13.0634L14.9885 10.1758L13.5635 11.6259ZM9.54593 10.3327L9.21322 12.1469L9.62754 14.2875L9.7217 11.4689L9.54593 10.3327ZM11.4606 10.3327L11.2911 11.4627L11.3664 14.2875L11.787 12.1469L11.4606 10.3327Z",
-                fill: "#E4751F",
-                stroke: "#E4751F",
-                strokeWidth: "0.0772128",
-                strokeLinecap: "round",
-                strokeLinejoin: "round"
-            }), re.jsx("path", {
-                d: "M11.7874 12.1469L11.3668 14.2875L11.6681 14.4947L13.5011 13.0634L13.5639 11.6259L11.7874 12.1469ZM7.44336 11.6259L7.49358 13.0634L9.3266 14.4947L9.62792 14.2875L9.2136 12.1469L7.44336 11.6259Z",
-                fill: "#F6851B",
-                stroke: "#F6851B",
-                strokeWidth: "0.0772128",
-                strokeLinecap: "round",
-                strokeLinejoin: "round"
-            }), re.jsx("path", {
-                d: "M11.818 16.4658L11.8369 15.882L11.6799 15.7439H9.31333L9.16895 15.882L9.1815 16.4658L7.2041 15.5305L7.89462 16.0954L9.2945 17.0684H11.6988L13.1049 16.0954L13.7954 15.5305L11.818 16.4658Z",
-                fill: "#C0AD9E",
-                stroke: "#C0AD9E",
-                strokeWidth: "0.0772128",
-                strokeLinecap: "round",
-                strokeLinejoin: "round"
-            }), re.jsx("path", {
-                d: "M11.6674 14.4947L11.3661 14.2875H9.6272L9.32588 14.4947L9.16895 15.882L9.31333 15.7439H11.6799L11.8369 15.882L11.6674 14.4947Z",
-                fill: "#161616",
-                stroke: "#161616",
-                strokeWidth: "0.0772128",
-                strokeLinecap: "round",
-                strokeLinejoin: "round"
-            }), re.jsx("path", {
-                d: "M17.97 7.16888L18.5036 4.60767L17.7064 2.22852L11.6675 6.71063L13.9901 8.67547L17.2732 9.63592L18.0014 8.78847L17.6876 8.56248L18.1898 8.10422L17.8006 7.8029L18.3027 7.41998L17.97 7.16888ZM2.49609 4.60767L3.02968 7.16888L2.6907 7.41998L3.19289 7.8029L2.80997 8.10422L3.31216 8.56248L2.99829 8.78847L3.7202 9.63592L7.00331 8.67547L9.32597 6.71063L3.28705 2.22852L2.49609 4.60767Z",
-                fill: "#763D16",
-                stroke: "#763D16",
-                strokeWidth: "0.0772128",
-                strokeLinecap: "round",
-                strokeLinejoin: "round"
-            }), re.jsx("path", {
-                d: "M17.2733 9.63589L13.9901 8.67544L14.9883 10.1758L13.5005 13.0634L15.4591 13.0383H18.3781L17.2733 9.63589ZM7.00332 8.67544L3.72021 9.63589L2.62793 13.0383H5.54067L7.49296 13.0634L6.01148 10.1758L7.00332 8.67544ZM11.4603 10.3327L11.6675 6.71059L12.6217 4.13055H8.38436L9.32598 6.71059L9.5457 10.3327L9.62103 11.4752L9.6273 14.2875H11.3662L11.3787 11.4752L11.4603 10.3327Z",
-                fill: "#F6851B",
-                stroke: "#F6851B",
-                strokeWidth: "0.0772128",
-                strokeLinecap: "round",
-                strokeLinejoin: "round"
-            })]
-        })
+                viewBox: "0 0 784.37 1277.39",
+                ...i,
+                children: l.jsxs("g", {
+                    fillRule: "nonzero",
+                    children: [l.jsx("path", {
+                        fill: "#D5D5D5",
+                        d: "M392.07 0l-8.57 29.11v844.63l8.57 8.55 392.06-231.75z"
+                    }), l.jsx("path", {
+                        fill: "#FBFBFB",
+                        d: "M392.07 0L0 650.54l392.07 231.75V472.33z"
+                    }), l.jsx("path", {
+                        fill: "#DCDCDC",
+                        d: "M392.07 956.52l-4.83 5.89v300.87l4.83 14.1 392.3-552.49z"
+                    }), l.jsx("path", {
+                        fill: "#FBFBFB",
+                        d: "M392.07 1277.38V956.52L0 724.89z"
+                    }), l.jsx("path", {
+                        fill: "#707070",
+                        d: "M392.07 882.29l392.06-231.75-392.06-178.21z"
+                    }), l.jsx("path", {
+                        fill: "#DCDCDC",
+                        d: "M0 650.54l392.07 231.75V472.33z"
+                    })]
+                })
+            })
+        },
+        VendorPaypal: fa,
+        VendorPaypalLong: function(i) {
+            return l.jsxs("svg", {
+                width: 90,
+                height: 24,
+                viewBox: "0 0 90 24",
+                fill: "none",
+                xmlns: "http://www.w3.org/2000/svg",
+                ...i,
+                children: [l.jsx("path", {
+                    d: "M33.54 4.908h-4.963a.69.69 0 00-.682.584l-2.008 12.754a.414.414 0 00.41.478h2.37a.69.69 0 00.681-.584l.542-3.44a.69.69 0 01.68-.584h1.572c3.27 0 5.157-1.585 5.65-4.727.222-1.374.009-2.454-.633-3.21-.706-.831-1.957-1.27-3.619-1.27zm.573 4.659c-.271 1.784-1.632 1.784-2.948 1.784h-.75l.526-3.333a.414.414 0 01.409-.35h.343c.897 0 1.742 0 2.18.512.26.306.34.76.24 1.387zM48.378 9.51h-2.377a.414.414 0 00-.409.349l-.105.666-.166-.241c-.515-.749-1.662-.999-2.807-.999-2.627 0-4.87 1.994-5.308 4.79-.227 1.395.096 2.729.886 3.659.724.855 1.76 1.211 2.994 1.211 2.116 0 3.29-1.363 3.29-1.363l-.106.662c-.04.253.154.48.408.48h2.14a.69.69 0 00.683-.584l1.284-8.152a.413.413 0 00-.407-.479zm-3.313 4.635c-.23 1.36-1.307 2.274-2.682 2.274-.69 0-1.242-.222-1.596-.642-.352-.418-.485-1.012-.373-1.674.214-1.349 1.31-2.292 2.663-2.292.675 0 1.224.225 1.586.649.362.428.506 1.026.402 1.685zM61.037 9.51H58.65a.692.692 0 00-.572.302l-3.294 4.863-1.397-4.673a.692.692 0 00-.662-.493h-2.347a.415.415 0 00-.392.548l2.63 7.737-2.473 3.5a.414.414 0 00.338.654h2.385c.227 0 .439-.11.567-.297l7.945-11.491a.414.414 0 00-.34-.65z",
+                    fill: "#253B80"
+                }), l.jsx("path", {
+                    d: "M68.946 4.908H63.98a.69.69 0 00-.68.584l-2.008 12.754a.414.414 0 00.408.478h2.547c.237 0 .44-.173.476-.408l.57-3.616a.69.69 0 01.681-.584h1.57c3.271 0 5.157-1.585 5.651-4.727.223-1.374.009-2.454-.634-3.21-.704-.831-1.955-1.27-3.616-1.27zm.572 4.659c-.27 1.784-1.631 1.784-2.948 1.784h-.748l.526-3.333a.412.412 0 01.408-.35h.343c.896 0 1.742 0 2.18.512.26.306.339.76.24 1.387zM83.783 9.51h-2.376a.412.412 0 00-.408.349l-.105.666-.167-.241c-.515-.749-1.661-.999-2.807-.999-2.626 0-4.87 1.994-5.306 4.79-.227 1.395.095 2.729.885 3.659.725.855 1.76 1.211 2.994 1.211 2.116 0 3.29-1.363 3.29-1.363l-.106.662c-.04.253.154.48.41.48h2.14a.69.69 0 00.68-.584l1.286-8.152a.415.415 0 00-.41-.479zm-3.314 4.635c-.228 1.36-1.307 2.274-2.682 2.274-.688 0-1.241-.222-1.596-.642-.35-.418-.483-1.012-.373-1.674.216-1.349 1.31-2.292 2.664-2.292.675 0 1.224.225 1.585.649.364.428.508 1.026.402 1.685zM86.585 5.258l-2.037 12.988a.414.414 0 00.408.478h2.048a.69.69 0 00.681-.584l2.01-12.753a.414.414 0 00-.408-.48h-2.294a.415.415 0 00-.408.351z",
+                    fill: "#179BD7"
+                }), l.jsx("path", {
+                    d: "M5.274 21.203l.38-2.416-.846-.02H.77L3.576.94A.236.236 0 013.654.8a.229.229 0 01.15-.055h6.808c2.26 0 3.82.471 4.634 1.401.382.437.625.893.743 1.394.123.527.125 1.156.005 1.923l-.009.056v.492l.382.217c.321.17.577.366.773.59.326.373.538.847.627 1.41.092.578.062 1.266-.09 2.045-.174.896-.455 1.676-.835 2.315a4.76 4.76 0 01-1.325 1.454 5.37 5.37 0 01-1.784.807c-.658.171-1.407.258-2.23.258h-.53c-.379 0-.746.137-1.035.382-.29.25-.482.592-.54.966l-.04.217-.67 4.258-.031.157c-.008.049-.022.074-.042.09a.112.112 0 01-.07.026H5.274z",
+                    fill: "#253B80"
+                }), l.jsx("path", {
+                    d: "M16.729 5.576c-.02.13-.044.263-.07.4-.898 4.619-3.97 6.215-7.893 6.215H6.77a.97.97 0 00-.959.823l-1.022 6.499-.29 1.842a.512.512 0 00.504.592h3.543c.42 0 .776-.306.842-.72l.035-.18.667-4.242.043-.233a.852.852 0 01.842-.721h.53c3.432 0 6.119-1.397 6.904-5.437.328-1.688.158-3.098-.71-4.089a3.388 3.388 0 00-.97-.749z",
+                    fill: "#179BD7"
+                }), l.jsx("path", {
+                    d: "M15.79 5.2a7.062 7.062 0 00-.874-.193 11.071 11.071 0 00-1.76-.13H7.818a.852.852 0 00-.841.721l-1.135 7.206-.033.21a.97.97 0 01.959-.823h1.997c3.923 0 6.995-1.597 7.893-6.215.027-.137.049-.27.07-.4a4.783 4.783 0 00-.94-.375z",
+                    fill: "#222D65"
+                }), l.jsx("path", {
+                    d: "M6.978 5.6a.85.85 0 01.841-.721h5.336c.632 0 1.223.041 1.761.128a7.07 7.07 0 011.075.257c.265.088.51.192.738.312.267-1.707-.002-2.87-.923-3.921C14.79.496 12.958 0 10.613 0H3.805a.974.974 0 00-.962.824L.007 18.834a.586.586 0 00.577.679h4.203l1.056-6.71L6.978 5.6z",
+                    fill: "#253B80"
+                })]
+            })
+        },
+        VendorStripe: function(i) {
+            return l.jsx("svg", {
+                width: 24,
+                height: 24,
+                viewBox: "0 0 24 24",
+                fill: "none",
+                xmlns: "http://www.w3.org/2000/svg",
+                ...i,
+                children: l.jsx("path", {
+                    fillRule: "evenodd",
+                    clipRule: "evenodd",
+                    d: "M51.873 6.352l-.226-1.075h-3.148V18.03h3.636V9.375c.86-1.125 2.312-.906 2.774-.763V5.278c-.484-.174-2.185-.493-3.036 1.073v.001zm-7.297-4.234l-3.553.754-.015 11.672c0 2.152 1.619 3.745 3.779 3.745 1.189 0 2.067-.227 2.554-.483v-2.962c-.467.186-2.763.854-2.763-1.29V8.379h2.763V5.276h-2.763l-.003-3.158zm-9.851 6.86c0-.569.472-.788 1.236-.788a8.151 8.151 0 013.623.937V5.7a9.612 9.612 0 00-3.623-.666c-2.943 0-4.918 1.542-4.918 4.116 0 4.027 5.532 3.373 5.532 5.11 0 .68-.586.89-1.398.89-1.204 0-2.76-.499-3.98-1.163v3.472c1.256.547 2.61.832 3.98.838 3.025 0 5.11-1.494 5.11-4.114 0-4.347-5.563-3.57-5.563-5.207l.001.001zM10.41 7.135c0-1.027.855-1.425 2.236-1.425 2.287.05 4.53.63 6.554 1.696V1.204A17.388 17.388 0 0012.647.001C7.321 0 3.75 2.79 3.75 7.447c0 7.288 10.007 6.104 10.007 9.245 0 1.229-1.05 1.61-2.528 1.61-2.179 0-4.993-.902-7.2-2.102v6.284a18.266 18.266 0 007.2 1.516c5.474 0 9.246-2.704 9.246-7.442 0-7.865-10.065-6.46-10.065-9.42v-.002z",
+                    fill: "#6772E5"
+                })
+            })
+        },
+        VendorStripeLong: function(i) {
+            return l.jsxs("svg", {
+                width: 58,
+                height: 24,
+                viewBox: "0 0 58 24",
+                fill: "none",
+                xmlns: "http://www.w3.org/2000/svg",
+                ...i,
+                children: [l.jsx("path", {
+                    fillRule: "evenodd",
+                    clipRule: "evenodd",
+                    d: "M58 12.4c0-4.1-1.998-7.337-5.816-7.337-3.835 0-6.155 3.236-6.155 7.305 0 4.823 2.74 7.258 6.67 7.258 1.918 0 3.367-.432 4.463-1.041V15.38c-1.096.545-2.352.882-3.947.882-1.563 0-2.949-.545-3.126-2.436h7.879c0-.208.032-1.041.032-1.426zM50.04 10.88c0-1.81 1.112-2.564 2.127-2.564.982 0 2.03.753 2.03 2.564H50.04zM39.811 5.063c-1.579 0-2.594.737-3.158 1.25l-.21-.994H32.9V24l4.028-.85.016-4.533c.58.416 1.434 1.01 2.852 1.01 2.884 0 5.51-2.308 5.51-7.387-.016-4.646-2.675-7.177-5.494-7.177zm-.967 11.039c-.95 0-1.514-.337-1.9-.754l-.017-5.943c.42-.465 1-.786 1.917-.786 1.466 0 2.481 1.635 2.481 3.733 0 2.147-.998 3.75-2.48 3.75zM27.356 4.117l4.044-.865V0l-4.044.85v3.267z",
+                    fill: "#fff"
+                }), l.jsx("path", {
+                    d: "M31.4 5.335h-4.044v14.019H31.4V5.335z",
+                    fill: "#fff"
+                }), l.jsx("path", {
+                    fillRule: "evenodd",
+                    clipRule: "evenodd",
+                    d: "M23.023 6.52l-.258-1.185h-3.48v14.019h4.028v-9.5c.95-1.235 2.562-1.01 3.061-.834V5.335c-.515-.192-2.4-.545-3.351 1.186zM14.967 1.858l-3.93.834-.017 12.833c0 2.37 1.788 4.117 4.173 4.117 1.32 0 2.288-.24 2.82-.529v-3.252c-.516.208-3.062.945-3.062-1.426V8.748h3.061V5.335h-3.06l.015-3.477zM4.076 9.405c0-.625.516-.866 1.37-.866 1.224 0 2.77.369 3.995 1.026V5.8c-1.337-.529-2.658-.737-3.995-.737C2.175 5.063 0 6.76 0 9.597c0 4.422 6.122 3.717 6.122 5.623 0 .737-.644.978-1.546.978-1.338 0-3.045-.545-4.399-1.282v3.813c1.499.64 3.013.913 4.399.913 3.35 0 5.655-1.65 5.655-4.518-.017-4.774-6.155-3.925-6.155-5.72z",
+                    fill: "#fff"
+                })]
+            })
+        },
+        Video: Nl,
+        Voice: ni,
+        VoiceChannel: Yi,
+        VolumeHigh: Ul,
+        VolumeLow: Xl,
+        VolumeSlash: Yl,
+        Wallet: Kl,
+        Warning: Ql,
+        Withdrawal: ql,
+        Youtube: Wi,
+        ZoomIn: Jl,
+        ZoomOut: $l
     }, Symbol.toStringTag, {
         value: "Module"
     })),
-    ve = ({
-        icon: e,
-        stroke: t = "currentColor",
-        size: s = 24,
-        fill: l = "transparent",
-        className: r = "",
-        ...o
-    }) => {
-        const L = me[e];
-        return re.jsx(L, {
-            stroke: t,
-            fill: l,
-            width: s,
-            height: s,
-            className: `flex-shrink-0 ${r}`,
-            ...o
-        })
-    };
+    ja = {
+        XXLARGE: "xxlarge",
+        XLARGE: "xlarge",
+        LARGE: "large",
+        MEDIUM: "medium",
+        BASE: "base",
+        DEFAULT: "default",
+        SMALL: "small",
+        XSMALL: "xsmall",
+        XXSMALL: "xxsmall"
+    },
+    wa = {
+        [ja.XXLARGE]: 56,
+        [ja.XLARGE]: 48,
+        [ja.LARGE]: 40,
+        [ja.MEDIUM]: 32,
+        [ja.BASE]: 28,
+        [ja.DEFAULT]: 24,
+        [ja.SMALL]: 20,
+        [ja.XSMALL]: 16,
+        [ja.XXSMALL]: 12
+    },
+    Ma = n.svg`
+  [data-fill] {
+    transition: fill 0.15s ease-out;
+  }
+  [data-stroke] {
+    transition: stroke 0.15s ease-out;
+  }
+
+  min-width: ${l=>l.width}px;
+  min-width: ${l=>l.height}px;
+
+  ${l=>l.$main&&e`
+      [data-fill='main'] {
+        fill: ${l.$main};
+      }
+      [data-stroke='main'] {
+        stroke: ${l.$main};
+      }
+    `}
+
+  ${l=>l.$secondary&&e`
+      [data-fill='secondary'] {
+        fill: ${l.$secondary};
+      }
+      [data-stroke='secondary'] {
+        stroke: ${l.$secondary};
+      }
+    `}
+
+  ${l=>h(l)}
+  ${l=>d(l)}
+`,
+    ga = ({
+        icon: i,
+        size: s = "default",
+        main: n = a,
+        secondary: e = t,
+        ...r
+    }) => l.jsx(Ma, {
+        ...r,
+        $main: n,
+        $secondary: e,
+        as: ma[i],
+        width: wa[s],
+        height: wa[s]
+    });
+ga.propTypes = {
+    icon: i.oneOf(Object.keys(ma)),
+    size: i.oneOf(Object.values(ja)),
+    main: i.string,
+    secondary: i.string
+}, ga.defaultProps = {
+    size: ja.DEFAULT
+};
+const za = ga,
+    va = Object.freeze(Object.defineProperty({
+        __proto__: null,
+        DIMENSIONS: wa,
+        Icon: ga,
+        SIZES: ja,
+        default: za
+    }, Symbol.toStringTag, {
+        value: "Module"
+    }));
 export {
-    ke as A, xe as E, we as F, ve as I, Ze as P
+    ca as B, $i as C, _ as D, xa as E, Ca as H, za as I, ia as L, sa as M, fa as P, ea as R, ja as S, Ti as T, Yi as V, da as W, Wi as Y, o as a, oa as b, la as c, ha as d, ta as e, Ji as f, ra as g, Ai as h, Pi as i, Ei as j, pa as k, na as l, Tl as m, H as n, aa as o, Ql as p, Al as q, Ll as r, Bi as s, ga as t, D as u, yl as v, va as w
 };

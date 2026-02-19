@@ -1,7 +1,7 @@
 import {
     j as e,
     F as t
-} from "./index-684a1b71.js";
+} from "./index-75d73738.js";
 const s = s => e.jsxs("label", {
     ...s,
     className: `text-sm font-medium text-dark-400 mb-2 flex items-start max-w-max justify-start ${s.className||""}`,
