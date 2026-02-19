@@ -1,6 +1,6 @@
 import {
     r as o
-} from "./index-75d73738.js";
+} from "./index-67e26437.js";
 const s = function(s) {
     o.useEffect(s, [])
 };

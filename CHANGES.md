@@ -1,268 +1,150 @@
-# Build 98a4a5f4d54b
+# Build app-36ea11eb
 
-**Date:** 2026-02-19 22:38 UTC
-**Updated:** 38 files | **New:** 1 files
+**Date:** 2026-02-19 22:46 UTC
+**Updated:** 136 | **Added:** 0 | **Removed:** 0
 
 ## Changed Files
 
-  - **105.js** — 1 new lines
-  - **167.js** — 1 new lines
-  - **203.js** — 1 new lines
-  - **228.js** — 213 new lines
-  - **234.js** — 15 new lines
-  - **255.js** — 263 new lines
-  - **276.js** — 1 new lines
-  - **331.js** — 1 new lines
-  - **336.js** — 1 new lines
-  - **338.js** — 1 new lines
-  - **360.js** — 546 new lines
-  - **394.js** — 39674 new lines
-  - **535.js** — 46 new lines
-  - **559.js** _(new file)_ — 1114 lines
-  - **628.js** — 2 new lines
-  - **629.js** — 1 new lines
-  - **645.js** — 1 new lines
-  - **666.js** — 1 new lines
-  - **687.js** — 14403 new lines
-  - **728.js** — 1 new lines
-  - **784.js** — 142 new lines
-  - **828.js** — 3 new lines
-  - **975.js** — 1 new lines
-  - **992.js** — 1 new lines
-  - **account.js** — 115 new lines
-  - **checkout-feature-explanation.js** — 61 new lines
-  - **checkout-pending.js** — 235 new lines
-  - **checkout.js** — 161 new lines
-  - **contact-list.js** — 12 new lines
-  - **enterprise-onboarding.js** — 137 new lines
-  - **ltdn-optout.js** — 77 new lines
-  - **payment-cancel.js** — 81 new lines
-  - **payment-manage-plan.js** — 237 new lines
-  - **preview.js** — 317 new lines
-  - **pricing.js** — 17 new lines
-  - **transfer-list.js** — 391 new lines
-  - **unsubscribe-marketing.js** — 39 new lines
-  - **unsubscribe-onboarding.js** — 70 new lines
-  - **workspace-welcome.js** — 52 new lines
-
-## API Endpoints (new/changed)
-
-  - `/api/v` (394.js)
-
-## Feature Flags / Config
-
-  - `SHOW_PAYWALL` (687.js)
-  - `alert_variant` (394.js)
-  - `app_redirect_downloaders_variant` (394.js)
-  - `app_redirect_overlay_dismiss_variant` (394.js)
-  - `compliant_cancellation_flow_variant` (394.js)
-  - `disable_banner` (394.js)
-  - `disable_gb_limits` (394.js)
-  - `disable_transfer_detail_panel_ad_rotation` (394.js)
-  - `disable_transfer_numbers_limits` (394.js)
-  - `disable_workspace_switching` (394.js)
-  - `enable_comments_in_previews` (394.js)
-  - `enable_free` (338.js)
-  - `enable_full_quality_previews` (394.js)
-  - `enable_watermark_option` (394.js)
-  - `experiment_badge` (338.js)
-  - `experiment_flag` (394.js)
-  - `experiment_ids` (394.js)
-  - `feature_0` (338.js)
-  - `feature_1_alt` (338.js)
-  - `feature_1` (338.js)
-  - `feature_2_7_days` (338.js)
-  - `feature_2_subtitle` (338.js)
-  - `feature_2` (338.js)
-  - `feature_3_plural` (338.js)
-  - `feature_3` (338.js)
-  - `feature_4` (338.js)
-  - `feature_5` (338.js)
-  - `feature_6` (338.js)
-  - `feature_7` (338.js)
-  - `feature_8` (338.js)
-  - `feature_banner` (338.js)
-  - `feature_custom_background` (338.js)
-  - `feature_custom_url` (338.js)
-  - `feature_expiry` (338.js)
-  - `feature_explanation_body_2_copy` (394.js)
-  - `feature_explanation_body_font_size` (checkout-feature-explanation.js)
-  - `feature_explanation_cta_copy` (checkout-feature-explanation.js)
-  - `feature_explanation_dual_cta` (394.js)
-  - `feature_explanation_show_promo_badge` (394.js)
-  - `feature_explanation` (394.js)
-  - `feature_highlight` (338.js)
-  - `feature_one_alt` (338.js)
-  - `feature_one` (338.js)
-  - `feature_password_protection` (338.js)
-  - `feature_pre_upload_days_limit` (394.js)
-  - `feature_prompt` (338.js)
-  - `feature_prop_1` (338.js)
-  - `feature_prop_2` (338.js)
-  - `feature_prop_3` (338.js)
-  - `feature_step_auto_skipped` (394.js)
-  - `feature_step_back_clicked` (394.js)
-  - `feature_step_cta_clicked` (394.js)
-  - `feature_step_displayed` (394.js)
-  - `feature_step_skipped` (394.js)
-  - `feature_table` (338.js)
-  - `feature_three_unlimited` (338.js)
-  - `feature_three` (338.js)
-  - `feature_tooltip` (338.js)
-  - `feature_two` (338.js)
-  - `guest_checkout_variant` (394.js)
-  - `hide_consent_cookie_overlay` (394.js)
-  - `hide_details` (338.js)
-  - `hide_nav_after_recovery_subscription` (394.js)
-  - `hide_nav_bar_after_transfer_recovery_subscription` (394.js)
-  - `hide_password` (338.js)
-  - `hide_repackaging_starter_plan` (394.js)
-  - `hide_request_email_notification_days_threshold` (394.js)
-  - `hide_request_email_notification_for_new_users` (394.js)
-  - `hide_reviews` (394.js)
-  - `hide_terms_and_conditions_step` (394.js)
-  - `is_7_days_expiration_supported_for_anonymous_users_enabled` (394.js)
-  - `is_7_days_expiration_supported_for_free_users_enabled` (394.js)
-  - `is_adroit_guest_flow_enabled` (394.js)
-  - `is_android_app_entry_points_enabled` (394.js)
-  - `is_app_download_button_in_terms_conditions_enabled` (394.js)
-  - `is_app_redirect_enabled` (394.js)
-  - `is_apple_pay_enabled` (394.js)
-  - `is_apple_pay_in_payment_methods_enabled` (394.js)
-  - `is_banner_email_experiment_enabled` (394.js)
-  - `is_branded_previews_enabled` (394.js)
-  - `is_bypass_anonymous_users_transfer_size_limit_enabled` (394.js)
-  - `is_compliant_cancellation_popup_enabled` (394.js)
-  - `is_compliant_mobile_checkout_enabled` (394.js)
-  - `is_data_processing_prompt_enabled` (394.js)
-  - `is_discounted_yearly_offer_one_click_checkout_enabled` (394.js)
-  - `is_discounted_yearly_offer_periodicity_switch_modal_enabled` (394.js)
-  - `is_discounted_yearly_offer_upgrade_post_conversion_modal_enabled` (394.js)
-  - `is_downloader_paywall_free_trial_enabled` (394.js)
-  - `is_express_checkout_in_compliant_mobile_checkout_enabled` (394.js)
-  - `is_google_pay_enabled` (394.js)
-  - `is_home_screen_paywall_free_trial_enabled` (394.js)
-  - `is_home_screen_paywall_new_users_enabled` (394.js)
-  - `is_intro_paywall_free_trial_enabled` (394.js)
-  - `is_intro_paywall_new_users_enabled` (394.js)
-  - `is_ios_app_entry_points_enabled` (394.js)
-  - `is_link_payment_method_enabled` (394.js)
-  - `is_native_banner_xina_tracking_enabled` (394.js)
-  - `is_native_banner_xina_tracking_for_non_safari_enabled` (394.js)
-  - `is_nor_checkout_checkbox_enabled` (394.js)
-  - `is_nor_checkout_popup_enabled` (394.js)
-  - `is_nor_checkout_text_enabled` (394.js)
-  - `is_nor_checkout_timeline_enabled` (394.js)
-  - `is_nudge_starter_to_ultimate_banner_enabled` (394.js)
-  - `is_nudge_starter_to_ultimate_modal_enabled` (394.js)
-  - `is_nudge_starter_to_ultimate_popover_enabled` (394.js)
-  - `is_previews_monetization_enabled` (394.js)
-  - `is_recover_expired_transfer_checkout_feature_explanation_screen_enabled` (394.js)
-  - `is_redirect_to_checkout_instead_of_pricing_enabled` (394.js)
-  - `is_repackaging_enabled` (394.js)
-  - `is_save_ad_fake_door_test_enabled` (394.js)
-  - `is_ultimate_yearly_ft_banner_enabled` (394.js)
-  - `is_ultimate_yearly_ft_popover_enabled` (394.js)
-  - `is_wetransfer_sign_enabled` (394.js)
-  - `is_wetransfer_sign_sample_document_enabled` (394.js)
-  - `recap_ultimate_secondary_features_variant` (394.js)
-  - `recovery_reminder_variant` (394.js)
-  - `show_ad_age_25_plus_survey` (394.js)
-  - `show_ad_age_30_60_survey` (394.js)
-  - `show_ad_age_survey` (394.js)
-  - `show_after_timer_days` (394.js)
-  - `show_all_files_mobile` (338.js)
-  - `show_banner` (394.js)
-  - `show_collections_banner` (394.js)
-  - `show_collections_download` (394.js)
-  - `show_collections_tooltip` (394.js)
-  - `show_collections_uploader` (394.js)
-  - `show_discounted_yearly_offer_post_conversion_modal` (394.js)
-  - `show_icons_only_on_hover_preview` (394.js)
-  - `show_mobile_banner` (394.js)
-  - `show_modal` (394.js)
-  - `show_more_prominent_cookie_wall_close_button` (394.js)
-  - `show_option_upsell_icon` (394.js)
-  - `show_panel` (394.js)
-  - `show_password` (338.js)
-  - `show_payment_alert` (394.js)
-  - `show_paywall` (687.js)
-  - `show_previews_in_feature_explanation_screen` (394.js)
-  - `show_previews_in_recovery_download_window` (394.js)
-  - `show_product_comms_banner` (394.js)
-  - `show_progress` (394.js)
-  - `show_reactivation_banner` (394.js)
-  - `show_reactivation_popover` (394.js)
-  - `show_reactivation_tw_popup` (394.js)
-  - `show_request_form` (394.js)
-  - `show_secondary_button` (394.js)
-  - `show_size_upsell_under_2GB` (394.js)
-  - `show_tac_in_transfer_window` (394.js)
-  - `show_terms_and_cookie` (394.js)
-  - `show_tooltip` (394.js)
-  - `show_uk_female_18_plus_survey` (394.js)
-  - `show_ultimate_welcome_modal` (394.js)
-  - `show_ultimate_yearly_ft_modal_on_pricing_page_close` (394.js)
-  - `show_upload_files` (394.js)
-  - `show_upload_progress_card_trigger` (394.js)
-  - `show_upload_recovery` (394.js)
-  - `show_wetransfer_sign_landing_on_anon_navbar` (394.js)
+  - **401.js** — 3 new lines
+  - **404.js** — 5 new lines
+  - **Blockquote.js** — 3 new lines
+  - **Button.js** — 6 new lines
+  - **CSSTransition.js** — 1 new lines
+  - **ContentPreview.js** — 6 new lines
+  - **CustomBot.js** — 14 new lines
+  - **Divider.js** — 4 new lines
+  - **FAQ.js** — 5 new lines
+  - **Footer.js** — 4 new lines
+  - **Grid.js** — 3 new lines
+  - **GuildLogo.js** — 2 new lines
+  - **Icon.js** _(new)_
+  - **Loader.js** — 3 new lines
+  - **Loader2.js** — 1 new lines
+  - **Logo.js** — 3 new lines
+  - **Plugins.js** — 15 new lines
+  - **Skeleton.js** — 1 new lines
+  - **TemplatedSVG.js** — 1 new lines
+  - **Title.js** _(new)_
+  - **Tutorials.js** — 18 new lines
+  - **Typography.js** — 4 new lines
+  - **WalletLanding.js** — 27 new lines
+  - **_baseAssignValue.js** — 1 new lines
+  - **_baseClone.js** — 5 new lines
+  - **_baseEach.js** — 1 new lines
+  - **_baseFlatten.js** — 2 new lines
+  - **_baseIteratee.js** — 3 new lines
+  - **_baseMap.js** — 2 new lines
+  - **_baseOrderBy.js** — 4 new lines
+  - **_baseSet.js** — 3 new lines
+  - **_defineProperty.js** — 1 new lines
+  - **_getAllKeysIn.js** — 4 new lines
+  - **achievements-login.js** — 8 new lines
+  - **aos.js** — 1 new lines
+  - **api.js** — 1 new lines
+  - **app.js** — 63 new lines
+  - **arrow.js** — 1 new lines
+  - **award.js** — 1 new lines
+  - **banner.js** — 2 new lines
+  - **blanket.js** — 1 new lines
+  - **button_card.js** — 2 new lines
+  - **card.js** — 2 new lines
+  - **channels-selector.constants.js** — 7 new lines
+  - **clock.js** — 1 new lines
+  - **collapse.js** — 1 new lines
+  - **color-picker.js** — 10 new lines
+  - **community.js** — 7 new lines
+  - **confirm_modal.js** — 2 new lines
+  - **create.js** — 2 new lines
+  - **discord_button.js** — 2 new lines
+  - **discord_verified.js** — 1 new lines
+  - **drag.js** — 2 new lines
+  - **dropdown.constants.js** — 1 new lines
+  - **dropdown.js** — 4 new lines
+  - **edit.js** — 1 new lines
+  - **emoji.js** — 1 new lines
+  - **expandable.js** — 2 new lines
+  - **export.js** — 1 new lines
+  - **formatProgressPercentage.js** — 1 new lines
+  - **guild_icon.js** — 1 new lines
+  - **hateoas.js** — 4 new lines
+  - **icon.js** — 762 new lines
+  - **index.js** — 3 new lines
+  - **inline_radio_select.js** — 2 new lines
+  - **input.utils.js** — 4 new lines
+  - **install_metamask.js** — 3 new lines
+  - **isArguments.js** — 1 new lines
+  - **label.js** — 1 new lines
+  - **leaderboard_notfound.js** — 35 new lines
+  - **load_notifications.js** — 2 new lines
+  - **loading_plans.js** — 6 new lines
+  - **lock.js** — 1 new lines
+  - **lodash.js** — 1 new lines
+  - **login.js** — 8 new lines
+  - **memberships_landing.js** — 21 new lines
+  - **meta-naut.js** — 1 new lines
+  - **minBy.js** — 3 new lines
+  - **minus.js** — 1 new lines
+  - **mixins.js** — 3 new lines
+  - **modal.constants.js** — 1 new lines
+  - **monetize_plans.js** — 3 new lines
+  - **nft_check.js** — 1 new lines
+  - **notifications.js** — 6 new lines
+  - **numeral.js** — 1 new lines
+  - **page_view.js** — 1 new lines
+  - **paywall-banner.js** — 2 new lines
+  - **personalize_banner.js** — 3 new lines
+  - **plan-container.js** — 3 new lines
+  - **plan.js** — 3 new lines
+  - **plugin_header.js** — 6 new lines
+  - **plus.js** — 1 new lines
+  - **premium.js** — 42 new lines
+  - **promo.js** — 33 new lines
+  - **public_page.js** — 3 new lines
+  - **radio.js** — 2 new lines
+  - **range.js** — 3 new lines
+  - **rank_card_modal.js** — 36 new lines
+  - **rank_card_page.js** — 5 new lines
+  - **rank_card_render.js** — 3 new lines
+  - **react-markdown.js** — 3 new lines
+  - **role.js** — 3 new lines
+  - **rotate.js** — 1 new lines
+  - **routing.js** — 27 new lines
+  - **routing_lazy.js** — 1 new lines
+  - **select.js** — 5 new lines
+  - **sortBy.js** — 6 new lines
+  - **styles.js** — 6 new lines
+  - **subscriptions.js** — 26 new lines
+  - **tabs.js** — 9 new lines
+  - **throttle.js** — 2 new lines
+  - **tick.js** — 1 new lines
+  - **tinycolor.js** — 1 new lines
+  - **title.js** — 1 new lines
+  - **toggle.js** — 1 new lines
+  - **transfer.js** — 28 new lines
+  - **trash.js** — 1 new lines
+  - **trusted_by.js** — 4 new lines
+  - **tslib.js** — 1 new lines
+  - **twitter.js** — 1 new lines
+  - **use-isomorphic-layout-effect.browser.esm.js** — 1 new lines
+  - **useCharactersVersion.js** — 1 new lines
+  - **useEffectOnce.js** — 1 new lines
+  - **useGuilds.js** — 2 new lines
+  - **useInfiniteScroll.js** — 2 new lines
+  - **useInterval.js** — 1 new lines
+  - **useMembershipsPlan.js** — 1 new lines
+  - **useMount.js** — 1 new lines
+  - **usePlans.js** — 3 new lines
+  - **usePluginConfig.js** — 3 new lines
+  - **useSearchParam.js** — 2 new lines
+  - **useSubscription.js** — 3 new lines
+  - **useUnmount.js** — 2 new lines
+  - **utils.js** — 1 new lines
+  - **viewports.js** — 1 new lines
+  - **wallet.js** — 1 new lines
+  - **warning.js** — 1 new lines
+  - **web3-provider.js** — 1 new lines
 
 ## URLs / External Services
 
-  - `http://auth0.com/oauth/grant-type/passwordless/otp` (394.js)
-  - `http://www.w3.org/2000/svg` (559.js)
-  - `https://apps.apple.com/app/wetransfer/id1569379048` (394.js)
-  - `https://apps.rokt.com/wsdk/integrations/launcher.js` (394.js)
-  - `https://bsp-proxy.wetransfer.net` (394.js)
-  - `https://bsp-proxy.wetransferbeta.net` (394.js)
-  - `https://dashboard.stripe.com` (394.js)
-  - `https://facebook.com/wetransfer` (338.js)
-  - `https://github.com/date-fns/date-fns/blob/master/docs/unicodeTokens.md` (687.js)
-  - `https://help.wetransfer.com/hc/en-us/articles/202701853-Can-I-download-a-transfer-that-expired` (394.js)
-  - `https://help.wetransfer.com/hc/en-us/articles/204531329-What-are-confirmation-emails` (394.js)
-  - `https://help.wetransfer.com/hc/en-us/articles/204909429` (338.js)
-  - `https://help.wetransfer.com/hc/en-us/articles/208554156-How-to-recognise-malicious-files-which-are-spam` (394.js)
-  - `https://help.wetransfer.com/hc/en-us/articles/208554246-Do-you-look-at-my-files` (394.js)
-  - `https://help.wetransfer.com/hc/en-us/articles/22325866917010` (394.js)
-  - `https://help.wetransfer.com/hc/en-us/articles/23265597795346-Changes-to-WeTransfer-plans-December-2024` (394.js)
-  - `https://help.wetransfer.com/hc/en-us/articles/23797009758098` (394.js)
-  - `https://help.wetransfer.com/hc/en-us/articles/26053056849938-Configuring-A-Firewall-For-WeTransfer` (394.js)
-  - `https://help.wetransfer.com/hc/en-us/articles/29534541930770-Introduction-to-Previews` (394.js)
-  - `https://help.wetransfer.com/hc/en-us/articles/33138619382418-Consent-requirements-for-health-related-file-uploads` (394.js)
-  - `https://help.wetransfer.com/hc/en-us/articles/4409531949716-How-to-set-up-an-Enterprise-Workspace` (394.js)
-  - `https://help.wetransfer.com/hc/en-us/requests/new` (338.js)
-  - `https://help.wetransfer.com/hc/en-us` (687.js)
-  - `https://js.hcaptcha.com` (687.js)
-  - `https://mobile.wetransfer.com/email-verified` (394.js)
-  - `https://ms732111.typeform.com/to/glOV7QLB` (394.js)
-  - `https://play.google.com/store/apps/details` (394.js)
-  - `https://privacy.wetransfer.com/fides.js` (394.js)
-  - `https://reactjs.org/` (687.js)
-  - `https://status.wetransfer.com/` (394.js)
-  - `https://stripe.com/gb/pricing` (338.js)
-  - `https://twitter.com/WeTransfer` (338.js)
-  - `https://wepresent.wetransfer.com/` (338.js)
-  - `https://wetransfer.com/` (338.js)
-  - `https://wetransfer.com/blog/story/the-latest-from-wetransfer-sep-2025` (394.js)
-  - `https://wetransfer.com/explore/new-free-basic-account-coming` (338.js)
-  - `https://wetransfer.com/explore/new-free-basic-account` (338.js)
-  - `https://wetransfer.com/explore/sell-files-get-paid` (394.js)
-  - `https://wetransfer.com/jobs` (338.js)
-  - `https://wetransfer.com/legal/manage-cookies` (338.js)
-  - `https://wetransfer.com/pricing` (338.js)
-  - `https://wetransfer.com` (338.js)
-  - `https://wetransfer.zendesk.com/hc/en-us/articles/115005062963` (338.js)
-  - `https://wetransfer.zendesk.com/hc/en-us/articles/360033809331` (338.js)
-  - `https://wetransfer.zendesk.com/hc/en-us/sections/201887176-Downloading-a-transfer-on-a-mobile-device` (338.js)
-  - `https://wetransfer.zendesk.com` (338.js)
-  - `https://wetransfer1.typeform.com/to/dM1m4Dxj` (394.js)
-  - `https://wetransferbeta.com` (394.js)
-  - `https://www.facebook.com/wetransfer` (338.js)
-  - `https://www.google.com/recaptcha/api.js` (394.js)
-  - `https://www.instagram.com/WeTransfer/` (338.js)
-  - `https://www.surveymonkey.com/r/2HTSNSZ` (338.js)
-  - `https://www.youtube.com/WeTransfer` (338.js)
-  - `https://x.bndspn.com/v1/` (394.js)
-  - `https://x.bndspn.com/v1` (394.js)
+  - `http://www.w3.org/2000/svg` (Icon.js)
 

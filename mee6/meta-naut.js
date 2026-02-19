@@ -1,6 +1,6 @@
 import {
     j as l
-} from "./index-75d73738.js";
+} from "./index-67e26437.js";
 const L = L => l.jsxs("svg", {
     width: 156,
     height: 300,

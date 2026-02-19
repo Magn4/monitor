@@ -2,7 +2,7 @@ import {
     j as e,
     a7 as t,
     a8 as a
-} from "./index-75d73738.js";
+} from "./index-67e26437.js";
 const r = ({
     path: r,
     element: s,
