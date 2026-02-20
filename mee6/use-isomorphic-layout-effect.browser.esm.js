@@ -1,6 +1,6 @@
 import {
     r as t
-} from "./index-67e26437.js";
+} from "./index-8524466f.js";
 
 function e(t) {
     return t.split("-")[1]

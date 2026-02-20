@@ -9,13 +9,13 @@ import {
     ak as o,
     aM as l,
     j as c
-} from "./index-67e26437.js";
+} from "./index-8524466f.js";
 import {
     T as d
-} from "./TemplatedSVG-f9a079b3.js";
+} from "./TemplatedSVG-f333c6b7.js";
 import {
     e as g
-} from "./app-36ea11eb.js";
+} from "./app-3ecfb394.js";
 const u = () => n.get("/users/@me/guilds/settings"),
     p = () => n.get("/users/@me/guilds"),
     f = (a, e) => n.patch(`/users/@me/guilds/${a}/settings`, e),

@@ -1,6 +1,6 @@
 import {
     A as a
-} from "./Loader2-a0775a07.js";
+} from "./Loader2-7697ef2c.js";
 const i = {
         TABLET: 1024,
         PHONE: 670,

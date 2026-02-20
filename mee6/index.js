@@ -18841,7 +18841,7 @@ const kx = (e = !1) => {
             o = n.values ? n.values : {},
             a = kx();
         return dr.useEffect((() => {
-            n.visible && cb("error", null, t), n.visible && y((() => import("./index-62f4a86a.js")), ["assets/index-62f4a86a.js", "assets/modal.constants-b19a0d48.js", "assets/modal-d7fe36af.css"]).then((t => {
+            n.visible && cb("error", null, t), n.visible && y((() => import("./index-68064cc3.js")), ["assets/index-68064cc3.js", "assets/modal.constants-cb2154a2.js", "assets/modal-d7fe36af.css"]).then((t => {
                 e.current = t.Modal, a.open()
             }))
         }), [JSON.stringify(n)]), dr.useEffect((() => {
@@ -25494,7 +25494,7 @@ const sP = n(aP),
         dr.useEffect((() => {
             E(o)
         }), [o]), dr.useEffect((() => {
-            r && "string" == typeof r && y((() => import("./Icon-1873cd36.js").then((e => e.w))), ["assets/Icon-1873cd36.js", "assets/Loader2-a0775a07.js", "assets/mixins-9df48c32.js", "assets/viewports-069dca7e.js"]).then((e => {
+            r && "string" == typeof r && y((() => import("./Icon-4e39fbba.js").then((e => e.w))), ["assets/Icon-4e39fbba.js", "assets/Loader2-7697ef2c.js", "assets/mixins-3b232174.js", "assets/viewports-3f8c58d0.js"]).then((e => {
                 _.current = e.default, b(!0)
             }))
         }), [r]);
@@ -26436,7 +26436,7 @@ window.dataLayer = [], window.dataLayer.push({
 });
 const DN = (LN = [TP({
     path: "/:language/*",
-    element: () => y((() => import("./app-36ea11eb.js").then((e => e.bo))), ["assets/app-36ea11eb.js", "assets/Loader2-a0775a07.js", "assets/modal.constants-b19a0d48.js", "assets/modal-d7fe36af.css", "assets/moment-e0d604bc.js", "assets/app-f2784ea6.css"])
+    element: () => y((() => import("./app-3ecfb394.js").then((e => e.bo))), ["assets/app-3ecfb394.js", "assets/Loader2-7697ef2c.js", "assets/modal.constants-cb2154a2.js", "assets/modal-d7fe36af.css", "assets/moment-e0d604bc.js", "assets/app-f2784ea6.css"])
 }), {
     path: "/*",
     element: ab.jsx(PN, {})

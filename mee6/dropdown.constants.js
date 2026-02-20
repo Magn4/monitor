@@ -4,7 +4,7 @@ import {
     X as e,
     Z as r,
     _ as t
-} from "./index-67e26437.js";
+} from "./index-8524466f.js";
 const d = {
     primary: a,
     secondary: a,

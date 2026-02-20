@@ -5,28 +5,28 @@ import {
     r as s,
     j as r,
     L as t
-} from "./index-67e26437.js";
+} from "./index-8524466f.js";
 import {
     c as i,
     u as l,
     e as d,
     I as m
-} from "./app-36ea11eb.js";
+} from "./app-3ecfb394.js";
 import {
     f as o
-} from "./api-32050a10.js";
+} from "./api-98f0f679.js";
 import {
     a as c
-} from "./api-4ff79e81.js";
+} from "./api-d035e703.js";
 import {
     u
-} from "./hateoas-eeb2bb58.js";
+} from "./hateoas-e73aedc7.js";
 import {
     P as p
-} from "./plan-2f28e7ee.js";
+} from "./plan-a6f91deb.js";
 import {
     u as x
-} from "./useCharactersVersion-fce26d99.js";
+} from "./useCharactersVersion-f7310e09.js";
 const b = () => {
         const {
             loadPortal: e

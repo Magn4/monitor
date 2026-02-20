@@ -2,7 +2,7 @@ import {
     al as e,
     e as t,
     j as r
-} from "./index-67e26437.js";
+} from "./index-8524466f.js";
 var n = {
         exports: {}
     },
