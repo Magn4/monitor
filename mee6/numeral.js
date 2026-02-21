@@ -2,7 +2,7 @@ import {
     j as e,
     al as r,
     e as t
-} from "./index-8524466f.js";
+} from "./index-e0afec69.js";
 const n = ({
         stroke: r = "currentColor",
         fill: t = "transparent",

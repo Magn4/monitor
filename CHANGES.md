@@ -1,7 +1,7 @@
-# Build app-3ecfb394
+# Build app-b4886647
 
-**Date:** 2026-02-20 09:17 UTC
-**Updated:** 137 | **Added:** 0 | **Removed:** 0
+**Date:** 2026-02-21 04:53 UTC
+**Updated:** 136 | **Added:** 0 | **Removed:** 0
 
 ## Changed Files
 
@@ -23,7 +23,7 @@
   - **Logo.js** — 3 new lines
   - **Plugins.js** — 15 new lines
   - **Skeleton.js** — 1 new lines
-  - **TemplatedSVG.js** — 1 new lines
+  - **TemplatedSVG.js** — 377 new lines
   - **Title.js** _(new)_
   - **Tutorials.js** — 18 new lines
   - **Typography.js** — 4 new lines
@@ -41,7 +41,7 @@
   - **achievements-login.js** — 8 new lines
   - **aos.js** — 1 new lines
   - **api.js** — 1 new lines
-  - **app.js** — 65 new lines
+  - **app.js** — 63 new lines
   - **arrow.js** — 1 new lines
   - **award.js** — 1 new lines
   - **banner.js** — 2 new lines
@@ -62,13 +62,12 @@
   - **dropdown.js** — 4 new lines
   - **edit.js** — 1 new lines
   - **emoji.js** — 1 new lines
-  - **en_US.js** — 3 new lines
   - **expandable.js** — 2 new lines
   - **export.js** — 1 new lines
   - **formatProgressPercentage.js** — 1 new lines
   - **guild_icon.js** — 1 new lines
   - **hateoas.js** — 4 new lines
-  - **icon.js** — 762 new lines
+  - **icon.js** — 17 new lines
   - **index.js** — 3 new lines
   - **inline_radio_select.js** — 2 new lines
   - **input.utils.js** — 4 new lines
@@ -119,7 +118,7 @@
   - **throttle.js** — 2 new lines
   - **tick.js** — 1 new lines
   - **tinycolor.js** — 1 new lines
-  - **title.js** — 1 new lines
+  - **title.js** — 26 new lines
   - **toggle.js** — 1 new lines
   - **transfer.js** — 28 new lines
   - **trash.js** — 1 new lines
@@ -148,4 +147,5 @@
 ## URLs / External Services
 
   - `http://www.w3.org/2000/svg` (Icon.js)
+  - `https://handlebarsjs.com/api-reference/runtime-options.html` (TemplatedSVG.js)
 

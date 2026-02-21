@@ -1,14 +1,14 @@
 import {
     j as s,
     F as e
-} from "./index-8524466f.js";
+} from "./index-e0afec69.js";
 import {
     C as l,
     T as t
-} from "./title-d9168bee.js";
+} from "./title-3c34354c.js";
 import {
     A as a
-} from "./discord_button-2c2f1fb5.js";
+} from "./discord_button-a905de9f.js";
 const i = ({
     title: i = "home.customize.title",
     className: m

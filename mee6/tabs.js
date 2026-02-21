@@ -17,7 +17,7 @@ import {
     ar as x,
     Q as f,
     f as g
-} from "./index-8524466f.js";
+} from "./index-e0afec69.js";
 import {
     t as b,
     f as j,
@@ -25,27 +25,27 @@ import {
     R as k,
     v as w,
     w as C
-} from "./app-3ecfb394.js";
+} from "./app-b4886647.js";
 import {
     W as $,
     s as N,
     A as _
-} from "./Loader2-7697ef2c.js";
+} from "./Loader2-ea5f73c7.js";
 import {
     B as y
-} from "./Button-94ca6da8.js";
+} from "./Button-d3f985cd.js";
 import {
     a as P,
     s as S,
     m as R
-} from "./viewports-3f8c58d0.js";
+} from "./viewports-530dfeda.js";
 import {
     I
-} from "./Icon-4e39fbba.js";
+} from "./Icon-f55c9eb7.js";
 import {
     W as U,
     C as T
-} from "./modal.constants-cb2154a2.js";
+} from "./modal.constants-09c27985.js";
 const z = "/assets/IllustrationPower-92920737.svg",
     E = $`
   0%{
@@ -397,8 +397,8 @@ const Z = e => {
             s && ((async () => {
                 try {
                     const e = await v(Object.assign({
-                        "../../../comps/premium/themes/default.tsx": () => h((() => import("./default-74932e22.js")), ["assets/default-74932e22.js", "assets/index-8524466f.js", "assets/index-9529b95d.css", "assets/app-3ecfb394.js", "assets/Loader2-7697ef2c.js", "assets/modal.constants-cb2154a2.js", "assets/modal-d7fe36af.css", "assets/moment-e0d604bc.js", "assets/app-f2784ea6.css"]),
-                        "../../../comps/premium/themes/emojis.tsx": () => h((() => import("./emojis-982f3b3e.js")), ["assets/emojis-982f3b3e.js", "assets/index-8524466f.js", "assets/index-9529b95d.css", "assets/app-3ecfb394.js", "assets/Loader2-7697ef2c.js", "assets/modal.constants-cb2154a2.js", "assets/modal-d7fe36af.css", "assets/moment-e0d604bc.js", "assets/app-f2784ea6.css", "assets/crown-f06f772d.js"])
+                        "../../../comps/premium/themes/default.tsx": () => h((() => import("./default-01b29f6b.js")), ["assets/default-01b29f6b.js", "assets/index-e0afec69.js", "assets/index-9529b95d.css", "assets/app-b4886647.js", "assets/Loader2-ea5f73c7.js", "assets/modal.constants-09c27985.js", "assets/modal-d7fe36af.css", "assets/moment-e0d604bc.js", "assets/app-f2784ea6.css"]),
+                        "../../../comps/premium/themes/emojis.tsx": () => h((() => import("./emojis-7a7d7631.js")), ["assets/emojis-7a7d7631.js", "assets/index-e0afec69.js", "assets/index-9529b95d.css", "assets/app-b4886647.js", "assets/Loader2-ea5f73c7.js", "assets/modal.constants-09c27985.js", "assets/modal-d7fe36af.css", "assets/moment-e0d604bc.js", "assets/app-f2784ea6.css", "assets/crown-292e00a0.js"])
                     }), `../../../comps/premium/themes/${l}.tsx`);
                     k.current = e.default, w.current = e.Image, c(!1)
                 } catch (e) {
