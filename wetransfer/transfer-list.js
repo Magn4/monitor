@@ -405,8 +405,8 @@
                 s = a(21462),
                 d = a(75546),
                 n = a(38169),
-                o = a(74941),
-                _ = a(85633),
+                o = a(97460),
+                _ = a(16173),
                 m = a(32976),
                 w = a(65509);
             let {
@@ -617,9 +617,9 @@
                     children: C.A.t("page.transfers.search_results.retry")
                 })]
             });
-            var q = a(96622),
-                D = a(37796),
-                z = a(97116),
+            var q = a(78207),
+                D = a(20151),
+                z = a(15933),
                 O = a(61360),
                 P = a(99405),
                 V = a.n(P);
@@ -840,7 +840,7 @@
                         })
                     }) : null
                 };
-            var J = a(81436),
+            var J = a(42669),
                 K = a(6324),
                 Y = a.n(K);
             let $ = e => {
@@ -1010,7 +1010,7 @@
                         })]
                     })
                 };
-            var ea = a(11417),
+            var ea = a(11828),
                 el = a(81507),
                 er = a(37254),
                 ei = a(25418),
@@ -2829,7 +2829,7 @@
                     children: eR.A.getWorkspaceName(a, t)
                 })
             };
-            var tP = a(30149),
+            var tP = a(19724),
                 tV = a(49320),
                 tH = a(69769),
                 tU = a(69938),
@@ -3006,7 +3006,7 @@
                             className: t2().Icon
                         })]
                     }), I && (0, l.jsx)(tK.B, {
-                        html: C.A.t("notification.link_copied")
+                        i18nKey: "notification.link_copied"
                     }), M && (0, l.jsxs)(tw.A, {
                         text: (0, l.jsx)("div", {
                             className: "transferlist__actionbar",
@@ -3126,8 +3126,8 @@
                 as = a(5712),
                 ad = a(62760),
                 an = a(38679),
-                ao = a(43699),
-                a_ = a(84607),
+                ao = a(37874),
+                a_ = a(84926),
                 am = a(83489),
                 aw = a(12924),
                 ag = a(58253),
@@ -4757,4 +4757,4 @@
         }
     }
 ]);
-//# sourceMappingURL=transfer-list.d958bcad39e241a5.js.map
+//# sourceMappingURL=transfer-list.b9774630dbe3455c.js.map

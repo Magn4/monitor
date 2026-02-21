@@ -2399,13 +2399,13 @@
                 tJ = i(68401),
                 t$ = i(98172);
             let tX = t => {
-                var e, i, o, c;
+                var e, i, o, c, u;
                 let {
-                    isFirstAdSdkLoad: u,
-                    setIsFirstAdSdkLoad: p
-                } = t, D = (0, n.wA)(), w = (0, a.useRef)(null), {
-                    setAdsdkLoaded: b
-                } = (0, s.on)(), A = (0, a.useRef)(performance.now()), E = (0, ta.jy)(), U = (() => {
+                    isFirstAdSdkLoad: p,
+                    setIsFirstAdSdkLoad: D
+                } = t, w = (0, n.wA)(), b = (0, a.useRef)(null), {
+                    setAdsdkLoaded: A
+                } = (0, s.on)(), E = (0, a.useRef)(performance.now()), U = (0, ta.jy)(), k = (() => {
                     let {
                         settings: t
                     } = (0, tE.k)();
@@ -2430,8 +2430,8 @@
                             return
                     }
                 })(), {
-                    shouldMount: k,
-                    shouldDisplay: C
+                    shouldMount: C,
+                    shouldDisplay: L
                 } = tn();
                 (() => {
                     let t = (0, n.d4)(K.mB);
@@ -2563,46 +2563,46 @@
                         }
                     }, [o, r, t])
                 })();
-                let L = h(),
+                let N = h(),
                     {
-                        isReady: N,
-                        result: M
+                        isReady: M,
+                        result: j
                     } = tz(),
-                    j = (0, a.useRef)(void 0),
                     z = (0, a.useRef)(void 0),
+                    q = (0, a.useRef)(void 0),
                     {
-                        auth: q,
-                        session: V,
-                        user: W,
-                        route: Z,
-                        layout: G,
-                        channel: J
+                        auth: V,
+                        session: W,
+                        user: Z,
+                        route: G,
+                        layout: J,
+                        channel: $
                     } = (0, d.lV)(),
-                    $ = (0, tG.mx)(tG.cm),
-                    X = (0, tG.mx)(tG.Q0),
-                    tt = Z.path.includes("download"),
-                    te = tj(V, Z),
-                    ti = tM(V, Z),
-                    tr = (0, ta.uz)({
-                        auth: q,
-                        session: V
+                    X = (0, tG.mx)(tG.cm),
+                    tt = (0, tG.mx)(tG.Q0),
+                    te = G.path.includes("download"),
+                    ti = tj(W, G),
+                    tr = tM(W, G),
+                    to = (0, ta.uz)({
+                        auth: V,
+                        session: W
                     }),
-                    to = (0, tB.Tw)(),
-                    tl = (0, tB.av)(),
-                    ts = (0, n.d4)(th),
-                    td = tJ.A.areAccepted(),
-                    tc = Z.path.match(/download/) ? "download" : "upload",
-                    tu = !(0, n.d4)(K.lD),
-                    tp = null != (o = (0, tY.Al)(W)) ? o : null,
-                    tm = (null == Z || null == (e = Z.params) ? void 0 : e.advert_id) || void 0,
-                    tg = (0, n.d4)(t$.JQ),
-                    tf = (0, S.J)().hasRedeemedFreeTrial,
-                    t_ = (0, R.vb)(T.V.UK_AGE),
-                    tv = (0, R.vb)(T.V.US_DE_AGE_30_60),
-                    ty = (0, R.vb)(T.V.FR_25_PLUS),
-                    tw = (0, R.vb)(T.V.UK_FEMALE_18_PLUS),
-                    tP = (() => {
-                        switch (t_) {
+                    tl = (0, tB.Tw)(),
+                    ts = (0, tB.av)(),
+                    td = (0, n.d4)(th),
+                    tc = tJ.A.areAccepted(),
+                    tu = G.path.match(/download/) ? "download" : "upload",
+                    tp = !(0, n.d4)(K.lD),
+                    tm = null != (o = (0, tY.Al)(Z)) ? o : null,
+                    tg = (null == G || null == (e = G.params) ? void 0 : e.advert_id) || void 0,
+                    tf = (0, n.d4)(t$.JQ),
+                    t_ = (0, S.J)().hasRedeemedFreeTrial,
+                    tv = (0, R.vb)(T.V.UK_AGE),
+                    ty = (0, R.vb)(T.V.US_DE_AGE_30_60),
+                    tw = (0, R.vb)(T.V.FR_25_PLUS),
+                    tP = (0, R.vb)(T.V.UK_FEMALE_18_PLUS),
+                    tb = (() => {
+                        switch (tv) {
                             case "35+":
                                 return !0;
                             case "18-34":
@@ -2611,8 +2611,8 @@
                                 return null
                         }
                     })(),
-                    tb = (() => {
-                        switch (tv) {
+                    tI = (() => {
+                        switch (ty) {
                             case "30-60":
                                 return !0;
                             case "other":
@@ -2621,8 +2621,8 @@
                                 return null
                         }
                     })(),
-                    tI = (() => {
-                        switch (ty) {
+                    tT = (() => {
+                        switch (tw) {
                             case "25+":
                                 return !0;
                             case "18-25":
@@ -2631,8 +2631,8 @@
                                 return null
                         }
                     })(),
-                    tT = (() => {
-                        switch (tw) {
+                    tU = (() => {
+                        switch (tP) {
                             case "female_18_plus":
                                 return !0;
                             case "other":
@@ -2642,64 +2642,67 @@
                         }
                     })(),
                     {
-                        settings: tU,
-                        experiments: tk
+                        settings: tk,
+                        experiments: tO
                     } = (0, tE.k)(),
-                    tO = {
-                        adDurationType: null != (c = null == tU ? void 0 : tU.ad_duration_type) ? c : "default",
-                        customBackgroundWallpaperAdsEnabled: (null == (i = tk.custom_background_wallpapers) ? void 0 : i.name) === "custom_background_wallpapers_enabled"
+                    tC = null != (c = null == tk ? void 0 : tk.ad_duration_type) ? c : "default",
+                    tN = null != (u = null == tk ? void 0 : tk.ad_server) ? u : "kevel",
+                    tx = {
+                        adDurationType: tC,
+                        customBackgroundWallpaperAdsEnabled: (null == (i = tO.custom_background_wallpapers) ? void 0 : i.name) === "custom_background_wallpapers_enabled",
+                        adServer: tN
                     },
-                    tC = null === _.Ay || void 0 === _.Ay ? void 0 : _.Ay.identity,
-                    tN = g(A.current, {
-                        country: null == ti ? void 0 : ti.country,
+                    tV = null === _.Ay || void 0 === _.Ay ? void 0 : _.Ay.identity,
+                    tX = g(E.current, {
+                        country: null == tr ? void 0 : tr.country,
                         product: l.PQ.Web,
-                        firstAdSdkLoad: u ? "yes" : "no"
+                        firstAdSdkLoad: p ? "yes" : "no"
                     }),
-                    tx = (0, a.useCallback)(() => {
+                    t0 = (0, a.useCallback)(() => {
                         var t;
                         return {
-                            isTermsAccepted: td,
-                            isAdBlockEnabled: !!M,
-                            isAdvertisementEnabled: E,
+                            isTermsAccepted: tc,
+                            isAdBlockEnabled: !!j,
+                            isAdvertisementEnabled: U,
                             client: l.rw.Transfer,
                             product: l.PQ.Web,
-                            geo: ti,
-                            language: te,
-                            userAgent: tC,
-                            channel: J,
+                            geo: tr,
+                            language: ti,
+                            userAgent: tV,
+                            channel: $,
                             user: {
-                                key: tr,
-                                isPayingUser: tu,
-                                id: null == W ? void 0 : W.id,
-                                auth0UserId: null == q ? void 0 : q.auth0UserId,
-                                planTier: tp,
-                                canSeeFreeTrials: !tu && !tf,
-                                ukIs35PlusAge: tP,
-                                usDeIs30To60Age: tb,
-                                frIs25PlusAge: tI,
-                                ukIsFemale18Plus: tT,
-                                email: tg
+                                key: to,
+                                isPayingUser: tp,
+                                id: null == Z ? void 0 : Z.id,
+                                auth0UserId: null == V ? void 0 : V.auth0UserId,
+                                planTier: tm,
+                                canSeeFreeTrials: !tp && !t_,
+                                ukIs35PlusAge: tb,
+                                usDeIs30To60Age: tI,
+                                frIs25PlusAge: tT,
+                                ukIsFemale18Plus: tU,
+                                email: tf
                             },
-                            nav: to,
-                            transferBox: tl,
-                            isRoktAdDisplaying: ts,
-                            isPanelOpen: Z.isPanelOpen,
-                            isPanelHalfOpen: Z.isPanelHalfOpen,
-                            isPanelFullOpen: Z.isPanelFullOpen,
-                            dropzoneActive: G.dropzoneActive,
-                            demoAdvertId: tm,
-                            userAction: tc,
-                            ...tt && {
-                                transferHasDocumentFiles: $,
-                                transferHasVideoFiles: X
+                            nav: tl,
+                            transferBox: ts,
+                            isRoktAdDisplaying: td,
+                            isPanelOpen: G.isPanelOpen,
+                            isPanelHalfOpen: G.isPanelHalfOpen,
+                            isPanelFullOpen: G.isPanelFullOpen,
+                            dropzoneActive: J.dropzoneActive,
+                            demoAdvertId: tg,
+                            userAction: tu,
+                            ...te && {
+                                transferHasDocumentFiles: X,
+                                transferHasVideoFiles: tt
                             },
                             acceptedLanguages: null == (t = window.__session__.user) ? void 0 : t.accepted_languages,
                             tcf: {
-                                tcString: L
+                                tcString: N
                             },
-                            programmaticAdType: U ? "".concat(U.provider, "_").concat(U.placement) : void 0
+                            programmaticAdType: k ? "".concat(k.provider, "_").concat(k.placement) : void 0
                         }
-                    }, [td, M, E, ti, te, tr, tu, null == W ? void 0 : W.id, null == q ? void 0 : q.auth0UserId, to, tl, ts, Z.isPanelOpen, Z.isPanelHalfOpen, Z.isPanelFullOpen, G.dropzoneActive, tc, tm, tp, tf, J, L, tC, $, X, tt, t_, tv, ty, tw, U, tg]);
+                    }, [tc, j, U, tr, ti, to, tp, null == Z ? void 0 : Z.id, null == V ? void 0 : V.auth0UserId, tl, ts, td, G.isPanelOpen, G.isPanelHalfOpen, G.isPanelFullOpen, J.dropzoneActive, tu, tg, tm, t_, $, N, tV, X, tt, te, tv, ty, tw, tP, k, tf]);
                 (0, a.useEffect)(() => {
                     window.addEventListener(l.kb.UPDATE_CLIENT_STATE, t => {
                         if (t.detail) {
@@ -2708,23 +2711,23 @@
                                 lotameAudiences: i,
                                 ...r
                             } = t.detail;
-                            D((0, tS.nf)(r)), j.current = e, z.current = i
-                        } else D((0, tS.nf)(void 0))
+                            w((0, tS.nf)(r)), z.current = e, q.current = i
+                        } else w((0, tS.nf)(void 0))
                     })
-                }, [D]);
-                let tV = (0, tQ.Z)(tx());
+                }, [w]);
+                let t1 = (0, tQ.Z)(t0());
                 return (0, a.useEffect)(() => {
-                    if (tV && !P()(tV, tx())) try {
+                    if (t1 && !P()(t1, t0())) try {
                         window.dispatchEvent(new CustomEvent(l.DF.AD_SDK_INTERNAL_STATE_UPDATE, {
-                            detail: tx()
+                            detail: t0()
                         }))
                     } catch (t) {
                         y.L.addError(Error("ad_sdk_internal_state_update_failed"), {
                             errorMessage: t.message
                         })
                     }
-                }, [tx, tV]), (0, a.useEffect)(() => {
-                    N && (async () => {
+                }, [t0, t1]), (0, a.useEffect)(() => {
+                    M && (async () => {
                         let t = {
                                 ...l.YJ
                             },
@@ -2733,13 +2736,13 @@
                                 adUnitProduct: l.PQ.Web,
                                 adUnitClient: l.rw.Transfer,
                                 clientEnvironment: tR(),
-                                applicationState: tx(),
+                                applicationState: t0(),
                                 clientEventTracking: {
                                     trackUnstructSnowplowEvent: (t, e) => {
                                         (0, I.Od)().trackUserAction(tq.unstructuredEvent({
                                             snowplowEvent: e,
-                                            isInvalidTraffic: j.current,
-                                            lotameAudiences: z.current
+                                            isInvalidTraffic: z.current,
+                                            lotameAudiences: q.current
                                         })), tK.Ay.trackUnstructSnowplowEvent(t, e)
                                     }
                                 },
@@ -2748,7 +2751,7 @@
                                 },
                                 errorTracking: {
                                     trackError: y.L.addError,
-                                    addTiming: tN,
+                                    addTiming: tX,
                                     addAction: m,
                                     addRumGlobalContext: y.L.addRumGlobalContext
                                 },
@@ -2762,27 +2765,27 @@
                                         (0, tB.Yw)("jurassic-world")
                                     },
                                     openCustomWallpaperModal: () => {
-                                        D((0, tZ.VK)(tH.$.adWallpaper))
+                                        w((0, tZ.VK)(tH.$.adWallpaper))
                                     }
                                 },
-                                experiments: tO
+                                experiments: tx
                             });
-                        b(!0), w.current = "object" == typeof e && e.unmount ? e.unmount : null
+                        A(!0), b.current = "object" == typeof e && e.unmount ? e.unmount : null
                     })()
-                }, [N]), (0, f.S)(() => () => {
+                }, [M]), (0, f.S)(() => () => {
                     var t;
-                    null == p || p(!1), null == (t = w.current) || t.call(w)
+                    null == D || D(!1), null == (t = b.current) || t.call(b)
                 }), (0, r.jsxs)(r.Fragment, {
                     children: [(0, r.jsx)("div", {
                         className: "micro-frontend-container",
                         id: v.iV,
                         "data-testid": v.iV
-                    }), k && (null == U ? void 0 : U.provider) === "playwire" && (0, r.jsx)(tD, {
-                        placement: U.placement,
-                        isVisible: C
-                    }), k && (null == U ? void 0 : U.provider) === "publift" && (0, r.jsx)(tA, {
-                        placement: U.placement,
-                        isVisible: C
+                    }), C && (null == k ? void 0 : k.provider) === "playwire" && (0, r.jsx)(tD, {
+                        placement: k.placement,
+                        isVisible: L
+                    }), C && (null == k ? void 0 : k.provider) === "publift" && (0, r.jsx)(tA, {
+                        placement: k.placement,
+                        isVisible: L
                     })]
                 })
             };
@@ -2810,62 +2813,67 @@
             }
             var t3 = i(62373);
             let t8 = t => {
-                    var e, i;
+                    var e, i, o, c;
                     let {
-                        isFirstAdSdkLoad: o,
-                        setIsFirstAdSdkLoad: c
-                    } = t, u = (0, n.wA)(), p = (0, a.useRef)(null), {
-                        setAdsdkLoaded: D
-                    } = (0, s.on)(), w = (0, d.lV)(), b = (0, a.useRef)(performance.now()), A = h(), {
-                        isReady: E,
-                        result: S
-                    } = tz(), R = (0, a.useRef)(void 0), T = (0, a.useRef)(void 0), {
-                        auth: U,
-                        session: k,
-                        user: O,
-                        route: C,
-                        layout: L,
-                        transfer: N
-                    } = w, F = (0, tQ.Z)(w), M = tj(k, C), j = tM(k, C), B = (0, ta.uz)({
-                        auth: U,
-                        session: k
-                    }), x = tJ.A.areAccepted(), z = (0, tY.WU)(O), q = (null == C || null == (e = C.params) ? void 0 : e.advert_id) || void 0, V = null != (i = (0, tY.Al)(O)) ? i : null, W = (0, n.d4)(t$.JQ), Z = null === _.Ay || void 0 === _.Ay ? void 0 : _.Ay.identity, H = g(b.current, {
-                        country: null == j ? void 0 : j.country,
+                        isFirstAdSdkLoad: u,
+                        setIsFirstAdSdkLoad: p
+                    } = t, D = (0, n.wA)(), w = (0, a.useRef)(null), {
+                        setAdsdkLoaded: b
+                    } = (0, s.on)(), A = (0, d.lV)(), E = (0, a.useRef)(performance.now()), S = h(), {
+                        isReady: R,
+                        result: T
+                    } = tz(), U = (0, a.useRef)(void 0), k = (0, a.useRef)(void 0), {
+                        auth: O,
+                        session: C,
+                        user: L,
+                        route: N,
+                        layout: F,
+                        transfer: M
+                    } = A, j = (0, tQ.Z)(A), B = tj(C, N), x = tM(C, N), z = (0, ta.uz)({
+                        auth: O,
+                        session: C
+                    }), q = tJ.A.areAccepted(), V = (0, tY.WU)(L), W = (null == N || null == (e = N.params) ? void 0 : e.advert_id) || void 0, Z = null != (i = (0, tY.Al)(L)) ? i : null, H = (0, n.d4)(t$.JQ), {
+                        settings: G
+                    } = (0, tE.k)(), Y = {
+                        adServer: null != (o = null == G ? void 0 : G.ad_server) ? o : "kevel",
+                        adDurationType: null != (c = null == G ? void 0 : G.ad_duration_type) ? c : "default"
+                    }, Q = null === _.Ay || void 0 === _.Ay ? void 0 : _.Ay.identity, K = g(E.current, {
+                        country: null == x ? void 0 : x.country,
                         product: l.PQ.Web,
-                        firstAdSdkLoad: o ? "yes" : "no"
-                    }), G = (0, ta.jy)(), Y = a.useCallback(() => {
+                        firstAdSdkLoad: u ? "yes" : "no"
+                    }), J = (0, ta.jy)(), $ = a.useCallback(() => {
                         var t;
                         return {
-                            isTermsAccepted: x,
-                            isAdBlockEnabled: !!S,
-                            isAdvertisementEnabled: G,
+                            isTermsAccepted: q,
+                            isAdBlockEnabled: !!T,
+                            isAdvertisementEnabled: J,
                             client: l.rw.Transfer,
                             product: l.PQ.WebMobile,
-                            geo: j,
-                            language: M,
-                            userAgent: Z,
+                            geo: x,
+                            language: B,
+                            userAgent: Q,
                             user: {
-                                key: B,
-                                isPayingUser: z,
-                                id: null == O ? void 0 : O.id,
-                                auth0UserId: null == U ? void 0 : U.auth0UserId,
-                                planTier: V,
-                                email: W
+                                key: z,
+                                isPayingUser: V,
+                                id: null == L ? void 0 : L.id,
+                                auth0UserId: null == O ? void 0 : O.auth0UserId,
+                                planTier: Z,
+                                email: H
                             },
-                            isPanelOpen: C.isPanelOpen,
-                            isPanelHalfOpen: C.isPanelHalfOpen,
-                            isPanelFullOpen: C.isPanelFullOpen,
-                            dropzoneActive: L.dropzoneActive,
-                            demoAdvertId: q,
+                            isPanelOpen: N.isPanelOpen,
+                            isPanelHalfOpen: N.isPanelHalfOpen,
+                            isPanelFullOpen: N.isPanelFullOpen,
+                            dropzoneActive: F.dropzoneActive,
+                            demoAdvertId: W,
                             acceptedLanguages: null == (t = window.__session__.user) ? void 0 : t.accepted_languages,
                             tcf: {
-                                tcString: A
+                                tcString: S
                             },
                             transfer: {
-                                state: N.state
+                                state: M.state
                             }
                         }
-                    }, [x, S, j, M, B, z, null == O ? void 0 : O.id, null == U ? void 0 : U.auth0UserId, C.isPanelOpen, C.isPanelHalfOpen, C.isPanelFullOpen, L.dropzoneActive, q, N.state, V, A, Z, G, W]);
+                    }, [q, T, x, B, z, V, null == L ? void 0 : L.id, null == O ? void 0 : O.auth0UserId, N.isPanelOpen, N.isPanelHalfOpen, N.isPanelFullOpen, F.dropzoneActive, W, M.state, Z, S, Q, J, H]);
                     return (0, a.useEffect)(() => {
                         window.addEventListener(l.kb.UPDATE_CLIENT_STATE, t => {
                             if (t.detail) {
@@ -2874,21 +2882,21 @@
                                     lotameAudiences: i,
                                     ...r
                                 } = t.detail;
-                                u((0, tS.nf)(r)), R.current = e, T.current = i
-                            } else u((0, tS.nf)(void 0))
+                                D((0, tS.nf)(r)), U.current = e, k.current = i
+                            } else D((0, tS.nf)(void 0))
                         })
-                    }, [u]), a.useEffect(() => {
-                        if (F && !P()(F, Y())) try {
+                    }, [D]), a.useEffect(() => {
+                        if (j && !P()(j, $())) try {
                             window.dispatchEvent(new CustomEvent(l.DF.AD_SDK_INTERNAL_STATE_UPDATE, {
-                                detail: Y()
+                                detail: $()
                             }))
                         } catch (t) {
                             y.L.addError(Error("ad_sdk_internal_state_update_failed"), {
                                 errorMessage: t.message
                             })
                         }
-                    }, [Y, F]), a.useEffect(() => {
-                        E && (async () => {
+                    }, [$, j]), a.useEffect(() => {
+                        R && (async () => {
                             let t = {
                                     ...l.YJ
                                 },
@@ -2897,13 +2905,14 @@
                                     adUnitProduct: l.PQ.WebMobile,
                                     adUnitClient: l.rw.Transfer,
                                     clientEnvironment: tR(),
-                                    applicationState: Y(),
+                                    applicationState: $(),
+                                    experiments: Y,
                                     clientEventTracking: {
                                         trackUnstructSnowplowEvent: (t, e) => {
                                             (0, I.Od)().trackUserAction(tq.unstructuredEvent({
                                                 snowplowEvent: e,
-                                                isInvalidTraffic: R.current,
-                                                lotameAudiences: T.current
+                                                isInvalidTraffic: U.current,
+                                                lotameAudiences: k.current
                                             })), t3.A.trackUnstructSnowplowEvent(t, e)
                                         }
                                     },
@@ -2912,16 +2921,16 @@
                                     },
                                     errorTracking: {
                                         trackError: y.L.addError,
-                                        addTiming: H,
+                                        addTiming: K,
                                         addAction: m,
                                         addRumGlobalContext: y.L.addRumGlobalContext
                                     }
                                 });
-                            D(!0), p.current = "object" == typeof e && e.unmount ? e.unmount : null
+                            b(!0), w.current = "object" == typeof e && e.unmount ? e.unmount : null
                         })()
-                    }, [E]), (0, f.S)(() => () => {
+                    }, [R]), (0, f.S)(() => () => {
                         var t;
-                        null == c || c(!1), null == (t = p.current) || t.call(p)
+                        null == p || p(!1), null == (t = w.current) || t.call(w)
                     }), (0, r.jsx)("div", {
                         className: v.hG,
                         id: v.hG,
@@ -3099,4 +3108,4 @@
         }
     }
 ]);
-//# sourceMappingURL=6550.aaa011bd6afd06fb.js.map
+//# sourceMappingURL=6550.e4309fae8e3e3594.js.map

@@ -179,14 +179,14 @@
         84796: (e, a, l) => {
             "use strict";
             l.r(a), l.d(a, {
-                default: () => eo
+                default: () => e_
             });
             var t = l(23798),
                 i = l(21462),
                 n = l(75546),
                 d = l(38169),
-                o = l(97116),
-                _ = l(85633),
+                o = l(15933),
+                _ = l(16173),
                 r = l(64674),
                 s = l(29336),
                 g = l(61149),
@@ -375,7 +375,7 @@
                 Y = l(30631),
                 Z = l(84530),
                 V = l(43657),
-                G = l(11417),
+                G = l(11828),
                 J = l(73278),
                 Q = l(44765),
                 X = l(28330),
@@ -545,9 +545,10 @@
                 et = l(86781),
                 ei = l(24750),
                 en = l(92977),
-                ed = l.n(en);
+                ed = l.n(en),
+                eo = l(55112);
 
-            function eo(e) {
+            function e_(e) {
                 var a, l, m, c, p, w, u;
                 let {
                     setReturnPath: b
@@ -561,46 +562,46 @@
                 } = (0, n.Bd)(), T = (0, L.G)(), E = (0, s.p)(), j = (0, F.f)(), {
                     subscription: G,
                     isLoading: J
-                } = (0, B.f)(), [Q, $] = (0, i.useState)(!1), ee = (0, D.pR)(), en = (0, i.useMemo)(() => ee === D.Gn.PAGE && Q, [ee, Q]), eo = (null == G ? void 0 : G.isPaidDowngrade) || (null == G ? void 0 : G.isPaused), e_ = (null == G ? void 0 : G.status) === X.dH.trialing, er = !eo && !e_ && ee !== D.Gn.NONE, es = () => {
+                } = (0, B.f)(), [Q, $] = (0, i.useState)(!1), ee = (0, D.pR)(), en = (0, i.useMemo)(() => ee === D.Gn.PAGE && Q, [ee, Q]), e_ = (null == G ? void 0 : G.isPaidDowngrade) || (null == G ? void 0 : G.isPaused), er = (null == G ? void 0 : G.status) === X.dH.trialing, es = !e_ && !er && !(0, eo.h)(G) && ee !== D.Gn.NONE, eg = () => {
                     z.A.trackSnowplowEvent({
                         category: "manage_plan_page",
                         action: "back_to_account"
                     })
                 };
                 (0, i.useEffect)(() => {
-                    j ? b("/workspace/payment", M("page.payment.pagename"), es) : (C((0, q.jt)(q.vW.MANAGE_PLAN_FREE_USER)), k.A.navigateTo(K.bP.route))
+                    j ? b("/workspace/payment", M("page.payment.pagename"), eg) : (C((0, q.jt)(q.vW.MANAGE_PLAN_FREE_USER)), k.A.navigateTo(K.bP.route))
                 }, [b, M, j, C]);
-                let eg = (null != (l = null == A || null == (a = A.members) ? void 0 : a.length) ? l : 0) <= 1 && (null == G ? void 0 : G.quantity) === 1 || !A,
-                    em = N || !v[y.planTier] || J,
-                    ec = f || y.planTier === x.js.DISTRIBUTE && (null == G ? void 0 : G.interval) === X.YF.year,
-                    ep = (null == G ? void 0 : G.interval) === X.YF.week,
-                    ew = (null == G ? void 0 : G.interval) === X.YF.month,
-                    eu = (0, H.W)({
+                let em = (null != (l = null == A || null == (a = A.members) ? void 0 : a.length) ? l : 0) <= 1 && (null == G ? void 0 : G.quantity) === 1 || !A,
+                    ec = N || !v[y.planTier] || J,
+                    ep = f || y.planTier === x.js.DISTRIBUTE && (null == G ? void 0 : G.interval) === X.YF.year,
+                    ew = (null == G ? void 0 : G.interval) === X.YF.week,
+                    eu = (null == G ? void 0 : G.interval) === X.YF.month,
+                    eb = (0, H.W)({
                         amount: (null != (m = null == G ? void 0 : G.totalCentsPerSeat) ? m : 0) / 100,
                         currency: null != (c = null == G ? void 0 : G.currency) ? c : g.Sj.EUR,
                         locale: T
                     }),
-                    eb = (0, H.W)({
+                    eh = (0, H.W)({
                         amount: (null != (p = null == G ? void 0 : G.totalCents) ? p : 0) / 100,
                         currency: null != (w = null == G ? void 0 : G.currency) ? w : g.Sj.EUR,
                         locale: T
                     }),
-                    eh = (null == G ? void 0 : G.endsAt) ? Z.A.date(new Date(G.endsAt), "without_day") : "",
-                    eC = (0, i.useMemo)(() => ({
-                        plan_tier: (0, x.Is)(y.planTier),
-                        total: eb,
-                        interval: null == G ? void 0 : G.interval,
-                        renewal_date: eh
-                    }), [y.planTier, eb, G, eh]),
+                    eC = (null == G ? void 0 : G.endsAt) ? Z.A.date(new Date(G.endsAt), "without_day") : "",
                     ex = (0, i.useMemo)(() => ({
                         plan_tier: (0, x.Is)(y.planTier),
-                        workspace_total: eb,
+                        total: eh,
+                        interval: null == G ? void 0 : G.interval,
+                        renewal_date: eC
+                    }), [y.planTier, eh, G, eC]),
+                    ey = (0, i.useMemo)(() => ({
+                        plan_tier: (0, x.Is)(y.planTier),
+                        workspace_total: eh,
                         interval: null == G ? void 0 : G.interval,
                         member_count: null == G ? void 0 : G.quantity,
-                        tier_amount: eu,
-                        renewal_date: eh
-                    }), [y.planTier, eb, null == G ? void 0 : G.interval, null == G ? void 0 : G.quantity, eu, eh]),
-                    ey = (0, i.useCallback)((e, a) => (0, t.jsx)(n.x6, {
+                        tier_amount: eb,
+                        renewal_date: eC
+                    }), [y.planTier, eh, null == G ? void 0 : G.interval, null == G ? void 0 : G.quantity, eb, eC]),
+                    eP = (0, i.useCallback)((e, a) => (0, t.jsx)(n.x6, {
                         i18nKey: e,
                         values: a,
                         components: {
@@ -613,8 +614,8 @@
                             C((0, q.jt)(q.vW.MANAGE_PLAN_CREATE_WORKSPACE))
                         }
                     }), [C]),
-                    eP = eg ? ey((null == G ? void 0 : G.isPaidDowngrade) ? "page.manage_plan.downgrade.current_solo_workspace_information" : "page.manage_plan.current_solo_workspace_information", eC) : ey((null == G ? void 0 : G.isPaidDowngrade) ? "page.manage_plan.downgrade.current_team_workspace_information" : "page.manage_plan.current_team_workspace_information", ex),
-                    ek = i.useCallback(e => {
+                    ek = em ? eP((null == G ? void 0 : G.isPaidDowngrade) ? "page.manage_plan.downgrade.current_solo_workspace_information" : "page.manage_plan.current_solo_workspace_information", ex) : eP((null == G ? void 0 : G.isPaidDowngrade) ? "page.manage_plan.downgrade.current_team_workspace_information" : "page.manage_plan.current_team_workspace_information", ey),
+                    eS = i.useCallback(e => {
                         z.A.trackSnowplowEvent({
                             category: "manage_plan_page",
                             action: "click_cancel"
@@ -623,8 +624,8 @@
                         }))
                     }, []),
                     {
-                        currentMonthlyPrice: eS,
-                        isMonthlyPriceFromCatalog: ef
+                        currentMonthlyPrice: ef,
+                        isMonthlyPriceFromCatalog: eU
                     } = (0, i.useMemo)(() => {
                         var e, a, l, t, i;
                         let n = v ? (null != (t = null == (l = v[y.planTier]) || null == (a = l.month) || null == (e = a.price) ? void 0 : e.totalBeforeDiscountInCents) ? t : 0) / 100 : void 0;
@@ -640,16 +641,16 @@
                             isMonthlyPriceFromCatalog: !0
                         }
                     }, [v, y.planTier, j, null == G ? void 0 : G.totalCentsBeforeTaxesAndDiscounts]),
-                    eU = (0, i.useMemo)(() => {
+                    ev = (0, i.useMemo)(() => {
                         var e, a, l, t;
                         return v ? (null != (t = null == (l = v[y.planTier]) || null == (a = l.year) || null == (e = a.price) ? void 0 : e.totalBeforeDiscountInCents) ? t : 0) / 100 : void 0
                     }, [v, y.planTier]),
-                    ev = (0, i.useCallback)(async () => {
+                    eN = (0, i.useCallback)(async () => {
                         (0, h.Od)().trackUserAction(S.f.pauseSubscriptionButtonClicked()), await E(), k.A.navigateTo("/workspace/payment?".concat(s.T, "=true"))
                     }, [E]);
-                return em ? (0, t.jsx)(W.A, {}) : (0, t.jsx)(i.Fragment, {
+                return ec ? (0, t.jsx)(W.A, {}) : (0, t.jsx)(i.Fragment, {
                     children: en ? (0, t.jsx)(I, {
-                        expiryDate: eh,
+                        expiryDate: eC,
                         onDismiss: () => $(!1)
                     }) : (0, t.jsxs)("div", {
                         children: [Y.Ay.isMobile ? (0, t.jsx)("h1", {
@@ -660,15 +661,15 @@
                             panelName: M("page.manage_plan.pagename"),
                             children: (0, t.jsx)("div", {
                                 className: ed().planInfo,
-                                children: eP
+                                children: ek
                             })
-                        }), (ew || ep) && eS && eU && (0, t.jsx)(ea, {
-                            currentMonthlyPrice: eS,
-                            currentYearlyPrice: eU,
+                        }), (eu || ew) && ef && ev && (0, t.jsx)(ea, {
+                            currentMonthlyPrice: ef,
+                            currentYearlyPrice: ev,
                             tierId: y.planTier,
-                            showSavingsInfo: ef,
+                            showSavingsInfo: eU,
                             currency: null != (u = null == G ? void 0 : G.currency) ? u : g.Sj.EUR
-                        }), !ec && (0, t.jsxs)("div", {
+                        }), !ep && (0, t.jsxs)("div", {
                             className: ed().upgradeContainer,
                             children: [(0, t.jsx)("h5", {
                                 className: ed().upgradeHeader,
@@ -689,15 +690,15 @@
                                     size: "medium"
                                 }), M("page.manage_plan.upgrade_button")]
                             })]
-                        }), er && (0, t.jsx)(O.A, {
+                        }), es && (0, t.jsx)(O.A, {
                             context: "page",
                             shouldShowThirdFeature: !0,
-                            onPauseSubscription: ev
+                            onPauseSubscription: eN
                         }), (0, t.jsx)(V.f, {
                             user: y,
-                            expiryDate: eh,
+                            expiryDate: eC,
                             pendingCancellation: U.cancelSubscription,
-                            trackClick: ek,
+                            trackClick: eS,
                             setShowCompliantCancellationPage: $
                         })]
                     })
@@ -1176,4 +1177,4 @@
         }
     }
 ]);
-//# sourceMappingURL=payment-manage-plan.5f1e80b3e39b6d9d.js.map
+//# sourceMappingURL=payment-manage-plan.3e95f2f669ce3c98.js.map

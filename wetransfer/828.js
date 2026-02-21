@@ -722,67 +722,67 @@
         },
         9127: (e, t, r) => {
             r.d(t, {
-                y: () => l
+                y: () => s
             });
             var a = r(96361),
                 n = r(40334),
-                i = r(84530),
-                o = r(48585),
-                s = r(14901);
-            let l = (0, a.Z0)({
+                i = r(48585),
+                o = r(14901);
+            let s = (0, a.Z0)({
                 name: "notification",
-                initialState: s.u,
+                initialState: o.u,
                 reducers: {
                     setTransferNotification(e, t) {
-                        if (e.transfer && e.transfer.text && o.j.includes(e.transfer.text)) return e;
+                        if (e.transfer && e.transfer.text && i.j.includes(e.transfer.text)) return e;
                         e.transfer = {
                             ...t.payload,
                             date: new Date
                         }
                     },
                     clearTransferNotification(e) {
-                        e.transfer = s.u.transfer
+                        e.transfer = o.u.transfer
                     },
                     setPanelNotification(e, t) {
                         let r, {
                                 category: a,
-                                details: s,
-                                params: l,
-                                duration: d = n.o.notification.duration
+                                details: o,
+                                params: s,
+                                duration: l = n.o.notification.duration
                             } = t.payload,
-                            c = a;
+                            d = a;
                         switch (a) {
-                            case o.a.Error:
-                                r = "exception.".concat(s);
+                            case i.a.Error:
+                                r = "exception.".concat(o);
                                 break;
-                            case o.a.Form:
-                                c = o.a.Default, r = "form.".concat(s);
+                            case i.a.Form:
+                                d = i.a.Default, r = "form.".concat(o);
                                 break;
-                            case o.a.Notification:
+                            case i.a.Notification:
                             default:
-                                c = o.a.Default, r = "notification.".concat(s)
+                                d = i.a.Default, r = "notification.".concat(o)
                         }
                         e.panel = {
-                            category: c,
-                            html: (null == s ? void 0 : s.includes(" ")) ? s : i.A.t(r, l),
-                            duration: d,
-                            value: s
+                            category: d,
+                            i18nKey: (null == o ? void 0 : o.includes(" ")) ? o : r,
+                            params: s,
+                            duration: l,
+                            value: o
                         }
                     },
                     clearPanelNotification(e) {
-                        e.panel = s.u.panel
+                        e.panel = o.u.panel
                     },
                     setPopoverNotification(e, t) {
                         let {
                             payload: r
                         } = t;
                         e.popover = {
-                            category: r.category || o.a.Notification,
+                            category: r.category || i.a.Notification,
                             details: r.details
                         }
                     },
                     clearPopoverNotification(e) {
-                        e.popover = s.u.popover
+                        e.popover = o.u.popover
                     }
                 }
             })
@@ -1624,7 +1624,7 @@
                 R: () => q,
                 RK: () => H,
                 TB: () => k,
-                Uf: () => z,
+                Uf: () => G,
                 W5: () => E,
                 YF: () => K,
                 Z6: () => A,
@@ -1717,9 +1717,9 @@
                 x = (0, i.Mz)((e, t) => t, P, (e, t) => t[e]),
                 B = (0, i.Mz)(c, e => e.entryPoint),
                 W = (0, i.Mz)(c, e => e.uploadedBackgroundAssets),
-                G = (0, i.Mz)(c, e => e.selectedPreviewsBackgroundAssets),
-                z = (0, i.Mz)(G, P, (e, t) => e.map(e => e.assetId && t[e.assetId] || e)),
-                V = (0, i.Mz)(z, e => e[0]),
+                z = (0, i.Mz)(c, e => e.selectedPreviewsBackgroundAssets),
+                G = (0, i.Mz)(z, P, (e, t) => e.map(e => e.assetId && t[e.assetId] || e)),
+                V = (0, i.Mz)(G, e => e[0]),
                 H = (0, i.Mz)(c, e => e.uploadedPreviewsBackgroundAssets),
                 j = (0, i.Mz)(c, e => e.savedPreviewsBackgroundAsset),
                 Y = (0, i.Mz)(c, e => e.previewsBackgroundType),
@@ -1729,7 +1729,7 @@
                 X = (0, i.Mz)(c, e => e.stagedPreviewsBackgroundAsset),
                 J = (0, i.Mz)(c, e => e.stagedPreviewsBackgroundType),
                 Z = (0, i.Mz)(c, e => e.stagedPreviewsBackgroundColor),
-                $ = (0, i.Mz)(_, T, O, u, g, f, G, j, Y, q, K, Q, (e, t, r, a, i, d, c, u, _, p, E, f) => {
+                $ = (0, i.Mz)(_, T, O, u, g, f, z, j, Y, q, K, Q, (e, t, r, a, i, d, c, u, _, p, E, f) => {
                     if (!e || !t) return !1;
                     if (null !== p && _ !== p || _ === o.hK.solidColor && null !== E && (null === f || E !== f)) return !0;
                     if (_ === o.hK.image) {
@@ -3800,6 +3800,51 @@
                 }
             }
         },
+        39483: (e, t, r) => {
+            r.d(t, {
+                zj: () => a.z,
+                NQ: () => l,
+                ue: () => i,
+                bo: () => d,
+                oW: () => c.oW,
+                fO: () => c.fO,
+                pe: () => c.pe,
+                ER: () => c.ER,
+                s2: () => s,
+                Tg: () => o
+            });
+            var a = r(62332),
+                n = r(96361);
+            let i = {
+                    isDrawerOpen: !1,
+                    currentPageId: null,
+                    previousPageId: null
+                },
+                o = (0, n.Z0)({
+                    name: "transferWindowDrawer",
+                    initialState: i,
+                    reducers: {
+                        setTransferWindowPageId(e, t) {
+                            let {
+                                payload: r
+                            } = t;
+                            e.previousPageId = e.currentPageId, e.currentPageId = r
+                        },
+                        closeTransferWindowDrawer(e) {
+                            e.isDrawerOpen = !1
+                        },
+                        openTransferWindowDrawer(e) {
+                            e.isDrawerOpen = !0
+                        }
+                    }
+                }),
+                {
+                    setTransferWindowPageId: s,
+                    closeTransferWindowDrawer: l,
+                    openTransferWindowDrawer: d
+                } = o.actions;
+            var c = r(61703)
+        },
         39623: (e, t, r) => {
             r.d(t, {
                 TH: () => l,
@@ -4013,6 +4058,7 @@
                 },
                 featureBanner: {
                     featureTranslationKey: null,
+                    featureHref: null,
                     featureName: null,
                     shouldShowFeatureBanner: !1
                 },
@@ -4176,9 +4222,9 @@
                 zj: () => B,
                 eR: () => W,
                 Cf: () => eo,
-                L4: () => G,
+                L4: () => z,
                 al: () => X,
-                Bm: () => z,
+                Bm: () => G,
                 sA: () => j,
                 Tr: () => V,
                 o$: () => H
@@ -4236,8 +4282,8 @@
                 setSelectedBlock: x,
                 setShowcaseModalPageId: B,
                 setStagedCoverLayout: W,
-                toggleBackgroundAssetSelection: G,
-                updateBackgroundBlock: z,
+                toggleBackgroundAssetSelection: z,
+                updateBackgroundBlock: G,
                 updateTextInBlock: V,
                 updateVisibilityInBlock: H,
                 updateTextColorInBlock: j,
@@ -5043,18 +5089,20 @@
         },
         53123: (e, t, r) => {
             r.d(t, {
-                A: () => l
+                A: () => d
             });
-            var a = r(23798),
-                n = r(40334),
-                i = r(30631),
-                o = r(55676),
-                s = r(84530);
-            let l = {
+            var a = r(23798);
+            r(21462);
+            var n = r(75546),
+                i = r(40334),
+                o = r(30631),
+                s = r(55676),
+                l = r(84530);
+            let d = {
                 getTransferSizeInMB: e => (e / 1024 / 1024).toFixed(10),
                 getWorkspaceName(e, t) {
                     var r;
-                    return e ? e.defaultName && 1 === e.members.length && t ? t.email : e.name : s.A.t("account.workspace.default_workspace", {
+                    return e ? e.defaultName && 1 === e.members.length && t ? t.email : e.name : l.A.t("account.workspace.default_workspace", {
                         name: null == (r = t.given_name) ? void 0 : r.trim()
                     })
                 },
@@ -5076,35 +5124,35 @@
                         children: s
                     }, e), l || null]
                 },
-                getAvatar: e => n.o.avatars[e % n.o.avatars.length],
+                getAvatar: e => i.o.avatars[e % i.o.avatars.length],
                 getLastUsedSender() {
-                    let e = o.A.get("wt_from") || "";
+                    let e = s.A.get("wt_from") || "";
                     return (e = e.split(",")).length ? e[0].replace(/\s*/g, "") : ""
                 },
                 getFileExtension: e => !!(e && e.indexOf(".") > -1) && e.substr(e.lastIndexOf(".") + 1).toLowerCase(),
                 getWTSent() {
-                    let e = o.A.get("wt_sent");
+                    let e = s.A.get("wt_sent");
                     return parseInt(null === e || isNaN(e) ? 0 : e, 10)
                 },
                 getWTPlus() {
-                    let e = o.A.get(n.o.cookies.plus.name);
+                    let e = s.A.get(i.o.cookies.plus.name);
                     if (!(null === e || isNaN(e))) return parseInt(e, 10)
                 },
                 incrementWTSent() {
-                    o.A.set("wt_sent", this.getWTSent() + 1, {
+                    s.A.set("wt_sent", this.getWTSent() + 1, {
                         days: 365
                     })
                 },
-                getWTDownloaded: () => parseInt(null === o.A.get("wt_downloaded") || isNaN(o.A.get("wt_downloaded")) ? 0 : o.A.get("wt_downloaded"), 10),
+                getWTDownloaded: () => parseInt(null === s.A.get("wt_downloaded") || isNaN(s.A.get("wt_downloaded")) ? 0 : s.A.get("wt_downloaded"), 10),
                 incrementWTDownloaded() {
-                    o.A.set("wt_downloaded", this.getWTDownloaded() + 1, {
+                    s.A.set("wt_downloaded", this.getWTDownloaded() + 1, {
                         days: 365
                     })
                 },
                 validateEmail: e => /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/.test(e) && !/(\u00a9|\u00ae|[\u2000-\u3300]|\ud83c[\ud000-\udfff]|\ud83d[\ud000-\udfff]|\ud83e[\ud000-\udfff])/g.test(e),
                 validateUri: e => /^\S+\.\w{2,}.*$/.test(e),
                 getDaysSinceFirstVisit() {
-                    let e = parseInt(o.A.get(n.o.cookies.firstVisit.name));
+                    let e = parseInt(s.A.get(i.o.cookies.firstVisit.name));
                     return e ? Math.floor((Date.now() - e) / 864e5) : null
                 },
                 treatAsUTC(e) {
@@ -5118,31 +5166,47 @@
                 getDaysBetweenDates(e, t) {
                     return Math.floor(Math.abs(this.treatAsUTC(t) - this.treatAsUTC(e)) / 864e5)
                 },
-                getWallpaperPreviewType: e => i.Ay.isIphone || i.Ay.isTablet ? "image" : e,
+                getWallpaperPreviewType: e => o.Ay.isIphone || o.Ay.isTablet ? "image" : e,
                 getNoticeOptions(e) {
                     let {
                         incompatibleVersion: t,
                         user: r
                     } = e, {
-                        shouldShowFeatureBanner: a,
-                        featureTranslationKey: l,
-                        featureName: d
-                    } = n.o.featureBanner;
+                        shouldShowFeatureBanner: d,
+                        featureTranslationKey: c,
+                        featureHref: u,
+                        featureName: _
+                    } = i.o.featureBanner;
                     return t ? {
-                        text: s.A.t("force_update"),
+                        text: (0, a.jsx)(n.x6, {
+                            i18nKey: "force_update",
+                            components: {
+                                a: (0, a.jsx)("a", {
+                                    href: "/",
+                                    onClick: () => window.location.reload()
+                                })
+                            }
+                        }),
                         color: "dark"
                     } : r.loggedIn && r.hasSkippedVerification ? {
-                        text: s.A.t("notice.verification"),
+                        text: l.A.t("notice.verification"),
                         showCloseIcon: !1
-                    } : a && o.A.get(n.o.cookies.featureBanner.name) !== d ? {
-                        text: s.A.t(l),
+                    } : d && s.A.get(i.o.cookies.featureBanner.name) !== _ ? {
+                        text: (0, a.jsx)(n.x6, {
+                            i18nKey: c,
+                            components: {
+                                a: u ? (0, a.jsx)("a", {
+                                    href: u
+                                }) : (0, a.jsx)("span", {})
+                            }
+                        }),
                         onClose: () => {
-                            o.A.set(n.o.cookies.featureBanner.name, d, {
+                            s.A.set(i.o.cookies.featureBanner.name, _, {
                                 days: 31
                             })
                         }
-                    } : i.Ay.isOutdated(n.o.supportedBrowsers) ? {
-                        text: s.A.t("transfer.outdated_browser.text"),
+                    } : o.Ay.isOutdated(i.o.supportedBrowsers) ? {
+                        text: l.A.t("transfer.outdated_browser.text"),
                         color: "dark"
                     } : {
                         text: null,
@@ -5160,11 +5224,11 @@
                 },
                 isSenderLocked: e => e.loggedIn > 0 && e.isVerified && !e.hasSkippedVerification,
                 getPortalsUrl() {
-                    let e = new URL("".concat(n.o.portalsUrl));
+                    let e = new URL("".concat(i.o.portalsUrl));
                     return e.searchParams.set("returnUrl", location.href), e.searchParams.set("app", "transfer"), e.href
                 },
                 getSafetyUrl(e, t) {
-                    let r = new URL("".concat(n.o.safetyUrl, "/user-reports"));
+                    let r = new URL("".concat(i.o.safetyUrl, "/user-reports"));
                     return e && t && (r.searchParams.set("content.content_id", e), r.searchParams.set("content.customerSpecific.contentType", t)), r.href
                 },
                 stripHtmlTags: e => e && e.replace(/(<([^>]+)>)/gi, ""),
@@ -6393,13 +6457,26 @@
         },
         61703: (e, t, r) => {
             r.d(t, {
-                fO: () => i,
-                pe: () => o
+                ER: () => l,
+                fO: () => o,
+                oW: () => d,
+                pe: () => s
             });
-            var a = r(4559);
-            let n = e => e.transferWindowDrawer,
-                i = (0, a.Mz)(n, e => e.isDrawerOpen),
-                o = (0, a.Mz)(n, e => e.currentPageId)
+            var a = r(4559),
+                n = r(62332);
+            let i = e => e.transferWindowDrawer,
+                o = (0, a.Mz)(i, e => e.isDrawerOpen),
+                s = (0, a.Mz)(i, e => e.currentPageId),
+                l = (0, a.Mz)(i, e => e.previousPageId),
+                d = (0, a.Mz)(s, l, (e, t) => e === n.z.AudioPlayer || e !== n.z.Options && t === n.z.AudioPlayer)
+        },
+        62332: (e, t, r) => {
+            r.d(t, {
+                z: () => a
+            });
+            var a = function(e) {
+                return e.Price = "Price", e.Options = "Options", e.AccessControl = "AccessControl", e.AudioPlayer = "AudioPlayer", e
+            }({})
         },
         62373: (e, t, r) => {
             r.d(t, {
@@ -6995,58 +7072,59 @@
         66976: (e, t, r) => {
             r.r(t), r.d(t, {
                 configureMockStore: () => eG,
-                default: () => eW,
-                initialState: () => eB
+                default: () => ez,
+                initialState: () => eW
             });
             var a = r(61325),
-                n = r(75600),
-                i = r(74452),
-                o = r(1568);
-            let s = {
+                n = r(67739),
+                i = r(75600),
+                o = r(74452),
+                s = r(1568);
+            let l = {
                 isInitialized: !1,
                 isLoggedIn: !1,
                 isLoading: !0,
                 auth0UserId: "",
                 isPasswordless: !1
             };
-            var l = r(11707),
-                d = r(44240),
-                c = r(32136),
-                u = r(98463),
-                _ = r(11076),
-                p = r(56264),
-                E = r(10861),
-                f = r(17198),
-                A = r(49309),
-                T = r(87963),
-                m = r(87682);
-            let S = {
+            var d = r(11707),
+                c = r(44240),
+                u = r(32136),
+                _ = r(98463),
+                p = r(11076),
+                E = r(56264),
+                f = r(10861),
+                A = r(17198),
+                T = r(49309),
+                m = r(87963),
+                S = r(87682);
+            let g = {
                 emailToAddressAdded(e) {
                     let {
                         emailTo: t,
                         method: r
                     } = e, a = function(e) {
                         switch (e) {
-                            case m.j.AUTOCOMPLETE:
-                            case m.j.CONTACT_LIST:
+                            case S.j.AUTOCOMPLETE:
+                            case S.j.CONTACT_LIST:
                                 return "contact_used";
                             default:
                                 return
                         }
                     }(r), n = function(e) {
                         switch (e) {
-                            case m.j.AUTOCOMPLETE:
+                            case S.j.AUTOCOMPLETE:
                                 return "contact_used_autocompleted";
-                            case m.j.CONTACT_LIST:
+                            case S.j.CONTACT_LIST:
                                 return "contact_used_added";
                             default:
                                 return
                         }
                     }(r), i = function(e) {
                         switch (e) {
-                            case m.j.AUTOCOMPLETE:
+                            case S.j.AUTOCOMPLETE:
                                 return "transfer_window";
-                            case m.j.CONTACT_LIST:
+                            case S.j.CONTACT_LIST:
                                 return "contacts_page";
                             default:
                                 return
@@ -7070,13 +7148,13 @@
                     }
                 }
             };
-            var g = r(63306);
-            let R = e => t => r => {
-                    if (r.type === g.o1.TRANSFER_ADD_RECIPIENT) {
+            var R = r(63306);
+            let h = e => t => r => {
+                    if (r.type === R.o1.TRANSFER_ADD_RECIPIENT) {
                         let a = e.getState().transfer.recipients,
                             n = t(r);
                         return e.getState().transfer.recipients.filter(e => !a.includes(e)).forEach(e => {
-                            (0, T.Od)().trackUserAction(S.emailToAddressAdded({
+                            (0, m.Od)().trackUserAction(g.emailToAddressAdded({
                                 emailTo: e,
                                 method: r.method
                             }))
@@ -7084,7 +7162,7 @@
                     }
                     return t(r)
                 },
-                h = {
+                y = {
                     sessionDataMembershipReceived(e) {
                         let {
                             membership: t
@@ -7111,8 +7189,8 @@
                         }
                     }
                 };
-            var y = r(95467);
-            let w = {
+            var w = r(95467);
+            let I = {
                     user: e => {
                         let {
                             id: t,
@@ -7182,82 +7260,82 @@
                         }
                     }
                 },
-                I = () => e => t => {
-                    if (t.type === y.actions.GET_USER) {
+                v = () => e => t => {
+                    if (t.type === w.actions.GET_USER) {
                         let {
                             memberships: e
-                        } = w.user(t.details);
-                        (null == e ? void 0 : e[0]) && (0, T.Od)().trackUserAction(h.sessionDataMembershipReceived({
+                        } = I.user(t.details);
+                        (null == e ? void 0 : e[0]) && (0, m.Od)().trackUserAction(y.sessionDataMembershipReceived({
                             membership: null == e ? void 0 : e[0]
                         }))
                     }
                     return e(t)
                 };
 
-            function v() {
+            function N() {
                 let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : {},
                     t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : {},
-                    r = [c.A, R, I, A.L.middleware, E.l.middleware, u.K.middleware, _.WJ.middleware, p.jt.middleware, f.f.middleware],
-                    a = d.Zz,
-                    n = (0, d.y$)((0, d.HY)(t), e, a((0, d.Tw)(...r)));
+                    r = [u.A, h, v, T.L.middleware, f.l.middleware, _.K.middleware, p.WJ.middleware, E.jt.middleware, A.f.middleware],
+                    a = c.Zz,
+                    n = (0, c.y$)((0, c.HY)(t), e, a((0, c.Tw)(...r)));
                 return n.asyncReducers = {}, n.injectReducer = (e, r) => {
                     var a;
-                    n.asyncReducers[e] = r, n.replaceReducer((a = n.asyncReducers, (0, d.HY)({
+                    n.asyncReducers[e] = r, n.replaceReducer((a = n.asyncReducers, (0, c.HY)({
                         ...t,
                         ...a
                     })))
                 }, n
             }
-            var N = r(12790),
-                O = r(46966),
-                P = r(50808),
-                L = r(88848),
-                D = r(2269),
-                C = r(37672),
-                U = r(96361),
-                k = r(32799),
-                b = r(33762);
-            let F = {
+            var O = r(12790),
+                P = r(46966),
+                L = r(50808),
+                D = r(88848),
+                C = r(2269),
+                U = r(37672),
+                k = r(96361),
+                b = r(32799),
+                F = r(33762);
+            let M = {
                     links: {
-                        [k.Hj.LINKEDIN]: {
+                        [b.Hj.LINKEDIN]: {
                             value: "",
                             valid: !1,
                             firstTouch: !0
                         },
-                        [k.Hj.X]: {
+                        [b.Hj.X]: {
                             value: "",
                             valid: !1,
                             firstTouch: !0
                         },
-                        [k.Hj.INSTAGRAM]: {
+                        [b.Hj.INSTAGRAM]: {
                             value: "",
                             valid: !1,
                             firstTouch: !0
                         },
-                        [k.Hj.TIKTOK]: {
+                        [b.Hj.TIKTOK]: {
                             value: "",
                             valid: !1,
                             firstTouch: !0
                         },
-                        [k.Hj.FACEBOOK]: {
+                        [b.Hj.FACEBOOK]: {
                             value: "",
                             valid: !1,
                             firstTouch: !0
                         }
                     }
                 },
-                M = (0, U.Z0)({
+                x = (0, k.Z0)({
                     name: "socialLinksInputs",
-                    initialState: F,
+                    initialState: M,
                     reducers: {},
                     extraReducers: e => {
-                        e.addCase(b.I, (e, t) => {
+                        e.addCase(F.I, (e, t) => {
                             let {
                                 platform: r,
                                 value: a
                             } = t.payload;
                             e.links[r].value = a
-                        }), e.addCase(b.a, (e, t) => {
+                        }), e.addCase(F.a, (e, t) => {
                             let {
                                 platform: r,
                                 valid: a,
@@ -7267,39 +7345,39 @@
                         })
                     }
                 });
-            var x = r(20776),
-                B = r(92003),
-                W = r(98175),
+            var B = r(20776),
+                W = r(92003),
+                z = r(98175),
                 G = r(68018),
-                z = r(58155),
-                V = r(63758),
-                H = r(15066),
-                j = r(92633),
-                Y = r(21848),
-                K = r(65370),
-                q = r(21301),
-                Q = r(27023),
-                X = r(82261);
-            let J = r(49835).d.reducer;
-            var Z = r(33061),
-                $ = r(6596);
-            let ee = r(9127).y.reducer;
-            var et = r(55258);
-            let er = r(24433).a.reducer;
-            var ea = r(68081),
-                en = r(91010),
-                ei = r(12155),
-                eo = r(82667),
-                es = r(32091),
-                el = r(55786),
-                ed = r(10694),
-                ec = r(97197),
-                eu = r(52458),
-                e_ = r(91345);
-            let ep = e => t => t.id === e;
-            var eE = r(78644),
-                ef = r(88797);
-            let eA = {
+                V = r(58155),
+                H = r(63758),
+                j = r(15066),
+                Y = r(92633),
+                K = r(21848),
+                q = r(65370),
+                Q = r(21301),
+                X = r(27023),
+                J = r(82261);
+            let Z = r(49835).d.reducer;
+            var $ = r(33061),
+                ee = r(6596);
+            let et = r(9127).y.reducer;
+            var er = r(55258);
+            let ea = r(24433).a.reducer;
+            var en = r(68081),
+                ei = r(91010),
+                eo = r(12155),
+                es = r(82667),
+                el = r(32091),
+                ed = r(55786),
+                ec = r(10694),
+                eu = r(97197),
+                e_ = r(52458),
+                ep = r(91345);
+            let eE = e => t => t.id === e;
+            var ef = r(39483),
+                eA = r(88797);
+            let eT = {
                 progress: {
                     remainingTime: null,
                     lastUpdate: null,
@@ -7310,26 +7388,26 @@
                     total: 0
                 }
             };
-            var eT = r(57912),
-                em = r(11927),
-                eS = r.n(em),
-                eg = r(39623);
-            let eR = {
+            var em = r(57912),
+                eS = r(11927),
+                eg = r.n(eS),
+                eR = r(39623);
+            let eh = {
                 isPending: !1
             };
-            var eh = r(27498),
-                ey = r(53155);
-            let ew = {
+            var ey = r(27498),
+                ew = r(53155);
+            let eI = {
                 isLoaded: !1,
                 list: []
             };
-            var eI = r(6481);
-            let ev = {
+            var ev = r(6481);
+            let eN = {
                 isLoaded: !1,
                 list: []
             };
-            var eN = r(53289);
-            let eO = {
+            var eO = r(53289);
+            let eP = {
                 uploader: {
                     options: {
                         visible: !1
@@ -7338,14 +7416,14 @@
                 },
                 showConsentWallPreferences: !1
             };
-            var eP = function(e) {
+            var eL = function(e) {
                 return e.SET_TIER_USER = "@WEDEBUG/SET_TIER_USER", e
-            }(eP || {});
-            let eL = {
-                adWallpaper: O.sJ.reducer,
-                banner: B.lZ.reducer,
-                roktAd: N.A8.reducer,
-                programmaticAd: K.C8.reducer,
+            }(eL || {});
+            let eD = {
+                adWallpaper: P.sJ.reducer,
+                banner: W.lZ.reducer,
+                roktAd: O.A8.reducer,
+                programmaticAd: q.C8.reducer,
                 channel: function() {
                     let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : {},
                         t = arguments.length > 1 ? arguments[1] : void 0,
@@ -7353,26 +7431,26 @@
                             type: r
                         } = t;
                     switch (r) {
-                        case eT.o.ACCOUNT_UPDATE_SUCCESS: {
-                            let r = w.account(t.details);
+                        case em.o.ACCOUNT_UPDATE_SUCCESS: {
+                            let r = I.account(t.details);
                             return {
                                 ...e,
                                 defaultRecipient: r.default_recipient_email
                             }
                         }
-                        case eg.TH.SET_WORKSPACE_ID:
+                        case eR.TH.SET_WORKSPACE_ID:
                             return {
                                 ...e, workspaceId: t.payload
                             };
-                        case eg.TH.SET_WALLPAPERS:
+                        case eR.TH.SET_WALLPAPERS:
                             return {
-                                ...e, wallpapers: eS()(t.wallpapers)
+                                ...e, wallpapers: eg()(t.wallpapers)
                             };
-                        case eg.TH.SET_PREVIEWS_WALLPAPERS:
+                        case eR.TH.SET_PREVIEWS_WALLPAPERS:
                             return {
-                                ...e, previewsWallpapers: eS()(t.wallpapers)
+                                ...e, previewsWallpapers: eg()(t.wallpapers)
                             };
-                        case eg.TH.SET_CHANNEL_TITLE:
+                        case eR.TH.SET_CHANNEL_TITLE:
                             return {
                                 ...e, title: t.payload
                             }
@@ -7380,29 +7458,29 @@
                     return e
                 },
                 download: function() {
-                    let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : eR,
+                    let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : eh,
                         t = arguments.length > 1 ? arguments[1] : void 0,
                         {
                             type: r
                         } = t;
                     switch (r) {
-                        case g.o1.DOWNLOAD_PENDING:
+                        case R.o1.DOWNLOAD_PENDING:
                             return {
                                 ...e, isPending: !0, error: null, completed: !1
                             };
-                        case g.o1.DOWNLOAD_SUCCESS:
+                        case R.o1.DOWNLOAD_SUCCESS:
                             return {
                                 ...e, isPending: !1, error: null, completed: !1
                             };
-                        case g.o1.DOWNLOAD_COMPLETED_SUCCESS:
+                        case R.o1.DOWNLOAD_COMPLETED_SUCCESS:
                             return {
                                 ...e, isPending: !1, error: null, completed: !0
                             };
-                        case g.o1.DOWNLOAD_ERROR:
+                        case R.o1.DOWNLOAD_ERROR:
                             return {
                                 ...e, isPending: !1, error: t.error || "Download failed", errorType: t.errorType || "DOWNLOAD_UNKNOWN_ERROR", completed: !1
                             };
-                        case g.o1.TRANSFER_RESET_DOWNLOAD:
+                        case R.o1.TRANSFER_RESET_DOWNLOAD:
                             return {
                                 ...e, isPending: !1, error: null, errorType: null, completed: !1
                             }
@@ -7419,26 +7497,26 @@
                             key: i
                         } = t;
                     switch (r) {
-                        case eh.o.ERROR_SET:
+                        case ey.o.ERROR_SET:
                             return {
                                 ...e, [a]: n
                             };
-                        case eh.o.ERROR_RESET:
+                        case ey.o.ERROR_RESET:
                             return e[a] && delete e[a][i], {
                                 ...e
                             };
-                        case eh.o.ERRORS_FORM_RESET:
+                        case ey.o.ERRORS_FORM_RESET:
                             return delete e[a], {
                                 ...e
                             }
                     }
                     return e
                 },
-                layout: J,
-                notification: ee,
+                layout: Z,
+                notification: et,
                 pending: G.CP.reducer,
-                route: er,
-                session: ea.hv.reducer,
+                route: ea,
+                session: en.hv.reducer,
                 transfer: function() {
                     var e, t;
                     let r = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : {},
@@ -7447,8 +7525,8 @@
                             type: n
                         } = a;
                     switch (n) {
-                        case g.o1.TRANSFER_INIT: {
-                            e_.A.resetFilenameCounter();
+                        case R.o1.TRANSFER_INIT: {
+                            ep.A.resetFilenameCounter();
                             let t = a.userType || "free";
                             return {
                                 channel: a.channelName || null,
@@ -7456,10 +7534,10 @@
                                 expiry: a.expiry,
                                 isRecoverable: a.isRecoverable || !1,
                                 files: a.files || [],
-                                feature: a.feature || ec.xA.TRANSFER,
+                                feature: a.feature || eu.xA.TRANSFER,
                                 id: a.id || !1,
                                 items: a.items || [],
-                                itemsTree: a.itemsTree || ei.vN(),
+                                itemsTree: a.itemsTree || eo.vN(),
                                 language: a.language || "en",
                                 message: a.message || "",
                                 parent_id: a.parentId || !1,
@@ -7468,8 +7546,8 @@
                                 recipients: a.recipients || [],
                                 sender: a.sender || "",
                                 shortURL: a.shortURL || null,
-                                state: a.state || ed.r.INIT,
-                                type: a.transferType || ec.aG.EMAIL,
+                                state: a.state || ec.r.INIT,
+                                type: a.transferType || eu.aG.EMAIL,
                                 userType: t,
                                 uploadStartedAt: a.uploadStartedAt || 0,
                                 displayName: a.displayName || "",
@@ -7518,81 +7596,81 @@
                                 resumeUploadAttempts: 0
                             }
                         }
-                        case g.o1.TRANSFER_RECOVER:
+                        case R.o1.TRANSFER_RECOVER:
                             return {
-                                ...r, state: a.state || ed.r.INIT, expiryInSeconds: a.expiryInSeconds, recovered: !0
+                                ...r, state: a.state || ec.r.INIT, expiryInSeconds: a.expiryInSeconds, recovered: !0
                             };
-                        case g.o1.TRANSFER_CHANGE_FEATURE:
+                        case R.o1.TRANSFER_CHANGE_FEATURE:
                             return {
                                 ...r, feature: a.feature
                             };
-                        case g.o1.TRANSFER_CHANGE_TYPE:
+                        case R.o1.TRANSFER_CHANGE_TYPE:
                             return {
                                 ...r, type: a.transferType
                             };
-                        case g.o1.TRANSFER_CHANGE_EXPIRY: {
+                        case R.o1.TRANSFER_CHANGE_EXPIRY: {
                             let e = {
                                     ...r,
                                     expiry: a.period
                                 },
-                                t = (0, eo.f)({
+                                t = (0, es.f)({
                                     transferExpiry: a.period,
                                     currentSize: e.size || 0,
                                     isRecoverable: e.isRecoverable || !1
                                 });
                             return t ? e.extendedExpiryDate = t.toString() : e.extendedExpiryDate = void 0, e
                         }
-                        case g.o1.TRANSFER_CHANGE_DOWNLOADER_EMAIL_VERIFICATION:
+                        case R.o1.TRANSFER_CHANGE_DOWNLOADER_EMAIL_VERIFICATION:
                             return {
                                 ...r, downloaderEmailVerification: a.downloaderEmailVerification
                             };
-                        case el.rh.type:
+                        case ed.rh.type:
                             return {
                                 ...r, viewOption: a.payload
                             };
-                        case el.sZ.type:
+                        case ed.sZ.type:
                             return {
                                 ...r, allowComments: a.payload
                             };
-                        case el.ML.type:
+                        case ed.ML.type:
                             return {
                                 ...r, allowlist: a.payload
                             };
-                        case g.o1.TRANSFER_CHANGE_RECOVERABLE:
+                        case R.o1.TRANSFER_CHANGE_RECOVERABLE:
                             return {
                                 ...r, isRecoverable: a.isRecoverable
                             };
-                        case g.o1.TRANSFER_CHANGE_PASSWORD:
+                        case R.o1.TRANSFER_CHANGE_PASSWORD:
                             return {
                                 ...r, password: a.password
                             };
-                        case g.o1.TRANSFER_SET_SENDER:
+                        case R.o1.TRANSFER_SET_SENDER:
                             return {
                                 ...r, sender: a.email
                             };
-                        case g.o1.TRANSFER_SET_MESSAGE:
+                        case R.o1.TRANSFER_SET_MESSAGE:
                             return {
                                 ...r, message: a.message
                             };
-                        case g.o1.TRANSFER_SET_REQUEST_ID:
+                        case R.o1.TRANSFER_SET_REQUEST_ID:
                             return {
                                 ...r, requestId: a.requestId
                             };
-                        case g.o1.TRANSFER_SET_RECIPIENT:
+                        case R.o1.TRANSFER_SET_RECIPIENT:
                             return {
                                 ...r, recipients: [a.email]
                             };
-                        case g.o1.TRANSFER_ADD_RECIPIENT:
+                        case R.o1.TRANSFER_ADD_RECIPIENT:
                             return {
                                 ...r, recipients: [...new Set([...r.recipients, ...a.emails])]
                             };
-                        case g.o1.TRANSFER_ADD_FILES: {
+                        case R.o1.TRANSFER_ADD_FILES: {
                             let {
                                 files: e,
                                 items: t,
                                 itemsTree: n,
                                 size: i
-                            } = (0, eu.J)({
+                            } = (0, e_.J)({
                                 ...r,
                                 files: [...r.files, ...a.files]
                             });
@@ -7604,13 +7682,13 @@
                                 size: i
                             }
                         }
-                        case g.o1.TRANSFER_REMOVE_FILE: {
+                        case R.o1.TRANSFER_REMOVE_FILE: {
                             let {
                                 files: e,
                                 items: t,
                                 itemsTree: n,
                                 size: i
-                            } = (0, eu.J)({
+                            } = (0, e_.J)({
                                 ...r,
                                 files: r.files.filter(e => e.name !== a.fileName)
                             });
@@ -7622,7 +7700,7 @@
                                 size: i
                             }
                         }
-                        case g.o1.TRANSFER_REMOVE_DIRECTORY: {
+                        case R.o1.TRANSFER_REMOVE_DIRECTORY: {
                             let e = a.directoryName,
                                 t = "".concat(e, "/"),
                                 {
@@ -7630,7 +7708,7 @@
                                     items: i,
                                     itemsTree: o,
                                     size: s
-                                } = (0, eu.J)({
+                                } = (0, e_.J)({
                                     ...r,
                                     files: r.files.filter(r => r.name !== e && !r.name.startsWith(t))
                                 });
@@ -7642,13 +7720,13 @@
                                 size: s
                             }
                         }
-                        case g.o1.TRANSFER_REMOVE_ALL_ITEMS: {
+                        case R.o1.TRANSFER_REMOVE_ALL_ITEMS: {
                             let {
                                 files: e,
                                 items: t,
                                 itemsTree: a,
                                 size: n
-                            } = (0, eu.J)({
+                            } = (0, e_.J)({
                                 ...r,
                                 files: []
                             });
@@ -7660,174 +7738,174 @@
                                 size: n
                             }
                         }
-                        case g.o1.TRANSFER_REMOVE_RECIPIENT:
+                        case R.o1.TRANSFER_REMOVE_RECIPIENT:
                             return {
                                 ...r, recipients: r.recipients.filter(e => e !== a.email)
                             };
-                        case g.o1.TRANSFER_REMOVE_ALL_RECIPIENTS:
+                        case R.o1.TRANSFER_REMOVE_ALL_RECIPIENTS:
                             return {
                                 ...r, recipients: []
                             };
-                        case g.o1.TRANSFER_RESET:
+                        case R.o1.TRANSFER_RESET:
                             return {
-                                ...r, id: !1, state: ed.r.INIT, resumeUploadAttempts: 0
+                                ...r, id: !1, state: ec.r.INIT, resumeUploadAttempts: 0
                             };
-                        case g.o1.TRANSFER_START:
+                        case R.o1.TRANSFER_START:
                             break;
-                        case g.o1.TRANSFER_STATE_DOWNLOADABLE:
+                        case R.o1.TRANSFER_STATE_DOWNLOADABLE:
                             return {
-                                ...r, state: ed.r.DOWNLOADABLE
+                                ...r, state: ec.r.DOWNLOADABLE
                             };
-                        case g.o1.TRANSFER_STATE_DOWNLOAD_STARTING:
+                        case R.o1.TRANSFER_STATE_DOWNLOAD_STARTING:
                             return {
-                                ...r, state: ed.r.DOWNLOADING
+                                ...r, state: ec.r.DOWNLOADING
                             };
-                        case g.o1.TRANSFER_STATE_FINISHED:
+                        case R.o1.TRANSFER_STATE_FINISHED:
                             return {
-                                ...r, state: ed.r.FINISHED
+                                ...r, state: ec.r.FINISHED
                             };
-                        case g.o1.RECAPTCHA_CHALLENGE_RECEIVED:
+                        case R.o1.RECAPTCHA_CHALLENGE_RECEIVED:
                             return {
-                                ...r, id: a.transfer_id, state: ed.r.RECAPTCHA
+                                ...r, id: a.transfer_id, state: ec.r.RECAPTCHA
                             };
-                        case g.o1.UPLOAD_ERROR:
-                            if ([en.A.LIMIT_REACHED, en.A.USER_BLOCKED, en.A.UNAVAILABLE_PARENT, en.A.TOO_MANY_TRANSFERS, en.A.FIREWALL_BLOCKED, en.A.NETWORK_ERROR, en.A.INCOMPLETE_UPLOAD, en.A.SERVER_ERROR, en.A.FILESYSTEM_ERROR, en.A.TEAM_POLICY_PASSWORD_REQUIRED, en.A.TEAM_POLICY_LINK_BLOCKED, en.A.DOCUMENT_ALREADY_SIGNED, en.A.ONLY_TEAM_MEMBERS_CAN_UPLOAD].includes(a.error)) return {
+                        case R.o1.UPLOAD_ERROR:
+                            if ([ei.A.LIMIT_REACHED, ei.A.USER_BLOCKED, ei.A.UNAVAILABLE_PARENT, ei.A.TOO_MANY_TRANSFERS, ei.A.FIREWALL_BLOCKED, ei.A.NETWORK_ERROR, ei.A.INCOMPLETE_UPLOAD, ei.A.SERVER_ERROR, ei.A.FILESYSTEM_ERROR, ei.A.TEAM_POLICY_PASSWORD_REQUIRED, ei.A.TEAM_POLICY_LINK_BLOCKED, ei.A.DOCUMENT_ALREADY_SIGNED, ei.A.ONLY_TEAM_MEMBERS_CAN_UPLOAD].includes(a.error)) return {
                                 ...r,
                                 lastError: a.error
                             };
                             break;
-                        case g.o1.TRANSFER_STATE_DOWNLOAD_STARTING_FILE:
+                        case R.o1.TRANSFER_STATE_DOWNLOAD_STARTING_FILE:
                             r.items.find(e => e.id === a.file_id).file.state.download = "downloading";
                             break;
-                        case g.o1.TRANSFER_STATE_FINISHED_FILE:
+                        case R.o1.TRANSFER_STATE_FINISHED_FILE:
                             r.items.find(e => e.id === a.file_id).file.state.download = "done";
                             break;
-                        case g.o1.TRANSFER_RESET_DOWNLOAD:
+                        case R.o1.TRANSFER_RESET_DOWNLOAD:
                             return {
-                                ...r, state: ed.r.DOWNLOADABLE
+                                ...r, state: ec.r.DOWNLOADABLE
                             };
-                        case g.o1.TRANSFER_DOWNLOAD_INVALID:
+                        case R.o1.TRANSFER_DOWNLOAD_INVALID:
                             return {
-                                ...r, state: ed.r.INVALID
+                                ...r, state: ec.r.INVALID
                             };
-                        case g.o1.TRANSFER_DOWNLOAD_EXPIRED:
+                        case R.o1.TRANSFER_DOWNLOAD_EXPIRED:
                             return {
-                                ...r, state: ed.r.EXPIRED
+                                ...r, state: ec.r.EXPIRED
                             };
-                        case y.actions.GET_USER:
-                            if (r.state === ed.r.INIT && (null == a || null == (t = a.details) ? void 0 : t.is_verified) === !1) return {
+                        case w.actions.GET_USER:
+                            if (r.state === ec.r.INIT && (null == a || null == (t = a.details) ? void 0 : t.is_verified) === !1) return {
                                 ...r,
-                                state: ed.r.VERIFY_ACCOUNT
+                                state: ec.r.VERIFY_ACCOUNT
                             };
                             break;
-                        case Y.e4.UPDATE_SYNC:
+                        case K.e4.UPDATE_SYNC:
                             if (void 0 !== a.updates.verified_at) return {
                                 ...r,
-                                state: ed.r.VERIFY_ACCOUNT_SUCCESS
+                                state: ec.r.VERIFY_ACCOUNT_SUCCESS
                             };
                             break;
-                        case g.o1.PREVIEW_LOADING: {
-                            let e = r.items.findIndex(ep(a.file_id)),
+                        case R.o1.PREVIEW_LOADING: {
+                            let e = r.items.findIndex(eE(a.file_id)),
                                 t = r.items[e];
                             return t.file.state.error = !1, t.file.state.loaded = !1, t.file.previewUri = a.file_url, {
                                 ...r
                             }
                         }
-                        case g.o1.PREVIEW_LOADED: {
-                            let e = r.items.findIndex(ep(a.file_id)),
+                        case R.o1.PREVIEW_LOADED: {
+                            let e = r.items.findIndex(eE(a.file_id)),
                                 t = r.items[e];
                             return t.file.state.error = !1, t.file.state.loaded = !0, {
                                 ...r
                             }
                         }
-                        case g.o1.UPLOAD_NEED_VERIFICATION:
+                        case R.o1.UPLOAD_NEED_VERIFICATION:
                             return {
                                 ...r, verification_required: !0
                             };
-                        case g.o1.UPLOAD_VERIFIED:
+                        case R.o1.UPLOAD_VERIFIED:
                             return {
                                 ...r, verification_required: !1
                             };
-                        case g.o1.TRANSFER_RESET_VERIFICATION_REQUIRED:
+                        case R.o1.TRANSFER_RESET_VERIFICATION_REQUIRED:
                             return {
                                 ...r, verification_required: void 0
                             };
-                        case g.o1.SHOW_TRANSFER_OPTIONS_TOOLTIP:
+                        case R.o1.SHOW_TRANSFER_OPTIONS_TOOLTIP:
                             return {
                                 ...r, showTransferOptionsTooltip: !0
                             };
-                        case g.o1.PREVIEW_ERROR: {
-                            let e = r.items.findIndex(ep(a.file_id)),
+                        case R.o1.PREVIEW_ERROR: {
+                            let e = r.items.findIndex(eE(a.file_id)),
                                 t = r.items[e];
                             t.file.state.error = !0, t.file.state.loaded = !1, t.file.previewUri = null;
                             break
                         }
-                        case g.o1.TRANSFER_SET_LANGUAGE:
+                        case R.o1.TRANSFER_SET_LANGUAGE:
                             return {
                                 ...r, language: a.language
                             };
-                        case g.o1.TRANSFER_SET_DOMAIN_USER_ID:
+                        case R.o1.TRANSFER_SET_DOMAIN_USER_ID:
                             return {
                                 ...r, domainUserId: a.domainUserId
                             };
-                        case g.o1.TRANSFER_SET_CHANNEL:
+                        case R.o1.TRANSFER_SET_CHANNEL:
                             return {
                                 ...r, channel: a.channel
                             };
-                        case g.o1.TRANSFER_SET_STATE:
+                        case R.o1.TRANSFER_SET_STATE:
                             return {
                                 ...r, state: a.state
                             };
-                        case g.o1.TRANSFER_SET_RESUME_UPLOAD_IN_PROGRESS:
+                        case R.o1.TRANSFER_SET_RESUME_UPLOAD_IN_PROGRESS:
                             return {
                                 ...r, resumeUploadInProgress: !!a.inProgress
                             };
-                        case g.o1.TRANSFER_SET_RESUME_UPLOAD_ATTEMPTS:
+                        case R.o1.TRANSFER_SET_RESUME_UPLOAD_ATTEMPTS:
                             return {
                                 ...r, resumeUploadAttempts: Number(a.attempts || 0)
                             };
-                        case g.o1.TRANSFER_SET_EXPIRY_IN_SECONDS:
+                        case R.o1.TRANSFER_SET_EXPIRY_IN_SECONDS:
                             if ("number" != typeof a.expiryInSeconds) break;
                             return {
                                 ...r, expiryInSeconds: a.expiryInSeconds
                             };
-                        case g.o1.TRANSFER_SET_SHORT_URL:
+                        case R.o1.TRANSFER_SET_SHORT_URL:
                             return {
                                 ...r, shortURL: a.shortURL
                             };
-                        case g.o1.TRANSFER_SET_ID:
+                        case R.o1.TRANSFER_SET_ID:
                             return {
                                 ...r, id: a.id
                             };
-                        case g.o1.TRANSFER_SET_STORM_UPLOAD_TOKEN:
+                        case R.o1.TRANSFER_SET_STORM_UPLOAD_TOKEN:
                             return {
                                 ...r, stormUploadToken: a.stormUploadToken
                             };
-                        case g.o1.TRANSFER_SET_RESUME_TOKEN:
+                        case R.o1.TRANSFER_SET_RESUME_TOKEN:
                             return {
                                 ...r, resumeToken: a.resumeToken
                             };
-                        case g.o1.TRANSFER_SET_DISPLAY_NAME:
+                        case R.o1.TRANSFER_SET_DISPLAY_NAME:
                             return {
                                 ...r, displayName: a.displayName
                             };
-                        case g.o1.TRANSFER_SET_SECURITY_HASH:
+                        case R.o1.TRANSFER_SET_SECURITY_HASH:
                             return {
                                 ...r, securityHash: a.securityHash
                             };
-                        case g.o1.TRANSFER_SET_SIGNATURE:
+                        case R.o1.TRANSFER_SET_SIGNATURE:
                             return {
                                 ...r, signature: a.signature
                             };
-                        case g.o1.TRANSFER_SET_UPLOAD_STARTED_AT:
+                        case R.o1.TRANSFER_SET_UPLOAD_STARTED_AT:
                             return {
                                 ...r, uploadStartedAt: a.uploadStartedAt, monotonicStartTime: a.monotonicStartTime
                             };
-                        case g.o1.TRANSFER_SET_TRACKING_ID:
+                        case R.o1.TRANSFER_SET_TRACKING_ID:
                             return {
                                 ...r, trackingId: a.trackingId
                             };
-                        case es.H.type: {
+                        case el.H.type: {
                             let {
                                 amount: e,
                                 currency: t
@@ -7844,21 +7922,21 @@
                     return r
                 },
                 transfers: function() {
-                    let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : ew,
+                    let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : eI,
                         t = arguments.length > 1 ? arguments[1] : void 0,
                         {
                             type: r
                         } = t;
                     switch (r) {
-                        case ey.o1.TRANSFERS_SUCCESS:
+                        case ew.o1.TRANSFERS_SUCCESS:
                             return {
-                                ...e, list: t.list.map(eu.J), isLoaded: !0
+                                ...e, list: t.list.map(e_.J), isLoaded: !0
                             };
-                        case ey.o1.GET_TRANSFER_SUCCESS:
+                        case ew.o1.GET_TRANSFER_SUCCESS:
                             return {
-                                ...e, transfer: (0, eu.J)(t.transfer)
+                                ...e, transfer: (0, e_.J)(t.transfer)
                             };
-                        case ey.o1.DOWNLOAD_TRANSFER_SUCCESS:
+                        case ew.o1.DOWNLOAD_TRANSFER_SUCCESS:
                             if (!e.transfer) break;
                             return {
                                 ...e, transfer: {
@@ -7866,11 +7944,11 @@
                                     number_of_downloads: e.transfer.number_of_downloads + 1
                                 }
                             };
-                        case ey.o1.TRANSFERS_RESET_TRANSFER:
+                        case ew.o1.TRANSFERS_RESET_TRANSFER:
                             return {
                                 ...e, transfer: null
                             };
-                        case ey.o1.TRANSFERS_RESET_LIST_LOADED:
+                        case ew.o1.TRANSFERS_RESET_LIST_LOADED:
                             return {
                                 ...e, isLoaded: !1
                             }
@@ -7878,22 +7956,22 @@
                     return e
                 },
                 transfersReceived: function() {
-                    let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : ev,
+                    let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : eN,
                         t = arguments.length > 1 ? arguments[1] : void 0,
                         {
                             type: r
                         } = t;
-                    return r === eI.o.RECEIVED_TRANSFERS_SUCCESS ? {
+                    return r === ev.o.RECEIVED_TRANSFERS_SUCCESS ? {
                         ...e,
-                        list: t.list.map(eu.J),
+                        list: t.list.map(e_.J),
                         isLoaded: !0
-                    } : r === eI.o.GET_RECEIVED_TRANSFER_SUCCESS ? {
+                    } : r === ev.o.GET_RECEIVED_TRANSFER_SUCCESS ? {
                         ...e,
-                        transfer: (0, eu.J)(t.transfer)
-                    } : r === eI.o.RECEIVED_TRANSFERS_RESET_TRANSFER ? {
+                        transfer: (0, e_.J)(t.transfer)
+                    } : r === ev.o.RECEIVED_TRANSFERS_RESET_TRANSFER ? {
                         ...e,
                         transfer: null
-                    } : e.isLoaded && r === g.o1.TRANSFER_STATE_DOWNLOADING && t.transferId ? {
+                    } : e.isLoaded && r === R.o1.TRANSFER_STATE_DOWNLOADING && t.transferId ? {
                         ...e,
                         list: e.list.map(e => e.transfer && e.recipient && !1 === e.recipient.transfer_downloaded && e.transfer.id === t.transferId ? {
                             ...e,
@@ -7911,21 +7989,21 @@
                             type: r
                         } = t;
                     switch (r) {
-                        case g.o1.UPLOAD_PENDING:
+                        case R.o1.UPLOAD_PENDING:
                             return delete e.error, {
                                 ...e,
                                 isPending: !0
                             };
-                        case g.o1.UPLOAD_ERROR_RESET:
+                        case R.o1.UPLOAD_ERROR_RESET:
                             return delete e.error, {
                                 ...e
                             };
-                        case g.o1.UPLOAD_RESET:
+                        case R.o1.UPLOAD_RESET:
                             return delete e.error, {
                                 ...e,
                                 isPending: !1
                             };
-                        case g.o1.UPLOAD_ERROR:
+                        case R.o1.UPLOAD_ERROR:
                             return {
                                 ...e, isPending: !1, error: t.error
                             }
@@ -7939,7 +8017,7 @@
                             type: r
                         } = t;
                     switch (r) {
-                        case y.actions.GET_USER: {
+                        case w.actions.GET_USER: {
                             let {
                                 id: r = !1,
                                 rules: a = e.rules || null,
@@ -7961,7 +8039,7 @@
                                 hasProfilePicture: S,
                                 hasMarketingConsent: g,
                                 marketingConsentUpdatedAt: R
-                            } = w.user(t.details);
+                            } = I.user(t.details);
                             return {
                                 ...e,
                                 created_at: n,
@@ -7987,27 +8065,27 @@
                                 marketingConsentUpdatedAt: R
                             }
                         }
-                        case y.actions.CHANGE_USER_LANGUAGE:
+                        case w.actions.CHANGE_USER_LANGUAGE:
                             return {
                                 ...e, language: t.language
                             };
-                        case y.actions.REQUEST_PASSWORD_RESET_SUCCESS:
+                        case w.actions.REQUEST_PASSWORD_RESET_SUCCESS:
                             return {
                                 ...e
                             };
-                        case y.actions.CHANGE_USER_IS_VERIFIED:
+                        case w.actions.CHANGE_USER_IS_VERIFIED:
                             return {
                                 ...e, isVerified: t.isVerified
                             };
-                        case y.actions.CHANGE_HAS_SKIPPED_VERIFICATION:
+                        case w.actions.CHANGE_HAS_SKIPPED_VERIFICATION:
                             return {
                                 ...e, hasSkippedVerification: t.hasSkippedVerification
                             };
-                        case y.actions.UPDATE_USER_EMAIL:
+                        case w.actions.UPDATE_USER_EMAIL:
                             return {
                                 ...e, email: t.email
                             };
-                        case y.actions.DISABLE_OTP:
+                        case w.actions.DISABLE_OTP:
                             return {
                                 ...e, otpEnabled: !1, otpEnabledAt: null
                             }
@@ -8029,20 +8107,20 @@
                             type: r
                         } = t;
                     switch (r) {
-                        case eT.o.GET_ACCOUNT:
-                        case eT.o.ACCOUNT_UPDATE_SUCCESS:
+                        case em.o.GET_ACCOUNT:
+                        case em.o.ACCOUNT_UPDATE_SUCCESS:
                             return {
-                                ...e, ...w.account(t.details)
+                                ...e, ...I.account(t.details)
                             };
-                        case eT.o.GET_LAST_ORDER:
+                        case em.o.GET_LAST_ORDER:
                             return {
                                 ...e, lastOrder: t.details
                             };
-                        case eT.o.PAYMENT_SUCCESS:
+                        case em.o.PAYMENT_SUCCESS:
                             return {
                                 ...e, payment: t.details
                             };
-                        case eT.o.UPDATE_ACCOUNT_MEMBERSHIP_USER_EMAIL:
+                        case em.o.UPDATE_ACCOUNT_MEMBERSHIP_USER_EMAIL:
                             if (0 === e.memberships.length) break;
                             return {
                                 ...e, memberships: [{
@@ -8053,18 +8131,18 @@
                                     }
                                 }]
                             };
-                        case eT.o.CREATE_SUBDOMAIN:
+                        case em.o.CREATE_SUBDOMAIN:
                             return {
-                                ...e, ...w.account(t.account)
+                                ...e, ...I.account(t.account)
                             };
-                        case eT.o.PAYMENT_ERROR:
+                        case em.o.PAYMENT_ERROR:
                             return {
                                 ...e, payment: {
                                     ...e.payment,
                                     error: t.details
                                 }
                             };
-                        case eT.o.SET_CAN_SEE_GOODBYE_OFFER:
+                        case em.o.SET_CAN_SEE_GOODBYE_OFFER:
                             return {
                                 ...e, canSeeGoodbyeOffer: t.canSeeGoodbyeOffer
                             }
@@ -8072,13 +8150,13 @@
                     return e
                 },
                 ui: function() {
-                    let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : eO,
+                    let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : eP,
                         t = arguments.length > 1 ? arguments[1] : void 0,
                         {
                             type: r
                         } = t;
                     switch (r) {
-                        case eN.o.SET_UPLOADER_OPTIONS:
+                        case eO.o.SET_UPLOADER_OPTIONS:
                             return {
                                 ...e, uploader: {
                                     ...e.uploader,
@@ -8088,11 +8166,11 @@
                                     }
                                 }
                             };
-                        case eN.o.SET_SHOW_CONSENT_WALL_PREFERENCES:
+                        case eO.o.SET_SHOW_CONSENT_WALL_PREFERENCES:
                             return {
                                 ...e, showConsentWallPreferences: t.value
                             };
-                        case eN.o.RESET_UPLOADER_SCROLL:
+                        case eO.o.RESET_UPLOADER_SCROLL:
                             return {
                                 ...e, uploader: {
                                     ...e.uploader,
@@ -8103,23 +8181,23 @@
                     return e
                 },
                 transferUpload: function() {
-                    let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : eA,
+                    let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : eT,
                         t = arguments.length > 1 ? arguments[1] : void 0;
                     switch (t.type) {
-                        case ef.si.RESET_UPLOAD_PROGRESS:
+                        case eA.si.RESET_UPLOAD_PROGRESS:
                             return {
                                 ...e, progress: {
-                                    ...eA.progress
+                                    ...eT.progress
                                 }
                             };
-                        case ef.si.SET_LAST_UPDATE:
+                        case eA.si.SET_LAST_UPDATE:
                             return {
                                 ...e, progress: {
                                     ...e.progress,
                                     lastUpdate: Date.now()
                                 }
                             };
-                        case ef.si.UPDATE_UPLOAD_TIME: {
+                        case eA.si.UPDATE_UPLOAD_TIME: {
                             let r = (Date.now() - e.progress.lastUpdate) / 1e3,
                                 a = [(t.bytesSentSoFar - e.progress.bytesSentSoFar) / r, ...e.progress.bytesPerSecondLog],
                                 n = a.reduce((e, t) => e + t, 0) / a.length,
@@ -8134,7 +8212,7 @@
                                 }
                             }
                         }
-                        case ef.si.UPDATE_UPLOAD_PROGRESS: {
+                        case eA.si.UPDATE_UPLOAD_PROGRESS: {
                             let r = (Date.now() - t.transferUploadStartedAt) / 1e3;
                             return {
                                 ...e,
@@ -8145,7 +8223,7 @@
                                 }
                             }
                         }
-                        case ef.si.UPDATE_TOTAL_UPLOAD_PROGRESS: {
+                        case eA.si.UPDATE_TOTAL_UPLOAD_PROGRESS: {
                             let r = Math.min(100, Math.round(100 * t.totalProgress));
                             return {
                                 ...e,
@@ -8159,12 +8237,12 @@
                             return e
                     }
                 },
-                consent: W.p6.reducer,
+                consent: z.p6.reducer,
                 auth: function() {
-                    let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : s,
+                    let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : l,
                         t = arguments.length > 1 ? arguments[1] : void 0;
                     switch (t.type) {
-                        case Y.e4.UPDATE_STATUS:
+                        case K.e4.UPDATE_STATUS:
                             if (!t.isLoggedIn) return {
                                 ...e,
                                 isLoggedIn: !1,
@@ -8179,11 +8257,11 @@
                             return {
                                 ...e, isLoggedIn: !0, givenName: t.givenName, familyName: t.familyName, email: t.email, emailIsLocked: t.emailIsLocked, picture: t.picture, auth0UserId: t.auth0UserId, "https://wetransfer.com/provider": t.loginProvider, isPasswordless: t.isPasswordless
                             };
-                        case Y.e4.UPDATE_APP_STATE:
+                        case K.e4.UPDATE_APP_STATE:
                             return {
                                 ...e, state: t.state
                             };
-                        case Y.e4.LOADING:
+                        case K.e4.LOADING:
                             if (e.isLoading && !1 === t.isLoading) return {
                                 ...e,
                                 isInitialized: !0,
@@ -8196,35 +8274,36 @@
                             return e
                     }
                 },
-                customWallpapers: X.Hi,
-                paymentIntegrations: et.I2,
-                currentOrder: Q.Ai,
-                transferWindowDrawer: eE.Tg.reducer,
-                showcase: D.On.reducer,
-                socialLinks: C.rS.reducer,
-                socialLinksInputs: M.reducer,
-                transferWindowCardSwitcher: q.$_.reducer,
-                paywalls: L.E1.reducer,
-                passwordlessLogin: P.k.reducer,
-                checkout: n.jf.reducer,
-                unlockOneDayExpiryTransfer: x.Pu.reducer,
-                malwareProtection: Z.Ay,
-                [E.l.reducerPath]: E.l.reducer,
-                transferUploaderStep: $.Ay,
-                [u.K.reducerPath]: u.K.reducer,
-                [_.WJ.reducerPath]: _.WJ.reducer,
-                [p.jt.reducerPath]: p.jt.reducer,
-                [f.f.reducerPath]: f.f.reducer,
-                wolfAnalytics: i.R.reducer,
-                customDomainOption: l.F5.reducer,
-                rateLimit: z.sP.reducer,
-                resumeTransferPersistence: j.do.reducer,
-                funnelTracking: V.Is.reducer,
-                appRedirectOverlay: H.QK.reducer
+                customWallpapers: J.Hi,
+                paymentIntegrations: er.I2,
+                currentOrder: X.Ai,
+                transferWindowDrawer: ef.Tg.reducer,
+                showcase: C.On.reducer,
+                socialLinks: U.rS.reducer,
+                socialLinksInputs: x.reducer,
+                transferWindowCardSwitcher: Q.$_.reducer,
+                paywalls: D.E1.reducer,
+                passwordlessLogin: L.k.reducer,
+                checkout: i.jf.reducer,
+                unlockOneDayExpiryTransfer: B.Pu.reducer,
+                malwareProtection: $.Ay,
+                [f.l.reducerPath]: f.l.reducer,
+                transferUploaderStep: ee.Ay,
+                [_.K.reducerPath]: _.K.reducer,
+                [p.WJ.reducerPath]: p.WJ.reducer,
+                [E.jt.reducerPath]: E.jt.reducer,
+                [A.f.reducerPath]: A.f.reducer,
+                wolfAnalytics: o.R.reducer,
+                customDomainOption: d.F5.reducer,
+                rateLimit: V.sP.reducer,
+                resumeTransferPersistence: Y.do.reducer,
+                funnelTracking: H.Is.reducer,
+                appRedirectOverlay: j.QK.reducer,
+                browserNotifications: n.xq.reducer
             };
-            var eD = r(56436),
-                eC = r(53123);
-            let eU = (() => {
+            var eC = r(56436),
+                eU = r(53123);
+            let ek = (() => {
                 let e = window.__session__ || {},
                     {
                         id: t,
@@ -8248,8 +8327,8 @@
                         isBusinessUser: S,
                         hasMarketingConsent: g,
                         marketingConsentUpdatedAt: R
-                    } = w.user(e.user),
-                    h = eC.A.getAvatar(t);
+                    } = I.user(e.user),
+                    h = eU.A.getAvatar(t);
                 return {
                     id: t,
                     loggedIn: t || !1,
@@ -8281,19 +8360,19 @@
                     marketingConsentUpdatedAt: R
                 }
             })();
-            var ek = r(23966),
-                eb = r(14901),
-                eF = r(38967),
-                eM = r(50820);
-            let ex = {
+            var eb = r(23966),
+                eF = r(14901),
+                eM = r(38967),
+                ex = r(50820);
+            let eB = {
                     accountId: 0,
                     expiry: null,
                     isRecoverable: !1,
                     files: [],
-                    feature: ec.xA.TRANSFER,
+                    feature: eu.xA.TRANSFER,
                     id: !1,
                     items: [],
-                    itemsTree: (0, ei.vN)(),
+                    itemsTree: (0, eo.vN)(),
                     message: "",
                     paid: !1,
                     parent_id: !1,
@@ -8310,17 +8389,17 @@
                     language: "",
                     downloaderEmailVerification: void 0,
                     trackingId: "",
-                    viewOption: eM._9.PREVIEW_AND_DOWNLOAD,
+                    viewOption: ex._9.PREVIEW_AND_DOWNLOAD,
                     allowComments: !1,
                     allowlist: []
                 },
-                eB = {
-                    channel: eD.A,
-                    banner: B.ue,
-                    checkout: n.ue,
-                    unlockOneDayExpiryTransfer: x.ue,
-                    layout: ek.I,
-                    notification: eb.u,
+                eW = {
+                    channel: eC.A,
+                    banner: W.ue,
+                    checkout: i.ue,
+                    unlockOneDayExpiryTransfer: B.ue,
+                    layout: eb.I,
+                    notification: eF.u,
                     pending: G.ue,
                     account: {
                         id: void 0,
@@ -8335,37 +8414,66 @@
                         payment: {},
                         default_recipient_email: ""
                     },
-                    route: eF.u,
-                    session: (0, ea.c3)(),
-                    transfer: ex,
-                    ui: eO,
-                    user: eU,
-                    transferUpload: eA,
+                    route: eM.u,
+                    session: (0, en.c3)(),
+                    transfer: eB,
+                    ui: eP,
+                    user: ek,
+                    transferUpload: eT,
                     upload: {
                         isPending: !1
                     },
-                    consent: W.ue,
-                    auth: s,
-                    customWallpapers: X.ue,
-                    paymentIntegrations: et.ue,
-                    currentOrder: Q.ue,
-                    transferWindowDrawer: eE.ue,
-                    showcase: D.ue,
-                    socialLinks: C.ue,
-                    socialLinksInputs: F,
-                    paywalls: L.ue,
-                    passwordlessLogin: P.u,
-                    adWallpaper: O.ue,
-                    roktAd: N.ue,
-                    malwareProtection: Z.ue,
-                    wolfAnalytics: i.u,
-                    customDomainOption: l.ue,
+                    consent: z.ue,
+                    auth: l,
+                    customWallpapers: J.ue,
+                    paymentIntegrations: er.ue,
+                    currentOrder: X.ue,
+                    transferWindowDrawer: ef.ue,
+                    showcase: C.ue,
+                    socialLinks: U.ue,
+                    socialLinksInputs: M,
+                    paywalls: D.ue,
+                    passwordlessLogin: L.u,
+                    adWallpaper: P.ue,
+                    roktAd: O.ue,
+                    malwareProtection: $.ue,
+                    wolfAnalytics: o.u,
+                    customDomainOption: d.ue,
                     rateLimit: a.ue,
-                    download: eR,
-                    appRedirectOverlay: o.ue
+                    download: eh,
+                    appRedirectOverlay: s.ue,
+                    browserNotifications: n.ue
                 },
-                eW = v(eB, eL),
-                eG = e => v(e, eL)
+                ez = N(eW, eD),
+                eG = e => N(e, eD)
+        },
+        67739: (e, t, r) => {
+            r.d(t, {
+                Jt: () => o,
+                Ro: () => s,
+                ue: () => n,
+                xq: () => i
+            });
+            var a = r(96361);
+            let n = {
+                    isOpen: !1
+                },
+                i = (0, a.Z0)({
+                    name: "browserNotifications",
+                    initialState: n,
+                    reducers: {
+                        openPermissionModal: e => {
+                            e.isOpen = !0
+                        },
+                        closePermissionModal: e => {
+                            e.isOpen = !1
+                        }
+                    }
+                }),
+                {
+                    openPermissionModal: o,
+                    closePermissionModal: s
+                } = i.actions
         },
         68018: (e, t, r) => {
             r.d(t, {
@@ -8536,10 +8644,10 @@
                 Vv: () => q,
                 F4: () => K,
                 A4: () => et,
-                d5: () => G,
+                d5: () => z,
                 lX: () => $,
                 Rx: () => ee,
-                qn: () => z
+                qn: () => G
             });
             var a = r(582),
                 n = r.n(a),
@@ -8687,16 +8795,16 @@
             }
             let W = "transferRecovered_";
 
-            function G(e) {
+            function z(e) {
                 return !!e && "true" === window.sessionStorage.getItem("".concat(W).concat(e))
             }
 
-            function z(e) {
+            function G(e) {
                 e && window.sessionStorage.setItem("".concat(W).concat(e), "true")
             }
 
             function V(e) {
-                return G(e.id) || !!(e.extendedExpiryInSeconds && e.expiryInSeconds === e.extendedExpiryInSeconds)
+                return z(e.id) || !!(e.extendedExpiryInSeconds && e.expiryInSeconds === e.extendedExpiryInSeconds)
             }
             async function H(e, t) {
                 let r = !1,
@@ -9386,7 +9494,7 @@
                         type: S.o1.TRANSFER_RECOVER,
                         state: n,
                         expiryInSeconds: t
-                    }), z(a.id)
+                    }), G(a.id)
                 }
             }
 
@@ -9906,6 +10014,62 @@
                 }
             }
             _.SILENT = "silent", _.DEFAULT_TITLE = a.A.t("site.titles.default")
+        },
+        72429: (e, t, r) => {
+            r.d(t, {
+                A8: () => n,
+                c0: () => l,
+                hH: () => i,
+                mT: () => s,
+                nv: () => a
+            });
+            var a = function(e) {
+                return e.GRANTED = "granted", e.DENIED = "denied", e.DEFAULT = "default", e
+            }({});
+
+            function n() {
+                return "Notification" in window
+            }
+
+            function i() {
+                return n() ? Notification.permission : "denied"
+            }
+
+            function o() {
+                return "granted" === i()
+            }
+            async function s() {
+                if (!n()) return !1;
+                if (o()) return !0;
+                if ("denied" === i()) return !1;
+                try {
+                    let e = await Notification.requestPermission();
+                    return "granted" === e
+                } catch (e) {
+                    return !1
+                }
+            }
+
+            function l(e) {
+                if ("visible" === document.visibilityState && document.hasFocus() || !n() || !o()) return null;
+                var t = {
+                    title: "WeTransfer",
+                    body: e
+                };
+                if (!n() || !o()) return null;
+                try {
+                    let e = new Notification(t.title, {
+                        body: t.body,
+                        icon: "/favicon.svg"
+                    });
+                    return t.onClick && (e.onclick = () => {
+                        var r;
+                        window.focus(), null == (r = t.onClick) || r.call(t), e.close()
+                    }), e
+                } catch (e) {
+                    return null
+                }
+            }
         },
         72546: (e, t, r) => {
             r.d(t, {
@@ -10513,50 +10677,6 @@
                 i = (0, a.Mz)(n, e => e.isSwitcherDisabled),
                 o = (0, a.Mz)(n, e => e.isUploadForeground),
                 s = (0, a.Mz)(n, e => e.uploadCompletionUpsellCardParams)
-        },
-        78644: (e, t, r) => {
-            r.d(t, {
-                zj: () => a,
-                NQ: () => l,
-                ue: () => i,
-                bo: () => d,
-                fO: () => c.fO,
-                pe: () => c.pe,
-                s2: () => s,
-                Tg: () => o
-            });
-            var a = function(e) {
-                    return e.Price = "Price", e.Options = "Options", e.AccessControl = "AccessControl", e
-                }({}),
-                n = r(96361);
-            let i = {
-                    isDrawerOpen: !1,
-                    currentPageId: null
-                },
-                o = (0, n.Z0)({
-                    name: "transferWindowDrawer",
-                    initialState: i,
-                    reducers: {
-                        setTransferWindowPageId(e, t) {
-                            let {
-                                payload: r
-                            } = t;
-                            e.currentPageId = r
-                        },
-                        closeTransferWindowDrawer(e) {
-                            e.isDrawerOpen = !1
-                        },
-                        openTransferWindowDrawer(e) {
-                            e.isDrawerOpen = !0
-                        }
-                    }
-                }),
-                {
-                    setTransferWindowPageId: s,
-                    closeTransferWindowDrawer: l,
-                    openTransferWindowDrawer: d
-                } = o.actions;
-            var c = r(61703)
         },
         80341: (e, t, r) => {
             r.d(t, {
@@ -11906,21 +12026,21 @@
         88797: (e, t, r) => {
             let a, n;
             r.d(t, {
-                si: () => eg,
-                YK: () => eh,
-                L2: () => ek,
-                R0: () => ev,
-                wM: () => eL,
-                Yo: () => eU,
-                BY: () => eM,
-                tr: () => eD,
-                $5: () => eI,
-                V3: () => eP,
-                y9: () => eN,
-                DG: () => eC,
-                IP: () => eb,
-                MX: () => eF,
-                BE: () => eO
+                si: () => eR,
+                YK: () => ey,
+                L2: () => eb,
+                R0: () => eN,
+                wM: () => eD,
+                Yo: () => ek,
+                BY: () => ex,
+                tr: () => eC,
+                $5: () => ev,
+                V3: () => eL,
+                y9: () => eO,
+                DG: () => eU,
+                IP: () => eF,
+                MX: () => eM,
+                BE: () => eP
             });
             var i = r(30530),
                 o = r(26465),
@@ -11932,34 +12052,35 @@
                 _ = r.n(u),
                 p = r(99119),
                 E = r(58155),
-                f = r(39075),
-                A = r(38969),
-                T = r(92633),
-                m = r(53379),
-                S = r(87963),
-                g = r(24932),
-                R = r(28338),
-                h = r(50820),
-                y = r(25402),
-                w = r(50467),
-                I = r(55851),
-                v = r(55256),
-                N = r(35120),
-                O = r(27214),
-                P = r(56277),
-                L = r(88848),
-                D = r(20776),
-                C = r(53123),
-                U = r(63010),
-                k = r(91010),
-                b = r(87379),
-                F = r(62373),
-                M = r(78598),
-                x = r(42789),
-                B = r(84530),
-                W = r(41993);
+                f = r(72429),
+                A = r(39075),
+                T = r(38969),
+                m = r(92633),
+                S = r(53379),
+                g = r(87963),
+                R = r(24932),
+                h = r(28338),
+                y = r(50820),
+                w = r(25402),
+                I = r(50467),
+                v = r(55851),
+                N = r(55256),
+                O = r(35120),
+                P = r(27214),
+                L = r(56277),
+                D = r(88848),
+                C = r(20776),
+                U = r(53123),
+                k = r(63010),
+                b = r(91010),
+                F = r(87379),
+                M = r(62373),
+                x = r(78598),
+                B = r(42789),
+                W = r(84530),
+                z = r(41993);
             let G = {},
-                z = {
+                V = {
                     start: function(e) {
                         G = {
                             ...G,
@@ -11977,28 +12098,28 @@
                         }(e), t
                     }
                 };
-            var V = r(63306),
-                H = r(56915),
-                j = r(85218),
-                Y = r(86781),
-                K = r(72546),
-                q = r(55786),
-                Q = r(96652),
-                X = r(10694),
-                J = r(97197),
-                Z = r(62529),
-                $ = r(68642),
-                ee = r(64567),
-                et = r(52458),
-                er = r(30631),
-                ea = r(74771),
-                en = function(e) {
-                    return e["10MB"] = "10MB", e["100MB"] = "100MB", e["1GB"] = "1GB", e["5GB"] = "5GB", e["10GB"] = "10GB", e["100GB"] = "100GB", e["1TB"] = "1TB", e.PLUS1TB = "PLUS1TB", e
-                }(en || {}),
+            var H = r(63306),
+                j = r(56915),
+                Y = r(85218),
+                K = r(86781),
+                q = r(72546),
+                Q = r(55786),
+                X = r(96652),
+                J = r(10694),
+                Z = r(97197),
+                $ = r(62529),
+                ee = r(68642),
+                et = r(64567),
+                er = r(52458),
+                ea = r(30631),
+                en = r(74771),
                 ei = function(e) {
+                    return e["10MB"] = "10MB", e["100MB"] = "100MB", e["1GB"] = "1GB", e["5GB"] = "5GB", e["10GB"] = "10GB", e["100GB"] = "100GB", e["1TB"] = "1TB", e.PLUS1TB = "PLUS1TB", e
+                }(ei || {}),
+                eo = function(e) {
                     return e["1-10 files"] = "1-10 files", e["11-100 files"] = "11-100 files", e["101-1000 files"] = "101-1000 files", e["1001-10000 files"] = "1001-10000 files", e["plus 10000 files"] = "plus 10000 files", e
-                }(ei || {});
-            let eo = e => {
+                }(eo || {});
+            let es = e => {
                 switch (!0) {
                     case e < 1e7:
                         return "10MB";
@@ -12018,9 +12139,9 @@
                         return "PLUS1TB"
                 }
             };
-            var es = r(59184),
-                el = r(28581);
-            class ed {
+            var el = r(59184),
+                ed = r(28581);
+            class ec {
                 startMonitoring(e, t, r, a) {
                     this.transferId = e, this.transferSize = t, this.fileCount = r, this.stormClientVersion = a, this.transferStartTime = Date.now(), this.isActive = !0, this.lastProgressSnapshot = null, this.progressHistory = [], this.stallCheckTimer = setInterval(() => {
                         this.checkForStall()
@@ -12091,7 +12212,7 @@
                         isOnline: navigator.onLine,
                         networkRequests: a,
                         uploadStats: {
-                            ...el.Ay.currentUploadStats
+                            ...ed.Ay.currentUploadStats
                         },
                         stormClientVersion: this.stormClientVersion,
                         isPageVisible: "visible" === document.visibilityState
@@ -12105,13 +12226,13 @@
                     }
                 }
             }
-            let ec = new ed;
-            var eu = r(91345),
-                e_ = r(9912),
-                ep = r(82901),
-                eE = r(70316),
-                ef = r(12155);
-            let eA = e => {
+            let eu = new ec;
+            var e_ = r(91345),
+                ep = r(9912),
+                eE = r(82901),
+                ef = r(70316),
+                eA = r(12155);
+            let eT = e => {
                     var t;
                     let {
                         transfer: r,
@@ -12129,16 +12250,16 @@
                         n_of_files: r.files.length,
                         n_of_folders: a,
                         size_of_transfer: r.size,
-                        expiry_selected: Math.round(s / I.i.ONE_DAY_IN_SECONDS),
+                        expiry_selected: Math.round(s / v.i.ONE_DAY_IN_SECONDS),
                         has_custom_background: "None" !== n,
                         branding_type: n,
-                        transfer_download_price: null != (t = (0, b.V6)(r)) ? t : 0,
+                        transfer_download_price: null != (t = (0, F.V6)(r)) ? t : 0,
                         viewOption: r.viewOption || r.view_option,
                         allow_comments: !!r.allowComments,
-                        ...(null == r ? void 0 : r.type) === J.aG.EMAIL || (null == r ? void 0 : r.transfer_type) === J.N3.EMAIL ? {
+                        ...(null == r ? void 0 : r.type) === Z.aG.EMAIL || (null == r ? void 0 : r.transfer_type) === Z.N3.EMAIL ? {
                             n_of_recipients: r.recipients.length
                         } : {},
-                        has_custom_title: (0, ef.cN)(r.files[0].name).pop() !== o,
+                        has_custom_title: (0, eA.cN)(r.files[0].name).pop() !== o,
                         has_message: !!r.message,
                         ...void 0 !== i ? {
                             upload_duration: i
@@ -12151,7 +12272,7 @@
                         }
                     }
                 },
-                eT = {
+                em = {
                     filesAdded(e) {
                         let {
                             method: t,
@@ -12201,7 +12322,7 @@
                         return {
                             kind: "transfer_email_upload_started",
                             info: {
-                                ...eA({
+                                ...eT({
                                     transfer: t,
                                     numberOfFolders: r,
                                     brandingType: a,
@@ -12232,7 +12353,7 @@
                         return {
                             kind: "transfer_link_upload_started",
                             info: {
-                                ...eA({
+                                ...eT({
                                     transfer: t,
                                     numberOfFolders: r,
                                     brandingType: a,
@@ -12265,7 +12386,7 @@
                         return {
                             kind: "transfer_email_upload_completed",
                             info: {
-                                ...eA({
+                                ...eT({
                                     transfer: t,
                                     numberOfFolders: r,
                                     brandingType: a,
@@ -12300,7 +12421,7 @@
                         return {
                             kind: "transfer_link_upload_completed",
                             info: {
-                                ...eA({
+                                ...eT({
                                     transfer: t,
                                     numberOfFolders: r,
                                     brandingType: a,
@@ -12332,7 +12453,7 @@
                         return {
                             kind: "request_upload_started",
                             info: {
-                                ...eA({
+                                ...eT({
                                     transfer: t,
                                     numberOfFolders: r,
                                     brandingType: a,
@@ -12360,7 +12481,7 @@
                         return {
                             kind: "request_upload_completed",
                             info: {
-                                ...eA({
+                                ...eT({
                                     transfer: t,
                                     numberOfFolders: r,
                                     brandingType: a,
@@ -12375,56 +12496,56 @@
                         }
                     }
                 };
-            var em = r(15539);
-            let eS = "user_cancellation_request",
-                eg = v.$.generateTypes(["RESET_UPLOAD_PROGRESS", "UPDATE_UPLOAD_TIME", "SET_LAST_UPDATE", "UPDATE_UPLOAD_PROGRESS", "UPDATE_TOTAL_UPLOAD_PROGRESS"]),
-                eR = [k.A.NETWORK_ERROR, k.A.INCOMPLETE_UPLOAD, k.A.TRANSFER_FAILED],
-                eh = v.$.generateActions({
-                    resetUploadProgress: [eg.RESET_UPLOAD_PROGRESS],
-                    updateUploadTime: [eg.UPDATE_UPLOAD_TIME, "bytesSentSoFar", "currentSize"],
-                    setLastUpdate: [eg.SET_LAST_UPDATE],
-                    updateUploadProgress: [eg.UPDATE_UPLOAD_PROGRESS, "bytesSentSoFar", "transferUploadStartedAt"],
-                    updateTotalUploadProgress: [eg.UPDATE_TOTAL_UPLOAD_PROGRESS, "totalProgress"],
+            var eS = r(15539);
+            let eg = "user_cancellation_request",
+                eR = N.$.generateTypes(["RESET_UPLOAD_PROGRESS", "UPDATE_UPLOAD_TIME", "SET_LAST_UPDATE", "UPDATE_UPLOAD_PROGRESS", "UPDATE_TOTAL_UPLOAD_PROGRESS"]),
+                eh = [b.A.NETWORK_ERROR, b.A.INCOMPLETE_UPLOAD, b.A.TRANSFER_FAILED],
+                ey = N.$.generateActions({
+                    resetUploadProgress: [eR.RESET_UPLOAD_PROGRESS],
+                    updateUploadTime: [eR.UPDATE_UPLOAD_TIME, "bytesSentSoFar", "currentSize"],
+                    setLastUpdate: [eR.SET_LAST_UPDATE],
+                    updateUploadProgress: [eR.UPDATE_UPLOAD_PROGRESS, "bytesSentSoFar", "transferUploadStartedAt"],
+                    updateTotalUploadProgress: [eR.UPDATE_TOTAL_UPLOAD_PROGRESS, "totalProgress"],
                     pauseUpload: function() {
                         let e = arguments.length > 0 && void 0 !== arguments[0] && arguments[0];
                         return t => {
                             var r;
-                            null == (r = ea.A.pauseStormUpload) || r.call(ea.A), t(eh.pauseUploadProgress()), e || t({
-                                type: V.o1.TRANSFER_SET_STATE,
-                                state: X.r.PAUSED
+                            null == (r = en.A.pauseStormUpload) || r.call(en.A), t(ey.pauseUploadProgress()), e || t({
+                                type: H.o1.TRANSFER_SET_STATE,
+                                state: J.r.PAUSED
                             })
                         }
                     },
                     resumeUpload: function(e) {
                         return t => {
                             var r;
-                            null == (r = ea.A.resumeStormUpload) || r.call(ea.A), t(eh.startUploadProgress(e.files, (0, em.nn)({
+                            null == (r = en.A.resumeStormUpload) || r.call(en.A), t(ey.startUploadProgress(e.files, (0, eS.nn)({
                                 transfer: e
                             }), e.uploadStartedAt)), t({
-                                type: V.o1.TRANSFER_SET_STATE,
-                                state: X.r.STARTED
+                                type: H.o1.TRANSFER_SET_STATE,
+                                state: J.r.STARTED
                             })
                         }
                     },
-                    cancelUpload: eL,
-                    resetTransfer: eD,
+                    cancelUpload: eD,
+                    resetTransfer: eC,
                     abortTransfer: function(e) {
                         let t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : null;
                         return r => {
-                            r(eL(e, !1, t)), r({
-                                type: V.o1.TRANSFER_SET_STATE,
-                                state: X.r.ABORTED
+                            r(eD(e, !1, t)), r({
+                                type: H.o1.TRANSFER_SET_STATE,
+                                state: J.r.ABORTED
                             })
                         }
                     },
                     stopUploadProgress: function() {
                         return e => {
-                            e(eh.pauseUploadProgress()), e(eh.resetUploadProgress())
+                            e(ey.pauseUploadProgress()), e(ey.resetUploadProgress())
                         }
                     },
                     startUploadProgress: function(e, t, r) {
                         return a => {
-                            a(eh.estimateUploadTime(e, t)), a(eh.calculateUploadProgress(e, t, r))
+                            a(ey.estimateUploadTime(e, t)), a(ey.calculateUploadProgress(e, t, r))
                         }
                     },
                     pauseUploadProgress: function() {
@@ -12434,45 +12555,45 @@
                     },
                     estimateUploadTime: function(e, t) {
                         return r => {
-                            r(eh.setLastUpdate()), a && clearTimeout(a), a = setTimeout(() => {
+                            r(ey.setLastUpdate()), a && clearTimeout(a), a = setTimeout(() => {
                                 let a = e.reduce((e, t) => e + t.bytesSent, 0);
-                                r(eh.updateUploadTime(a, t)), r(eh.estimateUploadTime(e, t))
-                            }, Q.Yn.upload.remainingTimeInterval)
+                                r(ey.updateUploadTime(a, t)), r(ey.estimateUploadTime(e, t))
+                            }, X.Yn.upload.remainingTimeInterval)
                         }
                     },
                     calculateUploadProgress: function(e, t, r) {
                         return (a, i) => {
                             let o = e.reduce((e, t) => e + t.bytesSent, 0);
-                            a(eh.updateUploadProgress(o, r));
+                            a(ey.updateUploadProgress(o, r));
                             let s = i().transferUpload.progress.total;
-                            el.Ay.setPercentage(s.toFixed()), (0, es.A)().collect("upload progress", {
+                            ed.Ay.setPercentage(s.toFixed()), (0, el.A)().collect("upload progress", {
                                 bytesSentSoFar: o,
                                 currentSize: t,
                                 fileCount: null == e ? void 0 : e.length,
                                 percentage: s.toFixed(2),
                                 bucketedPercentage: s.toFixed(),
-                                networkVariability: el.Ay.currentUploadStats.networkVariabilityCounter
+                                networkVariability: ed.Ay.currentUploadStats.networkVariabilityCounter
                             }, "INFO", !0), n && clearTimeout(n), n = setTimeout(() => {
-                                a(eh.calculateUploadProgress(e, t, r))
-                            }, Q.Yn.upload.progressInterval)
+                                a(ey.calculateUploadProgress(e, t, r))
+                            }, X.Yn.upload.progressInterval)
                         }
                     },
-                    verifyPassword: eO,
+                    verifyPassword: eP,
                     abortUploadOnRefresh: function(e) {
                         return async () => {
-                            e.id && (e.state === X.r.STARTED || e.state === X.r.PAUSED) && await Promise.all([ep.QQ.exitTransfer(e.id), (0, e_.T)({
-                                name: w.PL,
+                            e.id && (e.state === J.r.STARTED || e.state === J.r.PAUSED) && await Promise.all([eE.QQ.exitTransfer(e.id), (0, ep.T)({
+                                name: I.PL,
                                 type: "action",
                                 tags: {
-                                    stage: el.Ay.currentUploadStats.stage,
-                                    transfer_size: eo(e.size),
+                                    stage: ed.Ay.currentUploadStats.stage,
+                                    transfer_size: es(e.size),
                                     outcome: "canceled",
-                                    storm_client_version: eW()
+                                    storm_client_version: ez()
                                 }
                             })])
                         }
                     },
-                    resumeUploadFromFailure: eP,
+                    resumeUploadFromFailure: eL,
                     createTransfer: function(e) {
                         let {
                             transfer: t,
@@ -12490,11 +12611,11 @@
                         return async e => {
                             try {
                                 let i;
-                                if ((0, es.A)().init(eW()), el.Ay.setStage("TRANSFER_INIT"), t.requestId) i = await ep.QQ.createUploadRequest(function(e) {
+                                if ((0, el.A)().init(ez()), ed.Ay.setStage("TRANSFER_INIT"), t.requestId) i = await eE.QQ.createUploadRequest(function(e) {
                                     let t, {
                                         transfer: r
                                     } = e;
-                                    r.files && (t = (0, et.J)(r));
+                                    r.files && (t = (0, er.J)(r));
                                     let a = {
                                             message: null == t ? void 0 : t.message,
                                             from: r.sender,
@@ -12502,7 +12623,7 @@
                                             files: [],
                                             passwordless: !0
                                         },
-                                        n = (0, g.I)();
+                                        n = (0, R.I)();
                                     return null !== n && (a.lsid = n), a.files = (null == t ? void 0 : t.files) ? null == t ? void 0 : t.files.map(e => ({
                                         name: e.name,
                                         size: e.size,
@@ -12512,7 +12633,7 @@
                                     transfer: t
                                 }));
                                 else {
-                                    let e = (0, ee.z)({
+                                    let e = (0, et.z)({
                                         transfer: t,
                                         deliverableId: a,
                                         shouldUseGracePeriodSegment: n,
@@ -12524,42 +12645,42 @@
                                         isAnticipatedUploadStarted: _,
                                         isPasswordlessAnticipatedUploadEnabled: p
                                     });
-                                    i = await ep.QQ.createUnifiedTransfer(e, _)
+                                    i = await eE.QQ.createUnifiedTransfer(e, _)
                                 }
-                                if (!i || !i.id) throw new U.A("InvalidTransferId");
+                                if (!i || !i.id) throw new k.A("InvalidTransferId");
                                 e({
-                                    type: V.o1.TRANSFER_SET_SHORT_URL,
+                                    type: H.o1.TRANSFER_SET_SHORT_URL,
                                     shortURL: i.shortened_url
-                                }), (0, es.A)().setTransferId(i.id).setTransferSize(eo(t.size)), r && (e({
-                                    type: V.o1.TRANSFER_SET_EXPIRY_IN_SECONDS,
+                                }), (0, el.A)().setTransferId(i.id).setTransferSize(es(t.size)), r && (e({
+                                    type: H.o1.TRANSFER_SET_EXPIRY_IN_SECONDS,
                                     expiryInSeconds: i.expiry_in_seconds
                                 }), e({
-                                    type: V.o1.TRANSFER_SET_SHORT_URL,
+                                    type: H.o1.TRANSFER_SET_SHORT_URL,
                                     shortURL: i.shortened_url
                                 })), e({
-                                    type: V.o1.TRANSFER_SET_ID,
+                                    type: H.o1.TRANSFER_SET_ID,
                                     id: i.id
                                 }), i.display_name && e({
-                                    type: V.o1.TRANSFER_SET_DISPLAY_NAME,
+                                    type: H.o1.TRANSFER_SET_DISPLAY_NAME,
                                     displayName: i.display_name
                                 }), i.resume_token && e({
-                                    type: V.o1.TRANSFER_SET_RESUME_TOKEN,
+                                    type: H.o1.TRANSFER_SET_RESUME_TOKEN,
                                     resumeToken: i.resume_token
                                 }), i.storm_upload_token && e({
-                                    type: V.o1.TRANSFER_SET_STORM_UPLOAD_TOKEN,
+                                    type: H.o1.TRANSFER_SET_STORM_UPLOAD_TOKEN,
                                     stormUploadToken: i.storm_upload_token
                                 }), i.signature && e({
-                                    type: V.o1.TRANSFER_SET_SIGNATURE,
+                                    type: H.o1.TRANSFER_SET_SIGNATURE,
                                     signature: i.signature
                                 });
-                                let E = t.type === J.aG.LINK && !d && c && !(null == t ? void 0 : t.requestId);
-                                "passwordless_verification_required" !== i.message || E || (await e((0, P.I)({
+                                let E = t.type === Z.aG.LINK && !d && c && !(null == t ? void 0 : t.requestId);
+                                "passwordless_verification_required" !== i.message || E || (await e((0, L.I)({
                                     email: t.sender
                                 })), e({
-                                    type: V.o1.UPLOAD_NEED_VERIFICATION
+                                    type: H.o1.UPLOAD_NEED_VERIFICATION
                                 })), "email_verification_required" !== i.message || E || e({
-                                    type: V.o1.UPLOAD_NEED_VERIFICATION
-                                }), o.L.addAction(w.E5, {
+                                    type: H.o1.UPLOAD_NEED_VERIFICATION
+                                }), o.L.addAction(I.E5, {
                                     files: t.files.length,
                                     storm: !0,
                                     transfer_id: t.id,
@@ -12570,12 +12691,12 @@
                                 })
                             } catch (r) {
                                 var f, A;
-                                if ((null == (f = r.body) ? void 0 : f.error) === "not_in_claiming_team") throw e(H.P.setTransferNotification({
+                                if ((null == (f = r.body) ? void 0 : f.error) === "not_in_claiming_team") throw e(j.P.setTransferNotification({
                                     text: "NotInClaimingTeam"
-                                })), e(eh.resetTransfer()), new U.A(k.A.NOT_IN_CLAIMING_TEAM);
-                                if (r.message !== k.A.ANTICIPATED_UPLOAD_FAILED && e({
-                                        type: V.o1.TRANSFER_SET_STATE,
-                                        state: X.r.ABORTED
+                                })), e(ey.resetTransfer()), new k.A(b.A.NOT_IN_CLAIMING_TEAM);
+                                if (r.message !== b.A.ANTICIPATED_UPLOAD_FAILED && e({
+                                        type: H.o1.TRANSFER_SET_STATE,
+                                        state: J.r.ABORTED
                                     }), i.yf.logger.error(r.toString(), {
                                         method: "createTransfer",
                                         user_journey: "upload",
@@ -12589,8 +12710,8 @@
                                             userType: t.userType,
                                             size: t.size
                                         }
-                                    }), M.A.track(r), [k.A.LIMIT_REACHED, k.A.USER_BLOCKED, k.A.UNAVAILABLE_PARENT, k.A.HUMAN_VERIFICATION_REQUIRED, k.A.TOO_MANY_RECIPIENTS, k.A.TOO_MANY_TRANSFERS, k.A.ANTICIPATED_UPLOAD_FAILED, k.A.TEAM_POLICY_PASSWORD_REQUIRED, k.A.TEAM_POLICY_LINK_BLOCKED, k.A.DOCUMENT_ALREADY_SIGNED, k.A.ONLY_TEAM_MEMBERS_CAN_UPLOAD].includes(r.message)) throw r;
-                                throw r.message === k.A.TOO_MANY_REQUESTS && e((0, E.ef)()), new U.A("TransferFailed", {
+                                    }), x.A.track(r), [b.A.LIMIT_REACHED, b.A.USER_BLOCKED, b.A.UNAVAILABLE_PARENT, b.A.HUMAN_VERIFICATION_REQUIRED, b.A.TOO_MANY_RECIPIENTS, b.A.TOO_MANY_TRANSFERS, b.A.ANTICIPATED_UPLOAD_FAILED, b.A.TEAM_POLICY_PASSWORD_REQUIRED, b.A.TEAM_POLICY_LINK_BLOCKED, b.A.DOCUMENT_ALREADY_SIGNED, b.A.ONLY_TEAM_MEMBERS_CAN_UPLOAD].includes(r.message)) throw r;
+                                throw r.message === b.A.TOO_MANY_REQUESTS && e((0, E.ef)()), new k.A("TransferFailed", {
                                     transferId: t.id
                                 })
                             }
@@ -12610,51 +12731,56 @@
                         return async (e, u) => {
                             let _;
                             if (l || e({
-                                    type: V.o1.TRANSFER_SET_STATE,
-                                    state: X.r.STARTED
+                                    type: H.o1.TRANSFER_SET_STATE,
+                                    state: J.r.STARTED
                                 }), e({
-                                    type: V.o1.TRANSFER_SET_UPLOAD_STARTED_AT,
+                                    type: H.o1.TRANSFER_SET_UPLOAD_STARTED_AT,
                                     uploadStartedAt: Date.now(),
                                     monotonicStartTime: performance.now()
                                 }), !r) {
                                 try {
-                                    el.Ay.setStage("STORM_UPLOAD"), await ex(t, a, e, n, d)
-                                } catch (a) {
-                                    if ("Canceled via token" === a.message) throw Error(eS);
-                                    let r = k.A.TRANSFER_FAILED;
+                                    ed.Ay.setStage("STORM_UPLOAD"), await eB(t, a, e, n, d)
+                                } catch (o) {
+                                    if ("Canceled via token" === o.message) throw Error(eg);
+                                    let r = b.A.TRANSFER_FAILED;
                                     try {
-                                        (0, $.O)(a)
+                                        (0, ee.O)(o)
                                     } catch (e) {
                                         r = e.message
                                     }
-                                    throw e(eh.abortTransfer(t, r)), W.A.error(a), M.A.track(a, {
+                                    e(ey.abortTransfer(t, r));
+                                    let a = u().transfer,
+                                        n = a.displayName ? W.A.t("browser_notifications.notifications.upload_failed", {
+                                            transferTitle: a.displayName
+                                        }) : W.A.t("browser_notifications.notifications.upload_failed_generic");
+                                    throw (0, f.c0)(n), z.A.error(o), x.A.track(o, {
                                         transfer_id: t.id,
                                         upload_method: "storm-client",
-                                        short_description: c()(a.shortDescription) ? JSON.stringify(a.shortDescription) : a.shortDescription,
+                                        short_description: c()(o.shortDescription) ? JSON.stringify(o.shortDescription) : o.shortDescription,
                                         user_journey: "upload"
-                                    }), i.yf.logger.error(a.toString(), {
+                                    }), i.yf.logger.error(o.toString(), {
                                         method: "processUpload:uploadFiles",
                                         transfer_id: t.id,
                                         user_journey: "upload",
-                                        stack_trace: a.stack,
+                                        stack_trace: o.stack,
                                         upload_method: "storm-client",
-                                        short_description: c()(a.shortDescription) ? JSON.stringify(a.shortDescription) : a.shortDescription,
-                                        short_description_debug: a.shortDescription
-                                    }), (0, $.O)(a), new U.A(k.A.TRANSFER_FAILED)
+                                        short_description: c()(o.shortDescription) ? JSON.stringify(o.shortDescription) : o.shortDescription,
+                                        short_description_debug: o.shortDescription
+                                    }), (0, ee.O)(o), new k.A(b.A.TRANSFER_FAILED)
                                 }
-                                l && await (ew ? Promise.resolve() : new Promise((e, t) => {
-                                    ey = {
+                                l && await (eI ? Promise.resolve() : new Promise((e, t) => {
+                                    ew = {
                                         resolve: e,
                                         reject: t
                                     }
                                 }));
                                 try {
                                     var p;
-                                    if (!t.id) throw new U.A(k.A.MISSING_TRANSFER_ID);
+                                    if (!t.id) throw new k.A(b.A.MISSING_TRANSFER_ID);
                                     let e = u().transfer;
-                                    el.Ay.setStage("TRANSFER_FINAL");
-                                    let r = e.type === J.aG.LINK && e.downloaderEmailVerification === R.B.RESTRICTED && (null == (p = e.allowlist) ? void 0 : p.length) > 0;
-                                    _ = await ep.QQ.consolidateTransfer({
+                                    ed.Ay.setStage("TRANSFER_FINAL");
+                                    let r = e.type === Z.aG.LINK && e.downloaderEmailVerification === h.B.RESTRICTED && (null == (p = e.allowlist) ? void 0 : p.length) > 0;
+                                    _ = await eE.QQ.consolidateTransfer({
                                         transferId: t.id,
                                         isBackgroundAdFromDaciaCampaign: o,
                                         shouldUseGracePeriodSegment: s,
@@ -12663,7 +12789,7 @@
                                         allowlist: r ? e.allowlist : void 0
                                     })
                                 } catch (r) {
-                                    throw M.A.track(r, {
+                                    throw x.A.track(r, {
                                         transfer_id: t.id
                                     }), i.yf.logger.error(r.rawError || r.toString(), {
                                         method: "processUpload:consolidateTransfer",
@@ -12672,31 +12798,36 @@
                                         stack_trace: r.stack,
                                         upload_method: "storm-client"
                                     }), e({
-                                        type: V.o1.TRANSFER_SET_STATE,
-                                        state: X.r.ABORTED
-                                    }), new U.A(k.A.TRANSFER_FAILED)
+                                        type: H.o1.TRANSFER_SET_STATE,
+                                        state: J.r.ABORTED
+                                    }), new k.A(b.A.TRANSFER_FAILED)
                                 }
                                 e({
-                                    type: V.o1.TRANSFER_SET_EXPIRY_IN_SECONDS,
+                                    type: H.o1.TRANSFER_SET_EXPIRY_IN_SECONDS,
                                     expiryInSeconds: _.expiry_in_seconds
                                 }), e({
-                                    type: V.o1.TRANSFER_SET_SHORT_URL,
+                                    type: H.o1.TRANSFER_SET_SHORT_URL,
                                     shortURL: _.shortened_url
                                 }), e({
-                                    type: V.o1.TRANSFER_SET_SECURITY_HASH,
+                                    type: H.o1.TRANSFER_SET_SECURITY_HASH,
                                     securityHash: _.security_hash
                                 })
                             }
-                            return e({
-                                type: V.o1.TRANSFER_SET_STATE,
-                                state: X.r.FINISHED
+                            e({
+                                type: H.o1.TRANSFER_SET_STATE,
+                                state: J.r.FINISHED
                             }), e({
-                                type: V.o1.UPLOAD_DONE,
+                                type: H.o1.UPLOAD_DONE,
                                 transfer: {
                                     ...u().transfer,
-                                    state: X.r.PROCESSING
+                                    state: J.r.PROCESSING
                                 }
-                            }), e((0, L.jt)(L.vW.TRANSFER_UPLOAD_FINISHED)), e((0, D.Qg)()), e((0, L.u)()), _
+                            });
+                            let E = u().transfer,
+                                A = E.displayName ? W.A.t("browser_notifications.notifications.upload_complete", {
+                                    transferTitle: E.displayName
+                                }) : W.A.t("browser_notifications.notifications.upload_complete_generic");
+                            return (0, f.c0)(A), e((0, D.jt)(D.vW.TRANSFER_UPLOAD_FINISHED)), e((0, C.Qg)()), e((0, D.u)()), _
                         }
                     },
                     startUpload: function(e) {
@@ -12735,10 +12866,10 @@
                                         mode: r,
                                         type: t.type,
                                         item_count: t.items.length,
-                                        app_type: er.Ay.isMobile ? "mobile" : "web",
+                                        app_type: ea.Ay.isMobile ? "mobile" : "web",
                                         receiver_count: t.recipients.length,
-                                        ...0 === C.A.getWTSent() && {
-                                            days_since_first_upload: C.A.getDaysSinceFirstVisit()
+                                        ...0 === U.A.getWTSent() && {
+                                            days_since_first_upload: U.A.getDaysSinceFirstVisit()
                                         }
                                     }
                                 }({
@@ -12748,15 +12879,15 @@
                                     currentSize: n
                                 }),
                                 E = _(),
-                                m = (0, j.m)(E),
-                                g = (0, Y.B$)(E);
-                            e((0, D.UX)());
-                            let R = (0, K.uX)(_()),
+                                f = (0, Y.m)(E),
+                                S = (0, K.B$)(E);
+                            e((0, C.UX)());
+                            let R = (0, q.uX)(_()),
                                 h = t.itemsTree.items.filter(e => "directory" === e.uiType),
                                 y = {
                                     transfer: t,
                                     numberOfFolders: h.length,
-                                    brandingType: m,
+                                    brandingType: f,
                                     displayName: t.displayName,
                                     expiry: t.expiry,
                                     hasPassword: !!t.password,
@@ -12768,32 +12899,32 @@
                                     downloaderEmailVerificationSelected: t.downloaderEmailVerification,
                                     trackingId: R
                                 },
-                                I = (null == t ? void 0 : t.type) === J.aG.EMAIL || (null == t ? void 0 : t.transfer_type) === J.N3.EMAIL;
-                            (0, S.Od)().trackUserAction(t.requestId ? eT.requestUploadStarted(y) : I ? eT.emailUploadStarted(y) : eT.linkUploadStarted(y)), await (0, e_.T)({
-                                name: w.eg,
+                                w = (null == t ? void 0 : t.type) === Z.aG.EMAIL || (null == t ? void 0 : t.transfer_type) === Z.N3.EMAIL;
+                            (0, g.Od)().trackUserAction(t.requestId ? em.requestUploadStarted(y) : w ? em.emailUploadStarted(y) : em.linkUploadStarted(y)), await (0, ep.T)({
+                                name: I.eg,
                                 type: "action",
                                 tags: {
-                                    transfer_size: eo(t.size),
-                                    storm_client_version: eW()
+                                    transfer_size: es(t.size),
+                                    storm_client_version: ez()
                                 }
-                            }), z.start("transfer.upload"), (null == t ? void 0 : t.id) && (0, A.sF)(t.id), (null == t ? void 0 : t.id) && e((0, T.gE)({
+                            }), V.start("transfer.upload"), (null == t ? void 0 : t.id) && (0, T.sF)(t.id), (null == t ? void 0 : t.id) && e((0, m.gE)({
                                 transferId: t.id,
                                 resumeToken: t.resumeToken,
                                 totalSize: t.size,
                                 filesCount: t.itemsTree.items.length,
-                                userId: g,
+                                userId: S,
                                 canUseUploadCdn: u,
                                 expectedResumeCount: t.files.filter(e => e.isFile).length,
                                 trackingId: R
                             }));
                             try {
-                                e(eh.startUploadProgress(t.files, n, t.uploadStartedAt)), e({
-                                    type: V.o1.UPLOAD_ERROR_RESET
+                                e(ey.startUploadProgress(t.files, n, t.uploadStartedAt)), e({
+                                    type: H.o1.UPLOAD_ERROR_RESET
                                 }), o && e({
-                                    type: V.o1.TRANSFER_SET_SIGNATURE,
+                                    type: H.o1.TRANSFER_SET_SIGNATURE,
                                     signature: o
                                 });
-                                let r = await e(eh.processUpload({
+                                let r = await e(ey.processUpload({
                                     transfer: t,
                                     isForwardedTransfer: a,
                                     stormUploadToken: i,
@@ -12803,20 +12934,20 @@
                                     canUseUploadCdn: u,
                                     resumeInputs: s
                                 }));
-                                if ((0, O.e)(), C.A.incrementWTSent(), p.success = !0, p.cancelled = !1, p.duration = z.stop("transfer.upload"), await (0, e_.T)({
-                                        name: w.PL,
+                                if ((0, P.e)(), U.A.incrementWTSent(), p.success = !0, p.cancelled = !1, p.duration = V.stop("transfer.upload"), await (0, ep.T)({
+                                        name: I.PL,
                                         type: "view",
                                         time: p.duration,
                                         tags: {
-                                            transfer_size: eo(t.size),
+                                            transfer_size: es(t.size),
                                             outcome: "success",
-                                            storm_client_version: eW()
+                                            storm_client_version: ez()
                                         }
                                     }), r) {
                                     var v;
                                     let a = t.files.reduce((e, t) => (e[t.name] = t.type, e), {}),
-                                        n = (0, j.m)(_());
-                                    F.A.trackUnstructSnowplowEvent("iglu:com.wetransfer/transfer_event/jsonschema/6-0-0", {
+                                        n = (0, Y.m)(_());
+                                    M.A.trackUnstructSnowplowEvent("iglu:com.wetransfer/transfer_event/jsonschema/6-0-0", {
                                         transfer_id: r.id,
                                         transfer_type: r.recipients.length > 0 ? "EMAIL" : "LINK",
                                         expiration_date: r.expires_at,
@@ -12836,9 +12967,9 @@
                                             size: e.size
                                         })),
                                         branding_type: n,
-                                        price_amount: (0, b.V6)(r),
+                                        price_amount: (0, F.V6)(r),
                                         price_currency: null == (v = r.price) ? void 0 : v.currency,
-                                        is_paid: (0, b.GE)(r.paid),
+                                        is_paid: (0, F.GE)(r.paid),
                                         is_request: !!t.requestId
                                     });
                                     let i = {
@@ -12861,68 +12992,68 @@
                                             downloaderEmailVerificationSelected: r.downloader_email_verification,
                                             trackingId: R
                                         },
-                                        o = (null == r ? void 0 : r.type) === J.aG.EMAIL || (null == r ? void 0 : r.transfer_type) === J.N3.EMAIL;
-                                    (0, S.Od)().trackUserAction(t.requestId ? eT.requestUploadCompleted(i) : o ? eT.emailUploadCompleted(i) : eT.linkUploadCompleted(i)), e((0, T.tZ)());
+                                        o = (null == r ? void 0 : r.type) === Z.aG.EMAIL || (null == r ? void 0 : r.transfer_type) === Z.N3.EMAIL;
+                                    (0, g.Od)().trackUserAction(t.requestId ? em.requestUploadCompleted(i) : o ? em.emailUploadCompleted(i) : em.linkUploadCompleted(i)), e((0, m.tZ)());
                                     try {
-                                        await (0, A.wr)()
+                                        await (0, T.wr)()
                                     } catch (e) {}
                                 }
                             } catch (a) {
-                                if (a.message === eS) return;
-                                (0, es.A)().flush(), e({
-                                    type: V.o1.UPLOAD_ERROR,
+                                if (a.message === eg) return;
+                                (0, el.A)().flush(), e({
+                                    type: H.o1.UPLOAD_ERROR,
                                     error: a.message
-                                }), (0, V.IF)(e, t, r, a.message)
+                                }), (0, H.IF)(e, t, r, a.message)
                             } finally {
-                                e(eh.stopUploadProgress()), (null == t ? void 0 : t.id) && (0, A.i3)(t.id), window.dispatchEvent(new CustomEvent(f.U)), e({
-                                    type: V.o1.UPLOAD_RESET
+                                e(ey.stopUploadProgress()), (null == t ? void 0 : t.id) && (0, T.i3)(t.id), window.dispatchEvent(new CustomEvent(A.U)), e({
+                                    type: H.o1.UPLOAD_RESET
                                 })
                             }
                         }
                     }
                 }),
-                ey = null,
-                ew = !1;
-
-            function eI() {
-                ey && (ey.resolve(), ey = null)
-            }
+                ew = null,
+                eI = !1;
 
             function ev() {
-                ey && (ey.reject(Error(eS)), ey = null), ew = !1
+                ew && (ew.resolve(), ew = null)
             }
 
-            function eN(e) {
-                ew = e
+            function eN() {
+                ew && (ew.reject(Error(eg)), ew = null), eI = !1
             }
 
-            function eO(e, t, r, a) {
+            function eO(e) {
+                eI = e
+            }
+
+            function eP(e, t, r, a) {
                 let n = !(arguments.length > 4) || void 0 === arguments[4] || arguments[4];
                 return async i => {
                     try {
-                        let n = await ep.QQ.fetchTransfer(e, t, r, a, !1);
-                        i(V.Ay.verifiedPassword(a)), i((0, eE.lX)(n, a)), i(H.P.clearTransferNotification())
+                        let n = await eE.QQ.fetchTransfer(e, t, r, a, !1);
+                        i(H.Ay.verifiedPassword(a)), i((0, ef.lX)(n, a)), i(j.P.clearTransferNotification())
                     } catch (e) {
-                        i((null == e ? void 0 : e.message) === k.A.TOO_MANY_REQUESTS ? H.P.setTransferNotification({
+                        i((null == e ? void 0 : e.message) === b.A.TOO_MANY_REQUESTS ? j.P.setTransferNotification({
                             text: "PasswordThrottled"
-                        }) : H.P.setTransferNotification({
+                        }) : j.P.setTransferNotification({
                             text: n ? "InvalidPassword" : "NoInternet"
                         }))
                     }
                 }
             }
 
-            function eP() {
+            function eL() {
                 return async (e, t) => {
                     try {
                         var r;
-                        e(V.Ay.setResumeUploadInProgress(!0));
+                        e(H.Ay.setResumeUploadInProgress(!0));
                         let a = t(),
                             n = a.transfer,
                             i = a.channel,
-                            o = await (0, A.SU)(),
+                            o = await (0, T.SU)(),
                             s = null != (r = n.resumeUploadAttempts) ? r : 0;
-                        if (e(V.Ay.setResumeUploadAttempts(s + 1)), (0, S.Od)().trackUserAction(m.n.resumeUploadTriggeredAfterFailure({
+                        if (e(H.Ay.setResumeUploadAttempts(s + 1)), (0, g.Od)().trackUserAction(S.n.resumeUploadTriggeredAfterFailure({
                                 transferId: o.id,
                                 filesCount: o.filesCount,
                                 createdAt: o.createdAt,
@@ -12931,23 +13062,23 @@
                                 trackingId: o.trackingId
                             }, s + 1)), !(o.filesResumeInfo.length && o.resumeToken && o.id && o.percentage > 0)) return;
                         !n.id && o.id && e({
-                            type: V.o1.TRANSFER_SET_ID,
+                            type: H.o1.TRANSFER_SET_ID,
                             id: o.id
                         }), !n.resumeToken && o.resumeToken && e({
-                            type: V.o1.TRANSFER_SET_RESUME_TOKEN,
+                            type: H.o1.TRANSFER_SET_RESUME_TOKEN,
                             resumeToken: o.resumeToken
                         }), !n.trackingId && o.trackingId && e({
-                            type: V.o1.TRANSFER_SET_TRACKING_ID,
+                            type: H.o1.TRANSFER_SET_TRACKING_ID,
                             trackingId: o.trackingId
                         });
                         let l = t(),
                             d = l.transfer,
-                            c = (0, em.Y2)(l),
-                            u = (0, em.nn)({
+                            c = (0, eS.Y2)(l),
+                            u = (0, eS.nn)({
                                 transfer: d
                             });
                         try {
-                            await e(eh.startUpload({
+                            await e(ey.startUpload({
                                 transfer: d,
                                 channel: i,
                                 currentSize: u,
@@ -12962,46 +13093,46 @@
                             throw e
                         }
                     } finally {
-                        e(V.Ay.setResumeUploadInProgress(!1))
+                        e(H.Ay.setResumeUploadInProgress(!1))
                     }
                 }
             }
 
-            function eL(e) {
+            function eD(e) {
                 let t = arguments.length > 1 && void 0 !== arguments[1] && arguments[1],
                     r = arguments.length > 2 && void 0 !== arguments[2] ? arguments[2] : null;
                 return async a => {
                     var n;
-                    if (await (0, e_.T)({
-                            name: w.PL,
+                    if (await (0, ep.T)({
+                            name: I.PL,
                             type: "view",
                             time: Math.ceil(performance.now() - e.monotonicStartTime),
                             tags: {
-                                stage: el.Ay.currentUploadStats.stage,
-                                transfer_size: eo(e.size),
+                                stage: ed.Ay.currentUploadStats.stage,
+                                transfer_size: es(e.size),
                                 outcome: t ? "canceled" : "failure",
-                                storm_client_version: eW()
+                                storm_client_version: ez()
                             }
                         }), i.yf.logger.info("cancelled upload", {
                             transfer_id: e.id,
                             isUserRequest: t
-                        }), ec.stopMonitoring(), null == (n = ea.A.cancelStormUpload) || n.call(ea.A), e.id && "transfer" === e.feature && (t ? ep.QQ.cancelTransfer(e.id, !0) : r && eR.includes(r) || ep.QQ.cancelTransfer(e.id, !1)), e.files.forEach(e => e.reset()), a(eh.resetUploadProgress()), a({
-                            type: V.o1.UPLOAD_RESET
-                        }), a((0, T.tZ)()), t) try {
-                        await (0, A.wr)()
+                        }), eu.stopMonitoring(), null == (n = en.A.cancelStormUpload) || n.call(en.A), e.id && "transfer" === e.feature && (t ? eE.QQ.cancelTransfer(e.id, !0) : r && eh.includes(r) || eE.QQ.cancelTransfer(e.id, !1)), e.files.forEach(e => e.reset()), a(ey.resetUploadProgress()), a({
+                            type: H.o1.UPLOAD_RESET
+                        }), a((0, m.tZ)()), t) try {
+                        await (0, T.wr)()
                     } catch (e) {}
                 }
             }
 
-            function eD() {
+            function eC() {
                 return e => {
                     e({
-                        type: V.o1.TRANSFER_RESET
+                        type: H.o1.TRANSFER_RESET
                     })
                 }
             }
 
-            function eC(e) {
+            function eU(e) {
                 let {
                     channel: t,
                     account: r,
@@ -13024,31 +13155,31 @@
                     forcePreviewAndDownloadViewOption: S = !1
                 } = e;
                 return async (e, g) => {
-                    var R, y, w, I, v, O;
+                    var R, h, w, I, v, N;
                     if (null == (R = g().transfer) ? void 0 : R.resumeUploadInProgress) return;
                     T || e({
-                        type: V.o1.UPLOAD_PENDING
-                    }), S && e((0, q.rh)(h._9.PREVIEW_AND_DOWNLOAD)), e({
-                        type: V.o1.TRANSFER_SET_LANGUAGE,
+                        type: H.o1.UPLOAD_PENDING
+                    }), S && e((0, Q.rh)(y._9.PREVIEW_AND_DOWNLOAD)), e({
+                        type: H.o1.TRANSFER_SET_LANGUAGE,
                         language: n.language
                     }), e({
-                        type: V.o1.TRANSFER_SET_DOMAIN_USER_ID,
+                        type: H.o1.TRANSFER_SET_DOMAIN_USER_ID,
                         domainUserId: n.domainUserId
                     });
                     let P = t && t.name,
-                        D = r && r.subdomain_name;
-                    !P && a.loggedIn && D && e({
-                        type: V.o1.TRANSFER_SET_CHANNEL,
+                        L = r && r.subdomain_name;
+                    !P && a.loggedIn && L && e({
+                        type: H.o1.TRANSFER_SET_CHANNEL,
                         channel: r.subdomain_name
                     });
-                    let C = N.R.includes(null != (O = null == (w = g().adWallpaper) || null == (y = w.adResponse) ? void 0 : y.campaignId) ? O : 0),
+                    let C = O.R.includes(null != (N = null == (w = g().adWallpaper) || null == (h = w.adResponse) ? void 0 : h.campaignId) ? N : 0),
                         U = !!(null == (v = g().unlockOneDayExpiryTransfer) || null == (I = v.transferSizeLimitPaywall) ? void 0 : I.transferUnlocked),
-                        b = (null == E ? void 0 : E.anonymous_login_step_enabled) || !1,
-                        F = (null == E ? void 0 : E.passwordless_anticipated_upload_enabled) || b;
+                        k = (null == E ? void 0 : E.anonymous_login_step_enabled) || !1,
+                        F = (null == E ? void 0 : E.passwordless_anticipated_upload_enabled) || k;
                     try {
                         let e = !!a.loggedIn,
                             t = (null == E ? void 0 : E.allow_anonymous_transfer) || !1;
-                        (0, Z.Ks)({
+                        (0, $.Ks)({
                             transfer: g().transfer,
                             maximumNumberOfRecipients: d,
                             maximumNumberOfFiles: a.rules.maximumNumberOfFiles,
@@ -13060,12 +13191,12 @@
                             isAnticipatedUploadStarted: T
                         })
                     } catch (r) {
-                        if (!(!a.loggedIn && T && F && ["MissingSender", "InvalidSender"].includes(r.message))) throw (0, V.IF)(e, g().transfer, t, r.message), T && e(V.Ay.setState(X.r.ANTICIPATED_UPLOAD_FAILED)), r
+                        if (!(!a.loggedIn && T && F && ["MissingSender", "InvalidSender"].includes(r.message))) throw (0, H.IF)(e, g().transfer, t, r.message), T && e(H.Ay.setState(J.r.ANTICIPATED_UPLOAD_FAILED)), r
                     }
                     try {
                         let r = !!a.loggedIn,
                             n = (null == E ? void 0 : E.allow_anonymous_transfer) || !1;
-                        if (await e(eh.createTransfer({
+                        if (await e(ey.createTransfer({
                                 transfer: g().transfer,
                                 isForwardedTransfer: o,
                                 deliverableId: l,
@@ -13079,7 +13210,7 @@
                                 isPasswordlessAnticipatedUploadEnabled: F
                             })), !g().transfer.verification_required) {
                             let r = g().session.showDataProcessingPrompt;
-                            c && u ? (e((0, L.CD)(void 0)), e((0, L.jt)(L.vW.BEFORE_TRANSFER_UPLOAD)), e(V.Ay.setState(X.r.PAYWALL))) : c && !u ? (e((0, L.CD)(void 0)), e((0, L.jt)(L.vW.BEFORE_TRANSFER_UPLOAD)), await e(eh.startUpload({
+                            c && u ? (e((0, D.CD)(void 0)), e((0, D.jt)(D.vW.BEFORE_TRANSFER_UPLOAD)), e(H.Ay.setState(J.r.PAYWALL))) : c && !u ? (e((0, D.CD)(void 0)), e((0, D.jt)(D.vW.BEFORE_TRANSFER_UPLOAD)), await e(ey.startUpload({
                                 transfer: g().transfer,
                                 channel: t,
                                 currentSize: s,
@@ -13088,7 +13219,7 @@
                                 shouldUseGracePeriodSegment: _,
                                 isAnticipatedUploadStarted: T,
                                 canUseUploadCdn: m
-                            }))) : r ? (e((0, L.CD)(void 0)), e(V.Ay.setState(X.r.DATA_PROCESSING_PROMPT))) : await e(eh.startUpload({
+                            }))) : r ? (e((0, D.CD)(void 0)), e(H.Ay.setState(J.r.DATA_PROCESSING_PROMPT))) : await e(ey.startUpload({
                                 transfer: g().transfer,
                                 channel: t,
                                 currentSize: s,
@@ -13101,18 +13232,18 @@
                         }
                     } catch (a) {
                         let r = a.message;
-                        r === k.A.NOT_IN_CLAIMING_TEAM || (r === k.A.HUMAN_VERIFICATION_REQUIRED ? e({
-                            type: V.o1.RECAPTCHA_CHALLENGE_RECEIVED,
+                        r === b.A.NOT_IN_CLAIMING_TEAM || (r === b.A.HUMAN_VERIFICATION_REQUIRED ? e({
+                            type: H.o1.RECAPTCHA_CHALLENGE_RECEIVED,
                             transfer_id: a.transferId
-                        }) : r === k.A.ANTICIPATED_UPLOAD_FAILED ? e(V.Ay.setState(X.r.ANTICIPATED_UPLOAD_FAILED)) : (e({
-                            type: V.o1.UPLOAD_ERROR,
+                        }) : r === b.A.ANTICIPATED_UPLOAD_FAILED ? e(H.Ay.setState(J.r.ANTICIPATED_UPLOAD_FAILED)) : (e({
+                            type: H.o1.UPLOAD_ERROR,
                             error: r
-                        }), (0, V.IF)(e, g().transfer, t, r)))
+                        }), (0, H.IF)(e, g().transfer, t, r)))
                     }
                 }
             }
 
-            function eU(e) {
+            function ek(e) {
                 let {
                     transferToForward: t,
                     allowedSize: r,
@@ -13120,22 +13251,22 @@
                 } = e;
                 return async (e, n) => {
                     var i;
-                    null == (i = ea.A.cancelStormUpload) || i.call(ea.A), e(eh.stopUploadProgress());
-                    let o = t.transfer_type === J.N3.LINK ? J.aG.LINK : J.aG.EMAIL,
+                    null == (i = en.A.cancelStormUpload) || i.call(en.A), e(ey.stopUploadProgress());
+                    let o = t.transfer_type === Z.N3.LINK ? Z.aG.LINK : Z.aG.EMAIL,
                         s = t.sender;
-                    o === J.aG.LINK && (s = C.A.getLastUsedSender(), o = J.aG.EMAIL);
+                    o === Z.aG.LINK && (s = U.A.getLastUsedSender(), o = Z.aG.EMAIL);
                     let d = n();
                     d.transfer.sender && !s && (s = d.transfer.sender);
-                    let c = l()(d.user, "preferences.transfer_default_expire_in") || I.i.DAYS_3_IN_SECONDS;
-                    await e(V.Ay.init({
-                        userType: (0, V.W2)({
+                    let c = l()(d.user, "preferences.transfer_default_expire_in") || v.i.DAYS_3_IN_SECONDS;
+                    await e(H.Ay.init({
+                        userType: (0, H.W2)({
                             user: d.user,
                             channel: d.channel,
                             transferFromState: d.transfer
                         }),
                         expiry: c,
-                        defaultProExpiry: I.i.DAYS_30_IN_SECONDS,
-                        defaultFreeExpiry: I.i.DAYS_7_IN_SECONDS,
+                        defaultProExpiry: v.i.DAYS_30_IN_SECONDS,
+                        defaultFreeExpiry: v.i.DAYS_7_IN_SECONDS,
                         transferType: o,
                         accountId: d.account.id,
                         channelName: t.channel,
@@ -13144,7 +13275,7 @@
                         parentId: t.id,
                         sender: s,
                         isRecoverable: !0,
-                        recipients: C.A.isDefaultRecipientInUploadLocked({
+                        recipients: U.A.isDefaultRecipientInUploadLocked({
                             channelDefaultRecipient: d.channel.defaultRecipient,
                             userLoggedIn: d.user.loggedIn,
                             channelName: d.channel.name,
@@ -13153,7 +13284,7 @@
                         downloaderEmailVerification: t.downloaderEmailVerification,
                         viewOption: t.viewOption,
                         allowComments: t.allowComments
-                    })), e(ek({
+                    })), e(eb({
                         transfer: (d = n()).transfer,
                         files: t.files,
                         allowedSize: r,
@@ -13162,7 +13293,7 @@
                 }
             }
 
-            function ek(e) {
+            function eb(e) {
                 let {
                     transfer: t,
                     files: r,
@@ -13177,25 +13308,25 @@
                 return async (e, c) => {
                     try {
                         var u, _;
-                        if ((0, Z.gd)(t.state, t.id, d)) throw Error("TransferStarted");
+                        if ((0, $.gd)(t.state, t.id, d)) throw Error("TransferStarted");
                         if (!r) throw Error("MissingFiles");
                         let s = Array.prototype.reduce.call(r, (e, t) => {
                                 t.addMethod = o;
-                                let r = new eu.A(t);
+                                let r = new e_.A(t);
                                 return [...e, r]
                             }, []),
                             p = c(),
-                            E = (0, em.Y2)(p),
+                            E = (0, eS.Y2)(p),
                             f = null == (u = p.adWallpaper) ? void 0 : u.adResponse,
-                            A = N.R.includes(null != (_ = null == f ? void 0 : f.campaignId) ? _ : 0);
+                            A = O.R.includes(null != (_ = null == f ? void 0 : f.campaignId) ? _ : 0);
                         if (!E) {
-                            if (!(0, Z.Nc)({
+                            if (!(0, $.Nc)({
                                     currentSize: n,
                                     files: s,
                                     allowedSize: a,
                                     bypassLimits: A
                                 })) {
-                                if (C.A.isDefaultRecipientInUploadLocked({
+                                if (U.A.isDefaultRecipientInUploadLocked({
                                         channelDefaultRecipient: p.channel.defaultRecipient,
                                         userLoggedIn: p.user.loggedIn,
                                         channelName: p.channel.name,
@@ -13209,35 +13340,35 @@
                                     return [...new Set(r)].length !== r.length
                                 }(s, t)) throw Error("DuplicateFilename")
                         }
-                        e(H.P.clearTransferNotification()), e({
-                            type: V.o1.TRANSFER_ADD_FILES,
+                        e(j.P.clearTransferNotification()), e({
+                            type: H.o1.TRANSFER_ADD_FILES,
                             files: s
                         });
                         let T = s.filter(e => 1 === e.name.split("/").length),
                             m = [...new Set(s.filter(e => e.name.split("/").length > 1).map(e => e.name.split("/")[0]))],
-                            g = s.filter(e => !T.includes(e)),
+                            S = s.filter(e => !T.includes(e)),
                             R = T.reduce((e, t) => e + t.size, 0),
-                            h = g.reduce((e, t) => e + t.size, 0);
-                        T.length && (0, S.Od)().trackUserAction(eT.filesAdded({
+                            h = S.reduce((e, t) => e + t.size, 0);
+                        T.length && (0, g.Od)().trackUserAction(em.filesAdded({
                             method: o,
                             number: T.length,
                             size: R,
-                            transferType: t.type === J.aG.EMAIL ? J.aG.EMAIL : J.aG.LINK
-                        })), m.length && (0, S.Od)().trackUserAction(eT.foldersAdded({
+                            transferType: t.type === Z.aG.EMAIL ? Z.aG.EMAIL : Z.aG.LINK
+                        })), m.length && (0, g.Od)().trackUserAction(em.foldersAdded({
                             method: o,
                             number: m.length,
                             size: h,
-                            transferType: t.type === J.aG.EMAIL ? J.aG.EMAIL : J.aG.LINK
+                            transferType: t.type === Z.aG.EMAIL ? Z.aG.EMAIL : Z.aG.LINK
                         }))
                     } catch (t) {
-                        if (M.A.track(t), e(H.P.setTransferNotification({
+                        if (x.A.track(t), e(j.P.setTransferNotification({
                                 text: t.message
                             })), s) throw t
                     }
                 }
             }
 
-            function eb(e) {
+            function eF(e) {
                 let {
                     token: t,
                     transfer: r,
@@ -13251,20 +13382,20 @@
                 } = e;
                 return async e => {
                     try {
-                        if (!r.id) throw new U.A(k.A.RECAPTCHA_FAILED);
+                        if (!r.id) throw new k.A(b.A.RECAPTCHA_FAILED);
                         await e({
-                            type: V.o1.TRANSFER_SET_STATE,
-                            state: X.r.INIT
+                            type: H.o1.TRANSFER_SET_STATE,
+                            state: J.r.INIT
                         });
-                        let c = (0, g.I)(),
-                            u = await ep.QQ.validateRecaptcha(r.id, {
+                        let c = (0, R.I)(),
+                            u = await eE.QQ.validateRecaptcha(r.id, {
                                 token: t,
                                 expire_in: r.expiry,
                                 ...null != c ? {
                                     lsid: c
                                 } : {}
                             });
-                        o ? (e((0, L.CD)(u)), e((0, L.jt)(L.vW.BEFORE_TRANSFER_UPLOAD)), e(V.Ay.setState(X.r.PAYWALL))) : s ? (e((0, L.CD)(u)), e(V.Ay.setState(X.r.DATA_PROCESSING_PROMPT))) : await e(eh.startUpload({
+                        o ? (e((0, D.CD)(u)), e((0, D.jt)(D.vW.BEFORE_TRANSFER_UPLOAD)), e(H.Ay.setState(J.r.PAYWALL))) : s ? (e((0, D.CD)(u)), e(H.Ay.setState(J.r.DATA_PROCESSING_PROMPT))) : await e(ey.startUpload({
                             transfer: r,
                             channel: a,
                             currentSize: i,
@@ -13275,15 +13406,15 @@
                             canUseUploadCdn: d
                         }))
                     } catch (t) {
-                        t.message === k.A.RECAPTCHA_FAILED && await e({
-                            type: V.o1.TRANSFER_SET_STATE,
-                            state: X.r.RECAPTCHA
-                        }), (0, V.IF)(e, r, a, t.message)
+                        t.message === b.A.RECAPTCHA_FAILED && await e({
+                            type: H.o1.TRANSFER_SET_STATE,
+                            state: J.r.RECAPTCHA
+                        }), (0, H.IF)(e, r, a, t.message)
                     }
                 }
             }
 
-            function eF(e) {
+            function eM(e) {
                 let {
                     token: t,
                     isForwardedTransfer: r,
@@ -13299,8 +13430,8 @@
                         channel: c
                     } = l();
                     try {
-                        let a = (0, g.I)(),
-                            l = await ep.QQ.verifyToken(d.id, {
+                        let a = (0, R.I)(),
+                            l = await eE.QQ.verifyToken(d.id, {
                                 code: t,
                                 expire_in: d.expiry,
                                 ...null != a ? {
@@ -13308,8 +13439,8 @@
                                 } : {}
                             });
                         e({
-                            type: V.o1.UPLOAD_VERIFIED
-                        }), n ? (e((0, L.CD)(l)), e((0, L.jt)(L.vW.BEFORE_TRANSFER_UPLOAD)), e(V.Ay.setState(X.r.PAYWALL))) : i ? (e((0, L.CD)(l)), e(V.Ay.setState(X.r.DATA_PROCESSING_PROMPT))) : e(eh.startUpload({
+                            type: H.o1.UPLOAD_VERIFIED
+                        }), n ? (e((0, D.CD)(l)), e((0, D.jt)(D.vW.BEFORE_TRANSFER_UPLOAD)), e(H.Ay.setState(J.r.PAYWALL))) : i ? (e((0, D.CD)(l)), e(H.Ay.setState(J.r.DATA_PROCESSING_PROMPT))) : e(ey.startUpload({
                             transfer: d,
                             channel: c,
                             currentSize: d.size,
@@ -13320,24 +13451,24 @@
                             canUseUploadCdn: s
                         }))
                     } catch (t) {
-                        if (t.status === x.iu.TOO_MANY_REQUESTS) throw e(H.P.setTransferNotification({
+                        if (t.status === B.iu.TOO_MANY_REQUESTS) throw e(j.P.setTransferNotification({
                             text: "TransferEmailVerificationThrottleError",
                             button: {
-                                text: B.A.t("transfer.email-verification.throttle-error-action"),
+                                text: W.A.t("transfer.email-verification.throttle-error-action"),
                                 action() {
-                                    e(V.Ay.setState(X.r.INIT)), e(V.Ay.resetVerificationRequired()), e({
-                                        type: V.o1.TRANSFER_SET_ID,
+                                    e(H.Ay.setState(J.r.INIT)), e(H.Ay.resetVerificationRequired()), e({
+                                        type: H.o1.TRANSFER_SET_ID,
                                         id: !1
                                     })
                                 }
                             }
                         })), t;
-                        throw e(H.P.setTransferNotification({
+                        throw e(j.P.setTransferNotification({
                             text: "TransferEmailVerificationError",
                             button: {
-                                text: B.A.t("transfer.email-verification.error-expiry-time-action"),
+                                text: W.A.t("transfer.email-verification.error-expiry-time-action"),
                                 action() {
-                                    e(eM(a))
+                                    e(ex(a))
                                 }
                             }
                         })), t
@@ -13345,52 +13476,52 @@
                 }
             }
 
-            function eM(e) {
+            function ex(e) {
                 return async (t, r) => {
                     let {
                         transfer: a
                     } = r();
                     try {
-                        await ep.QQ.resendToken(a.id, {
+                        await eE.QQ.resendToken(a.id, {
                             sender_email: e
                         }), t({
-                            type: V.o1.TRANSFER_SET_SENDER,
+                            type: H.o1.TRANSFER_SET_SENDER,
                             email: e
                         }), t({
-                            type: V.o1.TRANSFER_SET_STATE,
-                            state: X.r.VERIFY
+                            type: H.o1.TRANSFER_SET_STATE,
+                            state: J.r.VERIFY
                         })
                     } catch (e) {
-                        if (e.status === x.iu.TOO_MANY_REQUESTS) throw t(H.P.setTransferNotification({
+                        if (e.status === B.iu.TOO_MANY_REQUESTS) throw t(j.P.setTransferNotification({
                             text: "TransferEmailVerificationResendThrottleError",
                             button: {
-                                text: B.A.t("transfer.email-verification-resend.throttle-error-action"),
+                                text: W.A.t("transfer.email-verification-resend.throttle-error-action"),
                                 action() {
-                                    t(V.Ay.setState(X.r.INIT)), t(V.Ay.resetVerificationRequired()), t({
-                                        type: V.o1.TRANSFER_SET_ID,
+                                    t(H.Ay.setState(J.r.INIT)), t(H.Ay.resetVerificationRequired()), t({
+                                        type: H.o1.TRANSFER_SET_ID,
                                         id: !1
                                     })
                                 }
                             }
                         })), e;
-                        throw t(H.P.setTransferNotification({
+                        throw t(j.P.setTransferNotification({
                             text: "TransferEmailVerificationResendError"
                         })), e
                     }
                 }
             }
-            async function ex(e, t, r, a) {
+            async function eB(e, t, r, a) {
                 let n = arguments.length > 4 && void 0 !== arguments[4] && arguments[4],
                     i = t || e.stormUploadToken;
-                if (i) return eB({
+                if (i) return eW({
                     ...e,
                     stormUploadToken: i
                 }, r, a, n);
                 throw Error("Upload Token not found")
             }
-            async function eB(e, t, r) {
+            async function eW(e, t, r) {
                 let a = arguments.length > 3 && void 0 !== arguments[3] && arguments[3];
-                ec.startMonitoring(e.id, e.size, e.files.length, eW());
+                eu.startMonitoring(e.id, e.size, e.files.length, ez());
                 let n = e.files.filter(e => e.isFile),
                     o = n.map(e => (e.ref.overriddenRelativePath = e.safename, e.ref)),
                     {
@@ -13407,20 +13538,20 @@
                                 progress: i,
                                 completedProgress: o
                             } = r;
-                            t(eh.updateTotalUploadProgress(i)), (0, A.YH)(e.id, 100 * o);
+                            t(ey.updateTotalUploadProgress(i)), (0, T.YH)(e.id, 100 * o);
                             let s = 0;
                             for (let [e, {
                                     uploaded: t
                                 }] of a.entries()) n[e].state.bytesSent = t, s += t;
-                            ec.updateProgress(s, e.size)
+                            eu.updateProgress(s, e.size)
                         },
                         onDebug: t => {
-                            if ("TRACE" === t.type && (0, e_.T)({
+                            if ("TRACE" === t.type && (0, ep.T)({
                                     name: _()(t.details.metric),
                                     type: "view",
                                     time: t.details.duration,
                                     tags: {
-                                        transfer_size: eo(e.size),
+                                        transfer_size: es(e.size),
                                         number_files: (e => {
                                             switch (!0) {
                                                 case e <= 10:
@@ -13435,9 +13566,9 @@
                                                     return "plus 10000 files"
                                             }
                                         })(e.items.length),
-                                        storm_client_version: eW()
+                                        storm_client_version: ez()
                                     }
-                                }), "ERROR" === t.type || "true" === (0, y.A)().NEXT_PUBLIC_STORM_CLIENT_DEBUG_MODE_ENABLED) {
+                                }), "ERROR" === t.type || "true" === (0, w.A)().NEXT_PUBLIC_STORM_CLIENT_DEBUG_MODE_ENABLED) {
                                 var r;
                                 let a = "ERROR" === t.type ? "error" : "log";
                                 i.yf.logger[a]("".concat("ERROR" === t.type ? "[ERROR] " : "").concat(t.message), {
@@ -13445,13 +13576,13 @@
                                     method: "uploadFilesUsingStorm",
                                     transfer_id: e.id,
                                     connectionStatus: null == (r = navigator) ? void 0 : r.onLine,
-                                    storm_client_version: eW()
+                                    storm_client_version: ez()
                                 })
                             }
                         },
                         useUploadCDN: a,
                         onResumeInfo: (r, a) => {
-                            t((0, T.t7)({
+                            t((0, m.t7)({
                                 transferId: e.id,
                                 resumeInfo: {
                                     index: r,
@@ -13462,15 +13593,15 @@
                         },
                         resumeInputs: r
                     });
-                ea.A.pauseStormUpload = s, ea.A.resumeStormUpload = l, ea.A.cancelStormUpload = d;
+                en.A.pauseStormUpload = s, en.A.resumeStormUpload = l, en.A.cancelStormUpload = d;
                 try {
                     let e = await c();
-                    return ec.stopMonitoring(), e
+                    return eu.stopMonitoring(), e
                 } catch (e) {
-                    throw ec.stopMonitoring(), e
+                    throw eu.stopMonitoring(), e
                 }
             }
-            let eW = () => "4.3.6"
+            let ez = () => "4.3.6"
         },
         88848: (e, t, r) => {
             r.d(t, {
@@ -13745,7 +13876,7 @@
                 wX: () => l
             });
             var a = r(96361),
-                n = r(78644);
+                n = r(39483);
             let i = (0, a.Z0)({
                     name: "transferWindowCardSwitcher",
                     initialState: {
@@ -14899,8 +15030,8 @@
                 o = r(23798),
                 s = r(75586),
                 l = r.n(s),
-                d = r(76616);
-            let c = l()(() => Promise.all([r.e(6028), r.e(4932), r.e(2206), r.e(646), r.e(8135), r.e(5831), r.e(2962), r.e(7273), r.e(2760), r.e(365), r.e(3768), r.e(8225)]).then(r.bind(r, 98225)).then(e => {
+                d = r(92917);
+            let c = l()(() => Promise.all([r.e(6028), r.e(4932), r.e(2206), r.e(646), r.e(8135), r.e(3899), r.e(8197), r.e(4453), r.e(2760), r.e(365), r.e(3768), r.e(8225)]).then(r.bind(r, 98225)).then(e => {
                     let {
                         CoverEditor: t
                     } = e;
@@ -14911,7 +15042,7 @@
                     },
                     loading: () => (0, o.jsx)(d.y, {})
                 }),
-                u = l()(() => Promise.all([r.e(646), r.e(7865), r.e(6105), r.e(1502)]).then(r.bind(r, 71502)).then(e => {
+                u = l()(() => Promise.all([r.e(646), r.e(7865), r.e(9333), r.e(1502)]).then(r.bind(r, 71502)).then(e => {
                     let {
                         SplashPage: t
                     } = e;
@@ -14922,7 +15053,7 @@
                     },
                     loading: () => (0, o.jsx)(d.y, {})
                 }),
-                _ = l()(() => Promise.all([r.e(6028), r.e(4932), r.e(2206), r.e(646), r.e(5831), r.e(2760), r.e(365), r.e(3768), r.e(6192)]).then(r.bind(r, 16192)).then(e => {
+                _ = l()(() => Promise.all([r.e(6028), r.e(4932), r.e(2206), r.e(646), r.e(3899), r.e(2760), r.e(365), r.e(3768), r.e(6192)]).then(r.bind(r, 16192)).then(e => {
                     let {
                         ApplyChangesPage: t
                     } = e;
@@ -14953,4 +15084,4 @@
         }
     }
 ]);
-//# sourceMappingURL=7963.c16e7b12670b460c.js.map
+//# sourceMappingURL=7963.af292b563fd1e87c.js.map

@@ -654,8 +654,8 @@
         31784: (e, a, l) => {
             "use strict";
             l.r(a), l.d(a, {
-                BrandedPage: () => e4,
-                default: () => e4
+                BrandedPage: () => e5,
+                default: () => e5
             });
             var t = l(23798),
                 d = l(46001),
@@ -811,9 +811,7 @@
                         onSubmit: this.claimDomain,
                         className: "claimdomain",
                         children: [(0, t.jsx)("p", {
-                            dangerouslySetInnerHTML: {
-                                __html: f.A.t("page.profile.step-one-banner")
-                            }
+                            children: f.A.t("page.profile.step-one-banner")
                         }), (0, t.jsxs)("div", {
                             className: "claimdomain__fields",
                             children: [(0, t.jsx)(v.A, {
@@ -991,13 +989,13 @@
                         })
                     })
                 };
-            var H = l(1172),
-                z = l(15913),
+            var z = l(1172),
+                H = l(15913),
                 q = l(396),
                 J = l(98172);
             let K = "wallpapers";
-            var Z = l(37796),
-                X = l(85633),
+            var Z = l(20151),
+                X = l(16173),
                 Q = l(80356),
                 $ = l(46412),
                 ee = l.n($);
@@ -1110,8 +1108,8 @@
                 eo = l(66976),
                 e_ = l(56915),
                 em = l(48585),
-                ep = l(76616),
-                ew = l(96622),
+                ep = l(92917),
+                ew = l(78207),
                 eg = l(61360),
                 eu = l(30899),
                 ec = l(4671),
@@ -1305,8 +1303,8 @@
                         })]
                     })
                 };
-            var eW = l(43699),
-                eS = l(11417),
+            var eW = l(37874),
+                eS = l(11828),
                 eE = l(66052);
             let eL = e => {
                 let {
@@ -1338,7 +1336,7 @@
                 eB = l(26573),
                 eG = l(90297),
                 eY = l.n(eG),
-                eD = l(97116),
+                eD = l(15933),
                 eF = l(38453),
                 eO = l.n(eF);
             let eI = e => {
@@ -1678,8 +1676,8 @@
                 };
             var eR = l(30631),
                 eV = l(70523),
-                eH = l(96644);
-            let ez = "account.workspace.branded_page.edit_your_page",
+                ez = l(96644);
+            let eH = "account.workspace.branded_page.edit_your_page",
                 eq = {
                     category: "profile_form",
                     action: "type_in_title_field"
@@ -1697,7 +1695,7 @@
                 } = e, [o, _] = (0, n.useState)(""), [m, p] = (0, n.useState)(""), w = (0, s.wA)(), {
                     t: g
                 } = (0, r.Bd)("translation", {
-                    keyPrefix: ez
+                    keyPrefix: eH
                 }), u = (0, n.useMemo)(() => {
                     let e = "https://".concat(l, ".").concat(d),
                         a = new URLSearchParams;
@@ -1742,8 +1740,8 @@
                             children: g("custom_link_modal.url_label")
                         }), (0, t.jsx)(eJ.A, {
                             url: u,
-                            onCopyEvent: () => (w(eH.P9.setPanelNotification({
-                                category: eH.aF.Notification,
+                            onCopyEvent: () => (w(ez.P9.setPanelNotification({
+                                category: ez.aF.Notification,
                                 details: "link_copied"
                             })), b.customLinkCopied({
                                 hasTitle: !!o,
@@ -1771,7 +1769,7 @@
                 } = eo.default.getState(), {
                     t: f
                 } = (0, r.Bd)("translation", {
-                    keyPrefix: ez
+                    keyPrefix: eH
                 }), W = l.length <= 150, S = !0 !== m || p || P.validation ? "" : f("form_fields.subdomain.url_available");
                 (0, n.useEffect)(() => {
                     W || u(!0)
@@ -1785,8 +1783,8 @@
                     },
                     L = async () => {
                         let e = "https://".concat(d, ".").concat(o);
-                        await (0, eV.l)(e), k(eH.P9.setPanelNotification({
-                            category: eH.aF.Notification,
+                        await (0, eV.l)(e), k(ez.P9.setPanelNotification({
+                            category: ez.aF.Notification,
                             details: "link_copied"
                         })), y(!0), setTimeout(() => {
                             y(!1)
@@ -1900,11 +1898,11 @@
                     category: "profile_form",
                     action: "click_save_changes"
                 },
-                e6 = {
+                e2 = {
                     category: "plus_account",
                     action: "click_save_changes"
                 },
-                e2 = e => {
+                e4 = e => {
                     var a;
                     let {
                         form: l,
@@ -1981,17 +1979,17 @@
                             title: e.title
                         }));
                         let t = e.subdomain_name !== x.subdomain_name;
-                        if (t && localStorage.setItem(k.o.localStorage.editableSubdomain.name, "1"), (0, er.SR)("profile_name", a, e.title, e6), t) try {
+                        if (t && localStorage.setItem(k.o.localStorage.editableSubdomain.name, "1"), (0, er.SR)("profile_name", a, e.title, e2), t) try {
                             let a = new URL("".concat(location.protocol, "//").concat(e.subdomain_name, ".").concat(v.domain, ":").concat(location.port).concat(T.$X.route));
                             location.replace(a.href)
                         } catch (e) {
                             console.error("Unable to generate redirect url to new subdomain", e)
                         }
-                    }, H = async (e, a) => {
+                    }, z = async (e, a) => {
                         var l;
                         let t = e.getLocalError("subdomain_name");
                         ((null == (l = x.subdomain_name) ? void 0 : l.length) || 0) > 0 && t ? G(t) : await e.validateState(a)
-                    }, z = (0, n.useMemo)(() => (0, P.s)(H, k.o.textfield.debounceDelay), []), q = async (e, a) => {
+                    }, H = (0, n.useMemo)(() => (0, P.s)(z, k.o.textfield.debounceDelay), []), q = async (e, a) => {
                         await l.updateValue(e, a), G(""), N(!1)
                     };
                     (0, n.useEffect)(() => {
@@ -2002,11 +2000,11 @@
                                 title: o.title
                             }));
                             let e = void 0 !== o.subdomain_name && o.subdomain_name !== x.subdomain_name;
-                            z(l, () => {
+                            H(l, () => {
                                 N(e && !R("subdomain_name"))
                             })
                         })()
-                    }, [o.title, o.subdomain_name, x.subdomain_name, z, R]);
+                    }, [o.title, o.subdomain_name, x.subdomain_name, H, R]);
                     let J = B || l.getErrorMessage("subdomain_name") || "",
                         K = async e => (e.preventDefault(), o.subdomain_name !== x.subdomain_name ? j(!0) : await V());
                     return (0, t.jsxs)("form", {
@@ -2070,14 +2068,14 @@
                         })]
                     })
                 },
-                e4 = e => {
+                e5 = e => {
                     var a;
                     let {
                         onLoadingChanged: l,
                         onIsSaveDisabledChanged: d
                     } = e, [o, _] = (0, n.useState)(!1), [m, g] = (0, n.useState)(!1), u = (0, s.wA)(), c = (0, s.d4)(J.Lm), {
                         getUserByAuth0Id: b
-                    } = (0, z.o)(), h = (0, n.useMemo)(() => {
+                    } = (0, H.o)(), h = (0, n.useMemo)(() => {
                         var e;
                         return c && (null == (e = b(c)) ? void 0 : e.role) === "admin"
                     }, [c, b]), {
@@ -2092,7 +2090,7 @@
                         hasSocialLinksInputErrors: P
                     } = F(), f = p(), S = (0, w._)(), E = (0, q.m)(O.fA, v);
                     (0, n.useEffect)(() => {
-                        let e = (0, H.t)(x);
+                        let e = (0, z.t)(x);
                         o || y || !e.id || (u(W.A.Account.getAccount(e.id)), _(!0))
                     }, [o, x, y, u]);
                     let M = !!v.subdomain_name,
@@ -2116,7 +2114,7 @@
                                 className: "claimDomainNotification",
                                 children: (0, t.jsx)(L, {
                                     onSubmit: e => {
-                                        let a = (0, H.t)(x);
+                                        let a = (0, z.t)(x);
                                         g(!0), u(W.A.Account.getAccount(a.id)), E.updateValue("subdomain_name", e, !0)
                                     }
                                 })
@@ -2137,7 +2135,7 @@
                                     })
                                 })
                             })]
-                        }), (0, t.jsx)(e2, {
+                        }), (0, t.jsx)(e4, {
                             formName: O.fA,
                             form: E,
                             isDisabled: D
@@ -2576,4 +2574,4 @@
         }
     }
 ]);
-//# sourceMappingURL=profile.80aede3159f48eac.js.map
+//# sourceMappingURL=profile.22db5840d3a74fa2.js.map

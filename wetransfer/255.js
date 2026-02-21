@@ -176,7 +176,7 @@
                 y = t(53155),
                 x = t(86781),
                 f = t(72546),
-                v = t(78644),
+                v = t(39483),
                 b = t(10694),
                 L = t(92491),
                 E = t(88797),
@@ -1157,9 +1157,9 @@
             });
             var a = t(23798),
                 i = t(75546),
-                r = t(50496),
-                n = t(85633),
-                s = t(81436),
+                r = t(16045),
+                n = t(16173),
+                s = t(42669),
                 d = t(10988),
                 o = t.n(d);
 
@@ -1783,7 +1783,7 @@
                 i = t(46001),
                 r = t.n(i);
             t(21462);
-            var n = t(85633),
+            var n = t(16173),
                 s = t(24595),
                 d = t.n(s);
 
@@ -3511,9 +3511,9 @@
                 s = t.n(n),
                 d = t(21462),
                 o = t(98565),
-                _ = t(76616),
-                c = t(37796),
-                u = t(97116),
+                _ = t(92917),
+                c = t(20151),
+                u = t(15933),
                 w = t(44259),
                 m = t(15321),
                 p = t(81903),
@@ -5046,9 +5046,9 @@
                 i = t(50084),
                 r = t.n(i),
                 n = t(21462),
-                s = t(38169),
-                d = t(44259),
-                o = t(84530);
+                s = t(75546),
+                d = t(38169),
+                o = t(44259);
             class _ extends n.Component {
                 componentDidMount() {
                     this.timer = setTimeout(() => {
@@ -5056,9 +5056,6 @@
                             mightBeBorked: !0
                         })
                     }, 15e3)
-                }
-                componentDidUpdate() {
-                    this.props.onRefresh && this.textNode && this.textNode.querySelector("a") && (this.textNode.querySelector("a").onclick = this.props.onRefresh)
                 }
                 componentWillUnmount() {
                     clearTimeout(this.timer)
@@ -5069,16 +5066,19 @@
                         failed: t
                     } = this.props;
                     return (this.state.mightBeBorked || t) && (e = (0, a.jsx)("p", {
-                        ref: e => this.textNode = e,
-                        dangerouslySetInnerHTML: {
-                            __html: o.A.t("panel.loading_error", {
-                                path: l.path
-                            })
-                        }
+                        children: (0, a.jsx)(s.x6, {
+                            i18nKey: "panel.loading_error",
+                            components: {
+                                a: (0, a.jsx)("a", {
+                                    href: l.path,
+                                    onClick: this.props.onRefresh
+                                })
+                            }
+                        })
                     })), (0, a.jsxs)("div", {
                         className: "panel__loading",
                         "data-testid": "panel-loading",
-                        children: [(0, a.jsx)(d.Ay, {
+                        children: [(0, a.jsx)(o.Ay, {
                             type: "Loading"
                         }), e]
                     })
@@ -5096,7 +5096,7 @@
             }, _.defaultProps = {
                 onRefresh: e => (window.location.reload(), e.preventDefault(), !1)
             };
-            let c = (0, s.Ng)(e => {
+            let c = (0, d.Ng)(e => {
                 let {
                     route: l
                 } = e;
@@ -5315,7 +5315,7 @@
                 i = t(21462),
                 r = t(75546),
                 n = t(38169),
-                s = t(30403),
+                s = t(52064),
                 d = t(22352),
                 o = t(56264),
                 _ = t(21848),
@@ -10834,7 +10834,7 @@
             };
             var ea = t(23798),
                 ei = t(75546),
-                er = t(97116),
+                er = t(15933),
                 en = t(15218),
                 es = t.n(en);
             let ed = e => {
@@ -11216,9 +11216,9 @@
                 n = t(72388),
                 s = t(21462),
                 d = t(38169),
-                o = t(97116),
-                _ = t(14603),
-                c = t(96622),
+                o = t(15933),
+                _ = t(75702),
+                c = t(78207),
                 u = t(61360),
                 w = t(87963),
                 m = t(24932);
@@ -11603,9 +11603,9 @@
                 n = t(21462),
                 s = t(75546),
                 d = t(38169),
-                o = t(97116),
-                _ = t(74941),
-                c = t(85633),
+                o = t(15933),
+                _ = t(97460),
+                c = t(16173),
                 u = t(75600),
                 w = t(61149),
                 m = t(75181),
@@ -11616,7 +11616,7 @@
                 x = t(37828),
                 f = t(98851),
                 v = t(75876),
-                b = t(76616),
+                b = t(92917),
                 L = t(45781),
                 E = t(26094),
                 S = t(15412),
@@ -12668,7 +12668,7 @@
                 o = t(75546),
                 _ = t(38169),
                 c = t(98565),
-                u = t(97116),
+                u = t(15933),
                 w = t(2749),
                 m = t(52016),
                 p = t(24761),
@@ -12956,7 +12956,7 @@
                     })]
                 })
             }
-            var j = t(85633),
+            var j = t(16173),
                 I = t(32976),
                 M = t(83489),
                 O = t(16342),
@@ -13338,7 +13338,7 @@
                     })]
                 })
             }
-            var er = t(76616),
+            var er = t(92917),
                 en = t(97151);
             let es = {
                 src: "/_next/static/media/visual.c589e220.png",
@@ -15050,4 +15050,4 @@
         }
     }
 ]);
-//# sourceMappingURL=8716.8cbc9e3fd80cbb62.js.map
+//# sourceMappingURL=8716.5fb44b0d15bb43fd.js.map

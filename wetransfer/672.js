@@ -27,8 +27,8 @@
         5852: (a, e, l) => {
             "use strict";
             l.d(e, {
-                Q: () => _,
-                r: () => c
+                Q: () => c,
+                r: () => _
             });
             var n = l(21462),
                 i = l(38169),
@@ -36,18 +36,18 @@
                 d = l(62760),
                 o = l(86781),
                 s = l(9209);
-            let _ = {
+            let c = {
                     code: "ONETIME-50",
                     discount: 50
                 },
-                c = () => {
+                _ = () => {
                     let a = (0, i.d4)(o.mB),
                         {
                             subscription: e
                         } = (0, t.f)(),
                         l = !!(null == e ? void 0 : e.discountPercent) || !!(null == e ? void 0 : e.couponCode),
-                        _ = (null == e ? void 0 : e.isPaidDowngrade) || (null == e ? void 0 : e.isPaused),
-                        c = (null == e ? void 0 : e.status) === s.dH.trialing,
+                        c = (null == e ? void 0 : e.isPaidDowngrade) || (null == e ? void 0 : e.isPaused),
+                        _ = (null == e ? void 0 : e.status) === s.dH.trialing,
                         r = (() => {
                             let {
                                 settings: a
@@ -55,7 +55,7 @@
                             return a.simplified_cancel_subscription_discount_configuration
                         })(),
                         m = !!(null == r ? void 0 : r[a.planTier]);
-                    return (0, n.useMemo)(() => m && !l && !_ && !c, [m, l, _, c])
+                    return (0, n.useMemo)(() => m && !l && !c && !_, [m, l, c, _])
                 }
         },
         5866: (a, e, l) => {
@@ -68,9 +68,9 @@
                 t = l.n(i),
                 d = l(75546),
                 o = l(38169),
-                s = l(11417),
-                _ = l(85633),
-                c = l(97116),
+                s = l(11828),
+                c = l(16173),
+                _ = l(15933),
                 r = l(68018),
                 m = l(50298),
                 w = l.n(m);
@@ -106,26 +106,26 @@
                                 className: w().pauseFeatures,
                                 children: [(0, n.jsxs)("div", {
                                     className: w().pauseFeature,
-                                    children: [(0, n.jsx)(_.bT1, {}), (0, n.jsx)("span", {
+                                    children: [(0, n.jsx)(c.bT1, {}), (0, n.jsx)("span", {
                                         className: w().pauseFeatureText,
                                         children: m("page.manage_plan.cancel.modal.pause.feature_1")
                                     })]
                                 }), (0, n.jsxs)("div", {
                                     className: w().pauseFeature,
-                                    children: [(0, n.jsx)(_.bT1, {}), (0, n.jsx)("span", {
+                                    children: [(0, n.jsx)(c.bT1, {}), (0, n.jsx)("span", {
                                         className: w().pauseFeatureText,
                                         children: m("page.manage_plan.cancel.modal.pause.feature_2")
                                     })]
                                 }), l && (0, n.jsxs)("div", {
                                     className: w().pauseFeature,
-                                    children: [(0, n.jsx)(_.bT1, {}), (0, n.jsx)("span", {
+                                    children: [(0, n.jsx)(c.bT1, {}), (0, n.jsx)("span", {
                                         className: w().pauseFeatureText,
                                         children: m("page.manage_plan.cancel.modal.pause.feature_3")
                                     })]
                                 })]
                             })]
                         })]
-                    }), (0, n.jsx)(c.$, {
+                    }), (0, n.jsx)(_.$, {
                         fullwidth: "modal" === e,
                         onClick: () => {
                             g((0, r.m$)("getScheduleData")), i()
@@ -359,7 +359,7 @@
             "use strict";
             l.d(e, {
                 T: () => s,
-                p: () => _
+                p: () => c
             });
             var n = l(21462),
                 i = l(38169),
@@ -367,7 +367,7 @@
                 d = l(15913),
                 o = l(96644);
             let s = "paused",
-                _ = () => {
+                c = () => {
                     let {
                         currentTeam: a
                     } = (0, d.o)(), [e] = (0, t.Ks)(), l = (0, i.wA)();
@@ -391,21 +391,21 @@
         43657: (a, e, l) => {
             "use strict";
             l.d(e, {
-                f: () => at
+                f: () => ad
             });
             var n = l(23798),
                 i = l(46001),
                 t = l.n(i),
                 d = l(21462),
                 o = l(75546),
-                s = l(48902),
-                _ = l(43699),
-                c = l(85633),
-                r = l(97116),
+                s = l(90459),
+                c = l(37874),
+                _ = l(16173),
+                r = l(15933),
                 m = l(39602),
                 w = l.n(m),
                 g = l(38169),
-                p = l(96622),
+                p = l(78207),
                 u = l(7758),
                 b = l(91632),
                 h = l(61360),
@@ -435,16 +435,16 @@
                     t: s
                 } = (0, o.Bd)("translation", {
                     keyPrefix: "page.manage_plan.cancel.compliance.modal"
-                }), _ = (0, g.wA)(), m = (0, u.X)(), P = t === C.js.STARTER ? [s("benefits_starter.benefit_1")] : [s("benefits_ultimate.benefit_1"), s("benefits_ultimate.benefit_2"), s("benefits_ultimate.benefit_3"), s("benefits_ultimate.benefit_4"), s("benefits_ultimate.benefit_5")];
+                }), c = (0, g.wA)(), m = (0, u.X)(), P = t === C.js.STARTER ? [s("benefits_starter.benefit_1")] : [s("benefits_ultimate.benefit_1"), s("benefits_ultimate.benefit_2"), s("benefits_ultimate.benefit_3"), s("benefits_ultimate.benefit_4"), s("benefits_ultimate.benefit_5")];
                 (0, d.useEffect)(() => {
                     e && (0, x.Od)().trackUserAction(b.$.confirmationDisplayed("modal"))
                 }, [e]);
                 let j = (0, d.useCallback)(() => {
                         (0, x.Od)().trackUserAction(b.$.confirmationDismissed("modal")), l()
                     }, [l]),
-                    N = (0, d.useCallback)(async () => {
-                        (0, x.Od)().trackUserAction(M.f.confirmCancelButtonClicked()), await m(), (0, x.Od)().trackUserAction(M.f.subscriptionCanceled()), _(S.A.Account.setCanSeeGoodbyeOffer(!0)), l(), y.A.navigateTo("/workspace/payment")
-                    }, [m, _, l]);
+                    v = (0, d.useCallback)(async () => {
+                        (0, x.Od)().trackUserAction(M.f.confirmCancelButtonClicked()), await m(), (0, x.Od)().trackUserAction(M.f.subscriptionCanceled()), c(S.A.Account.setCanSeeGoodbyeOffer(!0)), l(), y.A.navigateTo("/workspace/payment")
+                    }, [m, c, l]);
                 return (0, n.jsx)(p.a, {
                     isOpen: e,
                     onClose: j,
@@ -467,7 +467,7 @@
                             })
                         }), (0, n.jsxs)("div", {
                             className: f().content,
-                            children: [(0, n.jsx)(c.$Td, {
+                            children: [(0, n.jsx)(_.$Td, {
                                 "aria-hidden": !0,
                                 className: f().closeButton,
                                 onClick: j
@@ -485,7 +485,7 @@
                                     className: f().benefitList,
                                     children: [P.map((a, e) => (0, n.jsxs)("div", {
                                         className: f().benefitItem,
-                                        children: [(0, n.jsx)(c.$Td, {
+                                        children: [(0, n.jsx)(_.$Td, {
                                             "aria-hidden": !0,
                                             className: f().benefitItemIcon
                                         }), (0, n.jsx)("div", {
@@ -509,7 +509,7 @@
                                     fullwidth: !0,
                                     size: "medium",
                                     appearance: "tertiary",
-                                    onClick: N,
+                                    onClick: v,
                                     children: s("buttons.cancel_plan")
                                 })]
                             })]
@@ -517,21 +517,21 @@
                     })
                 })
             }
-            var N = l(4838),
-                v = l(75876),
+            var v = l(4838),
+                N = l(75876),
                 T = l(62760),
                 k = l(92288),
                 B = l.n(k),
-                E = l(30149),
+                E = l(19724),
                 I = l(91384),
-                F = l(29336),
-                D = l(91053),
+                D = l(29336),
+                F = l(91053),
                 O = l(61149),
                 R = l(5866),
                 H = l(97875),
                 U = l(37828),
-                G = l(98851),
-                L = l(44259),
+                L = l(98851),
+                G = l(44259),
                 V = l(15321),
                 K = l(59457),
                 Q = l(88848),
@@ -539,10 +539,11 @@
                 X = l(5852),
                 z = l(33615),
                 J = l(84530),
-                Y = l(68018),
-                Z = l(86781),
-                q = l(28330);
-            let $ = {
+                Y = l(55112),
+                Z = l(68018),
+                q = l(86781),
+                $ = l(28330);
+            let aa = {
                 src: "/_next/static/media/visual.ae882372.png",
                 height: 288,
                 width: 608,
@@ -550,131 +551,131 @@
                 blurWidth: 8,
                 blurHeight: 4
             };
-            var aa = l(78148),
-                ae = l.n(aa);
+            var ae = l(78148),
+                al = l.n(ae);
 
-            function al(a) {
+            function an(a) {
                 var e, l;
                 let {
                     isVisible: i,
                     onDismiss: s
                 } = a, {
-                    t: _
-                } = (0, o.Bd)(), m = (0, g.wA)(), b = (0, g.d4)(Z.mB), S = (0, H.G)(), A = (0, F.p)(), P = (0, u.X)(), f = (0, I.d)(), {
+                    t: c
+                } = (0, o.Bd)(), m = (0, g.wA)(), b = (0, g.d4)(q.mB), S = (0, H.G)(), A = (0, D.p)(), P = (0, u.X)(), f = (0, I.d)(), {
                     subscription: j
-                } = (0, U.f)(), v = (0, N.t0)(), T = (null == j ? void 0 : j.isPaidDowngrade) || (null == j ? void 0 : j.isPaused), k = (null == j ? void 0 : j.status) === q.dH.trialing, aa = (0, X.r)(), al = !T && !k, an = a => {
+                } = (0, U.f)(), N = (0, v.t0)(), T = (null == j ? void 0 : j.isPaidDowngrade) || (null == j ? void 0 : j.isPaused), k = (null == j ? void 0 : j.status) === $.dH.trialing, ae = (0, X.r)(), an = !T && !k && !(0, Y.h)(j), ai = a => {
                     var e;
-                    return (0, G.W)({
+                    return (0, L.W)({
                         amount: a,
                         currency: null != (e = null == j ? void 0 : j.currency) ? e : O.Sj.EUR,
                         locale: S
                     })
-                }, ai = (0, C.m4)(null == j ? void 0 : j.interval), at = X.Q.discount, ad = (null == j ? void 0 : j.endsAt) ? J.A.date(new Date(null == j ? void 0 : j.endsAt), "without_day") : "", ao = (0, C.Is)(b.planTier), as = (null != (e = null == j ? void 0 : j.totalCents) ? e : 0) / 100, a_ = (null != (l = null == j ? void 0 : j.totalCentsBeforeTaxesAndDiscounts) ? l : 0) / 100 * (1 - at / 100), ac = an(as), ar = an(as - a_), am = an(a_), [aw, ag] = (0, d.useState)(!0);
+                }, at = (0, C.m4)(null == j ? void 0 : j.interval), ad = X.Q.discount, ao = (null == j ? void 0 : j.endsAt) ? J.A.date(new Date(null == j ? void 0 : j.endsAt), "without_day") : "", as = (0, C.Is)(b.planTier), ac = (null != (e = null == j ? void 0 : j.totalCents) ? e : 0) / 100, a_ = (null != (l = null == j ? void 0 : j.totalCentsBeforeTaxesAndDiscounts) ? l : 0) / 100 * (1 - ad / 100), ar = ai(ac), am = ai(ac - a_), aw = ai(a_), [ag, ap] = (0, d.useState)(!0);
                 (0, d.useEffect)(() => {
                     i && (0, x.Od)().trackUserAction(M.f.popupDisplayed())
                 }, [i]);
-                let ap = (0, d.useCallback)(async () => {
-                        (0, x.Od)().trackUserAction(M.f.pauseSubscriptionButtonClicked()), await A(), s(), y.A.navigateTo("/workspace/payment?".concat(F.T, "=true"))
+                let au = (0, d.useCallback)(async () => {
+                        (0, x.Od)().trackUserAction(M.f.pauseSubscriptionButtonClicked()), await A(), s(), y.A.navigateTo("/workspace/payment?".concat(D.T, "=true"))
                     }, [A, s]),
-                    au = (0, d.useCallback)(() => {
+                    ab = (0, d.useCallback)(() => {
                         (0, x.Od)().trackUserAction(M.f.contactSupportButtonClicked()), window.open(K.h7, "_blank"), s()
                     }, [s]),
-                    ab = (0, d.useCallback)(async () => {
-                        (0, x.Od)().trackUserAction(M.f.getDiscountButtonClicked()), await f(X.Q.code), m((0, Y.m$)("getCouponData")), (0, x.Od)().trackUserAction(D.X.userConverted({
+                    ah = (0, d.useCallback)(async () => {
+                        (0, x.Od)().trackUserAction(M.f.getDiscountButtonClicked()), await f(X.Q.code), m((0, Z.m$)("getCouponData")), (0, x.Od)().trackUserAction(F.X.userConverted({
                             subscriptionTier: b.planTier,
-                            billingPeriod: ai,
+                            billingPeriod: at,
                             paywallType: Q.pU.CTA,
                             paywallTrigger: Q.vW.MANAGE_PLAN_CANCELLATION_DISCOUNT
                         })), (0, z.Ho)(), s(), y.A.navigateTo("/workspace/payment?".concat(I.V, "=true"))
-                    }, [f, b.planTier, ai, s, m]),
-                    ah = (0, d.useCallback)(async () => {
+                    }, [f, b.planTier, at, s, m]),
+                    ax = (0, d.useCallback)(async () => {
                         (0, x.Od)().trackUserAction(M.f.confirmCancelButtonClicked()), await P(), (0, x.Od)().trackUserAction(M.f.subscriptionCanceled()), s(), y.A.navigateTo("/workspace/payment/cancel-reason")
                     }, [P, s]),
-                    ax = (0, d.useCallback)(() => {
+                    aC = (0, d.useCallback)(() => {
                         (0, x.Od)().trackUserAction(M.f.popupDismissed()), s()
                     }, [s]),
-                    aC = (0, d.useCallback)(a => {
+                    ay = (0, d.useCallback)(a => {
                         let e = a.currentTarget;
-                        ag(e.scrollTop / (e.scrollHeight - e.clientHeight) * 100 < 80)
+                        ap(e.scrollTop / (e.scrollHeight - e.clientHeight) * 100 < 80)
                     }, []),
-                    ay = () => (0, n.jsxs)("div", {
-                        className: ae().offerSection,
+                    aM = () => (0, n.jsxs)("div", {
+                        className: al().offerSection,
                         children: [(0, n.jsx)("span", {
-                            className: ae().offerTitle,
-                            children: _("page.manage_plan.cancel.modal.discount_title")
+                            className: al().offerTitle,
+                            children: c("page.manage_plan.cancel.modal.discount_title")
                         }), (0, n.jsxs)("div", {
-                            className: ae().priceAndBannerContainer,
+                            className: al().priceAndBannerContainer,
                             children: [(0, n.jsxs)("div", {
-                                className: ae().priceInfoContainer,
+                                className: al().priceInfoContainer,
                                 children: [(0, n.jsx)("span", {
-                                    className: ae().priceInfoTitle,
-                                    children: _("page.manage_plan.cancel.modal.stay", {
-                                        discount: at
+                                    className: al().priceInfoTitle,
+                                    children: c("page.manage_plan.cancel.modal.stay", {
+                                        discount: ad
                                     })
                                 }), (0, n.jsxs)("div", {
-                                    className: ae().priceInfo,
+                                    className: al().priceInfo,
                                     children: [(0, n.jsxs)("div", {
-                                        className: ae().priceRow,
+                                        className: al().priceRow,
                                         children: [(0, n.jsx)("span", {
-                                            className: ae().priceLabel,
-                                            children: _("page.manage_plan.cancel.modal.plan", {
-                                                billing: B()(ai),
-                                                plan_tier: ao
+                                            className: al().priceLabel,
+                                            children: c("page.manage_plan.cancel.modal.plan", {
+                                                billing: B()(at),
+                                                plan_tier: as
                                             })
                                         }), (0, n.jsx)("span", {
-                                            className: ae().priceValue,
-                                            children: ac
+                                            className: al().priceValue,
+                                            children: ar
                                         })]
                                     }), (0, n.jsxs)("div", {
-                                        className: ae().priceRow,
+                                        className: al().priceRow,
                                         children: [(0, n.jsx)("span", {
-                                            className: t()(ae().priceLabel, ae().discount),
-                                            children: _("page.manage_plan.cancel.modal.discount", {
-                                                discount: at
+                                            className: t()(al().priceLabel, al().discount),
+                                            children: c("page.manage_plan.cancel.modal.discount", {
+                                                discount: ad
                                             })
                                         }), (0, n.jsxs)("span", {
-                                            className: t()(ae().priceValue, ae().discount),
-                                            children: ["- ", ar]
+                                            className: t()(al().priceValue, al().discount),
+                                            children: ["- ", am]
                                         })]
                                     }), (0, n.jsx)("div", {
-                                        className: ae().divider
+                                        className: al().divider
                                     }), (0, n.jsxs)("div", {
-                                        className: ae().priceRow,
+                                        className: al().priceRow,
                                         children: [(0, n.jsx)("span", {
-                                            className: ae().priceLabel,
-                                            children: _("page.manage_plan.cancel.modal.new_price", {
-                                                date: ad
+                                            className: al().priceLabel,
+                                            children: c("page.manage_plan.cancel.modal.new_price", {
+                                                date: ao
                                             })
                                         }), (0, n.jsx)("span", {
-                                            className: ae().priceValue,
-                                            children: am
+                                            className: al().priceValue,
+                                            children: aw
                                         })]
                                     })]
                                 })]
                             }), (0, n.jsx)("div", {
-                                className: ae().banner,
+                                className: al().banner,
                                 children: (0, n.jsx)("span", {
-                                    className: ae().bannerText,
-                                    children: _("page.manage_plan.cancel.modal.save_text", {
-                                        amount: ar,
-                                        plan_tier: ao
+                                    className: al().bannerText,
+                                    children: c("page.manage_plan.cancel.modal.save_text", {
+                                        amount: am,
+                                        plan_tier: as
                                     })
                                 })
                             })]
                         }), (0, n.jsxs)("div", {
-                            className: ae().actionButtons,
+                            className: al().actionButtons,
                             children: [(0, n.jsx)(r.$, {
                                 fullwidth: !0,
                                 size: "medium",
-                                onClick: ab,
-                                children: _("page.manage_plan.cancel.modal.get_offer")
+                                onClick: ah,
+                                children: c("page.manage_plan.cancel.modal.get_offer")
                             }), (0, n.jsx)("span", {
-                                className: ae().renewalText,
-                                children: _("page.manage_plan.cancel.modal.renewal_date", {
-                                    date: ad
+                                className: al().renewalText,
+                                children: c("page.manage_plan.cancel.modal.renewal_date", {
+                                    date: ao
                                 })
                             }), (0, n.jsx)("span", {
-                                className: ae().termsText,
+                                className: al().termsText,
                                 children: (0, n.jsx)(o.x6, {
                                     i18nKey: "page.manage_plan.cancel.modal.terms",
                                     components: [(0, n.jsx)(E.N, {
@@ -685,19 +686,19 @@
                             })]
                         })]
                     }),
-                    aM = () => (0, n.jsxs)("div", {
-                        className: ae().supportSection,
+                    aS = () => (0, n.jsxs)("div", {
+                        className: al().supportSection,
                         children: [(0, n.jsx)("h3", {
-                            className: ae().supportTitle,
-                            children: _("page.manage_plan.cancel.modal.support.title")
+                            className: al().supportTitle,
+                            children: c("page.manage_plan.cancel.modal.support.title")
                         }), (0, n.jsxs)("div", {
-                            className: ae().supportContainer,
+                            className: al().supportContainer,
                             children: [(0, n.jsx)("div", {
-                                className: ae().supportImageContainer,
+                                className: al().supportImageContainer,
                                 children: (0, n.jsx)(w(), {
-                                    src: $,
+                                    src: aa,
                                     alt: "",
-                                    className: ae().supportImage,
+                                    className: al().supportImage,
                                     fill: !0,
                                     sizes: "50vw",
                                     style: {
@@ -705,125 +706,125 @@
                                     }
                                 })
                             }), (0, n.jsx)("span", {
-                                className: ae().supportText,
-                                children: _("page.manage_plan.cancel.modal.support.text")
+                                className: al().supportText,
+                                children: c("page.manage_plan.cancel.modal.support.text")
                             }), (0, n.jsx)(r.$, {
                                 fullwidth: !0,
-                                onClick: au,
-                                children: _("page.manage_plan.cancel.modal.support.button")
+                                onClick: ab,
+                                children: c("page.manage_plan.cancel.modal.support.button")
                             })]
                         })]
                     }),
-                    aS = () => (0, n.jsxs)("div", {
-                        className: ae().goodbyeSection,
+                    aA = () => (0, n.jsxs)("div", {
+                        className: al().goodbyeSection,
                         children: [(0, n.jsx)("h3", {
-                            className: ae().goodbyeTitle,
-                            children: _("page.manage_plan.cancel.modal.goodbye.title")
+                            className: al().goodbyeTitle,
+                            children: c("page.manage_plan.cancel.modal.goodbye.title")
                         }), (0, n.jsxs)("div", {
-                            className: ae().goodbyeContainer,
+                            className: al().goodbyeContainer,
                             children: [(0, n.jsx)("span", {
-                                className: ae().goodbyeText,
-                                children: _("page.manage_plan.cancel.modal.goodbye.text")
+                                className: al().goodbyeText,
+                                children: c("page.manage_plan.cancel.modal.goodbye.text")
                             }), (0, n.jsx)(r.$, {
                                 variation: "destructive",
                                 appearance: "secondary",
                                 fullwidth: !0,
-                                onClick: ah,
-                                children: v ? _("page.manage_plan.cancel.modal.goodbye.button_compliant") : _("page.manage_plan.cancel.modal.goodbye.button")
+                                onClick: ax,
+                                children: N ? c("page.manage_plan.cancel.modal.goodbye.button_compliant") : c("page.manage_plan.cancel.modal.goodbye.button")
                             })]
                         })]
                     });
                 return (0, n.jsx)(p.a, {
                     isOpen: i,
                     classes: {
-                        containerClass: ae().modal
+                        containerClass: al().modal
                     },
-                    onClose: ax,
+                    onClose: aC,
                     appElement: (0, h.Y)(),
                     children: (0, n.jsxs)("div", {
-                        className: ae().modalContent,
+                        className: al().modalContent,
                         children: [(0, n.jsx)("div", {
-                            className: t()(ae().scrollbarContainer, {
-                                [ae().compliant]: v
+                            className: t()(al().scrollbarContainer, {
+                                [al().compliant]: N
                             }),
-                            onScroll: aC,
+                            onScroll: ay,
                             children: (0, n.jsxs)("div", {
-                                className: ae().container,
+                                className: al().container,
                                 children: [(0, n.jsx)("div", {
-                                    className: ae().closeButton,
-                                    onClick: ax,
-                                    children: (0, n.jsx)(L.Ay, {
+                                    className: al().closeButton,
+                                    onClick: aC,
+                                    children: (0, n.jsx)(G.Ay, {
                                         color: V.$A,
                                         hoverColor: V.Id,
                                         type: "Close"
                                     })
                                 }), (0, n.jsx)("div", {
-                                    className: ae().firstBlock,
+                                    className: al().firstBlock,
                                     children: (0, n.jsx)("h2", {
-                                        className: ae().title,
-                                        children: _("page.manage_plan.cancel.modal.title")
+                                        className: al().title,
+                                        children: c("page.manage_plan.cancel.modal.title")
                                     })
-                                }), (0, n.jsx)(() => v ? (0, n.jsxs)(n.Fragment, {
-                                    children: [al && (0, n.jsx)(R.A, {
+                                }), (0, n.jsx)(() => N ? (0, n.jsxs)(n.Fragment, {
+                                    children: [an && (0, n.jsx)(R.A, {
                                         context: "modal",
                                         shouldShowThirdFeature: !1,
-                                        onPauseSubscription: ap
-                                    }), al && (0, n.jsx)("div", {
-                                        className: ae().divider
-                                    }), (0, n.jsx)(aS, {}), (0, n.jsx)("div", {
-                                        className: ae().divider
-                                    }), aa && (0, n.jsx)(ay, {}), aa && (0, n.jsx)("div", {
-                                        className: ae().divider
-                                    }), (0, n.jsx)(aM, {})]
+                                        onPauseSubscription: au
+                                    }), an && (0, n.jsx)("div", {
+                                        className: al().divider
+                                    }), (0, n.jsx)(aA, {}), (0, n.jsx)("div", {
+                                        className: al().divider
+                                    }), ae && (0, n.jsx)(aM, {}), ae && (0, n.jsx)("div", {
+                                        className: al().divider
+                                    }), (0, n.jsx)(aS, {})]
                                 }) : (0, n.jsxs)(n.Fragment, {
-                                    children: [al && (0, n.jsx)(R.A, {
+                                    children: [an && (0, n.jsx)(R.A, {
                                         context: "modal",
                                         shouldShowThirdFeature: !0,
-                                        onPauseSubscription: ap
-                                    }), al && (0, n.jsx)("div", {
-                                        className: ae().divider
-                                    }), aa && (0, n.jsx)(ay, {}), aa && (0, n.jsx)("div", {
-                                        className: ae().divider
-                                    }), (0, n.jsx)(aM, {}), (0, n.jsx)("div", {
-                                        className: ae().divider
-                                    }), (0, n.jsx)(aS, {})]
+                                        onPauseSubscription: au
+                                    }), an && (0, n.jsx)("div", {
+                                        className: al().divider
+                                    }), ae && (0, n.jsx)(aM, {}), ae && (0, n.jsx)("div", {
+                                        className: al().divider
+                                    }), (0, n.jsx)(aS, {}), (0, n.jsx)("div", {
+                                        className: al().divider
+                                    }), (0, n.jsx)(aA, {})]
                                 }), {})]
                             })
                         }), (0, n.jsx)("div", {
-                            className: t()(ae().scrollHintContainer, {
-                                [ae().hidden]: !aw
+                            className: t()(al().scrollHintContainer, {
+                                [al().hidden]: !ag
                             }),
                             children: (0, n.jsxs)("div", {
-                                className: ae().scrollHintContent,
-                                children: [(0, n.jsx)(c.ac, {
+                                className: al().scrollHintContent,
+                                children: [(0, n.jsx)(_.ac, {
                                     size: "small"
                                 }), (0, n.jsx)("span", {
-                                    className: ae().scrollHintText,
-                                    children: _("page.manage_plan.cancel.modal.scroll_hint")
+                                    className: al().scrollHintText,
+                                    children: c("page.manage_plan.cancel.modal.scroll_hint")
                                 })]
                             })
                         })]
                     })
                 })
             }
-            var an = l(18682),
-                ai = l.n(an);
-            let at = a => {
+            var ai = l(18682),
+                at = l.n(ai);
+            let ad = a => {
                 let {
                     user: e,
                     expiryDate: l,
                     pendingCancellation: i,
                     trackClick: m,
                     setShowCompliantCancellationPage: w
-                } = a, g = (0, v.J)(), {
+                } = a, g = (0, N.J)(), {
                     settings: p
-                } = (0, T.k)(), [u, b] = (0, d.useState)(!1), [h, x] = (0, d.useState)(!1), [y, M] = (0, d.useState)(!1), [S, A] = (0, d.useState)(!1), P = (0, N.pR)(), f = (0, C.Is)(e.planTier), {
+                } = (0, T.k)(), [u, b] = (0, d.useState)(!1), [h, x] = (0, d.useState)(!1), [y, M] = (0, d.useState)(!1), [S, A] = (0, d.useState)(!1), P = (0, v.pR)(), f = (0, C.Is)(e.planTier), {
                     t: k
-                } = (0, o.Bd)(), B = t()(ai().cancelContainer, {
-                    [ai().topBorder]: !!g
-                }), E = t()(ai().radioContainer, {
-                    [ai().error]: h
-                }), I = P !== N.Gn.NONE ? (0, n.jsx)(o.x6, {
+                } = (0, o.Bd)(), B = t()(at().cancelContainer, {
+                    [at().topBorder]: !!g
+                }), E = t()(at().radioContainer, {
+                    [at().error]: h
+                }), I = P !== v.Gn.NONE ? (0, n.jsx)(o.x6, {
                     i18nKey: "page.manage_plan.cancel.drawbacks.cancel_plan_compliant",
                     values: {
                         renewal_date: l
@@ -833,7 +834,7 @@
                     }
                 }) : k("page.manage_plan.cancel.drawbacks.cancel_plan", {
                     renewal_date: l
-                }), F = (0, n.jsx)(o.x6, {
+                }), D = (0, n.jsx)(o.x6, {
                     i18nKey: "page.manage_plan.cancel.drawbacks.cancel_plan_text",
                     components: {
                         li: (0, n.jsx)("li", {}),
@@ -842,7 +843,7 @@
                 });
                 return (0, n.jsxs)("div", {
                     className: B,
-                    children: [(0, n.jsx)(al, {
+                    children: [(0, n.jsx)(an, {
                         isVisible: y,
                         onDismiss: () => M(!1)
                     }), (0, n.jsx)(j, {
@@ -851,68 +852,68 @@
                         expiryDate: l,
                         planTier: e.planTier
                     }), (0, n.jsx)("h5", {
-                        className: ai().cancelHeader,
+                        className: at().cancelHeader,
                         children: k("page.manage_plan.cancel.cancel_subscription")
                     }), (0, n.jsxs)("div", {
-                        className: ai().cancellationText,
+                        className: at().cancellationText,
                         children: [(0, n.jsx)("p", {
-                            className: ai().cancellationTextInfo,
+                            className: at().cancellationTextInfo,
                             children: I
-                        }), P === N.Gn.NONE && (0, n.jsx)("span", {
-                            className: t()(ai().cancellationTextInfo, ai().subtext),
-                            children: F
+                        }), P === v.Gn.NONE && (0, n.jsx)("span", {
+                            className: t()(at().cancellationTextInfo, at().subtext),
+                            children: D
                         })]
                     }), (0, n.jsxs)("div", {
-                        className: ai().confirmationContainer,
+                        className: at().confirmationContainer,
                         children: [(0, n.jsx)("div", {
                             className: E,
                             children: (0, n.jsxs)("div", {
-                                className: ai().confirmationContent,
+                                className: at().confirmationContent,
                                 children: [(0, n.jsx)(s.S, {
                                     id: "cancel-confirmation",
                                     value: "confirmed",
-                                    className: ai().confirmationCheckbox,
+                                    className: at().confirmationCheckbox,
                                     checked: u,
                                     onChange: () => {
                                         u || x(!1), b(!u)
                                     }
                                 }), (0, n.jsxs)("div", {
-                                    className: ai().confirmationText,
+                                    className: at().confirmationText,
                                     children: [(0, n.jsx)("span", {
-                                        className: ai().confirmationTextTitle,
-                                        children: k(P !== N.Gn.NONE ? "page.manage_plan.cancel.drawbacks.confirmation_title_compliant" : "page.manage_plan.cancel.drawbacks.confirmation_title")
+                                        className: at().confirmationTextTitle,
+                                        children: k(P !== v.Gn.NONE ? "page.manage_plan.cancel.drawbacks.confirmation_title_compliant" : "page.manage_plan.cancel.drawbacks.confirmation_title")
                                     }), (0, n.jsx)("span", {
-                                        className: ai().confirmationTextSubtitle,
-                                        children: k(P !== N.Gn.NONE ? "page.manage_plan.cancel.drawbacks.confirmation_subtitle_compliant" : "page.manage_plan.cancel.drawbacks.confirmation_subtitle", {
+                                        className: at().confirmationTextSubtitle,
+                                        children: k(P !== v.Gn.NONE ? "page.manage_plan.cancel.drawbacks.confirmation_subtitle_compliant" : "page.manage_plan.cancel.drawbacks.confirmation_subtitle", {
                                             plan_tier: f
                                         })
                                     })]
                                 })]
                             })
                         }), h && (0, n.jsx)("span", {
-                            className: ai().errorText,
+                            className: at().errorText,
                             children: k("page.manage_plan.cancel.drawbacks.confirmation_error")
                         })]
-                    }), !p.downgrade_to_starter_enabled && (0, n.jsxs)(_.l, {
+                    }), !p.downgrade_to_starter_enabled && (0, n.jsxs)(c.l, {
                         isOpen: !0,
                         mode: "light",
                         variation: "default",
-                        className: ai().banner,
-                        children: [(0, n.jsx)(_.l.Icon, {
-                            icon: c.cFx
-                        }), (0, n.jsx)(_.l.Content, {
+                        className: at().banner,
+                        children: [(0, n.jsx)(c.l.Icon, {
+                            icon: _.cFx
+                        }), (0, n.jsx)(c.l.Content, {
                             children: (0, n.jsxs)("div", {
-                                className: ai().bannerContent,
+                                className: at().bannerContent,
                                 children: [(0, n.jsx)("span", {
-                                    className: ai().bannerTitle,
+                                    className: at().bannerTitle,
                                     children: k("page.manage_plan.cancel.downgrade_banner.title")
                                 }), (0, n.jsx)("span", {
-                                    className: ai().bannerText,
+                                    className: at().bannerText,
                                     children: k("page.manage_plan.cancel.downgrade_banner.text")
                                 })]
                             })
-                        }), (0, n.jsx)(_.l.Actions, {
-                            className: ai().bannerButton,
+                        }), (0, n.jsx)(c.l.Actions, {
+                            className: at().bannerButton,
                             children: (0, n.jsx)(r.$, {
                                 variation: "neutral",
                                 appearance: "secondary",
@@ -923,18 +924,18 @@
                             })
                         })]
                     }), i ? (0, n.jsx)("p", {
-                        className: ai().cancelMessage,
+                        className: at().cancelMessage,
                         children: k("page.manage_plan.cancel.cancelling")
                     }) : (0, n.jsx)(r.$, {
                         variation: "destructive",
                         onClick: () => {
-                            u ? P === N.Gn.MODAL ? A(!0) : P === N.Gn.PAGE ? (null == w || w(!0), window.scrollTo({
+                            u ? P === v.Gn.MODAL ? A(!0) : P === v.Gn.PAGE ? (null == w || w(!0), window.scrollTo({
                                 top: 0,
                                 behavior: "smooth"
                             })) : M(!0) : x(!0), m && m(!u)
                         },
                         appearance: "secondary",
-                        className: ai().cancelButton,
+                        className: at().cancelButton,
                         size: "small",
                         children: k("page.manage_plan.cancel.cancel_subscription")
                     })]
@@ -1024,6 +1025,20 @@
                 pauseFeature: "PauseSection_pauseFeature__2Fbi4"
             }
         },
+        55112: (a, e, l) => {
+            "use strict";
+            l.d(e, {
+                h: () => d
+            });
+            var n = l(49302),
+                i = l(55851),
+                t = l(28330);
+
+            function d(a) {
+                let e = (null == a ? void 0 : a.status) === t.dH.active && (null == a ? void 0 : a.cancelAtPeriodEnd) === !1 && (null == a ? void 0 : a.externalProvider) === n.hL.MONETA && (null == a ? void 0 : a.endsAt) && new Date(a.endsAt) < new Date(Date.now() - i.i.ONE_DAY_IN_MILLISECONDS);
+                return (null == a ? void 0 : a.status) === t.dH.past_due || !!e
+            }
+        },
         58436: a => {
             a.exports = {
                 PanelHeader: "PanelHeader_PanelHeader___muol",
@@ -1038,23 +1053,23 @@
         64674: (a, e, l) => {
             "use strict";
             l.d(e, {
-                a: () => c
+                a: () => _
             });
             var n = l(23798);
             l(21462);
             var i = l(38169),
-                t = l(97116),
+                t = l(15933),
                 d = l(53123),
                 o = l(15913),
                 s = l(58436),
-                _ = l.n(s);
+                c = l.n(s);
 
-            function c(a) {
+            function _(a) {
                 var e;
                 let {
                     showWorkspaceName: l,
                     showWorkspaceAvatar: s,
-                    panelName: c,
+                    panelName: _,
                     panelDescription: r,
                     buttonLabel: m,
                     onClick: w,
@@ -1071,39 +1086,39 @@
                     currentTeam: y
                 } = (0, o.o)(), M = d.A.getWorkspaceName(y, x);
                 return (0, n.jsxs)("div", {
-                    className: _().PanelHeader,
+                    className: c().PanelHeader,
                     "data-testid": "panel-header",
                     id: h,
                     children: [l && (0, n.jsx)("span", {
                         "data-testid": "workspace-name",
-                        className: _().WorkspaceName,
+                        className: c().WorkspaceName,
                         children: b || M
                     }), (0, n.jsxs)("div", {
-                        className: _().PanelInformation,
+                        className: c().PanelInformation,
                         children: [s && (0, n.jsx)("span", {
                             "data-testid": "panel-avatar",
-                            className: _().PanelAvatar,
+                            className: c().PanelAvatar,
                             style: {
                                 backgroundImage: "url(".concat(C, ")")
                             }
                         }), (0, n.jsxs)("div", {
                             children: [(0, n.jsx)("h1", {
-                                className: _().PanelName,
-                                children: c
+                                className: c().PanelName,
+                                children: _
                             }), r && (0, n.jsx)("p", {
-                                className: _().PanelDescription,
+                                className: c().PanelDescription,
                                 children: r
                             })]
                         }), m && (0, n.jsx)(t.$, {
                             type: u ? "submit" : void 0,
                             form: u,
-                            className: _().PanelButton,
+                            className: c().PanelButton,
                             onClick: w,
                             disabled: g,
                             children: m
                         })]
                     }), p, (0, n.jsx)("div", {
-                        className: _().divider
+                        className: c().divider
                     })]
                 })
             }
@@ -1232,7 +1247,7 @@
             "use strict";
             l.d(e, {
                 V: () => s,
-                d: () => _
+                d: () => c
             });
             var n = l(21462),
                 i = l(38169),
@@ -1240,7 +1255,7 @@
                 d = l(15913),
                 o = l(96644);
             let s = "apply-coupon-on-renewal",
-                _ = () => {
+                c = () => {
                     let {
                         currentTeam: a
                     } = (0, d.o)(), [e] = (0, t.uT)(), l = (0, i.wA)();
@@ -1319,4 +1334,4 @@
         }
     }
 ]);
-//# sourceMappingURL=7269.885e362f449646ff.js.map
+//# sourceMappingURL=7269.9bc2e4e5a34f3c7c.js.map

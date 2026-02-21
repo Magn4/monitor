@@ -3,19 +3,20 @@
     [2604], {
         53824: (e, s, i) => {
             i.r(s), i.d(s, {
-                UnsubscribeExpirationPage: () => d,
-                default: () => x
+                UnsubscribeExpirationPage: () => x,
+                default: () => h
             });
             var t = i(23798),
                 n = i(50084),
                 r = i.n(n),
                 u = i(21462),
-                a = i(38169),
-                c = i(29069),
+                a = i(75546),
+                c = i(38169),
+                o = i(29069),
                 b = i(84530),
-                o = i(72255),
-                p = i(10995);
-            class d extends u.Component {
+                p = i(72255),
+                d = i(10995);
+            class x extends u.Component {
                 async unsubscribe(e, s) {
                     let {
                         unsubscribeFromExpirationReminders: i,
@@ -43,7 +44,7 @@
                 render() {
                     let {
                         route: e
-                    } = this.props, s = e.query.sig, i = e.query.email, n = "pro" === e.query.account_type, r = "transfer_downloaded" === e.query.email_type, u = "transfer_not_downloaded" === e.query.email_type, a = () => {
+                    } = this.props, s = e.query.sig, i = e.query.email, n = "pro" === e.query.account_type, r = "transfer_downloaded" === e.query.email_type, u = "transfer_not_downloaded" === e.query.email_type, c = () => {
                         this.unsubscribe(i, s)
                     };
                     return this.state.unsubscribed ? (0, t.jsxs)("div", {
@@ -52,10 +53,10 @@
                             children: b.A.t("page.unsubscribeexpiration.title_unsubscribed")
                         }), (0, t.jsx)("p", {
                             children: b.A.t("page.unsubscribeexpiration.description_unsubscribed")
-                        }), (0, t.jsx)(c.A, {
+                        }), (0, t.jsx)(o.A, {
                             text: b.A.t("page.unsubscribeexpiration.button_unsubscribed"),
                             active: !0,
-                            onClick: () => o.A.navigateTo("/")
+                            onClick: () => p.A.navigateTo("/")
                         })]
                     }) : u && !n ? (0, t.jsxs)("div", {
                         className: "unsubscribe-expiration",
@@ -63,10 +64,10 @@
                             children: b.A.t("page.unsubscribeexpiration.not_downloaded.title")
                         }), (0, t.jsx)("p", {
                             children: b.A.t("page.unsubscribeexpiration.not_downloaded.body")
-                        }), (0, t.jsx)(c.A, {
+                        }), (0, t.jsx)(o.A, {
                             text: b.A.t("page.unsubscribeexpiration.button"),
                             active: !this.state.requesting,
-                            onClick: a
+                            onClick: c
                         })]
                     }) : r && !n ? (0, t.jsxs)("div", {
                         className: "unsubscribe-expiration",
@@ -74,10 +75,10 @@
                             children: b.A.t("page.unsubscribeexpiration.downloaded.title")
                         }), (0, t.jsx)("p", {
                             children: b.A.t("page.unsubscribeexpiration.downloaded.body")
-                        }), (0, t.jsx)(c.A, {
+                        }), (0, t.jsx)(o.A, {
                             text: b.A.t("page.unsubscribeexpiration.button"),
                             active: !this.state.requesting,
-                            onClick: a
+                            onClick: c
                         })]
                     }) : n ? (0, t.jsxs)("div", {
                         className: "unsubscribe-expiration",
@@ -85,14 +86,19 @@
                             children: b.A.t("page.unsubscribeexpiration.pro.title")
                         }), (0, t.jsx)("p", {
                             children: b.A.t("page.unsubscribeexpiration.pro.body_1")
-                        }), (0, t.jsx)(c.A, {
+                        }), (0, t.jsx)(o.A, {
                             text: b.A.t("page.unsubscribeexpiration.button"),
                             active: !this.state.requesting,
-                            onClick: a
+                            onClick: c
                         }), (0, t.jsx)("p", {
-                            dangerouslySetInnerHTML: {
-                                __html: b.A.t("page.unsubscribeexpiration.pro.body_2")
-                            }
+                            children: (0, t.jsx)(a.x6, {
+                                i18nKey: "page.unsubscribeexpiration.pro.body_2",
+                                components: {
+                                    a: (0, t.jsx)("a", {
+                                        href: "mailto:subscriptions@wetransfer.com"
+                                    })
+                                }
+                            })
                         })]
                     }) : (0, t.jsxs)("div", {
                         className: "unsubscribe-expiration",
@@ -100,10 +106,10 @@
                             children: b.A.t("page.unsubscribeexpiration.title")
                         }), (0, t.jsx)("p", {
                             children: b.A.t("page.unsubscribeexpiration.description")
-                        }), (0, t.jsx)(c.A, {
+                        }), (0, t.jsx)(o.A, {
                             text: b.A.t("page.unsubscribeexpiration.button"),
                             active: !this.state.requesting,
-                            onClick: a
+                            onClick: c
                         })]
                     })
                 }
@@ -114,15 +120,15 @@
                     }
                 }
             }
-            d.propTypes = {
+            x.propTypes = {
                 route: r().object,
                 unsubscribeFromExpirationReminders: r().func
             };
             let l = {
-                    unsubscribeFromExpirationReminders: p.A.User.unsubscribeFromExpirationReminders
+                    unsubscribeFromExpirationReminders: d.A.User.unsubscribeFromExpirationReminders
                 },
-                x = (0, a.Ng)(null, l)(d)
+                h = (0, c.Ng)(null, l)(x)
         }
     }
 ]);
-//# sourceMappingURL=unsubscribe-expiration.f32a83b37abe1d18.js.map
+//# sourceMappingURL=unsubscribe-expiration.797daed00ebcf1d3.js.map
